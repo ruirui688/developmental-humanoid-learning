@@ -1,8 +1,10 @@
-# 官方机器人模型、人体动作与策略数据源规范
+# 外部资源选择与使用原则
 
-> 核心原则：可以复用官方项目减少基础设施工作，但“机器人资产”“动作数据”“预训练策略”提供的信息不同，必须分别追踪、授权和报告。
+> 本文件不指定项目必须使用哪些外部数据或仓库。它只规定：一旦引入外部代码、机器人资产、动作数据或预训练策略，应如何保证许可合规、实验公平和结果可复现。
 
-## 1. 推荐的官方入口
+## 1. 候选来源示例
+
+以下项目与当前 G1 / Isaac Lab 路线相关，可在确有需要时评估，不是强制依赖，也不是固定的数据清单：
 
 | 来源 | 官方地址 | 本项目用途 | 当前已知许可说明 |
 |---|---|---|---|
@@ -12,7 +14,7 @@
 | Unitree SDK2 | <https://github.com/unitreerobotics/unitree_sdk2> | 后期真机通信与状态接口 | BSD-3-Clause；真机前固定兼容版本 |
 | PBHC | <https://github.com/TeleHuman/PBHC> | G1 描述、SMPL 动作处理/重定向、模仿基线、部署参考 | README 标注 CC BY-NC 4.0，要求署名且限制非商业用途 |
 
-上表是 2026-08-24 的项目审计记录，不替代各仓库的 LICENSE、README、模型或数据集条款。下载时必须再次核对；不同子目录或上游数据集可能有独立许可。
+上表只是候选入口，不替代各仓库的 LICENSE、README、模型或数据集条款。采用时必须按实际选定版本重新核对；未采用的来源不进入实验配置、依赖或论文数据预算。
 
 ## 2. 三类来源不能混为一谈
 
@@ -34,23 +36,23 @@
 
 使用要求：只能作为 teacher、初始化方法或强基线明确标注。使用后不能把该实验称为“No Pretrained Task Policy”或纯从零发育。
 
-## 3. PBHC 在本项目中的合理用法
+## 3. 以 PBHC 为例的可选用法
 
-PBHC 可帮助减少以下重复工作：
+如果后续选择 PBHC，它可帮助减少以下重复工作：
 
 - 了解 G1 humanoid description 和 joint mapping；
 - 参考人体动作采集、SMPL 处理和 G1 retargeting 流程；
 - 构建 motion-imitation / teacher 强基线；
 - 参考 Isaac Gym、MuJoCo 和真机部署接口的组织方式。
 
-PBHC 不能被当作不加说明的代码和权重来源。推荐两条独立实验轨：
+这不意味着项目必须采用 PBHC。无论选择 PBHC 还是其他来源，都应区分两类实验条件：
 
 | 实验轨 | 可用来源 | 可以回答的问题 |
 |---|---|---|
 | Pure developmental | 官方 G1 资产、环境参数；无预训练任务策略 | 运动成熟和自主探索本身是否有效 |
-| Human-prior | PBHC/动作数据/teacher，完整披露预算 | 人体先验与发育机制组合是否进一步提高性能 |
+| Human-prior | 选定的动作数据或 teacher，完整披露预算 | 人体先验与发育机制组合是否进一步提高性能 |
 
-PBHC checkpoint 若作为教师，应与 direct PPO 和本项目方法并列为强基线或单独的 teacher-assisted 条件，不能只把它的能力计入本项目结果。
+任何外部 checkpoint 若作为教师，应与 direct PPO 和本项目方法并列为强基线或单独的 teacher-assisted 条件，不能只把它的能力计入本项目结果。
 
 ## 4. 公平对比规则
 
@@ -75,15 +77,15 @@ PBHC checkpoint 若作为教师，应与 direct PPO 和本项目方法并列为�
 
 ## 5. 来源清单最小字段
 
-每个外部来源至少记录：
+对实际使用且会影响复现的外部来源，至少记录：
 
 ```yaml
-name: PBHC
+name: <selected-resource>
 type: robot_asset | motion_data | checkpoint | source_code
-official_url: https://github.com/TeleHuman/PBHC
+official_url: <upstream-url>
 revision: <exact-tag-or-commit>
 retrieved_at: <YYYY-MM-DD>
-license: CC-BY-NC-4.0-as-stated-in-readme
+license: <verified-license>
 upstream_dataset_license: <if-applicable>
 sha256: <archive-or-file-checksum>
 local_path: <outside-git-or-ignored-path>
@@ -115,4 +117,4 @@ notes: <attribution and restrictions>
 - 固定与能力门控的运动成熟机制；
 - Isaac Lab 特权接触标签和可部署学生估计器。
 
-PBHC 动作、retargeting 和 checkpoint 是有价值的第二条实验轨与强基线，但不是纯软件 MVP 启动的硬依赖。全身压力传感器和真机硬件改造同样不是第一阶段依赖。
+动作数据、retargeting 工具和预训练 checkpoint 只有在能回答明确研究问题时才引入。它们不是纯软件 MVP 的默认依赖；全身压力传感器和真机硬件改造同样不是第一阶段依赖。

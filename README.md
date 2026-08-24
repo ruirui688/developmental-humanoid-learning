@@ -163,7 +163,7 @@ developmental-humanoid-learning/
 - [x] 5 个未见种子的正式验证
 - [x] 论文图表、检查点和补充视频
 - [ ] 课程 / Body Schema / 人体先验的因子消融
-- [ ] 在 24 GB GPU 新机上固定 Isaac Lab、Unitree G1 和官方数据源版本
+- [ ] 在可用 GPU 环境中选择兼容的 Isaac Lab 和 Unitree G1 资产版本
 - [ ] 建立统一 G1 关节/刚体/action 映射并完成模型与接触 smoke test
 - [ ] Isaac Lab G1 直接 PPO 站立基线
 - [ ] 固定成熟与能力门控运动成熟的公平对比
@@ -187,8 +187,8 @@ developmental-humanoid-learning/
 
 ## 文档
 
-- [新电脑接管与执行手册](docs/NEW_MACHINE_BOOTSTRAP.md)
-- [官方机器人模型、动作与策略数据源规范](docs/DATA_SOURCES.md)
+- [新环境接管与执行手册](docs/NEW_MACHINE_BOOTSTRAP.md)
+- [外部资源选择与使用原则](docs/DATA_SOURCES.md)
 - [Codex / 智能体项目级工作说明](AGENTS.md)
 - [项目优势与技术路线](docs/PROJECT_OVERVIEW.md)
 - [真实机器人发育式运动学习：研究愿景与系统设计](docs/DEVELOPMENTAL_ROBOT_VISION.md)

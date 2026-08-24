@@ -1,6 +1,6 @@
 # AGENTS.md
 
-本文件是本仓库给 Codex 和其他代码智能体的项目级交接说明。开始工作前必须先读本文件，再读 `README.md`、`docs/NEW_MACHINE_BOOTSTRAP.md` 和与任务相关的研究文档。
+本文件是本仓库给 Codex 和其他代码智能体的项目级交接说明。开始工作前先读本文件和 `README.md`；其余文档按当前任务需要查阅，不要求机械地全部加载。
 
 ## 1. 项目使命
 
@@ -12,9 +12,9 @@
 
 ## 2. 当前最优先目标
 
-在一台 24 GB 显存电脑上完成 **Isaac Lab + Unitree G1 的纯软件 MVP**：
+在可用的 GPU 环境中完成 **Isaac Lab + Unitree G1 的纯软件 MVP**：
 
-1. 固定并记录官方依赖版本、许可证和来源提交；
+1. 确定实际使用的依赖和资产后，记录其版本、许可证和来源提交；
 2. 建立唯一的 G1 关节、刚体、执行器和动作映射；
 3. 验证模型加载、关节限位、接触体和执行器参数；
 4. 先训练直接 PPO 的站立基线；
@@ -30,7 +30,7 @@
 - 不直接从二维火柴人跳到无保护真机训练；
 - 不在第一篇论文中承诺完整的“婴儿式”翻身、起身、站立和行走全流程；
 - 不把 Isaac Lab 中的结果称为真机结果或 Sim2Real 成功；
-- 不用 PBHC 检查点或动作数据后仍声称实验没有任务先验；
+- 不在使用外部动作、教师或预训练检查点后仍声称实验没有任务先验；
 - 不为追求漂亮结果而省略失败种子、不利指标或额外数据预算。
 
 ## 4. 近期论文问题与实验组
@@ -42,20 +42,20 @@
 最低实验组：
 
 1. Direct PPO；
-2. Motion-imitation PPO / PBHC 风格强基线；
+2. 合适的 motion-imitation 或其他强基线；
 3. Fixed maturation；
 4. Adaptive competence-gated maturation；
 5. 完整方法（maturation + Body Schema + contact estimator / human prior）；
 6. 必要的组件消融。
 
-“纯发育轨”和“人体先验轨”必须分开报告：前者只共享官方 G1 资产且不使用预训练任务策略；后者可使用 PBHC 或动作数据作为教师/参考，但必须披露数据量、许可和使用组别。
+“纯发育轨”和“人体先验轨”必须分开报告：前者只共享机器人资产且不使用预训练任务策略；后者可使用合适的动作数据或教师作为参考，但必须披露数据量、许可和使用组别。
 
 ## 5. 科研与数据规范
 
-- 优先使用 NVIDIA、Unitree 和 PBHC 官方仓库；不要随意下载或执行不明 fork；
+- 优先使用可验证的官方或上游来源；不要随意下载或执行不明 fork；
 - 外部来源必须记录 URL、精确 commit/tag、许可证、下载日期、校验值、转换步骤和使用实验组；
 - 机器人模型和公共配置可以作为所有方法共享的环境信息；动作数据属于额外先验；预训练检查点属于教师或强基线；三者不得混写；
-- PBHC README 标注 CC BY-NC 4.0，只能按其许可和署名要求使用，不能默认用于商业用途；
+- 只有实际采用某个外部项目时，才将它加入依赖或数据清单，并遵守其许可、署名和用途限制；
 - 不把外部仓库源码、原始数据集或大型检查点直接提交到本仓库。放入 `external/`、`third_party/`、`data/raw/` 或本机专用目录；
 - 比较方法时统一 G1 关节顺序、动作定义、终止条件、训练/评估场景和环境交互预算；
 - 人体演示样本、教师调用次数、预训练计算和 GPU 时间与 RL environment steps 分开报告；
@@ -75,8 +75,8 @@ paper/论文初稿.md               当前中文论文初稿
 docs/PROJECT_OVERVIEW.md       项目定位、优势与验证矩阵
 docs/DEVELOPMENTAL_ROBOT_VISION.md
                                长期真机愿景和系统设计
-docs/DATA_SOURCES.md           官方模型、数据、策略的使用规范
-docs/NEW_MACHINE_BOOTSTRAP.md  24 GB GPU 新机接管步骤
+docs/DATA_SOURCES.md           外部资源选择、记录和公平使用原则
+docs/NEW_MACHINE_BOOTSTRAP.md  新环境接管与资源自适应步骤
 docs/RESEARCH_DIALOGUE.md      决策来源和讨论记录
 ```
 
@@ -106,4 +106,4 @@ git diff --check
 
 ## 10. 新会话的第一项行动
 
-如果这是新电脑上的首次 Codex 会话：先执行 `docs/NEW_MACHINE_BOOTSTRAP.md` 的第 1～4 阶段，确认 CPU 测试通过并完成 G1 资产审计；在关节/刚体映射和站立 smoke test 通过前，不开始长时间 PPO 训练。
+如果这是新环境中的首次 Codex 会话：先按 `docs/NEW_MACHINE_BOOTSTRAP.md` 识别实际软硬件条件并运行现有 CPU 测试；随后只读取当前阶段所需资料。在关节/刚体映射和站立 smoke test 通过前，不开始长时间 PPO 训练。

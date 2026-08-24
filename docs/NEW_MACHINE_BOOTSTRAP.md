@@ -1,20 +1,19 @@
-# 24 GB GPU 新电脑接管与执行手册
+# 新环境接管与执行手册
 
 > 目标：新电脑克隆仓库后，让新的 Codex 会话无需依赖旧聊天记录，也能知道项目边界、下一步任务和验收标准。
 
-## 1. 开始前先读什么
+## 1. 最小必读内容
 
-按顺序阅读：
+新会话先阅读：
 
 1. 根目录 `AGENTS.md`：当前任务、硬性边界和工作规范；
 2. `README.md`：现有二维成果、命令、视频和指标；
-3. `docs/DATA_SOURCES.md`：PBHC、Isaac Lab、Unitree 资源分类与许可；
-4. `docs/DEVELOPMENTAL_ROBOT_VISION.md`：长期路线；
-5. `paper/论文初稿.md`：当前论文基线，不把其中二维结果误写成 G1 结果。
+
+其余资料按任务加载：需要选择外部模型或数据时读 `docs/DATA_SOURCES.md`；设计长期路线时读 `docs/DEVELOPMENTAL_ROBOT_VISION.md`；修改论文时再读 `paper/论文初稿.md`。这样避免给每个会话强塞无关背景。
 
 ## 2. 新机硬件与系统审计
 
-先记录实际环境，不要根据“24 GB 显存”猜测硬件：
+先识别实际环境，不对 GPU 型号、显存、操作系统或安装方式作预设。下面是 Windows PowerShell 示例：
 
 ```powershell
 nvidia-smi
@@ -24,7 +23,9 @@ Get-ComputerInfo | Select-Object WindowsVersion, OsBuildNumber, CsTotalPhysicalM
 Get-PSDrive -PSProvider FileSystem
 ```
 
-建议同时记录 GPU 型号、驱动版本、CUDA compatibility、CPU、RAM、可用磁盘和操作系统。Isaac Sim / Isaac Lab 对驱动、Python 和系统版本有明确兼容要求；安装时以 NVIDIA 当日官方文档为准。
+Linux 环境使用对应的系统命令即可，不要求照抄 PowerShell。只有当环境信息会影响复现或安装决策时，才记录 GPU、驱动、CPU、RAM、磁盘和操作系统等字段。
+
+Isaac Sim / Isaac Lab 对驱动、Python 和系统版本有明确兼容要求；安装时以所选版本的官方文档为准。
 
 对于长期 Isaac 工作流，优先考虑官方支持良好的原生 Ubuntu 环境。不要由 Codex 静默重装操作系统、显卡驱动或 CUDA；这类变更必须先获得用户确认。
 
@@ -45,22 +46,21 @@ python -m pytest -q
 
 ## 4. 外部依赖与数据布局
 
-外部项目不要复制进本仓库的 Git 历史。可在与仓库同级的本机目录管理：
+外部项目不要复制进本仓库的 Git 历史。下面只是可选布局，实际目录名由本机环境决定：
 
 ```text
 robot-research/
 ├── developmental-humanoid-learning/  本仓库
 ├── external/
-│   ├── IsaacLab/
-│   ├── PBHC/
-│   ├── unitree_rl_gym/
-│   └── unitree_mujoco/
-├── data/raw/                          未转换的动作数据
-├── data/processed/                    可重建的重定向数据
+│   ├── simulator/
+│   ├── robot_assets/
+│   └── optional_baselines/
+├── data/raw/                          仅在实际使用外部数据时创建
+├── data/processed/                    可重建的派生数据
 └── checkpoints/                       大型模型权重
 ```
 
-在第一次实际下载前，按 `docs/DATA_SOURCES.md` 建立来源清单，记录精确 commit/tag、license 和 checksum。不要默认使用某个仓库的当前默认分支，因为它会变化。
+实际引入外部代码、资产、数据或权重时，按 `docs/DATA_SOURCES.md` 记录足以复现和审计的信息。未使用的候选来源不必下载，也不必写入实验依赖。
 
 ## 5. 安装 Isaac Lab 的原则
 
@@ -85,7 +85,7 @@ robot-research/
 - 关节位置、速度、力矩限位；
 - 默认姿态和控制增益；
 - 策略 action index 到 G1 joint 的对应；
-- 与 PBHC/SMPL 数据重定向之间的对应关系。
+- 与未来可能采用的动作表示或重定向格式之间的接口。
 
 验收：程序自动检查名称、数量、顺序和限位，不靠人工目测；所有实验组使用同一映射。
 
@@ -123,18 +123,17 @@ robot-research/
 
 Isaac Lab 的逐刚体接触只作为 teacher label。学生只能读取真机将来可用的历史：关节位置/速度、IMU、电机电流或力矩估计、上一动作和跟踪误差。分别报告接触估计准确率与策略收益，避免两者混为一谈。
 
-## 7. 24 GB 显存使用建议
+## 7. 计算资源自适应
 
-先小规模正确，再增加并行数：
+不在文档中预设固定并行环境数。不同 GPU、仿真版本、机器人资产、传感器和任务复杂度的显存占用差异很大，应通过短基准测试确定：
 
-| 用途 | 建议环境数 | 目的 |
-|---|---:|---|
-| 单步调试和可视化 | 1–16 | 检查坐标、动作、接触和奖励 |
-| 训练流程 smoke test | 64–128 | 检查显存、复位和日志 |
-| 接触密集的起身/站立 | 512–1024 | 24 GB 上的保守正式起点 |
-| 简单站立任务 | 最多尝试 2048 | 仅在监测显存与吞吐后扩大 |
+1. 用最少环境完成可视化和单步正确性检查；
+2. 用小规模 headless smoke test 测量峰值显存、吞吐和复位稳定性；
+3. 逐级增加并行度，记录每档的 steps/s、显存和失败情况；
+4. 选择保留安全余量且吞吐收益仍合理的配置；
+5. 把最终资源配置和选择依据写入实验元数据。
 
-环境数不是论文贡献。正式实验优先 headless；多个 seed 顺序运行，先保留显存余量，再根据实际峰值调整。OOM 后不要只降低网络而改变不同实验组的模型容量公平性。
+环境数不是论文贡献。是否 headless、seed 串行还是并行、是否使用混合精度，都由实测资源决定。不得只为某个实验组缩小网络或改变仿真精度，从而破坏方法间公平性。
 
 ## 8. 开始长训练前的 Go / No-Go
 
@@ -162,4 +161,4 @@ Isaac Lab 的逐刚体接触只作为 teacher label。学生只能读取真机�
 
 ## 10. 新 Codex 会话可直接使用的任务描述
 
-> 阅读根目录 AGENTS.md、docs/NEW_MACHINE_BOOTSTRAP.md 和 docs/DATA_SOURCES.md。先审计本机 GPU/驱动和现有 CPU 测试，再按官方文档固定 Isaac Lab 版本；建立可自动验证的 Unitree G1 关节/刚体/action 映射，完成 articulation、接触和站立 smoke test。在这些验收通过前不要开始长训练，也不要把 PBHC 动作或 checkpoint 混入纯发育实验轨。
+> 阅读根目录 AGENTS.md、README.md 和 docs/NEW_MACHINE_BOOTSTRAP.md。识别当前环境并运行现有 CPU 测试，再为本机选择兼容的 Isaac Lab 版本；建立可自动验证的 Unitree G1 关节/刚体/action 映射，完成 articulation、接触和站立 smoke test。在这些验收通过前不要开始长训练。若实际采用外部动作、教师或 checkpoint，再读取 docs/DATA_SOURCES.md 并明确它们属于哪一实验组。
