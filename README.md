@@ -183,6 +183,8 @@ developmental-humanoid-learning/
 ## 文档
 
 - [项目优势与技术路线](docs/PROJECT_OVERVIEW.md)
+- [真实机器人发育式运动学习：研究愿景与系统设计](docs/DEVELOPMENTAL_ROBOT_VISION.md)
+- [研究讨论记录：从二维概念验证到真实机器人发育](docs/RESEARCH_DIALOGUE.md)
 - [中文论文初稿](paper/论文初稿.md)
 - [实验运行元数据](results/validation/run_metadata.json)
 - [统计分析](results/validation/statistics.json)
