@@ -34,8 +34,14 @@ dist/
 *.pth
 *.ckpt
 
+# External repositories and raw/derived research data stay outside Git.
+external/
+third_party/
+data/raw/
+data/processed/
+checkpoints/
+
 # Keep only the held-out validation artifacts in version control.
 results/*
 !results/validation/
 results/validation/media/comparison_preview_*.png
-
