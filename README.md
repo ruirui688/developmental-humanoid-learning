@@ -16,7 +16,15 @@
 
 ## 演示
 
+### 发育式策略：无支撑行走
+
 ![DHP-PPO learned walking](results/validation/media/developmental_walk.gif)
+
+### 相同 PPO 环境交互预算：同步对比
+
+![Direct PPO versus DHP-PPO](results/validation/media/ppo_vs_developmental.gif)
+
+左侧直接 PPO 在约 2.36 s 后跌倒并停留在失败状态；右侧 DHP-PPO 在关闭外部支撑后继续完成 12 s 测试回合。
 
 - [完整无支撑行走视频（Supplementary Video S1）](results/validation/media/developmental_walk.mp4)
 - [直接 PPO 与发育式策略同步对比（Supplementary Video S2）](results/validation/media/ppo_vs_developmental.mp4)
@@ -124,6 +132,10 @@ python -m robot_rl.video `
   --developmental results/validation/developmental_seed10.pt `
   --traditional results/validation/traditional_seed10.pt `
   --output results/validation/media
+
+ffmpeg -i results/validation/media/ppo_vs_developmental.mp4 `
+  -vf "fps=12,scale=960:-1:flags=lanczos" `
+  results/validation/media/ppo_vs_developmental.gif
 ```
 
 ## 项目结构
@@ -178,4 +190,3 @@ developmental-humanoid-learning/
 ## License
 
 仓库当前尚未选择开源许可证。在正式添加许可证之前，源代码默认保留全部权利。如需开放复用，建议后续根据项目计划选择 MIT、Apache-2.0 或其他许可证。
-
