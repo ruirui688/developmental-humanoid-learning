@@ -1,0 +1,40 @@
+{
+  "training_falls": {
+    "paired_difference_mean": -1339.8,
+    "ci95": [
+      -1400.6659761298542,
+      -1278.9340238701457
+    ],
+    "paired_t_p": 4.295729011993589e-07,
+    "wilcoxon_p": 0.0625
+  },
+  "mean_speed": {
+    "paired_difference_mean": 0.11543315452925762,
+    "ci95": [
+      0.08977614144358585,
+      0.14109016761492937
+    ],
+    "paired_t_p": 0.00023639521411403586,
+    "wilcoxon_p": 0.0625
+  },
+  "mean_distance": {
+    "paired_difference_mean": 7.501869177818298,
+    "ci95": [
+      7.019813626301428,
+      7.983924729335168
+    ],
+    "paired_t_p": 1.7164614543279567e-06,
+    "wilcoxon_p": 0.0625
+  },
+  "joint_tracking_rmse": {
+    "paired_difference_mean": 0.042992732562038824,
+    "ci95": [
+      0.0077601920566360075,
+      0.07822527306744165
+    ],
+    "paired_t_p": 0.02759534187696069,
+    "wilcoxon_p": 0.0625
+  },
+  "training_fall_reduction": 0.9550898203592815,
+  "distance_ratio": 4.951315991670233
+}

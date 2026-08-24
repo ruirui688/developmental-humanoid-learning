@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+*.local
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Model checkpoints are reproducible and should use Releases/LFS if published.
+*.pt
+*.pth
+*.ckpt
+
+# Keep only the held-out validation artifacts in version control.
+results/*
+!results/validation/
+results/validation/media/comparison_preview_*.png
+

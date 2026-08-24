@@ -1,0 +1,33 @@
+{
+  "elapsed_seconds": 169.78479194641113,
+  "config": {
+    "num_envs": 24,
+    "rollout_steps": 80,
+    "total_updates": 40,
+    "update_epochs": 4,
+    "minibatch_size": 768,
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_coef": 0.2,
+    "entropy_coef": 0.005,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "body_model_coef": 0.08,
+    "human_prior_coef": 0.5,
+    "human_prior_samples": 8192,
+    "human_prior_updates": 120
+  },
+  "methods": [
+    "traditional",
+    "developmental"
+  ],
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "evaluation": "deterministic policy, independent_walk, support=0"
+}
