@@ -163,6 +163,7 @@ developmental-humanoid-learning/
 - [x] 5 个未见种子的正式验证
 - [x] 论文图表、检查点和补充视频
 - [ ] 课程 / Body Schema / 人体先验的因子消融
+- [ ] Isaac Lab G1：使用原生传感器和特权接触标签蒸馏，不改机器人硬件
 - [ ] MuJoCo 平面双足刚体接触环境
 - [ ] 噪声、延迟、摩擦和执行器随机化
 - [ ] Pre-Failure 预测与主动恢复
