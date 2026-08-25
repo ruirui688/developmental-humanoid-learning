@@ -95,6 +95,19 @@ class DevelopmentalG1Env(LeggedRobotBase):
         self.maturation_mask = mask
         self.maturation_action_range = action_range
 
+    def _reset_dofs(self, env_ids, target_state=None):
+        """Reset only selected defaults; PBHC upstream multiplies all env rows."""
+
+        if target_state is not None:
+            self.simulator.dof_pos[env_ids] = target_state[..., 0]
+            self.simulator.dof_vel[env_ids] = target_state[..., 1]
+        else:
+            scale = torch.empty(
+                (len(env_ids), self.num_dof), device=self.device
+            ).uniform_(0.5, 1.5)
+            self.simulator.dof_pos[env_ids] = self.default_dof_pos[env_ids] * scale
+            self.simulator.dof_vel[env_ids] = 0.0
+
     def _pre_physics_step(self, actions):
         self.raw_policy_actions[:] = actions
         executed, _, _ = self.maturation_transform.apply(

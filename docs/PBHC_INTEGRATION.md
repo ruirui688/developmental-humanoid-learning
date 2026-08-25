@@ -78,6 +78,12 @@ shape 归属同一 rigid body；其代码会给全部 30 个 shape 设置摩擦�
 24 个 shape 写入摩擦诊断 tensor。该警告不改变按 body 返回的 contact-force tensor，
 但在正式启用摩擦随机化统计前应修正诊断记录，不能把两类数量当作一一对应。
 
+多环境 reset 还暴露了 PBHC `LeggedRobotBase._reset_dofs` 的广播问题：当只有部分
+环境终止时，上游实现把全部环境的默认关节矩阵与终止子集的随机缩放矩阵相乘。
+本仓库在 `DevelopmentalG1Env` 内仅对 `env_ids` 对应行执行相同随机 reset，不修改
+上游 checkout。单环境 smoke 不足以验证 reset 稳定性，因此后续 Go/No-Go 必须包含
+多环境且确实发生终止的 rollout。
+
 ## 科研边界
 
 PBHC 的机器人资产和仿真框架可以作为所有实验组共享的环境基础。PBHC 示例动作、

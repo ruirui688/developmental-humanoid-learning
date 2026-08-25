@@ -40,3 +40,19 @@
 - Fixed 解析配置：`mode=fixed`、`initial_stage=0`、Body Schema loss coefficient 为 0；24-step smoke 跨越两个预设阈值，阶段均值 0.625，证明按累计 environment steps 的切换接线生效。
 - CPU 验证：新增固定时间表边界测试后 `python -m pytest -q` 为 14 passed。
 - 公平性说明：Direct 与 Fixed 复用相同环境、奖励、actor/critic 结构和 `tanh` residual action transform；差异只在动作成熟阶段。正式 Fixed 阈值仍须按共同训练预算预注册，pilot 的 32,768/65,536 不作为论文设定。
+
+## 2026-08-26：并行环境吞吐阶梯与 PBHC reset 修复
+
+- 状态：吞吐阶梯完成；选择 8,192 env 作为下一阶段 pilot 起点，正式配置仍需用完整 PPO epoch/minibatch 复核。
+- 首次 256-env 运行失败：上游 `LeggedRobotBase._reset_dofs` 将全部环境的 `default_dof_pos` 与仅终止环境的随机缩放矩阵相乘。单环境 smoke 无法暴露该 shape mismatch。
+- 修复：`DevelopmentalG1Env._reset_dofs` 只索引本次 `env_ids` 对应的默认关节行；不修改 `external/PBHC`。修复后 1-env 与多环境 reset 都通过。
+
+| 并行环境数 | 每 iteration steps | 观测吞吐 | iteration 时间 | 峰值计算显存 |
+|---:|---:|---:|---:|---:|
+| 256 | 6,144 | 15,555 steps/s | 0.3950 s | 未测 |
+| 1,024 | 24,576 | 49,177 steps/s | 0.4997 s | 未测 |
+| 4,096 | 98,304 | 133,227 steps/s | 0.7379 s | 未测 |
+| 8,192 | 196,608 | 171,003 steps/s | 1.1497 s | 14,896 MiB |
+| 16,384 | 393,216 | 199,507 steps/s | 1.9709 s | 19,808 MiB |
+
+以上均为 Direct overlay、24 rollout steps、1 epoch、1 minibatch、1 iteration 的短测。16,384 相比 8,192 的吞吐提升约 17%，但峰值计算显存增加约 4.9 GiB；8,192 在 24 GiB GPU 上保留更合理余量，因此用于 pilot。该表不是方法性能结果，也不能外推到完整正式训练吞吐。
