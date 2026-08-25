@@ -68,6 +68,10 @@ class DevelopmentalG1Env(LeggedRobotBase):
         self.fixed_transition_environment_steps = tuple(
             int(step) for step in developmental.get("fixed_transition_environment_steps", [])
         )
+        self.maturation_schedule_environment_steps = 0
+        # The algorithm enables this only around PPO rollout collection. Reset
+        # warm-ups and held-out evaluation are separate budgets.
+        self.count_maturation_schedule_steps = False
         if self.maturation_mode == "fixed":
             # Validate the schedule before creating a simulator rollout.
             self.maturation_controller.follow_fixed_schedule(
@@ -131,17 +135,25 @@ class DevelopmentalG1Env(LeggedRobotBase):
         return transition
 
     def maturation_state_dict(self) -> dict[str, int | float]:
-        return self.maturation_controller.state_dict()
+        state = self.maturation_controller.state_dict()
+        state["schedule_environment_steps"] = self.maturation_schedule_environment_steps
+        return state
 
     def load_maturation_state_dict(self, state: dict[str, int | float]) -> None:
-        self.maturation_controller.load_state_dict(state)
+        controller_state = dict(state)
+        self.maturation_schedule_environment_steps = int(
+            controller_state.pop("schedule_environment_steps", 0)
+        )
+        self.maturation_controller.load_state_dict(controller_state)
         self._refresh_maturation_parameters()
 
     def _update_tasks_callback(self):
         super()._update_tasks_callback()
+        if self.count_maturation_schedule_steps:
+            self.maturation_schedule_environment_steps += self.num_envs
         if self.maturation_mode == "fixed":
             transition = self.maturation_controller.follow_fixed_schedule(
-                self.common_step_counter * self.num_envs,
+                self.maturation_schedule_environment_steps,
                 self.fixed_transition_environment_steps,
             )
             if transition is not None:
@@ -158,7 +170,7 @@ class DevelopmentalG1Env(LeggedRobotBase):
             self.maturation_controller.stage.exploration_scale, device=self.device
         )
         self.log_dict["development/environment_steps"] = torch.tensor(
-            float(self.common_step_counter * self.num_envs),
+            float(self.maturation_schedule_environment_steps),
             device=self.device,
             dtype=self.actions.dtype,
         )

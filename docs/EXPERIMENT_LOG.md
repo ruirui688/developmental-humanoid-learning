@@ -68,3 +68,9 @@
 - A0 公平性：关闭 Body Schema loss 后，gate 同时将 schema 权重设为 0 并禁用其硬阈值；否则随机且未训练的 schema head 会成为隐藏阻塞。Full 配置仍使用 schema accuracy。
 - CPU 验证：episode 计数、信号范围、窗口完整性和无 schema 门控消融共 18 tests passed。
 - 科研边界：1 episode smoke 不能估计成功率，也不能用于选择 gate 阈值。pilot 前仍需冻结 episode bank、评估频率、阈值和成功定义。
+
+### Pilot 前公平性修正
+
+- 检查发现 Fixed maturation 原先读取环境内部总仿真步数，held-out evaluator 也会推进该计数，从而让评估预算错误地加速 Fixed 阶段切换。
+- 现改为独立的 `maturation_schedule_environment_steps`：仅训练 rollout 递增，evaluation 期间暂停；计数随 maturation checkpoint 状态保存和恢复。
+- 因此 Fixed 阈值、Adaptive 评估频率与论文横轴都以 PPO RL environment steps 为准，held-out evaluation steps 单独报告。

@@ -81,6 +81,7 @@ class DevelopmentalPPO(MHPPO):
             with torch.inference_mode():
                 obs_dict = self.env.reset_all()
             self._needs_training_reset = False
+        self.env.count_maturation_schedule_steps = True
         return super()._rollout_step(obs_dict)
 
     def _post_epoch_logging(self, log_dict, width=80, pad=40):
@@ -120,6 +121,7 @@ class DevelopmentalPPO(MHPPO):
         cuda_rng_state = torch.cuda.get_rng_state_all()
         self._eval_mode()
         self.env.is_evaluating = True
+        self.env.count_maturation_schedule_steps = False
         try:
             torch.manual_seed(seed)
             torch.cuda.manual_seed_all(seed)
@@ -181,6 +183,7 @@ class DevelopmentalPPO(MHPPO):
             torch.set_rng_state(cpu_rng_state)
             torch.cuda.set_rng_state_all(cuda_rng_state)
             self.env.is_evaluating = False
+            self.env.count_maturation_schedule_steps = False
             self._train_mode()
             self._needs_training_reset = True
 
