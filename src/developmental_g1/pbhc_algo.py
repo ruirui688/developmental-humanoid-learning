@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+from dataclasses import asdict
+import json
+import os
+
 import torch
 from torch import nn, optim
 
@@ -9,6 +13,7 @@ from humanoidverse.agents.mh_ppo.mh_ppo import MHPPO
 from humanoidverse.agents.modules.ppo_modules import PPOCritic
 
 from .body_schema import BodySchemaActor
+from .evaluation import CompetenceWindow
 
 
 class DevelopmentalPPO(MHPPO):
@@ -26,6 +31,20 @@ class DevelopmentalPPO(MHPPO):
             raise ValueError(
                 "body_schema.target_scale length must equal body_schema.target_dim"
             )
+        evaluation = self.config.competence_evaluation
+        self.competence_eval_enabled = bool(evaluation.enabled)
+        self.competence_eval_interval = int(evaluation.interval_iterations)
+        self.competence_eval_episode_banks = int(evaluation.episode_banks)
+        self.competence_eval_seed = int(evaluation.seed)
+        self.competence_schema_error_scale = float(evaluation.schema_error_scale)
+        if self.competence_eval_enabled and self.competence_eval_interval < 1:
+            raise ValueError("competence evaluation interval must be positive")
+        if self.competence_eval_episode_banks < 1:
+            raise ValueError("competence evaluation episode_banks must be positive")
+        if self.competence_schema_error_scale <= 0.0:
+            raise ValueError("competence schema_error_scale must be positive")
+        self._needs_training_reset = False
+        self.competence_evaluation_steps = 0
 
     def _setup_models_and_optimizer(self):
         actor_cfg = self.config.module_dict.actor
@@ -56,6 +75,114 @@ class DevelopmentalPPO(MHPPO):
             self.env.maturation_controller.stage.exploration_scale
         )
         return super()._actor_act_step(obs_dict)
+
+    def _rollout_step(self, obs_dict):
+        if self._needs_training_reset:
+            with torch.inference_mode():
+                obs_dict = self.env.reset_all()
+            self._needs_training_reset = False
+        return super()._rollout_step(obs_dict)
+
+    def _post_epoch_logging(self, log_dict, width=80, pad=40):
+        super()._post_epoch_logging(log_dict, width=width, pad=pad)
+        iteration = int(log_dict["it"]) + 1
+        if (
+            self.competence_eval_enabled
+            and iteration % self.competence_eval_interval == 0
+        ):
+            result = self.evaluate_competence_window(
+                seed=self.competence_eval_seed,
+                episode_banks=self.competence_eval_episode_banks,
+            )
+            transition = self.env.update_competence(result.sample)
+            record = {
+                "training_iteration": iteration,
+                "rl_environment_steps": iteration
+                * self.num_steps_per_env
+                * self.env.num_envs,
+                "cumulative_evaluation_steps": self.competence_evaluation_steps,
+                **asdict(result),
+                "transition": None if transition is None else asdict(transition),
+            }
+            record["sample"] = asdict(result.sample)
+            with open(
+                os.path.join(self.log_dir, "competence_windows.jsonl"),
+                "a",
+                encoding="utf-8",
+            ) as stream:
+                stream.write(json.dumps(record, sort_keys=True) + "\n")
+
+    @torch.inference_mode()
+    def evaluate_competence_window(self, *, seed: int, episode_banks: int):
+        """Run a deterministic, fixed-seed episode bank outside the RL budget."""
+
+        cpu_rng_state = torch.get_rng_state()
+        cuda_rng_state = torch.cuda.get_rng_state_all()
+        self._eval_mode()
+        self.env.is_evaluating = True
+        try:
+            torch.manual_seed(seed)
+            torch.cuda.manual_seed_all(seed)
+            observations = self.env.reset_all()
+            window = CompetenceWindow(episode_banks * self.env.num_envs)
+            max_steps = int(episode_banks * self.env.max_episode_length * 2 + 2)
+            steps = 0
+            while not window.complete and steps < max_steps:
+                actor_obs = observations["actor_obs"]
+                raw_actions = self.actor.act_inference(actor_obs)
+                next_observations, _, dones, infos = self.env.step(
+                    {"actions": raw_actions}
+                )
+                prediction = self.actor.predict_body_schema(
+                    actor_obs, self.env.actions_after_delay
+                )
+                target = (
+                    next_observations["body_schema_target"]
+                    * self.body_schema_target_scale
+                )
+                schema_mse = torch.mean(torch.square(prediction - target), dim=-1)
+                schema_accuracy = torch.exp(
+                    -schema_mse / self.competence_schema_error_scale
+                )
+                gravity_error = torch.sum(
+                    torch.square(self.env.projected_gravity[:, :2]), dim=-1
+                )
+                nonfoot_force = torch.linalg.vector_norm(
+                    self.env.simulator.contact_forces[
+                        :, self.env.penalised_contact_indices, :
+                    ],
+                    dim=-1,
+                ).amax(dim=-1)
+                torque_ratio = torch.abs(self.env.torques) / self.env.torque_limits.clamp_min(
+                    1e-6
+                )
+                time_outs = infos["time_outs"].bool()
+                episode_done = dones.bool()
+                window.record_step(
+                    episode_done=episode_done,
+                    episode_fell=episode_done & ~time_outs,
+                    upright=(gravity_error <= 0.10).float(),
+                    low_risk=(
+                        nonfoot_force
+                        <= float(self.env.config.developmental.severe_impact_force)
+                    ).float(),
+                    low_saturation=(torque_ratio < 0.95).float().mean(dim=-1),
+                    schema_accuracy=schema_accuracy,
+                    schema_valid=~episode_done,
+                )
+                observations = next_observations
+                steps += 1
+            if not window.complete:
+                raise RuntimeError("held-out competence evaluation exceeded safety bound")
+            result = window.result()
+            self.competence_evaluation_steps += result.evaluation_steps
+            return result
+        finally:
+            torch.set_rng_state(cpu_rng_state)
+            torch.cuda.set_rng_state_all(cuda_rng_state)
+            self.env.is_evaluating = False
+            self._train_mode()
+            self._needs_training_reset = True
 
     def save(self, path, infos=None):
         checkpoint_info = dict(infos or {})

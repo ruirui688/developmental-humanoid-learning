@@ -16,7 +16,9 @@ executed_action = tanh(raw_action) * joint_mask(stage) * action_range(stage)
 
 关闭残差的关节仍由 PBHC 的默认姿态 PD 控制；URDF 关节、速度和力矩硬限位保持不变。三个默认阶段依次开放受保护上肢/腰部探索、全身姿态控制和完整动作范围。策略显式观察阶段、关节掩码和动作范围，探索标准差也随阶段缩放。
 
-能力门控要求生存、竖直、低风险、低力矩饱和和 Body Schema 准确率同时超过各自阈值，并满足连续窗口、最小驻留时间和最大跌倒率。降级使用独立阈值和滞回。训练 episode 不会自动触发晋级；正式实验必须从固定未见 seed 的评估窗口构造 `CompetenceSample` 后调用 `update_competence`，防止训练重置分布污染门控判据。smoke 配置暂时关闭门控，只验证接线。
+能力门控要求生存、竖直、低风险、低力矩饱和和 Body Schema 准确率同时超过各自阈值，并满足连续窗口、最小驻留时间和最大跌倒率。降级使用独立阈值和滞回。训练 episode 不会直接触发晋级；`DevelopmentalPPO` 按固定间隔运行固定 seed 的确定性 episode bank，从该 held-out 窗口构造 `CompetenceSample` 后调用 `update_competence`，防止训练重置分布污染门控判据。评估 steps 与 PPO environment steps 分开记录，评估后 reset 再恢复训练。
+
+不使用 Body Schema 的 Adaptive A0 消融同时把 schema 权重设为 0 并禁用 schema 硬阈值；不能让未训练的随机辅助头暗中阻止阶段晋级。Full 方法保留该指标。
 
 Body Schema 使用 actor 的共享潜变量和实际执行动作预测下一步 52 维状态：23 维关节位置误差、23 维关节速度、3 维投影重力和 3 维机体角速度。终止步会被 mask，避免把 PBHC reset 后状态当作动力学后继。接触力不进入 actor；仿真接触只用于奖励、风险日志和后续接触估计器教师标签。
 
@@ -35,6 +37,8 @@ PBHC/Hydra overlay 全部保存在 `configs/pbhc/`，没有修改 `external/PBHC
 ```bash
 ./scripts/pbhc_developmental_smoke.sh maturation=dhl_direct
 ./scripts/pbhc_developmental_smoke.sh maturation=dhl_fixed_pilot
+./scripts/pbhc_developmental_smoke.sh maturation=dhl_adaptive_pilot \
+  algo.config.competence_evaluation.interval_iterations=1
 ```
 
 Direct 从第一步锁定在完整动作阶段，Fixed 按累计 environment steps 经过相同的三个阶段；两者关闭 Body Schema loss。二者仍使用同一个 `BodySchemaActor` 类以保持 actor 编码器和 action head 容量一致，未启用的辅助 head 不参与动作推理。pilot 的 Fixed 阈值只用于接线验证，正式阈值必须在共同训练预算确定后冻结。
@@ -42,6 +46,6 @@ Direct 从第一步锁定在完整动作阶段，Fixed 按累计 environment ste
 ## 尚未声称完成的部分
 
 - smoke 通过不等于策略已经收敛；尚未开始长时间训练；
-- adaptive gate 尚未连接固定 held-out evaluation callback，因此默认关闭；
+- held-out gate 已通过最小 GPU smoke，但正式 episode bank、频率与阈值尚未冻结；
 - 接触估计器以及以其验证误差参与完整方法的闭环尚未实现；
 - 固定成熟、自适应成熟和完整方法的多 seed 正式对比尚未运行。

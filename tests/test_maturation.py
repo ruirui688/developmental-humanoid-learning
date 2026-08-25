@@ -84,6 +84,33 @@ def test_rejects_invalid_metrics_and_weights():
         MaturationConfig(survival_weight=0.5)
 
 
+def test_gate_can_ablate_schema_accuracy_without_bypassing_other_metrics():
+    controller = MaturationController(
+        STAGES,
+        MaturationConfig(
+            minimum_dwell_windows=1,
+            promotion_windows=1,
+            use_schema_accuracy=False,
+            survival_weight=0.30,
+            upright_weight=0.30,
+            low_risk_weight=0.25,
+            low_saturation_weight=0.15,
+            schema_accuracy_weight=0.0,
+        ),
+    )
+    no_schema = CompetenceSample(
+        survival=0.95,
+        upright=0.95,
+        low_risk=0.95,
+        low_saturation=0.95,
+        schema_accuracy=0.0,
+        fall_rate=0.0,
+    )
+    transition = controller.observe(no_schema)
+    assert transition is not None
+    assert transition.direction == "promotion"
+
+
 def test_action_transform_masks_closed_joints_and_limits_open_joints():
     transform = MaturationTransform(
         ("left_leg", "right_leg", "waist", "arm"),

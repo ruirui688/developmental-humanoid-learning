@@ -74,6 +74,7 @@ class MaturationConfig:
     low_risk_weight: float = 0.20
     low_saturation_weight: float = 0.10
     schema_accuracy_weight: float = 0.20
+    use_schema_accuracy: bool = True
 
     def __post_init__(self) -> None:
         if not 0.0 <= self.demotion_score < self.promotion_score <= 1.0:
@@ -170,7 +171,10 @@ class MaturationController:
             and sample.upright >= cfg.promotion_upright
             and sample.low_risk >= cfg.promotion_low_risk
             and sample.low_saturation >= cfg.promotion_low_saturation
-            and sample.schema_accuracy >= cfg.promotion_schema_accuracy
+            and (
+                not cfg.use_schema_accuracy
+                or sample.schema_accuracy >= cfg.promotion_schema_accuracy
+            )
         )
         should_demote = (
             self.stage_index > 0
@@ -181,7 +185,10 @@ class MaturationController:
                 or sample.upright <= cfg.demotion_upright
                 or sample.low_risk <= cfg.demotion_low_risk
                 or sample.low_saturation <= cfg.demotion_low_saturation
-                or sample.schema_accuracy <= cfg.demotion_schema_accuracy
+                or (
+                    cfg.use_schema_accuracy
+                    and sample.schema_accuracy <= cfg.demotion_schema_accuracy
+                )
             )
         )
         self.promotion_streak = self.promotion_streak + 1 if can_promote else 0

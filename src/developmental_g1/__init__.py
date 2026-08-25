@@ -9,9 +9,12 @@ from .maturation import (
 )
 from .action_transform import MaturationTransform
 from .body_schema import BodySchemaActor
+from .evaluation import CompetenceWindow, CompetenceWindowResult
 
 __all__ = [
     "BodySchemaActor",
+    "CompetenceWindow",
+    "CompetenceWindowResult",
     "CompetenceSample",
     "MaturationConfig",
     "MaturationController",

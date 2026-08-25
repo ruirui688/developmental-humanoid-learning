@@ -56,3 +56,15 @@
 | 16,384 | 393,216 | 199,507 steps/s | 1.9709 s | 19,808 MiB |
 
 以上均为 Direct overlay、24 rollout steps、1 epoch、1 minibatch、1 iteration 的短测。16,384 相比 8,192 的吞吐提升约 17%，但峰值计算显存增加约 4.9 GiB；8,192 在 24 GiB GPU 上保留更合理余量，因此用于 pilot。该表不是方法性能结果，也不能外推到完整正式训练吞吐。
+
+## 2026-08-26：held-out competence evaluator 与 Adaptive gate smoke
+
+- 状态：最小闭环通过；尚未运行学习 pilot。
+- evaluator 定义：固定 seed、确定性 actor；episode 在任务 horizon 内无跌倒完成才计 success，非 timeout 终止计 fall；upright、无严重非足冲击、低力矩饱和与 Body Schema accuracy 按评估步汇总。
+- 预算隔离：`competence_windows.jsonl` 分别记录 `rl_environment_steps` 与 `cumulative_evaluation_steps`，评估交互不并入 PPO environment-step 预算。
+- 状态隔离：评估前保存 CPU/CUDA RNG，评估后恢复；强制 reset 后才恢复训练，避免使用评估后的陈旧 observation。
+- Direct evaluator smoke：训练 24 RL steps 后，固定评估使用 9 steps 完成 1 episode；随机初始策略跌倒，survival 0、fall rate 1。该结果只验证指标输出。
+- Adaptive A0 smoke：`maturation=dhl_adaptive_pilot`，训练 24 RL steps 后固定评估使用 15 steps 完成 1 episode；survival 0、fall rate 1，gate 未晋级。checkpoint 保存 `stage_index=0`、`windows_in_stage=1`、`last_score=0.67696`。
+- A0 公平性：关闭 Body Schema loss 后，gate 同时将 schema 权重设为 0 并禁用其硬阈值；否则随机且未训练的 schema head 会成为隐藏阻塞。Full 配置仍使用 schema accuracy。
+- CPU 验证：episode 计数、信号范围、窗口完整性和无 schema 门控消融共 18 tests passed。
+- 科研边界：1 episode smoke 不能估计成功率，也不能用于选择 gate 阈值。pilot 前仍需冻结 episode bank、评估频率、阈值和成功定义。

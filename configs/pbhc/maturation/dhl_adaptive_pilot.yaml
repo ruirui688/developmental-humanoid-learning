@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - dhl_adaptive
+
+maturation:
+  mode: adaptive
+  initial_stage: 0
+  fixed_transition_environment_steps: []
+  gate:
+    enabled: true
+    use_schema_accuracy: false
+    survival_weight: 0.30
+    upright_weight: 0.30
+    low_risk_weight: 0.25
+    low_saturation_weight: 0.15
+    schema_accuracy_weight: 0.0
+
+algo:
+  config:
+    body_schema:
+      loss_coef: 0.0
+    competence_evaluation:
+      enabled: true
+      interval_iterations: 50
+      episode_banks: 1
+      seed: 91001
