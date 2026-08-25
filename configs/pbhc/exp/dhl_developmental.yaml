@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - /algo: dhl_ppo
+  - /env: dhl_developmental
+  - /maturation: dhl_adaptive
+  - /simulator: isaacgym
+  - /terrain: terrain_locomotion_plane
+  - /obs: dhl_developmental
+  - /robot: g1/g1_23dof_lock_wrist
+  - /domain_rand: NO_domain_rand
+  - /rewards: dhl_developmental
+
+experiment_name: DHL_G1_Developmental
+project_name: developmental-humanoid-learning
+log_task_name: dhl_developmental
+
+# The shared G1 asset config contains this PBHC field, but this experiment must
+# never resolve or load it.
+robot:
+  motion:
+    motion_file: null
+
+# PBHC's nominal "NO_domain_rand" config predates this optional flag, while
+# LeggedRobotBase accesses it unconditionally.
+domain_rand:
+  use_rao: false

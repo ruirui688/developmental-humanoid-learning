@@ -1,0 +1,82 @@
+# @package _global_
+
+maturation:
+  # Disabled only for wiring smoke tests. Formal adaptive runs enable this and
+  # call update_competence with fixed held-out evaluation windows.
+  mode: locked
+  initial_stage: 0
+  fixed_transition_environment_steps: []
+  severe_impact_force: 250.0
+  target_base_height: 0.78
+  upright_sigma: 0.25
+  height_sigma: 0.04
+  stillness_sigma: 2.0
+
+  joint_groups:
+    arms:
+      - left_shoulder_pitch_joint
+      - left_shoulder_roll_joint
+      - left_shoulder_yaw_joint
+      - left_elbow_joint
+      - right_shoulder_pitch_joint
+      - right_shoulder_roll_joint
+      - right_shoulder_yaw_joint
+      - right_elbow_joint
+    waist:
+      - waist_yaw_joint
+      - waist_roll_joint
+      - waist_pitch_joint
+    hips:
+      - left_hip_pitch_joint
+      - left_hip_roll_joint
+      - left_hip_yaw_joint
+      - right_hip_pitch_joint
+      - right_hip_roll_joint
+      - right_hip_yaw_joint
+    knees:
+      - left_knee_joint
+      - right_knee_joint
+    ankles:
+      - left_ankle_pitch_joint
+      - left_ankle_roll_joint
+      - right_ankle_pitch_joint
+      - right_ankle_roll_joint
+
+  stages:
+    - name: protected_exploration
+      enabled_groups: [arms, waist]
+      action_range: 0.15
+      exploration_scale: 0.25
+    - name: postural_control
+      enabled_groups: [arms, waist, hips, knees, ankles]
+      action_range: 0.35
+      exploration_scale: 0.50
+    - name: full_body
+      enabled_groups: [arms, waist, hips, knees, ankles]
+      action_range: 1.0
+      exploration_scale: 1.0
+
+  gate:
+    enabled: false
+    promotion_score: 0.78
+    demotion_score: 0.52
+    promotion_windows: 3
+    demotion_windows: 2
+    minimum_dwell_windows: 5
+    maximum_promotion_fall_rate: 0.08
+    forced_demotion_fall_rate: 0.25
+    promotion_survival: 0.80
+    promotion_upright: 0.85
+    promotion_low_risk: 0.85
+    promotion_low_saturation: 0.90
+    promotion_schema_accuracy: 0.70
+    demotion_survival: 0.45
+    demotion_upright: 0.55
+    demotion_low_risk: 0.55
+    demotion_low_saturation: 0.60
+    demotion_schema_accuracy: 0.35
+    survival_weight: 0.25
+    upright_weight: 0.25
+    low_risk_weight: 0.20
+    low_saturation_weight: 0.10
+    schema_accuracy_weight: 0.20

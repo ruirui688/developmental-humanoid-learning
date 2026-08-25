@@ -109,6 +109,28 @@ $env:PYTHONPATH = "src"
 python -m pytest -q
 ```
 
+### PBHC + G1 仿真接入
+
+G1 阶段以 PBHC 的 HumanoidVerse、机器人资产和训练入口为上游底座，不在二维包中
+重新实现仿真环境。完成外部依赖安装后，可运行一个环境、一个 PPO iteration 的
+GPU smoke test：
+
+```bash
+bash scripts/pbhc_smoke.sh
+```
+
+固定版本、路径、许可证、已验证结果和科研边界见
+[PBHC 接入与本机复现记录](docs/PBHC_INTEGRATION.md)。
+
+自研 G1 发育式任务（无动作参考、含成熟动作约束与 Body Schema）的最小 GPU 验证：
+
+```bash
+bash scripts/pbhc_developmental_smoke.sh
+```
+
+方法边界、配置结构和当前尚未完成的实验见
+[G1 发育式任务学习说明](docs/DEVELOPMENTAL_G1_METHOD.md)。
+
 ### 复现实验
 
 ```powershell
@@ -148,6 +170,8 @@ developmental-humanoid-learning/
 │   ├── evaluate.py       # 无支撑评估与轨迹记录
 │   ├── experiment.py     # 多随机种子对照实验
 │   └── video.py          # MP4 / GIF 导出
+├── src/developmental_g1/ # PBHC G1 成熟控制、Body Schema 与算法扩展
+├── configs/pbhc/         # 不修改上游源码的 Hydra overlay
 ├── tests/                # 环境和先验单元测试
 ├── results/validation/   # 未见种子结果、图表与视频
 ├── docs/                 # 项目定位与研究路线
@@ -163,9 +187,9 @@ developmental-humanoid-learning/
 - [x] 5 个未见种子的正式验证
 - [x] 论文图表、检查点和补充视频
 - [ ] 课程 / Body Schema / 人体先验的因子消融
-- [ ] 在可用 GPU 环境中选择兼容的 Isaac Lab 和 Unitree G1 资产版本
-- [ ] 建立统一 G1 关节/刚体/action 映射并完成模型与接触 smoke test
-- [ ] Isaac Lab G1 直接 PPO 站立基线
+- [x] 在可用 GPU 环境中锁定 PBHC、Isaac Gym Preview 4 和 Unitree G1 资产
+- [x] 建立统一 G1 关节/刚体/action 映射并完成模型与接触 smoke test
+- [x] 完成无动作参考的 G1 发育式任务与 Body Schema 单次 GPU 更新
 - [ ] 固定成熟与能力门控运动成熟的公平对比
 - [ ] 使用原生传感器和特权接触标签蒸馏，不改机器人硬件
 - [ ] MuJoCo 平面双足刚体接触环境
@@ -193,6 +217,7 @@ developmental-humanoid-learning/
 - [项目优势与技术路线](docs/PROJECT_OVERVIEW.md)
 - [真实机器人发育式运动学习：研究愿景与系统设计](docs/DEVELOPMENTAL_ROBOT_VISION.md)
 - [研究讨论记录：从二维概念验证到真实机器人发育](docs/RESEARCH_DIALOGUE.md)
+- [实验与工程进展日志](docs/EXPERIMENT_LOG.md)
 - [中文论文初稿](paper/论文初稿.md)
 - [实验运行元数据](results/validation/run_metadata.json)
 - [统计分析](results/validation/statistics.json)

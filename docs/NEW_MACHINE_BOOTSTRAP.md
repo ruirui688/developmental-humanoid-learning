@@ -64,6 +64,12 @@ robot-research/
 
 ## 5. 安装 Isaac Lab 的原则
 
+> 当前本机实现说明（2026-08-26）：项目已按 PBHC 上游实际支持锁定 PBHC
+> `ffac5cde`、Isaac Gym Preview 4 与其 Unitree G1 资产，并完成双 GPU smoke。
+> 这是当前可复现的 G1 工程后端，不应称为 Isaac Lab 结果。以下 Isaac Lab 内容仍是
+> 后续迁移原则；迁移前不得把两套后端的结果放入同一公平对照表。实际记录见
+> `docs/PBHC_INTEGRATION.md` 和 `docs/EXPERIMENT_LOG.md`。
+
 1. 打开 NVIDIA Isaac Lab 官方仓库和安装文档；
 2. 根据当前驱动、操作系统和 Isaac Sim 兼容矩阵选择版本；
 3. 固定到一个精确 tag 或 commit；

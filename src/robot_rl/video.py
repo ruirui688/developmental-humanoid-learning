@@ -69,10 +69,19 @@ def _draw_frame(ax, artists, frame, trail_x, failed_latched=False):
     return artists
 
 
-def save_single(frames, mp4_path: Path, gif_path: Path | None = None, fps: int = 25):
+def save_single(
+    frames,
+    mp4_path: Path,
+    gif_path: Path | None = None,
+    fps: int = 25,
+    eval_seed: int | None = None,
+):
     fig, ax = plt.subplots(figsize=(9.6, 5.4), dpi=120)
     fig.suptitle("DHP-PPO: Idealized Independent Walking", fontsize=16, weight="bold")
-    artists = _setup_axis(ax, "Held-out seed 10 · deterministic policy · external support disabled")
+    seed_label = "held-out evaluation" if eval_seed is None else f"eval seed {eval_seed}"
+    artists = _setup_axis(
+        ax, f"{seed_label} · deterministic policy · external support disabled"
+    )
     trail_x = []
 
     def update(i):
@@ -141,7 +150,12 @@ def main():
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     dev_frames = record_rollout(load_model(args.developmental), seed=args.seed)
-    save_single(dev_frames, args.output / "developmental_walk.mp4", args.output / "developmental_walk.gif")
+    save_single(
+        dev_frames,
+        args.output / "developmental_walk.mp4",
+        args.output / "developmental_walk.gif",
+        eval_seed=args.seed,
+    )
     if args.traditional:
         trad_frames = record_rollout(load_model(args.traditional), seed=args.seed)
         save_comparison(trad_frames, dev_frames, args.output / "ppo_vs_developmental.mp4")
@@ -149,4 +163,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

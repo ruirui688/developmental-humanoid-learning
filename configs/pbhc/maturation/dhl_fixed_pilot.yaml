@@ -1,0 +1,18 @@
+# @package _global_
+
+defaults:
+  - dhl_adaptive
+
+maturation:
+  mode: fixed
+  initial_stage: 0
+  # Pilot-only schedule. Formal thresholds must be frozen with the final common
+  # training budget before multi-seed experiments start.
+  fixed_transition_environment_steps: [32768, 65536]
+  gate:
+    enabled: false
+
+algo:
+  config:
+    body_schema:
+      loss_coef: 0.0

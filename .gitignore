@@ -13,6 +13,9 @@ htmlcov/
 .venv/
 venv/
 env/
+# PBHC Hydra's configuration group is named "env" and is source code.
+!configs/pbhc/env/
+!configs/pbhc/env/*.yaml
 .env
 .env.*
 *.local

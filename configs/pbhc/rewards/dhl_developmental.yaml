@@ -1,0 +1,65 @@
+# @package _global_
+
+rewards:
+  set_reward: DHLReferenceFreePosture
+  set_reward_date: 20260826
+  only_positive_rewards: false
+  reward_scales:
+    developmental_upright: 2.0
+    developmental_height: 1.0
+    developmental_stillness: 0.5
+    developmental_double_support: 0.5
+    alive: 0.2
+    developmental_nonfoot_impact: -1.0
+    penalty_torques: -0.000001
+    penalty_action_rate: -0.05
+    penalty_slippage: -0.2
+    limits_dof_pos: -5.0
+    limits_dof_vel: -1.0
+    limits_torque: -1.0
+    termination: -20.0
+
+  reward_penalty_curriculum: false
+  reward_initial_penalty_scale: 1.0
+  reward_min_penalty_scale: 1.0
+  reward_max_penalty_scale: 1.0
+  reward_penalty_level_down_threshold: 0
+  reward_penalty_level_up_threshold: 1000
+  reward_penalty_degree: 0.0
+  num_compute_average_epl: 10000
+
+  reward_limit:
+    soft_dof_pos_limit: 0.90
+    soft_dof_vel_limit: 0.90
+    soft_torque_limit: 0.85
+    reward_limits_curriculum:
+      soft_dof_pos_curriculum: false
+      soft_dof_pos_initial_limit: 0.90
+      soft_dof_pos_max_limit: 0.90
+      soft_dof_pos_min_limit: 0.90
+      soft_dof_pos_curriculum_degree: 0.0
+      soft_dof_pos_curriculum_level_down_threshold: 0
+      soft_dof_pos_curriculum_level_up_threshold: 1000
+      soft_dof_vel_curriculum: false
+      soft_dof_vel_initial_limit: 0.90
+      soft_dof_vel_max_limit: 0.90
+      soft_dof_vel_min_limit: 0.90
+      soft_dof_vel_curriculum_degree: 0.0
+      soft_dof_vel_curriculum_level_down_threshold: 0
+      soft_dof_vel_curriculum_level_up_threshold: 1000
+      soft_torque_curriculum: false
+      soft_torque_initial_limit: 0.85
+      soft_torque_max_limit: 0.85
+      soft_torque_min_limit: 0.85
+      soft_torque_curriculum_degree: 0.0
+      soft_torque_curriculum_level_down_threshold: 0
+      soft_torque_curriculum_level_up_threshold: 1000
+
+  reward_penalty_reward_names:
+    - developmental_nonfoot_impact
+    - penalty_torques
+    - penalty_action_rate
+    - penalty_slippage
+    - limits_dof_pos
+    - limits_dof_vel
+    - limits_torque

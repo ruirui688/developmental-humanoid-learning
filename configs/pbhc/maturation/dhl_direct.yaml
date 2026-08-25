@@ -1,0 +1,18 @@
+# @package _global_
+
+defaults:
+  - dhl_adaptive
+
+maturation:
+  # Direct PPO uses the identical action transform and network, but exposes the
+  # complete residual action space from the first environment step.
+  mode: locked
+  initial_stage: 2
+  fixed_transition_environment_steps: []
+  gate:
+    enabled: false
+
+algo:
+  config:
+    body_schema:
+      loss_coef: 0.0

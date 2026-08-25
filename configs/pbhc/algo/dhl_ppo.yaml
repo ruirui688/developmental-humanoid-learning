@@ -1,0 +1,16 @@
+# @package _global_
+
+defaults:
+  - mh_ppo
+
+algo:
+  _target_: developmental_g1.pbhc_algo.DevelopmentalPPO
+  config:
+    body_schema:
+      loss_coef: 0.2
+      target_dim: 52
+      hidden_dim: 128
+      # q error (23), qdot (23), projected gravity (3), angular velocity (3)
+      target_scale: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                     0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05,
+                     1, 1, 1, 0.25, 0.25, 0.25]

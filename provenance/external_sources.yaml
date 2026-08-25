@@ -1,0 +1,37 @@
+sources:
+  - name: PBHC
+    type: source_code
+    official_url: https://github.com/TeleHuman/PBHC.git
+    revision: ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0
+    retrieved_at: 2026-08-25
+    license: CC-BY-NC-4.0
+    local_path: external/PBHC
+    transformations: []
+    used_by_groups:
+      - shared_simulation_and_robot_environment
+      - motion_imitation_strong_baseline
+    notes: >-
+      The repository LICENSE and README specify CC BY-NC 4.0, while setup.py
+      says MIT. Treat the repository-level CC BY-NC 4.0 terms as controlling
+      unless the upstream authors clarify the discrepancy. PBHC motion files
+      and pretrained checkpoints are extra task priors, not shared environment
+      information. Canonical G1 asset checksums at this revision: URDF
+      3ed3fc32b66e6389667f780726cdb9ee044e2d579638347a1612d130c26ae546;
+      MuJoCo XML
+      9af12a57f88f0bcf1eeab485046165080f0ad58141fd2266cbef4ad9f7c5274f.
+
+  - name: NVIDIA Isaac Gym Preview 4
+    type: simulator
+    official_url: https://developer.nvidia.com/isaac-gym-preview-4
+    revision: 1.0.preview4
+    retrieved_at: 2026-08-25
+    license: NVIDIA proprietary Isaac Gym license
+    sha256: c51d77ac1144b91b356f439c7313d8d59468147e37187ebffe7cdbc3154fdb8f
+    local_path: external/isaacgym
+    transformations: []
+    used_by_groups:
+      - shared_simulation_and_robot_environment
+    notes: >-
+      Installed because it is PBHC's documented training backend. The project
+      may later use another backend already supported by PBHC, but must keep the
+      backend fixed across compared experiment groups.

@@ -1,0 +1,42 @@
+# @package _global_
+
+defaults:
+  - base_task
+
+env:
+  _target_: developmental_g1.pbhc_env.DevelopmentalG1Env
+  _recursive_: false
+  config:
+    robot: ${robot}
+    domain_rand: ${domain_rand}
+    rewards: ${rewards}
+    terrain: ${terrain}
+    obs: ${obs}
+    developmental: ${maturation}
+    env_spacing: 5.0
+    max_episode_length_s: 20.0
+    use_vec_reward: false
+
+    normalization:
+      clip_actions: 100.0
+      clip_observations: 100.0
+
+    termination:
+      terminate_by_contact: true
+      terminate_by_gravity: true
+      terminate_by_low_height: true
+      terminate_when_close_to_dof_pos_limit: false
+      terminate_when_close_to_dof_vel_limit: false
+      terminate_when_close_to_torque_limit: false
+    termination_scales:
+      termination_min_base_height: 0.35
+      termination_gravity: 0.75
+      termination_close_to_dof_pos_limit: 0.98
+      termination_close_to_dof_vel_limit: 0.98
+      termination_close_to_torque_limit: 0.98
+    termination_probality:
+      terminate_when_close_to_dof_pos_limit: 0.25
+      terminate_when_close_to_dof_vel_limit: 0.25
+      terminate_when_close_to_torque_limit: 0.25
+
+log_task_name: dhl_developmental
