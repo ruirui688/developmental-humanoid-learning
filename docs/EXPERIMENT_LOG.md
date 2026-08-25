@@ -74,3 +74,18 @@
 - 检查发现 Fixed maturation 原先读取环境内部总仿真步数，held-out evaluator 也会推进该计数，从而让评估预算错误地加速 Fixed 阶段切换。
 - 现改为独立的 `maturation_schedule_environment_steps`：仅训练 rollout 递增，evaluation 期间暂停；计数随 maturation checkpoint 状态保存和恢复。
 - 因此 Fixed 阈值、Adaptive 评估频率与论文横轴都以 PPO RL environment steps 为准，held-out evaluation steps 单独报告。
+
+## 2026-08-26：三组单 seed 短 pilot 与默认姿态诊断
+
+- 共同设置：1,024 env、30 iterations、737,280 RL steps、seed 1；每 5 iterations 用 1,024 个固定评估 episodes。Fixed 临时阈值为 245,760 和 491,520 RL steps。
+- Direct：6/6 窗口 survival 0、fall rate 1；episode bank 通常在约 2–8 仿真步内全部终止。
+- Fixed：6/6 窗口 survival 0、fall rate 1；保护阶段约 41–55 步，强制开放完整动作后降到约 2–4 步。
+- Adaptive A0：6/6 窗口 survival 0、fall rate 1；保持 stage 0，没有不成熟晋级；保护阶段约 34–57 步。最终 checkpoint 为 `stage_index=0`、`windows_in_stage=6`、`schedule_environment_steps=737280`。
+- 近零 residual 诊断仍为 survival 0、fall rate 1，episode bank 平均约 43 步终止。这说明短 pilot 的共同失败不能只归因于随机策略 action。
+- 随后发现项目继承的 PBHC reset 会把每个关节初始化为默认角度的 0.5–1.5 倍。此前三组因此只标记为随机 reset 诊断，不作方法优劣结论。
+- 修正：站立 MVP 将 `reset_dof_scale_range` 显式设为 `[1.0, 1.0]`，先验证 canonical pose 与默认 PD。随机初态范围将在基线成立后作为独立难度/鲁棒性条件预注册。
+- canonical pose + 近零 residual 仍在约 50 steps 后全部跌倒，证明默认 PD 不是可独立维持的站立控制器。
+- 由此发现阶段 0 的设计死锁：只开放手臂/腰，却要求 survival/upright 晋级；策略没有腿部控制权来学会满足门槛。
+- 修正：站立 MVP 三阶段均开放髋、膝、踝、腰和手臂；保护阶段只限制 residual range=0.15、exploration scale=0.25，随后增至 0.35/0.50 和 1.0/1.0。逐关节开放推迟到具备外部支撑或稳定低层控制后的独立消融。
+- 修正后的 Adaptive A0 再跑 737,280 RL steps：仍为 survival 0，但固定 episode bank 的完成长度提高到约 76–78 steps，gate 保持 stage 0。这说明解除控制死锁改善了短时存活，尚未达到 20 秒成功标准。
+- 下一项 No-Go：当前 gate 初始阶段直接要求完整 1,000-step/20-second episode，且 pooled episode 计数可能让快速失败环境重复贡献。正式 pilot 前将改为每个 reset 每个 bank 只计一次，并预注册 stage 0/1/2 的 50/200/1000-step gate horizon；最终方法比较仍统一使用 1,000-step horizon。

@@ -14,7 +14,7 @@
 executed_action = tanh(raw_action) * joint_mask(stage) * action_range(stage)
 ```
 
-关闭残差的关节仍由 PBHC 的默认姿态 PD 控制；URDF 关节、速度和力矩硬限位保持不变。三个默认阶段依次开放受保护上肢/腰部探索、全身姿态控制和完整动作范围。策略显式观察阶段、关节掩码和动作范围，探索标准差也随阶段缩放。
+关闭残差的关节仍由 PBHC 的默认姿态 PD 控制；URDF 关节、速度和力矩硬限位保持不变。站立 MVP 的三个默认阶段都允许策略控制全身姿态，但 residual range / exploration scale 依次为 0.15/0.25、0.35/0.50 和 1.0/1.0。策略显式观察阶段、关节掩码和动作范围。早期仅开放手臂/腰的版本形成了能力门控死锁：默认腿部 PD 不能独立站稳，而策略又无法控制腿部来满足 survival 晋级条件，因此已在 pilot 中否决。逐关节开放只有在后续加入外部支撑或可证明稳定的低层姿态控制后才重新作为独立消融。
 
 能力门控要求生存、竖直、低风险、低力矩饱和和 Body Schema 准确率同时超过各自阈值，并满足连续窗口、最小驻留时间和最大跌倒率。降级使用独立阈值和滞回。训练 episode 不会直接触发晋级；`DevelopmentalPPO` 按固定间隔运行固定 seed 的确定性 episode bank，从该 held-out 窗口构造 `CompetenceSample` 后调用 `update_competence`，防止训练重置分布污染门控判据。评估 steps 与 PPO environment steps 分开记录，评估后 reset 再恢复训练。
 

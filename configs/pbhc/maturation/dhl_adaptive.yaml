@@ -6,6 +6,9 @@ maturation:
   mode: locked
   initial_stage: 0
   fixed_transition_environment_steps: []
+  # Standing MVP starts from the canonical pose. Reset perturbations are a
+  # separate difficulty/robustness condition, not an implicit task default.
+  reset_dof_scale_range: [1.0, 1.0]
   severe_impact_force: 250.0
   target_base_height: 0.78
   upright_sigma: 0.25
@@ -44,7 +47,9 @@ maturation:
 
   stages:
     - name: protected_exploration
-      enabled_groups: [arms, waist]
+      # Standing cannot be learned if every leg residual is closed while the
+      # gate requires survival. Protection comes from low range/noise here.
+      enabled_groups: [arms, waist, hips, knees, ankles]
       action_range: 0.15
       exploration_scale: 0.25
     - name: postural_control

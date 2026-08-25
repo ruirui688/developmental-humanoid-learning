@@ -87,6 +87,10 @@ class DevelopmentalG1Env(LeggedRobotBase):
                 for group, names in developmental.joint_groups.items()
             },
         )
+        reset_range = tuple(float(value) for value in developmental.reset_dof_scale_range)
+        if len(reset_range) != 2 or not 0.0 < reset_range[0] <= reset_range[1]:
+            raise ValueError("reset_dof_scale_range must be two positive ordered values")
+        self.reset_dof_scale_range = reset_range
         self.raw_policy_actions = torch.zeros_like(self.actions)
         self._refresh_maturation_parameters()
 
@@ -108,7 +112,7 @@ class DevelopmentalG1Env(LeggedRobotBase):
         else:
             scale = torch.empty(
                 (len(env_ids), self.num_dof), device=self.device
-            ).uniform_(0.5, 1.5)
+            ).uniform_(*self.reset_dof_scale_range)
             self.simulator.dof_pos[env_ids] = self.default_dof_pos[env_ids] * scale
             self.simulator.dof_vel[env_ids] = 0.0
 
