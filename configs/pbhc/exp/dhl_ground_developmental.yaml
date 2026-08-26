@@ -1,0 +1,43 @@
+# @package _global_
+
+defaults:
+  - dhl_developmental
+  - override /maturation: dhl_ground_adaptive
+  - override /obs: dhl_ground_developmental
+  - override /rewards: dhl_ground_developmental
+
+experiment_name: DHL_G1_Ground_Development
+project_name: developmental-humanoid-learning
+log_task_name: dhl_ground_developmental
+
+env:
+  config:
+    # Ground contact is valid. Common fixed horizons charge every method for
+    # failed attempts instead of granting free early resets.
+    max_episode_length_s: 20.0
+
+# The standing task's 0.25-rad residual scale only permits about 5 degrees in
+# ground stage 0 and cannot express bracing/get-up geometry. Ground-start
+# groups share this wider scale; simulator joint, velocity, and torque limits
+# remain enforced, while maturation still bounds early authority to 0.35.
+robot:
+  control:
+    action_scale: 1.0
+
+algo:
+  config:
+    # Thousands of parallel ground attempts already provide broad state
+    # diversity. Keeping Gaussian action noise at 0.5 made training events
+    # depend on luck while the deterministic held-out policy forgot skills.
+    # Retain exploration, but require discoveries to consolidate into the mean.
+    entropy_coef: 0.001
+    max_noise_std: 0.25
+    # Adaptive-KL repeatedly raised a nominal 1e-5 consolidation rate and
+    # erased a mastered reset pose within one 5M-step window.
+    schedule: fixed
+    policy_consolidation:
+      enabled: true
+      retention_rate: 0.30
+      # Strongly retain the four-pose rolling/bracing repertoire, then relax
+      # the anchor as genuinely new rise and balance motions must be acquired.
+      retention_rate_by_stage: [0.30, 0.30, 0.05, 0.05, 0.02]

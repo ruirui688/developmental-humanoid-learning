@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - dhl_ground_adaptive
+
+maturation:
+  # Same floor resets, but full control and final standing objective from step 1.
+  mode: locked
+  initial_stage: 4
+  fixed_transition_environment_steps: []
+  gate:
+    enabled: false
+  capability_frontier:
+    enabled: false
+
+algo:
+  config:
+    body_schema:
+      loss_coef: 0.0
+    competence_evaluation:
+      enabled: false

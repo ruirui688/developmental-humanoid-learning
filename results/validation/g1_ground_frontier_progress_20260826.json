@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "description": "Development-only G1 supported-rise height-frontier records plotted in the paper.",
+  "source_logs": [
+    "external/PBHC/logs/DHL_Ground_Pilot/20260826_181250-phase2_action_authority_072-dhl_ground_developmental-g1_23dof_lock_wrist/competence_windows.jsonl",
+    "external/PBHC/logs/DHL_Ground_Pilot/20260826_181633-phase2_height_frontier_continuation-dhl_ground_developmental-g1_23dof_lock_wrist/competence_windows.jsonl",
+    "external/PBHC/logs/DHL_Ground_Pilot/20260826_182220-phase2_subgoal_hard_pose_rehearsal-dhl_ground_developmental-g1_23dof_lock_wrist/competence_windows.jsonl",
+    "external/PBHC/logs/DHL_Ground_Pilot/20260826_182602-phase2_earlier_bounded_caregiver_support-dhl_ground_developmental-g1_23dof_lock_wrist/competence_windows.jsonl",
+    "external/PBHC/logs/DHL_Ground_Pilot/20260826_183706-phase2_safe_authority_more_caregiver-dhl_ground_developmental-g1_23dof_lock_wrist/competence_windows.jsonl",
+    "external/PBHC/logs/DHL_Ground_Pilot/20260826_203727-phase2_continuation_from1400-dhl_ground_developmental-g1_23dof_lock_wrist/competence_windows.jsonl",
+    "external/PBHC/logs/DHL_Ground_Pilot/20260826_205022-phase2_more_bounded_support_v1-dhl_ground_developmental-g1_23dof_lock_wrist/competence_windows.jsonl"
+  ],
+  "records": [
+    {
+      "training_iteration": 1080,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.2,
+        "frontier_conservative_height_quantile": 0.25752583146095276,
+        "frontier_conservative_height_target_success_fraction": 0.8813976049423218,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 119.28565979003906
+      }
+    },
+    {
+      "training_iteration": 1090,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.2,
+        "frontier_conservative_height_quantile": 0.2612086534500122,
+        "frontier_conservative_height_target_success_fraction": 0.8789370059967041,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 129.3435821533203
+      }
+    },
+    {
+      "training_iteration": 1100,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.23,
+        "frontier_conservative_height_quantile": 0.26275569200515747,
+        "frontier_conservative_height_target_success_fraction": 0.7322834730148315,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 135.97976684570312
+      }
+    },
+    {
+      "training_iteration": 1110,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.23,
+        "frontier_conservative_height_quantile": 0.2650294005870819,
+        "frontier_conservative_height_target_success_fraction": 0.7957677245140076,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 145.11473083496094
+      }
+    },
+    {
+      "training_iteration": 1120,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.23,
+        "frontier_conservative_height_quantile": 0.2675265073776245,
+        "frontier_conservative_height_target_success_fraction": 0.7303149700164795,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 152.54681396484375
+      }
+    },
+    {
+      "training_iteration": 1130,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.26,
+        "frontier_conservative_height_quantile": 0.27013862133026123,
+        "frontier_conservative_height_target_success_fraction": 0.8262795209884644,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 156.38705444335938
+      }
+    },
+    {
+      "training_iteration": 1140,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.26,
+        "frontier_conservative_height_quantile": 0.2722625434398651,
+        "frontier_conservative_height_target_success_fraction": 0.6407480239868164,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 162.66592407226562
+      }
+    },
+    {
+      "training_iteration": 1150,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.26,
+        "frontier_conservative_height_quantile": 0.2746204435825348,
+        "frontier_conservative_height_target_success_fraction": 0.712598443031311,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 168.0684814453125
+      }
+    },
+    {
+      "training_iteration": 1160,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.27615875005722046,
+        "frontier_conservative_height_target_success_fraction": 0.6958661675453186,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 169.43348693847656
+      }
+    },
+    {
+      "training_iteration": 1170,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.27617669105529785,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 165.50473022460938
+      }
+    },
+    {
+      "training_iteration": 1180,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.2768559753894806,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 173.23779296875
+      }
+    },
+    {
+      "training_iteration": 1190,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.27688753604888916,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 171.9246826171875
+      }
+    },
+    {
+      "training_iteration": 1200,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.276845782995224,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 169.89915466308594
+      }
+    },
+    {
+      "training_iteration": 1210,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.2773759961128235,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 171.33749389648438
+      }
+    },
+    {
+      "training_iteration": 1220,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.2765040993690491,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 168.66046142578125
+      }
+    },
+    {
+      "training_iteration": 1230,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.2770068645477295,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 170.27532958984375
+      }
+    },
+    {
+      "training_iteration": 1240,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.2766229808330536,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 172.31585693359375
+      }
+    },
+    {
+      "training_iteration": 1250,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.2765692472457886,
+        "frontier_conservative_height_target_success_fraction": 0.0004612546181306243,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 175.76551818847656
+      }
+    },
+    {
+      "training_iteration": 1260,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.276350736618042,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 175.48611450195312
+      }
+    },
+    {
+      "training_iteration": 1270,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.29565179347991943,
+        "frontier_conservative_height_target_success_fraction": 0.5565944910049438,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 388.3798828125
+      }
+    },
+    {
+      "training_iteration": 1280,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.29000000000000004,
+        "frontier_conservative_height_quantile": 0.2962363660335541,
+        "frontier_conservative_height_target_success_fraction": 0.5157480239868164,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 385.3614501953125
+      }
+    },
+    {
+      "training_iteration": 1290,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.29634883999824524,
+        "frontier_conservative_height_target_success_fraction": 0.44340550899505615,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 382.100341796875
+      }
+    },
+    {
+      "training_iteration": 1300,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.296169251203537,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 396.2142028808594
+      }
+    },
+    {
+      "training_iteration": 1310,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.2966398298740387,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 393.5351867675781
+      }
+    },
+    {
+      "training_iteration": 1320,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.29641932249069214,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 396.9190979003906
+      }
+    },
+    {
+      "training_iteration": 1330,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.29686564207077026,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 403.5345153808594
+      }
+    },
+    {
+      "training_iteration": 1340,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.2967830300331116,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 406.19720458984375
+      }
+    },
+    {
+      "training_iteration": 1350,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.29683417081832886,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 403.43414306640625
+      }
+    },
+    {
+      "training_iteration": 1360,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.2968553900718689,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 406.2373962402344
+      }
+    },
+    {
+      "training_iteration": 1370,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.3071143627166748,
+        "frontier_conservative_height_target_success_fraction": 0.0,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 501.4547424316406
+      }
+    },
+    {
+      "training_iteration": 1380,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.30739453434944153,
+        "frontier_conservative_height_target_success_fraction": 0.0004612546181306243,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 525.1343994140625
+      }
+    },
+    {
+      "training_iteration": 1390,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.3078487813472748,
+        "frontier_conservative_height_target_success_fraction": 0.0013837638543918729,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 516.902099609375
+      }
+    },
+    {
+      "training_iteration": 1400,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.30810779333114624,
+        "frontier_conservative_height_target_success_fraction": 0.0004612546181306243,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 534.0382080078125
+      }
+    },
+    {
+      "training_iteration": 1410,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.3077749013900757,
+        "frontier_conservative_height_target_success_fraction": 0.0023062732070684433,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 555.5504760742188
+      }
+    },
+    {
+      "training_iteration": 1420,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.3080998361110687,
+        "frontier_conservative_height_target_success_fraction": 0.0009225092362612486,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 535.0703125
+      }
+    },
+    {
+      "training_iteration": 1430,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.30788102746009827,
+        "frontier_conservative_height_target_success_fraction": 0.0023062732070684433,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 531.6293334960938
+      }
+    },
+    {
+      "training_iteration": 1440,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.30766981840133667,
+        "frontier_conservative_height_target_success_fraction": 0.0018450184725224972,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 546.9609375
+      }
+    },
+    {
+      "training_iteration": 1450,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.3070983290672302,
+        "frontier_conservative_height_target_success_fraction": 0.0009225092362612486,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 569.900146484375
+      }
+    },
+    {
+      "training_iteration": 1460,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.30704572796821594,
+        "frontier_conservative_height_target_success_fraction": 0.0032287822104990482,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 571.3536376953125
+      }
+    },
+    {
+      "training_iteration": 1470,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.30693408846855164,
+        "frontier_conservative_height_target_success_fraction": 0.0041512916795909405,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 583.5502319335938
+      }
+    },
+    {
+      "training_iteration": 1480,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.3064029812812805,
+        "frontier_conservative_height_target_success_fraction": 0.0032287822104990482,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 578.9697875976562
+      }
+    },
+    {
+      "training_iteration": 1490,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.30631527304649353,
+        "frontier_conservative_height_target_success_fraction": 0.0027675277087837458,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 556.6456298828125
+      }
+    },
+    {
+      "training_iteration": 1500,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.30622372031211853,
+        "frontier_conservative_height_target_success_fraction": 0.0041512916795909405,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 568.0501708984375
+      }
+    },
+    {
+      "training_iteration": 1510,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.3259209394454956,
+        "frontier_conservative_height_target_success_fraction": 0.40452030301094055,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 678.4161376953125
+      }
+    },
+    {
+      "training_iteration": 1520,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.324734628200531,
+        "frontier_conservative_height_target_success_fraction": 0.37084871530532837,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 679.08349609375
+      }
+    },
+    {
+      "training_iteration": 1530,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.3237839937210083,
+        "frontier_conservative_height_target_success_fraction": 0.3500922620296478,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 660.5638427734375
+      }
+    },
+    {
+      "training_iteration": 1540,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.32244670391082764,
+        "frontier_conservative_height_target_success_fraction": 0.2970479726791382,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 661.473388671875
+      }
+    },
+    {
+      "training_iteration": 1550,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.32200464606285095,
+        "frontier_conservative_height_target_success_fraction": 0.276752769947052,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 674.724609375
+      }
+    },
+    {
+      "training_iteration": 1560,
+      "diagnostics": {
+        "rise_frontier_height_target": 0.32000000000000006,
+        "frontier_conservative_height_quantile": 0.32139167189598083,
+        "frontier_conservative_height_target_success_fraction": 0.263376384973526,
+        "event_raised_conservative_fraction": 0.0,
+        "assistance_mean_impulse_ns": 700.3194580078125
+      }
+    }
+  ]
+}

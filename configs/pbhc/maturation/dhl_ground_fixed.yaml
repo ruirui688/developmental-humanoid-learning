@@ -1,0 +1,19 @@
+# @package _global_
+
+defaults:
+  - dhl_ground_adaptive
+
+maturation:
+  mode: fixed
+  initial_stage: 0
+  # Pilot schedule only; formal values must be frozen before comparison seeds.
+  fixed_transition_environment_steps: [20000000, 60000000, 140000000, 260000000]
+  gate:
+    enabled: false
+  capability_frontier:
+    enabled: false
+
+algo:
+  config:
+    competence_evaluation:
+      enabled: false

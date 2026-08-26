@@ -1,0 +1,184 @@
+# @package _global_
+
+defaults:
+  - dhl_adaptive
+
+maturation:
+  mode: adaptive
+  initial_stage: 0
+  fixed_transition_environment_steps: []
+  reset_dof_scale_range: [1.0, 1.0]
+  reset_root_velocity_range: [-0.02, 0.02]
+  action_smoothing_alpha: 0.30
+  # The 31.693 kg G1 asset weighs 310.9 N. The inherited 250 N standing
+  # threshold mislabeled ordinary single-body ground support as a severe
+  # impact. Ground development uses approximately 2.1 body weights while
+  # retaining the lower 220 N comfort/load-shaping threshold below.
+  severe_impact_force: 650.0
+
+  # Every episode starts on the floor. No get-up trajectory, teacher policy,
+  # motion file, or pretrained task checkpoint is loaded.
+  stages:
+    - name: ground_body_schema
+      enabled_groups: [arms, waist, hips, knees]
+      action_range: 0.25
+      exploration_scale: 0.20
+    - name: rolling_and_bracing
+      enabled_groups: [arms, waist, hips, knees, ankles]
+      action_range: 0.55
+      exploration_scale: 0.30
+    - name: supported_rise
+      enabled_groups: [arms, waist, hips, knees, ankles]
+      action_range: 0.72
+      exploration_scale: 0.30
+    - name: crouch_balance
+      enabled_groups: [arms, waist, hips, knees, ankles]
+      action_range: 0.90
+      exploration_scale: 0.45
+    - name: independent_standing
+      enabled_groups: [arms, waist, hips, knees, ankles]
+      action_range: 1.00
+      exploration_scale: 0.40
+
+  ground_curriculum:
+    enabled: true
+    reset_joint_noise: 0.04
+    reset_xy_jitter: 0.10
+    height_scale: 0.06
+    upright_sigma: 0.20
+    joint_speed_sigma: 0.08
+    # Stage 2 expands this target from held-out weakest-pose competence by
+    # 3 cm at a time; the external raised-event gate remains fixed at 0.45 m.
+    rise_initial_target: 0.20
+    rise_required_success_fraction: 0.40
+    safe_support_force: 220.0
+    # 4 rad/s is ample for a 60-degree roll within the 0.5 s event window;
+    # faster spinning is treated as a risky shortcut rather than competence.
+    safe_roll_angular_speed: 4.0
+    reset_poses:
+      - name: supine
+        root_pos: [0.0, 0.0, 0.12]
+        root_rot: [0.0, 0.70710678, 0.0, 0.70710678]
+        joint_angles: {}
+      - name: prone
+        root_pos: [0.0, 0.0, 0.12]
+        root_rot: [0.0, -0.70710678, 0.0, 0.70710678]
+        joint_angles: {}
+      - name: left_side
+        root_pos: [0.0, 0.0, 0.12]
+        root_rot: [0.70710678, 0.0, 0.0, 0.70710678]
+        joint_angles: {}
+      - name: right_side
+        root_pos: [0.0, 0.0, 0.12]
+        root_rot: [-0.70710678, 0.0, 0.0, 0.70710678]
+        joint_angles: {}
+    stage_goals:
+      - {base_height: 0.28, upright_weight: 0.00, exploration_weight: 0.50, joint_speed: 0.25}
+      - {base_height: 0.38, upright_weight: 0.10, exploration_weight: 0.30, joint_speed: 0.30}
+      - {base_height: 0.50, upright_weight: 0.30, exploration_weight: 0.15, joint_speed: 0.22}
+      - {base_height: 0.68, upright_weight: 0.65, exploration_weight: 0.05, joint_speed: 0.12}
+      - {base_height: 0.76, upright_weight: 0.85, exploration_weight: 0.00, joint_speed: 0.05}
+
+  # Like a caregiver, support engages only after the robot has begun to rise.
+  # It never commands joints and is completely removed for final standing.
+  assistance:
+    enabled: true
+    body_name: pelvis
+    fraction_by_stage: [0.00, 0.20, 0.65, 0.30, 0.00]
+    max_upward_force: 180.0
+    max_horizontal_force: 60.0
+    horizontal_stiffness: 80.0
+    horizontal_damping: 25.0
+    # A previous 0.32 m onset sat above the conservative 0.23 m capability and
+    # created an unreachable assistance cliff. Support now ramps only after a
+    # genuine 0.06 m self-initiated rise and remains partial at the event goal.
+    activation_height: 0.18
+    # Reach the same bounded unloading earlier; the force ceiling is unchanged
+    # and remains far below body weight. This helps the weak supine transition
+    # rather than withholding most caregiver support until the event is done.
+    full_support_height: 0.32
+
+  # Evaluation-only sustained events. At 50 Hz, independent standing requires
+  # the full 20 s episode with two feet, low motion, and exactly zero support.
+  developmental_events:
+    enabled: true
+    roll_angle_rad: 1.0472
+    bracing_min_orientation_change_rad: 0.3491
+    rolling_min_height: 0.11
+    # Bracing is a ground skill. A 0.25 m pelvis requirement made it an
+    # accidental rising test; the separate raised event remains at 0.45 m.
+    bracing_min_height: 0.11
+    raised_height: 0.45
+    standing_height: 0.72
+    standing_upright_score: 0.95
+    standing_max_speed: 0.20
+    support_contact_count: 2
+    support_body_names: [left_elbow_link, right_elbow_link, left_ankle_roll_link, right_ankle_roll_link]
+    foot_contact_count: 2
+    roll_steps: 25
+    brace_steps: 25
+    raised_steps: 25
+    upright_steps: 50
+    independent_standing_steps: 1000
+
+  capability_frontier:
+    enabled: true
+    floor_height: 0.08
+    final_height: 0.76
+    initial_upright_score: 0.00
+    final_upright_score: 0.95
+    height_margin: 0.03
+    upright_margin: 0.04
+    required_success_fraction: 0.70
+    required_safe_fraction: 0.90
+    maximum_saturation_fraction: 0.10
+    required_schema_accuracy: 0.60
+    confirmation_windows: 3
+
+  # Each phase asks only for the capability currently being learned. Later
+  # outcomes cannot substitute for missing body-schema or rolling evidence.
+  phase_gate:
+    enabled: true
+    metric_names: [schema_accuracy, rolling_and_bracing, raised, upright, independent_standing]
+    metric_thresholds: [0.10, 0.50, 0.50, 0.70, 1.00]
+    required_safe_fraction: 0.90
+    required_low_saturation_fraction: 0.90
+    confirmation_windows: 3
+
+  gate:
+    enabled: true
+    promotion_score: 0.76
+    demotion_score: 0.45
+    promotion_windows: 3
+    demotion_windows: 2
+    minimum_dwell_windows: 5
+    maximum_promotion_fall_rate: 0.08
+    forced_demotion_fall_rate: 0.50
+    promotion_survival: 0.95
+    promotion_upright: 0.72
+    promotion_low_risk: 0.85
+    promotion_low_saturation: 0.90
+    promotion_schema_accuracy: 0.65
+    demotion_survival: 0.70
+    demotion_upright: 0.35
+    demotion_low_risk: 0.55
+    demotion_low_saturation: 0.60
+    demotion_schema_accuracy: 0.30
+    survival_weight: 0.15
+    upright_weight: 0.35
+    low_risk_weight: 0.20
+    low_saturation_weight: 0.10
+    schema_accuracy_weight: 0.20
+    use_schema_accuracy: true
+
+algo:
+  config:
+    body_schema:
+      loss_coef: 1.0
+      learning_rate: 0.001
+    competence_evaluation:
+      enabled: true
+      interval_iterations: 50
+      episode_banks: 1
+      seed: 94001
+      horizon_steps_by_stage: [100, 200, 400, 700, 1000]

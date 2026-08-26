@@ -15,7 +15,10 @@ def test_body_schema_actor_shapes_and_shared_encoder_gradient():
     )
     observations = torch.randn(5, 12)
     executed_actions = torch.randn(5, 4)
-    prediction = actor.predict_body_schema(observations, executed_actions)
+    current_schema = torch.randn(5, 7)
+    prediction = actor.predict_body_schema(
+        observations, executed_actions, current_schema
+    )
     assert prediction.shape == (5, 7)
     prediction.square().mean().backward()
     assert actor.encoder[0].weight.grad is not None

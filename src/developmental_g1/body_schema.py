@@ -72,9 +72,19 @@ class BodySchemaActor(nn.Module):
         return self.action_head(self.latent(actor_obs))
 
     def predict_body_schema(
-        self, actor_obs: torch.Tensor, executed_actions: torch.Tensor
+        self,
+        actor_obs: torch.Tensor,
+        executed_actions: torch.Tensor,
+        current_body_schema: torch.Tensor,
     ) -> torch.Tensor:
-        return self.schema_head(torch.cat((self.latent(actor_obs), executed_actions), dim=-1))
+        predicted_delta = self.schema_head(
+            torch.cat((self.latent(actor_obs), executed_actions), dim=-1)
+        )
+        if predicted_delta.shape != current_body_schema.shape:
+            raise ValueError("current body schema must match predicted delta shape")
+        # Zero delta is exactly the persistence baseline. Predictive skill can
+        # only come from learning action-conditioned state changes.
+        return current_body_schema + predicted_delta
 
     def reset(self, dones=None) -> None:
         del dones

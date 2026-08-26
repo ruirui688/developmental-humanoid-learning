@@ -1,0 +1,62 @@
+# @package _global_
+
+defaults:
+  - dhl_developmental
+
+obs:
+  obs_auxiliary:
+    history:
+      torque_ratio: 4
+  obs_dict:
+    actor_obs:
+      - base_ang_vel
+      - projected_gravity
+      - dof_pos
+      - dof_vel
+      - actions
+      - maturation_stage
+      - maturation_mask
+      - maturation_range
+      - assistance_fraction
+      - initial_projected_gravity
+      - history
+    critic_obs:
+      - base_lin_vel
+      - base_ang_vel
+      - projected_gravity
+      - dof_pos
+      - dof_vel
+      - actions
+      - maturation_stage
+      - maturation_mask
+      - maturation_range
+      - assistance_fraction
+      - initial_projected_gravity
+      - history
+    body_schema_target:
+      - body_schema_target
+    executed_actions:
+      - executed_actions
+  obs_scales:
+    assistance_fraction: 1.0
+    initial_projected_gravity: 1.0
+    torque_ratio: 1.0
+  noise_scales:
+    assistance_fraction: 0.0
+    initial_projected_gravity: 0.0
+    torque_ratio: 0.0
+  obs_dims:
+    - base_lin_vel: 3
+    - base_ang_vel: 3
+    - projected_gravity: 3
+    - dof_pos: ${robot.dof_obs_size}
+    - dof_vel: ${robot.dof_obs_size}
+    - actions: ${robot.actions_dim}
+    - maturation_stage: 1
+    - maturation_mask: ${robot.actions_dim}
+    - maturation_range: ${robot.actions_dim}
+    - assistance_fraction: 1
+    - initial_projected_gravity: 3
+    - torque_ratio: ${robot.actions_dim}
+    - body_schema_target: 52
+    - executed_actions: ${robot.actions_dim}
