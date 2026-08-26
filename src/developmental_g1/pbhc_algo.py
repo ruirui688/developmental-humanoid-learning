@@ -112,9 +112,7 @@ class DevelopmentalPPO(MHPPO):
             transition = self.env.update_competence(result.sample)
             record = {
                 "training_iteration": iteration,
-                "rl_environment_steps": iteration
-                * self.num_steps_per_env
-                * self.env.num_envs,
+                "rl_environment_steps": self.env.maturation_schedule_environment_steps,
                 "cumulative_evaluation_steps": self.competence_evaluation_steps,
                 "gate_stage_index": gate_stage_index,
                 "gate_horizon_steps": gate_horizon_steps,
@@ -128,6 +126,12 @@ class DevelopmentalPPO(MHPPO):
                 encoding="utf-8",
             ) as stream:
                 stream.write(json.dumps(record, sort_keys=True) + "\n")
+        # PBHC saves ``current_learning_iteration`` as the next loop start, but
+        # upstream only updates it at save boundaries using the zero-based
+        # iteration that just finished. Store the completed-iteration count so
+        # resumed runs neither repeat work nor under-report their budget.
+        self.current_learning_iteration = iteration
+        self._last_completed_iteration = iteration
 
     @torch.inference_mode()
     def evaluate_competence_window(
@@ -228,14 +232,24 @@ class DevelopmentalPPO(MHPPO):
             self._needs_training_reset = True
 
     def save(self, path, infos=None):
+        self.current_learning_iteration = max(
+            self.current_learning_iteration,
+            getattr(self, "_last_completed_iteration", 0),
+        )
         checkpoint_info = dict(infos or {})
         checkpoint_info["maturation_state"] = self.env.maturation_state_dict()
+        checkpoint_info["competence_evaluation_steps"] = (
+            self.competence_evaluation_steps
+        )
         super().save(path, checkpoint_info)
 
     def load(self, ckpt_path):
         infos = super().load(ckpt_path)
         if isinstance(infos, dict) and "maturation_state" in infos:
             self.env.load_maturation_state_dict(infos["maturation_state"])
+            self.competence_evaluation_steps = int(
+                infos.get("competence_evaluation_steps", 0)
+            )
         return infos
 
     def _init_loss_dict_at_training_step(self):

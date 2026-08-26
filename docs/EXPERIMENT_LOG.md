@@ -129,3 +129,9 @@
 - 50-step survival 序列由 0.4719（4.9M steps）提升到 0.8325（68.8M steps）；upright 由 0.7233 提升到 0.8987；low-saturation 稳定约 0.92–0.925；low-risk 为 1.0。曲线持续改善，说明修正回报尺度后确实需要大规模重复练习。
 - 即使 survival 已超过 0.80，gate 仍未晋级：最后 fall rate 为 0.1675，高于预注册最大晋级跌倒率 0.08（且 survival 仍未达到其等价的 0.92）。stage 0 的拒绝是安全门控按设计工作，不是计数或评估 budget 错误。
 - 运行产生可续训 checkpoint `model_300.pt`（对应约 58.98M RL steps；最后评估窗口 checkpoint 记录延迟到 iteration 350），以及完整 `competence_windows.jsonl`。进程在 350 iteration 后正常结束，未见 CUDA OOM；下一步从 checkpoint 续训到至少 100M RL steps。
+
+### 续训审计修正
+
+- PBHC 上游只在 save boundary 把 `current_learning_iteration` 设为刚完成的零基 iteration；加载后又从该值开始循环，因此旧 checkpoint 会重复一个 iteration。现于每轮日志完成后保存“已完成 iteration 数”，新 checkpoint 恢复时从下一轮开始。
+- `competence_evaluation_steps` 现随 checkpoint 保存/恢复；RL step 日志直接读取环境中随 maturation state 恢复的 `maturation_schedule_environment_steps`，不再用当前进程的 iteration 乘法推算。
+- 旧 `model_300.pt` 的首次恢复重复了 iteration 300，属于额外 196,608 RL steps；策略、optimizer 和 maturation gate 状态均成功恢复。该额外预算将在诊断记录中保留，不从横轴删除。
