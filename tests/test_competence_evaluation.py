@@ -65,3 +65,33 @@ def test_competence_window_requires_all_episodes():
     )
     with pytest.raises(RuntimeError):
         window.result()
+
+
+def test_competence_window_separates_signal_rows_from_simulated_steps():
+    window = CompetenceWindow(required_episodes=1)
+    window.record_step(
+        episode_done=torch.tensor([True]),
+        episode_fell=torch.tensor([False]),
+        upright=torch.ones(1),
+        low_risk=torch.ones(1),
+        low_saturation=torch.ones(1),
+        schema_accuracy=torch.ones(1),
+        schema_valid=torch.ones(1, dtype=torch.bool),
+        simulated_environment_steps=8,
+    )
+    assert window.result().evaluation_steps == 8
+
+
+def test_competence_window_rejects_too_few_simulated_steps():
+    window = CompetenceWindow(required_episodes=1)
+    with pytest.raises(ValueError):
+        window.record_step(
+            episode_done=torch.tensor([False, False]),
+            episode_fell=torch.tensor([False, False]),
+            upright=torch.ones(2),
+            low_risk=torch.ones(2),
+            low_saturation=torch.ones(2),
+            schema_accuracy=torch.ones(2),
+            schema_valid=torch.ones(2, dtype=torch.bool),
+            simulated_environment_steps=1,
+        )

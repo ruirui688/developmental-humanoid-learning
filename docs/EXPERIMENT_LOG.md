@@ -89,3 +89,13 @@
 - 修正：站立 MVP 三阶段均开放髋、膝、踝、腰和手臂；保护阶段只限制 residual range=0.15、exploration scale=0.25，随后增至 0.35/0.50 和 1.0/1.0。逐关节开放推迟到具备外部支撑或稳定低层控制后的独立消融。
 - 修正后的 Adaptive A0 再跑 737,280 RL steps：仍为 survival 0，但固定 episode bank 的完成长度提高到约 76–78 steps，gate 保持 stage 0。这说明解除控制死锁改善了短时存活，尚未达到 20 秒成功标准。
 - 下一项 No-Go：当前 gate 初始阶段直接要求完整 1,000-step/20-second episode，且 pooled episode 计数可能让快速失败环境重复贡献。正式 pilot 前将改为每个 reset 每个 bank 只计一次，并预注册 stage 0/1/2 的 50/200/1000-step gate horizon；最终方法比较仍统一使用 1,000-step horizon。
+
+## 2026-08-26：episode-bank 去重、阶段 horizon 与第二次 Adaptive pilot
+
+- 修复 pooled episode 偏差：每个 bank 先统一 reset，每个并行环境只贡献一个 episode；环境自然终止后退出指标 active set，不能在自动 reset 后重复投票。指标只聚合 active 轨迹，但 `evaluation_steps` 仍记录 GPU 实际推进的全部环境交互。
+- 内部门控 horizon 预注册为 stage 0/1/2 的 50/200/1000 control steps，即约 1/4/20 秒。该 curriculum 只用于 Adaptive 内部晋级，不替代所有方法共同的 1,000-step 最终评估。
+- 1,024-env GPU 审计窗口得到恰好 1,024 episodes、51,200 evaluation steps 和 50-step horizon；不存在旧实现中快速失败环境重复计数。随机短训策略 survival 0.1299、fall rate 0.8701。
+- 第二次 Adaptive A0 pilot：seed 1、1,024 env、30 iterations、737,280 RL environment steps；每 5 iterations 评估 1,024 个独立 50-step episodes。六个 survival 依次为 0.4521、0.4443、0.4453、0.4414、0.1973、0.4551，未形成上升趋势，stage 保持 0。
+- 同期 upright 约 0.72–0.78、low-risk 约 1.0、low-saturation 约 0.82–0.87。训练日志中的 torque-limit reward 从初期约 -0.7 恶化到 iteration 25 的约 -11.7，说明当前主要阻塞已从门控计数错误转向控制/奖励/PPO 优化：策略没有在这个短预算内学到低扭矩稳定姿态。
+- 科研边界：阶段 horizon 使“短时能力”可测，但没有产生 G1 站立性能结论；不能通过放宽门槛把约 45% 的 1 秒存活包装成成熟。下一步必须审计饱和关节、action/PD 尺度、终止来源、回报尺度及完整 PPO 更新预算。
+- 验证：`python -m pytest -q` 为 20 passed；`git diff --check` 通过。

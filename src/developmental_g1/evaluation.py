@@ -52,6 +52,7 @@ class CompetenceWindow:
         low_saturation: torch.Tensor,
         schema_accuracy: torch.Tensor,
         schema_valid: torch.Tensor,
+        simulated_environment_steps: int | None = None,
     ) -> None:
         """Record one vectorized step from a deterministic evaluation rollout."""
 
@@ -75,6 +76,15 @@ class CompetenceWindow:
             raise ValueError("schema_valid must be boolean")
         if torch.any(episode_fell & ~episode_done):
             raise ValueError("a fall must also end its evaluation episode")
+        simulated_steps = (
+            batch_size
+            if simulated_environment_steps is None
+            else int(simulated_environment_steps)
+        )
+        if simulated_steps < batch_size:
+            raise ValueError(
+                "simulated_environment_steps cannot be smaller than the signal batch"
+            )
         for name, tensor in (
             ("upright", upright),
             ("low_risk", low_risk),
@@ -95,7 +105,7 @@ class CompetenceWindow:
         self.fallen_episodes += falls
         self.successful_episodes += completed - falls
 
-        self.evaluation_steps += batch_size
+        self.evaluation_steps += simulated_steps
         self.signal_count += batch_size
         self.upright_sum += float(upright.sum().item())
         self.low_risk_sum += float(low_risk.sum().item())

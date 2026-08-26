@@ -37,12 +37,23 @@ class DevelopmentalPPO(MHPPO):
         self.competence_eval_episode_banks = int(evaluation.episode_banks)
         self.competence_eval_seed = int(evaluation.seed)
         self.competence_schema_error_scale = float(evaluation.schema_error_scale)
+        self.competence_horizon_steps = tuple(
+            int(value) for value in evaluation.horizon_steps_by_stage
+        )
         if self.competence_eval_enabled and self.competence_eval_interval < 1:
             raise ValueError("competence evaluation interval must be positive")
         if self.competence_eval_episode_banks < 1:
             raise ValueError("competence evaluation episode_banks must be positive")
         if self.competence_schema_error_scale <= 0.0:
             raise ValueError("competence schema_error_scale must be positive")
+        stage_count = len(self.env.maturation_controller.stages)
+        if len(self.competence_horizon_steps) != stage_count:
+            raise ValueError(
+                "competence_evaluation.horizon_steps_by_stage must match "
+                f"the {stage_count} maturation stages"
+            )
+        if any(value < 1 for value in self.competence_horizon_steps):
+            raise ValueError("competence evaluation horizons must be positive")
         self._needs_training_reset = False
         self.competence_evaluation_steps = 0
 
@@ -91,9 +102,12 @@ class DevelopmentalPPO(MHPPO):
             self.competence_eval_enabled
             and iteration % self.competence_eval_interval == 0
         ):
+            gate_stage_index = self.env.maturation_controller.stage_index
+            gate_horizon_steps = self.competence_horizon_steps[gate_stage_index]
             result = self.evaluate_competence_window(
                 seed=self.competence_eval_seed,
                 episode_banks=self.competence_eval_episode_banks,
+                horizon_steps=gate_horizon_steps,
             )
             transition = self.env.update_competence(result.sample)
             record = {
@@ -102,6 +116,8 @@ class DevelopmentalPPO(MHPPO):
                 * self.num_steps_per_env
                 * self.env.num_envs,
                 "cumulative_evaluation_steps": self.competence_evaluation_steps,
+                "gate_stage_index": gate_stage_index,
+                "gate_horizon_steps": gate_horizon_steps,
                 **asdict(result),
                 "transition": None if transition is None else asdict(transition),
             }
@@ -114,8 +130,10 @@ class DevelopmentalPPO(MHPPO):
                 stream.write(json.dumps(record, sort_keys=True) + "\n")
 
     @torch.inference_mode()
-    def evaluate_competence_window(self, *, seed: int, episode_banks: int):
-        """Run a deterministic, fixed-seed episode bank outside the RL budget."""
+    def evaluate_competence_window(
+        self, *, seed: int, episode_banks: int, horizon_steps: int
+    ):
+        """Run fixed banks where each environment contributes exactly one episode."""
 
         cpu_rng_state = torch.get_rng_state()
         cuda_rng_state = torch.cuda.get_rng_state_all()
@@ -125,57 +143,79 @@ class DevelopmentalPPO(MHPPO):
         try:
             torch.manual_seed(seed)
             torch.cuda.manual_seed_all(seed)
-            observations = self.env.reset_all()
             window = CompetenceWindow(episode_banks * self.env.num_envs)
-            max_steps = int(episode_banks * self.env.max_episode_length * 2 + 2)
-            steps = 0
-            while not window.complete and steps < max_steps:
-                actor_obs = observations["actor_obs"]
-                raw_actions = self.actor.act_inference(actor_obs)
-                next_observations, _, dones, infos = self.env.step(
-                    {"actions": raw_actions}
+            for _ in range(episode_banks):
+                observations = self.env.reset_all()
+                active = torch.ones(
+                    self.env.num_envs, device=self.device, dtype=torch.bool
                 )
-                prediction = self.actor.predict_body_schema(
-                    actor_obs, self.env.actions_after_delay
+                episode_steps = torch.zeros(
+                    self.env.num_envs, device=self.device, dtype=torch.long
                 )
-                target = (
-                    next_observations["body_schema_target"]
-                    * self.body_schema_target_scale
-                )
-                schema_mse = torch.mean(torch.square(prediction - target), dim=-1)
-                schema_accuracy = torch.exp(
-                    -schema_mse / self.competence_schema_error_scale
-                )
-                gravity_error = torch.sum(
-                    torch.square(self.env.projected_gravity[:, :2]), dim=-1
-                )
-                nonfoot_force = torch.linalg.vector_norm(
-                    self.env.simulator.contact_forces[
-                        :, self.env.penalised_contact_indices, :
-                    ],
-                    dim=-1,
-                ).amax(dim=-1)
-                torque_ratio = torch.abs(self.env.torques) / self.env.torque_limits.clamp_min(
-                    1e-6
-                )
-                time_outs = infos["time_outs"].bool()
-                episode_done = dones.bool()
-                window.record_step(
-                    episode_done=episode_done,
-                    episode_fell=episode_done & ~time_outs,
-                    upright=(gravity_error <= 0.10).float(),
-                    low_risk=(
-                        nonfoot_force
-                        <= float(self.env.config.developmental.severe_impact_force)
-                    ).float(),
-                    low_saturation=(torque_ratio < 0.95).float().mean(dim=-1),
-                    schema_accuracy=schema_accuracy,
-                    schema_valid=~episode_done,
-                )
-                observations = next_observations
-                steps += 1
+                for _ in range(horizon_steps):
+                    actor_obs = observations["actor_obs"]
+                    raw_actions = self.actor.act_inference(actor_obs)
+                    next_observations, _, dones, infos = self.env.step(
+                        {"actions": raw_actions}
+                    )
+                    prediction = self.actor.predict_body_schema(
+                        actor_obs, self.env.actions_after_delay
+                    )
+                    target = (
+                        next_observations["body_schema_target"]
+                        * self.body_schema_target_scale
+                    )
+                    schema_mse = torch.mean(
+                        torch.square(prediction - target), dim=-1
+                    )
+                    schema_accuracy = torch.exp(
+                        -schema_mse / self.competence_schema_error_scale
+                    )
+                    gravity_error = torch.sum(
+                        torch.square(self.env.projected_gravity[:, :2]), dim=-1
+                    )
+                    nonfoot_force = torch.linalg.vector_norm(
+                        self.env.simulator.contact_forces[
+                            :, self.env.penalised_contact_indices, :
+                        ],
+                        dim=-1,
+                    ).amax(dim=-1)
+                    torque_ratio = torch.abs(self.env.torques) / (
+                        self.env.torque_limits.clamp_min(1e-6)
+                    )
+                    natural_done = dones.bool()
+                    time_outs = infos["time_outs"].bool()
+                    episode_steps[active] += 1
+                    reached_horizon = episode_steps >= horizon_steps
+                    completed = active & (natural_done | reached_horizon)
+                    active_indices = active.nonzero(as_tuple=False).flatten()
+                    window.record_step(
+                        episode_done=completed[active_indices],
+                        episode_fell=(natural_done & ~time_outs)[active_indices],
+                        upright=(gravity_error <= 0.10).float()[active_indices],
+                        low_risk=(
+                            nonfoot_force
+                            <= float(
+                                self.env.config.developmental.severe_impact_force
+                            )
+                        ).float()[active_indices],
+                        low_saturation=(torque_ratio < 0.95)
+                        .float()
+                        .mean(dim=-1)[active_indices],
+                        schema_accuracy=schema_accuracy[active_indices],
+                        schema_valid=(~natural_done)[active_indices],
+                        simulated_environment_steps=self.env.num_envs,
+                    )
+                    active[completed] = False
+                    observations = next_observations
+                    if not torch.any(active):
+                        break
+                if torch.any(active):
+                    raise RuntimeError(
+                        "competence bank did not finish within its fixed horizon"
+                    )
             if not window.complete:
-                raise RuntimeError("held-out competence evaluation exceeded safety bound")
+                raise RuntimeError("held-out competence evaluation bank is incomplete")
             result = window.result()
             self.competence_evaluation_steps += result.evaluation_steps
             return result
