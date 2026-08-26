@@ -30,6 +30,7 @@ def test_competence_window_uses_episode_counts_and_step_signals():
     assert result.successful_episodes == 2
     assert result.fallen_episodes == 1
     assert result.evaluation_steps == 5
+    assert result.mean_episode_steps == pytest.approx(5 / 3)
     assert result.sample.survival == pytest.approx(2 / 3)
     assert result.sample.fall_rate == pytest.approx(1 / 3)
     assert result.sample.upright == pytest.approx(0.7)

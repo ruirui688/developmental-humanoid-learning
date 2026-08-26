@@ -120,6 +120,7 @@ class DevelopmentalPPO(MHPPO):
                 "transition": None if transition is None else asdict(transition),
             }
             record["sample"] = asdict(result.sample)
+            record["diagnostics"] = self.last_competence_diagnostics
             with open(
                 os.path.join(self.log_dir, "competence_windows.jsonl"),
                 "a",
@@ -148,6 +149,11 @@ class DevelopmentalPPO(MHPPO):
             torch.manual_seed(seed)
             torch.cuda.manual_seed_all(seed)
             window = CompetenceWindow(episode_banks * self.env.num_envs)
+            action_abs_sum = torch.zeros(
+                self.env.num_dof, device=self.device, dtype=torch.float64
+            )
+            action_boundary_count = torch.zeros_like(action_abs_sum)
+            diagnostic_signal_rows = 0
             for _ in range(episode_banks):
                 observations = self.env.reset_all()
                 active = torch.ones(
@@ -193,6 +199,14 @@ class DevelopmentalPPO(MHPPO):
                     reached_horizon = episode_steps >= horizon_steps
                     completed = active & (natural_done | reached_horizon)
                     active_indices = active.nonzero(as_tuple=False).flatten()
+                    active_raw_actions = raw_actions[active_indices]
+                    action_abs_sum += active_raw_actions.abs().double().sum(dim=0)
+                    # abs(raw)>2 means tanh(raw) uses over 96.4% of the
+                    # available maturation range.
+                    action_boundary_count += (
+                        active_raw_actions.abs() > 2.0
+                    ).double().sum(dim=0)
+                    diagnostic_signal_rows += int(active_indices.numel())
                     window.record_step(
                         episode_done=completed[active_indices],
                         episode_fell=(natural_done & ~time_outs)[active_indices],
@@ -221,6 +235,22 @@ class DevelopmentalPPO(MHPPO):
             if not window.complete:
                 raise RuntimeError("held-out competence evaluation bank is incomplete")
             result = window.result()
+            per_joint_boundary = action_boundary_count / max(
+                diagnostic_signal_rows, 1
+            )
+            per_joint_abs = action_abs_sum / max(diagnostic_signal_rows, 1)
+            self.last_competence_diagnostics = {
+                "mean_abs_raw_action": float(per_joint_abs.mean().item()),
+                "raw_action_boundary_fraction": float(
+                    per_joint_boundary.mean().item()
+                ),
+                "per_joint_raw_action_boundary_fraction": {
+                    name: float(value)
+                    for name, value in zip(
+                        self.env.dof_names, per_joint_boundary.tolist()
+                    )
+                },
+            }
             self.competence_evaluation_steps += result.evaluation_steps
             return result
         finally:

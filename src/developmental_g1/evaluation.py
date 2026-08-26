@@ -18,6 +18,7 @@ class CompetenceWindowResult:
     successful_episodes: int
     fallen_episodes: int
     evaluation_steps: int
+    mean_episode_steps: float
 
 
 class CompetenceWindow:
@@ -136,4 +137,5 @@ class CompetenceWindow:
             successful_episodes=self.successful_episodes,
             fallen_episodes=self.fallen_episodes,
             evaluation_steps=self.evaluation_steps,
+            mean_episode_steps=self.signal_count / self.episodes,
         )

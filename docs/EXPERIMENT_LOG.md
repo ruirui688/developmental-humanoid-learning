@@ -135,3 +135,9 @@
 - PBHC 上游只在 save boundary 把 `current_learning_iteration` 设为刚完成的零基 iteration；加载后又从该值开始循环，因此旧 checkpoint 会重复一个 iteration。现于每轮日志完成后保存“已完成 iteration 数”，新 checkpoint 恢复时从下一轮开始。
 - `competence_evaluation_steps` 现随 checkpoint 保存/恢复；RL step 日志直接读取环境中随 maturation state 恢复的 `maturation_schedule_environment_steps`，不再用当前进程的 iteration 乘法推算。
 - 旧 `model_300.pt` 的首次恢复重复了 iteration 300，属于额外 196,608 RL steps；策略、optimizer 和 maturation gate 状态均成功恢复。该额外预算将在诊断记录中保留，不从横轴删除。
+
+### Stage-0 平台与能力边界诊断
+
+- 续训至 152,764,416 RL steps 后，最近窗口 survival 在 0.8823–0.8861 间平台化，upright 约 0.936–0.938，low-saturation 约 0.959–0.962。由于 fall rate 仍约 0.114–0.118，未满足 0.08 上限，stage 0 没有晋级。
+- 原配置继续训练已无明显边际收益，故在 checkpoint `model_750.pt` 后主动停止，而不是消耗完整剩余预算。该 checkpoint 包含 stage 0、累计 maturation schedule steps 和 16 个恢复段 competence windows 的状态。
+- evaluator 新增 mean episode steps、raw action 边界占用率和逐关节边界占用率；`abs(raw_action)>2` 表示 `tanh` 已使用超过 96.4% 的当前动作范围。下一项检验是现有策略是否受 stage-0 实际最大 0.125 rad target residual 限制，并在保持 gate 阈值不变时把能力边界扩展到 stage-1 的 0.1875 rad。
