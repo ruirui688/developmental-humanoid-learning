@@ -99,3 +99,11 @@
 - 同期 upright 约 0.72–0.78、low-risk 约 1.0、low-saturation 约 0.82–0.87。训练日志中的 torque-limit reward 从初期约 -0.7 恶化到 iteration 25 的约 -11.7，说明当前主要阻塞已从门控计数错误转向控制/奖励/PPO 优化：策略没有在这个短预算内学到低扭矩稳定姿态。
 - 科研边界：阶段 horizon 使“短时能力”可测，但没有产生 G1 站立性能结论；不能通过放宽门槛把约 45% 的 1 秒存活包装成成熟。下一步必须审计饱和关节、action/PD 尺度、终止来源、回报尺度及完整 PPO 更新预算。
 - 验证：`python -m pytest -q` 为 20 passed；`git diff --check` 通过。
+
+## 2026-08-26：完整 PPO 更新暴露零系数辅助优化 bug
+
+- 前述 30-iteration pilot 继承 smoke 入口的 1 epoch/1 minibatch；它只有约 14.4 秒/环境的经验和 30 次策略更新，不能代表充分的反复练习。
+- 将优化恢复为 PBHC 默认的 5 epochs/4 minibatches，并训练 100 iterations（2,457,600 RL steps）后，未修复版本的 50-step survival 从 0.0898 降至 0.0674。
+- 根因之一：Adaptive A0 虽将 Body Schema loss coefficient 设为 0，代码仍在每个 minibatch 执行第二次 Adam step；零梯度也会推进 Adam 动量并改动共享 actor，完整 PPO 设置将错误放大。
+- 修复为 coefficient 等于 0 时完全跳过 Body Schema 前向、反向和 optimizer step。相同 seed、预算和 PPO 设置复跑后，前四个窗口 survival 为 0.1357、0.1553、0.1572、0.1582，优于未修复版本，但最终仍回落到 0.0850，尚未形成有效学习。
+- 因此“计算不足”是原 pilot 的重要限制，但不能解释全部失败。下一步分别检验实际只有 0.0375 rad 的 stage-0 最大 PD target residual，以及未归一化 torque-limit penalty 主导回报的问题；修正正确性后才扩大到数千万/上亿 environment steps。

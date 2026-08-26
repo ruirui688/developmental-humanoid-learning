@@ -246,6 +246,12 @@ class DevelopmentalPPO(MHPPO):
     def _update_algo_step(self, policy_state_dict, loss_dict):
         loss_dict = super()._update_algo_step(policy_state_dict, loss_dict)
 
+        # A zero-coefficient ablation must not take a second Adam step. Even
+        # zero gradients can advance Adam's momentum state and change shared
+        # actor parameters after the PPO update.
+        if self.body_schema_loss_coef == 0.0:
+            return loss_dict
+
         prediction = self.actor.predict_body_schema(
             policy_state_dict["actor_obs"],
             policy_state_dict["next_executed_actions"],
