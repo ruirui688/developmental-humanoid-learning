@@ -39,4 +39,23 @@ def test_maturation_exploration_scale_changes_distribution_not_mean():
     actor.noise_scale = 1.0
     actor.update_distribution(observations)
     assert torch.allclose(actor.action_mean, protected_mean)
-    assert torch.allclose(actor.action_std, torch.full((6, 2), 0.8))
+    assert torch.allclose(actor.action_std, torch.full((6, 2), 0.5))
+
+
+def test_body_schema_actor_clamps_effective_exploration_std():
+    actor = BodySchemaActor(
+        observation_dim=4,
+        num_actions=2,
+        schema_target_dim=3,
+        hidden_dims=(8,),
+        schema_hidden_dim=4,
+        activation="ELU",
+        init_noise_std=0.8,
+        min_noise_std=0.05,
+        max_noise_std=0.5,
+    )
+    actor.noise_scale = 2.0
+    assert torch.allclose(actor.std, torch.full((2,), 0.5))
+    actor.raw_std.data.fill_(0.01)
+    actor.noise_scale = 0.25
+    assert torch.allclose(actor.std, torch.full((2,), 0.05))

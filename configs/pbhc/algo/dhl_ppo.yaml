@@ -6,6 +6,8 @@ defaults:
 algo:
   _target_: developmental_g1.pbhc_algo.DevelopmentalPPO
   config:
+    min_noise_std: 0.05
+    max_noise_std: 0.50
     body_schema:
       loss_coef: 0.2
       target_dim: 52

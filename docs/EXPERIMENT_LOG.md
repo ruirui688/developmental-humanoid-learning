@@ -141,3 +141,10 @@
 - 续训至 152,764,416 RL steps 后，最近窗口 survival 在 0.8823–0.8861 间平台化，upright 约 0.936–0.938，low-saturation 约 0.959–0.962。由于 fall rate 仍约 0.114–0.118，未满足 0.08 上限，stage 0 没有晋级。
 - 原配置继续训练已无明显边际收益，故在 checkpoint `model_750.pt` 后主动停止，而不是消耗完整剩余预算。该 checkpoint 包含 stage 0、累计 maturation schedule steps 和 16 个恢复段 competence windows 的状态。
 - evaluator 新增 mean episode steps、raw action 边界占用率和逐关节边界占用率；`abs(raw_action)>2` 表示 `tanh` 已使用超过 96.4% 的当前动作范围。下一项检验是现有策略是否受 stage-0 实际最大 0.125 rad target residual 限制，并在保持 gate 阈值不变时把能力边界扩展到 stage-1 的 0.1875 rad。
+
+### 首次晋级、探索噪声失稳与策略分布正则
+
+- stage-0 action range 由 0.50 扩到 0.75 后，survival 从约 0.884 提升到最高 0.917，但仍有约 71% raw actions 位于 `abs(raw)>2`。进一步扩至 0.90 后，连续三个窗口 survival 为 0.9279、0.9408、0.9442，fall rate 最终为 0.0558；iteration 1075 首次按预注册 gate 自动晋级到 stage 1。
+- stage 1 使用 200-step horizon，首五个 survival 为 0.6196、0.5693、0.5836、0.5547、0.6132；第五个窗口按滞回规则自动降回 stage 0。降级证明 gate 能撤销不成熟扩展，而不是只会单向开放。
+- 失稳时 pre-tanh mean absolute action 达 6.62，94.9% raw actions 超过边界阈值；同时未经约束的 Gaussian effective std 随训练增大，晋级时 exploration scale 翻倍又进一步放大噪声。策略在 `tanh` 饱和区失去可辨控制分辨率。
+- 修正：effective Gaussian std 限制在 `[0.05, 0.50]`，并加入 `-0.02` 权重的 mean-squared pre-tanh action regularizer。该项不改变关节/力矩硬限位或 gate，只约束策略分布保持在可学习区。必须从晋级前 checkpoint 重新验证 50→200-step 迁移。

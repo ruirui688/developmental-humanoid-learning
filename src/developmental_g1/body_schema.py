@@ -28,6 +28,8 @@ class BodySchemaActor(nn.Module):
         schema_hidden_dim: int,
         activation: str,
         init_noise_std: float,
+        min_noise_std: float = 0.05,
+        max_noise_std: float = 0.5,
     ) -> None:
         super().__init__()
         if not hidden_dims:
@@ -45,6 +47,10 @@ class BodySchemaActor(nn.Module):
             nn.Linear(schema_hidden_dim, schema_target_dim),
         )
         self.raw_std = nn.Parameter(init_noise_std * torch.ones(num_actions))
+        if not 0.0 < min_noise_std <= max_noise_std:
+            raise ValueError("noise std bounds must be positive and ordered")
+        self.min_noise_std = min_noise_std
+        self.max_noise_std = max_noise_std
         self.noise_scale = 1.0
         self.distribution: Normal | None = None
         Normal.set_default_validate_args = False
@@ -82,7 +88,9 @@ class BodySchemaActor(nn.Module):
     def std(self) -> torch.Tensor:
         """Effective exploration std after the current maturation scale."""
 
-        return self.raw_std * self.noise_scale
+        return (self.raw_std * self.noise_scale).clamp(
+            min=self.min_noise_std, max=self.max_noise_std
+        )
 
     @property
     def action_std(self) -> torch.Tensor:

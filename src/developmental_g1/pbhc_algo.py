@@ -69,6 +69,8 @@ class DevelopmentalPPO(MHPPO):
             schema_hidden_dim=int(self.config.body_schema.hidden_dim),
             activation=str(actor_cfg.layer_config.activation),
             init_noise_std=float(self.config.init_noise_std),
+            min_noise_std=float(self.config.min_noise_std),
+            max_noise_std=float(self.config.max_noise_std),
         ).to(self.device)
         self.critic = PPOCritic(
             obs_dim_dict=self.algo_obs_dim_dict,

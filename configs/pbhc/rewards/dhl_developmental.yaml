@@ -11,6 +11,7 @@ rewards:
     developmental_double_support: 0.5
     alive: 0.2
     developmental_nonfoot_impact: -1.0
+    developmental_raw_action_magnitude: -0.02
     penalty_torques: -0.000001
     penalty_action_rate: -0.05
     penalty_slippage: -0.2
@@ -59,6 +60,7 @@ rewards:
 
   reward_penalty_reward_names:
     - developmental_nonfoot_impact
+    - developmental_raw_action_magnitude
     - penalty_torques
     - penalty_action_rate
     - penalty_slippage

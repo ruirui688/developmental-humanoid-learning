@@ -269,3 +269,8 @@ class DevelopmentalG1Env(LeggedRobotBase):
             ),
             dim=1,
         )
+
+    def _reward_developmental_raw_action_magnitude(self):
+        """Keep the pre-tanh Gaussian policy in a resolvable control range."""
+
+        return torch.mean(torch.square(self.raw_policy_actions), dim=1)
