@@ -1,0 +1,13 @@
+{
+  "status": "frozen_before_test_execution",
+  "date": "2026-08-26",
+  "checkpoint_sha256": "d9a8a24b1077432352089afebf254f2d2e9fb8161f63df599564550f7410cc9f",
+  "fresh_20_second_seeds": [93001, 93002, 93003, 93004, 93005],
+  "episodes_per_seed": 8192,
+  "horizon_control_steps": 1000,
+  "fresh_100_second_seed": 93101,
+  "long_horizon_episodes": 8192,
+  "long_horizon_control_steps": 5000,
+  "root_velocity_uniform_range": [-0.05, 0.05],
+  "acceptance_definition": "Use the exact recovered-standing thresholds in configs/pbhc/algo/dhl_ppo.yaml. Report every seed, all failures, zero-tolerance sensitivity, peaks, checkpoint/config hashes, RL and evaluation budgets. Do not tune after observing these seeds."
+}

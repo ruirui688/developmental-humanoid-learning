@@ -1,0 +1,61 @@
+{
+  "status": "development_seed_post_hoc_engineering_acceptance",
+  "date": "2026-08-26",
+  "evaluation_seed": 92003,
+  "seed_warning": "This seed was repeatedly used for development and checkpoint selection; it is not a fresh test seed.",
+  "checkpoint": "external/PBHC/logs/DHL_G1_Scaled/20260826_130236-adaptive_long_horizon_correction_20260826-dhl_developmental-g1_23dof_lock_wrist/model_4260.pt",
+  "checkpoint_sha256": "d9a8a24b1077432352089afebf254f2d2e9fb8161f63df599564550f7410cc9f",
+  "actor_state_sha256": "3f266310829978dfb89fd06b12642cdc0881d9905a2641187aeb3f22374fb2aa",
+  "critic_state_sha256": "ed43da576142590c1781abe4e93bad1342f04bfa78d55070a72847f96799e7c7",
+  "pbhc_revision": "ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0",
+  "evaluation_only_invariants": {
+    "policy_updates": 0,
+    "checkpoint_hash_unchanged": true,
+    "actor_hash_unchanged": true,
+    "critic_hash_unchanged": true,
+    "rl_steps_unchanged": true,
+    "maturation_state_unchanged": true
+  },
+  "condition": {
+    "episode_count": 8192,
+    "horizon_control_steps": 1000,
+    "control_dt_seconds": 0.02,
+    "root_velocity_uniform_range": [-0.05, 0.05],
+    "reset_warmup_control_steps": 1,
+    "recovery_steps": 150,
+    "safety_minimum_base_height_m": 0.65,
+    "safety_maximum_gravity_error": 0.04,
+    "safety_maximum_abs_waist_deviation_rad": 0.2,
+    "tight_minimum_base_height_m": 0.7,
+    "tight_maximum_gravity_error": 0.01,
+    "tight_maximum_abs_waist_deviation_rad": 0.1,
+    "maximum_horizontal_drift_m": 0.1,
+    "maximum_horizontal_speed_mps": 0.2,
+    "maximum_base_angular_speed_radps": 0.5,
+    "maximum_waist_velocity_radps": 0.5,
+    "maximum_motion_violation_fraction": 0.01,
+    "maximum_consecutive_motion_violation_steps": 5,
+    "require_endpoint_double_support": true
+  },
+  "counts": {
+    "successful_episodes": 8192,
+    "fallen_episodes": 0,
+    "trajectory_safety_valid_episodes": 8192,
+    "post_recovery_tight_pose_valid_episodes": 8192,
+    "motion_duty_valid_episodes": 8192,
+    "endpoint_double_support_episodes": 8192,
+    "recovered_standing_episodes": 8192,
+    "zero_tolerance_strict_episodes": 8101
+  },
+  "diagnostics": {
+    "mean_motion_violation_steps": 0.0042724609375,
+    "maximum_motion_violation_steps": 2,
+    "maximum_consecutive_motion_violation_steps": 2,
+    "post_recovery_mean_trajectory_max_base_angular_speed_radps": 0.3264040946960449,
+    "post_recovery_global_max_base_angular_speed_radps": 0.5713710188865662,
+    "all_time_global_max_gravity_error": 0.011086427606642246,
+    "last_tight_gravity_violation_step": 103,
+    "raw_action_boundary_fraction": 0.09960313349184782
+  },
+  "claim_boundary": "Development-only finite-horizon software acceptance for one selected Adaptive checkpoint. Thresholds and recovery window were selected post hoc. Fresh frozen seeds, long-horizon testing, baselines, dynamics randomization, and method comparisons remain pending."
+}

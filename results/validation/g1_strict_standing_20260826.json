@@ -1,5 +1,5 @@
 {
-  "status": "single_adaptive_diagnostic_checkpoint_engineering_acceptance",
+  "status": "superseded_audit_invalidated",
   "date": "2026-08-26",
   "source_parent_commit": "e616f82",
   "training_seed": 4,
@@ -56,5 +56,9 @@
     "competence_evaluation_steps": 197427200,
     "warning": "Cumulative diagnostic budget includes rejected branches and is not a frozen-method comparison budget."
   },
-  "claim_boundary": "This record supports only finite-horizon software standing acceptance for one adaptively matured diagnostic checkpoint. It does not establish multi-seed sample efficiency, strong-disturbance robustness, Sim2Real transfer, or superiority over PPO."
+  "audit_invalidation": {
+    "reason": "The training entry point executed one PPO update before evaluation, while the manifest named model_3908 even though the evaluated actor corresponded to the subsequently saved model_3909. Seed 92003 was also repeatedly reused for development, and the evaluator omitted motion constraints that later exposed large transient angular and waist velocities.",
+    "superseded_by": "results/validation/g1_recovered_standing_development_20260826.json"
+  },
+  "claim_boundary": "Retained only as an invalidated audit record. These counts must not be cited as frozen or preregistered G1 standing evidence."
 }

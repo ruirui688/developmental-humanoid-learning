@@ -5,14 +5,17 @@ rewards:
   set_reward_date: 20260826
   only_positive_rewards: false
   reward_scales:
-    developmental_upright: 10.0
+    developmental_upright: 30.0
     developmental_height: 1.0
     developmental_stillness: 5.0
     developmental_waist_alignment: -100.0
+    developmental_base_motion: -0.05
+    developmental_waist_velocity: -0.01
     developmental_double_support: 0.5
     alive: 0.2
     developmental_nonfoot_impact: -1.0
     developmental_raw_action_magnitude: -0.2
+    developmental_raw_action_peak: -0.01
     penalty_torques: -0.000001
     penalty_action_rate: -0.2
     penalty_slippage: -0.2
@@ -65,6 +68,9 @@ rewards:
   reward_penalty_reward_names:
     - developmental_nonfoot_impact
     - developmental_raw_action_magnitude
+    - developmental_raw_action_peak
+    - developmental_base_motion
+    - developmental_waist_velocity
     - penalty_torques
     - penalty_action_rate
     - penalty_slippage

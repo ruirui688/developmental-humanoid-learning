@@ -18,7 +18,9 @@ executed_action = tanh(raw_action) * joint_mask(stage) * action_range(stage)
 
 能力门控要求生存、竖直、低风险、低力矩饱和和 Body Schema 准确率同时超过各自阈值，并满足连续窗口、最小驻留时间和最大跌倒率。降级使用独立阈值和滞回。训练 episode 不会直接触发晋级；`DevelopmentalPPO` 按固定间隔运行固定 seed 的确定性 episode bank，从该 held-out 窗口构造 `CompetenceSample` 后调用 `update_competence`，防止训练重置分布污染门控判据。每个 bank 中每个环境只贡献一次，避免快速失败环境自动 reset 后重复投票。stage 0/1/2 分别用 50/200/1000 control-step horizon 测量约 1/4/20 秒能力；这只是内部 curriculum，最终组间比较仍统一使用 1,000-step horizon。评估 steps 与 PPO environment steps 分开记录，评估后 reset 再恢复训练。
 
-最终站立验收不再把“没有触发 termination”直接等同于站稳。每个 1,000-step episode 还必须全程满足 base height >=0.70 m、`sin(tilt)^2 <=0.01`、腰 pitch/roll 相对默认姿态的绝对偏差各自 <=0.10 rad，并在终点保持双足接触。evaluator 同时记录整段峰值和最后一次越界步，以识别 survival 指标隐藏的启动回摆或稳定躯干偏置。轻扰动正式条件使用六维 root velocity `[-0.05, 0.05]`；零扰动录像和 `[-0.5, 0.5]` 强恢复 drill 分开报告。
+最终站立验收不再把“没有触发 termination”直接等同于站稳，也不把单个 20 ms 瞬时纠偏等同于持续回摆。每个 1,000-step episode 必须全程留在安全包络（base height >=0.65 m、`sin(tilt)^2 <=0.04`、腰 pitch/roll 偏差 <=0.20 rad）；在 3 秒恢复窗后满足紧姿态（0.70 m、0.01、0.10 rad）和运动条件（水平漂移 <=0.10 m、水平速度 <=0.20 m/s、base angular speed <=0.50 rad/s、腰速度 <=0.50 rad/s）。运动越界样本不得超过恢复后样本的 1%，且不能连续超过 5 步；终点要求双足接触。evaluator 仍报告零容忍通过数、整段峰值、越界占空和最长连续越界，以识别启动恢复、持续回摆和稳定偏置。这些阈值由开发 seed 后验确定，属于工程验收，不是预注册论文终点。
+
+`scripts/pbhc_evaluate_standing.sh` 是冻结 evaluation-only 入口，要求显式 checkpoint、环境数、horizon 和 seed。它不执行 PPO rollout/update，并在运行前后核对 checkpoint 文件及 actor/critic 权重 hash、RL steps 和 maturation state，避免“评估前顺手训练一步”。reset 注入速度和一次 zero-action warm-up 后的第一次物理观测分开记录。
 
 PBHC 原实现会在 episode reset 后把四帧历史全部清零；这对关节位置和投影重力不是中性观测。当前环境用第一次物理观测填充历史槽，避免策略在第一控制步看到不可物理的空白历史。这个修正属于状态初始化正确性，不使用未来信息或仿真特权信号。
 
@@ -51,7 +53,7 @@ Direct 从第一步锁定在完整动作阶段，Fixed 按累计 environment ste
 
 ## 当前工程状态与尚未声称完成的部分
 
-- 单个 Adaptive 诊断轨已在未见 seed 的 8,192 个轻扰动 episode 中达到 20-second survival 和 strict standing 均为 100%；这是 G1 软件站立工程验收，不是组间性能结论；
+- 单个 Adaptive 开发轨已在反复使用的开发 seed 92003 上达到 8,192/8,192 的 20-second survival、全程安全和恢复站立验收；冻结的新种子测试尚待运行，因此这不是无偏测试结论；
 - 该 checkpoint 来自多轮诊断与奖励校正，包含被否决分支的模型选择过程，不能直接用于无偏样本效率比较；
 - 接触估计器以及以其验证误差参与完整方法的闭环尚未实现；
 - 固定成熟、自适应成熟和完整方法的多 seed 正式对比尚未运行。

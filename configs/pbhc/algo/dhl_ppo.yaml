@@ -11,6 +11,18 @@ algo:
     # Optional fine-tuning override applied after loading optimizer state.
     # Null preserves the checkpoint learning rate for ordinary resumes.
     resume_learning_rate: null
+    # Runs the fixed competence bank directly after checkpoint load and exits
+    # without collecting a PPO rollout or executing an optimizer step.
+    evaluation_only:
+      enabled: false
+      # Required explicitly by the frozen evaluation runner.
+      seed: null
+      episode_banks: 1
+      horizon_steps: 1000
+      checkpoint_path: null
+      source_revision: null
+      pbhc_revision: null
+      output_filename: standing_evaluation.json
     body_schema:
       loss_coef: 0.2
       target_dim: 52
@@ -30,6 +42,21 @@ algo:
       standing_max_gravity_error: 0.01
       require_endpoint_double_support: true
       standing_max_waist_deviation: 0.10
+      standing_max_horizontal_drift: 0.10
+      standing_max_horizontal_speed: 0.20
+      standing_max_base_angular_speed: 0.50
+      standing_max_waist_velocity: 0.50
+      # A disturbed upright reset is allowed a fixed 3 s recovery period.
+      # The complete trajectory must remain inside the wider safety envelope;
+      # tight pose and motion conditions apply after recovery.
+      standing_motion_settling_steps: 150
+      standing_safety_min_base_height: 0.65
+      standing_safety_max_gravity_error: 0.04
+      standing_safety_max_waist_deviation: 0.20
+      # Do not make long-horizon success mathematically impossible because of
+      # one 20 ms corrective sample. Peaks remain reported separately.
+      standing_max_motion_violation_fraction: 0.01
+      standing_max_consecutive_motion_violation_steps: 5
       # Internal developmental gate only. Formal method comparison retains a
       # common 1000-step (20 s) endpoint for every group.
       horizon_steps_by_stage: [50, 200, 1000]

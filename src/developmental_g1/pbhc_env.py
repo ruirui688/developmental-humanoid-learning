@@ -102,6 +102,11 @@ class DevelopmentalG1Env(LeggedRobotBase):
                 "reset_root_velocity_range must contain two ordered values"
             )
         self.reset_root_velocity_range = root_velocity_range
+        self.action_smoothing_alpha = float(
+            developmental.action_smoothing_alpha
+        )
+        if not 0.0 < self.action_smoothing_alpha <= 1.0:
+            raise ValueError("action_smoothing_alpha must be in (0, 1]")
         self.waist_alignment_indices = torch.tensor(
             [
                 self.dof_names.index("waist_pitch_joint"),
@@ -111,6 +116,7 @@ class DevelopmentalG1Env(LeggedRobotBase):
             dtype=torch.long,
         )
         self.raw_policy_actions = torch.zeros_like(self.actions)
+        self.smoothed_maturation_actions = torch.zeros_like(self.actions)
         self._refresh_maturation_parameters()
 
     def _refresh_maturation_parameters(self) -> None:
@@ -140,9 +146,15 @@ class DevelopmentalG1Env(LeggedRobotBase):
 
         super()._reset_root_states(env_ids, target_root_states)
         if target_root_states is None:
-            self.simulator.robot_root_states[env_ids, 7:13] = torch.empty(
+            injected_velocity = torch.empty(
                 (len(env_ids), 6), device=self.device
             ).uniform_(*self.reset_root_velocity_range)
+            self.simulator.robot_root_states[env_ids, 7:13] = injected_velocity
+            if not hasattr(self, "last_injected_root_velocity"):
+                self.last_injected_root_velocity = torch.zeros(
+                    self.num_envs, 6, device=self.device
+                )
+            self.last_injected_root_velocity[env_ids] = injected_velocity
 
     def _post_config_observation_callback(self):
         """Seed reset histories with the first physical observation.
@@ -168,12 +180,21 @@ class DevelopmentalG1Env(LeggedRobotBase):
                     self.obs_buf_dict_raw[obs_key]["history"] = seeded_history
         super()._post_config_observation_callback()
 
+    def _reset_buffers_callback(self, env_ids, target_buf=None):
+        super()._reset_buffers_callback(env_ids, target_buf)
+        if hasattr(self, "smoothed_maturation_actions"):
+            self.smoothed_maturation_actions[env_ids] = 0.0
+
     def _pre_physics_step(self, actions):
         self.raw_policy_actions[:] = actions
         executed, _, _ = self.maturation_transform.apply(
             actions, self.maturation_controller.stage
         )
-        super()._pre_physics_step(executed)
+        alpha = self.action_smoothing_alpha
+        self.smoothed_maturation_actions.mul_(1.0 - alpha).add_(
+            executed, alpha=alpha
+        )
+        super()._pre_physics_step(self.smoothed_maturation_actions)
 
     def update_competence(self, sample: CompetenceSample) -> StageTransition | None:
         """Update the global stage from one fixed, held-out evaluation window.
@@ -315,6 +336,21 @@ class DevelopmentalG1Env(LeggedRobotBase):
         # the first survival-only standing run.
         return torch.sum(torch.square(deviation), dim=1)
 
+    def _reward_developmental_base_motion(self):
+        """Quadratic sway cost with a gradient outside an exponential basin."""
+
+        return torch.sum(torch.square(self.base_lin_vel[:, :2]), dim=1) + torch.sum(
+            torch.square(self.base_ang_vel), dim=1
+        )
+
+    def _reward_developmental_waist_velocity(self):
+        return torch.sum(
+            torch.square(
+                self.simulator.dof_vel[:, self.waist_alignment_indices]
+            ),
+            dim=1,
+        )
+
     def _reward_developmental_double_support(self):
         return torch.all(self.contacts_filt > 0.5, dim=1).float()
 
@@ -335,3 +371,8 @@ class DevelopmentalG1Env(LeggedRobotBase):
         """Keep the pre-tanh Gaussian policy in a resolvable control range."""
 
         return torch.mean(torch.square(self.raw_policy_actions), dim=1)
+
+    def _reward_developmental_raw_action_peak(self):
+        """Prevent one ignored joint from hiding inside an action-vector mean."""
+
+        return torch.amax(torch.square(self.raw_policy_actions), dim=1)

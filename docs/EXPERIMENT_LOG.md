@@ -160,15 +160,27 @@
 - 新增可选 `resume_learning_rate`：加载 optimizer state 后同时覆盖 PPO 属性与所有 Adam param groups。第一次实现只改属性、checkpoint 实测仍为 5.0625e-5，已标为无效分支；修复后保存 checkpoint 反向核验为 2e-5 和 1e-5。CPU tests 为 21 passed。
 - 科研边界：0.92 只是在内部课程中进入更长练习的 readiness threshold，不是“学会站立”。最终标称条件验收改为独立未见 seed 的 8,192 个 1,000-step episodes 中 0 次跌倒，并额外硬检全程/终点 base height、upright 与双足支撑；扰动和动力学随机化成功率单独报告。当前最好 0.9517 尚不满足该标准，不能写成完整 G1 站立成功或方法优于 PPO。
 
-## 2026-08-26：从 survival 100% 到全程严格直立 100%
+## 2026-08-26：旧 strict-standing 证据及其审计失效
 
 - 继续用短 episode 反复练习早期恢复：两个 4-second drill 和一个 2-second drill 将强初速度随机化（六维均匀分布 `[-0.5, 0.5]`）下的 20-second survival 从 0.9517 依次提高到 0.9795、0.9839 和 0.9915。该结果是 recovery robustness 诊断，不与 nominal standing 混报。
-- 将正式轻扰动条件固定为六维 root velocity `[-0.05, 0.05]`、未见 evaluator seed 92003。旧策略达到 8,192/8,192 survival 后，视频审计仍发现躯干通过腰关节明显前倾；因此 survival 100% 被明确否决为“完美站立”。
+- 将轻扰动开发条件设为六维 root velocity `[-0.05, 0.05]`、evaluator seed 92003。旧策略达到 8,192/8,192 survival 后，视频审计仍发现躯干通过腰关节明显前倾；因此 survival 100% 被明确否决为“完美站立”。seed 92003 随后被反复用于工程调参，不能再称为未见测试 seed。
 - evaluator 增加全程 base height、`sin(tilt)^2`、腰 pitch/roll 相对默认姿态、终点双足支撑，以及每条轨迹的峰值与最后一次越界步。严格 episode 要求 1,000 steps 全程 base height >=0.70 m、`sin(tilt)^2 <=0.01`（约 5.7°）、腰 pitch/roll 各自绝对偏差 <=0.10 rad，并在终点保持双足支撑。
 - 新增腰 pitch/roll 二次对齐惩罚。第一轮姿态巩固把终点平均腰偏差降到约 `[0.034, 0.014]` rad，但全程峰值仍约 `[0.291, 0.232]` rad，严格率为 0。进一步定位显示腰部最迟在第 70 步后恢复，但少量 base tilt 在后期仍越界，故没有通过放宽判据掩盖回摆。
 - 一个只强调轻扰动与基座稳定的分支虽使 1,024 条轨迹中 975 条全程通过 gravity 阈值，却产生 0.169 rad 的稳定腰偏置，判为退化并弃用。最终从该稳定基座分支以固定 5e-6 学习率、4-second episodes 和腰对齐权重 -100 做 200 iterations 校正。
-- 最终独立复核：checkpoint `20260826_113206-adaptive_waist_bias_correction_20260826-.../model_3908.pt`；训练 seed 4，评估 seed 92003，8,192 env × 1,000 steps。结果为 survival 8,192/8,192、fall 0/8,192、strict standing 8,192/8,192；height/gravity/waist 全程合格与终点双足支撑均为 8,192/8,192。全局最坏 gravity error 0.009769，最坏腰 pitch/roll 偏差 `[0.044185, 0.029554]` rad，双足支撑步比例 0.999673，raw-action boundary fraction 0.09446。
-- 可提交的证据清单和精确指标保存在 `results/validation/g1_strict_standing_20260826.json`；完整 evaluator JSONL 与 checkpoint 保留在上列本机 PBHC run directory，不把大型模型纳入 Git。
+- 原“最终独立复核”后来审计失效：训练入口在 evaluation 前额外执行了一个 8,192-step PPO update；清单写 `model_3908.pt`，实际指标对应更新后保存的 actor/model 3909；因此 checkpoint、权重和指标未严格绑定。`results/validation/g1_strict_standing_20260826.json` 已标为 superseded，不再作为论文证据。
+- 原策略虽满足姿态条件，却有全程 base angular speed 峰值约 5.58 rad/s、腰 pitch velocity 峰值约 7.49 rad/s，以及右肩/腰 yaw 大量 pre-tanh 饱和。旧 evaluator 没有运动学条件，故“strict standing 100%”隐藏了用户指出的回摆问题。
 - 最终 8-second H.264 可视化保存为 `results/validation/media/g1_developmental_standing.mp4`；在 1/4/7 s 抽帧目检中躯干保持直立，没有旧视频的明显腰部前倾。录像使用 nominal zero injected root velocity，只用于定性展示；量化结论来自上述 `[-0.05, 0.05]` 轻扰动 episode bank。
 - 本轮累计 checkpoint 记录为 767,426,560 RL environment steps 和 197,427,200 competence-evaluation steps。该累计数包含诊断、恢复 drill 及被否决分支，不能当作冻结算法的一次正式训练预算；正式组间样本效率比较必须从统一初始条件重跑并分别报告每个分支预算。
-- 科研边界：这证明单个 Adaptive 诊断轨在当前 Isaac Gym G1、固定动力学和轻初速度扰动下达到了预注册的 20-second strict-standing 工程验收；不证明无限时域稳定，不证明动力学/推扰鲁棒性，也不证明 Adaptive 比 Direct PPO 样本高效。Direct、Fixed、强基线、多 seed 和消融仍须按共同预算运行。
+- 科研边界：上述阈值与 seed 均参与了开发选择，不能称为预注册或无偏测试；原工程验收结论撤回。Direct、Fixed、强基线、多 seed 和消融仍须按共同预算运行。
+
+## 2026-08-26：冻结评估、带宽校正与恢复站立开发验收
+
+- 实现真正 evaluation-only 路径：checkpoint 加载后直接运行 episode bank，不收集 PPO rollout、不执行 optimizer step、不保存新模型；运行前后逐一断言 checkpoint 文件、actor、critic SHA256 不变，RL schedule steps 与 maturation state 不变。评估记录精确 checkpoint/config/hash、源码与 PBHC revision、注入速度、reset warm-up、RL/evaluation budgets。入口为 `scripts/pbhc_evaluate_standing.sh`。
+- reset 有一个未计入 RL/evaluation budget 的 zero-action warm-up control step；注入 root velocity 与 warm-up 后第一次观测速度现分开记录。此前 first-observation z velocity 约 0.195 m/s 是该步重力结果，不是隐藏注入。
+- 增加一阶 residual target 带宽模型，最终开发配置 `action_smoothing_alpha=0.50`。旧 checkpoint 直接使用 α=0.20 会全部跌倒；α=0.80→0.50 的逐步适应训练把恢复后的平均最大 base angular speed 降至约 0.33 rad/s。直接把 α 降到 0.40/0.30 分别退化到约 94.6%/57.2%，α=0.40 适应训练也继续退化，均否决。
+- 新增 base motion、腰速度与 raw-action peak 代价。强权重分支让 1,024/1,024 跌倒，否决；微小权重与小学习率分支保住 survival，并降低可见回摆。训练 episode 从 4 秒扩到与评估一致的 20 秒后，训练平均 episode 一度达到 1,001-step 上限；说明此前第 4–20 秒迟发漂移确有 train/eval horizon mismatch。
+- 将训练扰动扩大到 `[-0.10, 0.10]` 的能力边界分支没有改善 8,192 条目标分布尾部，且继续训练退化，早停否决。计算量本身不是充分条件；必须对齐 horizon、带宽和验收信号，并保留退化分支。
+- “任意一个 20 ms 样本越阈即整条失败”的零容忍运动指标随 horizon 墅长必然趋向失败，不能表达近无限站立。新开发验收保留全部峰值，同时区分：(1) 全程安全包络：height >=0.65 m、gravity error <=0.04、腰偏差 <=0.20 rad；(2) 3 秒扰动恢复后紧姿态：height >=0.70 m、gravity error <=0.01、腰偏差 <=0.10 rad；(3) 动态阈值：drift <=0.10 m、水平速度 <=0.20 m/s、base angular speed <=0.50 rad/s、腰速度 <=0.50 rad/s，允许至多 1% 样本越界且连续不超过 5 步；(4) 终点双足支撑。3 秒恢复窗和占空阈值均由开发 seed 确定，明确属于 post-hoc engineering acceptance，不能冒充预注册。
+- 开发 checkpoint 为 `20260826_130236-adaptive_long_horizon_correction_20260826-.../model_4260.pt`，SHA256 `d9a8a24b1077432352089afebf254f2d2e9fb8161f63df599564550f7410cc9f`。冻结开发评估 seed 92003、8,192 env × 1,000 steps：0 跌倒；全程安全、恢复后紧姿态、动态占空与恢复站立均为 8,192/8,192。恢复后运动越界平均 0.00427 步/episode，最坏 2 步且最长连续 2 步（40 ms）；恢复后最大 base angular speed 0.5714 rad/s，平均逐轨迹最大值 0.3264 rad/s。零容忍旧口径仍只有 8,101/8,192，作为敏感性指标保留，不包装为 100%。
+- 当前开发 checkpoint 仍有约 9.96% aggregate pre-tanh boundary occupancy，尤其 waist yaw 与 left hip pitch；这不是跌倒或可见持续回摆，但提示控制余量仍需在后续 action-distribution 消融中报告。
+- 下一步冻结源码和 checkpoint 后，使用从未参与调参的 seeds 93001–93005 各跑 8,192×1,000 evaluation-only；再以 seed 93101 跑 8,192×5,000 的 100 秒长期审计。只有新种子结果才能升级为冻结工程测试证据。
