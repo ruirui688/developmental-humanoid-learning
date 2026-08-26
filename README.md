@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Status](https://img.shields.io/badge/status-concept%20validation-14b8a6)](#项目阶段)
-[![Tests](https://img.shields.io/badge/tests-4%20passed-22c55e)](#快速开始)
+[![Tests](https://img.shields.io/badge/tests-21%20passed-22c55e)](#快速开始)
 
 本项目研究一个区别于“海量仿真试错 → 单任务策略”的人形机器人运动学习方向：机器人先通过安全身体探索形成 **Body Schema**，再逐步获得平衡、重心转移、辅助行走和独立行走能力，并将已有知识迁移到更复杂的技能中。
 
@@ -29,6 +29,17 @@
 - [完整无支撑行走视频（Supplementary Video S1）](results/validation/media/developmental_walk.mp4)
 - [直接 PPO 与发育式策略同步对比（Supplementary Video S2）](results/validation/media/ppo_vs_developmental.mp4)
 - [中文论文初稿](paper/论文初稿.md)
+
+### G1 冻结工程验证（不是方法对照结论）
+
+![Frozen G1 motion-aware standing](results/validation/media/g1_motion_aware_standing_preview.gif)
+
+冻结 model 4260 在五个新 seed 的 40,960 条 20 秒轻初速度扰动轨迹中全部站满并通过恢复站立验收；100 秒测试为 8,191/8,192（99.9878%），因为一条轨迹超过冻结的 3 秒紧姿态恢复窗。该结果只支持固定动力学、有限 horizon 的软件工程结论，Direct/Fixed/Adaptive 共同预算对照仍未完成。
+
+- [冻结测试四面板总览](results/validation/g1_frozen_standing_summary.png)
+- [零注入站立 MP4](results/validation/media/g1_motion_aware_standing.mp4)
+- [轻初速度扰动恢复 MP4](results/validation/media/g1_mild_disturbance_recovery.mp4)
+- [论文完善与多媒体证据计划](docs/PAPER_COMPLETION_PLAN.md)
 
 ## 为什么做这个项目
 

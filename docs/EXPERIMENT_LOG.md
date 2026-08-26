@@ -194,3 +194,10 @@
 - 100 秒运动越界平均 0.01831 步/episode，最坏 3 步、最长连续 3 步、最坏占比 0.0619%，仍远低于 1%/5-step 验收边界。零容忍旧口径为 7,990/8,192（97.534%），说明 horizon 增大时“从未有单样本过阈”的概率按预期下降，而持续性回摆指标仍保持通过。
 - 完整逐 seed 指标、config hashes 和本机 evaluator JSON 路径记录在 `results/validation/g1_frozen_standing_test_20260826.json`。该证据支持固定动力学、轻初速度扰动下的有限时域软件工程结论；它仍不证明无限稳定、动力学/外力鲁棒性、Sim2Real 或相对 Direct PPO 的样本效率。
 - 新增固定帧数 Isaac Gym recorder callback，并用同一 model 4260 在零注入初速度下录制 8.02 秒、1600×900、50 fps H.264 视频 `results/validation/media/g1_motion_aware_standing.mp4`。1/4/7 秒抽帧目检未见明显腰部回摆；视频 SHA256 `01cc6100...4683`。它是定性可视化，不替代多环境轻扰动量化，也不展示最坏 seed。
+
+## 2026-08-26：论文图表与 G1 多媒体证据包
+
+- 新增 `scripts/plot_g1_frozen_results.py`，只读取冻结清单 `g1_frozen_standing_test_20260826.json`，生成 PNG/SVG 四面板：有限 horizon 验收、瞬时纠偏占用、恢复后角速度尾部和累计 robot-hours。图中并列 recovery-standing 与零容忍敏感性，避免把 98.899% 误写为实际站立存活率。
+- 新增通用抽帧工具 `scripts/make_g1_video_contact_sheet.py`。零注入录像生成 1/3/5/7 秒时间序列图和 800 px GIF；轻初速度扰动录像使用可视化 seed 93201、单环境、初始六维 root velocity `U[-0.05, 0.05]`、600 control steps，生成 12.02 秒 H.264、GIF 与 0.5/1.5/4/8/11 秒时间序列图。
+- 轻扰动视频逐帧抽查未见跌倒、明显腰部前倾或持续可见回摆。它只有一条轨迹，明确标为机制可视化而非鲁棒性统计；没有用它替换冻结多环境状态日志。
+- 新增 `g1_multimedia_manifest_20260826.json`，绑定源码 `dedd7558`、PBHC `ffac5cde`、model 4260 SHA256、全部媒体 SHA256、录像条件和证据边界。论文附录加入图 4–6 与三类 G1 视频说明；`docs/PAPER_COMPLETION_PLAN.md` 给出投稿前 P0/P1/P2 对照、消融、扰动与视频规范。

@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-26",
+  "purpose": "Paper and presentation media for the frozen G1 engineering evaluation",
+  "source_revision": "dedd755879478a0c26150c4d6e8e2a7b4dc9c698",
+  "pbhc_revision": "ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0",
+  "checkpoint": {
+    "name": "model_4260.pt",
+    "sha256": "d9a8a24b1077432352089afebf254f2d2e9fb8161f63df599564550f7410cc9f"
+  },
+  "quantitative_figure": {
+    "input": "results/validation/g1_frozen_standing_test_20260826.json",
+    "generator": "scripts/plot_g1_frozen_results.py",
+    "png": {
+      "path": "results/validation/g1_frozen_standing_summary.png",
+      "sha256": "ff0d388e8c0416143f695ca1084a69e6080b165d5619ae7556cf525f6d24e0fe"
+    },
+    "svg": {
+      "path": "results/validation/g1_frozen_standing_summary.svg",
+      "sha256": "a29138082932a00ecba5efb7257b739cc64f0836471ad7f9f31198584effb4fb"
+    }
+  },
+  "nominal_visualization": {
+    "condition": "one environment, zero injected root velocity, 8.02 s",
+    "claim_boundary": "qualitative visualization only",
+    "video": {
+      "path": "results/validation/media/g1_motion_aware_standing.mp4",
+      "sha256": "01cc6100555aba49e06bd8ed45a90fdfee4836e790911467b80bd9da06484683"
+    },
+    "gif": {
+      "path": "results/validation/media/g1_motion_aware_standing_preview.gif",
+      "sha256": "ce901683c39c0e11268c88c39b8f0b8ba48e577e94f71ad4205d8285c0fe4c81"
+    },
+    "contact_sheet": {
+      "path": "results/validation/g1_motion_aware_standing_sequence.png",
+      "sha256": "bdc690be7d7311a354eff9387064590aa0a7678dd43eaa61f88ad0744874fe72",
+      "times_s": [1.0, 3.0, 5.0, 7.0]
+    }
+  },
+  "mild_disturbance_visualization": {
+    "seed": 93201,
+    "condition": "one environment, initial 6-D root velocity sampled from U[-0.05, 0.05], 12.02 s",
+    "claim_boundary": "single-trajectory mechanism visualization, not a robustness estimate",
+    "video": {
+      "path": "results/validation/media/g1_mild_disturbance_recovery.mp4",
+      "sha256": "4d49d481213dfdc58135e4d4a989206129d836773d93bc482f1a4c770335c6ea"
+    },
+    "gif": {
+      "path": "results/validation/media/g1_mild_disturbance_recovery_preview.gif",
+      "sha256": "b3a61332bb3ad18a581813a4d152a870dd787874f1613cd55487743cccae04f9"
+    },
+    "contact_sheet": {
+      "path": "results/validation/g1_mild_disturbance_recovery_sequence.png",
+      "sha256": "ab97ecbe25e7d59fbfa6057f248d464598f0d3783d212821445bdf506fe5043e",
+      "times_s": [0.5, 1.5, 4.0, 8.0, 11.0]
+    }
+  },
+  "visual_audit": {
+    "result": "No fall, obvious waist-forward lean, or sustained visible oscillation was observed in the sampled frames.",
+    "limitation": "Visual inspection does not replace state-based frozen evaluation metrics."
+  }
+}
