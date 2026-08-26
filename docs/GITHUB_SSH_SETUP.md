@@ -22,4 +22,10 @@ GIT_SSH_COMMAND='ssh -i /home/ubuntu/.ssh/github_developmental_humanoid_ed25519 
   ssh -T git@github.com
 ```
 
-本次只生成密钥并记录配置，没有修改远端仓库，也没有推送代码。
+本仓库当前已配置为使用 SSH 远端：
+
+```text
+ssh://git@github.com/ruirui688/developmental-humanoid-learning.git
+```
+
+本机已通过只读 `git ls-remote origin HEAD refs/heads/main` 验证认证成功。远端 `main` 当前为 `6abcf26`；本地后续提交尚未推送。没有执行 push。
