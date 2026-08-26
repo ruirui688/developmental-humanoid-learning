@@ -9,6 +9,9 @@ maturation:
   # Standing MVP starts from the canonical pose. Reset perturbations are a
   # separate difficulty/robustness condition, not an implicit task default.
   reset_dof_scale_range: [1.0, 1.0]
+  # Mild reset disturbance used by the strict standing condition. Strong
+  # +/-0.5 recovery practice is an explicit drill and is reported separately.
+  reset_root_velocity_range: [-0.05, 0.05]
   severe_impact_force: 250.0
   target_base_height: 0.78
   upright_sigma: 0.25

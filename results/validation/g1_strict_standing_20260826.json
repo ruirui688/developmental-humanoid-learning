@@ -1,0 +1,60 @@
+{
+  "status": "single_adaptive_diagnostic_checkpoint_engineering_acceptance",
+  "date": "2026-08-26",
+  "source_parent_commit": "e616f82",
+  "training_seed": 4,
+  "evaluation_seed": 92003,
+  "checkpoint": "external/PBHC/logs/DHL_G1_Scaled/20260826_113206-adaptive_waist_bias_correction_20260826-dhl_developmental-g1_23dof_lock_wrist/model_3908.pt",
+  "evaluation_run": "external/PBHC/logs/DHL_G1_Scaled/20260826_113708-adaptive_final_strict_eval_20260826-dhl_developmental-g1_23dof_lock_wrist",
+  "condition": {
+    "environment": "Isaac Gym Preview 4 / PBHC Unitree G1 23-DoF",
+    "episode_count": 8192,
+    "horizon_control_steps": 1000,
+    "control_dt_seconds": 0.02,
+    "root_velocity_uniform_range": [-0.05, 0.05],
+    "minimum_base_height_m": 0.7,
+    "maximum_gravity_error": 0.01,
+    "maximum_abs_waist_pitch_roll_deviation_rad": 0.1,
+    "require_endpoint_double_support": true
+  },
+  "counts": {
+    "successful_episodes": 8192,
+    "fallen_episodes": 0,
+    "strict_standing_episodes": 8192,
+    "trajectory_height_valid_episodes": 8192,
+    "trajectory_gravity_valid_episodes": 8192,
+    "trajectory_waist_valid_episodes": 8192,
+    "endpoint_double_support_episodes": 8192
+  },
+  "diagnostics": {
+    "mean_episode_steps": 1000,
+    "trajectory_mean_max_gravity_error": 0.005231144838035107,
+    "trajectory_max_gravity_error": 0.009769006632268429,
+    "trajectory_mean_max_abs_waist_pitch_roll_deviation_rad": [
+      0.03523299945368308,
+      0.018172565583881806
+    ],
+    "trajectory_max_abs_waist_pitch_roll_deviation_rad": [
+      0.0441848486661911,
+      0.029553983360528946
+    ],
+    "endpoint_mean_abs_waist_pitch_roll_deviation_rad": [
+      0.016960121626899083,
+      0.005017066584396018
+    ],
+    "endpoint_max_abs_waist_pitch_roll_deviation_rad": [
+      0.03563852980732918,
+      0.016509361565113068
+    ],
+    "double_support_fraction": 0.9996728515625,
+    "raw_action_boundary_fraction": 0.09446169645889946,
+    "low_saturation": 0.9997820568084717,
+    "low_risk": 1.0
+  },
+  "budgets_at_checkpoint": {
+    "rl_environment_steps": 767426560,
+    "competence_evaluation_steps": 197427200,
+    "warning": "Cumulative diagnostic budget includes rejected branches and is not a frozen-method comparison budget."
+  },
+  "claim_boundary": "This record supports only finite-horizon software standing acceptance for one adaptively matured diagnostic checkpoint. It does not establish multi-seed sample efficiency, strong-disturbance robustness, Sim2Real transfer, or superiority over PPO."
+}

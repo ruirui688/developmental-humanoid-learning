@@ -37,6 +37,18 @@ class DevelopmentalPPO(MHPPO):
         self.competence_eval_episode_banks = int(evaluation.episode_banks)
         self.competence_eval_seed = int(evaluation.seed)
         self.competence_schema_error_scale = float(evaluation.schema_error_scale)
+        self.competence_standing_min_base_height = float(
+            evaluation.standing_min_base_height
+        )
+        self.competence_standing_max_gravity_error = float(
+            evaluation.standing_max_gravity_error
+        )
+        self.competence_require_endpoint_double_support = bool(
+            evaluation.require_endpoint_double_support
+        )
+        self.competence_standing_max_waist_deviation = float(
+            evaluation.standing_max_waist_deviation
+        )
         self.competence_horizon_steps = tuple(
             int(value) for value in evaluation.horizon_steps_by_stage
         )
@@ -46,6 +58,12 @@ class DevelopmentalPPO(MHPPO):
             raise ValueError("competence evaluation episode_banks must be positive")
         if self.competence_schema_error_scale <= 0.0:
             raise ValueError("competence schema_error_scale must be positive")
+        if self.competence_standing_min_base_height <= 0.0:
+            raise ValueError("standing_min_base_height must be positive")
+        if self.competence_standing_max_gravity_error < 0.0:
+            raise ValueError("standing_max_gravity_error cannot be negative")
+        if self.competence_standing_max_waist_deviation < 0.0:
+            raise ValueError("standing_max_waist_deviation cannot be negative")
         stage_count = len(self.env.maturation_controller.stages)
         if len(self.competence_horizon_steps) != stage_count:
             raise ValueError(
@@ -147,6 +165,13 @@ class DevelopmentalPPO(MHPPO):
         self._eval_mode()
         self.env.is_evaluating = True
         self.env.count_maturation_schedule_steps = False
+        original_max_episode_length = self.env.max_episode_length
+        # PBHC resets timed-out environments inside env.step(). Keep the
+        # formal horizon one step before timeout so endpoint state diagnostics
+        # observe the actual standing state rather than the reset state.
+        self.env.max_episode_length = max(
+            int(original_max_episode_length), horizon_steps + 1
+        )
         try:
             torch.manual_seed(seed)
             torch.cuda.manual_seed_all(seed)
@@ -156,8 +181,73 @@ class DevelopmentalPPO(MHPPO):
             )
             action_boundary_count = torch.zeros_like(action_abs_sum)
             diagnostic_signal_rows = 0
+            state_diagnostic_rows = 0
+            base_height_sum = 0.0
+            gravity_error_sum = 0.0
+            waist_deviation_sum = torch.zeros(
+                2, device=self.device, dtype=torch.float64
+            )
+            double_support_sum = 0.0
+            successful_endpoint_height_sum = 0.0
+            successful_endpoint_height_min = float("inf")
+            successful_endpoint_gravity_error_sum = 0.0
+            successful_endpoint_gravity_error_max = 0.0
+            successful_endpoint_waist_deviation_sum = torch.zeros_like(
+                waist_deviation_sum
+            )
+            successful_endpoint_waist_deviation_max = torch.zeros_like(
+                waist_deviation_sum
+            )
+            successful_endpoint_count = 0
+            strict_standing_episodes = 0
+            trajectory_height_valid_episodes = 0
+            trajectory_gravity_valid_episodes = 0
+            trajectory_waist_valid_episodes = 0
+            endpoint_double_support_episodes = 0
+            trajectory_max_gravity_error_sum = 0.0
+            trajectory_max_gravity_error_max = 0.0
+            trajectory_max_waist_deviation_sum = torch.zeros_like(
+                waist_deviation_sum
+            )
+            trajectory_max_waist_deviation_max = torch.zeros_like(
+                waist_deviation_sum
+            )
+            trajectory_last_gravity_violation_step_sum = 0.0
+            trajectory_last_gravity_violation_step_max = 0
+            trajectory_last_waist_violation_step_sum = 0.0
+            trajectory_last_waist_violation_step_max = 0
+            fallen_initial_abs_velocity_sum = torch.zeros(
+                6, device=self.device, dtype=torch.float64
+            )
+            successful_initial_abs_velocity_sum = torch.zeros_like(
+                fallen_initial_abs_velocity_sum
+            )
+            fallen_initial_count = 0
+            successful_initial_count = 0
             for _ in range(episode_banks):
                 observations = self.env.reset_all()
+                initial_root_velocity = self.env.simulator.robot_root_states[
+                    :, 7:13
+                ].detach().clone()
+                bank_fell = torch.zeros(
+                    self.env.num_envs, device=self.device, dtype=torch.bool
+                )
+                bank_standing_valid = torch.ones_like(bank_fell)
+                bank_height_valid = torch.ones_like(bank_fell)
+                bank_gravity_valid = torch.ones_like(bank_fell)
+                bank_waist_valid = torch.ones_like(bank_fell)
+                bank_max_gravity_error = torch.zeros(
+                    self.env.num_envs, device=self.device
+                )
+                bank_max_waist_deviation = torch.zeros(
+                    self.env.num_envs, 2, device=self.device
+                )
+                bank_last_gravity_violation_step = torch.zeros(
+                    self.env.num_envs, device=self.device, dtype=torch.long
+                )
+                bank_last_waist_violation_step = torch.zeros_like(
+                    bank_last_gravity_violation_step
+                )
                 active = torch.ones(
                     self.env.num_envs, device=self.device, dtype=torch.bool
                 )
@@ -200,6 +290,7 @@ class DevelopmentalPPO(MHPPO):
                     episode_steps[active] += 1
                     reached_horizon = episode_steps >= horizon_steps
                     completed = active & (natural_done | reached_horizon)
+                    bank_fell |= active & natural_done & ~time_outs
                     active_indices = active.nonzero(as_tuple=False).flatten()
                     active_raw_actions = raw_actions[active_indices]
                     action_abs_sum += active_raw_actions.abs().double().sum(dim=0)
@@ -209,6 +300,174 @@ class DevelopmentalPPO(MHPPO):
                         active_raw_actions.abs() > 2.0
                     ).double().sum(dim=0)
                     diagnostic_signal_rows += int(active_indices.numel())
+                    valid_state_indices = (active & ~natural_done).nonzero(
+                        as_tuple=False
+                    ).flatten()
+                    active_heights = self.env.simulator.robot_root_states[
+                        valid_state_indices, 2
+                    ]
+                    base_height_sum += float(active_heights.sum().item())
+                    gravity_error_sum += float(
+                        gravity_error[valid_state_indices].sum().item()
+                    )
+                    waist_deviation = torch.abs(
+                        self.env.simulator.dof_pos[
+                            valid_state_indices
+                        ][:, self.env.waist_alignment_indices]
+                        - self.env.default_dof_pos[
+                            valid_state_indices
+                        ][:, self.env.waist_alignment_indices]
+                    )
+                    waist_deviation_sum += waist_deviation.double().sum(dim=0)
+                    double_support_sum += float(
+                        torch.all(
+                            self.env.contacts_filt[valid_state_indices] > 0.5,
+                            dim=1,
+                        )
+                        .float()
+                        .sum()
+                        .item()
+                    )
+                    state_diagnostic_rows += int(valid_state_indices.numel())
+                    bank_standing_valid[valid_state_indices] &= (
+                        active_heights >= self.competence_standing_min_base_height
+                    ) & (
+                        gravity_error[valid_state_indices]
+                        <= self.competence_standing_max_gravity_error
+                    ) & (
+                        torch.amax(waist_deviation, dim=1)
+                        <= self.competence_standing_max_waist_deviation
+                    )
+                    bank_height_valid[valid_state_indices] &= (
+                        active_heights >= self.competence_standing_min_base_height
+                    )
+                    bank_gravity_valid[valid_state_indices] &= (
+                        gravity_error[valid_state_indices]
+                        <= self.competence_standing_max_gravity_error
+                    )
+                    bank_waist_valid[valid_state_indices] &= (
+                        torch.amax(waist_deviation, dim=1)
+                        <= self.competence_standing_max_waist_deviation
+                    )
+                    bank_max_gravity_error[valid_state_indices] = torch.maximum(
+                        bank_max_gravity_error[valid_state_indices],
+                        gravity_error[valid_state_indices],
+                    )
+                    bank_max_waist_deviation[valid_state_indices] = torch.maximum(
+                        bank_max_waist_deviation[valid_state_indices],
+                        waist_deviation,
+                    )
+                    gravity_invalid = (
+                        gravity_error[valid_state_indices]
+                        > self.competence_standing_max_gravity_error
+                    )
+                    waist_invalid = (
+                        torch.amax(waist_deviation, dim=1)
+                        > self.competence_standing_max_waist_deviation
+                    )
+                    bank_last_gravity_violation_step[
+                        valid_state_indices[gravity_invalid]
+                    ] = episode_steps[valid_state_indices[gravity_invalid]]
+                    bank_last_waist_violation_step[
+                        valid_state_indices[waist_invalid]
+                    ] = episode_steps[valid_state_indices[waist_invalid]]
+                    horizon_success = active & reached_horizon & ~natural_done
+                    endpoint_heights = self.env.simulator.robot_root_states[
+                        horizon_success, 2
+                    ]
+                    if endpoint_heights.numel() > 0:
+                        endpoint_gravity_error = gravity_error[horizon_success]
+                        endpoint_waist_deviation = torch.abs(
+                            self.env.simulator.dof_pos[horizon_success][
+                                :, self.env.waist_alignment_indices
+                            ]
+                            - self.env.default_dof_pos[horizon_success][
+                                :, self.env.waist_alignment_indices
+                            ]
+                        )
+                        successful_endpoint_height_sum += float(
+                            endpoint_heights.sum().item()
+                        )
+                        successful_endpoint_height_min = min(
+                            successful_endpoint_height_min,
+                            float(endpoint_heights.min().item()),
+                        )
+                        successful_endpoint_count += int(endpoint_heights.numel())
+                        successful_endpoint_gravity_error_sum += float(
+                            endpoint_gravity_error.sum().item()
+                        )
+                        successful_endpoint_gravity_error_max = max(
+                            successful_endpoint_gravity_error_max,
+                            float(endpoint_gravity_error.max().item()),
+                        )
+                        successful_endpoint_waist_deviation_sum += (
+                            endpoint_waist_deviation.double().sum(dim=0)
+                        )
+                        successful_endpoint_waist_deviation_max = torch.maximum(
+                            successful_endpoint_waist_deviation_max,
+                            endpoint_waist_deviation.double().amax(dim=0),
+                        )
+                        endpoint_double_support = torch.all(
+                            self.env.contacts_filt[horizon_success] > 0.5, dim=1
+                        )
+                        trajectory_height_valid_episodes += int(
+                            bank_height_valid[horizon_success].sum().item()
+                        )
+                        trajectory_gravity_valid_episodes += int(
+                            bank_gravity_valid[horizon_success].sum().item()
+                        )
+                        trajectory_waist_valid_episodes += int(
+                            bank_waist_valid[horizon_success].sum().item()
+                        )
+                        endpoint_double_support_episodes += int(
+                            endpoint_double_support.sum().item()
+                        )
+                        successful_max_gravity = bank_max_gravity_error[
+                            horizon_success
+                        ]
+                        successful_max_waist = bank_max_waist_deviation[
+                            horizon_success
+                        ]
+                        trajectory_max_gravity_error_sum += float(
+                            successful_max_gravity.sum().item()
+                        )
+                        trajectory_max_gravity_error_max = max(
+                            trajectory_max_gravity_error_max,
+                            float(successful_max_gravity.max().item()),
+                        )
+                        trajectory_max_waist_deviation_sum += (
+                            successful_max_waist.double().sum(dim=0)
+                        )
+                        trajectory_max_waist_deviation_max = torch.maximum(
+                            trajectory_max_waist_deviation_max,
+                            successful_max_waist.double().amax(dim=0),
+                        )
+                        last_gravity_violation = (
+                            bank_last_gravity_violation_step[horizon_success]
+                        )
+                        last_waist_violation = (
+                            bank_last_waist_violation_step[horizon_success]
+                        )
+                        trajectory_last_gravity_violation_step_sum += float(
+                            last_gravity_violation.sum().item()
+                        )
+                        trajectory_last_gravity_violation_step_max = max(
+                            trajectory_last_gravity_violation_step_max,
+                            int(last_gravity_violation.max().item()),
+                        )
+                        trajectory_last_waist_violation_step_sum += float(
+                            last_waist_violation.sum().item()
+                        )
+                        trajectory_last_waist_violation_step_max = max(
+                            trajectory_last_waist_violation_step_max,
+                            int(last_waist_violation.max().item()),
+                        )
+                        endpoint_strict = bank_standing_valid[horizon_success]
+                        if self.competence_require_endpoint_double_support:
+                            endpoint_strict &= endpoint_double_support
+                        strict_standing_episodes += int(
+                            endpoint_strict.sum().item()
+                        )
                     window.record_step(
                         episode_done=completed[active_indices],
                         episode_fell=(natural_done & ~time_outs)[active_indices],
@@ -234,6 +493,14 @@ class DevelopmentalPPO(MHPPO):
                     raise RuntimeError(
                         "competence bank did not finish within its fixed horizon"
                     )
+                fallen_initial_abs_velocity_sum += initial_root_velocity[
+                    bank_fell
+                ].abs().double().sum(dim=0)
+                successful_initial_abs_velocity_sum += initial_root_velocity[
+                    ~bank_fell
+                ].abs().double().sum(dim=0)
+                fallen_initial_count += int(bank_fell.sum().item())
+                successful_initial_count += int((~bank_fell).sum().item())
             if not window.complete:
                 raise RuntimeError("held-out competence evaluation bank is incomplete")
             result = window.result()
@@ -246,6 +513,103 @@ class DevelopmentalPPO(MHPPO):
                 "raw_action_boundary_fraction": float(
                     per_joint_boundary.mean().item()
                 ),
+                "mean_base_height": base_height_sum
+                / max(state_diagnostic_rows, 1),
+                "mean_gravity_error": gravity_error_sum
+                / max(state_diagnostic_rows, 1),
+                "mean_abs_waist_pitch_roll_deviation": (
+                    waist_deviation_sum / max(state_diagnostic_rows, 1)
+                ).tolist(),
+                "double_support_fraction": double_support_sum
+                / max(state_diagnostic_rows, 1),
+                "successful_endpoint_mean_base_height": (
+                    successful_endpoint_height_sum
+                    / max(successful_endpoint_count, 1)
+                ),
+                "successful_endpoint_min_base_height": (
+                    successful_endpoint_height_min
+                    if successful_endpoint_count > 0
+                    else None
+                ),
+                "successful_endpoint_mean_gravity_error": (
+                    successful_endpoint_gravity_error_sum
+                    / max(successful_endpoint_count, 1)
+                ),
+                "successful_endpoint_max_gravity_error": (
+                    successful_endpoint_gravity_error_max
+                    if successful_endpoint_count > 0
+                    else None
+                ),
+                "successful_endpoint_mean_abs_waist_pitch_roll_deviation": (
+                    successful_endpoint_waist_deviation_sum
+                    / max(successful_endpoint_count, 1)
+                ).tolist(),
+                "successful_endpoint_max_abs_waist_pitch_roll_deviation": (
+                    successful_endpoint_waist_deviation_max.tolist()
+                    if successful_endpoint_count > 0
+                    else None
+                ),
+                "strict_standing_episodes": strict_standing_episodes,
+                "strict_standing_fraction": strict_standing_episodes
+                / max(result.episodes, 1),
+                "trajectory_height_valid_episodes": (
+                    trajectory_height_valid_episodes
+                ),
+                "trajectory_gravity_valid_episodes": (
+                    trajectory_gravity_valid_episodes
+                ),
+                "trajectory_waist_valid_episodes": trajectory_waist_valid_episodes,
+                "endpoint_double_support_episodes": (
+                    endpoint_double_support_episodes
+                ),
+                "trajectory_mean_max_gravity_error": (
+                    trajectory_max_gravity_error_sum
+                    / max(successful_endpoint_count, 1)
+                ),
+                "trajectory_max_gravity_error": (
+                    trajectory_max_gravity_error_max
+                    if successful_endpoint_count > 0
+                    else None
+                ),
+                "trajectory_mean_max_abs_waist_pitch_roll_deviation": (
+                    trajectory_max_waist_deviation_sum
+                    / max(successful_endpoint_count, 1)
+                ).tolist(),
+                "trajectory_max_abs_waist_pitch_roll_deviation": (
+                    trajectory_max_waist_deviation_max.tolist()
+                    if successful_endpoint_count > 0
+                    else None
+                ),
+                "trajectory_mean_last_gravity_violation_step": (
+                    trajectory_last_gravity_violation_step_sum
+                    / max(successful_endpoint_count, 1)
+                ),
+                "trajectory_max_last_gravity_violation_step": (
+                    trajectory_last_gravity_violation_step_max
+                ),
+                "trajectory_mean_last_waist_violation_step": (
+                    trajectory_last_waist_violation_step_sum
+                    / max(successful_endpoint_count, 1)
+                ),
+                "trajectory_max_last_waist_violation_step": (
+                    trajectory_last_waist_violation_step_max
+                ),
+                "fallen_initial_mean_abs_base_linear_velocity": (
+                    fallen_initial_abs_velocity_sum[:3]
+                    / max(fallen_initial_count, 1)
+                ).tolist(),
+                "fallen_initial_mean_abs_base_angular_velocity": (
+                    fallen_initial_abs_velocity_sum[3:]
+                    / max(fallen_initial_count, 1)
+                ).tolist(),
+                "successful_initial_mean_abs_base_linear_velocity": (
+                    successful_initial_abs_velocity_sum[:3]
+                    / max(successful_initial_count, 1)
+                ).tolist(),
+                "successful_initial_mean_abs_base_angular_velocity": (
+                    successful_initial_abs_velocity_sum[3:]
+                    / max(successful_initial_count, 1)
+                ).tolist(),
                 "per_joint_raw_action_boundary_fraction": {
                     name: float(value)
                     for name, value in zip(
@@ -256,6 +620,7 @@ class DevelopmentalPPO(MHPPO):
             self.competence_evaluation_steps += result.evaluation_steps
             return result
         finally:
+            self.env.max_episode_length = original_max_episode_length
             torch.set_rng_state(cpu_rng_state)
             torch.cuda.set_rng_state_all(cuda_rng_state)
             self.env.is_evaluating = False

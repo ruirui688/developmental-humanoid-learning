@@ -25,6 +25,11 @@ algo:
       episode_banks: 1
       seed: 91001
       schema_error_scale: 0.25
+      standing_min_base_height: 0.70
+      # sin(tilt)^2 <= 0.01 is approximately a <=5.7 degree base tilt.
+      standing_max_gravity_error: 0.01
+      require_endpoint_double_support: true
+      standing_max_waist_deviation: 0.10
       # Internal developmental gate only. Formal method comparison retains a
       # common 1000-step (20 s) endpoint for every group.
       horizon_steps_by_stage: [50, 200, 1000]

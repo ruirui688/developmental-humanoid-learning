@@ -91,6 +91,25 @@ class DevelopmentalG1Env(LeggedRobotBase):
         if len(reset_range) != 2 or not 0.0 < reset_range[0] <= reset_range[1]:
             raise ValueError("reset_dof_scale_range must be two positive ordered values")
         self.reset_dof_scale_range = reset_range
+        root_velocity_range = tuple(
+            float(value) for value in developmental.reset_root_velocity_range
+        )
+        if (
+            len(root_velocity_range) != 2
+            or root_velocity_range[0] > root_velocity_range[1]
+        ):
+            raise ValueError(
+                "reset_root_velocity_range must contain two ordered values"
+            )
+        self.reset_root_velocity_range = root_velocity_range
+        self.waist_alignment_indices = torch.tensor(
+            [
+                self.dof_names.index("waist_pitch_joint"),
+                self.dof_names.index("waist_roll_joint"),
+            ],
+            device=self.device,
+            dtype=torch.long,
+        )
         self.raw_policy_actions = torch.zeros_like(self.actions)
         self._refresh_maturation_parameters()
 
@@ -115,6 +134,39 @@ class DevelopmentalG1Env(LeggedRobotBase):
             ).uniform_(*self.reset_dof_scale_range)
             self.simulator.dof_pos[env_ids] = self.default_dof_pos[env_ids] * scale
             self.simulator.dof_vel[env_ids] = 0.0
+
+    def _reset_root_states(self, env_ids, target_root_states=None):
+        """Make nominal and disturbed initial velocity conditions explicit."""
+
+        super()._reset_root_states(env_ids, target_root_states)
+        if target_root_states is None:
+            self.simulator.robot_root_states[env_ids, 7:13] = torch.empty(
+                (len(env_ids), 6), device=self.device
+            ).uniform_(*self.reset_root_velocity_range)
+
+    def _post_config_observation_callback(self):
+        """Seed reset histories with the first physical observation.
+
+        PBHC clears every history slot on reset and normally returns that
+        all-zero history to the policy for one control step.  Zero is not a
+        neutral value for joint positions or projected gravity, so it creates
+        an artificial observation discontinuity and an avoidable start-up
+        recovery motion.  Repeating the first post-reset observation is the
+        causal initialization available on a real robot before control starts.
+        """
+
+        reset_ids = self.reset_buf.nonzero(as_tuple=False).flatten()
+        if reset_ids.numel() > 0:
+            for key, history in self.history_handler.history.items():
+                current = self.hist_obs_dict[key][reset_ids]
+                history[reset_ids] = current.unsqueeze(1).expand(
+                    -1, history.shape[1], -1
+                )
+            seeded_history = self._get_obs_history()
+            for obs_key, obs_config in self.config.obs.obs_dict.items():
+                if "history" in obs_config:
+                    self.obs_buf_dict_raw[obs_key]["history"] = seeded_history
+        super()._post_config_observation_callback()
 
     def _pre_physics_step(self, actions):
         self.raw_policy_actions[:] = actions
@@ -253,6 +305,15 @@ class DevelopmentalG1Env(LeggedRobotBase):
             + 0.02 * torch.sum(torch.square(self.simulator.dof_vel), dim=1)
         )
         return torch.exp(-error / float(self.config.developmental.stillness_sigma))
+
+    def _reward_developmental_waist_alignment(self):
+        deviation = self.simulator.dof_pos[:, self.waist_alignment_indices] - (
+            self.default_dof_pos[:, self.waist_alignment_indices]
+        )
+        # This is paired with a negative reward scale. A quadratic term keeps
+        # a usable gradient even for the strongly leaned policy discovered by
+        # the first survival-only standing run.
+        return torch.sum(torch.square(deviation), dim=1)
 
     def _reward_developmental_double_support(self):
         return torch.all(self.contacts_filt > 0.5, dim=1).float()
