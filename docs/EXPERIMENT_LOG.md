@@ -122,3 +122,10 @@
 - 因果诊断只把 `limits_torque` 权重改为 -0.05，并使用 0.50 action range；seed 1、1,024 env、200 iterations、4,915,200 RL steps。20 个 50-step 窗口的 survival 从 0.4619 单调趋势上升至 0.5605，upright 0.7280→0.7631，low-saturation 0.8525→0.9231。
 - 这是目前首个非退化 G1 学习趋势，但仍低于晋级所需 survival 0.80 和 upright 0.85，不能作为性能结论。基于消融将阶段 action range 固定为 0.50/0.75/1.00（乘 PBHC scale 后为 0.125/0.1875/0.25 rad），并将 torque-limit 权重固定为 -0.05；硬力矩限幅、平方扭矩惩罚、风险日志和 low-saturation 晋级门槛均保留。
 - 下一步扩大到 8,192 env × 500 iterations，即 98,304,000 RL environment steps；该预算用于验证能否依能力门控逐步跨越 50/200/1000-step horizon，不与此前 smoke/pilot 混作正式组间结果。
+
+## 2026-08-26：68.8M-step Adaptive continuation checkpoint
+
+- 8,192 env 大规模诊断运行达到 68,812,800 RL environment steps（350 iterations；每 iteration 196,608 rollout steps），评估每 25 iterations 使用 8,192 个去重 episode、50-step stage-0 horizon。
+- 50-step survival 序列由 0.4719（4.9M steps）提升到 0.8325（68.8M steps）；upright 由 0.7233 提升到 0.8987；low-saturation 稳定约 0.92–0.925；low-risk 为 1.0。曲线持续改善，说明修正回报尺度后确实需要大规模重复练习。
+- 即使 survival 已超过 0.80，gate 仍未晋级：最后 fall rate 为 0.1675，高于预注册最大晋级跌倒率 0.08（且 survival 仍未达到其等价的 0.92）。stage 0 的拒绝是安全门控按设计工作，不是计数或评估 budget 错误。
+- 运行产生可续训 checkpoint `model_300.pt`（对应约 58.98M RL steps；最后评估窗口 checkpoint 记录延迟到 iteration 350），以及完整 `competence_windows.jsonl`。进程在 350 iteration 后正常结束，未见 CUDA OOM；下一步从 checkpoint 续训到至少 100M RL steps。
