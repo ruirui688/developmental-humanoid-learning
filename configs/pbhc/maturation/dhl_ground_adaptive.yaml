@@ -51,6 +51,19 @@ maturation:
     # 3 cm at a time; the external raised-event gate remains fixed at 0.45 m.
     rise_initial_target: 0.20
     rise_required_success_fraction: 0.40
+    # Stage-2 local geometry for the supine bottleneck. These are dense
+    # prerequisites, not success events: they cannot replace held-out height,
+    # sustained raised, safety, or final zero-assistance standing gates.
+    rise_subskills:
+      # Experimental overlays may enable this. The first all-pose and
+      # supine-only pilots both regressed the weakest-pose height, so the
+      # evidence-backed default remains the original rise score.
+      enabled: false
+      pose_names: [supine]
+      orientation_target: 0.35
+      knee_flexion_target: 0.60
+      knee_joint_names: [left_knee_joint, right_knee_joint]
+      preparation_weight: 0.25
     safe_support_force: 220.0
     # 4 rad/s is ample for a 60-degree roll within the 0.5 s event window;
     # faster spinning is treated as a risky shortcut rather than competence.

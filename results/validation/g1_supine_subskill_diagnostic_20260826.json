@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "development-only; both subskill variants rejected",
+  "evaluation": {
+    "seed": 95001,
+    "num_envs": 8192,
+    "horizon_steps": 400,
+    "evaluation_steps_per_checkpoint": 3276800,
+    "assistance_fraction": 0.65,
+    "height_target_m": 0.32
+  },
+  "records": [
+    {
+      "name": "baseline model 1500",
+      "weakest_height_q80_m": 0.3051103055,
+      "weakest_target_success": 0.0019851117,
+      "weakest_raised": 0.0,
+      "low_risk": 0.9975686646,
+      "low_saturation": 0.9094685398,
+      "assistance_impulse_ns": 576.0418701,
+      "pose_target_success": {"supine": 0.0019851117, "prone": 0.5826584101, "left_side": 0.9936149716, "right_side": 1.0}
+    },
+    {
+      "name": "v1 all-pose chain",
+      "weakest_height_q80_m": 0.3017944396,
+      "weakest_target_success": 0.0004962779,
+      "weakest_raised": 0.0,
+      "low_risk": 0.9974526978,
+      "low_saturation": 0.9135831021,
+      "assistance_impulse_ns": 506.3330078,
+      "pose_target_success": {"supine": 0.0004962779, "prone": 0.1176750809, "left_side": 0.2598232031, "right_side": 1.0}
+    },
+    {
+      "name": "v2 supine-only chain",
+      "weakest_height_q80_m": 0.3021075428,
+      "weakest_target_success": 0.0,
+      "weakest_raised": 0.0,
+      "low_risk": 0.9975381470,
+      "low_saturation": 0.9116055213,
+      "assistance_impulse_ns": 525.0011597,
+      "pose_target_success": {"supine": 0.0, "prone": 0.3263458610, "left_side": 0.9690570235, "right_side": 1.0}
+    }
+  ]
+}

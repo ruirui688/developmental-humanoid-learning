@@ -9,6 +9,7 @@ from developmental_g1.ground_development import (
     normalized_torque_headroom_cost,
     rehearsal_bounded_pose_probabilities,
     rise_progress_score,
+    rise_subskill_chain_score,
     safety_refined_skill_score,
     stage_goal_score,
 )
@@ -67,6 +68,60 @@ def test_rise_refinements_cannot_reward_floor_height():
         joint_speed_sigma=0.08,
     )
     assert result.item() == 0.0
+
+
+def test_rise_subskills_are_noncompensatory_and_cannot_replace_height():
+    signals = dict(
+        orientation_target=0.35,
+        required_support_count=2,
+        knee_flexion_target=0.60,
+    )
+    prepared_floor = rise_subskill_chain_score(
+        rise_score=torch.tensor([0.0]),
+        orientation_change=torch.tensor([1.0]),
+        support_count=torch.tensor([2.0]),
+        mean_knee_flexion=torch.tensor([1.0]),
+        **signals,
+    )
+    missing_brace = rise_subskill_chain_score(
+        rise_score=torch.tensor([0.0]),
+        orientation_change=torch.tensor([1.0]),
+        support_count=torch.tensor([0.0]),
+        mean_knee_flexion=torch.tensor([1.0]),
+        **signals,
+    )
+    unprepared_half_rise = rise_subskill_chain_score(
+        rise_score=torch.tensor([0.5]),
+        orientation_change=torch.tensor([0.0]),
+        support_count=torch.tensor([0.0]),
+        mean_knee_flexion=torch.tensor([0.0]),
+        **signals,
+    )
+    assert missing_brace.item() < prepared_floor.item()
+    assert prepared_floor.item() <= 0.25
+    assert unprepared_half_rise.item() > prepared_floor.item()
+
+
+def test_rise_subskills_reward_preparation_at_equal_height():
+    common = dict(
+        rise_score=torch.tensor([0.35]),
+        orientation_target=0.35,
+        required_support_count=2,
+        knee_flexion_target=0.60,
+    )
+    prepared = rise_subskill_chain_score(
+        orientation_change=torch.tensor([1.0]),
+        support_count=torch.tensor([2.0]),
+        mean_knee_flexion=torch.tensor([1.0]),
+        **common,
+    )
+    flat = rise_subskill_chain_score(
+        orientation_change=torch.tensor([0.0]),
+        support_count=torch.tensor([0.0]),
+        mean_knee_flexion=torch.tensor([0.0]),
+        **common,
+    )
+    assert prepared.item() > flat.item()
 
 
 def test_early_stage_prefers_controlled_exploration_not_stillness():

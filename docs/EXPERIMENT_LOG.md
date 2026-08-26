@@ -266,3 +266,15 @@
 - 前两窗最弱高度达到 0.325–0.326 m，0.32 m 目标成功率 40.5%/37.1%，low-saturation 91.15%；辅助冲量约 679 N·s、机械功约 40.7 J/episode。
 - 继续至 iteration 1560 后成功率回落到 26.3%，高度 0.321 m，raised 仍为 0。该版本改善了卸载高度但未产生稳定起身，作为辅助过强/策略退化风险诊断保留。
 - 因此训练默认已恢复为 0.65 支撑比例（最大约 117 N）；0.80 不进入下一主线 checkpoint。合并 iteration 1080–1560 的 49 个 held-out 窗口生成 `g1_ground_frontier_progress.png`，并保存仅含绘图指标的冻结 JSON。曲线明确显示 0.20→0.29 m 的证据门控推进、0.32 m 平台和 0.80 分支的先升后退，未形成起身成功结论。
+
+## 2026-08-26：论文与 README 证据结构重构
+
+- README 不再把近站立 model 4260 作为 G1 主展示；首页改为二维已完成、近站立基础设施、地面发育进行中和真机未开始四级证据地图，并加入从路线偏差到 0.32 m 平台的完整尝试时间线。
+- 论文 G1 附录拆分为证据状态、旧路线排除原因、地面任务、当前能力、保留的工程证据和下一验收六节；地面起点与能力前沿先于旧站立图表出现。
+- 新增 `project_evidence_map.png`，统一标出 stage 0/1 已通过、stage 2 正在平台、stage 3/4 未到达。图和文字均明确：在共同预算多 seed 对照前，不提出 G1 效率优势。
+- 针对仰卧瓶颈实现 stage-2 局部能力链：转体、多点支撑、双膝屈曲取几何平均，任何缺项都不能用另一项完全补偿；准备信用在地面高度封顶 0.25，并继续受固定高度和 sustained-raised 门约束。
+- 4-env、24 steps/env、一次 PPO 更新的 stage-2 GPU smoke 通过，共 96 RL steps；平均 stage-goal reward 可计算并完成反向更新，未出现映射、接触索引、形状或 autograd 错误。CPU 为 `61 passed`。这是接线证据，不是平台突破或性能改善。
+- 局部能力链 v1 从 model 1500 训练 20 iterations、约 3.93M RL steps，再以相同 seed 95001、8,192 env × 400 steps 做 evaluation-only 对照。baseline/候选最弱高度为 0.30511/0.30179 m，0.32 m 成功率为 0.001985/0.000496，raised 均为 0；low-saturation 为 0.90947/0.91358，辅助冲量为 576.0/506.3 N·s。候选虽降低辅助并提高力矩余量，但 prone 与 left-side 明显退化，不能算进步。
+- 根因是 v1 把为仰卧设计的转体/屈膝准备链施加到全部姿态，改变了 prone/side 的既有目标。v1 已否决；v2 只对 supine 应用准备链，其他姿态逐样本保留原 rise score，避免用新局部技能破坏已有策略。
+- v2 同样从 model 1500 训练约 3.93M RL steps。相同冻结 bank 上最弱高度 0.30211 m、0.32 m 成功率 0、raised 0、low-saturation 0.91161；prone 成功率 0.3263，仍低于 baseline 0.5827。说明即使奖励只对 supine 生效，共享参数更新仍会干扰其他姿态，且没有改善 supine。
+- v1/v2 均否决，默认 adaptive 配置关闭 `rise_subskills`；`dhl_ground_adaptive_supine_subskills.yaml` 只保留为复现 overlay。三组 evaluation-only 结果冻结到 `g1_supine_subskill_diagnostic_20260826.json` 并生成否决图。下一候选为安全、自生成中间状态 episode bank，而不是继续增加 shaping 或搀扶。

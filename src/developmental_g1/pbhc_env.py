@@ -39,6 +39,7 @@ from .ground_development import (
     normalized_torque_headroom_cost,
     rehearsal_bounded_pose_probabilities,
     rise_progress_score,
+    rise_subskill_chain_score,
     safety_refined_skill_score,
     stage_goal_score,
 )
@@ -362,6 +363,42 @@ class DevelopmentalG1Env(LeggedRobotBase):
         self.developmental_rise_required_success_fraction = float(
             curriculum.get("rise_required_success_fraction", 0.40)
         )
+        rise_subskills = curriculum.get("rise_subskills", {})
+        self.rise_subskills_enabled = bool(rise_subskills.get("enabled", False))
+        self.rise_subskill_orientation_target = float(
+            rise_subskills.get("orientation_target", 0.35)
+        )
+        self.rise_subskill_knee_flexion_target = float(
+            rise_subskills.get("knee_flexion_target", 0.60)
+        )
+        self.rise_subskill_preparation_weight = float(
+            rise_subskills.get("preparation_weight", 0.25)
+        )
+        knee_joint_names = tuple(
+            str(name)
+            for name in rise_subskills.get(
+                "knee_joint_names",
+                ("left_knee_joint", "right_knee_joint"),
+            )
+        )
+        if self.rise_subskills_enabled:
+            if any(name not in self.dof_names for name in knee_joint_names):
+                raise ValueError("rise subskills reference an unknown knee joint")
+            rise_subskill_pose_names = tuple(
+                str(name) for name in rise_subskills.get("pose_names", ("supine",))
+            )
+            if any(name not in self.ground_pose_names for name in rise_subskill_pose_names):
+                raise ValueError("rise subskills reference an unknown reset pose")
+            self.rise_subskill_pose_indices = torch.tensor(
+                [self.ground_pose_names.index(name) for name in rise_subskill_pose_names],
+                device=self.device,
+                dtype=torch.long,
+            )
+            self.rise_subskill_knee_dof_indices = torch.tensor(
+                [self.dof_names.index(name) for name in knee_joint_names],
+                device=self.device,
+                dtype=torch.long,
+            )
         if not 0.12 < self.developmental_rise_initial_target <= float(
             self.developmental_goal_height[2]
         ):
@@ -1071,7 +1108,7 @@ class DevelopmentalG1Env(LeggedRobotBase):
                         device=self.device,
                         dtype=height.dtype,
                     )
-                return rise_progress_score(
+                rise_score = rise_progress_score(
                     base_height=height,
                     gravity_error=gravity_error,
                     joint_speed=joint_speed,
@@ -1083,6 +1120,45 @@ class DevelopmentalG1Env(LeggedRobotBase):
                     upright_sigma=self.developmental_goal_upright_sigma,
                     joint_speed_sigma=self.developmental_goal_joint_speed_sigma,
                 )
+                if stage == 2 and self.rise_subskills_enabled:
+                    quaternion_similarity = torch.abs(
+                        torch.sum(
+                            self.simulator.robot_root_states[:, 3:7]
+                            * self.ground_initial_root_quat,
+                            dim=1,
+                        )
+                    ).clamp(0.0, 1.0)
+                    orientation_change = 2.0 * torch.acos(quaternion_similarity)
+                    support_indices = self.developmental_support_body_indices
+                    support_force = torch.linalg.vector_norm(
+                        self.simulator.contact_forces[:, support_indices, :], dim=-1
+                    )
+                    low_support = (
+                        self.simulator._rigid_body_pos[:, support_indices, 2] <= 0.25
+                    )
+                    support_count = ((support_force > 5.0) & low_support).sum(dim=1)
+                    mean_knee_flexion = torch.abs(
+                        self.simulator.dof_pos[:, self.rise_subskill_knee_dof_indices]
+                    ).mean(dim=1)
+                    subskill_score = rise_subskill_chain_score(
+                        rise_score=rise_score,
+                        orientation_change=orientation_change,
+                        support_count=support_count,
+                        mean_knee_flexion=mean_knee_flexion,
+                        orientation_target=self.rise_subskill_orientation_target,
+                        required_support_count=(
+                            self.developmental_event_tracker.config.support_contact_count
+                        ),
+                        knee_flexion_target=self.rise_subskill_knee_flexion_target,
+                        preparation_weight=self.rise_subskill_preparation_weight,
+                    )
+                    selected_pose = torch.zeros(
+                        self.num_envs, device=self.device, dtype=torch.bool
+                    )
+                    for pose_index in self.rise_subskill_pose_indices:
+                        selected_pose |= self.ground_reset_pose_indices == pose_index
+                    return torch.where(selected_pose, subskill_score, rise_score)
+                return rise_score
         if self.capability_frontier_enabled and self.capability_frontier.calibrated:
             upright_measure = torch.exp(
                 -gravity_error / self.developmental_goal_upright_sigma

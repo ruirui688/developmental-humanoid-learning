@@ -1,0 +1,16 @@
+# @package _global_
+
+defaults:
+  - dhl_ground_adaptive
+
+# Rejected development ablation retained for exact reproduction. It changes
+# only the supine stage-2 dense score; held-out events and support stay fixed.
+maturation:
+  ground_curriculum:
+    rise_subskills:
+      enabled: true
+      pose_names: [supine]
+      orientation_target: 0.35
+      knee_flexion_target: 0.60
+      knee_joint_names: [left_knee_joint, right_knee_joint]
+      preparation_weight: 0.25

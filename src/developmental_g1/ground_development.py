@@ -264,3 +264,50 @@ def rise_progress_score(
         + exploration_weight_tensor * exploration_score
     )
     return (height_progress * refinement).clamp(0.0, 1.0)
+
+
+def rise_subskill_chain_score(
+    *,
+    rise_score: torch.Tensor,
+    orientation_change: torch.Tensor,
+    support_count: torch.Tensor,
+    mean_knee_flexion: torch.Tensor,
+    orientation_target: float,
+    required_support_count: int,
+    knee_flexion_target: float,
+    preparation_weight: float = 0.25,
+) -> torch.Tensor:
+    """Add dense get-up prerequisites without letting them replace rising.
+
+    Height-only stage-2 reward left the supine policy with no explicit signal
+    for the geometry that precedes a rise.  The geometric mean makes turning,
+    bracing, and knee tuck non-compensatory.  Preparation contributes at most
+    ``preparation_weight`` at floor height, while the fixed held-out height and
+    sustained-raised gates remain unchanged.
+    """
+
+    if not (
+        rise_score.shape
+        == orientation_change.shape
+        == support_count.shape
+        == mean_knee_flexion.shape
+    ):
+        raise ValueError("rise subskill signals must share a shape")
+    if bool(torch.any((rise_score < 0.0) | (rise_score > 1.0))):
+        raise ValueError("rise score must be in [0, 1]")
+    if min(orientation_target, knee_flexion_target) <= 0.0:
+        raise ValueError("rise subskill targets must be positive")
+    if required_support_count < 1:
+        raise ValueError("required support count must be positive")
+    if not 0.0 <= preparation_weight < 0.5:
+        raise ValueError("preparation weight must be in [0, 0.5)")
+
+    turn = torch.sigmoid((orientation_change - orientation_target) / 0.15)
+    brace = (support_count / float(required_support_count)).clamp(0.0, 1.0)
+    tuck = torch.sigmoid((mean_knee_flexion - knee_flexion_target) / 0.15)
+    preparation = torch.pow((turn * brace * tuck).clamp_min(1e-9), 1.0 / 3.0)
+    preparation_credit = preparation_weight * preparation * (1.0 - rise_score)
+    rise_credit = rise_score * (
+        1.0 - preparation_weight + preparation_weight * preparation
+    )
+    return (preparation_credit + rise_credit).clamp(0.0, 1.0)
