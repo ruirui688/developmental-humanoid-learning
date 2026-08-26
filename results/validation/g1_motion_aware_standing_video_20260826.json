@@ -1,0 +1,17 @@
+{
+  "status": "qualitative_visualization",
+  "date": "2026-08-26",
+  "source_revision_at_recording": "20022e36fe6911468310bf8dfd0e117f31fc0f77",
+  "checkpoint": "external/PBHC/logs/DHL_G1_Scaled/20260826_130236-adaptive_long_horizon_correction_20260826-dhl_developmental-g1_23dof_lock_wrist/model_4260.pt",
+  "checkpoint_sha256": "d9a8a24b1077432352089afebf254f2d2e9fb8161f63df599564550f7410cc9f",
+  "video": "results/validation/media/g1_motion_aware_standing.mp4",
+  "video_sha256": "01cc6100555aba49e06bd8ed45a90fdfee4836e790911467b80bd9da06484683",
+  "codec": "H.264",
+  "width": 1600,
+  "height": 900,
+  "frames_per_second": 50,
+  "duration_seconds": 8.02,
+  "root_velocity_injection": [0.0, 0.0],
+  "visual_review_frames_seconds": [1, 4, 7],
+  "claim_boundary": "Qualitative nominal visualization only. It does not replace the randomized multi-environment quantitative tests and is not evidence for worst-case perturbation robustness."
+}

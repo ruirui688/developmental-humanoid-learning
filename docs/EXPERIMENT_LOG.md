@@ -184,3 +184,13 @@
 - 开发 checkpoint 为 `20260826_130236-adaptive_long_horizon_correction_20260826-.../model_4260.pt`，SHA256 `d9a8a24b1077432352089afebf254f2d2e9fb8161f63df599564550f7410cc9f`。冻结开发评估 seed 92003、8,192 env × 1,000 steps：0 跌倒；全程安全、恢复后紧姿态、动态占空与恢复站立均为 8,192/8,192。恢复后运动越界平均 0.00427 步/episode，最坏 2 步且最长连续 2 步（40 ms）；恢复后最大 base angular speed 0.5714 rad/s，平均逐轨迹最大值 0.3264 rad/s。零容忍旧口径仍只有 8,101/8,192，作为敏感性指标保留，不包装为 100%。
 - 当前开发 checkpoint 仍有约 9.96% aggregate pre-tanh boundary occupancy，尤其 waist yaw 与 left hip pitch；这不是跌倒或可见持续回摆，但提示控制余量仍需在后续 action-distribution 消融中报告。
 - 下一步冻结源码和 checkpoint 后，使用从未参与调参的 seeds 93001–93005 各跑 8,192×1,000 evaluation-only；再以 seed 93101 跑 8,192×5,000 的 100 秒长期审计。只有新种子结果才能升级为冻结工程测试证据。
+
+## 2026-08-26：冻结新种子与 100 秒长期测试
+
+- 在源码提交 `20022e36fe6911468310bf8dfd0e117f31fc0f77`、checkpoint SHA256 `d9a8a24b...0cc9f` 和 `results/validation/g1_frozen_test_protocol_20260826.json` 均冻结后才首次运行 seeds 93001–93005；评估期间没有修改阈值或选择 checkpoint。五个 run 的 checkpoint/actor/critic hash 前后均一致，policy updates=0，RL steps 与 maturation state 均不变。
+- 20 秒结果：每个 seed 8,192/8,192 recovery-standing，合计 40,960/40,960；0 跌倒；全程安全、3 秒后紧姿态、动态占空和终点双足支撑全部为 40,960/40,960。各 seed 零容忍旧口径为 8,101、8,079、8,107、8,114、8,108/8,192，合计 40,509/40,960（98.899%），因此仍保留“存在稀少瞬时纠偏”的敏感性结论。
+- 五 seed 的恢复后逐轨迹最大 base angular speed 均值为约 0.3257–0.3269 rad/s，全局最坏峰值为 0.6146 rad/s；运动阈值越界平均仅 0.00293–0.00464 步/episode，最坏 3 步且最长连续 3 步（60 ms）。全局最晚紧 gravity 越界为第 109 步，低于冻结 150-step 恢复窗。
+- 100 秒长期测试使用此前未见 seed 93101、8,192 env × 5,000 steps，共 40,960,000 evaluation steps。8,192/8,192 均站满且全程安全，0 跌倒，动态占空 8,192/8,192；但 1 条轨迹到第 186 步才回到紧 gravity 阈值内，超过冻结 150-step 恢复窗，因此 recovery-standing 为 8,191/8,192（99.9878%），不能写成 100%。
+- 100 秒运动越界平均 0.01831 步/episode，最坏 3 步、最长连续 3 步、最坏占比 0.0619%，仍远低于 1%/5-step 验收边界。零容忍旧口径为 7,990/8,192（97.534%），说明 horizon 增大时“从未有单样本过阈”的概率按预期下降，而持续性回摆指标仍保持通过。
+- 完整逐 seed 指标、config hashes 和本机 evaluator JSON 路径记录在 `results/validation/g1_frozen_standing_test_20260826.json`。该证据支持固定动力学、轻初速度扰动下的有限时域软件工程结论；它仍不证明无限稳定、动力学/外力鲁棒性、Sim2Real 或相对 Direct PPO 的样本效率。
+- 新增固定帧数 Isaac Gym recorder callback，并用同一 model 4260 在零注入初速度下录制 8.02 秒、1600×900、50 fps H.264 视频 `results/validation/media/g1_motion_aware_standing.mp4`。1/4/7 秒抽帧目检未见明显腰部回摆；视频 SHA256 `01cc6100...4683`。它是定性可视化，不替代多环境轻扰动量化，也不展示最坏 seed。
