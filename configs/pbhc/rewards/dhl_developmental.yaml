@@ -20,7 +20,10 @@ rewards:
     # PBHC's raw term sums unnormalized Nm excess over all joints. At -1.0 it
     # dominated every task reward and taught the policy to fall without effort.
     limits_torque: -0.05
-    termination: -20.0
+    # PBHC multiplies every configured scale by dt=0.02. Match its upstream
+    # locomotion default so a fall contributes -4 rather than a negligible
+    # -0.4 one-shot signal.
+    termination: -200.0
 
   reward_penalty_curriculum: false
   reward_initial_penalty_scale: 1.0

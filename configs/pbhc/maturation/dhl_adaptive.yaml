@@ -50,16 +50,18 @@ maturation:
       # Standing cannot be learned if every leg residual is closed while the
       # gate requires survival. Protection comes from low range/noise here.
       enabled_groups: [arms, waist, hips, knees, ankles]
-      action_range: 0.50
+      action_range: 0.90
       exploration_scale: 0.25
     - name: postural_control
       enabled_groups: [arms, waist, hips, knees, ankles]
-      action_range: 0.75
+      action_range: 1.00
       exploration_scale: 0.50
     - name: full_body
       enabled_groups: [arms, waist, hips, knees, ankles]
       action_range: 1.0
-      exploration_scale: 1.0
+      # Full authority does not require returning to immature high-noise
+      # exploration. Keep consolidation noise equal to the postural stage.
+      exploration_scale: 0.50
 
   gate:
     enabled: false
@@ -69,7 +71,9 @@ maturation:
     demotion_windows: 2
     minimum_dwell_windows: 5
     maximum_promotion_fall_rate: 0.08
-    forced_demotion_fall_rate: 0.25
+    # A newly lengthened horizon is practice, not a regression. Demote only
+    # after a genuine collapse; the promotion fall ceiling remains strict.
+    forced_demotion_fall_rate: 0.50
     promotion_survival: 0.80
     promotion_upright: 0.85
     promotion_low_risk: 0.85

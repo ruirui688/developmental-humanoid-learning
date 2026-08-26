@@ -148,3 +148,14 @@
 - stage 1 使用 200-step horizon，首五个 survival 为 0.6196、0.5693、0.5836、0.5547、0.6132；第五个窗口按滞回规则自动降回 stage 0。降级证明 gate 能撤销不成熟扩展，而不是只会单向开放。
 - 失稳时 pre-tanh mean absolute action 达 6.62，94.9% raw actions 超过边界阈值；同时未经约束的 Gaussian effective std 随训练增大，晋级时 exploration scale 翻倍又进一步放大噪声。策略在 `tanh` 饱和区失去可辨控制分辨率。
 - 修正：effective Gaussian std 限制在 `[0.05, 0.50]`，并加入 `-0.02` 权重的 mean-squared pre-tanh action regularizer。该项不改变关节/力矩硬限位或 gate，只约束策略分布保持在可学习区。必须从晋级前 checkpoint 重新验证 50→200-step 迁移。
+
+## 2026-08-26：4 秒晋级与首个 20 秒站立窗口
+
+- 从 iteration 1050 的 stage-0 checkpoint 重训后，噪声上限将 stage-1 effective std 从失稳时约 2.58 限制为 0.50；第一轮 200-step survival 为 0.6635–0.7231，pre-tanh mean absolute action 由约 4.36 降至 4.26，但旧 gate 在 fall rate 超过 0.25 时退级。
+- 第二轮 200-step survival 从 0.7454 变化到 0.7426，raw-action boundary fraction 从 0.845 降至 0.828。诊断表明 `forced_demotion_fall_rate=0.25` 会把刚进入四倍 horizon 后的正常练习当作能力退化；将其改为 0.50 后允许策略在 survival 高于 0.45 时继续练习，晋级的 maximum fall rate 仍保持 0.08。
+- PBHC 会把所有 reward scale 乘控制步长 0.02。原 `termination=-20` 因而每次跌倒只有 -0.4；改为与上游 locomotion 配置一致的 -200 后，200-step survival 新高由 0.7950 逐步提高到 0.8806。
+- adaptive-KL 学习率在相邻 checkpoint 间从 2.25e-5 摆到 1.139e-4，性能随之回摆。固定为 5.0625e-5 后，200-step survival 依次达到 0.8821、0.8873、0.9003、0.9125，并在 iteration 2200 首次达到 0.9208。再从该 checkpoint 以实际写入 Adam 参数组的 2e-5 巩固，后两窗为 0.9265、0.9309，结合恢复的 promotion streak 自动晋级 full-body。
+- 首个 1,000-step/20-second held-out 窗口为 survival 0.9301、upright 0.9990、mean episode steps 936.6；后续新高为 0.9517（396/8,192 失败，mean episode steps 956.1）。按成功轨迹站满 1,000 步反推，失败轨迹平均约在前 91 步终止，当前瓶颈是随机初始姿态/速度的早期恢复，而非多数轨迹的长期维持。
+- final-stage effective exploration std=0.50 时 20-second survival 从 0.9418 回落到 0.9131；因此 full-body consolidation 将 exploration scale 从 1.0 固定为 0.50，并以 1e-5 小步长继续。该修改不改变动作 authority、初始随机化或评估 horizon。
+- 新增可选 `resume_learning_rate`：加载 optimizer state 后同时覆盖 PPO 属性与所有 Adam param groups。第一次实现只改属性、checkpoint 实测仍为 5.0625e-5，已标为无效分支；修复后保存 checkpoint 反向核验为 2e-5 和 1e-5。CPU tests 为 21 passed。
+- 科研边界：0.92 只是在内部课程中进入更长练习的 readiness threshold，不是“学会站立”。最终标称条件验收改为独立未见 seed 的 8,192 个 1,000-step episodes 中 0 次跌倒，并额外硬检全程/终点 base height、upright 与双足支撑；扰动和动力学随机化成功率单独报告。当前最好 0.9517 尚不满足该标准，不能写成完整 G1 站立成功或方法优于 PPO。

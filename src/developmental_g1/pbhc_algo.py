@@ -277,6 +277,15 @@ class DevelopmentalPPO(MHPPO):
 
     def load(self, ckpt_path):
         infos = super().load(ckpt_path)
+        resume_learning_rate = self.config.get("resume_learning_rate", None)
+        if resume_learning_rate is not None:
+            resume_learning_rate = float(resume_learning_rate)
+            if resume_learning_rate <= 0.0:
+                raise ValueError("resume_learning_rate must be positive")
+            self.set_learning_rate(resume_learning_rate, resume_learning_rate)
+            for optimizer in (self.actor_optimizer, self.critic_optimizer):
+                for param_group in optimizer.param_groups:
+                    param_group["lr"] = resume_learning_rate
         if isinstance(infos, dict) and "maturation_state" in infos:
             self.env.load_maturation_state_dict(infos["maturation_state"])
             self.competence_evaluation_steps = int(

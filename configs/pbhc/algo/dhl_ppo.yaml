@@ -8,6 +8,9 @@ algo:
   config:
     min_noise_std: 0.05
     max_noise_std: 0.50
+    # Optional fine-tuning override applied after loading optimizer state.
+    # Null preserves the checkpoint learning rate for ordinary resumes.
+    resume_learning_rate: null
     body_schema:
       loss_coef: 0.2
       target_dim: 52
