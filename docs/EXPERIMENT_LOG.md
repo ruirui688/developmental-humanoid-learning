@@ -107,3 +107,18 @@
 - 根因之一：Adaptive A0 虽将 Body Schema loss coefficient 设为 0，代码仍在每个 minibatch 执行第二次 Adam step；零梯度也会推进 Adam 动量并改动共享 actor，完整 PPO 设置将错误放大。
 - 修复为 coefficient 等于 0 时完全跳过 Body Schema 前向、反向和 optimizer step。相同 seed、预算和 PPO 设置复跑后，前四个窗口 survival 为 0.1357、0.1553、0.1572、0.1582，优于未修复版本，但最终仍回落到 0.0850，尚未形成有效学习。
 - 因此“计算不足”是原 pilot 的重要限制，但不能解释全部失败。下一步分别检验实际只有 0.0375 rad 的 stage-0 最大 PD target residual，以及未归一化 torque-limit penalty 主导回报的问题；修正正确性后才扩大到数千万/上亿 environment steps。
+
+### Contact termination 审计
+
+- 将 stage-0 action range 从 0.15 单独扩大到 0.50 后，50-step survival 从 0.0586 降至 0，而 upright 从 0.8714 升至 0.9984、low-saturation 从 0.8634 升至 0.9431；策略学到了被奖励的竖直/低扭矩状态，却几乎总被 contact termination 判死。
+- 新增终止接触体高度诊断。1,024-env 随机策略 smoke 中，所有观测到的 termination-body contact 都发生在刚体中心高度大于 0.25 m 时：elevated contact fraction 为 0.0012，ground contact fraction 为 0，但 75% 的终止被归为 contact。
+- PBHC G1 资产启用了 self-collision，而 Isaac Gym 的 net contact-force tensor 不提供接触对方；因此此前 hip/pelvis/shoulder 净接触力不能无歧义地当作地面跌倒，属于错误终止标签。
+- 修正：关闭 `terminate_by_contact`，保留投影重力和 base height 两个无歧义跌倒终止条件；非足接触与严重冲击继续作为独立风险信号记录。该修改后必须重跑同配置，不能沿用此前任何 survival 数字。
+
+### 回报尺度与控制边界消融
+
+- 关闭错误 contact termination 后，原 0.15 action range 的 100-iteration 运行得到 50-step survival 0.4395→0.4463，low-saturation 0.8400→0.8788；扩大到 0.50 但保持 torque-limit 权重 -1.0 时 survival 0.4541→0.4004。两者都没有学会站稳。
+- PBHC `limits_torque` 返回所有关节超过 85% limit 的未归一化 Nm 总和。权重 -1.0 时该项 episode 日志约 -9 至 -15，远大于约 +3 的全部站立正奖励，策略因而优先减少用力而非避免跌倒。
+- 因果诊断只把 `limits_torque` 权重改为 -0.05，并使用 0.50 action range；seed 1、1,024 env、200 iterations、4,915,200 RL steps。20 个 50-step 窗口的 survival 从 0.4619 单调趋势上升至 0.5605，upright 0.7280→0.7631，low-saturation 0.8525→0.9231。
+- 这是目前首个非退化 G1 学习趋势，但仍低于晋级所需 survival 0.80 和 upright 0.85，不能作为性能结论。基于消融将阶段 action range 固定为 0.50/0.75/1.00（乘 PBHC scale 后为 0.125/0.1875/0.25 rad），并将 torque-limit 权重固定为 -0.05；硬力矩限幅、平方扭矩惩罚、风险日志和 low-saturation 晋级门槛均保留。
+- 下一步扩大到 8,192 env × 500 iterations，即 98,304,000 RL environment steps；该预算用于验证能否依能力门控逐步跨越 50/200/1000-step horizon，不与此前 smoke/pilot 混作正式组间结果。

@@ -22,7 +22,11 @@ env:
       clip_observations: 100.0
 
     termination:
-      terminate_by_contact: true
+      # Isaac Gym exposes net body contact force here, not the counterpart.
+      # With G1 self-collisions enabled, hip/pelvis contacts high above the
+      # floor were being mislabeled as falls. Gravity and base height remain
+      # the unambiguous fall termination criteria.
+      terminate_by_contact: false
       terminate_by_gravity: true
       terminate_by_low_height: true
       terminate_when_close_to_dof_pos_limit: false

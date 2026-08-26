@@ -16,7 +16,9 @@ rewards:
     penalty_slippage: -0.2
     limits_dof_pos: -5.0
     limits_dof_vel: -1.0
-    limits_torque: -1.0
+    # PBHC's raw term sums unnormalized Nm excess over all joints. At -1.0 it
+    # dominated every task reward and taught the policy to fall without effort.
+    limits_torque: -0.05
     termination: -20.0
 
   reward_penalty_curriculum: false

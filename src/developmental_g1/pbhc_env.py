@@ -166,6 +166,13 @@ class DevelopmentalG1Env(LeggedRobotBase):
         nonfoot_force = torch.linalg.vector_norm(
             self.simulator.contact_forces[:, self.penalised_contact_indices, :], dim=-1
         )
+        termination_contact = torch.linalg.vector_norm(
+            self.simulator.contact_forces[:, self.termination_contact_indices, :],
+            dim=-1,
+        ) > 1.0
+        termination_contact_height = self.simulator._rigid_body_pos[
+            :, self.termination_contact_indices, 2
+        ]
         self.log_dict["development/maturation_stage"] = torch.tensor(
             self.maturation_controller.normalized_stage, device=self.device
         )
@@ -182,6 +189,12 @@ class DevelopmentalG1Env(LeggedRobotBase):
         self.log_dict["risk/nonfoot_contact_fraction"] = (nonfoot_force > 1.0).float().mean()
         self.log_dict["risk/severe_impact_fraction"] = (
             nonfoot_force > float(self.config.developmental.severe_impact_force)
+        ).float().mean()
+        self.log_dict["risk/elevated_termination_contact_fraction"] = (
+            termination_contact & (termination_contact_height > 0.25)
+        ).float().mean()
+        self.log_dict["risk/ground_termination_contact_fraction"] = (
+            termination_contact & (termination_contact_height <= 0.25)
         ).float().mean()
 
     # Deployable observations: IMU-like signals, joint state, action history,
