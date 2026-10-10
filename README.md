@@ -321,6 +321,7 @@ developmental-humanoid-learning/
 - [CPU 无训练验证与后续轻量学习方法](docs/CPU_VALIDATION.md)
 - [CPU 失效边界与门控响应的冻结协议](docs/CPU_FAILURE_PROTOCOL.md)
 - [CPU 失效边界实测结果与不利门控变体](docs/CPU_FAILURE_RESULTS.md)
+- [CPU 无训练指令历史与预测时域对照协议](docs/CPU_HISTORY_PROTOCOL.md)
 - [开发进度与已验证检查点](docs/PROGRESS.md)
 - [新环境接管与执行手册](docs/NEW_MACHINE_BOOTSTRAP.md)
 - [外部资源选择与使用原则](docs/DATA_SOURCES.md)
