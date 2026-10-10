@@ -1,0 +1,50 @@
+{
+  "archive_date": "2026-10-10",
+  "kind": "cpu_no_training_mechanism_validation",
+  "model_parameter_updates": 0,
+  "policy_parameter_updates": 0,
+  "total_executed_steps": 14625,
+  "run_source_base_commit": "6abcf26b5bd50e1ebfd21071db21ed45aa5ce503",
+  "integration_base_commit": "7363880486262fbd8e2aafe102981a782989aa86",
+  "source_sha256": {
+    "src\\developmental_control\\__init__.py": "75ba24968189b473027a61851a41e27d552c8b85d952fa6fa303c8457f00cf67",
+    "src\\developmental_control\\joints.py": "05fec0e8b3d5703d302b61c5832719306783a212605a30c209027046daa130e6",
+    "src\\developmental_control\\maturation.py": "a01ccf59271845f685414f95bee212595cf8d28027afab7320dcc81e72040935",
+    "src\\developmental_control\\planning.py": "1fb302dfc58cdc7bded9de42d84607ca2997e28b3bd7b3942d1f2b3da7e972f7",
+    "src\\developmental_control\\validate.py": "ff6e37102bca55ae5cb2aa4a1424c6e641283869ffed978b53a0b15d29a412fb"
+  },
+  "notes": [
+    "Original run metadata is preserved; it predates upstream synchronization.",
+    "JSON line endings are normalized to LF for repository text attributes.",
+    "trace.csv.gz contains the original CSV byte stream; gzip mtime is zero.",
+    "source_snapshot.zip preserves the exact five original source files and their source_sha256.",
+    "Trailing blank lines were removed from __init__.py, joints.py and planning.py for git diff --check; no behavior or parameter changes.",
+    "committed_source_sha256 records the source files after whitespace cleanup."
+  ],
+  "files": {
+    "report.json": {
+      "bytes": 93592,
+      "sha256": "3b3644deb28e6a49a9e85ec4b96dc7cb882048235695c0ada21bb38df68dc369"
+    },
+    "gate_events.json": {
+      "bytes": 41182,
+      "sha256": "2c7cd648a37fd472d8231a8508d11c9e40ffec08c4db9f58db3a2faf6e180a31"
+    },
+    "trace.csv.gz": {
+      "bytes": 904352,
+      "sha256": "e0562368e25ed85528e324f06703c7cd9d11541e0b568a6290b6084123f56e6a"
+    },
+    "source_snapshot.zip": {
+      "bytes": 11257,
+      "sha256": "43a60ff1c880f3ec0aae4c2ac352e875fc8f211bb247a9e76739124780027c02"
+    }
+  },
+  "source_archive": "source_snapshot.zip",
+  "committed_source_sha256": {
+    "src\\developmental_control\\__init__.py": "d400cee11498b34045e45c1fdad43180b507138724009f9171a1947ee7affff1",
+    "src\\developmental_control\\joints.py": "3c0b04617f2fbd7b7ed77d74beb61dd8ba877a9e271c86f6331091b6647652ed",
+    "src\\developmental_control\\maturation.py": "a01ccf59271845f685414f95bee212595cf8d28027afab7320dcc81e72040935",
+    "src\\developmental_control\\planning.py": "12a1c6130c8f7350c63d3586bb1b50ff4f619511e129b3a00409f1087c910dd8",
+    "src\\developmental_control\\validate.py": "ff6e37102bca55ae5cb2aa4a1424c6e641283869ffed978b53a0b15d29a412fb"
+  }
+}

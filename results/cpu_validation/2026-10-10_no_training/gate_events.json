@@ -1,0 +1,1622 @@
+[
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 0,
+    "mode": "competence",
+    "window": 1,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555253,
+      "tracking_rmse": 0.06141083078262139,
+      "peak_speed": 0.12814965884944868,
+      "model_error_bound": 0.0015058408579071046,
+      "safe": true,
+      "recovered": false
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 0,
+    "mode": "competence",
+    "window": 2,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055529,
+      "tracking_rmse": 0.014472212065413987,
+      "peak_speed": 0.11531351668546479,
+      "model_error_bound": 0.001505840857907105,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 0,
+    "mode": "competence",
+    "window": 3,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.0018858812369799533,
+      "peak_speed": 0.02064486442835793,
+      "model_error_bound": 0.0015058408579071046,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 0,
+    "mode": "competence",
+    "window": 4,
+    "level_before": 0,
+    "level_after": 1,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.0023407484331419426,
+      "peak_speed": 0.008181970847806957,
+      "model_error_bound": 0.0015058408579071048,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 0,
+    "mode": "competence",
+    "window": 5,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555296,
+      "tracking_rmse": 0.032180538233496585,
+      "peak_speed": 0.10270846059064666,
+      "model_error_bound": 0.0015058408579071052,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 0,
+    "mode": "competence",
+    "window": 6,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555286,
+      "tracking_rmse": 0.006861627082316435,
+      "peak_speed": 0.07985165240255211,
+      "model_error_bound": 0.0015058408579071048,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 0,
+    "mode": "competence",
+    "window": 7,
+    "level_before": 1,
+    "level_after": 2,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555275,
+      "tracking_rmse": 0.0009179731550830919,
+      "peak_speed": 0.015181211143874466,
+      "model_error_bound": 0.0015058408579071043,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 0,
+    "mode": "competence",
+    "window": 8,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555264,
+      "tracking_rmse": 0.0012155905986948573,
+      "peak_speed": 0.016527801963697845,
+      "model_error_bound": 0.0015058408579071046,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 0,
+    "mode": "competence",
+    "window": 9,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.0022022247550841515,
+      "peak_speed": 0.007371385548164746,
+      "model_error_bound": 0.0015058408579071048,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 1,
+    "mode": "competence",
+    "window": 1,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055527,
+      "tracking_rmse": 0.06234721493858658,
+      "peak_speed": 0.13008422080246418,
+      "model_error_bound": 0.0015058408579071046,
+      "safe": true,
+      "recovered": false
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 1,
+    "mode": "competence",
+    "window": 2,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555226,
+      "tracking_rmse": 0.01466964325281944,
+      "peak_speed": 0.11730728435421918,
+      "model_error_bound": 0.001505840857907105,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 1,
+    "mode": "competence",
+    "window": 3,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555275,
+      "tracking_rmse": 0.0022743872028135772,
+      "peak_speed": 0.022175491859961153,
+      "model_error_bound": 0.0015058408579071043,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 1,
+    "mode": "competence",
+    "window": 4,
+    "level_before": 0,
+    "level_after": 1,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.0021452452804784556,
+      "peak_speed": 0.008911356631897956,
+      "model_error_bound": 0.0015058408579071048,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 1,
+    "mode": "competence",
+    "window": 5,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055527,
+      "tracking_rmse": 0.0307865887072691,
+      "peak_speed": 0.1005913572415046,
+      "model_error_bound": 0.0015058408579071052,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 1,
+    "mode": "competence",
+    "window": 6,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555226,
+      "tracking_rmse": 0.006677044833624966,
+      "peak_speed": 0.07331271725263258,
+      "model_error_bound": 0.001505840857907105,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 1,
+    "mode": "competence",
+    "window": 7,
+    "level_before": 1,
+    "level_after": 2,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.0009512670976784191,
+      "peak_speed": 0.014611108021054113,
+      "model_error_bound": 0.0015058408579071046,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 1,
+    "mode": "competence",
+    "window": 8,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055527,
+      "tracking_rmse": 0.0011518516559809275,
+      "peak_speed": 0.016872938625703944,
+      "model_error_bound": 0.0015058408579071048,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 1,
+    "mode": "competence",
+    "window": 9,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555264,
+      "tracking_rmse": 0.002190055277769206,
+      "peak_speed": 0.007665015712508641,
+      "model_error_bound": 0.0015058408579071048,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 2,
+    "mode": "competence",
+    "window": 1,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055527,
+      "tracking_rmse": 0.06387852862226777,
+      "peak_speed": 0.13380257312831678,
+      "model_error_bound": 0.0015058408579071041,
+      "safe": true,
+      "recovered": false
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 2,
+    "mode": "competence",
+    "window": 2,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555237,
+      "tracking_rmse": 0.01483624559462423,
+      "peak_speed": 0.12065689636327578,
+      "model_error_bound": 0.0015058408579071054,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 2,
+    "mode": "competence",
+    "window": 3,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555296,
+      "tracking_rmse": 0.002051147407479966,
+      "peak_speed": 0.02171504289834013,
+      "model_error_bound": 0.0015058408579071056,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 2,
+    "mode": "competence",
+    "window": 4,
+    "level_before": 0,
+    "level_after": 1,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055527,
+      "tracking_rmse": 0.0023096560648115188,
+      "peak_speed": 0.008828215313430456,
+      "model_error_bound": 0.001505840857907105,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 2,
+    "mode": "competence",
+    "window": 5,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555253,
+      "tracking_rmse": 0.03211562296261657,
+      "peak_speed": 0.10260016065650887,
+      "model_error_bound": 0.0015058408579071043,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 2,
+    "mode": "competence",
+    "window": 6,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555296,
+      "tracking_rmse": 0.006836292197384943,
+      "peak_speed": 0.07972660638689952,
+      "model_error_bound": 0.0015058408579071054,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 2,
+    "mode": "competence",
+    "window": 7,
+    "level_before": 1,
+    "level_after": 2,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555264,
+      "tracking_rmse": 0.0010008449802481393,
+      "peak_speed": 0.015193710974882497,
+      "model_error_bound": 0.001505840857907105,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 2,
+    "mode": "competence",
+    "window": 8,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.0012209338543048872,
+      "peak_speed": 0.01656896706078069,
+      "model_error_bound": 0.0015058408579071046,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "nominal_match_diagnostic",
+    "seed": 2,
+    "mode": "competence",
+    "window": 9,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.002216759964645069,
+      "peak_speed": 0.007384667835965057,
+      "model_error_bound": 0.0015058408579071046,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 0,
+    "mode": "competence",
+    "window": 1,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0016020273722006978,
+      "tracking_rmse": 0.06871920897577613,
+      "peak_speed": 0.09745441167523584,
+      "model_error_bound": 0.0020037130653906624,
+      "safe": true,
+      "recovered": false
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 0,
+    "mode": "competence",
+    "window": 2,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0009869733711937736,
+      "tracking_rmse": 0.02832024791774296,
+      "peak_speed": 0.10654842896712843,
+      "model_error_bound": 0.0015297546269594764,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 0,
+    "mode": "competence",
+    "window": 3,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0012934520689612632,
+      "tracking_rmse": 0.005539258046384404,
+      "peak_speed": 0.059858959611488134,
+      "model_error_bound": 0.0022163139308980944,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 0,
+    "mode": "competence",
+    "window": 4,
+    "level_before": 0,
+    "level_after": 1,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0005920798956485339,
+      "tracking_rmse": 0.004795356937870006,
+      "peak_speed": 0.022945573229831866,
+      "model_error_bound": 0.001344754311719036,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 0,
+    "mode": "competence",
+    "window": 5,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0017084495004183542,
+      "tracking_rmse": 0.03518677679141601,
+      "peak_speed": 0.0822545464978367,
+      "model_error_bound": 0.0028242713738187005,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 0,
+    "mode": "competence",
+    "window": 6,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0009663511767257455,
+      "tracking_rmse": 0.012220247874302918,
+      "peak_speed": 0.08480935823047829,
+      "model_error_bound": 0.0010814425854912863,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 0,
+    "mode": "competence",
+    "window": 7,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0009589328143109432,
+      "tracking_rmse": 0.005835702518553985,
+      "peak_speed": 0.032533458896230015,
+      "model_error_bound": 0.0015907815591691937,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 0,
+    "mode": "competence",
+    "window": 8,
+    "level_before": 1,
+    "level_after": 2,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.00022043474036457538,
+      "tracking_rmse": 0.0035274383125178904,
+      "peak_speed": 0.009533481468944102,
+      "model_error_bound": 0.0007029347110916998,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 0,
+    "mode": "competence",
+    "window": 9,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0011106813543252298,
+      "tracking_rmse": 0.0015888240253677309,
+      "peak_speed": 0.012781159360177647,
+      "model_error_bound": 0.001560494282145398,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 1,
+    "mode": "competence",
+    "window": 1,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0016142161932602868,
+      "tracking_rmse": 0.069721131753952,
+      "peak_speed": 0.09897477461830784,
+      "model_error_bound": 0.002024069935893496,
+      "safe": true,
+      "recovered": false
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 1,
+    "mode": "competence",
+    "window": 2,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0009507655022041007,
+      "tracking_rmse": 0.02874197900491468,
+      "peak_speed": 0.107920989393689,
+      "model_error_bound": 0.0015306639757112332,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 1,
+    "mode": "competence",
+    "window": 3,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0013201730135927725,
+      "tracking_rmse": 0.005813808140942118,
+      "peak_speed": 0.061728673831974515,
+      "model_error_bound": 0.0022110793831607695,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 1,
+    "mode": "competence",
+    "window": 4,
+    "level_before": 0,
+    "level_after": 1,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0005965770296722885,
+      "tracking_rmse": 0.005058154305041754,
+      "peak_speed": 0.02320095068835094,
+      "model_error_bound": 0.0013505356277021614,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 1,
+    "mode": "competence",
+    "window": 5,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0016042507153236844,
+      "tracking_rmse": 0.033907890453445284,
+      "peak_speed": 0.08104354298917814,
+      "model_error_bound": 0.002777460892416116,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 1,
+    "mode": "competence",
+    "window": 6,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0009832942708945579,
+      "tracking_rmse": 0.011451883066582194,
+      "peak_speed": 0.08340901803584062,
+      "model_error_bound": 0.001072892411865559,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 1,
+    "mode": "competence",
+    "window": 7,
+    "level_before": 1,
+    "level_after": 2,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0009077997568286285,
+      "tracking_rmse": 0.005793120898573751,
+      "peak_speed": 0.029016070720928926,
+      "model_error_bound": 0.0015750365911809303,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 1,
+    "mode": "competence",
+    "window": 8,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0010434409647261118,
+      "tracking_rmse": 0.0028692311091611036,
+      "peak_speed": 0.01832380723063091,
+      "model_error_bound": 0.0015507181920714009,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 1,
+    "mode": "competence",
+    "window": 9,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0011839882090348755,
+      "tracking_rmse": 0.0019891939231519943,
+      "peak_speed": 0.007424329811964298,
+      "model_error_bound": 0.002314451648666944,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 2,
+    "mode": "competence",
+    "window": 1,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0016128524081075386,
+      "tracking_rmse": 0.07122733229790741,
+      "peak_speed": 0.10268232599297586,
+      "model_error_bound": 0.002031102554575953,
+      "safe": true,
+      "recovered": false
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 2,
+    "mode": "competence",
+    "window": 2,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.001007364317465392,
+      "tracking_rmse": 0.02866755869765571,
+      "peak_speed": 0.11126450126649318,
+      "model_error_bound": 0.0015518777723754107,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 2,
+    "mode": "competence",
+    "window": 3,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0013579525788987436,
+      "tracking_rmse": 0.00639071608150114,
+      "peak_speed": 0.06231646920639826,
+      "model_error_bound": 0.0022388593556360225,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 2,
+    "mode": "competence",
+    "window": 4,
+    "level_before": 0,
+    "level_after": 1,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0005850454506010359,
+      "tracking_rmse": 0.005210405949112977,
+      "peak_speed": 0.023611780036135167,
+      "model_error_bound": 0.0013460204476127555,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 2,
+    "mode": "competence",
+    "window": 5,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.001706801770992201,
+      "tracking_rmse": 0.03513672349613332,
+      "peak_speed": 0.08240504134661104,
+      "model_error_bound": 0.002822444218465123,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 2,
+    "mode": "competence",
+    "window": 6,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0009685336841910697,
+      "tracking_rmse": 0.012140579673676433,
+      "peak_speed": 0.0849363172158506,
+      "model_error_bound": 0.0010838017485042739,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 2,
+    "mode": "competence",
+    "window": 7,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0009605154353451202,
+      "tracking_rmse": 0.00591331957485131,
+      "peak_speed": 0.03253592677654256,
+      "model_error_bound": 0.0015923712882696024,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 2,
+    "mode": "competence",
+    "window": 8,
+    "level_before": 1,
+    "level_after": 2,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.000219741459420739,
+      "tracking_rmse": 0.003611684897132933,
+      "peak_speed": 0.009632912298494629,
+      "model_error_bound": 0.0007019406006478692,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "inertia_mismatch",
+    "seed": 2,
+    "mode": "competence",
+    "window": 9,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0011107906640899596,
+      "tracking_rmse": 0.0015858542158137864,
+      "peak_speed": 0.012797059215375712,
+      "model_error_bound": 0.0015689696423424784,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 0,
+    "mode": "competence",
+    "window": 1,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0019398405230131965,
+      "tracking_rmse": 0.0697786874137829,
+      "peak_speed": 0.13567306902304319,
+      "model_error_bound": 0.0041764510968251905,
+      "safe": true,
+      "recovered": false
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 0,
+    "mode": "competence",
+    "window": 2,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.001543718372862754,
+      "tracking_rmse": 0.020995505336408232,
+      "peak_speed": 0.15198857464611312,
+      "model_error_bound": 0.004122739957463445,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 0,
+    "mode": "competence",
+    "window": 3,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0009124693432346967,
+      "tracking_rmse": 0.0034493605967328223,
+      "peak_speed": 0.03350385029845812,
+      "model_error_bound": 0.0013921503656083975,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 0,
+    "mode": "competence",
+    "window": 4,
+    "level_before": 0,
+    "level_after": 1,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0008040798274168146,
+      "tracking_rmse": 0.0053057237147670815,
+      "peak_speed": 0.013511697488515911,
+      "model_error_bound": 0.0015058408579071054,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 0,
+    "mode": "competence",
+    "window": 5,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.003362151217415414,
+      "tracking_rmse": 0.03670874853602957,
+      "peak_speed": 0.14092558958077098,
+      "model_error_bound": 0.005939524329694975,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 0,
+    "mode": "competence",
+    "window": 6,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555253,
+      "tracking_rmse": 0.00662801393674471,
+      "peak_speed": 0.13227541390191172,
+      "model_error_bound": 0.0015058408579071037,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 0,
+    "mode": "competence",
+    "window": 7,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.001045503997707071,
+      "tracking_rmse": 0.003303683440661026,
+      "peak_speed": 0.04117115134704985,
+      "model_error_bound": 0.0019490105118517569,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 0,
+    "mode": "competence",
+    "window": 8,
+    "level_before": 1,
+    "level_after": 2,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.005827564849193987,
+      "peak_speed": 0.017540951565927176,
+      "model_error_bound": 0.0015058408579071046,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 0,
+    "mode": "competence",
+    "window": 9,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.003013418723580929,
+      "tracking_rmse": 0.004273965344315452,
+      "peak_speed": 0.04301963200544059,
+      "model_error_bound": 0.004457055874089063,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 1,
+    "mode": "competence",
+    "window": 1,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0019398405230131974,
+      "tracking_rmse": 0.07070902106118884,
+      "peak_speed": 0.13766232093436406,
+      "model_error_bound": 0.004176451096825191,
+      "safe": true,
+      "recovered": false
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 1,
+    "mode": "competence",
+    "window": 2,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0015931456386505025,
+      "tracking_rmse": 0.021183849881323612,
+      "peak_speed": 0.1539808704542454,
+      "model_error_bound": 0.004122739957463444,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 1,
+    "mode": "competence",
+    "window": 3,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0009124693432346971,
+      "tracking_rmse": 0.0033885178572202828,
+      "peak_speed": 0.03340431103348702,
+      "model_error_bound": 0.0013921503656083977,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 1,
+    "mode": "competence",
+    "window": 4,
+    "level_before": 0,
+    "level_after": 1,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0008040798274168147,
+      "tracking_rmse": 0.005621817977933571,
+      "peak_speed": 0.013575712932345253,
+      "model_error_bound": 0.0015058408579071043,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 1,
+    "mode": "competence",
+    "window": 5,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.003362151217415414,
+      "tracking_rmse": 0.03526780156683994,
+      "peak_speed": 0.1387188890665676,
+      "model_error_bound": 0.005939524329694976,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 1,
+    "mode": "competence",
+    "window": 6,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555345,
+      "tracking_rmse": 0.0062994411961570865,
+      "peak_speed": 0.1297332665227155,
+      "model_error_bound": 0.0015058408579071085,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 1,
+    "mode": "competence",
+    "window": 7,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0010455039977070708,
+      "tracking_rmse": 0.003459074716512419,
+      "peak_speed": 0.043098177264919116,
+      "model_error_bound": 0.0019490105118517569,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 1,
+    "mode": "competence",
+    "window": 8,
+    "level_before": 1,
+    "level_after": 2,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.00042591611280555264,
+      "tracking_rmse": 0.006328076084368388,
+      "peak_speed": 0.018456165588682686,
+      "model_error_bound": 0.0015058408579071048,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 1,
+    "mode": "competence",
+    "window": 9,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.003044133429584292,
+      "tracking_rmse": 0.0043206379610130005,
+      "peak_speed": 0.043058663559499395,
+      "model_error_bound": 0.004457055874089064,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 2,
+    "mode": "competence",
+    "window": 1,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.001939840523013197,
+      "tracking_rmse": 0.07220960676047708,
+      "peak_speed": 0.14109116058453194,
+      "model_error_bound": 0.004176451096825191,
+      "safe": true,
+      "recovered": false
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 2,
+    "mode": "competence",
+    "window": 2,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0015931456386505036,
+      "tracking_rmse": 0.021296711044142307,
+      "peak_speed": 0.15716525941218062,
+      "model_error_bound": 0.004122739957463445,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 2,
+    "mode": "competence",
+    "window": 3,
+    "level_before": 0,
+    "level_after": 0,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.0009124693432346971,
+      "tracking_rmse": 0.0036187192802007184,
+      "peak_speed": 0.03504919814158933,
+      "model_error_bound": 0.0013921503656083977,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 2,
+    "mode": "competence",
+    "window": 4,
+    "level_before": 0,
+    "level_after": 1,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0008040798274168144,
+      "tracking_rmse": 0.005948568761274739,
+      "peak_speed": 0.016063110204105446,
+      "model_error_bound": 0.001505840857907105,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 2,
+    "mode": "competence",
+    "window": 5,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_failed",
+    "pass_count": 0,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.003362151217415414,
+      "tracking_rmse": 0.036610338157149765,
+      "peak_speed": 0.14080761875224265,
+      "model_error_bound": 0.005939524329694976,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 2,
+    "mode": "competence",
+    "window": 6,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 2,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.006411917600219993,
+      "peak_speed": 0.13211873792976456,
+      "model_error_bound": 0.0015058408579071048,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 2,
+    "mode": "competence",
+    "window": 7,
+    "level_before": 1,
+    "level_after": 1,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 2,
+    "dwell_windows": 3,
+    "evidence": {
+      "prediction_rmse": 0.001045503997707071,
+      "tracking_rmse": 0.0032906014374735186,
+      "peak_speed": 0.041349827031378454,
+      "model_error_bound": 0.0019490105118517584,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 2,
+    "mode": "competence",
+    "window": 8,
+    "level_before": 1,
+    "level_after": 2,
+    "decision": "promote",
+    "reason": "competence_confirmed",
+    "pass_count": 0,
+    "dwell_windows": 0,
+    "evidence": {
+      "prediction_rmse": 0.0004259161128055528,
+      "tracking_rmse": 0.005905717148138498,
+      "peak_speed": 0.017625143818182924,
+      "model_error_bound": 0.001505840857907105,
+      "safe": true,
+      "recovered": true
+    }
+  },
+  {
+    "scenario": "unmodeled_delay",
+    "seed": 2,
+    "mode": "competence",
+    "window": 9,
+    "level_before": 2,
+    "level_after": 2,
+    "decision": "hold",
+    "reason": "competence_pending",
+    "pass_count": 1,
+    "dwell_windows": 1,
+    "evidence": {
+      "prediction_rmse": 0.0030134187235809295,
+      "tracking_rmse": 0.004284199291878542,
+      "peak_speed": 0.04214434978975653,
+      "model_error_bound": 0.004457055874089063,
+      "safe": true,
+      "recovered": true
+    }
+  }
+]

@@ -5,11 +5,13 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Status](https://img.shields.io/badge/status-G1%20ground%20development-f59e0b)](#当前证据地图)
-[![Tests](https://img.shields.io/badge/tests-59%20passed-22c55e)](#快速开始)
+[![Tests](https://img.shields.io/badge/tests-CPU%20checks-22c55e)](#快速开始)
 
 本项目研究一个区别于“海量仿真摔倒 → 单任务策略”的人形机器人运动学习方向：机器人从地面开始，在安全约束和可撤除搀扶下，通过身体探索形成 **Body Schema**，再逐步学习翻身、支撑、起身、站立和行走。
 
 仓库包含两条必须分开理解的证据轨：二维火柴人概念验证已经完成同预算对照；Unitree G1 地面发育轨正在学习，目前只通过了翻身/支撑能力门，尚未学会稳定起身。旧的近站立 G1 checkpoint 只保留为控制和评估基础设施审计，不再充当“类婴儿学习”成果。
+
+后续研究以少量真实交互中的身体认知、协调能力与技能积累为目标，优先验证 **自监督在线身体建模 + 局部预测控制 + 能力门控**。PPO 作为对照算法保留。目前新增 NumPy 固定模型与门控的 CPU 原型，尚未验证这条新路线的在线学习收益；既有 G1 历史证据与本轮 CPU 验证分开报告。当前仅 CPU、暂不训练，阶段任务与验收见 [项目推进路线](docs/DEVELOPMENT_ROADMAP.md)。
 
 > [!IMPORTANT]
 > 当前方法优势只由透明的二维理想动力学实验支持，不是 G1 或真机结论。G1 数值均为单 seed 方法开发证据。项目公开平台期、退化分支、后验阈值修正、辅助预算和失败 checkpoint，不把训练过程包装成最终成功。
@@ -212,6 +214,15 @@ python scripts/plot_ground_frontier_progress.py \
 
 ### 复现实验
 
+当前用户要求仅做 CPU 无训练验证，暂不运行下面的历史 PPO 训练命令。可先执行：
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m developmental_control.validate --output results/cpu_validation/final
+```
+
+该命令只执行固定模型闭环仿真与门控状态变化，模型和策略参数更新为零。原型范围、实测结果与后续 CPU 方法见 [CPU 无训练验证](docs/CPU_VALIDATION.md)。以下为历史二维成果的复现入口：
+
 ```powershell
 $env:PYTHONPATH = "src"
 python -m robot_rl.experiment `
@@ -250,6 +261,7 @@ developmental-humanoid-learning/
 │   ├── experiment.py     # 多随机种子对照实验
 │   └── video.py          # MP4 / GIF 导出
 ├── src/developmental_g1/ # PBHC G1 成熟控制、Body Schema 与算法扩展
+├── src/developmental_control/ # NumPy 固定模型控制与能力门控 CPU 原型
 ├── configs/pbhc/         # 不修改上游源码的 Hydra overlay
 ├── tests/                # 环境和先验单元测试
 ├── results/validation/   # 未见种子结果、图表与视频
@@ -275,6 +287,14 @@ developmental-humanoid-learning/
 - [ ] 突破当前约 0.31 m 仰卧起身平台并持续达到 0.45 m raised 事件
 - [ ] 达到蹲姿/直立阶段并完成 20 秒严格零辅助独立站立
 - [ ] 固定成熟与能力门控运动成熟的公平对比
+- [ ] 修正二维算法与终止状态处理，补齐实验溯源；新结果单独存档
+- [ ] 固定在线学习的先验、交互预算和留出评估协议
+- [ ] CPU 身体模型与局部预测控制原型
+- [x] CPU 固定模型控制、动作权限与门控逻辑的无训练验证
+- [ ] 经典控制、冻结模型与在线模型的对比
+- [ ] 固定成熟与能力门控的独立机制验证
+- [ ] 若迁移到 Isaac Lab，选择兼容版本并重新验证资产映射与接触
+- [ ] G1 受支撑站立/重心控制中的在线学习验证与 Direct PPO 等基线
 - [ ] 使用原生传感器和特权接触标签蒸馏，不改机器人硬件
 - [ ] MuJoCo 平面双足刚体接触环境
 - [ ] 噪声、延迟、摩擦和执行器随机化
@@ -295,6 +315,9 @@ developmental-humanoid-learning/
 
 ## 文档
 
+- [项目推进路线：从在线身体建模到受保护真机学习](docs/DEVELOPMENT_ROADMAP.md)
+- [CPU 无训练验证与后续轻量学习方法](docs/CPU_VALIDATION.md)
+- [开发进度与已验证检查点](docs/PROGRESS.md)
 - [新环境接管与执行手册](docs/NEW_MACHINE_BOOTSTRAP.md)
 - [外部资源选择与使用原则](docs/DATA_SOURCES.md)
 - [Codex / 智能体项目级工作说明](AGENTS.md)

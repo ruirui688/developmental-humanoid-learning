@@ -44,7 +44,10 @@ data/raw/
 data/processed/
 checkpoints/
 
-# Keep only the held-out validation artifacts in version control.
+# Keep published validation and explicitly archived CPU checkpoints in Git.
 results/*
 !results/validation/
 results/validation/media/comparison_preview_*.png
+!results/cpu_validation/
+results/cpu_validation/*
+!results/cpu_validation/2026-10-10_no_training/
