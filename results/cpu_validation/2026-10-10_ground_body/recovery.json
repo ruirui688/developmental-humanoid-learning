@@ -1,0 +1,24 @@
+{
+  "archive_status": "interrupted_checkpoint_write",
+  "complete": false,
+  "failure": {
+    "type": "PermissionError",
+    "winerror": 5,
+    "operation": "geometry.json.tmp atomic replace to geometry.json"
+  },
+  "source_commit": "2a1de61839f2f63988f63f6adfaf207c16f194ca",
+  "source_dirty": false,
+  "observed_trace_control_steps": 2750,
+  "observed_trace_physics_steps": 27500,
+  "observed_trace_trials": 11,
+  "saved_trial_summaries": 11,
+  "metadata_checkpoint_trials": 10,
+  "geometry_checkpoint_trials": 10,
+  "geometry_temporary_checkpoint_trials": 11,
+  "parameter_updates": {
+    "model": 0,
+    "policy": 0,
+    "gate": 0
+  },
+  "note": "Original files preserved unchanged. Recovery fields computed from closed raw trace/checkpoints after the process exited; this is not a completed matrix or a dynamics failure."
+}

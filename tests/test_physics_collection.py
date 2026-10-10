@@ -44,6 +44,47 @@ def test_invalid_numbers_have_explicit_markers_and_finite_values_keep_precision(
     assert json.loads(json.dumps(archived, allow_nan=False))["values"][0] == finite
 
 
+def test_checkpoint_retries_transient_windows_file_lock_without_losing_old_data(tmp_path, monkeypatch):
+    target = tmp_path / "checkpoint.json"
+    target.write_text('{"previous":true}', encoding="utf-8")
+    original_replace = collection.Path.replace
+    attempts = []
+    delays = []
+
+    def briefly_locked(path, destination):
+        attempts.append(None)
+        if len(attempts) < 3:
+            assert _read(target) == {"previous": True}
+            raise PermissionError("injected transient file lock")
+        return original_replace(path, destination)
+
+    monkeypatch.setattr(collection.Path, "replace", briefly_locked)
+    monkeypatch.setattr(collection.time, "sleep", delays.append)
+    collection._write_json(target, {"next": 1.2345678901234567})
+    assert len(attempts) == 3
+    assert delays == [.05, .1]
+    assert _read(target) == {"next": 1.2345678901234567}
+    assert not (tmp_path / "checkpoint.json.tmp").exists()
+
+
+def test_checkpoint_persistent_lock_keeps_previous_file_and_reports_failure(tmp_path, monkeypatch):
+    target = tmp_path / "checkpoint.json"
+    target.write_text('{"previous":true}', encoding="utf-8")
+    attempts = []
+
+    def still_locked(path, destination):
+        attempts.append(None)
+        raise PermissionError("injected persistent lock")
+
+    monkeypatch.setattr(collection.Path, "replace", still_locked)
+    monkeypatch.setattr(collection.time, "sleep", lambda _: None)
+    with pytest.raises(PermissionError, match="persistent lock"):
+        collection._write_json(target, {"next": True})
+    assert len(attempts) == 10
+    assert _read(target) == {"previous": True}
+    assert _read(tmp_path / "checkpoint.json.tmp") == {"next": True}
+
+
 def test_nonfinite_stop_retains_fault_row_and_each_failed_trial(tmp_path, monkeypatch):
     base = collection.GroundBodyEnv
 

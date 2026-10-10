@@ -72,7 +72,16 @@ def _write_json(path: Path, content) -> None:
     """Replace a completed checkpoint, without leaving a half-written JSON file."""
     temporary = path.with_name(path.name + ".tmp")
     temporary.write_text(json.dumps(content, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
-    temporary.replace(path)
+    # Windows scanners/readers can briefly hold a file without delete sharing.
+    # Keep the prior checkpoint intact and retry only permission/sharing errors.
+    for attempt in range(10):
+        try:
+            temporary.replace(path)
+            return
+        except PermissionError:
+            if attempt == 9:
+                raise
+            time.sleep(.05 * (attempt + 1))
 
 
 def _peak(previous: float, value: float) -> float:
