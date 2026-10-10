@@ -2,3 +2,9 @@
 results/cpu_validation/2026-10-10_ground_body/** -text whitespace=cr-at-eol
 results/cpu_validation/2026-10-10_ground_body_verified/** -text whitespace=cr-at-eol
 results/cpu_validation/2026-10-10_ground_impacts/** -text whitespace=cr-at-eol
+
+# Keep hashed audit and analysis scripts identical across Windows checkouts.
+scripts/audit_ground_body_archive.py text eol=lf
+scripts/analyze_ground_body_impacts.py text eol=lf
+scripts/audit_ground_impacts.py text eol=lf
+scripts/plot_ground_body_impacts.py text eol=lf
