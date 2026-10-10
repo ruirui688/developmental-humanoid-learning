@@ -1,0 +1,145 @@
+{
+  "source_commit": "cf3c5cef15b812cd71708458cf40da467963b2bc",
+  "analysis_script_sha256": "e2c8cd0719ae452709e54a9764d0dc0aecab2fa154396101d768970a8bd129c8",
+  "input_sha256": {
+    "metadata.json": "03a05d86e91b1873f3eb22addf72158fbf6bea8be95a60287c3817b1c501753e",
+    "trials.json": "01f8cd7ae38a81d9e92b8f5445c6c12392dbe87d060a6f17acd29b245fafcac1",
+    "trace.jsonl.gz": "41f3707b4c906889ceb70d66a11ffba4c43592a11b3ccf1cc395ba6342247249"
+  },
+  "analysis_type": "descriptive statistics only; no model fitting or policy updates",
+  "joint_order": [
+    "left_shoulder",
+    "left_elbow",
+    "right_shoulder",
+    "right_elbow",
+    "left_hip",
+    "left_knee",
+    "right_hip",
+    "right_knee"
+  ],
+  "by_pose": [
+    {
+      "pose": "supine",
+      "zero_torque_joint_excursion_rms_rad_mean": 0.08516870345288872,
+      "smooth_random_joint_excursion_rms_rad_mean": 0.08536255132059876,
+      "paired_trajectory_difference_rms_rad_mean": 0.005805934632142895,
+      "paired_trajectory_difference_rms_rad_by_joint": [
+        0.008583268652044508,
+        0.00035547266204409756,
+        0.008626015472024072,
+        0.000935943102068024,
+        0.005422584596507574,
+        0.005648242399575125,
+        0.005407237994515743,
+        0.005463197866493079
+      ],
+      "paired_values_by_seed": {
+        "0": 0.005874850539854334,
+        "1": 0.004207484346766114,
+        "2": 0.007335469009808235
+      }
+    },
+    {
+      "pose": "prone",
+      "zero_torque_joint_excursion_rms_rad_mean": 0.1452096748004916,
+      "smooth_random_joint_excursion_rms_rad_mean": 0.14577365513714402,
+      "paired_trajectory_difference_rms_rad_mean": 0.01360163291991176,
+      "paired_trajectory_difference_rms_rad_by_joint": [
+        0.018489626769130674,
+        0.01916110528573584,
+        0.01878925279843657,
+        0.01936022714299116,
+        0.0035324880159219364,
+        0.0030402827012366677,
+        0.0030857755809320015,
+        0.0012205719305534597
+      ],
+      "paired_values_by_seed": {
+        "0": 0.016163826012445627,
+        "1": 0.018414981230443835,
+        "2": 0.006226091516845819
+      }
+    },
+    {
+      "pose": "left_side",
+      "zero_torque_joint_excursion_rms_rad_mean": 0.15268285464394735,
+      "smooth_random_joint_excursion_rms_rad_mean": 0.17666155956806232,
+      "paired_trajectory_difference_rms_rad_mean": 0.06057424533831823,
+      "paired_trajectory_difference_rms_rad_by_joint": [
+        0.08016678143945914,
+        0.09078235700914289,
+        0.07623668879737826,
+        0.07687783942033166,
+        0.02270222899927631,
+        0.01826565380317303,
+        0.020199376126199164,
+        0.024029002124400817
+      ],
+      "paired_values_by_seed": {
+        "0": 0.03250913279963378,
+        "1": 0.03895235946276579,
+        "2": 0.11026124375255512
+      }
+    },
+    {
+      "pose": "right_side",
+      "zero_torque_joint_excursion_rms_rad_mean": 0.16184258191994383,
+      "smooth_random_joint_excursion_rms_rad_mean": 0.1742895032672642,
+      "paired_trajectory_difference_rms_rad_mean": 0.042410787626922464,
+      "paired_trajectory_difference_rms_rad_by_joint": [
+        0.04993922654035409,
+        0.06547055966719512,
+        0.047908801437946576,
+        0.048447674769183935,
+        0.019111580706613434,
+        0.020417794422053204,
+        0.03134194087088929,
+        0.028495939911272236
+      ],
+      "paired_values_by_seed": {
+        "0": 0.030518261618125982,
+        "1": 0.045288649592676956,
+        "2": 0.051425451669964456
+      }
+    }
+  ],
+  "exploration_control_steps": 3000,
+  "exploration_physics_steps": 30000,
+  "exploration_command_rms_nm_by_joint": [
+    0.06363777129028861,
+    0.06749760954816937,
+    0.06189486313726983,
+    0.06232274952364561,
+    0.07774134710344201,
+    0.06450047284048138,
+    0.06399652075633029,
+    0.05887505029396448
+  ],
+  "exploration_applied_torque_rms_nm_by_joint": [
+    0.06363777129028822,
+    0.06269846591943233,
+    0.06189486313727008,
+    0.055706904337958,
+    0.077741347103442,
+    0.05464182160842507,
+    0.06399652075633085,
+    0.05111162924967067
+  ],
+  "exploration_blocked_substep_fraction_by_joint": [
+    0.0,
+    0.1429,
+    0.0,
+    0.1682,
+    0.0,
+    0.3255,
+    0.0,
+    0.3354333333333333
+  ],
+  "exploration_substeps_with_any_limit_guard": 21357,
+  "exploration_control_steps_with_intervention": 2141,
+  "peak_ground_normal_force_n": 895.0715660756978,
+  "peak_joint_speed_rad_s": 5.8312829296394355,
+  "peak_actuator_torque_nm": 0.21385542360952656,
+  "minimum_contact_distance_m": -0.005970272012031541,
+  "claim_boundary": "Paired motion differences show response under these fixed exploratory commands; they do not establish identifiability, learning, competence or safety. Contact force peaks are sampled at control endpoints, not maxima over all physical substeps."
+}

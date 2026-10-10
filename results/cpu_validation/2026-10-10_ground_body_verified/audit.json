@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "audit_type": "independent_offline_archive_consistency",
+  "created_at_utc": "2026-10-10T09:54:34.918657+00:00",
+  "status": "pass",
+  "tools": "Python standard library only: JSON/gzip/hashlib/zipfile/math/subprocess git show. No project imports, simulator calls, planner calls, or parameter updates.",
+  "audited_input_manifest_sha256": "089eada8f88e9e0938c8692a25736e4984b4ac90d389d39340c130f90bb25823",
+  "audited_input_manifest_entries": {
+    "geometry.json": "2485087c802169068c493657e9c076e1c912c0d3d9d40805e889d7207b65a184",
+    "metadata.json": "03a05d86e91b1873f3eb22addf72158fbf6bea8be95a60287c3817b1c501753e",
+    "source_snapshot.zip": "fe4f710cdd6e88195fd9075ca064106eb501a7148ffb591a1f71b5001c174cfb",
+    "trace.jsonl.gz": "41f3707b4c906889ceb70d66a11ffba4c43592a11b3ccf1cc395ba6342247249",
+    "trials.json": "01f8cd7ae38a81d9e92b8f5445c6c12392dbe87d060a6f17acd29b245fafcac1"
+  },
+  "source_commit": "cf3c5cef15b812cd71708458cf40da467963b2bc",
+  "source_snapshot_members": [
+    {
+      "path": "src/developmental_physics/__init__.py",
+      "raw_sha256_match": true,
+      "git_blob_raw_bytes_match": true
+    },
+    {
+      "path": "src/developmental_physics/collect.py",
+      "raw_sha256_match": true,
+      "git_blob_raw_bytes_match": true
+    },
+    {
+      "path": "src/developmental_physics/environment.py",
+      "raw_sha256_match": true,
+      "git_blob_raw_bytes_match": true
+    },
+    {
+      "path": "src/developmental_physics/exploration.py",
+      "raw_sha256_match": true,
+      "git_blob_raw_bytes_match": true
+    },
+    {
+      "path": "src/developmental_physics/assets/ground_body.xml",
+      "raw_sha256_match": true,
+      "git_blob_raw_bytes_match": true
+    },
+    {
+      "path": "pyproject.toml",
+      "raw_sha256_match": true,
+      "git_blob_raw_bytes_match": true
+    }
+  ],
+  "checks": 1696520,
+  "finite_float_values_checked": 1344680,
+  "max_recomputed_numeric_difference": 3.2862601528904634e-13,
+  "verified_matrix": {
+    "trials": 24,
+    "trace_rows": 6000,
+    "physics_steps": 60000,
+    "paired_initial_states": 12,
+    "ground_contact_steps": 5963,
+    "guarded_physics_substeps": 21357,
+    "command_intervention_steps": 2141,
+    "terminated_trials": 0,
+    "parameter_updates_record": {
+      "model": 0,
+      "policy": 0,
+      "gate": 0
+    }
+  },
+  "per_trial": [
+    {
+      "trial_id": "supine_seed0_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "supine_seed0_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 1567,
+      "command_intervention_steps": 157
+    },
+    {
+      "trial_id": "supine_seed1_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "supine_seed1_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 2027,
+      "command_intervention_steps": 203
+    },
+    {
+      "trial_id": "supine_seed2_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "supine_seed2_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 1440,
+      "command_intervention_steps": 144
+    },
+    {
+      "trial_id": "prone_seed0_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 246,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "prone_seed0_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 247,
+      "guarded_physics_substeps": 1874,
+      "command_intervention_steps": 188
+    },
+    {
+      "trial_id": "prone_seed1_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 247,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "prone_seed1_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 248,
+      "guarded_physics_substeps": 1750,
+      "command_intervention_steps": 175
+    },
+    {
+      "trial_id": "prone_seed2_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 247,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "prone_seed2_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 247,
+      "guarded_physics_substeps": 1874,
+      "command_intervention_steps": 188
+    },
+    {
+      "trial_id": "left_side_seed0_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "left_side_seed0_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 248,
+      "guarded_physics_substeps": 1763,
+      "command_intervention_steps": 177
+    },
+    {
+      "trial_id": "left_side_seed1_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "left_side_seed1_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 1740,
+      "command_intervention_steps": 175
+    },
+    {
+      "trial_id": "left_side_seed2_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "left_side_seed2_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 2127,
+      "command_intervention_steps": 213
+    },
+    {
+      "trial_id": "right_side_seed0_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "right_side_seed0_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 1788,
+      "command_intervention_steps": 179
+    },
+    {
+      "trial_id": "right_side_seed1_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "right_side_seed1_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 1825,
+      "command_intervention_steps": 183
+    },
+    {
+      "trial_id": "right_side_seed2_zero_torque",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 0,
+      "command_intervention_steps": 0
+    },
+    {
+      "trial_id": "right_side_seed2_smooth_random",
+      "trace_rows": 250,
+      "physics_steps": 2500,
+      "ground_contact_steps": 249,
+      "guarded_physics_substeps": 1582,
+      "command_intervention_steps": 159
+    }
+  ],
+  "budget_ledger": {
+    "completed_matrix_control_steps": 6000,
+    "completed_matrix_physics_steps": 60000,
+    "completed_matrix_simulated_seconds": 120.0,
+    "interrupted_archive": "results/cpu_validation/2026-10-10_ground_body",
+    "interrupted_archive_source_commit": "2a1de61839f2f63988f63f6adfaf207c16f194ca",
+    "interrupted_extra_control_steps": 2750,
+    "interrupted_extra_physics_steps": 27500,
+    "interrupted_extra_simulated_seconds": 55.0,
+    "total_collector_control_steps_including_interrupted_attempt": 8750,
+    "total_collector_physics_steps_including_interrupted_attempt": 87500,
+    "total_collector_simulated_seconds_including_interrupted_attempt": 175.0,
+    "scope": "Collector attempts only. Unit tests and other historical diagnostics are separate and not included in these totals."
+  },
+  "evidence_boundaries": [
+    "This is an archive consistency audit, not an independent physical solver or causal proof of contact dynamics.",
+    "Contact diagnostics are logged separately from the native observation schema; trace data alone cannot prove that a solver generated them or establish absence of every possible hidden teacher.",
+    "Unchanged fingerprints and recorded zero counters establish internal consistency; this audit does not re-execute program behavior.",
+    "Different reset/exploration seed IDs and paired equality are checked; SeedSequence or random commands are not regenerated.",
+    "No learned body model, competence development, acquired rolling/standing/walking, biological validity, G1 validity, sample efficiency, or hardware safety claim follows.",
+    "The interrupted first attempt is retained as additional interaction budget and a checkpoint-write failure, not a physical dynamics failure or completed matrix."
+  ],
+  "violations": []
+}
