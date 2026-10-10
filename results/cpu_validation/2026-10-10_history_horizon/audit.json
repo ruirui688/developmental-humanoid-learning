@@ -1,0 +1,1094 @@
+{
+  "kind": "independent_offline_cpu_history_audit",
+  "passed": true,
+  "archive_name": "2026-10-10_history_horizon",
+  "source_commit": "9829e6ba7f6e7ea149b1e15188bf6275b5443c84",
+  "audit_script_sha256": "84bbdd8c1ea9bc24c98a77636b19267129cfe203a622a43fc2eb201aab6abb2e",
+  "input_sha256": {
+    "report.json": "fce4cabbf01679422291a1a7695667adde661db0da159644038ec6a28c47e666",
+    "trace.csv.gz": "a13fd407c880cf8813837fb55163f384e68787ede64ee9d959b6b06fc93066c4",
+    "source_snapshot.zip": "d423d000538f181ff325143c4f5040fc5fc2ff34f4c793e545506ced9cf76210",
+    "gates.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "counts": {
+    "trace_rows": 53179,
+    "trials": 120,
+    "paired_comparisons": 96,
+    "numerical_checks": 765434,
+    "source_files": 9,
+    "planned_interaction_steps": 54000,
+    "planner_model_transitions": 73283420,
+    "diagnostic_one_step_predictions": 159537,
+    "completed": 116,
+    "state_limit_exits": 4,
+    "nonfinite_exits": 0
+  },
+  "max_abs_errors": {
+    "initial": 0.0,
+    "initial_rmse": 0.0,
+    "time": 0.0,
+    "state_continuity": 0.0,
+    "assumed_history": 0.0,
+    "method_prediction": 0.0,
+    "true_gain": 0.0,
+    "true_inertia": 0.0,
+    "actual_history": 0.0,
+    "effective_torque": 0.0,
+    "external": 0.0,
+    "actual_dynamics": 0.0,
+    "prediction_rmse": 0.0,
+    "immediate_prediction_rmse": 0.0,
+    "applied_label_prediction_rmse": 0.0,
+    "full_target_rmse": 0.0,
+    "whole_metrics": 0.0,
+    "final_rmse": 0.0,
+    "phases": 0.0,
+    "audit_halves": 0.0,
+    "timings": 0.0,
+    "pd_command": 0.0,
+    "fallback": 0.0,
+    "exit_seconds": 0.0,
+    "paired_left": 0.0,
+    "paired_right": 0.0
+  },
+  "method_outcomes": [
+    {
+      "scenario": "constant_delay_15",
+      "mode": "history_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.06800811415391333,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555275,
+      "nonzero_command_steps": 0,
+      "peak_issued_command": 0.0
+    },
+    {
+      "scenario": "constant_delay_15",
+      "mode": "history_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.021175060595685375,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555264,
+      "nonzero_command_steps": 1133,
+      "peak_issued_command": 0.6666666666666665
+    },
+    {
+      "scenario": "constant_delay_15",
+      "mode": "immediate_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.05550067820795782,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.01203964073022467,
+      "nonzero_command_steps": 1289,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "constant_delay_15",
+      "mode": "immediate_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.02089379386008967,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.0028652155386237107,
+      "nonzero_command_steps": 1188,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "constant_delay_15",
+      "mode": "pd",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.018618878099664136,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.0018641692626292859,
+      "nonzero_command_steps": 1350,
+      "peak_issued_command": 0.578695177061185
+    },
+    {
+      "scenario": "constant_delay_30",
+      "mode": "history_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.06800811415391333,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555275,
+      "nonzero_command_steps": 0,
+      "peak_issued_command": 0.0
+    },
+    {
+      "scenario": "constant_delay_30",
+      "mode": "history_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.023456797016843365,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555275,
+      "nonzero_command_steps": 1033,
+      "peak_issued_command": 0.6666666666666665
+    },
+    {
+      "scenario": "constant_delay_30",
+      "mode": "immediate_h20",
+      "runs": 3,
+      "completed": 0,
+      "state_limit_exits": 3,
+      "executed_steps_by_seed": {
+        "10": 193,
+        "11": 189,
+        "12": 189
+      },
+      "whole_target_rmse_mean_rad": 0.14251286683202044,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.016237835414903666,
+      "nonzero_command_steps": 519,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "constant_delay_30",
+      "mode": "immediate_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.03239084555521767,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00346034530525623,
+      "nonzero_command_steps": 913,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "constant_delay_30",
+      "mode": "pd",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.11288834456400217,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.013361317409978708,
+      "nonzero_command_steps": 1350,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "constant_delay_6",
+      "mode": "history_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.018436631428664873,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555264,
+      "nonzero_command_steps": 1005,
+      "peak_issued_command": 0.6666666666666667
+    },
+    {
+      "scenario": "constant_delay_6",
+      "mode": "history_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.02504983004182038,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555264,
+      "nonzero_command_steps": 1224,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "constant_delay_6",
+      "mode": "immediate_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.014199262132374704,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.0029620398473565296,
+      "nonzero_command_steps": 1151,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "constant_delay_6",
+      "mode": "immediate_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.026309158910893988,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.0020412510753542276,
+      "nonzero_command_steps": 1278,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "constant_delay_6",
+      "mode": "pd",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.015015779223758548,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.0009255833049496299,
+      "nonzero_command_steps": 1350,
+      "peak_issued_command": 0.578695177061185
+    },
+    {
+      "scenario": "delay_jump_0_to_30_at225",
+      "mode": "history_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.06463736447410313,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.08971441538152221,
+      "causal_residual_mean": 0.009027002272450934,
+      "nonzero_command_steps": 1109,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "delay_jump_0_to_30_at225",
+      "mode": "history_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.028118558235001076,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.027100444402361607,
+      "causal_residual_mean": 0.0014437566169538632,
+      "nonzero_command_steps": 1280,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "delay_jump_0_to_30_at225",
+      "mode": "immediate_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.06463736447410313,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.08971441538152221,
+      "causal_residual_mean": 0.009027002272450934,
+      "nonzero_command_steps": 1109,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "delay_jump_0_to_30_at225",
+      "mode": "immediate_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.028118558235001076,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.027100444402361607,
+      "causal_residual_mean": 0.0014437566169538632,
+      "nonzero_command_steps": 1280,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "delay_jump_0_to_30_at225",
+      "mode": "pd",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.013526742519404741,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.0012360565464794055,
+      "causal_residual_mean": 0.00043059250242593895,
+      "nonzero_command_steps": 1350,
+      "peak_issued_command": 0.578695177061185
+    },
+    {
+      "scenario": "delay_jump_15_to_30_at225",
+      "mode": "history_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.06800811415391333,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.06796332530787019,
+      "causal_residual_mean": 0.00042591611280555275,
+      "nonzero_command_steps": 0,
+      "peak_issued_command": 0.0
+    },
+    {
+      "scenario": "delay_jump_15_to_30_at225",
+      "mode": "history_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.020961132234080897,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.010522274672781613,
+      "causal_residual_mean": 0.002049542249242236,
+      "nonzero_command_steps": 1171,
+      "peak_issued_command": 0.6666666666666665
+    },
+    {
+      "scenario": "delay_jump_15_to_30_at225",
+      "mode": "immediate_h20",
+      "runs": 3,
+      "completed": 2,
+      "state_limit_exits": 1,
+      "executed_steps_by_seed": {
+        "10": 408,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.11588418858779931,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 183,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.15858729741931277,
+      "causal_residual_mean": 0.013899303908560682,
+      "nonzero_command_steps": 1189,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "delay_jump_15_to_30_at225",
+      "mode": "immediate_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.025744607239907933,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.023555329753841055,
+      "causal_residual_mean": 0.0031511019244677457,
+      "nonzero_command_steps": 1251,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "delay_jump_15_to_30_at225",
+      "mode": "pd",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.019413113136460037,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.00788883119822418,
+      "causal_residual_mean": 0.0021093141364148683,
+      "nonzero_command_steps": 1350,
+      "peak_issued_command": 0.578695177061185
+    },
+    {
+      "scenario": "gain_drop_1_to_0.125_at225",
+      "mode": "history_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.033492125322801054,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.04404553303352365,
+      "causal_residual_mean": 0.005008054720227526,
+      "nonzero_command_steps": 1207,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "gain_drop_1_to_0.125_at225",
+      "mode": "history_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.04451658231616276,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.055825019681483457,
+      "causal_residual_mean": 0.0027051914443714958,
+      "nonzero_command_steps": 1280,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "gain_drop_1_to_0.125_at225",
+      "mode": "immediate_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.033492125322801054,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.04404553303352365,
+      "causal_residual_mean": 0.005008054720227526,
+      "nonzero_command_steps": 1207,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "gain_drop_1_to_0.125_at225",
+      "mode": "immediate_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.04451658231616276,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.055825019681483457,
+      "causal_residual_mean": 0.0027051914443714958,
+      "nonzero_command_steps": 1280,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "gain_drop_1_to_0.125_at225",
+      "mode": "pd",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.03764998878632411,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.049698671138786364,
+      "causal_residual_mean": 0.0036868478628677304,
+      "nonzero_command_steps": 1350,
+      "peak_issued_command": 0.5867518549640943
+    },
+    {
+      "scenario": "gain_drop_1_to_0.25_at225",
+      "mode": "history_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.026483581390095046,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.033155861826771584,
+      "causal_residual_mean": 0.00329617834514577,
+      "nonzero_command_steps": 1207,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "gain_drop_1_to_0.25_at225",
+      "mode": "history_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.037105429231491766,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.043665195122337984,
+      "causal_residual_mean": 0.002316754257691756,
+      "nonzero_command_steps": 1280,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "gain_drop_1_to_0.25_at225",
+      "mode": "immediate_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.026483581390095046,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.033155861826771584,
+      "causal_residual_mean": 0.00329617834514577,
+      "nonzero_command_steps": 1207,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "gain_drop_1_to_0.25_at225",
+      "mode": "immediate_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.037105429231491766,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.043665195122337984,
+      "causal_residual_mean": 0.002316754257691756,
+      "nonzero_command_steps": 1280,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "gain_drop_1_to_0.25_at225",
+      "mode": "pd",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.029463497336870235,
+      "post_change_runs": 3,
+      "post_change_steps_by_seed": {
+        "10": 225,
+        "11": 225,
+        "12": 225
+      },
+      "post_change_target_rmse_mean_rad": 0.037029329745176885,
+      "causal_residual_mean": 0.002760737217638465,
+      "nonzero_command_steps": 1350,
+      "peak_issued_command": 0.578695177061185
+    },
+    {
+      "scenario": "nominal",
+      "mode": "history_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.012441869940157285,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555275,
+      "nonzero_command_steps": 1103,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "nominal",
+      "mode": "history_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.027933070233699564,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555264,
+      "nonzero_command_steps": 1280,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "nominal",
+      "mode": "immediate_h20",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.012441869940157285,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555275,
+      "nonzero_command_steps": 1103,
+      "peak_issued_command": 1.0
+    },
+    {
+      "scenario": "nominal",
+      "mode": "immediate_h50",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.027933070233699564,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555264,
+      "nonzero_command_steps": 1280,
+      "peak_issued_command": 0.33333333333333337
+    },
+    {
+      "scenario": "nominal",
+      "mode": "pd",
+      "runs": 3,
+      "completed": 3,
+      "state_limit_exits": 0,
+      "executed_steps_by_seed": {
+        "10": 450,
+        "11": 450,
+        "12": 450
+      },
+      "whole_target_rmse_mean_rad": 0.013526183842643662,
+      "post_change_runs": 0,
+      "post_change_steps_by_seed": {
+        "10": null,
+        "11": null,
+        "12": null
+      },
+      "post_change_target_rmse_mean_rad": null,
+      "causal_residual_mean": 0.00042591611280555264,
+      "nonzero_command_steps": 1350,
+      "peak_issued_command": 0.578695177061185
+    }
+  ],
+  "unfavorable_outcomes": {
+    "exits": [
+      {
+        "scenario": "constant_delay_30",
+        "seed": 10,
+        "mode": "immediate_h20",
+        "executed_steps": 193,
+        "termination_reason": "state_limit",
+        "exit_step": 193,
+        "exit_seconds": 3.86
+      },
+      {
+        "scenario": "constant_delay_30",
+        "seed": 11,
+        "mode": "immediate_h20",
+        "executed_steps": 189,
+        "termination_reason": "state_limit",
+        "exit_step": 189,
+        "exit_seconds": 3.7800000000000002
+      },
+      {
+        "scenario": "constant_delay_30",
+        "seed": 12,
+        "mode": "immediate_h20",
+        "executed_steps": 189,
+        "termination_reason": "state_limit",
+        "exit_step": 189,
+        "exit_seconds": 3.7800000000000002
+      },
+      {
+        "scenario": "delay_jump_15_to_30_at225",
+        "seed": 10,
+        "mode": "immediate_h20",
+        "executed_steps": 408,
+        "termination_reason": "state_limit",
+        "exit_step": 408,
+        "exit_seconds": 8.16
+      }
+    ],
+    "all_zero_command_groups": [
+      {
+        "scenario": "constant_delay_15",
+        "mode": "history_h20",
+        "runs": 3,
+        "executed_steps": 1350
+      },
+      {
+        "scenario": "constant_delay_30",
+        "mode": "history_h20",
+        "runs": 3,
+        "executed_steps": 1350
+      },
+      {
+        "scenario": "delay_jump_15_to_30_at225",
+        "mode": "history_h20",
+        "runs": 3,
+        "executed_steps": 1350
+      }
+    ],
+    "h50_worse_post_change_than_h20": [
+      {
+        "scenario": "gain_drop_1_to_0.25_at225",
+        "model_assumption": "immediate",
+        "seeds": [
+          10,
+          11,
+          12
+        ],
+        "h20_mean_rad": 0.033155861826771584,
+        "h50_mean_rad": 0.043665195122337984,
+        "same_post_change_step_count": true
+      },
+      {
+        "scenario": "gain_drop_1_to_0.25_at225",
+        "model_assumption": "history",
+        "seeds": [
+          10,
+          11,
+          12
+        ],
+        "h20_mean_rad": 0.033155861826771584,
+        "h50_mean_rad": 0.043665195122337984,
+        "same_post_change_step_count": true
+      },
+      {
+        "scenario": "gain_drop_1_to_0.125_at225",
+        "model_assumption": "immediate",
+        "seeds": [
+          10,
+          11,
+          12
+        ],
+        "h20_mean_rad": 0.04404553303352365,
+        "h50_mean_rad": 0.055825019681483457,
+        "same_post_change_step_count": true
+      },
+      {
+        "scenario": "gain_drop_1_to_0.125_at225",
+        "model_assumption": "history",
+        "seeds": [
+          10,
+          11,
+          12
+        ],
+        "h20_mean_rad": 0.04404553303352365,
+        "h50_mean_rad": 0.055825019681483457,
+        "same_post_change_step_count": true
+      }
+    ]
+  },
+  "scope": [
+    "All checks use archived data, independently written scalar Euler and Git blobs.",
+    "No project imports, planner calls, simulation reruns or parameter learning.",
+    "Checks data/implementation consistency; not external replication or planner optimality.",
+    "Missing early-exit steps remain missing; whole-trajectory and common-prefix metrics are distinct.",
+    "Zero commands, low residuals or no exits alone do not demonstrate task success.",
+    "Method outcomes average per-seed RMSE; they do not establish universal superiority."
+  ]
+}

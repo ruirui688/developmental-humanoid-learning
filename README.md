@@ -23,7 +23,7 @@
 | 证据层级 | 当前状态 | 已证明 | 尚未证明 |
 |---|---|---|---|
 | 二维火柴人概念验证 | **完成** | 同为 76,800 interactions 时，完整 DHP-PPO 比 Direct PPO 少 95.51% 严重跌倒，并完成无支撑行走 | 单个组件的因果贡献、刚体接触泛化 |
-| CPU 无训练失效诊断 | **144 组完成** | 未建模延迟可导致位置退出；持续失败退级变体在增益下降时损害跟踪 | 身体模型学习、权限门控的普适优势、G1/真机能力 |
+| CPU 无训练机制诊断 | **失效 144 组、历史/时域 120 组完成** | 发现延迟失效与不利退级；H50 下已知延迟的历史预测有条件改善控制 | 身体模型学习、历史/时域的普适优势、G1/真机能力 |
 | G1 近站立工程轨 | **降级为基础设施审计** | 模型加载、并行训练、evaluation-only、长时域运动验收可运行 | 从地面学习、方法优于 PPO |
 | G1 地面发育轨 | **阶段 2 进行中** | 四种躺姿起点；翻身/支撑门通过；高度前沿推进至 0.29 m | 持续起身、独立站立、Direct/Fixed/Adaptive 优势 |
 | G1 真机 | **未开始** | 仅有安全边界和系统设计 | Sim2Real、真实机器人自主学习 |
@@ -322,6 +322,7 @@ developmental-humanoid-learning/
 - [CPU 失效边界与门控响应的冻结协议](docs/CPU_FAILURE_PROTOCOL.md)
 - [CPU 失效边界实测结果与不利门控变体](docs/CPU_FAILURE_RESULTS.md)
 - [CPU 无训练指令历史与预测时域对照协议](docs/CPU_HISTORY_PROTOCOL.md)
+- [CPU 指令历史与预测时域的实际结果](docs/CPU_HISTORY_RESULTS.md)
 - [开发进度与已验证检查点](docs/PROGRESS.md)
 - [新环境接管与执行手册](docs/NEW_MACHINE_BOOTSTRAP.md)
 - [外部资源选择与使用原则](docs/DATA_SOURCES.md)

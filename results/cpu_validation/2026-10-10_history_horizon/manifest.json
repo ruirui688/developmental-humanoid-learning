@@ -1,0 +1,76 @@
+{
+  "archive_date": "2026-10-10",
+  "kind": "cpu_no_training_history_horizon_diagnostic",
+  "source_commit": "9829e6ba7f6e7ea149b1e15188bf6275b5443c84",
+  "source_dirty": false,
+  "protocol_sha256": "438199fda06cb0c0a91eb5553d61769f4dc0cfe8bf29cf0708f6d3dc985bcb42",
+  "planned_runs": 120,
+  "executed_runs": 120,
+  "planned_interaction_steps": 54000,
+  "total_executed_steps": 53179,
+  "model_parameter_updates": 0,
+  "policy_parameter_updates": 0,
+  "delay_parameter_updates": 0,
+  "source_sha256": {
+    "src/developmental_control/__init__.py": "d400cee11498b34045e45c1fdad43180b507138724009f9171a1947ee7affff1",
+    "src/developmental_control/history.py": "df904ba734a0f79dd96be72e9a6d797188aa059ac5119ada190e0c62abf3012f",
+    "src/developmental_control/history_planning.py": "06f5e480f43b95e71478eb56f67cf59401b38ffb67641d133015b8898cdbf8a6",
+    "src/developmental_control/joints.py": "3c0b04617f2fbd7b7ed77d74beb61dd8ba877a9e271c86f6331091b6647652ed",
+    "src/developmental_control/maturation.py": "a01ccf59271845f685414f95bee212595cf8d28027afab7320dcc81e72040935",
+    "src/developmental_control/planning.py": "12a1c6130c8f7350c63d3586bb1b50ff4f619511e129b3a00409f1087c910dd8",
+    "src/developmental_control/stress.py": "fea69d0cc2f1e73bd25ff0cb1930cf986f1afb3c082e47d508ffa17946487cb7",
+    "src/developmental_control/sustained.py": "57b25c289c9f1cc007c9a5711601bc5972bc2d2dca3d388e680640740be21efa",
+    "src/developmental_control/validate.py": "ff6e37102bca55ae5cb2aa4a1424c6e641283869ffed978b53a0b15d29a412fb"
+  },
+  "files": {
+    "README.md": {
+      "bytes": 4978,
+      "sha256": "8f41a7ae55586ae695eb4d98aa214f94300999ea891d84051d3be982c24baf06"
+    },
+    "report.json": {
+      "bytes": 723231,
+      "sha256": "fce4cabbf01679422291a1a7695667adde661db0da159644038ec6a28c47e666"
+    },
+    "gates.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "trace.csv.gz": {
+      "bytes": 5711193,
+      "sha256": "a13fd407c880cf8813837fb55163f384e68787ede64ee9d959b6b06fc93066c4"
+    },
+    "source_snapshot.zip": {
+      "bytes": 28359,
+      "sha256": "d423d000538f181ff325143c4f5040fc5fc2ff34f4c793e545506ced9cf76210"
+    },
+    "summary.png": {
+      "bytes": 309323,
+      "sha256": "d8c61a084bf9e7aca3bd9b6b263aab0fbd0a5c471590f3e040bbe4089fabd9e1"
+    },
+    "audit.json": {
+      "bytes": 30249,
+      "sha256": "8ad8ab9aae8441f76462bf570fc10f258c35f2c098e689815d8b7b9ca10b8eff"
+    }
+  },
+  "analysis_script_sha256": {
+    "scripts/plot_cpu_history_summary.py": "d65d08f3c28430f3463c84b6fd79181f55a81f306de5fd4ac71a3b974ffa6a7f",
+    "scripts/audit_cpu_history_archive.py": "84bbdd8c1ea9bc24c98a77636b19267129cfe203a622a43fc2eb201aab6abb2e"
+  },
+  "plot_environment": {
+    "matplotlib": "3.10.6"
+  },
+  "execution_host_cpu": {
+    "name": "11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz",
+    "cores": 4,
+    "logical_processors": 8
+  },
+  "notes": [
+    "Protocol and implementation frozen in 9829e6b before a single formal 120-run matrix.",
+    "Execution used a clean checkout; Git, protocol and source fingerprints unchanged during the run.",
+    "Initial declared delays are disclosed fixed priors, not learned or updated after changes.",
+    "JSON line endings normalized to LF; compressed CSV and exact source ZIP preserved.",
+    "Analysis scripts added after the experiment, not part of the execution source snapshot.",
+    "Independent scalar-Euler audit reads data only; no project imports or planner reruns.",
+    "All exits and unfavorable zero-command/longer-horizon outcomes retained."
+  ]
+}
