@@ -42,6 +42,8 @@
 ```powershell
 $env:PYTHONPATH = "src"
 external/cpu_physics_env/Scripts/python.exe -m developmental_physics.collect --output results/cpu_validation/contact_prefix_local --seeds 0 1 2 --steps 250 --contact-profiles baseline compliant --prefix-steps 0 100 --protocol docs/GROUND_CONTACT_PREFIX_PROTOCOL.md
+python scripts/analyze_ground_contact_prefix.py results/cpu_validation/contact_prefix_local --reference results/cpu_validation/2026-10-10_ground_impacts --output external/contact_prefix_profile_local.json
+python scripts/plot_ground_contact_prefix.py results/cpu_validation/contact_prefix_local --profile external/contact_prefix_profile_local.json --output external/contact_prefix_summary_local.png
 ```
 
 本轮结论只用于选择后续身体探索/预测研究问题；继续保持不训练，不默认修改已公开的主环境或删除不利条件。
