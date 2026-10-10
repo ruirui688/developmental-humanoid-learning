@@ -18,6 +18,7 @@ import platform
 import subprocess
 import sys
 import time
+import zipfile
 
 import mujoco
 import numpy as np
@@ -119,9 +120,13 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip()
     status = subprocess.check_output(["git", "status", "--porcelain", "--untracked-files=all"], cwd=root, text=True)
     source_paths = [*sorted(Path(__file__).parent.glob("*.py")), MODEL_PATH, root / "pyproject.toml"]
-    source_hashes = {p.relative_to(root).as_posix(): _hash(p) for p in source_paths}
+    source_bytes = {p.relative_to(root).as_posix(): p.read_bytes() for p in source_paths}
+    source_hashes = {name: hashlib.sha256(content).hexdigest() for name, content in source_bytes.items()}
     config = ExplorationConfig()
     output.mkdir(parents=True)
+    with zipfile.ZipFile(output / "source_snapshot.zip", "w", compression=zipfile.ZIP_DEFLATED) as snapshot:
+        for name, content in source_bytes.items():
+            snapshot.writestr(name, content)
     trials = []
     snapshots = []
     start = time.perf_counter()

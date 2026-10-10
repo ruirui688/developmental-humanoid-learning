@@ -1,11 +1,3 @@
-*.png binary
-*.gif binary
-*.mp4 binary
-*.pt binary
-*.pth binary
-*.ckpt binary
-*.csv text eol=lf
-*.json text eol=lf
-*.md text eol=lf
-*.py text eol=lf
-
+# Preserve the exact bytes covered by these research archive manifests.
+results/cpu_validation/2026-10-10_ground_body/** -text
+results/cpu_validation/2026-10-10_ground_body_verified/** -text
