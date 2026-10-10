@@ -23,6 +23,7 @@
 | 证据层级 | 当前状态 | 已证明 | 尚未证明 |
 |---|---|---|---|
 | 二维火柴人概念验证 | **完成** | 同为 76,800 interactions 时，完整 DHP-PPO 比 Direct PPO 少 95.51% 严重跌倒，并完成无支撑行走 | 单个组件的因果贡献、刚体接触泛化 |
+| CPU 无训练失效诊断 | **144 组完成** | 未建模延迟可导致位置退出；持续失败退级变体在增益下降时损害跟踪 | 身体模型学习、权限门控的普适优势、G1/真机能力 |
 | G1 近站立工程轨 | **降级为基础设施审计** | 模型加载、并行训练、evaluation-only、长时域运动验收可运行 | 从地面学习、方法优于 PPO |
 | G1 地面发育轨 | **阶段 2 进行中** | 四种躺姿起点；翻身/支撑门通过；高度前沿推进至 0.29 m | 持续起身、独立站立、Direct/Fixed/Adaptive 优势 |
 | G1 真机 | **未开始** | 仅有安全边界和系统设计 | Sim2Real、真实机器人自主学习 |
@@ -291,6 +292,7 @@ developmental-humanoid-learning/
 - [ ] 固定在线学习的先验、交互预算和留出评估协议
 - [ ] CPU 身体模型与局部预测控制原型
 - [x] CPU 固定模型控制、动作权限与门控逻辑的无训练验证
+- [x] 冻结 CPU 压力矩阵，保存失效边界与不利门控变体结果
 - [ ] 经典控制、冻结模型与在线模型的对比
 - [ ] 固定成熟与能力门控的独立机制验证
 - [ ] 若迁移到 Isaac Lab，选择兼容版本并重新验证资产映射与接触
@@ -318,6 +320,7 @@ developmental-humanoid-learning/
 - [项目推进路线：从在线身体建模到受保护真机学习](docs/DEVELOPMENT_ROADMAP.md)
 - [CPU 无训练验证与后续轻量学习方法](docs/CPU_VALIDATION.md)
 - [CPU 失效边界与门控响应的冻结协议](docs/CPU_FAILURE_PROTOCOL.md)
+- [CPU 失效边界实测结果与不利门控变体](docs/CPU_FAILURE_RESULTS.md)
 - [开发进度与已验证检查点](docs/PROGRESS.md)
 - [新环境接管与执行手册](docs/NEW_MACHINE_BOOTSTRAP.md)
 - [外部资源选择与使用原则](docs/DATA_SOURCES.md)

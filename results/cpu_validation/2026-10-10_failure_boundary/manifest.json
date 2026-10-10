@@ -1,0 +1,55 @@
+{
+  "archive_date": "2026-10-10",
+  "kind": "cpu_no_training_failure_boundary_diagnostic",
+  "source_commit": "357a2799c6329108497d94c73e3bbae7a6dbc97b",
+  "source_dirty": false,
+  "protocol_sha256": "793997534634c853ef8b81692acce81a22062bb5ba32f6dd24eeb569da8d5a60",
+  "planned_runs": 144,
+  "planned_interaction_steps": 64800,
+  "executed_runs": 144,
+  "total_executed_steps": 63887,
+  "model_parameter_updates": 0,
+  "policy_parameter_updates": 0,
+  "source_sha256": {
+    "src/developmental_control/__init__.py": "d400cee11498b34045e45c1fdad43180b507138724009f9171a1947ee7affff1",
+    "src/developmental_control/joints.py": "3c0b04617f2fbd7b7ed77d74beb61dd8ba877a9e271c86f6331091b6647652ed",
+    "src/developmental_control/maturation.py": "a01ccf59271845f685414f95bee212595cf8d28027afab7320dcc81e72040935",
+    "src/developmental_control/planning.py": "12a1c6130c8f7350c63d3586bb1b50ff4f619511e129b3a00409f1087c910dd8",
+    "src/developmental_control/stress.py": "fea69d0cc2f1e73bd25ff0cb1930cf986f1afb3c082e47d508ffa17946487cb7",
+    "src/developmental_control/sustained.py": "57b25c289c9f1cc007c9a5711601bc5972bc2d2dca3d388e680640740be21efa",
+    "src/developmental_control/validate.py": "ff6e37102bca55ae5cb2aa4a1424c6e641283869ffed978b53a0b15d29a412fb"
+  },
+  "notes": [
+    "Protocol frozen in commit 28723a5 before this matrix.",
+    "Execution used clean source commit 357a279; no CPU source or protocol was edited during the run.",
+    "JSON line endings normalized to LF for repository text attributes; CSV gzip and source ZIP retained.",
+    "summary.png is derived from report and trace using scripts/plot_cpu_failure_boundary.py.",
+    "Source snapshots preserve exact bytes; no parameter fitting or hardware actions."
+  ],
+  "files": {
+    "report.json": {
+      "bytes": 3077744,
+      "sha256": "18f74cf53a9eb56ee91648da40e1f526a4bbe81cc66f873f72db3c8de8359649"
+    },
+    "gates.json": {
+      "bytes": 687895,
+      "sha256": "7411b78a966616162049e66c6ccf5e350635663fd227bd6f11740f9bd8c359f5"
+    },
+    "trace.csv.gz": {
+      "bytes": 5517076,
+      "sha256": "3e01931f577e0a94bc7d2377d948e736d04c19a1933b4aa246f70aabf4dd785f"
+    },
+    "source_snapshot.zip": {
+      "bytes": 20354,
+      "sha256": "f48f987941ad867685c40612bf086c9773cb918b53f84523e6cd70966af5ca88"
+    },
+    "summary.png": {
+      "bytes": 229711,
+      "sha256": "9be5ff8d50e2abbd19b5cac341512ff4003e6434d79f8d6bf8dc31b6cea46515"
+    }
+  },
+  "plot_script_sha256": "f761c1117bacb08f5af568b65020bfe9d833cabc95684f617a4da9d718b1b59c",
+  "plot_environment": {
+    "matplotlib": "3.10.6"
+  }
+}
