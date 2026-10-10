@@ -32,10 +32,14 @@ class ExplorationConfig:
     joint_limit_margin: float = 0.08
     kinetic_energy_limit: float = 50.0
     reset_clearance: float = 0.005
+    ground_contact_profile: str = "baseline"
 
     def __post_init__(self) -> None:
         for name, value in asdict(self).items():
-            if name == "control_substeps":
+            if name == "ground_contact_profile":
+                if not isinstance(value, str) or value not in ("baseline", "compliant"):
+                    raise ValueError("ground_contact_profile must be baseline or compliant")
+            elif name == "control_substeps":
                 if isinstance(value, bool) or not isinstance(value, int) or value < 1:
                     raise ValueError("control_substeps must be a positive integer")
             elif isinstance(value, bool) or not isinstance(value, (int, float)) or not np.isfinite(value) or value <= 0:
@@ -60,6 +64,15 @@ class GroundBodyEnv:
         self.model = mujoco.MjModel.from_xml_path(str(MODEL_PATH))
         self.model.opt.timestep = self.config.physics_dt
         self.model.actuator_ctrlrange[:] = (-self.config.torque_limit, self.config.torque_limit)
+        self._floor_id = self.model.geom("floor").id
+        self._asset_contact_parameters = [
+            self._geom_contact_configuration(gid) for gid in range(self.model.ngeom)
+        ]
+        if self.config.ground_contact_profile == "compliant":
+            # Higher floor priority selects these parameters for ground contacts;
+            # body-body contact parameters and collision filtering stay untouched.
+            self.model.geom_solref[self._floor_id, 0] = 0.05
+            self.model.geom_priority[self._floor_id] = 1
         self.data = mujoco.MjData(self.model)
         self.joint_names = JOINT_NAMES
         self._joint_ids = np.array([self.model.joint(name).id for name in JOINT_NAMES])
@@ -67,7 +80,6 @@ class GroundBodyEnv:
         self._joint_dof = self.model.jnt_dofadr[self._joint_ids].copy()
         self.action_limits = np.full(len(JOINT_NAMES), self.config.torque_limit)
         self.last_command = np.zeros(len(JOINT_NAMES))
-        self._floor_id = self.model.geom("floor").id
         self.step_id = 0
         self.physics_steps = 0
         self.terminated = False
@@ -88,12 +100,63 @@ class GroundBodyEnv:
             "body_mass", "body_inertia", "body_pos", "body_quat", "jnt_range",
             "dof_damping", "dof_armature", "geom_friction", "geom_size",
             "actuator_gainprm", "actuator_biasprm", "actuator_gear",
-            "actuator_ctrlrange", "geom_solref", "geom_solimp",
+            "actuator_ctrlrange", "geom_solref", "geom_solimp", "geom_priority",
+            "geom_condim",
         ):
             digest.update(np.asarray(getattr(self.model, name)).tobytes())
+        if hasattr(self.model, "geom_solmix"):
+            digest.update(np.asarray(self.model.geom_solmix).tobytes())
         digest.update(np.asarray(self.model.opt.gravity).tobytes())
         digest.update(np.asarray([self.model.opt.timestep]).tobytes())
         return digest.hexdigest()
+
+    def _geom_contact_configuration(self, geom_id: int) -> dict[str, object]:
+        result = {
+            "geom_id": geom_id,
+            "name": self.model.geom(geom_id).name,
+            "priority": int(self.model.geom_priority[geom_id]),
+            "condim": int(self.model.geom_condim[geom_id]),
+            "solref": self.model.geom_solref[geom_id].tolist(),
+            "solimp": self.model.geom_solimp[geom_id].tolist(),
+            "friction": self.model.geom_friction[geom_id].tolist(),
+        }
+        if hasattr(self.model, "geom_solmix"):
+            result["solmix"] = float(self.model.geom_solmix[geom_id])
+        return result
+
+    def contact_configuration(self) -> dict[str, object]:
+        """Copy actual contact parameters and asset differences for metadata only."""
+        geometries = [
+            self._geom_contact_configuration(gid) for gid in range(self.model.ngeom)
+        ]
+        changes = []
+        for original, current in zip(self._asset_contact_parameters, geometries):
+            for field in ("priority", "condim", "solmix", "solref", "solimp", "friction"):
+                if field in current and original[field] != current[field]:
+                    original_value = original[field]
+                    changes.append({
+                        "geom_id": current["geom_id"],
+                        "name": current["name"],
+                        "field": field,
+                        "asset": original_value.copy() if isinstance(original_value, list) else original_value,
+                        "actual": current[field].copy() if isinstance(current[field], list) else current[field],
+                    })
+        return {
+            "profile": self.config.ground_contact_profile,
+            "floor": geometries[self._floor_id],
+            "body_geoms": [
+                geom for geom in geometries if geom["geom_id"] != self._floor_id
+            ],
+            "changes_from_asset": changes,
+            "change_scope": {
+                "geometry": "floor",
+                "fields": [] if self.config.ground_contact_profile == "baseline" else ["solref[0]", "priority"],
+                "ground_parameter_selection": (
+                    "asset mixing" if self.config.ground_contact_profile == "baseline"
+                    else "higher floor priority selects floor contact parameters"
+                ),
+            },
+        }
 
     def reset(self, seed: int = 0, pose: str = "supine") -> dict[str, np.ndarray]:
         if pose not in POSES:

@@ -110,19 +110,39 @@ def _exception_snapshot(env) -> dict[str, object]:
     return result
 
 
-def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
+def collect(output: Path, seeds: list[int], steps: int, *,
+            contact_profiles: list[str] | None = None,
+            prefix_steps: list[int] | None = None,
+            protocol_path: Path | None = None) -> dict[str, object]:
     if (type(steps) is not int or steps < 1 or not seeds or len(set(seeds)) != len(seeds)
             or any(type(seed) is not int or seed < 0 for seed in seeds)):
         raise ValueError("steps must be positive and seeds must be unique and nonempty")
+    expanded_conditions = contact_profiles is not None or prefix_steps is not None
+    profiles = ["baseline"] if contact_profiles is None else list(contact_profiles)
+    prefixes = [0] if prefix_steps is None else list(prefix_steps)
+    if (not profiles or any(profile not in ("baseline", "compliant") for profile in profiles)
+            or len(set(profiles)) != len(profiles)):
+        raise ValueError("contact profiles must be unique baseline/compliant names")
+    if (not prefixes or any(type(n) is not int or not 0 <= n < steps for n in prefixes)
+            or len(set(prefixes)) != len(prefixes)):
+        raise ValueError("prefix lengths must be unique integers in [0, steps)")
+    conditions = [(profile, prefix, mode) for profile in profiles for prefix in prefixes
+                  for mode in ("zero_torque", "smooth_random")]
     if output.exists():
         raise FileExistsError(f"archive already exists: {output}")
     root = Path(__file__).resolve().parents[2]
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip()
     status = subprocess.check_output(["git", "status", "--porcelain", "--untracked-files=all"], cwd=root, text=True)
     source_paths = [*sorted(Path(__file__).parent.glob("*.py")), MODEL_PATH, root / "pyproject.toml"]
+    if protocol_path is not None:
+        protocol_path = protocol_path.resolve()
+        if not protocol_path.is_file() or not protocol_path.is_relative_to(root):
+            raise ValueError("protocol must be an existing file inside this repository")
+        source_paths.append(protocol_path)
     source_bytes = {p.relative_to(root).as_posix(): p.read_bytes() for p in source_paths}
     source_hashes = {name: hashlib.sha256(content).hexdigest() for name, content in source_bytes.items()}
     config = ExplorationConfig()
+    profile_configs = {profile: ExplorationConfig(ground_contact_profile=profile) for profile in profiles}
     output.mkdir(parents=True)
     with zipfile.ZipFile(output / "source_snapshot.zip", "w", compression=zipfile.ZIP_DEFLATED) as snapshot:
         for name, content in source_bytes.items():
@@ -131,7 +151,7 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
     snapshots = []
     start = time.perf_counter()
     metadata = {
-        "schema_version": 2,
+        "schema_version": 3,
         "purpose": "CPU no-training ground-body physics and sensor collection",
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "source_commit": commit, "source_dirty": bool(status), "source_status": status,
@@ -142,12 +162,19 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
         "dynamics_backend": "MuJoCo CPU", "mujoco_version": mujoco.__version__,
         "gpu": None, "renderer": None,
         "config": asdict(config), "seeds": seeds, "poses": POSES,
-        "steps_per_trial_limit": steps, "expected_trial_count": len(POSES) * len(seeds) * 2,
+        "contact_profiles": profiles, "prefix_steps": prefixes,
+        "profile_configs": {profile: asdict(cfg) for profile, cfg in profile_configs.items()},
+        "protocol": None if protocol_path is None else {
+            "path": protocol_path.relative_to(root).as_posix(), "sha256": _hash(protocol_path)},
+        "steps_per_trial_limit": steps, "expected_trial_count": len(POSES) * len(seeds) * len(conditions),
+        "maximum_control_steps": steps * len(POSES) * len(seeds) * len(conditions),
+        "maximum_physics_steps": steps * config.control_substeps * len(POSES) * len(seeds) * len(conditions),
         "archive_status": "running", "complete": False,
         "parameter_updates": {"model": 0, "policy": 0, "gate": 0},
         "teacher_calls": 0, "external_demonstration_samples": 0,
         "exploration": {"distribution": "independent uniform per joint", "smoothing": .9, "feedback_used_for_action_selection": False},
         "random_streams": "SeedSequence(root_seed).spawn(2): separate reset and exploration seeds, recorded per trial",
+        "prefix_schedule": "Fixed zero-torque prefix; no hidden settling or actor RNG consumption. Remaining steps form the exploration phase, including zero-torque controls.",
         "measurement_assumptions": "ideal joint encoders, torso gyro/accelerometer and actuator torque",
         "privileged_fields": ["qpos", "qvel", "diagnostics", "geometry snapshots"],
         "claim_boundary": "No learned body model, competence promotion, acquired rolling/standing/walking, biological or G1 validity.",
@@ -158,7 +185,13 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
             "trial_count": len(trials),
             "control_steps": sum(t["control_steps"] for t in trials),
             "control_calls_attempted": sum(t["control_calls_attempted"] for t in trials),
+            "prefix_control_calls_attempted": sum(t["prefix_control_calls_attempted"] for t in trials),
+            "exploration_control_calls_attempted": sum(t["exploration_control_calls_attempted"] for t in trials),
             "physics_steps": sum(t["physics_steps"] for t in trials),
+            "prefix_control_steps": sum(t["prefix_control_steps"] for t in trials),
+            "prefix_physics_steps": sum(t["prefix_physics_steps"] for t in trials),
+            "exploration_control_steps": sum(t["exploration_control_steps"] for t in trials),
+            "exploration_physics_steps": sum(t["exploration_physics_steps"] for t in trials),
             "terminated_trials": sum(t["terminated"] for t in trials),
             "exception_trials": sum(t["status"] == "exception" for t in trials),
             "wall_seconds": time.perf_counter() - start,
@@ -172,12 +205,16 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
         with gzip.open(output / "trace.jsonl.gz", "wt", encoding="utf-8") as trace:
             for pose in POSES:
                 for seed in seeds:
-                    for mode in ("zero_torque", "smooth_random"):
+                    for contact_profile, prefix_length, mode in conditions:
+                        config = profile_configs[contact_profile]
                         env = actor = None
                         observation = previous = requested = None
+                        phase = action_index = None
                         initial_qpos = initial_angles = initial_geometry = None
                         env_before = actor_before = None
                         trial_id = f"{pose}_seed{seed}_{mode}"
+                        if expanded_conditions:
+                            trial_id = f"{contact_profile}_prefix{prefix_length}_{trial_id}"
                         reset_stream, exploration_stream = np.random.SeedSequence(seed).spawn(2)
                         reset_seed = int(reset_stream.generate_state(1)[0])
                         exploration_seed = int(exploration_stream.generate_state(1)[0])
@@ -196,8 +233,10 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
                             initial_qpos = env.data.qpos.copy()
                             initial_angles = observation["joint_position"].copy()
                             initial_geometry = env.geometry_snapshot()
-                            for _ in range(steps):
-                                requested = np.zeros(8) if mode == "zero_torque" else actor.act(observation)
+                            for step_index in range(steps):
+                                phase = "prefix" if step_index < prefix_length else "exploration"
+                                action_index = None if phase == "prefix" else step_index - prefix_length
+                                requested = np.zeros(8) if mode == "zero_torque" or phase == "prefix" else actor.act(observation)
                                 previous = observation
                                 calls += 1
                                 result = env.step(requested)
@@ -205,6 +244,8 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
                                 diagnostics = result.diagnostics
                                 trace.write(json.dumps(_archive_record({
                                     "trial_id": trial_id,
+                                    "contact_profile": contact_profile, "prefix_steps": prefix_length,
+                                    "phase": phase, "action_index": action_index,
                                     "observation_before": previous,
                                     "observation_after": observation,
                                     "diagnostics": diagnostics,
@@ -231,6 +272,8 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
                             exception = {"type": type(error).__name__, "message": str(error)}
                             trace.write(json.dumps(_archive_record({
                                 "trial_id": trial_id, "collector_exception": exception,
+                                "contact_profile": contact_profile, "prefix_steps": prefix_length,
+                                "phase": phase, "action_index": action_index,
                                 "control_calls_attempted": calls,
                                 "requested_torque": requested, "observation_before": previous,
                                 **_exception_snapshot(env),
@@ -246,11 +289,20 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
                                 final_geometry = {"retrieval_error": {"type": type(error).__name__, "message": str(error)}}
                             trial = {
                                 "trial_id": trial_id, "pose": pose, "seed": seed, "mode": mode,
+                                "contact_profile": contact_profile, "prefix_steps": prefix_length,
+                                "environment_config": asdict(config),
+                                "contact_configuration": None if env is None else env.contact_configuration(),
                                 "reset_seed": reset_seed, "exploration_seed": exploration_seed,
                                 "status": "exception" if exception else ("terminated" if env.terminated else "completed"),
                                 "control_steps": 0 if env is None else env.step_id,
                                 "control_calls_attempted": calls,
+                                "prefix_control_calls_attempted": min(calls, prefix_length),
+                                "exploration_control_calls_attempted": max(0, calls - prefix_length),
                                 "physics_steps": 0 if env is None else env.physics_steps,
+                                "prefix_control_steps": 0 if env is None else min(env.step_id, prefix_length),
+                                "prefix_physics_steps": 0 if env is None else min(env.physics_steps, prefix_length * config.control_substeps),
+                                "exploration_control_steps": 0 if env is None else max(0, env.step_id - prefix_length),
+                                "exploration_physics_steps": 0 if env is None else max(0, env.physics_steps - prefix_length * config.control_substeps),
                                 "simulated_seconds": 0. if env is None else float(env.data.time),
                                 "wall_seconds": time.perf_counter() - trial_start,
                                 "terminated": False if env is None else env.terminated,
@@ -274,6 +326,7 @@ def collect(output: Path, seeds: list[int], steps: int) -> dict[str, object]:
                             trials.append(_archive_record(trial))
                             snapshots.append(_archive_record({
                                 "trial_id": trial_id, "pose": pose, "seed": seed, "mode": mode,
+                                "contact_profile": contact_profile, "prefix_steps": prefix_length,
                                 "initial": initial_geometry, "final": final_geometry,
                             }))
                             trace.flush()
@@ -297,8 +350,13 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2])
     parser.add_argument("--steps", type=int, default=250)
+    parser.add_argument("--contact-profiles", nargs="+", choices=("baseline", "compliant"))
+    parser.add_argument("--prefix-steps", type=int, nargs="+")
+    parser.add_argument("--protocol", type=Path)
     args = parser.parse_args()
-    metadata = collect(args.output, args.seeds, args.steps)
+    metadata = collect(args.output, args.seeds, args.steps,
+                       contact_profiles=args.contact_profiles, prefix_steps=args.prefix_steps,
+                       protocol_path=args.protocol)
     print(json.dumps({k: metadata[k] for k in ("trial_count", "control_steps", "physics_steps", "terminated_trials", "wall_seconds", "source_commit", "source_dirty", "parameter_updates")}, indent=2))
 
 
