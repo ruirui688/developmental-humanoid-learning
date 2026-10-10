@@ -1,0 +1,20 @@
+{
+  "name": "mujoco-python-cp310-win_amd64",
+  "type": "source_code",
+  "official_url": "https://github.com/google-deepmind/mujoco",
+  "revision": "3.15.0",
+  "source_commit": "9ea3cdfcae93bf2cc4dc0e1a1627c5a39a1e06e5",
+  "retrieved_at": "2026-10-10",
+  "license": "Apache-2.0 for MuJoCo source and Python bindings; bundled components retain their respective licenses in LICENSES_THIRD_PARTY.md.",
+  "artifact": "mujoco-3.15.0-cp310-cp310-win_amd64.whl",
+  "sha256": "3242854ae2620a1d7bd4ea4745ff5a696cac24fb76f2254c6aed6592945d2160",
+  "sha256_verified_locally": true,
+  "download_url": "https://files.pythonhosted.org/packages/d5/6c/6eb5f09ea87f1aa98fbbb9b688b496462c6f28414ba50b8024865b1ec584/mujoco-3.15.0-cp310-cp310-win_amd64.whl",
+  "metadata_url": "https://pypi.org/pypi/mujoco/3.15.0/json",
+  "license_url": "https://github.com/google-deepmind/mujoco/blob/3.15.0/LICENSE",
+  "local_path": "external/cpu_physics_env",
+  "local_artifact_path": "external/cpu_physics_wheels/mujoco-3.15.0-cp310-cp310-win_amd64.whl",
+  "transformations": ["Install official wheel unchanged in an isolated environment."],
+  "used_by_groups": ["CPU no-training ground-body physics validation"],
+  "notes": "No external robot asset, motion demonstration or pretrained policy. Preserve bundled license notices. source_commit identifies the official release tag, not an independently reproduced wheel build. Ground-body MJCF is authored in this repository. No GPU dynamics or rendering is used."
+}

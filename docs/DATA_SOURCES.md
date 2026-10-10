@@ -100,6 +100,8 @@ notes: <attribution and restrictions>
 
 ## 6. 下载与执行安全
 
+当前实际采用的 CPU MuJoCo 后端单独锁定在 [MuJoCo 3.15.0 来源清单](sources/mujoco_cpu_3.15.0.json)。身体 MJCF 为本仓库自建；该可选后端不引入 G1 资产、动作数据或任务教师，不能与既有 PBHC/G1 来源混写。
+
 1. 只从官方组织 URL 开始，检查 owner、commit、release 和 license；
 2. 先阅读安装脚本，不直接运行未知 shell/PowerShell 下载器；
 3. 使用隔离环境；不要让外部安装修改本项目二维环境；
