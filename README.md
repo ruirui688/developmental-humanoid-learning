@@ -317,6 +317,7 @@ developmental-humanoid-learning/
 
 - [项目推进路线：从在线身体建模到受保护真机学习](docs/DEVELOPMENT_ROADMAP.md)
 - [CPU 无训练验证与后续轻量学习方法](docs/CPU_VALIDATION.md)
+- [CPU 失效边界与门控响应的冻结协议](docs/CPU_FAILURE_PROTOCOL.md)
 - [开发进度与已验证检查点](docs/PROGRESS.md)
 - [新环境接管与执行手册](docs/NEW_MACHINE_BOOTSTRAP.md)
 - [外部资源选择与使用原则](docs/DATA_SOURCES.md)
