@@ -37,7 +37,7 @@ def main():
     shared = profile["shared_active_steps"]
     planned_seconds = profile["planned_control_steps_per_trial"] * profile["nominal_control_dt_seconds"]
     case_count = len({(trial["pose"], trial["seed"]) for trial in profile["trials"]})
-    fig, axes = plt.subplots(2, 2, figsize=(13, 9))
+    fig, axes = plt.subplots(2, 3, figsize=(19, 10))
     for index, (setting, color) in enumerate(zip(SETTINGS, COLORS)):
         selected = [trial for trial in trials if (trial["contact_profile"], trial["prefix_steps"]) == setting]
         for mode, offset, fill, label in (("zero_torque", -.10, "none", "Zero torque"),
@@ -50,6 +50,9 @@ def main():
                                   trial["whole_trial"]["peak_ground_normal_force_n"],
                                   marker=MARKERS[pose_index], facecolors=fill, edgecolors=color, s=34,
                                   label=label if index == 0 and trial is group[0] else None)
+                axes[0, 2].scatter(index + offset + jitter,
+                                  1000 * trial["whole_trial"]["minimum_contact_distance_m"],
+                                  marker=MARKERS[pose_index], facecolors=fill, edgecolors=color, s=34)
         response = [pair for pair in pairs if (pair["contact_profile"], pair["prefix_steps"]) == setting]
         for pair in response:
             pose_index = POSES.index(pair["pose"])
@@ -67,6 +70,9 @@ def main():
     axes[0, 0].legend(fontsize=8)
     axes[0, 1].set(ylabel="Paired encoder trajectory difference RMS (rad)",
                    title=f"Smooth random versus zero torque\nFirst {shared} active commands, {case_count} pose / seed cases")
+    axes[0, 2].set(ylabel="Minimum sampled contact distance (mm)",
+                   title="Soft-contact cost: deeper geometric overlap\nWhole budget; includes ground and self-contacts")
+    axes[0, 2].axhline(0, color="#555555", linewidth=.8, alpha=.5)
     heat = np.full((4, 8), np.nan)
     for index, setting in enumerate(SETTINGS):
         selected = [trial for trial in trials if (trial["contact_profile"], trial["prefix_steps"]) == setting
@@ -105,6 +111,24 @@ def main():
                    title="Fixed 2 s passive prefix endpoints\nOne copy per pose / seed; no stability threshold")
     axes[1, 1].legend(fontsize=8)
     axes[1, 1].grid(alpha=.2)
+    axes[1, 2].axis("off")
+    total_steps = profile["planned_control_steps_per_trial"]
+    axes[1, 2].set_title("Interaction budget and interpretation", loc="left", fontsize=13)
+    axes[1, 2].text(0, .95,
+                    f"Every run: {total_steps} total control steps = {planned_seconds:g} s\n\n"
+                    f"No prefix: 0 passive + {total_steps} active steps\n"
+                    f"2 s prefix: 100 passive + {total_steps - 100} active steps\n\n"
+                    f"Matched response: first {shared} active commands\n"
+                    "All prefix interactions stay in the total budget.\n\n"
+                    "A lower force peak can accompany deeper overlap.\n"
+                    "Negative contact distance means geometric overlap.\n\n"
+                    "Contact and passive prefix are fixed conditions.\n"
+                    "Body model, policy and gate updates remain zero.\n\n"
+                    "Two zero-torque prefix labels repeat trajectories;\n"
+                    "both runs are charged, without adding independent seeds.\n\n"
+                    "All per-seed values remain in the analysis JSON.",
+                    transform=axes[1, 2].transAxes, ha="left", va="top", fontsize=10.5,
+                    linespacing=1.25)
     unavailable = len(profile["metrics_unavailable_trial_ids"])
     stopped = len(profile["terminated_trial_ids"])
     fig.suptitle("Fixed contact / zero-command prefix / CPU only / zero learning updates", fontsize=14)

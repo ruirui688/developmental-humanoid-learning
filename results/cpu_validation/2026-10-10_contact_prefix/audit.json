@@ -1,0 +1,1418 @@
+{
+  "schema_version": 1,
+  "audit_type": "frozen_contact_prefix_independent_scalar_archive_audit",
+  "created_at_utc": "2026-10-10T13:09:42.211160+00:00",
+  "status": "pass",
+  "auditor_script_sha256": "042554bc87ef6739ca7e1fb38db23b9b6000c6897ea894ca790edb4a8702d8a6",
+  "source_commit": "e896170b5cce165c23806ebfd00d83a9f8ccc67c",
+  "input_archives": {
+    "archive": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix",
+    "reference": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_impacts",
+    "profile": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix\\contact_prefix_profile.json"
+  },
+  "input_sha256": {
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix\\metadata.json": "bea1cb3e2dabeb181b9909e36c3512d4339149611f975ac80c450339a5440a59",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix\\trials.json": "573f79e65a67bfc0dc30d482c137dc3735065c497fac02477012a2b68a9d2cf8",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix\\geometry.json": "880f6c350c64ba4ede5f268093c4e8f7d010c67fca28875defc020d27412605c",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix\\contact_prefix_profile.json": "324d561dc502e66a51586abcf9997c6ebe4b140ca0423d9b587598c40404e68f",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix\\trace.jsonl.gz": "07ea029a580ca9f315bc66036754635cd06a138dea238dcefb58b3eec5df14fd",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix\\source_snapshot.zip": "f3fa1eea33620ac0f24815105dc83710cd54a588550ef225d0d85cea957ba406",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix\\manifest.json": "423e432847af19ed06998caddf63b9aa334fc7f67605a423b60281782662b9a3",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_impacts\\collection_manifest.json": "9c44b9bb624cc51af361e2cda04ff76e40cabc2a91eec4caa9f29c3221e4c56e",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_impacts\\manifest.json": "00de75f22fe9f94ff6f0ee1540412b32212b280e29316c54bcb012fd0fe31154",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_impacts\\metadata.json": "9e635dcc954c5b244ab6d4d16eb3fde600a0e192a6583d33a432eb65689ce740",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_impacts\\trials.json": "86c4e0485c8e673920ef4bf7301122e2ad9ae1430fa28e6090045276a6cd632d",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_impacts\\trace.jsonl.gz": "dbcec4043b48fbb486c222898b41205a5ddbf4a6dcfee2933f09b6a9d0d51847",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_body\\recovery.json": "0348472fc65b7ed5621e2e825ad66bbc0baa3ac93ebdf21b5baa8e5a19840190",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_body\\trials.json": "d7acdc17f88b4f0d92964a590e2a033e23c958bff8696241b43a00051b4745a8",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_body\\metadata.json": "789d4cb7969bb7181594b6f744744fa122c2194fb5646f0ff531ee23fc59d1b2",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_body\\trace.jsonl.gz": "c87eceee5645e43bc0e8fe4cb74d185d21728bd6b05aadea01c37114f9403dce",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_body_verified\\metadata.json": "03a05d86e91b1873f3eb22addf72158fbf6bea8be95a60287c3817b1c501753e",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_body_verified\\trials.json": "01f8cd7ae38a81d9e92b8f5445c6c12392dbe87d060a6f17acd29b245fafcac1",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_body_verified\\trace.jsonl.gz": "41f3707b4c906889ceb70d66a11ffba4c43592a11b3ccf1cc395ba6342247249"
+  },
+  "source_snapshot_checks": [
+    {
+      "path": "src/developmental_physics/__init__.py",
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+      "git_blob_sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+      "exact_bytes": true
+    },
+    {
+      "path": "src/developmental_physics/collect.py",
+      "sha256": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+      "git_blob_sha256": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+      "exact_bytes": true
+    },
+    {
+      "path": "src/developmental_physics/environment.py",
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+      "git_blob_sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+      "exact_bytes": true
+    },
+    {
+      "path": "src/developmental_physics/exploration.py",
+      "sha256": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+      "git_blob_sha256": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+      "exact_bytes": true
+    },
+    {
+      "path": "src/developmental_physics/assets/ground_body.xml",
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+      "git_blob_sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+      "exact_bytes": true
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+      "git_blob_sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+      "exact_bytes": true
+    },
+    {
+      "path": "docs/GROUND_CONTACT_PREFIX_PROTOCOL.md",
+      "sha256": "446bcd74dc579a95afce788438624ebf1115809ece60e16dd1e2232ea1c0ad4a",
+      "git_blob_sha256": "446bcd74dc579a95afce788438624ebf1115809ece60e16dd1e2232ea1c0ad4a",
+      "exact_bytes": true
+    }
+  ],
+  "manifest_coverage": [
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix\\manifest.json",
+      "entries": {
+        "geometry.json": "880f6c350c64ba4ede5f268093c4e8f7d010c67fca28875defc020d27412605c",
+        "metadata.json": "bea1cb3e2dabeb181b9909e36c3512d4339149611f975ac80c450339a5440a59",
+        "source_snapshot.zip": "f3fa1eea33620ac0f24815105dc83710cd54a588550ef225d0d85cea957ba406",
+        "trace.jsonl.gz": "07ea029a580ca9f315bc66036754635cd06a138dea238dcefb58b3eec5df14fd",
+        "trials.json": "573f79e65a67bfc0dc30d482c137dc3735065c497fac02477012a2b68a9d2cf8"
+      },
+      "files_not_listed_at_read": [
+        "contact_prefix_profile.json",
+        "contact_prefix_summary.png"
+      ]
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_impacts\\collection_manifest.json",
+      "entries": {
+        "geometry.json": "2485087c802169068c493657e9c076e1c912c0d3d9d40805e889d7207b65a184",
+        "metadata.json": "9e635dcc954c5b244ab6d4d16eb3fde600a0e192a6583d33a432eb65689ce740",
+        "source_snapshot.zip": "6b334fc4b9a3619d9aab50c0bb607c62f990eece2bc5f34575d3762f7363e73b",
+        "trace.jsonl.gz": "dbcec4043b48fbb486c222898b41205a5ddbf4a6dcfee2933f09b6a9d0d51847",
+        "trials.json": "86c4e0485c8e673920ef4bf7301122e2ad9ae1430fa28e6090045276a6cd632d"
+      },
+      "files_not_listed_at_read": [
+        "audit.json",
+        "impact_audit.json",
+        "impact_audit_recheck.json",
+        "impact_profile.json",
+        "impact_summary.png",
+        "manifest.json"
+      ]
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_impacts\\manifest.json",
+      "entries": {
+        "audit.json": "b6eb842c80d5257d3cd690c47cc45b683aa09df589d138e75a02a9abfee1fd14",
+        "collection_manifest.json": "9c44b9bb624cc51af361e2cda04ff76e40cabc2a91eec4caa9f29c3221e4c56e",
+        "geometry.json": "2485087c802169068c493657e9c076e1c912c0d3d9d40805e889d7207b65a184",
+        "impact_audit.json": "9c6826ab607995cd0f9ae3776f6388f60af59f636607163a922e94f4402ed0d7",
+        "impact_audit_recheck.json": "f73b97c0930b660ecfc81afd7ceac04076b46b04f2f92d1b645612418acdeabb",
+        "impact_profile.json": "1cbddd53bb09bda81978cba3236e0b1686b59023a99e28fa5e7e20b89f439c4d",
+        "impact_summary.png": "b7b1739085120028ee8e589468b5d2f18c4ba7e5aa8685c73201be76d4258953",
+        "metadata.json": "9e635dcc954c5b244ab6d4d16eb3fde600a0e192a6583d33a432eb65689ce740",
+        "source_snapshot.zip": "6b334fc4b9a3619d9aab50c0bb607c62f990eece2bc5f34575d3762f7363e73b",
+        "trace.jsonl.gz": "dbcec4043b48fbb486c222898b41205a5ddbf4a6dcfee2933f09b6a9d0d51847",
+        "trials.json": "86c4e0485c8e673920ef4bf7301122e2ad9ae1430fa28e6090045276a6cd632d"
+      },
+      "files_not_listed_at_read": []
+    }
+  ],
+  "manifest_scope": "Only the supplied manifests' listed entries are verified; later files and this externally written audit are not implicitly covered.",
+  "checks": 7406963,
+  "failed_checks": 0,
+  "finite_scalar_numbers_checked": 6269434,
+  "maximum_scalar_recomputation_difference": 1.8189894035458565e-12,
+  "maximum_qpos_qvel_replay_difference": 0.0,
+  "counts": {
+    "trials": 96,
+    "trace_rows": 24000,
+    "paired_active_responses": 48,
+    "baseline_reference_trials": 24,
+    "baseline_reference_rows": 6000,
+    "zero_duplicate_rows": 6000,
+    "random_shared_request_rows": 3600
+  },
+  "matrix_budget": {
+    "control_steps": 24000,
+    "control_calls_attempted": 24000,
+    "physics_steps": 240000,
+    "prefix_control_steps": 4800,
+    "prefix_control_calls_attempted": 4800,
+    "prefix_physics_steps": 48000,
+    "exploration_control_steps": 19200,
+    "exploration_control_calls_attempted": 19200,
+    "exploration_physics_steps": 192000
+  },
+  "independently_recomputed_pairs": [
+    {
+      "random_trial_id": "baseline_prefix0_supine_seed0_smooth_random",
+      "zero_trial_id": "baseline_prefix0_supine_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.007837394891960133,
+        0.00021646279055296844,
+        0.007850274772176476,
+        0.00046862622232863796,
+        0.004974808618258969,
+        0.005183082298519775,
+        0.004953406656284496,
+        0.005028295034568563
+      ],
+      "trajectory_rms_rad_all_joints": 0.005300366623237778,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.040674370509094865,
+        0.06901031437941432,
+        0.04925336224872555,
+        0.07803011798080914,
+        0.05677328334872498,
+        0.053810636832998644,
+        0.04994159529470317
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_supine_seed1_smooth_random",
+      "zero_trial_id": "baseline_prefix0_supine_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.004511426509030968,
+        0.0003034601690036978,
+        0.004590334167811562,
+        0.0011963382634954031,
+        0.0028417596560739817,
+        0.0034142524457268304,
+        0.0028822623923791214,
+        0.0029979348482311336
+      ],
+      "trajectory_rms_rad_all_joints": 0.0031617878208428925,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05037425766345129,
+        0.07021537604911458,
+        0.03570217950073366,
+        0.08362324226703725,
+        0.06327934419878975,
+        0.061717936535295205,
+        0.07104526961634727
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_supine_seed2_smooth_random",
+      "zero_trial_id": "baseline_prefix0_supine_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.011996706072035625,
+        0.0008205921296475404,
+        0.012139895642693457,
+        0.001955330385571899,
+        0.0076033460155987215,
+        0.008045570249439827,
+        0.007525931812916623,
+        0.007640871334248152
+      ],
+      "trajectory_rms_rad_all_joints": 0.008165164931165522,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.06852050072717875,
+        0.048984363984068975,
+        0.03529509939638493,
+        0.07253895198453995,
+        0.05526982678101597,
+        0.07903279965998845,
+        0.06193062148293046
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_prone_seed0_smooth_random",
+      "zero_trial_id": "baseline_prefix0_prone_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.019562415248507287,
+        0.019956786130940554,
+        0.02024837704984054,
+        0.022373540945882668,
+        0.0033624428487035135,
+        0.0019108563790767221,
+        0.003422854475344501,
+        0.0018398928657066315
+      ],
+      "trajectory_rms_rad_all_joints": 0.014669662756730506,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.06026109764648196,
+        0.06901031437941432,
+        0.054801905497401264,
+        0.07803011798080914,
+        0.04393711902880147,
+        0.053810636832998644,
+        0.02902419173950153
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_prone_seed1_smooth_random",
+      "zero_trial_id": "baseline_prefix0_prone_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.023783216356513693,
+        0.025167038483021535,
+        0.02409148160792931,
+        0.024376990194672966,
+        0.0042963103137281956,
+        0.004063976990161578,
+        0.003961517742327654,
+        0.0017141487634778328
+      ],
+      "trajectory_rms_rad_all_joints": 0.017418612399447624,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05845327269818639,
+        0.07021537604911458,
+        0.063754380790395,
+        0.08362324226703725,
+        0.05451552002655811,
+        0.061717936535295205,
+        0.06631662804669332
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_prone_seed2_smooth_random",
+      "zero_trial_id": "baseline_prefix0_prone_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.006324574884614927,
+        0.008308039659268927,
+        0.006631096035082765,
+        0.007376810131615657,
+        0.003100231014213784,
+        0.005798751406536611,
+        0.0012712797278899123,
+        0.0011714472231634584
+      ],
+      "trajectory_rms_rad_all_joints": 0.005630696268613119,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.06380467999675779,
+        0.07253895198453995,
+        0.05240410485580856,
+        0.07903279965998845,
+        0.051031521338558504
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_left_side_seed0_smooth_random",
+      "zero_trial_id": "baseline_prefix0_left_side_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.02648735924873532,
+        0.039360430923588485,
+        0.0546051773379371,
+        0.041818114777725776,
+        0.02487182049104531,
+        0.029963129403749702,
+        0.013541451684218239,
+        0.03020641444811638
+      ],
+      "trajectory_rms_rad_all_joints": 0.03462928457942926,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.05285770582668782,
+        0.06901031437941432,
+        0.054801905497401264,
+        0.07803011798080914,
+        0.04982668521090304,
+        0.053810636832998644,
+        0.03521546325831085
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_left_side_seed1_smooth_random",
+      "zero_trial_id": "baseline_prefix0_left_side_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.040064074178544344,
+        0.04053448188291952,
+        0.048729432760348884,
+        0.06661474003192203,
+        0.029373688244212635,
+        0.017572317885696208,
+        0.03372061200946688,
+        0.037631300888278284
+      ],
+      "trajectory_rms_rad_all_joints": 0.04151061590989081,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05845327269818639,
+        0.07021537604911458,
+        0.06056248123282172,
+        0.08362324226703725,
+        0.05452947036058309,
+        0.061717936535295205,
+        0.06753075160204827
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_left_side_seed2_smooth_random",
+      "zero_trial_id": "baseline_prefix0_left_side_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.14686730474605933,
+        0.1890122362861282,
+        0.12050609888071576,
+        0.12995697555477767,
+        0.023989094165683112,
+        0.023206836652110263,
+        0.02160480138684233,
+        0.025226068905503236
+      ],
+      "trajectory_rms_rad_all_joints": 0.10660870152907712,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.037271829900329574,
+        0.07253895198453995,
+        0.05339084345200534,
+        0.07903279965998845,
+        0.054642847930529544
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_right_side_seed0_smooth_random",
+      "zero_trial_id": "baseline_prefix0_right_side_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.04519649154773943,
+        0.05184443892970722,
+        0.03138364680092807,
+        0.035903403824382035,
+        0.029359446558477918,
+        0.017193000034298498,
+        0.04539826949377555,
+        0.03331707768136006
+      ],
+      "trajectory_rms_rad_all_joints": 0.03763835025528789,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.05285770582668782,
+        0.06901031437941432,
+        0.054801905497401264,
+        0.07803011798080914,
+        0.04756442652983668,
+        0.053810636832998644,
+        0.03843723232509521
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_right_side_seed1_smooth_random",
+      "zero_trial_id": "baseline_prefix0_right_side_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.03911763030081717,
+        0.08053024527771066,
+        0.05884741794839048,
+        0.04922597688138174,
+        0.026280000436668897,
+        0.036601150138428705,
+        0.03320031799714361,
+        0.023368236091827987
+      ],
+      "trajectory_rms_rad_all_joints": 0.04687769057814244,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05845327269818639,
+        0.07021537604911458,
+        0.057562536939882204,
+        0.08362324226703725,
+        0.05452947036058309,
+        0.061717936535295205,
+        0.06789240507018246
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix0_right_side_seed2_smooth_random",
+      "zero_trial_id": "baseline_prefix0_right_side_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.07719923331366607,
+        0.10026402229742645,
+        0.0525227073871665,
+        0.05846228328870201,
+        0.01593890377271836,
+        0.025283402132759692,
+        0.041182462324836654,
+        0.05367889045291784
+      ],
+      "trajectory_rms_rad_all_joints": 0.05880028349247007,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.06380467999675779,
+        0.07253895198453995,
+        0.05335293503801448,
+        0.07903279965998845,
+        0.05748470632276635
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_supine_seed0_smooth_random",
+      "zero_trial_id": "baseline_prefix100_supine_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0032090189078995985,
+        8.247028520147073e-05,
+        0.0032383277329932143,
+        9.737904696629159e-05,
+        0.0020333245097760885,
+        0.0020353824721669627,
+        0.0020248796309103177,
+        0.002024486827600077
+      ],
+      "trajectory_rms_rad_all_joints": 0.0021586085706167806,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.03998089633212726,
+        0.06901031437941432,
+        0.04790167357482604,
+        0.07803011798080914,
+        0.05677328334872498,
+        0.053810636832998644,
+        0.05000539839370591
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_supine_seed1_smooth_random",
+      "zero_trial_id": "baseline_prefix100_supine_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0025851146524648316,
+        9.477376740480844e-05,
+        0.002629496526261186,
+        7.487828582126281e-05,
+        0.0016380341590257477,
+        0.0016376791607990186,
+        0.0016395471645801346,
+        0.0016377260168694546
+      ],
+      "trajectory_rms_rad_all_joints": 0.0017445296258500477,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.0503150686084442,
+        0.07021537604911458,
+        0.035346406118047465,
+        0.08362324226703725,
+        0.06327934419878975,
+        0.061717936535295205,
+        0.07104526961634727
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_supine_seed2_smooth_random",
+      "zero_trial_id": "baseline_prefix100_supine_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0038632464401912214,
+        0.00010637958814534341,
+        0.0038592947280531096,
+        6.739411352922949e-05,
+        0.002446329705121765,
+        0.002452273752688025,
+        0.0024272882556871257,
+        0.0024231305278659397
+      ],
+      "trajectory_rms_rad_all_joints": 0.0025883429268186552,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.0683988461833252,
+        0.048984363984068975,
+        0.03508226645402678,
+        0.07253895198453995,
+        0.05526982678101597,
+        0.07903279965998845,
+        0.06193062148293046
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_prone_seed0_smooth_random",
+      "zero_trial_id": "baseline_prefix100_prone_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.002623325694588814,
+        0.0026211747526635816,
+        0.0026515125785490094,
+        0.0026546709147393446,
+        0.00045054790917941007,
+        7.713032765444469e-05,
+        0.0004199764028544544,
+        3.257966464676926e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0018780500367093058,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.06026109764648196,
+        0.06901031437941432,
+        0.054801905497401264,
+        0.07803011798080914,
+        0.04270083350630307,
+        0.053810636832998644,
+        0.026075225136451944
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_prone_seed1_smooth_random",
+      "zero_trial_id": "baseline_prefix100_prone_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0010071715381056799,
+        0.001008263714111959,
+        0.0010174508360794629,
+        0.0010210504129627097,
+        0.00014441150652192921,
+        5.4879155969496244e-05,
+        0.00017552969764335647,
+        8.554095591111002e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0007220400533284089,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05845327269818639,
+        0.07021537604911458,
+        0.063754380790395,
+        0.08362324226703725,
+        0.05247069575984332,
+        0.061717936535295205,
+        0.06575318724719591
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_prone_seed2_smooth_random",
+      "zero_trial_id": "baseline_prefix100_prone_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0027158588210156745,
+        0.0028178654982569168,
+        0.0027227595838322316,
+        0.0027310284427780897,
+        0.0004105503706746237,
+        7.114330830827617e-05,
+        0.0004553339228478331,
+        6.800947202268581e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0019549219439445485,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.06380467999675779,
+        0.07253895198453995,
+        0.04826562298534557,
+        0.07903279965998845,
+        0.0497960440304077
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_left_side_seed0_smooth_random",
+      "zero_trial_id": "baseline_prefix100_left_side_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0023997638278102688,
+        0.0024111352020989127,
+        0.00213423130821675,
+        0.002122803462678795,
+        0.0003518304448246521,
+        7.363873593667956e-05,
+        0.00035851735521170834,
+        3.5299364255080555e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.001616039343373232,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.06026109764648196,
+        0.06901031437941432,
+        0.054801905497401264,
+        0.07803011798080914,
+        0.04270083350630307,
+        0.053810636832998644,
+        0.026075225136451944
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_left_side_seed1_smooth_random",
+      "zero_trial_id": "baseline_prefix100_left_side_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0051581970149505,
+        0.005172645112556819,
+        0.004670450817497412,
+        0.004661260389900771,
+        0.0007842237007973032,
+        5.2802072031981834e-05,
+        0.000795075557243702,
+        8.672272542483561e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0035028769249567725,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05845327269818639,
+        0.07021537604911458,
+        0.063754380790395,
+        0.08362324226703725,
+        0.05247069575984332,
+        0.061717936535295205,
+        0.06575318724719591
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_left_side_seed2_smooth_random",
+      "zero_trial_id": "baseline_prefix100_left_side_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.009902909292808303,
+        0.009956291580047454,
+        0.008790330707424559,
+        0.008768815922834242,
+        0.001499078453208226,
+        6.455218244264164e-05,
+        0.0014651832043456828,
+        7.167902278672913e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.006668589656185659,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.06380467999675779,
+        0.07253895198453995,
+        0.04826562298534557,
+        0.07903279965998845,
+        0.0497960440304077
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_right_side_seed0_smooth_random",
+      "zero_trial_id": "baseline_prefix100_right_side_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.011990031843931477,
+        0.011947103921079501,
+        0.01350426144739489,
+        0.013536338643381647,
+        0.001998702897506666,
+        8.113406000623184e-05,
+        0.0020692689572858005,
+        4.051242914669307e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.00908554214198418,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.06026109764648196,
+        0.06901031437941432,
+        0.054801905497401264,
+        0.07803011798080914,
+        0.04270083350630307,
+        0.053810636832998644,
+        0.026075225136451944
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_right_side_seed1_smooth_random",
+      "zero_trial_id": "baseline_prefix100_right_side_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.013821194906687382,
+        0.013742512894977398,
+        0.01688193412516997,
+        0.016927098635183883,
+        0.002306988341061459,
+        5.862236238433918e-05,
+        0.0024696913111046164,
+        8.768359676775306e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.01097064920994615,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05845327269818639,
+        0.07021537604911458,
+        0.063754380790395,
+        0.08362324226703725,
+        0.05247069575984332,
+        0.061717936535295205,
+        0.06575318724719591
+      ]
+    },
+    {
+      "random_trial_id": "baseline_prefix100_right_side_seed2_smooth_random",
+      "zero_trial_id": "baseline_prefix100_right_side_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0016126785580648443,
+        0.0017839654048262996,
+        0.0017678648574017467,
+        0.001780993227834711,
+        0.0002419119315325919,
+        7.016892294929377e-05,
+        0.00029554390873352555,
+        6.647964275580927e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0012367173552465663,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.06380467999675779,
+        0.07253895198453995,
+        0.04826562298534557,
+        0.07903279965998845,
+        0.0497960440304077
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_supine_seed0_smooth_random",
+      "zero_trial_id": "compliant_prefix0_supine_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.018169602805332568,
+        0.00043471063401658656,
+        0.01796250904108245,
+        0.000956877996827258,
+        0.011455222719037242,
+        0.011600297797968276,
+        0.011320244472124185,
+        0.011370043576763616
+      ],
+      "trajectory_rms_rad_all_joints": 0.012130053835314961,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.040674370509094865,
+        0.06901031437941432,
+        0.04925336224872555,
+        0.07803011798080914,
+        0.05677328334872498,
+        0.053810636832998644,
+        0.05000539839370591
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_supine_seed1_smooth_random",
+      "zero_trial_id": "compliant_prefix0_supine_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.00901470031709395,
+        0.0003362882867023005,
+        0.009066688311074936,
+        0.0011998047996784878,
+        0.005726163138845121,
+        0.006327905005424496,
+        0.005648236775611746,
+        0.005781172873842022
+      ],
+      "trajectory_rms_rad_all_joints": 0.006156075704408472,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05037425766345129,
+        0.07021537604911458,
+        0.03570314461931752,
+        0.08362324226703725,
+        0.06327934419878975,
+        0.061717936535295205,
+        0.07104526961634727
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_supine_seed2_smooth_random",
+      "zero_trial_id": "compliant_prefix0_supine_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.01428592957594663,
+        0.0008449860126442862,
+        0.014292244968223775,
+        0.0016483996131855454,
+        0.009084609412907466,
+        0.009677239837314106,
+        0.008930090453921779,
+        0.00892221617548134
+      ],
+      "trajectory_rms_rad_all_joints": 0.009665135984416947,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.06852050072717875,
+        0.048984363984068975,
+        0.03529509939638493,
+        0.07253895198453995,
+        0.05526982678101597,
+        0.07903279965998845,
+        0.06193062148293046
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_prone_seed0_smooth_random",
+      "zero_trial_id": "compliant_prefix0_prone_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.03560934563970989,
+        0.03539652806417013,
+        0.0369986217378496,
+        0.0367474642829206,
+        0.005929904069980235,
+        0.002228503922217457,
+        0.00598200100341436,
+        0.0019755803612188207
+      ],
+      "trajectory_rms_rad_all_joints": 0.025787669251480207,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.06026109764648196,
+        0.06901031437941432,
+        0.054801905497401264,
+        0.07803011798080914,
+        0.044048554726239204,
+        0.053810636832998644,
+        0.029244523245580134
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_prone_seed1_smooth_random",
+      "zero_trial_id": "compliant_prefix0_prone_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.01558842938094196,
+        0.01562958105720628,
+        0.016132885274967274,
+        0.01567323227002789,
+        0.0032750206415687014,
+        0.004162804238007578,
+        0.0027060633030836913,
+        0.002108926032288189
+      ],
+      "trajectory_rms_rad_all_joints": 0.011363473163004179,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05845327269818639,
+        0.07021537604911458,
+        0.063754380790395,
+        0.08362324226703725,
+        0.05451552002655811,
+        0.061717936535295205,
+        0.06631662804669332
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_prone_seed2_smooth_random",
+      "zero_trial_id": "compliant_prefix0_prone_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.026862448135415395,
+        0.026867336607108428,
+        0.026706204290118232,
+        0.02676915016879457,
+        0.005354291713881058,
+        0.006352611281275532,
+        0.004359205045069827,
+        0.001231659989152633
+      ],
+      "trajectory_rms_rad_all_joints": 0.019244471314298038,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.06380467999675779,
+        0.07253895198453995,
+        0.05241594386983889,
+        0.07903279965998845,
+        0.051221135994389135
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_left_side_seed0_smooth_random",
+      "zero_trial_id": "compliant_prefix0_left_side_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.03274845347284387,
+        0.042485118859844996,
+        0.05188575172919793,
+        0.030475667237639222,
+        0.02573649468520014,
+        0.031010650817547756,
+        0.018872495376445465,
+        0.031580614471175814
+      ],
+      "trajectory_rms_rad_all_joints": 0.034416344173956184,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.054450121746216634,
+        0.06901031437941432,
+        0.050911537849723604,
+        0.07803011798080914,
+        0.04980731540163412,
+        0.053810636832998644,
+        0.03565375965651295
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_left_side_seed1_smooth_random",
+      "zero_trial_id": "compliant_prefix0_left_side_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.030109452530880224,
+        0.02932256098441364,
+        0.0387218723454028,
+        0.044902708546031615,
+        0.03380945254345195,
+        0.02115827421138949,
+        0.038094860663587866,
+        0.03315737722597937
+      ],
+      "trajectory_rms_rad_all_joints": 0.03432093032952681,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05740664903524114,
+        0.07021537604911458,
+        0.05318494337278696,
+        0.08362324226703725,
+        0.05452947036058309,
+        0.061717936535295205,
+        0.06755204996295873
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_left_side_seed2_smooth_random",
+      "zero_trial_id": "compliant_prefix0_left_side_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.043253774787371975,
+        0.08146790645290868,
+        0.03857075696516607,
+        0.016663484915943702,
+        0.027325472625396238,
+        0.04200520816113611,
+        0.010171467909269555,
+        0.028637348078286176
+      ],
+      "trajectory_rms_rad_all_joints": 0.04139438257305308,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.03694345881989586,
+        0.07253895198453995,
+        0.05339084345200534,
+        0.07903279965998845,
+        0.05462673944861218
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_right_side_seed0_smooth_random",
+      "zero_trial_id": "compliant_prefix0_right_side_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0373173657105837,
+        0.051787077631801924,
+        0.02191144193986044,
+        0.021696477347698834,
+        0.011703897559748854,
+        0.018755134099410938,
+        0.0431049154262479,
+        0.059764934308675785
+      ],
+      "trajectory_rms_rad_all_joints": 0.03698640458060757,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.048320749762822926,
+        0.06901031437941432,
+        0.0541911450135724,
+        0.07803011798080914,
+        0.04719787542718903,
+        0.053810636832998644,
+        0.03841757517241644
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_right_side_seed1_smooth_random",
+      "zero_trial_id": "compliant_prefix0_right_side_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.015567027016181727,
+        0.044100507347580704,
+        0.023544873324734494,
+        0.016881381283870688,
+        0.028702535207661094,
+        0.02847575829248551,
+        0.031801716070664614,
+        0.019492014650135767
+      ],
+      "trajectory_rms_rad_all_joints": 0.027505729608131472,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.051660307910538515,
+        0.07021537604911458,
+        0.05658423598848471,
+        0.08362324226703725,
+        0.05452947036058309,
+        0.061717936535295205,
+        0.06777400722476547
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix0_right_side_seed2_smooth_random",
+      "zero_trial_id": "compliant_prefix0_right_side_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.07422226660942405,
+        0.15396770651108843,
+        0.04664425792983546,
+        0.05434044358776368,
+        0.012770101845113357,
+        0.025259934006123634,
+        0.03953522409575439,
+        0.06081169234411935
+      ],
+      "trajectory_rms_rad_all_joints": 0.07106845797649146,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.06905945897800292,
+        0.048984363984068975,
+        0.06380326127711268,
+        0.07253895198453995,
+        0.05337245339060057,
+        0.07903279965998845,
+        0.056868219879619014
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_supine_seed0_smooth_random",
+      "zero_trial_id": "compliant_prefix100_supine_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.014102263124856828,
+        8.211482292886736e-05,
+        0.013953831860897865,
+        9.579062847140991e-05,
+        0.008898002626619588,
+        0.00893460929569762,
+        0.008787107382557132,
+        0.008779056198385081
+      ],
+      "trajectory_rms_rad_all_joints": 0.00940003953070572,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.03998089633212726,
+        0.06901031437941432,
+        0.04790167357482604,
+        0.07803011798080914,
+        0.05677328334872498,
+        0.053810636832998644,
+        0.05000539839370591
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_supine_seed1_smooth_random",
+      "zero_trial_id": "compliant_prefix100_supine_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.01122668218738191,
+        9.454813891448703e-05,
+        0.011227279011202606,
+        7.341531876615422e-05,
+        0.007058011394868052,
+        0.007056553131239072,
+        0.007026780774000953,
+        0.006981549018956312
+      ],
+      "trajectory_rms_rad_all_joints": 0.007498605351876416,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.0503150686084442,
+        0.07021537604911458,
+        0.035346406118047465,
+        0.08362324226703725,
+        0.06327934419878975,
+        0.061717936535295205,
+        0.07104526961634727
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_supine_seed2_smooth_random",
+      "zero_trial_id": "compliant_prefix100_supine_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.01747635230840143,
+        0.00010728990685011793,
+        0.01728363103721967,
+        6.614626765476967e-05,
+        0.011032121699434438,
+        0.01110275048156568,
+        0.010898452648279598,
+        0.010858057149022809
+      ],
+      "trajectory_rms_rad_all_joints": 0.011650188469056116,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.0683988461833252,
+        0.048984363984068975,
+        0.03508226645402678,
+        0.07253895198453995,
+        0.05526982678101597,
+        0.07903279965998845,
+        0.06193062148293046
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_prone_seed0_smooth_random",
+      "zero_trial_id": "compliant_prefix100_prone_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.014731261022062557,
+        0.014662098768157534,
+        0.015079475508108993,
+        0.01515394279246455,
+        0.0024099236116427065,
+        7.846297959339254e-05,
+        0.0023868479232614535,
+        3.37410788166077e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.010609735064238117,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.06026109764648196,
+        0.06901031437941432,
+        0.054801905497401264,
+        0.07803011798080914,
+        0.04270083350630307,
+        0.053810636832998644,
+        0.026075225136451944
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_prone_seed1_smooth_random",
+      "zero_trial_id": "compliant_prefix100_prone_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.005244641066333034,
+        0.005343425148693551,
+        0.005226172988753387,
+        0.005325887227051777,
+        0.0008164113941756862,
+        5.5507130248330346e-05,
+        0.0008490865642338908,
+        8.66485190309959e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0037605597266807808,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05845327269818639,
+        0.07021537604911458,
+        0.063754380790395,
+        0.08362324226703725,
+        0.05247069575984332,
+        0.061717936535295205,
+        0.06575318724719591
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_prone_seed2_smooth_random",
+      "zero_trial_id": "compliant_prefix100_prone_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.014099179372628815,
+        0.014112672593173455,
+        0.01404268144742403,
+        0.014229388468914623,
+        0.002221075064378043,
+        7.161266781744233e-05,
+        0.0022549582366870394,
+        6.897350839710354e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.01004772786471297,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.06380467999675779,
+        0.07253895198453995,
+        0.04826562298534557,
+        0.07903279965998845,
+        0.0497960440304077
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_left_side_seed0_smooth_random",
+      "zero_trial_id": "compliant_prefix100_left_side_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.002560002491218169,
+        0.0027625589760486863,
+        0.001854349318949837,
+        0.00010335685102838675,
+        0.0003795487224921138,
+        6.660696692094117e-05,
+        0.00032716556865238704,
+        3.291230917328866e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.001495462016264923,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.06026109764648196,
+        0.06901031437941432,
+        0.04790167357482604,
+        0.07803011798080914,
+        0.04270083350630307,
+        0.053810636832998644,
+        0.026075225136451944
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_left_side_seed1_smooth_random",
+      "zero_trial_id": "compliant_prefix100_left_side_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0033457153502239384,
+        0.0035587382435022016,
+        0.002264108796076237,
+        6.919757131688484e-05,
+        0.0004299984836812061,
+        4.983238625750736e-05,
+        0.00039954384402575107,
+        7.929317396655266e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.001915160263798437,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.05845327269818639,
+        0.07021537604911458,
+        0.035346406118047465,
+        0.08362324226703725,
+        0.05247069575984332,
+        0.061717936535295205,
+        0.06575318724719591
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_left_side_seed2_smooth_random",
+      "zero_trial_id": "compliant_prefix100_left_side_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0037245792970589157,
+        0.004145136458744319,
+        0.0025281362607475375,
+        6.795627391906854e-05,
+        0.0004670392717443312,
+        6.478430106728069e-05,
+        0.0004078729371884512,
+        6.434742494593448e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0021749586726179117,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.07233405907397038,
+        0.048984363984068975,
+        0.03508226645402678,
+        0.07253895198453995,
+        0.04826562298534557,
+        0.07903279965998845,
+        0.0497960440304077
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_right_side_seed0_smooth_random",
+      "zero_trial_id": "compliant_prefix100_right_side_seed0_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0010300762408403873,
+        8.388058666982012e-05,
+        0.0015494681617015391,
+        0.0018377283258248515,
+        0.00020374058391872923,
+        6.973454541460391e-05,
+        0.00020471585995971046,
+        3.057071445327974e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0009310884949006357,
+      "applied_torque_rms_nm_per_joint": [
+        0.060256168665868075,
+        0.03998089633212726,
+        0.06901031437941432,
+        0.054801905497401264,
+        0.07803011798080914,
+        0.04270083350630307,
+        0.053810636832998644,
+        0.026075225136451944
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_right_side_seed1_smooth_random",
+      "zero_trial_id": "compliant_prefix100_right_side_seed1_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0011592622756195605,
+        0.00010744788589138972,
+        0.001530952864044009,
+        0.0017017333325112342,
+        0.000190680240833153,
+        5.190932495805258e-05,
+        0.00022912764742126087,
+        7.530399169845215e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0009146290765251389,
+      "applied_torque_rms_nm_per_joint": [
+        0.07717212194209597,
+        0.0503150686084442,
+        0.07021537604911458,
+        0.063754380790395,
+        0.08362324226703725,
+        0.05247069575984332,
+        0.061717936535295205,
+        0.06575318724719591
+      ]
+    },
+    {
+      "random_trial_id": "compliant_prefix100_right_side_seed2_smooth_random",
+      "zero_trial_id": "compliant_prefix100_right_side_seed2_zero_torque",
+      "trajectory_rms_rad_per_joint": [
+        0.0030842007078860853,
+        0.0013771540540611592,
+        0.00446147098930781,
+        0.004878920319270064,
+        0.0005415052013247871,
+        6.59671871681985e-05,
+        0.0006046398119466701,
+        6.234382008098304e-05
+      ],
+      "trajectory_rms_rad_all_joints": 0.0026406554530149684,
+      "applied_torque_rms_nm_per_joint": [
+        0.056540407636409024,
+        0.0683988461833252,
+        0.048984363984068975,
+        0.06380467999675779,
+        0.07253895198453995,
+        0.04826562298534557,
+        0.07903279965998845,
+        0.0497960440304077
+      ]
+    }
+  ],
+  "budget_ledger": {
+    "attempts": [
+      {
+        "archive": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_body",
+        "status": "interrupted_checkpoint_write",
+        "control_steps": 2750,
+        "control_calls_attempted": 2750,
+        "physics_steps": 27500,
+        "stale_metadata_control_calls_attempted": 2500,
+        "note": "Recovery/closed trace and saved trials supersede the stale metadata checkpoint; write failure is retained."
+      },
+      {
+        "archive": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_body_verified",
+        "status": "complete",
+        "control_steps": 6000,
+        "control_calls_attempted": 6000,
+        "physics_steps": 60000
+      },
+      {
+        "archive": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_ground_impacts",
+        "status": "complete",
+        "control_steps": 6000,
+        "control_calls_attempted": 6000,
+        "physics_steps": 60000
+      },
+      {
+        "archive": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-10_contact_prefix",
+        "status": "complete",
+        "control_steps": 24000,
+        "control_calls_attempted": 24000,
+        "physics_steps": 240000,
+        "prefix_control_steps": 4800,
+        "prefix_control_calls_attempted": 4800,
+        "prefix_physics_steps": 48000,
+        "exploration_control_steps": 19200,
+        "exploration_control_calls_attempted": 19200,
+        "exploration_physics_steps": 192000
+      }
+    ],
+    "collector_attempt_count": 4,
+    "total_control_steps": 38750,
+    "total_control_calls_attempted": 38750,
+    "total_physics_steps": 387500,
+    "total_simulated_seconds": 775.0,
+    "scope": "All four collector attempts; CPU tests and other historical diagnostics excluded; no cumulative wall-time claim."
+  },
+  "parameter_updates": {
+    "model": 0,
+    "policy": 0,
+    "gate": 0
+  },
+  "auditor_parameter_updates": 0,
+  "evidence_boundaries": [
+    "Offline scalar consistency is not an independent dynamics solver or hardware safety proof.",
+    "Force/energy/distance samples occur every 2 ms and do not bound between-step extrema; the normal-force integral includes sustained support.",
+    "Changing contact or waiting changes initial/environment conditions, not learned skill. A 2 s zero prefix has no stability-success interpretation.",
+    "Paired native trajectories describe fixed-action response, not body-model identifiability, predictive accuracy or learning benefit.",
+    "Zero-prefix duplicate trajectories are not independent seeds. Prefix exposure is charged; matching 150 active commands does not equate overall active budgets."
+  ],
+  "violations": [],
+  "violations_truncated": false
+}

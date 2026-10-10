@@ -60,3 +60,5 @@ python scripts/audit_ground_impacts.py results/cpu_validation/2026-10-10_ground_
 ```
 
 本次结果支持诊断数据可信与接触峰值采样问题，尚不支持身体模型形成、低风险学习或运动技能获得。
+
+后续 [96 组接触/前缀对照](GROUND_CONTACT_PREFIX_RESULTS.md)已完成：力峰降低伴随更深接触穿透，固定前缀后的主动响应仍弱；尚未验证学习收益。
