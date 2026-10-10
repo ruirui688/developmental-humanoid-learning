@@ -213,6 +213,9 @@ class GroundBodyEnv:
         executed_substeps = 0
         applied_history = []
         guarded_substeps = 0
+        substep_ground_forces = []
+        substep_energies = []
+        substep_contact_distances = []
         if reason is None:
             self.last_command[:] = accepted
             for _ in range(self.config.control_substeps):
@@ -227,6 +230,11 @@ class GroundBodyEnv:
                 self.physics_steps += 1
                 # Recompute sensors/contacts at the logged endpoint, not pre-step.
                 mujoco.mj_forward(self.model, self.data)
+                # Privileged telemetry observes dynamics; it never chooses actions.
+                sample = self.diagnostics()
+                substep_ground_forces.append(sample["ground_normal_force"])
+                substep_energies.append(sample["kinetic_energy"])
+                substep_contact_distances.append(sample["minimum_contact_distance"])
                 reason = self._stop_reason()
                 if reason is not None:
                     break
@@ -243,6 +251,13 @@ class GroundBodyEnv:
             "applied_torque": applied.tolist(),
             "applied_torque_history": applied_history,
             "guarded_substeps": guarded_substeps,
+            "substep_ground_normal_forces": substep_ground_forces,
+            "substep_kinetic_energies": substep_energies,
+            "substep_minimum_contact_distances": substep_contact_distances,
+            "peak_substep_ground_normal_force": max(substep_ground_forces, default=0.),
+            "ground_normal_impulse_ns": float(sum(substep_ground_forces) * self.config.physics_dt),
+            "peak_substep_kinetic_energy": max(substep_energies, default=0.),
+            "minimum_substep_contact_distance": min(substep_contact_distances, default=0.),
             "executed_substeps": executed_substeps,
             "terminated": self.terminated,
             "reason": reason,
