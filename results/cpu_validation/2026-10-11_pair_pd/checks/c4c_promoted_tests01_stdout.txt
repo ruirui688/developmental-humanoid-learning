@@ -1,0 +1,31 @@
+.....................................FF.....                             [100%]
+================================== FAILURES ===================================
+_ test_full_standard_library_schema_archive_recomputes_and_never_passes_source_without_git _
+
+tmp_path = WindowsPath('D:/Codex_ws/robot_rl/external/c4c_promoted_tests01_work/test_full_standard_library_sch0')
+
+    def test_full_standard_library_schema_archive_recomputes_and_never_passes_source_without_git(tmp_path):
+        path = make_archive(tmp_path/"full")
+        report = audit.audit(path, git_root=None, spec=audit.DRAFT_SPEC)
+        labels = [violation["check"] for violation in report["violations"]]
+>       assert report["failed_checks"] == 2, report["violations"]
+E       AssertionError: [{'check': 'source_commit_format', 'location': None}, {'check': 'clean_collection_source', 'location': None}, {'check': 'runtime_auditor_matches_archived_source', 'location': None}]
+E       assert 3 == 2
+
+tests\test_pair_pd_audit.py:374: AssertionError
+_____ test_stdlib_fatal_paid_schema_blocks_all_remaining_and_has_no_pick ______
+
+tmp_path = WindowsPath('D:/Codex_ws/robot_rl/external/c4c_promoted_tests01_work/test_stdlib_fatal_paid_schema_0')
+
+    def test_stdlib_fatal_paid_schema_blocks_all_remaining_and_has_no_pick(tmp_path):
+        path = make_archive(tmp_path/"fatal", fatal=True)
+        report = audit.audit(path, git_root=None, spec=audit.DRAFT_SPEC)
+>       assert report["failed_checks"] == 2, report["violations"]
+E       AssertionError: [{'check': 'source_commit_format', 'location': None}, {'check': 'clean_collection_source', 'location': None}, {'check': 'runtime_auditor_matches_archived_source', 'location': None}]
+E       assert 3 == 2
+
+tests\test_pair_pd_audit.py:386: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_pair_pd_audit.py::test_full_standard_library_schema_archive_recomputes_and_never_passes_source_without_git
+FAILED tests/test_pair_pd_audit.py::test_stdlib_fatal_paid_schema_blocks_all_remaining_and_has_no_pick
+2 failed, 42 passed in 15.73s

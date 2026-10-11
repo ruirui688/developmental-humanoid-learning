@@ -1,10 +1,18 @@
 # 开发进度与仓库检查点
 
+## C4 A正式路径准备（2026-10-11）
+
+raw/public-guard共享校准collector与PD来源helper已提升，正式物理开关仍关闭，等待独立审计后冻结。[协议](GUARD_PAIR_DEVELOPMENT_PROTOCOL.md)固定24trial、1/9校准、7500/75000/4800 scalar上限，规则收益与匹配RLS贡献分别判门。提升合成93项通过、1项Windows symlink可选skip；封口PD归档实际使用first_audit.json，路径统一后受影响4项检查通过。一次真实来源helper核验确认candidate2、64/(0,4)，只读取身份原件，不重审trace或做物理。提升检查外层计账脚本误用draft suite字符串导致fake汇总漏计，首次记录保留；独立只读纠正为11709attempt/11706step/117048fake子步/8088fake scalar，不重复测试或采集。
+
+## C4-C双轴PD首次开发（2026-10-11）
+
+[九候选×三seed](PAIR_PD_DEVELOPMENT_RESULTS.md)从clean `f9f35fe`一次执行，9完整/18active1左肘速度停止/0异常；肘Kd4的2/5/8均eligible，按冻结精确排序选择candidate2 Kp=(64,64)、Kd=(0,4)。实际4,536控制/45,360子步/0更新，当前累计232,184/2,321,840/12,852 scalar。首次标准库独立audit591,017项、一次独立summary198,435项均零失败；所有18次停止和工程首失败保留。只完成有限基线选择，接着冻结raw/public-guard及匹配RLS贡献对照，不在此阶段结束。
+
 ## C4-D短脉冲首次物理完成（2026-10-11）
 
 [肩—肘短脉冲结果](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)从clean `86453c1`一次执行六trial：2/8三个开发seed均在step361/active261因左肘速度停止，1/9三个seed均完整400active且依冻结顺序选取。实际新增 **2,586控制/25,860子步/0更新**，包含prefix600/6,000与校准1,986/19,860，partial、异常及blocked均0。当前正式累计 **227,648/2,276,480/12,852 scalar RLS**。
 
-首次独立审计466,758项零失败，一次独立summary44,685项零失败；原始五文件、首次audit、精确冻结源码、所有合成尝试/失败和交付已保存在[归档清单](../results/cpu_validation/2026-10-11_pair_calibration/manifest.json)，归档完整性616项零失败。此门只验证固定校准可执行性，无模型/策略/增益更新或学习、控制、技能收益；1/9肘非零请求300子步仍有150被guard屏蔽。双轴PD已冻结，尚未物理执行，提交推送后一次开发；后续继续模型贡献和耦合对照。
+首次独立审计466,758项零失败，一次独立summary44,685项零失败；原始五文件、首次audit、精确冻结源码、所有合成尝试/失败和交付已保存在[归档清单](../results/cpu_validation/2026-10-11_pair_calibration/manifest.json)，归档完整性616项零失败。此门只验证固定校准可执行性，无模型/策略/增益更新或学习、控制、技能收益；1/9肘非零请求300子步仍有150被guard屏蔽。此时双轴PD尚未物理执行，随后结果见顶部；后续继续模型贡献和耦合对照。
 
 ## C4-D短脉冲冻结检查点（2026-10-11，以下为运行前记录）
 
@@ -16,7 +24,7 @@
 
 ## 当前持续执行状态（2026-10-11）
 
-C5[事件工程](C5_ENGINEERING_RESULTS.md)与C4-D[短脉冲可执行性](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)均已一次正式完成并归档；这两项均零更新，不能解释为动力学适应或双关节学习收益。当前先冻结尚未物理执行的双轴PD草稿，再按选定1/9校准准备公开guard映射、RLS贡献与耦合增量对照。
+C5[事件工程](C5_ENGINEERING_RESULTS.md)与C4-D[短脉冲可执行性](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)均已一次正式完成并归档；这两项均零更新，不能解释为动力学适应或双关节学习收益。双轴PD已一次开发并选出有限基线，当前按选定1/9校准准备公开guard映射、RLS贡献与耦合增量对照。
 
 用户要求重新整理为持续目标执行。已建立 [连续阶段与完成条件](CONTINUOUS_EXECUTION_PLAN.md)：C2三个修订均未采用；[单肩新最终](LOCAL_FROZEN_VALIDATION_RESULTS.md)同MPC模型贡献通过29.505%，与调优PD比较只改善2.674%、未过门。左肘迁移失败后，[首次肩—肘](PAIR_BODY_DEVELOPMENT_RESULTS.md)校准与组合PD停止、学习耦合尚未评价；短脉冲已选1/9，C5接口工程已通过，继续双轴调优基线、模型贡献和真正扰动/成熟门控对照。单肩或负结果不是整个目标结束，各阶段检查后持续提交、推送，不等待用户反复发送“继续”。以下保留历史检查点。
 

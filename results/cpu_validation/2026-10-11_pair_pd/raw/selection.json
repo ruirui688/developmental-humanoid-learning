@@ -1,0 +1,380 @@
+{
+  "status": "selected",
+  "picked": {
+    "candidate": 2,
+    "kp": [
+      64.0,
+      64.0
+    ],
+    "kd": [
+      0.0,
+      4.0
+    ],
+    "eligible": true,
+    "qualification_failures": [],
+    "sort_key": [
+      0.010660460980685132,
+      0.010935465170751784,
+      1.2190868891622377,
+      2
+    ],
+    "paid_control_steps": 900,
+    "paid_physics_steps": 9000
+  },
+  "candidates": [
+    {
+      "candidate": 0,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        1.0
+      ],
+      "eligible": false,
+      "qualification_failures": [
+        {
+          "seed": 0,
+          "trial_id": "seed0_candidate0",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 1,
+          "trial_id": "seed1_candidate0",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 2,
+          "trial_id": "seed2_candidate0",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        }
+      ],
+      "sort_key": null,
+      "paid_control_steps": 306,
+      "paid_physics_steps": 3060
+    },
+    {
+      "candidate": 1,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        2.0
+      ],
+      "eligible": false,
+      "qualification_failures": [
+        {
+          "seed": 0,
+          "trial_id": "seed0_candidate1",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 1,
+          "trial_id": "seed1_candidate1",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 2,
+          "trial_id": "seed2_candidate1",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        }
+      ],
+      "sort_key": null,
+      "paid_control_steps": 306,
+      "paid_physics_steps": 3060
+    },
+    {
+      "candidate": 2,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        4.0
+      ],
+      "eligible": true,
+      "qualification_failures": [],
+      "sort_key": [
+        0.010660460980685132,
+        0.010935465170751784,
+        1.2190868891622377,
+        2
+      ],
+      "paid_control_steps": 900,
+      "paid_physics_steps": 9000
+    },
+    {
+      "candidate": 3,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        1.0
+      ],
+      "eligible": false,
+      "qualification_failures": [
+        {
+          "seed": 0,
+          "trial_id": "seed0_candidate3",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 1,
+          "trial_id": "seed1_candidate3",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 2,
+          "trial_id": "seed2_candidate3",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        }
+      ],
+      "sort_key": null,
+      "paid_control_steps": 306,
+      "paid_physics_steps": 3060
+    },
+    {
+      "candidate": 4,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        2.0
+      ],
+      "eligible": false,
+      "qualification_failures": [
+        {
+          "seed": 0,
+          "trial_id": "seed0_candidate4",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 1,
+          "trial_id": "seed1_candidate4",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 2,
+          "trial_id": "seed2_candidate4",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        }
+      ],
+      "sort_key": null,
+      "paid_control_steps": 306,
+      "paid_physics_steps": 3060
+    },
+    {
+      "candidate": 5,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        4.0
+      ],
+      "eligible": true,
+      "qualification_failures": [],
+      "sort_key": [
+        0.011168158000669103,
+        0.011489388648132539,
+        1.2975393347525035,
+        5
+      ],
+      "paid_control_steps": 900,
+      "paid_physics_steps": 9000
+    },
+    {
+      "candidate": 6,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        1.0
+      ],
+      "eligible": false,
+      "qualification_failures": [
+        {
+          "seed": 0,
+          "trial_id": "seed0_candidate6",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 1,
+          "trial_id": "seed1_candidate6",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 2,
+          "trial_id": "seed2_candidate6",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        }
+      ],
+      "sort_key": null,
+      "paid_control_steps": 306,
+      "paid_physics_steps": 3060
+    },
+    {
+      "candidate": 7,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        2.0
+      ],
+      "eligible": false,
+      "qualification_failures": [
+        {
+          "seed": 0,
+          "trial_id": "seed0_candidate7",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 1,
+          "trial_id": "seed1_candidate7",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        },
+        {
+          "seed": 2,
+          "trial_id": "seed2_candidate7",
+          "reasons": [
+            "trial is not complete without stop/error",
+            "full planned tracking endpoints missing",
+            "full paid prefix/control transitions missing",
+            "stop or exception recorded"
+          ]
+        }
+      ],
+      "sort_key": null,
+      "paid_control_steps": 306,
+      "paid_physics_steps": 3060
+    },
+    {
+      "candidate": 8,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        4.0
+      ],
+      "eligible": true,
+      "qualification_failures": [],
+      "sort_key": [
+        0.011518067468436928,
+        0.01180727392223484,
+        1.437337898951352,
+        8
+      ],
+      "paid_control_steps": 900,
+      "paid_physics_steps": 9000
+    }
+  ],
+  "selection_kind": "finite fixed-Kp damping-grid development",
+  "sort_order": [
+    "mean_seed_joint_rmse",
+    "max_seed_joint_rmse",
+    "mean_seed_control_actual_squared_effort",
+    "candidate_index"
+  ],
+  "claim_boundary": "not global gain optimality or body-method advantage",
+  "invalid_numeric_fields": []
+}

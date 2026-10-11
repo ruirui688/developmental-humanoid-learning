@@ -13,9 +13,11 @@
 
 [C5动力学事件工程](docs/C5_ENGINEERING_RESULTS.md)从clean `652f9d5`一次完成四组480控制/4,800子步/0更新；首次独立审计481,538项零失败，identity与两个动力学变化实现通过。该批结束时正式累计225,062/2,250,620/12,852 scalar RLS；工程接口通过不等于算法适应通过。
 
-[肩—肘短脉冲校准](docs/PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)随后从clean `86453c1`一次完成六组：2/8三个开发seed均在step361/active261因左肘速度停止，1/9三个seed均完成400active并按冻结顺序选取。新增2,586控制/25,860子步/0更新，当前正式累计 **227,648/2,276,480/12,852 scalar RLS**；[原始归档](results/cpu_validation/2026-10-11_pair_calibration/manifest.json)保留全部停止、首次审计及一次汇总。此门只验证固定校准可执行性，无学习、控制或技能收益结论。双轴PD已冻结，尚未物理执行，提交推送后一次开发。
+[肩—肘短脉冲校准](docs/PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)随后从clean `86453c1`一次完成六组：2/8三个开发seed均在step361/active261因左肘速度停止，1/9三个seed均完成400active并按冻结顺序选取。新增2,586控制/25,860子步/0更新，当前正式累计 **227,648/2,276,480/12,852 scalar RLS**；[原始归档](results/cpu_validation/2026-10-11_pair_calibration/manifest.json)保留全部停止、首次审计及一次汇总。此门只验证固定校准可执行性，无学习、控制或技能收益结论。该阶段的PD开发在下段单独报告。
 
-[单肩新最终评价](docs/LOCAL_FROZEN_VALIDATION_RESULTS.md)同MPC模型贡献通过，tracking降低29.505%；相对调优PD64/0仅改善2.674%，未过5%门，自身一步预测和位置有效域仍有缺口。[左肘迁移](docs/ELBOW_BODY_DEVELOPMENT_RESULTS.md)15完整/6停止，贡献与PD门失败。[首次肩—肘对照](docs/PAIR_BODY_DEVELOPMENT_RESULTS.md)6完整/6速度停止/12依赖blocked：校准未完成，学习模型未发布；组合PD也停止，名义MPC和零力矩完整。独立审计1,540,296项零失败是记录一致性，耦合贡献尚未评价。短脉冲可执行性与事件工程已单独完成，接着冻结双轴PD开发及模型贡献对照；原始失败全部保留，局部正负结果都不结束持续目标。
+[单肩新最终评价](docs/LOCAL_FROZEN_VALIDATION_RESULTS.md)同MPC模型贡献通过，tracking降低29.505%；相对调优PD64/0仅改善2.674%，未过5%门，自身一步预测和位置有效域仍有缺口。[左肘迁移](docs/ELBOW_BODY_DEVELOPMENT_RESULTS.md)15完整/6停止，贡献与PD门失败。[首次肩—肘对照](docs/PAIR_BODY_DEVELOPMENT_RESULTS.md)6完整/6速度停止/12依赖blocked：校准未完成，学习模型未发布；组合PD也停止，名义MPC和零力矩完整。独立审计1,540,296项零失败是记录一致性，耦合贡献尚未评价。短脉冲可执行性与事件工程已单独完成，随后完成双轴PD开发，接着冻结模型贡献对照；原始失败全部保留，局部正负结果都不结束持续目标。
+
+[双关节PD开发](docs/PAIR_PD_DEVELOPMENT_RESULTS.md)从clean `f9f35fe`一次完成9完整/18速度停止/0异常，按冻结规则选择Kp=(64,64)、Kd=(0,4)。实际新增4,536/45,360/0，当前累计 **232,184/2,321,840/12,852 scalar RLS**；首次独立审计591,017项与一次汇总198,435项零失败，只支持有限基线选择。接着冻结同输入映射下的身体学习对照。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 

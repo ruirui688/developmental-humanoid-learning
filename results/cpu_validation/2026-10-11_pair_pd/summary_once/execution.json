@@ -1,0 +1,37 @@
+{
+  "started_at_utc": "2026-10-11T08:07:50.936845+00:00",
+  "source_path": "D:\\Codex_ws\\robot_rl\\external\\summarize_pair_pd_once.py",
+  "source_sha256": "2b7d07eba5613082adedfc8791427560790ea075841b9968972b0e59a8449279",
+  "source_snapshot": "tool_source.py",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "expected_source_commit": "f9f35fe9bb338aa398cc426e144eff048fde3746",
+  "raw_read_passes": 1,
+  "physical_calls": 0,
+  "model_updates": 0,
+  "new_predictions": 0,
+  "audit_executions": 0,
+  "input_sha256": {
+    "metadata.json": "9d91767cbd7e0ea6da38329e474353c4a94097d4dce9c97dcb0dc9e896929c59",
+    "episodes.json": "34defc44491b2c47b6fbf12632452b04495a0de18964bc16818c987376912c87",
+    "selection.json": "9ce40f64062e0452bd2623db1313fa110e5ff7c8acd5a8ef5f8974323b854c80",
+    "manifest.json": "75f0d4eeeb0deaa1ea3aa54d25ff9d224b994e378b6c6742234ee7ccabe1a95c",
+    "source_snapshot.zip": "8cf10599237125934e574bb8327b3af61ca967ae3927e924dd74896e40e4ed46",
+    "trace.jsonl.gz": "019582f9752f8bdbf6065bb9dc752f30450e43414daa5dbc9c449073fefad4ce"
+  },
+  "existing_audit_sha256": "811c8f608b8b8ecb31c77c1a76fc53f2deb68fce0462200d704cd2b88e6c04f0",
+  "source_after_sha256": "2b7d07eba5613082adedfc8791427560790ea075841b9968972b0e59a8449279",
+  "source_unchanged": true,
+  "checks": 198435,
+  "failed": 0,
+  "maximum_recomputation_difference": 1.1368683772161603e-13,
+  "output_sha256": {
+    "attempt.json": "614fd2912815e5de206fda82696b6a47c9371b61e72d310ebd4ce497239fa88c",
+    "stdout.txt": "530234b162400b002aed703db26dd35c60e9f903a5f224e74da107bd6f001808",
+    "summary.json": "fcf9acdb07a3b0bb78691f869f6b63edaa72cb78f7194f86dd64a0dcace842e0",
+    "summary.md": "cdb3591202d19b443b3cd341ffa189fc61ac3b9b37e0dc5ded9f005975fc6675",
+    "tool_source.py": "2b7d07eba5613082adedfc8791427560790ea075841b9968972b0e59a8449279"
+  },
+  "wall_seconds": 0.8815295998938382,
+  "cpu_seconds": 0.84375,
+  "exit_code": 0
+}

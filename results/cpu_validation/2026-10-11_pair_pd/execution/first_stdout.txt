@@ -1,0 +1,602 @@
+{
+  "schema_version": 1,
+  "suite": "pair_pd_development",
+  "synthetic": false,
+  "created_at_utc": "2026-10-11T08:04:15.660060+00:00",
+  "source_commit": "f9f35fe9bb338aa398cc426e144eff048fde3746",
+  "source_status": "",
+  "source_dirty": false,
+  "source_git_blobs": {
+    "src/developmental_physics/__init__.py": "c63a3e30adbb1e5f0019bab062731268d49c4c2c",
+    "src/developmental_physics/c5_engineering.py": "9965bbe7594b6eaf8635ec19a06783be29328712",
+    "src/developmental_physics/collect.py": "7d0ab63d3b3a23b6d5276c3b466d5588f4f3105f",
+    "src/developmental_physics/elbow_feedback_validate.py": "7dd567373ccf8eae325dd736b0d0345318223254",
+    "src/developmental_physics/environment.py": "e5ad0e139c5f588f5e9133dba91dd8e8a407645d",
+    "src/developmental_physics/exploration.py": "79d373687738e48bf2b1d34cee942475bb83219a",
+    "src/developmental_physics/feedback_validate.py": "24e446deaf20876b47e714328e34136851129224",
+    "src/developmental_physics/guard_pair_model.py": "6615cc7ab44c117000acb9eaa65817a7e26c04cf",
+    "src/developmental_physics/local_ablation.py": "1d3f8e93af6a8ee962e0c7f7153e470d9bec59d4",
+    "src/developmental_physics/local_coverage_ablation.py": "927f5eb1edab1739ceebb51fb62b2ac2e6bc66de",
+    "src/developmental_physics/local_dose_ablation.py": "3620f6793ff34d188531bbebdcf1bfbd36171df0",
+    "src/developmental_physics/local_frozen_validation.py": "2050839b28cf3335d89b9d79b5a3b9890520e2b0",
+    "src/developmental_physics/local_integration.py": "01ce218a547a05334540156a019b775930eb896e",
+    "src/developmental_physics/local_learning.py": "6d7d69f5560ab0bfd3a6aee56370cf013c054854",
+    "src/developmental_physics/local_model.py": "abb0ec18e3da4eb12b7359e26b6acddf94e9dfda",
+    "src/developmental_physics/local_pair_model.py": "186d2ccd48d3d1328150130c469e989c0314f3a7",
+    "src/developmental_physics/pair_calibration_development.py": "e99ac530cb623f23e8766b2f29ad722d7ae626bb",
+    "src/developmental_physics/pair_frozen_validation.py": "e85dfdb646df7fc7fd8dad0871b470d8eaf1cb68",
+    "src/developmental_physics/pair_pd_development.py": "97c191a20def0b60a7f43ba4c27b09cfc173935a",
+    "src/developmental_physics/perturbed_environment.py": "06f3ec6bc068fb11dbf12c77aa386e55667d38e7",
+    "src/developmental_physics/probe_collect.py": "3ab098dfe5381cda999765aab9890336cc9cb4ad",
+    "src/developmental_physics/probes.py": "a42199f7c7cd4a0ce38c3bbd61dfad6bc73912b4",
+    "src/developmental_physics/assets/ground_body.xml": "8a4d952b137ea0f43a32fdd65d75ba846f087d6a",
+    "pyproject.toml": "52cbd54841c434dcd385e0a508f263ee08311543",
+    "docs/PAIR_PD_DEVELOPMENT_PROTOCOL.md": "2894c8371f1dba125d834b8450dbdb34485e5469",
+    "scripts/audit_local_frozen.py": "53a6ddb351a2d67d4c1e4d71b20f133b58ae6d05",
+    "scripts/audit_pair_pd.py": "420802033fec8159f139f3089f1fdc749ac4ce5d"
+  },
+  "source_git_binding": "every ZIP source matches exact committed blob",
+  "source_sha256": {
+    "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+    "src/developmental_physics/c5_engineering.py": "acbf403a99efe5ec5842404de462c2d6db5a28a0e21e0c7568a936eba8aaff9d",
+    "src/developmental_physics/collect.py": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+    "src/developmental_physics/elbow_feedback_validate.py": "580efad122c461e2f322053d3c2d499ccb9944a13f78345177d256843689fe73",
+    "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+    "src/developmental_physics/exploration.py": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+    "src/developmental_physics/feedback_validate.py": "0523cb015da4c214be413feb689be9d1e0ed2728c5c411ea64d6ef13d5201e85",
+    "src/developmental_physics/guard_pair_model.py": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3",
+    "src/developmental_physics/local_ablation.py": "27da381b0c987dbe41bc8e527e96f6c1d7bbb15837d914cd53e106989b91e29b",
+    "src/developmental_physics/local_coverage_ablation.py": "21e2b43242cb2248af340515066243cffc16739c837e9310d3c78f400152fdc3",
+    "src/developmental_physics/local_dose_ablation.py": "a5774f4fc525d5ed6ad3b0e375bd34c5f5bda49e409db8bb2b740261077533d8",
+    "src/developmental_physics/local_frozen_validation.py": "369e44371dd7b4e5a91010fd2f8dae515cf390fd2fbe171257414a5c94aabf1a",
+    "src/developmental_physics/local_integration.py": "3dad9e02f16e3813b82150f868d77a6b948b6200a827f2f08f4ea386585da49c",
+    "src/developmental_physics/local_learning.py": "037b56393d0c0f1e20118bbd313e05668964110081ecab4b115abc4b15bb55ca",
+    "src/developmental_physics/local_model.py": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1",
+    "src/developmental_physics/local_pair_model.py": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+    "src/developmental_physics/pair_calibration_development.py": "a33ead6f407f685662f3afd2401eeaa33c66d89701f658307c6b3c61c67883f7",
+    "src/developmental_physics/pair_frozen_validation.py": "e1fbde1fb68bfa44341fa33605972518359e7d1162c1ecc5837c26ed34f1fbea",
+    "src/developmental_physics/pair_pd_development.py": "1a644a5ad5ebb7aa211cfe0ff132cb76a6cc2ef52b69d6ca7a2d13f8bcfa4459",
+    "src/developmental_physics/perturbed_environment.py": "c3e988d4998dbf0276471ba7bb409bccd76a1108dd9c63c4e154888b223d67a5",
+    "src/developmental_physics/probe_collect.py": "b68643037b64b764de5f6513bcd697e2e62465345671bc1aaa272435fe4e0ea3",
+    "src/developmental_physics/probes.py": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+    "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+    "docs/PAIR_PD_DEVELOPMENT_PROTOCOL.md": "b04e0db577374e91e7f0036312d1dd0e0669e669aa280df20bcc1c262bea9427",
+    "scripts/audit_local_frozen.py": "b5fea70d3733a1bab77e49bf559432475899436693cf6c1b0b4767369c913461",
+    "scripts/audit_pair_pd.py": "47898a6bd8bb4e6bc2baf251d407696a0f1a50a3d8b8666bb5cfdd3d153cf2ad"
+  },
+  "protocol": {
+    "path": "docs/PAIR_PD_DEVELOPMENT_PROTOCOL.md",
+    "sha256": "b04e0db577374e91e7f0036312d1dd0e0669e669aa280df20bcc1c262bea9427"
+  },
+  "auditor": {
+    "path": "scripts/audit_pair_pd.py",
+    "sha256": "47898a6bd8bb4e6bc2baf251d407696a0f1a50a3d8b8666bb5cfdd3d153cf2ad",
+    "pending": false,
+    "required_for_formal": true
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python_version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "python_executable": "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+  "dependencies": {
+    "PyOpenGL": "3.1.10",
+    "Pygments": "2.21.0",
+    "absl-py": "2.5.1",
+    "colorama": "0.4.6",
+    "developmental-humanoid-learning": "0.1.0",
+    "etils": "1.13.0",
+    "exceptiongroup": "1.3.1",
+    "fsspec": "2026.9.0",
+    "glfw": "2.10.2",
+    "importlib_resources": "7.1.0",
+    "iniconfig": "2.3.1",
+    "mujoco": "3.15.0",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pip": "23.0.1",
+    "pluggy": "1.6.0",
+    "pytest": "8.4.2",
+    "setuptools": "65.5.0",
+    "tomli": "2.5.0",
+    "typing_extensions": "4.16.0",
+    "websockets": "16.1.1",
+    "zipp": "4.1.1"
+  },
+  "backend": "MuJoCo CPU",
+  "gpu": null,
+  "mujoco_version": "3.15.0",
+  "environment_config": {
+    "physics_dt": 0.002,
+    "control_substeps": 10,
+    "torque_limit": 0.5,
+    "joint_speed_limit": 20.0,
+    "joint_limit_margin": 0.08,
+    "kinetic_energy_limit": 50.0,
+    "reset_clearance": 0.005,
+    "ground_contact_profile": "baseline"
+  },
+  "pose": "supine",
+  "joint_indices": [
+    0,
+    1
+  ],
+  "native_joint_count": 8,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "split": "development",
+  "kp": [
+    64.0,
+    64.0
+  ],
+  "kd_candidates": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      2.0
+    ],
+    [
+      0.0,
+      4.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      1.0,
+      4.0
+    ],
+    [
+      2.0,
+      1.0
+    ],
+    [
+      2.0,
+      2.0
+    ],
+    [
+      2.0,
+      4.0
+    ]
+  ],
+  "prefix_steps": 100,
+  "control_steps_per_trial": 200,
+  "target_offsets_rad": [
+    0.04,
+    0.08
+  ],
+  "target_information": "own paid native qref plus direction; current target only; no preview or clipping",
+  "study_abort_spec": {
+    "active_only": true,
+    "absolute_q_minus_qref_rad": 0.12,
+    "absolute_velocity_rad_s": 1.0,
+    "comparison": ">=",
+    "any_axis": true,
+    "feedback_action": null,
+    "complete_terminal_scored_not_complete": true
+  },
+  "parameter_updates": {
+    "body_model": 0,
+    "policy": 0,
+    "gains": 0
+  },
+  "model_updates": 0,
+  "teacher_calls": 0,
+  "external_demonstration_samples": 0,
+  "pd_controller_spec": {
+    "implementation": "feedback_validate.pd_request per original j0/j1",
+    "permission_nm": 0.5,
+    "body_model_input": false,
+    "gain_updates": 0
+  },
+  "grid_reason": "root-supplied first combined64/(0,1) three-seed active1 velocity stops; no raw reread here",
+  "initial_controller_capability": "classical position-target PD using current original encoders",
+  "planned_episodes": [
+    {
+      "trial_id": "seed0_candidate0",
+      "seed": 0,
+      "candidate": 0,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        1.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate1",
+      "seed": 0,
+      "candidate": 1,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        2.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate2",
+      "seed": 0,
+      "candidate": 2,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        4.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate3",
+      "seed": 0,
+      "candidate": 3,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        1.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate4",
+      "seed": 0,
+      "candidate": 4,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        2.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate5",
+      "seed": 0,
+      "candidate": 5,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        4.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate6",
+      "seed": 0,
+      "candidate": 6,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        1.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate7",
+      "seed": 0,
+      "candidate": 7,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        2.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate8",
+      "seed": 0,
+      "candidate": 8,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        4.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate0",
+      "seed": 1,
+      "candidate": 0,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        1.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate1",
+      "seed": 1,
+      "candidate": 1,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        2.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate2",
+      "seed": 1,
+      "candidate": 2,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        4.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate3",
+      "seed": 1,
+      "candidate": 3,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        1.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate4",
+      "seed": 1,
+      "candidate": 4,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        2.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate5",
+      "seed": 1,
+      "candidate": 5,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        4.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate6",
+      "seed": 1,
+      "candidate": 6,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        1.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate7",
+      "seed": 1,
+      "candidate": 7,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        2.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate8",
+      "seed": 1,
+      "candidate": 8,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        4.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate0",
+      "seed": 2,
+      "candidate": 0,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        1.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate1",
+      "seed": 2,
+      "candidate": 1,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        2.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate2",
+      "seed": 2,
+      "candidate": 2,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        4.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate3",
+      "seed": 2,
+      "candidate": 3,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        1.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate4",
+      "seed": 2,
+      "candidate": 4,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        2.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate5",
+      "seed": 2,
+      "candidate": 5,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        4.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate6",
+      "seed": 2,
+      "candidate": 6,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        1.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate7",
+      "seed": 2,
+      "candidate": 7,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        2.0
+      ],
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate8",
+      "seed": 2,
+      "candidate": 8,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        4.0
+      ],
+      "maximum_control_steps": 300
+    }
+  ],
+  "planned_episode_count": 27,
+  "maximum_control_steps": 8100,
+  "maximum_physics_steps": 81000,
+  "cpu_seconds_scope": "current process, timed after source snapshot/setup; physical and audit costs separate",
+  "claim_boundary": "fixed-Kp damping development only; no global optimum/method advantage/skill/safety claim",
+  "complete": true,
+  "archive_status": "complete",
+  "source_snapshot_sha256": "8cf10599237125934e574bb8327b3af61ca967ae3927e924dd74896e40e4ed46",
+  "control_calls_attempted": 4536,
+  "control_steps": 4536,
+  "physics_steps": 45360,
+  "wall_seconds": 12.648370600072667,
+  "cpu_seconds": 12.484375,
+  "completed_trials": 9,
+  "terminated_trials": 18,
+  "exception_trials": 0,
+  "blocked_trials": 0,
+  "all_trials_successful": false
+}
