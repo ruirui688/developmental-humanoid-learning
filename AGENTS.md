@@ -18,7 +18,7 @@
 
 2026-10-11 用户再次明确要求以持续目标执行，不在单次实验或里程碑后停止。当前连续目标与阶段账本见 `docs/CONTINUOUS_EXECUTION_PLAN.md`：C0 单肩初期验收完成后，继续 C1 闭环模型有效域、C2/C3 修订/消融/调优经典控制，再验证多关节、扰动适应与成熟门控。每个可验证阶段检查、提交、推送后继续最早未验收阶段；不能把 C0 当作整个项目目标完成。
 
-C1开发归档与C3九组PD开发已完成（clean `abc537a`，27完整trial，255,331审计零失败）；调优PD与学习MPC开发tracking差距只有约2.6%，旧弱PD不能代表强基线。详见 `docs/MODEL_DOMAIN_RESULTS.md`、`docs/CLASSICAL_PD_DEVELOPMENT_RESULTS.md`。三个C2修订采用门均失败，保持short/old/hinge5/Euler；时序重排从clean `a2fe5c2`完成21trial、963,372审计零失败，tracking只改善0.422642%且low预测全部退化，q域外仍93.5%。详见 `docs/LOCAL_INTEGRATION_ABLATION_RESULTS.md`、`docs/LOCAL_DOSE_ABLATION_RESULTS.md`、`docs/LOCAL_COVERAGE_ABLATION_RESULTS.md`；接续 `docs/LOCAL_FROZEN_VALIDATION_PROTOCOL.md` 的一次新最终/调优PD联合评价，随后左肘与肩—肘协调。闭环有效域尚未解决；物理累计202,850调用/2,028,500子步、RLS9,000；新20/21/22只静态派生reset常量，未读真实轨迹或运行。
+C1开发归档、C3九组PD及三个C2消融均已完成；三个C2修订采用门均失败，保持short/old/hinge5/Euler。随后从clean `449079a`首次执行单肩新最终20/21/22，21完整trial、6,000调用/60,000子步/900RLS，独立审计843,775项零失败。同MPC模型贡献门通过、tracking降低29.505%；相对调优PD64/0只改善2.674%，未过5%门，不能用旧弱PD声称强基线优势。自身一步预测退化、q域外97%仍未解决。详见 `docs/LOCAL_FROZEN_VALIDATION_RESULTS.md` 及C1/C2/C3结果。正式物理累计208,850调用/2,088,500子步、RLS9,900；20/21/22此后已见，不能用于修订后的独立最终评价。当前直接推进 `docs/ELBOW_PD_DEVELOPMENT_PROTOCOL.md` 固定j1左肘经典开发、同配方迁移和肩—肘协调，再继续未知动力学与成熟门控。双输出RLS/二维MPC数学核心已实现并作合成故障边界检查，尚无双关节物理结论。
 
 当前执行约束（2026-10-11）：用户已明确允许 CPU 少量在线辨识，以验证身体模型学习与控制收益。历史无训练归档仍保持零更新；新学习实验单独冻结协议、归档并计入校准、探索和评估交互。不运行大规模 PPO，不使用预训练任务策略、步态教师或真机。学习模型只读原生信号和当前已知命令，不得通过未来实际力矩或仿真特权状态泄漏信息。初期验收包括动作—感觉响应、留出预测和同权限闭环对照，不能在前置探针完成后停止并声称学习已通过。
 

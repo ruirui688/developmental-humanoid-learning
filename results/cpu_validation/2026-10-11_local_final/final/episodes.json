@@ -1,0 +1,989 @@
+[
+  {
+    "trial_id": "seed20_calibration",
+    "seed": 20,
+    "kind": "calibration",
+    "model_scope": "shared",
+    "calibration_dose": "old",
+    "calibration_schedule": "short",
+    "model_structure": "hinge5",
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 400,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 400,
+    "control_steps": 400,
+    "physics_steps": 4000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed20_prediction_low",
+    "seed": 20,
+    "kind": "prediction_low",
+    "model_scope": "shared",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 200,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 200,
+    "control_steps": 200,
+    "physics_steps": 2000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed20_prediction_full",
+    "seed": 20,
+    "kind": "prediction_full",
+    "model_scope": "shared",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 200,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 200,
+    "control_steps": 200,
+    "physics_steps": 2000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed20_nominal_mpc",
+    "seed": 20,
+    "kind": "nominal_mpc",
+    "model_scope": "nominal",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": "linear4",
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed20_learned_mpc",
+    "seed": 20,
+    "kind": "learned_mpc",
+    "model_scope": "learned",
+    "calibration_dose": "old",
+    "calibration_schedule": "short",
+    "model_structure": "hinge5",
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed20_tuned_pd",
+    "seed": 20,
+    "kind": "tuned_pd",
+    "model_scope": "controller_only",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed20_zero_torque",
+    "seed": 20,
+    "kind": "zero_torque",
+    "model_scope": "controller_only",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed21_calibration",
+    "seed": 21,
+    "kind": "calibration",
+    "model_scope": "shared",
+    "calibration_dose": "old",
+    "calibration_schedule": "short",
+    "model_structure": "hinge5",
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 400,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 400,
+    "control_steps": 400,
+    "physics_steps": 4000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed21_prediction_low",
+    "seed": 21,
+    "kind": "prediction_low",
+    "model_scope": "shared",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 200,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 200,
+    "control_steps": 200,
+    "physics_steps": 2000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed21_prediction_full",
+    "seed": 21,
+    "kind": "prediction_full",
+    "model_scope": "shared",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 200,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 200,
+    "control_steps": 200,
+    "physics_steps": 2000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed21_nominal_mpc",
+    "seed": 21,
+    "kind": "nominal_mpc",
+    "model_scope": "nominal",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": "linear4",
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed21_learned_mpc",
+    "seed": 21,
+    "kind": "learned_mpc",
+    "model_scope": "learned",
+    "calibration_dose": "old",
+    "calibration_schedule": "short",
+    "model_structure": "hinge5",
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed21_tuned_pd",
+    "seed": 21,
+    "kind": "tuned_pd",
+    "model_scope": "controller_only",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed21_zero_torque",
+    "seed": 21,
+    "kind": "zero_torque",
+    "model_scope": "controller_only",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed22_calibration",
+    "seed": 22,
+    "kind": "calibration",
+    "model_scope": "shared",
+    "calibration_dose": "old",
+    "calibration_schedule": "short",
+    "model_structure": "hinge5",
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 400,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 400,
+    "control_steps": 400,
+    "physics_steps": 4000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed22_prediction_low",
+    "seed": 22,
+    "kind": "prediction_low",
+    "model_scope": "shared",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 200,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 200,
+    "control_steps": 200,
+    "physics_steps": 2000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed22_prediction_full",
+    "seed": 22,
+    "kind": "prediction_full",
+    "model_scope": "shared",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 200,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 200,
+    "control_steps": 200,
+    "physics_steps": 2000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed22_nominal_mpc",
+    "seed": 22,
+    "kind": "nominal_mpc",
+    "model_scope": "nominal",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": "linear4",
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed22_learned_mpc",
+    "seed": 22,
+    "kind": "learned_mpc",
+    "model_scope": "learned",
+    "calibration_dose": "old",
+    "calibration_schedule": "short",
+    "model_structure": "hinge5",
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed22_tuned_pd",
+    "seed": 22,
+    "kind": "tuned_pd",
+    "model_scope": "controller_only",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed22_zero_torque",
+    "seed": 22,
+    "kind": "zero_torque",
+    "model_scope": "controller_only",
+    "calibration_dose": null,
+    "calibration_schedule": null,
+    "model_structure": null,
+    "integration": "endpoint_euler",
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "collector_exception": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "prediction": {
+        "control_calls_attempted": 0,
+        "control_steps": 0,
+        "physics_steps": 0
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "study_abort": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "unreturned_physics_steps": 0,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  }
+]

@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-[位置积分](docs/LOCAL_INTEGRATION_ABLATION_RESULTS.md)、[校准剂量×结构](docs/LOCAL_DOSE_ABLATION_RESULTS.md)、[同剂量时序重排](docs/LOCAL_COVERAGE_ABLATION_RESULTS.md)均完成，全部修订采用门未过，保留short/old/hinge5/Euler。重排tracking只改善0.422642%，low预测逐seed退化，q域外仍93.5%。继续[新最终联合评价](docs/LOCAL_FROZEN_VALIDATION_PROTOCOL.md)，调优PD64/0与模型贡献分开判定；20/21/22尚未运行真实轨迹，随后直接推进多关节。局部或负结果都不结束持续目标。
+[单肩新最终评价](docs/LOCAL_FROZEN_VALIDATION_RESULTS.md)已完成：20/21/22共21完整trial、6,000调用/60,000子步/900RLS，独立审计843,775项零失败。同MPC模型贡献门通过，tracking降低29.505%；相对调优PD64/0仅改善2.674%，未过5%门。三个[C2修订](docs/LOCAL_COVERAGE_ABLATION_RESULTS.md)均未采用，仍用short/old/hinge5/Euler；自身一步预测退化、位置q域外97%均保留。当前直接推进[左肘经典开发](docs/ELBOW_PD_DEVELOPMENT_PROTOCOL.md)及肩—肘协调；局部正负结果都不结束持续目标。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 

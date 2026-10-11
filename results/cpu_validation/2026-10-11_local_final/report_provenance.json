@@ -1,0 +1,776 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T05:50:51.142781+00:00",
+  "input_path": "D:\\Codex_ws\\robot_rl\\external\\local_final_review_tables_01.json",
+  "input_sha256": "f9feee54df6d29a8cc735d0b40e114bffdfffa999abbdefd0bef02046d9e51bc",
+  "source_sha256": "d33a1caf830db9ae945ef20fa1c5b42c8171e7081063da588d37674b079b3773",
+  "source_bytes_base64": "IiIiT25lIHJlYWQtb25seSBodW1hbiByZXBvcnQgZnJvbSBmcm96ZW4gZmluYWwgdGFibGVzLCB3aXRoIGZ1bGwgcHJvdmVuYW5jZS4iIiIKaW1wb3J0IGJhc2U2NApmcm9tIGRhdGV0aW1lIGltcG9ydCBkYXRldGltZSwgdGltZXpvbmUKaW1wb3J0IGhhc2hsaWIKaW1wb3J0IGpzb24KZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCmltcG9ydCB0aW1lCgp3YWxsLCBjcHUgPSB0aW1lLnBlcmZfY291bnRlcigpLCB0aW1lLnByb2Nlc3NfdGltZSgpCnJvb3QgPSBQYXRoKF9fZmlsZV9fKS5yZXNvbHZlKCkucGFyZW50LnBhcmVudAppbnB1dF9wYXRoID0gcm9vdC8nZXh0ZXJuYWwvbG9jYWxfZmluYWxfcmV2aWV3X3RhYmxlc18wMS5qc29uJwpvdXRwdXRfcGF0aCA9IHJvb3QvJ2V4dGVybmFsL2xvY2FsX2ZpbmFsX3Jlc3VsdHNfcmV2aWV3Lm1kJwpwcm92ZW5hbmNlX3BhdGggPSByb290LydleHRlcm5hbC9sb2NhbF9maW5hbF9yZXN1bHRzX3Jldmlld19wcm92ZW5hbmNlXzAxLmpzb24nCmlmIG91dHB1dF9wYXRoLmV4aXN0cygpIG9yIHByb3ZlbmFuY2VfcGF0aC5leGlzdHMoKToKICAgIHJhaXNlIFN5c3RlbUV4aXQoJ1JlZnVzaW5nIGEgcmVwZWF0ZWQgcmVwb3J0IG9yIG92ZXJ3cml0ZS4nKQpibG9iID0gaW5wdXRfcGF0aC5yZWFkX2J5dGVzKCkKaW5wdXRfaGFzaCA9IGhhc2hsaWIuc2hhMjU2KGJsb2IpLmhleGRpZ2VzdCgpCmlmIGlucHV0X2hhc2ggIT0gJ2Y5ZmVlZTU0ZGY2ZDI5YThjYzczNWQwYjQwZTExNGJmZmRmZmZhOTk5YWJiZGVmZDBiZWYwMjA0NmQ5ZTUxYmMnOgogICAgcmFpc2UgU3lzdGVtRXhpdCgnRnJvemVuIHRhYmxlIGlucHV0IGNoYW5nZWQuJykKdCA9IGpzb24ubG9hZHMoYmxvYikKZ2F0ZXMgPSB0WydpbmRlcGVuZGVudF9maW5hbF9nYXRlcyddCm1vZGVsLCBwZCA9IGdhdGVzWydtb2RlbF9jb250cmlidXRpb25fZ2F0ZSddLCBnYXRlc1snY2xhc3NpY2FsX2NvbXBhcmlzb25fZ2F0ZSddCm1lYW5zID0gdFsncmF3X3RocmVlX3NlZWRfbWVhbnMnXQpjb250cm9scyA9ICgnbm9taW5hbF9tcGMnLCAnbGVhcm5lZF9tcGMnLCAndHVuZWRfcGQnLCAnemVyb190b3JxdWUnKQpmbXQgPSBsYW1iZGEgdmFsdWU6ICdOb25lJyBpZiB2YWx1ZSBpcyBOb25lIGVsc2UgZid7dmFsdWU6LjE1Z30nCmxpbmVzID0gWycjIOWGu+e7k+WNleiCqeacgOe7iDIwLzIxLzIy77ya54us56uL5Y+q6K+75aSN5qC4JywgJycsCiAgICAn57uT6K6677ya5LqUIHRyaWFsIOWQjCBNUEMg5bGA6YOo5qih5Z6L6LSh54yu6Zeo6YCa6L+H77yb5YWtIHRyaWFsIOeahOe7j+WFuCBQRCDmr5TovoPpl6jlpLHotKXvvJsnCiAgICAn5LiDIHRyaWFsIOeahCBjb21wbGV0ZV9tYXRyaXgg6YCa6L+H44CC5Y+v5oql5ZGK5Ya757uT5Y2V6IKp546v5aKD5Lit55qE5qih5Z6L6LSh54yu77yM5LiN6IO956ew6LaF6L+H5by657uP5YW45Z+657q/5oiW6I635b6X56uZ56uLL+ihjOi1sOOAgicsICcnLAogICAgZictIFN1bW1hcnkge3RbImNoZWNrcyJdOix9IGNoZWNrcyAvIHt0WyJmYWlsZWQiXX0gZmFpbGVk77yM5LiJ6Zeo5ZKM6YCQIHNlZWTljp/lp4vmrovlt64v5Yqq5YqbL2NvdmVyYWdlL+WOn+eUn+WBnOatoi/lrZjlgqjmm7TmlrDorqHmlbAnCiAgICAn5Z2H5LiO6aaW5qyhIGF1ZGl0IOWvuem9kOOAgueLrOeriyBzdW1tYXJ55Y+q5omn6KGM5LiA5qyh77yM5pyq6YeN6LeR6YeH6ZuG5oiWIGF1ZGl044CCJywKICAgIGYnLSDpppbmrKHmoIflh4blupMgYXVkaXQge3RbImF1dGhvcml0YXRpdmVfYXVkaXRfY2hlY2tzIl06LH0gY2hlY2tzIC8gMCBmYWlsZWTvvJthdWRpdCBTSEEyNTYge3RbImF1ZGl0X3NoYTI1NiJdfeOAgicsCiAgICBmJy0gU291cmNlIGNvbW1pdCB7dFsic291cmNlX2NvbW1pdCJdfe+8jGNsZWFu77yb5Zu65a6ac2hvcnQvb2xkL2hpbmdlNS9lbmRwb2ludF9ldWxlcuOAgXN1cGluZS9qMOOAgVBENjQvMOOAgicsCiAgICAnLSDlhagyMXRyaWFs5a6M5pW077ybMCBzdHVkeSBzdG9w44CBMCBlbnZpcm9ubWVudCBzdG9w44CBMCBleGNlcHRpb27jgIEwIGJsb2NrZWTvvJsnCiAgICAnNjAwMCBjb250cm9sLzYwMDAwIHBoeXNpY3MvOTAwUkxT44CCMjAvMjEvMjLnjrDlnKjlt7Lmj63mmZPvvIzlkI7nu63kuI3og73lho3np7DmnKrop4HjgIInLCAnJywKICAgICcjIyDlhrvnu5Ppl6jlkozljp/lp4vpgJBzZWVk6KGo546wJywgJycsCiAgICAnfCBzZWVkIHwgbm9taW5hbCB0cmFja2luZyBSTVNFKHJhZCkgfCBsZWFybmVkKHJhZCkgfCBQRChyYWQpIHwgemVybyhyYWQpIHwgbG93IHbmlLnlloQgfCBmdWxsIHbmlLnlloQgfCcsCiAgICAnfC0tLXwtLS18LS0tfC0tLXwtLS18LS0tfC0tLXwnXQpmb3IgciBpbiBtb2RlbFsncGVyX3NlZWQnXToKICAgIGV2ID0gbmV4dChzIGZvciBzIGluIHRbJ3NlZWRzJ10gaWYgc1snc2VlZCddID09IHJbJ3NlZWQnXSlbJ2V2YWx1YXRpb25zJ10KICAgIHByZWQgPSByWydwcmVkaWN0aW9uX2dhdGVzJ10KICAgIGxpbmVzLmFwcGVuZChmJ3wge3JbInNlZWQiXX0gfCB7Zm10KHJbIm5vbWluYWxfdHJhY2tpbmdfcm1zZV9yYWQiXSl9IHwge2ZtdChyWyJsZWFybmVkX3RyYWNraW5nX3Jtc2VfcmFkIl0pfSB8ICcKICAgICAgICBmJ3tmbXQoZXZbInR1bmVkX3BkIl1bInRyYWNraW5nX3Jtc2VfcmFkIl0pfSB8IHtmbXQoZXZbInplcm9fdG9ycXVlIl1bInRyYWNraW5nX3Jtc2VfcmFkIl0pfSB8ICcKICAgICAgICBmJ3sxMDAqcHJlZFsicHJlZGljdGlvbl9sb3ciXVsicmVsYXRpdmVfaW1wcm92ZW1lbnQiXTouOWd9JSB8IHsxMDAqcHJlZFsicHJlZGljdGlvbl9mdWxsIl1bInJlbGF0aXZlX2ltcHJvdmVtZW50Il06LjlnfSUgfCcpCmxpbmVzICs9IFsnJywKICAgIGYn5ZCMTVBD5LiJ5Y6f5aeLdHJhY2tpbmflnYflgLwge2ZtdChtb2RlbFsibm9taW5hbF9yYXdfdHJhY2tpbmdfbWVhbiJdKX3ihpJ7Zm10KG1vZGVsWyJsZWFybmVkX3Jhd190cmFja2luZ19tZWFuIl0pfSByYWTvvIwnCiAgICBmJ+mZjeS9jiB7MTAwKm1vZGVsWyJ0cmFja2luZ19tZWFuX2ltcHJvdmVtZW50Il06LjEyZ30l77yb5LiJc2VlZOS4peagvOaUueWWhOOAgWxvdy9mdWxs6YCQc2VlZOKJpC44bm9taW5hbO+8jOS4u+mXqOmAmui/h+OAgicsICcnLAogICAgZidQROWdh+WAvCB7Zm10KHBkWyJwZF9yYXdfdHJhY2tpbmdfbWVhbiJdKX0gcmFk77yMbGVhcm5lZOaUueWWhCB7MTAwKnBkWyJ0cmFja2luZ19tZWFuX2ltcHJvdmVtZW50Il06LjEyZ30l77yMJwogICAgJ+S9juS6juWGu+e7k+KJpTUl6Zeo44CC6YCQc2VlZOmdnuWKo+WPiuWKquWKm+mXqOiZvemAmui/h++8jOe7j+WFuOaOp+WItuaAu+mXqOS7jeWksei0peOAgicsICcnLAogICAgJ3wg5o6n5Yi2IHwgdHJhY2tpbmfljp/lp4vlnYflgLwocmFkKSB8IGFjdHVhbCDiiKt8dXxkdChObcK3cykgfCBhY3R1YWwg4oirdcKyZHQoTsKybcKywrdzKSB8JywKICAgICd8LS0tfC0tLXwtLS18LS0tfCddCmZvciBraW5kIGluIGNvbnRyb2xzOgogICAgbSA9IG1lYW5zW2tpbmRdCiAgICBsaW5lcy5hcHBlbmQoZid8IHtraW5kfSB8IHtmbXQobVsidHJhY2tpbmdfcmF3X21lYW5fcmFkIl0pfSB8ICcKICAgICAgICBmJ3tmbXQobVsiYWN0dWFsX2NvbnRyb2xfZWZmb3J0X3Jhd19tZWFucyJdWyJhY3R1YWxfYWJzb2x1dGVfbm1fcyJdKX0gfCAnCiAgICAgICAgZid7Zm10KG1bImFjdHVhbF9jb250cm9sX2VmZm9ydF9yYXdfbWVhbnMiXVsiYWN0dWFsX3NxdWFyZWRfbm0yX3MiXSl9IHwnKQpmb3Iga2V5LCBlIGluIHBkWydhY3R1YWxfZWZmb3J0X2dhdGVzJ10uaXRlbXMoKToKICAgIGxpbmVzLmFwcGVuZChmJy0gbGVhcm5lZOebuOWvuVBEIHtrZXl95aKe5YqgIHsxMDAqZVsicmVsYXRpdmVfaW5jcmVhc2UiXTouMTJnfSXvvIziiaQ1JeWKquWKm+mXqOmAmui/h+OAgicpCmxpbmVzICs9IFsnJywKICAgICfmnYPpmZAv5b2T5YmN55uu5qCHL+mFjeWvueaOp+WItuaXtuWfn+S4gOiHtOS4jeetieS6juaAu+WQr+WKqOmihOeul+S4gOiHtO+8muWtpuS5oOaOp+WItuavj3NlZWTpnIA3MDDmrKHniannkIbosIPnlKgnCiAgICAn77yINDAw55yf5a6e5qCh5YeGKzMwMOiHqui6q+aOp+WItnRyaWFs77yJ77yMbm9taW5hbC9QRC96ZXJv5q+P5pa55rOV6Ieq6LqrMzAw5qyh77yb5YWx5Lqr5LikcHJlZGljdGlvbuWPpjQwMOasoS9zZWVk5L2c5Li66K+E5Lu35oiQ5pys44CCJwogICAgJ+avj3RyaWFs55qEMTAw6Zu26K+35rGCcHJlZml46YO95LuY6LS544CC5Lmd57uEUETosIPlj4LlkoxDMuW8gOWPkeWPpuiuoe+8jOS4jeS7juacrOaJueaAu+i0puS4rea2iOWkseOAgicsICcnLAogICAgJyMjIOS9jee9ruS4jumAn+W6pueahOeLrOeri+mihOa1i+iviuaWrScsICcnLAogICAgJ3wg5YWx5ZCM6L2o6L+5IHwg5oyH5qCHIHwgbm9taW5hbOWOn+Wni+Wdh+WAvCB8IGxlYXJuZWTljp/lp4vlnYflgLwgfCBwZXJzaXN0ZW5jZeWOn+Wni+Wdh+WAvCB8JywKICAgICd8LS0tfC0tLXwtLS18LS0tfC0tLXwnXQpmb3Iga2luZCBpbiAoJ3ByZWRpY3Rpb25fbG93JywgJ3ByZWRpY3Rpb25fZnVsbCcpOgogICAgZm9yIGZpZWxkIGluICgncG9zaXRpb25fcHJlZGljdGlvbl9ybXNlJywgJ3ZlbG9jaXR5X3ByZWRpY3Rpb25fcm1zZScpOgogICAgICAgIHZhbHVlcyA9IG1lYW5zW2tpbmRdW2ZpZWxkXQogICAgICAgIGxpbmVzLmFwcGVuZChmJ3wge2tpbmR9IHwge2ZpZWxkfSB8IHtmbXQodmFsdWVzWyJub21pbmFsX21wYyJdKX0gfCB7Zm10KHZhbHVlc1sibGVhcm5lZF9tcGMiXSl9IHwge2ZtdCh2YWx1ZXNbInBlcnNpc3RlbmNlIl0pfSB8JykKbGluZXMgKz0gWycnLAogICAgJ2Z1bGzluYXkvY3nva7kuIDmraVSTVNF5LiJc2VlZOWdh+mAgOWMlu+8jOS4jeiDveeUsemAn+W6pumXqOaOqOWHuuaJgOacieeKtuaAgemihOa1i+abtOWlveOAgicKICAgICfpooTmtYvpl6jmnaXoh6rlhbHlkIzkvY4v5YWo5bmF6L2o6L+577yb5o6n5Yi26Ieq6Lqr6L2o6L+555qE5q6L5beu5LiO5aSa5q2l6K+v5beu5Y+m5oql77yM5LiN5pu/5o2i6Zeo44CCJywgJycsCiAgICAnIyMg5qCh5YeG5pSv5oyB5LiO5o6n5Yi25Z+f5aSWJywgJycsCiAgICAnfCBzZWVkL2NvbnRyb2wgfCBx5Z+f5aSWY291bnQvMjAwIHwgduWfn+WklmNvdW50LzIwMCB8IHHmiJZ25Z+f5aSWY291bnQvMjAwIHwgcSBuZWFyZXN05bmz5Z2HL+acgOWkpyhyYWQpIHwnLAogICAgJ3wtLS18LS0tfC0tLXwtLS18LS0tfCddCmZvciBzIGluIHRbJ3NlZWRzJ106CiAgICBmb3Iga2luZCBpbiBjb250cm9sczoKICAgICAgICBjID0gc1snZXZhbHVhdGlvbnMnXVtraW5kXVsnc3RhdGVfY292ZXJhZ2UnXQogICAgICAgIGxpbmVzLmFwcGVuZChmJ3wge3NbInNlZWQiXX0ve2tpbmR9IHwge2NbInFfb3V0c2lkZV9jb3VudCJdfSB8IHtjWyJ2X291dHNpZGVfY291bnQiXX0gfCB7Y1siZWl0aGVyX291dHNpZGVfY291bnQiXX0gfCAnCiAgICAgICAgICAgIGYne2ZtdChjWyJuZWFyZXN0X3FfZGlzdGFuY2VfbWVhbl9yYWQiXSl9IC8ge2ZtdChjWyJuZWFyZXN0X3FfZGlzdGFuY2VfbWF4X3JhZCJdKX0gfCcpCmxpbmVzICs9IFsnJywgJ+avj3NlZWTmoKHlh4YzMDDlrozmlbRhY3RpdmXovpPlhaXnmoRxL3bljIXnu5zkuI7lm5vmjqfliLYyMDDlrozmlbTovpPlhaXni6znq4vph43nrpfjgIInCiAgICAn5Lil5qC86LaK55WM44CB562J5YC85Z+f5YaF77yMbmVhcmVzdOaYr3Etb25seeOAgumrmOWfn+WkluS/neeVmeS4uuacieaViOWfn+e8uuWPo++8jOacgOe7iOi0oeeMrumXqOayoeacieS6i+WQjuaWsOWinmNvdmVyYWdl6ZiI5YC877ybJwogICAgJ+S5n+S4jeiDveaKiumAmui/h+i0oeeMrumXqOivtOaIkOimhuebluS/ruWkjeOAgicsICcnLAogICAgJyMjIOWbuuWumuWwvueqlycsICcnLAogICAgJ3wgc2VlZC9jb250cm9sL3dpbmRvdyB8IHJldHVybmVkL3Njb3JlZC9wYXJ0aWFsL21pc3NpbmcgfCBjb21wbGV0ZV93aXRob3V0X3N0b3AgfCBSTVNFKHJhZCkgfCBtZWFuIHNpZ25lZChyYWQpIHwgbWF4IGFic29sdXRlKHJhZCkgfCcsCiAgICAnfC0tLXwtLS18LS0tfC0tLXwtLS18LS0tfCddCmZvciBzIGluIHRbJ3NlZWRzJ106CiAgICBmb3Iga2luZCBpbiBjb250cm9sczoKICAgICAgICBmb3IgbmFtZSwgdyBpbiBzWydldmFsdWF0aW9ucyddW2tpbmRdWyd0YWlsX3RyYWNraW5nJ10uaXRlbXMoKToKICAgICAgICAgICAgY291bnRzID0gJy8nLmpvaW4oc3RyKHdba10pIGZvciBrIGluICgncmV0dXJuZWRfZW5kcG9pbnRzJywnc2NvcmVkX2NvbXBsZXRlX2VuZHBvaW50cycsJ3BhcnRpYWxfZW5kcG9pbnRzJywnbWlzc2luZ19wbGFubmVkX2VuZHBvaW50cycpKQogICAgICAgICAgICBsaW5lcy5hcHBlbmQoZid8IHtzWyJzZWVkIl19L3traW5kfS97bmFtZX0gfCB7Y291bnRzfSB8IHt3WyJjb21wbGV0ZV93aXRob3V0X3N0b3AiXX0gfCAnCiAgICAgICAgICAgICAgICBmJ3tmbXQod1sidHJhY2tpbmdfcm1zZV9yYWQiXSl9IHwge2ZtdCh3WyJtZWFuX3NpZ25lZF9lcnJvcl9yYWQiXSl9IHwge2ZtdCh3WyJtYXhpbXVtX2Fic29sdXRlX2Vycm9yX3JhZCJdKX0gfCcpCmxpbmVzICs9IFsnJywgJ+S4pOS4quiuoeWIkueql+WPo+WQhDIw56uv54K577yaYWN0aXZlODDigJM5OeOAgTE4MOKAkzE5OeOAguWPquWujOaVtDIwbXPovaznp7vor4TliIbvvIznvLrlpLHkuI3loavpm7bvvJsnCiAgICAn5a6M5pW0dGVybWluYWzlj6/or4TliIbkvYZzdG9w6Zi75q2i56qX5Y+j5a6M5oiQ44CC5o+P6L+w5oCn5bC+56qX5LiN6IO95pu/5Luj5YWo6YOoMjAw5q2ldHJhY2tpbmfpl6jjgIInLCAnJywKICAgICcjIyDlpJrmraXljp/lp4tSTVNF5Z2H5YC8JywgJycsCiAgICAn5LiL6KGo5oyJ5q+Pc2VlZOWQhOiHquWujOaVtOiviuaWreeahFJNU0Xlj5bkuInkuKrljp/lp4vlnYflgLzvvJvkuI3msaDljJbph43lj6Dnqpflj6PvvIzmoKHlh4ZmaW5hbOaooeWei+S4umluLXNhbXBsZeOAgicKICAgICflhajpg6gxLzUvMTUvNTDmraXpgJBzZWVk56uv54K5L+i3r+W+hHEvduOAgeacieaViC/mjpLpmaQvdGVybWluYWwv6Z2e5rOV6aKE5rWL56qX5Y+j5Y+K5YiG566x5Y6f5YC85L+d55WZ5LqOSlNPTuOAgicKICAgICfmnKrmnaXlt7LorrDlvZVyZXF1ZXN05LuF5L2c56a757q/5p2h5Lu26L6T5YWl77yM6Zu26YeN5paw5qih5Z6L6aKE5rWL44CCJywgJycsCiAgICAnfCDovajov7kvSCB8IOaooeWeiyB8IGVuZHBvaW50IHEocmFkKSB8IGVuZHBvaW50IHYocmFkL3MpIHwgcGF0aCBxKHJhZCkgfCBwYXRoIHYocmFkL3MpIHwnLAogICAgJ3wtLS18LS0tfC0tLXwtLS18LS0tfC0tLXwnXQptdWx0aXN0ZXBfY29tcGFjdCA9IFtdCmZvciBraW5kIGluICgnY2FsaWJyYXRpb24nLCdwcmVkaWN0aW9uX2xvdycsJ3ByZWRpY3Rpb25fZnVsbCcsKmNvbnRyb2xzKToKICAgIGZvciBob3Jpem9uIGluICgxLDUsMTUsNTApOgogICAgICAgIHJvd3MgPSBbbmV4dChyIGZvciByIGluIHNbJ2V2YWx1YXRpb25zJ11ba2luZF1bJ2F1ZGl0ZWRfcmlza19hbmRfbXVsdGlzdGVwJ11bJ2ZyZWVfcm9sbG91dHMnXQogICAgICAgICAgICAgICAgICAgICBpZiByWydob3Jpem9uX2NvbnRyb2xfc3RlcHMnXSA9PSBob3Jpem9uKSBmb3IgcyBpbiB0WydzZWVkcyddXQogICAgICAgIGZvciBwcmVkaWN0b3IgaW4gKCdub21pbmFsX21wYycsJ2xlYXJuZWRfbXBjJywncGVyc2lzdGVuY2UnKToKICAgICAgICAgICAgdmFsdWVzID0gW3JbJ3ByZWRpY3RvcnMnXVtwcmVkaWN0b3JdIGZvciByIGluIHJvd3NdCiAgICAgICAgICAgIGZpZWxkcyA9ICgndGVybWluYWxfcG9zaXRpb25fcm1zZV9yYWQnLCd0ZXJtaW5hbF92ZWxvY2l0eV9ybXNlX3JhZF9zJywncGF0aF9wb3NpdGlvbl9ybXNlX3JhZCcsJ3BhdGhfdmVsb2NpdHlfcm1zZV9yYWRfcycpCiAgICAgICAgICAgIG1tID0ge2ZpZWxkOiBzdW0odltmaWVsZF0gZm9yIHYgaW4gdmFsdWVzKS8zIGlmIGFsbCh2W2ZpZWxkXSBpcyBub3QgTm9uZSBmb3IgdiBpbiB2YWx1ZXMpIGVsc2UgTm9uZSBmb3IgZmllbGQgaW4gZmllbGRzfQogICAgICAgICAgICBtdWx0aXN0ZXBfY29tcGFjdC5hcHBlbmQoeydraW5kJzpraW5kLCdob3Jpem9uJzpob3Jpem9uLCdwcmVkaWN0b3InOnByZWRpY3RvciwqKm1tfSkKICAgICAgICAgICAgbGluZXMuYXBwZW5kKGYnfCB7a2luZH0ve2hvcml6b259IHwge3ByZWRpY3Rvcn0gfCAnKycgfCAnLmpvaW4oZm10KG1tW2ZpZWxkXSkgZm9yIGZpZWxkIGluIGZpZWxkcykrJyB8JykKbGluZXMgKz0gWycnLCAnIyMg6aOO6Zmp5YWoL+WJjee8gC9hY3RpdmUnLCAnJywKICAgICd8IHNlZWQvdHJpYWwgfCBmdWxsIHBlYWsoTikgfCBwcmVmaXggcGVhayhOKSB8IGFjdGl2ZSBwZWFrKE4pIHwgZnVsbCBpbXB1bHNlKE7Ct3MpIHwgYWN0aXZlIG1heCBwZW5ldHJhdGlvbihtKSB8IGFjdGl2ZSBtYXggc29mdCBleGN1cnNpb24ocmFkKSB8JywKICAgICd8LS0tfC0tLXwtLS18LS0tfC0tLXwtLS18LS0tfCddCmZvciBzIGluIHRbJ3NlZWRzJ106CiAgICBmb3Iga2luZCwgZSBpbiBzWydldmFsdWF0aW9ucyddLml0ZW1zKCk6CiAgICAgICAgcmlzayA9IGVbJ2F1ZGl0ZWRfcmlza19hbmRfbXVsdGlzdGVwJ10KICAgICAgICBhY3RpdmUgPSAnY2FsaWJyYXRpb24nIGlmIGtpbmQgPT0gJ2NhbGlicmF0aW9uJyBlbHNlICdwcmVkaWN0aW9uJyBpZiBraW5kLnN0YXJ0c3dpdGgoJ3ByZWRpY3Rpb25fJykgZWxzZSAnY29udHJvbCcKICAgICAgICBhLCBwLCBmID0gcmlza1sncGhhc2VfcmlzayddW2FjdGl2ZV0sIHJpc2tbJ3BoYXNlX3Jpc2snXVsncHJlZml4J10sIHJpc2tbJ2Z1bGxfcmlzayddCiAgICAgICAgbGluZXMuYXBwZW5kKGYnfCB7c1sic2VlZCJdfS97a2luZH0gfCB7Zm10KGZbImdyb3VuZF9mb3JjZV9wZWFrX24iXSl9IHwge2ZtdChwWyJncm91bmRfZm9yY2VfcGVha19uIl0pfSB8ICcKICAgICAgICAgICAgZid7Zm10KGFbImdyb3VuZF9mb3JjZV9wZWFrX24iXSl9IHwge2ZtdChmWyJncm91bmRfbm9ybWFsX2ltcHVsc2VfbnMiXSl9IHwgJwogICAgICAgICAgICBmJ3tmbXQoYVsibWF4aW11bV9wZW5ldHJhdGlvbl9tIl0pfSB8IHtmbXQobWF4KGFbInNvZnRfbGltaXRfZXhjdXJzaW9uX3BlYWtfcmFkIl0pKX0gfCcpCmxpbmVzICs9IFsnJywgJ+mjjumZqeWSjOWkmuatpS90YWls5a6M5pW05Y6f5YC85L+d55WZ6Ieq6aaW5qyhYXVkaXTvvIxzdW1tYXJ55rKh5pyJ6YeN5paw5omn6KGM5YW25qih5Z6L5pWw5a2m44CCJwogICAgJ+aOpeinpuWzsC/lhrLph48v56m/6YCPL+WKqOiDveWPlueJqeeQhuWtkOatpe+8jOWOn+eUn+mAn+W6pi/ova/pmZDkvY3lj5bmjqfliLbnq6/ngrnvvJvmnKrnn6XpgaXmtYvkv53mjIHkuIvnlYzjgIInCiAgICAn6Zu25YGc5q2i5LiN6IO95o6I5LqI5a6J5YWo77yMcHJlZml45bOw5LiN6IO96KKrYWN0aXZl5bCP5bOw6YGu55uW44CCJywgJycsCiAgICAn5LiL5LiA5q2l5oyJ5oyB57ut6Lev57q/6L+b5YWl5bem6IKY55qE5YWs5byA6ZmQ5L2NL+adg+mZkC/lj43ppojkuI7moKHlh4bor4rmlq3vvIzlho3pqozor4HogqnigJTogpjljY/osIPjgIInCiAgICAn5Y2V6IKp57uT5p6c5bGA6YOo5oiQ56uL77yM57uP5YW4UETmr5TovoPmnKrpgJrov4fjgIHkvY3nva7kuI7mnInmlYjln5/nvLrlj6PlrZjlnKjvvJvkuI3ov73liqDlvZPliY3nlZnlh7rosIPlj4LmiJbph4fmoLfjgIInLCAnJywKICAgICcjIyDlj6ror7vlpI3moLjkuqfniankuI7miJDmnKwnLCAnJywKICAgICctIFN1bW1hcnkgZXh0ZXJuYWwvbG9jYWxfZnJvemVuXzIwMjYxMDExX2ZpbmFsX3N1bW1hcnkuanNvbu+8jFNIQTI1NiAxNWQwMjM0ZWM0YjIyMjVkNjNiZTAxZTQ3MTk3ZTUxYzk2OTg0Y2FjZTZmYjhjMDkwODQ2Mzg0MzBjZmEzZWQ444CCJywKICAgICctIOeyvuehrmV4ZWN1dGVk5rqQ56CBIGV4dGVybmFsL2xvY2FsX2ZpbmFsX3Jldmlld19zdW1tYXJ5X2V4ZWN1dGVkXzAxLnB577yMMzgzODQgYnl0ZXPvvIxTSEEyNTYgJwogICAgJzhkODhmYTFjMGUzODgxM2Y0YjE2ZTI5ZDAxYmVlYzQyZjQ2M2Q5ZWNhNDZjNjE4YjEzYmFmNDJjOGY0NzczYjjjgIInLAogICAgJy0gU3VtbWFyeeWGhemDqHdhbGwgLjk2MTU2MTc5OTk4MDdzIC8gQ1BVIC45MDYyNXPvvJvlpJbpg6h3YWxsMS4xODY0MDY1MDAxNzE4N3MgLyB3cmFwcGVyQ1BVMC4wc++8iOS4jeWQq2NoaWxk77yJ44CCJywKICAgICctIGV4dGVybmFsL2xvY2FsX2ZpbmFsX3Jldmlld19zdW1tYXJ5X3N0ZG91dF8wMS50eHQg5LiOIGV4dGVybmFsL2xvY2FsX2ZpbmFsX3Jldmlld19zdW1tYXJ5X2V4ZWN1dGlvbl8wMS5qc29uJwogICAgJ+S/neeVmXN0ZG91dC9zdGRlcnLjgIFyZXR1cm5jb2Rl44CB57K+56Gu5rqQ56CBL3dyYXBwZXIgYnl0ZXMtYmFzZTY0LWhhc2jjgIHovpPlhaVoYXNo5LiO5aSW6YOoY2xvY2vjgIInLAogICAgZictIOihqOaPkOWPliBzb3VyY2UgU0hBMjU2IHt0WyJleHRyYWN0aW9uX3NvdXJjZV9zaGEyNTYiXX3vvIx3YWxsIHt0WyJ3YWxsX3NlY29uZHMiXTouMTdnfXMgLyBDUFUge3RbImNwdV9zZWNvbmRzIl06LjE3Z31z77ybJwogICAgZifovpPlh7pTSEEyNTYge2lucHV0X2hhc2h977yM5YWo6YOo6YCQc2VlZOmjjumZqS/lpJrmraUvdGFpbOS/neeVmeOAgicsCiAgICAnLSDmnKzlrZDku7vliqEw54mp55CG6LCD55So44CBMOaooeWei+mihOa1i+OAgTBSTFPmlbDlrabph43mlL7jgIEw5ouf5ZCIL+WPguaVsOabtOaWsOOAgTDmlrDkuqTkupLjgILnu5/orqHlt7LlrZjljp/lrZB1cGRhdGXkuovku7bkuI3mmK/ph43mlrDlrabkuaDjgIInLApdCnRleHQgPSAnXG4nLmpvaW4obGluZXMpKydcbicKc291cmNlID0gUGF0aChfX2ZpbGVfXykucmVhZF9ieXRlcygpCnByb3ZlbmFuY2UgPSB7J3NjaGVtYV92ZXJzaW9uJzoxLCAnY3JlYXRlZF9hdF91dGMnOmRhdGV0aW1lLm5vdyh0aW1lem9uZS51dGMpLmlzb2Zvcm1hdCgpLAogICAgJ2lucHV0X3BhdGgnOnN0cihpbnB1dF9wYXRoKSwgJ2lucHV0X3NoYTI1Nic6aW5wdXRfaGFzaCwKICAgICdzb3VyY2Vfc2hhMjU2JzpoYXNobGliLnNoYTI1Nihzb3VyY2UpLmhleGRpZ2VzdCgpLCAnc291cmNlX2J5dGVzX2Jhc2U2NCc6YmFzZTY0LmI2NGVuY29kZShzb3VyY2UpLmRlY29kZSgnYXNjaWknKSwKICAgICdvdXRwdXRfcGF0aCc6c3RyKG91dHB1dF9wYXRoKSwgJ291dHB1dF9zaGEyNTYnOmhhc2hsaWIuc2hhMjU2KHRleHQuZW5jb2RlKCd1dGYtOCcpKS5oZXhkaWdlc3QoKSwKICAgICd3YWxsX3NlY29uZHMnOnRpbWUucGVyZl9jb3VudGVyKCktd2FsbCwnY3B1X3NlY29uZHMnOnRpbWUucHJvY2Vzc190aW1lKCktY3B1LAogICAgJ3RpbWluZ19zY29wZSc6J3JlcG9ydCBlbnRyeSB0aHJvdWdoIGlucHV0L3NvdXJjZSByZWFkcyBhbmQgYXNzZW1ibHk7IGV4Y2x1ZGVzIGltcG9ydHMgYW5kIHdyaXRlcycsCiAgICAncGh5c2ljYWxfc2ltdWxhdGlvbl9jYWxscyc6MCwnbW9kZWxfcHJlZGljdGlvbl9jYWxscyc6MCwncmxzX3JlcGxheV9jYWxscyc6MCwncmVhbF9wYXJhbWV0ZXJfdXBkYXRlcyc6MCwnbmV3X2Vudmlyb25tZW50X2ludGVyYWN0aW9ucyc6MCwKICAgICdjb3BpZWRfbXVsdGlzdGVwX3Jhd19ybXNlX3RocmVlX3NlZWRfbWVhbnMnOm11bHRpc3RlcF9jb21wYWN0fQp3aXRoIG91dHB1dF9wYXRoLm9wZW4oJ3gnLGVuY29kaW5nPSd1dGYtOCcsbmV3bGluZT0nXG4nKSBhcyBzdHJlYW06CiAgICBzdHJlYW0ud3JpdGUodGV4dCkKd2l0aCBwcm92ZW5hbmNlX3BhdGgub3BlbigneCcsZW5jb2Rpbmc9J3V0Zi04JyxuZXdsaW5lPSdcbicpIGFzIHN0cmVhbToKICAgIGpzb24uZHVtcChwcm92ZW5hbmNlLHN0cmVhbSxlbnN1cmVfYXNjaWk9RmFsc2UsaW5kZW50PTIsYWxsb3dfbmFuPUZhbHNlKQogICAgc3RyZWFtLndyaXRlKCdcbicpCnByaW50KGpzb24uZHVtcHMoe2s6cHJvdmVuYW5jZVtrXSBmb3IgayBpbiAoJ291dHB1dF9wYXRoJywnb3V0cHV0X3NoYTI1NicsJ3NvdXJjZV9zaGEyNTYnLCd3YWxsX3NlY29uZHMnLCdjcHVfc2Vjb25kcycpfSkpCnByaW50KCdcbicuam9pbihsaW5lc1s6bGluZXMuaW5kZXgoJyMjIOWkmuatpeWOn+Wni1JNU0XlnYflgLwnKV0pKQpwcmludCgnXG4nLmpvaW4obGluZXNbbGluZXMuaW5kZXgoJyMjIOmjjumZqeWFqC/liY3nvIAvYWN0aXZlJyk6bGluZXMuaW5kZXgoJyMjIOWPquivu+WkjeaguOS6p+eJqeS4juaIkOacrCcpXSkpCnByaW50KGpzb24uZHVtcHMoW3IgZm9yIHIgaW4gbXVsdGlzdGVwX2NvbXBhY3QgaWYgclsna2luZCddIGluICgnbGVhcm5lZF9tcGMnLCdwcmVkaWN0aW9uX2Z1bGwnKSBhbmQgclsnaG9yaXpvbiddIGluICgxNSw1MCldKSkK",
+  "output_path": "D:\\Codex_ws\\robot_rl\\external\\local_final_results_review.md",
+  "output_sha256": "d5447bd31141c1e4c2cd8aa399a7b7e9f81bd3b3f9d2dbf28ff84747d8e8bb02",
+  "wall_seconds": 0.014845300000160933,
+  "cpu_seconds": 0.0,
+  "timing_scope": "report entry through input/source reads and assembly; excludes imports and writes",
+  "physical_simulation_calls": 0,
+  "model_prediction_calls": 0,
+  "rls_replay_calls": 0,
+  "real_parameter_updates": 0,
+  "new_environment_interactions": 0,
+  "copied_multistep_raw_rmse_three_seed_means": [
+    {
+      "kind": "calibration",
+      "horizon": 1,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.00019373377449892365,
+      "terminal_velocity_rmse_rad_s": 0.017776169460046648,
+      "path_position_rmse_rad": 0.00019373377449892365,
+      "path_velocity_rmse_rad_s": 0.017776169460046648
+    },
+    {
+      "kind": "calibration",
+      "horizon": 1,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.00019770594955712892,
+      "terminal_velocity_rmse_rad_s": 0.010889436701764723,
+      "path_position_rmse_rad": 0.00019770594955712892,
+      "path_velocity_rmse_rad_s": 0.010889436701764723
+    },
+    {
+      "kind": "calibration",
+      "horizon": 1,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.00019202615878424094,
+      "terminal_velocity_rmse_rad_s": 0.01791394944473959,
+      "path_position_rmse_rad": 0.00019202615878424094,
+      "path_velocity_rmse_rad_s": 0.01791394944473959
+    },
+    {
+      "kind": "calibration",
+      "horizon": 5,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.001791351514331843,
+      "terminal_velocity_rmse_rad_s": 0.025685960884757737,
+      "path_position_rmse_rad": 0.001136635674891591,
+      "path_velocity_rmse_rad_s": 0.022777224184172277
+    },
+    {
+      "kind": "calibration",
+      "horizon": 5,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.00040354474533454396,
+      "terminal_velocity_rmse_rad_s": 0.010959587200998419,
+      "path_position_rmse_rad": 0.00035117297510610666,
+      "path_velocity_rmse_rad_s": 0.01096276180605676
+    },
+    {
+      "kind": "calibration",
+      "horizon": 5,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.0015803087377799707,
+      "terminal_velocity_rmse_rad_s": 0.02176341774628905,
+      "path_position_rmse_rad": 0.0010305449445055879,
+      "path_velocity_rmse_rad_s": 0.020963225474756948
+    },
+    {
+      "kind": "calibration",
+      "horizon": 15,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.006986589730774084,
+      "terminal_velocity_rmse_rad_s": 0.03671852302478265,
+      "path_position_rmse_rad": 0.003933237629858804,
+      "path_velocity_rmse_rad_s": 0.02937609306813986
+    },
+    {
+      "kind": "calibration",
+      "horizon": 15,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.000568382471137632,
+      "terminal_velocity_rmse_rad_s": 0.01114915811897922,
+      "path_position_rmse_rad": 0.00047885723490470253,
+      "path_velocity_rmse_rad_s": 0.011149159305965632
+    },
+    {
+      "kind": "calibration",
+      "horizon": 15,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.004793020340045265,
+      "terminal_velocity_rmse_rad_s": 0.024937707345979915,
+      "path_position_rmse_rad": 0.0028506622781058048,
+      "path_velocity_rmse_rad_s": 0.021947509259617234
+    },
+    {
+      "kind": "calibration",
+      "horizon": 50,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.022947203772842043,
+      "terminal_velocity_rmse_rad_s": 0.03370215679138525,
+      "path_position_rmse_rad": 0.013216081369509572,
+      "path_velocity_rmse_rad_s": 0.03185036536275961
+    },
+    {
+      "kind": "calibration",
+      "horizon": 50,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.0006698410155412354,
+      "terminal_velocity_rmse_rad_s": 0.011898877083624247,
+      "path_position_rmse_rad": 0.0005920028348221425,
+      "path_velocity_rmse_rad_s": 0.011885880134547827
+    },
+    {
+      "kind": "calibration",
+      "horizon": 50,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.016348959406245964,
+      "terminal_velocity_rmse_rad_s": 0.02271869831873248,
+      "path_position_rmse_rad": 0.009568641863586344,
+      "path_velocity_rmse_rad_s": 0.02309954874562259
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 1,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 8.815403667593252e-05,
+      "terminal_velocity_rmse_rad_s": 0.005007339802313246,
+      "path_position_rmse_rad": 8.815403667593252e-05,
+      "path_velocity_rmse_rad_s": 0.005007339802313246
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 1,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 2.1180845454390833e-05,
+      "terminal_velocity_rmse_rad_s": 0.0007013057172568729,
+      "path_position_rmse_rad": 2.1180845454390833e-05,
+      "path_velocity_rmse_rad_s": 0.0007013057172568729
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 1,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 5.773184353622708e-05,
+      "terminal_velocity_rmse_rad_s": 0.0040353086627047865,
+      "path_position_rmse_rad": 5.773184353622708e-05,
+      "path_velocity_rmse_rad_s": 0.0040353086627047865
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 5,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.0012039320537590428,
+      "terminal_velocity_rmse_rad_s": 0.020098576579782233,
+      "path_position_rmse_rad": 0.0007015815676982666,
+      "path_velocity_rmse_rad_s": 0.01384608913175407
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 5,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 6.095978996762687e-05,
+      "terminal_velocity_rmse_rad_s": 0.0007571312494398432,
+      "path_position_rmse_rad": 4.266388925828926e-05,
+      "path_velocity_rmse_rad_s": 0.0007506366000979047
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 5,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.0006020416083575863,
+      "terminal_velocity_rmse_rad_s": 0.010403966147925374,
+      "path_position_rmse_rad": 0.00035549631013421156,
+      "path_velocity_rmse_rad_s": 0.007485296080623392
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 15,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.005256226816765505,
+      "terminal_velocity_rmse_rad_s": 0.0194781102582375,
+      "path_position_rmse_rad": 0.003148802660015052,
+      "path_velocity_rmse_rad_s": 0.022138851402918422
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 15,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.00015565892756807818,
+      "terminal_velocity_rmse_rad_s": 0.0007191362218946302,
+      "path_position_rmse_rad": 9.9599401976332e-05,
+      "path_velocity_rmse_rad_s": 0.0007496008894047426
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 15,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.002768066546179728,
+      "terminal_velocity_rmse_rad_s": 0.01075339605271472,
+      "path_position_rmse_rad": 0.0016241071380369905,
+      "path_velocity_rmse_rad_s": 0.01177935456828235
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 50,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.014479814330797465,
+      "terminal_velocity_rmse_rad_s": 0.02819737633223753,
+      "path_position_rmse_rad": 0.008391978972402696,
+      "path_velocity_rmse_rad_s": 0.020108963542189228
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 50,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.0005017168876299581,
+      "terminal_velocity_rmse_rad_s": 0.0006658667372327889,
+      "path_position_rmse_rad": 0.0002971192303085661,
+      "path_velocity_rmse_rad_s": 0.0007454205599602474
+    },
+    {
+      "kind": "prediction_low",
+      "horizon": 50,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.007559394425911751,
+      "terminal_velocity_rmse_rad_s": 0.01481519231587515,
+      "path_position_rmse_rad": 0.004391090900611718,
+      "path_velocity_rmse_rad_s": 0.01064936063783598
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 1,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.0002742583423853484,
+      "terminal_velocity_rmse_rad_s": 0.019574849714566068,
+      "path_position_rmse_rad": 0.0002742583423853484,
+      "path_velocity_rmse_rad_s": 0.019574849714566068
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 1,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.0003136950428837883,
+      "terminal_velocity_rmse_rad_s": 0.014917910687025375,
+      "path_position_rmse_rad": 0.0003136950428837883,
+      "path_velocity_rmse_rad_s": 0.014917910687025375
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 1,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.0002632419533962599,
+      "terminal_velocity_rmse_rad_s": 0.01948377351129486,
+      "path_position_rmse_rad": 0.0002632419533962599,
+      "path_velocity_rmse_rad_s": 0.01948377351129486
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 5,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.002641253247142804,
+      "terminal_velocity_rmse_rad_s": 0.03998251862167087,
+      "path_position_rmse_rad": 0.00164024066041401,
+      "path_velocity_rmse_rad_s": 0.03243538360047984
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 5,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.0007492826040692069,
+      "terminal_velocity_rmse_rad_s": 0.0157021278124491,
+      "path_position_rmse_rad": 0.0006240523790711896,
+      "path_velocity_rmse_rad_s": 0.01560631330545839
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 5,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.0021518667908640506,
+      "terminal_velocity_rmse_rad_s": 0.031092207049869886,
+      "path_position_rmse_rad": 0.001381284468720586,
+      "path_velocity_rmse_rad_s": 0.027675736578493638
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 15,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.009914971709203873,
+      "terminal_velocity_rmse_rad_s": 0.0410818714432296,
+      "path_position_rmse_rad": 0.00596875404549493,
+      "path_velocity_rmse_rad_s": 0.04329182567572856
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 15,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.000742954234067158,
+      "terminal_velocity_rmse_rad_s": 0.01658893395937817,
+      "path_position_rmse_rad": 0.0007033603570321675,
+      "path_velocity_rmse_rad_s": 0.01649818287712997
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 15,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.007361892336053025,
+      "terminal_velocity_rmse_rad_s": 0.03193449968436319,
+      "path_position_rmse_rad": 0.004442411384695995,
+      "path_velocity_rmse_rad_s": 0.03299483026764933
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 50,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.016796894020423423,
+      "terminal_velocity_rmse_rad_s": 0.04827687652953474,
+      "path_position_rmse_rad": 0.009318925761038937,
+      "path_velocity_rmse_rad_s": 0.03465250237711263
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 50,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.0008158651186338044,
+      "terminal_velocity_rmse_rad_s": 0.02144725620644569,
+      "path_position_rmse_rad": 0.0006717577675728006,
+      "path_velocity_rmse_rad_s": 0.01731321073621737
+    },
+    {
+      "kind": "prediction_full",
+      "horizon": 50,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.00807567538099369,
+      "terminal_velocity_rmse_rad_s": 0.03268321830246184,
+      "path_position_rmse_rad": 0.004629128976504555,
+      "path_velocity_rmse_rad_s": 0.0250027883474406
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 1,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.00024908620760902956,
+      "terminal_velocity_rmse_rad_s": 0.01807312951892658,
+      "path_position_rmse_rad": 0.00024908620760902956,
+      "path_velocity_rmse_rad_s": 0.01807312951892658
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 1,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.00032188361046148233,
+      "terminal_velocity_rmse_rad_s": 0.0166415360870873,
+      "path_position_rmse_rad": 0.00032188361046148233,
+      "path_velocity_rmse_rad_s": 0.0166415360870873
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 1,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.00019729829668795976,
+      "terminal_velocity_rmse_rad_s": 0.016894620532058334,
+      "path_position_rmse_rad": 0.00019729829668795976,
+      "path_velocity_rmse_rad_s": 0.016894620532058334
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 5,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.002812309264342264,
+      "terminal_velocity_rmse_rad_s": 0.04605507021263922,
+      "path_position_rmse_rad": 0.0016476758600309576,
+      "path_velocity_rmse_rad_s": 0.03243250918976542
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 5,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.0015898197678503826,
+      "terminal_velocity_rmse_rad_s": 0.01771612063813249,
+      "path_position_rmse_rad": 0.0010566379374003143,
+      "path_velocity_rmse_rad_s": 0.01755080756468871
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 5,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.0011924179893239085,
+      "terminal_velocity_rmse_rad_s": 0.017658800183596376,
+      "path_position_rmse_rad": 0.0007687354171158077,
+      "path_velocity_rmse_rad_s": 0.016549863053076
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 15,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.021175460528447376,
+      "terminal_velocity_rmse_rad_s": 0.13109074943669285,
+      "path_position_rmse_rad": 0.010464993745482841,
+      "path_velocity_rmse_rad_s": 0.08071385031446189
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 15,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.004515503824845653,
+      "terminal_velocity_rmse_rad_s": 0.017218044712452068,
+      "path_position_rmse_rad": 0.0027894596597399343,
+      "path_velocity_rmse_rad_s": 0.017446890037604856
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 15,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.004450259037882566,
+      "terminal_velocity_rmse_rad_s": 0.021718228270960843,
+      "path_position_rmse_rad": 0.002530293799537286,
+      "path_velocity_rmse_rad_s": 0.019330352337791613
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 50,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.2147281887008777,
+      "terminal_velocity_rmse_rad_s": 0.4151111230399896,
+      "path_position_rmse_rad": 0.0995983589419674,
+      "path_velocity_rmse_rad_s": 0.24659293847616184
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 50,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.011105249911059122,
+      "terminal_velocity_rmse_rad_s": 0.01705180130147429,
+      "path_position_rmse_rad": 0.006685906212004408,
+      "path_velocity_rmse_rad_s": 0.016354434104794324
+    },
+    {
+      "kind": "nominal_mpc",
+      "horizon": 50,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.021125233848820386,
+      "terminal_velocity_rmse_rad_s": 0.0299854393220924,
+      "path_position_rmse_rad": 0.011669304876628065,
+      "path_velocity_rmse_rad_s": 0.0264965115259392
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 1,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.0002517325310227608,
+      "terminal_velocity_rmse_rad_s": 0.01753509822065184,
+      "path_position_rmse_rad": 0.0002517325310227608,
+      "path_velocity_rmse_rad_s": 0.01753509822065184
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 1,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.000496054576199655,
+      "terminal_velocity_rmse_rad_s": 0.025122570148064256,
+      "path_position_rmse_rad": 0.000496054576199655,
+      "path_velocity_rmse_rad_s": 0.025122570148064256
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 1,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.00019076607791574632,
+      "terminal_velocity_rmse_rad_s": 0.01586828831730377,
+      "path_position_rmse_rad": 0.00019076607791574632,
+      "path_velocity_rmse_rad_s": 0.01586828831730377
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 5,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.003368188019288213,
+      "terminal_velocity_rmse_rad_s": 0.054394683084886986,
+      "path_position_rmse_rad": 0.001987307781436415,
+      "path_velocity_rmse_rad_s": 0.03992005030606913
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 5,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.002362744110788125,
+      "terminal_velocity_rmse_rad_s": 0.02708892953688349,
+      "path_position_rmse_rad": 0.0016014014939406648,
+      "path_velocity_rmse_rad_s": 0.026698204486540516
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 5,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.002121865303385161,
+      "terminal_velocity_rmse_rad_s": 0.0315231625652558,
+      "path_position_rmse_rad": 0.0013168052268666243,
+      "path_velocity_rmse_rad_s": 0.02776773763489065
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 15,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.0229597143343449,
+      "terminal_velocity_rmse_rad_s": 0.14221661170370903,
+      "path_position_rmse_rad": 0.011428002914988654,
+      "path_velocity_rmse_rad_s": 0.08859995127931963
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 15,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.0063274890000117705,
+      "terminal_velocity_rmse_rad_s": 0.026562412878295194,
+      "path_position_rmse_rad": 0.0039634543752112145,
+      "path_velocity_rmse_rad_s": 0.026802099823106346
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 15,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.007097880665343487,
+      "terminal_velocity_rmse_rad_s": 0.03641981571054726,
+      "path_position_rmse_rad": 0.0040705004556601185,
+      "path_velocity_rmse_rad_s": 0.0313772292292153
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 50,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.23328557267284192,
+      "terminal_velocity_rmse_rad_s": 0.44881983055919433,
+      "path_position_rmse_rad": 0.10836501435707784,
+      "path_velocity_rmse_rad_s": 0.26822559343890323
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 50,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.013447776879684748,
+      "terminal_velocity_rmse_rad_s": 0.023505850237526552,
+      "path_position_rmse_rad": 0.008944210125758382,
+      "path_velocity_rmse_rad_s": 0.025236092438123525
+    },
+    {
+      "kind": "learned_mpc",
+      "horizon": 50,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.032505446714200574,
+      "terminal_velocity_rmse_rad_s": 0.045211937708803634,
+      "path_position_rmse_rad": 0.017775685503345493,
+      "path_velocity_rmse_rad_s": 0.04120744618694405
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 1,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.00020699838422781903,
+      "terminal_velocity_rmse_rad_s": 0.012297518695169337,
+      "path_position_rmse_rad": 0.00020699838422781903,
+      "path_velocity_rmse_rad_s": 0.012297518695169337
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 1,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.00045648671649216663,
+      "terminal_velocity_rmse_rad_s": 0.023053732787294074,
+      "path_position_rmse_rad": 0.00045648671649216663,
+      "path_velocity_rmse_rad_s": 0.023053732787294074
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 1,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.00011242301732976241,
+      "terminal_velocity_rmse_rad_s": 0.008817784219561612,
+      "path_position_rmse_rad": 0.00011242301732976241,
+      "path_velocity_rmse_rad_s": 0.008817784219561612
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 5,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.003025344300702903,
+      "terminal_velocity_rmse_rad_s": 0.05101857681669459,
+      "path_position_rmse_rad": 0.0017463838096912802,
+      "path_velocity_rmse_rad_s": 0.03488517662186411
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 5,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.0023132179027687202,
+      "terminal_velocity_rmse_rad_s": 0.024971124257015614,
+      "path_position_rmse_rad": 0.0015447175050741608,
+      "path_velocity_rmse_rad_s": 0.024541659727809223
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 5,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.0014643372652296171,
+      "terminal_velocity_rmse_rad_s": 0.024799291886936876,
+      "path_position_rmse_rad": 0.0008674100544573828,
+      "path_velocity_rmse_rad_s": 0.018867434674657835
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 15,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.02252633095269746,
+      "terminal_velocity_rmse_rad_s": 0.14068584210352364,
+      "path_position_rmse_rad": 0.011145175976515702,
+      "path_velocity_rmse_rad_s": 0.08641071497679885
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 15,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.006273945887752414,
+      "terminal_velocity_rmse_rad_s": 0.02427828426760931,
+      "path_position_rmse_rad": 0.00391543565858359,
+      "path_velocity_rmse_rad_s": 0.024606444554749838
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 15,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.00588732589785492,
+      "terminal_velocity_rmse_rad_s": 0.032290846434436464,
+      "path_position_rmse_rad": 0.0033068795756632462,
+      "path_velocity_rmse_rad_s": 0.025197110051246432
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 50,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 0.23093931043341023,
+      "terminal_velocity_rmse_rad_s": 0.444855575561562,
+      "path_position_rmse_rad": 0.10725941052503356,
+      "path_velocity_rmse_rad_s": 0.26540386696807544
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 50,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.013379221624382593,
+      "terminal_velocity_rmse_rad_s": 0.02092761529651087,
+      "path_position_rmse_rad": 0.008854065030531837,
+      "path_velocity_rmse_rad_s": 0.022815762536319017
+    },
+    {
+      "kind": "tuned_pd",
+      "horizon": 50,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 0.03068084681507474,
+      "terminal_velocity_rmse_rad_s": 0.04200031219200129,
+      "path_position_rmse_rad": 0.016661160049361513,
+      "path_velocity_rmse_rad_s": 0.037491882281520915
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 1,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 1.8594905210145198e-10,
+      "terminal_velocity_rmse_rad_s": 1.688068005570762e-08,
+      "path_position_rmse_rad": 1.8594905210145198e-10,
+      "path_velocity_rmse_rad_s": 1.688068005570762e-08
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 1,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 1.0716007023257849e-05,
+      "terminal_velocity_rmse_rad_s": 0.0005358052216074457,
+      "path_position_rmse_rad": 1.0716007023257849e-05,
+      "path_velocity_rmse_rad_s": 0.0005358052216074457
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 1,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 1.8594905210145198e-10,
+      "terminal_velocity_rmse_rad_s": 1.688068005570762e-08,
+      "path_position_rmse_rad": 1.8594905210145198e-10,
+      "path_velocity_rmse_rad_s": 1.688068005570762e-08
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 5,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 4.301070940312344e-09,
+      "terminal_velocity_rmse_rad_s": 8.433579698931128e-08,
+      "path_position_rmse_rad": 2.4144707174573913e-09,
+      "path_velocity_rmse_rad_s": 5.593601967276518e-08
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 5,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 5.696687038686174e-05,
+      "terminal_velocity_rmse_rad_s": 0.0005783439788067473,
+      "path_position_rmse_rad": 3.757650006965966e-05,
+      "path_velocity_rmse_rad_s": 0.0005699273633285109
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 5,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 4.301070940312344e-09,
+      "terminal_velocity_rmse_rad_s": 8.433579698931128e-08,
+      "path_position_rmse_rad": 2.4144707174573913e-09,
+      "path_velocity_rmse_rad_s": 5.593601967276518e-08
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 15,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 3.817318839191095e-08,
+      "terminal_velocity_rmse_rad_s": 2.5299252307486155e-07,
+      "path_position_rmse_rad": 1.8519847258934882e-08,
+      "path_velocity_rmse_rad_s": 1.532622437140326e-07
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 15,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.00017202990267882034,
+      "terminal_velocity_rmse_rad_s": 0.0005732133112409334,
+      "path_position_rmse_rad": 0.00010416304195984701,
+      "path_velocity_rmse_rad_s": 0.000573530006941765
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 15,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 3.817318839191095e-08,
+      "terminal_velocity_rmse_rad_s": 2.5299252307486155e-07,
+      "path_position_rmse_rad": 1.8519847258934882e-08,
+      "path_velocity_rmse_rad_s": 1.532622437140326e-07
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 50,
+      "predictor": "nominal_mpc",
+      "terminal_position_rmse_rad": 4.212884930720065e-07,
+      "terminal_velocity_rmse_rad_s": 8.432213653501391e-07,
+      "path_position_rmse_rad": 1.930426061320384e-07,
+      "path_velocity_rmse_rad_s": 4.931313216320785e-07
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 50,
+      "predictor": "learned_mpc",
+      "terminal_position_rmse_rad": 0.0005664498025718497,
+      "terminal_velocity_rmse_rad_s": 0.0005556400706928686,
+      "path_position_rmse_rad": 0.00033338803845748394,
+      "path_velocity_rmse_rad_s": 0.0005665125700202168
+    },
+    {
+      "kind": "zero_torque",
+      "horizon": 50,
+      "predictor": "persistence",
+      "terminal_position_rmse_rad": 4.212884930720065e-07,
+      "terminal_velocity_rmse_rad_s": 8.432213653501391e-07,
+      "path_position_rmse_rad": 1.930426061320384e-07,
+      "path_velocity_rmse_rad_s": 4.931313216320785e-07
+    }
+  ]
+}
