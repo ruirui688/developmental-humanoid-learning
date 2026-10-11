@@ -1,0 +1,33 @@
+{
+  "stage": "FR3D",
+  "candidate": {
+    "bytes": 16832,
+    "sha256": "15399b78763e5730cdb4f480439f117684daa861ca41b6f1874cceaf819e7981"
+  },
+  "design": {
+    "bytes": 4550,
+    "sha256": "a14bf5c06d32e32559b856975255ef798f4ded0686251dc01539366edcda0d32"
+  },
+  "source_AST_passed": true,
+  "source_AST_parse_count": 1,
+  "candidate_executions": 0,
+  "raw_reads": 0,
+  "physics_model_fit_RLS_calls": 0,
+  "root_reviewed_static_design": true,
+  "caps": {
+    "trace_rows": 36000,
+    "main_active_rows": 18000,
+    "axis_scope_cells": 72,
+    "row_scope_projections": 19800,
+    "axis_scope_updates": 39600,
+    "macros": 1200,
+    "macro_scope_projections": 1320,
+    "macro_axis_scope_projections": 2640,
+    "nearest_grid_scalar_distances": 21600,
+    "pure_PD_candidate_records_read": 1200,
+    "fixed_window_parent_ratios": 108,
+    "axis_sse_effort_difference_entries": 72
+  },
+  "scientific_gates_unchanged": true,
+  "new_control_automatically_selected": false
+}

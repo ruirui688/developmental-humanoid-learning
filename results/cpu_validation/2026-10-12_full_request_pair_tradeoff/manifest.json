@@ -1,0 +1,86 @@
+{
+  "stage": "FR3D_first_delivery",
+  "files_before_manifest": {
+    "first_execution_receipt.json": {
+      "bytes": 566,
+      "sha256": "dc997886d583cacbd459b231f63143e63ce816a55016b710ca72b4771344f69f"
+    },
+    "result/candidate_source.py": {
+      "bytes": 16832,
+      "sha256": "15399b78763e5730cdb4f480439f117684daa861ca41b6f1874cceaf819e7981"
+    },
+    "result/first_execution_receipt.json": {
+      "bytes": 357,
+      "sha256": "36fc9c5ba5d593286b425588ac73fa19bb32f595522d0f93000df20cbb7268b2"
+    },
+    "result/projection.json": {
+      "bytes": 133093,
+      "sha256": "73608e83563305861b034d8a9c98d11af46286cd1f1198adc2573cda60eadc1d"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "bytes": 519,
+      "sha256": "0a2a818ea645b53f6cde35a6ebaec8cb4bed1c451be8d08991d9ba87738232a6"
+    },
+    "frozen_design.md": {
+      "bytes": 4550,
+      "sha256": "a14bf5c06d32e32559b856975255ef798f4ded0686251dc01539366edcda0d32"
+    },
+    "preparation_receipt.json": {
+      "bytes": 1005,
+      "sha256": "08d8192efa176edd53f2affa44f199e13a447ee77e6c5a9461f27b45b7d0581d"
+    },
+    "report_writing_receipt.json": {
+      "bytes": 445,
+      "sha256": "1e7841dafdcd679a8f506b50727c2e5fb2e8da10ea9ebbaef90b04e431369617"
+    },
+    "helpers/prepare_fr3d_once.py": {
+      "bytes": 1663,
+      "sha256": "b9bde9077d97ac35fe485650c31c81eee1895c0ff601a64f1900e899e997ae31"
+    },
+    "helpers/run_fr3d_first_once.py": {
+      "bytes": 1808,
+      "sha256": "c4fbf2a38840b6259947f78885389cbb45cc5abb6798a6a6ef7c7c825c92fc55"
+    },
+    "helpers/write_fr3d_report_once.py": {
+      "bytes": 7123,
+      "sha256": "b3ab7298b793ec4f96deb51ab71430a428c0e2be5320f8c52cd19ac0b0088fd3"
+    },
+    "helpers/archive_fr3d_delivery_once.py": {
+      "bytes": 5952,
+      "sha256": "21d2f6e0b2c2bed80f97458cff65e78ecb9cf12eac3bdece038873582d0cb3db"
+    }
+  },
+  "first_archive": true,
+  "raw_reads": 0,
+  "model_fit_RLS_physics_or_scientific_gate_calls": 0,
+  "actual_physics_cumulative_unchanged": {
+    "controls": 430297,
+    "substeps": 2709970,
+    "online_scalar": 94452,
+    "offline_scalar": 7200
+  },
+  "seed_first_public_search_root_fact": {
+    "seeds": [
+      8101,
+      8102,
+      8103
+    ],
+    "head": "e589c17d1b331b48162c117f9581825ff6fafd54",
+    "command": "rg -n '\\b(8101|8102|8103)\\b' AGENTS.md README.md docs scripts src tests -g '*.py' -g '*.md' -g '*.json' -g '*.toml' -g '*.xml'",
+    "exit_code": 1,
+    "stdout": "",
+    "raw_nonpublic_or_global_history_not_searched": true,
+    "first_search_preceded_FR4_sources": true,
+    "final_holdout_claim": false
+  },
+  "copy_input_reads": 13,
+  "copy_input_bytes": 173913,
+  "wall_seconds_before_manifest": 0.03609380009584129,
+  "cpu_seconds_before_manifest": 0.015625,
+  "scientific_adoption": false,
+  "continuous_goal_stays_active": true
+}

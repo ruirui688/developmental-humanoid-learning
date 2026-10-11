@@ -1,0 +1,3736 @@
+{
+  "experiment_id": "FR3D",
+  "status": "saved_projection_complete",
+  "failures": [],
+  "input_identities": {
+    "manifest.json": {
+      "bytes": 3154,
+      "sha256": "ef4c10d9cb18b3e5ffe244c14713e45faaa18a6e897ab26c0f4475ffb3e3a67f"
+    },
+    "run.json": {
+      "bytes": 2536321,
+      "sha256": "2aa2f9d9cca4690b5a1f5f1ab86c2bcee19db9e8b6693e5c909146ea70cca438"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 45619363,
+      "sha256": "b2dfe530bf3fc77f32ce2c1084052656fdf68b231dabc0af6def82509826a8c0"
+    }
+  },
+  "parent_source_commit": "20e899a48d3b92211c09c3589fe710b16cb692d3",
+  "matrix": [
+    {
+      "seed": 8001,
+      "method": "cold",
+      "parent_complete": true,
+      "parent_status": "completed",
+      "parent_stop": null,
+      "whole_2000_tracking_scores_transcribed": {
+        "available": true,
+        "planned_active_count": 2000,
+        "observed_active_count": 2000,
+        "axis_rmse_rad": [
+          0.038537279781276655,
+          0.05092306482600432
+        ],
+        "joint_rmse_rad": 0.04515684036895092,
+        "actual_absolute_two_axis_nm_s": 1.4836989237391363,
+        "actual_squared_two_axis_nm2_s": 0.7068551096837552,
+        "partial_subset_ranking": false,
+        "native_execution_complete": true,
+        "free_root_domain_qualification_required": true,
+        "free_root_domain_qualification_passed": true
+      },
+      "whole_2000_actual_effort_transcribed": {
+        "actual_absolute_axis_nm_s": [
+          0.9287795774245532,
+          0.5549193463145831
+        ],
+        "actual_squared_axis_nm2_s": [
+          0.4497953257285458,
+          0.2570597839552094
+        ],
+        "all8_actual_absolute_nm_s": 1.4836989237391363,
+        "all8_actual_squared_nm2_s": 0.7068551096837558,
+        "applied_absolute_axis_nm_s": [
+          0.9287795774245532,
+          0.5549193463145831
+        ],
+        "applied_squared_axis_nm2_s": [
+          0.4497953257285458,
+          0.2570597839552094
+        ],
+        "captured_substeps": 2000,
+        "complete": true,
+        "actual_absolute_two_axis_nm_s": 1.4836989237391363,
+        "actual_squared_two_axis_nm2_s": 0.7068551096837552,
+        "counts_are_lower_bounds_if_incomplete": false,
+        "confirmed_paid_substeps": 2000,
+        "unknown_actual_effort_substeps": 0,
+        "actual_effort_population_complete": true
+      },
+      "scopes": {
+        "A": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 21.585011113461544,
+              "error_abs_sum": 21.585011113461544,
+              "error_squared_sum": 0.5025904526084523,
+              "error_abs_max": 0.039928606547160246,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.5987795774245529,
+              "actual_squared_nm2_s": 0.2866703257285457,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.021585011113461543,
+              "mean_absolute_error_rad": 0.021585011113461543,
+              "mean_squared_error_rad2": 0.0005025904526084523,
+              "complete_actual_absolute_nm_s": 0.5987795774245529,
+              "complete_actual_squared_nm2_s": 0.2866703257285457
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -24.79044473337464,
+              "error_abs_sum": 24.79044473337464,
+              "error_squared_sum": 0.7414233773065987,
+              "error_abs_max": 0.04483619030504405,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.228725438641267,
+              "actual_squared_nm2_s": 0.09500653002566586,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.024790444733374637,
+              "mean_absolute_error_rad": 0.024790444733374637,
+              "mean_squared_error_rad2": 0.0007414233773065987,
+              "complete_actual_absolute_nm_s": 0.228725438641267,
+              "complete_actual_squared_nm2_s": 0.09500653002566586
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 35,
+            "PD_known": 65,
+            "pure_PD_present": 37,
+            "pure_PD_feasible_known": 37,
+            "pure_PD_feasible": 37,
+            "nearest_grid_distance_sum_nm": [
+              0.31112385844677504,
+              0.9819970121829942
+            ],
+            "delta_known": 65,
+            "selected_abs_delta_sum_nm": [
+              17.62577882262915,
+              17.249202455513945
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              17.31465496418237,
+              16.267205443330955
+            ],
+            "PD_unknown": 35,
+            "pure_PD_absent": 28,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 65,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 37
+          }
+        },
+        "B": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 49.13089426981709,
+              "error_abs_sum": 49.13089426981709,
+              "error_squared_sum": 2.4676534132723362,
+              "error_abs_max": 0.0645866640668288,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.3299999999999997,
+              "actual_squared_nm2_s": 0.16312500000000033,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.049130894269817094,
+              "mean_absolute_error_rad": 0.049130894269817094,
+              "mean_squared_error_rad2": 0.0024676534132723363,
+              "complete_actual_absolute_nm_s": 0.3299999999999997,
+              "complete_actual_squared_nm2_s": 0.16312500000000033
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -65.23887660070172,
+              "error_abs_sum": 65.23887660070172,
+              "error_squared_sum": 4.4448936852402765,
+              "error_abs_max": 0.08524353554681208,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.3261939076733163,
+              "actual_squared_nm2_s": 0.1620532539295436,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.06523887660070171,
+              "mean_absolute_error_rad": 0.06523887660070171,
+              "mean_squared_error_rad2": 0.004444893685240276,
+              "complete_actual_absolute_nm_s": 0.3261939076733163,
+              "complete_actual_squared_nm2_s": 0.1620532539295436
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 66,
+            "PD_known": 34,
+            "pure_PD_present": 34,
+            "pure_PD_feasible_known": 34,
+            "pure_PD_feasible": 34,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 34,
+            "selected_abs_delta_sum_nm": [
+              0.5,
+              11.875
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.5,
+              11.875
+            ],
+            "PD_unknown": 66,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 34,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 34
+          }
+        },
+        "switch_pre": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 2.075963140435347,
+              "error_abs_sum": 2.075963140435347,
+              "error_squared_sum": 0.04483739738105991,
+              "error_abs_max": 0.02670804507967258,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.04525111487853723,
+              "actual_squared_nm2_s": 0.020977604057894908,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.02075963140435347,
+              "mean_absolute_error_rad": 0.02075963140435347,
+              "mean_squared_error_rad2": 0.00044837397381059906,
+              "complete_actual_absolute_nm_s": 0.04525111487853723,
+              "complete_actual_squared_nm2_s": 0.020977604057894908
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -3.2205586079822535,
+              "error_abs_sum": 3.2205586079822535,
+              "error_squared_sum": 0.11066284017297871,
+              "error_abs_max": 0.044148796176024276,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.029766365227270754,
+              "actual_squared_nm2_s": 0.013210370269883455,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.03220558607982253,
+              "mean_absolute_error_rad": 0.03220558607982253,
+              "mean_squared_error_rad2": 0.0011066284017297871,
+              "complete_actual_absolute_nm_s": 0.029766365227270754,
+              "complete_actual_squared_nm2_s": 0.013210370269883455
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 5,
+            "PD_known": 5,
+            "pure_PD_present": 3,
+            "pure_PD_feasible_known": 3,
+            "pure_PD_feasible": 3,
+            "nearest_grid_distance_sum_nm": [
+              0.03350566273256739,
+              0.05924842629392413
+            ],
+            "delta_known": 5,
+            "selected_abs_delta_sum_nm": [
+              1.8414943372674326,
+              0.5657515737060759
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              1.8079886745348652,
+              0.5065031474121517
+            ],
+            "PD_unknown": 5,
+            "pure_PD_absent": 2,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 5,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 3
+          }
+        },
+        "switch_post": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 4.987619022475458,
+              "error_abs_sum": 4.987619022475458,
+              "error_squared_sum": 0.2530327735035187,
+              "error_abs_max": 0.06401124933451807,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.04000000000000003,
+              "actual_squared_nm2_s": 0.020000000000000014,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.049876190224754584,
+              "mean_absolute_error_rad": 0.049876190224754584,
+              "mean_squared_error_rad2": 0.002530327735035187,
+              "complete_actual_absolute_nm_s": 0.04000000000000003,
+              "complete_actual_squared_nm2_s": 0.020000000000000014
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -5.261839294226895,
+              "error_abs_sum": 5.261839294226895,
+              "error_squared_sum": 0.2954064512535968,
+              "error_abs_max": 0.08411576815831123,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.029193907673316075,
+              "actual_squared_nm2_s": 0.01355325392954346,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.05261839294226894,
+              "mean_absolute_error_rad": 0.05261839294226894,
+              "mean_squared_error_rad2": 0.0029540645125359683,
+              "complete_actual_absolute_nm_s": 0.029193907673316075,
+              "complete_actual_squared_nm2_s": 0.01355325392954346
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 6,
+            "PD_known": 4,
+            "pure_PD_present": 4,
+            "pure_PD_feasible_known": 4,
+            "pure_PD_feasible": 4,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 4,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              1.875
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              1.875
+            ],
+            "PD_unknown": 6,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 4,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "learned",
+      "parent_complete": true,
+      "parent_status": "completed",
+      "parent_stop": null,
+      "whole_2000_tracking_scores_transcribed": {
+        "available": true,
+        "planned_active_count": 2000,
+        "observed_active_count": 2000,
+        "axis_rmse_rad": [
+          0.007828772207513646,
+          0.007321460972474702
+        ],
+        "joint_rmse_rad": 0.007579362276887423,
+        "actual_absolute_two_axis_nm_s": 1.5582827844662064,
+        "actual_squared_two_axis_nm2_s": 0.5465532328660638,
+        "partial_subset_ranking": false,
+        "native_execution_complete": true,
+        "free_root_domain_qualification_required": true,
+        "free_root_domain_qualification_passed": true
+      },
+      "whole_2000_actual_effort_transcribed": {
+        "actual_absolute_axis_nm_s": [
+          0.8371001277604493,
+          0.7211826567057572
+        ],
+        "actual_squared_axis_nm2_s": [
+          0.358188179053073,
+          0.18836505381299082
+        ],
+        "all8_actual_absolute_nm_s": 1.5582827844662046,
+        "all8_actual_squared_nm2_s": 0.5465532328660646,
+        "applied_absolute_axis_nm_s": [
+          0.8371001277604493,
+          0.7211826567057572
+        ],
+        "applied_squared_axis_nm2_s": [
+          0.358188179053073,
+          0.18836505381299082
+        ],
+        "captured_substeps": 2000,
+        "complete": true,
+        "actual_absolute_two_axis_nm_s": 1.5582827844662064,
+        "actual_squared_two_axis_nm2_s": 0.5465532328660638,
+        "counts_are_lower_bounds_if_incomplete": false,
+        "confirmed_paid_substeps": 2000,
+        "unknown_actual_effort_substeps": 0,
+        "actual_effort_population_complete": true
+      },
+      "scopes": {
+        "A": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 3.466138708542536,
+              "error_abs_sum": 3.7284960787833703,
+              "error_squared_sum": 0.0612257667808864,
+              "error_abs_max": 0.039928606547160246,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.3829563045358838,
+              "actual_squared_nm2_s": 0.1609762703713824,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.003466138708542536,
+              "mean_absolute_error_rad": 0.0037284960787833704,
+              "mean_squared_error_rad2": 6.12257667808864e-05,
+              "complete_actual_absolute_nm_s": 0.3829563045358838,
+              "complete_actual_squared_nm2_s": 0.1609762703713824
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 2.821400146056406,
+              "error_abs_sum": 4.4481325445974536,
+              "error_squared_sum": 0.04245962559022717,
+              "error_abs_max": 0.039863070007738984,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.36540011838413883,
+              "actual_squared_nm2_s": 0.09443693757542604,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.002821400146056406,
+              "mean_absolute_error_rad": 0.0044481325445974535,
+              "mean_squared_error_rad2": 4.2459625590227165e-05,
+              "complete_actual_absolute_nm_s": 0.36540011838413883,
+              "complete_actual_squared_nm2_s": 0.09443693757542604
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 0,
+            "PD_known": 100,
+            "pure_PD_present": 6,
+            "pure_PD_feasible_known": 6,
+            "pure_PD_feasible": 6,
+            "nearest_grid_distance_sum_nm": [
+              1.8427289287206636,
+              2.6962929788107663
+            ],
+            "delta_known": 100,
+            "selected_abs_delta_sum_nm": [
+              9.014227734410644,
+              35.7800371972476
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              7.171498805689983,
+              33.08374421843683
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 94,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 100,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 6
+          }
+        },
+        "B": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 3.3183968869586122,
+              "error_abs_sum": 4.41884680901577,
+              "error_squared_sum": 0.06135358177338957,
+              "error_abs_max": 0.039487496920592696,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.45414382322456565,
+              "actual_squared_nm2_s": 0.19721190868169108,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.0033183968869586124,
+              "mean_absolute_error_rad": 0.00441884680901577,
+              "mean_squared_error_rad2": 6.135358177338957e-05,
+              "complete_actual_absolute_nm_s": 0.45414382322456565,
+              "complete_actual_squared_nm2_s": 0.19721190868169108
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 5.055946513447739,
+              "error_abs_sum": 6.535360607646523,
+              "error_squared_sum": 0.06474795595271333,
+              "error_abs_max": 0.037322027464388896,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.3557825383216217,
+              "actual_squared_nm2_s": 0.0939281162375643,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.005055946513447739,
+              "mean_absolute_error_rad": 0.006535360607646523,
+              "mean_squared_error_rad2": 6.474795595271333e-05,
+              "complete_actual_absolute_nm_s": 0.3557825383216217,
+              "complete_actual_squared_nm2_s": 0.0939281162375643
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 0,
+            "PD_known": 100,
+            "pure_PD_present": 3,
+            "pure_PD_feasible_known": 3,
+            "pure_PD_feasible": 3,
+            "nearest_grid_distance_sum_nm": [
+              3.6528862699176274,
+              2.3144457137749854
+            ],
+            "delta_known": 100,
+            "selected_abs_delta_sum_nm": [
+              15.287004516486077,
+              43.20653970424459
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              11.634118246568454,
+              40.89209399046963
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 97,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 100,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 3
+          }
+        },
+        "switch_pre": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -0.03686482741153852,
+              "error_abs_sum": 0.03686482741153852,
+              "error_squared_sum": 1.3683037255335387e-05,
+              "error_abs_max": 0.0004310224792710149,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.004380549096385149,
+              "actual_squared_nm2_s": 0.000165508178683792,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.0003686482741153852,
+              "mean_absolute_error_rad": 0.0003686482741153852,
+              "mean_squared_error_rad2": 1.3683037255335388e-07,
+              "complete_actual_absolute_nm_s": 0.004380549096385149,
+              "complete_actual_squared_nm2_s": 0.000165508178683792
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 0.2443753636392912,
+              "error_abs_sum": 0.2443753636392912,
+              "error_squared_sum": 0.0005976739889553116,
+              "error_abs_max": 0.0025669059148379914,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.04645829395980829,
+              "actual_squared_nm2_s": 0.01103871707041257,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.002443753636392912,
+              "mean_absolute_error_rad": 0.002443753636392912,
+              "mean_squared_error_rad2": 5.976739889553116e-06,
+              "complete_actual_absolute_nm_s": 0.04645829395980829,
+              "complete_actual_squared_nm2_s": 0.01103871707041257
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 0,
+            "PD_known": 10,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.2329197528385928,
+              0.33323014577495186
+            ],
+            "delta_known": 10,
+            "selected_abs_delta_sum_nm": [
+              0.2329197528385928,
+              3.899732686468943
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              3.566502540693991
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 10,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 10,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "switch_post": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 1.9060822132483186,
+              "error_abs_sum": 1.9060822132483186,
+              "error_squared_sum": 0.04584111607364181,
+              "error_abs_max": 0.039487496920592696,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.08676614691542604,
+              "actual_squared_nm2_s": 0.040849204073444396,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.019060822132483186,
+              "mean_absolute_error_rad": 0.019060822132483186,
+              "mean_squared_error_rad2": 0.0004584111607364181,
+              "complete_actual_absolute_nm_s": 0.08676614691542604,
+              "complete_actual_squared_nm2_s": 0.040849204073444396
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 0.16084202899326888,
+              "error_abs_sum": 1.6402561231920458,
+              "error_squared_sum": 0.033350044157040834,
+              "error_abs_max": 0.037322027464388896,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.061189605041912856,
+              "actual_squared_nm2_s": 0.02644184437258472,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.001608420289932689,
+              "mean_absolute_error_rad": 0.016402561231920458,
+              "mean_squared_error_rad2": 0.00033350044157040836,
+              "complete_actual_absolute_nm_s": 0.061189605041912856,
+              "complete_actual_squared_nm2_s": 0.02644184437258472
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 0,
+            "PD_known": 10,
+            "pure_PD_present": 3,
+            "pure_PD_feasible_known": 3,
+            "pure_PD_feasible": 3,
+            "nearest_grid_distance_sum_nm": [
+              0.09907663625256036,
+              0.14812515209376598
+            ],
+            "delta_known": 10,
+            "selected_abs_delta_sum_nm": [
+              1.5990766362525604,
+              4.803351552967246
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              1.5,
+              4.65522640087348
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 7,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 10,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 3
+          }
+        }
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "pd",
+      "parent_complete": true,
+      "parent_status": "completed",
+      "parent_stop": null,
+      "whole_2000_tracking_scores_transcribed": {
+        "available": true,
+        "planned_active_count": 2000,
+        "observed_active_count": 2000,
+        "axis_rmse_rad": [
+          0.009511702918753973,
+          0.006132448388758704
+        ],
+        "joint_rmse_rad": 0.008002481354411945,
+        "actual_absolute_two_axis_nm_s": 1.4287489318642348,
+        "actual_squared_two_axis_nm2_s": 0.4188226657775753,
+        "partial_subset_ranking": false,
+        "native_execution_complete": true,
+        "free_root_domain_qualification_required": true,
+        "free_root_domain_qualification_passed": true
+      },
+      "whole_2000_actual_effort_transcribed": {
+        "actual_absolute_axis_nm_s": [
+          0.9430877155688295,
+          0.4856612162954054
+        ],
+        "actual_squared_axis_nm2_s": [
+          0.3343067179798183,
+          0.08451594779775701
+        ],
+        "all8_actual_absolute_nm_s": 1.4287489318642308,
+        "all8_actual_squared_nm2_s": 0.4188226657775757,
+        "applied_absolute_axis_nm_s": [
+          0.9430877155688295,
+          0.4856612162954054
+        ],
+        "applied_squared_axis_nm2_s": [
+          0.3343067179798183,
+          0.08451594779775701
+        ],
+        "captured_substeps": 2000,
+        "complete": true,
+        "actual_absolute_two_axis_nm_s": 1.4287489318642348,
+        "actual_squared_two_axis_nm2_s": 0.4188226657775753,
+        "counts_are_lower_bounds_if_incomplete": false,
+        "confirmed_paid_substeps": 2000,
+        "unknown_actual_effort_substeps": 0,
+        "actual_effort_population_complete": true
+      },
+      "scopes": {
+        "A": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 5.877215852991872,
+              "error_abs_sum": 5.877215852991872,
+              "error_squared_sum": 0.0895158674379806,
+              "error_abs_max": 0.039928606547160246,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.4510779290435865,
+              "actual_squared_nm2_s": 0.15945378466488705,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.005877215852991872,
+              "mean_absolute_error_rad": 0.005877215852991872,
+              "mean_squared_error_rad2": 8.951586743798059e-05,
+              "complete_actual_absolute_nm_s": 0.4510779290435865,
+              "complete_actual_squared_nm2_s": 0.15945378466488705
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -3.0625477629680002,
+              "error_abs_sum": 3.079852464825861,
+              "error_squared_sum": 0.03452048819841265,
+              "error_abs_max": 0.039863070007738984,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.2531884544872414,
+              "actual_squared_nm2_s": 0.045021878816852,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.003062547762968,
+              "mean_absolute_error_rad": 0.003079852464825861,
+              "mean_squared_error_rad2": 3.4520488198412646e-05,
+              "complete_actual_absolute_nm_s": 0.2531884544872414,
+              "complete_actual_squared_nm2_s": 0.045021878816852
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "B": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 6.172613296334562,
+              "error_abs_sum": 6.172613296334562,
+              "error_squared_sum": 0.09142911739128431,
+              "error_abs_max": 0.04045773016317328,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.4920097865252414,
+              "actual_squared_nm2_s": 0.17485293331493099,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.006172613296334562,
+              "mean_absolute_error_rad": 0.006172613296334562,
+              "mean_squared_error_rad2": 9.142911739128431e-05,
+              "complete_actual_absolute_nm_s": 0.4920097865252414,
+              "complete_actual_squared_nm2_s": 0.17485293331493099
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -3.093852178624301,
+              "error_abs_sum": 3.109347161014089,
+              "error_squared_sum": 0.04069335828316571,
+              "error_abs_max": 0.0431816302147021,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.23247276180816354,
+              "actual_squared_nm2_s": 0.03949406898090508,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.0030938521786243013,
+              "mean_absolute_error_rad": 0.003109347161014089,
+              "mean_squared_error_rad2": 4.0693358283165714e-05,
+              "complete_actual_absolute_nm_s": 0.23247276180816354,
+              "complete_actual_squared_nm2_s": 0.03949406898090508
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "switch_pre": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 0.0642275387009385,
+              "error_abs_sum": 0.0642275387009385,
+              "error_squared_sum": 4.172494794342308e-05,
+              "error_abs_max": 0.0007660330869557405,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.0072935121029209194,
+              "actual_squared_nm2_s": 0.0002691846486260746,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.000642275387009385,
+              "mean_absolute_error_rad": 0.000642275387009385,
+              "mean_squared_error_rad2": 4.1724947943423083e-07,
+              "complete_actual_absolute_nm_s": 0.0072935121029209194,
+              "complete_actual_squared_nm2_s": 0.0002691846486260746
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -0.32572607741511655,
+              "error_abs_sum": 0.32572607741511655,
+              "error_squared_sum": 0.0010611018471995116,
+              "error_abs_max": 0.0033154594895425174,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.04217365282883061,
+              "actual_squared_nm2_s": 0.008893945995348061,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.0032572607741511656,
+              "mean_absolute_error_rad": 0.0032572607741511656,
+              "mean_squared_error_rad2": 1.0611018471995115e-05,
+              "complete_actual_absolute_nm_s": 0.04217365282883061,
+              "complete_actual_squared_nm2_s": 0.008893945995348061
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "switch_post": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 2.4492071227352783,
+              "error_abs_sum": 2.4492071227352783,
+              "error_squared_sum": 0.06551483374131958,
+              "error_abs_max": 0.04045773016317328,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.10000000000000007,
+              "actual_squared_nm2_s": 0.05000000000000004,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.024492071227352783,
+              "mean_absolute_error_rad": 0.024492071227352783,
+              "mean_squared_error_rad2": 0.0006551483374131958,
+              "complete_actual_absolute_nm_s": 0.10000000000000007,
+              "complete_actual_squared_nm2_s": 0.05000000000000004
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -1.4699215156951102,
+              "error_abs_sum": 1.4699215156951102,
+              "error_squared_sum": 0.03672873776000408,
+              "error_abs_max": 0.0431816302147021,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.012178567513340312,
+              "actual_squared_nm2_s": 0.004596843852220853,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.014699215156951101,
+              "mean_absolute_error_rad": 0.014699215156951101,
+              "mean_squared_error_rad2": 0.0003672873776000408,
+              "complete_actual_absolute_nm_s": 0.012178567513340312,
+              "complete_actual_squared_nm2_s": 0.004596843852220853
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "cold",
+      "parent_complete": true,
+      "parent_status": "completed",
+      "parent_stop": null,
+      "whole_2000_tracking_scores_transcribed": {
+        "available": true,
+        "planned_active_count": 2000,
+        "observed_active_count": 2000,
+        "axis_rmse_rad": [
+          0.03853850983139746,
+          0.0509231195358539
+        ],
+        "joint_rmse_rad": 0.045157396090162144,
+        "actual_absolute_two_axis_nm_s": 1.4837113737633985,
+        "actual_squared_two_axis_nm2_s": 0.7068638268944043,
+        "partial_subset_ranking": false,
+        "native_execution_complete": true,
+        "free_root_domain_qualification_required": true,
+        "free_root_domain_qualification_passed": true
+      },
+      "whole_2000_actual_effort_transcribed": {
+        "actual_absolute_axis_nm_s": [
+          0.9287879151449615,
+          0.5549234586184368
+        ],
+        "actual_squared_axis_nm2_s": [
+          0.44980194268234847,
+          0.2570618842120558
+        ],
+        "all8_actual_absolute_nm_s": 1.4837113737633976,
+        "all8_actual_squared_nm2_s": 0.7068638268944045,
+        "applied_absolute_axis_nm_s": [
+          0.9287879151449615,
+          0.5549234586184368
+        ],
+        "applied_squared_axis_nm2_s": [
+          0.44980194268234847,
+          0.2570618842120558
+        ],
+        "captured_substeps": 2000,
+        "complete": true,
+        "actual_absolute_two_axis_nm_s": 1.4837113737633985,
+        "actual_squared_two_axis_nm2_s": 0.7068638268944043,
+        "counts_are_lower_bounds_if_incomplete": false,
+        "confirmed_paid_substeps": 2000,
+        "unknown_actual_effort_substeps": 0,
+        "actual_effort_population_complete": true
+      },
+      "scopes": {
+        "A": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 21.58551875751172,
+              "error_abs_sum": 21.58551875751172,
+              "error_squared_sum": 0.5026110314540426,
+              "error_abs_max": 0.03992860621592096,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.5987879151449612,
+              "actual_squared_nm2_s": 0.2866769426823484,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.02158551875751172,
+              "mean_absolute_error_rad": 0.02158551875751172,
+              "mean_squared_error_rad2": 0.0005026110314540426,
+              "complete_actual_absolute_nm_s": 0.5987879151449612,
+              "complete_actual_squared_nm2_s": 0.2866769426823484
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -24.790735483024605,
+              "error_abs_sum": 24.790735483024605,
+              "error_squared_sum": 0.7414347848315601,
+              "error_abs_max": 0.04483711792160916,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.22872955271302853,
+              "actual_squared_nm2_s": 0.09500863150927541,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.024790735483024604,
+              "mean_absolute_error_rad": 0.024790735483024604,
+              "mean_squared_error_rad2": 0.0007414347848315601,
+              "complete_actual_absolute_nm_s": 0.22872955271302853,
+              "complete_actual_squared_nm2_s": 0.09500863150927541
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 35,
+            "PD_known": 65,
+            "pure_PD_present": 37,
+            "pure_PD_feasible_known": 37,
+            "pure_PD_feasible": 37,
+            "nearest_grid_distance_sum_nm": [
+              0.31089751866897986,
+              0.9823044436560018
+            ],
+            "delta_known": 65,
+            "selected_abs_delta_sum_nm": [
+              17.626059315362138,
+              17.24954430591654
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              17.31516179669316,
+              16.267239862260542
+            ],
+            "PD_unknown": 35,
+            "pure_PD_absent": 28,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 65,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 37
+          }
+        },
+        "B": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 49.13266026110196,
+              "error_abs_sum": 49.13266026110196,
+              "error_squared_sum": 2.467822448595396,
+              "error_abs_max": 0.06458756094300748,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.3299999999999997,
+              "actual_squared_nm2_s": 0.16312500000000033,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.04913266026110196,
+              "mean_absolute_error_rad": 0.04913266026110196,
+              "mean_squared_error_rad2": 0.002467822448595396,
+              "complete_actual_absolute_nm_s": 0.3299999999999997,
+              "complete_actual_squared_nm2_s": 0.16312500000000033
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -65.23887299877673,
+              "error_abs_sum": 65.23887299877673,
+              "error_squared_sum": 4.444893421694167,
+              "error_abs_max": 0.08524361121582631,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.3261939059054086,
+              "actual_squared_nm2_s": 0.1620532527027804,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.06523887299877673,
+              "mean_absolute_error_rad": 0.06523887299877673,
+              "mean_squared_error_rad2": 0.0044448934216941675,
+              "complete_actual_absolute_nm_s": 0.3261939059054086,
+              "complete_actual_squared_nm2_s": 0.1620532527027804
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 66,
+            "PD_known": 34,
+            "pure_PD_present": 34,
+            "pure_PD_feasible_known": 34,
+            "pure_PD_feasible": 34,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 34,
+            "selected_abs_delta_sum_nm": [
+              0.5,
+              11.875
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.5,
+              11.875
+            ],
+            "PD_unknown": 66,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 34,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 34
+          }
+        },
+        "switch_pre": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 2.0760112583926427,
+              "error_abs_sum": 2.0760112583926427,
+              "error_squared_sum": 0.04483936546291915,
+              "error_abs_max": 0.026708463317070517,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.04525208465945776,
+              "actual_squared_nm2_s": 0.020978304960151475,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.020760112583926425,
+              "mean_absolute_error_rad": 0.020760112583926425,
+              "mean_squared_error_rad2": 0.00044839365462919146,
+              "complete_actual_absolute_nm_s": 0.04525208465945776,
+              "complete_actual_squared_nm2_s": 0.020978304960151475
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -3.22055130160629,
+              "error_abs_sum": 3.22055130160629,
+              "error_squared_sum": 0.11066238988689525,
+              "error_abs_max": 0.04414872419500783,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.029766484865452157,
+              "actual_squared_nm2_s": 0.013210494141916884,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.0322055130160629,
+              "mean_absolute_error_rad": 0.0322055130160629,
+              "mean_squared_error_rad2": 0.0011066238988689525,
+              "complete_actual_absolute_nm_s": 0.029766484865452157,
+              "complete_actual_squared_nm2_s": 0.013210494141916884
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 5,
+            "PD_known": 5,
+            "pure_PD_present": 3,
+            "pure_PD_feasible_known": 3,
+            "pure_PD_feasible": 3,
+            "nearest_grid_distance_sum_nm": [
+              0.03347694698760384,
+              0.05926770421279681
+            ],
+            "delta_known": 5,
+            "selected_abs_delta_sum_nm": [
+              1.8415230530123963,
+              0.5657322957872032
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              1.8080461060247923,
+              0.5064645915744064
+            ],
+            "PD_unknown": 5,
+            "pure_PD_absent": 2,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 5,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 3
+          }
+        },
+        "switch_post": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 4.987690981135371,
+              "error_abs_sum": 4.987690981135371,
+              "error_squared_sum": 0.25303994253857504,
+              "error_abs_max": 0.06401216208659385,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.04000000000000003,
+              "actual_squared_nm2_s": 0.020000000000000014,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.04987690981135371,
+              "mean_absolute_error_rad": 0.04987690981135371,
+              "mean_squared_error_rad2": 0.0025303994253857505,
+              "complete_actual_absolute_nm_s": 0.04000000000000003,
+              "complete_actual_squared_nm2_s": 0.020000000000000014
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -5.261837524763254,
+              "error_abs_sum": 5.261837524763254,
+              "error_squared_sum": 0.29540633691636126,
+              "error_abs_max": 0.0841158547992347,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.02919390590540833,
+              "actual_squared_nm2_s": 0.013553252702780271,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.05261837524763254,
+              "mean_absolute_error_rad": 0.05261837524763254,
+              "mean_squared_error_rad2": 0.0029540633691636127,
+              "complete_actual_absolute_nm_s": 0.02919390590540833,
+              "complete_actual_squared_nm2_s": 0.013553252702780271
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 6,
+            "PD_known": 4,
+            "pure_PD_present": 4,
+            "pure_PD_feasible_known": 4,
+            "pure_PD_feasible": 4,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 4,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              1.875
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              1.875
+            ],
+            "PD_unknown": 6,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 4,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "learned",
+      "parent_complete": true,
+      "parent_status": "completed",
+      "parent_stop": null,
+      "whole_2000_tracking_scores_transcribed": {
+        "available": true,
+        "planned_active_count": 2000,
+        "observed_active_count": 2000,
+        "axis_rmse_rad": [
+          0.007884076915855067,
+          0.007003695728354569
+        ],
+        "joint_rmse_rad": 0.007456890191979862,
+        "actual_absolute_two_axis_nm_s": 1.5366702331715376,
+        "actual_squared_two_axis_nm2_s": 0.534486945794846,
+        "partial_subset_ranking": false,
+        "native_execution_complete": true,
+        "free_root_domain_qualification_required": true,
+        "free_root_domain_qualification_passed": true
+      },
+      "whole_2000_actual_effort_transcribed": {
+        "actual_absolute_axis_nm_s": [
+          0.8297089240981089,
+          0.7069613090734286
+        ],
+        "actual_squared_axis_nm2_s": [
+          0.35560125535701337,
+          0.17888569043783267
+        ],
+        "all8_actual_absolute_nm_s": 1.536670233171538,
+        "all8_actual_squared_nm2_s": 0.5344869457948467,
+        "applied_absolute_axis_nm_s": [
+          0.8297089240981089,
+          0.7069613090734286
+        ],
+        "applied_squared_axis_nm2_s": [
+          0.35560125535701337,
+          0.17888569043783267
+        ],
+        "captured_substeps": 2000,
+        "complete": true,
+        "actual_absolute_two_axis_nm_s": 1.5366702331715376,
+        "actual_squared_two_axis_nm2_s": 0.534486945794846,
+        "counts_are_lower_bounds_if_incomplete": false,
+        "confirmed_paid_substeps": 2000,
+        "unknown_actual_effort_substeps": 0,
+        "actual_effort_population_complete": true
+      },
+      "scopes": {
+        "A": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 3.428837748393602,
+              "error_abs_sum": 3.7646228028473248,
+              "error_squared_sum": 0.06124673167431084,
+              "error_abs_max": 0.03992860621592096,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.38423028738083315,
+              "actual_squared_nm2_s": 0.1612786586652956,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.003428837748393602,
+              "mean_absolute_error_rad": 0.0037646228028473247,
+              "mean_squared_error_rad2": 6.124673167431084e-05,
+              "complete_actual_absolute_nm_s": 0.38423028738083315,
+              "complete_actual_squared_nm2_s": 0.1612786586652956
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 2.815111731874576,
+              "error_abs_sum": 4.44184569861047,
+              "error_squared_sum": 0.042434429736761356,
+              "error_abs_max": 0.03986307027985627,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.36373979496963244,
+              "actual_squared_nm2_s": 0.09369105928371414,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.002815111731874576,
+              "mean_absolute_error_rad": 0.00444184569861047,
+              "mean_squared_error_rad2": 4.2434429736761354e-05,
+              "complete_actual_absolute_nm_s": 0.36373979496963244,
+              "complete_actual_squared_nm2_s": 0.09369105928371414
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 0,
+            "PD_known": 100,
+            "pure_PD_present": 6,
+            "pure_PD_feasible_known": 6,
+            "pure_PD_feasible": 6,
+            "nearest_grid_distance_sum_nm": [
+              2.0210967090234093,
+              2.6357365814487848
+            ],
+            "delta_known": 100,
+            "selected_abs_delta_sum_nm": [
+              9.328607542751396,
+              35.63849413196251
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              7.307510833727994,
+              33.002757550513735
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 94,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 100,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 6
+          }
+        },
+        "B": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 3.2778969937709737,
+              "error_abs_sum": 4.374422857276272,
+              "error_squared_sum": 0.0630706059559268,
+              "error_abs_max": 0.03947197901405696,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.4454786367172752,
+              "actual_squared_nm2_s": 0.194322596691717,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.0032778969937709737,
+              "mean_absolute_error_rad": 0.004374422857276272,
+              "mean_squared_error_rad2": 6.30706059559268e-05,
+              "complete_actual_absolute_nm_s": 0.4454786367172752,
+              "complete_actual_squared_nm2_s": 0.194322596691717
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 4.642125922062383,
+              "error_abs_sum": 6.154034020769812,
+              "error_squared_sum": 0.05566907797398266,
+              "error_abs_max": 0.0374594405807854,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.34322151410379975,
+              "actual_squared_nm2_s": 0.08519463115411909,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.004642125922062383,
+              "mean_absolute_error_rad": 0.006154034020769812,
+              "mean_squared_error_rad2": 5.566907797398266e-05,
+              "complete_actual_absolute_nm_s": 0.34322151410379975,
+              "complete_actual_squared_nm2_s": 0.08519463115411909
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 0,
+            "PD_known": 100,
+            "pure_PD_present": 1,
+            "pure_PD_feasible_known": 1,
+            "pure_PD_feasible": 1,
+            "nearest_grid_distance_sum_nm": [
+              3.712371181036643,
+              2.1990925509012356
+            ],
+            "delta_known": 100,
+            "selected_abs_delta_sum_nm": [
+              14.829276084752445,
+              43.29020404762215
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              11.116904903715806,
+              41.09111149672092
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 99,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 100,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 1
+          }
+        },
+        "switch_pre": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -0.04381716206725398,
+              "error_abs_sum": 0.04381716206725398,
+              "error_squared_sum": 1.929009895266133e-05,
+              "error_abs_max": 0.0005010827752622293,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.004354198584268072,
+              "actual_squared_nm2_s": 0.00016430203605672915,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.0004381716206725398,
+              "mean_absolute_error_rad": 0.0004381716206725398,
+              "mean_squared_error_rad2": 1.9290098952661328e-07,
+              "complete_actual_absolute_nm_s": 0.004354198584268072,
+              "complete_actual_squared_nm2_s": 0.00016430203605672915
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 0.2425063115463058,
+              "error_abs_sum": 0.2425063115463058,
+              "error_squared_sum": 0.0005884856556449007,
+              "error_abs_max": 0.0025389926477260433,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.04646505597648432,
+              "actual_squared_nm2_s": 0.011039894052951001,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.0024250631154630583,
+              "mean_absolute_error_rad": 0.0024250631154630583,
+              "mean_squared_error_rad2": 5.884856556449007e-06,
+              "complete_actual_absolute_nm_s": 0.04646505597648432,
+              "complete_actual_squared_nm2_s": 0.011039894052951001
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 0,
+            "PD_known": 10,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.27755276051438665,
+              0.27022385592264014
+            ],
+            "delta_known": 10,
+            "selected_abs_delta_sum_nm": [
+              0.27755276051438665,
+              3.8983596676547188
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              3.6281358117320783
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 10,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 10,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "switch_post": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 2.0000809652684346,
+              "error_abs_sum": 2.0000809652684346,
+              "error_squared_sum": 0.048399882505538026,
+              "error_abs_max": 0.03947197901405696,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.09340433932118618,
+              "actual_squared_nm2_s": 0.045000380707590354,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.020000809652684345,
+              "mean_absolute_error_rad": 0.020000809652684345,
+              "mean_squared_error_rad2": 0.00048399882505538027,
+              "complete_actual_absolute_nm_s": 0.09340433932118618,
+              "complete_actual_squared_nm2_s": 0.045000380707590354
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -0.07593878373687642,
+              "error_abs_sum": 1.435969314970558,
+              "error_squared_sum": 0.02824183203901261,
+              "error_abs_max": 0.0374594405807854,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.05206787673662572,
+              "actual_squared_nm2_s": 0.019388836346606615,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.0007593878373687642,
+              "mean_absolute_error_rad": 0.01435969314970558,
+              "mean_squared_error_rad2": 0.0002824183203901261,
+              "complete_actual_absolute_nm_s": 0.05206787673662572,
+              "complete_actual_squared_nm2_s": 0.019388836346606615
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 0,
+            "PD_known": 10,
+            "pure_PD_present": 1,
+            "pure_PD_feasible_known": 1,
+            "pure_PD_feasible": 1,
+            "nearest_grid_distance_sum_nm": [
+              0.15038245084524382,
+              0.18627135412060097
+            ],
+            "delta_known": 10,
+            "selected_abs_delta_sum_nm": [
+              1.3408553508067937,
+              4.215328043541191
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              1.19047289996155,
+              4.029056689420591
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 9,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 10,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "pd",
+      "parent_complete": true,
+      "parent_status": "completed",
+      "parent_stop": null,
+      "whole_2000_tracking_scores_transcribed": {
+        "available": true,
+        "planned_active_count": 2000,
+        "observed_active_count": 2000,
+        "axis_rmse_rad": [
+          0.009512047100374994,
+          0.006132388688713862
+        ],
+        "joint_rmse_rad": 0.008002663027680792,
+        "actual_absolute_two_axis_nm_s": 1.4288110562549448,
+        "actual_squared_two_axis_nm2_s": 0.41885982292240714,
+        "partial_subset_ranking": false,
+        "native_execution_complete": true,
+        "free_root_domain_qualification_required": true,
+        "free_root_domain_qualification_passed": true
+      },
+      "whole_2000_actual_effort_transcribed": {
+        "actual_absolute_axis_nm_s": [
+          0.9432018415896123,
+          0.48560921466533247
+        ],
+        "actual_squared_axis_nm2_s": [
+          0.3343569511845537,
+          0.08450287173785342
+        ],
+        "all8_actual_absolute_nm_s": 1.4288110562549423,
+        "all8_actual_squared_nm2_s": 0.4188598229224065,
+        "applied_absolute_axis_nm_s": [
+          0.9432018415896123,
+          0.48560921466533247
+        ],
+        "applied_squared_axis_nm2_s": [
+          0.3343569511845537,
+          0.08450287173785342
+        ],
+        "captured_substeps": 2000,
+        "complete": true,
+        "actual_absolute_two_axis_nm_s": 1.4288110562549448,
+        "actual_squared_two_axis_nm2_s": 0.41885982292240714,
+        "counts_are_lower_bounds_if_incomplete": false,
+        "confirmed_paid_substeps": 2000,
+        "unknown_actual_effort_substeps": 0,
+        "actual_effort_population_complete": true
+      },
+      "scopes": {
+        "A": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 5.877434351653891,
+              "error_abs_sum": 5.877434351653891,
+              "error_squared_sum": 0.08951789734378256,
+              "error_abs_max": 0.03992860621592096,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.45110232378781423,
+              "actual_squared_nm2_s": 0.15946358099972396,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.005877434351653891,
+              "mean_absolute_error_rad": 0.005877434351653891,
+              "mean_squared_error_rad2": 8.951789734378256e-05,
+              "complete_actual_absolute_nm_s": 0.45110232378781423,
+              "complete_actual_squared_nm2_s": 0.15946358099972396
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -3.0624733236986708,
+              "error_abs_sum": 3.079780453406767,
+              "error_squared_sum": 0.034520247264312284,
+              "error_abs_max": 0.03986307027985627,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.2531775580623957,
+              "actual_squared_nm2_s": 0.04501896261813017,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.0030624733236986708,
+              "mean_absolute_error_rad": 0.0030797804534067673,
+              "mean_squared_error_rad2": 3.4520247264312285e-05,
+              "complete_actual_absolute_nm_s": 0.2531775580623957,
+              "complete_actual_squared_nm2_s": 0.04501896261813017
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "B": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 6.173542962166751,
+              "error_abs_sum": 6.173542962166751,
+              "error_squared_sum": 0.09144018273572235,
+              "error_abs_max": 0.040457800311905864,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.49209951780179717,
+              "actual_squared_nm2_s": 0.1748933701848302,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.006173542962166751,
+              "mean_absolute_error_rad": 0.006173542962166751,
+              "mean_squared_error_rad2": 9.144018273572235e-05,
+              "complete_actual_absolute_nm_s": 0.49209951780179717,
+              "complete_actual_squared_nm2_s": 0.1748933701848302
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -3.093533836208482,
+              "error_abs_sum": 3.1090436916872344,
+              "error_squared_sum": 0.04069213479461923,
+              "error_abs_max": 0.043181593018384826,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.23243165660293783,
+              "actual_squared_nm2_s": 0.03948390911972308,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.0030935338362084817,
+              "mean_absolute_error_rad": 0.0031090436916872345,
+              "mean_squared_error_rad2": 4.069213479461923e-05,
+              "complete_actual_absolute_nm_s": 0.23243165660293783,
+              "complete_actual_squared_nm2_s": 0.03948390911972308
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "switch_pre": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 0.06423680845712045,
+              "error_abs_sum": 0.06423680845712045,
+              "error_squared_sum": 4.173703906443332e-05,
+              "error_abs_max": 0.000766148941906783,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.007294520176094441,
+              "actual_squared_nm2_s": 0.000269259498205633,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.0006423680845712045,
+              "mean_absolute_error_rad": 0.0006423680845712045,
+              "mean_squared_error_rad2": 4.1737039064433317e-07,
+              "complete_actual_absolute_nm_s": 0.007294520176094441,
+              "complete_actual_squared_nm2_s": 0.000269259498205633
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -0.32572128941899453,
+              "error_abs_sum": 0.32572128941899453,
+              "error_squared_sum": 0.0010610706999849675,
+              "error_abs_max": 0.0033154220621673808,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.04217312294133465,
+              "actual_squared_nm2_s": 0.008893722844021932,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.0032572128941899454,
+              "mean_absolute_error_rad": 0.0032572128941899454,
+              "mean_squared_error_rad2": 1.0610706999849674e-05,
+              "complete_actual_absolute_nm_s": 0.04217312294133465,
+              "complete_actual_squared_nm2_s": 0.008893722844021932
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "switch_post": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 2.449254291644762,
+              "error_abs_sum": 2.449254291644762,
+              "error_squared_sum": 0.06551672203268373,
+              "error_abs_max": 0.040457800311905864,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.10000000000000007,
+              "actual_squared_nm2_s": 0.05000000000000004,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.02449254291644762,
+              "mean_absolute_error_rad": 0.02449254291644762,
+              "mean_squared_error_rad2": 0.0006551672203268373,
+              "complete_actual_absolute_nm_s": 0.10000000000000007,
+              "complete_actual_squared_nm2_s": 0.05000000000000004
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -1.4699230084445472,
+              "error_abs_sum": 1.4699230084445472,
+              "error_squared_sum": 0.036728697532171596,
+              "error_abs_max": 0.043181593018384826,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.012178050032822704,
+              "actual_squared_nm2_s": 0.004596829286582505,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.014699230084445472,
+              "mean_absolute_error_rad": 0.014699230084445472,
+              "mean_squared_error_rad2": 0.00036728697532171595,
+              "complete_actual_absolute_nm_s": 0.012178050032822704,
+              "complete_actual_squared_nm2_s": 0.004596829286582505
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "cold",
+      "parent_complete": true,
+      "parent_status": "completed",
+      "parent_stop": null,
+      "whole_2000_tracking_scores_transcribed": {
+        "available": true,
+        "planned_active_count": 2000,
+        "observed_active_count": 2000,
+        "axis_rmse_rad": [
+          0.03967769631117791,
+          0.05107909973041681
+        ],
+        "joint_rmse_rad": 0.045735074143549465,
+        "actual_absolute_two_axis_nm_s": 1.5310991166104269,
+        "actual_squared_two_axis_nm2_s": 0.7219809832333033,
+        "partial_subset_ranking": false,
+        "native_execution_complete": true,
+        "free_root_domain_qualification_required": true,
+        "free_root_domain_qualification_passed": true
+      },
+      "whole_2000_actual_effort_transcribed": {
+        "actual_absolute_axis_nm_s": [
+          0.9539437378834897,
+          0.577155378726937
+        ],
+        "actual_squared_axis_nm2_s": [
+          0.4538737827224513,
+          0.268107200510852
+        ],
+        "all8_actual_absolute_nm_s": 1.5310991166104273,
+        "all8_actual_squared_nm2_s": 0.7219809832333036,
+        "applied_absolute_axis_nm_s": [
+          0.9539437378834897,
+          0.577155378726937
+        ],
+        "applied_squared_axis_nm2_s": [
+          0.4538737827224513,
+          0.268107200510852
+        ],
+        "captured_substeps": 2000,
+        "complete": true,
+        "actual_absolute_two_axis_nm_s": 1.5310991166104269,
+        "actual_squared_two_axis_nm2_s": 0.7219809832333033,
+        "counts_are_lower_bounds_if_incomplete": false,
+        "confirmed_paid_substeps": 2000,
+        "unknown_actual_effort_substeps": 0,
+        "actual_effort_population_complete": true
+      },
+      "scopes": {
+        "A": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 20.259266811786723,
+              "error_abs_sum": 20.259266811786723,
+              "error_squared_sum": 0.44600810388828016,
+              "error_abs_max": 0.03992845892176427,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.6239437378834894,
+              "actual_squared_nm2_s": 0.2888737827224512,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.020259266811786723,
+              "mean_absolute_error_rad": 0.020259266811786723,
+              "mean_squared_error_rad2": 0.00044600810388828016,
+              "complete_actual_absolute_nm_s": 0.6239437378834894,
+              "complete_actual_squared_nm2_s": 0.2888737827224512
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -21.99483725506492,
+              "error_abs_sum": 21.99483725506492,
+              "error_squared_sum": 0.6303951003514072,
+              "error_abs_max": 0.044806372313444615,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.2581553787269367,
+              "actual_squared_nm2_s": 0.10860720051085189,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.02199483725506492,
+              "mean_absolute_error_rad": 0.02199483725506492,
+              "mean_squared_error_rad2": 0.0006303951003514073,
+              "complete_actual_absolute_nm_s": 0.2581553787269367,
+              "complete_actual_squared_nm2_s": 0.10860720051085189
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 26,
+            "PD_known": 74,
+            "pure_PD_present": 41,
+            "pure_PD_feasible_known": 41,
+            "pure_PD_feasible": 41,
+            "nearest_grid_distance_sum_nm": [
+              0.34252272826457497,
+              0.7674184066554108
+            ],
+            "delta_known": 74,
+            "selected_abs_delta_sum_nm": [
+              21.364573960588,
+              18.498495861013833
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              21.02205123232342,
+              17.731077454358417
+            ],
+            "PD_unknown": 26,
+            "pure_PD_absent": 33,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 74,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 41
+          }
+        },
+        "B": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 51.45242142581552,
+              "error_abs_sum": 51.45242142581552,
+              "error_squared_sum": 2.7026310652358436,
+              "error_abs_max": 0.06658345699142777,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.33000000000000024,
+              "actual_squared_nm2_s": 0.16500000000000012,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.05145242142581552,
+              "mean_absolute_error_rad": 0.05145242142581552,
+              "mean_squared_error_rad2": 0.0027026310652358437,
+              "complete_actual_absolute_nm_s": 0.33000000000000024,
+              "complete_actual_squared_nm2_s": 0.16500000000000012
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -66.55607404255699,
+              "error_abs_sum": 66.55607404255699,
+              "error_squared_sum": 4.587753758188327,
+              "error_abs_max": 0.08484987529831454,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.31900000000000023,
+              "actual_squared_nm2_s": 0.15950000000000011,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.06655607404255699,
+              "mean_absolute_error_rad": 0.06655607404255699,
+              "mean_squared_error_rad2": 0.004587753758188327,
+              "complete_actual_absolute_nm_s": 0.31900000000000023,
+              "complete_actual_squared_nm2_s": 0.15950000000000011
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 67,
+            "PD_known": 33,
+            "pure_PD_present": 33,
+            "pure_PD_feasible_known": 33,
+            "pure_PD_feasible": 33,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 33,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              11.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              11.0
+            ],
+            "PD_unknown": 67,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 33,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 33
+          }
+        },
+        "switch_pre": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 1.9194759548860687,
+              "error_abs_sum": 1.9194759548860687,
+              "error_squared_sum": 0.038688733970886395,
+              "error_abs_max": 0.026378952400536206,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.052088216349433634,
+              "actual_squared_nm2_s": 0.02335505830593512,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.01919475954886069,
+              "mean_absolute_error_rad": 0.01919475954886069,
+              "mean_squared_error_rad2": 0.00038688733970886394,
+              "complete_actual_absolute_nm_s": 0.052088216349433634,
+              "complete_actual_squared_nm2_s": 0.02335505830593512
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -2.9205952115239735,
+              "error_abs_sum": 2.9205952115239735,
+              "error_squared_sum": 0.09264904411234978,
+              "error_abs_max": 0.043562385976310514,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.028220401262909353,
+              "actual_squared_nm2_s": 0.011803076106146998,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.029205952115239735,
+              "mean_absolute_error_rad": 0.029205952115239735,
+              "mean_squared_error_rad2": 0.0009264904411234978,
+              "complete_actual_absolute_nm_s": 0.028220401262909353,
+              "complete_actual_squared_nm2_s": 0.011803076106146998
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 4,
+            "PD_known": 6,
+            "pure_PD_present": 2,
+            "pure_PD_feasible_known": 2,
+            "pure_PD_feasible": 2,
+            "nearest_grid_distance_sum_nm": [
+              0.08917353349058055,
+              0.10419073390120093
+            ],
+            "delta_known": 6,
+            "selected_abs_delta_sum_nm": [
+              3.6608264665094197,
+              1.145809266098799
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              3.571652933018839,
+              1.0416185321975981
+            ],
+            "PD_unknown": 4,
+            "pure_PD_absent": 4,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 6,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 2
+          }
+        },
+        "switch_post": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 5.7574633321880295,
+              "error_abs_sum": 5.7574633321880295,
+              "error_squared_sum": 0.33513925879964745,
+              "error_abs_max": 0.06658345699142777,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.03000000000000002,
+              "actual_squared_nm2_s": 0.01500000000000001,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.05757463332188029,
+              "mean_absolute_error_rad": 0.05757463332188029,
+              "mean_squared_error_rad2": 0.0033513925879964743,
+              "complete_actual_absolute_nm_s": 0.03000000000000002,
+              "complete_actual_squared_nm2_s": 0.01500000000000001
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -6.643462010727411,
+              "error_abs_sum": 6.643462010727411,
+              "error_squared_sum": 0.45562142947090295,
+              "error_abs_max": 0.08425112007148355,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.02900000000000002,
+              "actual_squared_nm2_s": 0.01450000000000001,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.06643462010727412,
+              "mean_absolute_error_rad": 0.06643462010727412,
+              "mean_squared_error_rad2": 0.004556214294709029,
+              "complete_actual_absolute_nm_s": 0.02900000000000002,
+              "complete_actual_squared_nm2_s": 0.01450000000000001
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 7,
+            "PD_known": 3,
+            "pure_PD_present": 3,
+            "pure_PD_feasible_known": 3,
+            "pure_PD_feasible": 3,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 3,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              1.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              1.0
+            ],
+            "PD_unknown": 7,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 3,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 3
+          }
+        }
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "learned",
+      "parent_complete": true,
+      "parent_status": "completed",
+      "parent_stop": null,
+      "whole_2000_tracking_scores_transcribed": {
+        "available": true,
+        "planned_active_count": 2000,
+        "observed_active_count": 2000,
+        "axis_rmse_rad": [
+          0.007967806593291635,
+          0.007372159074920421
+        ],
+        "joint_rmse_rad": 0.007675762871989767,
+        "actual_absolute_two_axis_nm_s": 1.5824245034027316,
+        "actual_squared_two_axis_nm2_s": 0.5740047490770788,
+        "partial_subset_ranking": false,
+        "native_execution_complete": true,
+        "free_root_domain_qualification_required": true,
+        "free_root_domain_qualification_passed": true
+      },
+      "whole_2000_actual_effort_transcribed": {
+        "actual_absolute_axis_nm_s": [
+          0.9101926836468696,
+          0.672231819755862
+        ],
+        "actual_squared_axis_nm2_s": [
+          0.3983632248670711,
+          0.17564152421000762
+        ],
+        "all8_actual_absolute_nm_s": 1.5824245034027336,
+        "all8_actual_squared_nm2_s": 0.5740047490770802,
+        "applied_absolute_axis_nm_s": [
+          0.9101926836468696,
+          0.672231819755862
+        ],
+        "applied_squared_axis_nm2_s": [
+          0.3983632248670711,
+          0.17564152421000762
+        ],
+        "captured_substeps": 2000,
+        "complete": true,
+        "actual_absolute_two_axis_nm_s": 1.5824245034027316,
+        "actual_squared_two_axis_nm2_s": 0.5740047490770788,
+        "counts_are_lower_bounds_if_incomplete": false,
+        "confirmed_paid_substeps": 2000,
+        "unknown_actual_effort_substeps": 0,
+        "actual_effort_population_complete": true
+      },
+      "scopes": {
+        "A": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 3.5058085661714857,
+              "error_abs_sum": 3.8114316491957094,
+              "error_squared_sum": 0.06174368060545311,
+              "error_abs_max": 0.03992845892176427,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.4003760425680949,
+              "actual_squared_nm2_s": 0.17002554029341052,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.0035058085661714856,
+              "mean_absolute_error_rad": 0.0038114316491957095,
+              "mean_squared_error_rad2": 6.174368060545311e-05,
+              "complete_actual_absolute_nm_s": 0.4003760425680949,
+              "complete_actual_squared_nm2_s": 0.17002554029341052
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 2.883455198009893,
+              "error_abs_sum": 4.510640497914891,
+              "error_squared_sum": 0.04303491165163255,
+              "error_abs_max": 0.039863185185981004,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.350162772935063,
+              "actual_squared_nm2_s": 0.0900532172075695,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.002883455198009893,
+              "mean_absolute_error_rad": 0.004510640497914891,
+              "mean_squared_error_rad2": 4.303491165163255e-05,
+              "complete_actual_absolute_nm_s": 0.350162772935063,
+              "complete_actual_squared_nm2_s": 0.0900532172075695
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 0,
+            "PD_known": 100,
+            "pure_PD_present": 5,
+            "pure_PD_feasible_known": 5,
+            "pure_PD_feasible": 5,
+            "nearest_grid_distance_sum_nm": [
+              2.0547085247103847,
+              3.2226983388992374
+            ],
+            "delta_known": 100,
+            "selected_abs_delta_sum_nm": [
+              9.448459656793512,
+              35.48760564923845
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              7.393751132083133,
+              32.26490731033921
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 95,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 100,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 5
+          }
+        },
+        "B": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 3.8569264489184256,
+              "error_abs_sum": 4.6983309610960635,
+              "error_squared_sum": 0.06522820321075021,
+              "error_abs_max": 0.03940824590875416,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.5098166410787758,
+              "actual_squared_nm2_s": 0.2283376845736603,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.0038569264489184255,
+              "mean_absolute_error_rad": 0.0046983309610960635,
+              "mean_squared_error_rad2": 6.522820321075021e-05,
+              "complete_actual_absolute_nm_s": 0.5098166410787758,
+              "complete_actual_squared_nm2_s": 0.2283376845736603
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 5.175233135676878,
+              "error_abs_sum": 6.66945336913183,
+              "error_squared_sum": 0.06566254720023049,
+              "error_abs_max": 0.03737268647210877,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.32206904682080195,
+              "actual_squared_nm2_s": 0.08558830700243836,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.005175233135676878,
+              "mean_absolute_error_rad": 0.00666945336913183,
+              "mean_squared_error_rad2": 6.566254720023049e-05,
+              "complete_actual_absolute_nm_s": 0.32206904682080195,
+              "complete_actual_squared_nm2_s": 0.08558830700243836
+            }
+          ],
+          "macro": {
+            "macros": 100,
+            "fallback_known": 100,
+            "fallback": 0,
+            "PD_known": 100,
+            "pure_PD_present": 6,
+            "pure_PD_feasible_known": 6,
+            "pure_PD_feasible": 6,
+            "nearest_grid_distance_sum_nm": [
+              3.4652943396363978,
+              2.173020541432547
+            ],
+            "delta_known": 100,
+            "selected_abs_delta_sum_nm": [
+              15.146827934134834,
+              42.5614146126194
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              11.681533594498433,
+              40.38839407118685
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 94,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 100,
+            "pure_PD_unknown_denominator": 100,
+            "pure_PD_feasibility_denominator": 6
+          }
+        },
+        "switch_pre": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -0.04296218804708141,
+              "error_abs_sum": 0.04296218804708141,
+              "error_squared_sum": 1.894735068420037e-05,
+              "error_abs_max": 0.000536748512805385,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.0030983768488786934,
+              "actual_squared_nm2_s": 9.826489713417282e-05,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.0004296218804708141,
+              "mean_absolute_error_rad": 0.0004296218804708141,
+              "mean_squared_error_rad2": 1.8947350684200372e-07,
+              "complete_actual_absolute_nm_s": 0.0030983768488786934,
+              "complete_actual_squared_nm2_s": 9.826489713417282e-05
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 0.23913375059468706,
+              "error_abs_sum": 0.23913375059468706,
+              "error_squared_sum": 0.0005729471880108298,
+              "error_abs_max": 0.0025846895610680404,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.04643870074304459,
+              "actual_squared_nm2_s": 0.010928404373922916,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.0023913375059468707,
+              "mean_absolute_error_rad": 0.0023913375059468707,
+              "mean_squared_error_rad2": 5.729471880108298e-06,
+              "complete_actual_absolute_nm_s": 0.04643870074304459,
+              "complete_actual_squared_nm2_s": 0.010928404373922916
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 0,
+            "PD_known": 10,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.2738149411287702,
+              0.2638701485344386
+            ],
+            "delta_known": 10,
+            "selected_abs_delta_sum_nm": [
+              0.2738149411287702,
+              3.8717698510731373
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              3.607899702538698
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 10,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 10,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "switch_post": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 1.9430830974524658,
+              "error_abs_sum": 1.9430830974524658,
+              "error_squared_sum": 0.04676392251451303,
+              "error_abs_max": 0.03940824590875416,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.09142660153328491,
+              "actual_squared_nm2_s": 0.044044578749796184,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.01943083097452466,
+              "mean_absolute_error_rad": 0.01943083097452466,
+              "mean_squared_error_rad2": 0.0004676392251451303,
+              "complete_actual_absolute_nm_s": 0.09142660153328491,
+              "complete_actual_squared_nm2_s": 0.044044578749796184
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 0.08983110777660958,
+              "error_abs_sum": 1.584051341231557,
+              "error_squared_sum": 0.03180285911205208,
+              "error_abs_max": 0.03737268647210877,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.051564023420015266,
+              "actual_squared_nm2_s": 0.022426701512222,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.0008983110777660958,
+              "mean_absolute_error_rad": 0.01584051341231557,
+              "mean_squared_error_rad2": 0.0003180285911205208,
+              "complete_actual_absolute_nm_s": 0.051564023420015266,
+              "complete_actual_squared_nm2_s": 0.022426701512222
+            }
+          ],
+          "macro": {
+            "macros": 10,
+            "fallback_known": 10,
+            "fallback": 0,
+            "PD_known": 10,
+            "pure_PD_present": 4,
+            "pure_PD_feasible_known": 4,
+            "pure_PD_feasible": 4,
+            "nearest_grid_distance_sum_nm": [
+              0.07701120128038519,
+              0.09946306226929597
+            ],
+            "delta_known": 10,
+            "selected_abs_delta_sum_nm": [
+              1.8454251232760244,
+              4.349463062269296
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              1.7684139219956392,
+              4.25
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 6,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 10,
+            "pure_PD_unknown_denominator": 10,
+            "pure_PD_feasibility_denominator": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "pd",
+      "parent_complete": true,
+      "parent_status": "completed",
+      "parent_stop": null,
+      "whole_2000_tracking_scores_transcribed": {
+        "available": true,
+        "planned_active_count": 2000,
+        "observed_active_count": 2000,
+        "axis_rmse_rad": [
+          0.009744535160559967,
+          0.006092590136288411
+        ],
+        "joint_rmse_rad": 0.008126365118064421,
+        "actual_absolute_two_axis_nm_s": 1.4674961232229151,
+        "actual_squared_two_axis_nm2_s": 0.4430125140286825,
+        "partial_subset_ranking": false,
+        "native_execution_complete": true,
+        "free_root_domain_qualification_required": true,
+        "free_root_domain_qualification_passed": true
+      },
+      "whole_2000_actual_effort_transcribed": {
+        "actual_absolute_axis_nm_s": [
+          1.0133566806663092,
+          0.45413944255660593
+        ],
+        "actual_squared_axis_nm2_s": [
+          0.36632646837923544,
+          0.0766860456494471
+        ],
+        "all8_actual_absolute_nm_s": 1.4674961232229147,
+        "all8_actual_squared_nm2_s": 0.4430125140286826,
+        "applied_absolute_axis_nm_s": [
+          1.0133566806663092,
+          0.45413944255660593
+        ],
+        "applied_squared_axis_nm2_s": [
+          0.36632646837923544,
+          0.0766860456494471
+        ],
+        "captured_substeps": 2000,
+        "complete": true,
+        "actual_absolute_two_axis_nm_s": 1.4674961232229151,
+        "actual_squared_two_axis_nm2_s": 0.4430125140286825,
+        "counts_are_lower_bounds_if_incomplete": false,
+        "confirmed_paid_substeps": 2000,
+        "unknown_actual_effort_substeps": 0,
+        "actual_effort_population_complete": true
+      },
+      "scopes": {
+        "A": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 6.0403422305439625,
+              "error_abs_sum": 6.0403422305439625,
+              "error_squared_sum": 0.09117793177840955,
+              "error_abs_max": 0.03992845892176427,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.4684553446397649,
+              "actual_squared_nm2_s": 0.1664908823948948,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.006040342230543962,
+              "mean_absolute_error_rad": 0.006040342230543962,
+              "mean_squared_error_rad2": 9.117793177840955e-05,
+              "complete_actual_absolute_nm_s": 0.4684553446397649,
+              "complete_actual_squared_nm2_s": 0.1664908823948948
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -3.0013082089268988,
+              "error_abs_sum": 3.0209850910764633,
+              "error_squared_sum": 0.03426993407266449,
+              "error_abs_max": 0.039863185185981004,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.2454629388530366,
+              "actual_squared_nm2_s": 0.04291443475949438,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.0030013082089268986,
+              "mean_absolute_error_rad": 0.003020985091076463,
+              "mean_squared_error_rad2": 3.4269934072664485e-05,
+              "complete_actual_absolute_nm_s": 0.2454629388530366,
+              "complete_actual_squared_nm2_s": 0.04291443475949438
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "B": {
+          "axes": [
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": 6.746098216123438,
+              "error_abs_sum": 6.746098216123438,
+              "error_squared_sum": 0.09873399921236946,
+              "error_abs_max": 0.040524506889933996,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.5449013360265444,
+              "actual_squared_nm2_s": 0.19983558598434134,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": 0.0067460982161234384,
+              "mean_absolute_error_rad": 0.0067460982161234384,
+              "mean_squared_error_rad2": 9.873399921236945e-05,
+              "complete_actual_absolute_nm_s": 0.5449013360265444,
+              "complete_actual_squared_nm2_s": 0.19983558598434134
+            },
+            {
+              "rows": 1000,
+              "error_known": 1000,
+              "error_sum": -2.9034949497541387,
+              "error_abs_sum": 2.93190624920489,
+              "error_squared_sum": 0.03996937506493303,
+              "error_abs_max": 0.04314637070593784,
+              "effort_known": 1000,
+              "actual_absolute_nm_s": 0.20867650370356888,
+              "actual_squared_nm2_s": 0.033771610889952806,
+              "planned_rows": 1000,
+              "available": true,
+              "mean_signed_error_rad": -0.0029034949497541386,
+              "mean_absolute_error_rad": 0.00293190624920489,
+              "mean_squared_error_rad2": 3.996937506493303e-05,
+              "complete_actual_absolute_nm_s": 0.20867650370356888,
+              "complete_actual_squared_nm2_s": 0.033771610889952806
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "switch_pre": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 0.07225889239057508,
+              "error_abs_sum": 0.07225889239057508,
+              "error_squared_sum": 5.280253147212599e-05,
+              "error_abs_max": 0.0008602200693138481,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.008214577989012364,
+              "actual_squared_nm2_s": 0.00034144527108455016,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.0007225889239057508,
+              "mean_absolute_error_rad": 0.0007225889239057508,
+              "mean_squared_error_rad2": 5.2802531472126e-07,
+              "complete_actual_absolute_nm_s": 0.008214577989012364,
+              "complete_actual_squared_nm2_s": 0.00034144527108455016
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -0.3215582895600462,
+              "error_abs_sum": 0.3215582895600462,
+              "error_squared_sum": 0.0010341523745360105,
+              "error_abs_max": 0.003280086514703122,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.041690233055447584,
+              "actual_squared_nm2_s": 0.008691442600334325,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.0032155828956004617,
+              "mean_absolute_error_rad": 0.0032155828956004617,
+              "mean_squared_error_rad2": 1.0341523745360105e-05,
+              "complete_actual_absolute_nm_s": 0.041690233055447584,
+              "complete_actual_squared_nm2_s": 0.008691442600334325
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        },
+        "switch_post": {
+          "axes": [
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": 2.4785609842713208,
+              "error_abs_sum": 2.4785609842713208,
+              "error_squared_sum": 0.06672838472799963,
+              "error_abs_max": 0.040524506889933996,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.10000000000000007,
+              "actual_squared_nm2_s": 0.05000000000000004,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": 0.02478560984271321,
+              "mean_absolute_error_rad": 0.02478560984271321,
+              "mean_squared_error_rad2": 0.0006672838472799963,
+              "complete_actual_absolute_nm_s": 0.10000000000000007,
+              "complete_actual_squared_nm2_s": 0.05000000000000004
+            },
+            {
+              "rows": 100,
+              "error_known": 100,
+              "error_sum": -1.4696633709202107,
+              "error_abs_sum": 1.4696633709202107,
+              "error_squared_sum": 0.036671138711103536,
+              "error_abs_max": 0.04314637070593784,
+              "effort_known": 100,
+              "actual_absolute_nm_s": 0.011926067670310932,
+              "actual_squared_nm2_s": 0.004586942049028618,
+              "planned_rows": 100,
+              "available": true,
+              "mean_signed_error_rad": -0.014696633709202107,
+              "mean_absolute_error_rad": 0.014696633709202107,
+              "mean_squared_error_rad2": 0.00036671138711103537,
+              "complete_actual_absolute_nm_s": 0.011926067670310932,
+              "complete_actual_squared_nm2_s": 0.004586942049028618
+            }
+          ],
+          "macro": {
+            "macros": 0,
+            "fallback_known": 0,
+            "fallback": 0,
+            "PD_known": 0,
+            "pure_PD_present": 0,
+            "pure_PD_feasible_known": 0,
+            "pure_PD_feasible": 0,
+            "nearest_grid_distance_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "delta_known": 0,
+            "selected_abs_delta_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "selected_delta_excess_over_nearest_sum_nm": [
+              0.0,
+              0.0
+            ],
+            "PD_unknown": 0,
+            "pure_PD_absent": 0,
+            "pure_PD_infeasible": 0,
+            "pure_PD_present_feasibility_unknown": 0,
+            "pure_PD_presence_denominator": 0,
+            "pure_PD_unknown_denominator": 0,
+            "pure_PD_feasibility_denominator": 0
+          }
+        }
+      }
+    }
+  ],
+  "learned_minus_PD_scope_differences": [
+    {
+      "seed": 8001,
+      "scope": "A",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.028290100657094197,
+        "actual_absolute_nm_s": -0.0681216245077027,
+        "actual_squared_nm2_s": 0.0015224857064953523
+      }
+    },
+    {
+      "seed": 8001,
+      "scope": "A",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": 0.007939137391814517,
+        "actual_absolute_nm_s": 0.1122116638968974,
+        "actual_squared_nm2_s": 0.04941505875857404
+      }
+    },
+    {
+      "seed": 8001,
+      "scope": "B",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.030075535617894743,
+        "actual_absolute_nm_s": -0.037865963300675765,
+        "actual_squared_nm2_s": 0.022358975366760098
+      }
+    },
+    {
+      "seed": 8001,
+      "scope": "B",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": 0.024054597669547623,
+        "actual_absolute_nm_s": 0.12330977651345817,
+        "actual_squared_nm2_s": 0.054434047256659214
+      }
+    },
+    {
+      "seed": 8001,
+      "scope": "switch_pre",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -2.8041910688087693e-05,
+        "actual_absolute_nm_s": -0.0029129630065357704,
+        "actual_squared_nm2_s": -0.00010367646994228263
+      }
+    },
+    {
+      "seed": 8001,
+      "scope": "switch_pre",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.00046342785824419997,
+        "actual_absolute_nm_s": 0.004284641130977686,
+        "actual_squared_nm2_s": 0.0021447710750645086
+      }
+    },
+    {
+      "seed": 8001,
+      "scope": "switch_post",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.019673717667677774,
+        "actual_absolute_nm_s": -0.013233853084574032,
+        "actual_squared_nm2_s": -0.009150795926555641
+      }
+    },
+    {
+      "seed": 8001,
+      "scope": "switch_post",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.003378693602963244,
+        "actual_absolute_nm_s": 0.04901103752857254,
+        "actual_squared_nm2_s": 0.021845000520363866
+      }
+    },
+    {
+      "seed": 8002,
+      "scope": "A",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.028271165669471715,
+        "actual_absolute_nm_s": -0.06687203640698108,
+        "actual_squared_nm2_s": 0.0018150776655716239
+      }
+    },
+    {
+      "seed": 8002,
+      "scope": "A",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": 0.007914182472449072,
+        "actual_absolute_nm_s": 0.11056223690723671,
+        "actual_squared_nm2_s": 0.048672096665583975
+      }
+    },
+    {
+      "seed": 8002,
+      "scope": "B",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.028369576779795555,
+        "actual_absolute_nm_s": -0.04662088108452195,
+        "actual_squared_nm2_s": 0.019429226506886804
+      }
+    },
+    {
+      "seed": 8002,
+      "scope": "B",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": 0.014976943179363433,
+        "actual_absolute_nm_s": 0.11078985750086193,
+        "actual_squared_nm2_s": 0.045710722034396
+      }
+    },
+    {
+      "seed": 8002,
+      "scope": "switch_pre",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -2.244694011177199e-05,
+        "actual_absolute_nm_s": -0.0029403215918263684,
+        "actual_squared_nm2_s": -0.00010495746214890384
+      }
+    },
+    {
+      "seed": 8002,
+      "scope": "switch_pre",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.00047258504434006675,
+        "actual_absolute_nm_s": 0.004291933035149673,
+        "actual_squared_nm2_s": 0.002146171208929069
+      }
+    },
+    {
+      "seed": 8002,
+      "scope": "switch_post",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.017116839527145704,
+        "actual_absolute_nm_s": -0.006595660678813897,
+        "actual_squared_nm2_s": -0.0049996192924096836
+      }
+    },
+    {
+      "seed": 8002,
+      "scope": "switch_post",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.008486865493158986,
+        "actual_absolute_nm_s": 0.03988982670380301,
+        "actual_squared_nm2_s": 0.01479200706002411
+      }
+    },
+    {
+      "seed": 8003,
+      "scope": "A",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.029434251172956435,
+        "actual_absolute_nm_s": -0.06807930207167001,
+        "actual_squared_nm2_s": 0.0035346578985157306
+      }
+    },
+    {
+      "seed": 8003,
+      "scope": "A",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": 0.008764977578968061,
+        "actual_absolute_nm_s": 0.10469983408202638,
+        "actual_squared_nm2_s": 0.047138782448075116
+      }
+    },
+    {
+      "seed": 8003,
+      "scope": "B",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.03350579600161925,
+        "actual_absolute_nm_s": -0.03508469494776867,
+        "actual_squared_nm2_s": 0.028502098589318958
+      }
+    },
+    {
+      "seed": 8003,
+      "scope": "B",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": 0.025693172135297454,
+        "actual_absolute_nm_s": 0.11339254311723307,
+        "actual_squared_nm2_s": 0.05181669611248555
+      }
+    },
+    {
+      "seed": 8003,
+      "scope": "switch_pre",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -3.3855180787925625e-05,
+        "actual_absolute_nm_s": -0.005116201140133671,
+        "actual_squared_nm2_s": -0.00024318037395037735
+      }
+    },
+    {
+      "seed": 8003,
+      "scope": "switch_pre",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.00046120518652518073,
+        "actual_absolute_nm_s": 0.004748467687597006,
+        "actual_squared_nm2_s": 0.0022369617735885916
+      }
+    },
+    {
+      "seed": 8003,
+      "scope": "switch_post",
+      "axis": 0,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.019964462213486606,
+        "actual_absolute_nm_s": -0.008573398466715162,
+        "actual_squared_nm2_s": -0.005955421250203853
+      }
+    },
+    {
+      "seed": 8003,
+      "scope": "switch_post",
+      "axis": 1,
+      "available": true,
+      "learned_minus_PD": {
+        "error_squared_sum": -0.004868279599051457,
+        "actual_absolute_nm_s": 0.039637955749704336,
+        "actual_squared_nm2_s": 0.017839759463193383
+      }
+    }
+  ],
+  "fixed_switch_window_shares_of_parent_scope": [
+    {
+      "seed": 8001,
+      "method": "cold",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.08921259277479927,
+        "actual_absolute_nm_s": 0.07557224158039849,
+        "actual_squared_nm2_s": 0.07317675453356498
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "cold",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.14925728478509603,
+        "actual_absolute_nm_s": 0.13014016020297736,
+        "actual_squared_nm2_s": 0.13904697146937894
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "cold",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.10253983486602111,
+        "actual_absolute_nm_s": 0.12121212121212141,
+        "actual_squared_nm2_s": 0.12260536398467417
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "cold",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.06645973383672238,
+        "actual_absolute_nm_s": 0.08949862945494928,
+        "actual_squared_nm2_s": 0.08363456827245229
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "learned",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.00022348494718414845,
+        "actual_absolute_nm_s": 0.011438770022846515,
+        "actual_squared_nm2_s": 0.0010281526482254445
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "learned",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.014076289666880078,
+        "actual_absolute_nm_s": 0.12714362043793181,
+        "actual_squared_nm2_s": 0.11688982461545869
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "learned",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.7471628346484595,
+        "actual_absolute_nm_s": 0.19105433670628566,
+        "actual_squared_nm2_s": 0.20713355672337644
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "learned",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.5150748570564453,
+        "actual_absolute_nm_s": 0.17198597022375064,
+        "actual_squared_nm2_s": 0.28151149444653656
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "pd",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.0004661178977272542,
+        "actual_absolute_nm_s": 0.016169073309317616,
+        "actual_squared_nm2_s": 0.0016881671964814214
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "pd",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.030738320996523568,
+        "actual_absolute_nm_s": 0.16657020524194482,
+        "actual_squared_nm2_s": 0.1975471976975558
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "pd",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.7165642151059957,
+        "actual_absolute_nm_s": 0.20324798965125832,
+        "actual_squared_nm2_s": 0.2859545965405343
+      }
+    },
+    {
+      "seed": 8001,
+      "method": "pd",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.9025732775463325,
+        "actual_absolute_nm_s": 0.05238707287088568,
+        "actual_squared_nm2_s": 0.11639327045393506
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "cold",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.08921285578074133,
+        "actual_absolute_nm_s": 0.07557280886088463,
+        "actual_squared_nm2_s": 0.07317751041944252
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "cold",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.14925438103370836,
+        "actual_absolute_nm_s": 0.13013834247644487,
+        "actual_squared_nm2_s": 0.13904519970511503
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "cold",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.10253571632861883,
+        "actual_absolute_nm_s": 0.12121212121212141,
+        "actual_squared_nm2_s": 0.12260536398467417
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "cold",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.06645971205396582,
+        "actual_absolute_nm_s": 0.08949862452020833,
+        "actual_squared_nm2_s": 0.08363456133545251
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "learned",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.0003149571973120047,
+        "actual_absolute_nm_s": 0.011332262779046283,
+        "actual_squared_nm2_s": 0.001018746295489151
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "learned",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.013868117453104121,
+        "actual_absolute_nm_s": 0.12774256932861458,
+        "actual_squared_nm2_s": 0.11783295158954417
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "learned",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.7673920643692476,
+        "actual_absolute_nm_s": 0.2096718711574616,
+        "actual_squared_nm2_s": 0.23157564520909107
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "learned",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.5073163247325855,
+        "actual_absolute_nm_s": 0.1517034177550972,
+        "actual_squared_nm2_s": 0.2275828427677767
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "pd",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.00046624239736270075,
+        "actual_absolute_nm_s": 0.016170433605492966,
+        "actual_squared_nm2_s": 0.001688532870750589
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "pd",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.03073763324638533,
+        "actual_absolute_nm_s": 0.1665752812535662,
+        "actual_squared_nm2_s": 0.19755503740639785
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "pd",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.7164981529185935,
+        "actual_absolute_nm_s": 0.2032109286485362,
+        "actual_squared_nm2_s": 0.28588848134814493
+      }
+    },
+    {
+      "seed": 8002,
+      "method": "pd",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.9025994265857066,
+        "actual_absolute_nm_s": 0.05239411107251377,
+        "actual_squared_nm2_s": 0.11642285146194625
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "cold",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.08674446413327384,
+        "actual_absolute_nm_s": 0.08348223275086414,
+        "actual_squared_nm2_s": 0.08084866022049003
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "cold",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.1469698036369628,
+        "actual_absolute_nm_s": 0.10931556569564804,
+        "actual_squared_nm2_s": 0.10867673644684038
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "cold",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.12400481261041145,
+        "actual_absolute_nm_s": 0.0909090909090909,
+        "actual_squared_nm2_s": 0.0909090909090909
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "cold",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.09931252928684314,
+        "actual_absolute_nm_s": 0.0909090909090909,
+        "actual_squared_nm2_s": 0.0909090909090909
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "learned",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.0003068710918818624,
+        "actual_absolute_nm_s": 0.007738666951711352,
+        "actual_squared_nm2_s": 0.0005779419783910028
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "learned",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.013313543958189926,
+        "actual_absolute_nm_s": 0.13262032498142387,
+        "actual_squared_nm2_s": 0.1213549577993791
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "learned",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.7169279577335637,
+        "actual_absolute_nm_s": 0.1793323210082463,
+        "actual_squared_nm2_s": 0.1928922894704561
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "learned",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.48433788313256976,
+        "actual_absolute_nm_s": 0.16010238776129673,
+        "actual_squared_nm2_s": 0.26202996995352507
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "pd",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.0005791152578504676,
+        "actual_absolute_nm_s": 0.017535455797455465,
+        "actual_squared_nm2_s": 0.0020508346533636974
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "pd",
+      "window": "switch_pre",
+      "parent": "A",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.030176666588947573,
+        "actual_absolute_nm_s": 0.16984328978644034,
+        "actual_squared_nm2_s": 0.20252958355490006
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "pd",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 0,
+      "ratios": {
+        "error_squared_sum": 0.6758399868364682,
+        "actual_absolute_nm_s": 0.18351946194370986,
+        "actual_squared_nm2_s": 0.2502056866083798
+      }
+    },
+    {
+      "seed": 8003,
+      "method": "pd",
+      "window": "switch_post",
+      "parent": "B",
+      "axis": 1,
+      "ratios": {
+        "error_squared_sum": 0.9174809126119364,
+        "actual_absolute_nm_s": 0.05715098469951491,
+        "actual_squared_nm2_s": 0.1358224238688375
+      }
+    }
+  ],
+  "cost": {
+    "input_read_attempts": 3,
+    "input_read_returns": 3,
+    "input_bytes": 48158838,
+    "decoded_bytes": 357081842,
+    "trace_rows": 36000,
+    "main_active_rows": 18000,
+    "macros": 1200,
+    "nearest_grid_scalar_distances": 16290,
+    "pure_PD_candidate_records_read": 243,
+    "row_scope_projections": 19800,
+    "axis_scope_updates": 39600,
+    "macro_scope_updates": 1320,
+    "macro_axis_scope_projections": 2640,
+    "axis_sse_effort_difference_entries": 72,
+    "fixed_window_parent_ratios": 108
+  },
+  "scope_intervals_half_open": {
+    "A": [
+      0,
+      1000
+    ],
+    "B": [
+      1000,
+      2000
+    ],
+    "switch_pre": [
+      900,
+      1000
+    ],
+    "switch_post": [
+      1000,
+      1100
+    ]
+  },
+  "full_RMSE_effort_and_scientific_gates_recomputed": false,
+  "local_axis_error_sums_and_actual_effort_recomputed": true,
+  "model_PD_method_rollout_cost_tie_fit_RLS_physics_calls": 0,
+  "models_prediction_journal_source_ZIP_old_raw_reads": 0,
+  "macro_grid_does_not_quantize_all_native_feedback_requests": true,
+  "causal_inference": false,
+  "partial_subset_ranking": false,
+  "automatic_retry": false,
+  "scientific_flags": {
+    "scientific_adoption": false,
+    "old_free_root_C4_validation": false,
+    "c4_scientific_validation": false,
+    "c4_contact_scientific_validation": false,
+    "c5_scientific_dependency_released": false
+  },
+  "wall_seconds_before_output": 5.102586900116876,
+  "cpu_seconds_before_output": 5.09375,
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]"
+}
