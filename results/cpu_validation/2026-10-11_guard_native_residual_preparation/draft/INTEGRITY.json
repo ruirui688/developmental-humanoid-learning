@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "record_type": "draft_integrity_and_preparation_schema_read_scope",
+  "draft_source_files": {
+    "diagnose_guard_pd_tail_native_residual.py": {
+      "bytes": 19224,
+      "sha256": "f5de9aeca4249744fe4a6599b15a7fae3170e227dd941f680d1123c6bd3c5dd5"
+    },
+    "GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 6558,
+      "sha256": "4c038a86bdc3980a4ea9fde0a3e67e2441bfd4ce4f34da6029086743128064c8"
+    },
+    "test_native_residual_staging.py": {
+      "bytes": 5053,
+      "sha256": "37bf81aa378cfe9ec8b688a6824efbb6ad0eef4065babd5720c477c574441710"
+    }
+  },
+  "integrity_source_file_reads": 3,
+  "integrity_source_raw_bytes": 30835,
+  "integrity_hash_bytes": 30835,
+  "H_schema_preparation": {
+    "unique_files_read": 4,
+    "source_directory": "external/c4_h_forecast_stop_01",
+    "file_read_invocations_from_existing_tool_history": {
+      "run.json": 1,
+      "manifest.json": 1,
+      "last20.jsonl": 1,
+      "description.json": 3
+    },
+    "total_file_read_invocations_from_existing_tool_history": 6,
+    "read_methods": {
+      "run.json": "PowerShell Get-Content -Raw once",
+      "manifest.json": "PowerShell Get-Content -Raw once",
+      "last20.jsonl": "PowerShell Get-Content -TotalCount 1 once",
+      "description.json": "PowerShell Get-Content -TotalCount 90 once; two Python full JSON schema/identity reads"
+    },
+    "actual_raw_bytes_read": "unknown; not instrumented during those calls, partial-read buffering not reconstructed",
+    "wall_seconds": "unknown; aggregate tool command wall time was not an H-only read timer",
+    "cpu_seconds": "unknown; not measured",
+    "no_H_reread_for_this_record": true,
+    "excluded_files": [
+      "intervals.jsonl",
+      "all G raw/results/audit"
+    ],
+    "formal_I_executions": 0,
+    "model_predictions": 0,
+    "model_updates": 0,
+    "RLS_updates": 0,
+    "physics_calls": 0
+  },
+  "first_synthetic_test_invocations": 1,
+  "synthetic_test_cases": 8,
+  "synthetic_test_reruns": 0,
+  "draft_sources_modified_for_this_record": false,
+  "this_record_writes_only": [
+    "CHECK_01.json",
+    "INTEGRITY.json"
+  ]
+}

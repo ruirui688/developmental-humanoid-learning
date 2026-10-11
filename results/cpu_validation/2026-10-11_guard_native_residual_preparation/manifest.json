@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "files": {
+    "draft/diagnose_guard_pd_tail_native_residual.py": {
+      "bytes": 19224,
+      "sha256": "f5de9aeca4249744fe4a6599b15a7fae3170e227dd941f680d1123c6bd3c5dd5",
+      "copy_verified": true
+    },
+    "revision/diagnose_guard_pd_tail_native_residual.py": {
+      "bytes": 19814,
+      "sha256": "4d5facc24d572dd634205b1aedebad222e9b2b177f444221a5c961f1e54e64e0",
+      "copy_verified": true
+    },
+    "draft/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 6558,
+      "sha256": "4c038a86bdc3980a4ea9fde0a3e67e2441bfd4ce4f34da6029086743128064c8",
+      "copy_verified": true
+    },
+    "draft/test_native_residual_staging.py": {
+      "bytes": 5053,
+      "sha256": "37bf81aa378cfe9ec8b688a6824efbb6ad0eef4065babd5720c477c574441710",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.json": {
+      "bytes": 1496,
+      "sha256": "497f947a7126b8be3c7db00039495ef824bf8bfafe1ed1b8fbe0a2d60f4f53ab",
+      "copy_verified": true
+    },
+    "draft/INTEGRITY.json": {
+      "bytes": 2196,
+      "sha256": "84e8f1927480786547d5b1abbe91b2406d86ca1269e7945bcc21c2ebb826ccfe",
+      "copy_verified": true
+    },
+    "static_review/REVIEW.md": {
+      "bytes": 1610,
+      "sha256": "3d438b6158e48038f324fa8b8ef67403bf59b0990b44e6ffcf896c06a92fce35",
+      "copy_verified": true
+    },
+    "native_observation_review/REVIEW.md": {
+      "bytes": 8491,
+      "sha256": "86e3d1666d286c33c7b2bdda858b2ba05dea14c80129ed37a7142253b2e48342",
+      "copy_verified": true
+    },
+    "revision/REVISION.json": {
+      "bytes": 410,
+      "sha256": "d60767b4ffa8ab794bea1bdba97858952b64536a9a5898bcc071bbe6d5eba736",
+      "copy_verified": true
+    },
+    "revision/REVISION.patch": {
+      "bytes": 1248,
+      "sha256": "423952496c000bdfc69fc4bd1650106aa5ce917edf3753107301c257c7948693",
+      "copy_verified": true
+    },
+    "run_i_native_residual_once.py": {
+      "bytes": 1270,
+      "sha256": "f6609903106ad0af051367592679f8a13e7d2990f733473b75599f079eca92af",
+      "copy_verified": true
+    },
+    "prepare_i_native_residual_once.py": {
+      "bytes": 2921,
+      "sha256": "da02b4a4f5e0207a2ec7ce91fd220e53ef0b3036190605c546cff57fab5fb50e",
+      "copy_verified": true
+    }
+  },
+  "canonical_promotion": "draft protocol; only script failure-source revision, AST parse, eight passed small checks not repeated",
+  "cost": {
+    "binary_reads": 26,
+    "input_bytes": 166954,
+    "copy_checks": 12,
+    "copy_failures": 0,
+    "wall_seconds": 0.1842522001825273,
+    "cpu_seconds": 0.0
+  },
+  "formal_I_runs": 0,
+  "H_payload_reads": 0,
+  "model_calls": 0,
+  "physics_calls": 0
+}

@@ -1,0 +1,19 @@
+--- draft
++++ failure_source_revision
+@@ -354,7 +354,15 @@
+         cost["cpu_seconds"] = time.process_time()-cpu
+         failure = {"status": "failed", "scientific_adoption": False,
+                    "exception_type": type(exc).__name__, "message": str(exc), "cost": cost,
+-                   "failure_preserved_no_rerun": True}
++                   "failure_preserved_no_rerun": True,
++                   "declared_I_source_commit": args.source_commit,
++                   "diagnostic_source": locals().get("own_source"),
++                   "inputs": locals().get("inputs"),
++                   "input_binding_note": "null if source verification or load_h did not return; no claim of complete failed-read hashes",
++                   "declared_input_directory": str(args.input),
++                   "expected_H_manifest_sha256": H_MANIFEST_SHA256,
++                   "expected_H_source_commit": H_SOURCE_COMMIT,
++                   "expected_G_physical_commit": G_PHYSICAL_COMMIT}
+         _write(output/"failure.json", _json_bytes(failure), payloads)
+         _write(output/"manifest.json", _json_bytes({"schema_version": 1, "status": "failed",
+                "scientific_adoption": False, "files": dict(payloads)}), {})

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "record_type": "first_synthetic_branch_check_reconstructed_from_existing_tool_output",
+  "reconstructed_from_existing_first_tool_output": true,
+  "command": "python external\\c4_h_residual_diagnostic_staging\\test_native_residual_staging.py -v",
+  "tool_chunk_id": "f55e8a",
+  "first_command_invocations": 1,
+  "test_cases": 8,
+  "test_reruns": 0,
+  "exit_code": 0,
+  "test_reported_seconds": 0.002,
+  "exec_command_wall_seconds": 0.4841656,
+  "status": "OK",
+  "output": "test_bias_never_uses_previous_corrected_error (__main__.CausalResidualBranches) ... ok\ntest_cross_segment_is_b_and_separately_counted (__main__.CausalResidualBranches) ... ok\ntest_current_actual_cannot_change_current_corrected_prediction (__main__.CausalResidualBranches) ... ok\ntest_first_record_is_history_only_and_q_scale_is_point_zero_two (__main__.CausalResidualBranches) ... ok\ntest_noncontiguous_does_not_repair_history (__main__.CausalResidualBranches) ... ok\ntest_partial_and_missing_break_history (__main__.CausalResidualBranches) ... ok\ntest_primary_gate_requires_every_seed_axis_and_mean_twenty_percent (__main__.CausalResidualBranches) ... ok\ntest_zero_baseline_and_empty_are_not_success (__main__.CausalResidualBranches) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.002s\n\nOK\n",
+  "scope": "synthetic records only; no H reads, formal I execution, model, RLS or physics",
+  "new_test_execution_for_this_record": false
+}
