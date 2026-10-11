@@ -1,0 +1,73 @@
+{
+  "scope": "output bytes and reported count/budget/dependency declarations only; no SVD, projection, metrics or gate recomputation",
+  "first_attempt": true,
+  "checks": [
+    {
+      "name": "bytes_and_sha_diagnostics.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_run.json",
+      "passed": true
+    },
+    {
+      "name": "status_retained",
+      "passed": true
+    },
+    {
+      "name": "bounded_algebra_cost",
+      "passed": true
+    },
+    {
+      "name": "bounded_projection_uses",
+      "passed": true
+    },
+    {
+      "name": "bounded_complete_estimates",
+      "passed": true
+    },
+    {
+      "name": "zero_new_control_or_coefficients",
+      "passed": true
+    },
+    {
+      "name": "new_offline_estimation_declared",
+      "passed": true
+    },
+    {
+      "name": "scientific_dependencies_closed",
+      "passed": true
+    },
+    {
+      "name": "clean_source_and_full_inputs",
+      "passed": true
+    },
+    {
+      "name": "all_six_qualified",
+      "passed": true
+    },
+    {
+      "name": "complete_cost_counts",
+      "passed": true
+    },
+    {
+      "name": "all_fixed_datasets_retained",
+      "passed": true
+    },
+    {
+      "name": "all22_output_groups_retained",
+      "passed": true
+    }
+  ],
+  "failures": 0,
+  "cost": {
+    "binary_reads": 3,
+    "input_bytes": 7725646,
+    "wall_seconds": 0.10078960005193949,
+    "cpu_seconds": 0.078125
+  },
+  "actual_K_L_input_reads": 0,
+  "SVD_calls": 0,
+  "offline_estimates": 0,
+  "physics": 0
+}

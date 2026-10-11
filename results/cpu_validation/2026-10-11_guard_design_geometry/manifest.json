@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "files": {
+    "raw/diagnostics.json": {
+      "bytes": 7692493,
+      "sha256": "9d61909b5705a3ba124e9cc83be2675c9bd4988741bf9a60fdbfd410dfc8d15f",
+      "copy_verified": true
+    },
+    "raw/manifest.json": {
+      "bytes": 338,
+      "sha256": "5bbf5beeae94e16dec3348487ba1a71dca069b94861f75e8f757eb8c0cde47b9",
+      "copy_verified": true
+    },
+    "raw/run.json": {
+      "bytes": 32815,
+      "sha256": "ce7232327f58774739bb9fbbd400dc41da53ded678697e91e372b87b936bb3d1",
+      "copy_verified": true
+    },
+    "execution/c4_m_design_geometry_01.stdout": {
+      "bytes": 1727,
+      "sha256": "3f2965f8e534a62f3f49a7c6411c9c368098863eb228727d79fe52f9bffba269",
+      "copy_verified": true
+    },
+    "execution/c4_m_design_geometry_01.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "execution/c4_m_design_geometry_01.execution.json": {
+      "bytes": 586,
+      "sha256": "4db43206f74308de7be8b66a12babd50786ceb2110de8e14178c20f5ce588051",
+      "copy_verified": true
+    },
+    "execution/run_m_design_geometry_once.py": {
+      "bytes": 1317,
+      "sha256": "a05031fa90a30b39d608941a4f0a4b691d9d5f48184513b93e94c7807b5d127b",
+      "copy_verified": true
+    },
+    "output_contract/check_m_output_once.py": {
+      "bytes": 4461,
+      "sha256": "1a47c2d09193174ef7f02d315cc20e72f170e65f8c603df0c4cde6bf03e45148",
+      "copy_verified": true
+    },
+    "output_contract/c4_m_output_check_01.json": {
+      "bytes": 1574,
+      "sha256": "93422d481a7ba7e41af9b978d7f51f4f3ef771b5597280c56db6228d48ce15a7",
+      "copy_verified": true
+    },
+    "execution/archive_m_results_once.py": {
+      "bytes": 1873,
+      "sha256": "0fc1dd11868c2a65f36fea74608bd63414e0dc3728a9de3c8f573f80ec03d7bc",
+      "copy_verified": true
+    }
+  },
+  "raw_manifest_sha256": "5bbf5beeae94e16dec3348487ba1a71dca069b94861f75e8f757eb8c0cde47b9",
+  "cost": {
+    "binary_reads": 20,
+    "input_bytes": 15474368,
+    "copy_checks": 10,
+    "copy_failures": 0,
+    "wall_seconds": 0.09984300006181002,
+    "cpu_seconds": 0.0
+  },
+  "SVD_calls": 0,
+  "offline_estimates": 0,
+  "physics": 0
+}

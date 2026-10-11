@@ -1,0 +1,1459 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "requested_source_commit": "4d10eacd693e1ed398de32d8b40a4ce42438c1da",
+  "source": {
+    "commit": "4d10eacd693e1ed398de32d8b40a4ce42438c1da",
+    "files": {
+      "scripts/diagnose_guard_design_geometry.py": {
+        "bytes": 23148,
+        "sha256": "a1003ca0b51af14d117ee0a459f159df3b8cd45a35ba72443b5e691919d31ec3"
+      },
+      "docs/GUARD_DESIGN_GEOMETRY_DIAGNOSTIC_PROTOCOL.md": {
+        "bytes": 5310,
+        "sha256": "b0735cd0544f81fe4f8a80d373ef691b4dc0d4e2ee418105da3ba93bd3f9bfbc"
+      }
+    },
+    "clean_committed_bytes_verified": true
+  },
+  "original_source_commits": {
+    "C": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+    "D": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "G": "91dcf6c111a87427c8f3fdd8b959d4792b1bb5a2",
+    "K": "b46c6d37fddc8e6534384168fb76663bc2c5236c",
+    "L": "3bbc34d05e83162cb052590e84981e3c690f9bd4"
+  },
+  "expected_input_pins": {
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/manifest.json": {
+      "bytes": 921,
+      "sha256": "f8bf006eac1615e2a1bee801926c6157f265836011a847c24d19fe0f7341a588"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/run.json": {
+      "bytes": 7106,
+      "sha256": "1ea85a61e1b6ecbc43770c52ce6a3435c0e4d919d8af5fc91bc317b7abc84b3e"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/parameters.json": {
+      "bytes": 5053433,
+      "sha256": "1a5c426cfece2fe099ba2e13bfe6229ef7189f59870183620fcb1e1aa14de0aa"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_augmentation/model_computation_02/raw/manifest.json": {
+      "bytes": 918,
+      "sha256": "146ed37a3e70b61d57addd646f91a85d4dea14785580146e006b38f1754457de"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_augmentation/model_computation_02/raw/run.json": {
+      "bytes": 10949,
+      "sha256": "d4a9b3687592a63c0bcb4ada65bd1c1e693be1c1690957a9e267a72ff2366e1b"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_augmentation/model_computation_02/raw/parameters.json": {
+      "bytes": 4418111,
+      "sha256": "d0602e0de156b478cd61e8c5886d02380143a790778c43627c219881acbefc55"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_augmentation/manifest.json": {
+      "bytes": 3200,
+      "sha256": "368354d9e36675b9f5782e5afa8fc358983eaabb0f7c644fe8779a2b29681cc1"
+    }
+  },
+  "inputs": {
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/manifest.json": {
+      "bytes": 921,
+      "sha256": "f8bf006eac1615e2a1bee801926c6157f265836011a847c24d19fe0f7341a588"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/run.json": {
+      "bytes": 7106,
+      "sha256": "1ea85a61e1b6ecbc43770c52ce6a3435c0e4d919d8af5fc91bc317b7abc84b3e"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/parameters.json": {
+      "bytes": 5053433,
+      "sha256": "1a5c426cfece2fe099ba2e13bfe6229ef7189f59870183620fcb1e1aa14de0aa"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_augmentation/model_computation_02/raw/manifest.json": {
+      "bytes": 918,
+      "sha256": "146ed37a3e70b61d57addd646f91a85d4dea14785580146e006b38f1754457de"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_augmentation/model_computation_02/raw/run.json": {
+      "bytes": 10949,
+      "sha256": "d4a9b3687592a63c0bcb4ada65bd1c1e693be1c1690957a9e267a72ff2366e1b"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_augmentation/model_computation_02/raw/parameters.json": {
+      "bytes": 4418111,
+      "sha256": "d0602e0de156b478cd61e8c5886d02380143a790778c43627c219881acbefc55"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_augmentation/manifest.json": {
+      "bytes": 3200,
+      "sha256": "368354d9e36675b9f5782e5afa8fc358983eaabb0f7c644fe8779a2b29681cc1"
+    }
+  },
+  "input_qualification": "all_six_validated_and_K400_L_first400_exactly_equal_each_seed",
+  "inputs_without_returned_read_record": {},
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "cost": {
+    "svd_attempts": 18,
+    "svd_returns": 18,
+    "svd_failures": 0,
+    "matmul_attempts": 36,
+    "matmul_returns": 36,
+    "matmul_failures": 0,
+    "native_projection_label_scalar_uses_requested": 66000,
+    "native_projection_label_scalar_uses_returned": 66000,
+    "command_projection_response_scalar_uses_requested": 12000,
+    "command_projection_response_scalar_uses_returned": 12000,
+    "archived_ridge_forward_output_scalars_returned": 66000,
+    "native_projection_estimation_attempts": 6,
+    "native_projection_estimation_returns": 6,
+    "native_projection_estimation_failures": 0,
+    "command_projection_estimation_attempts": 6,
+    "command_projection_estimation_returns": 6,
+    "command_projection_estimation_failures": 0,
+    "validated_archived_native_label_scalars": 66000,
+    "validated_archived_weight_scalars": 3828,
+    "datasets_completed": 6,
+    "physics_control_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "model_restores": 0,
+    "recursive_forecast_calls": 0,
+    "new_parameter_space_coefficients": 0,
+    "git_query_attempts": 4,
+    "git_query_returns": 4,
+    "git_return_bytes": 28499,
+    "source_file_read_attempts": 2,
+    "source_file_read_returns": 2,
+    "source_raw_bytes": 28458,
+    "input_file_read_attempts": 7,
+    "input_file_read_returns": 7,
+    "input_raw_bytes": 9494638,
+    "input_hash_bytes": 9494638,
+    "json_parse_attempts": 7,
+    "json_parse_returns": 7,
+    "validated_archived_design_scalars": 87000,
+    "logical_matmul_multiplications_requested": 8256000,
+    "logical_matmul_additions_requested": 8041572,
+    "matmul_output_scalars_returned": 214428,
+    "wall_seconds_before_serialization": 0.31880979984998703,
+    "cpu_process_seconds_before_serialization": 0.140625
+  },
+  "operations": [
+    {
+      "kind": "svd",
+      "name": "seed0_K400:Phi",
+      "input_shape": [
+        400,
+        29
+      ],
+      "input_scalars": 11600,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          400,
+          29
+        ],
+        [
+          29
+        ],
+        [
+          29,
+          29
+        ]
+      ],
+      "output_scalars": 12470,
+      "rank": 29,
+      "tolerance": 2.5122330332906586e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_K400:UrT_Delta",
+      "left_shape": [
+        29,
+        400
+      ],
+      "right_shape": [
+        400,
+        22
+      ],
+      "output_shape": [
+        29,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 8800,
+      "output_scalars": 638,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 254562,
+      "status": "returned",
+      "response_kind": "native_projection_label",
+      "response_scalars": 8800
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_K400:Ur_coordinates",
+      "left_shape": [
+        400,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        400,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 638,
+      "output_scalars": 8800,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 246400,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_K400:Ur_shrink_coordinates",
+      "left_shape": [
+        400,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        400,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 638,
+      "output_scalars": 8800,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 246400,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_K400:Phi_archived_W",
+      "left_shape": [
+        400,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        400,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 638,
+      "output_scalars": 8800,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 246400,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed0_K400:Z",
+      "input_shape": [
+        400,
+        25
+      ],
+      "input_scalars": 10000,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          400,
+          25
+        ],
+        [
+          25
+        ],
+        [
+          25,
+          25
+        ]
+      ],
+      "output_scalars": 10650,
+      "rank": 25,
+      "tolerance": 2.5121484008668152e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_K400:UzT_A",
+      "left_shape": [
+        25,
+        400
+      ],
+      "right_shape": [
+        400,
+        4
+      ],
+      "output_shape": [
+        25,
+        4
+      ],
+      "left_input_scalars": 10000,
+      "right_input_scalars": 1600,
+      "output_scalars": 100,
+      "logical_multiplications_requested": 40000,
+      "logical_additions_requested": 39900,
+      "status": "returned",
+      "response_kind": "command_projection_response",
+      "response_scalars": 1600
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_K400:Uz_action_coordinates",
+      "left_shape": [
+        400,
+        25
+      ],
+      "right_shape": [
+        25,
+        4
+      ],
+      "output_shape": [
+        400,
+        4
+      ],
+      "left_input_scalars": 10000,
+      "right_input_scalars": 100,
+      "output_scalars": 1600,
+      "logical_multiplications_requested": 40000,
+      "logical_additions_requested": 38400,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed0_K400:A_perp",
+      "input_shape": [
+        400,
+        4
+      ],
+      "input_scalars": 1600,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          400,
+          4
+        ],
+        [
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "output_scalars": 1620,
+      "rank": 4,
+      "tolerance": 1.5678108700232655e-13
+    },
+    {
+      "kind": "svd",
+      "name": "seed0_L600:Phi",
+      "input_shape": [
+        600,
+        29
+      ],
+      "input_scalars": 17400,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          600,
+          29
+        ],
+        [
+          29
+        ],
+        [
+          29,
+          29
+        ]
+      ],
+      "output_scalars": 18270,
+      "rank": 29,
+      "tolerance": 4.625817458680676e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_L600:UrT_Delta",
+      "left_shape": [
+        29,
+        600
+      ],
+      "right_shape": [
+        600,
+        22
+      ],
+      "output_shape": [
+        29,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 13200,
+      "output_scalars": 638,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 382162,
+      "status": "returned",
+      "response_kind": "native_projection_label",
+      "response_scalars": 13200
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_L600:Ur_coordinates",
+      "left_shape": [
+        600,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        600,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 638,
+      "output_scalars": 13200,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 369600,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_L600:Ur_shrink_coordinates",
+      "left_shape": [
+        600,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        600,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 638,
+      "output_scalars": 13200,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 369600,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_L600:Phi_archived_W",
+      "left_shape": [
+        600,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        600,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 638,
+      "output_scalars": 13200,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 369600,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed0_L600:Z",
+      "input_shape": [
+        600,
+        25
+      ],
+      "input_scalars": 15000,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          600,
+          25
+        ],
+        [
+          25
+        ],
+        [
+          25,
+          25
+        ]
+      ],
+      "output_scalars": 15650,
+      "rank": 25,
+      "tolerance": 4.614434775604778e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_L600:UzT_A",
+      "left_shape": [
+        25,
+        600
+      ],
+      "right_shape": [
+        600,
+        4
+      ],
+      "output_shape": [
+        25,
+        4
+      ],
+      "left_input_scalars": 15000,
+      "right_input_scalars": 2400,
+      "output_scalars": 100,
+      "logical_multiplications_requested": 60000,
+      "logical_additions_requested": 59900,
+      "status": "returned",
+      "response_kind": "command_projection_response",
+      "response_scalars": 2400
+    },
+    {
+      "kind": "matmul",
+      "name": "seed0_L600:Uz_action_coordinates",
+      "left_shape": [
+        600,
+        25
+      ],
+      "right_shape": [
+        25,
+        4
+      ],
+      "output_shape": [
+        600,
+        4
+      ],
+      "left_input_scalars": 15000,
+      "right_input_scalars": 100,
+      "output_scalars": 2400,
+      "logical_multiplications_requested": 60000,
+      "logical_additions_requested": 57600,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed0_L600:A_perp",
+      "input_shape": [
+        600,
+        4
+      ],
+      "input_scalars": 2400,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          600,
+          4
+        ],
+        [
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "output_scalars": 2420,
+      "rank": 4,
+      "tolerance": 4.3926587967327905e-13
+    },
+    {
+      "kind": "svd",
+      "name": "seed1_K400:Phi",
+      "input_shape": [
+        400,
+        29
+      ],
+      "input_scalars": 11600,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          400,
+          29
+        ],
+        [
+          29
+        ],
+        [
+          29,
+          29
+        ]
+      ],
+      "output_scalars": 12470,
+      "rank": 29,
+      "tolerance": 2.512232943464987e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_K400:UrT_Delta",
+      "left_shape": [
+        29,
+        400
+      ],
+      "right_shape": [
+        400,
+        22
+      ],
+      "output_shape": [
+        29,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 8800,
+      "output_scalars": 638,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 254562,
+      "status": "returned",
+      "response_kind": "native_projection_label",
+      "response_scalars": 8800
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_K400:Ur_coordinates",
+      "left_shape": [
+        400,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        400,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 638,
+      "output_scalars": 8800,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 246400,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_K400:Ur_shrink_coordinates",
+      "left_shape": [
+        400,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        400,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 638,
+      "output_scalars": 8800,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 246400,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_K400:Phi_archived_W",
+      "left_shape": [
+        400,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        400,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 638,
+      "output_scalars": 8800,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 246400,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed1_K400:Z",
+      "input_shape": [
+        400,
+        25
+      ],
+      "input_scalars": 10000,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          400,
+          25
+        ],
+        [
+          25
+        ],
+        [
+          25,
+          25
+        ]
+      ],
+      "output_scalars": 10650,
+      "rank": 25,
+      "tolerance": 2.512148311024162e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_K400:UzT_A",
+      "left_shape": [
+        25,
+        400
+      ],
+      "right_shape": [
+        400,
+        4
+      ],
+      "output_shape": [
+        25,
+        4
+      ],
+      "left_input_scalars": 10000,
+      "right_input_scalars": 1600,
+      "output_scalars": 100,
+      "logical_multiplications_requested": 40000,
+      "logical_additions_requested": 39900,
+      "status": "returned",
+      "response_kind": "command_projection_response",
+      "response_scalars": 1600
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_K400:Uz_action_coordinates",
+      "left_shape": [
+        400,
+        25
+      ],
+      "right_shape": [
+        25,
+        4
+      ],
+      "output_shape": [
+        400,
+        4
+      ],
+      "left_input_scalars": 10000,
+      "right_input_scalars": 100,
+      "output_scalars": 1600,
+      "logical_multiplications_requested": 40000,
+      "logical_additions_requested": 38400,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed1_K400:A_perp",
+      "input_shape": [
+        400,
+        4
+      ],
+      "input_scalars": 1600,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          400,
+          4
+        ],
+        [
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "output_scalars": 1620,
+      "rank": 4,
+      "tolerance": 1.6416219476470742e-13
+    },
+    {
+      "kind": "svd",
+      "name": "seed1_L600:Phi",
+      "input_shape": [
+        600,
+        29
+      ],
+      "input_scalars": 17400,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          600,
+          29
+        ],
+        [
+          29
+        ],
+        [
+          29,
+          29
+        ]
+      ],
+      "output_scalars": 18270,
+      "rank": 29,
+      "tolerance": 4.62611408388279e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_L600:UrT_Delta",
+      "left_shape": [
+        29,
+        600
+      ],
+      "right_shape": [
+        600,
+        22
+      ],
+      "output_shape": [
+        29,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 13200,
+      "output_scalars": 638,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 382162,
+      "status": "returned",
+      "response_kind": "native_projection_label",
+      "response_scalars": 13200
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_L600:Ur_coordinates",
+      "left_shape": [
+        600,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        600,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 638,
+      "output_scalars": 13200,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 369600,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_L600:Ur_shrink_coordinates",
+      "left_shape": [
+        600,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        600,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 638,
+      "output_scalars": 13200,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 369600,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_L600:Phi_archived_W",
+      "left_shape": [
+        600,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        600,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 638,
+      "output_scalars": 13200,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 369600,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed1_L600:Z",
+      "input_shape": [
+        600,
+        25
+      ],
+      "input_scalars": 15000,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          600,
+          25
+        ],
+        [
+          25
+        ],
+        [
+          25,
+          25
+        ]
+      ],
+      "output_scalars": 15650,
+      "rank": 25,
+      "tolerance": 4.6145165128485145e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_L600:UzT_A",
+      "left_shape": [
+        25,
+        600
+      ],
+      "right_shape": [
+        600,
+        4
+      ],
+      "output_shape": [
+        25,
+        4
+      ],
+      "left_input_scalars": 15000,
+      "right_input_scalars": 2400,
+      "output_scalars": 100,
+      "logical_multiplications_requested": 60000,
+      "logical_additions_requested": 59900,
+      "status": "returned",
+      "response_kind": "command_projection_response",
+      "response_scalars": 2400
+    },
+    {
+      "kind": "matmul",
+      "name": "seed1_L600:Uz_action_coordinates",
+      "left_shape": [
+        600,
+        25
+      ],
+      "right_shape": [
+        25,
+        4
+      ],
+      "output_shape": [
+        600,
+        4
+      ],
+      "left_input_scalars": 15000,
+      "right_input_scalars": 100,
+      "output_scalars": 2400,
+      "logical_multiplications_requested": 60000,
+      "logical_additions_requested": 57600,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed1_L600:A_perp",
+      "input_shape": [
+        600,
+        4
+      ],
+      "input_scalars": 2400,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          600,
+          4
+        ],
+        [
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "output_scalars": 2420,
+      "rank": 4,
+      "tolerance": 4.584094435307049e-13
+    },
+    {
+      "kind": "svd",
+      "name": "seed2_K400:Phi",
+      "input_shape": [
+        400,
+        29
+      ],
+      "input_scalars": 11600,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          400,
+          29
+        ],
+        [
+          29
+        ],
+        [
+          29,
+          29
+        ]
+      ],
+      "output_scalars": 12470,
+      "rank": 29,
+      "tolerance": 2.5122329980590908e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_K400:UrT_Delta",
+      "left_shape": [
+        29,
+        400
+      ],
+      "right_shape": [
+        400,
+        22
+      ],
+      "output_shape": [
+        29,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 8800,
+      "output_scalars": 638,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 254562,
+      "status": "returned",
+      "response_kind": "native_projection_label",
+      "response_scalars": 8800
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_K400:Ur_coordinates",
+      "left_shape": [
+        400,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        400,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 638,
+      "output_scalars": 8800,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 246400,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_K400:Ur_shrink_coordinates",
+      "left_shape": [
+        400,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        400,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 638,
+      "output_scalars": 8800,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 246400,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_K400:Phi_archived_W",
+      "left_shape": [
+        400,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        400,
+        22
+      ],
+      "left_input_scalars": 11600,
+      "right_input_scalars": 638,
+      "output_scalars": 8800,
+      "logical_multiplications_requested": 255200,
+      "logical_additions_requested": 246400,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed2_K400:Z",
+      "input_shape": [
+        400,
+        25
+      ],
+      "input_scalars": 10000,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          400,
+          25
+        ],
+        [
+          25
+        ],
+        [
+          25,
+          25
+        ]
+      ],
+      "output_scalars": 10650,
+      "rank": 25,
+      "tolerance": 2.5121483656197886e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_K400:UzT_A",
+      "left_shape": [
+        25,
+        400
+      ],
+      "right_shape": [
+        400,
+        4
+      ],
+      "output_shape": [
+        25,
+        4
+      ],
+      "left_input_scalars": 10000,
+      "right_input_scalars": 1600,
+      "output_scalars": 100,
+      "logical_multiplications_requested": 40000,
+      "logical_additions_requested": 39900,
+      "status": "returned",
+      "response_kind": "command_projection_response",
+      "response_scalars": 1600
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_K400:Uz_action_coordinates",
+      "left_shape": [
+        400,
+        25
+      ],
+      "right_shape": [
+        25,
+        4
+      ],
+      "output_shape": [
+        400,
+        4
+      ],
+      "left_input_scalars": 10000,
+      "right_input_scalars": 100,
+      "output_scalars": 1600,
+      "logical_multiplications_requested": 40000,
+      "logical_additions_requested": 38400,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed2_K400:A_perp",
+      "input_shape": [
+        400,
+        4
+      ],
+      "input_scalars": 1600,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          400,
+          4
+        ],
+        [
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "output_scalars": 1620,
+      "rank": 4,
+      "tolerance": 1.6244414320837576e-13
+    },
+    {
+      "kind": "svd",
+      "name": "seed2_L600:Phi",
+      "input_shape": [
+        600,
+        29
+      ],
+      "input_scalars": 17400,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          600,
+          29
+        ],
+        [
+          29
+        ],
+        [
+          29,
+          29
+        ]
+      ],
+      "output_scalars": 18270,
+      "rank": 29,
+      "tolerance": 4.625319992912289e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_L600:UrT_Delta",
+      "left_shape": [
+        29,
+        600
+      ],
+      "right_shape": [
+        600,
+        22
+      ],
+      "output_shape": [
+        29,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 13200,
+      "output_scalars": 638,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 382162,
+      "status": "returned",
+      "response_kind": "native_projection_label",
+      "response_scalars": 13200
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_L600:Ur_coordinates",
+      "left_shape": [
+        600,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        600,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 638,
+      "output_scalars": 13200,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 369600,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_L600:Ur_shrink_coordinates",
+      "left_shape": [
+        600,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        600,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 638,
+      "output_scalars": 13200,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 369600,
+      "status": "returned"
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_L600:Phi_archived_W",
+      "left_shape": [
+        600,
+        29
+      ],
+      "right_shape": [
+        29,
+        22
+      ],
+      "output_shape": [
+        600,
+        22
+      ],
+      "left_input_scalars": 17400,
+      "right_input_scalars": 638,
+      "output_scalars": 13200,
+      "logical_multiplications_requested": 382800,
+      "logical_additions_requested": 369600,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed2_L600:Z",
+      "input_shape": [
+        600,
+        25
+      ],
+      "input_scalars": 15000,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          600,
+          25
+        ],
+        [
+          25
+        ],
+        [
+          25,
+          25
+        ]
+      ],
+      "output_scalars": 15650,
+      "rank": 25,
+      "tolerance": 4.614345218845481e-12
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_L600:UzT_A",
+      "left_shape": [
+        25,
+        600
+      ],
+      "right_shape": [
+        600,
+        4
+      ],
+      "output_shape": [
+        25,
+        4
+      ],
+      "left_input_scalars": 15000,
+      "right_input_scalars": 2400,
+      "output_scalars": 100,
+      "logical_multiplications_requested": 60000,
+      "logical_additions_requested": 59900,
+      "status": "returned",
+      "response_kind": "command_projection_response",
+      "response_scalars": 2400
+    },
+    {
+      "kind": "matmul",
+      "name": "seed2_L600:Uz_action_coordinates",
+      "left_shape": [
+        600,
+        25
+      ],
+      "right_shape": [
+        25,
+        4
+      ],
+      "output_shape": [
+        600,
+        4
+      ],
+      "left_input_scalars": 15000,
+      "right_input_scalars": 100,
+      "output_scalars": 2400,
+      "logical_multiplications_requested": 60000,
+      "logical_additions_requested": 57600,
+      "status": "returned"
+    },
+    {
+      "kind": "svd",
+      "name": "seed2_L600:A_perp",
+      "input_shape": [
+        600,
+        4
+      ],
+      "input_scalars": 2400,
+      "full_matrices": false,
+      "status": "returned",
+      "output_shapes": [
+        [
+          600,
+          4
+        ],
+        [
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "output_scalars": 2420,
+      "rank": 4,
+      "tolerance": 4.5330737158771287e-13
+    }
+  ],
+  "failure": null,
+  "expected_successful_cost": {
+    "SVD_calls": 18,
+    "matmul_calls": 36,
+    "native_projection_label_scalars": 66000,
+    "already_used_unique_native_label_scalars": 39600,
+    "command_projection_response_scalars": 12000,
+    "archived_ridge_forward_output_scalars": 66000,
+    "native_projection_estimations": 6,
+    "command_projection_estimations": 6,
+    "archived_weights_validated_scalars": 3828
+  },
+  "cost_interpretation": "Projection is new offline estimation. Logical operation requests are algebraic counts, not measured hardware FLOPs. All earlier costs remain cumulative.",
+  "wall_seconds_before_serialization": 0.31880979984998703,
+  "cpu_process_seconds_before_serialization": 0.140625
+}

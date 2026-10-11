@@ -13,6 +13,8 @@
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 
+[M 固定设计诊断](docs/GUARD_DESIGN_GEOMETRY_DIAGNOSTIC_RESULTS.md)从clean4d10eac首次完成：K三个seed的四个关注输出均以ridge收缩残差为主，L则以列空间外残差为主。六套矩阵数值满秩不证明模型有效；训练投影不能替代预测/控制。新增66,000原生标签及12,000命令响应的离线投影估计、0新物理/RLS；接着冻结单个尺度/正则修订，保持旧预测门，不扫描参数或追加PD数据。
+
 后续顺序固定为 C4 多关节 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。当前仅 CPU，允许少量在线辨识；不运行大规模 PPO、任务教师、预训练策略或真机。每个阶段检查、提交、推送后直接继续，完整阶段状态、旧失败和判门见[持续执行账本](docs/CONTINUOUS_EXECUTION_PLAN.md)。
 
 正式物理累计 **252,690 控制调用 /2,526,900 子步**；在线 22,452 与离线 7,200 scalar 辨识计算分列。H/I/J/K/L 没有新增物理或 RLS 辨识；J/K/L分别用2,400/26,400/39,600 scalar标签作小型离线ridge求解，记录一致不能代替科学验收。L复用PD采样先验、额外数据和既有增益开发费用均披露。
