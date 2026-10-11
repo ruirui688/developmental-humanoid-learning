@@ -145,4 +145,3 @@ def test_stop_and_exception_cost_is_retained(tmp_path,fault,expected_calls,expec
     assert not result['engineering_pass']
     assert result['archive']['budget']['control_calls_attempted']==expected_calls
     assert result['archive']['budget']['known_physics_substeps_lower_bound']==expected_substeps
-
