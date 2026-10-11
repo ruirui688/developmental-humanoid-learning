@@ -1,0 +1,200 @@
+--- external/fr3a_audit_candidate/audit_full_request_pair_prediction.py
++++ external/fr4a_audit_candidate/audit_pd_anchor_pair_prediction.py
+@@ -1,9 +1,9 @@
+-"""One bounded audit of newly archived FR3A evidence; never invokes a body model.
++"""One bounded audit of newly archived FR4A evidence; never invokes a body model.
+ 
+ Prepared candidate only. Source, paid counters, complete populations, saved
+ prediction labels, raw-RMSE mean gates and sampled effort/contact summaries are
+ checked once. No old experiment is read, no model is restored, and no trajectory
+-is rerun. Output must be a new directory outside the immutable FR3A raw directory.
++is rerun. Output must be a new directory outside the immutable FR4A raw directory.
+ """
+ from __future__ import annotations
+ 
+@@ -21,17 +21,17 @@
+ import zipfile
+ 
+ 
+-FR3A_RELATIVE = "results/cpu_validation/2026-10-12_full_request_pair_prediction/raw"
+-SEEDS = (8001, 8002, 8003)
++FR4A_RELATIVE = "results/cpu_validation/2026-10-12_pd_anchor_pair_prediction/raw"
++SEEDS = (8101, 8102, 8103)
+ HORIZONS = (1, 10, 20, 50, 150)
+ MODELS = ("cold", "learned")
+ FLAGS = ("scientific_adoption", "old_free_root_C4_validation", "c4_scientific_validation",
+          "c4_contact_scientific_validation", "c5_scientific_dependency_released")
+-OTHER_GATES = ("fr3b_model_contribution_gate_passed", "fr3b_pd_reference_gate_passed",
+-               "fr3_free_root_mechanism_validation")
++OTHER_GATES = ("fr4b_model_contribution_gate_passed", "fr4b_pd_reference_gate_passed",
++               "fr4_free_root_mechanism_validation")
+ SOURCE_PATHS = (
+-    "scripts/develop_full_request_pair.py", "src/developmental_physics/full_request_pair_development.py",
+-    "docs/FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md",
++    "scripts/develop_pd_anchor_pair.py", "src/developmental_physics/pd_anchor_pair_development.py",
++    "docs/PD_ANCHOR_PAIR_LEARNING_PROTOCOL.md",
+     "scripts/validate_free_root_fast_feedback_engineering.py",
+     "src/developmental_physics/free_root_fast_feedback_environment.py",
+     "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+@@ -42,7 +42,7 @@
+     "src/developmental_physics/guard_pair_model.py", "src/developmental_physics/local_pair_model.py",
+     "src/developmental_physics/local_model.py", "src/developmental_physics/fast_feedback_pair_mpc.py",
+     "src/developmental_physics/batched_fast_feedback_pair_mpc.py",
+-    "src/developmental_physics/full_request_pair_mpc.py",
++    "src/developmental_physics/pd_anchor_pair_mpc.py",
+     "src/developmental_physics/fast_feedback_pair_development.py",
+ )
+ MAX_TRACE_RECORDS = 21000
+@@ -227,7 +227,7 @@
+     scope, index = "trace", row.get("control_index")
+     require(type(index) is int and 0 <= index < 5000, "bounded_control_index")
+     seed, kind = row.get("seed"), row.get("trial_id", "")
+-    require(seed in SEEDS and kind in {f"FR3_{seed}_calibration", f"FR3_{seed}_prediction"}, "new_FR3A_trial_identity")
++    require(seed in SEEDS and kind in {f"FR4_{seed}_calibration", f"FR4_{seed}_prediction"}, "new_FR4A_trial_identity")
+     phase = "prefix" if index < 1000 else "active"
+     phase_index = index if index < 1000 else index - 1000
+     checks.equal(row.get("phase"), phase, scope, "phase:" + row.get("transition_id", ""))
+@@ -469,13 +469,13 @@
+         require(origin not in group_rows[group], "duplicate_prediction_origin")
+         group_rows[group][origin] = {"available": row.get("available") is True, "dq": None, "dv": None}
+         checks.equal(row.get("scope"), "independent_prediction", "predictions", "new_independent_scope")
+-        checks.equal(row.get("trial_id"), f"FR3_{seed}_prediction", "predictions", "prediction_trial_id")
++        checks.equal(row.get("trial_id"), f"FR4_{seed}_prediction", "predictions", "prediction_trial_id")
+         qp, vp = row.get("predicted_q_path", []), row.get("predicted_v_path", [])
+         require(isinstance(qp, list) and isinstance(vp, list) and len(qp) <= horizon and len(vp) <= horizon,
+                 "saved_prediction_path_bound")
+         path_steps += max(len(qp), len(vp))
+         require(path_steps <= MAX_SAVED_PAIR_PATH_STEPS, "saved_pair_path_budget")
+-        info = trial_info.get(f"FR3_{seed}_prediction", {"complete": False, "domain": False, "active": []})
++        info = trial_info.get(f"FR4_{seed}_prediction", {"complete": False, "domain": False, "active": []})
+         segment = info["active"][origin:origin+horizon]
+         saved_input = row.get("model_input")
+         if saved_input is not None and len(segment) == horizon:
+@@ -507,9 +507,9 @@
+     for seed in SEEDS:
+         srow = seed_rows.get(seed, {})
+         score = srow.get("prediction_scores", {})
+-        info = trial_info.get(f"FR3_{seed}_prediction", {"complete": False, "domain": False})
++        info = trial_info.get(f"FR4_{seed}_prediction", {"complete": False, "domain": False})
+         if score.get("trial_id") is not None:
+-            checks.equal(score.get("trial_id"), f"FR3_{seed}_prediction", "RMSE", "score_trial_id")
++            checks.equal(score.get("trial_id"), f"FR4_{seed}_prediction", "RMSE", "score_trial_id")
+             checks.equal(score.get("complete_population"), info["complete"] and info["domain"], "RMSE", "score_full_qualified_population")
+             checks.equal(score.get("native_execution_complete"), info["complete"], "RMSE", "score_native_complete")
+             checks.equal(score.get("free_root_domain_qualification_passed"), info["domain"], "RMSE", "score_contact_qualified")
+@@ -550,7 +550,7 @@
+ 
+ 
+ def original_gate_from_saved_scores(seed_rows):
+-    """Same declared FR3A comparisons; no new H1/H10q veto or new threshold."""
++    """Same declared FR4A comparisons; no new H1/H10q veto or new threshold."""
+     checks, complete = [], set(seed_rows) == set(SEEDS)
+     for horizon in HORIZONS:
+         for signal in ("q", "v"):
+@@ -586,13 +586,13 @@
+                     "improvement_fractions": fractions, "required_improvement": .20,
+                     "passed": bool(available and all(x is not None and x >= .20 for x in fractions))})
+     return {"complete_population": complete, "checks": checks,
+-            "fr3a_prediction_gate_passed": bool(complete and all(x["passed"] for x in checks if x.get("gated", True))),
++            "fr4a_prediction_gate_passed": bool(complete and all(x["passed"] for x in checks if x.get("gated", True))),
+             "mean_type": "arithmetic mean of original per_seed axis RMSE", "partial_subset_ranking": False}
+ 
+ 
+ def run_audit(args, checks, cost):
+     repo, raw = Path(args.repo).resolve(), Path(args.raw).resolve()
+-    require(raw == (repo / FR3A_RELATIVE).resolve(), "only_fixed_new_FR3A_raw_directory_is_allowed")
++    require(raw == (repo / FR4A_RELATIVE).resolve(), "only_fixed_new_FR4A_raw_directory_is_allowed")
+     require(len(args.source_commit) == 40 and all(x in "0123456789abcdef" for x in args.source_commit), "exact_source_commit_required")
+     manifest = parse_json(read_small(raw / "manifest.json", cost), cost)
+     loaded, pins = {}, {}
+@@ -606,7 +606,7 @@
+         checks.equal(pins[name], manifest.get("files", {}).get(name), "payload", name)
+     run, metrics, models = (loaded[name] for name in ("run.json", "metrics.json", "models.json"))
+     for item in (run, manifest):
+-        checks.equal(item.get("experiment_id"), "FR3A", "boundary", "only_FR3A_experiment")
++        checks.equal(item.get("experiment_id"), "FR4A", "boundary", "only_FR4A_experiment")
+         checks.equal(item.get("stage"), "prediction", "boundary", "only_prediction_stage")
+     checks.equal(run.get("status"), manifest.get("status"), "boundary", "manifest_run_status")
+     checks.equal(run.get("seeds"), list(SEEDS), "boundary", "fixed_development_seed_bank")
+@@ -617,11 +617,11 @@
+         checks.equal(metrics.get(key), False, "boundary", key)
+     checks.equal(run.get("planned_upper_bounds"), {"control_calls": 21000, "physics_substeps": 21000,
+         "RLS_vector_commits": 12000, "RLS_scalar_commits": 24000, "independent_prediction_pairs": 124680},
+-        "boundary", "frozen_FR3A_budget")
++        "boundary", "frozen_FR4A_budget")
+     source_ok = check_sources(repo, raw, run, manifest, args.source_commit, checks, cost)
+     trials, seed_rows_list = run.get("trials", []), run.get("seed_results", [])
+     require(isinstance(trials, list) and len(trials) <= 6 and isinstance(seed_rows_list, list) and len(seed_rows_list) <= 3,
+-            "bounded_FR3A_trial_seed_matrix")
++            "bounded_FR4A_trial_seed_matrix")
+     seed_rows = {row["seed"]: row for row in seed_rows_list}
+     require(len(seed_rows) == len(seed_rows_list) and set(seed_rows).issubset(SEEDS), "unique_seed_results")
+     by_id = {trial["trial_id"]: trial for trial in trials}
+@@ -653,14 +653,14 @@
+             for name, count in (("cold", 0), ("learned", 4000)):
+                 snapshot_check(models[str(seed)].get(name, {}), checks, f"{seed}:{name}", count=count, frozen=True)
+                 checks.numeric(models[str(seed)][name].get("qref_rad"), calibration.get("qref2"), "models", "new_model_calibration_reference")
+-            checks.check(trial_info.get(f"FR3_{seed}_calibration", {}).get("complete")
+-                         and trial_info[f"FR3_{seed}_calibration"]["domain"], "models", "models_saved_only_after_complete_domain_calibration")
++            checks.check(trial_info.get(f"FR4_{seed}_calibration", {}).get("complete")
++                         and trial_info[f"FR4_{seed}_calibration"]["domain"], "models", "models_saved_only_after_complete_domain_calibration")
+         if row.get("cold_initial_snapshot") and row.get("learned_initial_snapshot"):
+             checks.equal(row["cold_initial_snapshot"].get("parameter_fingerprint"), row["learned_initial_snapshot"].get("parameter_fingerprint"),
+                          "models", "matching_new_unlearned_initial_fingerprints")
+         final = row.get("learned_snapshot_after_calibration")
+         if final is not None:
+-            snapshot_check(final, checks, f"{seed}:calibration_final", count=trial_info.get(f"FR3_{seed}_calibration", {}).get("committed", 0), frozen=False)
++            snapshot_check(final, checks, f"{seed}:calibration_final", count=trial_info.get(f"FR4_{seed}_calibration", {}).get("committed", 0), frozen=False)
+     checks.check(set(models).issubset({str(seed) for seed in SEEDS}), "models", "only_new_bank_models")
+     paid = run.get("cost", {})
+     for key in ("control_call_attempts", "control_call_returns", "control_call_exceptions", "confirmed_physics_substeps",
+@@ -672,7 +672,7 @@
+         checks.check(type(paid.get(key)) is int and 0 <= paid[key] <= upper, "ledger", key + ":bound")
+     for key in ("MPC_decision_attempts", "MPC_decision_returns", "MPC_decision_exceptions", "teacher_calls",
+                 "batch_fit_calls", "task_policy_updates", "GPU_training_seconds"):
+-        checks.equal(paid.get(key), 0, "ledger", "no_FR3A_task_training_or_planning:" + key)
++        checks.equal(paid.get(key), 0, "ledger", "no_FR4A_task_training_or_planning:" + key)
+     if trials:
+         checks.equal(paid.get("captured_native_endpoints", 0), ledger["captured_native_endpoints"], "ledger", "captured_native_endpoints")
+         checks.equal(paid.get("audit_contact_snapshot_attempts", 0), ledger["captured_native_endpoints"], "ledger", "audit_attempt_after_native_capture")
+@@ -694,10 +694,10 @@
+         checks.equal(metrics.get("partial_subset_ranking"), False, "gate", "no_partial_gate_ranking")
+     else:
+         checks.check(run.get("failure") is not None or not seed_rows, "gate", "absent_final_gate_requires_failed_or_unattempted_execution")
+-    expected_gate = bool(original_gate["fr3a_prediction_gate_passed"] and run.get("failure") is None and source_ok)
+-    checks.equal(metrics.get("fr3a_prediction_gate_passed"), expected_gate, "gate", "original_gate_with_execution_failure_veto")
++    expected_gate = bool(original_gate["fr4a_prediction_gate_passed"] and run.get("failure") is None and source_ok)
++    checks.equal(metrics.get("fr4a_prediction_gate_passed"), expected_gate, "gate", "original_gate_with_execution_failure_veto")
+     if not all(info["complete"] and info["domain"] for info in trial_info.values()) or len(trial_info) != 6:
+-        checks.equal(metrics.get("fr3a_prediction_gate_passed"), False, "gate", "missing_complete_domain_cannot_pass")
++        checks.equal(metrics.get("fr4a_prediction_gate_passed"), False, "gate", "missing_complete_domain_cannot_pass")
+     checks.equal(run.get("unattempted_seeds"), [seed for seed in SEEDS if seed not in seed_rows], "trials", "unattempted_seeds_preserved")
+     if run.get("failure") is None:
+         expected_status = "completed" if len(trial_info) == 6 and all(x["complete"] for x in trial_info.values()) else "stopped"
+@@ -707,7 +707,7 @@
+     return {"payload_pins": pins, "source_verified": source_ok, "trace_ledger": dict(ledger),
+             "trial_eligibility": {name: {key: info[key] for key in ("complete", "domain", "committed")} for name, info in trial_info.items()},
+             "saved_prediction_RMSE_recheck": rechecked, "original_saved_RMSE_gate_recheck": original_gate,
+-            "execution_vetoed_FR3A_gate": expected_gate, "partial_subset_ranking": False, "science_flags": {flag: False for flag in FLAGS}}
++            "execution_vetoed_FR4A_gate": expected_gate, "partial_subset_ranking": False, "science_flags": {flag: False for flag in FLAGS}}
+ 
+ 
+ def main():
+@@ -729,7 +729,7 @@
+         problem = {"type": type(exc).__name__, "message": str(exc), "traceback": traceback.format_exc()}
+     cost["wall_seconds"], cost["cpu_seconds"] = time.perf_counter()-wall, time.process_time()-cpu
+     auditor_bytes = Path(__file__).read_bytes()
+-    report = {"schema": "first_FR3A_saved_evidence_audit_v1", "raw": str(raw), "source_commit": args.source_commit,
++    report = {"schema": "first_FR4A_saved_evidence_audit_v1", "raw": str(raw), "source_commit": args.source_commit,
+         "auditor": identity(auditor_bytes), "status": "passed" if problem is None and not sum(checks.failed.values()) else "failed",
+         "checks": dict(checks.counts), "failed_checks": dict(checks.failed), "first_128_failures": checks.failures,
+         "first_failure": problem or (checks.failures[0] if checks.failures else None), "cost": dict(cost),
+@@ -750,7 +750,7 @@
+             stream.write("\n")
+     print(json.dumps({"audit_status": report["status"], "output": str(output),
+                       "checks": sum(checks.counts.values()), "failed": sum(checks.failed.values()),
+-                      "failure": problem, "new_FR3A_gate": result.get("execution_vetoed_FR3A_gate") if result else None},
++                      "failure": problem, "new_FR4A_gate": result.get("execution_vetoed_FR4A_gate") if result else None},
+                      ensure_ascii=False, allow_nan=False))
+     return 0 if report["status"] == "passed" else 1
+ 

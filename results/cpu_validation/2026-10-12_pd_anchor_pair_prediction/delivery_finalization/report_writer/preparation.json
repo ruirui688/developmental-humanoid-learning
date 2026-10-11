@@ -1,0 +1,72 @@
+{
+  "schema": "FR4_report_writer_static_preparation_v1",
+  "status": "prepared_not_executed",
+  "preparation_date": "2026-10-12",
+  "stable_parent_source": {
+    "path": "external/fr3_report_common_candidate.py",
+    "bytes": 27923,
+    "sha256": "3d7fe5081fc71ee71ad66b0b5e43b4c0fad971f008e808b01d89efa4238d79cf"
+  },
+  "new_sources": {
+    "fr4_report_common_candidate.py": {
+      "bytes": 25229,
+      "sha256": "3a23ebb4588ca39978de4176d6a8bee36c6251ba6a4f6f2dd00e190cd6e7576c"
+    },
+    "write_fr4a_report_candidate.py": {
+      "bytes": 176,
+      "sha256": "4a5d58f710abf8abcc1b5a4e9b21819972aafe920398d2038b97c30fa252fa68"
+    },
+    "write_fr4b_report_candidate.py": {
+      "bytes": 176,
+      "sha256": "1991f5e75c3a9bca75a7273c43a02c7918a527692b0431d9f6a324105b2e4ce4"
+    },
+    "run_fr4_report_saved_once.py": {
+      "bytes": 3800,
+      "sha256": "9b8a9300e72c1499e1189b767d74a33af616721b54afc13ac0cc7df5cf375e20"
+    }
+  },
+  "static_checks": {
+    "four_new_sources_AST_parse": "passed_without_import_or_execution",
+    "nine_transcription_helper_AST_comparisons": "exact_equal_after_FR3_to_FR4_namespace_only",
+    "helpers": [
+      "identity", "number", "vector", "percent", "boolean", "required_counter",
+      "contact_and_effort", "prediction_sections", "control_sections"
+    ],
+    "report_inputs_stage_contract": "fixed own path and experiment_id; stage may be absent, if present it must match",
+    "navigation_function": "removed; no navigation document reads or writes",
+    "historical_baseline": "explicit root CLI actual baseline required for both A and B; no old FR3A constant",
+    "FR3_specific_premature_B_failure_fact": "removed; not asserted for FR4",
+    "unknown_increment_counters": "reported unknown with corresponding cumulative component unknown; not zero-filled",
+    "five_scientific_flags": "must be saved false; independent FR4 stagekeys transcribed",
+    "scientific_or_numerical_fixture": "not_run"
+  },
+  "execution_by_preparing_child": {
+    "writer_or_capture_calls": 0,
+    "raw_parameter_snapshot_or_experimental_result_file_reads": 0,
+    "audit_file_reads_or_audit_execution": 0,
+    "physics_fit_RLS_or_model_calls": 0,
+    "production_file_or_navigation_mutations": 0,
+    "numerical_metric_recomputations": 0,
+    "first_A_result_facts": "root message only; not read by child",
+    "other_preparation_source_IO_CPU_wall": "unmeasured_not_zero"
+  },
+  "capture_layout": {
+    "A": "external/fr4a_report_captured_once",
+    "B": "external/fr4b_report_captured_once",
+    "files": ["stdout.log", "stderr.log", "first_execution_receipt.json"],
+    "source_pins_checked": true,
+    "subprocess_invocations_per_stage_maximum": 1,
+    "automatic_retry": false
+  },
+  "writer_receipts": {
+    "A": "external/fr4_report_candidate/fr4a_report_writing_receipt.json",
+    "B": "external/fr4_report_candidate/fr4b_report_writing_receipt.json"
+  },
+  "result_documents": {
+    "A": "docs/PD_ANCHOR_PAIR_PREDICTION_RESULTS.md",
+    "B": "docs/PD_ANCHOR_PAIR_CONTROL_RESULTS.md"
+  },
+  "read_boundary_when_root_runs": "own canonical report_inputs.json only; embedded snapshots parsed but not selected/restored/copied; first audit facts supplied by root CLI",
+  "mutation_boundary_when_root_runs": "own new result document, ignored writer receipt, and one new capture directory only; exclusive creation, no overwrite",
+  "commit_or_push_by_child": false
+}

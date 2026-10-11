@@ -1,0 +1,31 @@
+{
+  "first_invocation": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "-u",
+    "scripts/develop_pd_anchor_pair.py",
+    "--stage",
+    "prediction",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4_prediction_first\\raw",
+    "--source-commit",
+    "f4fca3f4236acddc92a25c6707f9c29150ee3ca6"
+  ],
+  "source_commit": "f4fca3f4236acddc92a25c6707f9c29150ee3ca6",
+  "stage": "prediction",
+  "exit_code": 0,
+  "wall_seconds": 90.5748493000865,
+  "files": {
+    "stdout.log": {
+      "bytes": 30443,
+      "sha256": "d7f70bd3595fa6c6ab5e898ddbb3db0f07fd3ab993ed1e0dc1c030665423c28d"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

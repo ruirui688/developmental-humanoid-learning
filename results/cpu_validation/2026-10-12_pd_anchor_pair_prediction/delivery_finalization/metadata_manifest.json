@@ -1,0 +1,31 @@
+{
+  "stage": "FR4A",
+  "status": "failed",
+  "files": {},
+  "markdown_links": [],
+  "first_failure": {
+    "type": "FileNotFoundError",
+    "message": "required delivery files missing: external/fr4_report_candidate/preparation.json",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\external\\fr4_delivery_finalizer_candidate\\finalize_fr4_stage_delivery_once.py\", line 62, in main\n    raise FileNotFoundError(\"required delivery files missing: \"+\", \".join(missing))\nFileNotFoundError: required delivery files missing: external/fr4_report_candidate/preparation.json\n"
+  },
+  "engineering_cost": {
+    "input_file_reads": 0,
+    "input_bytes": 0,
+    "output_file_writes": 0,
+    "output_bytes": 0,
+    "hash_bytes": 0,
+    "markdown_reads": 0,
+    "local_link_checks": 0,
+    "wall_seconds_before_metadata": 0.0008587001357227564,
+    "cpu_seconds_before_metadata": 0.0
+  },
+  "raw_reads": 0,
+  "scientific_recomputations": 0,
+  "raw_existing_manifest_report_inputs_modified": false,
+  "navigation_reads": 0,
+  "physics_or_archive_helper_files_copied": false,
+  "report_writer_first_stdio_process_capture": true,
+  "engineering_cost_scope": "completed delivery copies and Markdown reads/checks; final metadata write excluded",
+  "timing_excludes_final_metadata_writes": true,
+  "automatic_retry": false
+}

@@ -1,0 +1,29 @@
+{
+  "stage": "FR4A",
+  "only_input_receipt": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr4_report_candidate\\fr4a_report_writing_receipt.json",
+    "bytes": 1754,
+    "sha256": "de82b05c12fdae6bf07e76b5442679b69d3f65f61c29349eec250e189f3e3adc"
+  },
+  "root_transcribed_gate_state": "passed",
+  "baseline": {
+    "controls": 430297,
+    "substeps": 2709970,
+    "online_scalar": 94452,
+    "offline_scalar": 7200,
+    "source": "explicit_root_CLI_actual_before_own_stage"
+  },
+  "actual_increment": {
+    "control_returns": 21000,
+    "confirmed_substeps": 21000,
+    "online_scalar_commits": 24000
+  },
+  "cumulative": {
+    "controls": 451297,
+    "substeps": 2730970,
+    "online_scalar": 118452,
+    "offline_scalar": 7200
+  },
+  "scientific_recomputations_or_raw_reads": 0,
+  "continuous_goal_stays_active": true
+}

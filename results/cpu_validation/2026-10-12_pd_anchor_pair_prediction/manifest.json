@@ -1,0 +1,92 @@
+{
+  "stage": "FR4A_first_archive",
+  "status": "completed",
+  "files_before_top_manifest": {
+    "first_execution_receipt.json": {
+      "bytes": 888,
+      "sha256": "634f868151f5fd05ac616edd158c7cd10cff68c85516d77ee42c59406101815f"
+    },
+    "raw/installed/FR4_8101_calibration.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8101_prediction.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8102_calibration.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8102_prediction.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8103_calibration.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8103_prediction.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/manifest.json": {
+      "bytes": 2209,
+      "sha256": "776cd4abbb69b5c6189c0d015ba4868cffa1713f5c43f388377ff868da9228d9"
+    },
+    "raw/metrics.json": {
+      "bytes": 11913,
+      "sha256": "1ed9dc39a9905b8d3978c9d51d37b9786c78f9d49b2c69a526703af36f60e2cc"
+    },
+    "raw/models.json": {
+      "bytes": 60924,
+      "sha256": "3cfbd871c275a8f5d8a07615a239ee9e8192b5e93dcf35104cf61a01f6a6a992"
+    },
+    "raw/paid_intervals.jsonl.gz": {
+      "bytes": 23952659,
+      "sha256": "84e3821971587797dfbc386bf7147a971c82e8c8d9be74c5f89f51e2e16d78d7"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 5276402,
+      "sha256": "874f5ea991b64918d2793ba4b110021a5a4f81a8b5eb59e57bf70091e6912dd3"
+    },
+    "raw/run.json": {
+      "bytes": 1057645,
+      "sha256": "597d5f4ed17885afa43c801d58ef9c36ae3e0f6e788b9e1ef585581f0c21b39f"
+    },
+    "raw/source.zip": {
+      "bytes": 92230,
+      "sha256": "92dfcef0677af32b836da26be45f8aa586d75e5be88898f86f5d3f9dbad1faef"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 33933079,
+      "sha256": "f0c1efaf08dd90995e529060b85f875e887599611831ac909f078fdb04703bcc"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "bytes": 30443,
+      "sha256": "d7f70bd3595fa6c6ab5e898ddbb3db0f07fd3ab993ed1e0dc1c030665423c28d"
+    },
+    "report_inputs.json": {
+      "bytes": 615928,
+      "sha256": "97c52f800008c667a52e69f6770757e1636e420ab4e6e9844147926c695c7065"
+    },
+    "launchers/run_fr4_physics_first_once.py": {
+      "bytes": 1755,
+      "sha256": "b12757b06db713b3827174a9f2107470ab23687ac8293a13ed9bf261a7fd43a5"
+    },
+    "launchers/archive_fr4_first_once.py": {
+      "bytes": 3163,
+      "sha256": "2ba56b1cbfdc544848e835ce633e4d95e561509d97eed1ebe6df7e7d457f4e39"
+    },
+    "archive_receipt.json": {
+      "bytes": 343,
+      "sha256": "796650fbed3d8f07de6fa2864b7d200502515153ac6ad05f0cde18c4141def4a"
+    }
+  },
+  "scientific_adoption": false,
+  "continuous_goal_stays_active": true
+}

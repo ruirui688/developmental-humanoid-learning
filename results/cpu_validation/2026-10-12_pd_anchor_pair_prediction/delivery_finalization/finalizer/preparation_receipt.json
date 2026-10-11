@@ -1,0 +1,44 @@
+{
+  "status": "source_prepared_not_executed",
+  "reference": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr3_delivery_finalizer_candidate\\finalize_fr3_stage_delivery_once.py",
+    "bytes": 7324,
+    "sha256": "c69dac972e0b29842cbf91d3c95b18f500891ecab8237ed34b1fa77cafb4dbb9"
+  },
+  "finalizer": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr4_delivery_finalizer_candidate\\finalize_fr4_stage_delivery_once.py",
+    "bytes": 6715,
+    "sha256": "6c24f174d656f515a487fc372eedca3f951db1380545f065d8d7fba0f59d115e"
+  },
+  "static_contracts": {
+    "standard_library_imports_unchanged": true,
+    "fixed_new_stage_archives": true,
+    "exact_new_report_names": true,
+    "only_report_markdown_is_read": true,
+    "fresh_delivery_and_audit_directory_required": true,
+    "copy_destinations_only_new_delivery_and_audit": true,
+    "new_writer_preparation_and_capture_helper_paths": true,
+    "no_old_failure_or_physics_archive_helpers": true
+  },
+  "stage_expected_required_copies": {
+    "prediction": 21,
+    "control": 18
+  },
+  "writer_layout_confirmed_by": "bounded_physics_design message",
+  "source_imports": 0,
+  "finalizer_executions": 0,
+  "raw_reads": 0,
+  "model_parameter_reads": 0,
+  "navigation_reads": 0,
+  "navigation_writes": 0,
+  "scientific_recomputations": 0,
+  "existing_manifest_or_report_inputs_modified": false,
+  "scope_changes": [
+    "FR4 namespaces/stage archives",
+    "new A/B auditor preparation artifacts",
+    "new writer and first-capture helper",
+    "only new report Markdown link checks",
+    "omit navigation and physics/archive helpers",
+    "omit prior FR3 writer-failure artifacts"
+  ]
+}

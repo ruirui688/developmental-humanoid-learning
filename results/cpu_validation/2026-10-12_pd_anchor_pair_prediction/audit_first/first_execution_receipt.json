@@ -1,0 +1,19 @@
+{
+  "first_attempt": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4a_audit_candidate\\audit_pd_anchor_pair_prediction.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--raw",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_pd_anchor_pair_prediction\\raw",
+    "--source-commit",
+    "f4fca3f4236acddc92a25c6707f9c29150ee3ca6",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4a_first_audit\\result"
+  ],
+  "candidate_sha256": "a86f406ea4e6faf410d7866a0bc31fb07db07ae00ef5fe22d681095f21e99de3",
+  "exit_code": 0,
+  "wall_seconds": 11.77551700011827
+}

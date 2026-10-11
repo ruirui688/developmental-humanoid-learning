@@ -1,0 +1,178 @@
+{
+  "status": "prepared_not_executed",
+  "derivation_replacements": [
+    [
+      "full_request_pair",
+      "pd_anchor_pair"
+    ],
+    [
+      "FULL_REQUEST_PAIR",
+      "PD_ANCHOR_PAIR"
+    ],
+    [
+      "FR3",
+      "FR4"
+    ],
+    [
+      "fr3",
+      "fr4"
+    ],
+    [
+      "8001",
+      "8101"
+    ],
+    [
+      "8002",
+      "8102"
+    ],
+    [
+      "8003",
+      "8103"
+    ]
+  ],
+  "source_auditor": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr3a_audit_candidate\\audit_full_request_pair_prediction.py",
+    "bytes": 50827,
+    "sha256": "2688d5e8ae24d8e15caa02a4b725b6f3f831c3f3ebd28483f4a0514fe4a8f47a"
+  },
+  "new_auditor": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr4a_audit_candidate\\audit_pd_anchor_pair_prediction.py",
+    "bytes": 50812,
+    "sha256": "a86f406ea4e6faf410d7866a0bc31fb07db07ae00ef5fe22d681095f21e99de3"
+  },
+  "static_AST_units": [
+    {
+      "unit": "AuditBoundError",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "json_safe",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "Checks",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "require",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "finite_number",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "vector",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "close_tree",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "identity",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "duplicate_free",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "parse_json",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "read_small",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "hash_stream",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "iter_records",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "check_sources",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "complete_native_observation",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "capture_row",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "input_ranges",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "contact_summary",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "effort_summary",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "audit_trial",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "snapshot_check",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "audit_predictions",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "original_gate_from_saved_scores",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "run_audit",
+      "AST_identical_after_namespace_only": true
+    },
+    {
+      "unit": "main",
+      "AST_identical_after_namespace_only": true
+    }
+  ],
+  "static_contracts": {
+    "exact_19_unique_new_dependencies": true,
+    "new_seed_bank_matches_runner_and_collector": true,
+    "fixed_new_raw_path_matches_runner": true,
+    "new_protocol_identity_matches_frozen_runner_pin": true,
+    "unchanged_five_scientific_flags": true,
+    "new_other_gates_equal_runner_nonprediction_gates": true,
+    "all_original_standard_library_imports_identical": true,
+    "original_prediction_bounds_unchanged": true
+  },
+  "new_source_contract_pins": {
+    "scripts\\develop_pd_anchor_pair.py": {
+      "bytes": 29340,
+      "sha256": "725ca104423c141b8207839b71951fac419735aa3fea2d0087eda0cdd2d890d4"
+    },
+    "src\\developmental_physics\\pd_anchor_pair_development.py": {
+      "bytes": 56106,
+      "sha256": "59de8ff3127bcdb683f325b11e5df88262bf8eda3e5a9f093de6bb9a204e1d64"
+    },
+    "docs\\PD_ANCHOR_PAIR_LEARNING_PROTOCOL.md": {
+      "bytes": 14616,
+      "sha256": "ae9b8ea0515d3ff71ac8c636e08542fa7b19725c5746613acd5d619284978b1f"
+    }
+  },
+  "candidate_imports": 0,
+  "auditor_executions": 0,
+  "model_calls": 0,
+  "fit": 0,
+  "RLS": 0,
+  "physics": 0,
+  "raw_or_saved_parameter_reads": 0,
+  "old_audit_executions": 0,
+  "first_preparation_document_lookup_failure_preserved": true
+}

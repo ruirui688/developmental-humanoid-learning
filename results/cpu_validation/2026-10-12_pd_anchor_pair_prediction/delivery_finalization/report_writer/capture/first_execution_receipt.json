@@ -1,0 +1,46 @@
+{
+  "stage": "prediction",
+  "experiment_id": "FR4A",
+  "first_report_attempt": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4_report_candidate\\write_fr4a_report_candidate.py",
+    "--write",
+    "--audit-status",
+    "passed",
+    "--audit-checks",
+    "680475",
+    "--audit-failed",
+    "0",
+    "--audit-rmse-vectors",
+    "60",
+    "--base-control",
+    "430297",
+    "--base-substeps",
+    "2709970",
+    "--base-online-scalar",
+    "94452",
+    "--base-offline-scalar",
+    "7200"
+  ],
+  "exit_code": 0,
+  "capture_exception": null,
+  "wall_seconds": 0.09632070013321936,
+  "raw_parameter_audit_or_navigation_reads_by_capture": 0,
+  "writer_source_pins": {
+    "fr4_report_common_candidate.py": [
+      25229,
+      "3a23ebb4588ca39978de4176d6a8bee36c6251ba6a4f6f2dd00e190cd6e7576c"
+    ],
+    "write_fr4a_report_candidate.py": [
+      176,
+      "4a5d58f710abf8abcc1b5a4e9b21819972aafe920398d2038b97c30fa252fa68"
+    ],
+    "write_fr4b_report_candidate.py": [
+      176,
+      "1991f5e75c3a9bca75a7273c43a02c7918a527692b0431d9f6a324105b2e4ce4"
+    ]
+  },
+  "navigation_modified": false
+}

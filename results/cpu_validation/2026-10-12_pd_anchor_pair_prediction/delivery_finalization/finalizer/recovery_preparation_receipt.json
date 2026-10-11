@@ -1,0 +1,48 @@
+{
+  "status": "recovery_source_prepared_not_executed",
+  "source": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr4_delivery_finalizer_candidate\\finalize_fr4_stage_delivery_once.py",
+    "bytes": 10744,
+    "sha256": "5c56966c62ebb46cf9172b9e13b4bfeee3eb0723a07e445ba99c4188aed8862b"
+  },
+  "first_failed_source_expected": {
+    "bytes": 6715,
+    "sha256": "6c24f174d656f515a487fc372eedca3f951db1380545f065d8d7fba0f59d115e"
+  },
+  "original_preparation_receipt_preserved": true,
+  "explicit_mode": "--complete-after-zero-copy-missing-preparation",
+  "stage": "prediction_only",
+  "required_original_failure": {
+    "status": "failed",
+    "stage": "FR4A",
+    "type": "FileNotFoundError",
+    "message": "required delivery files missing: external/fr4_report_candidate/preparation.json",
+    "files": {},
+    "markdown_links": [],
+    "input_file_reads": 0,
+    "input_bytes": 0,
+    "output_file_writes": 0,
+    "output_bytes": 0,
+    "hash_bytes": 0,
+    "markdown_reads": 0,
+    "local_link_checks": 0
+  },
+  "runtime_contract": [
+    "verify original failed metadata exact unique missing preparation and zero read/copy counters",
+    "verify preserved first failed source exact bytes/SHA",
+    "all predetermined copy destinations must be absent; preserved first source/metadata may remain",
+    "copy the new recovery preparation receipt",
+    "bind first failed metadata bytes/SHA in supplemental_metadata_manifest.json",
+    "never overwrite original metadata_manifest.json",
+    "default fresh B branch unchanged"
+  ],
+  "preparation": {
+    "AST_parse_only": true,
+    "finalizer_executions": 0,
+    "archive_metadata_reads": 0,
+    "raw_reads": 0,
+    "parameter_reads": 0,
+    "scientific_recomputations": 0,
+    "production_or_navigation_writes": 0
+  }
+}
