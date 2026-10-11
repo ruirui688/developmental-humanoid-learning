@@ -1,0 +1,67 @@
+{
+  "synthetic_only": true,
+  "checks": [
+    {
+      "name": "branch_fixed_mix_native_whitelist",
+      "passed": true,
+      "result": {
+        "ordered_C_rows": 400,
+        "ordered_G_rows": 200,
+        "G_origin_history_is_own_prefix": true,
+        "PD_target_reward_update_fields_discarded": true,
+        "cost": {
+          "G_trace_uncompressed_bytes": 270840,
+          "G_trace_lines_parsed": 301
+        }
+      }
+    },
+    {
+      "name": "branch_cross_trial_history",
+      "passed": true,
+      "result": {
+        "C_last_endpoint_as_G_start_rejected": true,
+        "reason": "ValueError:discontinuous_past_two_native_endpoints"
+      }
+    },
+    {
+      "name": "branch_600_qualification",
+      "passed": true,
+      "result": {
+        "missing_C_count": "ValueError:full_fixed_C_400_source_count_required",
+        "missing_G_count": "ValueError:full_fixed_G_200_source_count_required",
+        "missing_row": "ValueError:missing_fixed_native_window_or_history",
+        "terminal_stopped_G_rejected": "ValueError:full_unstopped_training_trial_required"
+      }
+    },
+    {
+      "name": "branch_separate_named_gates",
+      "passed": true,
+      "result": {
+        "augmentation_gate_passed": true,
+        "matched_D11_gate_passed": false,
+        "single_gate_does_not_release_new_holdout_control": true,
+        "old_gates_not_reinterpreted": true
+      }
+    }
+  ],
+  "branch_count": 4,
+  "passed": true,
+  "real_trace_reads": 0,
+  "real_K_weight_reads": 0,
+  "model_predictions": 0,
+  "fit_calls": 0,
+  "ridge_solves": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "K_old_checks_repeated": false,
+  "source_sha256": {
+    "develop_guard_native_augmentation.py": "7b0200b3bd1c824da50a827b81eb367c29faf35a0ac36b38bf16bc16a1501dc4",
+    "GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_PROTOCOL.md": "02c10cbdbe48ae44a47d3ff13280dc69517d3d70a0717127414d1bce47f13a9b",
+    "check_guard_native_augmentation.py": "752ed37c1d7d1b31097b4057a6d5e825a108aaaddc76e924f1c47840048845ce"
+  },
+  "canonical_K_source_sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb",
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "files": {
+    "draft/CHECK_01.json": {
+      "bytes": 2246,
+      "sha256": "94be0578c1ae0c6ab4707270323509de702dda7e9dfe254af7a6fea8d2eaf4e8",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.stdout.txt": {
+      "bytes": 2313,
+      "sha256": "14920d4f3096c9f49c47235b2f6adcbf6d1beec43a6152d04725d27fa790354c",
+      "copy_verified": true
+    },
+    "draft/check_guard_native_augmentation.py": {
+      "bytes": 7750,
+      "sha256": "752ed37c1d7d1b31097b4057a6d5e825a108aaaddc76e924f1c47840048845ce",
+      "copy_verified": true
+    },
+    "draft/develop_guard_native_augmentation.py": {
+      "bytes": 32841,
+      "sha256": "7b0200b3bd1c824da50a827b81eb367c29faf35a0ac36b38bf16bc16a1501dc4",
+      "copy_verified": true
+    },
+    "draft/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 6679,
+      "sha256": "02c10cbdbe48ae44a47d3ff13280dc69517d3d70a0717127414d1bce47f13a9b",
+      "copy_verified": true
+    },
+    "draft/INTEGRITY.json": {
+      "bytes": 2553,
+      "sha256": "e7d2a5d0056addd014532fb9b6857a316d4852fad377928ead018cd35ab922dc",
+      "copy_verified": true
+    },
+    "static_review/coverage_review.md": {
+      "bytes": 3459,
+      "sha256": "0ef521c828ac7c9cf1f13099279141b71261c98b6c977e9a8c8bf44e1f61ed3d",
+      "copy_verified": true
+    },
+    "static_review/implementation_review.md": {
+      "bytes": 4263,
+      "sha256": "403c62204f1349dd0a252ac956ba89d67974aa30d8ff2207eed297eaba352e5f",
+      "copy_verified": true
+    },
+    "root_review.md": {
+      "bytes": 855,
+      "sha256": "a1c7f831db1b374d940a105f0a52a929862887c5672982a14a0c3775421d280c",
+      "copy_verified": true
+    },
+    "run_l_native_augmentation_once.py": {
+      "bytes": 1411,
+      "sha256": "c1892e44dfc12cbcc2667ad964791e63ec82cce5ba5c3baf89ee09a8722afefc",
+      "copy_verified": true
+    },
+    "prepare_l_native_augmentation_once.py": {
+      "bytes": 2901,
+      "sha256": "13af5084b417716245506b6e7a36b131e1bb8e59f41b31aa41bb2f00b6145270",
+      "copy_verified": true
+    }
+  },
+  "promotion": "exact reviewed source bytes; AST only; new engineering checks not repeated; caches excluded",
+  "cost": {
+    "binary_reads": 26,
+    "input_bytes": 174062,
+    "copy_checks": 12,
+    "copy_failures": 0,
+    "wall_seconds": 0.12729509989731014,
+    "cpu_seconds": 0.03125
+  },
+  "actual_C_G_trace_reads": 0,
+  "actual_K_weight_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "physics": 0
+}
