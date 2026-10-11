@@ -1,0 +1,13 @@
+test_each_candidate_reinitializes_same_native_history (__main__.SmallHistoryChecks) ... ok
+test_guard_switch_uses_own_predicted_positions (__main__.SmallHistoryChecks) ... ok
+test_history_is_explicit_and_missing_history_costs_zero (__main__.SmallHistoryChecks) ... ok
+test_nonfinite_first_head_has_exact_lower_level_cost (__main__.SmallHistoryChecks) ... ok
+test_original_candidate_order_exact_tie_and_zero_fallback (__main__.SmallHistoryChecks) ... ok
+test_own_history_recursive_values_and_immutable_input (__main__.SmallHistoryChecks) ... ok
+test_position_rejected_endpoint_is_paid_but_not_scored (__main__.SmallHistoryChecks) ... ok
+test_velocity_rejection_has_two_paid_successful_heads (__main__.SmallHistoryChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+OK

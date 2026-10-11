@@ -1,0 +1,154 @@
+{
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "source_sha256": "18a7688b9d2d6a997b2abef6dfd34cf718d04434712048eb05e5069656742aa8",
+  "test_sha256": "ccc2d5b8e80399b0a852504b64cca5fe110484c577d77d3679fc0cafe91de89e",
+  "original_lag_auditor_sha256": "bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b",
+  "per_test": [
+    {
+      "test": "__main__.SmallHistoryChecks.test_each_candidate_reinitializes_same_native_history",
+      "planner_math_delta": {
+        "candidate_replays": 2,
+        "planning_pair_attempts": 30,
+        "planning_pair_successes": 30,
+        "planning_scalar_attempts": 60,
+        "planning_scalar_successes": 60
+      },
+      "original_lag_math_delta": {
+        "lag_pair_prediction_attempts": 30,
+        "lag_feature_attempts": 30,
+        "lag_feature_successes": 30,
+        "lag_scalar_prediction_attempts": 60,
+        "lag_scalar_prediction_successes": 60,
+        "lag_pair_prediction_successes": 30
+      }
+    },
+    {
+      "test": "__main__.SmallHistoryChecks.test_guard_switch_uses_own_predicted_positions",
+      "planner_math_delta": {
+        "candidate_replays": 1,
+        "planning_pair_attempts": 15,
+        "planning_pair_successes": 15,
+        "planning_scalar_attempts": 30,
+        "planning_scalar_successes": 30
+      },
+      "original_lag_math_delta": {
+        "lag_pair_prediction_attempts": 15,
+        "lag_feature_attempts": 15,
+        "lag_feature_successes": 15,
+        "lag_scalar_prediction_attempts": 30,
+        "lag_scalar_prediction_successes": 30,
+        "lag_pair_prediction_successes": 15
+      }
+    },
+    {
+      "test": "__main__.SmallHistoryChecks.test_history_is_explicit_and_missing_history_costs_zero",
+      "planner_math_delta": {},
+      "original_lag_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallHistoryChecks.test_nonfinite_first_head_has_exact_lower_level_cost",
+      "planner_math_delta": {
+        "candidate_replays": 1,
+        "planning_pair_attempts": 1,
+        "planning_scalar_attempts": 1
+      },
+      "original_lag_math_delta": {
+        "lag_pair_prediction_attempts": 1,
+        "lag_feature_attempts": 1,
+        "lag_feature_successes": 1,
+        "lag_scalar_prediction_attempts": 1
+      }
+    },
+    {
+      "test": "__main__.SmallHistoryChecks.test_original_candidate_order_exact_tie_and_zero_fallback",
+      "planner_math_delta": {},
+      "original_lag_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallHistoryChecks.test_own_history_recursive_values_and_immutable_input",
+      "planner_math_delta": {
+        "candidate_replays": 1,
+        "planning_pair_attempts": 15,
+        "planning_pair_successes": 15,
+        "planning_scalar_attempts": 30,
+        "planning_scalar_successes": 30
+      },
+      "original_lag_math_delta": {
+        "lag_pair_prediction_attempts": 15,
+        "lag_feature_attempts": 15,
+        "lag_feature_successes": 15,
+        "lag_scalar_prediction_attempts": 30,
+        "lag_scalar_prediction_successes": 30,
+        "lag_pair_prediction_successes": 15
+      }
+    },
+    {
+      "test": "__main__.SmallHistoryChecks.test_position_rejected_endpoint_is_paid_but_not_scored",
+      "planner_math_delta": {
+        "candidate_replays": 1,
+        "planning_pair_attempts": 10,
+        "planning_pair_successes": 10,
+        "planning_scalar_attempts": 20,
+        "planning_scalar_successes": 20
+      },
+      "original_lag_math_delta": {
+        "lag_pair_prediction_attempts": 10,
+        "lag_feature_attempts": 10,
+        "lag_feature_successes": 10,
+        "lag_scalar_prediction_attempts": 20,
+        "lag_scalar_prediction_successes": 20,
+        "lag_pair_prediction_successes": 10
+      }
+    },
+    {
+      "test": "__main__.SmallHistoryChecks.test_velocity_rejection_has_two_paid_successful_heads",
+      "planner_math_delta": {
+        "candidate_replays": 1,
+        "planning_pair_attempts": 1,
+        "planning_pair_successes": 1,
+        "planning_scalar_attempts": 2,
+        "planning_scalar_successes": 2
+      },
+      "original_lag_math_delta": {
+        "lag_pair_prediction_attempts": 1,
+        "lag_feature_attempts": 1,
+        "lag_feature_successes": 1,
+        "lag_scalar_prediction_attempts": 2,
+        "lag_scalar_prediction_successes": 2,
+        "lag_pair_prediction_successes": 1
+      }
+    }
+  ],
+  "planner_math_totals": {
+    "candidate_replays": 7,
+    "planning_pair_attempts": 72,
+    "planning_pair_successes": 71,
+    "planning_scalar_attempts": 143,
+    "planning_scalar_successes": 142
+  },
+  "original_lag_math_totals": {
+    "lag_pair_prediction_attempts": 72,
+    "lag_feature_attempts": 72,
+    "lag_feature_successes": 72,
+    "lag_scalar_prediction_attempts": 143,
+    "lag_scalar_prediction_successes": 142,
+    "lag_pair_prediction_successes": 71
+  },
+  "timing": {
+    "wall_seconds": 0.0031504000071436167,
+    "cpu_seconds": 0.0
+  },
+  "formal_additions": {
+    "D_raw_reads": 0,
+    "real_fit": 0,
+    "real_prediction": 0,
+    "physics": 0,
+    "online_helper_imports": 0,
+    "git": 0,
+    "formal_full_81_candidate_replays": 0
+  },
+  "artificial_only": true,
+  "formal_archive_audit_ready": false
+}

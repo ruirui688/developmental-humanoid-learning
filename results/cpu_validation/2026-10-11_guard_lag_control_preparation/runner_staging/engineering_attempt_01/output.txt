@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\Codex_ws\robot_rl\external\c4_lag_control_runner_staging\run_small_checks.py", line 22, in <module>
+    runpy.run_path(str(staging/"check_guard_lag_control_small.py"), run_name="__main__")
+  File "D:\Python3.10\lib\runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "D:\Python3.10\lib\runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "D:\Python3.10\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "D:\Codex_ws\robot_rl\external\c4_lag_control_runner_staging\check_guard_lag_control_small.py", line 16, in <module>
+    spec.loader.exec_module(collector)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\Codex_ws\robot_rl\external\c4_lag_control_runner_staging\guard_lag_control_development.py", line 23, in <module>
+    import mujoco
+ModuleNotFoundError: No module named 'mujoco'

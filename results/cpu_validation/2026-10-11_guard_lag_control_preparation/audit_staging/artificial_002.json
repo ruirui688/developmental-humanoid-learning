@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T11:04:24.934621+00:00",
+  "purpose": "eight new handwritten E archive contracts; original eight planning tests not repeated",
+  "checks": 8,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "source_sha256": {
+    "auditor": "f8cec26e89eb3a2b82660895e9225153f4bafab4aeded1b549a622e068e02a48",
+    "contracts": "68497a53326b5cdf29d8e79bdfa6d9610e3a11a9fbce6fad7d6ac3a8ddfbc20f",
+    "check_runner": "5e66107d176eb8ca0613cd672f2727e7b1a0898fd2621ebf26725cbb50df22c0"
+  },
+  "log_sha256": "75c7d3473d4f7c574d94e592b8fc4c0687595412a3f37deb834a1d2ba584b216",
+  "wall_seconds": 0.05347140016965568,
+  "cpu_seconds": 0.03125,
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "math_cost": {},
+  "E_contract_counts": {
+    "native_history_origins_verified": 1
+  },
+  "formal_read_accounting": {},
+  "new_physics_calls": 0,
+  "new_physics_substeps": 0,
+  "D_or_C_data_reads": 0,
+  "D_or_C_audit_reexecutions": 0,
+  "RLS_or_model_updates": 0,
+  "online_model_or_simulator_imports": 0,
+  "complete_fake_archive_matrices": 0,
+  "partial_history_fixture_endpoints": 3,
+  "returned_unwritten_physical_records_handwritten": 1
+}

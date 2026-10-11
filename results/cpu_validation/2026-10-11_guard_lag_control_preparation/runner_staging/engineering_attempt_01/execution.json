@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "wall_seconds": 0.19404400000348687,
+  "cpu_seconds": 0.15625,
+  "error": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\external\\c4_lag_control_runner_staging\\run_small_checks.py\", line 22, in <module>\n    runpy.run_path(str(staging/\"check_guard_lag_control_small.py\"), run_name=\"__main__\")\n  File \"D:\\Python3.10\\lib\\runpy.py\", line 289, in run_path\n    return _run_module_code(code, init_globals, run_name,\n  File \"D:\\Python3.10\\lib\\runpy.py\", line 96, in _run_module_code\n    _run_code(code, mod_globals, init_globals,\n  File \"D:\\Python3.10\\lib\\runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"D:\\Codex_ws\\robot_rl\\external\\c4_lag_control_runner_staging\\check_guard_lag_control_small.py\", line 16, in <module>\n    spec.loader.exec_module(collector)\n  File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"D:\\Codex_ws\\robot_rl\\external\\c4_lag_control_runner_staging\\guard_lag_control_development.py\", line 23, in <module>\n    import mujoco\nModuleNotFoundError: No module named 'mujoco'\n",
+  "source_sha256": {
+    "guard_lag_control_development.py": "a5e826f1006a7dc258ceea7c405e2ed24c004296332bd22d8e9cc70a213d03ed",
+    "check_guard_lag_control_small.py": "5388fd2f3f25a8e62da89701022a93fbbfa6ea221ae997bf324f15800424bc71"
+  },
+  "output_sha256": "aec14a9009f1311b1b526cd033908f6a861c61ab3d53944c13caec762109d78e"
+}

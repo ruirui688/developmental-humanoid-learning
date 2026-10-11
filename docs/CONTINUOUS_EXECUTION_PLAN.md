@@ -71,7 +71,7 @@ C2/C3 的正式矩阵根据 C1 的开发依据另写冻结协议。C4–C6 在�
 1. B八raw、首次audit、一次summary、冻结源码、全部工程失败与原保存预测已[封口](../results/cpu_validation/2026-10-11_guard_coupled/manifest.json)，82payload/1876项完整性检查零失败；检查后提交推送。
 2. [C最小探索对照](GUARD_EXPLORATION_DEVELOPMENT_PROTOCOL.md)已提升冻结：同coupled模型/RLS/MPC，原1/9与native q/v veto的2/8各自cold校准；共同新prediction、统一200active最终控制及同PD/zero。不改变目标、权限或停止，不把人工探索veto称学得成熟。工程原失败保留，29 runner/9 auditor人工测试及同原件只读复核通过；提交推送后首次物理。
 3. C已从clean源码首次执行固定矩阵，首audit4370690项与一次summary7942项零失败，科学门仍未过；新增7230/72300/4800在线scalar，当前累计246350控制/2463500子步、在线22452+离线2400scalar。原预测/域与保存P诊断已完成并封口；[D正式候选](GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md)固定增加两列历史速度差，仅同开发数据离线辨识/多步预测。helper8人工检查、evaluator最终7人工检查、auditor15人工契约及6定向检查通过；生产来源/正式开关/显式history纯检查通过，无矩阵重跑。提交推送后clean首次离线，最多新增4800离线scalar、物理0，再一次首审/保存汇总/原件封口。随后依据完整各轨迹/axis/H结果另冻结新物理控制；不能重复到成功、只加探索或后改阈值。
-4. D已首次完成，普适预测没有通过，完整正负指标与唯一read-cost首审失败/50项纯字节补充保留于[结果](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)。不默认替换、不入cont11；sparse11原长请求轨迹H15位置误差降低31%–38%这一新开发假设，另按[E草稿](GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md)准备cold11/sparse11/PD/zero匹配物理。显式history MPC/runner/独立auditor正在并行实施、正式flag关闭；不重拟合D，不取消旧预测门或把控制子门当C4全通过。
+4. D已首次完成，普适预测没有通过，完整正负指标与唯一read-cost首审失败/50项纯字节补充保留于[结果](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)。不默认替换、不入cont11；sparse11原长请求轨迹H15位置误差降低31%–38%这一新开发假设，另按[E正式协议](GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md)冻结cold11/sparse11/PD/zero匹配物理。显式history MPC/runner/独立auditor已完成必要小检查，提升只核源码/API/AST；工程原始失败和一次D只读恢复保留。不重拟合D，不取消旧预测门或把控制子门当C4全通过。检查提交推送后clean首次E物理、一次首审和保存汇总；若仍不能完整，继续已保存native全身上下文与一步误差诊断，不先追加探索/控制样本。
 5. 完成未知动力学适应、固定成熟/能力门控对照和新留出综合验收；每批检查、提交、推送后立即接着做最早未验收阶段，不等待重复“继续”。
 
 相关资料：[项目路线](DEVELOPMENT_ROADMAP.md)、[当前局部结果](CPU_LOCAL_BODY_RESULTS.md)、[研发进度](PROGRESS.md)、[项目交接](../AGENTS.md)。

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T11:10:48.642152+00:00",
+  "checks": 3,
+  "failed": 0,
+  "purpose": "AST plus two direct byte-identity projections from own final source; original_path metadata remains bound by entire manifest SHA",
+  "source_sha256": "17a275828bd5f548b2454cac02c193203c264b8f94936ee99d61f78d5bcd9905",
+  "results": [
+    {
+      "projected": {
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "bytes": 123
+      },
+      "passed": true
+    },
+    {
+      "projected": {
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "bytes": 123
+      },
+      "passed": true
+    }
+  ],
+  "old_contracts_reexecuted": 0,
+  "auditor_imports": 0,
+  "old_data_reads": 0,
+  "mathematical_predictions": 0,
+  "model_or_RLS_updates": 0,
+  "physics_calls": 0
+}

@@ -1,0 +1,14 @@
+{
+  "purpose": "Directed D outer manifest record schema inspection before E first audit",
+  "source_path": "results/cpu_validation/2026-10-11_guard_lag_offline/manifest.json",
+  "source_reads": 1,
+  "source_binary_bytes": 22159,
+  "observed_record_keys": ["sha256", "bytes", "original_path"],
+  "observed_selected_records": ["first_audit.json", "raw/diagnostics.json", "summary_once/summary.json"],
+  "execution_evidence": "Root tool output retained the three parsed records and binary file length. This receipt is written afterward; no source hash was computed during that schema read.",
+  "new_physics": 0,
+  "new_model_predictions": 0,
+  "new_updates": 0,
+  "old_audit_reexecutions": 0,
+  "reason": "E should compare sha256 and bytes subfields; pinned complete D manifest bytes retain original_path metadata."
+}

@@ -1,6 +1,6 @@
 # C4 E：single-lag位置预测的最小物理控制假设
 
-前瞻开发草稿；正式物理尚未放行。代码、独立审计、来源和预算须在首次执行前冻结。
+正式开发协议；源码、独立审计、来源和预算先提交并推送，再从clean提交首次执行一次物理。
 这是[D结果](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)之后选择的新开发假设，
 不是预注册于D之前的最终验收，也不把D旧开发数据重新称为未见留出。
 
@@ -105,5 +105,29 @@ D所选sparse11相应脉冲预测没有通过旧20%门。因此`c4_scientificall
 实际努力的缺失分母均保留。snapshot恢复/guard/history计算、工程人工数学、
 独立audit和汇总费用单列，不写作零计算。不会重采C/D校准或追加PD候选。
 
-正式开关当前关闭。小工程检查通过后提交推送，再一次物理、一次首审和保存
-描述封口。结果失败则保留，据具体失配继续最小修订；不会在本轮报告后停止。
+## 工程提升与首次执行约束
+
+生产入口为`src/developmental_physics/guard_lag_control_development.py`，显式历史
+规划器为`src/developmental_physics/guard_lag_pair_mpc.py`，独立标准库入口为
+`scripts/audit_guard_lag_control.py`。独立支持链固定为`audit_guard_lag_offline.py`、
+`audit_guard_coupled_development.py`、`audit_guard_pair_development.py`、
+`audit_pair_frozen.py`、`audit_local_frozen.py`，均在`scripts/`；只复用独立数学，
+不执行旧C/D全档审计。完整支持、物理源码、asset、配置、协议及D/PD绑定字节
+必须同时进入clean Git核对和本次source ZIP。
+
+显式历史MPC首次9人工检查、原逻辑5项AST检查通过；采集器首次6手工边界
+检查通过，304 fake calls/3028 fake substeps、6 pair数学诊断，真实物理0；
+独立审计原8规划数学与新8接口/完整性门检查均通过，未复跑原数学。
+一次D只读加载预检恢复3学习模型/3 cold模型，六文件5690368bytes，0预测/更新。
+准备阶段的其他读取、默认Python缺MuJoCo失败、错路径及恢复源码的来源局限
+见[工程原件清单](../results/cpu_validation/2026-10-11_guard_lag_control_preparation/manifest.json)，
+不能把后补原件标作执行时快照。正式试验另从clean源码记录完整原字节。
+
+提升只核源码/AST/API、编译和pytest入口；已通过数学、手写fake区间和D预检不重复。
+正常测试使用显式fake环境，formal拒绝fixture临时关闭开关并恢复，不能启动物理。
+生产开关放行仍受clean源码、固定路径和绑定身份限制；root一次wrapper拒绝已有
+输出，并记录外层费用。正式运行时恢复3模型/初建3 cold、每trial clone2个模型，
+上限24次clone；构造、数组复制、snapshot/hash检查非零计算，0拟合/更新。
+
+相关检查和工程原件封口后提交推送，再一次物理、一次首审和一次保存指标汇总。
+结果失败则保留，据具体失配继续最小修订；不会在本轮报告后停止。

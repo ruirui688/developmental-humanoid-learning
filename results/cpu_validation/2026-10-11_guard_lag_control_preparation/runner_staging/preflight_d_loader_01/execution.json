@@ -1,0 +1,122 @@
+{
+  "status": "completed",
+  "source_sha256": "32b068c0c6ea67ea16f5063b7b0a4f4578ca81bcab7ccdcba45b0c853916be2f",
+  "real_physics_calls": 0,
+  "model_predictions": 0,
+  "model_updates": 0,
+  "MPC_select_calls": 0,
+  "Git_calls": 0,
+  "old_audit_reexecutions": 0,
+  "D_binding": {
+    "root": "results/cpu_validation/2026-10-11_guard_lag_offline",
+    "collection_commit": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "original_C_commit": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+    "records": {
+      "manifest.json": {
+        "sha256": "38df6b99e15c3667a33d6c9995a8efd664f70ce59be8a511fa49def59727a4d7",
+        "bytes": 22159
+      },
+      "first_audit.json": {
+        "sha256": "668e6ec65c949f4d7a87349e5b6076dcfeae1d53e9f770364ae4fec943b15da5",
+        "bytes": 9669
+      },
+      "read_accounting_reconciliation/first_reconciliation.json": {
+        "sha256": "5b9fe0a4b443cab5bcc97dc4b735caef42655780ca39ed061f0560c7a87c46d0",
+        "bytes": 9198
+      },
+      "summary_once/summary.json": {
+        "sha256": "dbcfcb53194f2bfa6a634cecb5c5df72a69f9892a42d828fbdf44d08b2930016",
+        "bytes": 4608845
+      },
+      "raw/diagnostics.json": {
+        "sha256": "9307f3f37d5a3c23ef6f9097d8c352a9fc7f2e34e562b5cf4e7075e20bbbe130",
+        "bytes": 1039277
+      },
+      "raw/manifest.json": {
+        "sha256": "f5d6e0fc017d708a8c8b2b03a6876704248afee92266985ebd5d137267acb3c6",
+        "bytes": 1220
+      }
+    },
+    "first_audit_failed": 1,
+    "reconciliation_checks": 50,
+    "effective_data_consistency_verified": true,
+    "refits": 0,
+    "predictions": 0,
+    "offline_updates": 0,
+    "restored_models": 3,
+    "cold_model_initializations": 3,
+    "restore_initialization_compute": "nonzero object construction, array copying, complete snapshot and fingerprint checks; no predict/update calls",
+    "selected_snapshot_path": "raw/diagnostics.json:[seed,sparse].lag11_final_snapshot",
+    "payload_bytes_read": 5690368
+  },
+  "pinned_file_reads": 6,
+  "pinned_file_bytes_read": 5690368,
+  "restored_models": 3,
+  "independent_cold_initializations": 3,
+  "per_trial_clones": 0,
+  "initialization_compute": "nonzero object/array construction and snapshot/hash comparisons",
+  "model_identities": {
+    "0": {
+      "cold11": {
+        "frozen": true,
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "vector_update_count_loaded": 0,
+        "fingerprint": "def424e0cefa90f1863abec83e68d0692a87888572dfb15d317f84d74e81449c"
+      },
+      "learned_sparse11": {
+        "frozen": true,
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "vector_update_count_loaded": 400,
+        "fingerprint": "5eb39e3d32de64fcf564667f6b46a1135f0dbc462f9b7d57385978354f3c8de9"
+      }
+    },
+    "1": {
+      "cold11": {
+        "frozen": true,
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "vector_update_count_loaded": 0,
+        "fingerprint": "47e34ddae97904524e07e6bb7e7894f3cb890d2573eefee2f425a0f1332de3f9"
+      },
+      "learned_sparse11": {
+        "frozen": true,
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "vector_update_count_loaded": 400,
+        "fingerprint": "1b4ca135c19c04ef0e6fc1eff5bc14d5849ae3c209ed309e92fa9f79cb9085bc"
+      }
+    },
+    "2": {
+      "cold11": {
+        "frozen": true,
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "vector_update_count_loaded": 0,
+        "fingerprint": "8b165822519899f640287815d9ab4e2e595b6fd9d11465f38aaf4657219c9d12"
+      },
+      "learned_sparse11": {
+        "frozen": true,
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "vector_update_count_loaded": 400,
+        "fingerprint": "11475391745464b8544931e736ad4b6fc154276ee7dae080fa01b4ec13c60fea"
+      }
+    }
+  },
+  "wall_seconds": 0.3010569999460131,
+  "cpu_seconds": 0.203125
+}

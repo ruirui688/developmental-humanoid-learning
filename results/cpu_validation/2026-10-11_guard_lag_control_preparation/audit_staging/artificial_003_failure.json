@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "purpose": "Preserved first directed AST metadata projection harness failure",
+  "checks_completed_before_error": 1,
+  "failed_attempts": 1,
+  "exit_code": 1,
+  "exception": {"type": "NameError", "message": "name 'raw_manifest' is not defined"},
+  "cause": "eval comprehension name resolution uses globals; handwritten fixture context was passed only as locals",
+  "scope": "engineering check harness; no E formal archive or model execution",
+  "old_data_reads": 0,
+  "auditor_imports": 0,
+  "mathematical_predictions": 0,
+  "model_or_RLS_updates": 0,
+  "physics_calls": 0,
+  "old_contracts_reexecuted": 0
+}

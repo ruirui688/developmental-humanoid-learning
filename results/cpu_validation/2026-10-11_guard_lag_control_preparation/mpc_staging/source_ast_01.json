@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "init_equivalent_except_required_model_type": true,
+    "select_equivalent_except_explicit_history_input_and_recurrence": true,
+    "inherits_original_fixed_pair_mpc": true,
+    "no_controller_mutable_velocity_history": true,
+    "previous_v_required_positional_input": true
+  },
+  "passed": 5,
+  "failed": 0,
+  "source_sha256": {
+    "D:\\Codex_ws\\robot_rl\\src\\developmental_physics\\local_pair_model.py": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_lag_mpc_staging\\guard_lag_pair_mpc.py": "2f6c9f4f7f7f128157897f67d40a6cfef09fef582aaeac55945d28399a59d97d"
+  },
+  "model_imports": 0,
+  "prediction_calls": 0,
+  "rls_updates": 0,
+  "physical_queries": 0
+}

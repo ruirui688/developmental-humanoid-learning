@@ -72,6 +72,8 @@ D随后从clean `f7710c7`首次完成：0新物理、4800离线scalar、168150�
 
 详细顺序和验收条件见 `docs/DEVELOPMENT_ROADMAP.md`；机器与 G1 接管流程见 `docs/NEW_MACHINE_BOOTSTRAP.md`，数据来源规范见 `docs/DATA_SOURCES.md`。GPU 缺失不阻塞 CPU 算法原型；真机实验仍需明确授权与现场安全条件。
 
+当前E最小控制假设已按`docs/GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md`提升冻结：9 MPC、6 collector、8原数学/8独立接口及3定向metadata检查通过，66payload工程原件已封口。所有源码提升仅AST/API/编译/收集，不重复数学或D预检；提交推送后clean首次12trial物理、一次首审/保存汇总，0更新。旧D预测门和完整C4/C5仍未通过。若E仍不能完整，先诊断原保存native全身上下文与一步误差，不立即增加探索或放宽停止。持续目标保持active。
+
 ## 3. 近期非目标
 
 - 不改造 G1 硬件，不把压力鞋垫或电子皮肤设为启动条件；

@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "final_delivered_source_identity": true,
+    "only_release_flag_and_description_changed": true,
+    "canonical_test_only_path_and_guarded_rejection_fixture": true,
+    "no_numpy_physics_or_online_imports": true,
+    "original_D_auditor_unchanged": true,
+    "compiled/scripts/audit_guard_lag_control.py": true,
+    "compiled/tests/test_guard_lag_control_audit.py": true
+  },
+  "passed": 7,
+  "failed": 0,
+  "source_sha256": "99e2fcddbe9bc00386093e6b8e16fd781f387b4696b9d3acf068a2c4b6cfe63c",
+  "new_imports": 0,
+  "new_predictions": 0,
+  "updates": 0,
+  "physics": 0,
+  "old_math_reexecutions": 0,
+  "D_raw_reads": 0
+}

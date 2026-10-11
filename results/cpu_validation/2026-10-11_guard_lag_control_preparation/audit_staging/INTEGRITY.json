@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T11:11:38.318460+00:00",
+  "source_sha256": "17a275828bd5f548b2454cac02c193203c264b8f94936ee99d61f78d5bcd9905",
+  "files": {
+    "artificial_001.json": {
+      "bytes": 5314,
+      "sha256": "2c373ed639dcc10ebab1f6209a184e83d27239b85bf86fb92603e4d2ee090531"
+    },
+    "artificial_001.log": {
+      "bytes": 838,
+      "sha256": "ae76c94499b5a497a526c090f88956921c5a00b9d66cd330d8baa26b627c65cd"
+    },
+    "artificial_001_math.py": {
+      "bytes": 6943,
+      "sha256": "18a7688b9d2d6a997b2abef6dfd34cf718d04434712048eb05e5069656742aa8"
+    },
+    "artificial_001_tests.py": {
+      "bytes": 7000,
+      "sha256": "ccc2d5b8e80399b0a852504b64cca5fe110484c577d77d3679fc0cafe91de89e"
+    },
+    "artificial_002.json": {
+      "bytes": 1302,
+      "sha256": "396b3b484df7b966cfa32bd480f9670933d0b034bec2158015e1f9407b37699c"
+    },
+    "artificial_002.log": {
+      "bytes": 896,
+      "sha256": "75c7d3473d4f7c574d94e592b8fc4c0687595412a3f37deb834a1d2ba584b216"
+    },
+    "artificial_002_auditor.py": {
+      "bytes": 69972,
+      "sha256": "f8cec26e89eb3a2b82660895e9225153f4bafab4aeded1b549a622e068e02a48"
+    },
+    "artificial_002_check_runner.py": {
+      "bytes": 2724,
+      "sha256": "5e66107d176eb8ca0613cd672f2727e7b1a0898fd2621ebf26725cbb50df22c0"
+    },
+    "artificial_002_contracts.py": {
+      "bytes": 8964,
+      "sha256": "68497a53326b5cdf29d8e79bdfa6d9610e3a11a9fbce6fad7d6ac3a8ddfbc20f"
+    },
+    "artificial_003_check_runner.py": {
+      "bytes": 2188,
+      "sha256": "6b5764205e29fca266ad309f74c3d895c2f171c527d8a369ed1185f0c3346428"
+    },
+    "artificial_003_failure.json": {
+      "bytes": 635,
+      "sha256": "74cce7a79ab6e07ad2df7af69e1f9cb27eae6b8880bd76b9b31cc7ff26fe0a54"
+    },
+    "artificial_004_auditor.py": {
+      "bytes": 70042,
+      "sha256": "17a275828bd5f548b2454cac02c193203c264b8f94936ee99d61f78d5bcd9905"
+    },
+    "artificial_004_manifest_projection.json": {
+      "bytes": 899,
+      "sha256": "af67a4f32d82b7ea81ddbbfa3f645e5a2c05affd1d9953a2920cb8a36fdd0bb7"
+    },
+    "AUDIT_DESIGN.md": {
+      "bytes": 4694,
+      "sha256": "53ef64405b131e6eb0af3bb12b6ae35b63711e11b83def4a3ed30f2fc90c8378"
+    },
+    "audit_guard_lag_control.py": {
+      "bytes": 70042,
+      "sha256": "17a275828bd5f548b2454cac02c193203c264b8f94936ee99d61f78d5bcd9905"
+    },
+    "check_lag_control_audit_contract_once.py": {
+      "bytes": 2724,
+      "sha256": "5e66107d176eb8ca0613cd672f2727e7b1a0898fd2621ebf26725cbb50df22c0"
+    },
+    "check_manifest_projection_once.py": {
+      "bytes": 2190,
+      "sha256": "bf20753f91cfa1a73f9ddcfd669344c65e2439cbec5b76d920eee4acc0b014fa"
+    },
+    "DELIVERY.md": {
+      "bytes": 7053,
+      "sha256": "63db3fc082130d996438e97b7f9d20d5547b8b4e118d9c85d974214d42ebff45"
+    },
+    "lag_control_audit_math.py": {
+      "bytes": 6943,
+      "sha256": "18a7688b9d2d6a997b2abef6dfd34cf718d04434712048eb05e5069656742aa8"
+    },
+    "seal_integrity_once.py": {
+      "bytes": 1775,
+      "sha256": "05a848958429030c4ec62472577405286a2ee41d26b35d3caac6477b2e0118de"
+    },
+    "test_lag_control_audit_contract.py": {
+      "bytes": 8964,
+      "sha256": "68497a53326b5cdf29d8e79bdfa6d9610e3a11a9fbce6fad7d6ac3a8ddfbc20f"
+    },
+    "test_lag_control_audit_math.py": {
+      "bytes": 7000,
+      "sha256": "ccc2d5b8e80399b0a852504b64cca5fe110484c577d77d3679fc0cafe91de89e"
+    }
+  },
+  "production_path": "scripts/audit_guard_lag_control.py",
+  "formal_flag": false,
+  "root_owns_promotion_and_execution": true,
+  "engineering_evidence": {
+    "original_planning_cases_not_repeated": 8,
+    "new_contracts": 8,
+    "new_contract_failures": 0,
+    "directed_metadata_first_harness_failure_preserved": 1,
+    "directed_metadata_repair_checks": 3,
+    "directed_metadata_repair_failures": 0
+  },
+  "formal_physics_calls": 0,
+  "old_D_or_C_data_reads": 0,
+  "old_D_or_C_math_or_audit_reexecutions": 0,
+  "new_model_or_RLS_updates": 0,
+  "complete_fake_archive_matrices": 0,
+  "seal_semantics": "all plain-file original bytes only; excludes pycache and this index itself"
+}

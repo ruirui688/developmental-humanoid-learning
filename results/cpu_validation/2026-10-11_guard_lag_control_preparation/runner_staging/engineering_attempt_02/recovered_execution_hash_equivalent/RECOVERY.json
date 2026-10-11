@@ -1,0 +1,13 @@
+{
+  "recovered_at_utc": "2026-10-11T11:03:04.141159+00:00",
+  "attribution": "Source/test bytes recovered after execution; equal original recorded SHA256, not contemporaneously captured bytes",
+  "original_execution_record": "../execution.json",
+  "source_sha256": {
+    "guard_lag_control_development.py": "32b068c0c6ea67ea16f5063b7b0a4f4578ca81bcab7ccdcba45b0c853916be2f",
+    "check_guard_lag_control_small.py": "5388fd2f3f25a8e62da89701022a93fbbfa6ea221ae997bf324f15800424bc71"
+  },
+  "wrapper_sha256": "0c82372bf503b64bf810bcaf17bb55c937e84ab27e9f7a2fb1f343830064a466",
+  "wrapper_attribution": "Current wrapper reference only; original attempt02 wrapper was not hashed/captured, execution binding unproven",
+  "attempt01_runner_bytes_available": false,
+  "attempt01_test_hash_equal_to_recovered_test": true
+}
