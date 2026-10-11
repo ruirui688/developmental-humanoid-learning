@@ -1,0 +1,11 @@
+{
+  "read_opens": 1,
+  "read_binary_bytes": 12141,
+  "hash_operations": 1,
+  "original_checker_sha256": "3b9b8677902e08686e75dad0c9091d59dbdf498dee01baf8ded4e2739abc6651",
+  "new_checker": "external/c4_pd_tail_control_runner_staging/check_remaining_wire_once.py",
+  "scope": "necessary checker recovery for tuple constants; preserves original failed checker/run; reuses 18 passed checks via exact checkpoint-to-current metadata-only bridge",
+  "model_calls": 0,
+  "physical_queries": 0,
+  "actual_E_C_D_F_reads": 0
+}

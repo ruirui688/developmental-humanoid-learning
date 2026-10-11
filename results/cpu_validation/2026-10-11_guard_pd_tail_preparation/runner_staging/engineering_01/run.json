@@ -1,0 +1,72 @@
+{
+  "scope": "explicit source reads and AST/disabled-flag call only; excludes interpreter/standard-library internal reads and final report write",
+  "model_imports": 0,
+  "model_constructions": 0,
+  "model_predict_calls": 0,
+  "model_updates": 0,
+  "physical_queries": 0,
+  "actual_E_C_D_F_reads": 0,
+  "old_E_fixture_reexecutions": 0,
+  "old_tail_math_reexecutions": 0,
+  "git_calls": 0,
+  "source_records": [
+    {
+      "path": "external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py",
+      "bytes": 41606,
+      "sha256": "68ba5d199fdb53258cfb9337026a04e65798e343ddc7ab048192e210ddc4bda3"
+    },
+    {
+      "path": "external/c4_pd_tail_control_runner_staging/guard_lag_control_development.original.py",
+      "bytes": 40309,
+      "sha256": "3ea1b07dcfdf6c6fdadc7d82269871f629e098f3f74c0d5c2c9520162f55e7da"
+    },
+    {
+      "path": "external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py",
+      "bytes": 8210,
+      "sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed"
+    },
+    {
+      "path": "src/developmental_physics/guard_lag_pair_mpc.py",
+      "bytes": 8560,
+      "sha256": "2f6c9f4f7f7f128157897f67d40a6cfef09fef582aaeac55945d28399a59d97d"
+    },
+    {
+      "path": "src/developmental_physics/local_pair_model.py",
+      "bytes": 25148,
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+    }
+  ],
+  "source_read_opens": 5,
+  "source_binary_bytes_read": 123833,
+  "source_hash_operations": 5,
+  "AST_parses": 5,
+  "checks": {
+    "unchanged_E_core__emit": true,
+    "unchanged_E_core__failure": true,
+    "unchanged_E_core_target_pair": true,
+    "unchanged_E_core_restore_lag_snapshot": true,
+    "unchanged_E_core_load_d_models": true,
+    "unchanged_E_core_episode_plan": true,
+    "unchanged_E_core_native_history": true,
+    "unchanged_E_core_bind_prefix": true,
+    "unchanged_E_core_run_trial": true,
+    "unchanged_E_constant_D_ROOT": true,
+    "unchanged_E_constant_D_COMMIT": true,
+    "unchanged_E_constant_C_COMMIT": true,
+    "unchanged_E_constant_C_ENVIRONMENT_FINGERPRINT": true,
+    "unchanged_E_constant_D_HASHES": true,
+    "unchanged_E_constant_SEEDS": true,
+    "unchanged_E_constant_RESET_SEEDS": true,
+    "unchanged_E_constant_KINDS": true,
+    "unchanged_E_constant_MODEL_NAMES": true
+  },
+  "passed": 18,
+  "failed": 1,
+  "harness_exception": {
+    "type": "KeyError",
+    "message": "'PREFIX_STEPS'",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\external\\c4_pd_tail_control_runner_staging\\check_new_wire_once.py\", line 51, in <module>\n    checks[\"unchanged_E_constant_\"+name] = dump(gconst[name]) == dump(econst[name])\nKeyError: 'PREFIX_STEPS'\n"
+  },
+  "wall_seconds": 0.04574389988556504,
+  "cpu_seconds": 0.03125
+}

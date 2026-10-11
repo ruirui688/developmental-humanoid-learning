@@ -1,0 +1,56 @@
+{
+  "checks": 9,
+  "failed": 0,
+  "check_labels": [
+    "external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py:sealed_sha",
+    "src/developmental_physics/pd_tail_pair_mpc.py:exact_copy",
+    "src/developmental_physics/pd_tail_pair_mpc.py:formal_only_AST",
+    "external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py:sealed_sha",
+    "src/developmental_physics/pd_tail_control_development.py:exact_copy",
+    "src/developmental_physics/pd_tail_control_development.py:formal_only_AST",
+    "external/c4_pd_tail_control_audit_staging/audit_guard_pd_tail_control.py:sealed_sha",
+    "scripts/audit_guard_pd_tail_control.py:exact_copy",
+    "scripts/audit_guard_pd_tail_control.py:formal_only_AST"
+  ],
+  "records": [
+    {
+      "original": "external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py",
+      "canonical": "src/developmental_physics/pd_tail_pair_mpc.py",
+      "original_sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed",
+      "production_sha256": "f029e8c2831ebd164f6aa9656b3eb626f4d6e2ec79caa4441f11e3462865786a",
+      "bytes": 8214,
+      "formal_flag": "FORMAL_PD_TAIL_CONTROL_ENABLED",
+      "formal_enabled": true
+    },
+    {
+      "original": "external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py",
+      "canonical": "src/developmental_physics/pd_tail_control_development.py",
+      "original_sha256": "47407917ff7ac184ab7f0859a6fb63d30946805e3ad23cc4268d3eae4b115720",
+      "production_sha256": "003493c74de71800f58bcf331200dc2f64bcc856d178a27e3071d8f4a1154272",
+      "bytes": 42399,
+      "formal_flag": "FORMAL_CONTROL_ENABLED",
+      "formal_enabled": true
+    },
+    {
+      "original": "external/c4_pd_tail_control_audit_staging/audit_guard_pd_tail_control.py",
+      "canonical": "scripts/audit_guard_pd_tail_control.py",
+      "original_sha256": "38322b00e04782a640f989ddc568d06e27c6fc8e5e18b68bfe0f9807cf38483a",
+      "production_sha256": "9982de8939f2da8fb6d814127b6074215569e278f95ddbfe10edf1717a5efdb9",
+      "bytes": 76375,
+      "formal_flag": "FORMAL_AUDIT_ENABLED",
+      "formal_enabled": true
+    },
+    {
+      "canonical": "docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_PROTOCOL.md",
+      "sha256": "e4853759e0424465d353a4fab289aa7ac7a4235474ea46100eafce35fbae4374"
+    }
+  ],
+  "read_accounting": {
+    "explicit_binary_opens": 8,
+    "binary_bytes": 268543,
+    "coverage": "sealed sources, promoted rereads, draft and frozen protocol; excludes interpreter/OS I/O"
+  },
+  "wall_seconds": 0.1821591998450458,
+  "cpu_seconds": 0.125,
+  "new_math_model_physics_updates": 0
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "engineering_only_formal_closed",
+  "payloads": {
+    "audit_guard_lag_control.baseline.original.py": {
+      "bytes": 70035,
+      "sha256": "99e2fcddbe9bc00386093e6b8e16fd781f387b4696b9d3acf068a2c4b6cfe63c"
+    },
+    "audit_guard_pd_tail_control.final.original.py": {
+      "bytes": 76376,
+      "sha256": "38322b00e04782a640f989ddc568d06e27c6fc8e5e18b68bfe0f9807cf38483a"
+    },
+    "audit_guard_pd_tail_control.py": {
+      "bytes": 76376,
+      "sha256": "38322b00e04782a640f989ddc568d06e27c6fc8e5e18b68bfe0f9807cf38483a"
+    },
+    "BUILD_SOURCE_RECORD.json": {
+      "bytes": 577,
+      "sha256": "28579ffdd5d4ec230ce4b9c4371cb01c1f86e827015fbafa040f8e977419a38c"
+    },
+    "CHECK_01.json": {
+      "bytes": 4976,
+      "sha256": "d03a890f60ec8d72b83affd934048a2858fe1f63e67de5cd06fc9636c444d4c7"
+    },
+    "CHECK_01.py": {
+      "bytes": 9724,
+      "sha256": "ec2b3ec3a0edd7a37374e9503b331b0a47b20e429fc5522c51b31848badb9f81"
+    },
+    "DELIVERY.md": {
+      "bytes": 4440,
+      "sha256": "804f6d68e7b6e7845f61b35b4dbdaa362f55c4b4acf0032a9b4a4f65bca01721"
+    }
+  },
+  "read_accounting": {
+    "opens": 8,
+    "bytes": 318880,
+    "wall_seconds": 0.02901610010303557,
+    "timing_scope": "source snapshot write plus own engineering payload reads/hash; excludes final integrity serialization/write"
+  },
+  "new_physics": 0,
+  "actual_E_C_D_F_data_reads": 0,
+  "new_models_or_updates": 0,
+  "fixture_first_result": "CHECK_01.json",
+  "scientific_adoption": {
+    "evaluated": false,
+    "passed": false
+  }
+}

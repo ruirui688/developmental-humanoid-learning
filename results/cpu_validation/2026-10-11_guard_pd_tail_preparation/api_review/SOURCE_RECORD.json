@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "review_status": "finite_read_only_API_and_new_metadata_review",
+  "root_candidate_selection": "complete_selected_PD_feedback_tail_as_only_G_development_candidate",
+  "formal_physics_authorized_by_this_review": false,
+  "content_read_passes": [
+    {"path": "external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py", "bytes": 8210, "sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed", "role": "sealed_newtail_API/spec"},
+    {"path": "external/c4_pd_tail_control_runner_staging/guard_pd_tail_control_development.py", "bytes": 40309, "sha256": "3ea1b07dcfdf6c6fdadc7d82269871f629e098f3f74c0d5c2c9520162f55e7da", "role": "first_copy_WIP_only_not_final_G_identity"},
+    {"path": "external/c4_pd_tail_mpc_staging/engineering_01/source_snapshot/src/developmental_physics/local_pair_model.py", "bytes": 25148, "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df", "role": "inherited_fingerprint_and_decision_interface"},
+    {"path": "external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py", "bytes": 42400, "sha256": "47407917ff7ac184ab7f0859a6fb63d30946805e3ad23cc4268d3eae4b115720", "role": "final_G_newwire_and_metadata", "preserved_copy": "runner_source_review_01.py"}
+  ],
+  "read_cost": {
+    "content_passes": 4,
+    "logical_content_coverage_bytes": 116067,
+    "static_ast_parse_passes": 4,
+    "source_sha256_computations": 4,
+    "measurement_scope": "one full byte read per source; source AST parsed/projected without importing or executing it; logical coverage, not operating-system disk I/O",
+    "file_enumeration_content_read_bytes": 0,
+    "review_document_write_cost_included": false
+  },
+  "zero_executed_work": {
+    "real_archive_reads_E_C_D_F": 0,
+    "model_or_environment_constructions": 0,
+    "model_predictions": 0,
+    "fits_or_updates": 0,
+    "physics_steps": 0,
+    "statistical_recomputations": 0,
+    "tests": 0,
+    "old_tail_5_math_reexecutions": 0,
+    "collector_old_core_AST_check_reexecutions": 0,
+    "tracked_edits": 0
+  },
+  "API": {
+    "planner_class": "FixedPDTailGuardLagPairMPC",
+    "constructor": "(model,joint_ranges,config=None)",
+    "formal_constructor_config": "not supplied; full original default MPCConfig independently verified by auditor",
+    "select": "(q,v,target_q,previous_v,*,previous_torque=(0,0))",
+    "decision": "PDTailMPCDecision, extends PairMPCDecision",
+    "selected_request_field": "trajectory_requested_torque",
+    "selected_stage_alignment": "request[h] generates predicted_q[h]/predicted_v[h]; request[0]==first torque; empty trajectory for fallback",
+    "all_candidate_tail_log_added": false,
+    "all_candidate_tail_source": "independent auditor reconstruction from fixed inputs/frozen model/public guard/default spec",
+    "planner_fingerprint_basis": "_digest(self.spec())",
+    "model_coefficients_bound_separately": true
+  },
+  "new_metadata_confirmed_in_source_projection": {
+    "suite": "pd_tail_control_development",
+    "planner_variant": "first_free_fixed_pd_tail",
+    "tail_policy_kp": [64, 64],
+    "tail_policy_kd": [0, 4],
+    "target_preview": false,
+    "future_actual_state": false,
+    "stage_effort_request": true,
+    "first_only_change": true,
+    "selected_only_trajectory": true,
+    "maximum_tail_request_vector_evaluations": 1360800,
+    "maximum_first_request_candidate_evaluations": 97200,
+    "exception_unknown_lower_bound_semantics": true,
+    "formal_collector_flag": false
+  },
+  "gain_identity_guard": {
+    "present_in_final_source": true,
+    "review_evidence_scope": "author reported existing _formal_provenance comparison and saved wire check tail_and_PDselected_gains_bound_before_source_archive; source byte identity preserved, selected stdout projection did not show that function",
+    "location": "after load_pd_binding, before archive-source loading; run entry restores D models only after provenance returns",
+    "additional_source_change_requested": false,
+    "additional_test_requested": false,
+    "initial_possible_gap_suggestion_corrected_to_root_and_agents": true
+  },
+  "tail_paid_count_contract": {
+    "complete_returned_decision_first": 81,
+    "complete_returned_decision_tail": "sum(max(candidate.pair_prediction_attempts-1,0)) after validating complete 81 records",
+    "include_rejected_prediction_stage_tail": true,
+    "use_selected_trajectory_length_for_total_tail": false,
+    "unknown_failed_or_incomplete_planning": true,
+    "tail_exception_can_precede_pair_attempt_increment": true,
+    "global_pair_accounting_alone_gives_exact_tail": false,
+    "returned_unwritten_or_exception_decision_dedup_required": true,
+    "model_scalar_count_completeness_separate": true
+  },
+  "scientific_limits": {
+    "old_D_pulse_20_percent_failure_retained": true,
+    "new_control_subgate_substitutes_for_C4": false,
+    "C5_dependency_released": false,
+    "partial_E_tracking_used_for_method_ranking": false,
+    "F_association_causal_claim": false
+  },
+  "limitations": [
+    "First copy WIP was not independently snapshotted by this review and is not final source identity",
+    "Source stdout projections selected limited functions/lines rather than independent full-function semantic verification",
+    "No actual archive, formal protocol, runtime model, independent audit fixture or physics validated here",
+    "Previously passed author checks are not counted as new checks run by this review"
+  ],
+  "artifacts": ["API_REVIEW.md", "SOURCE_RECORD.json", "runner_source_review_01.py", "runner_read_record_01.json"]
+}

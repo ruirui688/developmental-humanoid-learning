@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "sealed": true,
+  "files": [
+    {
+      "path": "API_CHECKS.json",
+      "bytes": 1066,
+      "sha256": "20e9b13df4c861fbef87fb223948fd07bd4a8a772116e5898fb03ff8cb5bfb3f"
+    },
+    {
+      "path": "DELIVERY.md",
+      "bytes": 2102,
+      "sha256": "99d4dc69c4a38991a70de4b5d0ef7b839c87565ef28a22fda5d85a9d4a183c2d"
+    },
+    {
+      "path": "reference_source_record.json",
+      "bytes": 879,
+      "sha256": "267b65c31aeddda39c9186e43e3d4c1ae91a2a7a3e9feb7b5c44139fc8ca2acf"
+    },
+    {
+      "path": "run_guard_lag_control_first_audit_once.py.reference_original.py",
+      "bytes": 1561,
+      "sha256": "2b115eb87eac614a7bedcc408d38e5198629d5ace28cf44c50573a3cd5406ddd"
+    },
+    {
+      "path": "run_guard_pd_tail_control_first_audit_once.py",
+      "bytes": 4981,
+      "sha256": "d94e927108e53dc037209cda35ae4264f4572b9d32d90dcc5d2be6cd49019866"
+    },
+    {
+      "path": "summarize_guard_lag_control_saved_once.py.reference_original.py",
+      "bytes": 5810,
+      "sha256": "f79d730d1fbe478c392e64997761e21624a3d35b56c1d9663bd5768d32b43120"
+    },
+    {
+      "path": "summarize_guard_pd_tail_control_saved_once.py",
+      "bytes": 7193,
+      "sha256": "90311e2ea5b431bbf319c3c7579a62c7d07b6581d41a52ed4530804cd3d7aa14"
+    }
+  ],
+  "payload_files": 7,
+  "seal_hash_read_bytes": 23592,
+  "pre_seal_source_API_read_bytes": 172295,
+  "total_explicit_logical_read_bytes": 195887,
+  "audit_executions": 0,
+  "archive_reads": 0,
+  "physics": 0,
+  "model_calls": 0,
+  "fits": 0,
+  "statistical_recomputations": 0,
+  "tests": 0,
+  "scope": "Source tools only, reference originals and two minimal syntax/API presence checks; no real or synthetic archive execution; integrity excludes itself"
+}

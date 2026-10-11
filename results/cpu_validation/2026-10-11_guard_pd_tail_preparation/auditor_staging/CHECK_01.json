@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "scope": "necessary new G audit-tail math/accounting/interface fixtures once; no old E/tail fixture rerun",
+  "source_sha256": "38322b00e04782a640f989ddc568d06e27c6fc8e5e18b68bfe0f9807cf38483a",
+  "source_bytes": 76376,
+  "baseline_sha256": "99e2fcddbe9bc00386093e6b8e16fd781f387b4696b9d3acf068a2c4b6cfe63c",
+  "baseline_bytes": 70035,
+  "checks": [
+    {
+      "label": "new_tail_candidate_complete_H15",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_uses_first_predicted_state_and_fixed_axis_gains",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_is_not_constant_first_request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_advances_each_candidates_own_old_current_velocity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_stage_effort_uses_each_request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_change_cost_first_request_only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_all_81_candidates_and_paid_H15_predictions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_independent_candidate_initial_histories",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_selected_trajectory_requests_interface",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_saved_request_tamper_detected",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_complete_decision_paid_count_and_duplicate_notice",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_unrecorded_planner_work_is_unknown_lower_bound",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_incomplete_81_record_coverage_not_exact_paid_count",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_rejected_first_endpoints_paid_empty_fallback_trajectory",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_no_tail_started_after_first_endpoint_rejection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_metadata_fixed_gains_caps_and_accounting_contract",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_tail_changed_gain_metadata_rejected",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_G_formal_archive_entry_disabled_without_read",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "retained_E_source_AST_only:physical_base",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "retained_E_source_AST_only:state_from_snapshot",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "retained_E_source_AST_only:bind_d_states",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "retained_E_source_AST_only:native_history",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "retained_E_source_AST_only:verify_reference",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "retained_E_source_AST_only:prediction_math",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "retained_E_source_AST_only:development_comparison",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "retained_E_source_AST_only:validate_failed_planning",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "label": "new_G_fixture_no_online_model_planner_runner_import",
+      "passed": true,
+      "actual": null
+    }
+  ],
+  "passed": 27,
+  "failed": 0,
+  "manual_fake_predict_calls": 1311,
+  "independent_G_fixture_replay_counts": {
+    "candidate_replays": 163,
+    "planning_pair_attempts": 1311,
+    "planning_pair_successes": 1311,
+    "planning_scalar_attempts": 2622,
+    "planning_scalar_successes": 2622,
+    "tail_request_reconstructions": 1148,
+    "planner_replays": 2,
+    "paid_tail_saved_decision_verifications": 3
+  },
+  "original_independent_model_math_cost_delta": {},
+  "explicit_source_read_opens": 2,
+  "explicit_source_read_bytes": 146411,
+  "source_module_imports": "Python import and original independent support loading are nonzero source-only work, excluded from explicit two-file content read count",
+  "wall_seconds": 0.17931490018963814,
+  "cpu_seconds": 0.125,
+  "timing_scope": "entry through fixture and report assembly; excludes final CHECK JSON serialization/write",
+  "new_physical_calls": 0,
+  "actual_E_C_D_F_data_reads": 0,
+  "online_model_predict_calls": 0,
+  "fit_or_update_calls": 0,
+  "scientific_adoption": {
+    "evaluated": false,
+    "passed": false
+  },
+  "formal_audit_enabled": false
+}

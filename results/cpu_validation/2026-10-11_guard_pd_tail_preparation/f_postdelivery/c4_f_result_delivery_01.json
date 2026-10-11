@@ -1,0 +1,20 @@
+{
+  "checks": 211,
+  "failed": 0,
+  "failures": [],
+  "manifest_sha256": "186417692aff1c1f7caadc87cae088c3ceb65da5935e246a3992fbcb66394977",
+  "execution": {
+    "git_blob_reads": 33,
+    "git_binary_bytes": 13080728,
+    "local_binary_reads": 6,
+    "local_binary_bytes": 139492,
+    "wall_seconds": 1.8660207001958042,
+    "cpu_seconds": 0.25,
+    "timing_scope": "checks through report assembly; excludes final report writing",
+    "model_calls": 0,
+    "physics": 0,
+    "updates": 0,
+    "diagnostic_reexecutions": 0,
+    "new_statistics": 0
+  }
+}

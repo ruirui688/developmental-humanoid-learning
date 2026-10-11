@@ -1,0 +1,296 @@
+{
+  "files": [
+    {
+      "source_path": "external/c4_pd_tail_control_audit_staging/audit_guard_pd_tail_control.py",
+      "snapshot_path": "audit_guard_pd_tail_control.original.py",
+      "sha256": "38322b00e04782a640f989ddc568d06e27c6fc8e5e18b68bfe0f9807cf38483a",
+      "bytes": 76376
+    },
+    {
+      "source_path": "external/c4_pd_tail_protocol_staging/G_PROTOCOL_DRAFT.md",
+      "snapshot_path": "G_PROTOCOL_DRAFT.original.md",
+      "sha256": "e69d1453d3d70a37e9685f593f7ff6da182fbd3bb471b145a3c4d475e8a56167",
+      "bytes": 7039
+    }
+  ],
+  "read_opens": 2,
+  "read_binary_bytes": 83415,
+  "hash_operations": 3,
+  "AST_parses": 1,
+  "wall_seconds": 0.014420700026676059,
+  "cpu_seconds": 0.015625,
+  "model_imports": 0,
+  "model_calls": 0,
+  "mathematical_replays": 0,
+  "physical_queries": 0,
+  "actual_E_C_D_F_reads": 0,
+  "fixture_reexecutions": 0,
+  "git_calls": 0,
+  "scope": "single audit/protocol original byte read, audit source AST inventory only; first audit SHA checked before snapshots",
+  "source_nodes": [
+    {
+      "kind": "FunctionDef",
+      "name": "validate",
+      "line": 42,
+      "end_line": 52
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "tail_requested",
+      "line": 54,
+      "end_line": 58
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "candidate_math",
+      "line": 61,
+      "end_line": 98
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "choose_feasible",
+      "line": 101,
+      "end_line": 112
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "replay_mpc",
+      "line": 115,
+      "end_line": 125
+    },
+    {
+      "kind": "ClassDef",
+      "name": "AuditSpec",
+      "line": 148,
+      "end_line": 159
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "exact",
+      "line": 162,
+      "end_line": 162
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "sha",
+      "line": 163,
+      "end_line": 163
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "parse",
+      "line": 164,
+      "end_line": 164
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "load",
+      "line": 165,
+      "end_line": 165
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "physical_base",
+      "line": 167,
+      "end_line": 288
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "complete",
+      "line": 290,
+      "end_line": 290
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "nonnegative_pair",
+      "line": 291,
+      "end_line": 291
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "fixed_complete",
+      "line": 292,
+      "end_line": 293
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "development_comparison",
+      "line": 295,
+      "end_line": 339
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "development_gates",
+      "line": 341,
+      "end_line": 347
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "planner_spec",
+      "line": 349,
+      "end_line": 365
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "native_history",
+      "line": 367,
+      "end_line": 381
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "planned_matrix",
+      "line": 396,
+      "end_line": 397
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "required_sources",
+      "line": 399,
+      "end_line": 401
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "source_name_allowed",
+      "line": 403,
+      "end_line": 405
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "read_inputs",
+      "line": 407,
+      "end_line": 419
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "verify_sources",
+      "line": 421,
+      "end_line": 450
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "state_from_snapshot",
+      "line": 452,
+      "end_line": 463
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "bind_d_states",
+      "line": 465,
+      "end_line": 514
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "history_record",
+      "line": 516,
+      "end_line": 518
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "verify_reference",
+      "line": 520,
+      "end_line": 548
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "add_meter",
+      "line": 550,
+      "end_line": 551
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "prediction_math",
+      "line": 553,
+      "end_line": 562
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "input_record",
+      "line": 564,
+      "end_line": 566
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "successful_one_meter",
+      "line": 568,
+      "end_line": 568
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "verify_active_inputs",
+      "line": 570,
+      "end_line": 585
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "failed_diagnostic_meter",
+      "line": 587,
+      "end_line": 589
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "validate_failed_planning",
+      "line": 591,
+      "end_line": 596
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "metric_maps",
+      "line": 598,
+      "end_line": 599
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "paid_tail_requests",
+      "line": 601,
+      "end_line": 633
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "actor_and_diagnostics",
+      "line": 635,
+      "end_line": 773
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "verify_tail_metadata",
+      "line": 790,
+      "end_line": 795
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "verify_metadata",
+      "line": 798,
+      "end_line": 820
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "validate_trace_order",
+      "line": 822,
+      "end_line": 831
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "blocked_result",
+      "line": 833,
+      "end_line": 845
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "audit_archive",
+      "line": 847,
+      "end_line": 926
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "audit",
+      "line": 928,
+      "end_line": 958
+    },
+    {
+      "kind": "FunctionDef",
+      "name": "main",
+      "line": 960,
+      "end_line": 971
+    }
+  ]
+}

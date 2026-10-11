@@ -1,0 +1,423 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "archive_kind": "G engineering preparation originals",
+  "files": {
+    "planner_staging/check_pd_tail_new_branches.py": {
+      "sha256": "0d3d92654d9414f8585e2651864aeb78033959d1997e3f6a132d03d5f0dafd7a",
+      "bytes": 8765
+    },
+    "planner_staging/DELIVERY.md": {
+      "sha256": "af49e8950b433be70714577d86ba1c16663bdbab1b6236ef7a00e7d1f0dfe413",
+      "bytes": 4269
+    },
+    "planner_staging/engineering_01/run.json": {
+      "sha256": "a939526d1273d5113dcd194eb0c71cabb3174f1e9e4427c07a035d773b307571",
+      "bytes": 4337
+    },
+    "planner_staging/engineering_01/source_snapshot/external/c4_pd_tail_mpc_staging/check_pd_tail_new_branches.py": {
+      "sha256": "0d3d92654d9414f8585e2651864aeb78033959d1997e3f6a132d03d5f0dafd7a",
+      "bytes": 8765
+    },
+    "planner_staging/engineering_01/source_snapshot/external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py": {
+      "sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed",
+      "bytes": 8210
+    },
+    "planner_staging/engineering_01/source_snapshot/external/c4_pd_tail_mpc_staging/run_new_tail_once.py": {
+      "sha256": "2ef64ef289196ad82e59d065426a948e53eb5c3ead776de2506549fac747a4bc",
+      "bytes": 3782
+    },
+    "planner_staging/engineering_01/source_snapshot/src/developmental_physics/__init__.py": {
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+      "bytes": 162
+    },
+    "planner_staging/engineering_01/source_snapshot/src/developmental_physics/guard_lag_pair_model.py": {
+      "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+      "bytes": 11351
+    },
+    "planner_staging/engineering_01/source_snapshot/src/developmental_physics/guard_lag_pair_mpc.py": {
+      "sha256": "2f6c9f4f7f7f128157897f67d40a6cfef09fef582aaeac55945d28399a59d97d",
+      "bytes": 8560
+    },
+    "planner_staging/engineering_01/source_snapshot/src/developmental_physics/guard_pair_model.py": {
+      "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3",
+      "bytes": 6860
+    },
+    "planner_staging/engineering_01/source_snapshot/src/developmental_physics/local_model.py": {
+      "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1",
+      "bytes": 16564
+    },
+    "planner_staging/engineering_01/source_snapshot/src/developmental_physics/local_pair_model.py": {
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+      "bytes": 25148
+    },
+    "planner_staging/engineering_01/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "planner_staging/engineering_01/stdout.txt": {
+      "sha256": "6747e67b3cb6b972bd6725c765eb29635015938dbffb1f38530f328f66f43191",
+      "bytes": 1536
+    },
+    "planner_staging/pd_tail_pair_mpc.py": {
+      "sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed",
+      "bytes": 8210
+    },
+    "planner_staging/run_new_tail_once.py": {
+      "sha256": "2ef64ef289196ad82e59d065426a948e53eb5c3ead776de2506549fac747a4bc",
+      "bytes": 3782
+    },
+    "planner_staging/SOURCE_RECORD.json": {
+      "sha256": "861abd383bf61803dd9815bb8ba1b4143c312be7a5da6deca6b57b4100722cb4",
+      "bytes": 4259
+    },
+    "runner_staging/check_new_wire_once.py": {
+      "sha256": "3b9b8677902e08686e75dad0c9091d59dbdf498dee01baf8ded4e2739abc6651",
+      "bytes": 12141
+    },
+    "runner_staging/check_remaining_wire_once.py": {
+      "sha256": "3a0d0d5fd985d78806d1f76d3495ce3388d3af15be8ab75d7b0bb1aa95c96f7e",
+      "bytes": 14766
+    },
+    "runner_staging/CHECKER_RECOVERY.json": {
+      "sha256": "c210682be5a91882a7272d7755c5e8ae6b896cf9c64b03e1605644d0e4f385b0",
+      "bytes": 528
+    },
+    "runner_staging/DELIVERY.md": {
+      "sha256": "592ae151081af08c724c55519f8d68c81604603d04e41d57325ca66ef7f324b4",
+      "bytes": 6658
+    },
+    "runner_staging/engineering_01/run.json": {
+      "sha256": "6eef8966e9d344bf80639a486e7f85d8726e99d01a7002ab5d6dd3076ca3ba15",
+      "bytes": 2788
+    },
+    "runner_staging/engineering_01/source_snapshot/external/c4_pd_tail_control_runner_staging/guard_lag_control_development.original.py": {
+      "sha256": "3ea1b07dcfdf6c6fdadc7d82269871f629e098f3f74c0d5c2c9520162f55e7da",
+      "bytes": 40309
+    },
+    "runner_staging/engineering_01/source_snapshot/external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py": {
+      "sha256": "68ba5d199fdb53258cfb9337026a04e65798e343ddc7ab048192e210ddc4bda3",
+      "bytes": 41606
+    },
+    "runner_staging/engineering_01/source_snapshot/external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py": {
+      "sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed",
+      "bytes": 8210
+    },
+    "runner_staging/engineering_01/source_snapshot/src/developmental_physics/guard_lag_pair_mpc.py": {
+      "sha256": "2f6c9f4f7f7f128157897f67d40a6cfef09fef582aaeac55945d28399a59d97d",
+      "bytes": 8560
+    },
+    "runner_staging/engineering_01/source_snapshot/src/developmental_physics/local_pair_model.py": {
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+      "bytes": 25148
+    },
+    "runner_staging/engineering_02/run.json": {
+      "sha256": "986a2d37eb172ae88ea3443284a71400880c23b9762b74baafec7595ac1d595d",
+      "bytes": 4364
+    },
+    "runner_staging/engineering_02/source_snapshot/external/c4_pd_tail_control_runner_staging/engineering_01/source_snapshot/external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py": {
+      "sha256": "68ba5d199fdb53258cfb9337026a04e65798e343ddc7ab048192e210ddc4bda3",
+      "bytes": 41606
+    },
+    "runner_staging/engineering_02/source_snapshot/external/c4_pd_tail_control_runner_staging/guard_lag_control_development.original.py": {
+      "sha256": "3ea1b07dcfdf6c6fdadc7d82269871f629e098f3f74c0d5c2c9520162f55e7da",
+      "bytes": 40309
+    },
+    "runner_staging/engineering_02/source_snapshot/external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py": {
+      "sha256": "47407917ff7ac184ab7f0859a6fb63d30946805e3ad23cc4268d3eae4b115720",
+      "bytes": 42400
+    },
+    "runner_staging/engineering_02/source_snapshot/external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py": {
+      "sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed",
+      "bytes": 8210
+    },
+    "runner_staging/engineering_02/source_snapshot/src/developmental_physics/guard_lag_pair_mpc.py": {
+      "sha256": "2f6c9f4f7f7f128157897f67d40a6cfef09fef582aaeac55945d28399a59d97d",
+      "bytes": 8560
+    },
+    "runner_staging/engineering_02/source_snapshot/src/developmental_physics/local_pair_model.py": {
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+      "bytes": 25148
+    },
+    "runner_staging/guard_lag_control_development.original.py": {
+      "sha256": "3ea1b07dcfdf6c6fdadc7d82269871f629e098f3f74c0d5c2c9520162f55e7da",
+      "bytes": 40309
+    },
+    "runner_staging/INTEGRITY.json": {
+      "sha256": "b8a9f1e5ca72e36c1d8ba1273c8f399ff9d4162f78763e88f8ef6e7d381780bd",
+      "bytes": 5791
+    },
+    "runner_staging/ORIGINAL_SOURCE.json": {
+      "sha256": "877245327ee9f6826f18e35802b9ee38700cf0a4e354e4ecd60e9f6096e0621e",
+      "bytes": 455
+    },
+    "runner_staging/pd_tail_control_development.py": {
+      "sha256": "47407917ff7ac184ab7f0859a6fb63d30946805e3ad23cc4268d3eae4b115720",
+      "bytes": 42400
+    },
+    "auditor_staging/audit_guard_lag_control.baseline.original.py": {
+      "sha256": "99e2fcddbe9bc00386093e6b8e16fd781f387b4696b9d3acf068a2c4b6cfe63c",
+      "bytes": 70035
+    },
+    "auditor_staging/audit_guard_pd_tail_control.final.original.py": {
+      "sha256": "38322b00e04782a640f989ddc568d06e27c6fc8e5e18b68bfe0f9807cf38483a",
+      "bytes": 76376
+    },
+    "auditor_staging/audit_guard_pd_tail_control.py": {
+      "sha256": "38322b00e04782a640f989ddc568d06e27c6fc8e5e18b68bfe0f9807cf38483a",
+      "bytes": 76376
+    },
+    "auditor_staging/BUILD_SOURCE_RECORD.json": {
+      "sha256": "28579ffdd5d4ec230ce4b9c4371cb01c1f86e827015fbafa040f8e977419a38c",
+      "bytes": 577
+    },
+    "auditor_staging/CHECK_01.json": {
+      "sha256": "d03a890f60ec8d72b83affd934048a2858fe1f63e67de5cd06fc9636c444d4c7",
+      "bytes": 4976
+    },
+    "auditor_staging/CHECK_01.py": {
+      "sha256": "ec2b3ec3a0edd7a37374e9503b331b0a47b20e429fc5522c51b31848badb9f81",
+      "bytes": 9724
+    },
+    "auditor_staging/DELIVERY.md": {
+      "sha256": "804f6d68e7b6e7845f61b35b4dbdaa362f55c4b4acf0032a9b4a4f65bca01721",
+      "bytes": 4440
+    },
+    "auditor_staging/INTEGRITY.json": {
+      "sha256": "35f6a79c48f4cd4273d49b0ee03b4a512e88251c8f34f68db16daa29ed769fef",
+      "bytes": 1606
+    },
+    "api_review/API_REVIEW.md": {
+      "sha256": "9d3eecd049bb3dee46bc4c1d1d3a13106cef374e4b102643758b6a45ab61a313",
+      "bytes": 7839
+    },
+    "api_review/runner_read_record_01.json": {
+      "sha256": "711618b462dd89bc1d47789c4665b56115222caa247fa78076edcb5d01af6d55",
+      "bytes": 288
+    },
+    "api_review/runner_source_review_01.py": {
+      "sha256": "47407917ff7ac184ab7f0859a6fb63d30946805e3ad23cc4268d3eae4b115720",
+      "bytes": 42400
+    },
+    "api_review/SOURCE_RECORD.json": {
+      "sha256": "8e77b97468704c1ecec58d7e233b3a2c0ba24f1c87096834e25137b45a9e38d5",
+      "bytes": 5546
+    },
+    "limited_static_review/audit_guard_pd_tail_control.original.py": {
+      "sha256": "38322b00e04782a640f989ddc568d06e27c6fc8e5e18b68bfe0f9807cf38483a",
+      "bytes": 76376
+    },
+    "limited_static_review/G_PROTOCOL_DRAFT.original.md": {
+      "sha256": "e69d1453d3d70a37e9685f593f7ff6da182fbd3bb471b145a3c4d475e8a56167",
+      "bytes": 7039
+    },
+    "limited_static_review/INTEGRITY.json": {
+      "sha256": "4121daa6ac9c19fd600149fa0efa89c5d360e54c91433509b226c047144fde0f",
+      "bytes": 1743
+    },
+    "limited_static_review/PROJECTION_RECORD.json": {
+      "sha256": "ccc1374672044e22c8dab07205379f6ea953f41b1ec487abcad169d9b7615286",
+      "bytes": 649
+    },
+    "limited_static_review/PROJECTION_RECOVERY_RECORD.json": {
+      "sha256": "e7c259c3053cd2e5db5ea0d50ae7f84181281ab04de65693dcc167c38d7f3586",
+      "bytes": 385
+    },
+    "limited_static_review/REVIEW.md": {
+      "sha256": "69f4bf64a7ffd37d0543d0015bd86aff15cd9d3b3000b13768a223bb23aaf269",
+      "bytes": 5890
+    },
+    "limited_static_review/SOURCE_RECORD.json": {
+      "sha256": "e609ddb08d9b9881473e12e9bfda7a7bf77620215f0ce483751cd0dac2acbf34",
+      "bytes": 6373
+    },
+    "protocol_draft/G_PROTOCOL_DRAFT.md": {
+      "sha256": "e69d1453d3d70a37e9685f593f7ff6da182fbd3bb471b145a3c4d475e8a56167",
+      "bytes": 7039
+    },
+    "first_execution_wrappers/DELIVERY.md": {
+      "sha256": "fd5021bb81d5aac67b0258a673a0fe06c7e3a5fc205efa9d33aa9af4184aa686",
+      "bytes": 2985
+    },
+    "first_execution_wrappers/INTEGRITY.json": {
+      "sha256": "16a22a12d94ee77ef19d4a7945a70412a6dab904eb39fcdd36d46d0f565a9b69",
+      "bytes": 1341
+    },
+    "first_execution_wrappers/run_guard_lag_control_once.original.py": {
+      "sha256": "c33d7ca80380e31bbe6507725760dbaf0dcd2a158fa6d02d998bf8392ce5fd89",
+      "bytes": 3154
+    },
+    "first_execution_wrappers/run_pd_tail_control_once.original.py": {
+      "sha256": "1bbcb4bd8d1dbb15c86c729a6d0c0e576e00c2673ac0a3604396b646de92775e",
+      "bytes": 3907
+    },
+    "first_execution_wrappers/run_pd_tail_control_once.py": {
+      "sha256": "1bbcb4bd8d1dbb15c86c729a6d0c0e576e00c2673ac0a3604396b646de92775e",
+      "bytes": 3907
+    },
+    "first_execution_wrappers/STATIC_CHECK_01.json": {
+      "sha256": "d9a254aa1b6015f9d82b806635842905ecbfecd2ec055f5fba5cf71a3a5756cc",
+      "bytes": 1973
+    },
+    "first_execution_wrappers/STATIC_CHECK_01.py": {
+      "sha256": "919b6ea1ca770b4e4752dd5278d1302ff1468762c3a3274522ad2081da5f3076",
+      "bytes": 4573
+    },
+    "summary_tools/API_CHECKS.json": {
+      "sha256": "20e9b13df4c861fbef87fb223948fd07bd4a8a772116e5898fb03ff8cb5bfb3f",
+      "bytes": 1066
+    },
+    "summary_tools/DELIVERY.md": {
+      "sha256": "99d4dc69c4a38991a70de4b5d0ef7b839c87565ef28a22fda5d85a9d4a183c2d",
+      "bytes": 2102
+    },
+    "summary_tools/INTEGRITY.json": {
+      "sha256": "c98909c59d78b0c9ad5ab25f8e1b79a9aaf62e46c81918ab2f099d619cd237b6",
+      "bytes": 1782
+    },
+    "summary_tools/reference_source_record.json": {
+      "sha256": "267b65c31aeddda39c9186e43e3d4c1ae91a2a7a3e9feb7b5c44139fc8ca2acf",
+      "bytes": 879
+    },
+    "summary_tools/run_guard_lag_control_first_audit_once.py.reference_original.py": {
+      "sha256": "2b115eb87eac614a7bedcc408d38e5198629d5ace28cf44c50573a3cd5406ddd",
+      "bytes": 1561
+    },
+    "summary_tools/run_guard_pd_tail_control_first_audit_once.py": {
+      "sha256": "d94e927108e53dc037209cda35ae4264f4572b9d32d90dcc5d2be6cd49019866",
+      "bytes": 4981
+    },
+    "summary_tools/summarize_guard_lag_control_saved_once.py.reference_original.py": {
+      "sha256": "f79d730d1fbe478c392e64997761e21624a3d35b56c1d9663bd5768d32b43120",
+      "bytes": 5810
+    },
+    "summary_tools/summarize_guard_pd_tail_control_saved_once.py": {
+      "sha256": "90311e2ea5b431bbf319c3c7579a62c7d07b6581d41a52ed4530804cd3d7aa14",
+      "bytes": 7193
+    },
+    "f_postdelivery/verify_guard_native_result_once.py": {
+      "sha256": "fad07983c243fb159d575c0cec42a45f5cb18d5db10f38efe331bc6b71bb769b",
+      "bytes": 2466
+    },
+    "f_postdelivery/c4_f_result_delivery_01.json": {
+      "sha256": "763e0ef11b99a7ec54bf9ccd64acd811f82a6fc50a4c7dc578ca1935bb46371f",
+      "bytes": 553
+    },
+    "promotion/promotion.json": {
+      "sha256": "b4f4121ce953bc5714fe2a289230ffbad02124bb611df0bd86c3c625be39b935",
+      "bytes": 2629
+    },
+    "promotion/promotion_source.py": {
+      "sha256": "65309a4ec09780b69c9a8202e728126f82adfec00b5cd34fb582fd16f070ca03",
+      "bytes": 4699
+    },
+    "production_protocol_snapshot.md": {
+      "sha256": "e4853759e0424465d353a4fab289aa7ac7a4235474ea46100eafce35fbae4374",
+      "bytes": 7530
+    },
+    "tools/archive_guard_pd_tail_control_once.py": {
+      "sha256": "f6cef72b9cf209d915ac5f4b1cf1f331b1f321f63d77f837d441a5532eb3d45c",
+      "bytes": 3710
+    },
+    "archive_attempt_01/archive_execution.json": {
+      "sha256": "9ec9ebc14fd8a56908f812dfcd2097c15c826be466743aba5dcfad01c99fb568",
+      "bytes": 31334
+    },
+    "archive_attempt_01/manifest.json": {
+      "bytes": 15563,
+      "sha256": "bd0674c731ae704598defd6097b7020c11af8809379e290050de66c1bcdbfcd8"
+    },
+    "tools/archive_preparation_once.py": {
+      "bytes": 11195,
+      "sha256": "324e26e6c6d74988a80da54fe686af93a2aa95ed57b88c47baecef5070d268e7"
+    },
+    "tools/complete_archive_manifest_once.py": {
+      "bytes": 7037,
+      "sha256": "5add7a8b440ba0fafe4b53f1c95a7b0092b33300a91f251cefd2338cbf9eef0d"
+    },
+    "archive_schema_inspection.json": {
+      "bytes": 299,
+      "sha256": "e04d08ad747901d19ec31a2c06959498cad1710be60455547159252468fc4db0"
+    },
+    "archive_execution.json": {
+      "bytes": 3504,
+      "sha256": "2ef1a6083af52cae631ba618c039e64ab6b644967facc34b8b2561e0fa207644"
+    }
+  },
+  "payload_count": 85,
+  "payload_bytes": 1088236,
+  "copied_file_count": 79,
+  "copied_payload_bytes": 1019304,
+  "first_attempt_status": "exception",
+  "first_attempt_preserved": true,
+  "checked_sealed_manifests": [
+    {
+      "path": "runner_staging/INTEGRITY.json",
+      "payloads_checked": 20,
+      "failed": 0,
+      "parsed_from_source_copy_memory": true
+    },
+    {
+      "path": "auditor_staging/INTEGRITY.json",
+      "payloads_checked": 7,
+      "failed": 0,
+      "scope": "only copied manifest parsed; raw copy identities reused from first attempt"
+    },
+    {
+      "path": "limited_static_review/INTEGRITY.json",
+      "payloads_checked": 6,
+      "failed": 0,
+      "scope": "only copied manifest parsed; raw copy identities reused from first attempt"
+    },
+    {
+      "path": "first_execution_wrappers/INTEGRITY.json",
+      "payloads_checked": 6,
+      "failed": 0,
+      "scope": "only copied manifest parsed; raw copy identities reused from first attempt"
+    },
+    {
+      "path": "summary_tools/INTEGRITY.json",
+      "payloads_checked": 7,
+      "failed": 0,
+      "scope": "only copied manifest parsed; raw copy identities reused from first attempt"
+    }
+  ],
+  "reused_successful_copy_verifications": 79,
+  "first_copy_fee": {
+    "source_opens": 79,
+    "source_binary_bytes_read": 1019304,
+    "destination_verification_opens": 79,
+    "destination_binary_bytes_read": 1019304,
+    "payload_write_opens": 79,
+    "payload_binary_bytes_written": 1019304,
+    "hash_operations": 158,
+    "helper_source_opens": 0,
+    "helper_source_binary_bytes_read": 0,
+    "model_calls": 0,
+    "physical_queries": 0,
+    "mathematical_replays": 0,
+    "actual_E_C_D_F_reads": 0,
+    "fixture_reexecutions": 0,
+    "parameter_updates": 0,
+    "git_calls": 0
+  },
+  "recovery_fee": {
+    "copied_record_opens": 9,
+    "copied_record_binary_bytes_read": 71900,
+    "hash_operations": 9,
+    "original_payload_reads": 0,
+    "payload_recopies": 0,
+    "model_calls": 0,
+    "mathematical_replays": 0,
+    "physical_queries": 0,
+    "actual_E_C_D_F_reads": 0,
+    "git_calls": 0
+  },
+  "recovery_final_record_fee": {
+    "write_opens": 1,
+    "bytes_written": 3504,
+    "in_memory_hash_operations": 1
+  },
+  "physics_or_learning_executed": false,
+  "draft_and_production_sources_are_separately_disclosed": true
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T11:45:51.421965+00:00",
+  "git_HEAD": "734ab7dab53563327b7dc072378551d2045b68ac",
+  "source_status": "unselected engineering draft; snapshot before first new-tail fixture",
+  "candidate_selected": false,
+  "formal_experiment_enabled": false,
+  "python_executable": "D:\\Python3.10\\python.exe",
+  "exit_code": 0,
+  "wrapper_wall_seconds": 0.29450220009312034,
+  "wrapper_cpu_seconds_excluding_child": 0.0,
+  "source_snapshot_files": [
+    {
+      "path": "external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py",
+      "bytes": 8210,
+      "sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed"
+    },
+    {
+      "path": "external/c4_pd_tail_mpc_staging/check_pd_tail_new_branches.py",
+      "bytes": 8765,
+      "sha256": "0d3d92654d9414f8585e2651864aeb78033959d1997e3f6a132d03d5f0dafd7a"
+    },
+    {
+      "path": "external/c4_pd_tail_mpc_staging/run_new_tail_once.py",
+      "bytes": 3782,
+      "sha256": "2ef64ef289196ad82e59d065426a948e53eb5c3ead776de2506549fac747a4bc"
+    },
+    {
+      "path": "src/developmental_physics/__init__.py",
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+    },
+    {
+      "path": "src/developmental_physics/guard_lag_pair_mpc.py",
+      "bytes": 8560,
+      "sha256": "2f6c9f4f7f7f128157897f67d40a6cfef09fef582aaeac55945d28399a59d97d"
+    },
+    {
+      "path": "src/developmental_physics/guard_lag_pair_model.py",
+      "bytes": 11351,
+      "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+    },
+    {
+      "path": "src/developmental_physics/guard_pair_model.py",
+      "bytes": 6860,
+      "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+    },
+    {
+      "path": "src/developmental_physics/local_model.py",
+      "bytes": 16564,
+      "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+    },
+    {
+      "path": "src/developmental_physics/local_pair_model.py",
+      "bytes": 25148,
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+    }
+  ],
+  "explicit_source_snapshot_read_bytes": 89402,
+  "saved_stdout_read_bytes": 1536,
+  "explicit_wrapper_read_bytes": 90938,
+  "read_cost_scope": "explicit source snapshots/hash pass and one saved stdout JSON projection; imports are not disk-I/O measured",
+  "child_report": {
+    "schema_version": 1,
+    "checks": [
+      {
+        "name": "H1_new_tail_degenerates_to_first_request_only_manual_reference",
+        "passed": true
+      },
+      {
+        "name": "H2_candidate_own_history_and_candidate_isolation",
+        "passed": true
+      },
+      {
+        "name": "H2_selected_request_trajectory_stage_effort_and_first_only_change",
+        "passed": true
+      },
+      {
+        "name": "H15_candidate_own_history_and_candidate_isolation",
+        "passed": true
+      },
+      {
+        "name": "H15_selected_request_trajectory_stage_effort_and_first_only_change",
+        "passed": true
+      }
+    ],
+    "check_count": 5,
+    "failed": 0,
+    "fixture": "three synthetic evaluations only: H1/H2/H15, 81 candidates each",
+    "candidate_selected": false,
+    "formal_experiment_enabled": false,
+    "cost": {
+      "synthetic_model_pair_calls": 1458,
+      "synthetic_model_scalar_outputs": 2916,
+      "independent_H1_reference_pair_calculations": 81,
+      "independent_H1_reference_scalar_calculations": 162,
+      "independent_tail_request_vector_calculations": 1215,
+      "independent_stage_cost_endpoint_calculations": 115,
+      "parameter_fingerprint_calls": 6,
+      "physics_steps": 0,
+      "archive_reads": 0,
+      "model_updates": 0,
+      "old_MPC_select_calls": 0,
+      "old_fixture_runs": 0
+    },
+    "execution": {
+      "wall_seconds": 0.025703799910843372,
+      "cpu_seconds": 0.03125,
+      "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+      "numpy": "1.26.4"
+    }
+  },
+  "cost_exclusions": "module/package import I/O and interpreter startup compute are not zero; wrapper wall includes child startup",
+  "physics_steps": 0,
+  "E_C_D_archive_reads": 0,
+  "fits": 0,
+  "old_fixture_runs": 0
+}

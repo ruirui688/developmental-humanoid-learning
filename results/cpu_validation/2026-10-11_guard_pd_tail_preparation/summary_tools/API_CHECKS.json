@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "name": "run_guard_pd_tail_control_first_audit_once.py_syntax_and_required_API_fields_only",
+      "passed": true
+    },
+    {
+      "name": "summarize_guard_pd_tail_control_saved_once.py_syntax_and_required_API_fields_only",
+      "passed": true
+    }
+  ],
+  "failed": 0,
+  "sources": [
+    {
+      "path": "run_guard_pd_tail_control_first_audit_once.py",
+      "bytes": 4981,
+      "sha256": "d94e927108e53dc037209cda35ae4264f4572b9d32d90dcc5d2be6cd49019866"
+    },
+    {
+      "path": "summarize_guard_pd_tail_control_saved_once.py",
+      "bytes": 7193,
+      "sha256": "90311e2ea5b431bbf319c3c7579a62c7d07b6581d41a52ed4530804cd3d7aa14"
+    }
+  ],
+  "new_tool_source_read_bytes": 12174,
+  "reference_and_auditor_source_read_bytes": 160121,
+  "physics": 0,
+  "audit_executions": 0,
+  "archive_reads": 0,
+  "model_calls": 0,
+  "statistical_recomputations": 0,
+  "tests": 0,
+  "scope": "Two syntax/API-presence checks only; tools not executed and no synthetic archive fixture"
+}

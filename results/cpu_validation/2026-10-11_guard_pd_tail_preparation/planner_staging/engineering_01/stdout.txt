@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "name": "H1_new_tail_degenerates_to_first_request_only_manual_reference",
+      "passed": true
+    },
+    {
+      "name": "H2_candidate_own_history_and_candidate_isolation",
+      "passed": true
+    },
+    {
+      "name": "H2_selected_request_trajectory_stage_effort_and_first_only_change",
+      "passed": true
+    },
+    {
+      "name": "H15_candidate_own_history_and_candidate_isolation",
+      "passed": true
+    },
+    {
+      "name": "H15_selected_request_trajectory_stage_effort_and_first_only_change",
+      "passed": true
+    }
+  ],
+  "check_count": 5,
+  "failed": 0,
+  "fixture": "three synthetic evaluations only: H1/H2/H15, 81 candidates each",
+  "candidate_selected": false,
+  "formal_experiment_enabled": false,
+  "cost": {
+    "synthetic_model_pair_calls": 1458,
+    "synthetic_model_scalar_outputs": 2916,
+    "independent_H1_reference_pair_calculations": 81,
+    "independent_H1_reference_scalar_calculations": 162,
+    "independent_tail_request_vector_calculations": 1215,
+    "independent_stage_cost_endpoint_calculations": 115,
+    "parameter_fingerprint_calls": 6,
+    "physics_steps": 0,
+    "archive_reads": 0,
+    "model_updates": 0,
+    "old_MPC_select_calls": 0,
+    "old_fixture_runs": 0
+  },
+  "execution": {
+    "wall_seconds": 0.025703799910843372,
+    "cpu_seconds": 0.03125,
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4"
+  }
+}

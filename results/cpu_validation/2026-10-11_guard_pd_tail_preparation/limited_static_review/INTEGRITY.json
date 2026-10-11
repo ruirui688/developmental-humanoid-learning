@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "audit_guard_pd_tail_control.original.py",
+      "bytes": 76376,
+      "sha256": "38322b00e04782a640f989ddc568d06e27c6fc8e5e18b68bfe0f9807cf38483a"
+    },
+    {
+      "path": "G_PROTOCOL_DRAFT.original.md",
+      "bytes": 7039,
+      "sha256": "e69d1453d3d70a37e9685f593f7ff6da182fbd3bb471b145a3c4d475e8a56167"
+    },
+    {
+      "path": "PROJECTION_RECORD.json",
+      "bytes": 649,
+      "sha256": "ccc1374672044e22c8dab07205379f6ea953f41b1ec487abcad169d9b7615286"
+    },
+    {
+      "path": "PROJECTION_RECOVERY_RECORD.json",
+      "bytes": 385,
+      "sha256": "e7c259c3053cd2e5db5ea0d50ae7f84181281ab04de65693dcc167c38d7f3586"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 5890,
+      "sha256": "69f4bf64a7ffd37d0543d0015bd86aff15cd9d3b3000b13768a223bb23aaf269"
+    },
+    {
+      "path": "SOURCE_RECORD.json",
+      "bytes": 6373,
+      "sha256": "e609ddb08d9b9881473e12e9bfda7a7bf77620215f0ce483751cd0dac2acbf34"
+    }
+  ],
+  "review_result": "no_new_blocker_in_limited_static_scope",
+  "formal_physics_authorized": false,
+  "prior_explicit_read_accounting": {
+    "opens": 4,
+    "binary_bytes": 236167,
+    "hash_operations": 3,
+    "AST_parses": 1
+  },
+  "integrity_generation_reads": {
+    "opens": 6,
+    "binary_bytes": 96712,
+    "hash_operations": 6,
+    "AST_parses": 0,
+    "scope": "explicit saved review payload reads/hash; excludes this manifest itself, interpreter/import reads and final write"
+  },
+  "integrity_wall_seconds": 0.035529900109395385,
+  "integrity_cpu_seconds": 0.0,
+  "model_imports": 0,
+  "model_calls": 0,
+  "mathematical_replays": 0,
+  "physical_queries": 0,
+  "actual_E_C_D_F_reads": 0,
+  "fixture_reexecutions": 0,
+  "git_calls": 0
+}

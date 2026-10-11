@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "static_only_wrapper_not_executed",
+  "files": {
+    "DELIVERY.md": {
+      "bytes": 2985,
+      "sha256": "fd5021bb81d5aac67b0258a673a0fe06c7e3a5fc205efa9d33aa9af4184aa686"
+    },
+    "run_guard_lag_control_once.original.py": {
+      "bytes": 3154,
+      "sha256": "c33d7ca80380e31bbe6507725760dbaf0dcd2a158fa6d02d998bf8392ce5fd89"
+    },
+    "run_pd_tail_control_once.original.py": {
+      "bytes": 3907,
+      "sha256": "1bbcb4bd8d1dbb15c86c729a6d0c0e576e00c2673ac0a3604396b646de92775e"
+    },
+    "run_pd_tail_control_once.py": {
+      "bytes": 3907,
+      "sha256": "1bbcb4bd8d1dbb15c86c729a6d0c0e576e00c2673ac0a3604396b646de92775e"
+    },
+    "STATIC_CHECK_01.json": {
+      "bytes": 1973,
+      "sha256": "d9a254aa1b6015f9d82b806635842905ecbfecd2ec055f5fba5cf71a3a5756cc"
+    },
+    "STATIC_CHECK_01.py": {
+      "bytes": 4573,
+      "sha256": "919b6ea1ca770b4e4752dd5278d1302ff1468762c3a3274522ad2081da5f3076"
+    }
+  },
+  "read_accounting": {
+    "opens": 6,
+    "bytes": 20499,
+    "wall_seconds": 0.0334173000883311,
+    "timing_scope": "own wrapper engineering payload reads/hash; excludes final integrity serialization/write"
+  },
+  "new_wrapper_child_executions": 0,
+  "new_physics": 0,
+  "new_model_or_math_runs": 0,
+  "actual_E_C_D_F_data_reads": 0,
+  "tracked_or_canonical_changes": 0
+}

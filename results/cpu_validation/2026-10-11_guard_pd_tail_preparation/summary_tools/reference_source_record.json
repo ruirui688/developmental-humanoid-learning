@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "path": "external/run_guard_lag_control_first_audit_once.py",
+      "bytes": 1561,
+      "sha256": "2b115eb87eac614a7bedcc408d38e5198629d5ace28cf44c50573a3cd5406ddd",
+      "preserved": "external/c4_g_summary_tools_staging/run_guard_lag_control_first_audit_once.py.reference_original.py"
+    },
+    {
+      "path": "external/summarize_guard_lag_control_saved_once.py",
+      "bytes": 5810,
+      "sha256": "f79d730d1fbe478c392e64997761e21624a3d35b56c1d9663bd5768d32b43120",
+      "preserved": "external/c4_g_summary_tools_staging/summarize_guard_lag_control_saved_once.py.reference_original.py"
+    },
+    {
+      "path": "scripts/audit_guard_pd_tail_control.py",
+      "bytes": 76375,
+      "sha256": "9982de8939f2da8fb6d814127b6074215569e278f95ddbfe10edf1717a5efdb9"
+    }
+  ],
+  "read_bytes": 83746
+}

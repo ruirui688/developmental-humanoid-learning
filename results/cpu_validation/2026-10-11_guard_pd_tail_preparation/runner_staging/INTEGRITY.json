@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "check_new_wire_once.py",
+      "bytes": 12141,
+      "sha256": "3b9b8677902e08686e75dad0c9091d59dbdf498dee01baf8ded4e2739abc6651"
+    },
+    {
+      "path": "check_remaining_wire_once.py",
+      "bytes": 14766,
+      "sha256": "3a0d0d5fd985d78806d1f76d3495ce3388d3af15be8ab75d7b0bb1aa95c96f7e"
+    },
+    {
+      "path": "CHECKER_RECOVERY.json",
+      "bytes": 528,
+      "sha256": "c210682be5a91882a7272d7755c5e8ae6b896cf9c64b03e1605644d0e4f385b0"
+    },
+    {
+      "path": "DELIVERY.md",
+      "bytes": 6658,
+      "sha256": "592ae151081af08c724c55519f8d68c81604603d04e41d57325ca66ef7f324b4"
+    },
+    {
+      "path": "engineering_01/run.json",
+      "bytes": 2788,
+      "sha256": "6eef8966e9d344bf80639a486e7f85d8726e99d01a7002ab5d6dd3076ca3ba15"
+    },
+    {
+      "path": "engineering_01/source_snapshot/external/c4_pd_tail_control_runner_staging/guard_lag_control_development.original.py",
+      "bytes": 40309,
+      "sha256": "3ea1b07dcfdf6c6fdadc7d82269871f629e098f3f74c0d5c2c9520162f55e7da"
+    },
+    {
+      "path": "engineering_01/source_snapshot/external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py",
+      "bytes": 41606,
+      "sha256": "68ba5d199fdb53258cfb9337026a04e65798e343ddc7ab048192e210ddc4bda3"
+    },
+    {
+      "path": "engineering_01/source_snapshot/external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py",
+      "bytes": 8210,
+      "sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed"
+    },
+    {
+      "path": "engineering_01/source_snapshot/src/developmental_physics/guard_lag_pair_mpc.py",
+      "bytes": 8560,
+      "sha256": "2f6c9f4f7f7f128157897f67d40a6cfef09fef582aaeac55945d28399a59d97d"
+    },
+    {
+      "path": "engineering_01/source_snapshot/src/developmental_physics/local_pair_model.py",
+      "bytes": 25148,
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+    },
+    {
+      "path": "engineering_02/run.json",
+      "bytes": 4364,
+      "sha256": "986a2d37eb172ae88ea3443284a71400880c23b9762b74baafec7595ac1d595d"
+    },
+    {
+      "path": "engineering_02/source_snapshot/external/c4_pd_tail_control_runner_staging/engineering_01/source_snapshot/external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py",
+      "bytes": 41606,
+      "sha256": "68ba5d199fdb53258cfb9337026a04e65798e343ddc7ab048192e210ddc4bda3"
+    },
+    {
+      "path": "engineering_02/source_snapshot/external/c4_pd_tail_control_runner_staging/guard_lag_control_development.original.py",
+      "bytes": 40309,
+      "sha256": "3ea1b07dcfdf6c6fdadc7d82269871f629e098f3f74c0d5c2c9520162f55e7da"
+    },
+    {
+      "path": "engineering_02/source_snapshot/external/c4_pd_tail_control_runner_staging/pd_tail_control_development.py",
+      "bytes": 42400,
+      "sha256": "47407917ff7ac184ab7f0859a6fb63d30946805e3ad23cc4268d3eae4b115720"
+    },
+    {
+      "path": "engineering_02/source_snapshot/external/c4_pd_tail_mpc_staging/pd_tail_pair_mpc.py",
+      "bytes": 8210,
+      "sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed"
+    },
+    {
+      "path": "engineering_02/source_snapshot/src/developmental_physics/guard_lag_pair_mpc.py",
+      "bytes": 8560,
+      "sha256": "2f6c9f4f7f7f128157897f67d40a6cfef09fef582aaeac55945d28399a59d97d"
+    },
+    {
+      "path": "engineering_02/source_snapshot/src/developmental_physics/local_pair_model.py",
+      "bytes": 25148,
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+    },
+    {
+      "path": "guard_lag_control_development.original.py",
+      "bytes": 40309,
+      "sha256": "3ea1b07dcfdf6c6fdadc7d82269871f629e098f3f74c0d5c2c9520162f55e7da"
+    },
+    {
+      "path": "ORIGINAL_SOURCE.json",
+      "bytes": 455,
+      "sha256": "877245327ee9f6826f18e35802b9ee38700cf0a4e354e4ecd60e9f6096e0621e"
+    },
+    {
+      "path": "pd_tail_control_development.py",
+      "bytes": 42400,
+      "sha256": "47407917ff7ac184ab7f0859a6fb63d30946805e3ad23cc4268d3eae4b115720"
+    }
+  ],
+  "collector_source_sha256": "47407917ff7ac184ab7f0859a6fb63d30946805e3ad23cc4268d3eae4b115720",
+  "collector_source_bytes": 42400,
+  "canonical_source": "src/developmental_physics/pd_tail_control_development.py",
+  "canonical_planner": "src/developmental_physics/pd_tail_pair_mpc.py",
+  "planner_source_sha256": "6d1af186eb02e033a31fcc294eedd38fa743a418a69d16744350fa02aec3beed",
+  "formal_enabled": false,
+  "new_wire_checks": {
+    "final_verified_checks": 44,
+    "failed": 0,
+    "reused_initial_passed_checks": 18,
+    "new_recovery_checks": 26,
+    "first_harness_failure_preserved": true,
+    "disabled_entry_calls": 1
+  },
+  "explicit_preservation_and_check_reads_before_manifest": {
+    "opens": 14,
+    "binary_bytes": 345304,
+    "hash_operations": 14,
+    "AST_parses": 11
+  },
+  "coordination_text_reads": {
+    "complete_source_reads": 4,
+    "complete_source_binary_bytes": 129137,
+    "partial_text_read_calls": 3,
+    "partial_internal_binary_bytes": null,
+    "scope": "partial Get-Content shell internal I/O uninstrumented; not represented as zero"
+  },
+  "integrity_generation_reads": {
+    "opens": 20,
+    "binary_bytes": 414475,
+    "hash_operations": 20,
+    "AST_parses": 0,
+    "scope": "all explicit staging payload reads/hash; excludes this manifest itself, interpreter/import reads and final serialization/write"
+  },
+  "integrity_generation_wall_seconds": 0.19770339992828667,
+  "integrity_generation_cpu_seconds": 0.015625,
+  "collector_staging_only": true,
+  "model_imports": 0,
+  "model_constructions": 0,
+  "model_predict_calls": 0,
+  "model_updates": 0,
+  "physical_queries": 0,
+  "actual_E_C_D_F_reads": 0,
+  "old_E_fixture_reexecutions": 0,
+  "old_tail_math_reexecutions": 0,
+  "git_calls": 0
+}

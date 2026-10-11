@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "scope": "new wrapper entry/path syntax and retained mechanism AST only; wrapper not imported/executed",
+  "checks": [
+    {
+      "label": "new_wrapper_syntax_without_execution",
+      "passed": true
+    },
+    {
+      "label": "new_G_module_entry",
+      "passed": true
+    },
+    {
+      "label": "unified_exclusive_new_G_output_path",
+      "passed": true
+    },
+    {
+      "label": "new_G_and_retained_independent_source_paths",
+      "passed": true
+    },
+    {
+      "label": "expected_commit_remains_required_CLI_not_hardcoded",
+      "passed": true
+    },
+    {
+      "label": "staging_depth_project_root_discovery",
+      "passed": true
+    },
+    {
+      "label": "original_child_launch_combined_stdout_stderr_mechanism_retained",
+      "passed": true
+    },
+    {
+      "label": "original_clean_commit_clean_status_and_exclusive_assertions_retained",
+      "passed": true
+    },
+    {
+      "label": "original_working_bytes_equal_git_blob_assertion_retained",
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "failed": 0,
+  "input_records": [
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\run_guard_lag_control_once.py",
+      "bytes": 3154,
+      "sha256": "c33d7ca80380e31bbe6507725760dbaf0dcd2a158fa6d02d998bf8392ce5fd89"
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\c4_g_first_wrapper_staging\\run_pd_tail_control_once.py",
+      "bytes": 3907,
+      "sha256": "1bbcb4bd8d1dbb15c86c729a6d0c0e576e00c2673ac0a3604396b646de92775e"
+    }
+  ],
+  "explicit_source_read_opens": 2,
+  "explicit_source_read_bytes": 7061,
+  "wall_seconds": 0.010607599979266524,
+  "timing_scope": "two source reads, parse/compile and AST checks through report assembly; excludes final JSON serialization/write",
+  "wrapper_child_executions": 0,
+  "real_physics": 0,
+  "model_or_math_runs": 0,
+  "actual_E_C_D_F_data_reads": 0,
+  "tracked_or_canonical_changes": 0
+}
