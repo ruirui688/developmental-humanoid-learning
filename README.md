@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** 最早未验收仍为C4。[Y0首次结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)在203控制/2,030子步后肘速度停止，Y1/Y2关闭。[控制接口审阅](docs/CONTROL_INTERFACE_ROUTE_REVIEW.md)支持一次独立[Z0工程候选](docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)：物理仍2ms、PD64/Kd(4,4)及权限不变，反馈从20ms改为2ms；保持6s任务、最多3000控制/3000子步，新增感觉/控制计算和研究停止检查频率明确披露。14项新合成检查通过并[封存准备](results/cpu_validation/2026-10-12_fast_feedback_engineering_preparation/manifest.json)，冻结提交推送后首次执行。固定机械支撑及经典PD先验不算身体学习，也不追认旧C4；最终仍需自由root真实接触控制及C5–C7。阶段检查提交推送后继续，关闭的旧分支不重跑。
+**当前执行入口：** 最早未验收仍为C4。[Z0首次工程结果](docs/FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次完成1000zero+2000PD、3,000控制/3,000子步，0异常/停止/fit，四项末窗MAE全部≤.01rad，完整工程门通过。物理2ms、PD64/Kd(4,4)及权限保持，反馈与active研究检查改2ms，额外感觉/经典反馈能力明确披露；固定机械支撑及经典PD先验不算身体学习，不从不同seed的X/Y失败识别频率因果。接着另冻结2ms学习协议，保留300ms预测时距设计，重订标签/更新与预测/控制计算预算，不继承旧20ms snapshot或H15。旧X/Y/W0/V分支保持关闭；最终仍需自由root真实接触控制及C5–C7。阶段检查提交推送后继续同一active目标。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 
@@ -29,7 +29,7 @@
 
 后续顺序固定为 C4 多关节 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。当前仅 CPU，允许少量在线辨识；不运行大规模 PPO、任务教师、预训练策略或真机。每个阶段检查、提交、推送后直接继续，完整阶段状态、旧失败和判门见[持续执行账本](docs/CONTINUOUS_EXECUTION_PLAN.md)。
 
-正式物理累计 **253,297 控制调用 /2,532,970 子步**；Y0新增203/2,030/0更新，X0/W0此前新增104/1,040与300/3,000，在线 22,452 与离线 7,200 scalar 辨识计算保持分列。H/I/J/K/L 没有新增物理或 RLS 辨识；J/K/L分别用2,400/26,400/39,600 scalar标签作小型离线ridge求解，记录一致不能代替科学验收。L复用PD采样先验、额外数据和既有增益开发费用均披露。
+正式物理累计 **256,297 控制调用 /2,535,970 子步**；Z0新增3,000/3,000/0更新，Y0新增203/2,030/0更新，X0/W0此前新增104/1,040与300/3,000，在线 22,452 与离线 7,200 scalar 辨识计算保持分列。H/I/J/K/L 没有新增物理或 RLS 辨识；J/K/L分别用2,400/26,400/39,600 scalar标签作小型离线ridge求解，记录一致不能代替科学验收。L复用PD采样先验、额外数据和既有增益开发费用均披露。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 

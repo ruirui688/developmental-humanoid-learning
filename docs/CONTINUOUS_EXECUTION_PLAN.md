@@ -14,9 +14,9 @@
 
 当前执行入口：
 
-- [Y0首次工程结果](DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe完成100prefix+103active、203控制/2,030子步，肘速度1.12580895rad/s触发原1rad/s研究停止，完整工程门失败。第一末窗虽然observed20但完整trial失败而不可评，第二窗0；Y1/Y2关闭，不partial排名或扫描增益。
-- **当前冻结一次独立Z0工程候选。** [接口审阅](CONTROL_INTERFACE_ROUTE_REVIEW.md)支持[2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)：物理仍2ms、增益/权限/6s时域保持，反馈/感觉调用增多、active研究停止cadence改2ms，公开额外经典控制能力。14项新纯合成检查通过，冻结推送后首次seed7600、最多3000calls/3000substeps；不重跑旧装配或扫频率/增益。
-- **当前不启动学习与模型控制。** 原[Y协议](DAMPED_SUSPENDED_PAIR_PROTOCOL.md)、[X0协议](SUSPENDED_PAIR_DOMAIN_DESIGN.md)及关闭的学习配方保持。未来独立候选仍须工程资格、少量辨识/预测、匹配完整控制及真实接触迁移；机械支撑/经典反馈先验披露，X0/W0/V关闭分支不据旧记录重跑。
+- **Z0首次完整工程门通过。** [首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次seed7600完成1000zero+2000PD、3000控制/3000子步，0异常/停止/fit；两个末200点/.4s窗口的肩/肘四项MAE均≤.01rad。root首新thin contract零failed，独立4个Z0 MAE；记录一致与工程通过仍不证明学习或科学验收。
+- [2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)保持物理/PD64/Kd(4,4)/权限/6s任务，反馈/感觉与active研究停止检查频率增多，公开额外经典控制能力。全子步left_arm/feet/other接触零观察；固定支撑反力unknown，不从不同seed的X/Y失败识别频率因果，不追认自由root真实接触C4或解除C5科学依赖。
+- **当前准备独立2ms学习协议。** 保留300ms预测时距设计，重新冻结动作语义、标签/更新、预测/规划及控制预算，不自动继承旧20ms snapshots、H15或更新预算。原[Y协议](DAMPED_SUSPENDED_PAIR_PROTOCOL.md)、[X0协议](SUSPENDED_PAIR_DOMAIN_DESIGN.md)及关闭的学习配方保持；旧X/Y/W0/V不重跑。后续仍须少量辨识/预测、匹配完整控制及真实接触迁移，阶段交付后立即继续active目标。
 
 Y0执行前的[首次准备封存](../results/cpu_validation/2026-10-12_damped_suspended_pair_engineering_preparation/manifest.json)保留为历史：
 已完成：两项新反馈检查通过，最终protocol pin匹配；runner从反馈检查以来仅pin改变。
@@ -96,7 +96,7 @@ C2/C3 的正式矩阵根据 C1 的开发依据另写冻结协议。C4–C6 在�
 
 接触力、动能、真实参数等只作诊断；它们不能暗中进入部署模型。共同上限不代表相同实际努力；零停止不代表安全。原 E1 留出 seed 10/11/12 已使用，后续版本需要新的独立最终评估。
 
-正式物理研发累计基点为174,950控制调用/1,749,500子步；九组肩PD、三个C2开发批次及单肩新最终后为208,850/2,088,500/9,900。左肘PD实际新增7,521/75,210/0，左肘身体模型实际新增5,292/52,920/900，首次双关节实际新增2,919/29,190/2,052，C5事件工程新增480/4,800/0，短脉冲校准新增2,586/25,860/0，双轴PD开发新增4,536/45,360/0，A匹配模型对照新增6,318/63,180/4,800scalar，B复用校准后新增618/6180与离线2400scalar，C探索新增7230/72300/4800在线scalar，D同数据诊断新增0物理/4800离线scalar，E冻结控制新增3312/33120/0更新，G反馈尾控制新增3028/30280/0更新，W0固定支撑域新增300/3000/0更新，X0悬挂域首次新增104/1040/0更新，Y0共享阻尼首次新增203/2030/0更新；当前累计 **253,297 控制调用 / 2,532,970 子步 / 22,452 在线scalar及7,200离线重放scalar**，scalar计算合计29652，没有用完整计划替代停止成本。短脉冲的全部失败及付费前缀见[归档清单](../results/cpu_validation/2026-10-11_pair_calibration/manifest.json)。J/K/L分别用2400/26400/39600scalar标签和各3个小型batch ridge solve，不计为RLS或新物理。后续逐批累加。测试、离线重放/模型搜索、规划计算、旧 NumPy/二维/G1 成本分开列报。共同控制评价时域不代表各方法同总成本：学习校准、经典调优与共同预测评价分别披露。
+正式物理研发累计基点为174,950控制调用/1,749,500子步；九组肩PD、三个C2开发批次及单肩新最终后为208,850/2,088,500/9,900。左肘PD实际新增7,521/75,210/0，左肘身体模型实际新增5,292/52,920/900，首次双关节实际新增2,919/29,190/2,052，C5事件工程新增480/4,800/0，短脉冲校准新增2,586/25,860/0，双轴PD开发新增4,536/45,360/0，A匹配模型对照新增6,318/63,180/4,800scalar，B复用校准后新增618/6180与离线2400scalar，C探索新增7230/72300/4800在线scalar，D同数据诊断新增0物理/4800离线scalar，E冻结控制新增3312/33120/0更新，G反馈尾控制新增3028/30280/0更新，W0固定支撑域新增300/3000/0更新，X0悬挂域首次新增104/1040/0更新，Y0共享阻尼首次新增203/2030/0更新，Z0独立2ms工程首次新增3000/3000/0更新；当前累计 **256,297 控制调用 / 2,535,970 子步 / 22,452 在线scalar及7,200离线重放scalar**，scalar计算合计29652，没有用完整计划替代停止成本。短脉冲的全部失败及付费前缀见[归档清单](../results/cpu_validation/2026-10-11_pair_calibration/manifest.json)。J/K/L分别用2400/26400/39600scalar标签和各3个小型batch ridge solve，不计为RLS或新物理。后续逐批累加。测试、离线重放/模型搜索、规划计算、旧 NumPy/二维/G1 成本分开列报。共同控制评价时域不代表各方法同总成本：学习校准、经典调优与共同预测评价分别披露。
 
 ## 6. 开发记录与当前动作
 
@@ -595,3 +595,41 @@ X/Y不同工程seed，停止步数不可作匹配因果比较；旧X/W0/V关闭�
 本负结果不识别控制周期、guard或其他动力学原因；不能放宽原研究门、扫描增益或用部分完成声称优势。
 后续若有独立方案须有依据另冻结，不追认旧C4；持续目标active，报告检查、正常提交推送后继续。
 科学后序仍为完整自由root真实接触C4→C5变化适应→C6成熟/门控→C7新留出综合验收。
+
+
+### Z0 首次2ms反馈完整工程通过，继续独立学习协议
+
+[Z0首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean `824749bbe8610e553be3d06ca6c9306c853153ed`
+一次执行seed7600，1,000zero prefix+2,000PD active全部完成，3,000attempts/3,000returns/0exceptions，
+3,000已确认且保存子步；control/physics均2ms、每调用1子步，完整任务仍6s。
+PD64/Kd(4,4)、每轴.5Nm、目标.04→.08rad及原保护保持；active研究停止检查cadence改2ms，
+原.12rad/1rad/s阈值不变。反馈/感觉/停止取样增加明确披露，不把不同seed的X/Y失败作频率因果对照。
+
+全子步原生/实际努力有限，固定mount覆盖完整人口；环境停止、StudyAbort及failure均null。
+active800..999与1800..1999均observed200、availabletrue，每窗末.4s；肩/肘MAE分别为
+.0006295311018428831/.00025252531693680436和.0012676433238115938/.0004689585769959476rad。
+四项均≤.01，事前完整工程门通过；root首独立thin contract零failed、独立4个新Z0 MAE，
+只支持本次工程/保存契约，不证明学习、方法优势或风险下降。
+全保存子步与prefix末200窗口的left_arm/feet/other floor及正法向力事件零观察。
+机械固定支撑反力unknown，全部scientific/adoption/contact/C5依赖flags仍false，不追认自由root真实接触C4。
+
+正式新增3,000控制/3,000子步，累计256,297/2,535,970，online22,452/offline7,200保持。
+PD2,000次，body-model forward/fit/恢复/RLS/MPC/teacher全0。
+实际all8Σ|τ|dt/Στ²dt为.380273295959645Nm·s/.04576971762158434Nm²·s，
+prefix1,000与active2,000努力valid、unavailable0，实际actuator与applied command一致。
+内部wall/CPU2.0159694999456406/1.4375s、外3.501302600139752s；source9读101,732bytes、
+Git11查询返回101,773bytes，parameter及explicit physical fingerprint各2尝试/2返回，执行前后各自相同。
+内部时间不含启动/import/最终压缩与写盘；未确认核心异常尝试、未保存端点及努力仍unknown/下界。
+
+[根归档](../results/cpu_validation/2026-10-12_fast_feedback_engineering/manifest.json)20payload、
+40读/2,240,592bytes、20写/1,120,296bytes，wall/CPU .41693429998122156/0s（末manifest前），无自动重试。
+首次stdio、精确source、两XML、全部子步和978,185bytes trace保留。
+首次报告汇总5读31,855bytes/5JSON、wall .0012329998426139355s、0科学重算；
+文档只一次派生摘要读取，不重读raw/调用检查器、模型或物理，不重算MAE/旧科学。
+
+下一项独立冻结2ms学习协议，保留300ms预测时距设计，重新规定动作、标签/更新及预测/控制计算预算；
+300ms对应150个2ms基础子步，不自动继承旧20ms snapshots、H15或更新预算。
+cold/learned/强经典组共享频率/感觉/目标/最终权限/保护和完整努力分母，未来真实力矩不能进入预测输入。
+旧X/Y/W0/V分支保持关闭，接着少量辨识/预测与匹配完整控制；未来仍须自由root真实接触C4、
+C5未知动力学适应、C6成熟/能力门控及C7新留出综合验收。
+持续目标active，阶段检查、正常提交推送后立即继续，本工程交付不结束整个目标。

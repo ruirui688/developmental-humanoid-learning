@@ -1,0 +1,80 @@
+{
+  "files": {
+    "c4_z0_reporting_summary.json": {
+      "bytes": 36168,
+      "sha256": "041484cee514b611ed8b52c701f2f5f301c186903c1b789d2b7298db5c60994e",
+      "source": "external/c4_z0_reporting_summary.json"
+    },
+    "c4_z0_reporting_reads.json": {
+      "bytes": 964,
+      "sha256": "aed24651d94c605cf7be6bff1d842309332997b6e70df5a7e641158490864b86",
+      "source": "external/c4_z0_reporting_reads.json"
+    },
+    "check_z0_once.py": {
+      "bytes": 9945,
+      "sha256": "a07881ff1f64c18072006e1f792916932b247e6be5c134a46620e56964ba17b6",
+      "source": "external/check_z0_once.py"
+    },
+    "seal_fast_reporting_once.py": {
+      "bytes": 3162,
+      "sha256": "ef01f7e23d556438f0132c4067debd07e53e31c569789fdfcfbba2e26858e73e",
+      "source": "external/seal_fast_reporting_once.py"
+    },
+    "c4_z_engineering_links_01.json": {
+      "bytes": 4159,
+      "sha256": "9dd1f4a56d37b942e779a62e5c010ed529c5d97d6904c45d21691dd265febd83",
+      "source": "external/c4_z_engineering_links_01.json"
+    },
+    "check_fast_feedback_links_once.py": {
+      "bytes": 1721,
+      "sha256": "0fcb6f673fe2efcb5d340810dd0fd18a785983b9c725771d4753102f5c45442c",
+      "source": "external/check_fast_feedback_links_once.py"
+    },
+    "read_fast_feedback_reporting_once.py": {
+      "bytes": 2169,
+      "sha256": "65eeb2330efa9405a179e9e5c725a8d9271621dbe8f58ca7ad4c5aa40159ffb5",
+      "source": "external/read_fast_feedback_reporting_once.py"
+    },
+    "output_contract/checker.py": {
+      "bytes": 9945,
+      "sha256": "a07881ff1f64c18072006e1f792916932b247e6be5c134a46620e56964ba17b6",
+      "source": "external/c4_z0_output_contract_01/checker.py"
+    },
+    "output_contract/report.json": {
+      "bytes": 689602,
+      "sha256": "6059f2a604a849cad6168c8e8f1aa0793a133cea550715f0e8dad19654416912",
+      "source": "external/c4_z0_output_contract_01/report.json"
+    }
+  },
+  "base_manifests": {
+    "manifest.json": {
+      "bytes": 5174,
+      "sha256": "7f7923893fde0b3f9b450c6f622a376af4349c58bf63a88c3ac9a3238cf0d304"
+    },
+    "raw/manifest.json": {
+      "bytes": 970,
+      "sha256": "13348a64f28c3e35a3d7096a9155f911e66f428aff66ef9130231eefbf8b9ff2"
+    }
+  },
+  "base_manifests_after": {
+    "manifest.json": {
+      "bytes": 5174,
+      "sha256": "7f7923893fde0b3f9b450c6f622a376af4349c58bf63a88c3ac9a3238cf0d304"
+    },
+    "raw/manifest.json": {
+      "bytes": 970,
+      "sha256": "13348a64f28c3e35a3d7096a9155f911e66f428aff66ef9130231eefbf8b9ff2"
+    }
+  },
+  "root_raw_manifests_unchanged": true,
+  "cost_before_manifest_write": {
+    "file_reads": 22,
+    "read_bytes": 1527958,
+    "file_writes": 9,
+    "write_bytes": 757835
+  },
+  "wall_seconds_before_manifest_write": 0.10808499995619059,
+  "cpu_seconds_before_manifest_write": 0.015625,
+  "model_physics_scientific_metric_or_checker_calls": 0,
+  "automatic_retry": false
+}

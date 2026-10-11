@@ -1,0 +1,61 @@
+{
+  "argv": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "scripts/validate_fast_feedback_engineering.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_z0_engineering_01\\raw",
+    "--source-commit",
+    "824749bbe8610e553be3d06ca6c9306c853153ed"
+  ],
+  "source_commit": "824749bbe8610e553be3d06ca6c9306c853153ed",
+  "returncode": 0,
+  "source_files": {
+    "src/developmental_physics/fast_feedback_environment.py": {
+      "bytes": 6476,
+      "sha256": "7a731aaa02a431c7bb3f93450352f7a393979af2655b5ba6c2084a8c2d898455"
+    },
+    "src/developmental_physics/suspended_environment.py": {
+      "bytes": 7076,
+      "sha256": "f5154b7e059ed9939ed130d9a5c9eda2af455b9f660a4e843c72b996a44d81f8"
+    },
+    "scripts/validate_fast_feedback_engineering.py": {
+      "bytes": 23011,
+      "sha256": "34c5cfc835198f5e53bb17feaa43065c118f7fef5caa9b2dbc95681633b12bb5"
+    },
+    "docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9430,
+      "sha256": "5b71ac014786ebbc464becc8579c36df906360e256d47232612ddc141b8bcee4"
+    },
+    "src/developmental_physics/supported_environment.py": {
+      "bytes": 11642,
+      "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+    },
+    "scripts/validate_supported_pair_engineering.py": {
+      "bytes": 24683,
+      "sha256": "5c75e5db6f8721180bbbb17158f29ed736b0e10554672e585867f433b3766825"
+    },
+    "src/developmental_physics/environment.py": {
+      "bytes": 15822,
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+    },
+    "src/developmental_physics/assets/ground_body.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+    }
+  },
+  "source_snapshot_reads": 9,
+  "source_snapshot_read_bytes": 101732,
+  "started_unix": 1791750467.342328,
+  "ended_unix": 1791750470.8441718,
+  "wall_seconds": 3.501302600139752,
+  "stdout_bytes": 1212,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

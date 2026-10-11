@@ -1,6 +1,19 @@
 # 开发进度与仓库检查点
 
-## 当前准备：2026-10-12 Z0独立2ms反馈接口
+## 当前入口：2026-10-12 Z0完整工程通过，准备独立学习协议
+
+[Z0首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b首次seed7600完成1000prefix+2000active、
+3,000控制/3,000子步，0异常/环境停止/StudyAbort/fit；两末200点/.4s窗口肩/肘MAE分别为
+.0006295311/.0002525253和.0012676433/.0004689586rad，四项均≤.01，完整工程资格通过。
+root首次独立thin contract零failed、独立复核4个新Z0 MAE，不重跑物理或旧科学指标。
+物理2ms、PD64/Kd(4,4)/权限/6s保持，反馈与active停止检查改2ms；额外感觉/经典反馈能力披露。
+接触三类全部零观察，固定安装反力unknown；悬挂工程成功不证明学习、频率因果或自由root接触C4。
+正式累计256,297控制/2,535,970子步，online22,452/offline7,200保持；本次PD2,000，新增学习计算0。
+下一项独立2ms学习协议保留300ms预测时距设计，重订动作/标签/更新和预测/控制计算预算，
+不继承旧20ms snapshots、H15或原更新预算。旧X/Y/W0/V关闭保持，C4/C5科学依赖未解除。
+持续目标active，阶段检查提交推送后立即继续；以下旧准备及结果作为历史，不触发重跑。
+
+## 历史准备：2026-10-12 Z0独立2ms反馈接口
 
 Y0负结果推送7fe5b27后，完成[控制接口源码审阅](CONTROL_INTERFACE_ROUTE_REVIEW.md)及[唯一Z0协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)。
 控制每调用从10子步改1子步；baseline构造后显式replace control_substeps=1，原物理数组/2ms timestep/保护保持。
@@ -11,7 +24,7 @@ Z0固定seed7600、1000zero+2000active、最多3000calls/3000子步，两段末2
 工程通过后另设计新学习时距/预算，不自动继承旧20ms学习；固定支撑+快速经典反馈不称身体学习或旧C4。
 正式累计253297/2532970、online22452/offline7200暂不变。冻结推送后首次Z0，阶段交付后持续推进。
 
-## 当前入口：2026-10-12 Y0肘速度停止，关闭Y1/Y2
+## 历史入口：2026-10-12 Y0肘速度停止，关闭Y1/Y2
 
 [Y0首次结果](DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe一次完成100prefix+103active、
 203返回/2,030子步，`Y0_seed7500:202`肘速度1.1258089506362488rad/s触发原1rad/s StudyAbort。
@@ -520,3 +533,41 @@ prefix1,000/active1,030子步均saved/valid、unavailable0；接触left_arm/feet
 下一项只控制时间尺度与底层保护有限审阅，未承诺新实验/周期/保护修改，不因失败放宽门。
 Y/X使用不同工程seed，不从停止步数差声称肩阻尼因果收益；C4/C5科学依赖保持关闭。
 持续目标active，报告检查提交推送后继续最早未过阶段，最终仍须真实接触C4和C5–C7。
+
+
+## 2026-10-12：Z0首次完整工程通过，继续独立学习协议
+
+[Z0首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean `824749bbe8610e553be3d06ca6c9306c853153ed`
+一次执行seed7600，1,000zero prefix+2,000PD active全部完成，3,000attempts/3,000returns/0exceptions，
+3,000已确认且保存子步；control/physics均2ms、每调用1子步，完整任务仍6s。
+PD64/Kd(4,4)、每轴.5Nm、目标.04→.08rad及原保护保持；active研究停止检查cadence改2ms，
+原.12rad/1rad/s阈值不变。反馈/感觉/停止取样增加明确披露，不把不同seed的X/Y失败作频率因果对照。
+
+全子步原生/实际努力有限，固定mount覆盖完整人口；环境停止、StudyAbort及failure均null。
+active800..999与1800..1999均observed200、availabletrue，每窗末.4s；肩/肘MAE分别为
+.0006295311018428831/.00025252531693680436和.0012676433238115938/.0004689585769959476rad。
+四项均≤.01，事前完整工程门通过；root首独立thin contract零failed、独立4个新Z0 MAE，
+只支持本次工程/保存契约，不证明学习、方法优势或风险下降。
+全保存子步与prefix末200窗口的left_arm/feet/other floor及正法向力事件零观察。
+机械固定支撑反力unknown，全部scientific/adoption/contact/C5依赖flags仍false，不追认自由root真实接触C4。
+
+正式新增3,000控制/3,000子步，累计256,297/2,535,970，online22,452/offline7,200保持。
+PD2,000次，body-model forward/fit/恢复/RLS/MPC/teacher全0。
+实际all8Σ|τ|dt/Στ²dt为.380273295959645Nm·s/.04576971762158434Nm²·s，
+prefix1,000与active2,000努力valid、unavailable0，实际actuator与applied command一致。
+内部wall/CPU2.0159694999456406/1.4375s、外3.501302600139752s；source9读101,732bytes、
+Git11查询返回101,773bytes，parameter及explicit physical fingerprint各2尝试/2返回，执行前后各自相同。
+内部时间不含启动/import/最终压缩与写盘；未确认核心异常尝试、未保存端点及努力仍unknown/下界。
+
+[根归档](../results/cpu_validation/2026-10-12_fast_feedback_engineering/manifest.json)20payload、
+40读/2,240,592bytes、20写/1,120,296bytes，wall/CPU .41693429998122156/0s（末manifest前），无自动重试。
+首次stdio、精确source、两XML、全部子步和978,185bytes trace保留。
+首次报告汇总5读31,855bytes/5JSON、wall .0012329998426139355s、0科学重算；
+文档只一次派生摘要读取，不重读raw/调用检查器、模型或物理，不重算MAE/旧科学。
+
+下一项独立冻结2ms学习协议，保留300ms预测时距设计，重新规定动作、标签/更新及预测/控制计算预算；
+300ms对应150个2ms基础子步，不自动继承旧20ms snapshots、H15或更新预算。
+cold/learned/强经典组共享频率/感觉/目标/最终权限/保护和完整努力分母，未来真实力矩不能进入预测输入。
+旧X/Y/W0/V分支保持关闭，接着少量辨识/预测与匹配完整控制；未来仍须自由root真实接触C4、
+C5未知动力学适应、C6成熟/能力门控及C7新留出综合验收。
+持续目标active，阶段检查、正常提交推送后立即继续，本工程交付不结束整个目标。
