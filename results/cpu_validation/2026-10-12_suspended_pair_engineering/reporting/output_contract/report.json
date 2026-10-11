@@ -1,0 +1,1386 @@
+{
+  "checks": [
+    {
+      "name": "payload_identity:run.json",
+      "passed": true
+    },
+    {
+      "name": "payload_identity:metrics.json",
+      "passed": true
+    },
+    {
+      "name": "payload_identity:trace.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "row_identity:0",
+      "passed": true
+    },
+    {
+      "name": "shared_request:0",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:0",
+      "passed": true
+    },
+    {
+      "name": "row_identity:1",
+      "passed": true
+    },
+    {
+      "name": "shared_request:1",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:1",
+      "passed": true
+    },
+    {
+      "name": "row_identity:2",
+      "passed": true
+    },
+    {
+      "name": "shared_request:2",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:2",
+      "passed": true
+    },
+    {
+      "name": "row_identity:3",
+      "passed": true
+    },
+    {
+      "name": "shared_request:3",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:3",
+      "passed": true
+    },
+    {
+      "name": "row_identity:4",
+      "passed": true
+    },
+    {
+      "name": "shared_request:4",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:4",
+      "passed": true
+    },
+    {
+      "name": "row_identity:5",
+      "passed": true
+    },
+    {
+      "name": "shared_request:5",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:5",
+      "passed": true
+    },
+    {
+      "name": "row_identity:6",
+      "passed": true
+    },
+    {
+      "name": "shared_request:6",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:6",
+      "passed": true
+    },
+    {
+      "name": "row_identity:7",
+      "passed": true
+    },
+    {
+      "name": "shared_request:7",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:7",
+      "passed": true
+    },
+    {
+      "name": "row_identity:8",
+      "passed": true
+    },
+    {
+      "name": "shared_request:8",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:8",
+      "passed": true
+    },
+    {
+      "name": "row_identity:9",
+      "passed": true
+    },
+    {
+      "name": "shared_request:9",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:9",
+      "passed": true
+    },
+    {
+      "name": "row_identity:10",
+      "passed": true
+    },
+    {
+      "name": "shared_request:10",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:10",
+      "passed": true
+    },
+    {
+      "name": "row_identity:11",
+      "passed": true
+    },
+    {
+      "name": "shared_request:11",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:11",
+      "passed": true
+    },
+    {
+      "name": "row_identity:12",
+      "passed": true
+    },
+    {
+      "name": "shared_request:12",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:12",
+      "passed": true
+    },
+    {
+      "name": "row_identity:13",
+      "passed": true
+    },
+    {
+      "name": "shared_request:13",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:13",
+      "passed": true
+    },
+    {
+      "name": "row_identity:14",
+      "passed": true
+    },
+    {
+      "name": "shared_request:14",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:14",
+      "passed": true
+    },
+    {
+      "name": "row_identity:15",
+      "passed": true
+    },
+    {
+      "name": "shared_request:15",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:15",
+      "passed": true
+    },
+    {
+      "name": "row_identity:16",
+      "passed": true
+    },
+    {
+      "name": "shared_request:16",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:16",
+      "passed": true
+    },
+    {
+      "name": "row_identity:17",
+      "passed": true
+    },
+    {
+      "name": "shared_request:17",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:17",
+      "passed": true
+    },
+    {
+      "name": "row_identity:18",
+      "passed": true
+    },
+    {
+      "name": "shared_request:18",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:18",
+      "passed": true
+    },
+    {
+      "name": "row_identity:19",
+      "passed": true
+    },
+    {
+      "name": "shared_request:19",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:19",
+      "passed": true
+    },
+    {
+      "name": "row_identity:20",
+      "passed": true
+    },
+    {
+      "name": "shared_request:20",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:20",
+      "passed": true
+    },
+    {
+      "name": "row_identity:21",
+      "passed": true
+    },
+    {
+      "name": "shared_request:21",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:21",
+      "passed": true
+    },
+    {
+      "name": "row_identity:22",
+      "passed": true
+    },
+    {
+      "name": "shared_request:22",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:22",
+      "passed": true
+    },
+    {
+      "name": "row_identity:23",
+      "passed": true
+    },
+    {
+      "name": "shared_request:23",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:23",
+      "passed": true
+    },
+    {
+      "name": "row_identity:24",
+      "passed": true
+    },
+    {
+      "name": "shared_request:24",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:24",
+      "passed": true
+    },
+    {
+      "name": "row_identity:25",
+      "passed": true
+    },
+    {
+      "name": "shared_request:25",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:25",
+      "passed": true
+    },
+    {
+      "name": "row_identity:26",
+      "passed": true
+    },
+    {
+      "name": "shared_request:26",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:26",
+      "passed": true
+    },
+    {
+      "name": "row_identity:27",
+      "passed": true
+    },
+    {
+      "name": "shared_request:27",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:27",
+      "passed": true
+    },
+    {
+      "name": "row_identity:28",
+      "passed": true
+    },
+    {
+      "name": "shared_request:28",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:28",
+      "passed": true
+    },
+    {
+      "name": "row_identity:29",
+      "passed": true
+    },
+    {
+      "name": "shared_request:29",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:29",
+      "passed": true
+    },
+    {
+      "name": "row_identity:30",
+      "passed": true
+    },
+    {
+      "name": "shared_request:30",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:30",
+      "passed": true
+    },
+    {
+      "name": "row_identity:31",
+      "passed": true
+    },
+    {
+      "name": "shared_request:31",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:31",
+      "passed": true
+    },
+    {
+      "name": "row_identity:32",
+      "passed": true
+    },
+    {
+      "name": "shared_request:32",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:32",
+      "passed": true
+    },
+    {
+      "name": "row_identity:33",
+      "passed": true
+    },
+    {
+      "name": "shared_request:33",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:33",
+      "passed": true
+    },
+    {
+      "name": "row_identity:34",
+      "passed": true
+    },
+    {
+      "name": "shared_request:34",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:34",
+      "passed": true
+    },
+    {
+      "name": "row_identity:35",
+      "passed": true
+    },
+    {
+      "name": "shared_request:35",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:35",
+      "passed": true
+    },
+    {
+      "name": "row_identity:36",
+      "passed": true
+    },
+    {
+      "name": "shared_request:36",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:36",
+      "passed": true
+    },
+    {
+      "name": "row_identity:37",
+      "passed": true
+    },
+    {
+      "name": "shared_request:37",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:37",
+      "passed": true
+    },
+    {
+      "name": "row_identity:38",
+      "passed": true
+    },
+    {
+      "name": "shared_request:38",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:38",
+      "passed": true
+    },
+    {
+      "name": "row_identity:39",
+      "passed": true
+    },
+    {
+      "name": "shared_request:39",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:39",
+      "passed": true
+    },
+    {
+      "name": "row_identity:40",
+      "passed": true
+    },
+    {
+      "name": "shared_request:40",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:40",
+      "passed": true
+    },
+    {
+      "name": "row_identity:41",
+      "passed": true
+    },
+    {
+      "name": "shared_request:41",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:41",
+      "passed": true
+    },
+    {
+      "name": "row_identity:42",
+      "passed": true
+    },
+    {
+      "name": "shared_request:42",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:42",
+      "passed": true
+    },
+    {
+      "name": "row_identity:43",
+      "passed": true
+    },
+    {
+      "name": "shared_request:43",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:43",
+      "passed": true
+    },
+    {
+      "name": "row_identity:44",
+      "passed": true
+    },
+    {
+      "name": "shared_request:44",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:44",
+      "passed": true
+    },
+    {
+      "name": "row_identity:45",
+      "passed": true
+    },
+    {
+      "name": "shared_request:45",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:45",
+      "passed": true
+    },
+    {
+      "name": "row_identity:46",
+      "passed": true
+    },
+    {
+      "name": "shared_request:46",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:46",
+      "passed": true
+    },
+    {
+      "name": "row_identity:47",
+      "passed": true
+    },
+    {
+      "name": "shared_request:47",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:47",
+      "passed": true
+    },
+    {
+      "name": "row_identity:48",
+      "passed": true
+    },
+    {
+      "name": "shared_request:48",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:48",
+      "passed": true
+    },
+    {
+      "name": "row_identity:49",
+      "passed": true
+    },
+    {
+      "name": "shared_request:49",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:49",
+      "passed": true
+    },
+    {
+      "name": "row_identity:50",
+      "passed": true
+    },
+    {
+      "name": "shared_request:50",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:50",
+      "passed": true
+    },
+    {
+      "name": "row_identity:51",
+      "passed": true
+    },
+    {
+      "name": "shared_request:51",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:51",
+      "passed": true
+    },
+    {
+      "name": "row_identity:52",
+      "passed": true
+    },
+    {
+      "name": "shared_request:52",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:52",
+      "passed": true
+    },
+    {
+      "name": "row_identity:53",
+      "passed": true
+    },
+    {
+      "name": "shared_request:53",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:53",
+      "passed": true
+    },
+    {
+      "name": "row_identity:54",
+      "passed": true
+    },
+    {
+      "name": "shared_request:54",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:54",
+      "passed": true
+    },
+    {
+      "name": "row_identity:55",
+      "passed": true
+    },
+    {
+      "name": "shared_request:55",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:55",
+      "passed": true
+    },
+    {
+      "name": "row_identity:56",
+      "passed": true
+    },
+    {
+      "name": "shared_request:56",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:56",
+      "passed": true
+    },
+    {
+      "name": "row_identity:57",
+      "passed": true
+    },
+    {
+      "name": "shared_request:57",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:57",
+      "passed": true
+    },
+    {
+      "name": "row_identity:58",
+      "passed": true
+    },
+    {
+      "name": "shared_request:58",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:58",
+      "passed": true
+    },
+    {
+      "name": "row_identity:59",
+      "passed": true
+    },
+    {
+      "name": "shared_request:59",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:59",
+      "passed": true
+    },
+    {
+      "name": "row_identity:60",
+      "passed": true
+    },
+    {
+      "name": "shared_request:60",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:60",
+      "passed": true
+    },
+    {
+      "name": "row_identity:61",
+      "passed": true
+    },
+    {
+      "name": "shared_request:61",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:61",
+      "passed": true
+    },
+    {
+      "name": "row_identity:62",
+      "passed": true
+    },
+    {
+      "name": "shared_request:62",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:62",
+      "passed": true
+    },
+    {
+      "name": "row_identity:63",
+      "passed": true
+    },
+    {
+      "name": "shared_request:63",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:63",
+      "passed": true
+    },
+    {
+      "name": "row_identity:64",
+      "passed": true
+    },
+    {
+      "name": "shared_request:64",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:64",
+      "passed": true
+    },
+    {
+      "name": "row_identity:65",
+      "passed": true
+    },
+    {
+      "name": "shared_request:65",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:65",
+      "passed": true
+    },
+    {
+      "name": "row_identity:66",
+      "passed": true
+    },
+    {
+      "name": "shared_request:66",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:66",
+      "passed": true
+    },
+    {
+      "name": "row_identity:67",
+      "passed": true
+    },
+    {
+      "name": "shared_request:67",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:67",
+      "passed": true
+    },
+    {
+      "name": "row_identity:68",
+      "passed": true
+    },
+    {
+      "name": "shared_request:68",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:68",
+      "passed": true
+    },
+    {
+      "name": "row_identity:69",
+      "passed": true
+    },
+    {
+      "name": "shared_request:69",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:69",
+      "passed": true
+    },
+    {
+      "name": "row_identity:70",
+      "passed": true
+    },
+    {
+      "name": "shared_request:70",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:70",
+      "passed": true
+    },
+    {
+      "name": "row_identity:71",
+      "passed": true
+    },
+    {
+      "name": "shared_request:71",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:71",
+      "passed": true
+    },
+    {
+      "name": "row_identity:72",
+      "passed": true
+    },
+    {
+      "name": "shared_request:72",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:72",
+      "passed": true
+    },
+    {
+      "name": "row_identity:73",
+      "passed": true
+    },
+    {
+      "name": "shared_request:73",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:73",
+      "passed": true
+    },
+    {
+      "name": "row_identity:74",
+      "passed": true
+    },
+    {
+      "name": "shared_request:74",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:74",
+      "passed": true
+    },
+    {
+      "name": "row_identity:75",
+      "passed": true
+    },
+    {
+      "name": "shared_request:75",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:75",
+      "passed": true
+    },
+    {
+      "name": "row_identity:76",
+      "passed": true
+    },
+    {
+      "name": "shared_request:76",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:76",
+      "passed": true
+    },
+    {
+      "name": "row_identity:77",
+      "passed": true
+    },
+    {
+      "name": "shared_request:77",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:77",
+      "passed": true
+    },
+    {
+      "name": "row_identity:78",
+      "passed": true
+    },
+    {
+      "name": "shared_request:78",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:78",
+      "passed": true
+    },
+    {
+      "name": "row_identity:79",
+      "passed": true
+    },
+    {
+      "name": "shared_request:79",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:79",
+      "passed": true
+    },
+    {
+      "name": "row_identity:80",
+      "passed": true
+    },
+    {
+      "name": "shared_request:80",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:80",
+      "passed": true
+    },
+    {
+      "name": "row_identity:81",
+      "passed": true
+    },
+    {
+      "name": "shared_request:81",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:81",
+      "passed": true
+    },
+    {
+      "name": "row_identity:82",
+      "passed": true
+    },
+    {
+      "name": "shared_request:82",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:82",
+      "passed": true
+    },
+    {
+      "name": "row_identity:83",
+      "passed": true
+    },
+    {
+      "name": "shared_request:83",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:83",
+      "passed": true
+    },
+    {
+      "name": "row_identity:84",
+      "passed": true
+    },
+    {
+      "name": "shared_request:84",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:84",
+      "passed": true
+    },
+    {
+      "name": "row_identity:85",
+      "passed": true
+    },
+    {
+      "name": "shared_request:85",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:85",
+      "passed": true
+    },
+    {
+      "name": "row_identity:86",
+      "passed": true
+    },
+    {
+      "name": "shared_request:86",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:86",
+      "passed": true
+    },
+    {
+      "name": "row_identity:87",
+      "passed": true
+    },
+    {
+      "name": "shared_request:87",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:87",
+      "passed": true
+    },
+    {
+      "name": "row_identity:88",
+      "passed": true
+    },
+    {
+      "name": "shared_request:88",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:88",
+      "passed": true
+    },
+    {
+      "name": "row_identity:89",
+      "passed": true
+    },
+    {
+      "name": "shared_request:89",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:89",
+      "passed": true
+    },
+    {
+      "name": "row_identity:90",
+      "passed": true
+    },
+    {
+      "name": "shared_request:90",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:90",
+      "passed": true
+    },
+    {
+      "name": "row_identity:91",
+      "passed": true
+    },
+    {
+      "name": "shared_request:91",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:91",
+      "passed": true
+    },
+    {
+      "name": "row_identity:92",
+      "passed": true
+    },
+    {
+      "name": "shared_request:92",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:92",
+      "passed": true
+    },
+    {
+      "name": "row_identity:93",
+      "passed": true
+    },
+    {
+      "name": "shared_request:93",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:93",
+      "passed": true
+    },
+    {
+      "name": "row_identity:94",
+      "passed": true
+    },
+    {
+      "name": "shared_request:94",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:94",
+      "passed": true
+    },
+    {
+      "name": "row_identity:95",
+      "passed": true
+    },
+    {
+      "name": "shared_request:95",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:95",
+      "passed": true
+    },
+    {
+      "name": "row_identity:96",
+      "passed": true
+    },
+    {
+      "name": "shared_request:96",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:96",
+      "passed": true
+    },
+    {
+      "name": "row_identity:97",
+      "passed": true
+    },
+    {
+      "name": "shared_request:97",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:97",
+      "passed": true
+    },
+    {
+      "name": "row_identity:98",
+      "passed": true
+    },
+    {
+      "name": "shared_request:98",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:98",
+      "passed": true
+    },
+    {
+      "name": "row_identity:99",
+      "passed": true
+    },
+    {
+      "name": "shared_request:99",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:99",
+      "passed": true
+    },
+    {
+      "name": "row_identity:100",
+      "passed": true
+    },
+    {
+      "name": "shared_request:100",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:100",
+      "passed": true
+    },
+    {
+      "name": "row_identity:101",
+      "passed": true
+    },
+    {
+      "name": "shared_request:101",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:101",
+      "passed": true
+    },
+    {
+      "name": "row_identity:102",
+      "passed": true
+    },
+    {
+      "name": "shared_request:102",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:102",
+      "passed": true
+    },
+    {
+      "name": "row_identity:103",
+      "passed": true
+    },
+    {
+      "name": "shared_request:103",
+      "passed": true
+    },
+    {
+      "name": "returned_sample_count:103",
+      "passed": true
+    },
+    {
+      "name": "structural_full",
+      "passed": true
+    },
+    {
+      "name": "paid_return_count",
+      "passed": true
+    },
+    {
+      "name": "paid_substeps",
+      "passed": true
+    },
+    {
+      "name": "observed_mount",
+      "passed": true
+    },
+    {
+      "name": "upright_identity",
+      "passed": true
+    },
+    {
+      "name": "two_windows_or_explicit_reporting_failure",
+      "passed": true
+    },
+    {
+      "name": "native_target_errors:80",
+      "passed": true
+    },
+    {
+      "name": "window_availability:80",
+      "passed": true
+    },
+    {
+      "name": "frozen_window:80",
+      "passed": true
+    },
+    {
+      "name": "window_MAE:80",
+      "passed": true
+    },
+    {
+      "name": "window_pass:80",
+      "passed": true
+    },
+    {
+      "name": "native_target_errors:180",
+      "passed": true
+    },
+    {
+      "name": "window_availability:180",
+      "passed": true
+    },
+    {
+      "name": "frozen_window:180",
+      "passed": true
+    },
+    {
+      "name": "window_MAE:180",
+      "passed": true
+    },
+    {
+      "name": "window_pass:180",
+      "passed": true
+    },
+    {
+      "name": "new_engineering_gate",
+      "passed": true
+    },
+    {
+      "name": "noncontact_gate",
+      "passed": true
+    },
+    {
+      "name": "new_calls_clean",
+      "passed": true
+    },
+    {
+      "name": "parameter_unchanged_or_unavailable_failure",
+      "passed": true
+    },
+    {
+      "name": "scientific_adoption",
+      "passed": true
+    },
+    {
+      "name": "old_free_root_C4_validation",
+      "passed": true
+    },
+    {
+      "name": "c4_scientific_validation",
+      "passed": true
+    },
+    {
+      "name": "c5_scientific_dependency_released",
+      "passed": true
+    },
+    {
+      "name": "c4_contact_scientific_validation",
+      "passed": true
+    }
+  ],
+  "failed_checks": 0,
+  "records": 104,
+  "confirmed_substeps": 1040,
+  "retained_substep_samples": 1040,
+  "full": false,
+  "engineering_qualification_passed": false,
+  "independent_MAE_rad": [
+    null,
+    null
+  ],
+  "new_engineering_MAE_recalculations": 0,
+  "new_engineering_gate_verifications": 1,
+  "old_scientific_metric_recalculations": 0,
+  "model_physics_RLS_calls": 0,
+  "cost": {
+    "file_reads": 4,
+    "read_bytes": 255910,
+    "json_parses": 107,
+    "decompressed_bytes": 1663912
+  },
+  "wall_seconds": 0.11099749989807606,
+  "cpu_seconds": 0.078125
+}

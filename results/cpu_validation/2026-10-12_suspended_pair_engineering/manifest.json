@@ -1,0 +1,111 @@
+{
+  "status": "archived",
+  "stage": "engineering",
+  "files": {
+    "execution.json": {
+      "bytes": 2120,
+      "sha256": "eb3b6e8abadd47455a725edd5c84c201e537a179e378c385f83dc9f1483fe16c",
+      "source": "external/c4_x0_engineering_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 968,
+      "sha256": "b1db6eddc909494ceac526b158b20915f3fcd12a5844eed0ae92adcf23349f00",
+      "source": "external/c4_x0_engineering_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 2152,
+      "sha256": "05708f19c0a18b92f59b9b28fa5a41acf3057e9b63d09afd16ab04649e8f22e7",
+      "source": "external/c4_x0_engineering_01/raw/metrics.json"
+    },
+    "raw/run.json": {
+      "bytes": 17649,
+      "sha256": "58e6c6ef532ff5f344b895412e3e3a9565d48cc1d906aa53a77dc50956fec6cc",
+      "source": "external/c4_x0_engineering_01/raw/run.json"
+    },
+    "raw/suspended_body_before_height.xml": {
+      "bytes": 3452,
+      "sha256": "71a3765984b0243de0ad8d1d11a3534c92964b884abfb951b669b429ba29e2d3",
+      "source": "external/c4_x0_engineering_01/raw/suspended_body_before_height.xml"
+    },
+    "raw/suspended_body_installed.xml": {
+      "bytes": 3473,
+      "sha256": "116a66d3ce2f1914e0297d9a5f406c71c56aa96da6a1d8a20b3e8b44171db572",
+      "source": "external/c4_x0_engineering_01/raw/suspended_body_installed.xml"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 235141,
+      "sha256": "f271daa13fe0f5d16bad05e6ea1edb75d4ca554656007bbdcb963929e1f9f23e",
+      "source": "external/c4_x0_engineering_01/raw/trace.jsonl.gz"
+    },
+    "source/docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md": {
+      "bytes": 10498,
+      "sha256": "1fe9129300663a3b51199cf21f2813279a35f3dcbcd3740dafd4e8085c42d695",
+      "source": "external/c4_x0_engineering_01/source/docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md"
+    },
+    "source/scripts/validate_supported_pair_engineering.py": {
+      "bytes": 24683,
+      "sha256": "5c75e5db6f8721180bbbb17158f29ed736b0e10554672e585867f433b3766825",
+      "source": "external/c4_x0_engineering_01/source/scripts/validate_supported_pair_engineering.py"
+    },
+    "source/scripts/validate_suspended_pair_engineering.py": {
+      "bytes": 24490,
+      "sha256": "14f8d36c19b683dad9e96d5ed3379f55e5ee681670d083603dbfed065ec8db08",
+      "source": "external/c4_x0_engineering_01/source/scripts/validate_suspended_pair_engineering.py"
+    },
+    "source/src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+      "source": "external/c4_x0_engineering_01/source/src/developmental_physics/__init__.py"
+    },
+    "source/src/developmental_physics/assets/ground_body.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+      "source": "external/c4_x0_engineering_01/source/src/developmental_physics/assets/ground_body.xml"
+    },
+    "source/src/developmental_physics/environment.py": {
+      "bytes": 15822,
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+      "source": "external/c4_x0_engineering_01/source/src/developmental_physics/environment.py"
+    },
+    "source/src/developmental_physics/supported_environment.py": {
+      "bytes": 11642,
+      "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0",
+      "source": "external/c4_x0_engineering_01/source/src/developmental_physics/supported_environment.py"
+    },
+    "source/src/developmental_physics/suspended_environment.py": {
+      "bytes": 7076,
+      "sha256": "f5154b7e059ed9939ed130d9a5c9eda2af455b9f660a4e843c72b996a44d81f8",
+      "source": "external/c4_x0_engineering_01/source/src/developmental_physics/suspended_environment.py"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "external/c4_x0_engineering_01/stderr"
+    },
+    "stdout": {
+      "bytes": 1702,
+      "sha256": "1da1978007aa0027921e5032ce6bc995538c32d2ec2160cc349c89533808fc6d",
+      "source": "external/c4_x0_engineering_01/stdout"
+    },
+    "execution/run_suspended_once.py": {
+      "bytes": 3809,
+      "sha256": "dd3299f11ec75fd68e5ae3c8a39b6707ecd730dad15fa2fd7b58d8a64e82c3a0",
+      "source": "external/run_suspended_once.py"
+    },
+    "execution/archive_suspended_stage_once.py": {
+      "bytes": 3532,
+      "sha256": "cefe487902c2b7c4ca6e62c7eaa89ac609836e405042d9888b262b2c949051e6",
+      "source": "external/archive_suspended_stage_once.py"
+    }
+  },
+  "cost_before_manifest_write": {
+    "file_reads": 38,
+    "read_bytes": 743602,
+    "file_writes": 19,
+    "write_bytes": 371801
+  },
+  "wall_seconds_before_manifest_write": 0.269598999992013,
+  "cpu_seconds_before_manifest_write": 0.046875,
+  "physics_model_or_scientific_metric_calls": 0,
+  "automatic_retry": false
+}

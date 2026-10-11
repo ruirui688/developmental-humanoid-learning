@@ -1,0 +1,80 @@
+{
+  "files": {
+    "c4_x0_reporting_summary.json": {
+      "bytes": 31828,
+      "sha256": "5eb9fbcef89c0a641c494b8c98adaa3e8829a205165be67d933db000d4bfb45b",
+      "source": "external/c4_x0_reporting_summary.json"
+    },
+    "c4_x0_reporting_reads.json": {
+      "bytes": 963,
+      "sha256": "d4534569da64dc64573d42e2e6e022d551caca4933110ad460bf3e20ac7b224b",
+      "source": "external/c4_x0_reporting_reads.json"
+    },
+    "check_x0_once.py": {
+      "bytes": 9889,
+      "sha256": "47cc5b04c41c4fa13e0e331f567db183afd254960bcbf6cafbbfc4d487874988",
+      "source": "external/check_x0_once.py"
+    },
+    "seal_suspended_reporting_once.py": {
+      "bytes": 3231,
+      "sha256": "526bbd567607a3ef1a351da00d735027fd4d38988c6ebbb74b999e98b299aeab",
+      "source": "external/seal_suspended_reporting_once.py"
+    },
+    "c4_x_engineering_links_01.json": {
+      "bytes": 4738,
+      "sha256": "bcdc4f6cc0e5c5aeab2116607183f24da7f7045e2bc2d9c89292cba18777eca3",
+      "source": "external/c4_x_engineering_links_01.json"
+    },
+    "check_suspended_links_once.py": {
+      "bytes": 1771,
+      "sha256": "50404513bb370b2f81d897f72f9318a78f65357805eb925cb0514e5daf61d66a",
+      "source": "external/check_suspended_links_once.py"
+    },
+    "read_suspended_reporting_once.py": {
+      "bytes": 2179,
+      "sha256": "f30d83052b3b9f954e43dc083903edd41d80979d964c6190e68c02818c20c15e",
+      "source": "external/read_suspended_reporting_once.py"
+    },
+    "output_contract/checker.py": {
+      "bytes": 9889,
+      "sha256": "47cc5b04c41c4fa13e0e331f567db183afd254960bcbf6cafbbfc4d487874988",
+      "source": "external/c4_x0_output_contract_01/checker.py"
+    },
+    "output_contract/report.json": {
+      "bytes": 26072,
+      "sha256": "02b81c3f0ed4da7377710dd0c9c61ab5657e13a581dcbadd2c473529e76d9da9",
+      "source": "external/c4_x0_output_contract_01/report.json"
+    }
+  },
+  "base_manifests": {
+    "manifest.json": {
+      "bytes": 4857,
+      "sha256": "87f10e136c135c827a0c35c66796e264fa06a93935e2efe39fa535a17f889254"
+    },
+    "raw/manifest.json": {
+      "bytes": 968,
+      "sha256": "b1db6eddc909494ceac526b158b20915f3fcd12a5844eed0ae92adcf23349f00"
+    }
+  },
+  "base_manifests_after": {
+    "manifest.json": {
+      "bytes": 4857,
+      "sha256": "87f10e136c135c827a0c35c66796e264fa06a93935e2efe39fa535a17f889254"
+    },
+    "raw/manifest.json": {
+      "bytes": 968,
+      "sha256": "b1db6eddc909494ceac526b158b20915f3fcd12a5844eed0ae92adcf23349f00"
+    }
+  },
+  "root_raw_manifests_unchanged": true,
+  "cost_before_manifest_write": {
+    "file_reads": 22,
+    "read_bytes": 192770,
+    "file_writes": 9,
+    "write_bytes": 90560
+  },
+  "wall_seconds_before_manifest_write": 0.1415094998665154,
+  "cpu_seconds_before_manifest_write": 0.0,
+  "model_physics_scientific_metric_or_checker_calls": 0,
+  "automatic_retry": false
+}

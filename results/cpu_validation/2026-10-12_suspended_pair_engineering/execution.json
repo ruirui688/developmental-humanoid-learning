@@ -1,0 +1,57 @@
+{
+  "argv": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "scripts/validate_suspended_pair_engineering.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_x0_engineering_01\\raw",
+    "--source-commit",
+    "6319fb6fe4a847f9c5178759a057cefd4b0e82ff"
+  ],
+  "source_commit": "6319fb6fe4a847f9c5178759a057cefd4b0e82ff",
+  "returncode": 0,
+  "source_files": {
+    "src/developmental_physics/suspended_environment.py": {
+      "bytes": 7076,
+      "sha256": "f5154b7e059ed9939ed130d9a5c9eda2af455b9f660a4e843c72b996a44d81f8"
+    },
+    "scripts/validate_suspended_pair_engineering.py": {
+      "bytes": 24490,
+      "sha256": "14f8d36c19b683dad9e96d5ed3379f55e5ee681670d083603dbfed065ec8db08"
+    },
+    "docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md": {
+      "bytes": 10498,
+      "sha256": "1fe9129300663a3b51199cf21f2813279a35f3dcbcd3740dafd4e8085c42d695"
+    },
+    "src/developmental_physics/supported_environment.py": {
+      "bytes": 11642,
+      "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+    },
+    "scripts/validate_supported_pair_engineering.py": {
+      "bytes": 24683,
+      "sha256": "5c75e5db6f8721180bbbb17158f29ed736b0e10554672e585867f433b3766825"
+    },
+    "src/developmental_physics/environment.py": {
+      "bytes": 15822,
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+    },
+    "src/developmental_physics/assets/ground_body.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+    }
+  },
+  "source_snapshot_reads": 8,
+  "source_snapshot_read_bytes": 97803,
+  "started_unix": 1791748790.340342,
+  "ended_unix": 1791748791.5397785,
+  "wall_seconds": 1.199638199992478,
+  "stdout_bytes": 1702,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

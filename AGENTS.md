@@ -33,7 +33,9 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-[W0首次结果](docs/SUPPORTED_PAIR_ENGINEERING_RESULTS.md)从clean54cf4c2完成全部300控制/3,000子步，固定前缀左臂真实接触满足，但active80..99肩/肘MAE .01455068/.01388462、180..199为.03919046/.00653010rad，四项仅一项≤.01，工程资格失败。本安装W1/W2关闭，不改安装/seed/增益/目标补跑，不推论所有控制不可达、接触因果或旧C4通过。下一唯一X0直立悬挂域设计，明确机械固定支撑先验及可能非接触的域边界；新域仍不能解除C4，最终须完整接触控制。持续目标active，阶段检查提交推送后继续；以下旧记录只作历史，不触发重跑。
+[X0首次结果](docs/SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean6319fb6首次完成100prefix+4active、104控制/1,040子步，肩速度1.0957066489965022rad/s触发原1rad/s StudyAbort；0异常/fit/RLS，两个末窗不可评，完整工程资格失败，本安装X1/X2关闭。所存子步left_arm/feet/other接触全部零观察，不宣称接触或站立学习，不partial排名。接着唯一独立Y候选仅把公共肩Kd0改为已有肘Kd4，安装/权限/目标/阈值不改、不scan，须科学静态review、另冻结及有界首次执行；不是X0成功补跑，也不承诺通过。旧X协议/controller保持，旧W0/V分支关闭，C4/C5科学依赖未解除。持续目标active，阶段检查提交推送后继续。
+
+旧W0阶段记录：[W0首次结果](docs/SUPPORTED_PAIR_ENGINEERING_RESULTS.md)从clean54cf4c2完成全部300控制/3,000子步，固定前缀左臂真实接触满足，但active80..99肩/肘MAE .01455068/.01388462、180..199为.03919046/.00653010rad，四项仅一项≤.01，工程资格失败。本安装W1/W2关闭，不改安装/seed/增益/目标补跑，不推论所有控制不可达、接触因果或旧C4通过。下一唯一X0直立悬挂域设计，明确机械固定支撑先验及可能非接触的域边界；新域仍不能解除C4，最终须完整接触控制。以下旧记录只作历史，不触发重跑。
 
 [V首次结果](docs/GUARD_ORACLE_TAIL_DIAGNOSTIC_RESULTS.md)从clean7e1e5dd完成：4,572记录/192组完整，600H1精确，Q/U受控H2/H5/H15均略退化。12,408前向、10,122覆盖/182,196未来scalar用途；0fit/物理/RLS/旧self重算，首8薄契约全过。不进控制，关闭oracle路线与同bank优化，继续一个有边界的新支撑域双关节机制设计；它不能追认原地面接触C4，最终仍需完整接触控制。不能从负结果识别缺传感或支撑因果。持续目标仍active、C4/C5科学依赖未解除。以下为旧决策历史，不能据此重跑；当前入口以阶段账本首页及最后记录为准。
 
@@ -61,7 +63,7 @@ P后唯一Q候选为K原phi29追加(qrel0/.12,qrel1/.12,v0/1,v1/1,startG0/.5,sta
 
 当前模型只消费原生关节q/v、已知请求及连续过去端点；previous_v不得跨trial或补零，不得读未来实际力矩。D sparse11仅恢复其冻结snapshot，G不重拟合。PD64/(0,4)及其旧增益开发费用明确披露，预测尾只用当前目标，无切换预览。接触力、动能、真实动力学和root quaternion只作离线诊断，不进入部署模型；当前native没有orientation。
 
-正式物理累计 **252,990控制调用 /2,529,900子步**；W0新增300/3,000/0更新，历史在线22,452+离线7,200=29,652scalar更新计算保持。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
+正式物理累计 **253,094控制调用 /2,530,940子步**；X0新增104/1,040/0更新，W0此前新增300/3,000，历史在线22,452+离线7,200=29,652scalar更新计算保持。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
 
 G1与机器接管仍按 [docs/NEW_MACHINE_BOOTSTRAP.md](docs/NEW_MACHINE_BOOTSTRAP.md)、[docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)和 [docs/DEVELOPMENT_ROADMAP.md](docs/DEVELOPMENT_ROADMAP.md)；采用新依赖/后端时锁定来源、版本与许可。当前CPU工作不要求安装GPU仿真器。
 
@@ -156,4 +158,4 @@ git diff --check
 
 如果这是新环境中的首次 Codex 会话：先按 `docs/NEW_MACHINE_BOOTSTRAP.md` 识别实际软硬件条件并运行现有 CPU 测试；随后读取 `docs/DEVELOPMENT_ROADMAP.md` 选择当前可完成的阶段。在关节/刚体映射和站立 smoke test 通过前，不开始 G1 长时间训练或大规模采样。缺少 GPU 时继续 CPU 身体建模与控制原型，不静默安装驱动或操作真实机器人。
 
-X0执行入口：[悬挂域协议](docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md)、[事前X1/X2协议](docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md)。首次装配已过且0积分；新controller的PD成功/异常计账检查已过。先冻结推送，再一次300调用工程资格；非接触悬挂机制不能追认旧C4或解除C5科学依赖。
+X0首次结果入口：[停止结果](docs/SUSPENDED_PAIR_ENGINEERING_RESULTS.md)、[原悬挂域协议](docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md)、[关闭的事前X1/X2配方](docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md)。首次工程104/1,040后肩速度停止、末窗不可评；独立thin contract零失败只证明证据一致，不代表工程或科学通过。下一独立Y肩阻尼候选须另review/冻结，不修改X协议或controller；非接触悬挂机制不能追认旧C4或解除C5科学依赖，持续目标保持active。

@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** 最早未验收仍为C4。[W0结果](docs/SUPPORTED_PAIR_ENGINEERING_RESULTS.md)首次完整但工程资格失败，本安装W1/W2关闭。[X0直立悬挂工程域](docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md)的首次零积分装配已通过；先冻结代码，再执行300调用工程资格。[后续少量辨识与匹配控制](docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md)已事前定配方，须X0通过才执行。机械支撑及可能无接触的边界明确披露，不能追认旧C4；最终仍需完整接触控制及C5–C7。阶段检查提交推送后继续，下列旧结果只作历史，不触发重跑。
+**当前执行入口：** 最早未验收仍为C4。[X0首次结果](docs/SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean6319fb6完成100prefix+4active、104控制/1,040子步后，肩速度1.09570665rad/s触发原1rad/s研究停止；两个末窗不可评，完整工程资格失败，X1/X2关闭。W0本安装W1/W2同样保持关闭。接着只准备独立Y经典阻尼候选：肩Kd0→已有肘Kd4，安装/权限/目标/阈值保持、不scan；须科学静态review和另冻结，不能承诺通过。机械固定支撑与零观察接触边界披露，不追认旧C4；最终仍需自由root真实接触控制及C5–C7。阶段检查提交推送后继续，下列旧结果只作历史，不触发重跑。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 
@@ -29,7 +29,7 @@
 
 后续顺序固定为 C4 多关节 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。当前仅 CPU，允许少量在线辨识；不运行大规模 PPO、任务教师、预训练策略或真机。每个阶段检查、提交、推送后直接继续，完整阶段状态、旧失败和判门见[持续执行账本](docs/CONTINUOUS_EXECUTION_PLAN.md)。
 
-正式物理累计 **252,990 控制调用 /2,529,900 子步**；W0新增300/3,000/0更新，在线 22,452 与离线 7,200 scalar 辨识计算保持分列。H/I/J/K/L 没有新增物理或 RLS 辨识；J/K/L分别用2,400/26,400/39,600 scalar标签作小型离线ridge求解，记录一致不能代替科学验收。L复用PD采样先验、额外数据和既有增益开发费用均披露。
+正式物理累计 **253,094 控制调用 /2,530,940 子步**；X0新增104/1,040/0更新，W0此前新增300/3,000，在线 22,452 与离线 7,200 scalar 辨识计算保持分列。H/I/J/K/L 没有新增物理或 RLS 辨识；J/K/L分别用2,400/26,400/39,600 scalar标签作小型离线ridge求解，记录一致不能代替科学验收。L复用PD采样先验、额外数据和既有增益开发费用均披露。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 

@@ -1,5 +1,16 @@
 # 开发进度与仓库检查点
 
+## 当前入口：2026-10-12 X0研究速度停止，工程资格失败
+
+[X0首次结果](SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean6319fb6完成100prefix+4active、104控制/1,040子步，
+第4个完整active端点肩速度1.0957066489965022rad/s触发原1rad/s StudyAbort；环境terminated=false、failure=null。
+两个末20点窗口均不可评估，不partial排名；完整工程资格失败，本安装X1/X2关闭，协议/controller保持原样。
+left_arm/feet/other接触零观察，机械固定支撑仍真实存在；不宣称接触、站立或C4成功。
+实际全八轴absolute/squared effort为.07438647108079902/.03637436632447757，覆盖全部1,040已保存子步。
+正式累计253,094控制/2,530,940子步；online22,452/offline7,200保持，新增0fit/学习。
+下一独立Y候选仅肩Kd0→已有肘Kd4，安装/目标/权限/阈值不改、不scan；须科学静态review与另冻结，不能承诺通过。
+持续目标active，检查、报告、提交推送后继续；以下旧阶段记录保持历史，不据此重跑。
+
 ## 2026-10-12：W0完整执行但资格失败，关闭本安装W1/W2
 
 [W0结果](SUPPORTED_PAIR_ENGINEERING_RESULTS.md)从clean54cf4c2首次完成seed7300全部100zero前缀+200PD64/(0,4)active：
@@ -433,3 +444,24 @@ E按[正式协议](GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md)从clean `dda82b185
 首次新装配检查通过，4模型编译/5静态forward、0积分，identity原资产与安装XML几何差0；内wall/CPU .209933/.109375s，外 .434217s。
 [X1/X2协议](SUSPENDED_PAIR_LEARNING_PROTOCOL.md)在X0数据产生前确定三seed、400次在线辨识及cold/learned/PD/zero匹配控制；新增controller先clip公共PD，再首段小残差并独立闭合，每段计完整请求成本。5项新成功/异常计账检查通过，原首浮点严格等号失败与仅该项修正保留说明，0旧RLS/物理。
 [准备归档](../results/cpu_validation/2026-10-12_suspended_pair_engineering_preparation/manifest.json)29payload、58读取/358108bytes、0重复实验。工程未执行，现冻结推送后首次执行；持续目标active。
+
+## 2026-10-12：X0首次工程肩速度停止，X1/X2关闭
+
+[X0结果](SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean `6319fb6fe4a847f9c5178759a057cefd4b0e82ff`
+首次执行一次seed7400；100zero prefix完整，active只4/200，104返回/1,040连续已保存子步。
+`X0_seed7400:103`完整10子步先保存后，肩速度1.0957066489965022rad/s触发原1rad/s StudyAbort；
+环境terminated=false、reason=null，0控制异常、failure=null，wrapper exit0不等于资格通过。
+两个active末20窗都不可评，完整工程门失败，X1/X2关闭，不partial排名或补跑。
+
+保存子步left_arm/feet/other floor接触各零观察；固定支撑仍承担机械安装能力，反力unknown。
+实际全部八轴absolute/squared effort为.07438647108079902/.03637436632447757，
+prefix1,000与active40子步均努力有限；0fit/RLS/模型forward/MPC/教师，PD4次。
+内部wall/CPU .8093905/.359375s，外1.1996382s，两个编译/一次reset/两次resetforward另列。
+正式累计253,094控制/2,530,940子步，online22,452/offline7,200保持；不以停止后的少交互声称效率。
+
+[根归档](../results/cpu_validation/2026-10-12_suspended_pair_engineering/manifest.json)19payload、
+38读/743,602bytes、19写/371,801bytes，无自动重试，首stdio、两XML、源码及全部停止前轨迹保留。
+报告只一次派生摘要读取，不碰raw、不重算或调用检查器；root首thin contract零失败只证明保存契约一致。
+下一独立Y候选仅公共肩Kd0→已有肘Kd4，安装/目标/权限/原阈值保持、不scan，须科学静态review与另冻结。
+原X协议/controller保持，新增经典反馈不是身体学习，不承诺Y通过或追认旧C4/C5。
+持续目标active，报告检查、正常提交推送后立即继续，自由root真实接触控制及C5–C7仍待验收。
