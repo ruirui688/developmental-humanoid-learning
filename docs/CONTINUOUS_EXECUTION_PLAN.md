@@ -236,3 +236,13 @@ StudyAbort和动作权限，不估训练RMS；零列保留，不删列或补采�
 预计26,400重复scalar标签/3个50x50 solve/3,300系数、0新物理/RLS；K/D只恢复。
 先最小合成检查和静态review、冻结提交，再clean首次开发；原两门不改，未过不进控制。
 当前C4/C5科学依赖保持关闭，准备和P提交后立即继续active目标。
+
+Q于2026-10-12准备AST/compile与9helper pins通过，无静态失败；首次合成四case全部通过，
+验证21项公开尺度/顺序/零列与train-predict同映射、零追加列解析等价、x22闭合与old-v推进、
+新fit50预置solve失败paid/partial保存。旧P失败JSON合同复用，未重跑旧NaNcase或科学数学。
+合成设计20,000scalar/标签8,800scalar生成，两cross合计17,600重复标签，
+两solve尝试一返回一预置失败、1,100系数；0物理/RLS。内部wall/CPU .109406/.109375秒，
+外层wall .431626秒。44本地Markdown链接零缺失；准确首次源码和stdio已保留。
+静态review封口与准备归档后冻结提交，从clean HEAD首次开发，不在准备检查处停止。
+Q独立静态review无实质阻断；准备归档21payload、42读取/1,217,210字节、0复制失败，
+wall/CPU .173603/.03125秒。首次源码/协议、预置失败、stdio和review完整封存。

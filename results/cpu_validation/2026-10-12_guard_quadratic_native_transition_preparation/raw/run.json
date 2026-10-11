@@ -1,0 +1,204 @@
+{
+  "status": "self_check_passed",
+  "self_check": true,
+  "source": {
+    "commit": null,
+    "files": {
+      "scripts/develop_guard_quadratic_native_transition.py": {
+        "bytes": 29407,
+        "sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147"
+      },
+      "docs/GUARD_QUADRATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 5230,
+        "sha256": "77cb47c42efad889f4d15cf64207b528ab2c7e29908d55d3f16441b0b7a6c5d3"
+      },
+      "scripts/develop_guard_scaled_native_transition.py": {
+        "bytes": 27537,
+        "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+      },
+      "docs/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 4870,
+        "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+      },
+      "scripts/develop_guard_native_transition.py": {
+        "bytes": 36390,
+        "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+      },
+      "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 8134,
+        "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      },
+      "src/developmental_physics/guard_lag_pair_model.py": {
+        "bytes": 11351,
+        "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+      },
+      "src/developmental_physics/guard_pair_model.py": {
+        "bytes": 6860,
+        "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+      },
+      "src/developmental_physics/local_pair_model.py": {
+        "bytes": 25148,
+        "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+      },
+      "src/developmental_physics/local_model.py": {
+        "bytes": 16564,
+        "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+      }
+    },
+    "clean_committed_bytes_verified": false
+  },
+  "inputs": {},
+  "inputs_without_returned_read_record": {
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/metadata.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/diagnostics.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/run.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/parameters.json": "unknown_before_read_return"
+  },
+  "original_source_commits": {
+    "C": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+    "D": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "K": "b46c6d37fddc8e6534384168fb76663bc2c5236c"
+  },
+  "requested_source_commit": null,
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "original_C_dependencies": "unknown_before_C_metadata_return",
+  "source_active_counts": {},
+  "baseline_restorations": {
+    "K22": [],
+    "D11": []
+  },
+  "K22_fingerprints_before": {},
+  "K22_fingerprints_after": "unknown_before_return",
+  "D11_fingerprints_before": {},
+  "D11_fingerprints_after": "unknown_before_return",
+  "self_check_cases": [
+    {
+      "case": "quadratic_order_public_scales_zero_columns_and_mapping_parity",
+      "status": "passed"
+    },
+    {
+      "case": "zero_quadratic_columns_analytic_equivalence",
+      "status": "passed"
+    },
+    {
+      "case": "closed_x22_and_previous_v_advance",
+      "status": "passed"
+    },
+    {
+      "case": "new_fit50_solve_failure_paid_partial_saved",
+      "status": "passed",
+      "paid_cost": {
+        "fit_attempts": 1,
+        "fit_gram_matrix_attempts": 1,
+        "fit_logical_multiply_requests": 1440000,
+        "fit_logical_add_requests": 1436400,
+        "fit_gram_matrix_returns": 1,
+        "fit_cross_matrix_attempts": 1,
+        "fit_scalar_labels_requested": 8800,
+        "fit_cross_matrix_returns": 1,
+        "fit_scalar_labels_returned": 8800,
+        "ridge_identity_matrix_entry_additions_requested": 2500,
+        "ridge_identity_matrix_entry_additions_returned": 2500,
+        "fit_shared_50x50_22rhs_solve_attempts": 1,
+        "fit_shared_50x50_22rhs_solve_failures": 1,
+        "fit_failures": 1
+      },
+      "saved_fixture_files": [
+        "parameters.json",
+        "metrics.json",
+        "run.json",
+        "predictions.jsonl",
+        "failure.json",
+        "manifest.json"
+      ]
+    }
+  ],
+  "internal_pure_metric_aliases": {
+    "Q22": "learned22",
+    "K22": "cold22",
+    "D11": "D11"
+  },
+  "cost": {
+    "fit_attempts": 2,
+    "fit_returns": 1,
+    "fit_failures": 1,
+    "fit_shared_50x50_22rhs_solve_attempts": 2,
+    "fit_shared_50x50_22rhs_solve_returns": 1,
+    "fit_shared_50x50_22rhs_solve_failures": 1,
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "K22_refits": 0,
+    "D11_updates": 0,
+    "source_file_read_attempts": 11,
+    "source_file_read_returns": 11,
+    "source_raw_bytes": 171653,
+    "helper_module_load_attempts": 2,
+    "helper_module_load_returns": 2,
+    "synthetic_training_quadratic_mapping_attempts": 2,
+    "synthetic_training_scale_scalar_divisions_requested": 12,
+    "synthetic_training_scale_scalar_divisions_returned": 12,
+    "synthetic_training_quadratic_scalar_products_requested": 42,
+    "synthetic_training_quadratic_scalar_products_returned": 42,
+    "synthetic_training_feature_scalar_materializations_requested": 100,
+    "synthetic_training_feature_scalar_materializations_returned": 100,
+    "synthetic_training_quadratic_mapping_returns": 2,
+    "Q22_feature_prior_attempts": 3,
+    "Q22_start_guard_attempts": 3,
+    "Q22_start_guard_returns": 3,
+    "Q22_feature_prior_returns": 3,
+    "Q22_prior_scalar_outputs": 66,
+    "Q22_quadratic_mapping_attempts": 3,
+    "Q22_scale_scalar_divisions_requested": 18,
+    "Q22_scale_scalar_divisions_returned": 18,
+    "Q22_quadratic_scalar_products_requested": 63,
+    "Q22_quadratic_scalar_products_returned": 63,
+    "Q22_feature_scalar_materializations_requested": 150,
+    "Q22_feature_scalar_materializations_returned": 150,
+    "Q22_quadratic_mapping_returns": 3,
+    "synthetic_design_scalars_generated": 20000,
+    "synthetic_label_scalars_generated": 8800,
+    "fit_gram_matrix_attempts": 2,
+    "fit_logical_multiply_requests": 2880000,
+    "fit_logical_add_requests": 2872800,
+    "fit_gram_matrix_returns": 2,
+    "fit_cross_matrix_attempts": 2,
+    "fit_scalar_labels_requested": 17600,
+    "fit_cross_matrix_returns": 2,
+    "fit_scalar_labels_returned": 17600,
+    "ridge_identity_matrix_entry_additions_requested": 5000,
+    "ridge_identity_matrix_entry_additions_returned": 5000,
+    "transition_scalar_coefficients_fitted": 1100,
+    "transition_heads_published": 22,
+    "synthetic_reference_scalar_divisions": 638,
+    "Q22_transition_attempts": 2,
+    "Q22_residual_vector_attempts": 2,
+    "Q22_residual_scalar_head_attempts": 44,
+    "Q22_residual_vector_returns": 2,
+    "Q22_residual_scalar_head_returns": 44,
+    "Q22_history_advance_scalar_copies": 4,
+    "Q22_transition_returns": 2,
+    "wall_seconds": 0.10940610012039542,
+    "cpu_seconds": 0.109375
+  },
+  "failure": null,
+  "development_gate_passed": false,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "timing_excludes": "final output serialization and write"
+}

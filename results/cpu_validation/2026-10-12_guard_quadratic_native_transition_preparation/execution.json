@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "scripts/develop_guard_quadratic_native_transition.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_q_selfcheck_01\\raw",
+    "--self-check"
+  ],
+  "source_commit": null,
+  "returncode": 0,
+  "started_unix": 1791736043.0538504,
+  "ended_unix": 1791736043.4859805,
+  "wall_seconds": 0.4316263999789953,
+  "checked_sources": {
+    "scripts/develop_guard_quadratic_native_transition.py": {
+      "bytes": 29407,
+      "sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147"
+    },
+    "docs/GUARD_QUADRATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 5230,
+      "sha256": "77cb47c42efad889f4d15cf64207b528ab2c7e29908d55d3f16441b0b7a6c5d3"
+    }
+  },
+  "source_snapshot_reads": 2,
+  "source_snapshot_read_bytes": 34637,
+  "stdout_bytes": 2537,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

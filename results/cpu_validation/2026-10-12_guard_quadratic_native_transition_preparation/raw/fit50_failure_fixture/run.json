@@ -1,0 +1,25 @@
+{
+  "status": "failed",
+  "self_check": true,
+  "cost": {
+    "fit_attempts": 1,
+    "fit_gram_matrix_attempts": 1,
+    "fit_logical_multiply_requests": 1440000,
+    "fit_logical_add_requests": 1436400,
+    "fit_gram_matrix_returns": 1,
+    "fit_cross_matrix_attempts": 1,
+    "fit_scalar_labels_requested": 8800,
+    "fit_cross_matrix_returns": 1,
+    "fit_scalar_labels_returned": 8800,
+    "ridge_identity_matrix_entry_additions_requested": 2500,
+    "ridge_identity_matrix_entry_additions_returned": 2500,
+    "fit_shared_50x50_22rhs_solve_attempts": 1,
+    "fit_shared_50x50_22rhs_solve_failures": 1,
+    "fit_failures": 1
+  },
+  "failure": {
+    "type": "LinAlgError",
+    "message": "synthetic_injected_fit50_solve_failure"
+  },
+  "scientific_adoption": false
+}
