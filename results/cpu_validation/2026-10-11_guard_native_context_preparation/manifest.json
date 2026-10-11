@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "kind": "fixed_native_context_diagnostic_preparation",
+  "files": {
+    "diagnostic/API_OUTLINE.md": {
+      "sha256": "e24661c093c31f2485ed2746ae5987eef9848a7119f4d0586d6530274f217a43",
+      "bytes": 3317,
+      "original_path": "external/c4_native_context_diagnostic_staging/API_OUTLINE.md"
+    },
+    "diagnostic/check_small_once.py": {
+      "sha256": "e5ebbdc8268c9102898335c5a333a572867f899fe61f6c7f704a09528f3afc82",
+      "bytes": 8630,
+      "original_path": "external/c4_native_context_diagnostic_staging/check_small_once.py"
+    },
+    "diagnostic/DELIVERY.md": {
+      "sha256": "0ccc0741ab40d613fb104a0b067c500d9cedae781137a3cef9354355de6aa897",
+      "bytes": 3647,
+      "original_path": "external/c4_native_context_diagnostic_staging/DELIVERY.md"
+    },
+    "diagnostic/diagnose_guard_native_context.py": {
+      "sha256": "c25a83ad6986c798477652dde7d0b61c45e839351afa329a5ff1f57f224a7063",
+      "bytes": 44292,
+      "original_path": "external/c4_native_context_diagnostic_staging/diagnose_guard_native_context.py"
+    },
+    "diagnostic/engineering_01/check_small_once.py": {
+      "sha256": "e5ebbdc8268c9102898335c5a333a572867f899fe61f6c7f704a09528f3afc82",
+      "bytes": 8630,
+      "original_path": "external/c4_native_context_diagnostic_staging/engineering_01/check_small_once.py"
+    },
+    "diagnostic/engineering_01/diagnose_guard_native_context.py": {
+      "sha256": "9bba8e396bfdfd7a1bd12e74779e1e0ca1fe07a52daf6df47df30aa414b06c1d",
+      "bytes": 37864,
+      "original_path": "external/c4_native_context_diagnostic_staging/engineering_01/diagnose_guard_native_context.py"
+    },
+    "diagnostic/engineering_01/run.json": {
+      "sha256": "a1ee2111cec089a6dbdfe6d09fc6b8684f2c6a669e7d06b1eb435ae6fb33047f",
+      "bytes": 533624,
+      "original_path": "external/c4_native_context_diagnostic_staging/engineering_01/run.json"
+    },
+    "diagnostic/INTEGRITY.json": {
+      "sha256": "45ab13cb780bb07908e85626b63577c779ba24cba5e0dc047235ce036938bacd",
+      "bytes": 1664,
+      "original_path": "external/c4_native_context_diagnostic_staging/INTEGRITY.json"
+    },
+    "diagnostic/post_fixture_source_01.json": {
+      "sha256": "4ad3decdd201caf353e51e4e5094a3df8c574cf948c23fe52fa5472ec2748de0",
+      "bytes": 590,
+      "original_path": "external/c4_native_context_diagnostic_staging/post_fixture_source_01.json"
+    },
+    "diagnostic/revision_01/AST02_SOURCE_PRESERVED.json": {
+      "sha256": "f35d0971c7174f17d6a2d09b17d9e2d05ad5a7ecbc35328aa3a86f861263df5b",
+      "bytes": 546,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/AST02_SOURCE_PRESERVED.json"
+    },
+    "diagnostic/revision_01/AST_SOURCE_CHECK_01_FAILURE.md": {
+      "sha256": "9e826795c8c84e92c1130d84f50b4ebd06d736cc10b0ca25b8990ad05d7ba2df",
+      "bytes": 1160,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/AST_SOURCE_CHECK_01_FAILURE.md"
+    },
+    "diagnostic/revision_01/AST_SOURCE_CHECK_02.json": {
+      "sha256": "f6b701ed53fa0fba14390294b98f88f459174fe9d410cff3073a0544981abacc",
+      "bytes": 1297,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/AST_SOURCE_CHECK_02.json"
+    },
+    "diagnostic/revision_01/BRANCH_CHECK_01.json": {
+      "sha256": "f274eac56d6b71538ad4d56a4a1697961c82d9ae36a58e4db4dcf770c2d4f5f2",
+      "bytes": 8784,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/BRANCH_CHECK_01.json"
+    },
+    "diagnostic/revision_01/DELIVERY.original.md": {
+      "sha256": "0ccc0741ab40d613fb104a0b067c500d9cedae781137a3cef9354355de6aa897",
+      "bytes": 3647,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/DELIVERY.original.md"
+    },
+    "diagnostic/revision_01/DELIVERY_REVISION_01.md": {
+      "sha256": "5c5574b5ce66a3ed3e55951281bcac2fc8ab9f2c776f0dfb295252f9bdec14b2",
+      "bytes": 6328,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/DELIVERY_REVISION_01.md"
+    },
+    "diagnostic/revision_01/diagnose_guard_native_context.ast02_verified.py": {
+      "sha256": "057f7a1e89970ae2482a239f6dbf3a6d63c897855ab3589c34b3b0941774e0c0",
+      "bytes": 44229,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/diagnose_guard_native_context.ast02_verified.py"
+    },
+    "diagnostic/revision_01/diagnose_guard_native_context.final.py": {
+      "sha256": "c25a83ad6986c798477652dde7d0b61c45e839351afa329a5ff1f57f224a7063",
+      "bytes": 44292,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/diagnose_guard_native_context.final.py"
+    },
+    "diagnostic/revision_01/diagnose_guard_native_context.original.py": {
+      "sha256": "037fb78aa17333aaebe4db15b7737b887cb7d1168ce415421777428c51cfcf47",
+      "bytes": 38554,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/diagnose_guard_native_context.original.py"
+    },
+    "diagnostic/revision_01/DIFF_GENERATION.json": {
+      "sha256": "e356d023b73fe870fb93d11fdd3a8157ecd0a6da0b90121c40427a2a547cd77b",
+      "bytes": 1436,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/DIFF_GENERATION.json"
+    },
+    "diagnostic/revision_01/F_PROTOCOL_DRAFT.final.md": {
+      "sha256": "7eb27e57d0aed1edfd318170c17cd8e50761ffcb7977d3c23ad4680bd562c6e5",
+      "bytes": 9861,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/F_PROTOCOL_DRAFT.final.md"
+    },
+    "diagnostic/revision_01/F_PROTOCOL_DRAFT.original.md": {
+      "sha256": "a46f036e55d7ffe809d6ff2fdd09aae336b3cc2413578607b87ef69c85d6790e",
+      "bytes": 7378,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/F_PROTOCOL_DRAFT.original.md"
+    },
+    "diagnostic/revision_01/fake_preflight_01/manifest.json": {
+      "sha256": "a9a7fafcc2de6f1a66086b403327df41d59d2fc29e52da6718c9535d978f2b8f",
+      "bytes": 602,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/fake_preflight_01/manifest.json"
+    },
+    "diagnostic/revision_01/fake_preflight_01/run.json": {
+      "sha256": "88d98b156aad353b66d9d41d46cfddae77aa864cd4d9047209203a6496f5dd41",
+      "bytes": 1926,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/fake_preflight_01/run.json"
+    },
+    "diagnostic/revision_01/FINAL_SNAPSHOTS.json": {
+      "sha256": "d184bcd46cc95906062092f407925f417bb9cfc65667a3c5c7eabfaa970529d2",
+      "bytes": 953,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/FINAL_SNAPSHOTS.json"
+    },
+    "diagnostic/revision_01/INTEGRITY.original.json": {
+      "sha256": "45ab13cb780bb07908e85626b63577c779ba24cba5e0dc047235ce036938bacd",
+      "bytes": 1664,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/INTEGRITY.original.json"
+    },
+    "diagnostic/revision_01/INTEGRITY_REVISION_01.json": {
+      "sha256": "2547b048b37a7d01d6c63f1657edd423ddab306a0c98423c6e8fdc0b6ce18608",
+      "bytes": 6228,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/INTEGRITY_REVISION_01.json"
+    },
+    "diagnostic/revision_01/PRESERVED.json": {
+      "sha256": "bdaf162fa9e2679eacf0bb35d54bea6418880022211ba387eab7b88aceebfe5e",
+      "bytes": 1305,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/PRESERVED.json"
+    },
+    "diagnostic/revision_01/read_fee_fake_01.bin": {
+      "sha256": "a17bf1cfcd09f5bd653e7caf7f5c618fa70ad5a5c56706c51bb896bc0cd9520e",
+      "bytes": 26,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/read_fee_fake_01.bin"
+    },
+    "diagnostic/revision_01/REVISION_DIFF.patch": {
+      "sha256": "c5e36c080ff4cb40d122a33e0d19c20b99adb21c44f426d027e454d1c9b896d3",
+      "bytes": 19457,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/REVISION_DIFF.patch"
+    },
+    "diagnostic/revision_01/verify_revision_02.py": {
+      "sha256": "1df80066538812aa34ab4be7f0ade2587d34a52cf54f3ba3e4e353328b209a58",
+      "bytes": 4958,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/verify_revision_02.py"
+    },
+    "diagnostic/revision_01/verify_revision_branches_once.py": {
+      "sha256": "e1e6512f812ae3f64cc11f6aa3f56de0e6fea582a4f451ef12a0aa161024ad11",
+      "bytes": 12230,
+      "original_path": "external/c4_native_context_diagnostic_staging/revision_01/verify_revision_branches_once.py"
+    },
+    "protocol/F_PROTOCOL_DRAFT.md": {
+      "sha256": "7eb27e57d0aed1edfd318170c17cd8e50761ffcb7977d3c23ad4680bd562c6e5",
+      "bytes": 9861,
+      "original_path": "external/c4_native_context_protocol_staging/F_PROTOCOL_DRAFT.md"
+    },
+    "review/REVIEW.md": {
+      "sha256": "963aa8d9ac492864d29daed3229267bf91334cb63655d3e20f3d85868432cb84",
+      "bytes": 5220,
+      "original_path": "external/c4_native_context_review_staging/REVIEW.md"
+    },
+    "review/reviewed_diagnostic.py": {
+      "sha256": "037fb78aa17333aaebe4db15b7737b887cb7d1168ce415421777428c51cfcf47",
+      "bytes": 38554,
+      "original_path": "external/c4_native_context_review_staging/reviewed_diagnostic.py"
+    },
+    "review/reviewed_protocol.md": {
+      "sha256": "a46f036e55d7ffe809d6ff2fdd09aae336b3cc2413578607b87ef69c85d6790e",
+      "bytes": 7378,
+      "original_path": "external/c4_native_context_review_staging/reviewed_protocol.md"
+    },
+    "review/revision_01/REVIEW.md": {
+      "sha256": "cf471c5356f5553b5a525f94a42d47cdac923a57bb119b8d3f0885d91ae3ecec",
+      "bytes": 4109,
+      "original_path": "external/c4_native_context_review_staging/revision_01/REVIEW.md"
+    },
+    "review/revision_01/SOURCE_RECORD.json": {
+      "sha256": "75f5350df5966cd670dc44d19f4ff6d10ec65128a678216787e4b3a5ff85d3b2",
+      "bytes": 1868,
+      "original_path": "external/c4_native_context_review_staging/revision_01/SOURCE_RECORD.json"
+    },
+    "review/seal_review_once.py": {
+      "sha256": "86f710bdc4a8a56493ea3a020a4b1b1865d956e33db9c931982a306767d1d3a8",
+      "bytes": 2154,
+      "original_path": "external/c4_native_context_review_staging/seal_review_once.py"
+    },
+    "review/SOURCE_RECORD.json": {
+      "sha256": "b254e58a631a1d10ae25d5a3b01e375d7dac1047b0c33de23e070ca1aa696704",
+      "bytes": 1340,
+      "original_path": "external/c4_native_context_review_staging/SOURCE_RECORD.json"
+    },
+    "root_records/promote_guard_native_context_once.py": {
+      "sha256": "f27fef15d5b85d67eee13349d94472bff4c094c9473c183d41a6d31d5d0e7f3a",
+      "bytes": 7070,
+      "original_path": "external/promote_guard_native_context_once.py"
+    },
+    "root_records/run_guard_native_context_once.py": {
+      "sha256": "2ad9bc32e430e3a9482e1853cc94a578b72f4de18c12bef317748cbfbd615815",
+      "bytes": 2370,
+      "original_path": "external/run_guard_native_context_once.py"
+    },
+    "root_records/verify_e_result_delivery_once.py": {
+      "sha256": "dbeaa2332548e7a7681e33cb2d36fbc388b0ff7e1d701e7dd60841069a969938",
+      "bytes": 2813,
+      "original_path": "external/verify_e_result_delivery_once.py"
+    },
+    "root_records/c4_e_result_delivery_01.json": {
+      "sha256": "a8de91a9bf5f3bbb962f97b6e3726d1e941b90f455495fc5885ce7d2fc827259",
+      "bytes": 665,
+      "original_path": "external/c4_e_result_delivery_01.json"
+    },
+    "root_records/promotion.json": {
+      "sha256": "e96c20ff0bda2043c23bc0d9745968f11c39e1a1bbf9293f3bb58e37bbfda4af",
+      "bytes": 1647,
+      "original_path": "root-generated during promotion"
+    }
+  },
+  "payload_count": 44,
+  "payload_bytes": 944168,
+  "failed": 0,
+  "new_physics": 0,
+  "new_model_predictions": 0,
+  "new_updates": 0,
+  "boundary": "Engineering preparation only; no actual E descriptive execution or scientific adoption."
+}

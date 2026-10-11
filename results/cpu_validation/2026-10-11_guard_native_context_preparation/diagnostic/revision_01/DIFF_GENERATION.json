@@ -1,0 +1,46 @@
+{
+  "diff_generation_reads": {
+    "opens": 4,
+    "binary_bytes": 100085,
+    "hash_operations": 0,
+    "AST_parses": 0
+  },
+  "diff_wall_seconds": 0.02095869998447597,
+  "diff_cpu_seconds": 0.015625,
+  "coordination_tool_content_reads_before_branch_check": {
+    "opens": 6,
+    "binary_bytes": 54613,
+    "files": [
+      {
+        "path": "external/c4_native_context_diagnostic_staging/diagnose_guard_native_context.py",
+        "bytes": 44229
+      },
+      {
+        "path": "external/c4_native_context_diagnostic_staging/revision_01/AST_SOURCE_CHECK_02.json",
+        "bytes": 1297
+      },
+      {
+        "path": "external/c4_native_context_diagnostic_staging/revision_01/PRESERVED.json",
+        "bytes": 1305
+      },
+      {
+        "path": "external/c4_native_context_diagnostic_staging/INTEGRITY.json",
+        "bytes": 1664
+      },
+      {
+        "path": "external/c4_native_context_diagnostic_staging/revision_01/verify_revision_02.py",
+        "bytes": 4958
+      },
+      {
+        "path": "external/c4_native_context_diagnostic_staging/revision_01/AST_SOURCE_CHECK_01_FAILURE.md",
+        "bytes": 1160
+      }
+    ],
+    "scope": "Get-Content Raw review reads; first source read was the 44229-byte AST02 source before ID type guard"
+  },
+  "descriptive_statistical_math": 0,
+  "model_calls": 0,
+  "RLS_updates": 0,
+  "physical_queries": 0,
+  "actual_E_C_D_reads": 0
+}

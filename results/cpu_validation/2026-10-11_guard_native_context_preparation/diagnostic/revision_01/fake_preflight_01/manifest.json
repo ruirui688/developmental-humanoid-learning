@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "exception",
+  "files": {
+    "run.json": {
+      "sha256": "88d98b156aad353b66d9d41d46cfddae77aa864cd4d9047209203a6496f5dd41",
+      "bytes": 1926
+    }
+  },
+  "source_cache_records": {},
+  "output_integrity_reads": {
+    "opens": 1,
+    "bytes": 1926,
+    "hash_operations": 1
+  },
+  "final_record_timing": {
+    "wall_seconds": 0.006884200032800436,
+    "cpu_seconds": 0.0,
+    "scope": "run JSON write and output-integrity read/hash; excludes final manifest serialization/write"
+  },
+  "scientific_adoption": {
+    "evaluated": false,
+    "passed": false
+  }
+}

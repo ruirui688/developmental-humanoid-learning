@@ -1,0 +1,36 @@
+{
+  "source_sha256": "c25a83ad6986c798477652dde7d0b61c45e839351afa329a5ff1f57f224a7063",
+  "promoted_source_sha256": "15ffc878f918a7927b09c5ede14b6ac5b57b09bab43b4ff4342ac11a20cdff96",
+  "staging_protocol_sha256": "7eb27e57d0aed1edfd318170c17cd8e50761ffcb7977d3c23ad4680bd562c6e5",
+  "formal_protocol_sha256": "eecf6cdf71699d18a076229765d7246c265a9fb0ddc95b60ce875d15795caaf3",
+  "functions_and_classes_ast_identical": true,
+  "formal_switch_only": true,
+  "syntax_compilation": true,
+  "binding": {
+    "schema_version": 1,
+    "archive_relative_path": "results/cpu_validation/2026-10-11_guard_lag_control",
+    "e_source_commit": "dda82b1854d80483d0b16e0532bc414906e6a402",
+    "source_manifest_sha256": "b27d3cb382e2be2b2946d58aca1286594ee92777d47f05cfa1f5e2da8910058b",
+    "first_audit_sha256": "ba27cbc47f1291ffbb003102f2d19a0da35821092cd6b1ac790416b7fe80a8e7",
+    "summary_sha256": "74c0b148950dc8c33d130492b3f0b636a6da9eba2bd3239e3d7952036437b32e",
+    "raw_manifest_sha256": "d584de2194f8387bf5fdbd85d727924f748a8b87ce7e950d1c324f1f1bf2b519",
+    "protocol": {
+      "path": "docs/GUARD_NATIVE_CONTEXT_DIAGNOSTIC_PROTOCOL.md",
+      "sha256": "eecf6cdf71699d18a076229765d7246c265a9fb0ddc95b60ce875d15795caaf3"
+    }
+  },
+  "copy_checks": 43,
+  "failed": 0,
+  "execution": {
+    "binary_read_opens": 89,
+    "binary_read_bytes": 1945206,
+    "wall_seconds": 0.5385034000501037,
+    "cpu_seconds": 0.125,
+    "timing_scope": "promotion and copying through report assembly; excludes final report/manifest writes",
+    "statistics_reruns": 0,
+    "real_e_trace_reads": 0,
+    "model_predictions": 0,
+    "physics": 0,
+    "updates": 0
+  }
+}

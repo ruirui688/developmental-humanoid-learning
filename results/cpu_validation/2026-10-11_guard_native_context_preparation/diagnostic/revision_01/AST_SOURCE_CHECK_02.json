@@ -1,0 +1,43 @@
+{
+  "reads": {
+    "opens": 4,
+    "binary_bytes": 100022,
+    "hash_operations": 4,
+    "AST_parses": 2
+  },
+  "source_before_sha256": "037fb78aa17333aaebe4db15b7737b887cb7d1168ce415421777428c51cfcf47",
+  "source_after_sha256": "057f7a1e89970ae2482a239f6dbf3a6d63c897855ab3589c34b3b0941774e0c0",
+  "protocol_before_sha256": "a46f036e55d7ffe809d6ff2fdd09aae336b3cc2413578607b87ef69c85d6790e",
+  "protocol_after_sha256": "7eb27e57d0aed1edfd318170c17cd8e50761ffcb7977d3c23ad4680bd562c6e5",
+  "new_statistical_math": 0,
+  "model_imports": 0,
+  "new_model_calls": 0,
+  "new_physics": 0,
+  "actual_E_C_D_reads": 0,
+  "checks": {
+    "finite": true,
+    "vector": true,
+    "sub": true,
+    "mul": true,
+    "div": true,
+    "total": true,
+    "square": true,
+    "root": true,
+    "norm": true,
+    "native_equal": true,
+    "native_scores": true,
+    "saved_errors": true,
+    "describe": true,
+    "safe_mean": true,
+    "pearson": true,
+    "score_statistics": true,
+    "summarize_records": true,
+    "derive_dataflow_unchanged_after_removing_flags_and_identity_fee": true,
+    "formal_flag_false": true,
+    "f_identity_saved_before_first_e_read": true
+  },
+  "passed": 20,
+  "failed": 0,
+  "wall_seconds": 0.05054870015010238,
+  "cpu_seconds": 0.0625
+}

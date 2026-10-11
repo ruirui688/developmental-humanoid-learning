@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "only_post_fixture_changes_are_runtime_saved_copy_identity": true,
+    "all_statistical_and_native_core_unchanged": true,
+    "formal_flag_still_false": true
+  },
+  "passed": 3,
+  "failed": 0,
+  "changed_functions": [
+    "sealed_e_inputs",
+    "run_diagnostic"
+  ],
+  "fixture_source_sha256": "9bba8e396bfdfd7a1bd12e74779e1e0ca1fe07a52daf6df47df30aa414b06c1d",
+  "delivery_source_sha256": "037fb78aa17333aaebe4db15b7737b887cb7d1168ce415421777428c51cfcf47",
+  "model_imports": 0,
+  "model_calls": 0,
+  "descriptive_math": 0,
+  "physical_queries": 0
+}

@@ -1,0 +1,324 @@
+--- external/c4_native_context_diagnostic_staging/revision_01/diagnose_guard_native_context.original.py
++++ external/c4_native_context_diagnostic_staging/revision_01/diagnose_guard_native_context.final.py
+@@ -151,10 +151,74 @@
+     return result, reasons
+ 
+ 
++def input_quality_flags(row, qref8, previous_before, native_history_valid,
++                        complete, original_error_reasons, fee):
++    """Independent provenance flags; never alter score/error eligibility."""
++    flags = []
++
++    def check(label, value, length):
++        if value is None:
++            flags.append(label+":missing")
++        elif not isinstance(value, (list, tuple)) or len(value) != length:
++            flags.append(label+":wrong_shape")
++        elif any(type(x) not in (int, float) for x in value):
++            flags.append(label+":invalid_scalar_type")
++        elif any(not math.isfinite(x) for x in value):
++            flags.append(label+":nonfinite")
++
++    before, after = row.get("observation_before") or {}, row.get("observation_after") or {}
++    for field, length in (("joint_position", 8), ("joint_velocity", 8),
++                          ("imu_gyro", 3), ("imu_acceleration", 3)):
++        check("current_native_"+field, before.get(field), length)
++    if previous_before is None:
++        flags.append("previous_native_endpoint:unavailable_or_discontinuous")
++    else:
++        check("previous_native_acceleration", previous_before.get("imu_acceleration"), 3)
++    if qref8 is None:
++        flags.append("prefix99_native_qref:unavailable")
++    check("current_target", row.get("target_q"), 2)
++    if not native_history_valid:
++        flags.append("prediction_native_history:missing" if not isinstance(row.get("history"), dict)
++                     else "prediction_native_history:invalid_or_discontinuous")
++    if not complete:
++        flags.append("interval:not_complete_20ms")
++    for channel, index, field in (("q", 0, "joint_position"), ("v", 1, "joint_velocity")):
++        check("observed_next_"+channel+"_label", after.get(field), 8)
++        for predictor in PREDICTORS:
++            prediction = (row.get("predicted_next_qv") or {}).get(predictor)
++            if prediction is None:
++                flags.append("saved_"+predictor+"_"+channel+"_prediction:missing")
++            elif not isinstance(prediction, (list, tuple)) or len(prediction) != 2:
++                flags.append("saved_"+predictor+"_"+channel+"_prediction:wrong_container_shape")
++            else:
++                check("saved_"+predictor+"_"+channel+"_prediction", prediction[index], 2)
++            if original_error_reasons[predictor].get(channel) == "nonfinite_saved_difference":
++                flags.append("saved_"+predictor+"_"+channel+"_difference:nonfinite")
++    for flag in flags:
++        fee["input_quality_flag:"+flag] += 1
++    fee["input_quality_rows_classified"] += 1
++    return flags
++
++
++def quality_counts(derived, episodes):
++    """Ancillary counts only; fixed statistical/native formulas are unchanged."""
++    result = []
++    for episode in episodes:
++        for segment in SEGMENTS:
++            rows = [row for row in derived[episode["trial_id"]] if row["target_segment"] == segment]
++            result.append({"trial_id": episode["trial_id"], "seed": episode["seed"],
++                "kind": episode["kind"], "target_segment": segment, "saved_active_records": len(rows),
++                "rows_with_any_quality_flag": sum(bool(row["input_quality_flags"]) for row in rows),
++                "independent_flag_counts": dict(Counter(flag for row in rows for flag in row["input_quality_flags"])),
++                "count_semantics": "each flag is counted independently; multiple flags may apply to one row"})
++    return result
++
++
+ def derive_rows(rows, episodes, fee):
+     """One pass over already verified E rows; only source-native arithmetic."""
+     plans = {item["trial_id"]: item for item in episodes}
+     if len(plans) != len(episodes):
++        fee["plan_duplicate_identity_failures"] += 1
+         raise ValueError("duplicate planned trial identity")
+     output = {name: [] for name in plans}
+     notifications = {name: [] for name in plans}
+@@ -165,11 +229,13 @@
+         fee["source_trace_rows_parsed"] += 1
+         tid = row.get("trial_id")
+         if tid not in plans:
++            fee["source_undeclared_trial_identity_failures"] += 1
+             raise ValueError("undeclared source trial")
+         episode, history = plans[tid], state[tid]
+         exception = "collector_exception" in row
+         index = row.get("step_index")
+         if row.get("seed") != episode["seed"] or row.get("kind") != episode["kind"]:
++            fee["source_seed_kind_identity_failures"] += 1
+             raise ValueError("source row seed/kind differs from planned trial")
+         identity = row.get("shared_transition_id")
+         if exception:
+@@ -177,7 +243,7 @@
+                       "collector_exception": row["collector_exception"],
+                       "source_failure_accounting": row.get("failure_accounting"),
+                       "diagnostic_prediction_accounting": row.get("diagnostic_prediction_accounting"),
+-                      "identity_status": "unique" if identity not in history["seen"] else "duplicate_notification",
++                      "identity_status": "duplicate_notification" if isinstance(identity, str) and identity in history["seen"] else "unique",
+                       "new_returned_endpoint_proven_by_ledger": False}
+             notifications[tid].append(notice)
+             fee["source_exception_notifications"] += 1
+@@ -189,11 +255,17 @@
+                 fee["exception_notification_duplicate_identity"] += 1
+                 continue
+         elif type(index) is not int or not 0 <= index < 300:
++            fee["regular_invalid_step_index_failures"] += 1
+             raise ValueError("invalid original step_index")
+-        if identity != f"{tid}:{index}" or identity in history["seen"]:
++        if not isinstance(identity, str) or identity != f"{tid}:{index}" or identity in history["seen"]:
++            category = "regular_missing_transition_identity_failures" if identity is None else (
++                "regular_duplicate_transition_identity_failures" if isinstance(identity, str) and identity in history["seen"]
++                else "regular_wrong_transition_identity_failures")
++            fee[category] += 1
+             raise ValueError("missing, wrong or duplicated original transition ID")
+         history["seen"].add(identity)
+         if history["last_index"] is not None and index <= history["last_index"]:
++            fee["source_endpoint_order_identity_failures"] += 1
+             raise ValueError("source endpoint order is not increasing")
+         diagnostics = row.get("returned_step_diagnostics") if exception else row.get("diagnostics")
+         exception_return_proven = (exception and episode.get("returned_unwritten_steps") == 1
+@@ -205,6 +277,7 @@
+             history["regular_returned"] += 1
+         executed = diagnostics.get("executed_substeps") if returned else None
+         if returned and (type(executed) is not int or not 0 <= executed <= 10):
++            fee["source_returned_substep_identity_failures"] += 1
+             raise ValueError("returned substep count is invalid")
+         complete = returned and executed == 10
+         before, after = row.get("observation_before") or {}, row.get("observation_after") or {}
+@@ -215,6 +288,7 @@
+         previous_before = history["before"] if contiguous else None
+         expected_phase = "prefix" if index < 100 else "control"
+         if row.get("phase") != expected_phase:
++            fee["source_phase_timing_identity_failures"] += 1
+             raise ValueError("source phase differs from fixed prefix/control timing")
+         if index == 99 and complete:
+             history["qref8"] = vector(after.get("joint_position"), 8)
+@@ -231,6 +305,8 @@
+             scores, score_reasons = native_scores(before, history["qref8"], previous_before, fee)
+             errors, error_reasons = saved_errors(row, complete, fee)
+             target = vector(row.get("target_q"), 2)
++            quality_flags = input_quality_flags(row, history["qref8"], previous_before,
++                native_history_valid, complete, error_reasons, fee)
+             if target is None or not native_history_valid:
+                 reason = "missing_finite_current_target" if target is None else "missing_or_invalid_contiguous_native_prediction_history"
+                 errors = {name: {channel: None for channel in ("q", "v")} for name in PREDICTORS}
+@@ -242,6 +318,7 @@
+                       "complete_20ms": complete, "partial_interval": returned and not complete,
+                       "exception_record": exception, "contiguous_previous_native_endpoint": contiguous,
+                       "native_prediction_history_valid": native_history_valid,
++                      "input_quality_flags": quality_flags,
+                       "scores": scores, "score_missing_reasons": score_reasons,
+                       "saved_errors": errors, "error_missing_reasons": error_reasons,
+                       "study_abort": row.get("study_abort")}
+@@ -425,6 +502,7 @@
+     fee = new_fee() if fee is None else fee
+     derived, notifications = derive_rows(rows, episodes, fee)
+     report = summarize_records(derived, episodes, fee)
++    report["independent_input_quality_counts"] = quality_counts(derived, episodes)
+     report["exception_notifications"] = notifications
+     report["derived_by_trial"] = derived
+     report["descriptive_fee"] = dict(fee)
+@@ -452,6 +530,15 @@
+ 
+ def parse(blob):
+     return json.loads(blob, parse_constant=lambda value: (_ for _ in ()).throw(ValueError("nonfinite JSON token")))
++
++
++def read_f_local(path, label, fee):
++    fee["f_local_file_opens"] += 1
++    fee["f_local_"+label+"_opens"] += 1
++    blob = path.read_bytes()
++    fee["f_local_binary_bytes_read"] += len(blob)
++    fee["f_local_"+label+"_binary_bytes_read"] += len(blob)
++    return blob
+ 
+ 
+ def clean_f_provenance(binding_path, fee):
+@@ -464,17 +551,17 @@
+     commit = git("rev-parse", "HEAD").decode("ascii").strip()
+     if git("status", "--porcelain", "--untracked-files=no"):
+         raise ValueError("formal F requires clean tracked working tree")
+-    source_bytes = Path(__file__).read_bytes()
++    source_bytes = read_f_local(Path(__file__), "source", fee)
+     if source_bytes != git("show", f"HEAD:{CANONICAL_SOURCE}"):
+         raise ValueError("executing F source differs from clean committed canonical source")
+     relative_binding = binding_path.resolve().relative_to(root_path).as_posix()
+-    binding_bytes = binding_path.read_bytes()
++    binding_bytes = read_f_local(binding_path, "binding", fee)
+     if binding_bytes != git("show", f"HEAD:{relative_binding}"):
+         raise ValueError("runtime source binding is not frozen in clean HEAD")
+     binding = parse(binding_bytes)
+     protocol = binding["protocol"]
+     protocol_name = safe_relative(protocol["path"])
+-    protocol_bytes = (root_path/protocol_name).read_bytes()
++    protocol_bytes = read_f_local(root_path/protocol_name, "protocol", fee)
+     if digest(protocol_bytes) != sha256_text(protocol["sha256"]) or protocol_bytes != git("show", f"HEAD:{protocol_name}"):
+         raise ValueError("F protocol differs from clean committed runtime freeze")
+     return root_path, binding, {"source_commit": commit, "source_sha256": digest(source_bytes),
+@@ -517,7 +604,11 @@
+         blob = path.read_bytes()
+         self.fee["task_cache_json_opens"] += 1
+         self.fee["task_cache_json_bytes_read"] += len(blob)
+-        return parse(blob)
++        try:
++            return parse(blob)
++        except (ValueError, TypeError):
++            self.fee["source_json_identity_parse_failures"] += 1
++            raise
+ 
+ 
+ def sealed_e_inputs(archive, binding, expected_manifest_sha, output, fee, run=None):
+@@ -629,7 +720,11 @@
+         for blob in stream:
+             fee["trace_decompressed_binary_bytes"] += len(blob)
+             fee["trace_decompressed_binary_lines"] += 1
+-            yield parse(blob)
++            try:
++                yield parse(blob)
++            except (ValueError, TypeError):
++                fee["source_trace_json_identity_parse_failures"] += 1
++                raise
+ 
+ 
+ def write_json(path, value):
+@@ -649,6 +744,7 @@
+     run = {"status": "preflight", "scientific_adoption": {"evaluated": False, "passed": False}}
+     try:
+         root_path, binding, provenance = clean_f_provenance(binding_path, fee)
++        run["f_provenance"] = provenance
+         expected_archive = (root_path/safe_relative(binding["archive_relative_path"])).resolve()
+         if archive.resolve() != expected_archive:
+             raise ValueError("runtime E archive path differs from frozen binding")
+@@ -671,7 +767,9 @@
+         raise
+     finally:
+         run.update(descriptive_fee=dict(fee), wall_seconds=time.perf_counter()-started_wall,
+-                   cpu_seconds=time.process_time()-started_cpu, python=sys.version, platform=platform.platform())
++                   cpu_seconds=time.process_time()-started_cpu, python=sys.version, platform=platform.platform(),
++                   timing_scope="entry through descriptive output writing and this snapshot; excludes run/manifest writing and output-integrity reads/hash")
++        final_record_wall, final_record_cpu = time.perf_counter(), time.process_time()
+         write_json(output/"run.json", run)
+         payloads = {}
+         integrity_bytes = 0
+@@ -684,7 +782,11 @@
+         write_json(output/"manifest.json", {"schema_version": 1, "status": run["status"],
+             "files": payloads, "source_cache_records": run.get("source_records", {}),
+             "output_integrity_reads": {"opens": len(payloads), "bytes": integrity_bytes,
+-                "hash_operations": len(payloads)}, "scientific_adoption": {"evaluated": False, "passed": False}})
++                "hash_operations": len(payloads)},
++            "final_record_timing": {"wall_seconds": time.perf_counter()-final_record_wall,
++                "cpu_seconds": time.process_time()-final_record_cpu,
++                "scope": "run JSON write and output-integrity read/hash; excludes final manifest serialization/write"},
++            "scientific_adoption": {"evaluated": False, "passed": False}})
+ 
+ 
+ def main():
+--- external/c4_native_context_diagnostic_staging/revision_01/F_PROTOCOL_DRAFT.original.md
++++ external/c4_native_context_diagnostic_staging/revision_01/F_PROTOCOL_DRAFT.final.md
+@@ -3,6 +3,10 @@
+ **前瞻草稿，未正式放行。** 仅在 E 首次结果、原独立首审与归档封口后，由 root
+ 决定是否提升、绑定来源并冻结。当前没有打开任何 E 新物理、C/D 原始文件，
+ 没有执行下述统计。本协议不改 E 候选或科学门，不引入模型特征或控制动作。
++
++2026-10-11 工程修订：按独立静态审查补全读取费用、失败身份与独立输入质量
++计数，明确异常伴 stop 和两种 score 分母；三个分数、统计公式、bins 与科学门
++不变。原草稿及原源字节保存在诊断 staging 的 `revision_01/`，不覆盖首轮检查。
+ 
+ ## 1. 问题与唯一数据来源
+ 
+@@ -34,6 +38,14 @@
+ sensor/target/history 各有独立计数；不拼接、补零、插值或重采缺失端点。
+ 禁止读取 root quaternion、特权 qpos/qvel、未来 actual torque 或接触真值。
+ 
++regular 的缺失/错误/重复 transition ID、错误 seed/kind/step/phase、倒序或非法
++子步身份属于来源损坏：先记独立失败类别，再中止本次描述，不将损坏行纳入
++有效统计。异常通知的重复/缺失 ID 单列，不能产生第二个 endpoint。缺失值、
++形状错误、scalar 类型错误、非有限 sensor/target/保存预测/标签、未知或不连续
++history、非有限误差差值等以逐行 `input_quality_flags` 和按 seed/kind/目标段的
++辅助计数分别保留；同一行可有多个标志，不能将各计数相加当作样本总数。
++辅助标志不替换原主误差的可用性规则，target/history 缺失也不覆盖其他质量标志。
++
+ ## 2. 预先固定三个 scalar block 分数
+ 
+ 肩肘轴为 j0/j1；其余六轴固定 j2…j7，不按相关性排序或挑某个关节。
+@@ -62,6 +74,12 @@
+ 有效诊断误差数，以及每个 score 的 valid/missing 数；不 pool seed 或不同 kind。
+ 完整 trial 的目标段计划分母各100；停止后未发生的 endpoint 仍标 unobserved。
+ 
++`counts.score_valid_n/missing_n` 的分母是所选窗口中**全部保存动作前 context**，
++可能包含 partial 或唯一 unreturned 记录；它说明感觉信息可用性。
++`paired_n` 与 bins 的 `fraction_of_valid_score_error_pairs` 分母则仅包含同一
++predictor/axis/q-v 的完整有效误差和有效 score 配对；不把前者的 valid 数作为
++后者分母。事件表同时保存这两种数量，不用缺失区间的 context 补足误差样本。
++
+ 连续描述对每个 score 同时固定报告与 `signed e`、`abs(e)` 的 Pearson r，
+ 不挑较大的相关性：以配对有效行、`math.fsum` 中心化二阶和计算。
+ 给出 n、score/error 的 min/max、均值和中心化平方和；n<3 时 r=null/
+@@ -77,7 +95,12 @@
+ ## 4. source stop 的末20 endpoint
+ 
+ source stop 仅采用 E 已声明的 study/environment stop，不用误差或上下文数值
+-事后定义事件。对该 trial，令 N 为**保存且返回的 active endpoint 个数**，
++事后定义事件，常规 tail20/earlier 窗口还要求原 outcome `status=terminated`。
++若 `status=exception` 同时保存 study/environment stop 标志，保留
++`declared_source_stop_flags_present` 和 `stop_flags_in_exception`、原停止原因及
++全部费用，但不作常规 source-stop 窗口；这表示合并异常结局单独披露，**不能
++解释为没有发生物理停止**。对常规 source-stop trial，令 N 为**保存且返回的
++active endpoint 个数**，
+ 含部分 terminal endpoint，按原 step_index 排序；固定 `tail20=最后min(20,N)个`，
+ `earlier=之前max(N−20,0)个`。先在不分目标段的事件计数中公开：N、terminal
+ ID/原因、两窗口原始 endpoint 数、完整/partial 数、有效误差数、score valid/
+@@ -98,6 +121,13 @@
+ 有限性失败、每个 norm/平方/减法/聚合/相关性次数及 wall/CPU；保留首次失败。
+ 实现和审计均只用标准库，不导入身体模型、runner、MuJoCo 或旧 C/D auditor。
+ 
++F 本地 own source/binding/protocol 的实际 opens/binary bytes 与 Git 返回 bytes、
++E 源读取、任务缓存读取分开计账。成功核对 clean F 身份后立即写入运行内存账，
++再读取 E；即使首个 E hash/身份失败，最终失败记录仍保留已核 F 身份与已付费
++读取。主 wall/CPU 范围止于描述输出写入和最后 run 快照，明确排除 run/manifest
++最终写盘及输出完整性读取/hash；末尾 run 写盘与完整性读取/hash 另计范围，最终
++manifest 序列化/写盘仍明确排除，不把这些尾部工作声称零费用。
++
+ 新物理、model.predict、RLS、策略/增益/门控更新、C/D refit 和旧预测重算全部0。
+ `scientific_adoption.evaluated=false/passed=false` 始终固定；旧20%预测门、E完整
+ 控制门、PD5%/努力门及 C4/C5 依赖保持原结果，不由关联或分层追认通过。

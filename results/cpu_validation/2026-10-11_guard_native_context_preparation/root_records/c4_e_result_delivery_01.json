@@ -1,0 +1,20 @@
+{
+  "checks": 198,
+  "failed": 0,
+  "failures": [],
+  "outer_manifest_sha256": "b27d3cb382e2be2b2946d58aca1286594ee92777d47f05cfa1f5e2da8910058b",
+  "summary_sha256": "74c0b148950dc8c33d130492b3f0b636a6da9eba2bd3239e3d7952036437b32e",
+  "execution": {
+    "staged_blob_reads": 23,
+    "staged_blob_binary_bytes": 6173939,
+    "local_binary_reads": 6,
+    "local_binary_bytes": 134159,
+    "wall_seconds": 1.4479281001258641,
+    "cpu_seconds": 0.125,
+    "timing_scope": "checks through report assembly; excludes final report writing",
+    "new_physics": 0,
+    "model_predictions": 0,
+    "updates": 0,
+    "old_audit_or_summary_runs": 0
+  }
+}

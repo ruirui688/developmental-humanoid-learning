@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "review_kind": "one_limited_static_revision_diff_review",
+  "blocking_findings_within_scope": 0,
+  "scope": ["local_read_fees_and_timing_scope", "preserve_f_provenance_on_e_preflight_failure", "independent_missing_and_regular_identity_categories", "exception_with_stop_without_regular_tail", "score_and_pair_denominators"],
+  "binary_read_opens": 5,
+  "binary_bytes_read": 105305,
+  "read_hash_decode_wall_seconds": 0.001550000160932541,
+  "read_timing_scope": "five input reads/hash/decode; excludes diff generation/render, tool output, human review and report writing",
+  "tool_exec_wall_seconds": 0.452972,
+  "source_records": [
+    {"path": "external/c4_native_context_diagnostic_staging/revision_01/diagnose_guard_native_context.original.py", "bytes": 38554, "sha256": "037fb78aa17333aaebe4db15b7737b887cb7d1168ce415421777428c51cfcf47"},
+    {"path": "external/c4_native_context_diagnostic_staging/revision_01/diagnose_guard_native_context.final.py", "bytes": 44292, "sha256": "c25a83ad6986c798477652dde7d0b61c45e839351afa329a5ff1f57f224a7063"},
+    {"path": "external/c4_native_context_diagnostic_staging/revision_01/F_PROTOCOL_DRAFT.original.md", "bytes": 7378, "sha256": "a46f036e55d7ffe809d6ff2fdd09aae336b3cc2413578607b87ef69c85d6790e"},
+    {"path": "external/c4_native_context_diagnostic_staging/revision_01/F_PROTOCOL_DRAFT.final.md", "bytes": 9861, "sha256": "7eb27e57d0aed1edfd318170c17cd8e50761ffcb7977d3c23ad4680bd562c6e5"},
+    {"path": "external/c4_native_context_review_staging/REVIEW.md", "bytes": 5220, "sha256": "963aa8d9ac492864d29daed3229267bf91334cb63655d3e20f3d85868432cb84"}
+  ],
+  "e_c_d_data_reads": 0,
+  "new_physics": 0,
+  "new_model_calls": 0,
+  "new_statistical_execution": 0,
+  "fixture_or_math_reruns": 0,
+  "production_files_modified": 0,
+  "scientific_adoption": {"evaluated": false, "passed": false}
+}

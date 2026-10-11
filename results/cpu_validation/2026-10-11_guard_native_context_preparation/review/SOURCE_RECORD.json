@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T11:25:26.428247+00:00",
+  "scope": "limited independent static F review only",
+  "sources": {
+    "external/c4_native_context_diagnostic_staging/diagnose_guard_native_context.py": {
+      "sha256": "037fb78aa17333aaebe4db15b7737b887cb7d1168ce415421777428c51cfcf47",
+      "bytes": 38554,
+      "snapshot": "reviewed_diagnostic.py"
+    },
+    "external/c4_native_context_protocol_staging/F_PROTOCOL_DRAFT.md": {
+      "sha256": "a46f036e55d7ffe809d6ff2fdd09aae336b3cc2413578607b87ef69c85d6790e",
+      "bytes": 7378,
+      "snapshot": "reviewed_protocol.md"
+    }
+  },
+  "findings": 4,
+  "source_snapshots_original_bytes": true,
+  "E_new_data_reads": 0,
+  "C_D_raw_reads": 0,
+  "mathematical_or_diagnostic_executions": 0,
+  "old_full_audit_reexecutions": 0,
+  "model_predict_calls": 0,
+  "RLS_or_other_updates": 0,
+  "physics_calls": 0,
+  "full_fake_archive_matrices": 0,
+  "Git_calls": 0,
+  "tracked_file_changes": 0,
+  "E_gate_changes": 0,
+  "review_note_sha256": "963aa8d9ac492864d29daed3229267bf91334cb63655d3e20f3d85868432cb84",
+  "snapshot_accounting": {
+    "source_file_opens": 2,
+    "source_bytes_read": 45932,
+    "scope": "this byte-snapshot operation only; earlier source-text review tool reads are not experimental input reads"
+  }
+}
