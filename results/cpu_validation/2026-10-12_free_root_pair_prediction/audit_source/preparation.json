@@ -1,0 +1,110 @@
+{
+  "schema": "FR1_first_saved_audit_preparation_v1",
+  "created_utc": "2026-10-11T22:14:11.740953+00:00",
+  "script": {
+    "path": "external/fr1_audit_candidate/audit_free_root_pair_prediction.py",
+    "bytes": 50717,
+    "sha256": "00bf02915cdca24e5a6b57d7bc3dd6da48ab8bbe206ab748335b699929a40a17",
+    "AST_parse": "passed",
+    "executed": false
+  },
+  "source_schema_read": {
+    "collector": {
+      "path": "src/developmental_physics/free_root_pair_development.py",
+      "bytes": 55672,
+      "sha256": "baccf91a05e7b5bf55024ac96c717872d8624d3e17d49a74c35d12a6f93a0a8b"
+    },
+    "runner": {
+      "path": "external/c4_free_learning_candidate/develop_free_root_pair.py",
+      "bytes": 28302,
+      "sha256": "24ba8ff3853af16081077da7ccb5acc3b527908d7cb5ed6d661631bde79f8c15"
+    },
+    "raw_or_saved_models_read": 0
+  },
+  "fixed_bounds": {
+    "seeds": 3,
+    "trials": 6,
+    "trace_records": 21000,
+    "prediction_records": 2886,
+    "saved_pair_path_steps": 124680,
+    "model_H_groups": 30,
+    "q_v_RMSE_vectors": 60,
+    "source_members_and_git_show_queries": 18,
+    "independent_origins_per_H": [
+      100,
+      100,
+      99,
+      96,
+      86
+    ],
+    "thin_trace_in_memory_only": true,
+    "full_RLS_snapshots_not_retained_in_audit_memory": true
+  },
+  "read_scope": [
+    "new FR1 manifest/run/metrics/models/trace/predictions",
+    "new archived source.zip and 18 frozen source Git objects at supplied exact commit",
+    "auditor own source identity"
+  ],
+  "excluded": [
+    "FR0/Z or other old raw/scientific metrics",
+    "new paid_intervals parsing",
+    "new installed XML parsing",
+    "model restore/evaluation",
+    "RLS/PPO/fit/physics",
+    "failure fixtures/new tests"
+  ],
+  "verification": [
+    "payload hashes and clean exact source identity",
+    "native complete population before ranking; contact complete phase positive endpoint eligibility",
+    "paid physical and atomic RLS ledgers; task/teacher/GPU/plan zero boundary",
+    "new saved prediction origins, actual native labels and saved q/v last point errors",
+    "60 new complete-only RMSE vectors",
+    "original per-seed comparisons and original raw-RMSE arithmetic mean 20% gate; H1/H10q report only",
+    "actual actuator sampled effort and positive contact phase/report block summaries; missing remains unknown"
+  ],
+  "technical_tolerances": {
+    "absolute": 2e-12,
+    "relative": 2e-10,
+    "purpose": "serialization/arithmetic equality only; not scientific threshold"
+  },
+  "failure_policy": "one invocation/new output dir; first failure artifact and stdout/exit retained; no repair/retry; missing physical or contact eligibility keeps RMSE unavailable and partial ranking false",
+  "execution_boundary": {
+    "production_imports": 0,
+    "new_raw_reads": 0,
+    "saved_model_parameter_reads": 0,
+    "model_calls": 0,
+    "fit": 0,
+    "RLS": 0,
+    "physics": 0,
+    "old_scientific_recomputations": 0,
+    "tests_or_fixtures": 0,
+    "production_writes": 0,
+    "git_commit_or_push": 0,
+    "stdlib_AST_and_new_plan_integer_arithmetic_only": true,
+    "filesystem_IO_not_measured": true
+  },
+  "parent_transcript_first_execution": {
+    "source_commit": "41ccb851d7341afb68ec17d09666fe31d171d484",
+    "status": "completed",
+    "control_substeps": 21000,
+    "RLS_vectors": 12000,
+    "RLS_scalars": 24000,
+    "fr1_prediction_gate_passed": true,
+    "not_independently_read_or_recomputed_by_preparer": true
+  },
+  "last_static_revision": {
+    "created_utc": "2026-10-11T22:15:26.877874+00:00",
+    "reason": "failure context set/nonfinite values must serialize without hiding first failure",
+    "scope": "stdlib JSON-safe formatting only; no change to comparisons/thresholds/source/data",
+    "raw_reads": 0,
+    "executed": false,
+    "superseded_preparation_sha256": "8a9899b016be944d9aa662d6e3f523a501dd267c0dff55ca104e248b24e53887",
+    "superseded_original": {
+      "path": "external/fr1_audit_candidate/audit_free_root_pair_prediction_before_json_safe.py.txt",
+      "bytes": 50264,
+      "sha256": "8a9899b016be944d9aa662d6e3f523a501dd267c0dff55ca104e248b24e53887",
+      "original_execution_count": 0,
+      "exact_bytes_verified_after_reversing_only_JSON_formatting_patch": true
+    }
+  }
+}

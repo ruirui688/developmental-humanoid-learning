@@ -1,0 +1,104 @@
+{
+  "schema": "FR1_report_writing_receipt_v1",
+  "created_at_utc": "2026-10-11T22:17:26.999520+00:00",
+  "status": "written_with_root_first_audit_facts",
+  "only_experimental_input": {
+    "path": "results\\cpu_validation\\2026-10-12_free_root_pair_prediction\\report_inputs.json",
+    "bytes": 614989,
+    "sha256": "6b3e4aa9332d5269cd46210c5ce69e78ff5e2ede62291014bd3ab85e33758434",
+    "file_read_count": 3,
+    "file_read_and_hash_bytes": 1844967,
+    "JSON_parse_count": 3
+  },
+  "input_read_history": [
+    "first identity/content display, large output truncated",
+    "second selected summary display, output truncated",
+    "third report/navigation generation"
+  ],
+  "source_commit": "41ccb851d7341afb68ec17d09666fe31d171d484",
+  "saved_metrics_used_without_recompute": true,
+  "embedded_snapshot_fields": "Not selected/used/restored/copied into report; report_inputs itself includes them.",
+  "raw_reads": 0,
+  "model_parameter_file_reads": 0,
+  "old_result_file_reads": 0,
+  "models_or_physics_or_metrics_recomputed": 0,
+  "fit": 0,
+  "RLS": 0,
+  "cumulative_totals": "Parent-provided historical baseline plus saved FR1 increment: 337297 controls/2616970 substeps, online70452/offline7200/total77652 scalar",
+  "first_audit": {
+    "source": "parent first result message; no audit file content read",
+    "status": "passed",
+    "checks": 680448,
+    "failed": 0,
+    "new_RMSE_vectors": 60,
+    "models_or_fit_or_new_physics_or_old_science": 0
+  },
+  "before_documents": {
+    "docs\\PROGRESS.md": {
+      "bytes": 82354,
+      "sha256": "f4bc8f0ca7984af4a4cca62c426ffaff88120bde10bc21ab72dd860d6f74c009"
+    },
+    "docs\\CPU_VALIDATION_TARGET.md": {
+      "bytes": 5198,
+      "sha256": "0e36c070100d004dc7ba0f478999090160d511be2802b73fbc58b0e67477d90b"
+    },
+    "docs\\CONTINUOUS_EXECUTION_PLAN.md": {
+      "bytes": 76816,
+      "sha256": "ac7befa65ffaf4dc47fccc3d358bdf89954ab52af01ce141bfafb440a935a631"
+    },
+    "README.md": {
+      "bytes": 28961,
+      "sha256": "186f18530dc2f0311d2fbcd0cf15310dd3d251117ecab10f27019995319df50e"
+    },
+    "AGENTS.md": {
+      "bytes": 25838,
+      "sha256": "4205a17ca52b3cf527988bd10a395953372e8ce7d7b4ccb53f2a4fd83d911b3f"
+    }
+  },
+  "written_documents": {
+    "docs\\FREE_ROOT_PAIR_PREDICTION_RESULTS.md": {
+      "bytes": 12827,
+      "sha256": "5d4b0a03ac95d2d187e1ca91a9981355baa715f99a784043a678e671f47ff9da"
+    },
+    "docs\\PROGRESS.md": {
+      "bytes": 83128,
+      "sha256": "2b92e688f54ad41cf257605d1aedcfe7e6dc553483c4832f0f72f46b9ae30ae5"
+    },
+    "docs\\CPU_VALIDATION_TARGET.md": {
+      "bytes": 5827,
+      "sha256": "068c0ea55c064e3e33c7932927951063269ea38bd737e43531c5d656dcb1715b"
+    },
+    "docs\\CONTINUOUS_EXECUTION_PLAN.md": {
+      "bytes": 78984,
+      "sha256": "d2d372d2afac2690e64556318e9b66f1a1668e9e4931224846ee3aa8d8ea3014"
+    },
+    "README.md": {
+      "bytes": 29022,
+      "sha256": "40623c60ed7fdf40c4be7a40b69cfe8720e6322ee07108b5d9e7cf311832f698"
+    },
+    "AGENTS.md": {
+      "bytes": 26179,
+      "sha256": "292bc96303bb884fb53604b0bce402d5868a2122033b74de39cf123151d9b5a5"
+    }
+  },
+  "preparation_note": "Initial writer-source construction had a Python triple-quote syntax failure before any source input or document mutation; corrected source-generation quoting only.",
+  "other_filesystem_IO": "unmeasured_not_zero",
+  "commit_or_push_by_child": false,
+  "writer_source": {
+    "path": "external\\write_fr1_report_once.py",
+    "bytes": 20670,
+    "sha256": "5256f3cccd9eaad161369902c20d53001f32d2b3b95d3ccdd19836d1ff7da5d2"
+  },
+  "validation": {
+    "git_diff_check": "passed; root-owned .gitattributes edit included in working diff, untouched by child",
+    "new_relative_links": 20,
+    "missing_relative_links": 0,
+    "new_report_trailing_whitespace_lines": 0,
+    "details": {
+      "path": "external\\fr1_report_navigation_checks.json",
+      "bytes": 3302,
+      "sha256": "21c121011b0e0c66b938964a3a068100515e5aad25e71adf2a75b24415b23134"
+    },
+    "no_tests_or_scientific_checks_repeated": true
+  }
+}
