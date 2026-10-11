@@ -1,0 +1,2466 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "trial": "Z_7701_control_cold",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.6373214148138452,
+        0.11148338182544834
+      ],
+      "saved": [
+        0.6373214148138451,
+        0.11148338182544842
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.006992080877243976,
+        0.0057780399406671245,
+        0.006413849879357383
+      ],
+      "saved": [
+        0.006992080877243975,
+        0.005778039940667119,
+        0.006413849879357383
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.38738436836906853,
+        0.04741252074524197
+      ],
+      "saved": [
+        0.38738436836907136,
+        0.04741252074524157
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.006373824954657037,
+        0.005446649017095014,
+        0.005928390593914628
+      ],
+      "saved": [
+        0.0063738249546570125,
+        0.005446649017095015,
+        0.005928390593914628
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_pd",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_pd",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.38097427099211567,
+        0.04576593894739506
+      ],
+      "saved": [
+        0.38097427099211745,
+        0.045765938947395245
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_pd",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.006568608320152801,
+        0.005623720652144351,
+        0.006114443933708751
+      ],
+      "saved": [
+        0.006568608320152792,
+        0.005623720652144338,
+        0.006114443933708751
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_zero",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_zero",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_zero",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.059334712652023516,
+        0.078449710398434,
+        0.06955201358370713
+      ],
+      "saved": [
+        0.05933471265202354,
+        0.07844971039843407,
+        0.06955201358370713
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.636189346154788,
+        0.11140532050655769
+      ],
+      "saved": [
+        0.636189346154789,
+        0.11140532050655765
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.006994925099670051,
+        0.005765224085567575,
+        0.006409632825162551
+      ],
+      "saved": [
+        0.006994925099670049,
+        0.0057652240855675715,
+        0.006409632825162551
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.3853613365656029,
+        0.04729042747313981
+      ],
+      "saved": [
+        0.3853613365656059,
+        0.04729042747313986
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.006375523664570274,
+        0.005442605892965484,
+        0.005927447212065165
+      ],
+      "saved": [
+        0.006375523664570283,
+        0.005442605892965488,
+        0.005927447212065165
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_pd",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_pd",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.37917346494347626,
+        0.0456768548906875
+      ],
+      "saved": [
+        0.37917346494347404,
+        0.04567685489068743
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_pd",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.00657041097075675,
+        0.0056173744676012854,
+        0.006112495244738416
+      ],
+      "saved": [
+        0.00657041097075675,
+        0.0056173744676012985,
+        0.006112495244738415
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_zero",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_zero",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_zero",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.05998877755747953,
+        0.07538687374512669,
+        0.06812427675177342
+      ],
+      "saved": [
+        0.05998877755747957,
+        0.07538687374512673,
+        0.06812427675177342
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.6365724518653461,
+        0.1113826934050368
+      ],
+      "saved": [
+        0.6365724518653461,
+        0.11138269340503702
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.006991669652885766,
+        0.005775456546711154,
+        0.006412462197082822
+      ],
+      "saved": [
+        0.006991669652885764,
+        0.005775456546711156,
+        0.006412462197082822
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.3860847277345228,
+        0.04730496291210962
+      ],
+      "saved": [
+        0.3860847277345249,
+        0.0473049629121093
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.006373785655326061,
+        0.00544394316144959,
+        0.005927126653157246
+      ],
+      "saved": [
+        0.006373785655326065,
+        0.005443943161449584,
+        0.005927126653157246
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_pd",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_pd",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.3797216222139517,
+        0.04566762526579987
+      ],
+      "saved": [
+        0.3797216222139491,
+        0.04566762526579972
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_pd",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.006568390890394313,
+        0.005621419636281137,
+        0.006113269077023444
+      ],
+      "saved": [
+        0.006568390890394325,
+        0.005621419636281139,
+        0.006113269077023445
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_zero",
+      "phase": "prefix",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_zero",
+      "phase": "active",
+      "kind": "new_actual_effort",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_zero",
+      "kind": "new_tracking_RMSE",
+      "computed": [
+        0.059418808406336676,
+        0.07734540504157916,
+        0.0689670445701238
+      ],
+      "saved": [
+        0.05941880840633665,
+        0.0773454050415792,
+        0.0689670445701238
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        3.4330618012689945e-05,
+        8.267516316501046e-05
+      ],
+      "saved": [
+        3.433061801268995e-05,
+        8.267516316501048e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.017165309006345286,
+        0.041337581582505174
+      ],
+      "saved": [
+        0.017165309006345286,
+        0.041337581582505174
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        6.198907034713501e-06,
+        1.5956485167423819e-06
+      ],
+      "saved": [
+        6.1989070347135e-06,
+        1.5956485167423825e-06
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.003099453517356562,
+        0.0007978242583711592
+      ],
+      "saved": [
+        0.003099453517356563,
+        0.0007978242583711592
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0008375622426525612,
+        0.0012204426110978004
+      ],
+      "saved": [
+        0.0008375622426525612,
+        0.0012204426110978004
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.05714355650245998,
+        0.0724140738509206
+      ],
+      "saved": [
+        0.05714355650245998,
+        0.07241407385092061
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.000332500837679879,
+        6.568198020193206e-05
+      ],
+      "saved": [
+        0.00033250083767987897,
+        6.568198020193206e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.029829518164099986,
+        0.005855106152006948
+      ],
+      "saved": [
+        0.02982951816409999,
+        0.005855106152006948
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0014835022374087795,
+        0.0020520780504426086
+      ],
+      "saved": [
+        0.0014835022374087795,
+        0.0020520780504426086
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.048907334312077215,
+        0.06247634130799356
+      ],
+      "saved": [
+        0.04890733431207722,
+        0.06247634130799355
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0012306736358892627,
+        0.0002453161182677315
+      ],
+      "saved": [
+        0.001230673635889263,
+        0.00024531611826773147
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.05698066698712991,
+        0.011622599615085036
+      ],
+      "saved": [
+        0.0569806669871299,
+        0.01162259961508504
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.005156865879644817,
+        0.006227716912973881
+      ],
+      "saved": [
+        0.005156865879644818,
+        0.006227716912973884
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.08292001765454436,
+        0.09217425453696952
+      ],
+      "saved": [
+        0.08292001765454435,
+        0.09217425453696951
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0068217211847045565,
+        0.0014523318134058512
+      ],
+      "saved": [
+        0.0068217211847045565,
+        0.0014523318134058516
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.12458569827180396,
+        0.027738908382768955
+      ],
+      "saved": [
+        0.12458569827180396,
+        0.027738908382768962
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.019469482867001627,
+        0.021733766974639634
+      ],
+      "saved": [
+        0.01946948286700162,
+        0.021733766974639645
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.09652003342045659,
+        0.10254048556892287
+      ],
+      "saved": [
+        0.09652003342045659,
+        0.10254048556892287
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.04568581866550231,
+        0.010662040778945888
+      ],
+      "saved": [
+        0.045685818665502316,
+        0.01066204077894589
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_cold",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.24644235389805352,
+        0.05935125241801809
+      ],
+      "saved": [
+        0.24644235389805352,
+        0.059351252418018086
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        7.990884574939787e-06,
+        1.4845845237925128e-05
+      ],
+      "saved": [
+        7.990884574939791e-06,
+        1.4845845237925127e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.003995442287469806,
+        0.0074229226189624345
+      ],
+      "saved": [
+        0.003995442287469807,
+        0.007422922618962435
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        6.296921893354406e-06,
+        1.1667959693087756e-06
+      ],
+      "saved": [
+        6.296921893354403e-06,
+        1.1667959693087758e-06
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0031484609466771785,
+        0.0005833979846544911
+      ],
+      "saved": [
+        0.003148460946677178,
+        0.0005833979846544912
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.00041164788479752595,
+        0.0007223175210389964
+      ],
+      "saved": [
+        0.00041164788479752584,
+        0.0007223175210389966
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.03694309609782824,
+        0.05789817390635059
+      ],
+      "saved": [
+        0.03694309609782823,
+        0.057898173906350575
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0003371368646953209,
+        6.439929802734106e-05
+      ],
+      "saved": [
+        0.000337136864695321,
+        6.439929802734105e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.03023842121060577,
+        0.005861624659032969
+      ],
+      "saved": [
+        0.03023842121060576,
+        0.005861624659032969
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0014042060841664395,
+        0.0018729198041551284
+      ],
+      "saved": [
+        0.0014042060841664395,
+        0.001872919804155129
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.06166557924869768,
+        0.06613491169774502
+      ],
+      "saved": [
+        0.06166557924869767,
+        0.06613491169774502
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.001247731486561063,
+        0.00024584812495365133
+      ],
+      "saved": [
+        0.0012477314865610625,
+        0.0002458481249536513
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.05776115259014143,
+        0.011701927572511369
+      ],
+      "saved": [
+        0.05776115259014143,
+        0.011701927572511372
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.00536504302234229,
+        0.005941448953733474
+      ],
+      "saved": [
+        0.005365043022342289,
+        0.005941448953733474
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.08167903117171553,
+        0.0868042832693564
+      ],
+      "saved": [
+        0.08167903117171553,
+        0.08680428326935641
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.006915960477383976,
+        0.0014610509675786823
+      ],
+      "saved": [
+        0.006915960477383975,
+        0.0014610509675786817
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.12628460936133895,
+        0.02796570119644788
+      ],
+      "saved": [
+        0.12628460936133895,
+        0.027965701196447874
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.02116112049029341,
+        0.022573718414950827
+      ],
+      "saved": [
+        0.0211611204902934,
+        0.022573718414950827
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.09832947895734502,
+        0.10211563558667829
+      ],
+      "saved": [
+        0.09832947895734503,
+        0.10211563558667831
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.04631208200002814,
+        0.010754335780604668
+      ],
+      "saved": [
+        0.04631208200002814,
+        0.010754335780604668
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7701_control_learned",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.24965416352236147,
+        0.05991744769807642
+      ],
+      "saved": [
+        0.24965416352236144,
+        0.05991744769807643
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        3.433785604485647e-05,
+        8.269791194591091e-05
+      ],
+      "saved": [
+        3.433785604485647e-05,
+        8.269791194591091e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.017168928022428413,
+        0.041348955972955334
+      ],
+      "saved": [
+        0.017168928022428417,
+        0.041348955972955334
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        6.186849022142011e-06,
+        1.6703163661433237e-06
+      ],
+      "saved": [
+        6.186849022142011e-06,
+        1.670316366143323e-06
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.003093424511070858,
+        0.0008351581830717693
+      ],
+      "saved": [
+        0.003093424511070858,
+        0.0008351581830717695
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0008372958390526922,
+        0.0012198776721528833
+      ],
+      "saved": [
+        0.0008372958390526922,
+        0.0012198776721528833
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.05714635530424706,
+        0.07224235164749158
+      ],
+      "saved": [
+        0.05714635530424706,
+        0.07224235164749156
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.00033190759782795147,
+        6.469335447758574e-05
+      ],
+      "saved": [
+        0.0003319075978279515,
+        6.469335447758574e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0297751156980262,
+        0.005735278174546998
+      ],
+      "saved": [
+        0.029775115698026208,
+        0.005735278174546998
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0014832097885946706,
+        0.002054277725074337
+      ],
+      "saved": [
+        0.0014832097885946708,
+        0.002054277725074337
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.04892036553625821,
+        0.06263962997477454
+      ],
+      "saved": [
+        0.0489203655362582,
+        0.06263962997477451
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0012282880097705092,
+        0.00024048218243125647
+      ],
+      "saved": [
+        0.0012282880097705094,
+        0.00024048218243125644
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.05686253529337897,
+        0.011401063994118932
+      ],
+      "saved": [
+        0.05686253529337895,
+        0.011401063994118932
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.005158122357792454,
+        0.006227890033417527
+      ],
+      "saved": [
+        0.005158122357792454,
+        0.006227890033417528
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.08292614816677742,
+        0.09220810422079385
+      ],
+      "saved": [
+        0.08292614816677743,
+        0.09220810422079384
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.006805606509408635,
+        0.0014298211359327774
+      ],
+      "saved": [
+        0.006805606509408633,
+        0.0014298211359327774
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.124252086049131,
+        0.0273917157658847
+      ],
+      "saved": [
+        0.124252086049131,
+        0.0273917157658847
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.019470612095085486,
+        0.021741122214692
+      ],
+      "saved": [
+        0.019470612095085483,
+        0.021741122214692002
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.09652196769541166,
+        0.10256433315431707
+      ],
+      "saved": [
+        0.09652196769541166,
+        0.10256433315431708
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.04553715843846029,
+        0.010576026315616075
+      ],
+      "saved": [
+        0.04553715843846028,
+        0.010576026315616072
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_cold",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.24551043123040014,
+        0.05907369183749348
+      ],
+      "saved": [
+        0.24551043123040012,
+        0.05907369183749349
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        7.98581027195163e-06,
+        1.4699497216306227e-05
+      ],
+      "saved": [
+        7.985810271951628e-06,
+        1.4699497216306223e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.003992905135975669,
+        0.007349748608153028
+      ],
+      "saved": [
+        0.003992905135975669,
+        0.00734974860815303
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        6.287101497884744e-06,
+        1.13559546741295e-06
+      ],
+      "saved": [
+        6.287101497884742e-06,
+        1.1355954674129505e-06
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0031435507489422847,
+        0.0005677977337064661
+      ],
+      "saved": [
+        0.0031435507489422847,
+        0.0005677977337064663
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.00041173479089268725,
+        0.0007214010864598533
+      ],
+      "saved": [
+        0.0004117347908926873,
+        0.0007214010864598533
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.036968708555000576,
+        0.05768167949861633
+      ],
+      "saved": [
+        0.03696870855500057,
+        0.05768167949861632
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.00033655766205515584,
+        6.284866771429528e-05
+      ],
+      "saved": [
+        0.0003365576620551558,
+        6.28486677142953e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.030184092379340017,
+        0.005725118060894893
+      ],
+      "saved": [
+        0.030184092379340027,
+        0.005725118060894893
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.001405011195358107,
+        0.0018675277657551955
+      ],
+      "saved": [
+        0.001405011195358107,
+        0.001867527765755195
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.06170760723276743,
+        0.06594814416882037
+      ],
+      "saved": [
+        0.06170760723276744,
+        0.06594814416882037
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0012453713544283013,
+        0.00024040492216474127
+      ],
+      "saved": [
+        0.0012453713544283013,
+        0.00024040492216474127
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.05764268929689828,
+        0.01146523352925099
+      ],
+      "saved": [
+        0.05764268929689828,
+        0.011465233529250989
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.005367723088988737,
+        0.005926557570251987
+      ],
+      "saved": [
+        0.005367723088988734,
+        0.005926557570251987
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.08169525674660846,
+        0.08665489643077154
+      ],
+      "saved": [
+        0.08169525674660848,
+        0.08665489643077154
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.006899802304448392,
+        0.0014362819066925097
+      ],
+      "saved": [
+        0.00689980230444839,
+        0.0014362819066925092
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.1259478666804325,
+        0.02758916301519977
+      ],
+      "saved": [
+        0.12594786668043254,
+        0.02758916301519977
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.021165982107699464,
+        0.022541686840051194
+      ],
+      "saved": [
+        0.021165982107699467,
+        0.022541686840051197
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0983408183720638,
+        0.10207969421803387
+      ],
+      "saved": [
+        0.09834081837206378,
+        0.1020796942180339
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.04616188661164345,
+        0.010657922646607743
+      ],
+      "saved": [
+        0.04616188661164345,
+        0.010657922646607742
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7702_control_learned",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.2487112855423238,
+        0.059601315177559996
+      ],
+      "saved": [
+        0.24871128554232383,
+        0.059601315177559996
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        3.4331520463667336e-05,
+        8.267895302871283e-05
+      ],
+      "saved": [
+        3.433152046366733e-05,
+        8.267895302871281e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.017165760231833603,
+        0.04133947651435636
+      ],
+      "saved": [
+        0.017165760231833603,
+        0.04133947651435637
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        6.193749902731092e-06,
+        1.6152721406287369e-06
+      ],
+      "saved": [
+        6.193749902731092e-06,
+        1.615272140628736e-06
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0030968749513653328,
+        0.0008076360703140125
+      ],
+      "saved": [
+        0.0030968749513653328,
+        0.0008076360703140127
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0008376211051379761,
+        0.001220387295106859
+      ],
+      "saved": [
+        0.0008376211051379762,
+        0.0012203872951068592
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.05715257125271154,
+        0.07236296435157766
+      ],
+      "saved": [
+        0.057152571252711525,
+        0.07236296435157764
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.00033222912785894535,
+        6.517929480341541e-05
+      ],
+      "saved": [
+        0.00033222912785894524,
+        6.51792948034154e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.029804519454718566,
+        0.0058014363802262525
+      ],
+      "saved": [
+        0.029804519454718566,
+        0.0058014363802262525
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0014839346853238796,
+        0.002051098019162804
+      ],
+      "saved": [
+        0.0014839346853238796,
+        0.0020510980191628036
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.04893143558189135,
+        0.062440759090625686
+      ],
+      "saved": [
+        0.04893143558189135,
+        0.062440759090625686
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0012295923987978184,
+        0.00024314361837080484
+      ],
+      "saved": [
+        0.0012295923987978184,
+        0.00024314361837080478
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.05692749327408817,
+        0.011524923536813655
+      ],
+      "saved": [
+        0.05692749327408817,
+        0.011524923536813655
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.005158233786769725,
+        0.0062250674667735225
+      ],
+      "saved": [
+        0.005158233786769726,
+        0.0062250674667735225
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.08292749158643838,
+        0.09216161898530197
+      ],
+      "saved": [
+        0.08292749158643836,
+        0.09216161898530197
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0068146132517048884,
+        0.0014421080000399608
+      ],
+      "saved": [
+        0.0068146132517048884,
+        0.0014421080000399608
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.12444061795542567,
+        0.027578344265716703
+      ],
+      "saved": [
+        0.12444061795542563,
+        0.0275783442657167
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.01947080360085426,
+        0.02172712512122072
+      ],
+      "saved": [
+        0.019470803600854254,
+        0.021727125121220724
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.09651459308793495,
+        0.10252367633225883
+      ],
+      "saved": [
+        0.09651459308793492,
+        0.10252367633225881
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.045622487056163945,
+        0.010618161885322788
+      ],
+      "saved": [
+        0.045622487056163945,
+        0.010618161885322783
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_cold",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.24604955101126846,
+        0.05918347686216364
+      ],
+      "saved": [
+        0.24604955101126844,
+        0.05918347686216362
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        7.990298271522662e-06,
+        1.4810999461459079e-05
+      ],
+      "saved": [
+        7.990298271522662e-06,
+        1.4810999461459076e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 1,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.003995149135761435,
+        0.007405499730729618
+      ],
+      "saved": [
+        0.003995149135761435,
+        0.007405499730729617
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        6.292263753328914e-06,
+        1.1534936985031982e-06
+      ],
+      "saved": [
+        6.292263753328915e-06,
+        1.153493698503198e-06
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 1,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.003146131876664762,
+        0.0005767468492515277
+      ],
+      "saved": [
+        0.0031461318766647624,
+        0.0005767468492515277
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0004117700541865505,
+        0.0007220897220356419
+      ],
+      "saved": [
+        0.0004117700541865505,
+        0.0007220897220356418
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 10,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.03695984634072495,
+        0.057828918678940584
+      ],
+      "saved": [
+        0.03695984634072497,
+        0.05782891867894062
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0003368668857369022,
+        6.372957387372439e-05
+      ],
+      "saved": [
+        0.00033686688573690224,
+        6.37295738737244e-05
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 10,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.030213286203623443,
+        0.005803016711813558
+      ],
+      "saved": [
+        0.03021328620362344,
+        0.00580301671181356
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0014047404852046794,
+        0.0018713439786458587
+      ],
+      "saved": [
+        0.0014047404852046792,
+        0.001871343978645858
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 20,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.06169048648295752,
+        0.06608275787041737
+      ],
+      "saved": [
+        0.06169048648295753,
+        0.06608275787041734
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.001246650090638468,
+        0.0002435109029329226
+      ],
+      "saved": [
+        0.001246650090638468,
+        0.00024351090293292266
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 20,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.05770758337085445,
+        0.011600164897606015
+      ],
+      "saved": [
+        0.057707583370854444,
+        0.011600164897606017
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.005366599269320503,
+        0.005938395919022067
+      ],
+      "saved": [
+        0.005366599269320502,
+        0.005938395919022066
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 50,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.081690257034311,
+        0.08680101322618025
+      ],
+      "saved": [
+        0.08169025703431099,
+        0.08680101322618024
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.006908800148453927,
+        0.0014502150738188618
+      ],
+      "saved": [
+        0.006908800148453928,
+        0.0014502150738188622
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 50,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.1261379502120892,
+        0.027796968557431332
+      ],
+      "saved": [
+        0.12613795021208915,
+        0.027796968557431332
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.021162761436285156,
+        0.02256094467265152
+      ],
+      "saved": [
+        0.02116276143628516,
+        0.022560944672651514
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 150,
+      "model": "cold",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.09832720660503642,
+        0.1020936643703419
+      ],
+      "saved": [
+        0.09832720660503641,
+        0.10209366437034191
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "q",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.0462480456297306,
+        0.010707578506125524
+      ],
+      "saved": [
+        0.0462480456297306,
+        0.010707578506125522
+      ],
+      "passed": true
+    },
+    {
+      "trial": "Z_7703_control_learned",
+      "horizon": 150,
+      "model": "learned",
+      "signal": "v",
+      "kind": "new_conditional_RMSE",
+      "computed": [
+        0.24925682784658665,
+        0.059738698126759755
+      ],
+      "saved": [
+        0.24925682784658668,
+        0.05973869812675975
+      ],
+      "passed": true
+    }
+  ],
+  "skipped": [],
+  "trace_rows": 36000,
+  "prediction_rows": 11772,
+  "new_conditional_RMSE_vectors": 120,
+  "source_files": {
+    "run.json": {
+      "bytes": 700922,
+      "sha256": "2b11a11eeb326da7a2e34b93a62be9a0202f2d2e0bdf750f8cc18415f11b17bb"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 25131117,
+      "sha256": "1238f681a6fd522f7756c18761b90556b75f2ac26b00a002f04d63f045e772ae"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 20939713,
+      "sha256": "150ad1f81b96e9daf404ea4b084f84f3b5fef88c860ef84f26876db0fad6de80"
+    }
+  },
+  "reads": 3,
+  "read_bytes": 46771752,
+  "wall_seconds": 4.922414599917829,
+  "cpu_seconds": 4.890625,
+  "model_fit_physics_calls": 0,
+  "old_scientific_metrics_recomputed": false,
+  "automatic_retry": false
+}

@@ -1,0 +1,72 @@
+{
+  "status": "prepared_static_only_not_executed",
+  "checker": {
+    "path": "external\\check_z2_first_contract.py",
+    "source_reads": 1,
+    "bytes": 20975,
+    "sha256": "92e7811993af5440a572bc712d25797518651f1c0683a66bc64ccfea129a23d1",
+    "AST_attempts": 1,
+    "AST_returns": 1,
+    "checker_execution": 0,
+    "imports_of_experiment_code": 0
+  },
+  "cli": "python external/check_z2_first_contract.py RAW_DIRECTORY --output REPORT_JSON",
+  "scope": [
+    "four saved JSON payloads only: run, metrics, models, manifest; one read each at first execution",
+    "fixed seeds, source pins, committed-byte verification, runtime and 2ms action/snapshot time identity",
+    "paid control/exception/substep/capture bounds and trial summary bindings",
+    "separate planning/conditional/model-head/actor-PD budgets; no RLS/teacher/fit/task-policy/GPU updates",
+    "complete tracking and effort-gate evaluability from saved fields; no RMSE or gate-mean recalculation",
+    "old scientific/free-root/contact/C5 flags remain false; Z2 top gates bound with dependency"
+  ],
+  "preserved_cases": [
+    "source/gate/import/journal-open failure may have empty models and no/partial seed/trial population",
+    "zero StudyAbort may coexist with passing model/PD gates; never require all twelve complete or 36000 paid calls",
+    "collector or journal-close failure closes top gates and suspended validation, but may retain pre-exception nested comparisons",
+    "partial missing endpoint/effort/model-identity data stay unknown and cannot make tracking available"
+  ],
+  "source_preparation": {
+    "new_development_source_reads": 2,
+    "new_development_source_read_bytes": 54390,
+    "first_read": {
+      "path": "src\\developmental_physics\\fast_feedback_pair_development.py",
+      "reads": 1,
+      "bytes": 45301,
+      "sha256": "f29196f9a2e54743b6da29f3fe587871559065959a746d25fe8347dc8dcd96c7",
+      "AST_only": 1
+    },
+    "necessary_counter_schema_excerpt": {
+      "path": "src\\developmental_physics\\fast_feedback_pair_development.py",
+      "scope": "first 209 source lines only",
+      "reads": 1,
+      "bytes": 9089,
+      "sha256_of_excerpt": "5a04cfb3b6367ac03ccd710ce39e04afe3f192107e6e76a9959fb178d043dcf8"
+    },
+    "development_AST_only": 1,
+    "runner_schema_reuse": "reviewer cached 18953-byte runner text; 0 new runner reads, production LF byte identity not independently audited",
+    "environment_time_keys": "bounded reviewer cache only; 0 environment source reads"
+  },
+  "independent_narrow_review": {
+    "agent": "/root/next_control_direction/y_static_contract_review",
+    "new_checker_source_reads": 1,
+    "new_checker_read_bytes": 20901,
+    "finding": "one nested gate binding would reject legal post-comparison collector/journal-close failure",
+    "source_only_fix": "permit retained nested bool result when top_failure; still require both top gates/suspended validation false and status failed",
+    "checker_execution": 0,
+    "AST": 0,
+    "raw_or_new_Z2_output_reads": 0
+  },
+  "final_new_checker_AST_only": 1,
+  "checker_execution": 0,
+  "new_Z2_output_reads": 0,
+  "raw_trajectory_reads": 0,
+  "prediction_payload_reads": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "physical_calls": 0,
+  "RMSE_recalculations": 0,
+  "old_math_or_old_scientific_rechecks": 0,
+  "production_source_writes": 0,
+  "commit_push": 0
+}
+

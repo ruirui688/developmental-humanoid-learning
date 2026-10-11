@@ -1,0 +1,106 @@
+{
+  "model_contribution": {
+    "available": true,
+    "checks": [
+      {
+        "seed": 7701,
+        "available": true,
+        "strict": true,
+        "baseline_joint_axis": [
+          0.006413849879357383,
+          0.006992080877243975,
+          0.005778039940667119
+        ],
+        "learned_joint_axis": [
+          0.005928390593914628,
+          0.0063738249546570125,
+          0.005446649017095015
+        ],
+        "passed": true
+      },
+      {
+        "seed": 7702,
+        "available": true,
+        "strict": true,
+        "baseline_joint_axis": [
+          0.006409632825162551,
+          0.006994925099670049,
+          0.0057652240855675715
+        ],
+        "learned_joint_axis": [
+          0.005927447212065165,
+          0.006375523664570283,
+          0.005442605892965488
+        ],
+        "passed": true
+      },
+      {
+        "seed": 7703,
+        "available": true,
+        "strict": true,
+        "baseline_joint_axis": [
+          0.006412462197082822,
+          0.006991669652885764,
+          0.005775456546711156
+        ],
+        "learned_joint_axis": [
+          0.005927126653157246,
+          0.006373785655326065,
+          0.005443943161449584
+        ],
+        "passed": true
+      },
+      {
+        "scope": "three_seed_raw_RMSE_mean",
+        "baseline_joint_axis_mean": [
+          0.006411981633867585,
+          0.006992891876599929,
+          0.005772906857648616
+        ],
+        "learned_joint_axis_mean": [
+          0.005927654819712347,
+          0.006374378091517786,
+          0.00544439935717003
+        ],
+        "improvement_fractions": [
+          0.07553465399792506,
+          0.08844892728169498,
+          0.0569050408362888
+        ],
+        "required_improvement": 0.2,
+        "passed": false
+      },
+      {
+        "scope": "three_seed_actual_effort_mean",
+        "signal": "actual_absolute_two_axis_nm_s",
+        "baseline_mean": 0.6366944042779933,
+        "learned_mean": 0.3862768108897341,
+        "maximum_ratio": 1.05,
+        "passed": true
+      },
+      {
+        "scope": "three_seed_actual_effort_mean",
+        "signal": "actual_squared_two_axis_nm2_s",
+        "baseline_mean": 0.11142379857901437,
+        "learned_mean": 0.04733597037683024,
+        "maximum_ratio": 1.05,
+        "passed": true
+      }
+    ],
+    "passed": false
+  },
+  "pd_reference": {
+    "available": false,
+    "passed": false,
+    "reason": "model_contribution_gate_not_passed",
+    "checks": []
+  },
+  "z2_model_contribution_gate_passed": false,
+  "z2_pd_reference_gate_passed": false,
+  "suspended_mechanism_validation": false,
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

@@ -1,0 +1,62 @@
+{
+  "status": "sealed",
+  "files": {
+    "check_z2_first_contract.py": {
+      "bytes": 20975,
+      "sha256": "92e7811993af5440a572bc712d25797518651f1c0683a66bc64ccfea129a23d1"
+    },
+    "c4_z2_thin_contract_preparation.json": {
+      "bytes": 3357,
+      "sha256": "186d666508d0a592c1b4b7a49e3188c38eb9bc3240fd63fbd959eb7df1f8eac6"
+    },
+    "c4_z2_first_contract.json": {
+      "bytes": 56041,
+      "sha256": "501a623ea097f91ea7b3fb6d9179b2eac76f5623448819713ccaec824d706042"
+    },
+    "check_z2_saved_metrics_once.py": {
+      "bytes": 6023,
+      "sha256": "b592cd0a7476b38a19003ded47ead6cffe5b163a7114b4980f8042d296b6668f"
+    },
+    "c4_z2_new_metrics_check.json": {
+      "bytes": 55702,
+      "sha256": "e5fec5a5a555763a5a2e22dabd8f55d3ef291d80dec25cf1f07eb0e6176fff30"
+    },
+    "read_z2_reporting_once.py": {
+      "bytes": 1520,
+      "sha256": "11b343d7593ad7f5ceb450fceb6b414dd3d24788e33511a849d43c6e87097f2d"
+    },
+    "c4_z2_report_input.json": {
+      "bytes": 915155,
+      "sha256": "64e8947a45e186fe26980936eab3a63ef066368d9094d4ab47b7970d07336176"
+    },
+    "c4_z2_report.md": {
+      "bytes": 7675,
+      "sha256": "124ca24c60cd6d90086748e1c968f33a869eae4f3610735f3084af8f84468ced"
+    },
+    "seal_z2_reporting_once.py": {
+      "bytes": 1876,
+      "sha256": "3d42438cc925b424dd8a717af1f59e551d0de0bfb8fdf8b013308ad1b7e0ecd7"
+    },
+    "update_z2_navigation_once.py": {
+      "bytes": 5840,
+      "sha256": "f1b2f9870d2f3bc0ad01e69c2bdd1bad6c82cc5d1d2f92e104b8b0d68298c057"
+    },
+    "check_navigation_links.py": {
+      "bytes": 1416,
+      "sha256": "9ac69a63960f76073a72466a669c7de965e80dd8d91233cddf4de04e950e5aa0"
+    },
+    "c4_z2_navigation_links.json": {
+      "bytes": 395,
+      "sha256": "177a371060a8cf5221674b3b24a65ab8387f46107d4acd807e978d9d40fc8865"
+    }
+  },
+  "reads_before_manifest": 24,
+  "read_bytes_before_manifest": 2151950,
+  "writes_before_manifest": 12,
+  "write_bytes_before_manifest": 1075975,
+  "wall_seconds_before_manifest": 0.17164339986629784,
+  "cpu_seconds_before_manifest": 0.015625,
+  "model_fit_physics_or_scientific_metric_calls": 0,
+  "old_experiments_repeated": false,
+  "automatic_retry": false
+}

@@ -13,7 +13,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** 最早未验收仍为C4。[Z1首次身体预测结果](docs/FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md)从clean7d323dc完成三个seed全部21,000控制/子步、12,000vector/24,000scalar在线更新，0停止/异常。20ms速度预测平均改善肩99.2325%/肘98.8250%，300ms位置改善97.0043%/97.6122%，全部原预测门通过。首60新RMSE向量核验通过；接着执行事前冻结Z2匹配控制，与cold MPC和强PD比较完整跟踪及实际努力。固定支撑、理想感觉与2ms经典PD是披露先验；悬挂预测通过不能解除自由root接触C4及C5–C7。持续目标active，阶段提交推送后立即继续。
+**当前执行入口：** 最早未验收仍为C4。[Z1预测](docs/FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md)通过后，[Z2首次匹配控制](docs/FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)从clean1aaccc1完成12组全部36,000控制/子步、0停止异常。joint/肩/肘贡献7.5535%/8.8449%/5.6905%，未达原20%门；实际努力下降，正式PD门按前置条件不可评，自身长时肩预测退化。不放宽阈值或补跑，立即推进事前独立准备的FR0自由root接触工程资格。固定支撑、理想感觉与2ms经典PD是披露先验；C4及C5–C7仍未验收。持续目标active，阶段检查提交推送后立即继续。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 
@@ -31,7 +31,7 @@
 
 后续顺序固定为 C4 多关节 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。当前仅 CPU，允许少量在线辨识；不运行大规模 PPO、任务教师、预训练策略或真机。每个阶段检查、提交、推送后直接继续，完整阶段状态、旧失败和判门见[持续执行账本](docs/CONTINUOUS_EXECUTION_PLAN.md)。
 
-正式物理累计 **256,297 控制调用 /2,535,970 子步**；Z0新增3,000/3,000/0更新，Y0新增203/2,030/0更新，X0/W0此前新增104/1,040与300/3,000，在线 22,452 与离线 7,200 scalar 辨识计算保持分列。H/I/J/K/L 没有新增物理或 RLS 辨识；J/K/L分别用2,400/26,400/39,600 scalar标签作小型离线ridge求解，记录一致不能代替科学验收。L复用PD采样先验、额外数据和既有增益开发费用均披露。
+正式物理累计 **313,297 控制调用 /2,592,970 子步**；Z1新增21,000/21,000/24,000在线scalar更新，Z2新增36,000/36,000/0更新。在线46,452与离线7,200scalar更新计算保持分列，总53,652；小型ridge、规划、测试及历史GPU费用另计，记录一致不能代替科学验收。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 

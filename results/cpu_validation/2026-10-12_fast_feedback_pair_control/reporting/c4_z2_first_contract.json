@@ -1,0 +1,2339 @@
+{
+  "schema": "Z2_first_thin_contract_v1",
+  "contract_passed": true,
+  "failure_count": 0,
+  "failures": [],
+  "unknown_preserved": [],
+  "checks": [
+    {
+      "check": "JSON_object:run.json",
+      "passed": true
+    },
+    {
+      "check": "JSON_object:metrics.json",
+      "passed": true
+    },
+    {
+      "check": "JSON_object:models.json",
+      "passed": true
+    },
+    {
+      "check": "JSON_object:manifest.json",
+      "passed": true
+    },
+    {
+      "check": "run:stage_control",
+      "passed": true
+    },
+    {
+      "check": "run:status",
+      "passed": true
+    },
+    {
+      "check": "manifest:stage_control",
+      "passed": true
+    },
+    {
+      "check": "manifest:status",
+      "passed": true
+    },
+    {
+      "check": "manifest:schema_1",
+      "passed": true
+    },
+    {
+      "check": "status_binding",
+      "passed": true
+    },
+    {
+      "check": "frozen_seed_population",
+      "passed": true
+    },
+    {
+      "check": "run:false:scientific_adoption",
+      "passed": true
+    },
+    {
+      "check": "run:false:old_free_root_C4_validation",
+      "passed": true
+    },
+    {
+      "check": "run:false:c4_scientific_validation",
+      "passed": true
+    },
+    {
+      "check": "run:false:c5_scientific_dependency_released",
+      "passed": true
+    },
+    {
+      "check": "run:false:c4_contact_scientific_validation",
+      "passed": true
+    },
+    {
+      "check": "metrics:false:scientific_adoption",
+      "passed": true
+    },
+    {
+      "check": "metrics:false:old_free_root_C4_validation",
+      "passed": true
+    },
+    {
+      "check": "metrics:false:c4_scientific_validation",
+      "passed": true
+    },
+    {
+      "check": "metrics:false:c5_scientific_dependency_released",
+      "passed": true
+    },
+    {
+      "check": "metrics:false:c4_contact_scientific_validation",
+      "passed": true
+    },
+    {
+      "check": "manifest:false:scientific_adoption",
+      "passed": true
+    },
+    {
+      "check": "manifest:false:old_free_root_C4_validation",
+      "passed": true
+    },
+    {
+      "check": "manifest:false:c4_scientific_validation",
+      "passed": true
+    },
+    {
+      "check": "manifest:false:c5_scientific_dependency_released",
+      "passed": true
+    },
+    {
+      "check": "manifest:false:c4_contact_scientific_validation",
+      "passed": true
+    },
+    {
+      "check": "frozen_budget:control_calls",
+      "passed": true
+    },
+    {
+      "check": "frozen_budget:physics_substeps",
+      "passed": true
+    },
+    {
+      "check": "frozen_budget:MPC_decisions",
+      "passed": true
+    },
+    {
+      "check": "frozen_budget:planning_prediction_pairs",
+      "passed": true
+    },
+    {
+      "check": "frozen_budget:conditional_prediction_pairs",
+      "passed": true
+    },
+    {
+      "check": "payload_identity:run.json",
+      "passed": true
+    },
+    {
+      "check": "payload_identity:metrics.json",
+      "passed": true
+    },
+    {
+      "check": "payload_identity:models.json",
+      "passed": true
+    },
+    {
+      "check": "clean_source_commit",
+      "passed": true
+    },
+    {
+      "check": "required_new_source_pins",
+      "passed": true
+    },
+    {
+      "check": "source_pin:scripts/develop_fast_feedback_pair.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/fast_feedback_pair_development.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "source_pin:docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/fast_feedback_pair_model.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/fast_feedback_environment.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:scripts/validate_fast_feedback_engineering.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/suspended_environment.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:scripts/validate_supported_pair_engineering.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/supported_environment.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/environment.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/assets/ground_body.xml",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/guard_coupled_pair_model.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/guard_pair_model.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/local_pair_model.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/local_model.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:src/developmental_physics/fast_feedback_pair_mpc.py",
+      "passed": true
+    },
+    {
+      "check": "source_pin:pyproject.toml",
+      "passed": true
+    },
+    {
+      "check": "runtime:python",
+      "passed": true
+    },
+    {
+      "check": "runtime:platform",
+      "passed": true
+    },
+    {
+      "check": "paid_trials_require_verified_source",
+      "passed": true
+    },
+    {
+      "check": "runtime:numpy",
+      "passed": true
+    },
+    {
+      "check": "runtime:mujoco",
+      "passed": true
+    },
+    {
+      "check": "runtime_cost:wall_seconds",
+      "passed": true
+    },
+    {
+      "check": "runtime_cost:cpu_seconds",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_call_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_call_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_call_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_call_returns",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_call_exceptions",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_call_exceptions",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:confirmed_physics_substeps",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:confirmed_physics_substeps",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:captured_substep_endpoint_forward_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:captured_substep_endpoint_forward_returns",
+      "passed": true
+    },
+    {
+      "check": "paid_attempt_return_exception_partition",
+      "passed": true
+    },
+    {
+      "check": "microstep_and_capture_paid_bounds",
+      "passed": true
+    },
+    {
+      "check": "forbidden_update_or_prior:RLS_vector_update_attempts",
+      "passed": true
+    },
+    {
+      "check": "forbidden_update_or_prior:RLS_vector_update_returns",
+      "passed": true
+    },
+    {
+      "check": "forbidden_update_or_prior:RLS_vector_update_exceptions",
+      "passed": true
+    },
+    {
+      "check": "forbidden_update_or_prior:RLS_vector_update_commits",
+      "passed": true
+    },
+    {
+      "check": "forbidden_update_or_prior:RLS_scalar_update_commits",
+      "passed": true
+    },
+    {
+      "check": "forbidden_update_or_prior:teacher_calls",
+      "passed": true
+    },
+    {
+      "check": "forbidden_update_or_prior:batch_fit_calls",
+      "passed": true
+    },
+    {
+      "check": "forbidden_update_or_prior:task_policy_updates",
+      "passed": true
+    },
+    {
+      "check": "forbidden_update_or_prior:GPU_training_seconds",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:MPC_decision_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:MPC_decision_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:MPC_decision_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:MPC_decision_returns",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:MPC_decision_exceptions",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:MPC_decision_exceptions",
+      "passed": true
+    },
+    {
+      "check": "decision_partition",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_residual_candidate_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_residual_candidate_attempts",
+      "passed": true
+    },
+    {
+      "check": "candidate_budget_by_decisions",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_returned_candidate_rejections",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_returned_candidate_rejections",
+      "passed": true
+    },
+    {
+      "check": "returned_candidate_rejection_bounds",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_fallback_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_fallback_returns",
+      "passed": true
+    },
+    {
+      "check": "fallback_return_bounds",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_pair_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_pair_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_pair_prediction_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_pair_prediction_returns",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_pair_prediction_failures",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_pair_prediction_failures",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_scalar_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_scalar_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_scalar_prediction_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_scalar_prediction_returns",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_scalar_prediction_failures",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_scalar_prediction_failures",
+      "passed": true
+    },
+    {
+      "check": "planning:prediction_partitions",
+      "passed": true
+    },
+    {
+      "check": "planning:atomic_head_accounting",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_feature_guard_projection_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_feature_guard_projection_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_feature_guard_projection_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_feature_guard_projection_returns",
+      "passed": true
+    },
+    {
+      "check": "planning:feature_guard_accounting",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_conditional_prediction_pair_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_conditional_prediction_pair_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_conditional_prediction_pair_prediction_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_conditional_prediction_pair_prediction_returns",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_conditional_prediction_pair_prediction_failures",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_conditional_prediction_pair_prediction_failures",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_conditional_prediction_scalar_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_conditional_prediction_scalar_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_conditional_prediction_scalar_prediction_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_conditional_prediction_scalar_prediction_returns",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_conditional_prediction_scalar_prediction_failures",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_conditional_prediction_scalar_prediction_failures",
+      "passed": true
+    },
+    {
+      "check": "control_conditional_prediction:prediction_partitions",
+      "passed": true
+    },
+    {
+      "check": "control_conditional_prediction:atomic_head_accounting",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_conditional_prediction_feature_guard_projection_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_conditional_prediction_feature_guard_projection_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_conditional_prediction_feature_guard_projection_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_conditional_prediction_feature_guard_projection_returns",
+      "passed": true
+    },
+    {
+      "check": "control_conditional_prediction:feature_guard_accounting",
+      "passed": true
+    },
+    {
+      "check": "planning_horizon_budget",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_cold_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_cold_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_cold_pd_request_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_cold_pd_request_returns",
+      "passed": true
+    },
+    {
+      "check": "control_cold:PD_partition",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_learned_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_learned_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_learned_pd_request_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_learned_pd_request_returns",
+      "passed": true
+    },
+    {
+      "check": "control_learned:PD_partition",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_pd_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_pd_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:control_pd_pd_request_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:control_pd_pd_request_returns",
+      "passed": true
+    },
+    {
+      "check": "control_pd:PD_partition",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_counter:planning_pd_request_returns",
+      "passed": true
+    },
+    {
+      "check": "counter_cap:planning_pd_request_returns",
+      "passed": true
+    },
+    {
+      "check": "planning:PD_partition",
+      "passed": true
+    },
+    {
+      "check": "actual_actor_PD_budget_separate_from_planning",
+      "passed": true
+    },
+    {
+      "check": "forward_category:planning_pair_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "forward_category:planning_feature_guard_projection_attempts",
+      "passed": true
+    },
+    {
+      "check": "forward_category:planning_scalar_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "PD_category:planning_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "PD_category:control_cold_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "forward_category:control_conditional_prediction_pair_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "forward_category:control_conditional_prediction_feature_guard_projection_attempts",
+      "passed": true
+    },
+    {
+      "check": "forward_category:control_conditional_prediction_scalar_prediction_attempts",
+      "passed": true
+    },
+    {
+      "check": "PD_category:control_learned_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "PD_category:control_pd_pd_request_attempts",
+      "passed": true
+    },
+    {
+      "check": "trial:0:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:0:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:0:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:0:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:0:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:0:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:0:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:0:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:0:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:0:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:0:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:1:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:1:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:1:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:1:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:1:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:1:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:1:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:1:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:1:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:1:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:1:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:2:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:2:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:2:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:2:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:2:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:2:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:2:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:2:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:2:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:2:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:2:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:3:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:3:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:3:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:3:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:3:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:3:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:3:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:3:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:3:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:3:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:3:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:4:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:4:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:4:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:4:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:4:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:4:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:4:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:4:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:4:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:4:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:4:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:5:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:5:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:5:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:5:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:5:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:5:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:5:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:5:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:5:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:5:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:5:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:6:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:6:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:6:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:6:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:6:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:6:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:6:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:6:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:6:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:6:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:6:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:7:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:7:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:7:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:7:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:7:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:7:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:7:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:7:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:7:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:7:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:7:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:8:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:8:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:8:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:8:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:8:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:8:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:8:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:8:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:8:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:8:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:8:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:9:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:9:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:9:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:9:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:9:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:9:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:9:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:9:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:9:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:9:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:9:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:10:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:10:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:10:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:10:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:10:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:10:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:10:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:10:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:10:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:10:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:10:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial:11:seed",
+      "passed": true
+    },
+    {
+      "check": "trial:11:kind",
+      "passed": true
+    },
+    {
+      "check": "trial:11:planned_prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:11:planned_active",
+      "passed": true
+    },
+    {
+      "check": "trial:11:paid_record_span",
+      "passed": true
+    },
+    {
+      "check": "trial:11:returned_bound",
+      "passed": true
+    },
+    {
+      "check": "trial:11:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "check": "trial:11:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:fixed:physical_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:11:fixed:execution_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "trial:11:frozen_models",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_capture:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_finite:prefix:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_finite:prefix:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_finite:prefix:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_finite:prefix:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:complete_effort:prefix",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_capture:active",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_finite:active:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_finite:active:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_finite:active:all8_actual_absolute_nm_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:effort_finite:active:all8_actual_squared_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "trial:11:complete_effort:active",
+      "passed": true
+    },
+    {
+      "check": "trial_paid_spans_bind_attempts",
+      "passed": true
+    },
+    {
+      "check": "trial_returns_bind_paid_returns",
+      "passed": true
+    },
+    {
+      "check": "trial_effort_capture_bind_counter",
+      "passed": true
+    },
+    {
+      "check": "attempted_trial_upper_bound",
+      "passed": true
+    },
+    {
+      "check": "attempted_seed_population",
+      "passed": true
+    },
+    {
+      "check": "seed_result:known_seed",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7701:cold",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7701:cold",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7701:cold",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7701:cold",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7701:learned",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7701:learned",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7701:learned",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7701:learned",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7701:pd",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7701:pd",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7701:pd",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7701:pd",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7701:zero",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7701:zero",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7701:zero",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7701:zero",
+      "passed": true
+    },
+    {
+      "check": "seed_result:known_seed",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7702:cold",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7702:cold",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7702:cold",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7702:cold",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7702:learned",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7702:learned",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7702:learned",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7702:learned",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7702:pd",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7702:pd",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7702:pd",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7702:pd",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7702:zero",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7702:zero",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7702:zero",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7702:zero",
+      "passed": true
+    },
+    {
+      "check": "seed_result:known_seed",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7703:cold",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7703:cold",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7703:cold",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7703:cold",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7703:learned",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7703:learned",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7703:learned",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7703:learned",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7703:pd",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7703:pd",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7703:pd",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7703:pd",
+      "passed": true
+    },
+    {
+      "check": "tracking_schema:7703:zero",
+      "passed": true
+    },
+    {
+      "check": "no_partial_ranking:7703:zero",
+      "passed": true
+    },
+    {
+      "check": "tracking_complete_effort_population:7703:zero",
+      "passed": true
+    },
+    {
+      "check": "tracking_saved_values_finite:7703:zero",
+      "passed": true
+    },
+    {
+      "check": "frozen_Z1_model_population",
+      "passed": true
+    },
+    {
+      "check": "model_pair:7701",
+      "passed": true
+    },
+    {
+      "check": "snapshot_object:7701:cold",
+      "passed": true
+    },
+    {
+      "check": "new_micro_snapshot_time:7701:cold",
+      "passed": true
+    },
+    {
+      "check": "frozen_snapshot_update_identity:7701:cold",
+      "passed": true
+    },
+    {
+      "check": "snapshot_object:7701:learned",
+      "passed": true
+    },
+    {
+      "check": "new_micro_snapshot_time:7701:learned",
+      "passed": true
+    },
+    {
+      "check": "frozen_snapshot_update_identity:7701:learned",
+      "passed": true
+    },
+    {
+      "check": "model_pair:7702",
+      "passed": true
+    },
+    {
+      "check": "snapshot_object:7702:cold",
+      "passed": true
+    },
+    {
+      "check": "new_micro_snapshot_time:7702:cold",
+      "passed": true
+    },
+    {
+      "check": "frozen_snapshot_update_identity:7702:cold",
+      "passed": true
+    },
+    {
+      "check": "snapshot_object:7702:learned",
+      "passed": true
+    },
+    {
+      "check": "new_micro_snapshot_time:7702:learned",
+      "passed": true
+    },
+    {
+      "check": "frozen_snapshot_update_identity:7702:learned",
+      "passed": true
+    },
+    {
+      "check": "model_pair:7703",
+      "passed": true
+    },
+    {
+      "check": "snapshot_object:7703:cold",
+      "passed": true
+    },
+    {
+      "check": "new_micro_snapshot_time:7703:cold",
+      "passed": true
+    },
+    {
+      "check": "frozen_snapshot_update_identity:7703:cold",
+      "passed": true
+    },
+    {
+      "check": "snapshot_object:7703:learned",
+      "passed": true
+    },
+    {
+      "check": "new_micro_snapshot_time:7703:learned",
+      "passed": true
+    },
+    {
+      "check": "frozen_snapshot_update_identity:7703:learned",
+      "passed": true
+    },
+    {
+      "check": "gate_flag:z2_model_contribution_gate_passed",
+      "passed": true
+    },
+    {
+      "check": "gate_binding:model_contribution",
+      "passed": true
+    },
+    {
+      "check": "gate_checks_list:model_contribution",
+      "passed": true
+    },
+    {
+      "check": "gate_complete_tracking:model_contribution",
+      "passed": true
+    },
+    {
+      "check": "effort_gate_population:model_contribution",
+      "passed": true
+    },
+    {
+      "check": "effort_gate_evaluable:model_contribution:actual_absolute_two_axis_nm_s",
+      "passed": true
+    },
+    {
+      "check": "effort_gate_evaluable:model_contribution:actual_squared_two_axis_nm2_s",
+      "passed": true
+    },
+    {
+      "check": "gate_flag:z2_pd_reference_gate_passed",
+      "passed": true
+    },
+    {
+      "check": "gate_binding:pd_reference",
+      "passed": true
+    },
+    {
+      "check": "gate_checks_list:pd_reference",
+      "passed": true
+    },
+    {
+      "check": "PD_gate_depends_on_model_contribution",
+      "passed": true
+    },
+    {
+      "check": "suspended_gate_binding",
+      "passed": true
+    }
+  ],
+  "read_receipt": {
+    "file_reads": 4,
+    "bytes": 767638,
+    "files": [
+      {
+        "name": "run.json",
+        "bytes": 700922,
+        "sha256": "2b11a11eeb326da7a2e34b93a62be9a0202f2d2e0bdf750f8cc18415f11b17bb"
+      },
+      {
+        "name": "metrics.json",
+        "bytes": 2809,
+        "sha256": "bc763d36fda566d739d09fdaba2694a8a92e8ccdf9f72484127fcc68d12ae9cc"
+      },
+      {
+        "name": "models.json",
+        "bytes": 60805,
+        "sha256": "5198d657005798bc069119832fd0b63a0a0858971d88f216fae0168f36b228b9"
+      },
+      {
+        "name": "manifest.json",
+        "bytes": 3102,
+        "sha256": "35345ee49e1435bdcc6db71cd6a17cebfac265bc1ea5ab84f57bac5df8adbdb2"
+      }
+    ]
+  },
+  "wall_seconds": 0.006337199825793505,
+  "cpu_seconds": 0.0,
+  "raw_trajectory_reads": 0,
+  "prediction_payload_reads": 0,
+  "source_payload_reads": 0,
+  "experiment_imports": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "physical_calls": 0,
+  "RMSE_recalculations": 0,
+  "gate_mean_recalculations": 0,
+  "scientific_gate_values_are_saved_not_recomputed": true
+}

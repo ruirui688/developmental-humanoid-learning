@@ -1,6 +1,15 @@
 # 开发进度与仓库检查点
 
-## 当前入口：2026-10-12 Z0完整工程通过，准备独立学习协议
+## 当前入口：2026-10-12 Z2完整控制贡献门失败，继续FR0接触工程
+
+[Z1指定独立预测](FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md)全门通过后，
+[Z2首次控制](FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)12组全部完整36000控制/子步，零停止异常。
+同MPC joint贡献7.5535%，低于事前20%门；实际努力下降，正式PD门不可评。
+自身长时肩预测退化，C4及C5–C7仍未验收；不改门或补跑，立即推进事前独立准备的FR0自由root接触工程资格。
+累计313297控制/2592970子步，online46452/offline7200scalar更新计算分列。
+持续目标active，阶段检查提交推送后立即继续；[一页目标](CPU_VALIDATION_TARGET.md)与[阶段账本](CONTINUOUS_EXECUTION_PLAN.md)为当前导航。
+
+## 历史：2026-10-12 Z0完整工程通过，准备独立学习协议
 
 [Z0首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b首次seed7600完成1000prefix+2000active、
 3,000控制/3,000子步，0异常/环境停止/StudyAbort/fit；两末200点/.4s窗口肩/肘MAE分别为

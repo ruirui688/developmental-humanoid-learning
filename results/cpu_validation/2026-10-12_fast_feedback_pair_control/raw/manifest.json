@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "stage": "control",
+  "status": "completed",
+  "files": {
+    "paid_intervals.jsonl.gz": {
+      "bytes": 25788162,
+      "sha256": "9de26f6a12fd411db3d585d10be885093aa084e194cadf8a95b8fdac3aadbcd5"
+    },
+    "run.json": {
+      "bytes": 700922,
+      "sha256": "2b11a11eeb326da7a2e34b93a62be9a0202f2d2e0bdf750f8cc18415f11b17bb"
+    },
+    "metrics.json": {
+      "bytes": 2809,
+      "sha256": "bc763d36fda566d739d09fdaba2694a8a92e8ccdf9f72484127fcc68d12ae9cc"
+    },
+    "models.json": {
+      "bytes": 60805,
+      "sha256": "5198d657005798bc069119832fd0b63a0a0858971d88f216fae0168f36b228b9"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 25131117,
+      "sha256": "1238f681a6fd522f7756c18761b90556b75f2ac26b00a002f04d63f045e772ae"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 20939713,
+      "sha256": "150ad1f81b96e9daf404ea4b084f84f3b5fef88c860ef84f26876db0fad6de80"
+    },
+    "source.zip": {
+      "bytes": 93036,
+      "sha256": "c626a48d5c4a7d628279912253c32b905f58396d8e855f0c7615029aaae0ef48"
+    },
+    "installed/Z_7701_control_cold.xml": {
+      "bytes": 3473,
+      "sha256": "af0f2ba478b405682a93b4dbd87ab319dcef21b6d4eaea50f63ede18a341c2b3"
+    },
+    "installed/Z_7701_control_learned.xml": {
+      "bytes": 3473,
+      "sha256": "af0f2ba478b405682a93b4dbd87ab319dcef21b6d4eaea50f63ede18a341c2b3"
+    },
+    "installed/Z_7701_control_pd.xml": {
+      "bytes": 3473,
+      "sha256": "af0f2ba478b405682a93b4dbd87ab319dcef21b6d4eaea50f63ede18a341c2b3"
+    },
+    "installed/Z_7701_control_zero.xml": {
+      "bytes": 3473,
+      "sha256": "af0f2ba478b405682a93b4dbd87ab319dcef21b6d4eaea50f63ede18a341c2b3"
+    },
+    "installed/Z_7702_control_cold.xml": {
+      "bytes": 3473,
+      "sha256": "f7f6ca36d0385e7a24773e6c7e1f1a6ecac35e3580b6d3bfafe4394aade797be"
+    },
+    "installed/Z_7702_control_learned.xml": {
+      "bytes": 3473,
+      "sha256": "f7f6ca36d0385e7a24773e6c7e1f1a6ecac35e3580b6d3bfafe4394aade797be"
+    },
+    "installed/Z_7702_control_pd.xml": {
+      "bytes": 3473,
+      "sha256": "f7f6ca36d0385e7a24773e6c7e1f1a6ecac35e3580b6d3bfafe4394aade797be"
+    },
+    "installed/Z_7702_control_zero.xml": {
+      "bytes": 3473,
+      "sha256": "f7f6ca36d0385e7a24773e6c7e1f1a6ecac35e3580b6d3bfafe4394aade797be"
+    },
+    "installed/Z_7703_control_cold.xml": {
+      "bytes": 3473,
+      "sha256": "f99775945a8f4bac4ec41912024f3668ac4a507495afde032f2eb86954d0f4de"
+    },
+    "installed/Z_7703_control_learned.xml": {
+      "bytes": 3473,
+      "sha256": "f99775945a8f4bac4ec41912024f3668ac4a507495afde032f2eb86954d0f4de"
+    },
+    "installed/Z_7703_control_pd.xml": {
+      "bytes": 3473,
+      "sha256": "f99775945a8f4bac4ec41912024f3668ac4a507495afde032f2eb86954d0f4de"
+    },
+    "installed/Z_7703_control_zero.xml": {
+      "bytes": 3473,
+      "sha256": "f99775945a8f4bac4ec41912024f3668ac4a507495afde032f2eb86954d0f4de"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}
