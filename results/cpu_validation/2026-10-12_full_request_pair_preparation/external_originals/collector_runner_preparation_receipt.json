@@ -1,0 +1,151 @@
+{
+  "status": "prepared_source_only_unexecuted",
+  "created_utc": "2026-10-11T22:46:15.089868+00:00",
+  "artifacts": {
+    "collector": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr3_candidate\\full_request_pair_development.py",
+      "bytes": 56026,
+      "sha256": "eb76b2100dc04bcec6230a076312a689bb132b1c462a3c2098a981e790c32cd9"
+    },
+    "runner": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr3_candidate\\develop_full_request_pair.py",
+      "bytes": 28486,
+      "sha256": "b274fdd03194c12bd4035b73313076bd6d8db6ae9cf3ec9290fd040a41e58a91"
+    },
+    "schema_plan": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr3_candidate\\SCHEMA_PLAN.md",
+      "bytes": 5323,
+      "sha256": "154839c9023d64a1b6424eb8c9fba8dde8dc5e7a56332a5fe6709020f4037fde"
+    },
+    "derivation_diff": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr3_candidate\\collector_runner_derivation.diff",
+      "bytes": 22137,
+      "sha256": "81f7043708ed08cfd6013c741091a2be0d777692d6e1548551704b9b4168e406"
+    },
+    "first_preparation_failure": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr3_candidate\\collector_runner_first_preparation_failure.json",
+      "bytes": 785,
+      "sha256": "f2f3a6e6ea52765ff44091f31a015e6836e2cd9d795efa5c00569cec5457e47c"
+    }
+  },
+  "derivation_sources": {
+    "collector": {
+      "path": "D:\\Codex_ws\\robot_rl\\src\\developmental_physics\\free_root_pair_development.py",
+      "bytes": 55672,
+      "sha256": "baccf91a05e7b5bf55024ac96c717872d8624d3e17d49a74c35d12a6f93a0a8b"
+    },
+    "runner": {
+      "path": "D:\\Codex_ws\\robot_rl\\scripts\\develop_free_root_pair.py",
+      "bytes": 28333,
+      "sha256": "0a62bfc0fce14892ce0042b27702fd81707881b30724b6c2d76c5cdfe3681537"
+    }
+  },
+  "protocol": {
+    "path": "D:\\Codex_ws\\robot_rl\\docs\\FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md",
+    "bytes": 11925,
+    "sha256": "66f095e2def118719556e167201ae8c6e5ed8fbbc2a08d176863daaddd321031"
+  },
+  "installed_protocol_pin": {
+    "bytes": 11925,
+    "sha256": "66f095e2def118719556e167201ae8c6e5ed8fbbc2a08d176863daaddd321031"
+  },
+  "seeds": [
+    8001,
+    8002,
+    8003
+  ],
+  "seed_qualification": "root reported one public source/docs exact-integer search exit1/no matches; raw and unpublished history not searched; development bank only",
+  "canonical_paths": {
+    "collector": "src/developmental_physics/full_request_pair_development.py",
+    "runner": "scripts/develop_full_request_pair.py",
+    "controller": "src/developmental_physics/full_request_pair_mpc.py",
+    "protocol": "docs/FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md"
+  },
+  "stages": {
+    "FR3A": {
+      "stage": "prediction",
+      "raw": "results/cpu_validation/2026-10-12_full_request_pair_prediction/raw"
+    },
+    "FR3B": {
+      "stage": "control",
+      "raw": "results/cpu_validation/2026-10-12_full_request_pair_control/raw",
+      "requires": "only its own complete three-seed FR3A and original prediction gate"
+    }
+  },
+  "cli": [
+    "python scripts/develop_full_request_pair.py --stage prediction --repo . --output results/cpu_validation/2026-10-12_full_request_pair_prediction/raw --source-commit <clean_commit>",
+    "python scripts/develop_full_request_pair.py --stage control --repo . --output results/cpu_validation/2026-10-12_full_request_pair_control/raw --source-commit <clean_commit>"
+  ],
+  "AST": {
+    "total_candidate_source_parses_including_first_helper_failure": 4,
+    "total_reference_source_parses_including_first_helper_failure": 4,
+    "result": "passed",
+    "CountedGuardModel_identical": true,
+    "unchanged_function_names": [
+      "safe",
+      "identity",
+      "failure",
+      "native",
+      "study_abort",
+      "direction_targets",
+      "pulse",
+      "counted_pd",
+      "complete_telemetry",
+      "effort",
+      "score_population",
+      "tracking_score",
+      "native_input_ranges",
+      "free_root_contact_population",
+      "score_qualified_population",
+      "tracking_score_qualified",
+      "control_origin_domain",
+      "run_prediction"
+    ],
+    "gate_arithmetic_identical_after_stage_flag_namespace_and_false_default_normalization": true,
+    "source_import_or_execution": false
+  },
+  "stage_flags": [
+    "fr3a_prediction_gate_passed",
+    "fr3b_model_contribution_gate_passed",
+    "fr3b_pd_reference_gate_passed",
+    "fr3_free_root_mechanism_validation"
+  ],
+  "scientific_flags_unchanged_false": [
+    "scientific_adoption",
+    "old_free_root_C4_validation",
+    "c4_scientific_validation",
+    "c4_contact_scientific_validation",
+    "c5_scientific_dependency_released"
+  ],
+  "budget": {
+    "FR3A_control_calls_and_substeps": 21000,
+    "FR3A_RLS_vector_commits": 12000,
+    "FR3A_RLS_scalar_commits": 24000,
+    "FR3A_independent_prediction_pairs": 124680,
+    "FR3B_control_calls_and_substeps": 36000,
+    "FR3B_RLS_commits": 0,
+    "FR3B_MPC_decisions": 1200,
+    "FR3B_planning_pair_predictions": 14580000,
+    "FR3B_conditional_prediction_pairs": 526560
+  },
+  "preparation_accounting": {
+    "candidate_executions": 0,
+    "candidate_imports": 0,
+    "raw_or_model_parameter_reads": 0,
+    "physics_calls": 0,
+    "model_prediction_or_fit_calls": 0,
+    "old_math_or_assembly_tests": 0,
+    "new_tests_executed": 0,
+    "production_writes": 0,
+    "commits": 0,
+    "first_source_review_helper_failures": 1,
+    "helper_repairs": 1,
+    "automatic_candidate_retries": 0
+  },
+  "controller_delivery": "independent bounded-controller agent; both stages must freeze its final source simultaneously before FR3A",
+  "publication_note": "if root normalizes protocol line endings, update only exact byte/hash literal and archive identity change; these AST identities apply to candidate bytes",
+  "runtime_for_source_AST_only": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

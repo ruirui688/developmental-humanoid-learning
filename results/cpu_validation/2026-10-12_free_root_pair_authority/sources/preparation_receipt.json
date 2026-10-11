@@ -1,0 +1,94 @@
+{
+  "status": "prepared_source_only_unexecuted",
+  "created_utc": "2026-10-11T22:38:06.720476+00:00",
+  "source": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr2_authority_candidate\\describe_fr2_authority_once.py",
+    "bytes": 17591,
+    "sha256": "1efbddb9dba64ce92d147ae091f0293cfdbe0b76082d7c8996acf38a8871560e"
+  },
+  "statistical_contract": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr2_authority_candidate\\STATISTICAL_CONTRACT.md",
+    "bytes": 5620,
+    "sha256": "e4e9cd4631305d7ad9653b03bd89cc8ddacfc651a7187f22f184ee0c0ed51cd6"
+  },
+  "cli": "python external/fr2_authority_candidate/describe_fr2_authority_once.py --raw <new_FR2_raw> --output <fresh_report.json>",
+  "dependencies": "Python standard library only; no project imports",
+  "static_source_references_hashed": [
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\src\\developmental_physics\\fast_feedback_pair_mpc.py",
+      "bytes": 9551,
+      "sha256": "5a7d9d978de755c83023974628eb1891aa76f0e44a71a1454c6e676aacaa71f4"
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\src\\developmental_physics\\free_root_pair_development.py",
+      "bytes": 55672,
+      "sha256": "baccf91a05e7b5bf55024ac96c717872d8624d3e17d49a74c35d12a6f93a0a8b"
+    }
+  ],
+  "AST": {
+    "passes": 1,
+    "result": "passed",
+    "method": "ast.parse source text; candidate not imported, compiled or executed"
+  },
+  "executed": false,
+  "input_read_contract": {
+    "allowed": [
+      "manifest.json",
+      "run.json",
+      "trace.jsonl.gz"
+    ],
+    "explicit_attempts_per_input_max": 1,
+    "trace_forward_passes_max": 1,
+    "raw_execution_owner": "/root"
+  },
+  "population": {
+    "seeds": [
+      7901,
+      7902,
+      7903
+    ],
+    "methods": [
+      "cold",
+      "learned",
+      "pd",
+      "zero"
+    ],
+    "trial_rows": 12,
+    "phases": {
+      "A": [
+        0,
+        999
+      ],
+      "B": [
+        1000,
+        1999
+      ],
+      "full": [
+        0,
+        1999
+      ]
+    }
+  },
+  "execution_caps": {
+    "trace_rows": 36000,
+    "macro_decisions": 1200,
+    "candidate_records": 97200
+  },
+  "preparation_accounting": {
+    "raw_result_or_model_reads": 0,
+    "candidate_executions": 0,
+    "model_prediction_calls": 0,
+    "PD_replay_calls": 0,
+    "fit_calls": 0,
+    "physics_calls": 0,
+    "new_tests": 0,
+    "retries": 0,
+    "production_writes": 0,
+    "commits": 0
+  },
+  "scope": "saved control-authority description; copied whole2000 qv summaries, fixed phase request/fallback/effect and macro counts; no scientific recomputation, tuning, early pruning, ranking incomplete trials or causal inference",
+  "runtime_used_for_AST_only": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

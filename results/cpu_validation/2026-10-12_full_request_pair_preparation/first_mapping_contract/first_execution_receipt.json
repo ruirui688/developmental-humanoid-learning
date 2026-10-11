@@ -1,0 +1,18 @@
+{
+  "first_attempt": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\fr3_candidate\\check_full_request_mapping_once.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--controller-source",
+    "D:\\Codex_ws\\robot_rl\\external\\fr3_candidate\\full_request_pair_mpc.py",
+    "--counted-adapter-source",
+    "D:\\Codex_ws\\robot_rl\\external\\fr3_candidate\\full_request_pair_development.py",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr3_first_mapping_contract\\contract.json"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 4.211312099825591
+}

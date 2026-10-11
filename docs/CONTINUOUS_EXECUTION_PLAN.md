@@ -16,7 +16,7 @@
 
 当前执行入口：
 
-- **FR2首次结果：** [FR2首次自由root匹配控制](FREE_ROOT_PAIR_CONTROL_RESULTS.md)从cleanf9a0e00保存状态completed，本域原控制门未全部通过；实际新增36,000控制/36,000子步，0更新。原模型贡献门false、强PD available=false/passed=false；首新保存核验passed、77,669项/0失败。全部12计划组、停止/努力及六种自身来源×两模型×五时距完整保留。累计373,297/2,652,970，online70,452+offline7,200=77,652scalar；C4最终新留出及C5–C7未验收。关闭本冻结候选的成功依赖，不补跑或放宽门；依据本次完整保存证据做一次有界判断，再确定独立下一项。 提交推送后继续active目标。
+- **当前入口FR3：** [FR3完整首请求网格协议](FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md)已与新scalar/batch、collector/runner一并准备；首次新参数化契约672项通过，48,762pair/97,524scalar前向、0物理/fit/RLS。固定开发seed8001/8002/8003，先原配方FR3A辨识/独立预测，全门通过才执行已冻FR3B；旧FR2失败保留，原20%/5%/努力门不改。最终±.5Nm、首10微步反馈/140PD尾保留；新delta可达±1、网格变粗且一般无purePD候选为新增先验。C4及C5–C7仍未验收，持续目标active，提交推送后立即首次执行。
 
 - **Z0首次完整工程门通过。** [首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次seed7600完成1000zero+2000PD、3000控制/3000子步，0异常/停止/fit；两个末200点/.4s窗口的肩/肘四项MAE均≤.01rad。root首新thin contract零failed，独立4个Z0 MAE；记录一致与工程通过仍不证明学习或科学验收。
 - [2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)保持物理/PD64/Kd(4,4)/权限/6s任务，反馈/感觉与active研究停止检查频率增多，公开额外经典控制能力。全子步left_arm/feet/other接触零观察；固定支撑反力unknown，不从不同seed的X/Y失败识别频率因果，不追认自由root真实接触C4或解除C5科学依赖。
@@ -748,3 +748,10 @@ FR0只开放新学习协议准备，C4及C5–C7科学依赖仍未解除；持�
 [FR2首次自由root匹配控制](FREE_ROOT_PAIR_CONTROL_RESULTS.md)从cleanf9a0e00保存状态completed，本域原控制门未全部通过；实际新增36,000控制/36,000子步，0更新。原模型贡献门false、强PD available=false/passed=false；首新保存核验passed、77,669项/0失败。全部12计划组、停止/努力及六种自身来源×两模型×五时距完整保留。累计373,297/2,652,970，online70,452+offline7,200=77,652scalar；C4最终新留出及C5–C7未验收。关闭本冻结候选的成功依赖，不补跑或放宽门；依据本次完整保存证据做一次有界判断，再确定独立下一项。 提交推送后继续active目标。
 
 全部tracking/effort、conditional availability及H150肩指标见新报告和完整JSON，不pool自身轨迹、不partial排名。保存门不替代最终新留出或C5release。
+
+
+### FR2动作描述后唯一FR3候选
+
+[FR3完整首请求网格协议](FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md)已与新scalar/batch、collector/runner一并准备；首次新参数化契约672项通过，48,762pair/97,524scalar前向、0物理/fit/RLS。固定开发seed8001/8002/8003，先原配方FR3A辨识/独立预测，全门通过才执行已冻FR3B；旧FR2失败保留，原20%/5%/努力门不改。最终±.5Nm、首10微步反馈/140PD尾保留；新delta可达±1、网格变粗且一般无purePD候选为新增先验。C4及C5–C7仍未验收，持续目标active，提交推送后立即首次执行。
+
+[一次保存动作诊断](FREE_ROOT_PAIR_AUTHORITY_RESULTS.md)不识别失败原因，不重算旧科学门；新bank先自辨识，不恢复旧参数。

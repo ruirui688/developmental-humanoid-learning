@@ -1,0 +1,47 @@
+{
+  "published": {
+    "src/developmental_physics/full_request_pair_mpc.py": {
+      "original": {
+        "bytes": 24672,
+        "sha256": "7d364c819e464beb1375158df7a6e78ee17a4e71986e6afa59fb492c39257e55"
+      },
+      "published": {
+        "bytes": 24672,
+        "sha256": "7d364c819e464beb1375158df7a6e78ee17a4e71986e6afa59fb492c39257e55"
+      },
+      "AST_equal": true
+    },
+    "src/developmental_physics/full_request_pair_development.py": {
+      "original": {
+        "bytes": 56026,
+        "sha256": "eb76b2100dc04bcec6230a076312a689bb132b1c462a3c2098a981e790c32cd9"
+      },
+      "published": {
+        "bytes": 56026,
+        "sha256": "eb76b2100dc04bcec6230a076312a689bb132b1c462a3c2098a981e790c32cd9"
+      },
+      "AST_equal": true
+    },
+    "scripts/develop_full_request_pair.py": {
+      "original": {
+        "bytes": 28486,
+        "sha256": "b274fdd03194c12bd4035b73313076bd6d8db6ae9cf3ec9290fd040a41e58a91"
+      },
+      "published": {
+        "bytes": 28486,
+        "sha256": "b274fdd03194c12bd4035b73313076bd6d8db6ae9cf3ec9290fd040a41e58a91"
+      },
+      "AST_equal": true
+    }
+  },
+  "protocol": {
+    "bytes": 11925,
+    "sha256": "66f095e2def118719556e167201ae8c6e5ed8fbbc2a08d176863daaddd321031"
+  },
+  "normalization_only_no_logic_change": true,
+  "first_mapping_contract_passed": true,
+  "new_checks": 672,
+  "new_pair_attempts": 48762,
+  "new_scalar_attempts": 97524,
+  "physics_or_fit_or_RLS_or_old_experiments": 0
+}

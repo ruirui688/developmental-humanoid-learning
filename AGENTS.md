@@ -33,7 +33,7 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-[FR2首次自由root匹配控制](docs/FREE_ROOT_PAIR_CONTROL_RESULTS.md)从cleanf9a0e00保存状态completed，本域原控制门未全部通过；实际新增36,000控制/36,000子步，0更新。原模型贡献门false、强PD available=false/passed=false；首新保存核验passed、77,669项/0失败。全部12计划组、停止/努力及六种自身来源×两模型×五时距完整保留。累计373,297/2,652,970，online70,452+offline7,200=77,652scalar；C4最终新留出及C5–C7未验收。关闭本冻结候选的成功依赖，不补跑或放宽门；依据本次完整保存证据做一次有界判断，再确定独立下一项。 提交推送后继续active目标。
+[FR3完整首请求网格协议](docs/FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md)已与新scalar/batch、collector/runner一并准备；首次新参数化契约672项通过，48,762pair/97,524scalar前向、0物理/fit/RLS。固定开发seed8001/8002/8003，先原配方FR3A辨识/独立预测，全门通过才执行已冻FR3B；旧FR2失败保留，原20%/5%/努力门不改。最终±.5Nm、首10微步反馈/140PD尾保留；新delta可达±1、网格变粗且一般无purePD候选为新增先验。C4及C5–C7仍未验收，持续目标active，提交推送后立即首次执行。
 
 历史入口（不触发重跑）：[Z2完整控制](docs/FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)贡献7.55%，未达到原20%门，自身长时肩预测退化；不补跑或追认。[FR0自由root接触工程](docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_RESULTS.md)从cleane5466d3首次完成3,000控制/子步、0停止异常；四MAE≤.01rad，三阶段左臂正接触949/990/988 of1000，工程资格通过。本轮零学习，公共PD、理想感觉与原仰卧身体是披露先验，不代表学习或安全收益。后续已冻结并执行本域FR1；本段工程事实不能替代新预测/控制门，不恢复悬挂learned snapshots。C4及C5–C7仍未验收；持续目标active，阶段检查提交推送后立即继续。
 

@@ -1,0 +1,348 @@
+--- src\developmental_physics\free_root_pair_development.py
++++ external\fr3_candidate\full_request_pair_development.py
+@@ -1,7 +1,8 @@
+-"""FR1/FR2 native-only collection; no execution occurs on import.
++"""FR3A/FR3B native-only collection; no execution occurs on import.
+ 
+ Original free-root supine domain; no suspended snapshots. The existing atomic coupled RLS and the
+-residual-PD controller retain their mathematical implementations. This module
++body-model learning math is retained. Control uses the frozen full-first-request
++9x9 grid and its dynamic held residual; no older snapshots are restored. This module
+ adds paid-first native/audit capture, exact forward counters, and complete-population
+ gates; it never loads an earlier free-root experiment.
+ """
+@@ -20,9 +21,9 @@
+ from .free_root_fast_feedback_environment import FreeRootFastFeedbackGroundBodyEnv
+ from .environment import MODEL_PATH
+ from .fast_feedback_pair_mpc import public_pd_request
+-from .batched_fast_feedback_pair_mpc import BatchedFastFeedbackResidualPDPairMPC
+-
+-SEEDS = (7901, 7902, 7903)
++from .full_request_pair_mpc import BatchedFullRequestResidualPDPairMPC
++
++SEEDS = (8001, 8002, 8003)
+ PREFIX = 1000
+ CALIBRATION = 4000
+ PREDICTION = 1000
+@@ -192,7 +193,7 @@
+             or snapshot.get("integration") != "endpoint_euler" or snapshot.get("dt_seconds") != .002
+             or snapshot.get("initial_covariance_scale") != 100. or snapshot.get("forgetting_factor") != 1.
+             or snapshot.get("hinge_threshold_nm") != .25):
+-        raise ValueError("frozen_Z_micro_coupled_guard_snapshot_required")
++        raise ValueError("frozen_FR3A_micro_coupled_guard_snapshot_required")
+     ranges = snapshot["input_mapping"]["public_guard"]["public_joint_ranges_rad"]
+     model = CountedGuardModel(snapshot["qref_rad"], public_joint_ranges=ranges,
+                               cost=cost, label=label, trainable=False)
+@@ -283,7 +284,7 @@
+                   expected_qref=None, expected_installation=None, after_prefix=None,
+                   actor=None, after_transition=None, paid_writer=None):
+     """Original supine free-root physics; save paid native before audit or learning."""
+-    trial.update(trial_id=f"FR_{seed}_{kind}", seed=seed, kind=kind, status="failed", complete=False,
++    trial.update(trial_id=f"FR3_{seed}_{kind}", seed=seed, kind=kind, status="failed", complete=False,
+                  planned_prefix=PREFIX, planned_active=active_steps, record_start=len(trace), stop=None,
+                  failure=None, qref2=None, public_joint_ranges2=None, records=[])
+     records, env, row, qref = trial["records"], None, None, None
+@@ -564,8 +565,10 @@
+                     "improvement_fractions": fractions, "required_improvement": .20,
+                     "passed": bool(available and all(value is not None and value >= .20 for value in fractions))})
+     passed = complete and all(row["passed"] for row in checks if row.get("gated", True))
+-    return {"complete_population": bool(complete), "checks": checks, "fr1_prediction_gate_passed": bool(passed),
+-            "mean_type": "arithmetic mean of original per_seed axis RMSE", "partial_subset_ranking": False, **FLAGS}
++    return {"complete_population": bool(complete), "checks": checks, "fr3a_prediction_gate_passed": bool(passed),
++            "mean_type": "arithmetic mean of original per_seed axis RMSE", "partial_subset_ranking": False,
++            "fr3b_model_contribution_gate_passed": False, "fr3b_pd_reference_gate_passed": False,
++            "fr3_free_root_mechanism_validation": False, **FLAGS}
+ 
+ 
+ def tracking_score(trial):
+@@ -618,10 +621,10 @@
+     contribution = comparison("cold", True, .20)
+     pd = comparison("pd", False, .05) if contribution["passed"] else {"available": False, "passed": False,
+         "reason": "model_contribution_gate_not_passed", "checks": []}
+-    return {"model_contribution": contribution, "pd_reference": pd,
+-            "fr2_model_contribution_gate_passed": contribution["passed"],
+-            "fr2_pd_reference_gate_passed": pd["passed"],
+-            "free_root_mechanism_validation": bool(contribution["passed"] and pd["passed"]), **FLAGS}
++    return {"model_contribution": contribution, "pd_reference": pd, "fr3a_prediction_gate_passed": False,
++            "fr3b_model_contribution_gate_passed": contribution["passed"],
++            "fr3b_pd_reference_gate_passed": pd["passed"],
++            "fr3_free_root_mechanism_validation": bool(contribution["passed"] and pd["passed"]), **FLAGS}
+ 
+ 
+ def native_input_ranges(records):
+@@ -807,11 +810,11 @@
+     result.update(seed_results=[], models=saved_models)
+     references = {row["seed"]: row["calibration"] for row in saved_seed_results}
+     if set(references) != set(SEEDS) or any(not row.get("complete") or not row.get("free_root_domain_qualification_passed") for row in references.values()):
+-        raise ValueError("complete_FR1_per_seed_installation_references_required")
++        raise ValueError("complete_FR3A_per_seed_installation_references_required")
+     for seed in SEEDS:
+         models = {name: restore_model(saved_models[str(seed)][name], cost, f"{seed}_{name}") for name in ("cold", "learned")}
+         if models["cold"].update_count != 0 or models["learned"].update_count != CALIBRATION or models["cold"].qref != models["learned"].qref:
+-            raise ValueError("exact_FR1_cold_and_4000_update_learned_snapshots_required")
++            raise ValueError("exact_FR3A_cold_and_4000_update_learned_snapshots_required")
+         seed_row = {"seed": seed, "controls": {}, "tracking_scores": {}, "conditional_prediction_scores": {}}
+         result["seed_results"].append(seed_row)
+         for name in ("cold", "learned", "pd", "zero"):
+@@ -824,12 +827,12 @@
+             def prepared(current):
+                 nonlocal controller
+                 if current["public_joint_ranges2"] != [list(row) for row in models["cold"].public_guard.public_joint_ranges]:
+-                    raise ValueError("fresh_public_ranges_differ_from_FR1_snapshot")
++                    raise ValueError("fresh_public_ranges_differ_from_FR3A_snapshot")
+                 selection, targets, feasible = direction_targets(current["qref2"], current["public_joint_ranges2"])
+                 current.update(direction_selection=selection, targets_q2=targets)
+                 if feasible and name in models:
+                     models[name].scope = "planning"
+-                    controller = BatchedFastFeedbackResidualPDPairMPC(models[name], current["public_joint_ranges2"],
++                    controller = BatchedFullRequestResidualPDPairMPC(models[name], current["public_joint_ranges2"],
+                                                               counted_model_type=CountedGuardModel)
+                     current["controller_spec"] = controller.spec()
+                     current["controller_fingerprint"] = controller.parameter_fingerprint()
+@@ -907,5 +910,6 @@
+         "MPC_decision_attempts", "MPC_decision_returns", "MPC_decision_exceptions", "teacher_calls",
+         "batch_fit_calls", "task_policy_updates", "GPU_training_seconds")}),
+         "trace": [], "predictions": [], "trials": [], "seed_results": [], "models": {},
+-        "metrics": {"complete_population": False, "fr1_prediction_gate_passed": False,
+-                    "fr2_model_contribution_gate_passed": False, "fr2_pd_reference_gate_passed": False, **FLAGS}}
++        "metrics": {"complete_population": False, "fr3a_prediction_gate_passed": False,
++                    "fr3b_model_contribution_gate_passed": False, "fr3b_pd_reference_gate_passed": False,
++                    "fr3_free_root_mechanism_validation": False, **FLAGS}}
+--- scripts\develop_free_root_pair.py
++++ external\fr3_candidate\develop_full_request_pair.py
+@@ -1,7 +1,7 @@
+-"""First FR1 prediction / FR2 control entry, blocked until the protocol is pinned.
++"""First FR3A prediction / FR3B control entry, blocked until the protocol is pinned.
+ 
+ Only standard-library source and new-gate validation precedes production imports.
+-This candidate is not a runnable published recipe. No import-time experiment,
++This candidate requires root publication and a final protocol pin. No import-time experiment,
+ retry, previous Z snapshot loading, gain search or fixture execution is provided.
+ The parent launcher must retain the first process stdout, stderr and exit status.
+ """
+@@ -24,18 +24,18 @@
+ import zipfile
+ 
+ 
+-SOURCE_PATH = "scripts/develop_free_root_pair.py"
+-MODULE_PATH = "src/developmental_physics/free_root_pair_development.py"
+-PROTOCOL_PATH = "docs/FREE_ROOT_LEARNING_PROTOCOL.md"
++SOURCE_PATH = "scripts/develop_full_request_pair.py"
++MODULE_PATH = "src/developmental_physics/full_request_pair_development.py"
++PROTOCOL_PATH = "docs/FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md"
+ ENGINEERING_PROTOCOL_PATH = "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md"
+-PROTOCOL_PIN = {'bytes': 19264, 'sha256': 'fe03ecea8ddfdab709a0f636d85d4260989cf0839f6738f2ee8697351e776066'}
++PROTOCOL_PIN = {"bytes": 11925, "sha256": "66f095e2def118719556e167201ae8c6e5ed8fbbc2a08d176863daaddd321031"}
+ ENGINEERING_PROTOCOL_PIN = {
+     "bytes": 9189,
+     "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86",
+ }
+ FR0_RAW = "results/cpu_validation/2026-10-12_free_root_fast_feedback_engineering/raw"
+ FR0_SOURCE_COMMIT = "e5466d326773c9565aa98f0e7063314a32eba5d4"
+-FR1_RAW = "results/cpu_validation/2026-10-12_free_root_pair_prediction/raw"
++FR3A_RAW = "results/cpu_validation/2026-10-12_full_request_pair_prediction/raw"
+ FR0_REQUIRED_DEPENDENCIES = (
+     "scripts/validate_free_root_fast_feedback_engineering.py",
+     "src/developmental_physics/free_root_fast_feedback_environment.py",
+@@ -55,9 +55,10 @@
+     "src/developmental_physics/local_model.py",
+     "src/developmental_physics/fast_feedback_pair_mpc.py",
+     "src/developmental_physics/batched_fast_feedback_pair_mpc.py",
++    "src/developmental_physics/full_request_pair_mpc.py",
+     "src/developmental_physics/fast_feedback_pair_development.py",
+ )
+-SEEDS = [7901, 7902, 7903]
++SEEDS = [8001, 8002, 8003]
+ FLAGS = {
+     "scientific_adoption": False,
+     "old_free_root_C4_validation": False,
+@@ -66,8 +67,8 @@
+     "c4_contact_scientific_validation": False,
+ }
+ GATE_FLAGS = (
+-    "fr1_prediction_gate_passed", "fr2_model_contribution_gate_passed",
+-    "fr2_pd_reference_gate_passed", "free_root_mechanism_validation",
++    "fr3a_prediction_gate_passed", "fr3b_model_contribution_gate_passed",
++    "fr3b_pd_reference_gate_passed", "fr3_free_root_mechanism_validation",
+ )
+ 
+ 
+@@ -205,7 +206,7 @@
+         raise ValueError("original_free_root_no_mount_FR0_required")
+ 
+ 
+-def _require_fr1_trial(trial, seed, kind, active_count, files):
++def _require_fr3a_trial(trial, seed, kind, active_count, files):
+     expected = 1000 + active_count
+     support = trial.get("support", {})
+     if (trial.get("seed") != seed or trial.get("kind") != kind
+@@ -219,14 +220,14 @@
+             or trial.get("installed_xml_identity") != files["src/developmental_physics/assets/ground_body.xml"]
+             or support.get("root") != "original_asset_freejoint" or support.get("mount") is not None
+             or support.get("external_support") is not False or support.get("initial_pose") != "supine"):
+-        raise ValueError("complete_new_FR1_native_contact_domain_trial_required:" + kind)
++        raise ValueError("complete_new_FR3A_native_contact_domain_trial_required:" + kind)
+     contact = trial.get("contact_population", {})
+     phases = contact.get("phases", {})
+     if (contact.get("qualification_passed") is not True
+             or contact.get("no_contact_based_training_selection") is not True
+             or contact.get("contact_causality_or_continuous_support_demonstrated") is not False
+             or set(phases) != {"prefix", "active"}):
+-        raise ValueError("complete_FR1_contact_population_metadata_required:" + kind)
++        raise ValueError("complete_FR3A_contact_population_metadata_required:" + kind)
+     for name, planned in (("prefix", 1000), ("active", active_count)):
+         phase = phases[name]
+         positive = phase.get("classes", {}).get("left_arm", {}).get("positive_contact_endpoint_count")
+@@ -235,30 +236,30 @@
+                 or phase.get("observed_contact_endpoints") != planned
+                 or phase.get("unknown_paid_contact_substeps") != 0
+                 or type(positive) is not int or not 1 <= positive <= planned):
+-            raise ValueError("all_complete_FR1_contact_phases_required:" + kind + ":" + name)
++            raise ValueError("all_complete_FR3A_contact_phases_required:" + kind + ":" + name)
+     effort = trial.get("actual_effort", {})
+     if any(effort.get(name, {}).get("complete") is not True
+            or effort[name].get("actual_effort_population_complete") is not True
+            or effort[name].get("unknown_actual_effort_substeps") != 0 for name in ("prefix", "active")):
+-        raise ValueError("complete_FR1_known_actual_effort_population_required:" + kind)
+-
+-
+-def _require_fr1(loaded, manifest, files):
++        raise ValueError("complete_FR3A_known_actual_effort_population_required:" + kind)
++
++
++def _require_fr3a(loaded, manifest, files):
+     run, metrics, models = loaded["run.json"], loaded["metrics.json"], loaded["models.json"]
+     source, cost = run.get("source", {}), run.get("cost", {})
+-    if (run.get("experiment_id") != "FR1" or manifest.get("experiment_id") != "FR1"
++    if (run.get("experiment_id") != "FR3A" or manifest.get("experiment_id") != "FR3A"
+             or run.get("stage") != "prediction" or manifest.get("stage") != "prediction"
+             or set(source.get("files", {})) != set(files)
+             or any(source["files"][name] != files[name] for name in files)):
+-        raise ValueError("all_new_FR1_frozen_dependencies_required_for_FR2")
+-    if (run.get("seeds") != SEEDS or metrics.get("fr1_prediction_gate_passed") is not True
++        raise ValueError("all_new_FR3A_frozen_dependencies_required_for_FR3B")
++    if (run.get("seeds") != SEEDS or metrics.get("fr3a_prediction_gate_passed") is not True
+             or metrics.get("complete_population") is not True
+             or cost.get("control_call_returns") != 21000 or cost.get("confirmed_physics_substeps") != 21000
+             or cost.get("RLS_vector_update_commits") != 12000
+             or cost.get("RLS_scalar_update_commits") != 24000
+             or run.get("unattempted_seeds") != []
+             or set(models) != {str(seed) for seed in SEEDS}):
+-        raise ValueError("complete_new_FR1_prediction_gate_and_three_snapshots_required")
++        raise ValueError("complete_new_FR3A_prediction_gate_and_three_snapshots_required")
+     rows = run.get("seed_results", [])
+     if (len(rows) != 3 or {row.get("seed") for row in rows} != set(SEEDS)
+             or any(row.get("calibration", {}).get("complete") is not True
+@@ -267,42 +268,42 @@
+                    or row.get("prediction", {}).get("stop") is not None
+                    or row.get("calibration", {}).get("failure") is not None
+                    or row.get("prediction", {}).get("failure") is not None for row in rows)):
+-        raise ValueError("complete_FR1_calibration_prediction_installations_required")
++        raise ValueError("complete_FR3A_calibration_prediction_installations_required")
+     if len(run.get("trials", [])) != 6:
+-        raise ValueError("six_complete_FR1_trials_required")
++        raise ValueError("six_complete_FR3A_trials_required")
+     trial_ids = set()
+     for row in rows:
+         for kind, active_count in (("calibration", 4000), ("prediction", 1000)):
+             trial = row[kind]
+-            _require_fr1_trial(trial, row["seed"], kind, active_count, files)
+-            if not isinstance(trial.get("trial_id"), str) or trial["trial_id"] in trial_ids:
+-                raise ValueError("unique_FR1_trial_id_required")
++            _require_fr3a_trial(trial, row["seed"], kind, active_count, files)
++            if trial.get("trial_id") != f"FR3_{row['seed']}_{kind}" or trial["trial_id"] in trial_ids:
++                raise ValueError("unique_FR3A_trial_id_required")
+             trial_ids.add(trial["trial_id"])
+         score = row.get("prediction_scores", {})
+         if (score.get("complete_population") is not True
+                 or score.get("native_execution_complete") is not True
+                 or score.get("free_root_domain_qualification_passed") is not True):
+-            raise ValueError("FR1_score_complete_domain_metadata_required")
++            raise ValueError("FR3A_score_complete_domain_metadata_required")
+     if {trial.get("trial_id") for trial in run["trials"]} != trial_ids:
+-        raise ValueError("FR1_trial_matrix_and_seed_installations_differ")
++        raise ValueError("FR3A_trial_matrix_and_seed_installations_differ")
+     by_id = {trial["trial_id"]: trial for trial in run["trials"]}
+     if any(by_id[row[kind]["trial_id"]] != row[kind]
+            for row in rows for kind in ("calibration", "prediction")):
+-        raise ValueError("FR1_saved_trial_matrix_payload_differs")
++        raise ValueError("FR3A_saved_trial_matrix_payload_differs")
+     for snapshots in models.values():
+         if set(snapshots) != {"cold", "learned"}:
+-            raise ValueError("both_exact_new_FR1_frozen_models_required")
++            raise ValueError("both_exact_new_FR3A_frozen_models_required")
+         if (snapshots["cold"].get("vector_update_count") != 0
+                 or snapshots["learned"].get("vector_update_count") != 4000
+                 or any(snapshot.get("trainable") is not False for snapshot in snapshots.values())):
+-            raise ValueError("new_FR1_zero_and_4000_atomic_frozen_counts_required")
+-    if any(metrics.get(key) is not False for key in GATE_FLAGS if key != "fr1_prediction_gate_passed"):
+-        raise ValueError("FR1_prediction_cannot_predeclare_control_mechanism_success")
++            raise ValueError("new_FR3A_zero_and_4000_atomic_frozen_counts_required")
++    if any(metrics.get(key) is not False for key in GATE_FLAGS if key != "fr3a_prediction_gate_passed"):
++        raise ValueError("FR3A_prediction_cannot_predeclare_control_mechanism_success")
+ 
+ 
+ def read_gate(repo, relative, cost, files, runtime, *, stage):
+-    """Read only first FR0 evidence, or new FR1 snapshots; never Z results."""
+-    fixed = FR0_RAW if stage == "FR0" else FR1_RAW if stage == "FR1" else None
++    """Read only first FR0 evidence, or new FR3A snapshots; never Z results."""
++    fixed = FR0_RAW if stage == "FR0" else FR3A_RAW if stage == "FR3A" else None
+     if fixed is None or relative != fixed:
+         raise ValueError("fixed_new_FR_gate_path_required")
+     raw = (repo / relative).resolve()
+@@ -313,7 +314,7 @@
+     cost["gate_json_parses"] += 1
+     binding = {"relative_raw_path": relative, "manifest": identity(data), "files": {}}
+     loaded = {}
+-    for name in ("run.json", "metrics.json", *(("models.json",) if stage == "FR1" else ())):
++    for name in ("run.json", "metrics.json", *(("models.json",) if stage == "FR3A" else ())):
+         data = read_bytes(raw / name, cost, "gate")
+         pin = identity(data)
+         binding["files"][name] = pin
+@@ -334,8 +335,8 @@
+         _require_fr0(loaded, manifest, files)
+     else:
+         if run.get("failure") is not None:
+-            raise ValueError("new_FR1_failure_cannot_release_control")
+-        _require_fr1(loaded, manifest, files)
++            raise ValueError("new_FR3A_failure_cannot_release_control")
++        _require_fr3a(loaded, manifest, files)
+     binding.update(source_commit=source["commit"], gate_stage=stage, verified=True)
+     return loaded, binding
+ 
+@@ -376,13 +377,13 @@
+         runtime.update(numpy=importlib.metadata.version("numpy"), mujoco=importlib.metadata.version("mujoco"))
+         execution_phase = "FR0_gate_validation"
+         _, bindings["FR0"] = read_gate(repo, FR0_RAW, cost, files, runtime, stage="FR0")
+-        saved_fr1 = None
++        saved_fr3a = None
+         if args.stage == "control":
+-            execution_phase = "FR1_gate_validation"
+-            saved_fr1, bindings["FR1"] = read_gate(repo, FR1_RAW, cost, files, runtime, stage="FR1")
++            execution_phase = "FR3A_gate_validation"
++            saved_fr3a, bindings["FR3A"] = read_gate(repo, FR3A_RAW, cost, files, runtime, stage="FR3A")
+         execution_phase = "production_import"
+         sys.path.insert(0, str(repo / "src"))
+-        from developmental_physics import free_root_pair_development as production
++        from developmental_physics import full_request_pair_development as production
+         if Path(production.__file__).resolve() != (repo / MODULE_PATH).resolve():
+             raise ValueError("exact_new_FR_production_module_required")
+         if production.FLAGS != FLAGS or list(production.SEEDS) != SEEDS:
+@@ -406,7 +407,7 @@
+         if args.stage == "prediction":
+             production.run_prediction(result)
+         else:
+-            production.run_control(result, saved_fr1["models.json"], saved_fr1["run.json"]["seed_results"])
++            production.run_control(result, saved_fr3a["models.json"], saved_fr3a["run.json"]["seed_results"])
+         failures = [trial.get("failure") for trial in result["trials"] if trial.get("failure")]
+         if failures:
+             collector_failure = {"type": "CollectedTrialFailure", "trial_failures": failures}
+@@ -445,7 +446,7 @@
+                 "RLS_scalar_commits": 24000, "independent_prediction_pairs": 124680} if args.stage == "prediction" else
+                {"control_calls": 36000, "physics_substeps": 36000, "MPC_decisions": 1200,
+                 "planning_prediction_pairs": 14580000, "conditional_prediction_pairs": 526560})
+-    experiment = "FR1" if args.stage == "prediction" else "FR2"
++    experiment = "FR3A" if args.stage == "prediction" else "FR3B"
+     run = {
+         "experiment_id": experiment, "stage": args.stage, "status": status, "seeds": SEEDS,
+         "source": {"commit": args.source_commit, "files": files, "clean_committed_bytes_verified": verified},

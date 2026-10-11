@@ -1,0 +1,135 @@
+{
+  "files_before_manifest": {
+    "external_originals/check_full_request_mapping_once.py": {
+      "bytes": 13432,
+      "sha256": "6b08cc4e180c033d39a9a8f4ebaaf16f6c1bda51d306263594eed254e2d1b45a"
+    },
+    "external_originals/collector_runner_derivation.diff": {
+      "bytes": 22137,
+      "sha256": "81f7043708ed08cfd6013c741091a2be0d777692d6e1548551704b9b4168e406"
+    },
+    "external_originals/collector_runner_first_preparation_failure.json": {
+      "bytes": 785,
+      "sha256": "f2f3a6e6ea52765ff44091f31a015e6836e2cd9d795efa5c00569cec5457e47c"
+    },
+    "external_originals/collector_runner_preparation_receipt.json": {
+      "bytes": 6034,
+      "sha256": "f352f338cb834d922a993393dbf00c6cf5e13abc16762aca0f09a816276ceb79"
+    },
+    "external_originals/controller_preparation.json": {
+      "bytes": 2976,
+      "sha256": "fecd56c64264386177f1c9e4f7f52fb85ea645748e772133a12e2ff20308be46"
+    },
+    "external_originals/develop_full_request_pair.py": {
+      "bytes": 28486,
+      "sha256": "b274fdd03194c12bd4035b73313076bd6d8db6ae9cf3ec9290fd040a41e58a91"
+    },
+    "external_originals/full_request_pair_development.py": {
+      "bytes": 56026,
+      "sha256": "eb76b2100dc04bcec6230a076312a689bb132b1c462a3c2098a981e790c32cd9"
+    },
+    "external_originals/full_request_pair_mpc.py": {
+      "bytes": 24672,
+      "sha256": "7d364c819e464beb1375158df7a6e78ee17a4e71986e6afa59fb492c39257e55"
+    },
+    "external_originals/SCHEMA_PLAN.md": {
+      "bytes": 5323,
+      "sha256": "154839c9023d64a1b6424eb8c9fba8dde8dc5e7a56332a5fe6709020f4037fde"
+    },
+    "first_mapping_contract/contract.json": {
+      "bytes": 528671,
+      "sha256": "b1cb5c32f01412be3378121612599828e9e801414073e5da5f84420c037c49c1"
+    },
+    "first_mapping_contract/first_execution_receipt.json": {
+      "bytes": 689,
+      "sha256": "8ff66503498d9220b03f39fd766932519e1cd339b8a945246bd780164242255b"
+    },
+    "first_mapping_contract/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "first_mapping_contract/stdout.log": {
+      "bytes": 654,
+      "sha256": "2f1a1b5eff6a7620c2c03fd3b71bae7dd98932d372f084dce42e32e9fd558ba1"
+    },
+    "root_sources/fr3_seed_qualification.json": {
+      "bytes": 429,
+      "sha256": "a530652ead841365a689cae0e264985983d32b6e907af131a0a877a504d44a6a"
+    },
+    "root_sources/fr3_control_design.md": {
+      "bytes": 9343,
+      "sha256": "26c7ca2eed8bdc763243cb750068dc2aa646fbcedb6070c2558a14efd55bbf16"
+    },
+    "root_sources/run_fr3_mapping_first_once.py": {
+      "bytes": 1444,
+      "sha256": "f2af74554aa8f664baaae3b75392cec74b6b17a5ffdd898122a0c9f653331728"
+    },
+    "root_sources/run_fr3_first_once.py": {
+      "bytes": 1762,
+      "sha256": "b42c61a3e57645d96378bbf839c3f4bb528e01de648f222e28e5e3605a26b795"
+    },
+    "root_sources/archive_fr3_first_once.py": {
+      "bytes": 3094,
+      "sha256": "58ccd0868198e095eb6227b4e844186b565bc7da585c961824b5483d93e06793"
+    },
+    "root_sources/publish_fr3_preparation_once.py": {
+      "bytes": 6573,
+      "sha256": "0cf43f30eef69425aa0b1c5de110c1c737a50025ef2b37442b91624fd92c7952"
+    },
+    "protocol.md": {
+      "bytes": 11925,
+      "sha256": "66f095e2def118719556e167201ae8c6e5ed8fbbc2a08d176863daaddd321031"
+    },
+    "static_review.json": {
+      "bytes": 314,
+      "sha256": "f8510daad2222a9dca094bd67677fe110a69f543a31acb159efd97fd5fe3f097"
+    },
+    "publication.json": {
+      "bytes": 1463,
+      "sha256": "21ecdc8050d672efdba772a02c609acd8597708adee1f058f60c9a65a8cfb9c1"
+    },
+    "navigation_checks.json": {
+      "bytes": 1212,
+      "sha256": "14a398156a59aeadca6959ab769509a434d70940a95dd6823469abcbfd02235b"
+    }
+  },
+  "published": {
+    "src/developmental_physics/full_request_pair_mpc.py": {
+      "original": {
+        "bytes": 24672,
+        "sha256": "7d364c819e464beb1375158df7a6e78ee17a4e71986e6afa59fb492c39257e55"
+      },
+      "published": {
+        "bytes": 24672,
+        "sha256": "7d364c819e464beb1375158df7a6e78ee17a4e71986e6afa59fb492c39257e55"
+      },
+      "AST_equal": true
+    },
+    "src/developmental_physics/full_request_pair_development.py": {
+      "original": {
+        "bytes": 56026,
+        "sha256": "eb76b2100dc04bcec6230a076312a689bb132b1c462a3c2098a981e790c32cd9"
+      },
+      "published": {
+        "bytes": 56026,
+        "sha256": "eb76b2100dc04bcec6230a076312a689bb132b1c462a3c2098a981e790c32cd9"
+      },
+      "AST_equal": true
+    },
+    "scripts/develop_full_request_pair.py": {
+      "original": {
+        "bytes": 28486,
+        "sha256": "b274fdd03194c12bd4035b73313076bd6d8db6ae9cf3ec9290fd040a41e58a91"
+      },
+      "published": {
+        "bytes": 28486,
+        "sha256": "b274fdd03194c12bd4035b73313076bd6d8db6ae9cf3ec9290fd040a41e58a91"
+      },
+      "AST_equal": true
+    }
+  },
+  "first_mapping_contract": "passed",
+  "scientific_adoption": false,
+  "new_physics": 0,
+  "continuous_goal_stays_active": true
+}

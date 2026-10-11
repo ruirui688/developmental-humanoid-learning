@@ -1,0 +1,17 @@
+{
+  "phase": "source_AST_receipt_helper",
+  "type": "TypeError",
+  "message": "'list' object is not callable",
+  "cause": "The local GateNamespace visitor wrote node.values() instead of the ast.Dict node.values list.",
+  "candidate_sources_changed_by_failure": false,
+  "candidate_sources_AST_parsed": 2,
+  "reference_sources_AST_parsed": 2,
+  "CountedGuardModel_AST_identical_before_helper_failure": true,
+  "eighteen_preserved_function_AST_comparisons_passed_before_helper_failure": true,
+  "gate_AST_normalization_completed": false,
+  "candidate_imports": 0,
+  "candidate_executions": 0,
+  "raw_or_model_parameter_reads": 0,
+  "physics_calls": 0,
+  "repair_scope": "Correct only the local source-review helper expression; repeat source AST preparation and preserve this receipt."
+}

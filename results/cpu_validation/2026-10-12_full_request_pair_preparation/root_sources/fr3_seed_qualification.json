@@ -1,0 +1,10 @@
+{
+  "seeds": [8001, 8002, 8003],
+  "search": "rg -n '\\b(8001|8002|8003)\\b' AGENTS.md README.md docs scripts src tests paper pyproject.toml",
+  "source_commit": "824d4a2cdc73894341b4a2bcdc6bebeac41d9c16",
+  "first_search_exit_code": 1,
+  "matches": 0,
+  "scope": "public source and documents only; raw and nonpublic seed history unsearched",
+  "bank_is_development_not_final_holdout": true,
+  "seed_search_or_scan_retries": 0
+}

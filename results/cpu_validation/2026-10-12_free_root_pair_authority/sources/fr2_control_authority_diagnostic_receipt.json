@@ -1,0 +1,72 @@
+{
+  "status": "FR2_static_control_analysis_and_single_pass_diagnostic_design_not_executed",
+  "files": {
+    "external/fr2_control_authority_diagnostic_draft.md": {
+      "bytes": 6093,
+      "sha256": "6cf6cfaa36b1d3bae63adcabd8a5f0aa0cfc6cd2e5bd62988e7681c2083809f7"
+    },
+    "src/developmental_physics/fast_feedback_pair_mpc.py": {
+      "bytes": 9551,
+      "sha256": "5a7d9d978de755c83023974628eb1891aa76f0e44a71a1454c6e676aacaa71f4"
+    },
+    "src/developmental_physics/free_root_pair_development.py": {
+      "bytes": 55672,
+      "sha256": "baccf91a05e7b5bf55024ac96c717872d8624d3e17d49a74c35d12a6f93a0a8b"
+    },
+    "scripts/develop_free_root_pair.py": {
+      "bytes": 28333,
+      "sha256": "0a62bfc0fce14892ce0042b27702fd81707881b30724b6c2d76c5cdfe3681537"
+    },
+    "src/developmental_physics/local_model.py": {
+      "bytes": 16564,
+      "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+    }
+  },
+  "explicit_pin_read_calls": 5,
+  "explicit_pin_read_bytes": 116110,
+  "earlier_static_source_review_IO": "rg/Get-Content source and filename enumeration; not fully byte-measured, not zero",
+  "reviewer": {
+    "task": "residual_authority_review",
+    "scope": "static control math only; no results/parameters/execute",
+    "coarse_grid_suggestion_adopted": false,
+    "reason": "root forbids changing grids/weights this turn"
+  },
+  "diagnostic_inputs_planned": [
+    "new_FR2_manifest",
+    "new_FR2_run_control_summary",
+    "new_FR2_trace.jsonl.gz"
+  ],
+  "diagnostic_input_passes_per_file": 1,
+  "diagnostic_upper_bounds": {
+    "trace_rows": 36000,
+    "active_origins": 24000,
+    "cold_learned_decisions": 1200,
+    "candidate_records": 97200
+  },
+  "all_2000_origin_qv_domain_summary": "copy saved derived counts/fractions; no calibration replay or origin selection",
+  "diagnostic_implementation_written": false,
+  "diagnostic_executed": false,
+  "CPU_pruning_candidate_or_new_check_implemented": false,
+  "raw_or_saved_model_parameter_reads": 0,
+  "model_fit_or_physical_calls": 0,
+  "old_checks_or_math_executed": false,
+  "production_writes": 0,
+  "commits_or_pushes": 0,
+  "scientific_gate_changed": false,
+  "grid_or_weights_changed": false,
+  "automatic_retry": false,
+  "next_branch_owner": "root after first FR2 result; no success/failure prediction",
+  "limits": [
+    "PD saturation/request effect/qv-domain/fallback are descriptive, not causal.",
+    "Missing saved PD during fallback remains unavailable; no zero fill or PD replay.",
+    "Per-axis calibration min/max coverage is not joint/contact/dynamic prediction validity.",
+    "CPU cost-bound concept cannot increase control-model contribution and changes unresolved candidate-record semantics; no implementation this turn."
+  ],
+  "wall_seconds_before_receipt_write": 0.0006492999382317066,
+  "cpu_seconds_before_receipt_write": 0.0,
+  "final_source_edit": "Clarified q/v domain remains saved whole-2000 summary; no A/B domain recomputation.",
+  "additional_receipt_update_reads": {
+    "calls": 2,
+    "bytes": 9020
+  }
+}

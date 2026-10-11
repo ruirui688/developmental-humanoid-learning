@@ -1,0 +1,4423 @@
+{
+  "status": "saved_FR2_described",
+  "failures": [],
+  "matrix": [
+    {
+      "trial_id": "FR_7901_control_cold",
+      "seed": 7901,
+      "method": "cold",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            1995,
+            1995
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.9975,
+            0.9975
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            213,
+            140
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.1065,
+            0.07
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              221,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.221,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.221,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              169,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.169,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.169,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.10549053948894926,
+              0.1221875
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.01950946051105073,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                10
+              ],
+              "nonzero_delta_zero_effect": [
+                145,
+                0
+              ],
+              "effect_with_delta": [
+                855,
+                990
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                319,
+                294
+              ],
+              "effect_against_PD": [
+                536,
+                696
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                183,
+                259
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 1,
+              "45": 21,
+              "54": 2,
+              "72": 2,
+              "81": 73,
+              "63": 1
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 8100
+            },
+            "selected_residual_known": 100,
+            "selected_zero_counts_axis": [
+              0,
+              1
+            ],
+            "selected_boundary_counts_axis": [
+              100,
+              96
+            ]
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 990,
+            "missing_observed_origins": 10,
+            "counts_axis": [
+              226,
+              13
+            ],
+            "fractions_of_known_axis": [
+              0.22828282828282828,
+              0.013131313131313131
+            ],
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": 10,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              186,
+              13
+            ],
+            "fractions_of_known_axis": [
+              0.186,
+              0.013
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.186,
+              0.013
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 10,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 990,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.1035666813652551,
+              0.12152777777777778
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.021433318634744902,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                20
+              ],
+              "nonzero_delta_zero_effect": [
+                154,
+                0
+              ],
+              "effect_with_delta": [
+                836,
+                970
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                347,
+                284
+              ],
+              "effect_against_PD": [
+                489,
+                686
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                117,
+                269
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 1,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              0,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 2,
+              "45": 22,
+              "54": 2,
+              "63": 2,
+              "81": 71,
+              "72": 1
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 7965,
+              "forecast_position_bounds": 135
+            },
+            "selected_residual_known": 99,
+            "selected_zero_counts_axis": [
+              0,
+              2
+            ],
+            "selected_boundary_counts_axis": [
+              99,
+              95
+            ]
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1990,
+            "missing_observed_origins": 10,
+            "counts_axis": [
+              447,
+              21
+            ],
+            "fractions_of_known_axis": [
+              0.22462311557788944,
+              0.010552763819095477
+            ],
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": 10,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              355,
+              21
+            ],
+            "fractions_of_known_axis": [
+              0.1775,
+              0.0105
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.1775,
+              0.0105
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 2000,
+            "true_origins": 10,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1990,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.10453344424148332,
+              0.12185929648241206
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.020466555758516667,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                30
+              ],
+              "nonzero_delta_zero_effect": [
+                299,
+                0
+              ],
+              "effect_with_delta": [
+                1691,
+                1960
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                666,
+                578
+              ],
+              "effect_against_PD": [
+                1025,
+                1382
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                300,
+                528
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 200,
+            "returned_decisions": 200,
+            "fallback_known": 200,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 1,
+            "saved_feasible_count_known": 200,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              0,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 3,
+              "45": 43,
+              "54": 4,
+              "72": 3,
+              "81": 144,
+              "63": 3
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 16200,
+            "candidate_records_observed": 16200,
+            "rejection_reasons": {
+              "feasible_record": 16065,
+              "forecast_position_bounds": 135
+            },
+            "selected_residual_known": 199,
+            "selected_zero_counts_axis": [
+              0,
+              3
+            ],
+            "selected_boundary_counts_axis": [
+              199,
+              191
+            ]
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7901_control_learned",
+      "seed": 7901,
+      "method": "learned",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            1995,
+            1995
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.9975,
+            0.9975
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            190,
+            133
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.095,
+            0.0665
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              170,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.17,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.17,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              203,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.203,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.203,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.08817206289794706,
+              0.12375
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.023390437102052936,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                10
+              ],
+              "nonzero_delta_zero_effect": [
+                170,
+                0
+              ],
+              "effect_with_delta": [
+                830,
+                990
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                539,
+                544
+              ],
+              "effect_against_PD": [
+                291,
+                446
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                291,
+                246
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 1,
+              "45": 16,
+              "54": 1,
+              "63": 1,
+              "72": 2,
+              "81": 79
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 8100
+            },
+            "selected_residual_known": 100,
+            "selected_zero_counts_axis": [
+              0,
+              1
+            ],
+            "selected_boundary_counts_axis": [
+              81,
+              99
+            ]
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              189,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.189,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.189,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              228,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.228,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.228,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.09840050150361651,
+              0.12375
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.125
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.02597449849638348,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                10
+              ],
+              "nonzero_delta_zero_effect": [
+                189,
+                0
+              ],
+              "effect_with_delta": [
+                811,
+                990
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                500,
+                475
+              ],
+              "effect_against_PD": [
+                311,
+                515
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                311,
+                301
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 1,
+              "45": 19,
+              "63": 1,
+              "54": 1,
+              "81": 77,
+              "72": 1
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 8100
+            },
+            "selected_residual_known": 100,
+            "selected_zero_counts_axis": [
+              0,
+              1
+            ],
+            "selected_boundary_counts_axis": [
+              98,
+              99
+            ]
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              359,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.1795,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.1795,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              431,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.2155,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.2155,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 2000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 2000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.09328628220078176,
+              0.12375
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.024682467799218216,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                20
+              ],
+              "nonzero_delta_zero_effect": [
+                359,
+                0
+              ],
+              "effect_with_delta": [
+                1641,
+                1980
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                1039,
+                1019
+              ],
+              "effect_against_PD": [
+                602,
+                961
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                602,
+                547
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 200,
+            "returned_decisions": 200,
+            "fallback_known": 200,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 200,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 2,
+              "45": 35,
+              "54": 2,
+              "63": 2,
+              "72": 3,
+              "81": 156
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 16200,
+            "candidate_records_observed": 16200,
+            "rejection_reasons": {
+              "feasible_record": 16200
+            },
+            "selected_residual_known": 200,
+            "selected_zero_counts_axis": [
+              0,
+              2
+            ],
+            "selected_boundary_counts_axis": [
+              179,
+              198
+            ]
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7901_control_pd",
+      "seed": 7901,
+      "method": "pd",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            1995,
+            1995
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.9975,
+            0.9975
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            187,
+            129
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0935,
+            0.0645
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              185,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.185,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.185,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              185,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.185,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.185,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              184,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.184,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.184,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              184,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.184,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.184,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              369,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.1845,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.1845,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              369,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.1845,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.1845,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7901_control_zero",
+      "seed": 7901,
+      "method": "zero",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            420,
+            0
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.21,
+            0.0
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            0,
+            0
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0,
+            0.0
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": false,
+            "known_origins": null,
+            "missing_observed_origins": null,
+            "counts_axis": null,
+            "fractions_of_known_axis": null,
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": null,
+            "missing_other": null
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              0,
+              0
+            ],
+            "fractions_of_known_axis": [
+              0.0,
+              0.0
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": false,
+            "known_origins": null,
+            "missing_observed_origins": null,
+            "counts_axis": null,
+            "fractions_of_known_axis": null,
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": null,
+            "missing_other": null
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              0,
+              0
+            ],
+            "fractions_of_known_axis": [
+              0.0,
+              0.0
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": false,
+            "known_origins": null,
+            "missing_observed_origins": null,
+            "counts_axis": null,
+            "fractions_of_known_axis": null,
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": null,
+            "missing_other": null
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              0,
+              0
+            ],
+            "fractions_of_known_axis": [
+              0.0,
+              0.0
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7902_control_cold",
+      "seed": 7902,
+      "method": "cold",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            1995,
+            1995
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.9975,
+            0.9975
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            213,
+            140
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.1065,
+            0.07
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              224,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.224,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.224,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              170,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.17,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.17,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.10529107114845628,
+              0.1225
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.019708928851543753,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                10
+              ],
+              "nonzero_delta_zero_effect": [
+                147,
+                0
+              ],
+              "effect_with_delta": [
+                853,
+                990
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                321,
+                293
+              ],
+              "effect_against_PD": [
+                532,
+                697
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                173,
+                261
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 1,
+              "45": 22,
+              "63": 2,
+              "81": 72,
+              "54": 1,
+              "72": 2
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 8100
+            },
+            "selected_residual_known": 100,
+            "selected_zero_counts_axis": [
+              0,
+              1
+            ],
+            "selected_boundary_counts_axis": [
+              100,
+              97
+            ]
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 990,
+            "missing_observed_origins": 10,
+            "counts_axis": [
+              247,
+              13
+            ],
+            "fractions_of_known_axis": [
+              0.2494949494949495,
+              0.013131313131313131
+            ],
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": 10,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              195,
+              13
+            ],
+            "fractions_of_known_axis": [
+              0.195,
+              0.013
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.195,
+              0.013
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 10,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 990,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.1023445113693165,
+              0.12121212121212122
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.022655488630683514,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                30
+              ],
+              "nonzero_delta_zero_effect": [
+                165,
+                0
+              ],
+              "effect_with_delta": [
+                825,
+                960
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                351,
+                270
+              ],
+              "effect_against_PD": [
+                474,
+                690
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                80,
+                266
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 1,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              0,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 2,
+              "45": 24,
+              "54": 2,
+              "63": 2,
+              "72": 3,
+              "81": 67
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 7974,
+              "forecast_position_bounds": 126
+            },
+            "selected_residual_known": 99,
+            "selected_zero_counts_axis": [
+              0,
+              3
+            ],
+            "selected_boundary_counts_axis": [
+              99,
+              96
+            ]
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1990,
+            "missing_observed_origins": 10,
+            "counts_axis": [
+              471,
+              21
+            ],
+            "fractions_of_known_axis": [
+              0.23668341708542714,
+              0.010552763819095477
+            ],
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": 10,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              365,
+              21
+            ],
+            "fractions_of_known_axis": [
+              0.1825,
+              0.0105
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.1825,
+              0.0105
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 2000,
+            "true_origins": 10,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1990,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.10382519467541688,
+              0.12185929648241206
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.021174805324583136,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                40
+              ],
+              "nonzero_delta_zero_effect": [
+                312,
+                0
+              ],
+              "effect_with_delta": [
+                1678,
+                1950
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                672,
+                563
+              ],
+              "effect_against_PD": [
+                1006,
+                1387
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                253,
+                527
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 200,
+            "returned_decisions": 200,
+            "fallback_known": 200,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 1,
+            "saved_feasible_count_known": 200,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              0,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 3,
+              "45": 46,
+              "63": 4,
+              "81": 139,
+              "54": 3,
+              "72": 5
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 16200,
+            "candidate_records_observed": 16200,
+            "rejection_reasons": {
+              "feasible_record": 16074,
+              "forecast_position_bounds": 126
+            },
+            "selected_residual_known": 199,
+            "selected_zero_counts_axis": [
+              0,
+              4
+            ],
+            "selected_boundary_counts_axis": [
+              199,
+              193
+            ]
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7902_control_learned",
+      "seed": 7902,
+      "method": "learned",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            1995,
+            1995
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.9975,
+            0.9975
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            189,
+            133
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0945,
+            0.0665
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              172,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.172,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.172,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              207,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.207,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.207,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.0885224251962239,
+              0.12375
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.023665074803776075,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                10
+              ],
+              "nonzero_delta_zero_effect": [
+                172,
+                0
+              ],
+              "effect_with_delta": [
+                828,
+                990
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                563,
+                536
+              ],
+              "effect_against_PD": [
+                265,
+                454
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                265,
+                249
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 1,
+              "45": 16,
+              "54": 1,
+              "63": 1,
+              "72": 2,
+              "81": 79
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 8100
+            },
+            "selected_residual_known": 100,
+            "selected_zero_counts_axis": [
+              0,
+              1
+            ],
+            "selected_boundary_counts_axis": [
+              82,
+              99
+            ]
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              198,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.198,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.198,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              239,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.239,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.239,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.09767132327162248,
+              0.12375
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.125
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.02732867672837752,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                10
+              ],
+              "nonzero_delta_zero_effect": [
+                198,
+                0
+              ],
+              "effect_with_delta": [
+                802,
+                990
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                525,
+                449
+              ],
+              "effect_against_PD": [
+                277,
+                541
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                277,
+                323
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 1,
+              "45": 20,
+              "54": 1,
+              "72": 2,
+              "63": 1,
+              "81": 75
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 8100
+            },
+            "selected_residual_known": 100,
+            "selected_zero_counts_axis": [
+              0,
+              1
+            ],
+            "selected_boundary_counts_axis": [
+              100,
+              99
+            ]
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              370,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.185,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.185,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              446,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.223,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.223,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 2000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 2000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.0930968742339232,
+              0.12375
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.02549687576607679,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                20
+              ],
+              "nonzero_delta_zero_effect": [
+                370,
+                0
+              ],
+              "effect_with_delta": [
+                1630,
+                1980
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                1088,
+                985
+              ],
+              "effect_against_PD": [
+                542,
+                995
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                542,
+                572
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 200,
+            "returned_decisions": 200,
+            "fallback_known": 200,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 200,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 2,
+              "45": 36,
+              "54": 2,
+              "63": 2,
+              "72": 4,
+              "81": 154
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 16200,
+            "candidate_records_observed": 16200,
+            "rejection_reasons": {
+              "feasible_record": 16200
+            },
+            "selected_residual_known": 200,
+            "selected_zero_counts_axis": [
+              0,
+              2
+            ],
+            "selected_boundary_counts_axis": [
+              182,
+              198
+            ]
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7902_control_pd",
+      "seed": 7902,
+      "method": "pd",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            1995,
+            1995
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.9975,
+            0.9975
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            185,
+            129
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0925,
+            0.0645
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              186,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.186,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.186,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              186,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.186,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.186,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              198,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.198,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.198,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              198,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.198,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.198,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              384,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.192,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.192,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              384,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.192,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.192,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7902_control_zero",
+      "seed": 7902,
+      "method": "zero",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            0,
+            0
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0,
+            0.0
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            0,
+            0
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0,
+            0.0
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": false,
+            "known_origins": null,
+            "missing_observed_origins": null,
+            "counts_axis": null,
+            "fractions_of_known_axis": null,
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": null,
+            "missing_other": null
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              0,
+              0
+            ],
+            "fractions_of_known_axis": [
+              0.0,
+              0.0
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": false,
+            "known_origins": null,
+            "missing_observed_origins": null,
+            "counts_axis": null,
+            "fractions_of_known_axis": null,
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": null,
+            "missing_other": null
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              0,
+              0
+            ],
+            "fractions_of_known_axis": [
+              0.0,
+              0.0
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": false,
+            "known_origins": null,
+            "missing_observed_origins": null,
+            "counts_axis": null,
+            "fractions_of_known_axis": null,
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": null,
+            "missing_other": null
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              0,
+              0
+            ],
+            "fractions_of_known_axis": [
+              0.0,
+              0.0
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7903_control_cold",
+      "seed": 7903,
+      "method": "cold",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            1995,
+            1995
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.9975,
+            0.9975
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            211,
+            140
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.1055,
+            0.07
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              225,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.225,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.225,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              170,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.17,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.17,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.10512659300380132,
+              0.1225
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.01987340699619868,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                10
+              ],
+              "nonzero_delta_zero_effect": [
+                148,
+                0
+              ],
+              "effect_with_delta": [
+                852,
+                990
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                323,
+                288
+              ],
+              "effect_against_PD": [
+                529,
+                702
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                167,
+                266
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 1,
+              "45": 22,
+              "63": 2,
+              "81": 72,
+              "54": 1,
+              "72": 2
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 8100
+            },
+            "selected_residual_known": 100,
+            "selected_zero_counts_axis": [
+              0,
+              1
+            ],
+            "selected_boundary_counts_axis": [
+              100,
+              97
+            ]
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 990,
+            "missing_observed_origins": 10,
+            "counts_axis": [
+              253,
+              13
+            ],
+            "fractions_of_known_axis": [
+              0.25555555555555554,
+              0.013131313131313131
+            ],
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": 10,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              202,
+              13
+            ],
+            "fractions_of_known_axis": [
+              0.202,
+              0.013
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.202,
+              0.013
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 10,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 990,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.1016240025257924,
+              0.12121212121212122
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.023060340908551028,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                30
+              ],
+              "nonzero_delta_zero_effect": [
+                167,
+                0
+              ],
+              "effect_with_delta": [
+                823,
+                960
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                356,
+                267
+              ],
+              "effect_against_PD": [
+                467,
+                693
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                65,
+                267
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 1,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              0,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 2,
+              "45": 25,
+              "63": 3,
+              "72": 2,
+              "81": 67,
+              "54": 1
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 7974,
+              "forecast_position_bounds": 126
+            },
+            "selected_residual_known": 99,
+            "selected_zero_counts_axis": [
+              0,
+              3
+            ],
+            "selected_boundary_counts_axis": [
+              98,
+              96
+            ]
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1990,
+            "missing_observed_origins": 10,
+            "counts_axis": [
+              478,
+              21
+            ],
+            "fractions_of_known_axis": [
+              0.24020100502512562,
+              0.010552763819095477
+            ],
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": 10,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              372,
+              21
+            ],
+            "fractions_of_known_axis": [
+              0.186,
+              0.0105
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.186,
+              0.0105
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 2000,
+            "true_origins": 10,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1990,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.10338409824338482,
+              0.12185929648241206
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.021458866580735782,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                40
+              ],
+              "nonzero_delta_zero_effect": [
+                315,
+                0
+              ],
+              "effect_with_delta": [
+                1675,
+                1950
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                679,
+                555
+              ],
+              "effect_against_PD": [
+                996,
+                1395
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                232,
+                533
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 200,
+            "returned_decisions": 200,
+            "fallback_known": 200,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 1,
+            "saved_feasible_count_known": 200,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              0,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 3,
+              "45": 47,
+              "63": 5,
+              "81": 139,
+              "54": 2,
+              "72": 4
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 16200,
+            "candidate_records_observed": 16200,
+            "rejection_reasons": {
+              "feasible_record": 16074,
+              "forecast_position_bounds": 126
+            },
+            "selected_residual_known": 199,
+            "selected_zero_counts_axis": [
+              0,
+              4
+            ],
+            "selected_boundary_counts_axis": [
+              198,
+              193
+            ]
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7903_control_learned",
+      "seed": 7903,
+      "method": "learned",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            1995,
+            1995
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.9975,
+            0.9975
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            189,
+            133
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0945,
+            0.0665
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              171,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.171,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.171,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              206,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.206,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.206,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.08885088415916659,
+              0.12375
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.023649115840833415,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                10
+              ],
+              "nonzero_delta_zero_effect": [
+                171,
+                0
+              ],
+              "effect_with_delta": [
+                829,
+                990
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                561,
+                535
+              ],
+              "effect_against_PD": [
+                268,
+                455
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                268,
+                251
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 1,
+              "45": 17,
+              "54": 1,
+              "72": 2,
+              "81": 79
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 8100
+            },
+            "selected_residual_known": 100,
+            "selected_zero_counts_axis": [
+              0,
+              1
+            ],
+            "selected_boundary_counts_axis": [
+              82,
+              99
+            ]
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              201,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.201,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.201,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              243,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.243,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.243,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 1000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 1000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.09703277168545527,
+              0.12375
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.125
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.02796722831454474,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                10
+              ],
+              "nonzero_delta_zero_effect": [
+                201,
+                0
+              ],
+              "effect_with_delta": [
+                799,
+                990
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                536,
+                437
+              ],
+              "effect_against_PD": [
+                263,
+                553
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                263,
+                332
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 100,
+            "returned_decisions": 100,
+            "fallback_known": 100,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 100,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 1,
+              "45": 19,
+              "54": 1,
+              "63": 1,
+              "72": 2,
+              "81": 76
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 8100,
+            "candidate_records_observed": 8100,
+            "rejection_reasons": {
+              "feasible_record": 8100
+            },
+            "selected_residual_known": 100,
+            "selected_zero_counts_axis": [
+              0,
+              1
+            ],
+            "selected_boundary_counts_axis": [
+              100,
+              99
+            ]
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              372,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.186,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.186,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              449,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.2245,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.2245,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": true,
+            "known_origins": 2000,
+            "true_origins": 0,
+            "unknown_observed_origins": 0
+          },
+          "residual_effect": {
+            "applicable": true,
+            "known_nonfallback_origins": 2000,
+            "missing_nonfallback_fields": 0,
+            "mean_absolute_effect_axis_nm": [
+              0.09294182792231093,
+              0.12375
+            ],
+            "maximum_absolute_effect_axis_nm": [
+              0.12500000000000003,
+              0.12500000000000003
+            ],
+            "mean_final_clip_loss_axis_nm": [
+              0.02580817207768908,
+              0.0
+            ],
+            "direction_counts_axis": {
+              "delta_zero": [
+                0,
+                20
+              ],
+              "nonzero_delta_zero_effect": [
+                372,
+                0
+              ],
+              "effect_with_delta": [
+                1628,
+                1980
+              ],
+              "effect_against_delta": [
+                0,
+                0
+              ],
+              "effect_with_PD": [
+                1097,
+                972
+              ],
+              "effect_against_PD": [
+                531,
+                1008
+              ],
+              "nonzero_effect_PD_zero": [
+                0,
+                0
+              ],
+              "final_request_opposes_PD": [
+                531,
+                583
+              ]
+            }
+          },
+          "macro": {
+            "applicable": true,
+            "planned_decisions": 200,
+            "returned_decisions": 200,
+            "fallback_known": 200,
+            "unreturned_or_unattempted_decisions": 0,
+            "fallback_true": 0,
+            "saved_feasible_count_known": 200,
+            "fallback_unknown_returned_decisions": 0,
+            "saved_feasible_count_min_max": [
+              81,
+              81
+            ],
+            "unique_first_request_count_histogram": {
+              "25": 2,
+              "45": 36,
+              "54": 2,
+              "72": 4,
+              "81": 155,
+              "63": 1
+            },
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": 16200,
+            "candidate_records_observed": 16200,
+            "rejection_reasons": {
+              "feasible_record": 16200
+            },
+            "selected_residual_known": 200,
+            "selected_zero_counts_axis": [
+              0,
+              2
+            ],
+            "selected_boundary_counts_axis": [
+              182,
+              198
+            ]
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7903_control_pd",
+      "seed": 7903,
+      "method": "pd",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            1995,
+            1995
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.9975,
+            0.9975
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            185,
+            129
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0925,
+            0.0645
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              187,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.187,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.187,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              187,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.187,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.187,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              201,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.201,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.201,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              201,
+              8
+            ],
+            "fractions_of_known_axis": [
+              0.201,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.201,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              388,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.194,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.194,
+              0.008
+            ],
+            "missing_fallback": 0,
+            "missing_other": 0
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              388,
+              16
+            ],
+            "fractions_of_known_axis": [
+              0.194,
+              0.008
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.194,
+              0.008
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "FR_7903_control_zero",
+      "seed": 7903,
+      "method": "zero",
+      "summary_available": true,
+      "saved_status": "completed",
+      "saved_complete": true,
+      "saved_stop": null,
+      "saved_failure": null,
+      "prefix_rows": 1000,
+      "qv_whole_2000_saved_summary_transcribed": {
+        "q2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            0,
+            0
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0,
+            0.0
+          ],
+          "not_used_to_select_origins_or_train": true
+        },
+        "v2": {
+          "planned_origins": 2000,
+          "paid_origin_records": 2000,
+          "known_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "outside_axis_counts": [
+            0,
+            0
+          ],
+          "outside_axis_fractions_of_full_population": [
+            0.0,
+            0.0
+          ],
+          "not_used_to_select_origins_or_train": true
+        }
+      },
+      "phases": {
+        "A": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": false,
+            "known_origins": null,
+            "missing_observed_origins": null,
+            "counts_axis": null,
+            "fractions_of_known_axis": null,
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": null,
+            "missing_other": null
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              0,
+              0
+            ],
+            "fractions_of_known_axis": [
+              0.0,
+              0.0
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "B": {
+          "planned_origins": 1000,
+          "observed_origins": 1000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 1000,
+          "paid_count_known_origins": 1000,
+          "confirmed_substeps_transcribed": 1000,
+          "saved_PD": {
+            "applicable": false,
+            "known_origins": null,
+            "missing_observed_origins": null,
+            "counts_axis": null,
+            "fractions_of_known_axis": null,
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": null,
+            "missing_other": null
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 1000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              0,
+              0
+            ],
+            "fractions_of_known_axis": [
+              0.0,
+              0.0
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        },
+        "full": {
+          "planned_origins": 2000,
+          "observed_origins": 2000,
+          "unknown_or_unattempted_origins": 0,
+          "whole_trial_complete": true,
+          "native_endpoints": 2000,
+          "paid_count_known_origins": 2000,
+          "confirmed_substeps_transcribed": 2000,
+          "saved_PD": {
+            "applicable": false,
+            "known_origins": null,
+            "missing_observed_origins": null,
+            "counts_axis": null,
+            "fractions_of_known_axis": null,
+            "fractions_of_full_planned_phase_axis": null,
+            "missing_fallback": null,
+            "missing_other": null
+          },
+          "final_requested_torque": {
+            "applicable": true,
+            "known_origins": 2000,
+            "missing_observed_origins": 0,
+            "counts_axis": [
+              0,
+              0
+            ],
+            "fractions_of_known_axis": [
+              0.0,
+              0.0
+            ],
+            "fractions_of_full_planned_phase_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "fallback": {
+            "applicable": false,
+            "known_origins": null,
+            "true_origins": null,
+            "unknown_observed_origins": null
+          },
+          "residual_effect": {
+            "applicable": false,
+            "known_nonfallback_origins": null,
+            "missing_nonfallback_fields": null,
+            "mean_absolute_effect_axis_nm": null,
+            "maximum_absolute_effect_axis_nm": null,
+            "mean_final_clip_loss_axis_nm": null,
+            "direction_counts_axis": null
+          },
+          "macro": {
+            "applicable": false,
+            "planned_decisions": 0,
+            "returned_decisions": 0,
+            "fallback_known": null,
+            "unreturned_or_unattempted_decisions": null,
+            "fallback_true": null,
+            "saved_feasible_count_known": 0,
+            "fallback_unknown_returned_decisions": null,
+            "saved_feasible_count_min_max": null,
+            "unique_first_request_count_histogram": {},
+            "unique_first_request_count_unknown_decisions": 0,
+            "planned_candidate_records": null,
+            "candidate_records_observed": 0,
+            "rejection_reasons": {},
+            "selected_residual_known": 0,
+            "selected_zero_counts_axis": null,
+            "selected_boundary_counts_axis": null
+          }
+        }
+      }
+    }
+  ],
+  "input_identities": {
+    "manifest.json": {
+      "bytes": 3141,
+      "sha256": "3ba28616bcb1c4bfaf8404b091436a89c652eae221c458e5d1d0fd6b7c6d9ae3"
+    },
+    "run.json": {
+      "bytes": 2543134,
+      "sha256": "d0b1e577317e25c59d08bac693e78d71b102aa5f4f3df5f0d592284abc46b337"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 49819123,
+      "sha256": "7787dba5e3d196f9d81675793e697e4274303a4cb20bf2ed1f5f0d61df4df1a0"
+    }
+  },
+  "explicit_file_read_attempts": 3,
+  "explicit_file_read_names": [
+    "manifest.json",
+    "run.json",
+    "trace.jsonl.gz"
+  ],
+  "explicit_file_reads": 3,
+  "failed_IO_partial_bytes": "unknown_if_IO_exception_not_zero",
+  "explicit_input_bytes_read": 52365398,
+  "trace_rows_decoded": 36000,
+  "saved_macro_decisions_projected": 1200,
+  "candidate_records_projected": 97200,
+  "scope": "fixed 12 trials; A[0,999]/B[1000,1999]/full[0,1999]; qv summary full2000 only",
+  "model_parameter_prediction_journal_or_source_ZIP_reads": 0,
+  "model_PD_replay_fit_physics_calls": 0,
+  "RMSE_effort_contact_or_scientific_gate_recomputed": false,
+  "partial_subset_ranking": false,
+  "causal_inference": false,
+  "same_first_request_proves_whole_path_equivalence": false,
+  "automatic_retry": false,
+  "saved_scientific_flags": {
+    "scientific_adoption": false,
+    "old_free_root_C4_validation": false,
+    "c4_scientific_validation": false,
+    "c4_contact_scientific_validation": false,
+    "c5_scientific_dependency_released": false
+  },
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "wall_seconds_before_output": 7.549043400213122,
+  "cpu_seconds_before_output": 7.46875
+}

@@ -1,6 +1,10 @@
 # 开发进度与仓库检查点
 
-## 当前入口：FR2首次完整匹配控制结果
+## 当前入口：FR3完整首请求网格准备与首次执行
+
+[FR3完整首请求网格协议](FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md)已与新scalar/batch、collector/runner一并准备；首次新参数化契约672项通过，48,762pair/97,524scalar前向、0物理/fit/RLS。固定开发seed8001/8002/8003，先原配方FR3A辨识/独立预测，全门通过才执行已冻FR3B；旧FR2失败保留，原20%/5%/努力门不改。最终±.5Nm、首10微步反馈/140PD尾保留；新delta可达±1、网格变粗且一般无purePD候选为新增先验。C4及C5–C7仍未验收，持续目标active，提交推送后立即首次执行。
+
+## 历史：FR2首次完整匹配控制结果
 
 [FR2首次自由root匹配控制](FREE_ROOT_PAIR_CONTROL_RESULTS.md)从cleanf9a0e00保存状态completed，本域原控制门未全部通过；实际新增36,000控制/36,000子步，0更新。原模型贡献门false、强PD available=false/passed=false；首新保存核验passed、77,669项/0失败。全部12计划组、停止/努力及六种自身来源×两模型×五时距完整保留。累计373,297/2,652,970，online70,452+offline7,200=77,652scalar；C4最终新留出及C5–C7未验收。关闭本冻结候选的成功依赖，不补跑或放宽门；依据本次完整保存证据做一次有界判断，再确定独立下一项。 提交推送后继续active目标。
 
