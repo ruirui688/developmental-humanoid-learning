@@ -1,0 +1,100 @@
+{
+  "status": "failed",
+  "source": {
+    "status": "synthetic_source_only"
+  },
+  "requested_source_commit": "0000000000000000000000000000000000000000",
+  "original_source_commits": {
+    "C": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+    "D": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "K": "b46c6d37fddc8e6534384168fb76663bc2c5236c"
+  },
+  "inputs": {},
+  "inputs_without_returned_read_record": {
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/manifest.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/metadata.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/manifest.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/manifest.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/diagnostics.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/manifest.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/run.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/parameters.json": "unknown_before_input_record_returned"
+  },
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "original_C_dependencies": {
+    "synthetic": true
+  },
+  "source_active_counts": {
+    "seed0_prediction": 100,
+    "seed1_prediction": 100,
+    "seed2_prediction": 100
+  },
+  "baseline_restorations": {
+    "K22": [],
+    "D11": []
+  },
+  "K22_fingerprints_before": {
+    "0": "synthetic_frozen_K",
+    "1": "synthetic_frozen_K",
+    "2": "synthetic_frozen_K"
+  },
+  "K22_fingerprints_after": "unknown_before_verifier_returned",
+  "D11_fingerprints_before": {
+    "0": "synthetic_frozen_D",
+    "1": "synthetic_frozen_D",
+    "2": "synthetic_frozen_D"
+  },
+  "D11_fingerprints_after": "unknown_before_verifier_returned",
+  "cost": {
+    "fit_attempts": 1,
+    "fit_returns": 0,
+    "fit_failures": 1,
+    "fit_scalar_labels_requested": 8800,
+    "fit_scalar_labels_returned": 8800,
+    "fit_shared_29x29_22rhs_solve_attempts": 1,
+    "fit_shared_29x29_22rhs_solve_returns": 0,
+    "fit_shared_29x29_22rhs_solve_failures": 1,
+    "transition_scalar_coefficients_fitted": 0,
+    "transition_heads_published": 0,
+    "scale_estimation_attempts": 1,
+    "scale_estimation_returns": 1,
+    "K22_restoration_attempts": 0,
+    "K22_restoration_returns": 0,
+    "D11_restoration_attempts": 0,
+    "D11_restoration_returns": 0,
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "K22_refits": 0,
+    "D11_updates": 0,
+    "scale_input_scalar_uses_requested": 11600,
+    "scale_input_scalar_uses_returned": 11600,
+    "scale_output_scalars": 29,
+    "normalized_design_scalar_divisions_requested": 11600,
+    "normalized_design_scalar_divisions": 11600,
+    "fit_gram_matrix_attempts": 1,
+    "fit_logical_multiply_requests": 591600,
+    "fit_logical_add_requests": 590121,
+    "fit_gram_matrix_returns": 1,
+    "fit_cross_matrix_attempts": 1,
+    "fit_cross_matrix_returns": 1,
+    "wall_seconds": 0.035490799928084016,
+    "cpu_seconds": 0.0
+  },
+  "failure": {
+    "type": "LinAlgError",
+    "message": "synthetic solve failure",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\external\\c4_scaled_native_staging\\develop_guard_scaled_native_transition.py\", line 373, in main_run\n    weights[seed] = fit_scaled(core, saved[\"phi\"], saved[\"delta\"], cost, record[\"fit\"])\n  File \"D:\\Python3.10\\lib\\unittest\\mock.py\", line 1114, in __call__\n    return self._mock_call(*args, **kwargs)\n  File \"D:\\Python3.10\\lib\\unittest\\mock.py\", line 1118, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n  File \"D:\\Python3.10\\lib\\unittest\\mock.py\", line 1179, in _execute_mock_call\n    result = effect(*args, **kwargs)\n  File \"D:\\Codex_ws\\robot_rl\\external\\c4_scaled_native_staging\\check_scaled_native_transition.py\", line 145, in journaled_fit\n    return original_fit(helper, design, labels, counter, record)\n  File \"D:\\Codex_ws\\robot_rl\\external\\c4_scaled_native_staging\\develop_guard_scaled_native_transition.py\", line 286, in fit_scaled\n    normalized_weights = np.linalg.solve(normal, cross)\n  File \"D:\\Python3.10\\lib\\unittest\\mock.py\", line 1114, in __call__\n    return self._mock_call(*args, **kwargs)\n  File \"D:\\Python3.10\\lib\\unittest\\mock.py\", line 1118, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n  File \"D:\\Python3.10\\lib\\unittest\\mock.py\", line 1173, in _execute_mock_call\n    raise effect\nnumpy.linalg.LinAlgError: synthetic solve failure\n"
+  },
+  "development_gate_passed": false,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "timing_excludes": "final output serialization and write"
+}

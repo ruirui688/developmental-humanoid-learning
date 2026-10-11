@@ -39,6 +39,8 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 [M固定设计诊断](docs/GUARD_DESIGN_GEOMETRY_DIAGNOSTIC_RESULTS.md)已从clean4d10eac首次完成：六套资格通过、18SVD/36matmul返回、14项输出契约零失败。K全seed四个关注输出shrink大于floor，L则floor大于shrink；所有设计rank29、上下文rank25、条件动作rank4。满秩/训练floor不证明泛化或动作因果，L条件能量比例低但绝对能量及均方更高。新增66,000原生标签/12,000命令响应离线投影估计，另66,000归档ridge前向输出，0新物理/RLS。旧预测门不改，不进控制；接着依据收缩证据冻结单个尺度/正则候选，不扫描lambda/增数据，不自动执行旧位置—速度proposal。
 
+当前正在准备N单一输入RMS尺度ridge：原C400/phi29/x22、prior及旧K/D两预测门保持，未中心化列RMS>0且finite，否则直接失败；不floor/drop/search。K保存W/D snapshot只恢复不fit，全部22输出闭合，新fit26,400标签/3solve/1,914系数、0新物理。静态审查、新合成及canonical冻结后首次执行；开发未过不进入控制，通过后仍需新留出与匹配完整控制。阶段提交后直接继续active目标。
+
 新物理必须先冻结任务、信息、权限、完整优先门、seed和预算，从干净提交首次执行一次；保留停止前付费交互和负结果，不补跑到成功、不放宽旧门。不能拿部分RMSE排名、不用较少步骤当作停止轨迹的效率优势，也不能用“零停止”证明安全。所有方法共享相同目标、最终权限、停止与实际努力分母。
 
 当前模型只消费原生关节q/v、已知请求及连续过去端点；previous_v不得跨trial或补零，不得读未来实际力矩。D sparse11仅恢复其冻结snapshot，G不重拟合。PD64/(0,4)及其旧增益开发费用明确披露，预测尾只用当前目标，无切换预览。接触力、动能、真实动力学和root quaternion只作离线诊断，不进入部署模型；当前native没有orientation。

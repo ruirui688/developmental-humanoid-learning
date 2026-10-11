@@ -1,0 +1,85 @@
+{
+  "status": "failed",
+  "source": {
+    "status": "synthetic_source_only"
+  },
+  "requested_source_commit": "0000000000000000000000000000000000000000",
+  "original_source_commits": {
+    "C": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+    "D": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "K": "b46c6d37fddc8e6534384168fb76663bc2c5236c"
+  },
+  "inputs": {},
+  "inputs_without_returned_read_record": {
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/manifest.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/metadata.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/manifest.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/manifest.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/diagnostics.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/manifest.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/run.json": "unknown_before_input_record_returned",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/parameters.json": "unknown_before_input_record_returned"
+  },
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "original_C_dependencies": {
+    "synthetic": true
+  },
+  "source_active_counts": {},
+  "baseline_restorations": {
+    "K22": [],
+    "D11": []
+  },
+  "K22_fingerprints_before": {
+    "0": "synthetic_frozen_K",
+    "1": "synthetic_frozen_K",
+    "2": "synthetic_frozen_K"
+  },
+  "K22_fingerprints_after": "unknown_before_verifier_returned",
+  "D11_fingerprints_before": {
+    "0": "synthetic_frozen_D",
+    "1": "synthetic_frozen_D",
+    "2": "synthetic_frozen_D"
+  },
+  "D11_fingerprints_after": "unknown_before_verifier_returned",
+  "cost": {
+    "fit_attempts": 0,
+    "fit_returns": 0,
+    "fit_failures": 0,
+    "fit_scalar_labels_requested": 0,
+    "fit_scalar_labels_returned": 0,
+    "fit_shared_29x29_22rhs_solve_attempts": 0,
+    "fit_shared_29x29_22rhs_solve_returns": 0,
+    "fit_shared_29x29_22rhs_solve_failures": 0,
+    "transition_scalar_coefficients_fitted": 0,
+    "transition_heads_published": 0,
+    "scale_estimation_attempts": 0,
+    "scale_estimation_returns": 0,
+    "K22_restoration_attempts": 0,
+    "K22_restoration_returns": 0,
+    "D11_restoration_attempts": 0,
+    "D11_restoration_returns": 0,
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "K22_refits": 0,
+    "D11_updates": 0,
+    "wall_seconds": 0.0003863999154418707,
+    "cpu_seconds": 0.0
+  },
+  "failure": {
+    "type": "KeyError",
+    "message": "'results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz'",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\external\\c4_scaled_native_staging\\develop_guard_scaled_native_transition.py\", line 358, in main_run\n    trials, counts = parse_prediction(core, blobs[f\"{C_ROOT}/trace.jsonl.gz\"], cost)\nKeyError: 'results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz'\n"
+  },
+  "development_gate_passed": false,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "timing_excludes": "final output serialization and write"
+}

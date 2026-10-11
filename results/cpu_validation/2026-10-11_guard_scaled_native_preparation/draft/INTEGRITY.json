@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "files": {
+    "CHECK_01.execution.json": {
+      "bytes": 569,
+      "sha256": "8e6887c129c1cafa5c765805c0ad2548f9670f9225ee01f1aaa31ebf267aa04d"
+    },
+    "CHECK_01.fixtures/solve_failure/failure.json": {
+      "bytes": 3638,
+      "sha256": "c090dc74da9ce67e7e8ae2fbbb3d1d5096c2fb4fab88ab2cf63544ed15d701d2"
+    },
+    "CHECK_01.fixtures/solve_failure/manifest.json": {
+      "bytes": 759,
+      "sha256": "9855890133a2180fb618f6ee1fb76ceec275661810f758c47d0f887257a03f83"
+    },
+    "CHECK_01.fixtures/solve_failure/metrics.json": {
+      "bytes": 220,
+      "sha256": "8e0efd9e4552a6b15d820a6ea2c9472747a611203558b76444d437e807b88248"
+    },
+    "CHECK_01.fixtures/solve_failure/parameters.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "CHECK_01.fixtures/solve_failure/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "CHECK_01.fixtures/solve_failure/run.json": {
+      "bytes": 3638,
+      "sha256": "c090dc74da9ce67e7e8ae2fbbb3d1d5096c2fb4fab88ab2cf63544ed15d701d2"
+    },
+    "CHECK_01.json": {
+      "bytes": 8946,
+      "sha256": "10a123d37b4a6b29f9a7cca7facd5468562d8efc8449a64a4280da410cef8ac5"
+    },
+    "CHECK_01.source/check_scaled_native_transition.py": {
+      "bytes": 11602,
+      "sha256": "ed435129afa901ce6ac0e4d3c3ba9c4e63b2c6e462dae8ff2172f60c3db68b53"
+    },
+    "CHECK_01.source/develop_guard_scaled_native_transition.py": {
+      "bytes": 27537,
+      "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+    },
+    "CHECK_01.source/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 4870,
+      "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+    },
+    "CHECK_01.source/manifest.json": {
+      "bytes": 567,
+      "sha256": "6e285c6255f21291f0003e54af725ff3fb89191be026ee193c05bff41a3dd2d8"
+    },
+    "CHECK_01.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "CHECK_01.stdout.txt": {
+      "bytes": 1318,
+      "sha256": "9aa92b5c32862741482f2d35ba89f7a31d4fc935288feb0847b7944e163c36ee"
+    },
+    "CHECK_02.execution.json": {
+      "bytes": 675,
+      "sha256": "254104872084f34e80a19e43e3c73d4828c921e1b27240959d37abe76563234a"
+    },
+    "CHECK_02.fixtures/solve_failure/failure.json": {
+      "bytes": 5242,
+      "sha256": "e0bf476c17392e35eb2c7d4c4333179561db14c4ccc7a79436c20ace6a3b2ba3"
+    },
+    "CHECK_02.fixtures/solve_failure/manifest.json": {
+      "bytes": 764,
+      "sha256": "c2e8f33a2b5f08f3f2267a92813169f4792440eff126d74ca93fe76b673f0370"
+    },
+    "CHECK_02.fixtures/solve_failure/metrics.json": {
+      "bytes": 220,
+      "sha256": "8e0efd9e4552a6b15d820a6ea2c9472747a611203558b76444d437e807b88248"
+    },
+    "CHECK_02.fixtures/solve_failure/parameters.json": {
+      "bytes": 441310,
+      "sha256": "ff6bd71302dcfb1756a3fe01e0f38f514e3cddba7718211dee629e3601077908"
+    },
+    "CHECK_02.fixtures/solve_failure/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "CHECK_02.fixtures/solve_failure/run.json": {
+      "bytes": 5242,
+      "sha256": "e0bf476c17392e35eb2c7d4c4333179561db14c4ccc7a79436c20ace6a3b2ba3"
+    },
+    "CHECK_02.json": {
+      "bytes": 4266,
+      "sha256": "c2e6796a4853e9226cd0cad8b11a49fa293162b4624bb886e79becbb349fe420"
+    },
+    "CHECK_02.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "CHECK_02.stdout.txt": {
+      "bytes": 1545,
+      "sha256": "b094ff3940c1cdd67977ae4bc4216260e0f4ee2da6edcfbe4f71328f79af19ea"
+    },
+    "check_scaled_native_transition.py": {
+      "bytes": 11638,
+      "sha256": "e92d8701822c03c0be8a426425d93fc096bffffa004247b3a3214bdf26685b1e"
+    },
+    "develop_guard_scaled_native_transition.py": {
+      "bytes": 27537,
+      "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+    },
+    "GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 4870,
+      "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+    }
+  },
+  "first_check_passed": false,
+  "all_four_cases_covered_after_fixture_only_supplement": true,
+  "previous_three_passed_cases_repeated": false,
+  "first_fixture_failure": {
+    "type": "KeyError",
+    "message": "'results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz'",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\external\\c4_scaled_native_staging\\develop_guard_scaled_native_transition.py\", line 358, in main_run\n    trials, counts = parse_prediction(core, blobs[f\"{C_ROOT}/trace.jsonl.gz\"], cost)\nKeyError: 'results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz'\n"
+  },
+  "first_fixture_cost": {
+    "fit_attempts": 0,
+    "fit_returns": 0,
+    "fit_failures": 0,
+    "fit_scalar_labels_requested": 0,
+    "fit_scalar_labels_returned": 0,
+    "fit_shared_29x29_22rhs_solve_attempts": 0,
+    "fit_shared_29x29_22rhs_solve_returns": 0,
+    "fit_shared_29x29_22rhs_solve_failures": 0,
+    "transition_scalar_coefficients_fitted": 0,
+    "transition_heads_published": 0,
+    "scale_estimation_attempts": 0,
+    "scale_estimation_returns": 0,
+    "K22_restoration_attempts": 0,
+    "K22_restoration_returns": 0,
+    "D11_restoration_attempts": 0,
+    "D11_restoration_returns": 0,
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "K22_refits": 0,
+    "D11_updates": 0,
+    "wall_seconds": 0.0003863999154418707,
+    "cpu_seconds": 0.0
+  },
+  "check_cost_records": {
+    "CHECK_01": {
+      "wall_seconds_before_serialization": 0.10799019993282855,
+      "cpu_seconds_before_serialization": 0.015625,
+      "cases": [
+        {
+          "case": "scale_equivalence",
+          "status": "passed",
+          "detail": {
+            "cost": {
+              "fit_attempts": 1,
+              "scale_estimation_attempts": 1,
+              "scale_input_scalar_uses_requested": 11600,
+              "scale_estimation_returns": 1,
+              "scale_input_scalar_uses_returned": 11600,
+              "scale_output_scalars": 29,
+              "normalized_design_scalar_divisions_requested": 11600,
+              "normalized_design_scalar_divisions": 11600,
+              "fit_gram_matrix_attempts": 1,
+              "fit_logical_multiply_requests": 591600,
+              "fit_logical_add_requests": 590121,
+              "fit_gram_matrix_returns": 1,
+              "fit_scalar_labels_requested": 8800,
+              "fit_cross_matrix_attempts": 1,
+              "fit_cross_matrix_returns": 1,
+              "fit_scalar_labels_returned": 8800,
+              "fit_shared_29x29_22rhs_solve_attempts": 1,
+              "fit_shared_29x29_22rhs_solve_returns": 1,
+              "raw_weight_scalar_divisions_requested": 638,
+              "raw_weight_scalar_divisions": 638,
+              "transition_scalar_coefficients_fitted": 638,
+              "transition_heads_published": 22,
+              "fit_returns": 1
+            },
+            "reference_cost": {
+              "matrix_attempts": 2,
+              "matrix_returns": 2,
+              "scalar_labels_requested": 8800,
+              "scalar_labels_returned": 8800,
+              "solve_attempts": 1,
+              "solve_returns": 1,
+              "scalar_coefficients_estimated": 638
+            },
+            "new_N_solve_returns": 1,
+            "forward_vector_products": 2,
+            "forward_output_scalars": 44
+          },
+          "journal": {
+            "cost": {
+              "fit_attempts": 1,
+              "scale_estimation_attempts": 1,
+              "scale_input_scalar_uses_requested": 11600,
+              "scale_estimation_returns": 1,
+              "scale_input_scalar_uses_returned": 11600,
+              "scale_output_scalars": 29,
+              "normalized_design_scalar_divisions_requested": 11600,
+              "normalized_design_scalar_divisions": 11600,
+              "fit_gram_matrix_attempts": 1,
+              "fit_logical_multiply_requests": 591600,
+              "fit_logical_add_requests": 590121,
+              "fit_gram_matrix_returns": 1,
+              "fit_scalar_labels_requested": 8800,
+              "fit_cross_matrix_attempts": 1,
+              "fit_cross_matrix_returns": 1,
+              "fit_scalar_labels_returned": 8800,
+              "fit_shared_29x29_22rhs_solve_attempts": 1,
+              "fit_shared_29x29_22rhs_solve_returns": 1,
+              "raw_weight_scalar_divisions_requested": 638,
+              "raw_weight_scalar_divisions": 638,
+              "transition_scalar_coefficients_fitted": 638,
+              "transition_heads_published": 22,
+              "fit_returns": 1
+            },
+            "function_returned": true,
+            "reference_cost": {
+              "matrix_attempts": 2,
+              "matrix_returns": 2,
+              "scalar_labels_requested": 8800,
+              "scalar_labels_returned": 8800,
+              "solve_attempts": 1,
+              "solve_returns": 1,
+              "scalar_coefficients_estimated": 638
+            },
+            "forward_vector_products_requested": 2,
+            "forward_vector_products_returned": 2,
+            "forward_output_scalars_returned": 44
+          }
+        },
+        {
+          "case": "zero_rejection",
+          "status": "passed",
+          "detail": {
+            "cost": {
+              "fit_attempts": 1,
+              "scale_estimation_attempts": 1,
+              "scale_input_scalar_uses_requested": 11600,
+              "scale_estimation_returns": 1,
+              "scale_input_scalar_uses_returned": 11600,
+              "scale_output_scalars": 29,
+              "scale_validation_failures": 1,
+              "fit_failures": 1
+            },
+            "zero_column": 3,
+            "new_N_solve_returns": 0
+          },
+          "journal": {
+            "cost": {
+              "fit_attempts": 1,
+              "scale_estimation_attempts": 1,
+              "scale_input_scalar_uses_requested": 11600,
+              "scale_estimation_returns": 1,
+              "scale_input_scalar_uses_returned": 11600,
+              "scale_output_scalars": 29,
+              "scale_validation_failures": 1,
+              "fit_failures": 1
+            },
+            "function_returned": true
+          }
+        },
+        {
+          "case": "near_zero_risk",
+          "status": "passed",
+          "detail": {
+            "cost": {
+              "fit_attempts": 1,
+              "scale_estimation_attempts": 1,
+              "scale_input_scalar_uses_requested": 11600,
+              "scale_estimation_returns": 1,
+              "scale_input_scalar_uses_returned": 11600,
+              "scale_output_scalars": 29,
+              "normalized_design_scalar_divisions_requested": 11600,
+              "normalized_design_scalar_divisions": 11600,
+              "fit_gram_matrix_attempts": 1,
+              "fit_logical_multiply_requests": 591600,
+              "fit_logical_add_requests": 590121,
+              "fit_gram_matrix_returns": 1,
+              "fit_scalar_labels_requested": 8800,
+              "fit_cross_matrix_attempts": 1,
+              "fit_cross_matrix_returns": 1,
+              "fit_scalar_labels_returned": 8800,
+              "fit_shared_29x29_22rhs_solve_attempts": 1,
+              "fit_shared_29x29_22rhs_solve_returns": 1,
+              "raw_weight_scalar_divisions_requested": 638,
+              "raw_weight_scalar_divisions": 638,
+              "transition_scalar_coefficients_fitted": 638,
+              "transition_heads_published": 22,
+              "fit_returns": 1
+            },
+            "tiny_scale": 9.698381605283033e-13,
+            "raw_coefficient_output9": 999973579328.8757,
+            "output9_change_for_raw_1e_minus8": 9999.735793288757,
+            "new_N_solve_returns": 1,
+            "sensitivity_scalar_multiplications": 22
+          },
+          "journal": {
+            "cost": {
+              "fit_attempts": 1,
+              "scale_estimation_attempts": 1,
+              "scale_input_scalar_uses_requested": 11600,
+              "scale_estimation_returns": 1,
+              "scale_input_scalar_uses_returned": 11600,
+              "scale_output_scalars": 29,
+              "normalized_design_scalar_divisions_requested": 11600,
+              "normalized_design_scalar_divisions": 11600,
+              "fit_gram_matrix_attempts": 1,
+              "fit_logical_multiply_requests": 591600,
+              "fit_logical_add_requests": 590121,
+              "fit_gram_matrix_returns": 1,
+              "fit_scalar_labels_requested": 8800,
+              "fit_cross_matrix_attempts": 1,
+              "fit_cross_matrix_returns": 1,
+              "fit_scalar_labels_returned": 8800,
+              "fit_shared_29x29_22rhs_solve_attempts": 1,
+              "fit_shared_29x29_22rhs_solve_returns": 1,
+              "raw_weight_scalar_divisions_requested": 638,
+              "raw_weight_scalar_divisions": 638,
+              "transition_scalar_coefficients_fitted": 638,
+              "transition_heads_published": 22,
+              "fit_returns": 1
+            },
+            "function_returned": true,
+            "sensitivity_scalar_multiplications_requested": 22,
+            "sensitivity_scalar_multiplications_returned": 22
+          }
+        },
+        {
+          "case": "failure_partial",
+          "status": "failed",
+          "detail": null,
+          "journal": {
+            "cost": "unknown_before_main_fit_counter_bound",
+            "function_returned": false,
+            "fixture_directory": "D:\\Codex_ws\\robot_rl\\external\\c4_scaled_native_staging\\CHECK_01.fixtures\\solve_failure"
+          }
+        }
+      ]
+    },
+    "CHECK_02": {
+      "wall_seconds_before_serialization": 0.1815330998506397,
+      "cpu_seconds_before_serialization": 0.046875,
+      "cases": [
+        {
+          "case": "failure_partial",
+          "status": "passed",
+          "detail": {
+            "cost": {
+              "fit_attempts": 1,
+              "fit_returns": 0,
+              "fit_failures": 1,
+              "fit_scalar_labels_requested": 8800,
+              "fit_scalar_labels_returned": 8800,
+              "fit_shared_29x29_22rhs_solve_attempts": 1,
+              "fit_shared_29x29_22rhs_solve_returns": 0,
+              "fit_shared_29x29_22rhs_solve_failures": 1,
+              "transition_scalar_coefficients_fitted": 0,
+              "transition_heads_published": 0,
+              "scale_estimation_attempts": 1,
+              "scale_estimation_returns": 1,
+              "K22_restoration_attempts": 0,
+              "K22_restoration_returns": 0,
+              "D11_restoration_attempts": 0,
+              "D11_restoration_returns": 0,
+              "physics_calls": 0,
+              "physics_substeps": 0,
+              "RLS_updates": 0,
+              "MPC_calls": 0,
+              "K22_refits": 0,
+              "D11_updates": 0,
+              "scale_input_scalar_uses_requested": 11600,
+              "scale_input_scalar_uses_returned": 11600,
+              "scale_output_scalars": 29,
+              "normalized_design_scalar_divisions_requested": 11600,
+              "normalized_design_scalar_divisions": 11600,
+              "fit_gram_matrix_attempts": 1,
+              "fit_logical_multiply_requests": 591600,
+              "fit_logical_add_requests": 590121,
+              "fit_gram_matrix_returns": 1,
+              "fit_cross_matrix_attempts": 1,
+              "fit_cross_matrix_returns": 1,
+              "wall_seconds": 0.035490799928084016,
+              "cpu_seconds": 0.0
+            },
+            "new_N_solve_returns": 0,
+            "mock_solve_attempts": 1,
+            "mock_solve_failures": 1,
+            "actual_archived_payload_reads": 0,
+            "fixture": "D:\\Codex_ws\\robot_rl\\external\\c4_scaled_native_staging\\CHECK_02.fixtures\\solve_failure"
+          },
+          "journal": {
+            "cost": {
+              "fit_attempts": 1,
+              "fit_returns": 0,
+              "fit_failures": 1,
+              "fit_scalar_labels_requested": 8800,
+              "fit_scalar_labels_returned": 8800,
+              "fit_shared_29x29_22rhs_solve_attempts": 1,
+              "fit_shared_29x29_22rhs_solve_returns": 0,
+              "fit_shared_29x29_22rhs_solve_failures": 1,
+              "transition_scalar_coefficients_fitted": 0,
+              "transition_heads_published": 0,
+              "scale_estimation_attempts": 1,
+              "scale_estimation_returns": 1,
+              "K22_restoration_attempts": 0,
+              "K22_restoration_returns": 0,
+              "D11_restoration_attempts": 0,
+              "D11_restoration_returns": 0,
+              "physics_calls": 0,
+              "physics_substeps": 0,
+              "RLS_updates": 0,
+              "MPC_calls": 0,
+              "K22_refits": 0,
+              "D11_updates": 0,
+              "scale_input_scalar_uses_requested": 11600,
+              "scale_input_scalar_uses_returned": 11600,
+              "scale_output_scalars": 29,
+              "normalized_design_scalar_divisions_requested": 11600,
+              "normalized_design_scalar_divisions": 11600,
+              "fit_gram_matrix_attempts": 1,
+              "fit_logical_multiply_requests": 591600,
+              "fit_logical_add_requests": 590121,
+              "fit_gram_matrix_returns": 1,
+              "fit_cross_matrix_attempts": 1,
+              "fit_cross_matrix_returns": 1,
+              "wall_seconds": 0.035490799928084016,
+              "cpu_seconds": 0.0
+            },
+            "function_returned": true,
+            "fixture_directory": "D:\\Codex_ws\\robot_rl\\external\\c4_scaled_native_staging\\CHECK_02.fixtures\\solve_failure"
+          }
+        }
+      ]
+    }
+  },
+  "scope": "existing reported check status and file identities only; no new mathematical checks",
+  "cost": {
+    "binary_reads": 32,
+    "input_bytes": 616233,
+    "wall_seconds": 0.08581970003433526,
+    "cpu_seconds": 0.0
+  },
+  "actual_payload_reads": 0,
+  "model_fits": 0,
+  "model_predictions": 0,
+  "physics": 0
+}
