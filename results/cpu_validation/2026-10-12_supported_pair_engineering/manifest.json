@@ -1,0 +1,62 @@
+{
+  "payload_count": 10,
+  "files": {
+    "execution.json": {
+      "bytes": 758,
+      "sha256": "bc2a6d2fa95a6867fe098f0d6f35424b6c0927b19883ecaca0952ab8944035e7",
+      "original_path": "external/c4_w0_engineering_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 774,
+      "sha256": "8fffda09bf7c6d5f842168783286bc766d90036b9ce2e312a2808ce2a2ae5fe7",
+      "original_path": "external/c4_w0_engineering_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 81486,
+      "sha256": "6b5dd52ecef5ab77760a581216badce98cff8410235f53ebca22ad0495e0c896",
+      "original_path": "external/c4_w0_engineering_01/raw/metrics.json"
+    },
+    "raw/run.json": {
+      "bytes": 14509,
+      "sha256": "ff4bd1c277e00696e3c363a2901b3f02d7de211be10c62aca1fa721688107442",
+      "original_path": "external/c4_w0_engineering_01/raw/run.json"
+    },
+    "raw/supported_body_installed.xml": {
+      "bytes": 3515,
+      "sha256": "b0bc118158cdcdf684ebf5bc6a98bd8b4417704db8c575da8ee8449753b1b6e1",
+      "original_path": "external/c4_w0_engineering_01/raw/supported_body_installed.xml"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 1072939,
+      "sha256": "2c649b3bcaa5aba63aed371704656f7bedacceb647a5f6b3f6b5c8b705e7c514",
+      "original_path": "external/c4_w0_engineering_01/raw/trace.jsonl.gz"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_w0_engineering_01/stderr"
+    },
+    "stdout": {
+      "bytes": 826,
+      "sha256": "0022cd869c479f96a18d749d4a7f3e09aa0a1cc1eb91550e84208d84017e8585",
+      "original_path": "external/c4_w0_engineering_01/stdout"
+    },
+    "execution/run_w0_engineering_once.py": {
+      "bytes": 2550,
+      "sha256": "a2f5e43d05e3748f80181a4040c39067b6bb8f342c5c92c761d5263e104f97f0",
+      "original_path": "external/run_w0_engineering_once.py"
+    },
+    "execution/archive_w0_engineering_once.py": {
+      "bytes": 2531,
+      "sha256": "3d5238017c86c7615f9736c01da25d0e3791c70653438c8971653c4a78fa7165",
+      "original_path": "external/archive_w0_engineering_once.py"
+    }
+  },
+  "file_reads": 20,
+  "read_bytes": 2359776,
+  "copy_failures": [],
+  "wall_seconds": 0.11078899982385337,
+  "cpu_seconds": 0.0,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

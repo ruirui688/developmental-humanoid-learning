@@ -1,0 +1,88 @@
+{
+  "status": "sealed",
+  "files": {
+    "reporting/c4_w0_reporting_reads.json": {
+      "bytes": 964,
+      "sha256": "1032f64971e407b29b4dc2337e3d2da73c5401ef12996ce3386f7201dbcaeb0d",
+      "source": "external/c4_w0_reporting_reads.json"
+    },
+    "reporting/c4_w0_reporting_summary.json": {
+      "bytes": 111885,
+      "sha256": "847679dab798856d1f1056a5acfd0629ffc4cbb54bfb95e262b46f45046c55f9",
+      "source": "external/c4_w0_reporting_summary.json"
+    },
+    "reporting/c4_w0_output_review.json": {
+      "bytes": 3294,
+      "sha256": "3fe48f5137fd7bb2068db8b011723d2b3ed1ab04dbf64bd2b5548891f7d5e292",
+      "source": "external/c4_w0_output_review.json"
+    },
+    "reporting/c4_w0_results_links_01.json": {
+      "bytes": 140,
+      "sha256": "978e0d8d254198db1ad3f72b4a0983a6b3358244c25231fcc79e0ca9951a9675",
+      "source": "external/c4_w0_results_links_01.json"
+    },
+    "reporting/read_w0_reporting_once.py": {
+      "bytes": 1970,
+      "sha256": "32df06091ee7a51245accc3bb34749e3486c7ce7f858bb5372fa2611293a6df6",
+      "source": "external/read_w0_reporting_once.py"
+    },
+    "reporting/check_w0_engineering_once.py": {
+      "bytes": 8400,
+      "sha256": "4bc940c712ae929998d84edef286029a1ed99432df09a0aeb08641692f04d3a8",
+      "source": "external/check_w0_engineering_once.py"
+    },
+    "reporting/check_w0_links_once.py": {
+      "bytes": 1522,
+      "sha256": "fd8952665d84cca920fa546345e2cb30f51d9bc9e2168ea54993897a37a771b5",
+      "source": "external/check_w0_links_once.py"
+    },
+    "reporting/archive_w0_reporting_once.py": {
+      "bytes": 3262,
+      "sha256": "6d7660c15526e72e154aa78ec65d6af2f42fbf5b11e7b1495cf06d467e73c5aa",
+      "source": "external/archive_w0_reporting_once.py"
+    },
+    "reporting/output_contract/report.json": {
+      "bytes": 2173,
+      "sha256": "b7289f8f7a560165a250c44bc75fec3a79be9f97c71be7bf0228a1e1b771921d",
+      "source": "external/c4_w0_output_contract_01/report.json"
+    },
+    "reporting/output_contract/checker.py": {
+      "bytes": 8400,
+      "sha256": "4bc940c712ae929998d84edef286029a1ed99432df09a0aeb08641692f04d3a8",
+      "source": "external/c4_w0_output_contract_01/checker.py"
+    }
+  },
+  "base_manifests": {
+    "manifest.json": {
+      "bytes": 2412,
+      "sha256": "f6ac98886be60203344733f8ea0a00820a170c300a267bf579636c41d4b9de6e"
+    },
+    "raw/manifest.json": {
+      "bytes": 774,
+      "sha256": "8fffda09bf7c6d5f842168783286bc766d90036b9ce2e312a2808ce2a2ae5fe7"
+    }
+  },
+  "base_manifests_after": {
+    "manifest.json": {
+      "bytes": 2412,
+      "sha256": "f6ac98886be60203344733f8ea0a00820a170c300a267bf579636c41d4b9de6e"
+    },
+    "raw/manifest.json": {
+      "bytes": 774,
+      "sha256": "8fffda09bf7c6d5f842168783286bc766d90036b9ce2e312a2808ce2a2ae5fe7"
+    }
+  },
+  "root_raw_manifests_unchanged": true,
+  "cost_before_manifest_write": {
+    "file_reads": 24,
+    "read_bytes": 290392,
+    "file_writes": 10,
+    "write_bytes": 142010
+  },
+  "wall_seconds_before_manifest_write": 0.1362730001565069,
+  "cpu_seconds_before_manifest_write": 0.0,
+  "model_physics_or_scientific_metric_calls": 0,
+  "checker_or_link_checker_executions": 0,
+  "automatic_retry": false,
+  "underlying_filesystem_io_measured": false
+}

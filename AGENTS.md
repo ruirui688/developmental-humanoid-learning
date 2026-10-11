@@ -33,6 +33,8 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
+[W0首次结果](docs/SUPPORTED_PAIR_ENGINEERING_RESULTS.md)从clean54cf4c2完成全部300控制/3,000子步，固定前缀左臂真实接触满足，但active80..99肩/肘MAE .01455068/.01388462、180..199为.03919046/.00653010rad，四项仅一项≤.01，工程资格失败。本安装W1/W2关闭，不改安装/seed/增益/目标补跑，不推论所有控制不可达、接触因果或旧C4通过。下一唯一X0直立悬挂域设计，明确机械固定支撑先验及可能非接触的域边界；新域仍不能解除C4，最终须完整接触控制。持续目标active，阶段检查提交推送后继续；以下旧记录只作历史，不触发重跑。
+
 [V首次结果](docs/GUARD_ORACLE_TAIL_DIAGNOSTIC_RESULTS.md)从clean7e1e5dd完成：4,572记录/192组完整，600H1精确，Q/U受控H2/H5/H15均略退化。12,408前向、10,122覆盖/182,196未来scalar用途；0fit/物理/RLS/旧self重算，首8薄契约全过。不进控制，关闭oracle路线与同bank优化，继续一个有边界的新支撑域双关节机制设计；它不能追认原地面接触C4，最终仍需完整接触控制。不能从负结果识别缺传感或支撑因果。持续目标仍active、C4/C5科学依赖未解除。以下为旧决策历史，不能据此重跑；当前入口以阶段账本首页及最后记录为准。
 
 [H保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认学习预测合规但实际超速；[I因果残差结果](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)从clean1f239f3首次完成102端点/96pair，learned seed0/1两轴退化、seed2改善，肩/肘三seed均值仅3.18%/4.68%，主门失败；cold全退化。不采用上一残差进控制。[J六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)从clean9e8a212首次完成，C共同prediction肩/肘均值退化3.39%/2.77%，全部seed两轴退化；不采用。新增离线ridge2400scalar标签/3solve/36系数，0新物理/RLS。[K完整原生状态闭合转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从cleanb46c6d3首次完成，所有H1/2/5/15窗口有限；H1速度只改善0.485%/0.194%，H15位置退化0.208%/0.469%，开发门失败，不进控制。K新增离线ridge26400标签/3solve/1914系数，0新物理/RLS。L固定数据增量已执行，结论见下段；这些修订均不解除C4/C5依赖，已见数据只开发，新留出/控制仍另需验证。
@@ -59,7 +61,7 @@ P后唯一Q候选为K原phi29追加(qrel0/.12,qrel1/.12,v0/1,v1/1,startG0/.5,sta
 
 当前模型只消费原生关节q/v、已知请求及连续过去端点；previous_v不得跨trial或补零，不得读未来实际力矩。D sparse11仅恢复其冻结snapshot，G不重拟合。PD64/(0,4)及其旧增益开发费用明确披露，预测尾只用当前目标，无切换预览。接触力、动能、真实动力学和root quaternion只作离线诊断，不进入部署模型；当前native没有orientation。
 
-正式物理累计 **252,690控制调用 /2,526,900子步**；历史在线22,452+离线7,200=29,652scalar更新计算。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
+正式物理累计 **252,990控制调用 /2,529,900子步**；W0新增300/3,000/0更新，历史在线22,452+离线7,200=29,652scalar更新计算保持。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
 
 G1与机器接管仍按 [docs/NEW_MACHINE_BOOTSTRAP.md](docs/NEW_MACHINE_BOOTSTRAP.md)、[docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)和 [docs/DEVELOPMENT_ROADMAP.md](docs/DEVELOPMENT_ROADMAP.md)；采用新依赖/后端时锁定来源、版本与许可。当前CPU工作不要求安装GPU仿真器。
 

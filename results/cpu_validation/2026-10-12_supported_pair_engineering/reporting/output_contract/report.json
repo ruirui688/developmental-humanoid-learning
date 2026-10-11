@@ -1,0 +1,99 @@
+{
+  "checks": [
+    {
+      "check": "payload_bytes_and_hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fixed_engineering_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zero_learning_and_scientific_flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "paid_calls_substeps_and_order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "requests_and_shared_final_authority",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "returned_substep_effort_and_fixed_root_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "window_population_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "new_engineering_MAE_0",
+      "passed": true,
+      "detail": {
+        "recomputed_mae_rad": [
+          0.014550680096836115,
+          0.013884623424544693
+        ]
+      }
+    },
+    {
+      "check": "window_population_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "new_engineering_MAE_1",
+      "passed": true,
+      "detail": {
+        "recomputed_mae_rad": [
+          0.03919046106253779,
+          0.006530098506649712
+        ]
+      }
+    },
+    {
+      "check": "frozen_engineering_qualification",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "failed_checks": 0,
+  "records": 300,
+  "confirmed_substeps": 3000,
+  "full": true,
+  "contact": true,
+  "independent_mae_rad": [
+    [
+      0.014550680096836115,
+      0.013884623424544693
+    ],
+    [
+      0.03919046106253779,
+      0.006530098506649712
+    ]
+  ],
+  "engineering_qualification_passed": false,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "new_engineering_MAE_recalculations": 4,
+  "new_engineering_gate_verifications": 1,
+  "old_scientific_metric_recalculations": 0,
+  "cost": {
+    "file_reads": 6,
+    "read_bytes": 1181623,
+    "json_parses": 303,
+    "decompressed_bytes": 10821204,
+    "wall_seconds": 0.21546719991602004,
+    "cpu_seconds": 0.21875
+  }
+}

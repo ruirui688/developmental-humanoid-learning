@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "files": {
+    "supported_body_installed.xml": {
+      "bytes": 3515,
+      "sha256": "b0bc118158cdcdf684ebf5bc6a98bd8b4417704db8c575da8ee8449753b1b6e1"
+    },
+    "run.json": {
+      "bytes": 14509,
+      "sha256": "ff4bd1c277e00696e3c363a2901b3f02d7de211be10c62aca1fa721688107442"
+    },
+    "metrics.json": {
+      "bytes": 81486,
+      "sha256": "6b5dd52ecef5ab77760a581216badce98cff8410235f53ebca22ad0495e0c896"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 1072939,
+      "sha256": "2c649b3bcaa5aba63aed371704656f7bedacceb647a5f6b3f6b5c8b705e7c514"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

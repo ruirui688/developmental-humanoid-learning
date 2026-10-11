@@ -1,0 +1,70 @@
+{
+  "scope": "one_pure_static_schema_review_of_new_W0_checker",
+  "status": "static_review_complete_requires_schema_changes",
+  "source": {
+    "path": "external/check_w0_engineering_once.py",
+    "bytes": 7078,
+    "sha256": "a70f3461a36ae3455e78bf25367e86eb212658a0ac99ed7fb5784f4f8d53eefc"
+  },
+  "read_cost": {
+    "file_reads": 1,
+    "known_returned_content_bytes": 7078,
+    "hash_bytes": 7078,
+    "json_parses": 0,
+    "AST_parse": true,
+    "compile_only": true,
+    "wall_seconds": 0.0032638998236507177,
+    "cpu_seconds": 0.015625,
+    "command_wall_seconds": 0.4154213,
+    "physical_filesystem_IO": "unknown_not_measured"
+  },
+  "checker_executions": 0,
+  "physics_raw_reads": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "old_scientific_metric_recalculations": 0,
+  "new_engineering_metric_recalculations_during_review": 0,
+  "checker_declared_when_executed": {
+    "new_engineering_MAE_recalculations": "4_when_full_population_scored_else0",
+    "new_engineering_gate_verifications": 1,
+    "old_scientific_metric_recalculations": 0,
+    "model_calls": 0,
+    "physics_calls": 0
+  },
+  "confirmed_matches": [
+    "independent post-step MAE uses active80..99 and180..199, two controlled axes, absolute qafter minus current target divided by20",
+    "contact qualification uses prefix80..99 substeps with floor and actual left upper arm or forearm, finite positive normal force",
+    "all planned300/call/substep counters and fixed8 requests with zero other6 axes",
+    "explicit no-learning and scientific flags"
+  ],
+  "required_fixes": [
+    {
+      "id": "source_clean_identity",
+      "reason": "require clean source for any physical interaction; allow explicit source-verification failure only with no control attempts/substeps/trace"
+    },
+    {
+      "id": "new_telemetry_completeness",
+      "reason": "protocol/producer full gate requires finite native6vectors/time/contactforce anddistance and continuous physicsstep IDs; checker currently validates only two effort8vectors/rootpose"
+    },
+    {
+      "id": "complete_population_vs_eligible_gate",
+      "reason": "compare metrics.full to structural population completeness without run.failure condition; collector failure prevents qualified, while each saved window may independently be available or unavailable after a postprocessing exception"
+    },
+    {
+      "id": "per_window_availability_and_count",
+      "reason": "for each active80..99/180..199 window independently require20 returned rows and complete finite saved errors before matching availability/MAE; a structurally full failed run may have one available window and one unavailable"
+    }
+  ],
+  "boundary_notes": [
+    "review does not read original or current physics evidence",
+    "initialD:/Python3.10 runtime import failed before fixture; root owns explicit runtime recovery and distinctattempt02",
+    "no checker execution or oldcase replay authorized by this receipt",
+    "independent review completed solely from cached text; no extra file reads/tools/model/physics"
+  ],
+  "cached_text_review": {
+    "agent": "/root/supported_domain_review",
+    "additional_file_reads": 0,
+    "tool_calls": 0,
+    "conclusion": "structural_full and qualified are separate; independently validate both window availabilities and exact20 count"
+  }
+}
