@@ -1,0 +1,52 @@
+{
+  "purpose": "Read-only analysis run ledger; two analyses of the same immutable development data, with no added physical interactions or fitting. First outputs and matching source bytes are preserved.",
+  "analysis_runs": 2,
+  "diagnostic_archives_exactly_equal": true,
+  "decompressed_window_records_exactly_equal": true,
+  "decompressed_window_sha256": "29106601359338f27839097629b35258087111af60854f820178c1407818985a",
+  "runs": [
+    {
+      "analysis_round": 1,
+      "report_path": "D:\\Codex_ws\\robot_rl\\external\\local_model_domain_development.json",
+      "report_sha256": "71e50664a56eb68d097cbaab31e181e69e7a0f05515f50deaa6cb58de6d59523",
+      "script_path": "D:\\Codex_ws\\robot_rl\\external\\analyze_local_model_domain_v1.py",
+      "script_sha256": "edf28d55942b3678cf76d096e77d7e1204331c697de161fe15e0f2d970a4f7e3",
+      "window_records_path": "D:\\Codex_ws\\robot_rl\\external\\local_model_domain_development.windows.jsonl.gz",
+      "window_records_sha256": "35ebb6ac7784b4eb36b3af9bfa3797468e3f3256ec3b879e477cb043ab3cd053",
+      "window_records": 28116,
+      "physical_simulation_calls": 0,
+      "model_parameter_updates": 0,
+      "execution": {
+        "wall_seconds": null,
+        "cpu_seconds": null,
+        "python_version": null,
+        "platform": null,
+        "reason": "First analysis was not instrumented; these values are unknown and are not backfilled."
+      }
+    },
+    {
+      "analysis_round": 2,
+      "report_path": "D:\\Codex_ws\\robot_rl\\external\\local_model_domain_development_verified.json",
+      "report_sha256": "1b5849113ecd7870514f409917e631491b0e2db18eb819c7159b95024be617c8",
+      "script_path": "D:\\Codex_ws\\robot_rl\\scripts\\analyze_local_model_domain.py",
+      "script_sha256": "a3bb92c6464c8c62ec13d4a34ab0a420fc182ed93f3e7694dce9694e883e45cf",
+      "window_records_path": "D:\\Codex_ws\\robot_rl\\external\\local_model_domain_development_verified.windows.jsonl.gz",
+      "window_records_sha256": "129f4a9bc9716f051999361ed864199784c1779cffd8652ad833bb4bb0bf2ec6",
+      "window_records": 28116,
+      "physical_simulation_calls": 0,
+      "model_parameter_updates": 0,
+      "execution": {
+        "started_utc": "2026-10-11T03:58:40.422881+00:00",
+        "wall_seconds": 8.751925099873915,
+        "cpu_seconds": 8.6875,
+        "timing_scope": "main entry through input verification, analysis, window-file writing and hashing; excludes module import and final report JSON writing",
+        "python_version": "3.10.11",
+        "python_executable": "D:\\Python3.10\\python.exe",
+        "platform": "Windows-10-10.0.26200-SP0",
+        "dependencies": "Python standard library only; no simulator or numerical fitting library imported",
+        "physical_simulation_calls": 0,
+        "model_parameter_updates": 0
+      }
+    }
+  ]
+}

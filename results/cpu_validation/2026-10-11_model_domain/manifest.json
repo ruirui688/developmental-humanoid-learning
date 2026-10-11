@@ -1,0 +1,51 @@
+{
+  "purpose": "Exact copied development-only diagnostic artifacts; original embedded absolute paths and dirty source states are unchanged.",
+  "copied_from": {
+    "local_model_domain_development.json": "D:\\Codex_ws\\robot_rl\\external\\local_model_domain_development.json",
+    "local_model_domain_development.windows.jsonl.gz": "D:\\Codex_ws\\robot_rl\\external\\local_model_domain_development.windows.jsonl.gz",
+    "local_model_domain_development_verified.json": "D:\\Codex_ws\\robot_rl\\external\\local_model_domain_development_verified.json",
+    "local_model_domain_development_verified.windows.jsonl.gz": "D:\\Codex_ws\\robot_rl\\external\\local_model_domain_development_verified.windows.jsonl.gz",
+    "local_model_domain_analysis_runs.json": "D:\\Codex_ws\\robot_rl\\external\\local_model_domain_analysis_runs.json",
+    "analyze_local_model_domain_v1.py": "D:\\Codex_ws\\robot_rl\\external\\analyze_local_model_domain_v1.py",
+    "closed_loop_development_diagnosis.json": "D:\\Codex_ws\\robot_rl\\external\\closed_loop_development_diagnosis.json",
+    "closed_loop_development_diagnosis.md": "D:\\Codex_ws\\robot_rl\\external\\closed_loop_development_diagnosis.md",
+    "closed_loop_development_diagnosis_public.json": "D:\\Codex_ws\\robot_rl\\external\\closed_loop_development_diagnosis_public.json",
+    "closed_loop_development_diagnosis_public.md": "D:\\Codex_ws\\robot_rl\\external\\closed_loop_development_diagnosis_public.md",
+    "diagnose_closed_loop_development.py": "D:\\Codex_ws\\robot_rl\\external\\diagnose_closed_loop_development.py",
+    "public_analyze_local_model_domain.py": "D:\\Codex_ws\\robot_rl\\scripts\\analyze_local_model_domain.py",
+    "public_diagnose_closed_loop_development.py": "D:\\Codex_ws\\robot_rl\\scripts\\diagnose_closed_loop_development.py"
+  },
+  "sha256": {
+    "analyze_local_model_domain_v1.py": "edf28d55942b3678cf76d096e77d7e1204331c697de161fe15e0f2d970a4f7e3",
+    "closed_loop_development_diagnosis.json": "98dd1064d1d5e5c71a930b5bc84098fcf14eb9437fbfaea7e6e8b7032964b237",
+    "closed_loop_development_diagnosis.md": "65f79055ee2bc68087d4040f8db57c3e2ab8d7d6694896068ec756972757590e",
+    "closed_loop_development_diagnosis_public.json": "91a4404b4bbf7e819db1e14c9543f73b0b0737c2e2c86dbafa96a46dfc4c64f0",
+    "closed_loop_development_diagnosis_public.md": "250f4b427e5a6246f8cf3addb148ebc8e5de02e3495e8d9bfd663ecf2489d157",
+    "diagnose_closed_loop_development.py": "76e25f29ea95a904fef3dd7786e50c5c0ba854aaafb4da760214c66f00c98eb5",
+    "local_model_domain_analysis_runs.json": "652ce9af6422e11e90b901f99e8af99bede09a9cecb9513258da8274810e6830",
+    "local_model_domain_development.json": "71e50664a56eb68d097cbaab31e181e69e7a0f05515f50deaa6cb58de6d59523",
+    "local_model_domain_development.windows.jsonl.gz": "35ebb6ac7784b4eb36b3af9bfa3797468e3f3256ec3b879e477cb043ab3cd053",
+    "local_model_domain_development_verified.json": "1b5849113ecd7870514f409917e631491b0e2db18eb819c7159b95024be617c8",
+    "local_model_domain_development_verified.windows.jsonl.gz": "129f4a9bc9716f051999361ed864199784c1779cffd8652ad833bb4bb0bf2ec6",
+    "public_analyze_local_model_domain.py": "a3bb92c6464c8c62ec13d4a34ab0a420fc182ed93f3e7694dce9694e883e45cf",
+    "public_diagnose_closed_loop_development.py": "3bd1d3f04d762c0e4572a2bcec02e17bdec03a4c76af1716f0696b430b96b1d9",
+    "README.md": "8431cb12a45554588082a105339d561cb5c7f0a30a26dfcd2821a72fbf8aaeda"
+  },
+  "domain_analysis_runs": 2,
+  "domain_window_records_each_run": 28116,
+  "decompressed_window_records_sha256": "29106601359338f27839097629b35258087111af60854f820178c1407818985a",
+  "domain_first_run_timing": "unknown; no backfilled measurement",
+  "candidate_cumulative_replay": {
+    "runs": 3,
+    "ridge_solves": 36,
+    "sample_exposures": 10800,
+    "wall_seconds": 22.307628700044006,
+    "new_physical_steps": 0,
+    "new_RLS_update_calls": 0
+  },
+  "candidate_initial_run_source": "Initial run source/report not separately preserved; its hash and measured cost survive in subsequent report history. No reconstruction presented as original.",
+  "physical_control_calls": 0,
+  "physics_substeps": 0,
+  "new_rls_update_calls": 0,
+  "read_holdout": false
+}
