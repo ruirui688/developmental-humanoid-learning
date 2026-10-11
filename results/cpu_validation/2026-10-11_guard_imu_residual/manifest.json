@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "files": {
+    "raw/manifest.json": {
+      "bytes": 777,
+      "sha256": "d62fe407bee0274f8c05bbaf948cbd5f9b180a9fb327ba614426a00b8da26814",
+      "copy_verified": true
+    },
+    "raw/metrics.json": {
+      "bytes": 137012,
+      "sha256": "e7d2172bf7a54f6471d18907d1d41da6fe12ee5d4e7c6348675b044e8ddeba27",
+      "copy_verified": true
+    },
+    "raw/parameters.json": {
+      "bytes": 418649,
+      "sha256": "8bceb20c539776924aa3e0f65384d1e57151ccb4993130187bf90e1196787294",
+      "copy_verified": true
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 4281826,
+      "sha256": "899fd278be6631d3dd536bdda358b006ed065221b92dd2d0f0abbe381d3065b5",
+      "copy_verified": true
+    },
+    "raw/run.json": {
+      "bytes": 7141,
+      "sha256": "2be38da05d2e027d6ed4962621674e87aa008a090259b0ad86d8bc43e3f5a6a8",
+      "copy_verified": true
+    },
+    "raw/unavailable.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "copy_verified": true
+    },
+    "execution/c4_j_imu_residual_01.stdout": {
+      "bytes": 7333,
+      "sha256": "27980953cfbc2a1b889642bdcb0c466a8cd2bf43c6bdc0ec01a51a882589b062",
+      "copy_verified": true
+    },
+    "execution/c4_j_imu_residual_01.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "execution/c4_j_imu_residual_01.execution.json": {
+      "bytes": 612,
+      "sha256": "de5878427212df5a0659eb416e591c68963edae13096f3ba7defa2d29d47690e",
+      "copy_verified": true
+    },
+    "execution/run_j_imu_residual_once.py": {
+      "bytes": 1422,
+      "sha256": "dfcae08c9bf10e8e00061e31ddb40cc8e6a8a061b5e9d692b99c5a844d409626",
+      "copy_verified": true
+    },
+    "output_contract/check_j_output_once.py": {
+      "bytes": 3053,
+      "sha256": "eeff64077f602583e2c26a01663a5a6209279edb3483f73a8069f280c81cea80",
+      "copy_verified": true
+    },
+    "output_contract/c4_j_output_check_01.json": {
+      "bytes": 1574,
+      "sha256": "5dd60e826bdb99760d2a45b7aa92f31048c0b260f9e30d4b219e97d23b3ece78",
+      "copy_verified": true
+    },
+    "execution/archive_j_results_once.py": {
+      "bytes": 1700,
+      "sha256": "90865aef3b4acdbae2a7b217d56d26a6fdfe1f438876593a3fa13ec7d99c0516",
+      "copy_verified": true
+    }
+  },
+  "raw_manifest_sha256": "d62fe407bee0274f8c05bbaf948cbd5f9b180a9fb327ba614426a00b8da26814",
+  "cost": {
+    "binary_reads": 26,
+    "input_bytes": 9722204,
+    "copy_checks": 13,
+    "copy_failures": 0,
+    "wall_seconds": 0.13876229990273714,
+    "cpu_seconds": 0.015625
+  },
+  "model_calls": 0,
+  "new_fits": 0,
+  "new_physics": 0
+}

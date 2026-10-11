@@ -11,11 +11,11 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估，学习组选中的预测路径本身没有触及停止界限。[I 因果残差检验](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)未通过，接着只检验完整六通道原生 IMU 的一步信息增量，先使用已有开发数据。
+当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估，学习组选中的预测路径本身没有触及停止界限。[I 因果残差检验](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)与[J 六轴 IMU 残差检验](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)均未通过。接着开发完整原生状态的闭合转移，使多步预测自身生成未来关节和 IMU 状态；已有数据先开发，再做新留出与匹配控制。
 
 后续顺序固定为 C4 多关节 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。当前仅 CPU，允许少量在线辨识；不运行大规模 PPO、任务教师、预训练策略或真机。每个阶段检查、提交、推送后直接继续，完整阶段状态、旧失败和判门见[持续执行账本](docs/CONTINUOUS_EXECUTION_PLAN.md)。
 
-正式物理累计 **252,690 控制调用 /2,526,900 子步**；在线 22,452 与离线 7,200 scalar 辨识计算分列。H/I 没有新增物理或 RLS 辨识，记录一致不能代替科学验收。
+正式物理累计 **252,690 控制调用 /2,526,900 子步**；在线 22,452 与离线 7,200 scalar 辨识计算分列。H/I/J 没有新增物理或 RLS 辨识；J另用2,400 scalar标签作三次小型离线ridge求解，记录一致不能代替科学验收。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 

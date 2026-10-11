@@ -1,0 +1,4909 @@
+{
+  "groups": [
+    {
+      "collection": "C",
+      "trial_id": "seed0_calibration_sparse",
+      "seed": 0,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.00033718351267389234,
+        "mae": 0.00014030888539877362,
+        "bias": 3.3052445676064884e-06
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.00034698190128817365,
+        "mae": 0.00013965175503644973,
+        "bias": 3.3020187976192868e-06
+      },
+      "rmse_relative_improvement": -0.029059512834952415,
+      "mae_relative_improvement": 0.0046834550816668595,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed0_calibration_sparse",
+      "seed": 0,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.0007024672679807721,
+        "mae": 0.00028344421452756714,
+        "bias": -1.1235374321443049e-05
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.00071885561113607,
+        "mae": 0.00028427892324758825,
+        "bias": -1.122783822327759e-05
+      },
+      "rmse_relative_improvement": -0.02332968937101633,
+      "mae_relative_improvement": -0.0029448783119894054,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed0_calibration_sparse",
+      "seed": 0,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.018671277210497956,
+        "mae": 0.007530745902412036,
+        "bias": 5.137684905630476e-08
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.018303351973054854,
+        "mae": 0.007192151655146635,
+        "bias": -1.0991165030265905e-07
+      },
+      "rmse_relative_improvement": 0.01970541346985277,
+      "mae_relative_improvement": 0.04496158171489389,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed0_calibration_sparse",
+      "seed": 0,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.03752358778046839,
+        "mae": 0.014770594827499095,
+        "bias": -1.052089787666809e-07
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.03700191833521516,
+        "mae": 0.014551945837098743,
+        "bias": 2.715959295062018e-07
+      },
+      "rmse_relative_improvement": 0.01390244046771995,
+      "mae_relative_improvement": 0.014802991548673669,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed0_prediction",
+      "seed": 0,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.0011942904268944228,
+        "mae": 0.000574077077227589,
+        "bias": 9.659642902586321e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0012438042497611873,
+        "mae": 0.000585685313453682,
+        "bias": 9.238897200817012e-05
+      },
+      "rmse_relative_improvement": -0.041458778996929506,
+      "mae_relative_improvement": -0.020220692806884214,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed0_prediction",
+      "seed": 0,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.002420293981425834,
+        "mae": 0.0011492121587157176,
+        "bias": -0.00017503810101378566
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0025072681382701362,
+        "mae": 0.0011702319750463179,
+        "bias": -0.00016779897496671975
+      },
+      "rmse_relative_improvement": -0.03593536880716636,
+      "mae_relative_improvement": -0.018290631691619604,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed0_prediction",
+      "seed": 0,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.055843602288870434,
+        "mae": 0.026332534380978937,
+        "bias": 0.0037012158365742932
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.05774097976779769,
+        "mae": 0.02688641156451193,
+        "bias": 0.0034908429856896524
+      },
+      "rmse_relative_improvement": -0.03397663118350448,
+      "mae_relative_improvement": -0.021033948936304444,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed0_prediction",
+      "seed": 0,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.11579791869361464,
+        "mae": 0.0531254246328902,
+        "bias": -0.008453788674528014
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.11900017057464266,
+        "mae": 0.05403247437211993,
+        "bias": -0.008091832372174718
+      },
+      "rmse_relative_improvement": -0.02765379479315803,
+      "mae_relative_improvement": -0.017073740972381183,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed1_calibration_sparse",
+      "seed": 1,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.0003378572260552993,
+        "mae": 0.00014142668954622708,
+        "bias": 4.594561925826586e-06
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.00034750268150007086,
+        "mae": 0.0001400720473478298,
+        "bias": 4.5916126584764215e-06
+      },
+      "rmse_relative_improvement": -0.02854890971961277,
+      "mae_relative_improvement": 0.009578405623038383,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed1_calibration_sparse",
+      "seed": 1,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.0006990467390614156,
+        "mae": 0.0002837144121140631,
+        "bias": -1.1292154917365843e-05
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.0007151090688621731,
+        "mae": 0.0002839126695113003,
+        "bias": -1.1284984732220446e-05
+      },
+      "rmse_relative_improvement": -0.022977476187534776,
+      "mae_relative_improvement": -0.0006987921260675046,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed1_calibration_sparse",
+      "seed": 1,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.018425635507104247,
+        "mae": 0.00743060922769458,
+        "bias": 4.929293522283498e-08
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.018039825275848027,
+        "mae": 0.007078956370685465,
+        "bias": -9.817043229255371e-08
+      },
+      "rmse_relative_improvement": 0.02093877473628875,
+      "mae_relative_improvement": 0.04732490247212456,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed1_calibration_sparse",
+      "seed": 1,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.03735727989034621,
+        "mae": 0.014704129630919766,
+        "bias": -1.0263975706429761e-07
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.03680728212628186,
+        "mae": 0.014453337630810699,
+        "bias": 2.558695002055576e-07
+      },
+      "rmse_relative_improvement": 0.014722639487637837,
+      "mae_relative_improvement": 0.017055888815187187,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed1_prediction",
+      "seed": 1,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.0011980589153872765,
+        "mae": 0.0005739364650265118,
+        "bias": 9.851458925811088e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0012470216355356862,
+        "mae": 0.0005851414991623067,
+        "bias": 9.447392581858213e-05
+      },
+      "rmse_relative_improvement": -0.04086837426737261,
+      "mae_relative_improvement": -0.01952312637127407,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed1_prediction",
+      "seed": 1,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.002418702855541953,
+        "mae": 0.001147010491319237,
+        "bias": -0.00017716207589533903
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.002505559914493218,
+        "mae": 0.001168273928090158,
+        "bias": -0.0001702532783982281
+      },
+      "rmse_relative_improvement": -0.03591059511599392,
+      "mae_relative_improvement": -0.01853813625232387,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed1_prediction",
+      "seed": 1,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.05606884158760771,
+        "mae": 0.026299479881257318,
+        "bias": 0.003793804472110935
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.05793418724223753,
+        "mae": 0.026828248558513502,
+        "bias": 0.00359177130013448
+      },
+      "rmse_relative_improvement": -0.033268845972414335,
+      "mae_relative_improvement": -0.020105670516815742,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed1_prediction",
+      "seed": 1,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.11576791956208474,
+        "mae": 0.05305610119494838,
+        "bias": -0.00854404587351995
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.11894948386838926,
+        "mae": 0.05397059398805332,
+        "bias": -0.0081986059986644
+      },
+      "rmse_relative_improvement": -0.027482262083826186,
+      "mae_relative_improvement": -0.017236336114196234,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed2_calibration_sparse",
+      "seed": 2,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.00033715518911318405,
+        "mae": 0.00014036421387360855,
+        "bias": 3.3019129441732784e-06
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.000347180979234451,
+        "mae": 0.00013975763210271626,
+        "bias": 3.298646375716023e-06
+      },
+      "rmse_relative_improvement": -0.02973642537621234,
+      "mae_relative_improvement": 0.0043214844735174705,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed2_calibration_sparse",
+      "seed": 2,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.0007019282834950254,
+        "mae": 0.0002833852115528311,
+        "bias": -1.1225595561389274e-05
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.0007187198232478847,
+        "mae": 0.00028430612034016905,
+        "bias": -1.1217985489778212e-05
+      },
+      "rmse_relative_improvement": -0.023922016176996408,
+      "mae_relative_improvement": -0.0032496712947430767,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed2_calibration_sparse",
+      "seed": 2,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.018669631955120156,
+        "mae": 0.007533637354891656,
+        "bias": 5.332311514364362e-08
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.01830634846415434,
+        "mae": 0.007195908614704329,
+        "bias": -1.100053077203667e-07
+      },
+      "rmse_relative_improvement": 0.01945852450863044,
+      "mae_relative_improvement": 0.04482943952273424,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed2_calibration_sparse",
+      "seed": 2,
+      "kind": "calibration_sparse",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 400,
+      "source_active_count_ALL": 400,
+      "base": {
+        "count": 400,
+        "rmse": 0.03749887018568446,
+        "mae": 0.014767529766696048,
+        "bias": -1.0814183787129689e-07
+      },
+      "corrected": {
+        "count": 400,
+        "rmse": 0.036986038162204596,
+        "mae": 0.014548219826043835,
+        "bias": 2.7236174268227297e-07
+      },
+      "rmse_relative_improvement": 0.013675932659849578,
+      "mae_relative_improvement": 0.01485082096443809,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": true
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed2_prediction",
+      "seed": 2,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.0011943513348056706,
+        "mae": 0.0005768130232629103,
+        "bias": 9.576063709889657e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0012440476814055289,
+        "mae": 0.0005889331193283371,
+        "bias": 9.12421421069673e-05
+      },
+      "rmse_relative_improvement": -0.04160948721838558,
+      "mae_relative_improvement": -0.021012174789095336,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed2_prediction",
+      "seed": 2,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.0024188882343737883,
+        "mae": 0.0011539692367366673,
+        "bias": -0.00017348831162393376
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.00250596096732755,
+        "mae": 0.0011755098707663236,
+        "bias": -0.00016570754092136802
+      },
+      "rmse_relative_improvement": -0.035997005449201064,
+      "mae_relative_improvement": -0.01866655829627786,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed2_prediction",
+      "seed": 2,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.05586979113515131,
+        "mae": 0.026445255543866005,
+        "bias": 0.0036285012673157495
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.05778766135775909,
+        "mae": 0.027027906565071168,
+        "bias": 0.003402576517719276
+      },
+      "rmse_relative_improvement": -0.034327499416784556,
+      "mae_relative_improvement": -0.022032346037976137,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "C",
+      "trial_id": "seed2_prediction",
+      "seed": 2,
+      "kind": "prediction",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 100,
+      "base": {
+        "count": 100,
+        "rmse": 0.1157795448880572,
+        "mae": 0.0532886530682907,
+        "bias": -0.008309039187248997
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.11900916871827127,
+        "mae": 0.05413506699669823,
+        "bias": -0.007920000652120712
+      },
+      "rmse_relative_improvement": -0.027894597731720906,
+      "mae_relative_improvement": -0.0158835676954123,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.0022493323130247066,
+        "mae": 0.0014273237890083063,
+        "bias": -0.00013095136578191523
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.0024639089589684575,
+        "mae": 0.0017942002365278714,
+        "bias": -0.0004728828608798197
+      },
+      "rmse_relative_improvement": -0.0953957068509841,
+      "mae_relative_improvement": -0.2570379968055238,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.004545325604436143,
+        "mae": 0.002833294965794902,
+        "bias": 0.00027056509106335934
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.004905966986348561,
+        "mae": 0.0034745171430158803,
+        "bias": 0.0008487088455151747
+      },
+      "rmse_relative_improvement": -0.0793433547555845,
+      "mae_relative_improvement": -0.22631677427241628,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.11646035191535845,
+        "mae": 0.07572077548412118,
+        "bias": 0.0072354714561311964
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.12277651238844871,
+        "mae": 0.0897972303535615,
+        "bias": -0.00986110329876402
+      },
+      "rmse_relative_improvement": -0.05423442716093412,
+      "mae_relative_improvement": -0.18589950749239478,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.25641465492496324,
+        "mae": 0.16497139010166756,
+        "bias": -0.02445382884190561
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.2656461306549701,
+        "mae": 0.18960151329647312,
+        "bias": 0.004453358880685178
+      },
+      "rmse_relative_improvement": -0.036002137758890426,
+      "mae_relative_improvement": -0.14929936142034483,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.0022493323130247066,
+        "mae": 0.0014273237890083063,
+        "bias": -0.00013095136578191523
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.0024639089589684575,
+        "mae": 0.0017942002365278714,
+        "bias": -0.0004728828608798197
+      },
+      "rmse_relative_improvement": -0.0953957068509841,
+      "mae_relative_improvement": -0.2570379968055238,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.004545325604436143,
+        "mae": 0.002833294965794902,
+        "bias": 0.00027056509106335934
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.004905966986348561,
+        "mae": 0.0034745171430158803,
+        "bias": 0.0008487088455151747
+      },
+      "rmse_relative_improvement": -0.0793433547555845,
+      "mae_relative_improvement": -0.22631677427241628,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.11646035191535845,
+        "mae": 0.07572077548412118,
+        "bias": 0.0072354714561311964
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.12277651238844871,
+        "mae": 0.0897972303535615,
+        "bias": -0.00986110329876402
+      },
+      "rmse_relative_improvement": -0.05423442716093412,
+      "mae_relative_improvement": -0.18589950749239478,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.25641465492496324,
+        "mae": 0.16497139010166756,
+        "bias": -0.02445382884190561
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.2656461306549701,
+        "mae": 0.18960151329647312,
+        "bias": 0.004453358880685178
+      },
+      "rmse_relative_improvement": -0.036002137758890426,
+      "mae_relative_improvement": -0.14929936142034483,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 0,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "empty_reason": "no_complete_matched_predictions",
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 0,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "empty_reason": "no_complete_matched_predictions",
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 0,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "empty_reason": "no_complete_matched_predictions",
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_cold11",
+      "seed": 0,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 0,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "empty_reason": "no_complete_matched_predictions",
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 102,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 102,
+        "rmse": 0.002131735989639761,
+        "mae": 0.0016027974376038774,
+        "bias": 0.000377337814747398
+      },
+      "corrected": {
+        "count": 102,
+        "rmse": 0.0021681069391888746,
+        "mae": 0.0015650844475204207,
+        "bias": 0.0001252833877678101
+      },
+      "rmse_relative_improvement": -0.017061657600132778,
+      "mae_relative_improvement": 0.02352947989474966,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 102,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 102,
+        "rmse": 0.0042651755033985715,
+        "mae": 0.003170623028713054,
+        "bias": -0.00065664023045856
+      },
+      "corrected": {
+        "count": 102,
+        "rmse": 0.004329763626056466,
+        "mae": 0.0031086616647005437,
+        "bias": -0.0002221493023050968
+      },
+      "rmse_relative_improvement": -0.015143133642784266,
+      "mae_relative_improvement": 0.0195423307821177,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 102,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 102,
+        "rmse": 0.12677289855545118,
+        "mae": 0.10417393080938421,
+        "bias": 0.0152264165775942
+      },
+      "corrected": {
+        "count": 102,
+        "rmse": 0.1264984047676182,
+        "mae": 0.10372270496940357,
+        "bias": 0.0026236952286147752
+      },
+      "rmse_relative_improvement": 0.0021652402915826284,
+      "mae_relative_improvement": 0.004331466005696626,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 102,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 102,
+        "rmse": 0.25572577442172184,
+        "mae": 0.20714706889878712,
+        "bias": -0.031193607257993937
+      },
+      "corrected": {
+        "count": 102,
+        "rmse": 0.25498860581842536,
+        "mae": 0.2065197671698654,
+        "bias": -0.009469060850320786
+      },
+      "rmse_relative_improvement": 0.002882652735976472,
+      "mae_relative_improvement": 0.0030282916010181513,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 100,
+        "rmse": 0.002020545221035027,
+        "mae": 0.0015333843549188665,
+        "bias": 0.00048635360247943453
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0020415430299605733,
+        "mae": 0.0014880809896062252,
+        "bias": 0.0002360942023877699
+      },
+      "rmse_relative_improvement": -0.010392149953857609,
+      "mae_relative_improvement": 0.029544689931989245,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 100,
+        "rmse": 0.004006063887685089,
+        "mae": 0.0030191522964023343,
+        "bias": -0.000884656227952712
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.004042866939814146,
+        "mae": 0.0029441648185112796,
+        "bias": -0.00045326236783447345
+      },
+      "rmse_relative_improvement": -0.009186836046771877,
+      "mae_relative_improvement": 0.024837262426413834,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 100,
+        "rmse": 0.11975341108155758,
+        "mae": 0.10001572862969058,
+        "bias": 0.021772625705027394
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.11850812723014859,
+        "mae": 0.09921367250153457,
+        "bias": 0.009259655700444134
+      },
+      "rmse_relative_improvement": 0.010398733866218667,
+      "mae_relative_improvement": 0.008019299955566302,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 100,
+        "rmse": 0.24081814699938126,
+        "mae": 0.19848469896570758,
+        "bias": -0.04462279071420906
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.23835371511573314,
+        "mae": 0.19725550687229274,
+        "bias": -0.023053097708297145
+      },
+      "rmse_relative_improvement": 0.010233580460422893,
+      "mae_relative_improvement": 0.006192880860943432,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 2,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 2,
+        "rmse": 0.005256335728758359,
+        "mae": 0.005073451571854428,
+        "bias": -0.005073451571854428
+      },
+      "corrected": {
+        "count": 2,
+        "rmse": 0.005598229678092575,
+        "mae": 0.00541525734323018,
+        "bias": -0.00541525734323018
+      },
+      "rmse_relative_improvement": -0.06504416136580704,
+      "mae_relative_improvement": -0.06737144654577171,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 2,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 2,
+        "rmse": 0.011196000723634573,
+        "mae": 0.010744159644249036,
+        "bias": 0.010744159644249036
+      },
+      "corrected": {
+        "count": 2,
+        "rmse": 0.0117834991102598,
+        "mae": 0.011333503974163738,
+        "bias": 0.011333503974163738
+      },
+      "rmse_relative_improvement": -0.05247395039775477,
+      "mae_relative_improvement": -0.05485252913476176,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 2,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 2,
+        "rmse": 0.32030576787229526,
+        "mae": 0.3120840397940657,
+        "bias": -0.3120840397940657
+      },
+      "corrected": {
+        "count": 2,
+        "rmse": 0.33746904430852065,
+        "mae": 0.32917432836285315,
+        "bias": -0.32917432836285315
+      },
+      "rmse_relative_improvement": -0.05358403799668175,
+      "mae_relative_improvement": -0.054761815375322646,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_learned_sparse11",
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 2,
+      "source_active_count_ALL": 102,
+      "base": {
+        "count": 2,
+        "rmse": 0.659932012159039,
+        "mae": 0.6402655655527623,
+        "bias": 0.6402655655527623
+      },
+      "corrected": {
+        "count": 2,
+        "rmse": 0.6894591855105248,
+        "mae": 0.6697327820484972,
+        "bias": 0.6697327820484972
+      },
+      "rmse_relative_improvement": -0.044742750476499026,
+      "mae_relative_improvement": -0.04602342852890254,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.001776423510256691,
+        "mae": 0.0014860953347221883,
+        "bias": 0.00027193273497275286
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.0018191049263303624,
+        "mae": 0.0014810661033021965,
+        "bias": -6.484950302225195e-05
+      },
+      "rmse_relative_improvement": -0.024026599415757636,
+      "mae_relative_improvement": 0.0033841916480627328,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0032425791836656645,
+        "mae": 0.0027809406387526523,
+        "bias": -0.000603782542724727
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.003303040226773353,
+        "mae": 0.002754891663147435,
+        "bias": -1.5534735791386262e-05
+      },
+      "rmse_relative_improvement": -0.018645972752880772,
+      "mae_relative_improvement": 0.009366965710171003,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.09376339665371484,
+        "mae": 0.06834640638606372,
+        "bias": 0.013868253263141637
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.09385844213685812,
+        "mae": 0.06737247486187535,
+        "bias": -0.002970858636608612
+      },
+      "rmse_relative_improvement": -0.0010136736352917915,
+      "mae_relative_improvement": 0.014249930255103531,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.19315904553559018,
+        "mae": 0.15375003462796058,
+        "bias": -0.02819310426179202
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.19201286915873225,
+        "mae": 0.15552356514362123,
+        "bias": 0.0012192860848750204
+      },
+      "rmse_relative_improvement": 0.005933847797186106,
+      "mae_relative_improvement": -0.011535155227458523,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0015000757645982068,
+        "mae": 0.0012580843634671882,
+        "bias": 0.000661225735210553
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0014683216351351021,
+        "mae": 0.0011936876588279873,
+        "bias": 0.00034137447819107796
+      },
+      "rmse_relative_improvement": 0.02116835043435954,
+      "mae_relative_improvement": 0.05118631668048741,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.002930139480922154,
+        "mae": 0.0025150281480452365,
+        "bias": -0.001329305383525397
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0028518211178676237,
+        "mae": 0.002363874857525634,
+        "bias": -0.0007768477754578201
+      },
+      "rmse_relative_improvement": 0.026728544345569028,
+      "mae_relative_improvement": 0.060100039292635306,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.10383263823492267,
+        "mae": 0.07866876748684676,
+        "bias": 0.030385438353050652
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.10091106428276633,
+        "mae": 0.07796278057859161,
+        "bias": 0.014392875502076874
+      },
+      "rmse_relative_improvement": 0.02813733717856844,
+      "mae_relative_improvement": 0.008974170192423352,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.20340099840564435,
+        "mae": 0.15497493992072559,
+        "bias": -0.06193254002446927
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.1975002775169859,
+        "mae": 0.1545696612164126,
+        "bias": -0.03430965962109042
+      },
+      "rmse_relative_improvement": 0.02901028478184061,
+      "mae_relative_improvement": 0.0026151241260057296,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.00201522546531412,
+        "mae": 0.0017141063059771886,
+        "bias": -0.00011736026526504725
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0021124197125081384,
+        "mae": 0.001768444547776406,
+        "bias": -0.00047107348423558183
+      },
+      "rmse_relative_improvement": -0.04822996179182779,
+      "mae_relative_improvement": -0.031700625340293456,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0035274526427756642,
+        "mae": 0.0030468531294600685,
+        "bias": 0.00012174029807594293
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.003699630493853431,
+        "mae": 0.0031459084687692363,
+        "bias": 0.0007457783038750476
+      },
+      "rmse_relative_improvement": -0.04881081860316184,
+      "mae_relative_improvement": -0.03251070369995857,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.08247382821998384,
+        "mae": 0.05802404528528068,
+        "bias": -0.0026489318267673787
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.08623091919975855,
+        "mae": 0.05678216914515907,
+        "bias": -0.0203345927752941
+      },
+      "rmse_relative_improvement": -0.04555494828921192,
+      "mae_relative_improvement": 0.021402784552779865,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.1823427201508946,
+        "mae": 0.15252512933519558,
+        "bias": 0.005546331500885233
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.18636395634845923,
+        "mae": 0.15647746907082985,
+        "bias": 0.03674823179084046
+      },
+      "rmse_relative_improvement": -0.022053176536123504,
+      "mae_relative_improvement": -0.025912711910890753,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 4.079645962263024e-05,
+        "mae": 4.079625480628672e-05,
+        "bias": -4.079625480628672e-05
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 3.978135260978412e-05,
+        "mae": 3.9780780001979213e-05,
+        "bias": -3.9780780001979213e-05
+      },
+      "rmse_relative_improvement": 0.02488223297403549,
+      "mae_relative_improvement": 0.024891373218676488,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 8.379130751510862e-05,
+        "mae": 8.37909457304256e-05,
+        "bias": 8.37909457304256e-05
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 8.19877187254975e-05,
+        "mae": 8.198671995276288e-05,
+        "bias": 8.198671995276288e-05
+      },
+      "rmse_relative_improvement": 0.021524771997213456,
+      "mae_relative_improvement": 0.021532467045631876,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0020398195794263615,
+        "mae": 0.002039809338342267,
+        "bias": -0.002039809338342267
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.001989064228989102,
+        "mae": 0.0019890355981268823,
+        "bias": -0.0019890355981268823
+      },
+      "rmse_relative_improvement": 0.024882274368369834,
+      "mae_relative_improvement": 0.024891414732245522,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0041895653603781675,
+        "mae": 0.004189547271192331,
+        "bias": 0.004189547271192331
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.004099385920864826,
+        "mae": 0.004099335982309195,
+        "bias": 0.004099335982309195
+      },
+      "rmse_relative_improvement": 0.021524772084043027,
+      "mae_relative_improvement": 0.02153246712441607,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 4.090825264510271e-05,
+        "mae": 4.090820332816936e-05,
+        "bias": -4.090820332816936e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 3.9965756012246086e-05,
+        "mae": 3.9965618394565136e-05,
+        "bias": -3.9965618394565136e-05
+      },
+      "rmse_relative_improvement": 0.02303927867643727,
+      "mae_relative_improvement": 0.02304146496101823,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 8.400426330036672e-05,
+        "mae": 8.40041761704144e-05,
+        "bias": 8.40041761704144e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 8.23374145456001e-05,
+        "mae": 8.233717441704216e-05,
+        "bias": 8.233717441704216e-05
+      },
+      "rmse_relative_improvement": 0.019842430482446015,
+      "mae_relative_improvement": 0.019844272384631063,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.002045409298658367,
+        "mae": 0.0020454068327472245,
+        "bias": -0.0020454068327472245
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0019982844670646716,
+        "mae": 0.001998277586066998,
+        "bias": -0.001998277586066998
+      },
+      "rmse_relative_improvement": 0.023039316201703807,
+      "mae_relative_improvement": 0.023041502514649533,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.004200213135023674,
+        "mae": 0.004200208778530529,
+        "bias": 0.004200208778530529
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.004116870697282331,
+        "mae": 0.004116858690861916,
+        "bias": 0.004116858690861916
+      },
+      "rmse_relative_improvement": 0.019842430624862458,
+      "mae_relative_improvement": 0.01984427252632277,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 4.06843594149674e-05,
+        "mae": 4.068430628440409e-05,
+        "bias": -4.068430628440409e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 3.959609042945491e-05,
+        "mae": 3.9595941609393284e-05,
+        "bias": -3.9595941609393284e-05
+      },
+      "rmse_relative_improvement": 0.026749075103100258,
+      "mae_relative_improvement": 0.02675146203557163,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 8.357780912147468e-05,
+        "mae": 8.357771529043679e-05,
+        "bias": 8.357771529043679e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 8.163652497239573e-05,
+        "mae": 8.163626548848359e-05,
+        "bias": 8.163626548848359e-05
+      },
+      "rmse_relative_improvement": 0.023227267733920014,
+      "mae_relative_improvement": 0.02322927583275712,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0020342145005343374,
+        "mae": 0.00203421184393731,
+        "bias": -0.00203421184393731
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.001979801051311996,
+        "mae": 0.001979793610186767,
+        "bias": -0.001979793610186767
+      },
+      "rmse_relative_improvement": 0.026749120708778867,
+      "mae_relative_improvement": 0.026751507672482088,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.004178890455388355,
+        "mae": 0.004178885763854133,
+        "bias": 0.004178885763854133
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.004081826247922321,
+        "mae": 0.004081813273756474,
+        "bias": 0.004081813273756474
+      },
+      "rmse_relative_improvement": 0.02322726774062172,
+      "mae_relative_improvement": 0.02322927583646844,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.002276587833054477,
+        "mae": 0.0014240563836069966,
+        "bias": -9.915863111250892e-05
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.0024871021359246827,
+        "mae": 0.0017877599101542283,
+        "bias": -0.00044393756261803456
+      },
+      "rmse_relative_improvement": -0.09246922074065579,
+      "mae_relative_improvement": -0.25539966727020036,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.0045492944335393665,
+        "mae": 0.0028083823168587123,
+        "bias": 0.00023433561127156292
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.00490925125403432,
+        "mae": 0.0034587369947369994,
+        "bias": 0.0008212659635321269
+      },
+      "rmse_relative_improvement": -0.07912365879007446,
+      "mae_relative_improvement": -0.23157626152757388,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.1178259025951875,
+        "mae": 0.07598521768136451,
+        "bias": 0.008837207562331667
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.12398032758189749,
+        "mae": 0.08986242550093891,
+        "bias": -0.008401739012944715
+      },
+      "rmse_relative_improvement": -0.052233208922274406,
+      "mae_relative_improvement": -0.18263036210236194,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.25703413635288225,
+        "mae": 0.16443804327339517,
+        "bias": -0.026316500894820846
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.26615702284572385,
+        "mae": 0.18904034107974618,
+        "bias": 0.0030300167182073833
+      },
+      "rmse_relative_improvement": -0.03549289842309811,
+      "mae_relative_improvement": -0.14961439163714174,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.002276587833054477,
+        "mae": 0.0014240563836069966,
+        "bias": -9.915863111250892e-05
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.0024871021359246827,
+        "mae": 0.0017877599101542283,
+        "bias": -0.00044393756261803456
+      },
+      "rmse_relative_improvement": -0.09246922074065579,
+      "mae_relative_improvement": -0.25539966727020036,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.0045492944335393665,
+        "mae": 0.0028083823168587123,
+        "bias": 0.00023433561127156292
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.00490925125403432,
+        "mae": 0.0034587369947369994,
+        "bias": 0.0008212659635321269
+      },
+      "rmse_relative_improvement": -0.07912365879007446,
+      "mae_relative_improvement": -0.23157626152757388,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.1178259025951875,
+        "mae": 0.07598521768136451,
+        "bias": 0.008837207562331667
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.12398032758189749,
+        "mae": 0.08986242550093891,
+        "bias": -0.008401739012944715
+      },
+      "rmse_relative_improvement": -0.052233208922274406,
+      "mae_relative_improvement": -0.18263036210236194,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 11,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 11,
+        "rmse": 0.25703413635288225,
+        "mae": 0.16443804327339517,
+        "bias": -0.026316500894820846
+      },
+      "corrected": {
+        "count": 11,
+        "rmse": 0.26615702284572385,
+        "mae": 0.18904034107974618,
+        "bias": 0.0030300167182073833
+      },
+      "rmse_relative_improvement": -0.03549289842309811,
+      "mae_relative_improvement": -0.14961439163714174,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 0,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "empty_reason": "no_complete_matched_predictions",
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 0,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "empty_reason": "no_complete_matched_predictions",
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 0,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "empty_reason": "no_complete_matched_predictions",
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_cold11",
+      "seed": 1,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 0,
+      "source_active_count_ALL": 11,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "empty_reason": "no_complete_matched_predictions",
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0016803014137414616,
+        "mae": 0.0011556108224139155,
+        "bias": 0.00013885002497187747
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.0017271346998667262,
+        "mae": 0.0011609115814373587,
+        "bias": -0.00012210632481104948
+      },
+      "rmse_relative_improvement": -0.027871955437437097,
+      "mae_relative_improvement": -0.004586975927043212,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0033428895279966108,
+        "mae": 0.002277041832500153,
+        "bias": -0.0002474963409679902
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.003428182722727297,
+        "mae": 0.002305327935532132,
+        "bias": 0.00021281301705274107
+      },
+      "rmse_relative_improvement": -0.02551481106879481,
+      "mae_relative_improvement": -0.012422302756256928,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.10691981745536532,
+        "mae": 0.08137104771607316,
+        "bias": 0.006653127388292176
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.10720440142845801,
+        "mae": 0.08128206763941144,
+        "bias": -0.006394690100854163
+      },
+      "rmse_relative_improvement": -0.002661657865357813,
+      "mae_relative_improvement": 0.0010935102737302579,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.21343179283840263,
+        "mae": 0.16524825133166746,
+        "bias": -0.013488516351789888
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.21382081924716773,
+        "mae": 0.16493545947720503,
+        "bias": 0.009526951549246696
+      },
+      "rmse_relative_improvement": -0.0018227200530505716,
+      "mae_relative_improvement": 0.001892860299227155,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0017303391440960287,
+        "mae": 0.0012073711290530268,
+        "bias": 0.0005279752277983143
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0017211814309047943,
+        "mae": 0.0011280694498660678,
+        "bias": 0.00028144196301734345
+      },
+      "rmse_relative_improvement": 0.005292438319089561,
+      "mae_relative_improvement": 0.06568127833995617,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0034279651115454116,
+        "mae": 0.002352623778431562,
+        "bias": -0.0009959782585779431
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.00341581048500294,
+        "mae": 0.0022384953738667514,
+        "bias": -0.000567496936351854
+      },
+      "rmse_relative_improvement": 0.0035457264432285428,
+      "mae_relative_improvement": 0.04851111580658144,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.10691222459715706,
+        "mae": 0.08285368596406117,
+        "bias": 0.027344143963320456
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.10510807346904491,
+        "mae": 0.08126497060820342,
+        "bias": 0.015017480724271934
+      },
+      "rmse_relative_improvement": 0.016875068636071806,
+      "mae_relative_improvement": 0.019174950847049527,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.2135740849542794,
+        "mae": 0.16821716344422646,
+        "bias": -0.05350958422421772
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.21039949885897197,
+        "mae": 0.16579809249144925,
+        "bias": -0.03208551811291325
+      },
+      "rmse_relative_improvement": 0.014864097842147051,
+      "mae_relative_improvement": 0.01438064287405056,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0016287271497866464,
+        "mae": 0.001103850515774804,
+        "bias": -0.0002502751778545593
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0017330675188451192,
+        "mae": 0.0011937537130086496,
+        "bias": -0.0005256546126394424
+      },
+      "rmse_relative_improvement": -0.06406252211866233,
+      "mae_relative_improvement": -0.08144508332338979,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0032555914956895714,
+        "mae": 0.002201459886568744,
+        "bias": 0.0005009855766419627
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.003440510469589631,
+        "mae": 0.0023721604971975127,
+        "bias": 0.000993122970457336
+      },
+      "rmse_relative_improvement": -0.0568004229476867,
+      "mae_relative_improvement": -0.07753973246127474,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.10692740977440877,
+        "mae": 0.07988840946808513,
+        "bias": -0.014037889186736105
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.10926051557124282,
+        "mae": 0.08129916467061946,
+        "bias": -0.02780686092598026
+      },
+      "rmse_relative_improvement": -0.02181952973289393,
+      "mae_relative_improvement": -0.017659072347633975,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_learned_sparse11",
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.21328940579497113,
+        "mae": 0.16227933921910842,
+        "bias": 0.02653255152063794
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.2171882509873713,
+        "mae": 0.1640728264629608,
+        "bias": 0.05113942121140665
+      },
+      "rmse_relative_improvement": -0.018279600798119383,
+      "mae_relative_improvement": -0.011051852025542446,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0017846863544243262,
+        "mae": 0.0014483979414499813,
+        "bias": 0.0002988230819836953
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.0018411781073086207,
+        "mae": 0.001442407550371669,
+        "bias": -5.35797346600315e-05
+      },
+      "rmse_relative_improvement": -0.03165360274327678,
+      "mae_relative_improvement": 0.004135873786395582,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0032982905325838,
+        "mae": 0.002677408175183514,
+        "bias": -0.0005406532333589154
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.0034047460059749347,
+        "mae": 0.002671417217480015,
+        "bias": 8.101274252415874e-05
+      },
+      "rmse_relative_improvement": -0.03227595396447381,
+      "mae_relative_improvement": 0.0022375959553079085,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.09291553278531488,
+        "mae": 0.07114392153428035,
+        "bias": 0.014316321816210377
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.09384178645182865,
+        "mae": 0.07077404145782801,
+        "bias": -0.0033038190159759657
+      },
+      "rmse_relative_improvement": -0.009968770976688295,
+      "mae_relative_improvement": 0.005199039755970193,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.19565325035950876,
+        "mae": 0.1609898935917763,
+        "bias": -0.027538071774064147
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.1964051582412694,
+        "mae": 0.16331223323104269,
+        "bias": 0.003545227020089534
+      },
+      "rmse_relative_improvement": -0.0038430635850874844,
+      "mae_relative_improvement": -0.014425375329181698,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0015572700803787984,
+        "mae": 0.0012100441428214515,
+        "bias": 0.000663006915180179
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0015443546350899988,
+        "mae": 0.0011630138789366809,
+        "bias": 0.0003273087138935683
+      },
+      "rmse_relative_improvement": 0.008293645046887423,
+      "mae_relative_improvement": 0.03886656876426875,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.002988461058468108,
+        "mae": 0.0023308698171359264,
+        "bias": -0.001219887246760836
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0029664958169226432,
+        "mae": 0.002247888142198332,
+        "bias": -0.0006349020627556143
+      },
+      "rmse_relative_improvement": 0.007350017656487097,
+      "mae_relative_improvement": 0.035601162419082955,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.10061703364091319,
+        "mae": 0.0837523412055471,
+        "bias": 0.03196753857173093
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.09839137714549018,
+        "mae": 0.08313348591588438,
+        "bias": 0.015182628507400398
+      },
+      "rmse_relative_improvement": 0.022120076639965777,
+      "mae_relative_improvement": 0.0073891103311836456,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.20526796848065487,
+        "mae": 0.16960257505808504,
+        "bias": -0.06598646519717441
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.2006623196799063,
+        "mae": 0.16850431102792832,
+        "bias": -0.03673720599691332
+      },
+      "rmse_relative_improvement": 0.022437250365161674,
+      "mae_relative_improvement": 0.006475515066800108,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.001986232781950241,
+        "mae": 0.0016867517400785109,
+        "bias": -6.536075121278832e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0020963879428057075,
+        "mae": 0.001721801221806657,
+        "bias": -0.0004344681832136313
+      },
+      "rmse_relative_improvement": -0.055459340846900754,
+      "mae_relative_improvement": -0.020779277053844802,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0035814161133109804,
+        "mae": 0.003023946533231101,
+        "bias": 0.00013858078004300525
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0037926894545408014,
+        "mae": 0.0030949462927616976,
+        "bias": 0.0007969275478039317
+      },
+      "rmse_relative_improvement": -0.05899156494119335,
+      "mae_relative_improvement": -0.023479171589298173,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.08451511703157721,
+        "mae": 0.0585355018630136,
+        "bias": -0.003334894939310174
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.08906008461906566,
+        "mae": 0.05841459699977165,
+        "bias": -0.02179026653935233
+      },
+      "rmse_relative_improvement": -0.053776977978866394,
+      "mae_relative_improvement": 0.002065496312390044,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.18554096547206522,
+        "mae": 0.15237721212546754,
+        "bias": 0.01091032164904612
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.1920536535144157,
+        "mae": 0.15812015543415706,
+        "bias": 0.043827660037092396
+      },
+      "rmse_relative_improvement": -0.03510107876058785,
+      "mae_relative_improvement": -0.03768899055562701,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 3.99923302272407e-05,
+        "mae": 3.999158159865408e-05,
+        "bias": -3.999158159865408e-05
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 3.861888980066662e-05,
+        "mae": 3.8616434946997165e-05,
+        "bias": -3.8616434946997165e-05
+      },
+      "rmse_relative_improvement": 0.034342595661969254,
+      "mae_relative_improvement": 0.034385903149756814,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 8.282340075068015e-05,
+        "mae": 8.282204496549936e-05,
+        "bias": 8.282204496549936e-05
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 8.030925217043093e-05,
+        "mae": 8.03049154809698e-05,
+        "bias": 8.03049154809698e-05
+      },
+      "rmse_relative_improvement": 0.030355534274877857,
+      "mae_relative_improvement": 0.03039202286756026,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.001999622981517439,
+        "mae": 0.0019995855494123636,
+        "bias": -0.0019995855494123636
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.0019309509605700942,
+        "mae": 0.0019308282168295232,
+        "bias": -0.0019308282168295232
+      },
+      "rmse_relative_improvement": 0.03434248434934071,
+      "mae_relative_improvement": 0.03438579189724929,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.004141170015859698,
+        "mae": 0.004141102226644206,
+        "bias": 0.004141102226644206
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.004015462586812182,
+        "mae": 0.004015245752417728,
+        "bias": 0.004015245752417728
+      },
+      "rmse_relative_improvement": 0.030355534442219438,
+      "mae_relative_improvement": 0.030392023026310916,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 3.97798562759901e-05,
+        "mae": 3.9779674527571364e-05,
+        "bias": -3.9779674527571364e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 3.823995532788059e-05,
+        "mae": 3.823935666218178e-05,
+        "bias": -3.823935666218178e-05
+      },
+      "rmse_relative_improvement": 0.03871057093383592,
+      "mae_relative_improvement": 0.038721228458568374,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 8.241198498196739e-05,
+        "mae": 8.241165594374278e-05,
+        "bias": 8.241165594374278e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 7.958323306735456e-05,
+        "mae": 7.95821762967103e-05,
+        "bias": 7.95821762967103e-05
+      },
+      "rmse_relative_improvement": 0.03432452106610209,
+      "mae_relative_improvement": 0.03433348856579207,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.001988999174307593,
+        "mae": 0.0019889900866677072,
+        "bias": -0.0019889900866677072
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0019120041270426558,
+        "mae": 0.0019119741933982428,
+        "bias": -0.0019119741933982428
+      },
+      "rmse_relative_improvement": 0.0387104470728303,
+      "mae_relative_improvement": 0.038721104637828775,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0041205992299733155,
+        "mae": 0.004120582778135463,
+        "bias": 0.004120582778135463
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.003979161634182312,
+        "mae": 0.003979108795783839,
+        "bias": 0.003979108795783839
+      },
+      "rmse_relative_improvement": 0.03432452124006236,
+      "mae_relative_improvement": 0.034333488724534296,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 4.0203681282575494e-05,
+        "mae": 4.0203488669736804e-05,
+        "bias": -4.0203488669736804e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 3.899414206510718e-05,
+        "mae": 3.899351323181255e-05,
+        "bias": -3.899351323181255e-05
+      },
+      "rmse_relative_improvement": 0.030085285199804163,
+      "mae_relative_improvement": 0.030096279650354444,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 8.323278293525644e-05,
+        "mae": 8.323243398725591e-05,
+        "bias": 8.323243398725591e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 8.102876639129374e-05,
+        "mae": 8.102765466522929e-05,
+        "bias": 8.102765466522929e-05
+      },
+      "rmse_relative_improvement": 0.02648014960255648,
+      "mae_relative_improvement": 0.026489425052308432,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0020101906429563087,
+        "mae": 0.0020101810121570204,
+        "bias": -0.0020101810121570204
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.00194971368216592,
+        "mae": 0.0019496822402608035,
+        "bias": -0.0019496822402608035
+      },
+      "rmse_relative_improvement": 0.030085186697241622,
+      "mae_relative_improvement": 0.030096181154998954,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.004161639122563865,
+        "mae": 0.004161621675152947,
+        "bias": 0.004161621675152947
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.004051438295374658,
+        "mae": 0.004051382709051616,
+        "bias": 0.004051382709051616
+      },
+      "rmse_relative_improvement": 0.026480149754387103,
+      "mae_relative_improvement": 0.026489425206408207,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.002935299923257808,
+        "mae": 0.0024452273183735345,
+        "bias": 0.0004778804441489079
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.0030423683945760708,
+        "mae": 0.0025816106545233004,
+        "bias": 0.0003325829658797215
+      },
+      "rmse_relative_improvement": -0.03647616056877431,
+      "mae_relative_improvement": -0.05577531999784893,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0059465714772448715,
+        "mae": 0.00485307777772537,
+        "bias": -0.0010118510414766555
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.006118690834546672,
+        "mae": 0.0050967122161184545,
+        "bias": -0.000762102982976133
+      },
+      "rmse_relative_improvement": -0.028944301428214816,
+      "mae_relative_improvement": -0.05020204693840193,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.13362365998940065,
+        "mae": 0.10031241599726393,
+        "bias": 0.02014723178556818
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.13478154122403394,
+        "mae": 0.10374307251247741,
+        "bias": 0.012882357872108846
+      },
+      "rmse_relative_improvement": -0.008665241131137483,
+      "mae_relative_improvement": -0.03419971975659583,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.2709896255659046,
+        "mae": 0.2044436714369101,
+        "bias": -0.039655204173083346
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.27269644062823706,
+        "mae": 0.20974866367862674,
+        "bias": -0.027167801248057212
+      },
+      "rmse_relative_improvement": -0.006298451679720662,
+      "mae_relative_improvement": -0.025948429728497174,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.002366924832558626,
+        "mae": 0.0017874375988567073,
+        "bias": 0.00045921639566150695
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0025211348196774205,
+        "mae": 0.0019759119459180313,
+        "bias": 0.0003610530118085206
+      },
+      "rmse_relative_improvement": -0.06515204242971026,
+      "mae_relative_improvement": -0.10544387517744801,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.004602764762900326,
+        "mae": 0.0033946712797504326,
+        "bias": -0.0009890888591109542
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.004861260619506411,
+        "mae": 0.003739569851238471,
+        "bias": -0.0008209412093936317
+      },
+      "rmse_relative_improvement": -0.05616099668825994,
+      "mae_relative_improvement": -0.1015999910051363,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.10646511712442473,
+        "mae": 0.07684201427795773,
+        "bias": 0.020585535802550955
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.10836809196887728,
+        "mae": 0.08000244996696225,
+        "bias": 0.015677366609901617
+      },
+      "rmse_relative_improvement": -0.01787416287936417,
+      "mae_relative_improvement": -0.04112900629559759,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.22245117816127702,
+        "mae": 0.16585559110878573,
+        "bias": -0.04178928761877886
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.22482872013794922,
+        "mae": 0.1702287113092709,
+        "bias": -0.03338190513291274
+      },
+      "rmse_relative_improvement": -0.010687927105283665,
+      "mae_relative_improvement": -0.026367035149371644,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.003410225522743607,
+        "mae": 0.0031030170378903614,
+        "bias": 0.0004965444926363089
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0034865298102326413,
+        "mae": 0.0031873093631285695,
+        "bias": 0.0003041129199509223
+      },
+      "rmse_relative_improvement": -0.022375144101216462,
+      "mae_relative_improvement": -0.0271646350016549,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.007038322328891141,
+        "mae": 0.006311484275700306,
+        "bias": -0.0010346132238423567
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.007158554340561161,
+        "mae": 0.006453854580998437,
+        "bias": -0.0007032647565586341
+      },
+      "rmse_relative_improvement": -0.017082481598844547,
+      "mae_relative_improvement": -0.022557341360457346,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.1561273321798859,
+        "mae": 0.12378281771657011,
+        "bias": 0.01970892776858541
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.15680715657289646,
+        "mae": 0.12748369505799256,
+        "bias": 0.010087349134316075
+      },
+      "rmse_relative_improvement": -0.00435429455892635,
+      "mae_relative_improvement": -0.029898150726351057,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_cold11",
+      "seed": 2,
+      "kind": "cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.3120676651999661,
+        "mae": 0.24303175176503444,
+        "bias": -0.037521120727387836
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.31333487527524123,
+        "mae": 0.2492686160479826,
+        "bias": -0.020953697363201688
+      },
+      "rmse_relative_improvement": -0.004060690089321294,
+      "mae_relative_improvement": -0.025662754918452012,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 104,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 104,
+        "rmse": 0.0017917967980634595,
+        "mae": 0.0012291711684331871,
+        "bias": 0.00039000585592938793
+      },
+      "corrected": {
+        "count": 104,
+        "rmse": 0.0017841235923060968,
+        "mae": 0.0011599332176364654,
+        "bias": 0.00014556876828703352
+      },
+      "rmse_relative_improvement": 0.0042824084548291055,
+      "mae_relative_improvement": 0.0563289740069145,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 104,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 104,
+        "rmse": 0.0035711019463278487,
+        "mae": 0.0024456861852754,
+        "bias": -0.0007442496393622485
+      },
+      "corrected": {
+        "count": 104,
+        "rmse": 0.0035564560172406533,
+        "mae": 0.0023143307289255613,
+        "bias": -0.00032668081071013936
+      },
+      "rmse_relative_improvement": 0.004101235222997694,
+      "mae_relative_improvement": 0.053709039671844566,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 104,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 104,
+        "rmse": 0.11278586916438285,
+        "mae": 0.08610451147344365,
+        "bias": 0.017287143098075754
+      },
+      "corrected": {
+        "count": 104,
+        "rmse": 0.11156635408561516,
+        "mae": 0.08539013762430822,
+        "bias": 0.005065288715958044
+      },
+      "rmse_relative_improvement": 0.010812658427894683,
+      "mae_relative_improvement": 0.008296590235643575,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 104,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 104,
+        "rmse": 0.22584467297762975,
+        "mae": 0.17186107452128938,
+        "bias": -0.03438159195000395
+      },
+      "corrected": {
+        "count": 104,
+        "rmse": 0.2234551068107172,
+        "mae": 0.1704719270838113,
+        "bias": -0.013503150517398503
+      },
+      "rmse_relative_improvement": 0.010580573521648833,
+      "mae_relative_improvement": 0.008082967253332327,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 100,
+        "rmse": 0.001560225643038701,
+        "mae": 0.0011321390011719734,
+        "bias": 0.0005249733024394273
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0015190722577189532,
+        "mae": 0.0010527246484823528,
+        "bias": 0.0002826396062982117
+      },
+      "rmse_relative_improvement": 0.026376560020893742,
+      "mae_relative_improvement": 0.07014540847670833,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 100,
+        "rmse": 0.003089555505685467,
+        "mae": 0.0022398132119385806,
+        "bias": -0.001022129149485819
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.003015697205527429,
+        "mae": 0.002090544195809389,
+        "bias": -0.0006082065151105031
+      },
+      "rmse_relative_improvement": 0.023905801343307186,
+      "mae_relative_improvement": 0.06664351086669319,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 100,
+        "rmse": 0.10226824431221455,
+        "mae": 0.08110967662851942,
+        "bias": 0.026080924050418314
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.09936923697210044,
+        "mae": 0.07999638363236707,
+        "bias": 0.01396423924335754
+      },
+      "rmse_relative_improvement": 0.02834709209697331,
+      "mae_relative_improvement": 0.013725772835357425,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 100,
+        "rmse": 0.20169464450842048,
+        "mae": 0.16067535243137585,
+        "bias": -0.053091995172799666
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.19615047696457244,
+        "mae": 0.15859767202013067,
+        "bias": -0.03239586345403388
+      },
+      "rmse_relative_improvement": 0.02748792640161835,
+      "mae_relative_improvement": 0.012930921761211314,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 4,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 4,
+        "rmse": 0.004755662779721025,
+        "mae": 0.00365497534996353,
+        "bias": -0.002984180306821597
+      },
+      "corrected": {
+        "count": 4,
+        "rmse": 0.005007095835304091,
+        "mae": 0.0038401474464892817,
+        "bias": -0.0032812021819924216
+      },
+      "rmse_relative_improvement": -0.05287024484898738,
+      "mae_relative_improvement": -0.05066302198935471,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 4,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 4,
+        "rmse": 0.00964044430096174,
+        "mae": 0.007592510518695883,
+        "bias": 0.006202738113727015
+      },
+      "corrected": {
+        "count": 4,
+        "rmse": 0.010074578084520457,
+        "mae": 0.007908994056829861,
+        "bias": 0.006711461799298954
+      },
+      "rmse_relative_improvement": -0.045032549331300846,
+      "mae_relative_improvement": -0.0416836482945483,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 4,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 4,
+        "rmse": 0.2631864633576875,
+        "mae": 0.21097538259654955,
+        "bias": -0.2025573807104882
+      },
+      "corrected": {
+        "count": 4,
+        "rmse": 0.2770689518016084,
+        "mae": 0.22023398742283712,
+        "bias": -0.2174084744690294
+      },
+      "rmse_relative_improvement": -0.05274772975331077,
+      "mae_relative_improvement": -0.04388476376882746,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_learned_sparse11",
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 4,
+      "source_active_count_ALL": 104,
+      "base": {
+        "count": 4,
+        "rmse": 0.5559972873470094,
+        "mae": 0.4515041267691279,
+        "bias": 0.43337848861988904
+      },
+      "corrected": {
+        "count": 4,
+        "rmse": 0.5799668640696495,
+        "mae": 0.46732830367582673,
+        "bias": 0.45881467289848593
+      },
+      "rmse_relative_improvement": -0.0431109598340184,
+      "mae_relative_improvement": -0.03504769052706884,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0017465666902677442,
+        "mae": 0.0013754630538897108,
+        "bias": 0.0002473677111843401
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.001807676757933118,
+        "mae": 0.0013961807282001858,
+        "bias": -7.623100935288648e-05
+      },
+      "rmse_relative_improvement": -0.03498868265717686,
+      "mae_relative_improvement": -0.015062327011901149,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0032586668167552207,
+        "mae": 0.0026132280703886506,
+        "bias": -0.0005284607824482278
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.0033526015717389368,
+        "mae": 0.0026404321257420737,
+        "bias": 3.0033004174594473e-05
+      },
+      "rmse_relative_improvement": -0.028826130520839977,
+      "mae_relative_improvement": -0.0104101343704674,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.09289460954938014,
+        "mae": 0.07268434505864955,
+        "bias": 0.013483731796482365
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.09370176417595713,
+        "mae": 0.0722274130358063,
+        "bias": -0.002696204230378978
+      },
+      "rmse_relative_improvement": -0.008688928566387144,
+      "mae_relative_improvement": 0.006286525970269751,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.19174017777466415,
+        "mae": 0.1587383236777635,
+        "bias": -0.027834771281991067
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.19197021119597146,
+        "mae": 0.16019341129915232,
+        "bias": 8.991804915004643e-05
+      },
+      "rmse_relative_improvement": -0.001199714238179395,
+      "mae_relative_improvement": -0.00916658049345809,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.001462708489115384,
+        "mae": 0.0010813814645250514,
+        "bias": 0.0006299303270487178
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0014609528833626733,
+        "mae": 0.0010529082499951296,
+        "bias": 0.00032335185715277084
+      },
+      "rmse_relative_improvement": 0.0012002430872417502,
+      "mae_relative_improvement": 0.026330407413102285,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.002876241094437024,
+        "mae": 0.002177352558248859,
+        "bias": -0.0012171417514372392
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0028594195026224417,
+        "mae": 0.002105129945726229,
+        "bias": -0.0006921867272536798
+      },
+      "rmse_relative_improvement": 0.005848463763040313,
+      "mae_relative_improvement": 0.03316992108100091,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.10231673371709023,
+        "mae": 0.08458394806132917,
+        "bias": 0.02953446200179168
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.10073600828273768,
+        "mae": 0.08447566051556275,
+        "bias": 0.014205538506994311
+      },
+      "rmse_relative_improvement": 0.015449334404314672,
+      "mae_relative_improvement": 0.0012802375420913298,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.2018286469502982,
+        "mae": 0.1640186627660094,
+        "bias": -0.06229456741932775
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.1982696365324656,
+        "mae": 0.1639804389925054,
+        "bias": -0.036046816210149775
+      },
+      "rmse_relative_improvement": 0.01763382191582068,
+      "mae_relative_improvement": 0.00023304526972363587,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.001990345267277875,
+        "mae": 0.0016695446432543704,
+        "bias": -0.00013519490468003745
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0020978577632760204,
+        "mae": 0.0017394532064052427,
+        "bias": -0.0004758138758585438
+      },
+      "rmse_relative_improvement": -0.05401700788586622,
+      "mae_relative_improvement": -0.041872832471614906,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.003600702155401765,
+        "mae": 0.0030491035825284418,
+        "bias": 0.00016022018654078375
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0037820093476451386,
+        "mae": 0.0031757343057579185,
+        "bias": 0.0007522527356028688
+      },
+      "rmse_relative_improvement": -0.05035328789174546,
+      "mae_relative_improvement": -0.041530476024192436,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.08240208109101146,
+        "mae": 0.060784742055969926,
+        "bias": -0.002566998408826947
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0860947028256302,
+        "mae": 0.05997916555604985,
+        "bias": -0.01959794696775227
+      },
+      "rmse_relative_improvement": -0.044812238789701274,
+      "mae_relative_improvement": 0.013252939350771726,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.18109055418859235,
+        "mae": 0.1534579845895176,
+        "bias": 0.006625024855345604
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.18545693624811058,
+        "mae": 0.15640638360579928,
+        "bias": 0.03622665230844987
+      },
+      "rmse_relative_improvement": -0.024111594771370367,
+      "mae_relative_improvement": -0.019213070106246448,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 4.151958092052548e-05,
+        "mae": 4.151679912386575e-05,
+        "bias": -4.151679912386575e-05
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 4.097406059039149e-05,
+        "mae": 4.096732176551557e-05,
+        "bias": -4.096732176551557e-05
+      },
+      "rmse_relative_improvement": 0.013138868891239571,
+      "mae_relative_improvement": 0.013235060745189162,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 8.512837454926419e-05,
+        "mae": 8.512347727777899e-05,
+        "bias": 8.512347727777899e-05
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 8.420542199848573e-05,
+        "mae": 8.419383898941075e-05,
+        "bias": 8.419383898941075e-05
+      },
+      "rmse_relative_improvement": 0.010841890916692498,
+      "mae_relative_improvement": 0.010921056306647296,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0020759661840453318,
+        "mae": 0.002075827090389571,
+        "bias": -0.002075827090389571
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.002048690170470502,
+        "mae": 0.002048353222472057,
+        "bias": -0.002048353222472057
+      },
+      "rmse_relative_improvement": 0.013138948882914048,
+      "mae_relative_improvement": 0.013235142774997677,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 200,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 200,
+        "rmse": 0.0042564187383157225,
+        "mae": 0.004256173874793105,
+        "bias": 0.004256173874793105
+      },
+      "corrected": {
+        "count": 200,
+        "rmse": 0.004210271110748031,
+        "mae": 0.0042096919603746945,
+        "bias": 0.0042096919603746945
+      },
+      "rmse_relative_improvement": 0.010841890895807869,
+      "mae_relative_improvement": 0.010921056278667754,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 4.193366982567835e-05,
+        "mae": 4.193300460670984e-05,
+        "bias": -4.193300460670984e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 4.1612433649884896e-05,
+        "mae": 4.1610830994647934e-05,
+        "bias": -4.1610830994647934e-05
+      },
+      "rmse_relative_improvement": 0.0076605786502554575,
+      "mae_relative_improvement": 0.00768305574769992,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 8.591538959145367e-05,
+        "mae": 8.591421765778472e-05,
+        "bias": 8.591421765778472e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 8.540605819954885e-05,
+        "mae": 8.540329989478351e-05,
+        "bias": 8.540329989478351e-05
+      },
+      "rmse_relative_improvement": 0.005928290546394571,
+      "mae_relative_improvement": 0.005946836006076521,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.002096670849455459,
+        "mae": 0.002096637587578828,
+        "bias": -0.002096637587578828
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0020806090413582664,
+        "mae": 0.002080528906975744,
+        "bias": -0.002080528906975744
+      },
+      "rmse_relative_improvement": 0.007660624509261397,
+      "mae_relative_improvement": 0.007683102076638022,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.004295769483380971,
+        "mae": 0.004295710886741919,
+        "bias": 0.004295710886741919
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.004270302913761747,
+        "mae": 0.004270164998591858,
+        "bias": 0.004270164998591858
+      },
+      "rmse_relative_improvement": 0.005928290546721989,
+      "mae_relative_improvement": 0.00594683600074301,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 4.110132035084908e-05,
+        "mae": 4.1100593641021644e-05,
+        "bias": -4.1100593641021644e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 4.0325583049276215e-05,
+        "mae": 4.03238125363832e-05,
+        "bias": -4.03238125363832e-05
+      },
+      "rmse_relative_improvement": 0.018873780573251984,
+      "mae_relative_improvement": 0.01889951058670728,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 8.433401530905758e-05,
+        "mae": 8.433273689777323e-05,
+        "bias": 8.433273689777323e-05
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 8.298741718297662e-05,
+        "mae": 8.2984378084038e-05,
+        "bias": 8.2984378084038e-05
+      },
+      "rmse_relative_improvement": 0.015967437589045154,
+      "mae_relative_improvement": 0.015988557508452433,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.0020550529296451702,
+        "mae": 0.0020550165932003137,
+        "bias": -0.0020550165932003137
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.0020162660653254933,
+        "mae": 0.0020161775379683704,
+        "bias": -0.0020161775379683704
+      },
+      "rmse_relative_improvement": 0.01887390040429465,
+      "mae_relative_improvement": 0.01889963096183985,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    },
+    {
+      "collection": "G",
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "pair_count": 100,
+      "source_active_count_ALL": 200,
+      "base": {
+        "count": 100,
+        "rmse": 0.00421670078348265,
+        "mae": 0.004216636862844292,
+        "bias": 0.004216636862844292
+      },
+      "corrected": {
+        "count": 100,
+        "rmse": 0.004149370877219446,
+        "mae": 0.00414921892215753,
+        "bias": 0.00414921892215753
+      },
+      "rmse_relative_improvement": 0.01596743751108536,
+      "mae_relative_improvement": 0.01598855744036873,
+      "empty_reason": null,
+      "method_ranking": false,
+      "in_sample_fit_description": false
+    }
+  ],
+  "development_gate": {
+    "scope": "seen_C_common_prediction_only",
+    "metric": "velocity_RMSE",
+    "axes": [
+      {
+        "axis": 0,
+        "evaluated": true,
+        "each_seed_strictly_improved": false,
+        "mean_relative_improvement": -0.033857658857567786,
+        "passed": false,
+        "reason": null,
+        "seed_records": [
+          {
+            "collection": "C",
+            "trial_id": "seed0_prediction",
+            "seed": 0,
+            "kind": "prediction",
+            "segment": "ALL",
+            "signal": "v",
+            "axis": 0,
+            "pair_count": 100,
+            "source_active_count_ALL": 100,
+            "base": {
+              "count": 100,
+              "rmse": 0.055843602288870434,
+              "mae": 0.026332534380978937,
+              "bias": 0.0037012158365742932
+            },
+            "corrected": {
+              "count": 100,
+              "rmse": 0.05774097976779769,
+              "mae": 0.02688641156451193,
+              "bias": 0.0034908429856896524
+            },
+            "rmse_relative_improvement": -0.03397663118350448,
+            "mae_relative_improvement": -0.021033948936304444,
+            "empty_reason": null,
+            "method_ranking": false,
+            "in_sample_fit_description": false
+          },
+          {
+            "collection": "C",
+            "trial_id": "seed1_prediction",
+            "seed": 1,
+            "kind": "prediction",
+            "segment": "ALL",
+            "signal": "v",
+            "axis": 0,
+            "pair_count": 100,
+            "source_active_count_ALL": 100,
+            "base": {
+              "count": 100,
+              "rmse": 0.05606884158760771,
+              "mae": 0.026299479881257318,
+              "bias": 0.003793804472110935
+            },
+            "corrected": {
+              "count": 100,
+              "rmse": 0.05793418724223753,
+              "mae": 0.026828248558513502,
+              "bias": 0.00359177130013448
+            },
+            "rmse_relative_improvement": -0.033268845972414335,
+            "mae_relative_improvement": -0.020105670516815742,
+            "empty_reason": null,
+            "method_ranking": false,
+            "in_sample_fit_description": false
+          },
+          {
+            "collection": "C",
+            "trial_id": "seed2_prediction",
+            "seed": 2,
+            "kind": "prediction",
+            "segment": "ALL",
+            "signal": "v",
+            "axis": 0,
+            "pair_count": 100,
+            "source_active_count_ALL": 100,
+            "base": {
+              "count": 100,
+              "rmse": 0.05586979113515131,
+              "mae": 0.026445255543866005,
+              "bias": 0.0036285012673157495
+            },
+            "corrected": {
+              "count": 100,
+              "rmse": 0.05778766135775909,
+              "mae": 0.027027906565071168,
+              "bias": 0.003402576517719276
+            },
+            "rmse_relative_improvement": -0.034327499416784556,
+            "mae_relative_improvement": -0.022032346037976137,
+            "empty_reason": null,
+            "method_ranking": false,
+            "in_sample_fit_description": false
+          }
+        ]
+      },
+      {
+        "axis": 1,
+        "evaluated": true,
+        "each_seed_strictly_improved": false,
+        "mean_relative_improvement": -0.027676884869568374,
+        "passed": false,
+        "reason": null,
+        "seed_records": [
+          {
+            "collection": "C",
+            "trial_id": "seed0_prediction",
+            "seed": 0,
+            "kind": "prediction",
+            "segment": "ALL",
+            "signal": "v",
+            "axis": 1,
+            "pair_count": 100,
+            "source_active_count_ALL": 100,
+            "base": {
+              "count": 100,
+              "rmse": 0.11579791869361464,
+              "mae": 0.0531254246328902,
+              "bias": -0.008453788674528014
+            },
+            "corrected": {
+              "count": 100,
+              "rmse": 0.11900017057464266,
+              "mae": 0.05403247437211993,
+              "bias": -0.008091832372174718
+            },
+            "rmse_relative_improvement": -0.02765379479315803,
+            "mae_relative_improvement": -0.017073740972381183,
+            "empty_reason": null,
+            "method_ranking": false,
+            "in_sample_fit_description": false
+          },
+          {
+            "collection": "C",
+            "trial_id": "seed1_prediction",
+            "seed": 1,
+            "kind": "prediction",
+            "segment": "ALL",
+            "signal": "v",
+            "axis": 1,
+            "pair_count": 100,
+            "source_active_count_ALL": 100,
+            "base": {
+              "count": 100,
+              "rmse": 0.11576791956208474,
+              "mae": 0.05305610119494838,
+              "bias": -0.00854404587351995
+            },
+            "corrected": {
+              "count": 100,
+              "rmse": 0.11894948386838926,
+              "mae": 0.05397059398805332,
+              "bias": -0.0081986059986644
+            },
+            "rmse_relative_improvement": -0.027482262083826186,
+            "mae_relative_improvement": -0.017236336114196234,
+            "empty_reason": null,
+            "method_ranking": false,
+            "in_sample_fit_description": false
+          },
+          {
+            "collection": "C",
+            "trial_id": "seed2_prediction",
+            "seed": 2,
+            "kind": "prediction",
+            "segment": "ALL",
+            "signal": "v",
+            "axis": 1,
+            "pair_count": 100,
+            "source_active_count_ALL": 100,
+            "base": {
+              "count": 100,
+              "rmse": 0.1157795448880572,
+              "mae": 0.0532886530682907,
+              "bias": -0.008309039187248997
+            },
+            "corrected": {
+              "count": 100,
+              "rmse": 0.11900916871827127,
+              "mae": 0.05413506699669823,
+              "bias": -0.007920000652120712
+            },
+            "rmse_relative_improvement": -0.027894597731720906,
+            "mae_relative_improvement": -0.0158835676954123,
+            "empty_reason": null,
+            "method_ranking": false,
+            "in_sample_fit_description": false
+          }
+        ]
+      }
+    ],
+    "evaluated": true,
+    "passed": false,
+    "scientific_adoption": false
+  },
+  "scientific_adoption": false,
+  "G_method_ranking": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

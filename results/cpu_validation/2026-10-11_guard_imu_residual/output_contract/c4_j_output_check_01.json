@@ -1,0 +1,73 @@
+{
+  "scope": "output byte identity, reported costs and declarations only; residuals, ridge and scientific gate not recomputed",
+  "first_attempt": true,
+  "checks": [
+    {
+      "name": "bytes_and_sha_parameters.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_predictions.jsonl",
+      "passed": true
+    },
+    {
+      "name": "saved_prediction_record_count",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_unavailable.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_metrics.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_run.json",
+      "passed": true
+    },
+    {
+      "name": "complete_source_inputs",
+      "passed": true
+    },
+    {
+      "name": "restoration_attempts_returns",
+      "passed": true
+    },
+    {
+      "name": "base_prediction_cost",
+      "passed": true
+    },
+    {
+      "name": "fixed_fit_cost",
+      "passed": true
+    },
+    {
+      "name": "all_fixed_groups_retained",
+      "passed": true
+    },
+    {
+      "name": "no_model_or_physics_updates",
+      "passed": true
+    },
+    {
+      "name": "old_scientific_dependencies_closed",
+      "passed": true
+    },
+    {
+      "name": "full_common_prediction_counts",
+      "passed": true
+    }
+  ],
+  "failures": 0,
+  "cost": {
+    "binary_reads": 6,
+    "input_bytes": 4845408,
+    "wall_seconds": 0.04005660000257194,
+    "cpu_seconds": 0.0
+  },
+  "actual_CDG_trace_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "physics_calls": 0
+}
