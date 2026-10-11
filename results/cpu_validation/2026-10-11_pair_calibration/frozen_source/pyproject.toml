@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "developmental-humanoid-learning"
+version = "0.1.0"
+description = "Idealized 2-D stickman benchmark for developmental locomotion learning"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.0",
+  "matplotlib>=3.7",
+  "pandas>=2.0",
+  "scipy>=1.10",
+]
+
+[project.scripts]
+stickman-experiment = "robot_rl.experiment:main"
+
+[project.optional-dependencies]
+physics = ["mujoco==3.15.0"]
+
+[tool.setuptools.package-data]
+developmental_physics = ["assets/*.xml"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

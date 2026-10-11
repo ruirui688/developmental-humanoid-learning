@@ -1,0 +1,848 @@
+[
+  {
+    "trial_id": "pulse2_seed0_calibration",
+    "seed": 0,
+    "reset_seed": 3757552657,
+    "pulse_steps": 2,
+    "zero_steps_per_half": 8,
+    "maximum_control_steps": 500,
+    "status": "terminated",
+    "completed": false,
+    "reason": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_velocity_rad_s"
+        }
+      ],
+      "q_rad": [
+        0.08477686104991294,
+        0.024014092263651223
+      ],
+      "qref_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "velocity_rad_s": [
+        -0.5460751484448308,
+        1.0718069104957968
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "calibration",
+      "step_index": 361
+    },
+    "study_abort": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_velocity_rad_s"
+        }
+      ],
+      "q_rad": [
+        0.08477686104991294,
+        0.024014092263651223
+      ],
+      "qref_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "velocity_rad_s": [
+        -0.5460751484448308,
+        1.0718069104957968
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "calibration",
+      "step_index": 361
+    },
+    "control_calls_attempted": 362,
+    "control_steps": 362,
+    "physics_steps": 3620,
+    "model_updates": 0,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 262,
+        "control_steps": 262,
+        "physics_steps": 2620
+      }
+    },
+    "collector_exception": null,
+    "trace_write_failure": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "returned_steps": 362,
+    "written_returned_steps": 362,
+    "returned_unwritten_steps": 0,
+    "unreturned_physics_steps": 0,
+    "complete_active_endpoints": 262,
+    "risk_telemetry_complete": true,
+    "actual_effort_complete": true,
+    "known_actual_effort_substeps": 3620,
+    "missing_actual_effort_substeps": 0,
+    "actual_effort_is_lower_bound": false,
+    "reference_q": [
+      0.09739774391333796,
+      -0.0005762480149995581
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "selection_records": [
+      {
+        "joint_index": 0,
+        "joint_position_rad": 0.09739774391333796,
+        "lower_limit_rad": -1.7453292519943295,
+        "upper_limit_rad": 1.7453292519943295,
+        "positive_room_rad": 1.6479315080809915,
+        "negative_room_rad": 1.8427269959076675,
+        "direction": -1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      },
+      {
+        "joint_index": 1,
+        "joint_position_rad": -0.0005762480149995581,
+        "lower_limit_rad": 0.0,
+        "upper_limit_rad": 2.356194490192345,
+        "positive_room_rad": 2.356770738207344,
+        "negative_room_rad": -0.0005762480149995581,
+        "direction": 1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      }
+    ],
+    "phase_effort": {
+      "prefix": {
+        "requested_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "requested_squared_nm2_s": [
+          0.0,
+          0.0
+        ],
+        "actual_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "actual_squared_nm2_s": [
+          0.0,
+          0.0
+        ]
+      },
+      "calibration": {
+        "requested_absolute_nm_s": [
+          0.20000000000000007,
+          0.20000000000000007
+        ],
+        "requested_squared_nm2_s": [
+          0.07000000000000002,
+          0.07000000000000002
+        ],
+        "actual_absolute_nm_s": [
+          0.20000000000000007,
+          0.11000000000000001
+        ],
+        "actual_squared_nm2_s": [
+          0.07000000000000002,
+          0.04
+        ]
+      }
+    },
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "final_fingerprint_error": null,
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "pulse2_seed1_calibration",
+    "seed": 1,
+    "reset_seed": 1641411168,
+    "pulse_steps": 2,
+    "zero_steps_per_half": 8,
+    "maximum_control_steps": 500,
+    "status": "terminated",
+    "completed": false,
+    "reason": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_velocity_rad_s"
+        }
+      ],
+      "q_rad": [
+        0.08085813025970631,
+        0.0240039968995147
+      ],
+      "qref_rad": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "velocity_rad_s": [
+        -0.545647190695302,
+        1.0713918786946433
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "calibration",
+      "step_index": 361
+    },
+    "study_abort": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_velocity_rad_s"
+        }
+      ],
+      "q_rad": [
+        0.08085813025970631,
+        0.0240039968995147
+      ],
+      "qref_rad": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "velocity_rad_s": [
+        -0.545647190695302,
+        1.0713918786946433
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "calibration",
+      "step_index": 361
+    },
+    "control_calls_attempted": 362,
+    "control_steps": 362,
+    "physics_steps": 3620,
+    "model_updates": 0,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 262,
+        "control_steps": 262,
+        "physics_steps": 2620
+      }
+    },
+    "collector_exception": null,
+    "trace_write_failure": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "returned_steps": 362,
+    "written_returned_steps": 362,
+    "returned_unwritten_steps": 0,
+    "unreturned_physics_steps": 0,
+    "complete_active_endpoints": 262,
+    "risk_telemetry_complete": true,
+    "actual_effort_complete": true,
+    "known_actual_effort_substeps": 3620,
+    "missing_actual_effort_substeps": 0,
+    "actual_effort_is_lower_bound": false,
+    "reference_q": [
+      0.09382541724034689,
+      -0.0005763175538596344
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "selection_records": [
+      {
+        "joint_index": 0,
+        "joint_position_rad": 0.09382541724034689,
+        "lower_limit_rad": -1.7453292519943295,
+        "upper_limit_rad": 1.7453292519943295,
+        "positive_room_rad": 1.6515038347539825,
+        "negative_room_rad": 1.8391546692346765,
+        "direction": -1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      },
+      {
+        "joint_index": 1,
+        "joint_position_rad": -0.0005763175538596344,
+        "lower_limit_rad": 0.0,
+        "upper_limit_rad": 2.356194490192345,
+        "positive_room_rad": 2.3567708077462046,
+        "negative_room_rad": -0.0005763175538596344,
+        "direction": 1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      }
+    ],
+    "phase_effort": {
+      "prefix": {
+        "requested_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "requested_squared_nm2_s": [
+          0.0,
+          0.0
+        ],
+        "actual_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "actual_squared_nm2_s": [
+          0.0,
+          0.0
+        ]
+      },
+      "calibration": {
+        "requested_absolute_nm_s": [
+          0.20000000000000007,
+          0.20000000000000007
+        ],
+        "requested_squared_nm2_s": [
+          0.07000000000000002,
+          0.07000000000000002
+        ],
+        "actual_absolute_nm_s": [
+          0.20000000000000007,
+          0.11000000000000001
+        ],
+        "actual_squared_nm2_s": [
+          0.07000000000000002,
+          0.04
+        ]
+      }
+    },
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "final_fingerprint_error": null,
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "pulse2_seed2_calibration",
+    "seed": 2,
+    "reset_seed": 2001025171,
+    "pulse_steps": 2,
+    "zero_steps_per_half": 8,
+    "maximum_control_steps": 500,
+    "status": "terminated",
+    "completed": false,
+    "reason": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_velocity_rad_s"
+        }
+      ],
+      "q_rad": [
+        0.08857181472896389,
+        0.02402509757455473
+      ],
+      "qref_rad": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "velocity_rad_s": [
+        -0.546397168899692,
+        1.0722683998426479
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "calibration",
+      "step_index": 361
+    },
+    "study_abort": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_velocity_rad_s"
+        }
+      ],
+      "q_rad": [
+        0.08857181472896389,
+        0.02402509757455473
+      ],
+      "qref_rad": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "velocity_rad_s": [
+        -0.546397168899692,
+        1.0722683998426479
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "calibration",
+      "step_index": 361
+    },
+    "control_calls_attempted": 362,
+    "control_steps": 362,
+    "physics_steps": 3620,
+    "model_updates": 0,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 262,
+        "control_steps": 262,
+        "physics_steps": 2620
+      }
+    },
+    "collector_exception": null,
+    "trace_write_failure": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "returned_steps": 362,
+    "written_returned_steps": 362,
+    "returned_unwritten_steps": 0,
+    "unreturned_physics_steps": 0,
+    "complete_active_endpoints": 262,
+    "risk_telemetry_complete": true,
+    "actual_effort_complete": true,
+    "known_actual_effort_substeps": 3620,
+    "missing_actual_effort_substeps": 0,
+    "actual_effort_is_lower_bound": false,
+    "reference_q": [
+      0.10085905132196148,
+      -0.000576154793236481
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "selection_records": [
+      {
+        "joint_index": 0,
+        "joint_position_rad": 0.10085905132196148,
+        "lower_limit_rad": -1.7453292519943295,
+        "upper_limit_rad": 1.7453292519943295,
+        "positive_room_rad": 1.6444702006723682,
+        "negative_room_rad": 1.846188303316291,
+        "direction": -1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      },
+      {
+        "joint_index": 1,
+        "joint_position_rad": -0.000576154793236481,
+        "lower_limit_rad": 0.0,
+        "upper_limit_rad": 2.356194490192345,
+        "positive_room_rad": 2.3567706449855814,
+        "negative_room_rad": -0.000576154793236481,
+        "direction": 1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      }
+    ],
+    "phase_effort": {
+      "prefix": {
+        "requested_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "requested_squared_nm2_s": [
+          0.0,
+          0.0
+        ],
+        "actual_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "actual_squared_nm2_s": [
+          0.0,
+          0.0
+        ]
+      },
+      "calibration": {
+        "requested_absolute_nm_s": [
+          0.20000000000000007,
+          0.20000000000000007
+        ],
+        "requested_squared_nm2_s": [
+          0.07000000000000002,
+          0.07000000000000002
+        ],
+        "actual_absolute_nm_s": [
+          0.20000000000000007,
+          0.11000000000000001
+        ],
+        "actual_squared_nm2_s": [
+          0.07000000000000002,
+          0.04
+        ]
+      }
+    },
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "final_fingerprint_error": null,
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "pulse1_seed0_calibration",
+    "seed": 0,
+    "reset_seed": 3757552657,
+    "pulse_steps": 1,
+    "zero_steps_per_half": 9,
+    "maximum_control_steps": 500,
+    "status": "completed",
+    "completed": true,
+    "reason": null,
+    "study_abort": null,
+    "control_calls_attempted": 500,
+    "control_steps": 500,
+    "physics_steps": 5000,
+    "model_updates": 0,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 400,
+        "control_steps": 400,
+        "physics_steps": 4000
+      }
+    },
+    "collector_exception": null,
+    "trace_write_failure": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "returned_steps": 500,
+    "written_returned_steps": 500,
+    "returned_unwritten_steps": 0,
+    "unreturned_physics_steps": 0,
+    "complete_active_endpoints": 400,
+    "risk_telemetry_complete": true,
+    "actual_effort_complete": true,
+    "known_actual_effort_substeps": 5000,
+    "missing_actual_effort_substeps": 0,
+    "actual_effort_is_lower_bound": false,
+    "reference_q": [
+      0.09739774391333796,
+      -0.0005762480149995581
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "selection_records": [
+      {
+        "joint_index": 0,
+        "joint_position_rad": 0.09739774391333796,
+        "lower_limit_rad": -1.7453292519943295,
+        "upper_limit_rad": 1.7453292519943295,
+        "positive_room_rad": 1.6479315080809915,
+        "negative_room_rad": 1.8427269959076675,
+        "direction": -1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      },
+      {
+        "joint_index": 1,
+        "joint_position_rad": -0.0005762480149995581,
+        "lower_limit_rad": 0.0,
+        "upper_limit_rad": 2.356194490192345,
+        "positive_room_rad": 2.356770738207344,
+        "negative_room_rad": -0.0005762480149995581,
+        "direction": 1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      }
+    ],
+    "phase_effort": {
+      "prefix": {
+        "requested_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "requested_squared_nm2_s": [
+          0.0,
+          0.0
+        ],
+        "actual_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "actual_squared_nm2_s": [
+          0.0,
+          0.0
+        ]
+      },
+      "calibration": {
+        "requested_absolute_nm_s": [
+          0.18000000000000008,
+          0.18000000000000008
+        ],
+        "requested_squared_nm2_s": [
+          0.06375,
+          0.06375
+        ],
+        "actual_absolute_nm_s": [
+          0.18000000000000008,
+          0.09000000000000001
+        ],
+        "actual_squared_nm2_s": [
+          0.06375,
+          0.031875
+        ]
+      }
+    },
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "final_fingerprint_error": null,
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "pulse1_seed1_calibration",
+    "seed": 1,
+    "reset_seed": 1641411168,
+    "pulse_steps": 1,
+    "zero_steps_per_half": 9,
+    "maximum_control_steps": 500,
+    "status": "completed",
+    "completed": true,
+    "reason": null,
+    "study_abort": null,
+    "control_calls_attempted": 500,
+    "control_steps": 500,
+    "physics_steps": 5000,
+    "model_updates": 0,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 400,
+        "control_steps": 400,
+        "physics_steps": 4000
+      }
+    },
+    "collector_exception": null,
+    "trace_write_failure": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "returned_steps": 500,
+    "written_returned_steps": 500,
+    "returned_unwritten_steps": 0,
+    "unreturned_physics_steps": 0,
+    "complete_active_endpoints": 400,
+    "risk_telemetry_complete": true,
+    "actual_effort_complete": true,
+    "known_actual_effort_substeps": 5000,
+    "missing_actual_effort_substeps": 0,
+    "actual_effort_is_lower_bound": false,
+    "reference_q": [
+      0.09382541724034689,
+      -0.0005763175538596344
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "selection_records": [
+      {
+        "joint_index": 0,
+        "joint_position_rad": 0.09382541724034689,
+        "lower_limit_rad": -1.7453292519943295,
+        "upper_limit_rad": 1.7453292519943295,
+        "positive_room_rad": 1.6515038347539825,
+        "negative_room_rad": 1.8391546692346765,
+        "direction": -1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      },
+      {
+        "joint_index": 1,
+        "joint_position_rad": -0.0005763175538596344,
+        "lower_limit_rad": 0.0,
+        "upper_limit_rad": 2.356194490192345,
+        "positive_room_rad": 2.3567708077462046,
+        "negative_room_rad": -0.0005763175538596344,
+        "direction": 1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      }
+    ],
+    "phase_effort": {
+      "prefix": {
+        "requested_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "requested_squared_nm2_s": [
+          0.0,
+          0.0
+        ],
+        "actual_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "actual_squared_nm2_s": [
+          0.0,
+          0.0
+        ]
+      },
+      "calibration": {
+        "requested_absolute_nm_s": [
+          0.18000000000000008,
+          0.18000000000000008
+        ],
+        "requested_squared_nm2_s": [
+          0.06375,
+          0.06375
+        ],
+        "actual_absolute_nm_s": [
+          0.18000000000000008,
+          0.09000000000000001
+        ],
+        "actual_squared_nm2_s": [
+          0.06375,
+          0.031875
+        ]
+      }
+    },
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "final_fingerprint_error": null,
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "pulse1_seed2_calibration",
+    "seed": 2,
+    "reset_seed": 2001025171,
+    "pulse_steps": 1,
+    "zero_steps_per_half": 9,
+    "maximum_control_steps": 500,
+    "status": "completed",
+    "completed": true,
+    "reason": null,
+    "study_abort": null,
+    "control_calls_attempted": 500,
+    "control_steps": 500,
+    "physics_steps": 5000,
+    "model_updates": 0,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "calibration": {
+        "control_calls_attempted": 400,
+        "control_steps": 400,
+        "physics_steps": 4000
+      }
+    },
+    "collector_exception": null,
+    "trace_write_failure": null,
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "returned_steps": 500,
+    "written_returned_steps": 500,
+    "returned_unwritten_steps": 0,
+    "unreturned_physics_steps": 0,
+    "complete_active_endpoints": 400,
+    "risk_telemetry_complete": true,
+    "actual_effort_complete": true,
+    "known_actual_effort_substeps": 5000,
+    "missing_actual_effort_substeps": 0,
+    "actual_effort_is_lower_bound": false,
+    "reference_q": [
+      0.10085905132196148,
+      -0.000576154793236481
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "selection_records": [
+      {
+        "joint_index": 0,
+        "joint_position_rad": 0.10085905132196148,
+        "lower_limit_rad": -1.7453292519943295,
+        "upper_limit_rad": 1.7453292519943295,
+        "positive_room_rad": 1.6444702006723682,
+        "negative_room_rad": 1.846188303316291,
+        "direction": -1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      },
+      {
+        "joint_index": 1,
+        "joint_position_rad": -0.000576154793236481,
+        "lower_limit_rad": 0.0,
+        "upper_limit_rad": 2.356194490192345,
+        "positive_room_rad": 2.3567706449855814,
+        "negative_room_rad": -0.000576154793236481,
+        "direction": 1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      }
+    ],
+    "phase_effort": {
+      "prefix": {
+        "requested_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "requested_squared_nm2_s": [
+          0.0,
+          0.0
+        ],
+        "actual_absolute_nm_s": [
+          0.0,
+          0.0
+        ],
+        "actual_squared_nm2_s": [
+          0.0,
+          0.0
+        ]
+      },
+      "calibration": {
+        "requested_absolute_nm_s": [
+          0.18000000000000008,
+          0.18000000000000008
+        ],
+        "requested_squared_nm2_s": [
+          0.06375,
+          0.06375
+        ],
+        "actual_absolute_nm_s": [
+          0.18000000000000008,
+          0.09000000000000001
+        ],
+        "actual_squared_nm2_s": [
+          0.06375,
+          0.031875
+        ]
+      }
+    },
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "final_fingerprint_error": null,
+    "invalid_numeric_fields": []
+  }
+]

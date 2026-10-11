@@ -1,0 +1,685 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T07:49:12.929426+00:00",
+  "audit_script_sha256": "b7e00b07bc19407d9a9a01ba19dbb8b38439411523ae8973a5303ff0e5473a58",
+  "audit_spec": {
+    "collector": "src/developmental_physics/pair_calibration_development.py",
+    "auditor": "scripts/audit_pair_calibration.py",
+    "protocol": "docs/PAIR_CALIBRATION_DEVELOPMENT_PROTOCOL.md",
+    "pulses": [
+      2,
+      1
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "max_calls": 3000,
+    "max_substeps": 30000,
+    "expected_source_commit": "86453c1280c986748717ca79ae4d4d3d45b52973",
+    "synthetic_fixture": false,
+    "synthetic_source_layout": "staging"
+  },
+  "checks": 466758,
+  "failed": 0,
+  "violations": [],
+  "violations_truncated": false,
+  "maximum_recomputation_difference": 6.590283874174929e-13,
+  "archive": {
+    "budget": {
+      "control_calls_attempted": 2586,
+      "control_steps": 2586,
+      "physics_steps": 25860
+    },
+    "episodes": [
+      {
+        "trial_id": "pulse2_seed0_calibration",
+        "seed": 0,
+        "reset_seed": 3757552657,
+        "pulse_steps": 2,
+        "zero_steps_per_half": 8,
+        "maximum_control_steps": 500,
+        "status": "terminated",
+        "independent_complete": false,
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.08477686104991294,
+            0.024014092263651223
+          ],
+          "qref_rad": [
+            0.09739774391333796,
+            -0.0005762480149995581
+          ],
+          "velocity_rad_s": [
+            -0.5460751484448308,
+            1.0718069104957968
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 361
+        },
+        "paid_budget": {
+          "control_calls_attempted": 362,
+          "control_steps": 362,
+          "physics_steps": 3620
+        },
+        "complete_active_endpoints": 262,
+        "raw_returned_rows": 362,
+        "raw_physics_substeps": 3620,
+        "unreconstructed_physics_substeps": 0,
+        "effort_audit": [
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "requested_squared_nm2_s": [
+                0.0,
+                0.0
+              ],
+              "actual_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "actual_squared_nm2_s": [
+                0.0,
+                0.0
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 1000
+          },
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.20000000000000007,
+                0.20000000000000007
+              ],
+              "requested_squared_nm2_s": [
+                0.07000000000000002,
+                0.07000000000000002
+              ],
+              "actual_absolute_nm_s": [
+                0.20000000000000007,
+                0.11000000000000001
+              ],
+              "actual_squared_nm2_s": [
+                0.07000000000000002,
+                0.04
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 2620
+          }
+        ],
+        "guard_validation": "First returned substep exact from native start q/public XML limits; later command-domain and guard-count checks. No pre-substep-q telemetry for full angle replay."
+      },
+      {
+        "trial_id": "pulse2_seed1_calibration",
+        "seed": 1,
+        "reset_seed": 1641411168,
+        "pulse_steps": 2,
+        "zero_steps_per_half": 8,
+        "maximum_control_steps": 500,
+        "status": "terminated",
+        "independent_complete": false,
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.08085813025970631,
+            0.0240039968995147
+          ],
+          "qref_rad": [
+            0.09382541724034689,
+            -0.0005763175538596344
+          ],
+          "velocity_rad_s": [
+            -0.545647190695302,
+            1.0713918786946433
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 361
+        },
+        "paid_budget": {
+          "control_calls_attempted": 362,
+          "control_steps": 362,
+          "physics_steps": 3620
+        },
+        "complete_active_endpoints": 262,
+        "raw_returned_rows": 362,
+        "raw_physics_substeps": 3620,
+        "unreconstructed_physics_substeps": 0,
+        "effort_audit": [
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "requested_squared_nm2_s": [
+                0.0,
+                0.0
+              ],
+              "actual_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "actual_squared_nm2_s": [
+                0.0,
+                0.0
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 1000
+          },
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.20000000000000007,
+                0.20000000000000007
+              ],
+              "requested_squared_nm2_s": [
+                0.07000000000000002,
+                0.07000000000000002
+              ],
+              "actual_absolute_nm_s": [
+                0.20000000000000007,
+                0.11000000000000001
+              ],
+              "actual_squared_nm2_s": [
+                0.07000000000000002,
+                0.04
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 2620
+          }
+        ],
+        "guard_validation": "First returned substep exact from native start q/public XML limits; later command-domain and guard-count checks. No pre-substep-q telemetry for full angle replay."
+      },
+      {
+        "trial_id": "pulse2_seed2_calibration",
+        "seed": 2,
+        "reset_seed": 2001025171,
+        "pulse_steps": 2,
+        "zero_steps_per_half": 8,
+        "maximum_control_steps": 500,
+        "status": "terminated",
+        "independent_complete": false,
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.08857181472896389,
+            0.02402509757455473
+          ],
+          "qref_rad": [
+            0.10085905132196148,
+            -0.000576154793236481
+          ],
+          "velocity_rad_s": [
+            -0.546397168899692,
+            1.0722683998426479
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 361
+        },
+        "paid_budget": {
+          "control_calls_attempted": 362,
+          "control_steps": 362,
+          "physics_steps": 3620
+        },
+        "complete_active_endpoints": 262,
+        "raw_returned_rows": 362,
+        "raw_physics_substeps": 3620,
+        "unreconstructed_physics_substeps": 0,
+        "effort_audit": [
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "requested_squared_nm2_s": [
+                0.0,
+                0.0
+              ],
+              "actual_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "actual_squared_nm2_s": [
+                0.0,
+                0.0
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 1000
+          },
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.20000000000000007,
+                0.20000000000000007
+              ],
+              "requested_squared_nm2_s": [
+                0.07000000000000002,
+                0.07000000000000002
+              ],
+              "actual_absolute_nm_s": [
+                0.20000000000000007,
+                0.11000000000000001
+              ],
+              "actual_squared_nm2_s": [
+                0.07000000000000002,
+                0.04
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 2620
+          }
+        ],
+        "guard_validation": "First returned substep exact from native start q/public XML limits; later command-domain and guard-count checks. No pre-substep-q telemetry for full angle replay."
+      },
+      {
+        "trial_id": "pulse1_seed0_calibration",
+        "seed": 0,
+        "reset_seed": 3757552657,
+        "pulse_steps": 1,
+        "zero_steps_per_half": 9,
+        "maximum_control_steps": 500,
+        "status": "completed",
+        "independent_complete": true,
+        "study_abort": null,
+        "paid_budget": {
+          "control_calls_attempted": 500,
+          "control_steps": 500,
+          "physics_steps": 5000
+        },
+        "complete_active_endpoints": 400,
+        "raw_returned_rows": 500,
+        "raw_physics_substeps": 5000,
+        "unreconstructed_physics_substeps": 0,
+        "effort_audit": [
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "requested_squared_nm2_s": [
+                0.0,
+                0.0
+              ],
+              "actual_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "actual_squared_nm2_s": [
+                0.0,
+                0.0
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 1000
+          },
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.18000000000000008,
+                0.18000000000000008
+              ],
+              "requested_squared_nm2_s": [
+                0.06375,
+                0.06375
+              ],
+              "actual_absolute_nm_s": [
+                0.18000000000000008,
+                0.09000000000000001
+              ],
+              "actual_squared_nm2_s": [
+                0.06375,
+                0.031875
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 4000
+          }
+        ],
+        "guard_validation": "First returned substep exact from native start q/public XML limits; later command-domain and guard-count checks. No pre-substep-q telemetry for full angle replay."
+      },
+      {
+        "trial_id": "pulse1_seed1_calibration",
+        "seed": 1,
+        "reset_seed": 1641411168,
+        "pulse_steps": 1,
+        "zero_steps_per_half": 9,
+        "maximum_control_steps": 500,
+        "status": "completed",
+        "independent_complete": true,
+        "study_abort": null,
+        "paid_budget": {
+          "control_calls_attempted": 500,
+          "control_steps": 500,
+          "physics_steps": 5000
+        },
+        "complete_active_endpoints": 400,
+        "raw_returned_rows": 500,
+        "raw_physics_substeps": 5000,
+        "unreconstructed_physics_substeps": 0,
+        "effort_audit": [
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "requested_squared_nm2_s": [
+                0.0,
+                0.0
+              ],
+              "actual_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "actual_squared_nm2_s": [
+                0.0,
+                0.0
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 1000
+          },
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.18000000000000008,
+                0.18000000000000008
+              ],
+              "requested_squared_nm2_s": [
+                0.06375,
+                0.06375
+              ],
+              "actual_absolute_nm_s": [
+                0.18000000000000008,
+                0.09000000000000001
+              ],
+              "actual_squared_nm2_s": [
+                0.06375,
+                0.031875
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 4000
+          }
+        ],
+        "guard_validation": "First returned substep exact from native start q/public XML limits; later command-domain and guard-count checks. No pre-substep-q telemetry for full angle replay."
+      },
+      {
+        "trial_id": "pulse1_seed2_calibration",
+        "seed": 2,
+        "reset_seed": 2001025171,
+        "pulse_steps": 1,
+        "zero_steps_per_half": 9,
+        "maximum_control_steps": 500,
+        "status": "completed",
+        "independent_complete": true,
+        "study_abort": null,
+        "paid_budget": {
+          "control_calls_attempted": 500,
+          "control_steps": 500,
+          "physics_steps": 5000
+        },
+        "complete_active_endpoints": 400,
+        "raw_returned_rows": 500,
+        "raw_physics_substeps": 5000,
+        "unreconstructed_physics_substeps": 0,
+        "effort_audit": [
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "requested_squared_nm2_s": [
+                0.0,
+                0.0
+              ],
+              "actual_absolute_nm_s": [
+                0.0,
+                0.0
+              ],
+              "actual_squared_nm2_s": [
+                0.0,
+                0.0
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 1000
+          },
+          {
+            "raw_effort": {
+              "requested_absolute_nm_s": [
+                0.18000000000000008,
+                0.18000000000000008
+              ],
+              "requested_squared_nm2_s": [
+                0.06375,
+                0.06375
+              ],
+              "actual_absolute_nm_s": [
+                0.18000000000000008,
+                0.09000000000000001
+              ],
+              "actual_squared_nm2_s": [
+                0.06375,
+                0.031875
+              ]
+            },
+            "requested_reconstruction_complete": true,
+            "raw_actual_reconstruction_complete": true,
+            "raw_actual_is_lower_bound": false,
+            "unreconstructed_physics_substeps": 0,
+            "collector_measured_substeps": 4000
+          }
+        ],
+        "guard_validation": "First returned substep exact from native start q/public XML limits; later command-domain and guard-count checks. No pre-substep-q telemetry for full angle replay."
+      }
+    ],
+    "candidate_selection": {
+      "candidates": [
+        {
+          "pulse_steps": 2,
+          "zero_steps_per_half": 8,
+          "eligible": false,
+          "trial_ids": [
+            "pulse2_seed0_calibration",
+            "pulse2_seed1_calibration",
+            "pulse2_seed2_calibration"
+          ]
+        },
+        {
+          "pulse_steps": 1,
+          "zero_steps_per_half": 9,
+          "eligible": true,
+          "trial_ids": [
+            "pulse1_seed0_calibration",
+            "pulse1_seed1_calibration",
+            "pulse1_seed2_calibration"
+          ]
+        }
+      ],
+      "selected_pulse_steps": 1,
+      "status": "eligible"
+    },
+    "input_hashes": {
+      "episodes.json": "1048983c21e6bd8e5a9b8a283d60c4d60ec5143fcdec900f79b2003c1a8b541d",
+      "manifest.json": "a043e93d979cc25de13f6e2d7ba2d0bc58fa2ed783881bfd16f1523be13faa6c",
+      "metadata.json": "d504fd9c8f96d602f64acb4c4db7f76040867342b533fb80b536f35f13ee27d3",
+      "source_snapshot.zip": "26879a77eaab2168765d2570ebd567f316c008ef25c3973da7688a2834ad9170",
+      "trace.jsonl.gz": "cfca1fe9171218fc56d0785fcff80afe2f304ad8f87653d1b86f695016dd7963"
+    },
+    "source_commit": "86453c1280c986748717ca79ae4d4d3d45b52973",
+    "native_joint_order": [
+      "left_shoulder",
+      "left_elbow",
+      "right_shoulder",
+      "right_elbow",
+      "left_hip",
+      "left_knee",
+      "right_hip",
+      "right_knee"
+    ],
+    "asset_native_mapping": [
+      {
+        "qpos": 7,
+        "qvel": 6,
+        "range": [
+          -1.7453292519943295,
+          1.7453292519943295
+        ]
+      },
+      {
+        "qpos": 8,
+        "qvel": 7,
+        "range": [
+          0.0,
+          2.356194490192345
+        ]
+      },
+      {
+        "qpos": 9,
+        "qvel": 8,
+        "range": [
+          -1.7453292519943295,
+          1.7453292519943295
+        ]
+      },
+      {
+        "qpos": 10,
+        "qvel": 9,
+        "range": [
+          0.0,
+          2.356194490192345
+        ]
+      },
+      {
+        "qpos": 11,
+        "qvel": 10,
+        "range": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      },
+      {
+        "qpos": 12,
+        "qvel": 11,
+        "range": [
+          0.0,
+          2.356194490192345
+        ]
+      },
+      {
+        "qpos": 13,
+        "qvel": 12,
+        "range": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ]
+      },
+      {
+        "qpos": 14,
+        "qvel": 13,
+        "range": [
+          0.0,
+          2.356194490192345
+        ]
+      }
+    ],
+    "synthetic_fixture": false,
+    "source_git_verification_enabled": true,
+    "archive_complete": true,
+    "model_updates": 0,
+    "actual_physical_calls_in_audit": 0
+  },
+  "data_consistency_verified": true,
+  "validated_eligible": true,
+  "formal_execution_accepted": true,
+  "claim_boundary": "Finite fixed calibration executability only. Synthetic is never formally accepted; no model learning, safety or skill claim.",
+  "execution": {
+    "wall_seconds": 1.2096015999559313,
+    "cpu_seconds": 0.890625,
+    "physical_calls": 0,
+    "model_updates": 0,
+    "new_predictions": 0,
+    "third_party_imports": [],
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]"
+  }
+}

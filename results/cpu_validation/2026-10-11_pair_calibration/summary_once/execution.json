@@ -1,0 +1,37 @@
+{
+  "started_at_utc": "2026-10-11T07:52:08.778398+00:00",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "source_path": "D:\\Codex_ws\\robot_rl\\external\\summarize_pair_calibration_once.py",
+  "source_sha256": "d5bb79517f01300652ef7c7988ee992814c27761f02576c401a72037a87f4248",
+  "source_snapshot": "tool_source.py",
+  "raw_directory": "D:\\Codex_ws\\robot_rl\\external\\pair_calibration_20261011_first",
+  "audit_path": "D:\\Codex_ws\\robot_rl\\external\\pair_calibration_20261011_first_audit.json",
+  "expected_source_commit": "86453c1280c986748717ca79ae4d4d3d45b52973",
+  "physical_calls": 0,
+  "model_updates": 0,
+  "new_predictions": 0,
+  "audit_executions": 0,
+  "raw_read_passes": 1,
+  "input_sha256": {
+    "metadata.json": "d504fd9c8f96d602f64acb4c4db7f76040867342b533fb80b536f35f13ee27d3",
+    "episodes.json": "1048983c21e6bd8e5a9b8a283d60c4d60ec5143fcdec900f79b2003c1a8b541d",
+    "manifest.json": "a043e93d979cc25de13f6e2d7ba2d0bc58fa2ed783881bfd16f1523be13faa6c",
+    "source_snapshot.zip": "26879a77eaab2168765d2570ebd567f316c008ef25c3973da7688a2834ad9170",
+    "trace.jsonl.gz": "cfca1fe9171218fc56d0785fcff80afe2f304ad8f87653d1b86f695016dd7963"
+  },
+  "existing_audit_sha256": "3004586f9054dbded52a7a396516e386dafa7609a1db530e44f0b06130f2e4c5",
+  "source_after_sha256": "d5bb79517f01300652ef7c7988ee992814c27761f02576c401a72037a87f4248",
+  "source_unchanged": true,
+  "checks": 44685,
+  "failed": 0,
+  "maximum_recomputation_difference": 0,
+  "output_sha256": {
+    "attempt.json": "b6d5b7cad6bdc261af7cac9570034ccdc9f4bac3b0efffd539389a4ac4f120dd",
+    "summary.json": "76038105eb1eec7c59abe365efb249f88470662aa88ce33353448b2c4b430fb5",
+    "summary.md": "07072ff70d6ce0c7744807c918e47b92afe6083502df50f635d3ad2ecc4cb405",
+    "tool_source.py": "d5bb79517f01300652ef7c7988ee992814c27761f02576c401a72037a87f4248"
+  },
+  "wall_seconds": 0.41032179980538785,
+  "cpu_seconds": 0.34375,
+  "exit_code": 0
+}

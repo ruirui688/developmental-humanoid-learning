@@ -1,0 +1,1653 @@
+{
+  "created_at_utc": "2026-10-11T07:56:30.288114+00:00",
+  "source_commit": "86453c1280c986748717ca79ae4d4d3d45b52973",
+  "archival_source_sha256": "bad94dda634572ec639313548433418a571c9a64a8aa04f434b21466f35dd1db",
+  "files": {
+    "archival_source.py": {
+      "kind": "archival_tool_source",
+      "source": "external/archive_pair_calibration_20261011_once.py",
+      "bytes": 11432,
+      "sha256": "bad94dda634572ec639313548433418a571c9a64a8aa04f434b21466f35dd1db"
+    },
+    "attempt.json": {
+      "kind": "archival_attempt",
+      "source": "This exclusive archival invocation",
+      "bytes": 646,
+      "sha256": "f0ef424b9ca081db355e70f34b9785266a16ad33c7ffb8bb8ac8d12781009ff0"
+    },
+    "raw/episodes.json": {
+      "kind": "original_formal_raw",
+      "source": "external/pair_calibration_20261011_first/episodes.json",
+      "bytes": 23695,
+      "sha256": "1048983c21e6bd8e5a9b8a283d60c4d60ec5143fcdec900f79b2003c1a8b541d"
+    },
+    "raw/manifest.json": {
+      "kind": "original_formal_raw",
+      "source": "external/pair_calibration_20261011_first/manifest.json",
+      "bytes": 364,
+      "sha256": "a043e93d979cc25de13f6e2d7ba2d0bc58fa2ed783881bfd16f1523be13faa6c"
+    },
+    "raw/metadata.json": {
+      "kind": "original_formal_raw",
+      "source": "external/pair_calibration_20261011_first/metadata.json",
+      "bytes": 6218,
+      "sha256": "d504fd9c8f96d602f64acb4c4db7f76040867342b533fb80b536f35f13ee27d3"
+    },
+    "raw/source_snapshot.zip": {
+      "kind": "original_formal_raw",
+      "source": "external/pair_calibration_20261011_first/source_snapshot.zip",
+      "bytes": 34262,
+      "sha256": "26879a77eaab2168765d2570ebd567f316c008ef25c3973da7688a2834ad9170"
+    },
+    "raw/trace.jsonl.gz": {
+      "kind": "original_formal_raw",
+      "source": "external/pair_calibration_20261011_first/trace.jsonl.gz",
+      "bytes": 1928651,
+      "sha256": "cfca1fe9171218fc56d0785fcff80afe2f304ad8f87653d1b86f695016dd7963"
+    },
+    "first_audit.json": {
+      "kind": "original_first_independent_audit",
+      "source": "external/pair_calibration_20261011_first_audit.json",
+      "bytes": 20763,
+      "sha256": "3004586f9054dbded52a7a396516e386dafa7609a1db530e44f0b06130f2e4c5"
+    },
+    "execution/first_stdout.txt": {
+      "kind": "original_first_stdout",
+      "source": "external/pair_calibration_20261011_first_stdout.txt",
+      "bytes": 1175,
+      "sha256": "c4d1007eab481bfef83f8900992f6b11a81c9acd3c13e9887ebeedda8e823222"
+    },
+    "execution/first_execution.json": {
+      "kind": "original_first_wrapper_execution",
+      "source": "external/pair_calibration_20261011_first_execution.json",
+      "bytes": 549,
+      "sha256": "8872fd6be312f0086d03d595ba54eeb3d760100f322e22a74fc79ed47fc60485"
+    },
+    "execution/run_pair_calibration_once.py": {
+      "kind": "original_first_physical_wrapper_source",
+      "source": "external/run_pair_calibration_once.py",
+      "bytes": 1365,
+      "sha256": "89ac849a1245423eb9bd147722285037f4ec799f7c6672b15f5319bbd030a598"
+    },
+    "checks/c4d_promoted28_stdout.txt": {
+      "kind": "original_promoted_test_stdout",
+      "source": "external/c4d_promoted28_stdout.txt",
+      "bytes": 102,
+      "sha256": "c54d711045bbd1a98a317311702749808aa41af68b0e764f2db119c015c7442e"
+    },
+    "checks/c4d_light10_stdout.txt": {
+      "kind": "original_light_test_stdout",
+      "source": "external/c4d_light10_stdout.txt",
+      "bytes": 111,
+      "sha256": "59d5b8115a7bf3d679cb0f6e90493812c4f2e2b78d8f0e59bc3e94e620cf2b74"
+    },
+    "summary_once/attempt.json": {
+      "kind": "original_once_only_descriptive_summary",
+      "source": "external/pair_calibration_20261011_summary_01/attempt.json",
+      "bytes": 768,
+      "sha256": "b6d5b7cad6bdc261af7cac9570034ccdc9f4bac3b0efffd539389a4ac4f120dd"
+    },
+    "summary_once/execution.json": {
+      "kind": "original_once_only_descriptive_summary",
+      "source": "external/pair_calibration_20261011_summary_01/execution.json",
+      "bytes": 1973,
+      "sha256": "909522d13b2491023324a674bfeeca4a9cfcf2d34acb851d0f57ab9bbd91ca0a"
+    },
+    "summary_once/summary.json": {
+      "kind": "original_once_only_descriptive_summary",
+      "source": "external/pair_calibration_20261011_summary_01/summary.json",
+      "bytes": 24470,
+      "sha256": "76038105eb1eec7c59abe365efb249f88470662aa88ce33353448b2c4b430fb5"
+    },
+    "summary_once/summary.md": {
+      "kind": "original_once_only_descriptive_summary",
+      "source": "external/pair_calibration_20261011_summary_01/summary.md",
+      "bytes": 1700,
+      "sha256": "07072ff70d6ce0c7744807c918e47b92afe6083502df50f635d3ad2ecc4cb405"
+    },
+    "summary_once/tool_source.py": {
+      "kind": "original_once_only_descriptive_summary",
+      "source": "external/pair_calibration_20261011_summary_01/tool_source.py",
+      "bytes": 16599,
+      "sha256": "d5bb79517f01300652ef7c7988ee992814c27761f02576c401a72037a87f4248"
+    },
+    "summary_delivery.md": {
+      "kind": "original_summary_delivery",
+      "source": "external/pair_calibration_20261011_summary_delivery.md",
+      "bytes": 3553,
+      "sha256": "86d8365090b1058fb3a3e0fc67cd6f603a244f866a80be8b799ffa1b6df050f3"
+    },
+    "frozen_source/src/developmental_physics/pair_calibration_development.py": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:src/developmental_physics/pair_calibration_development.py",
+      "bytes": 19607,
+      "sha256": "a33ead6f407f685662f3afd2401eeaa33c66d89701f658307c6b3c61c67883f7"
+    },
+    "frozen_source/scripts/audit_pair_calibration.py": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:scripts/audit_pair_calibration.py",
+      "bytes": 34258,
+      "sha256": "b7e00b07bc19407d9a9a01ba19dbb8b38439411523ae8973a5303ff0e5473a58"
+    },
+    "frozen_source/docs/PAIR_CALIBRATION_DEVELOPMENT_PROTOCOL.md": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:docs/PAIR_CALIBRATION_DEVELOPMENT_PROTOCOL.md",
+      "bytes": 5344,
+      "sha256": "2580bdb3c8039d484b75bc04198b1fab7fd5a380e7f29efa5e2012ffe5a1eeb8"
+    },
+    "frozen_source/src/developmental_physics/environment.py": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:src/developmental_physics/environment.py",
+      "bytes": 15822,
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+    },
+    "frozen_source/src/developmental_physics/probes.py": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:src/developmental_physics/probes.py",
+      "bytes": 7514,
+      "sha256": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea"
+    },
+    "frozen_source/src/developmental_physics/collect.py": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:src/developmental_physics/collect.py",
+      "bytes": 21890,
+      "sha256": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e"
+    },
+    "frozen_source/src/developmental_physics/assets/ground_body.xml": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:src/developmental_physics/assets/ground_body.xml",
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "frozen_source/pyproject.toml": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:pyproject.toml",
+      "bytes": 698,
+      "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2"
+    },
+    "frozen_source/tests/test_pair_calibration_development.py": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:tests/test_pair_calibration_development.py",
+      "bytes": 15097,
+      "sha256": "4c11fdec765450c983835bfe092e6f00e3ba45c28abeec8434eac3e5051ae94b"
+    },
+    "frozen_source/tests/test_audit_pair_calibration.py": {
+      "kind": "exact_frozen_git_blob",
+      "source": "git 86453c1280c986748717ca79ae4d4d3d45b52973:tests/test_audit_pair_calibration.py",
+      "bytes": 10446,
+      "sha256": "94faa903c24d75e137e0385bbecd2dd845b255ff7014ec2dfb98dd39278794a3"
+    },
+    "staging_evidence.zip": {
+      "kind": "all_original_staging_sources_attempts_failures_and_deliveries",
+      "source": "external/c4d_pair_calibration_staging",
+      "bytes": 1711333,
+      "sha256": "55a80d272cc11267dd2ed6a7ea59b0820ab9dab4467fb37837a43870b170d26e"
+    }
+  },
+  "bundles": {
+    "staging_evidence.zip": {
+      "source": "external/c4d_pair_calibration_staging",
+      "members": {
+        "audit_pair_calibration.py": {
+          "source": "external/c4d_pair_calibration_staging/audit_pair_calibration.py",
+          "bytes": 33530,
+          "sha256": "222a5c69a12dade92b0f5a47b2383f485d86052db1ca7f4ccf97bd098636b2cc"
+        },
+        "audit_pair_calibration_promotable.py": {
+          "source": "external/c4d_pair_calibration_staging/audit_pair_calibration_promotable.py",
+          "bytes": 34258,
+          "sha256": "b7e00b07bc19407d9a9a01ba19dbb8b38439411523ae8973a5303ff0e5473a58"
+        },
+        "audit_synthetic_01_attempt.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_01_attempt.json",
+          "bytes": 209,
+          "sha256": "388dcc074c63aa1d7c73bd79c80bf0a568c939877d314aa36c0d6de021ad4df2"
+        },
+        "audit_synthetic_01_audit_pair_calibration.py": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_01_audit_pair_calibration.py",
+          "bytes": 29028,
+          "sha256": "e773cdcf278db35f7e5826b586c50e8e0b17ae078a0adcc3106f8235877ffce0"
+        },
+        "audit_synthetic_01_execution.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_01_execution.json",
+          "bytes": 1520,
+          "sha256": "4d0129fb234d503c02fdae67551544e936e0f9cc2c3ff006c920f7df0114dcad"
+        },
+        "audit_synthetic_01_result.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_01_result.json",
+          "bytes": 27763,
+          "sha256": "08409c149ed77617b469cf8cde3d2175d5ba1ef097527066a4a8db469e1d22e9"
+        },
+        "audit_synthetic_01_run_audit_synthetic_01.py": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_01_run_audit_synthetic_01.py",
+          "bytes": 2281,
+          "sha256": "208e08e0b9854e048ca091b77cc2c932e02a055e9d1e9435cb0a68020edd8509"
+        },
+        "audit_synthetic_02_attempt.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02_attempt.json",
+          "bytes": 410,
+          "sha256": "902431a476fc040c0f8ea5744186bf354e9f3c42d2323becce58605d487f2343"
+        },
+        "audit_synthetic_02_audit_pair_calibration.py": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02_audit_pair_calibration.py",
+          "bytes": 33530,
+          "sha256": "222a5c69a12dade92b0f5a47b2383f485d86052db1ca7f4ccf97bd098636b2cc"
+        },
+        "audit_synthetic_02_execution.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02_execution.json",
+          "bytes": 8353,
+          "sha256": "fc15a12706f9e0447099b9e63c0c478dc6656b64bc343720fd743d48c1fb2230"
+        },
+        "audit_synthetic_02_run_audit_synthetic_02.py": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02_run_audit_synthetic_02.py",
+          "bytes": 3131,
+          "sha256": "eab77502d598e3c2df5f6b7a294917cea4bac1f78ceec680aeaf9d8c21aa23b1"
+        },
+        "audit_synthetic_02_stdout.txt": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02_stdout.txt",
+          "bytes": 754,
+          "sha256": "a3886a857bb3c586bcf94380a5360f01904c0b82d3225bb92fdd89ef1b03f027"
+        },
+        "audit_synthetic_02_test_audit_pair_calibration.py": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02_test_audit_pair_calibration.py",
+          "bytes": 9758,
+          "sha256": "21619879d1703589955e0f1358f31ca24b2e0ce9f04c3fda3a8769ae13ee5d4f"
+        },
+        "audit_synthetic_02outputs/tampered_blocked_cost/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_blocked_cost/episodes.json",
+          "bytes": 24881,
+          "sha256": "d95a737a5eac635ac4fffb3901a7bf156e5a5a0caf07eba07a7e974c21f2a8ec"
+        },
+        "audit_synthetic_02outputs/tampered_blocked_cost/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_blocked_cost/manifest.json",
+          "bytes": 364,
+          "sha256": "8abbe308318eaaf741cb3e42e300be9b02a8f025fa977c6f6ba78f9965e42632"
+        },
+        "audit_synthetic_02outputs/tampered_blocked_cost/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_blocked_cost/metadata.json",
+          "bytes": 6165,
+          "sha256": "e61670200447a0c8e0246b9eabe3668c5467abe611759b315ef95aa377f3d062"
+        },
+        "audit_synthetic_02outputs/tampered_blocked_cost/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_blocked_cost/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "audit_synthetic_02outputs/tampered_blocked_cost/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_blocked_cost/trace.jsonl.gz",
+          "bytes": 18479,
+          "sha256": "903b5f015dd9552d01e706721214708b1f1c72b454aa3e0e5f2aea344195b33e"
+        },
+        "audit_synthetic_02outputs/tampered_blocked_cost.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_blocked_cost.json",
+          "bytes": 21989,
+          "sha256": "2615d2018ec3823be8f5664b9777b8e4a7bb0a571a67cbebbb56269a1be635ff"
+        },
+        "audit_synthetic_02outputs/tampered_command/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_command/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "audit_synthetic_02outputs/tampered_command/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_command/manifest.json",
+          "bytes": 364,
+          "sha256": "04b3c687a822d18a12301f37f3448a7c4d87b9daa2dfeca90bc892b7a3450c07"
+        },
+        "audit_synthetic_02outputs/tampered_command/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_command/metadata.json",
+          "bytes": 6165,
+          "sha256": "e61670200447a0c8e0246b9eabe3668c5467abe611759b315ef95aa377f3d062"
+        },
+        "audit_synthetic_02outputs/tampered_command/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_command/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "audit_synthetic_02outputs/tampered_command/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_command/trace.jsonl.gz",
+          "bytes": 18464,
+          "sha256": "1649efde91bb1213e5483a4fd8ac32ded35ab146f1fd8eea2a5a6f085331d095"
+        },
+        "audit_synthetic_02outputs/tampered_command.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_command.json",
+          "bytes": 24188,
+          "sha256": "cbc37d29c32c1cb4e62ff5db182b241d6de0fcaa239b7618b2a4509c1ddfa581"
+        },
+        "audit_synthetic_02outputs/tampered_eligibility/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_eligibility/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "audit_synthetic_02outputs/tampered_eligibility/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_eligibility/manifest.json",
+          "bytes": 364,
+          "sha256": "aab85dc6b6ef93e0e4aaa2f44885592e6929b5cc4c7893607d17df59a3cbf2b4"
+        },
+        "audit_synthetic_02outputs/tampered_eligibility/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_eligibility/metadata.json",
+          "bytes": 6162,
+          "sha256": "c18490d2915209389ef939a9526f92d06b89330df2fcb1bedbbe3d9380f9789d"
+        },
+        "audit_synthetic_02outputs/tampered_eligibility/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_eligibility/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "audit_synthetic_02outputs/tampered_eligibility/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_eligibility/trace.jsonl.gz",
+          "bytes": 18479,
+          "sha256": "903b5f015dd9552d01e706721214708b1f1c72b454aa3e0e5f2aea344195b33e"
+        },
+        "audit_synthetic_02outputs/tampered_eligibility.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_eligibility.json",
+          "bytes": 21909,
+          "sha256": "a8326ae0aabe425c3206ac49e9644e408a16abdf7489cab96bdfc21d384475fb"
+        },
+        "audit_synthetic_02outputs/tampered_manifest/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_manifest/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "audit_synthetic_02outputs/tampered_manifest/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_manifest/manifest.json",
+          "bytes": 364,
+          "sha256": "e8f49ab6ce96265f2aebc8757b43b981199cfcdeeac4587a13095666df5233cd"
+        },
+        "audit_synthetic_02outputs/tampered_manifest/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_manifest/metadata.json",
+          "bytes": 6165,
+          "sha256": "e61670200447a0c8e0246b9eabe3668c5467abe611759b315ef95aa377f3d062"
+        },
+        "audit_synthetic_02outputs/tampered_manifest/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_manifest/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "audit_synthetic_02outputs/tampered_manifest/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_manifest/trace.jsonl.gz",
+          "bytes": 18479,
+          "sha256": "903b5f015dd9552d01e706721214708b1f1c72b454aa3e0e5f2aea344195b33e"
+        },
+        "audit_synthetic_02outputs/tampered_manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_manifest.json",
+          "bytes": 21892,
+          "sha256": "1376acd81378cfa474fdbe912539dc4a7a46db178d3af5379e243785ab8a74f7"
+        },
+        "audit_synthetic_02outputs/tampered_native_whitelist/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_native_whitelist/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "audit_synthetic_02outputs/tampered_native_whitelist/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_native_whitelist/manifest.json",
+          "bytes": 364,
+          "sha256": "318765b47fb8e597f0c6464a6052a00486ef654844941c42ed8b9ca9a84d26e0"
+        },
+        "audit_synthetic_02outputs/tampered_native_whitelist/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_native_whitelist/metadata.json",
+          "bytes": 6165,
+          "sha256": "e61670200447a0c8e0246b9eabe3668c5467abe611759b315ef95aa377f3d062"
+        },
+        "audit_synthetic_02outputs/tampered_native_whitelist/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_native_whitelist/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "audit_synthetic_02outputs/tampered_native_whitelist/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_native_whitelist/trace.jsonl.gz",
+          "bytes": 18480,
+          "sha256": "af74c9443876291db359b8344067e32810a1a17aae108ff1b74d1dca5be68db4"
+        },
+        "audit_synthetic_02outputs/tampered_native_whitelist.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_native_whitelist.json",
+          "bytes": 21912,
+          "sha256": "c5b8df7d9cf17da15212a047edbd7a8f816254651790750dd0b53ae16453e8e8"
+        },
+        "audit_synthetic_02outputs/tampered_source_commit/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_commit/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "audit_synthetic_02outputs/tampered_source_commit/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_commit/manifest.json",
+          "bytes": 364,
+          "sha256": "af22fadf353563e90d3611115d3d0dcd91b48133d059029a427414ba4b9f03dd"
+        },
+        "audit_synthetic_02outputs/tampered_source_commit/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_commit/metadata.json",
+          "bytes": 6137,
+          "sha256": "ae21666d3c0df25b200a9dceab48275ac8a38d0d6e91a92fe92cf9ea02222555"
+        },
+        "audit_synthetic_02outputs/tampered_source_commit/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_commit/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "audit_synthetic_02outputs/tampered_source_commit/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_commit/trace.jsonl.gz",
+          "bytes": 18479,
+          "sha256": "903b5f015dd9552d01e706721214708b1f1c72b454aa3e0e5f2aea344195b33e"
+        },
+        "audit_synthetic_02outputs/tampered_source_commit.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_commit.json",
+          "bytes": 21856,
+          "sha256": "b8ae5bdb23b48e9020ae0eeb0511d1a818a4ae00ada126aab57e7ec6a4ecbb12"
+        },
+        "audit_synthetic_02outputs/tampered_source_hash/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_hash/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "audit_synthetic_02outputs/tampered_source_hash/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_hash/manifest.json",
+          "bytes": 364,
+          "sha256": "8bafa7fbb140a36ed71deff028154e11bac6e952f072836c708140ad3232b9c1"
+        },
+        "audit_synthetic_02outputs/tampered_source_hash/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_hash/metadata.json",
+          "bytes": 6165,
+          "sha256": "923f9250a32b8a1ba9b65f0c1c8fb2942b5e0d6ce0b2a7a7dcab095cdf4bbe3f"
+        },
+        "audit_synthetic_02outputs/tampered_source_hash/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_hash/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "audit_synthetic_02outputs/tampered_source_hash/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_hash/trace.jsonl.gz",
+          "bytes": 18479,
+          "sha256": "903b5f015dd9552d01e706721214708b1f1c72b454aa3e0e5f2aea344195b33e"
+        },
+        "audit_synthetic_02outputs/tampered_source_hash.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_source_hash.json",
+          "bytes": 21931,
+          "sha256": "b12f5bf80684f6a7a3e1a80b1e49826798bca0bc83c159e9d0017f70594fea0d"
+        },
+        "audit_synthetic_02outputs/tampered_study/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_study/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "audit_synthetic_02outputs/tampered_study/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_study/manifest.json",
+          "bytes": 364,
+          "sha256": "eb66236b6965b06e8f6c02aed970b83d2720c157844c4ad4f3aee86b2d4c4d7e"
+        },
+        "audit_synthetic_02outputs/tampered_study/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_study/metadata.json",
+          "bytes": 6165,
+          "sha256": "e61670200447a0c8e0246b9eabe3668c5467abe611759b315ef95aa377f3d062"
+        },
+        "audit_synthetic_02outputs/tampered_study/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_study/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "audit_synthetic_02outputs/tampered_study/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_study/trace.jsonl.gz",
+          "bytes": 18309,
+          "sha256": "c98f6973b3d4e073a64d59c527da0b0f2240977d2dcfd1cfe31edcb53525f044"
+        },
+        "audit_synthetic_02outputs/tampered_study.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_study.json",
+          "bytes": 21909,
+          "sha256": "bd8b03337c93642d2d3af250902cb1a16e7d7b1f4af4d1c227487ab15fff7c51"
+        },
+        "audit_synthetic_02outputs/tampered_xml_motor_order/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_xml_motor_order/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "audit_synthetic_02outputs/tampered_xml_motor_order/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_xml_motor_order/manifest.json",
+          "bytes": 364,
+          "sha256": "49ee84723f127ecc7d8cb8e1096b41d11bd60a67d802c2846ea0a2f06662018e"
+        },
+        "audit_synthetic_02outputs/tampered_xml_motor_order/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_xml_motor_order/metadata.json",
+          "bytes": 6165,
+          "sha256": "e840902c446ea17a2610091d3aa5cb5bbebf0c2e35d908aa2c2abb2d944729b7"
+        },
+        "audit_synthetic_02outputs/tampered_xml_motor_order/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_xml_motor_order/source_snapshot.zip",
+          "bytes": 73655,
+          "sha256": "7cc30f1632eb7c5c773d66678f486484caec887358897ff542d2c06ddd593c2c"
+        },
+        "audit_synthetic_02outputs/tampered_xml_motor_order/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_xml_motor_order/trace.jsonl.gz",
+          "bytes": 18479,
+          "sha256": "903b5f015dd9552d01e706721214708b1f1c72b454aa3e0e5f2aea344195b33e"
+        },
+        "audit_synthetic_02outputs/tampered_xml_motor_order.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/tampered_xml_motor_order.json",
+          "bytes": 22448,
+          "sha256": "448b824e87902f70953eddf27925b6c4c1d9e1e7aebfe9714c7dc8f21b638326"
+        },
+        "audit_synthetic_02outputs/test_both_candidates_stopped_none_selected.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_both_candidates_stopped_none_selected.json",
+          "bytes": 21814,
+          "sha256": "8d257a7c174147619a35bf240e8a26594f9bc1863f608d398a941a0cbabbf84a"
+        },
+        "audit_synthetic_02outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial.json",
+          "bytes": 8545,
+          "sha256": "1dcf3033d9f4a689583aa7d9a117e127709a11c24fdb1ad7b3793d454e9ee145"
+        },
+        "audit_synthetic_02outputs/test_environment_stop_ordinary_continues_no_candidate.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_environment_stop_ordinary_continues_no_candidate.json",
+          "bytes": 18028,
+          "sha256": "af55e7ae82710260d2e5ec4e1fba1f6e3faf35f9b5ea38fb3dbd779318996330"
+        },
+        "audit_synthetic_02outputs/test_final_planned_step_stop_is_not_complete.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_final_planned_step_stop_is_not_complete.json",
+          "bytes": 20294,
+          "sha256": "92cec3b0be8c1fc90c9150733ec5b3fdb11acebd2db830ed3023356d8c09912a"
+        },
+        "audit_synthetic_02outputs/test_fixed_plant_change_fatal_after_paid_trial.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_fixed_plant_change_fatal_after_paid_trial.json",
+          "bytes": 8546,
+          "sha256": "aa7b88c7e57528e5e0bb2ee889042d85e401116fdf2b5bd7bff84577468f4aad"
+        },
+        "audit_synthetic_02outputs/test_full_six_trials_no_learning_choose_pulse2.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_full_six_trials_no_learning_choose_pulse2.json",
+          "bytes": 18394,
+          "sha256": "9336d6da92198b71be18ed7799e85a70aef01802fae644d537878181cfd83c61"
+        },
+        "audit_synthetic_02outputs/test_interrupt_paid_partial_and_remaining_blocked.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_interrupt_paid_partial_and_remaining_blocked.json",
+          "bytes": 8477,
+          "sha256": "af3128a75cb97662364571b30f916ac2ca9086fa52e5369f74466ad09453ee0d"
+        },
+        "audit_synthetic_02outputs/test_invalid_native_history_keeps_request_cost_actual_unknown.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_invalid_native_history_keeps_request_cost_actual_unknown.json",
+          "bytes": 8478,
+          "sha256": "795022952fc3b4f2ab3277d75026f5e218dec570d65ffbb2fffbf430a012983d"
+        },
+        "audit_synthetic_02outputs/test_missing_raw_telemetry_fatal_no_adoption.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_missing_raw_telemetry_fatal_no_adoption.json",
+          "bytes": 8478,
+          "sha256": "009278cb9276e17a674da6aac528695ae302a0337f51b9e118bcb4214888e9fb"
+        },
+        "audit_synthetic_02outputs/test_partial_without_stop_not_eligible_no_extension.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_partial_without_stop_not_eligible_no_extension.json",
+          "bytes": 18225,
+          "sha256": "b5ce965cb0385c0297bf3837136dbc35931aa6bc3b795b7fbfa44b6f44f1be88"
+        },
+        "audit_synthetic_02outputs/test_primary_interrupt_survives_after_fingerprint_failure.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_primary_interrupt_survives_after_fingerprint_failure.json",
+          "bytes": 8478,
+          "sha256": "109c42832d54971588ca6084f01f02b4f8dc84df06fda3f836772edbfd24eff7"
+        },
+        "audit_synthetic_02outputs/test_pulse2_truncated_low_effort_cannot_win.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_pulse2_truncated_low_effort_cannot_win.json",
+          "bytes": 20113,
+          "sha256": "45e3dfef1e05e3ceb631d830c86c72e881732492cea39448f4d4e4231949cfd8"
+        },
+        "audit_synthetic_02outputs/test_shoulder_stop_triggers_native_j0.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_shoulder_stop_triggers_native_j0.json",
+          "bytes": 21814,
+          "sha256": "4521cacb54a36ab65fe1075fff937a5c2eee80b0ad39b7087e5422f34c2ddca9"
+        },
+        "audit_synthetic_02outputs/test_stop_first_candidate_then_predeclared_pulse1.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_stop_first_candidate_then_predeclared_pulse1.json",
+          "bytes": 20114,
+          "sha256": "b02fb985d2ba26adb84496f126d571c4d46734db8dad40185dde047436b33291"
+        },
+        "audit_synthetic_02outputs/test_trace_failure_after_paid_endpoint_is_fatal.json": {
+          "source": "external/c4d_pair_calibration_staging/audit_synthetic_02outputs/test_trace_failure_after_paid_endpoint_is_fatal.json",
+          "bytes": 8480,
+          "sha256": "0d3379eaaba45f22bf58ff0a2859a5e4140e52e1c183407d75198697dc53222a"
+        },
+        "AUDITOR_DELIVERY.md": {
+          "source": "external/c4d_pair_calibration_staging/AUDITOR_DELIVERY.md",
+          "bytes": 6548,
+          "sha256": "22728f1815df950b27926546f4fdc1ea32d5f093ad05fb0845593beb2f828a53"
+        },
+        "calibration_feasibility.py": {
+          "source": "external/c4d_pair_calibration_staging/calibration_feasibility.py",
+          "bytes": 18469,
+          "sha256": "773574e9b4818ad4e4951a0f17e1b357bf852f838d2abf8222e5ffc8cbfa8f98"
+        },
+        "CALIBRATION_FEASIBILITY_PROTOCOL_DRAFT.md": {
+          "source": "external/c4d_pair_calibration_staging/CALIBRATION_FEASIBILITY_PROTOCOL_DRAFT.md",
+          "bytes": 4619,
+          "sha256": "83df19d258517f8cbb9f30a6bf4fdcc6918820aaee380eb310e98d760bdddc0c"
+        },
+        "DELIVERY.md": {
+          "source": "external/c4d_pair_calibration_staging/DELIVERY.md",
+          "bytes": 3937,
+          "sha256": "19ead4b923518a290daf78c285779e88feb4c2cc8c71b95b32e6f46fd9f327d7"
+        },
+        "PROMOTABLE_TEST_DELIVERY.md": {
+          "source": "external/c4d_pair_calibration_staging/PROMOTABLE_TEST_DELIVERY.md",
+          "bytes": 3366,
+          "sha256": "3f776d33f01d6fabda8be57de734f1758cb49bd615da46bb3cd9286c11797087"
+        },
+        "promotable_tests_01_0_test_pair_calibration_development.py": {
+          "source": "external/c4d_pair_calibration_staging/promotable_tests_01_0_test_pair_calibration_development.py",
+          "bytes": 15101,
+          "sha256": "515a6d61b75b74e5e165a0040b3aa2bf5689e84bce9fcedffe17f7f84c9b3c45"
+        },
+        "promotable_tests_01_1_test_audit_pair_calibration_promotable.py": {
+          "source": "external/c4d_pair_calibration_staging/promotable_tests_01_1_test_audit_pair_calibration_promotable.py",
+          "bytes": 10446,
+          "sha256": "94faa903c24d75e137e0385bbecd2dd845b255ff7014ec2dfb98dd39278794a3"
+        },
+        "promotable_tests_01_2_audit_pair_calibration_promotable.py": {
+          "source": "external/c4d_pair_calibration_staging/promotable_tests_01_2_audit_pair_calibration_promotable.py",
+          "bytes": 34258,
+          "sha256": "b7e00b07bc19407d9a9a01ba19dbb8b38439411523ae8973a5303ff0e5473a58"
+        },
+        "promotable_tests_01_3_pair_calibration_development.py": {
+          "source": "external/c4d_pair_calibration_staging/promotable_tests_01_3_pair_calibration_development.py",
+          "bytes": 19607,
+          "sha256": "a33ead6f407f685662f3afd2401eeaa33c66d89701f658307c6b3c61c67883f7"
+        },
+        "promotable_tests_01_4_PAIR_CALIBRATION_DEVELOPMENT_PROTOCOL.md": {
+          "source": "external/c4d_pair_calibration_staging/promotable_tests_01_4_PAIR_CALIBRATION_DEVELOPMENT_PROTOCOL.md",
+          "bytes": 5344,
+          "sha256": "2580bdb3c8039d484b75bc04198b1fab7fd5a380e7f29efa5e2012ffe5a1eeb8"
+        },
+        "promotable_tests_01_5_run_promotable_tests_01.py": {
+          "source": "external/c4d_pair_calibration_staging/promotable_tests_01_5_run_promotable_tests_01.py",
+          "bytes": 3743,
+          "sha256": "e4304c5c27370922b72fb362f71b2f6a8f5cfc11128ad95359e1aaf1e0e0dff2"
+        },
+        "promotable_tests_01_attempt.json": {
+          "source": "external/c4d_pair_calibration_staging/promotable_tests_01_attempt.json",
+          "bytes": 429,
+          "sha256": "9e23d5fdaa9fb49b79ad412d4f55119af3fb1cc6178cf99be83358ff62d2180b"
+        },
+        "promotable_tests_01_execution.json": {
+          "source": "external/c4d_pair_calibration_staging/promotable_tests_01_execution.json",
+          "bytes": 3347,
+          "sha256": "d3cf5344d8d8d01d90b50c5c0d8aa1c04d2f205e35c9aa0e81596fc3e8bc6a21"
+        },
+        "promotable_tests_01_stdout.txt": {
+          "source": "external/c4d_pair_calibration_staging/promotable_tests_01_stdout.txt",
+          "bytes": 3394,
+          "sha256": "805a222709685f46b6f3bb21d131da975b9a471e6efa0e23193f32583fe2c8f5"
+        },
+        "run_audit_synthetic_01.py": {
+          "source": "external/c4d_pair_calibration_staging/run_audit_synthetic_01.py",
+          "bytes": 2281,
+          "sha256": "208e08e0b9854e048ca091b77cc2c932e02a055e9d1e9435cb0a68020edd8509"
+        },
+        "run_audit_synthetic_02.py": {
+          "source": "external/c4d_pair_calibration_staging/run_audit_synthetic_02.py",
+          "bytes": 3131,
+          "sha256": "eab77502d598e3c2df5f6b7a294917cea4bac1f78ceec680aeaf9d8c21aa23b1"
+        },
+        "run_promotable_tests_01.py": {
+          "source": "external/c4d_pair_calibration_staging/run_promotable_tests_01.py",
+          "bytes": 3743,
+          "sha256": "e4304c5c27370922b72fb362f71b2f6a8f5cfc11128ad95359e1aaf1e0e0dff2"
+        },
+        "run_synthetic_01.py": {
+          "source": "external/c4d_pair_calibration_staging/run_synthetic_01.py",
+          "bytes": 4054,
+          "sha256": "e665fd10dd29f8ef4e3c2a2d936df91eccc5bacec9d76cada75f67d06b246098"
+        },
+        "run_synthetic_02.py": {
+          "source": "external/c4d_pair_calibration_staging/run_synthetic_02.py",
+          "bytes": 4183,
+          "sha256": "0e2fa5b4e144b73f05543009215b2532623b8718c286669062f2df59795b0e89"
+        },
+        "synthetic_01_attempt.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_attempt.json",
+          "bytes": 346,
+          "sha256": "6429d7b257087d6f655e784a5195bb656087b7b34c7b4683a0716b4da28bab79"
+        },
+        "synthetic_01_calibration_feasibility.py": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_calibration_feasibility.py",
+          "bytes": 18469,
+          "sha256": "773574e9b4818ad4e4951a0f17e1b357bf852f838d2abf8222e5ffc8cbfa8f98"
+        },
+        "synthetic_01_CALIBRATION_FEASIBILITY_PROTOCOL_DRAFT.md": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_CALIBRATION_FEASIBILITY_PROTOCOL_DRAFT.md",
+          "bytes": 4619,
+          "sha256": "83df19d258517f8cbb9f30a6bf4fdcc6918820aaee380eb310e98d760bdddc0c"
+        },
+        "synthetic_01_execution.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_execution.json",
+          "bytes": 14703,
+          "sha256": "842c1b9f2b6853891392c0d6c85eb3ca7c6a6b5e5af096e84f48032537324916"
+        },
+        "synthetic_01_outputs/test_both_candidates_stopped_none_selected/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_both_candidates_stopped_none_selected/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "synthetic_01_outputs/test_both_candidates_stopped_none_selected/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_both_candidates_stopped_none_selected/manifest.json",
+          "bytes": 364,
+          "sha256": "78c90ba1f321b67a7e833747edb8480e824ddd06a159048ef2eabde7df66f5fe"
+        },
+        "synthetic_01_outputs/test_both_candidates_stopped_none_selected/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_both_candidates_stopped_none_selected/metadata.json",
+          "bytes": 6165,
+          "sha256": "db11626cfa5313d7cdbaa93a266258f65eb953a9970599d75b61ce56de4f91e3"
+        },
+        "synthetic_01_outputs/test_both_candidates_stopped_none_selected/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_both_candidates_stopped_none_selected/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "bb4aa0f397d06d024bb18bf167b9a37b8983cce53e2a722a8b98328be3814623"
+        },
+        "synthetic_01_outputs/test_both_candidates_stopped_none_selected/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_both_candidates_stopped_none_selected/trace.jsonl.gz",
+          "bytes": 9106,
+          "sha256": "bf68349683ef53e3ee30009696d4652bc80b39fc58fa5640d896d87ee5de57d8"
+        },
+        "synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/episodes.json",
+          "bytes": 7421,
+          "sha256": "5b8ec3a01cf4b0fb52e593a79899bb51647fcc582c19fd6e69b3e4762e06bfb2"
+        },
+        "synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/manifest.json",
+          "bytes": 364,
+          "sha256": "de0a626c4caef64e805500668ae20c94a00c9cb5b0f750b9d11ec8b8a6e4a317"
+        },
+        "synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/metadata.json",
+          "bytes": 6399,
+          "sha256": "4e7d9c5094b85d290b25671352cb9b46cd4d19747855cef7726153c94f36f28e"
+        },
+        "synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "e6478043a8b80f8448d174edf433bb8354fddd3afa515fd81480ed9ea808fdde"
+        },
+        "synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/trace.jsonl.gz",
+          "bytes": 7832,
+          "sha256": "a1dd05e42c8496069fe9d26889630ef16be26b6ac5babbf4ce41708929f63b33"
+        },
+        "synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/episodes.json",
+          "bytes": 18509,
+          "sha256": "d6364232d0ef174031a8f38f2f10b76ef1291e155760a000a6a0f179bac51699"
+        },
+        "synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/manifest.json",
+          "bytes": 364,
+          "sha256": "177550816f1aa1e295ceb2dd0e44fa4f4ea8da5a0fcdeb16308ae95d1d3c7c12"
+        },
+        "synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/metadata.json",
+          "bytes": 6164,
+          "sha256": "548f920c88cd8d020f200616743c41798c8f3a25cad9c72c9ae69e78176e809b"
+        },
+        "synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "e6478043a8b80f8448d174edf433bb8354fddd3afa515fd81480ed9ea808fdde"
+        },
+        "synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_environment_stop_ordinary_continues_no_candidate/trace.jsonl.gz",
+          "bytes": 8209,
+          "sha256": "aa57caf7f4d28b6f98a4fefffa14b23ee9d9c42b974ca142f5199fe0143fc5e3"
+        },
+        "synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/episodes.json",
+          "bytes": 21977,
+          "sha256": "5b02c408a416c3c63df5c8c54aced3db8c227c0877ab1482293d671f408cd488"
+        },
+        "synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/manifest.json",
+          "bytes": 364,
+          "sha256": "487a9db0a73f262d9bcdbace3cb00ccbe90af7b3a5b96427828143f7f325a62a"
+        },
+        "synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/metadata.json",
+          "bytes": 6186,
+          "sha256": "3b9ebc617c064cff35292d11cb47b043818106b4f6f7186722d15dbc77bd5de0"
+        },
+        "synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "e6478043a8b80f8448d174edf433bb8354fddd3afa515fd81480ed9ea808fdde"
+        },
+        "synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_final_planned_step_stop_is_not_complete/trace.jsonl.gz",
+          "bytes": 44622,
+          "sha256": "8a1d105718a81e624dcd641d63e36d5620ffe190822486eea14cc4210fe530a9"
+        },
+        "synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/episodes.json",
+          "bytes": 7299,
+          "sha256": "2bc2782c33f1df8261b9ff221a401ad1e40cc14fe5ba53aa94f2ddf240c42620"
+        },
+        "synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/manifest.json",
+          "bytes": 364,
+          "sha256": "db24b1d6ef87e1ec4e16de578b37359345bda72cddcab0e4a08c34b1b8f723e7"
+        },
+        "synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/metadata.json",
+          "bytes": 6292,
+          "sha256": "b01714b9f1eb0773802289db5e79ea7282a3e2771fa9c5122aa034cbf49aeb24"
+        },
+        "synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "e6478043a8b80f8448d174edf433bb8354fddd3afa515fd81480ed9ea808fdde"
+        },
+        "synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_fixed_plant_change_fatal_after_paid_trial/trace.jsonl.gz",
+          "bytes": 7953,
+          "sha256": "38f19aff546f55e942c255d43d27fe055dde66a5293054326e5243928aa8e468"
+        },
+        "synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/episodes.json",
+          "bytes": 18671,
+          "sha256": "185f56336b7bc6be56200739ec47cb033e0b833ece572f18ccdae190a143d210"
+        },
+        "synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/manifest.json",
+          "bytes": 364,
+          "sha256": "1ea252faa98de528dedc228ca54746f17c9ae24f7394c7f03e74261f95848928"
+        },
+        "synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/metadata.json",
+          "bytes": 6162,
+          "sha256": "481a1592a6427ba1f6cf1638eb844433cd6f10b88b5dfc88a91dbb4a5f8bb405"
+        },
+        "synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "c466f673c53e7f1931ff0589ba6d21d892bbe6ea14f4dcb7fb312a2bf19eb88a"
+        },
+        "synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_full_six_trials_no_learning_choose_pulse2/trace.jsonl.gz",
+          "bytes": 44087,
+          "sha256": "c086a4fa7f967cc5b0d9b86bfad4cc1603bd9c86e095c08604a3ddb9c1851db9"
+        },
+        "synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/episodes.json",
+          "bytes": 7223,
+          "sha256": "dac9f62605ae4008571f5fa8668fc24ca489c100b02d12153ad962a9ed1adb4b"
+        },
+        "synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/manifest.json",
+          "bytes": 364,
+          "sha256": "e91434f61c7347fdd28d6721fc58dc078c7f63c80ed6377deb5d3fced088546b"
+        },
+        "synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/metadata.json",
+          "bytes": 6292,
+          "sha256": "5ac0dcb3d852976e0b5d390d7b181df4f5f23d9586f2231ad1488e9ae761d6ed"
+        },
+        "synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "c466f673c53e7f1931ff0589ba6d21d892bbe6ea14f4dcb7fb312a2bf19eb88a"
+        },
+        "synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_interrupt_paid_partial_and_remaining_blocked/trace.jsonl.gz",
+          "bytes": 1868,
+          "sha256": "e0bfb70370ed5babcf60fce0523b81e0dd8cdfca74c82cc3d54171baf9b53140"
+        },
+        "synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/episodes.json",
+          "bytes": 7266,
+          "sha256": "ce88a2dc7361de95a5bce0f7c175140ac9964eba1039f7fbb40c1af55c2ca00a"
+        },
+        "synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/manifest.json",
+          "bytes": 364,
+          "sha256": "4eb5d3cd9aff7c0a209fddc6451b070a09a6c1f5b8f13e01404fe10f587ff9a2"
+        },
+        "synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/metadata.json",
+          "bytes": 6307,
+          "sha256": "b05b85bdb7595ffb76ba85b4076922a9727e20b5fefbf58aa21678cea440c5bc"
+        },
+        "synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "c466f673c53e7f1931ff0589ba6d21d892bbe6ea14f4dcb7fb312a2bf19eb88a"
+        },
+        "synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/trace.jsonl.gz",
+          "bytes": 1887,
+          "sha256": "abb04be31dc96396dc8e64c6c90d31f034fb705f4b9ef24750f3f89ef18f60f6"
+        },
+        "synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/episodes.json",
+          "bytes": 7290,
+          "sha256": "c58c504473a9e2fb7b3d15be107d3931139d0501d105185bdb9a9452f0521794"
+        },
+        "synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/manifest.json",
+          "bytes": 364,
+          "sha256": "bd03c625cc78b09426f7b18d9c3a20dc952dd0458d1f9af1cf16a1c972ea5821"
+        },
+        "synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/metadata.json",
+          "bytes": 6319,
+          "sha256": "b7e5ba648c6f333fe3c2f3fdd9e82c8ae8b9c247c4fd4d4bc09f1da371aa4485"
+        },
+        "synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "c466f673c53e7f1931ff0589ba6d21d892bbe6ea14f4dcb7fb312a2bf19eb88a"
+        },
+        "synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_missing_raw_telemetry_fatal_no_adoption/trace.jsonl.gz",
+          "bytes": 1882,
+          "sha256": "16b32633d858b920a70e8a78e7c24b565a54bde7d619d02872dd71f4fc0118ac"
+        },
+        "synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/episodes.json",
+          "bytes": 18494,
+          "sha256": "33968576ac4c517d6a65e9e2d4fe5ff5398bdc0ee8333f23608c7cf30cab359e"
+        },
+        "synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/manifest.json",
+          "bytes": 364,
+          "sha256": "56f5b4aba023aacbef5a5adc70f628782465195b34255f6923f64d0d782cac07"
+        },
+        "synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/metadata.json",
+          "bytes": 6184,
+          "sha256": "6dc1735fb9944c3323065ff1fea932f5c00c3a8a791d9822891e269044b3198f"
+        },
+        "synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "c466f673c53e7f1931ff0589ba6d21d892bbe6ea14f4dcb7fb312a2bf19eb88a"
+        },
+        "synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_partial_without_stop_not_eligible_no_extension/trace.jsonl.gz",
+          "bytes": 26199,
+          "sha256": "12df45c25c73310cde26660988adacbc2c65b154c0a0c88c04ed891c866258f8"
+        },
+        "synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/episodes.json",
+          "bytes": 7289,
+          "sha256": "f461d12605dfd72d116d9a7b1e3bb0cec7bb38b9488bdf80246abd79537258ba"
+        },
+        "synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/manifest.json",
+          "bytes": 364,
+          "sha256": "e61399c9f49026921457c00b164177d281568c10e52cb07b777b022f254e5553"
+        },
+        "synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/metadata.json",
+          "bytes": 6292,
+          "sha256": "20088004a12745754e02dc12e9933e5d00898cce10b03d24250f1dc977918948"
+        },
+        "synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "ebde6e30f1c8e9f5682ca296909b8de18d4f6b3711d49134748c2d124b7d362e"
+        },
+        "synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_primary_interrupt_survives_after_fingerprint_failure/trace.jsonl.gz",
+          "bytes": 1868,
+          "sha256": "646759aa2c100c6f679e85ec28e202c1a8a65110e4c6acd78b731f515f5c6c89"
+        },
+        "synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/episodes.json",
+          "bytes": 21791,
+          "sha256": "735013b877f784a1e08a4c7469544795cb5143d40e0fa6deb88eb3edf079a843"
+        },
+        "synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/manifest.json",
+          "bytes": 364,
+          "sha256": "d03fe7d379efe3537aeee13912fbb842963305d299e7b77130208dabf315d83a"
+        },
+        "synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/metadata.json",
+          "bytes": 6185,
+          "sha256": "d363f152adfcab0fd1ab81d4077bd8fe03e717f403d6b4920bcbb58adc698146"
+        },
+        "synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "ebde6e30f1c8e9f5682ca296909b8de18d4f6b3711d49134748c2d124b7d362e"
+        },
+        "synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_pulse2_truncated_low_effort_cannot_win/trace.jsonl.gz",
+          "bytes": 26724,
+          "sha256": "5d621604af53cef289ab506a6f89f61bb70642d5d9d00c5696344fcae752f3f8"
+        },
+        "synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/episodes.json",
+          "bytes": 24887,
+          "sha256": "27cd478c530c7ea12ab928dd87aca68874bf5ecf9806be0d4fb31d0636d1aab0"
+        },
+        "synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/manifest.json",
+          "bytes": 364,
+          "sha256": "7c5ddd3bc0d5b58e47f9646a34a53bfb5cd15da31c15cd7813deafec508e6d1f"
+        },
+        "synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/metadata.json",
+          "bytes": 6164,
+          "sha256": "388d97f3f49555d8edc7fc79d251e48946b0a09b8dac20cb6c5a4b8235bbf9e4"
+        },
+        "synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "ebde6e30f1c8e9f5682ca296909b8de18d4f6b3711d49134748c2d124b7d362e"
+        },
+        "synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_shoulder_stop_triggers_native_j0/trace.jsonl.gz",
+          "bytes": 9123,
+          "sha256": "407b2617dc629b8fc5c7afa5fcca1445e7b169a2579fe900ca3a911e3a13cc2e"
+        },
+        "synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/episodes.json",
+          "bytes": 21791,
+          "sha256": "735013b877f784a1e08a4c7469544795cb5143d40e0fa6deb88eb3edf079a843"
+        },
+        "synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/manifest.json",
+          "bytes": 364,
+          "sha256": "0cce13180dceaeca32e6448ef9a3a5e8fba13024d82539af8d6eda9f416f6a86"
+        },
+        "synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/metadata.json",
+          "bytes": 6183,
+          "sha256": "0cbaf66d491590d00779b22ee5c0bfbb496edaccc57a1a445f8eff395496b68b"
+        },
+        "synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "5c54fdb9278b4e65ea9eda75cd870c12492e0c8cdaa8e6a5740472bc96d26254"
+        },
+        "synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_stop_first_candidate_then_predeclared_pulse1/trace.jsonl.gz",
+          "bytes": 26724,
+          "sha256": "20d42196b6a50e2eb7f6b6a7807338bea69b022950194dd6aa2f1470a46724cf"
+        },
+        "synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/episodes.json",
+          "bytes": 7312,
+          "sha256": "b8442bb310ed0bf1320b10b72939a70eff190566defa3cf37026074cb25b3988"
+        },
+        "synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/manifest.json",
+          "bytes": 364,
+          "sha256": "9c02f90027b303535241c19c03c08ec98efbbe8c26b5637efe7666d3318a3669"
+        },
+        "synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/metadata.json",
+          "bytes": 6286,
+          "sha256": "a53501312fc9898165bf4b4abc314141ef3b9a8643f9d59b7732993e772ca794"
+        },
+        "synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "5c54fdb9278b4e65ea9eda75cd870c12492e0c8cdaa8e6a5740472bc96d26254"
+        },
+        "synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_outputs/test_trace_failure_after_paid_endpoint_is_fatal/trace.jsonl.gz",
+          "bytes": 1870,
+          "sha256": "16bd3689bebebfa5c15f6a78612d62b1780ce4b1532a4042b982f6ffee024a37"
+        },
+        "synthetic_01_run_synthetic_01.py": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_run_synthetic_01.py",
+          "bytes": 4054,
+          "sha256": "e665fd10dd29f8ef4e3c2a2d936df91eccc5bacec9d76cada75f67d06b246098"
+        },
+        "synthetic_01_stdout.txt": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_stdout.txt",
+          "bytes": 2018,
+          "sha256": "835e3f4026c276f6f5efb8f086edb8e3ebd7bd58b31f42b1b79d5568059467f6"
+        },
+        "synthetic_01_test_calibration_feasibility.py": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_01_test_calibration_feasibility.py",
+          "bytes": 12201,
+          "sha256": "fd47a46fc6757479a5e980fcda4b063fac2269d92dd739460c5997483e22006f"
+        },
+        "synthetic_02_attempt.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_attempt.json",
+          "bytes": 505,
+          "sha256": "46c59c95c98a538d97ad1785ed7a068a062b051717bd9afcb1ef8f033386a221"
+        },
+        "synthetic_02_calibration_feasibility.py": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_calibration_feasibility.py",
+          "bytes": 18469,
+          "sha256": "773574e9b4818ad4e4951a0f17e1b357bf852f838d2abf8222e5ffc8cbfa8f98"
+        },
+        "synthetic_02_CALIBRATION_FEASIBILITY_PROTOCOL_DRAFT.md": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_CALIBRATION_FEASIBILITY_PROTOCOL_DRAFT.md",
+          "bytes": 4619,
+          "sha256": "83df19d258517f8cbb9f30a6bf4fdcc6918820aaee380eb310e98d760bdddc0c"
+        },
+        "synthetic_02_execution.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_execution.json",
+          "bytes": 14711,
+          "sha256": "93100d286c6fb74c12f754151890f78000f9d9054ce198bed1b1f1856136a14d"
+        },
+        "synthetic_02_outputs/test_both_candidates_stopped_none_selected/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_both_candidates_stopped_none_selected/episodes.json",
+          "bytes": 24887,
+          "sha256": "e3d1733d430d8927d287cfaae7dc7916da247fe3fe4589bd6d724d2878117121"
+        },
+        "synthetic_02_outputs/test_both_candidates_stopped_none_selected/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_both_candidates_stopped_none_selected/manifest.json",
+          "bytes": 364,
+          "sha256": "8fb4525755e601903667aab9cc4b36622225c91a3f69094acf0453cba610b5c9"
+        },
+        "synthetic_02_outputs/test_both_candidates_stopped_none_selected/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_both_candidates_stopped_none_selected/metadata.json",
+          "bytes": 6165,
+          "sha256": "e61670200447a0c8e0246b9eabe3668c5467abe611759b315ef95aa377f3d062"
+        },
+        "synthetic_02_outputs/test_both_candidates_stopped_none_selected/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_both_candidates_stopped_none_selected/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "synthetic_02_outputs/test_both_candidates_stopped_none_selected/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_both_candidates_stopped_none_selected/trace.jsonl.gz",
+          "bytes": 18479,
+          "sha256": "903b5f015dd9552d01e706721214708b1f1c72b454aa3e0e5f2aea344195b33e"
+        },
+        "synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/episodes.json",
+          "bytes": 7423,
+          "sha256": "37fbcaaf339e930b5230ab79105036ae25bdc68dc2bfc58c3dfce3e5afbdac00"
+        },
+        "synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/manifest.json",
+          "bytes": 364,
+          "sha256": "6627bb3d5e11a74dc89ba21540773d0b3c673c02ab588525805d4bae1d55fdfe"
+        },
+        "synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/metadata.json",
+          "bytes": 6399,
+          "sha256": "af2526332a53d7b57ce0de96b659203be7d6d7d1c3e37f756283c639960c2747"
+        },
+        "synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_checkpoint_io_failure_keeps_full_paid_first_trial/trace.jsonl.gz",
+          "bytes": 16274,
+          "sha256": "a8a9fe3287e7c6763d91eafb90fc969d55deb23b365c6165a748e2d207b24c3e"
+        },
+        "synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/episodes.json",
+          "bytes": 18509,
+          "sha256": "d6364232d0ef174031a8f38f2f10b76ef1291e155760a000a6a0f179bac51699"
+        },
+        "synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/manifest.json",
+          "bytes": 364,
+          "sha256": "88244a213d76125855054a09487f5f7921f89ca9e0dc1f55391b00af49706f75"
+        },
+        "synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/metadata.json",
+          "bytes": 6165,
+          "sha256": "42f631381a21a23fc4c2004eda4b00d6dec6c5909c2b4d008a5c00e7da6bb4e4"
+        },
+        "synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "a1412c452526e3fd54c42d1c8f584ef7c975258f81238901eee4a7fae8e59460"
+        },
+        "synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_environment_stop_ordinary_continues_no_candidate/trace.jsonl.gz",
+          "bytes": 17701,
+          "sha256": "660361aa686b873c579106572d6b451d98c0acde0b158d38df78026086bf673c"
+        },
+        "synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/episodes.json",
+          "bytes": 21986,
+          "sha256": "12150dc1f7443e30063042e476081aca5c6a5674c2bf702d31426ba1f6e10470"
+        },
+        "synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/manifest.json",
+          "bytes": 364,
+          "sha256": "cd2622f9a14ce6b2a9f80df31b40631233936aeca18e960c4f7c57bee94fc41a"
+        },
+        "synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/metadata.json",
+          "bytes": 6181,
+          "sha256": "68e2408809fa7f32c38ea181b6e837b9982ebd09b1021298a114cacab0884156"
+        },
+        "synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "e0c9d60dced58d293002b62777d73b25ec71917493a6919f24dd34585655f70d"
+        },
+        "synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_final_planned_step_stop_is_not_complete/trace.jsonl.gz",
+          "bytes": 94217,
+          "sha256": "cb35259cd3070c8bc9557fb7fab633d1b153753e6fd1c7b8f81b0397ca6d6332"
+        },
+        "synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/episodes.json",
+          "bytes": 7301,
+          "sha256": "1f2ba8cf7cc85b0caccf4189c368ea7c4c815a3db1c11603ee9f1d34def4c911"
+        },
+        "synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/manifest.json",
+          "bytes": 364,
+          "sha256": "00c798e27e2aa7282ee130e5f142bc757a2fc538dd511dbce4dc459ed72e6b22"
+        },
+        "synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/metadata.json",
+          "bytes": 6293,
+          "sha256": "c6dac5924b88d3443009effa4b29658f517c1aff7a2efd453817afeebe4200a9"
+        },
+        "synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "75fb15518c75ff14d57e562a1af9f50481f04f83916d77d2f81bbe93873f5505"
+        },
+        "synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_fixed_plant_change_fatal_after_paid_trial/trace.jsonl.gz",
+          "bytes": 16390,
+          "sha256": "fb7a5e66d03b99258153d9180f883e112558931b8f52f796b88847021aa182d3"
+        },
+        "synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/episodes.json",
+          "bytes": 18680,
+          "sha256": "107b37221e4acec1f36b65b670ef984f52584408d3d2162193e29e64aa747563"
+        },
+        "synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/manifest.json",
+          "bytes": 364,
+          "sha256": "06f6feec7495f132e432d0b7402a9071217eb8d834ea2c91aa751dfe6d81312c"
+        },
+        "synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/metadata.json",
+          "bytes": 6163,
+          "sha256": "6da39509479bcd1a1303a6f188984315cca5f413ea4c7b76ef400c2192c99ed1"
+        },
+        "synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "75fb15518c75ff14d57e562a1af9f50481f04f83916d77d2f81bbe93873f5505"
+        },
+        "synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_full_six_trials_no_learning_choose_pulse2/trace.jsonl.gz",
+          "bytes": 93614,
+          "sha256": "76102b04c8a9cde5db50fff95f03a0c886aed363f49f74e559c5d896ec88cf70"
+        },
+        "synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/episodes.json",
+          "bytes": 7223,
+          "sha256": "dac9f62605ae4008571f5fa8668fc24ca489c100b02d12153ad962a9ed1adb4b"
+        },
+        "synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/manifest.json",
+          "bytes": 364,
+          "sha256": "6850192537e160fcd12f9b1f7440c61429c8af216e5d00116a445a90386cc377"
+        },
+        "synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/metadata.json",
+          "bytes": 6292,
+          "sha256": "b203602fdf7470fe110ec48cec7f20efe22b6a5b65b34a87eaf41382e4735ff0"
+        },
+        "synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "cb9bdc773bacc6661e4e85a8919a97afac4b6a93dc2e0d99c5b883823f4752ec"
+        },
+        "synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_interrupt_paid_partial_and_remaining_blocked/trace.jsonl.gz",
+          "bytes": 3589,
+          "sha256": "a9f952919b4308dc37012f31810995b997be3333037521967e6f81c4702377ca"
+        },
+        "synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/episodes.json",
+          "bytes": 7266,
+          "sha256": "ce88a2dc7361de95a5bce0f7c175140ac9964eba1039f7fbb40c1af55c2ca00a"
+        },
+        "synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/manifest.json",
+          "bytes": 364,
+          "sha256": "798de98d1e8a4f5be82be7f0c0034ccbf9bd4f49d1e55b9f3c91b496a6c2e110"
+        },
+        "synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/metadata.json",
+          "bytes": 6308,
+          "sha256": "bb4f1dc0f08fbaad8e036cf450b4c79ffafb322f692e90e97160d78589b494d5"
+        },
+        "synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "cb9bdc773bacc6661e4e85a8919a97afac4b6a93dc2e0d99c5b883823f4752ec"
+        },
+        "synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_invalid_native_history_keeps_request_cost_actual_unknown/trace.jsonl.gz",
+          "bytes": 3613,
+          "sha256": "05da7ab14a4ab6e7316df89f5072027b6ee452d31915d8cb168fbb875b67ba32"
+        },
+        "synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/episodes.json",
+          "bytes": 7290,
+          "sha256": "c58c504473a9e2fb7b3d15be107d3931139d0501d105185bdb9a9452f0521794"
+        },
+        "synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/manifest.json",
+          "bytes": 364,
+          "sha256": "91080c98236114eb18203de4fd657ccf35046c34bb4ac690980710c1e3684707"
+        },
+        "synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/metadata.json",
+          "bytes": 6320,
+          "sha256": "900b3eb00451595143f5cc224415bd815f4fbed41d850d7d124f5801a4166e41"
+        },
+        "synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "cb9bdc773bacc6661e4e85a8919a97afac4b6a93dc2e0d99c5b883823f4752ec"
+        },
+        "synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_missing_raw_telemetry_fatal_no_adoption/trace.jsonl.gz",
+          "bytes": 3607,
+          "sha256": "f8f124a655d0604950341876dbb59863869ffb037420681e42035345d263304c"
+        },
+        "synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/episodes.json",
+          "bytes": 18497,
+          "sha256": "3a8deab4ff61e305ba25a868a1857e81f4681df8938defdfd9063185378df04d"
+        },
+        "synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/manifest.json",
+          "bytes": 364,
+          "sha256": "2de8910bc6999d67730960b39f5c089ff24993c331e4a88e4551934475625e3d"
+        },
+        "synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/metadata.json",
+          "bytes": 6182,
+          "sha256": "8e4eca55d3eeb475e72029910bc70fcd1cc33c68ba970149a8bcac3bb7a2c5cc"
+        },
+        "synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "cb9bdc773bacc6661e4e85a8919a97afac4b6a93dc2e0d99c5b883823f4752ec"
+        },
+        "synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_partial_without_stop_not_eligible_no_extension/trace.jsonl.gz",
+          "bytes": 55561,
+          "sha256": "30ae36c8471738d3135fb334df6a63aa1b22f5d46e11d3a80e13556b1712b073"
+        },
+        "synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/episodes.json",
+          "bytes": 7289,
+          "sha256": "f461d12605dfd72d116d9a7b1e3bb0cec7bb38b9488bdf80246abd79537258ba"
+        },
+        "synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/manifest.json",
+          "bytes": 364,
+          "sha256": "83238a922bf1b99e83943cd8421f0df4b9e8bc4f2474f4e3e01ee90adcef8045"
+        },
+        "synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/metadata.json",
+          "bytes": 6292,
+          "sha256": "ff651bb297dc04a629bbaac1aee4d1444695a8d70efb3e2692874d8eb420ad00"
+        },
+        "synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "cb9bdc773bacc6661e4e85a8919a97afac4b6a93dc2e0d99c5b883823f4752ec"
+        },
+        "synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_primary_interrupt_survives_after_fingerprint_failure/trace.jsonl.gz",
+          "bytes": 3589,
+          "sha256": "8fa7eabcaf9c2c2f85cffe5026c331588e5fb2152d2c193902b8f1fbca31537e"
+        },
+        "synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/episodes.json",
+          "bytes": 21794,
+          "sha256": "fb84fd700d2dc9de61f05a2cf0e0960efca063bb99c78952f40b7d77b42e01e1"
+        },
+        "synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/manifest.json",
+          "bytes": 364,
+          "sha256": "14a1e674edab8da1fa56104c2d8ca1704631565dcbf0d512423d7f7e136431d8"
+        },
+        "synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/metadata.json",
+          "bytes": 6182,
+          "sha256": "3b5a7c479c3a4786c3b86ba85d35801a7b9b3a465c770d5ba2bcce8a9d5e132b"
+        },
+        "synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "cb9bdc773bacc6661e4e85a8919a97afac4b6a93dc2e0d99c5b883823f4752ec"
+        },
+        "synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_pulse2_truncated_low_effort_cannot_win/trace.jsonl.gz",
+          "bytes": 56046,
+          "sha256": "bd64e8928ae511d2bf288b50cd55dce4076fcdb82b83dc11edb7cac1cf896fca"
+        },
+        "synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/episodes.json",
+          "bytes": 24887,
+          "sha256": "27cd478c530c7ea12ab928dd87aca68874bf5ecf9806be0d4fb31d0636d1aab0"
+        },
+        "synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/manifest.json",
+          "bytes": 364,
+          "sha256": "b7b79b79ac05b1ba6407248142c849de0d8464970d7dd72e3c53737deadd374c"
+        },
+        "synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/metadata.json",
+          "bytes": 6162,
+          "sha256": "946648d5c6dd8256100f3a2c610e0d65eae6b371231ff60673a6718b8fb4c83f"
+        },
+        "synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "575b6c6d7be0ab6e3509404f90bfa85a161525b3fbeb8f11657a8d3d877c70d2"
+        },
+        "synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_shoulder_stop_triggers_native_j0/trace.jsonl.gz",
+          "bytes": 18484,
+          "sha256": "8269dcb356762a64ba88bdc146cbc135d78005ab6a025d3e7e32a9e9469f612e"
+        },
+        "synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/episodes.json",
+          "bytes": 21794,
+          "sha256": "fb84fd700d2dc9de61f05a2cf0e0960efca063bb99c78952f40b7d77b42e01e1"
+        },
+        "synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/manifest.json",
+          "bytes": 364,
+          "sha256": "c1b6dc83beadf48fce8c870651cfd5ea25604f7eed77009b59b9449659fd0b8e"
+        },
+        "synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/metadata.json",
+          "bytes": 6182,
+          "sha256": "a2818443bcf700542c1325ec7d923fad13af9bbb5517a2a463f078b5aa40ce0f"
+        },
+        "synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "575b6c6d7be0ab6e3509404f90bfa85a161525b3fbeb8f11657a8d3d877c70d2"
+        },
+        "synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_stop_first_candidate_then_predeclared_pulse1/trace.jsonl.gz",
+          "bytes": 56046,
+          "sha256": "41167ceb5859c7f9152827cd49a3b799d8ca3a9471339410e67e49f059055e40"
+        },
+        "synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/episodes.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/episodes.json",
+          "bytes": 7312,
+          "sha256": "b8442bb310ed0bf1320b10b72939a70eff190566defa3cf37026074cb25b3988"
+        },
+        "synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/manifest.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/manifest.json",
+          "bytes": 364,
+          "sha256": "68c448fb72bf110ca2908f18876d534ec669eb074817df70e6d9a1bf65f973c1"
+        },
+        "synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/metadata.json": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/metadata.json",
+          "bytes": 6287,
+          "sha256": "8988913d826e0428d4f9586ed664ff563a6ade4ad159d37b15306d3f1fb93ef9"
+        },
+        "synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/source_snapshot.zip": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/source_snapshot.zip",
+          "bytes": 23499,
+          "sha256": "595f8d8faba824ee75b807fa919ea121b099294f4c0f3def79c8a0bc68241a24"
+        },
+        "synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/trace.jsonl.gz": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_outputs/test_trace_failure_after_paid_endpoint_is_fatal/trace.jsonl.gz",
+          "bytes": 3594,
+          "sha256": "7a6ebb30a10837d7561db97a0c0205bba4aec238171a7d2e2a5fa904317779d6"
+        },
+        "synthetic_02_run_synthetic_02.py": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_run_synthetic_02.py",
+          "bytes": 4183,
+          "sha256": "0e2fa5b4e144b73f05543009215b2532623b8718c286669062f2df59795b0e89"
+        },
+        "synthetic_02_stdout.txt": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_stdout.txt",
+          "bytes": 2018,
+          "sha256": "f80a99a957698de74acd688169a6b07bd081c3bf9ca69b60b3c3504c8e568307"
+        },
+        "synthetic_02_test_calibration_feasibility.py": {
+          "source": "external/c4d_pair_calibration_staging/synthetic_02_test_calibration_feasibility.py",
+          "bytes": 13357,
+          "sha256": "654bf0882f80f58f57528c155bd5c81d3cf897caaf95882714fa7310688ea572"
+        },
+        "test_audit_pair_calibration.py": {
+          "source": "external/c4d_pair_calibration_staging/test_audit_pair_calibration.py",
+          "bytes": 9758,
+          "sha256": "21619879d1703589955e0f1358f31ca24b2e0ce9f04c3fda3a8769ae13ee5d4f"
+        },
+        "test_audit_pair_calibration_promotable.py": {
+          "source": "external/c4d_pair_calibration_staging/test_audit_pair_calibration_promotable.py",
+          "bytes": 10446,
+          "sha256": "94faa903c24d75e137e0385bbecd2dd845b255ff7014ec2dfb98dd39278794a3"
+        },
+        "test_calibration_feasibility.py": {
+          "source": "external/c4d_pair_calibration_staging/test_calibration_feasibility.py",
+          "bytes": 13357,
+          "sha256": "654bf0882f80f58f57528c155bd5c81d3cf897caaf95882714fa7310688ea572"
+        },
+        "test_pair_calibration_development.py": {
+          "source": "external/c4d_pair_calibration_staging/test_pair_calibration_development.py",
+          "bytes": 15101,
+          "sha256": "515a6d61b75b74e5e165a0040b3aa2bf5689e84bce9fcedffe17f7f84c9b3c45"
+        }
+      },
+      "member_count": 269,
+      "uncompressed_bytes": 3654298,
+      "bundle_bytes": 1711333,
+      "sha256": "55a80d272cc11267dd2ed6a7ea59b0820ab9dab4467fb37837a43870b170d26e",
+      "excluded": [
+        "__pycache__"
+      ],
+      "original_failures_retained": true,
+      "member_hashes_verified": true
+    }
+  },
+  "input_hashes": {
+    "external\\pair_calibration_20261011_first\\episodes.json": {
+      "bytes": 23695,
+      "sha256": "1048983c21e6bd8e5a9b8a283d60c4d60ec5143fcdec900f79b2003c1a8b541d"
+    },
+    "external\\pair_calibration_20261011_first\\manifest.json": {
+      "bytes": 364,
+      "sha256": "a043e93d979cc25de13f6e2d7ba2d0bc58fa2ed783881bfd16f1523be13faa6c"
+    },
+    "external\\pair_calibration_20261011_first\\metadata.json": {
+      "bytes": 6218,
+      "sha256": "d504fd9c8f96d602f64acb4c4db7f76040867342b533fb80b536f35f13ee27d3"
+    },
+    "external\\pair_calibration_20261011_first\\source_snapshot.zip": {
+      "bytes": 34262,
+      "sha256": "26879a77eaab2168765d2570ebd567f316c008ef25c3973da7688a2834ad9170"
+    },
+    "external\\pair_calibration_20261011_first\\trace.jsonl.gz": {
+      "bytes": 1928651,
+      "sha256": "cfca1fe9171218fc56d0785fcff80afe2f304ad8f87653d1b86f695016dd7963"
+    },
+    "external\\pair_calibration_20261011_first_audit.json": {
+      "bytes": 20763,
+      "sha256": "3004586f9054dbded52a7a396516e386dafa7609a1db530e44f0b06130f2e4c5"
+    },
+    "external\\pair_calibration_20261011_first_stdout.txt": {
+      "bytes": 1175,
+      "sha256": "c4d1007eab481bfef83f8900992f6b11a81c9acd3c13e9887ebeedda8e823222"
+    },
+    "external\\pair_calibration_20261011_first_execution.json": {
+      "bytes": 549,
+      "sha256": "8872fd6be312f0086d03d595ba54eeb3d760100f322e22a74fc79ed47fc60485"
+    },
+    "external\\run_pair_calibration_once.py": {
+      "bytes": 1365,
+      "sha256": "89ac849a1245423eb9bd147722285037f4ec799f7c6672b15f5319bbd030a598"
+    },
+    "external\\c4d_promoted28_stdout.txt": {
+      "bytes": 102,
+      "sha256": "c54d711045bbd1a98a317311702749808aa41af68b0e764f2db119c015c7442e"
+    },
+    "external\\c4d_light10_stdout.txt": {
+      "bytes": 111,
+      "sha256": "59d5b8115a7bf3d679cb0f6e90493812c4f2e2b78d8f0e59bc3e94e620cf2b74"
+    },
+    "external\\pair_calibration_20261011_summary_01\\attempt.json": {
+      "bytes": 768,
+      "sha256": "b6d5b7cad6bdc261af7cac9570034ccdc9f4bac3b0efffd539389a4ac4f120dd"
+    },
+    "external\\pair_calibration_20261011_summary_01\\execution.json": {
+      "bytes": 1973,
+      "sha256": "909522d13b2491023324a674bfeeca4a9cfcf2d34acb851d0f57ab9bbd91ca0a"
+    },
+    "external\\pair_calibration_20261011_summary_01\\summary.json": {
+      "bytes": 24470,
+      "sha256": "76038105eb1eec7c59abe365efb249f88470662aa88ce33353448b2c4b430fb5"
+    },
+    "external\\pair_calibration_20261011_summary_01\\summary.md": {
+      "bytes": 1700,
+      "sha256": "07072ff70d6ce0c7744807c918e47b92afe6083502df50f635d3ad2ecc4cb405"
+    },
+    "external\\pair_calibration_20261011_summary_01\\tool_source.py": {
+      "bytes": 16599,
+      "sha256": "d5bb79517f01300652ef7c7988ee992814c27761f02576c401a72037a87f4248"
+    },
+    "external\\pair_calibration_20261011_summary_delivery.md": {
+      "bytes": 3553,
+      "sha256": "86d8365090b1058fb3a3e0fc67cd6f603a244f866a80be8b799ffa1b6df050f3"
+    }
+  },
+  "verification": {
+    "checks": 616,
+    "failed": 0,
+    "violations": [],
+    "exception": null
+  },
+  "execution": {
+    "wall_seconds": 1.2606635999400169,
+    "cpu_seconds": 0.234375,
+    "exit_code": 0,
+    "physical_calls": 0,
+    "model_updates": 0,
+    "new_predictions": 0,
+    "audit_executions": 0,
+    "summary_executions": 0,
+    "retains_all_partial_files_on_failure": true
+  },
+  "cumulative_accounting": {
+    "formal_control_calls": 227648,
+    "formal_physics_substeps": 2276480,
+    "scalar_model_updates": 12852,
+    "accounting_source": "Root-authorized project cumulative totals; this archived six-trial batch independently remains2586/25860/0",
+    "this_batch": {
+      "formal_control_calls": 2586,
+      "formal_physics_substeps": 25860,
+      "scalar_model_updates": 0
+    },
+    "previous_pair_archive_plus_c5_plus_this_batch_calls": [
+      224582,
+      480,
+      2586
+    ]
+  },
+  "manifest_self_hash_excluded": true,
+  "claim_boundary": "Archive integrity only; no new experimental evidence or acceptance decision."
+}

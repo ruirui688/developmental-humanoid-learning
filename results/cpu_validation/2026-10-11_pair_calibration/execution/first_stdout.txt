@@ -1,0 +1,40 @@
+{
+  "source_commit": "86453c1280c986748717ca79ae4d4d3d45b52973",
+  "archive_status": "complete",
+  "statuses": {
+    "terminated": 3,
+    "completed": 3
+  },
+  "control_calls_attempted": 2586,
+  "control_steps": 2586,
+  "physics_steps": 25860,
+  "model_updates": 0,
+  "candidate_selection": {
+    "candidates": [
+      {
+        "pulse_steps": 2,
+        "zero_steps_per_half": 8,
+        "eligible": false,
+        "trial_ids": [
+          "pulse2_seed0_calibration",
+          "pulse2_seed1_calibration",
+          "pulse2_seed2_calibration"
+        ]
+      },
+      {
+        "pulse_steps": 1,
+        "zero_steps_per_half": 9,
+        "eligible": true,
+        "trial_ids": [
+          "pulse1_seed0_calibration",
+          "pulse1_seed1_calibration",
+          "pulse1_seed2_calibration"
+        ]
+      }
+    ],
+    "selected_pulse_steps": 1,
+    "status": "eligible",
+    "selection_rule": "pulse2 if all three complete with no stop and complete raw telemetry, otherwise pulse1; no truncated-effort ranking",
+    "claim_boundary": "Fixed excitation executability only; no learning benefit, safety, skill or holdout claim"
+  }
+}

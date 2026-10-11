@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T07:49:04.066478+00:00",
+  "suite": "pair_calibration_feasibility",
+  "purpose": "Frozen finite pair-calibration executability development; zero learning.\n\nReal execution requires clean source. Synthetic entry requires backend replacement.\nTwo predeclared pulse schedules, six trials, no retries or adaptive extension.\n",
+  "synthetic": false,
+  "source_commit": "86453c1280c986748717ca79ae4d4d3d45b52973",
+  "source_status": "",
+  "source_sha256": {
+    "src/developmental_physics/pair_calibration_development.py": "a33ead6f407f685662f3afd2401eeaa33c66d89701f658307c6b3c61c67883f7",
+    "docs/PAIR_CALIBRATION_DEVELOPMENT_PROTOCOL.md": "2580bdb3c8039d484b75bc04198b1fab7fd5a380e7f29efa5e2012ffe5a1eeb8",
+    "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+    "src/developmental_physics/probes.py": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+    "src/developmental_physics/collect.py": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+    "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+    "scripts/audit_pair_calibration.py": "b7e00b07bc19407d9a9a01ba19dbb8b38439411523ae8973a5303ff0e5473a58"
+  },
+  "protocol": {
+    "path": "docs/PAIR_CALIBRATION_DEVELOPMENT_PROTOCOL.md",
+    "sha256": "2580bdb3c8039d484b75bc04198b1fab7fd5a380e7f29efa5e2012ffe5a1eeb8"
+  },
+  "backend": "MuJoCo CPU",
+  "gpu": null,
+  "dependencies": {
+    "PyOpenGL": "3.1.10",
+    "Pygments": "2.21.0",
+    "absl-py": "2.5.1",
+    "colorama": "0.4.6",
+    "developmental-humanoid-learning": "0.1.0",
+    "etils": "1.13.0",
+    "exceptiongroup": "1.3.1",
+    "fsspec": "2026.9.0",
+    "glfw": "2.10.2",
+    "importlib_resources": "7.1.0",
+    "iniconfig": "2.3.1",
+    "mujoco": "3.15.0",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pip": "23.0.1",
+    "pluggy": "1.6.0",
+    "pytest": "8.4.2",
+    "setuptools": "65.5.0",
+    "tomli": "2.5.0",
+    "typing_extensions": "4.16.0",
+    "websockets": "16.1.1",
+    "zipp": "4.1.1"
+  },
+  "environment_config": {
+    "physics_dt": 0.002,
+    "control_substeps": 10,
+    "torque_limit": 0.5,
+    "joint_speed_limit": 20.0,
+    "joint_limit_margin": 0.08,
+    "kinetic_energy_limit": 50.0,
+    "reset_clearance": 0.005,
+    "ground_contact_profile": "baseline"
+  },
+  "pose": "supine",
+  "joint_indices": [
+    0,
+    1
+  ],
+  "native_joint_count": 8,
+  "development_seeds": [
+    0,
+    1,
+    2
+  ],
+  "pulses": [
+    2,
+    1
+  ],
+  "reset_seed_semantics": "Same fixed previously disclosed SeedSequence-derived reset per seed, fresh environment per trial",
+  "prefix_steps": 100,
+  "active_steps": 400,
+  "amplitudes_nm": [
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.25
+  ],
+  "calibration_schedule": "20 blocks: five shoulder, five elbow, five same-direction, five opposite; pulse/zero/pulse/zero in each 20-step block",
+  "maximum_control_steps": 3000,
+  "maximum_physics_steps": 30000,
+  "model_updates": 0,
+  "planned_requested_effort_per_axis": {
+    "2": {
+      "absolute_nm_s": 0.36,
+      "squared_nm2_s": 0.1275
+    },
+    "1": {
+      "absolute_nm_s": 0.18,
+      "squared_nm2_s": 0.06375
+    }
+  },
+  "teacher_calls": 0,
+  "parameter_updates": 0,
+  "policy_parameter_updates": 0,
+  "gain_updates": 0,
+  "selection_rule": "Both predeclared schedules run, no new candidates; select pulse2 if eligible, otherwise pulse1, otherwise blocked",
+  "planned_episodes": [
+    {
+      "trial_id": "pulse2_seed0_calibration",
+      "seed": 0,
+      "reset_seed": 3757552657,
+      "pulse_steps": 2,
+      "zero_steps_per_half": 8,
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "pulse2_seed1_calibration",
+      "seed": 1,
+      "reset_seed": 1641411168,
+      "pulse_steps": 2,
+      "zero_steps_per_half": 8,
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "pulse2_seed2_calibration",
+      "seed": 2,
+      "reset_seed": 2001025171,
+      "pulse_steps": 2,
+      "zero_steps_per_half": 8,
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "pulse1_seed0_calibration",
+      "seed": 0,
+      "reset_seed": 3757552657,
+      "pulse_steps": 1,
+      "zero_steps_per_half": 9,
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "pulse1_seed1_calibration",
+      "seed": 1,
+      "reset_seed": 1641411168,
+      "pulse_steps": 1,
+      "zero_steps_per_half": 9,
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "pulse1_seed2_calibration",
+      "seed": 2,
+      "reset_seed": 2001025171,
+      "pulse_steps": 1,
+      "zero_steps_per_half": 9,
+      "maximum_control_steps": 500
+    }
+  ],
+  "complete": true,
+  "archive_status": "complete",
+  "source_dirty": false,
+  "control_calls_attempted": 2586,
+  "control_steps": 2586,
+  "physics_steps": 25860,
+  "statuses": {
+    "terminated": 3,
+    "completed": 3
+  },
+  "wall_seconds": 5.887397299986333,
+  "cpu_seconds": 5.859375,
+  "candidate_selection": {
+    "candidates": [
+      {
+        "pulse_steps": 2,
+        "zero_steps_per_half": 8,
+        "eligible": false,
+        "trial_ids": [
+          "pulse2_seed0_calibration",
+          "pulse2_seed1_calibration",
+          "pulse2_seed2_calibration"
+        ]
+      },
+      {
+        "pulse_steps": 1,
+        "zero_steps_per_half": 9,
+        "eligible": true,
+        "trial_ids": [
+          "pulse1_seed0_calibration",
+          "pulse1_seed1_calibration",
+          "pulse1_seed2_calibration"
+        ]
+      }
+    ],
+    "selected_pulse_steps": 1,
+    "status": "eligible",
+    "selection_rule": "pulse2 if all three complete with no stop and complete raw telemetry, otherwise pulse1; no truncated-effort ranking",
+    "claim_boundary": "Fixed excitation executability only; no learning benefit, safety, skill or holdout claim"
+  },
+  "invalid_numeric_fields": []
+}

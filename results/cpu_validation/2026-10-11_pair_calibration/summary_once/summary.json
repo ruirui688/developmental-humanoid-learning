@@ -1,0 +1,1034 @@
+{
+  "created_at_utc": "2026-10-11T07:52:09.124806+00:00",
+  "source_commit": "86453c1280c986748717ca79ae4d4d3d45b52973",
+  "original_source_sha256": {
+    "src/developmental_physics/pair_calibration_development.py": "a33ead6f407f685662f3afd2401eeaa33c66d89701f658307c6b3c61c67883f7",
+    "docs/PAIR_CALIBRATION_DEVELOPMENT_PROTOCOL.md": "2580bdb3c8039d484b75bc04198b1fab7fd5a380e7f29efa5e2012ffe5a1eeb8",
+    "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+    "src/developmental_physics/probes.py": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+    "src/developmental_physics/collect.py": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+    "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+    "scripts/audit_pair_calibration.py": "b7e00b07bc19407d9a9a01ba19dbb8b38439411523ae8973a5303ff0e5473a58"
+  },
+  "protocol": {
+    "path": "docs/PAIR_CALIBRATION_DEVELOPMENT_PROTOCOL.md",
+    "sha256": "2580bdb3c8039d484b75bc04198b1fab7fd5a380e7f29efa5e2012ffe5a1eeb8"
+  },
+  "dependency_versions": {
+    "PyOpenGL": "3.1.10",
+    "Pygments": "2.21.0",
+    "absl-py": "2.5.1",
+    "colorama": "0.4.6",
+    "developmental-humanoid-learning": "0.1.0",
+    "etils": "1.13.0",
+    "exceptiongroup": "1.3.1",
+    "fsspec": "2026.9.0",
+    "glfw": "2.10.2",
+    "importlib_resources": "7.1.0",
+    "iniconfig": "2.3.1",
+    "mujoco": "3.15.0",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pip": "23.0.1",
+    "pluggy": "1.6.0",
+    "pytest": "8.4.2",
+    "setuptools": "65.5.0",
+    "tomli": "2.5.0",
+    "typing_extensions": "4.16.0",
+    "websockets": "16.1.1",
+    "zipp": "4.1.1"
+  },
+  "source_status": "",
+  "source_dirty": false,
+  "backend": "MuJoCo CPU",
+  "checks": 44685,
+  "failed": 0,
+  "violations": [],
+  "maximum_recomputation_difference": 0,
+  "total_paid_budget": {
+    "control_calls_attempted": 2586,
+    "control_steps": 2586,
+    "physics_steps": 25860
+  },
+  "phase_total_budget": {
+    "prefix": {
+      "control_calls_attempted": 600,
+      "control_steps": 600,
+      "physics_steps": 6000
+    },
+    "calibration": {
+      "control_calls_attempted": 1986,
+      "control_steps": 1986,
+      "physics_steps": 19860
+    }
+  },
+  "statuses": {
+    "terminated": 3,
+    "completed": 3
+  },
+  "trials": [
+    {
+      "trial_id": "pulse2_seed0_calibration",
+      "pulse_steps": 2,
+      "zero_steps_per_half": 8,
+      "seed": 0,
+      "status": "terminated",
+      "completed": false,
+      "budget": {
+        "control_calls_attempted": 362,
+        "control_steps": 362,
+        "physics_steps": 3620
+      },
+      "phase_budgets": {
+        "prefix": {
+          "control_calls_attempted": 100,
+          "control_steps": 100,
+          "physics_steps": 1000
+        },
+        "calibration": {
+          "control_calls_attempted": 262,
+          "control_steps": 262,
+          "physics_steps": 2620
+        }
+      },
+      "complete_active_endpoints": 262,
+      "partial_intervals": 0,
+      "exception_raw_rows": 0,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.08477686104991294,
+          0.024014092263651223
+        ],
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "velocity_rad_s": [
+          -0.5460751484448308,
+          1.0718069104957968
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "calibration",
+        "step_index": 361
+      },
+      "stop_detail": {
+        "control_step_index": 361,
+        "active_step_index": 261,
+        "block_index": 13,
+        "slot_index": 1,
+        "block_type": "same_direction",
+        "trigger_axes": [
+          "left_elbow"
+        ],
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "before_q_rad": [
+          0.09362520875312809,
+          0.006489374291966036
+        ],
+        "before_velocity_rad_s": [
+          -0.3021502548930813,
+          0.6157911847081048
+        ],
+        "requested_torque_nm": [
+          -0.5,
+          0.5
+        ],
+        "actual_torque_history_nm": [
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ]
+        ],
+        "study_thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        }
+      },
+      "final_q_rad": [
+        0.08477686104991294,
+        0.024014092263651223
+      ],
+      "reference_q_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "final_q_minus_reference_rad": [
+        -0.012620882863425012,
+        0.02459034027865078
+      ],
+      "final_velocity_rad_s": [
+        -0.5460751484448308,
+        1.0718069104957968
+      ],
+      "guarded_physics_substeps_any_axis": 160,
+      "screened_substeps_per_pair_axis": [
+        0,
+        160
+      ],
+      "nonzero_requested_substeps_per_pair_axis": [
+        340,
+        340
+      ],
+      "nonzero_actual_substeps_per_pair_axis": [
+        340,
+        180
+      ],
+      "phase_effort": {
+        "prefix": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "calibration": {
+          "requested_absolute_nm_s": [
+            0.20000000000000007,
+            0.20000000000000007
+          ],
+          "requested_squared_nm2_s": [
+            0.07000000000000002,
+            0.07000000000000002
+          ],
+          "actual_absolute_nm_s": [
+            0.20000000000000007,
+            0.11000000000000001
+          ],
+          "actual_squared_nm2_s": [
+            0.07000000000000002,
+            0.04
+          ]
+        }
+      },
+      "directions": [
+        -1,
+        1
+      ]
+    },
+    {
+      "trial_id": "pulse2_seed1_calibration",
+      "pulse_steps": 2,
+      "zero_steps_per_half": 8,
+      "seed": 1,
+      "status": "terminated",
+      "completed": false,
+      "budget": {
+        "control_calls_attempted": 362,
+        "control_steps": 362,
+        "physics_steps": 3620
+      },
+      "phase_budgets": {
+        "prefix": {
+          "control_calls_attempted": 100,
+          "control_steps": 100,
+          "physics_steps": 1000
+        },
+        "calibration": {
+          "control_calls_attempted": 262,
+          "control_steps": 262,
+          "physics_steps": 2620
+        }
+      },
+      "complete_active_endpoints": 262,
+      "partial_intervals": 0,
+      "exception_raw_rows": 0,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.08085813025970631,
+          0.0240039968995147
+        ],
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "velocity_rad_s": [
+          -0.545647190695302,
+          1.0713918786946433
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "calibration",
+        "step_index": 361
+      },
+      "stop_detail": {
+        "control_step_index": 361,
+        "active_step_index": 261,
+        "block_index": 13,
+        "slot_index": 1,
+        "block_type": "same_direction",
+        "trigger_axes": [
+          "left_elbow"
+        ],
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "before_q_rad": [
+          0.08969974834383827,
+          0.006486320247430258
+        ],
+        "before_velocity_rad_s": [
+          -0.3019300225715966,
+          0.6155352833267361
+        ],
+        "requested_torque_nm": [
+          -0.5,
+          0.5
+        ],
+        "actual_torque_history_nm": [
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ]
+        ],
+        "study_thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        }
+      },
+      "final_q_rad": [
+        0.08085813025970631,
+        0.0240039968995147
+      ],
+      "reference_q_rad": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "final_q_minus_reference_rad": [
+        -0.012967286980640577,
+        0.024580314453374334
+      ],
+      "final_velocity_rad_s": [
+        -0.545647190695302,
+        1.0713918786946433
+      ],
+      "guarded_physics_substeps_any_axis": 160,
+      "screened_substeps_per_pair_axis": [
+        0,
+        160
+      ],
+      "nonzero_requested_substeps_per_pair_axis": [
+        340,
+        340
+      ],
+      "nonzero_actual_substeps_per_pair_axis": [
+        340,
+        180
+      ],
+      "phase_effort": {
+        "prefix": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "calibration": {
+          "requested_absolute_nm_s": [
+            0.20000000000000007,
+            0.20000000000000007
+          ],
+          "requested_squared_nm2_s": [
+            0.07000000000000002,
+            0.07000000000000002
+          ],
+          "actual_absolute_nm_s": [
+            0.20000000000000007,
+            0.11000000000000001
+          ],
+          "actual_squared_nm2_s": [
+            0.07000000000000002,
+            0.04
+          ]
+        }
+      },
+      "directions": [
+        -1,
+        1
+      ]
+    },
+    {
+      "trial_id": "pulse2_seed2_calibration",
+      "pulse_steps": 2,
+      "zero_steps_per_half": 8,
+      "seed": 2,
+      "status": "terminated",
+      "completed": false,
+      "budget": {
+        "control_calls_attempted": 362,
+        "control_steps": 362,
+        "physics_steps": 3620
+      },
+      "phase_budgets": {
+        "prefix": {
+          "control_calls_attempted": 100,
+          "control_steps": 100,
+          "physics_steps": 1000
+        },
+        "calibration": {
+          "control_calls_attempted": 262,
+          "control_steps": 262,
+          "physics_steps": 2620
+        }
+      },
+      "complete_active_endpoints": 262,
+      "partial_intervals": 0,
+      "exception_raw_rows": 0,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.08857181472896389,
+          0.02402509757455473
+        ],
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "velocity_rad_s": [
+          -0.546397168899692,
+          1.0722683998426479
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "calibration",
+        "step_index": 361
+      },
+      "stop_detail": {
+        "control_step_index": 361,
+        "active_step_index": 261,
+        "block_index": 13,
+        "slot_index": 1,
+        "block_type": "same_direction",
+        "trigger_axes": [
+          "left_elbow"
+        ],
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "before_q_rad": [
+          0.09742540231217285,
+          0.006492664497351916
+        ],
+        "before_velocity_rad_s": [
+          -0.30233303748043794,
+          0.6160667560466564
+        ],
+        "requested_torque_nm": [
+          -0.5,
+          0.5
+        ],
+        "actual_torque_history_nm": [
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.5,
+            0.5
+          ]
+        ],
+        "study_thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        }
+      },
+      "final_q_rad": [
+        0.08857181472896389,
+        0.02402509757455473
+      ],
+      "reference_q_rad": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "final_q_minus_reference_rad": [
+        -0.012287236592997589,
+        0.02460125236779121
+      ],
+      "final_velocity_rad_s": [
+        -0.546397168899692,
+        1.0722683998426479
+      ],
+      "guarded_physics_substeps_any_axis": 160,
+      "screened_substeps_per_pair_axis": [
+        0,
+        160
+      ],
+      "nonzero_requested_substeps_per_pair_axis": [
+        340,
+        340
+      ],
+      "nonzero_actual_substeps_per_pair_axis": [
+        340,
+        180
+      ],
+      "phase_effort": {
+        "prefix": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "calibration": {
+          "requested_absolute_nm_s": [
+            0.20000000000000007,
+            0.20000000000000007
+          ],
+          "requested_squared_nm2_s": [
+            0.07000000000000002,
+            0.07000000000000002
+          ],
+          "actual_absolute_nm_s": [
+            0.20000000000000007,
+            0.11000000000000001
+          ],
+          "actual_squared_nm2_s": [
+            0.07000000000000002,
+            0.04
+          ]
+        }
+      },
+      "directions": [
+        -1,
+        1
+      ]
+    },
+    {
+      "trial_id": "pulse1_seed0_calibration",
+      "pulse_steps": 1,
+      "zero_steps_per_half": 9,
+      "seed": 0,
+      "status": "completed",
+      "completed": true,
+      "budget": {
+        "control_calls_attempted": 500,
+        "control_steps": 500,
+        "physics_steps": 5000
+      },
+      "phase_budgets": {
+        "prefix": {
+          "control_calls_attempted": 100,
+          "control_steps": 100,
+          "physics_steps": 1000
+        },
+        "calibration": {
+          "control_calls_attempted": 400,
+          "control_steps": 400,
+          "physics_steps": 4000
+        }
+      },
+      "complete_active_endpoints": 400,
+      "partial_intervals": 0,
+      "exception_raw_rows": 0,
+      "study_abort": null,
+      "stop_detail": null,
+      "final_q_rad": [
+        0.09734925642623508,
+        -0.0005762341616146629
+      ],
+      "reference_q_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "final_q_minus_reference_rad": [
+        -4.848748710287176e-05,
+        1.3853384895289554e-08
+      ],
+      "final_velocity_rad_s": [
+        2.098953898731097e-05,
+        -1.1188271309883336e-06
+      ],
+      "guarded_physics_substeps_any_axis": 150,
+      "screened_substeps_per_pair_axis": [
+        0,
+        150
+      ],
+      "nonzero_requested_substeps_per_pair_axis": [
+        300,
+        300
+      ],
+      "nonzero_actual_substeps_per_pair_axis": [
+        300,
+        150
+      ],
+      "phase_effort": {
+        "prefix": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "calibration": {
+          "requested_absolute_nm_s": [
+            0.18000000000000008,
+            0.18000000000000008
+          ],
+          "requested_squared_nm2_s": [
+            0.06375,
+            0.06375
+          ],
+          "actual_absolute_nm_s": [
+            0.18000000000000008,
+            0.09000000000000001
+          ],
+          "actual_squared_nm2_s": [
+            0.06375,
+            0.031875
+          ]
+        }
+      },
+      "directions": [
+        -1,
+        1
+      ]
+    },
+    {
+      "trial_id": "pulse1_seed1_calibration",
+      "pulse_steps": 1,
+      "zero_steps_per_half": 9,
+      "seed": 1,
+      "status": "completed",
+      "completed": true,
+      "budget": {
+        "control_calls_attempted": 500,
+        "control_steps": 500,
+        "physics_steps": 5000
+      },
+      "phase_budgets": {
+        "prefix": {
+          "control_calls_attempted": 100,
+          "control_steps": 100,
+          "physics_steps": 1000
+        },
+        "calibration": {
+          "control_calls_attempted": 400,
+          "control_steps": 400,
+          "physics_steps": 4000
+        }
+      },
+      "complete_active_endpoints": 400,
+      "partial_intervals": 0,
+      "exception_raw_rows": 0,
+      "study_abort": null,
+      "stop_detail": null,
+      "final_q_rad": [
+        0.09330001887991554,
+        -0.0005763105229939141
+      ],
+      "reference_q_rad": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "final_q_minus_reference_rad": [
+        -0.0005253983604313478,
+        7.030865720246242e-09
+      ],
+      "final_velocity_rad_s": [
+        -4.8736351126033294e-05,
+        -1.1193888799794528e-06
+      ],
+      "guarded_physics_substeps_any_axis": 150,
+      "screened_substeps_per_pair_axis": [
+        0,
+        150
+      ],
+      "nonzero_requested_substeps_per_pair_axis": [
+        300,
+        300
+      ],
+      "nonzero_actual_substeps_per_pair_axis": [
+        300,
+        150
+      ],
+      "phase_effort": {
+        "prefix": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "calibration": {
+          "requested_absolute_nm_s": [
+            0.18000000000000008,
+            0.18000000000000008
+          ],
+          "requested_squared_nm2_s": [
+            0.06375,
+            0.06375
+          ],
+          "actual_absolute_nm_s": [
+            0.18000000000000008,
+            0.09000000000000001
+          ],
+          "actual_squared_nm2_s": [
+            0.06375,
+            0.031875
+          ]
+        }
+      },
+      "directions": [
+        -1,
+        1
+      ]
+    },
+    {
+      "trial_id": "pulse1_seed2_calibration",
+      "pulse_steps": 1,
+      "zero_steps_per_half": 9,
+      "seed": 2,
+      "status": "completed",
+      "completed": true,
+      "budget": {
+        "control_calls_attempted": 500,
+        "control_steps": 500,
+        "physics_steps": 5000
+      },
+      "phase_budgets": {
+        "prefix": {
+          "control_calls_attempted": 100,
+          "control_steps": 100,
+          "physics_steps": 1000
+        },
+        "calibration": {
+          "control_calls_attempted": 400,
+          "control_steps": 400,
+          "physics_steps": 4000
+        }
+      },
+      "complete_active_endpoints": 400,
+      "partial_intervals": 0,
+      "exception_raw_rows": 0,
+      "study_abort": null,
+      "stop_detail": null,
+      "final_q_rad": [
+        0.10133090298482715,
+        -0.0005761250833625166
+      ],
+      "reference_q_rad": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "final_q_minus_reference_rad": [
+        0.00047185166286567437,
+        2.970987396442963e-08
+      ],
+      "final_velocity_rad_s": [
+        8.94134863819998e-05,
+        -1.1174274721864497e-06
+      ],
+      "guarded_physics_substeps_any_axis": 150,
+      "screened_substeps_per_pair_axis": [
+        0,
+        150
+      ],
+      "nonzero_requested_substeps_per_pair_axis": [
+        300,
+        300
+      ],
+      "nonzero_actual_substeps_per_pair_axis": [
+        300,
+        150
+      ],
+      "phase_effort": {
+        "prefix": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "calibration": {
+          "requested_absolute_nm_s": [
+            0.18000000000000008,
+            0.18000000000000008
+          ],
+          "requested_squared_nm2_s": [
+            0.06375,
+            0.06375
+          ],
+          "actual_absolute_nm_s": [
+            0.18000000000000008,
+            0.09000000000000001
+          ],
+          "actual_squared_nm2_s": [
+            0.06375,
+            0.031875
+          ]
+        }
+      },
+      "directions": [
+        -1,
+        1
+      ]
+    }
+  ],
+  "candidate_selection": {
+    "candidates": [
+      {
+        "pulse_steps": 2,
+        "zero_steps_per_half": 8,
+        "eligible": false,
+        "trial_ids": [
+          "pulse2_seed0_calibration",
+          "pulse2_seed1_calibration",
+          "pulse2_seed2_calibration"
+        ]
+      },
+      {
+        "pulse_steps": 1,
+        "zero_steps_per_half": 9,
+        "eligible": true,
+        "trial_ids": [
+          "pulse1_seed0_calibration",
+          "pulse1_seed1_calibration",
+          "pulse1_seed2_calibration"
+        ]
+      }
+    ],
+    "selected_pulse_steps": 1,
+    "status": "eligible"
+  },
+  "model_updates": 0,
+  "partial_intervals": 0,
+  "exception_raw_rows": 0,
+  "guarded_physics_substeps_any_axis": 930,
+  "existing_audit": {
+    "checks": 466758,
+    "failed": 0,
+    "audit_script_sha256": "b7e00b07bc19407d9a9a01ba19dbb8b38439411523ae8973a5303ff0e5473a58",
+    "validated_eligible": true,
+    "formal_execution_accepted": true
+  },
+  "hand_calculations": [
+    {
+      "pulse_steps": 2,
+      "absolute_nm_s": 0.36,
+      "squared_nm2_s": 0.1275
+    },
+    {
+      "pulse_steps": 1,
+      "absolute_nm_s": 0.18,
+      "squared_nm2_s": 0.06375
+    },
+    {
+      "pulse1_three_full_calls": 1500,
+      "pulse2_paid_calls": 1086,
+      "sum_calls": 2586,
+      "substeps": 25860
+    }
+  ],
+  "claim_boundary": "Fixed short-pulse executability only; no new model learning, predictions, controller evaluations, safety or skill evidence."
+}
