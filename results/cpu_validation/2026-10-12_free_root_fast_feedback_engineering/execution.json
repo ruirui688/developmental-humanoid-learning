@@ -1,0 +1,53 @@
+{
+  "argv": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "scripts/validate_free_root_fast_feedback_engineering.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_fr0_engineering_01\\raw",
+    "--source-commit",
+    "e5466d326773c9565aa98f0e7063314a32eba5d4"
+  ],
+  "source_commit": "e5466d326773c9565aa98f0e7063314a32eba5d4",
+  "source_files": {
+    "scripts/validate_free_root_fast_feedback_engineering.py": {
+      "bytes": 24750,
+      "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752"
+    },
+    "src/developmental_physics/free_root_fast_feedback_environment.py": {
+      "bytes": 6259,
+      "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871"
+    },
+    "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9189,
+      "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86"
+    },
+    "src/developmental_physics/environment.py": {
+      "bytes": 15822,
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+    },
+    "src/developmental_physics/assets/ground_body.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+    },
+    "pyproject.toml": {
+      "bytes": 698,
+      "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2"
+    }
+  },
+  "returncode": 0,
+  "wall_seconds": 3.2688509998843074,
+  "started_unix": 1791754821.3649578,
+  "ended_unix": 1791754824.6343465,
+  "source_snapshot_reads": 7,
+  "source_snapshot_read_bytes": 60310,
+  "stdout_bytes": 380,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

@@ -1,6 +1,15 @@
 # 开发进度与仓库检查点
 
-## 当前入口：2026-10-12 Z2完整控制贡献门失败，继续FR0接触工程
+## 当前入口：2026-10-12 FR0自由身体接触工程通过，进入本域学习协议
+
+[FR0首次结果](FREE_ROOT_FAST_FEEDBACK_ENGINEERING_RESULTS.md)完成3000控制/子步，零停止异常。
+四MAE均≤.01rad，prefix/A/B左臂正接触949/990/988 of1000，完整工程门通过。
+本轮零学习，接触和公共PD不能替代身体模型贡献或安全结论；[Z2原20%控制门失败](FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)保持。
+当前累计316297控制/2595970子步，online46452/offline7200scalar不变。
+立即另冻本自由root域新辨识、独立预测与匹配控制，不恢复悬挂learned snapshots。
+C4及C5–C7未验收，持续目标active；检查提交推送后继续，以下旧记录不触发重跑。
+
+## 历史：2026-10-12 Z2完整控制贡献门失败，继续FR0接触工程
 
 [Z1指定独立预测](FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md)全门通过后，
 [Z2首次控制](FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)12组全部完整36000控制/子步，零停止异常。

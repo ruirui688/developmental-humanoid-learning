@@ -1,0 +1,71 @@
+{
+  "status": "sealed",
+  "files": {
+    "check_fr0_first_contract.py": {
+      "bytes": 13437,
+      "sha256": "3f87653fa6dce850e186cc2ca011caf2429361cc73b006affe571124c5b6872c"
+    },
+    "c4_fr0_first_contract.json": {
+      "bytes": 952,
+      "sha256": "9312bbe6904fc66c9a7c33b08ba3056f142630743f94187dc26f6a6e03b87ad4"
+    },
+    "check_fr0_new_metrics_once.py": {
+      "bytes": 5523,
+      "sha256": "35f97502fae4668aa001179b8d54072d23e0fc492f2fc76d588d2e07dfc4e950"
+    },
+    "c4_fr0_new_metrics_check.json": {
+      "bytes": 14277,
+      "sha256": "f8b7d58eafbe477a73f0e727e79013d284b47d3fafdde34a4214e7d90a39c858"
+    },
+    "read_fr0_reporting_once.py": {
+      "bytes": 5773,
+      "sha256": "7582de7823bcf991a3e00c8e35febc576ee0c583665f6e58f9131a18501e4003"
+    },
+    "c4_fr0_report_input.json": {
+      "bytes": 27013,
+      "sha256": "becea5a405cc4ef7f05c690c12392394c29f2a43892caaf65878cb7ac211d82c"
+    },
+    "c4_fr0_report.md": {
+      "bytes": 4936,
+      "sha256": "a0a324668fd0a230eb66364583255f2ff88391c19f8d57aab8d89f289b1d32f1"
+    },
+    "archive_fr0_guarded_once.py": {
+      "bytes": 1693,
+      "sha256": "61618fbba6b93c6996a027a89270b44b4594c756ca52c92bcf8231a21ecab1f4"
+    },
+    "fr0_archive_guard.json": {
+      "bytes": 286,
+      "sha256": "05b8ad03a20594cb7b0e9c49d6857964790fd3a79cb3fbeab09036d4791906db"
+    },
+    "check_navigation_links.py": {
+      "bytes": 1416,
+      "sha256": "9ac69a63960f76073a72466a669c7de965e80dd8d91233cddf4de04e950e5aa0"
+    },
+    "c4_fr0_preparation_links.json": {
+      "bytes": 289,
+      "sha256": "7872a311c87d1e015d2188f60116c69f6a4536391338188b7dea763b2f6ad817"
+    },
+    "c4_fr0_results_links.json": {
+      "bytes": 350,
+      "sha256": "55b1946015d779b5be5b6064bbf7affddf30c48e0042b2c030ca6607cbabb94d"
+    },
+    "update_fr0_results_once.py": {
+      "bytes": 7081,
+      "sha256": "c8c1a1714d391870d296b42300ba92d3e64af7f1802ae88118e860b5a1b9aafa"
+    },
+    "seal_fr0_reporting_once.py": {
+      "bytes": 1831,
+      "sha256": "e225ea9e8112b787d274fbd7cf75561a3296e5510b477be73fb1cd4c1a41acfb"
+    }
+  },
+  "cost_before_manifest_write": {
+    "reads": 28,
+    "read_bytes": 169714,
+    "writes": 14,
+    "write_bytes": 84857
+  },
+  "wall_seconds_before_manifest": 0.10036659985780716,
+  "cpu_seconds_before_manifest": 0.046875,
+  "model_fit_physics_or_scientific_metric_calls": 0,
+  "automatic_retry": false
+}

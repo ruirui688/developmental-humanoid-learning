@@ -1,0 +1,598 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "trace_attempt_count",
+      "computed": 3000,
+      "saved": 3000,
+      "passed": true
+    },
+    {
+      "check": "trace_confirmed_substeps",
+      "computed": 3000,
+      "saved": 3000,
+      "passed": true
+    },
+    {
+      "check": "window_A_population",
+      "computed": 200,
+      "saved": 200,
+      "passed": true
+    },
+    {
+      "check": "window_A_MAE",
+      "computed": [
+        0.000798999788959543,
+        0.003176219925758589
+      ],
+      "saved": [
+        0.000798999788959543,
+        0.003176219925758589
+      ],
+      "passed": true
+    },
+    {
+      "check": "window_B_population",
+      "computed": 200,
+      "saved": 200,
+      "passed": true
+    },
+    {
+      "check": "window_B_MAE",
+      "computed": [
+        0.0011378769469009562,
+        0.0029877968556603417
+      ],
+      "saved": [
+        0.0011378769469009564,
+        0.002987796855660341
+      ],
+      "passed": true
+    },
+    {
+      "check": "prefix_paid",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "prefix_native",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "prefix_contact_population",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "prefix_requested_absolute_nm_s_axis",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "check": "prefix_requested_squared_nm2_s_axis",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "check": "prefix_actual_endpoint_sample_absolute_nm_s_axis",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "check": "prefix_actual_endpoint_sample_squared_nm2_s_axis",
+      "computed": [
+        0.0,
+        0.0
+      ],
+      "saved": [
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "check": "prefix_left_arm_positive_contact_endpoint_count",
+      "computed": 949,
+      "saved": 949,
+      "passed": true
+    },
+    {
+      "check": "prefix_left_arm_positive_pair_event_count",
+      "computed": 949,
+      "saved": 949,
+      "passed": true
+    },
+    {
+      "check": "prefix_left_arm_observed_positive_duration_s",
+      "computed": 1.8980000000000001,
+      "saved": 1.8980000000000001,
+      "passed": true
+    },
+    {
+      "check": "prefix_left_arm_endpoint_sample_normal_impulse_ns",
+      "computed": 4.563078697716655,
+      "saved": 4.563078697716652,
+      "passed": true
+    },
+    {
+      "check": "prefix_left_arm_maximum_endpoint_normal_force_n",
+      "computed": 39.15772774060192,
+      "saved": 39.15772774060192,
+      "passed": true
+    },
+    {
+      "check": "prefix_left_arm_known_positive_fraction_of_paid_substeps",
+      "computed": 0.949,
+      "saved": 0.949,
+      "passed": true
+    },
+    {
+      "check": "prefix_feet_positive_contact_endpoint_count",
+      "computed": 0,
+      "saved": 0,
+      "passed": true
+    },
+    {
+      "check": "prefix_feet_positive_pair_event_count",
+      "computed": 0,
+      "saved": 0,
+      "passed": true
+    },
+    {
+      "check": "prefix_feet_observed_positive_duration_s",
+      "computed": 0.0,
+      "saved": 0.0,
+      "passed": true
+    },
+    {
+      "check": "prefix_feet_endpoint_sample_normal_impulse_ns",
+      "computed": 0.0,
+      "saved": 0.0,
+      "passed": true
+    },
+    {
+      "check": "prefix_feet_maximum_endpoint_normal_force_n",
+      "computed": 0.0,
+      "saved": 0,
+      "passed": true
+    },
+    {
+      "check": "prefix_feet_known_positive_fraction_of_paid_substeps",
+      "computed": 0.0,
+      "saved": 0.0,
+      "passed": true
+    },
+    {
+      "check": "prefix_other_positive_contact_endpoint_count",
+      "computed": 985,
+      "saved": 985,
+      "passed": true
+    },
+    {
+      "check": "prefix_other_positive_pair_event_count",
+      "computed": 6557,
+      "saved": 6557,
+      "passed": true
+    },
+    {
+      "check": "prefix_other_observed_positive_duration_s",
+      "computed": 1.97,
+      "saved": 1.97,
+      "passed": true
+    },
+    {
+      "check": "prefix_other_endpoint_sample_normal_impulse_ns",
+      "computed": 138.02100545365045,
+      "saved": 138.02100545365053,
+      "passed": true
+    },
+    {
+      "check": "prefix_other_maximum_endpoint_normal_force_n",
+      "computed": 552.5024236221542,
+      "saved": 552.5024236221542,
+      "passed": true
+    },
+    {
+      "check": "prefix_other_known_positive_fraction_of_paid_substeps",
+      "computed": 0.985,
+      "saved": 0.985,
+      "passed": true
+    },
+    {
+      "check": "target_A_paid",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "target_A_native",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "target_A_contact_population",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "target_A_requested_absolute_nm_s_axis",
+      "computed": [
+        0.45434338363619964,
+        0.25878979297918414
+      ],
+      "saved": [
+        0.4543433836362001,
+        0.25878979297918386
+      ],
+      "passed": true
+    },
+    {
+      "check": "target_A_requested_squared_nm2_s_axis",
+      "computed": [
+        0.16067388561068294,
+        0.045524212758163
+      ],
+      "saved": [
+        0.16067388561068324,
+        0.045524212758162964
+      ],
+      "passed": true
+    },
+    {
+      "check": "target_A_actual_endpoint_sample_absolute_nm_s_axis",
+      "computed": [
+        0.45434338363619964,
+        0.25173631108311045
+      ],
+      "saved": [
+        0.4543433836362001,
+        0.25173631108311034
+      ],
+      "passed": true
+    },
+    {
+      "check": "target_A_actual_endpoint_sample_squared_nm2_s_axis",
+      "computed": [
+        0.16067388561068294,
+        0.04461165563954294
+      ],
+      "saved": [
+        0.16067388561068324,
+        0.0446116556395429
+      ],
+      "passed": true
+    },
+    {
+      "check": "target_A_left_arm_positive_contact_endpoint_count",
+      "computed": 990,
+      "saved": 990,
+      "passed": true
+    },
+    {
+      "check": "target_A_left_arm_positive_pair_event_count",
+      "computed": 990,
+      "saved": 990,
+      "passed": true
+    },
+    {
+      "check": "target_A_left_arm_observed_positive_duration_s",
+      "computed": 1.98,
+      "saved": 1.98,
+      "passed": true
+    },
+    {
+      "check": "target_A_left_arm_endpoint_sample_normal_impulse_ns",
+      "computed": 3.540444370187059,
+      "saved": 3.5404443701870596,
+      "passed": true
+    },
+    {
+      "check": "target_A_left_arm_maximum_endpoint_normal_force_n",
+      "computed": 2.216515187019719,
+      "saved": 2.216515187019719,
+      "passed": true
+    },
+    {
+      "check": "target_A_left_arm_known_positive_fraction_of_paid_substeps",
+      "computed": 0.99,
+      "saved": 0.99,
+      "passed": true
+    },
+    {
+      "check": "target_A_feet_positive_contact_endpoint_count",
+      "computed": 0,
+      "saved": 0,
+      "passed": true
+    },
+    {
+      "check": "target_A_feet_positive_pair_event_count",
+      "computed": 0,
+      "saved": 0,
+      "passed": true
+    },
+    {
+      "check": "target_A_feet_observed_positive_duration_s",
+      "computed": 0.0,
+      "saved": 0.0,
+      "passed": true
+    },
+    {
+      "check": "target_A_feet_endpoint_sample_normal_impulse_ns",
+      "computed": 0.0,
+      "saved": 0.0,
+      "passed": true
+    },
+    {
+      "check": "target_A_feet_maximum_endpoint_normal_force_n",
+      "computed": 0.0,
+      "saved": 0,
+      "passed": true
+    },
+    {
+      "check": "target_A_feet_known_positive_fraction_of_paid_substeps",
+      "computed": 0.0,
+      "saved": 0.0,
+      "passed": true
+    },
+    {
+      "check": "target_A_other_positive_contact_endpoint_count",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "target_A_other_positive_pair_event_count",
+      "computed": 6999,
+      "saved": 6999,
+      "passed": true
+    },
+    {
+      "check": "target_A_other_observed_positive_duration_s",
+      "computed": 2.0,
+      "saved": 2.0,
+      "passed": true
+    },
+    {
+      "check": "target_A_other_endpoint_sample_normal_impulse_ns",
+      "computed": 138.90097046062408,
+      "saved": 138.90097046062422,
+      "passed": true
+    },
+    {
+      "check": "target_A_other_maximum_endpoint_normal_force_n",
+      "computed": 71.13866213063919,
+      "saved": 71.13866213063919,
+      "passed": true
+    },
+    {
+      "check": "target_A_other_known_positive_fraction_of_paid_substeps",
+      "computed": 1.0,
+      "saved": 1.0,
+      "passed": true
+    },
+    {
+      "check": "target_B_paid",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "target_B_native",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "target_B_contact_population",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "target_B_requested_absolute_nm_s_axis",
+      "computed": [
+        0.5052606284553621,
+        0.22640782094618192
+      ],
+      "saved": [
+        0.5052606284553622,
+        0.226407820946182
+      ],
+      "passed": true
+    },
+    {
+      "check": "target_B_requested_squared_nm2_s_axis",
+      "computed": [
+        0.18085198373507733,
+        0.037998737154601565
+      ],
+      "saved": [
+        0.18085198373507747,
+        0.037998737154601545
+      ],
+      "passed": true
+    },
+    {
+      "check": "target_B_actual_endpoint_sample_absolute_nm_s_axis",
+      "computed": [
+        0.5052606284553621,
+        0.22640782094618192
+      ],
+      "saved": [
+        0.5052606284553622,
+        0.226407820946182
+      ],
+      "passed": true
+    },
+    {
+      "check": "target_B_actual_endpoint_sample_squared_nm2_s_axis",
+      "computed": [
+        0.18085198373507733,
+        0.037998737154601565
+      ],
+      "saved": [
+        0.18085198373507747,
+        0.037998737154601545
+      ],
+      "passed": true
+    },
+    {
+      "check": "target_B_left_arm_positive_contact_endpoint_count",
+      "computed": 988,
+      "saved": 988,
+      "passed": true
+    },
+    {
+      "check": "target_B_left_arm_positive_pair_event_count",
+      "computed": 988,
+      "saved": 988,
+      "passed": true
+    },
+    {
+      "check": "target_B_left_arm_observed_positive_duration_s",
+      "computed": 1.976,
+      "saved": 1.976,
+      "passed": true
+    },
+    {
+      "check": "target_B_left_arm_endpoint_sample_normal_impulse_ns",
+      "computed": 3.3986555989404317,
+      "saved": 3.398655598940427,
+      "passed": true
+    },
+    {
+      "check": "target_B_left_arm_maximum_endpoint_normal_force_n",
+      "computed": 2.2039553215688596,
+      "saved": 2.2039553215688596,
+      "passed": true
+    },
+    {
+      "check": "target_B_left_arm_known_positive_fraction_of_paid_substeps",
+      "computed": 0.988,
+      "saved": 0.988,
+      "passed": true
+    },
+    {
+      "check": "target_B_feet_positive_contact_endpoint_count",
+      "computed": 0,
+      "saved": 0,
+      "passed": true
+    },
+    {
+      "check": "target_B_feet_positive_pair_event_count",
+      "computed": 0,
+      "saved": 0,
+      "passed": true
+    },
+    {
+      "check": "target_B_feet_observed_positive_duration_s",
+      "computed": 0.0,
+      "saved": 0.0,
+      "passed": true
+    },
+    {
+      "check": "target_B_feet_endpoint_sample_normal_impulse_ns",
+      "computed": 0.0,
+      "saved": 0.0,
+      "passed": true
+    },
+    {
+      "check": "target_B_feet_maximum_endpoint_normal_force_n",
+      "computed": 0.0,
+      "saved": 0,
+      "passed": true
+    },
+    {
+      "check": "target_B_feet_known_positive_fraction_of_paid_substeps",
+      "computed": 0.0,
+      "saved": 0.0,
+      "passed": true
+    },
+    {
+      "check": "target_B_other_positive_contact_endpoint_count",
+      "computed": 1000,
+      "saved": 1000,
+      "passed": true
+    },
+    {
+      "check": "target_B_other_positive_pair_event_count",
+      "computed": 6994,
+      "saved": 6994,
+      "passed": true
+    },
+    {
+      "check": "target_B_other_observed_positive_duration_s",
+      "computed": 2.0,
+      "saved": 2.0,
+      "passed": true
+    },
+    {
+      "check": "target_B_other_endpoint_sample_normal_impulse_ns",
+      "computed": 139.0426656403709,
+      "saved": 139.04266564037061,
+      "passed": true
+    },
+    {
+      "check": "target_B_other_maximum_endpoint_normal_force_n",
+      "computed": 71.33654289420068,
+      "saved": 71.33654289420068,
+      "passed": true
+    },
+    {
+      "check": "target_B_other_known_positive_fraction_of_paid_substeps",
+      "computed": 1.0,
+      "saved": 1.0,
+      "passed": true
+    }
+  ],
+  "skipped": [],
+  "trace_rows": 3000,
+  "source_files": {
+    "run.json": {
+      "bytes": 8674,
+      "sha256": "84f1f3993c9cb49088652025df1bf618a156146e227ba66223c83e163ea63274"
+    },
+    "metrics.json": {
+      "bytes": 8806,
+      "sha256": "b8749b81f70599b70fd116cd538160efc121d97843962eec9f2537b4ed86e14f"
+    },
+    "trace.jsonl": {
+      "bytes": 18512562,
+      "sha256": "1fa1274dc2f9b263af0e714edaa905fd947a1f199c00422ceb2b5b108e81d49c"
+    }
+  },
+  "reads": 3,
+  "read_bytes": 18530042,
+  "wall_seconds": 0.3986438000574708,
+  "cpu_seconds": 0.390625,
+  "old_scientific_metrics_recomputed": false,
+  "model_fit_physics_calls": 0,
+  "automatic_retry": false
+}

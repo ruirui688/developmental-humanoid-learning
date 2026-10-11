@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FR0",
+  "stage": "free_root_fast_feedback_engineering",
+  "status": "completed",
+  "files": {
+    "metrics.json": {
+      "bytes": 8806,
+      "sha256": "b8749b81f70599b70fd116cd538160efc121d97843962eec9f2537b4ed86e14f"
+    },
+    "paid_journal.jsonl": {
+      "bytes": 18991599,
+      "sha256": "71cf99428c6692db65b646c39cf6c45793bb421c94fae92e9576f1f24b0da8ee"
+    },
+    "run.json": {
+      "bytes": 8674,
+      "sha256": "84f1f3993c9cb49088652025df1bf618a156146e227ba66223c83e163ea63274"
+    },
+    "source_snapshot.zip": {
+      "bytes": 21185,
+      "sha256": "2bdd283a5cf27abb3b098df22a405334319ee2d728309752a76947fd58c89f3e"
+    },
+    "trace.jsonl": {
+      "bytes": 18512562,
+      "sha256": "1fa1274dc2f9b263af0e714edaa905fd947a1f199c00422ceb2b5b108e81d49c"
+    }
+  },
+  "manifest_payload_read_calls": 5,
+  "manifest_payload_bytes_read": 37542826,
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c4_contact_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

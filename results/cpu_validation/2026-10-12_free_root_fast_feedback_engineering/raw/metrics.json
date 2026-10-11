@@ -1,0 +1,238 @@
+{
+  "complete_population": true,
+  "metadata_stable": true,
+  "windows": [
+    {
+      "target": "A",
+      "active_first": 800,
+      "active_last": 999,
+      "planned_count": 200,
+      "observed_count": 200,
+      "full_trial_required": true,
+      "available": true,
+      "mae_axis_rad": [
+        0.000798999788959543,
+        0.003176219925758589
+      ],
+      "threshold_rad": 0.01,
+      "passed_axis": [
+        true,
+        true
+      ]
+    },
+    {
+      "target": "B",
+      "active_first": 1800,
+      "active_last": 1999,
+      "planned_count": 200,
+      "observed_count": 200,
+      "full_trial_required": true,
+      "available": true,
+      "mae_axis_rad": [
+        0.0011378769469009564,
+        0.002987796855660341
+      ],
+      "threshold_rad": 0.01,
+      "passed_axis": [
+        true,
+        true
+      ]
+    }
+  ],
+  "phase_effort_and_contacts": {
+    "prefix": {
+      "planned_substeps": 1000,
+      "confirmed_substeps": 1000,
+      "observed_contact_endpoints": 1000,
+      "observed_native_endpoints": 1000,
+      "missing_contact_endpoint_substeps": 0,
+      "classes": {
+        "left_arm": {
+          "positive_contact_endpoint_count": 949,
+          "positive_pair_event_count": 949,
+          "observed_positive_duration_s": 1.8980000000000001,
+          "known_positive_fraction_of_paid_substeps": 0.949,
+          "fraction_is_lower_bound_if_missing": false,
+          "full_positive_contact_count_unknown": false,
+          "endpoint_sample_normal_impulse_ns": 4.563078697716652,
+          "maximum_endpoint_normal_force_n": 39.15772774060192,
+          "complete_phase_required_for_qualification": true
+        },
+        "feet": {
+          "positive_contact_endpoint_count": 0,
+          "positive_pair_event_count": 0,
+          "observed_positive_duration_s": 0.0,
+          "known_positive_fraction_of_paid_substeps": 0.0,
+          "fraction_is_lower_bound_if_missing": false,
+          "full_positive_contact_count_unknown": false,
+          "endpoint_sample_normal_impulse_ns": 0.0,
+          "maximum_endpoint_normal_force_n": 0,
+          "complete_phase_required_for_qualification": true
+        },
+        "other": {
+          "positive_contact_endpoint_count": 985,
+          "positive_pair_event_count": 6557,
+          "observed_positive_duration_s": 1.97,
+          "known_positive_fraction_of_paid_substeps": 0.985,
+          "fraction_is_lower_bound_if_missing": false,
+          "full_positive_contact_count_unknown": false,
+          "endpoint_sample_normal_impulse_ns": 138.02100545365053,
+          "maximum_endpoint_normal_force_n": 552.5024236221542,
+          "complete_phase_required_for_qualification": true
+        }
+      },
+      "requested_absolute_nm_s_axis": [
+        0.0,
+        0.0
+      ],
+      "requested_squared_nm2_s_axis": [
+        0.0,
+        0.0
+      ],
+      "actual_endpoint_sample_absolute_nm_s_axis": [
+        0.0,
+        0.0
+      ],
+      "actual_endpoint_sample_squared_nm2_s_axis": [
+        0.0,
+        0.0
+      ],
+      "actual_effort_method": "returned actuator_torque endpoint sample times 2ms; no unreturned sample imputation",
+      "actual_effort_complete": true
+    },
+    "target_A": {
+      "planned_substeps": 1000,
+      "confirmed_substeps": 1000,
+      "observed_contact_endpoints": 1000,
+      "observed_native_endpoints": 1000,
+      "missing_contact_endpoint_substeps": 0,
+      "classes": {
+        "left_arm": {
+          "positive_contact_endpoint_count": 990,
+          "positive_pair_event_count": 990,
+          "observed_positive_duration_s": 1.98,
+          "known_positive_fraction_of_paid_substeps": 0.99,
+          "fraction_is_lower_bound_if_missing": false,
+          "full_positive_contact_count_unknown": false,
+          "endpoint_sample_normal_impulse_ns": 3.5404443701870596,
+          "maximum_endpoint_normal_force_n": 2.216515187019719,
+          "complete_phase_required_for_qualification": true
+        },
+        "feet": {
+          "positive_contact_endpoint_count": 0,
+          "positive_pair_event_count": 0,
+          "observed_positive_duration_s": 0.0,
+          "known_positive_fraction_of_paid_substeps": 0.0,
+          "fraction_is_lower_bound_if_missing": false,
+          "full_positive_contact_count_unknown": false,
+          "endpoint_sample_normal_impulse_ns": 0.0,
+          "maximum_endpoint_normal_force_n": 0,
+          "complete_phase_required_for_qualification": true
+        },
+        "other": {
+          "positive_contact_endpoint_count": 1000,
+          "positive_pair_event_count": 6999,
+          "observed_positive_duration_s": 2.0,
+          "known_positive_fraction_of_paid_substeps": 1.0,
+          "fraction_is_lower_bound_if_missing": false,
+          "full_positive_contact_count_unknown": false,
+          "endpoint_sample_normal_impulse_ns": 138.90097046062422,
+          "maximum_endpoint_normal_force_n": 71.13866213063919,
+          "complete_phase_required_for_qualification": true
+        }
+      },
+      "requested_absolute_nm_s_axis": [
+        0.4543433836362001,
+        0.25878979297918386
+      ],
+      "requested_squared_nm2_s_axis": [
+        0.16067388561068324,
+        0.045524212758162964
+      ],
+      "actual_endpoint_sample_absolute_nm_s_axis": [
+        0.4543433836362001,
+        0.25173631108311034
+      ],
+      "actual_endpoint_sample_squared_nm2_s_axis": [
+        0.16067388561068324,
+        0.0446116556395429
+      ],
+      "actual_effort_method": "returned actuator_torque endpoint sample times 2ms; no unreturned sample imputation",
+      "actual_effort_complete": true
+    },
+    "target_B": {
+      "planned_substeps": 1000,
+      "confirmed_substeps": 1000,
+      "observed_contact_endpoints": 1000,
+      "observed_native_endpoints": 1000,
+      "missing_contact_endpoint_substeps": 0,
+      "classes": {
+        "left_arm": {
+          "positive_contact_endpoint_count": 988,
+          "positive_pair_event_count": 988,
+          "observed_positive_duration_s": 1.976,
+          "known_positive_fraction_of_paid_substeps": 0.988,
+          "fraction_is_lower_bound_if_missing": false,
+          "full_positive_contact_count_unknown": false,
+          "endpoint_sample_normal_impulse_ns": 3.398655598940427,
+          "maximum_endpoint_normal_force_n": 2.2039553215688596,
+          "complete_phase_required_for_qualification": true
+        },
+        "feet": {
+          "positive_contact_endpoint_count": 0,
+          "positive_pair_event_count": 0,
+          "observed_positive_duration_s": 0.0,
+          "known_positive_fraction_of_paid_substeps": 0.0,
+          "fraction_is_lower_bound_if_missing": false,
+          "full_positive_contact_count_unknown": false,
+          "endpoint_sample_normal_impulse_ns": 0.0,
+          "maximum_endpoint_normal_force_n": 0,
+          "complete_phase_required_for_qualification": true
+        },
+        "other": {
+          "positive_contact_endpoint_count": 1000,
+          "positive_pair_event_count": 6994,
+          "observed_positive_duration_s": 2.0,
+          "known_positive_fraction_of_paid_substeps": 1.0,
+          "fraction_is_lower_bound_if_missing": false,
+          "full_positive_contact_count_unknown": false,
+          "endpoint_sample_normal_impulse_ns": 139.04266564037061,
+          "maximum_endpoint_normal_force_n": 71.33654289420068,
+          "complete_phase_required_for_qualification": true
+        }
+      },
+      "requested_absolute_nm_s_axis": [
+        0.5052606284553622,
+        0.226407820946182
+      ],
+      "requested_squared_nm2_s_axis": [
+        0.18085198373507747,
+        0.037998737154601545
+      ],
+      "actual_endpoint_sample_absolute_nm_s_axis": [
+        0.5052606284553622,
+        0.226407820946182
+      ],
+      "actual_endpoint_sample_squared_nm2_s_axis": [
+        0.18085198373507747,
+        0.037998737154601545
+      ],
+      "actual_effort_method": "returned actuator_torque endpoint sample times 2ms; no unreturned sample imputation",
+      "actual_effort_complete": true
+    }
+  },
+  "left_arm_contact_checks": {
+    "prefix": true,
+    "target_A": true,
+    "target_B": true
+  },
+  "contact_requirement": "each complete prefix/A/B has >=1 floor-left_arm positive normal force event",
+  "partial_subset_ranking": false,
+  "engineering_qualification_passed": true,
+  "sustained_support_or_contact_causality_demonstrated": false,
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c4_contact_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

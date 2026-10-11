@@ -1,0 +1,105 @@
+{
+  "status": "archived",
+  "files": {
+    "execution.json": {
+      "bytes": 1957,
+      "sha256": "e7d342e5d640a5c1c831968b42be8429546b58c24b8fc3c7a4f18a1d48cc5628",
+      "source": "external/c4_fr0_engineering_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 1140,
+      "sha256": "d1c479176024a4d6820838661a55da4c5fad0bc6e533955af334f0d2efe1ba98",
+      "source": "external/c4_fr0_engineering_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 8806,
+      "sha256": "b8749b81f70599b70fd116cd538160efc121d97843962eec9f2537b4ed86e14f",
+      "source": "external/c4_fr0_engineering_01/raw/metrics.json"
+    },
+    "raw/paid_journal.jsonl": {
+      "bytes": 18991599,
+      "sha256": "71cf99428c6692db65b646c39cf6c45793bb421c94fae92e9576f1f24b0da8ee",
+      "source": "external/c4_fr0_engineering_01/raw/paid_journal.jsonl"
+    },
+    "raw/run.json": {
+      "bytes": 8674,
+      "sha256": "84f1f3993c9cb49088652025df1bf618a156146e227ba66223c83e163ea63274",
+      "source": "external/c4_fr0_engineering_01/raw/run.json"
+    },
+    "raw/source_snapshot.zip": {
+      "bytes": 21185,
+      "sha256": "2bdd283a5cf27abb3b098df22a405334319ee2d728309752a76947fd58c89f3e",
+      "source": "external/c4_fr0_engineering_01/raw/source_snapshot.zip"
+    },
+    "raw/trace.jsonl": {
+      "bytes": 18512562,
+      "sha256": "1fa1274dc2f9b263af0e714edaa905fd947a1f199c00422ceb2b5b108e81d49c",
+      "source": "external/c4_fr0_engineering_01/raw/trace.jsonl"
+    },
+    "source/docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9189,
+      "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86",
+      "source": "external/c4_fr0_engineering_01/source/docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md"
+    },
+    "source/pyproject.toml": {
+      "bytes": 698,
+      "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+      "source": "external/c4_fr0_engineering_01/source/pyproject.toml"
+    },
+    "source/scripts/validate_free_root_fast_feedback_engineering.py": {
+      "bytes": 24750,
+      "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752",
+      "source": "external/c4_fr0_engineering_01/source/scripts/validate_free_root_fast_feedback_engineering.py"
+    },
+    "source/src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+      "source": "external/c4_fr0_engineering_01/source/src/developmental_physics/__init__.py"
+    },
+    "source/src/developmental_physics/assets/ground_body.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+      "source": "external/c4_fr0_engineering_01/source/src/developmental_physics/assets/ground_body.xml"
+    },
+    "source/src/developmental_physics/environment.py": {
+      "bytes": 15822,
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+      "source": "external/c4_fr0_engineering_01/source/src/developmental_physics/environment.py"
+    },
+    "source/src/developmental_physics/free_root_fast_feedback_environment.py": {
+      "bytes": 6259,
+      "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871",
+      "source": "external/c4_fr0_engineering_01/source/src/developmental_physics/free_root_fast_feedback_environment.py"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "external/c4_fr0_engineering_01/stderr"
+    },
+    "stdout": {
+      "bytes": 380,
+      "sha256": "d6e05a1b2b176b341f816a536800fe615967d427e0f29fc36712fcaf88bc05f8",
+      "source": "external/c4_fr0_engineering_01/stdout"
+    },
+    "execution/run_fr0_once.py": {
+      "bytes": 2389,
+      "sha256": "a8ad239f8030699903ebd621e35f1fd65fb86feec3eca28613c7b7b4df545938",
+      "source": "external/run_fr0_once.py"
+    },
+    "execution/archive_fr0_once.py": {
+      "bytes": 1682,
+      "sha256": "22735fe1866fd640ec032a72c138cf2e02b053525982dadfe6045612565bd797",
+      "source": "external/archive_fr0_once.py"
+    }
+  },
+  "cost_before_manifest_write": {
+    "reads": 36,
+    "read_bytes": 75221368,
+    "writes": 18,
+    "write_bytes": 37610684
+  },
+  "wall_seconds": 0.21988640003837645,
+  "cpu_seconds": 0.078125,
+  "model_fit_physics_or_scientific_metric_calls": 0,
+  "automatic_retry": false
+}

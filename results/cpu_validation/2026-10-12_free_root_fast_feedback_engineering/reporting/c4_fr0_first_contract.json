@@ -1,0 +1,28 @@
+{
+  "status": "saved_contract_consistent",
+  "raw_directory": "results\\cpu_validation\\2026-10-12_free_root_fast_feedback_engineering\\raw",
+  "checks": 64,
+  "failures": [],
+  "input_identities": {
+    "run.json": {
+      "bytes": 8674,
+      "sha256": "84f1f3993c9cb49088652025df1bf618a156146e227ba66223c83e163ea63274"
+    },
+    "metrics.json": {
+      "bytes": 8806,
+      "sha256": "b8749b81f70599b70fd116cd538160efc121d97843962eec9f2537b4ed86e14f"
+    },
+    "manifest.json": {
+      "bytes": 1140,
+      "sha256": "d1c479176024a4d6820838661a55da4c5fad0bc6e533955af334f0d2efe1ba98"
+    }
+  },
+  "JSON_payload_reads": 3,
+  "JSON_payload_bytes_read": 18620,
+  "trajectory_source_journal_or_ZIP_reads": 0,
+  "MAE_or_effort_recomputed_from_trajectory": false,
+  "physical_model_fit_or_test_calls": 0,
+  "automatic_retry": false,
+  "wall_seconds_before_output": 0.0006392002105712891,
+  "cpu_seconds_before_output": 0.0
+}

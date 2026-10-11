@@ -1,0 +1,690 @@
+{
+  "archive": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_free_root_fast_feedback_engineering",
+  "saved": {
+    "raw/run.json": {
+      "schema_version": 1,
+      "experiment_id": "FR0",
+      "stage": "free_root_fast_feedback_engineering",
+      "status": "completed",
+      "created_at_utc": "2026-10-11T21:40:24.188406+00:00",
+      "seed": 7800,
+      "pose": "supine",
+      "source": {
+        "commit": "e5466d326773c9565aa98f0e7063314a32eba5d4",
+        "files": {
+          "scripts/validate_free_root_fast_feedback_engineering.py": {
+            "bytes": 24750,
+            "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752"
+          },
+          "src/developmental_physics/free_root_fast_feedback_environment.py": {
+            "bytes": 6259,
+            "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871"
+          },
+          "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+            "bytes": 9189,
+            "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86"
+          },
+          "src/developmental_physics/environment.py": {
+            "bytes": 15822,
+            "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+          },
+          "src/developmental_physics/assets/ground_body.xml": {
+            "bytes": 3430,
+            "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+          },
+          "src/developmental_physics/__init__.py": {
+            "bytes": 162,
+            "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+          },
+          "pyproject.toml": {
+            "bytes": 698,
+            "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2"
+          }
+        },
+        "clean_committed_bytes_verified": true
+      },
+      "runtime": {
+        "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+        "platform": "Windows-10-10.0.26200-SP0",
+        "mujoco": "3.15.0",
+        "numpy": "2.2.6"
+      },
+      "planned_upper_bounds": {
+        "control_calls": 3000,
+        "physics_substeps": 3000,
+        "prefix_controls": 1000,
+        "active_controls": 2000,
+        "pd_requests": 2000
+      },
+      "cost": {
+        "control_call_attempts": 3000,
+        "control_call_returns": 3000,
+        "control_call_exceptions": 0,
+        "confirmed_physics_substeps": 3000,
+        "captured_native_endpoints": 3000,
+        "captured_complete_endpoints": 3000,
+        "environment_constructor_attempts": 1,
+        "environment_constructor_returns": 1,
+        "environment_constructor_exceptions": 0,
+        "reset_attempts": 1,
+        "reset_returns": 1,
+        "reset_exceptions": 0,
+        "pd_request_attempts": 2000,
+        "pd_request_returns": 2000,
+        "pd_request_exceptions": 0,
+        "study_check_attempts": 2000,
+        "study_check_returns": 2000,
+        "production_import_attempts": 1,
+        "production_import_returns": 1,
+        "production_import_exceptions": 0,
+        "source_read_attempts": 7,
+        "source_read_returns": 7,
+        "source_bytes_read": 60310,
+        "source_git_show_bytes": 60310,
+        "git_command_attempts": 9,
+        "git_command_returns": 9,
+        "journal_write_attempts": 6000,
+        "journal_write_returns": 6000,
+        "journal_known_utf8_bytes": 18991599,
+        "audit_contact_snapshot_attempts": 3000,
+        "audit_contact_snapshot_returns": 3000,
+        "audit_contact_snapshot_exceptions": 0,
+        "audit_contact_pair_inspections": 23493,
+        "audit_geom_name_query_attempts": 23493,
+        "audit_geom_name_query_returns": 23493,
+        "audit_geom_name_query_exceptions": 0,
+        "audit_contact_force_query_attempts": 23493,
+        "audit_contact_force_query_returns": 23493,
+        "audit_contact_force_query_exceptions": 0,
+        "physical_identity_attempts": 2,
+        "physical_identity_returns": 2,
+        "physical_asset_read_returns": 2,
+        "physical_asset_bytes_read": 6860,
+        "model_calls": 0,
+        "model_restores": 0,
+        "fit_calls": 0,
+        "RLS_updates": 0,
+        "MPC_decisions": 0,
+        "teacher_calls": 0,
+        "task_policy_updates": 0,
+        "GPU_training_seconds": 0,
+        "wall_seconds": 2.7291348001454026,
+        "cpu_seconds": 2.25
+      },
+      "trial": {
+        "failure": null,
+        "stop": null,
+        "complete": true,
+        "qref_rad": [
+          0.09536741799323235,
+          -0.0005762907809330206
+        ],
+        "direction": [
+          -1,
+          1
+        ],
+        "targets_rad": [
+          [
+            0.05536741799323235,
+            0.03942370921906698
+          ],
+          [
+            0.015367417993232352,
+            0.07942370921906698
+          ]
+        ],
+        "metadata_before": {
+          "configuration": {
+            "physics_dt": 0.002,
+            "control_substeps": 1,
+            "torque_limit": 0.5,
+            "joint_speed_limit": 20.0,
+            "joint_limit_margin": 0.08,
+            "kinetic_energy_limit": 50.0,
+            "reset_clearance": 0.005,
+            "ground_contact_profile": "baseline"
+          },
+          "physical_fingerprint": "d200d72601fffb9f2b294410cf4254bd81dc4b322f5f1746808c1c5a31568259",
+          "execution_fingerprint": "d88f85091306ec4ba442906cd69e87eb8a4c938846301dc171927337472349c7",
+          "action_interface": {
+            "original_baseline_control_dt_s": 0.02,
+            "construction_control_dt_s": 0.002,
+            "active_control_dt_s": 0.002,
+            "model_physics_dt_s": 0.002,
+            "requested_control_substeps": 1,
+            "request_hold_duration_s": 0.002,
+            "pd_kp": [
+              64.0,
+              64.0
+            ],
+            "pd_kd": [
+              4.0,
+              4.0
+            ],
+            "controlled_joint_indices": [
+              0,
+              1
+            ],
+            "other_six_requested_torques": "always_zero",
+            "actor_inputs": [
+              "native_current_shoulder_elbow_qv",
+              "current_public_target"
+            ],
+            "contact_pair_telemetry": "audit_only_after_return_not_actor_observation",
+            "study_check": "active_only_after_each_complete_returned_2ms_endpoint"
+          },
+          "support": {
+            "root": "original_asset_freejoint",
+            "mount": null,
+            "initial_pose": "supine",
+            "external_support": false
+          },
+          "contact_classification": {
+            "left_arm": [
+              "left_forearm_geom",
+              "left_upper_arm_geom"
+            ],
+            "feet": [
+              "left_foot_geom",
+              "right_foot_geom"
+            ],
+            "other": "all_other_floor_pairs"
+          }
+        },
+        "metadata_after": {
+          "configuration": {
+            "physics_dt": 0.002,
+            "control_substeps": 1,
+            "torque_limit": 0.5,
+            "joint_speed_limit": 20.0,
+            "joint_limit_margin": 0.08,
+            "kinetic_energy_limit": 50.0,
+            "reset_clearance": 0.005,
+            "ground_contact_profile": "baseline"
+          },
+          "physical_fingerprint": "d200d72601fffb9f2b294410cf4254bd81dc4b322f5f1746808c1c5a31568259",
+          "execution_fingerprint": "d88f85091306ec4ba442906cd69e87eb8a4c938846301dc171927337472349c7",
+          "action_interface": {
+            "original_baseline_control_dt_s": 0.02,
+            "construction_control_dt_s": 0.002,
+            "active_control_dt_s": 0.002,
+            "model_physics_dt_s": 0.002,
+            "requested_control_substeps": 1,
+            "request_hold_duration_s": 0.002,
+            "pd_kp": [
+              64.0,
+              64.0
+            ],
+            "pd_kd": [
+              4.0,
+              4.0
+            ],
+            "controlled_joint_indices": [
+              0,
+              1
+            ],
+            "other_six_requested_torques": "always_zero",
+            "actor_inputs": [
+              "native_current_shoulder_elbow_qv",
+              "current_public_target"
+            ],
+            "contact_pair_telemetry": "audit_only_after_return_not_actor_observation",
+            "study_check": "active_only_after_each_complete_returned_2ms_endpoint"
+          },
+          "support": {
+            "root": "original_asset_freejoint",
+            "mount": null,
+            "initial_pose": "supine",
+            "external_support": false
+          },
+          "contact_classification": {
+            "left_arm": [
+              "left_forearm_geom",
+              "left_upper_arm_geom"
+            ],
+            "feet": [
+              "left_foot_geom",
+              "right_foot_geom"
+            ],
+            "other": "all_other_floor_pairs"
+          }
+        }
+      },
+      "no_reset_retry_or_parameter_search": true,
+      "learning_permitted_this_trial": false,
+      "unconfirmed_integrator_and_forward_attempts": "unknown_if_core_exception",
+      "constructor_model_builds_and_reset_forward_attempts": "unmeasured_unknown_not_zero",
+      "inherited_execution_fingerprint_asset_IO": "unknown_not_zero",
+      "unmeasured_OS_IO": "unknown_not_zero",
+      "timing_excludes": "final_serialization_and_manifest_writes",
+      "scientific_adoption": false,
+      "old_free_root_C4_validation": false,
+      "c4_scientific_validation": false,
+      "c4_contact_scientific_validation": false,
+      "c5_scientific_dependency_released": false
+    },
+    "raw/metrics.json": {
+      "complete_population": true,
+      "metadata_stable": true,
+      "windows": [
+        {
+          "target": "A",
+          "active_first": 800,
+          "active_last": 999,
+          "planned_count": 200,
+          "observed_count": 200,
+          "full_trial_required": true,
+          "available": true,
+          "mae_axis_rad": [
+            0.000798999788959543,
+            0.003176219925758589
+          ],
+          "threshold_rad": 0.01,
+          "passed_axis": [
+            true,
+            true
+          ]
+        },
+        {
+          "target": "B",
+          "active_first": 1800,
+          "active_last": 1999,
+          "planned_count": 200,
+          "observed_count": 200,
+          "full_trial_required": true,
+          "available": true,
+          "mae_axis_rad": [
+            0.0011378769469009564,
+            0.002987796855660341
+          ],
+          "threshold_rad": 0.01,
+          "passed_axis": [
+            true,
+            true
+          ]
+        }
+      ],
+      "phase_effort_and_contacts": {
+        "prefix": {
+          "planned_substeps": 1000,
+          "confirmed_substeps": 1000,
+          "observed_contact_endpoints": 1000,
+          "observed_native_endpoints": 1000,
+          "missing_contact_endpoint_substeps": 0,
+          "classes": {
+            "left_arm": {
+              "positive_contact_endpoint_count": 949,
+              "positive_pair_event_count": 949,
+              "observed_positive_duration_s": 1.8980000000000001,
+              "known_positive_fraction_of_paid_substeps": 0.949,
+              "fraction_is_lower_bound_if_missing": false,
+              "full_positive_contact_count_unknown": false,
+              "endpoint_sample_normal_impulse_ns": 4.563078697716652,
+              "maximum_endpoint_normal_force_n": 39.15772774060192,
+              "complete_phase_required_for_qualification": true
+            },
+            "feet": {
+              "positive_contact_endpoint_count": 0,
+              "positive_pair_event_count": 0,
+              "observed_positive_duration_s": 0.0,
+              "known_positive_fraction_of_paid_substeps": 0.0,
+              "fraction_is_lower_bound_if_missing": false,
+              "full_positive_contact_count_unknown": false,
+              "endpoint_sample_normal_impulse_ns": 0.0,
+              "maximum_endpoint_normal_force_n": 0,
+              "complete_phase_required_for_qualification": true
+            },
+            "other": {
+              "positive_contact_endpoint_count": 985,
+              "positive_pair_event_count": 6557,
+              "observed_positive_duration_s": 1.97,
+              "known_positive_fraction_of_paid_substeps": 0.985,
+              "fraction_is_lower_bound_if_missing": false,
+              "full_positive_contact_count_unknown": false,
+              "endpoint_sample_normal_impulse_ns": 138.02100545365053,
+              "maximum_endpoint_normal_force_n": 552.5024236221542,
+              "complete_phase_required_for_qualification": true
+            }
+          },
+          "requested_absolute_nm_s_axis": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s_axis": [
+            0.0,
+            0.0
+          ],
+          "actual_endpoint_sample_absolute_nm_s_axis": [
+            0.0,
+            0.0
+          ],
+          "actual_endpoint_sample_squared_nm2_s_axis": [
+            0.0,
+            0.0
+          ],
+          "actual_effort_method": "returned actuator_torque endpoint sample times 2ms; no unreturned sample imputation",
+          "actual_effort_complete": true
+        },
+        "target_A": {
+          "planned_substeps": 1000,
+          "confirmed_substeps": 1000,
+          "observed_contact_endpoints": 1000,
+          "observed_native_endpoints": 1000,
+          "missing_contact_endpoint_substeps": 0,
+          "classes": {
+            "left_arm": {
+              "positive_contact_endpoint_count": 990,
+              "positive_pair_event_count": 990,
+              "observed_positive_duration_s": 1.98,
+              "known_positive_fraction_of_paid_substeps": 0.99,
+              "fraction_is_lower_bound_if_missing": false,
+              "full_positive_contact_count_unknown": false,
+              "endpoint_sample_normal_impulse_ns": 3.5404443701870596,
+              "maximum_endpoint_normal_force_n": 2.216515187019719,
+              "complete_phase_required_for_qualification": true
+            },
+            "feet": {
+              "positive_contact_endpoint_count": 0,
+              "positive_pair_event_count": 0,
+              "observed_positive_duration_s": 0.0,
+              "known_positive_fraction_of_paid_substeps": 0.0,
+              "fraction_is_lower_bound_if_missing": false,
+              "full_positive_contact_count_unknown": false,
+              "endpoint_sample_normal_impulse_ns": 0.0,
+              "maximum_endpoint_normal_force_n": 0,
+              "complete_phase_required_for_qualification": true
+            },
+            "other": {
+              "positive_contact_endpoint_count": 1000,
+              "positive_pair_event_count": 6999,
+              "observed_positive_duration_s": 2.0,
+              "known_positive_fraction_of_paid_substeps": 1.0,
+              "fraction_is_lower_bound_if_missing": false,
+              "full_positive_contact_count_unknown": false,
+              "endpoint_sample_normal_impulse_ns": 138.90097046062422,
+              "maximum_endpoint_normal_force_n": 71.13866213063919,
+              "complete_phase_required_for_qualification": true
+            }
+          },
+          "requested_absolute_nm_s_axis": [
+            0.4543433836362001,
+            0.25878979297918386
+          ],
+          "requested_squared_nm2_s_axis": [
+            0.16067388561068324,
+            0.045524212758162964
+          ],
+          "actual_endpoint_sample_absolute_nm_s_axis": [
+            0.4543433836362001,
+            0.25173631108311034
+          ],
+          "actual_endpoint_sample_squared_nm2_s_axis": [
+            0.16067388561068324,
+            0.0446116556395429
+          ],
+          "actual_effort_method": "returned actuator_torque endpoint sample times 2ms; no unreturned sample imputation",
+          "actual_effort_complete": true
+        },
+        "target_B": {
+          "planned_substeps": 1000,
+          "confirmed_substeps": 1000,
+          "observed_contact_endpoints": 1000,
+          "observed_native_endpoints": 1000,
+          "missing_contact_endpoint_substeps": 0,
+          "classes": {
+            "left_arm": {
+              "positive_contact_endpoint_count": 988,
+              "positive_pair_event_count": 988,
+              "observed_positive_duration_s": 1.976,
+              "known_positive_fraction_of_paid_substeps": 0.988,
+              "fraction_is_lower_bound_if_missing": false,
+              "full_positive_contact_count_unknown": false,
+              "endpoint_sample_normal_impulse_ns": 3.398655598940427,
+              "maximum_endpoint_normal_force_n": 2.2039553215688596,
+              "complete_phase_required_for_qualification": true
+            },
+            "feet": {
+              "positive_contact_endpoint_count": 0,
+              "positive_pair_event_count": 0,
+              "observed_positive_duration_s": 0.0,
+              "known_positive_fraction_of_paid_substeps": 0.0,
+              "fraction_is_lower_bound_if_missing": false,
+              "full_positive_contact_count_unknown": false,
+              "endpoint_sample_normal_impulse_ns": 0.0,
+              "maximum_endpoint_normal_force_n": 0,
+              "complete_phase_required_for_qualification": true
+            },
+            "other": {
+              "positive_contact_endpoint_count": 1000,
+              "positive_pair_event_count": 6994,
+              "observed_positive_duration_s": 2.0,
+              "known_positive_fraction_of_paid_substeps": 1.0,
+              "fraction_is_lower_bound_if_missing": false,
+              "full_positive_contact_count_unknown": false,
+              "endpoint_sample_normal_impulse_ns": 139.04266564037061,
+              "maximum_endpoint_normal_force_n": 71.33654289420068,
+              "complete_phase_required_for_qualification": true
+            }
+          },
+          "requested_absolute_nm_s_axis": [
+            0.5052606284553622,
+            0.226407820946182
+          ],
+          "requested_squared_nm2_s_axis": [
+            0.18085198373507747,
+            0.037998737154601545
+          ],
+          "actual_endpoint_sample_absolute_nm_s_axis": [
+            0.5052606284553622,
+            0.226407820946182
+          ],
+          "actual_endpoint_sample_squared_nm2_s_axis": [
+            0.18085198373507747,
+            0.037998737154601545
+          ],
+          "actual_effort_method": "returned actuator_torque endpoint sample times 2ms; no unreturned sample imputation",
+          "actual_effort_complete": true
+        }
+      },
+      "left_arm_contact_checks": {
+        "prefix": true,
+        "target_A": true,
+        "target_B": true
+      },
+      "contact_requirement": "each complete prefix/A/B has >=1 floor-left_arm positive normal force event",
+      "partial_subset_ranking": false,
+      "engineering_qualification_passed": true,
+      "sustained_support_or_contact_causality_demonstrated": false,
+      "scientific_adoption": false,
+      "old_free_root_C4_validation": false,
+      "c4_scientific_validation": false,
+      "c4_contact_scientific_validation": false,
+      "c5_scientific_dependency_released": false
+    },
+    "execution.json": {
+      "argv": [
+        "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+        "scripts/validate_free_root_fast_feedback_engineering.py",
+        "--repo",
+        "D:\\Codex_ws\\robot_rl",
+        "--output",
+        "D:\\Codex_ws\\robot_rl\\external\\c4_fr0_engineering_01\\raw",
+        "--source-commit",
+        "e5466d326773c9565aa98f0e7063314a32eba5d4"
+      ],
+      "source_commit": "e5466d326773c9565aa98f0e7063314a32eba5d4",
+      "source_files": {
+        "scripts/validate_free_root_fast_feedback_engineering.py": {
+          "bytes": 24750,
+          "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752"
+        },
+        "src/developmental_physics/free_root_fast_feedback_environment.py": {
+          "bytes": 6259,
+          "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871"
+        },
+        "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+          "bytes": 9189,
+          "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86"
+        },
+        "src/developmental_physics/environment.py": {
+          "bytes": 15822,
+          "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+        },
+        "src/developmental_physics/assets/ground_body.xml": {
+          "bytes": 3430,
+          "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+        },
+        "src/developmental_physics/__init__.py": {
+          "bytes": 162,
+          "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+        },
+        "pyproject.toml": {
+          "bytes": 698,
+          "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2"
+        }
+      },
+      "returncode": 0,
+      "wall_seconds": 3.2688509998843074,
+      "started_unix": 1791754821.3649578,
+      "ended_unix": 1791754824.6343465,
+      "source_snapshot_reads": 7,
+      "source_snapshot_read_bytes": 60310,
+      "stdout_bytes": 380,
+      "stderr_bytes": 0,
+      "subprocess_invocations": 1,
+      "automatic_retry": false
+    },
+    "manifest.json": {
+      "status": "archived",
+      "files": {
+        "execution.json": {
+          "bytes": 1957,
+          "sha256": "e7d342e5d640a5c1c831968b42be8429546b58c24b8fc3c7a4f18a1d48cc5628",
+          "source": "external/c4_fr0_engineering_01/execution.json"
+        },
+        "raw/manifest.json": {
+          "bytes": 1140,
+          "sha256": "d1c479176024a4d6820838661a55da4c5fad0bc6e533955af334f0d2efe1ba98",
+          "source": "external/c4_fr0_engineering_01/raw/manifest.json"
+        },
+        "raw/metrics.json": {
+          "bytes": 8806,
+          "sha256": "b8749b81f70599b70fd116cd538160efc121d97843962eec9f2537b4ed86e14f",
+          "source": "external/c4_fr0_engineering_01/raw/metrics.json"
+        },
+        "raw/paid_journal.jsonl": {
+          "bytes": 18991599,
+          "sha256": "71cf99428c6692db65b646c39cf6c45793bb421c94fae92e9576f1f24b0da8ee",
+          "source": "external/c4_fr0_engineering_01/raw/paid_journal.jsonl"
+        },
+        "raw/run.json": {
+          "bytes": 8674,
+          "sha256": "84f1f3993c9cb49088652025df1bf618a156146e227ba66223c83e163ea63274",
+          "source": "external/c4_fr0_engineering_01/raw/run.json"
+        },
+        "raw/source_snapshot.zip": {
+          "bytes": 21185,
+          "sha256": "2bdd283a5cf27abb3b098df22a405334319ee2d728309752a76947fd58c89f3e",
+          "source": "external/c4_fr0_engineering_01/raw/source_snapshot.zip"
+        },
+        "raw/trace.jsonl": {
+          "bytes": 18512562,
+          "sha256": "1fa1274dc2f9b263af0e714edaa905fd947a1f199c00422ceb2b5b108e81d49c",
+          "source": "external/c4_fr0_engineering_01/raw/trace.jsonl"
+        },
+        "source/docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+          "bytes": 9189,
+          "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86",
+          "source": "external/c4_fr0_engineering_01/source/docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md"
+        },
+        "source/pyproject.toml": {
+          "bytes": 698,
+          "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+          "source": "external/c4_fr0_engineering_01/source/pyproject.toml"
+        },
+        "source/scripts/validate_free_root_fast_feedback_engineering.py": {
+          "bytes": 24750,
+          "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752",
+          "source": "external/c4_fr0_engineering_01/source/scripts/validate_free_root_fast_feedback_engineering.py"
+        },
+        "source/src/developmental_physics/__init__.py": {
+          "bytes": 162,
+          "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+          "source": "external/c4_fr0_engineering_01/source/src/developmental_physics/__init__.py"
+        },
+        "source/src/developmental_physics/assets/ground_body.xml": {
+          "bytes": 3430,
+          "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+          "source": "external/c4_fr0_engineering_01/source/src/developmental_physics/assets/ground_body.xml"
+        },
+        "source/src/developmental_physics/environment.py": {
+          "bytes": 15822,
+          "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+          "source": "external/c4_fr0_engineering_01/source/src/developmental_physics/environment.py"
+        },
+        "source/src/developmental_physics/free_root_fast_feedback_environment.py": {
+          "bytes": 6259,
+          "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871",
+          "source": "external/c4_fr0_engineering_01/source/src/developmental_physics/free_root_fast_feedback_environment.py"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source": "external/c4_fr0_engineering_01/stderr"
+        },
+        "stdout": {
+          "bytes": 380,
+          "sha256": "d6e05a1b2b176b341f816a536800fe615967d427e0f29fc36712fcaf88bc05f8",
+          "source": "external/c4_fr0_engineering_01/stdout"
+        },
+        "execution/run_fr0_once.py": {
+          "bytes": 2389,
+          "sha256": "a8ad239f8030699903ebd621e35f1fd65fb86feec3eca28613c7b7b4df545938",
+          "source": "external/run_fr0_once.py"
+        },
+        "execution/archive_fr0_once.py": {
+          "bytes": 1682,
+          "sha256": "22735fe1866fd640ec032a72c138cf2e02b053525982dadfe6045612565bd797",
+          "source": "external/archive_fr0_once.py"
+        }
+      },
+      "cost_before_manifest_write": {
+        "reads": 36,
+        "read_bytes": 75221368,
+        "writes": 18,
+        "write_bytes": 37610684
+      },
+      "wall_seconds": 0.21988640003837645,
+      "cpu_seconds": 0.078125,
+      "model_fit_physics_or_scientific_metric_calls": 0,
+      "automatic_retry": false
+    }
+  },
+  "source_files": {
+    "raw/run.json": {
+      "bytes": 8674,
+      "sha256": "84f1f3993c9cb49088652025df1bf618a156146e227ba66223c83e163ea63274"
+    },
+    "raw/metrics.json": {
+      "bytes": 8806,
+      "sha256": "b8749b81f70599b70fd116cd538160efc121d97843962eec9f2537b4ed86e14f"
+    },
+    "execution.json": {
+      "bytes": 1957,
+      "sha256": "e7d342e5d640a5c1c831968b42be8429546b58c24b8fc3c7a4f18a1d48cc5628"
+    },
+    "manifest.json": {
+      "bytes": 4549,
+      "sha256": "e5232bf028e97c3f3ae659f71564b606fd90abe0aa3d96ed6620140efc9e087b"
+    }
+  },
+  "reads": 4,
+  "read_bytes": 23986,
+  "wall_seconds": 0.0083298000972718,
+  "cpu_seconds": 0.0,
+  "timing_excludes": "summary_serialization_write_and_stdout",
+  "metric_recalculations": 0,
+  "raw_trajectory_reads": 0,
+  "model_fit_physics_calls": 0,
+  "automatic_retry": false
+}

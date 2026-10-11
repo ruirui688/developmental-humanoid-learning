@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FR0",
+  "stage": "free_root_fast_feedback_engineering",
+  "status": "completed",
+  "created_at_utc": "2026-10-11T21:40:24.188406+00:00",
+  "seed": 7800,
+  "pose": "supine",
+  "source": {
+    "commit": "e5466d326773c9565aa98f0e7063314a32eba5d4",
+    "files": {
+      "scripts/validate_free_root_fast_feedback_engineering.py": {
+        "bytes": 24750,
+        "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752"
+      },
+      "src/developmental_physics/free_root_fast_feedback_environment.py": {
+        "bytes": 6259,
+        "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871"
+      },
+      "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+        "bytes": 9189,
+        "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86"
+      },
+      "src/developmental_physics/environment.py": {
+        "bytes": 15822,
+        "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+      },
+      "src/developmental_physics/assets/ground_body.xml": {
+        "bytes": 3430,
+        "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      },
+      "pyproject.toml": {
+        "bytes": 698,
+        "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2"
+      }
+    },
+    "clean_committed_bytes_verified": true
+  },
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "mujoco": "3.15.0",
+    "numpy": "2.2.6"
+  },
+  "planned_upper_bounds": {
+    "control_calls": 3000,
+    "physics_substeps": 3000,
+    "prefix_controls": 1000,
+    "active_controls": 2000,
+    "pd_requests": 2000
+  },
+  "cost": {
+    "control_call_attempts": 3000,
+    "control_call_returns": 3000,
+    "control_call_exceptions": 0,
+    "confirmed_physics_substeps": 3000,
+    "captured_native_endpoints": 3000,
+    "captured_complete_endpoints": 3000,
+    "environment_constructor_attempts": 1,
+    "environment_constructor_returns": 1,
+    "environment_constructor_exceptions": 0,
+    "reset_attempts": 1,
+    "reset_returns": 1,
+    "reset_exceptions": 0,
+    "pd_request_attempts": 2000,
+    "pd_request_returns": 2000,
+    "pd_request_exceptions": 0,
+    "study_check_attempts": 2000,
+    "study_check_returns": 2000,
+    "production_import_attempts": 1,
+    "production_import_returns": 1,
+    "production_import_exceptions": 0,
+    "source_read_attempts": 7,
+    "source_read_returns": 7,
+    "source_bytes_read": 60310,
+    "source_git_show_bytes": 60310,
+    "git_command_attempts": 9,
+    "git_command_returns": 9,
+    "journal_write_attempts": 6000,
+    "journal_write_returns": 6000,
+    "journal_known_utf8_bytes": 18991599,
+    "audit_contact_snapshot_attempts": 3000,
+    "audit_contact_snapshot_returns": 3000,
+    "audit_contact_snapshot_exceptions": 0,
+    "audit_contact_pair_inspections": 23493,
+    "audit_geom_name_query_attempts": 23493,
+    "audit_geom_name_query_returns": 23493,
+    "audit_geom_name_query_exceptions": 0,
+    "audit_contact_force_query_attempts": 23493,
+    "audit_contact_force_query_returns": 23493,
+    "audit_contact_force_query_exceptions": 0,
+    "physical_identity_attempts": 2,
+    "physical_identity_returns": 2,
+    "physical_asset_read_returns": 2,
+    "physical_asset_bytes_read": 6860,
+    "model_calls": 0,
+    "model_restores": 0,
+    "fit_calls": 0,
+    "RLS_updates": 0,
+    "MPC_decisions": 0,
+    "teacher_calls": 0,
+    "task_policy_updates": 0,
+    "GPU_training_seconds": 0,
+    "wall_seconds": 2.7291348001454026,
+    "cpu_seconds": 2.25
+  },
+  "trial": {
+    "failure": null,
+    "stop": null,
+    "complete": true,
+    "qref_rad": [
+      0.09536741799323235,
+      -0.0005762907809330206
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "targets_rad": [
+      [
+        0.05536741799323235,
+        0.03942370921906698
+      ],
+      [
+        0.015367417993232352,
+        0.07942370921906698
+      ]
+    ],
+    "metadata_before": {
+      "configuration": {
+        "physics_dt": 0.002,
+        "control_substeps": 1,
+        "torque_limit": 0.5,
+        "joint_speed_limit": 20.0,
+        "joint_limit_margin": 0.08,
+        "kinetic_energy_limit": 50.0,
+        "reset_clearance": 0.005,
+        "ground_contact_profile": "baseline"
+      },
+      "physical_fingerprint": "d200d72601fffb9f2b294410cf4254bd81dc4b322f5f1746808c1c5a31568259",
+      "execution_fingerprint": "d88f85091306ec4ba442906cd69e87eb8a4c938846301dc171927337472349c7",
+      "action_interface": {
+        "original_baseline_control_dt_s": 0.02,
+        "construction_control_dt_s": 0.002,
+        "active_control_dt_s": 0.002,
+        "model_physics_dt_s": 0.002,
+        "requested_control_substeps": 1,
+        "request_hold_duration_s": 0.002,
+        "pd_kp": [
+          64.0,
+          64.0
+        ],
+        "pd_kd": [
+          4.0,
+          4.0
+        ],
+        "controlled_joint_indices": [
+          0,
+          1
+        ],
+        "other_six_requested_torques": "always_zero",
+        "actor_inputs": [
+          "native_current_shoulder_elbow_qv",
+          "current_public_target"
+        ],
+        "contact_pair_telemetry": "audit_only_after_return_not_actor_observation",
+        "study_check": "active_only_after_each_complete_returned_2ms_endpoint"
+      },
+      "support": {
+        "root": "original_asset_freejoint",
+        "mount": null,
+        "initial_pose": "supine",
+        "external_support": false
+      },
+      "contact_classification": {
+        "left_arm": [
+          "left_forearm_geom",
+          "left_upper_arm_geom"
+        ],
+        "feet": [
+          "left_foot_geom",
+          "right_foot_geom"
+        ],
+        "other": "all_other_floor_pairs"
+      }
+    },
+    "metadata_after": {
+      "configuration": {
+        "physics_dt": 0.002,
+        "control_substeps": 1,
+        "torque_limit": 0.5,
+        "joint_speed_limit": 20.0,
+        "joint_limit_margin": 0.08,
+        "kinetic_energy_limit": 50.0,
+        "reset_clearance": 0.005,
+        "ground_contact_profile": "baseline"
+      },
+      "physical_fingerprint": "d200d72601fffb9f2b294410cf4254bd81dc4b322f5f1746808c1c5a31568259",
+      "execution_fingerprint": "d88f85091306ec4ba442906cd69e87eb8a4c938846301dc171927337472349c7",
+      "action_interface": {
+        "original_baseline_control_dt_s": 0.02,
+        "construction_control_dt_s": 0.002,
+        "active_control_dt_s": 0.002,
+        "model_physics_dt_s": 0.002,
+        "requested_control_substeps": 1,
+        "request_hold_duration_s": 0.002,
+        "pd_kp": [
+          64.0,
+          64.0
+        ],
+        "pd_kd": [
+          4.0,
+          4.0
+        ],
+        "controlled_joint_indices": [
+          0,
+          1
+        ],
+        "other_six_requested_torques": "always_zero",
+        "actor_inputs": [
+          "native_current_shoulder_elbow_qv",
+          "current_public_target"
+        ],
+        "contact_pair_telemetry": "audit_only_after_return_not_actor_observation",
+        "study_check": "active_only_after_each_complete_returned_2ms_endpoint"
+      },
+      "support": {
+        "root": "original_asset_freejoint",
+        "mount": null,
+        "initial_pose": "supine",
+        "external_support": false
+      },
+      "contact_classification": {
+        "left_arm": [
+          "left_forearm_geom",
+          "left_upper_arm_geom"
+        ],
+        "feet": [
+          "left_foot_geom",
+          "right_foot_geom"
+        ],
+        "other": "all_other_floor_pairs"
+      }
+    }
+  },
+  "no_reset_retry_or_parameter_search": true,
+  "learning_permitted_this_trial": false,
+  "unconfirmed_integrator_and_forward_attempts": "unknown_if_core_exception",
+  "constructor_model_builds_and_reset_forward_attempts": "unmeasured_unknown_not_zero",
+  "inherited_execution_fingerprint_asset_IO": "unknown_not_zero",
+  "unmeasured_OS_IO": "unknown_not_zero",
+  "timing_excludes": "final_serialization_and_manifest_writes",
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c4_contact_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

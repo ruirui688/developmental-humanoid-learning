@@ -33,7 +33,7 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-最早未验收仍为C4。[Z1预测](docs/FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md)通过后，[Z2首次匹配控制](docs/FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)从clean1aaccc1完成12组全部36,000控制/子步、0停止异常。joint/肩/肘贡献7.5535%/8.8449%/5.6905%，未达原20%门；实际努力下降，正式PD门按前置条件不可评，自身长时肩预测退化。不放宽阈值或补跑，立即推进事前独立准备的FR0自由root接触工程资格。固定支撑、理想感觉与2ms经典PD是披露先验；C4及C5–C7仍未验收。持续目标active，阶段检查提交推送后立即继续。
+最早未验收仍为C4。[Z2完整控制](docs/FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)贡献7.55%，未达到原20%门，自身长时肩预测退化；不补跑或追认。[FR0自由root接触工程](docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_RESULTS.md)从cleane5466d3首次完成3,000控制/子步、0停止异常；四MAE≤.01rad，三阶段左臂正接触949/990/988 of1000，工程资格通过。本轮零学习，公共PD、理想感觉与原仰卧身体是披露先验，不代表学习或安全收益。立即另冻本域少量身体辨识、独立预测与匹配控制，不恢复悬挂learned snapshots。C4及C5–C7仍未验收；持续目标active，阶段检查提交推送后立即继续。
 
 旧Y0阶段记录：[Y0首次结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe3df016b01b47b0bea0ccc27821c0d7091一次完成100prefix+103active、203控制/2,030子步后，肘速度1.1258089506362488rad/s触发原1rad/s StudyAbort；环境terminatedfalse、failure空，0异常/fit/RLS。第一窗虽observed20但full trial失败而availablefalse/MAEnull，第二窗0，不partial排名。完整工程资格失败，Y1/Y2关闭、不scan增益；X0/W0/V关闭保持。随后做控制时间尺度与底层保护有限审阅，另冻结独立Z0，不因失败放宽门。零接触观察、机械固定支撑及经典反馈先验披露，不追认C4或解除C5科学依赖。本段为历史，不触发重跑。
 
@@ -67,7 +67,7 @@ P后唯一Q候选为K原phi29追加(qrel0/.12,qrel1/.12,v0/1,v1/1,startG0/.5,sta
 
 当前模型只消费原生关节q/v、已知请求及连续过去端点；previous_v不得跨trial或补零，不得读未来实际力矩。D sparse11仅恢复其冻结snapshot，G不重拟合。PD64/(0,4)及其旧增益开发费用明确披露，预测尾只用当前目标，无切换预览。接触力、动能、真实动力学和root quaternion只作离线诊断，不进入部署模型；当前native没有orientation。
 
-正式物理累计 **313,297控制调用 /2,592,970子步**；Z2新增36,000/36,000/0更新，Z0新增3,000/3,000/0更新，Y0新增203/2,030/0更新，X0/W0此前新增104/1,040与300/3,000，历史在线22,452加Z1在线24,000，当前在线46,452+离线7,200=53,652scalar更新。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
+正式物理累计 **316,297控制调用 /2,595,970子步**；FR0新增3,000/3,000/0更新，Z2新增36,000/36,000/0更新，Z0新增3,000/3,000/0更新，Y0新增203/2,030/0更新，X0/W0此前新增104/1,040与300/3,000，历史在线22,452加Z1在线24,000，当前在线46,452+离线7,200=53,652scalar更新。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
 
 G1与机器接管仍按 [docs/NEW_MACHINE_BOOTSTRAP.md](docs/NEW_MACHINE_BOOTSTRAP.md)、[docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)和 [docs/DEVELOPMENT_ROADMAP.md](docs/DEVELOPMENT_ROADMAP.md)；采用新依赖/后端时锁定来源、版本与许可。当前CPU工作不要求安装GPU仿真器。
 
