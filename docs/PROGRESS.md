@@ -1,5 +1,13 @@
 # 开发进度与仓库检查点
 
+## C4 B同校准耦合候选正式冻结（2026-10-11，物理执行前）
+
+[B协议](GUARD_COUPLED_DEVELOPMENT_PROTOCOL.md)保持A公开guard、cold own先验、原RLS和H15/81候选MPC，只把两组5参数独立head替换为两组9参数耦合head；cross先验全零。复用A已付费完整cal400与prediction100，新增离线最多2400 scalar更新单列，不重拟合A diagonal或重采对照。A三seed数据核验和完整校准满足执行依赖；其学习控制停止使相对diagonal完整控制增量门未评价，B自身贡献与PD门仍各自判定。
+
+耦合核心、严格A身份绑定、collector、独立标准库auditor和人工fixture已交付。独立人工整档首审999512项零失败，只有fake303/3030/2400scalar；真实物理0。工程首失败、计账修订和源字节保留，不能用它们声称耦合收益。提升后8项生产命名空间、正式开关和源码身份检查通过，fake环境调用与RLS更新均0；不重复已通过数学矩阵。正式独立auditor SHA为`c77a1c2a5cfeed08774dab20a6ef5d4e4833264621e37832b3888001182cc10a`。
+
+本检查点提交推送后从clean HEAD首次执行三条新控制，上限900控制/9000子步，原200active、权限.5与研究停止保持不变；实际停止按实计账。随后只执行一次独立audit、一次描述汇总并归档，再根据证据继续C4修订或C5适应。持续目标保持active；当前正式累计仍238502/2385020/17652scalar，尚未增加本轮真实费用。
+
 ## C4 A首次开发失败已归档（2026-10-11）
 
 [raw/guard匹配对照](GUARD_PAIR_DEVELOPMENT_RESULTS.md)从clean `e7d495f`一次完成18完整/6左肘研究速度停止/0异常/0blocked；cal400与prediction100三seed均完整，但learned_raw仅2active、learned_guard仅4active即停止。独立速度预测改善约29%–36%，不能以停止前RMSE通过控制贡献；两basis贡献与PD门未过。实际新增6318/63180/4800scalar，累计238502/2385020/17652scalar。首审3207643项零失败、一次描述汇总6489项零失败；规则nominal对照无一致优势。失败诊断只提取18个原有决策/预测，不调用模型；图表已视觉核验。

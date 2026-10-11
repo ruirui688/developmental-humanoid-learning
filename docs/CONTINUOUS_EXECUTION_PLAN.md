@@ -64,6 +64,8 @@ C2/C3 的正式矩阵根据 C1 的开发依据另写冻结协议。C4–C6 在�
 
 ## 6. 当前立即执行项
 
+当前[B耦合协议](GUARD_COUPLED_DEVELOPMENT_PROTOCOL.md)、来源绑定、核心和独立auditor已正式冻结，生产路径8项检查通过且真物理0。提交推送后一次新增三个fresh控制trial，不重采A；离线2400scalar上限和新增物理900/9000上限分列。独立audit/一次summary/归档后根据结果继续推进；B若未过自身贡献，再冻结一个探索时间结构修订，不能把尚未执行提案称为成功或改A/B门。
+
 单肩[新最终结果](LOCAL_FROZEN_VALIDATION_RESULTS.md)同MPC贡献通过，PD比较失败，自身一步/位置覆盖仍待解释。20/21/22已见，不用于修订调参后的新评价。左肘[迁移](ELBOW_BODY_DEVELOPMENT_RESULTS.md)贡献与PD门失败。肩—肘[首次对照](PAIR_BODY_DEVELOPMENT_RESULTS.md)从clean `8841884`一次执行，6完整/6研究停止/12依赖blocked；三seed校准active170的肘首个−.5请求停止，未发布学习模型，组合PD三seedactive1停止。随后[短脉冲](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)六trial一次执行：2/8三seed均step361/active261左肘速度停止，1/9三seed400active完整并按冻结顺序选择，零更新且仅验证可执行性。随后[双轴PD](PAIR_PD_DEVELOPMENT_RESULTS.md)一次开发9完整/18速度停止，选择64/(0,4)；[A对照](GUARD_PAIR_DEVELOPMENT_RESULTS.md)随后18完整/6速度停止，独立预测改善29%–36%但学习控制仅2/4active停止，规则无一致优势、贡献及PD门未过。当前继续同完整校准的B耦合候选，自身贡献与PD另判；相对diag完整控制增量因旧对照停止而不能评价。不重复旧5/5，不改任务、200步控制、最终权限或停止；C5事件接口已通过，科学适应与成熟门控另冻结。局部正负结果均不结束持续目标。
 
 相关资料：[项目路线](DEVELOPMENT_ROADMAP.md)、[当前局部结果](CPU_LOCAL_BODY_RESULTS.md)、[研发进度](PROGRESS.md)、[项目交接](../AGENTS.md)。
