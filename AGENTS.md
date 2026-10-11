@@ -18,7 +18,7 @@
 
 2026-10-11 用户再次明确要求以持续目标执行，不在单次实验或里程碑后停止。当前连续目标与阶段账本见 `docs/CONTINUOUS_EXECUTION_PLAN.md`：C0 单肩初期验收完成后，继续 C1 闭环模型有效域、C2/C3 修订/消融/调优经典控制，再验证多关节、扰动适应与成熟门控。每个可验证阶段检查、提交、推送后继续最早未验收阶段；不能把 C0 当作整个项目目标完成。
 
-C1开发归档与C3九组PD开发已完成（clean `abc537a`，27完整trial，255,331审计零失败）；调优PD与学习MPC开发tracking差距只有约2.6%，旧弱PD不能代表强基线。详见 `docs/MODEL_DOMAIN_RESULTS.md`、`docs/CLASSICAL_PD_DEVELOPMENT_RESULTS.md`。当前继续 `docs/LOCAL_INTEGRATION_ABLATION_PROTOCOL.md` 的同参数积分消融，再独立修订校准覆盖。物理研发累计183,050调用/1,830,500子步，RLS累计2,700；新最终留出20/21/22未执行。
+C1开发归档与C3九组PD开发已完成（clean `abc537a`，27完整trial，255,331审计零失败）；调优PD与学习MPC开发tracking差距只有约2.6%，旧弱PD不能代表强基线。详见 `docs/MODEL_DOMAIN_RESULTS.md`、`docs/CLASSICAL_PD_DEVELOPMENT_RESULTS.md`。同参数积分消融从clean `1141086`完成18trial、707,642审计零失败，但tracking仅改善0.0523%且seed0退化，采用门失败，保持endpoint_euler。详见 `docs/LOCAL_INTEGRATION_ABLATION_RESULTS.md`；接续 `docs/LOCAL_DOSE_ABLATION_PROTOCOL.md` 的剂量×结构开发，再独立评估位置覆盖。物理研发累计188,450调用/1,884,500子步，RLS累计3,600；新最终留出20/21/22未执行。
 
 当前执行约束（2026-10-11）：用户已明确允许 CPU 少量在线辨识，以验证身体模型学习与控制收益。历史无训练归档仍保持零更新；新学习实验单独冻结协议、归档并计入校准、探索和评估交互。不运行大规模 PPO，不使用预训练任务策略、步态教师或真机。学习模型只读原生信号和当前已知命令，不得通过未来实际力矩或仿真特权状态泄漏信息。初期验收包括动作—感觉响应、留出预测和同权限闭环对照，不能在前置探针完成后停止并声称学习已通过。
 

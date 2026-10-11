@@ -1,0 +1,3149 @@
+[
+  {
+    "seed": 0,
+    "reset_seed": 3757552657,
+    "evaluations": {
+      "calibration": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen": 0.017778119287305577,
+          "learned": 0.013175595034291599
+        },
+        "position_prediction_rmse": {
+          "frozen": 0.00019370728667022631,
+          "learned": 0.00020575532437658179
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 0.0,
+          "requested_squared_nm2_s": 0.0,
+          "actual_absolute_nm_s": 0.0,
+          "actual_squared_nm2_s": 0.0
+        },
+        "saturated_control_steps": 0,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 0,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 0,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 0,
+        "controller_seconds_p95": null,
+        "controller_seconds_total": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": null,
+        "models_after": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "integration_models_before": {},
+        "integration_models_after": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "planner_spec": null
+      },
+      "prediction": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.00500704219700459,
+          "learned_euler_mpc": 0.0007014409924203092,
+          "frozen_trapezoid_mpc": 0.00500704219700459,
+          "learned_trapezoid_mpc": 0.0007014409924203092
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 8.814605795734634e-05,
+          "learned_euler_mpc": 2.1261469579865347e-05,
+          "frozen_trapezoid_mpc": 6.165679726082105e-05,
+          "learned_trapezoid_mpc": 2.1750899318943456e-05
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 0.0,
+          "requested_squared_nm2_s": 0.0,
+          "actual_absolute_nm_s": 0.0,
+          "actual_squared_nm2_s": 0.0
+        },
+        "saturated_control_steps": 0,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 0,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 0,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 0,
+        "controller_seconds_p95": null,
+        "controller_seconds_total": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "models_after": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "planner_spec": null
+      },
+      "frozen_euler_mpc": {
+        "tracking_rmse_rad": 0.022605869716395135,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.018431056935759867,
+          "learned_euler_mpc": 0.01680471685439389,
+          "frozen_trapezoid_mpc": 0.018431056935759867,
+          "learned_trapezoid_mpc": 0.01680471685439389
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.00025045471268636223,
+          "learned_euler_mpc": 0.0003220379874418895,
+          "frozen_trapezoid_mpc": 0.00021033351565580074,
+          "learned_trapezoid_mpc": 0.00018174401938427808
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.6550000000000022,
+          "requested_squared_nm2_s": 0.7262499999999993,
+          "actual_absolute_nm_s": 1.6550000000000022,
+          "actual_squared_nm2_s": 0.7262499999999993
+        },
+        "saturated_control_steps": 104,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.0027892949292436238,
+        "controller_seconds_total": 0.4588134994264692,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "models_after": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09739774391333796,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "target_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "endpoint_euler",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * predicted_next_v",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239"
+          },
+          "integration_fingerprint": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce"
+        }
+      },
+      "learned_euler_mpc": {
+        "tracking_rmse_rad": 0.015867471686381397,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.018119425924086035,
+          "learned_euler_mpc": 0.025674006630296595,
+          "frozen_trapezoid_mpc": 0.018119425924086035,
+          "learned_trapezoid_mpc": 0.025674006630296595
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.0002562947956833897,
+          "learned_euler_mpc": 0.0004997465870782929,
+          "frozen_trapezoid_mpc": 0.0002111392424483797,
+          "learned_trapezoid_mpc": 0.00026344859583450354
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.762500000000001,
+          "requested_squared_nm2_s": 0.8121875,
+          "actual_absolute_nm_s": 1.762500000000001,
+          "actual_squared_nm2_s": 0.8121875
+        },
+        "saturated_control_steps": 130,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.0027693398995324962,
+        "controller_seconds_total": 0.459738798905164,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "models_after": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09739774391333796,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "target_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "endpoint_euler",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * predicted_next_v",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+          },
+          "integration_fingerprint": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5"
+        }
+      },
+      "frozen_trapezoid_mpc": {
+        "tracking_rmse_rad": 0.022210053321152574,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.0184331186818832,
+          "learned_euler_mpc": 0.016884353040017452,
+          "frozen_trapezoid_mpc": 0.0184331186818832,
+          "learned_trapezoid_mpc": 0.016884353040017452
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.0002530502803620762,
+          "learned_euler_mpc": 0.00032630292681227785,
+          "frozen_trapezoid_mpc": 0.0002135960121316214,
+          "learned_trapezoid_mpc": 0.0001854502219533944
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.6600000000000021,
+          "requested_squared_nm2_s": 0.7318749999999993,
+          "actual_absolute_nm_s": 1.6600000000000021,
+          "actual_squared_nm2_s": 0.7318749999999993
+        },
+        "saturated_control_steps": 107,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.0029264449374750254,
+        "controller_seconds_total": 0.47202329989522696,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "models_after": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09739774391333796,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "target_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "trapezoid",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * (current_v + predicted_next_v) / 2",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239"
+          },
+          "integration_fingerprint": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515"
+        }
+      },
+      "learned_trapezoid_mpc": {
+        "tracking_rmse_rad": 0.015869937480996806,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.018467778445979317,
+          "learned_euler_mpc": 0.023452607331474286,
+          "frozen_trapezoid_mpc": 0.018467778445979317,
+          "learned_trapezoid_mpc": 0.023452607331474286
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.0002583146801650192,
+          "learned_euler_mpc": 0.0004540479199634972,
+          "frozen_trapezoid_mpc": 0.0002144855500852414,
+          "learned_trapezoid_mpc": 0.00024298159171968868
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.765000000000001,
+          "requested_squared_nm2_s": 0.8137499999999999,
+          "actual_absolute_nm_s": 1.765000000000001,
+          "actual_squared_nm2_s": 0.8137499999999999
+        },
+        "saturated_control_steps": 130,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.0027637748513370747,
+        "controller_seconds_total": 0.465665799099952,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "models_after": [
+          "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+          "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+          "learned_euler_mpc": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+          "frozen_trapezoid_mpc": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+          "learned_trapezoid_mpc": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09739774391333796,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "target_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "trapezoid",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * (current_v + predicted_next_v) / 2",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+          },
+          "integration_fingerprint": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7"
+        }
+      }
+    },
+    "calibration_updates": 300,
+    "calibration_completed": true,
+    "initial_model": {
+      "qref_rad": 0.09739774391333796,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "sign(u)*max(abs(u)-0.25,0)",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          100.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          100.0
+        ]
+      ],
+      "dtype": "float64",
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+      "parameter_fingerprint": "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+      "update_count": 0,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "learned_model": {
+      "qref_rad": 0.09739774391333796,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "sign(u)*max(abs(u)-0.25,0)",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        0.07646460938039552,
+        -0.042437275282381406,
+        0.034079302611147125,
+        0.050017880802921695,
+        -0.0005166138636789999
+      ],
+      "covariance": [
+        [
+          17.03543990025754,
+          -0.8489904647925139,
+          -0.4959433347795978,
+          -0.6045174096429423,
+          0.0077555214473666555
+        ],
+        [
+          -0.8489904647925139,
+          97.96877856760207,
+          0.07004168214870674,
+          0.0655098714267875,
+          0.10599566627134849
+        ],
+        [
+          -0.4959433347795978,
+          0.07004168214870674,
+          0.40664860217884413,
+          -0.7626024790322273,
+          -0.00017654296738622843
+        ],
+        [
+          -0.6045174096429423,
+          0.0655098714267875,
+          -0.7626024790322273,
+          2.1041260898849288,
+          -0.00023677351251900143
+        ],
+        [
+          0.0077555214473666555,
+          0.10599566627134849,
+          -0.00017654296738622843,
+          -0.00023677351251900143,
+          0.0034523210035353417
+        ]
+      ],
+      "dtype": "float64",
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+      "parameter_fingerprint": "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35",
+      "update_count": 300,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "reference_q": 0.09739774391333796,
+    "direction": -1,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "integration_models": {
+      "frozen_euler_mpc": {
+        "qref_rad": 0.09739774391333796,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "covariance": [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+        "update_count": 0,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "endpoint_euler",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * predicted_next_v",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239"
+        },
+        "integration_fingerprint": "31cac81078fd6840bf172fbf5dded09f8d724809dc3f4b398988db97f277c6ce",
+        "frozen_view": true
+      },
+      "learned_euler_mpc": {
+        "qref_rad": 0.09739774391333796,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          0.07646460938039552,
+          -0.042437275282381406,
+          0.034079302611147125,
+          0.050017880802921695,
+          -0.0005166138636789999
+        ],
+        "covariance": [
+          [
+            17.03543990025754,
+            -0.8489904647925139,
+            -0.4959433347795978,
+            -0.6045174096429423,
+            0.0077555214473666555
+          ],
+          [
+            -0.8489904647925139,
+            97.96877856760207,
+            0.07004168214870674,
+            0.0655098714267875,
+            0.10599566627134849
+          ],
+          [
+            -0.4959433347795978,
+            0.07004168214870674,
+            0.40664860217884413,
+            -0.7626024790322273,
+            -0.00017654296738622843
+          ],
+          [
+            -0.6045174096429423,
+            0.0655098714267875,
+            -0.7626024790322273,
+            2.1041260898849288,
+            -0.00023677351251900143
+          ],
+          [
+            0.0077555214473666555,
+            0.10599566627134849,
+            -0.00017654296738622843,
+            -0.00023677351251900143,
+            0.0034523210035353417
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35",
+        "update_count": 300,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "endpoint_euler",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * predicted_next_v",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        },
+        "integration_fingerprint": "af4de6443d2713ea5443393c35e9fefee6a1fc58e3a5a8f3fe23e7a7fe0c40c5",
+        "frozen_view": true
+      },
+      "frozen_trapezoid_mpc": {
+        "qref_rad": 0.09739774391333796,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "covariance": [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239",
+        "update_count": 0,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "trapezoid",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * (current_v + predicted_next_v) / 2",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "0711c9795c898c894aeea288f1f8a1142d8b48171907f44075101616b53a6239"
+        },
+        "integration_fingerprint": "d381299c474284a20982f5fa68d82c6eb7749d94c10ec38f63da5f6ff73da515",
+        "frozen_view": true
+      },
+      "learned_trapezoid_mpc": {
+        "qref_rad": 0.09739774391333796,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          0.07646460938039552,
+          -0.042437275282381406,
+          0.034079302611147125,
+          0.050017880802921695,
+          -0.0005166138636789999
+        ],
+        "covariance": [
+          [
+            17.03543990025754,
+            -0.8489904647925139,
+            -0.4959433347795978,
+            -0.6045174096429423,
+            0.0077555214473666555
+          ],
+          [
+            -0.8489904647925139,
+            97.96877856760207,
+            0.07004168214870674,
+            0.0655098714267875,
+            0.10599566627134849
+          ],
+          [
+            -0.4959433347795978,
+            0.07004168214870674,
+            0.40664860217884413,
+            -0.7626024790322273,
+            -0.00017654296738622843
+          ],
+          [
+            -0.6045174096429423,
+            0.0655098714267875,
+            -0.7626024790322273,
+            2.1041260898849288,
+            -0.00023677351251900143
+          ],
+          [
+            0.0077555214473666555,
+            0.10599566627134849,
+            -0.00017654296738622843,
+            -0.00023677351251900143,
+            0.0034523210035353417
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35",
+        "update_count": 300,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "trapezoid",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * (current_v + predicted_next_v) / 2",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "eb4c4cf2cf91e538f1b51d4097e1bcf748da54b2133f8fcd168e4f4481834e35"
+        },
+        "integration_fingerprint": "b60e7a35a2991670db987c97224ce923dbbc26e621a6c46c9c60ae28a0f329e7",
+        "frozen_view": true
+      }
+    },
+    "invalid_numeric_fields": []
+  },
+  {
+    "seed": 1,
+    "reset_seed": 1641411168,
+    "evaluations": {
+      "calibration": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen": 0.017823781171733027,
+          "learned": 0.013199289587515197
+        },
+        "position_prediction_rmse": {
+          "frozen": 0.0001937277603813314,
+          "learned": 0.0002058680146694114
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 0.0,
+          "requested_squared_nm2_s": 0.0,
+          "actual_absolute_nm_s": 0.0,
+          "actual_squared_nm2_s": 0.0
+        },
+        "saturated_control_steps": 0,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 0,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 0,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 0,
+        "controller_seconds_p95": null,
+        "controller_seconds_total": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": null,
+        "models_after": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "integration_models_before": {},
+        "integration_models_after": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "planner_spec": null
+      },
+      "prediction": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.004998617306818676,
+          "learned_euler_mpc": 0.0007172640942050455,
+          "frozen_trapezoid_mpc": 0.004998617306818676,
+          "learned_trapezoid_mpc": 0.0007172640942050455
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 8.808438459679552e-05,
+          "learned_euler_mpc": 2.1361846718035208e-05,
+          "frozen_trapezoid_mpc": 6.14969668832049e-05,
+          "learned_trapezoid_mpc": 2.1762886791007708e-05
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 0.0,
+          "requested_squared_nm2_s": 0.0,
+          "actual_absolute_nm_s": 0.0,
+          "actual_squared_nm2_s": 0.0
+        },
+        "saturated_control_steps": 0,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 0,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 0,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 0,
+        "controller_seconds_p95": null,
+        "controller_seconds_total": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "models_after": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "planner_spec": null
+      },
+      "frozen_euler_mpc": {
+        "tracking_rmse_rad": 0.022881256519061886,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.018820041348168497,
+          "learned_euler_mpc": 0.01743605790750527,
+          "frozen_trapezoid_mpc": 0.018820041348168497,
+          "learned_trapezoid_mpc": 0.01743605790750527
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.0002564064395596777,
+          "learned_euler_mpc": 0.00032492379220414193,
+          "frozen_trapezoid_mpc": 0.0002193723536521758,
+          "learned_trapezoid_mpc": 0.0001851507159970759
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.675000000000002,
+          "requested_squared_nm2_s": 0.7412499999999993,
+          "actual_absolute_nm_s": 1.675000000000002,
+          "actual_squared_nm2_s": 0.7412499999999993
+        },
+        "saturated_control_steps": 109,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.0037950848927721373,
+        "controller_seconds_total": 0.5063861024100333,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "models_after": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09382541724034689,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "target_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "endpoint_euler",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * predicted_next_v",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3"
+          },
+          "integration_fingerprint": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8"
+        }
+      },
+      "learned_euler_mpc": {
+        "tracking_rmse_rad": 0.016163819609916627,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.018136645409159075,
+          "learned_euler_mpc": 0.02495732480157631,
+          "frozen_trapezoid_mpc": 0.018136645409159075,
+          "learned_trapezoid_mpc": 0.02495732480157631
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.00026008800791089184,
+          "learned_euler_mpc": 0.0004813402726832614,
+          "frozen_trapezoid_mpc": 0.00021412330713950506,
+          "learned_trapezoid_mpc": 0.0002574731155554961
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.7850000000000013,
+          "requested_squared_nm2_s": 0.8243749999999999,
+          "actual_absolute_nm_s": 1.7850000000000013,
+          "actual_squared_nm2_s": 0.8243749999999999
+        },
+        "saturated_control_steps": 131,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.003770010033622383,
+        "controller_seconds_total": 0.5131204996723682,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "models_after": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09382541724034689,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "target_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "endpoint_euler",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * predicted_next_v",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+          },
+          "integration_fingerprint": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c"
+        }
+      },
+      "frozen_trapezoid_mpc": {
+        "tracking_rmse_rad": 0.022449212666186935,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.01909611863032866,
+          "learned_euler_mpc": 0.01784814556193266,
+          "frozen_trapezoid_mpc": 0.01909611863032866,
+          "learned_trapezoid_mpc": 0.01784814556193266
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.00025752346018343363,
+          "learned_euler_mpc": 0.0003258807629995147,
+          "frozen_trapezoid_mpc": 0.000222692797206533,
+          "learned_trapezoid_mpc": 0.00018488344808172447
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.6825000000000019,
+          "requested_squared_nm2_s": 0.7471874999999993,
+          "actual_absolute_nm_s": 1.6825000000000019,
+          "actual_squared_nm2_s": 0.7471874999999993
+        },
+        "saturated_control_steps": 111,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.002929345169104635,
+        "controller_seconds_total": 0.4682957010809332,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "models_after": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09382541724034689,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "target_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "trapezoid",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * (current_v + predicted_next_v) / 2",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3"
+          },
+          "integration_fingerprint": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3"
+        }
+      },
+      "learned_trapezoid_mpc": {
+        "tracking_rmse_rad": 0.016145321465589915,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.01789013253149872,
+          "learned_euler_mpc": 0.02307391122407549,
+          "frozen_trapezoid_mpc": 0.01789013253149872,
+          "learned_trapezoid_mpc": 0.02307391122407549
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.0002541067542707054,
+          "learned_euler_mpc": 0.0004576196935352935,
+          "frozen_trapezoid_mpc": 0.00020654144405190674,
+          "learned_trapezoid_mpc": 0.0002461682972951602
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.7850000000000013,
+          "requested_squared_nm2_s": 0.8262499999999999,
+          "actual_absolute_nm_s": 1.7850000000000013,
+          "actual_squared_nm2_s": 0.8262499999999999
+        },
+        "saturated_control_steps": 133,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.002773210150189698,
+        "controller_seconds_total": 0.4638137004803866,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "models_after": [
+          "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+          "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+          "learned_euler_mpc": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+          "frozen_trapezoid_mpc": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+          "learned_trapezoid_mpc": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09382541724034689,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "target_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "trapezoid",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * (current_v + predicted_next_v) / 2",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+          },
+          "integration_fingerprint": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2"
+        }
+      }
+    },
+    "calibration_updates": 300,
+    "calibration_completed": true,
+    "initial_model": {
+      "qref_rad": 0.09382541724034689,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "sign(u)*max(abs(u)-0.25,0)",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          100.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          100.0
+        ]
+      ],
+      "dtype": "float64",
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+      "parameter_fingerprint": "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+      "update_count": 0,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "learned_model": {
+      "qref_rad": 0.09382541724034689,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "sign(u)*max(abs(u)-0.25,0)",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        0.07392451195572955,
+        -0.04168344307709555,
+        0.033908103842735626,
+        0.04909962595716712,
+        -0.0005942133503924292
+      ],
+      "covariance": [
+        [
+          17.067967248328806,
+          -0.8314383717248194,
+          -0.49355658669183794,
+          -0.5939816685123265,
+          0.008882019840606525
+        ],
+        [
+          -0.8314383717248194,
+          97.69712443185618,
+          0.07321056681546595,
+          0.0600045465708678,
+          0.12580941427547987
+        ],
+        [
+          -0.49355658669183794,
+          0.07321056681546595,
+          0.4064864928821387,
+          -0.7630259502815113,
+          -0.00019328265040633637
+        ],
+        [
+          -0.5939816685123265,
+          0.0600045465708678,
+          -0.7630259502815113,
+          2.103342497070846,
+          -0.00026893860194186216
+        ],
+        [
+          0.008882019840606525,
+          0.12580941427547987,
+          -0.00019328265040633637,
+          -0.00026893860194186216,
+          0.0035010392707745955
+        ]
+      ],
+      "dtype": "float64",
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+      "parameter_fingerprint": "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1",
+      "update_count": 300,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "reference_q": 0.09382541724034689,
+    "direction": -1,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "integration_models": {
+      "frozen_euler_mpc": {
+        "qref_rad": 0.09382541724034689,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "covariance": [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+        "update_count": 0,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "endpoint_euler",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * predicted_next_v",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3"
+        },
+        "integration_fingerprint": "11fb5668afb6dd650aead392245e5e73d293ddf43754a148302b80a4807303a8",
+        "frozen_view": true
+      },
+      "learned_euler_mpc": {
+        "qref_rad": 0.09382541724034689,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          0.07392451195572955,
+          -0.04168344307709555,
+          0.033908103842735626,
+          0.04909962595716712,
+          -0.0005942133503924292
+        ],
+        "covariance": [
+          [
+            17.067967248328806,
+            -0.8314383717248194,
+            -0.49355658669183794,
+            -0.5939816685123265,
+            0.008882019840606525
+          ],
+          [
+            -0.8314383717248194,
+            97.69712443185618,
+            0.07321056681546595,
+            0.0600045465708678,
+            0.12580941427547987
+          ],
+          [
+            -0.49355658669183794,
+            0.07321056681546595,
+            0.4064864928821387,
+            -0.7630259502815113,
+            -0.00019328265040633637
+          ],
+          [
+            -0.5939816685123265,
+            0.0600045465708678,
+            -0.7630259502815113,
+            2.103342497070846,
+            -0.00026893860194186216
+          ],
+          [
+            0.008882019840606525,
+            0.12580941427547987,
+            -0.00019328265040633637,
+            -0.00026893860194186216,
+            0.0035010392707745955
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1",
+        "update_count": 300,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "endpoint_euler",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * predicted_next_v",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        },
+        "integration_fingerprint": "8d64d8fada3f1410f6637734a07694e97bec7ee848f70134f7f25146b299e63c",
+        "frozen_view": true
+      },
+      "frozen_trapezoid_mpc": {
+        "qref_rad": 0.09382541724034689,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "covariance": [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3",
+        "update_count": 0,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "trapezoid",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * (current_v + predicted_next_v) / 2",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "76e575058bb9cd508fda7e3a10390349938bfe501382e9841606f6a56668a5f3"
+        },
+        "integration_fingerprint": "c7956b421f0d5ec45090d60cf8ce0ac8093f9eb06a2c61f7f71fb1dbcc10a4f3",
+        "frozen_view": true
+      },
+      "learned_trapezoid_mpc": {
+        "qref_rad": 0.09382541724034689,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          0.07392451195572955,
+          -0.04168344307709555,
+          0.033908103842735626,
+          0.04909962595716712,
+          -0.0005942133503924292
+        ],
+        "covariance": [
+          [
+            17.067967248328806,
+            -0.8314383717248194,
+            -0.49355658669183794,
+            -0.5939816685123265,
+            0.008882019840606525
+          ],
+          [
+            -0.8314383717248194,
+            97.69712443185618,
+            0.07321056681546595,
+            0.0600045465708678,
+            0.12580941427547987
+          ],
+          [
+            -0.49355658669183794,
+            0.07321056681546595,
+            0.4064864928821387,
+            -0.7630259502815113,
+            -0.00019328265040633637
+          ],
+          [
+            -0.5939816685123265,
+            0.0600045465708678,
+            -0.7630259502815113,
+            2.103342497070846,
+            -0.00026893860194186216
+          ],
+          [
+            0.008882019840606525,
+            0.12580941427547987,
+            -0.00019328265040633637,
+            -0.00026893860194186216,
+            0.0035010392707745955
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1",
+        "update_count": 300,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "trapezoid",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * (current_v + predicted_next_v) / 2",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "06614826f88f4f279521425bc4f807c7c46a2158b3d218224c01cc7f5abc58e1"
+        },
+        "integration_fingerprint": "5f8c8ce6243fb31c661b9860f36772d1069d44e481e23f589c585d792aacabe2",
+        "frozen_view": true
+      }
+    },
+    "invalid_numeric_fields": []
+  },
+  {
+    "seed": 2,
+    "reset_seed": 2001025171,
+    "evaluations": {
+      "calibration": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen": 0.017743469631772927,
+          "learned": 0.013161989868299208
+        },
+        "position_prediction_rmse": {
+          "frozen": 0.000193752912414739,
+          "learned": 0.00020578417602880057
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 0.0,
+          "requested_squared_nm2_s": 0.0,
+          "actual_absolute_nm_s": 0.0,
+          "actual_squared_nm2_s": 0.0
+        },
+        "saturated_control_steps": 0,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 0,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 0,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 0,
+        "controller_seconds_p95": null,
+        "controller_seconds_total": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": null,
+        "models_after": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "integration_models_before": {},
+        "integration_models_after": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "planner_spec": null
+      },
+      "prediction": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.005013009952737205,
+          "learned_euler_mpc": 0.0006908980692273088,
+          "frozen_trapezoid_mpc": 0.005013009952737205,
+          "learned_trapezoid_mpc": 0.0006908980692273088
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 8.82022152227965e-05,
+          "learned_euler_mpc": 2.1014245156003925e-05,
+          "frozen_trapezoid_mpc": 6.176624727088205e-05,
+          "learned_trapezoid_mpc": 2.1808869437045788e-05
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 0.0,
+          "requested_squared_nm2_s": 0.0,
+          "actual_absolute_nm_s": 0.0,
+          "actual_squared_nm2_s": 0.0
+        },
+        "saturated_control_steps": 0,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 0,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 0,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 0,
+        "controller_seconds_p95": null,
+        "controller_seconds_total": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "models_after": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "planner_spec": null
+      },
+      "frozen_euler_mpc": {
+        "tracking_rmse_rad": 0.022117125277930503,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.017450518894009535,
+          "learned_euler_mpc": 0.016135799287731126,
+          "frozen_trapezoid_mpc": 0.017450518894009535,
+          "learned_trapezoid_mpc": 0.016135799287731126
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.0002425688201206033,
+          "learned_euler_mpc": 0.0003180223201230813,
+          "frozen_trapezoid_mpc": 0.00019844825353638898,
+          "learned_trapezoid_mpc": 0.00017748226746625958
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.6350000000000025,
+          "requested_squared_nm2_s": 0.7106249999999994,
+          "actual_absolute_nm_s": 1.6350000000000025,
+          "actual_squared_nm2_s": 0.7106249999999994
+        },
+        "saturated_control_steps": 98,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.002879925130400806,
+        "controller_seconds_total": 0.4749615998007357,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "models_after": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.10085905132196148,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "target_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "endpoint_euler",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * predicted_next_v",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a"
+          },
+          "integration_fingerprint": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58"
+        }
+      },
+      "learned_euler_mpc": {
+        "tracking_rmse_rad": 0.015612531875056814,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.01776156130375897,
+          "learned_euler_mpc": 0.02581956121905316,
+          "frozen_trapezoid_mpc": 0.01776156130375897,
+          "learned_trapezoid_mpc": 0.02581956121905316
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.00025427338529737653,
+          "learned_euler_mpc": 0.0005115968491217444,
+          "frozen_trapezoid_mpc": 0.0002087492849721017,
+          "learned_trapezoid_mpc": 0.00027218242919522297
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.750000000000001,
+          "requested_squared_nm2_s": 0.8043749999999998,
+          "actual_absolute_nm_s": 1.750000000000001,
+          "actual_squared_nm2_s": 0.8043749999999998
+        },
+        "saturated_control_steps": 128,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.0037751249736174934,
+        "controller_seconds_total": 0.4908934999257326,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "models_after": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.10085905132196148,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "target_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "endpoint_euler",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * predicted_next_v",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+          },
+          "integration_fingerprint": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45"
+        }
+      },
+      "frozen_trapezoid_mpc": {
+        "tracking_rmse_rad": 0.02203634143643131,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.018325153957678152,
+          "learned_euler_mpc": 0.016286273917298567,
+          "frozen_trapezoid_mpc": 0.018325153957678152,
+          "learned_trapezoid_mpc": 0.016286273917298567
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.000249660909205684,
+          "learned_euler_mpc": 0.00031942131187341757,
+          "frozen_trapezoid_mpc": 0.00020956667723647643,
+          "learned_trapezoid_mpc": 0.00018269865850123715
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.6400000000000023,
+          "requested_squared_nm2_s": 0.7168749999999995,
+          "actual_absolute_nm_s": 1.6400000000000023,
+          "actual_squared_nm2_s": 0.7168749999999995
+        },
+        "saturated_control_steps": 102,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.004006344964727758,
+        "controller_seconds_total": 0.528875398915261,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "models_after": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.10085905132196148,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "target_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "trapezoid",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * (current_v + predicted_next_v) / 2",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a"
+          },
+          "integration_fingerprint": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29"
+        }
+      },
+      "learned_trapezoid_mpc": {
+        "tracking_rmse_rad": 0.015603661430763971,
+        "velocity_prediction_rmse": {
+          "frozen_euler_mpc": 0.01860838224688502,
+          "learned_euler_mpc": 0.0240717802581443,
+          "frozen_trapezoid_mpc": 0.01860838224688502,
+          "learned_trapezoid_mpc": 0.0240717802581443
+        },
+        "position_prediction_rmse": {
+          "frozen_euler_mpc": 0.00025979736479575353,
+          "learned_euler_mpc": 0.0004669803586682673,
+          "frozen_trapezoid_mpc": 0.0002161517225387304,
+          "learned_trapezoid_mpc": 0.0002494657359001621
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": 1.750000000000001,
+          "requested_squared_nm2_s": 0.8043749999999998,
+          "actual_absolute_nm_s": 1.750000000000001,
+          "actual_squared_nm2_s": 0.8043749999999998
+        },
+        "saturated_control_steps": 128,
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planner_fallbacks": 0,
+        "mathematical_prediction_calls": 27000,
+        "mathematical_prediction_calls_complete": true,
+        "mathematical_prediction_calls_is_lower_bound": false,
+        "failed_planner_attempts": 0,
+        "metric_control_step_count": 200,
+        "controller_seconds_p95": 0.0028564448468387117,
+        "controller_seconds_total": 0.47010049875825644,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "models_after": [
+          "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+          "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        ],
+        "integration_models_before": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "integration_models_after": {
+          "frozen_euler_mpc": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+          "learned_euler_mpc": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+          "frozen_trapezoid_mpc": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+          "learned_trapezoid_mpc": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        },
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.10085905132196148,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "target_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0,
+          "integration": {
+            "mode": "trapezoid",
+            "dt_seconds": 0.02,
+            "rule": "q + dt * (current_v + predicted_next_v) / 2",
+            "endpoint_velocity_rule_unchanged": true,
+            "dynamics_parameter_fingerprint": "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+          },
+          "integration_fingerprint": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306"
+        }
+      }
+    },
+    "calibration_updates": 300,
+    "calibration_completed": true,
+    "initial_model": {
+      "qref_rad": 0.10085905132196148,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "sign(u)*max(abs(u)-0.25,0)",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          100.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          100.0
+        ]
+      ],
+      "dtype": "float64",
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+      "parameter_fingerprint": "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+      "update_count": 0,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "learned_model": {
+      "qref_rad": 0.10085905132196148,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "sign(u)*max(abs(u)-0.25,0)",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        0.07879351104069977,
+        -0.043730755076894376,
+        0.03411941604055072,
+        0.05056098972646288,
+        -0.00043910170209096095
+      ],
+      "covariance": [
+        [
+          17.016675633312907,
+          -0.8526121639188231,
+          -0.49687179599508596,
+          -0.6115001096656829,
+          0.0066579444126505846
+        ],
+        [
+          -0.8526121639188231,
+          98.17149046347531,
+          0.06593490412983022,
+          0.06815225380455701,
+          0.08550701692534067
+        ],
+        [
+          -0.49687179599508596,
+          0.06593490412983022,
+          0.40671487737684314,
+          -0.7623468885900839,
+          -0.00015850582014084939
+        ],
+        [
+          -0.6115001096656829,
+          0.06815225380455701,
+          -0.7623468885900839,
+          2.1046502873526665,
+          -0.000206439790572185
+        ],
+        [
+          0.0066579444126505846,
+          0.08550701692534067,
+          -0.00015850582014084939,
+          -0.000206439790572185,
+          0.003410918445497461
+        ]
+      ],
+      "dtype": "float64",
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+      "parameter_fingerprint": "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc",
+      "update_count": 300,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "reference_q": 0.10085905132196148,
+    "direction": -1,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "integration_models": {
+      "frozen_euler_mpc": {
+        "qref_rad": 0.10085905132196148,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "covariance": [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+        "update_count": 0,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "endpoint_euler",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * predicted_next_v",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a"
+        },
+        "integration_fingerprint": "ab5466b065cd485d9d20a084b62665e8d83c87adf680ed35291a4c9f120caf58",
+        "frozen_view": true
+      },
+      "learned_euler_mpc": {
+        "qref_rad": 0.10085905132196148,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          0.07879351104069977,
+          -0.043730755076894376,
+          0.03411941604055072,
+          0.05056098972646288,
+          -0.00043910170209096095
+        ],
+        "covariance": [
+          [
+            17.016675633312907,
+            -0.8526121639188231,
+            -0.49687179599508596,
+            -0.6115001096656829,
+            0.0066579444126505846
+          ],
+          [
+            -0.8526121639188231,
+            98.17149046347531,
+            0.06593490412983022,
+            0.06815225380455701,
+            0.08550701692534067
+          ],
+          [
+            -0.49687179599508596,
+            0.06593490412983022,
+            0.40671487737684314,
+            -0.7623468885900839,
+            -0.00015850582014084939
+          ],
+          [
+            -0.6115001096656829,
+            0.06815225380455701,
+            -0.7623468885900839,
+            2.1046502873526665,
+            -0.000206439790572185
+          ],
+          [
+            0.0066579444126505846,
+            0.08550701692534067,
+            -0.00015850582014084939,
+            -0.000206439790572185,
+            0.003410918445497461
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc",
+        "update_count": 300,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "endpoint_euler",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * predicted_next_v",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        },
+        "integration_fingerprint": "d182e37b778b555eb522718a2ef4a1b9e5a79dbb492b34caf8733b2f32e0cd45",
+        "frozen_view": true
+      },
+      "frozen_trapezoid_mpc": {
+        "qref_rad": 0.10085905132196148,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "covariance": [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a",
+        "update_count": 0,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "trapezoid",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * (current_v + predicted_next_v) / 2",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "5d24c606dc7a9ad95dbf3559fdce198f03414d7f2347a03c12f71016be24474a"
+        },
+        "integration_fingerprint": "51c787c3373f6610c9fca1ea457d3e76e91c875f4262b79cd9de060329b42e29",
+        "frozen_view": true
+      },
+      "learned_trapezoid_mpc": {
+        "qref_rad": 0.10085905132196148,
+        "dt_seconds": 0.02,
+        "features": [
+          "v",
+          "q-qref",
+          "requested_torque",
+          "sign(u)*max(abs(u)-0.25,0)",
+          "1"
+        ],
+        "initial_coefficients": [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "coefficients": [
+          0.07879351104069977,
+          -0.043730755076894376,
+          0.03411941604055072,
+          0.05056098972646288,
+          -0.00043910170209096095
+        ],
+        "covariance": [
+          [
+            17.016675633312907,
+            -0.8526121639188231,
+            -0.49687179599508596,
+            -0.6115001096656829,
+            0.0066579444126505846
+          ],
+          [
+            -0.8526121639188231,
+            98.17149046347531,
+            0.06593490412983022,
+            0.06815225380455701,
+            0.08550701692534067
+          ],
+          [
+            -0.49687179599508596,
+            0.06593490412983022,
+            0.40671487737684314,
+            -0.7623468885900839,
+            -0.00015850582014084939
+          ],
+          [
+            -0.6115001096656829,
+            0.06815225380455701,
+            -0.7623468885900839,
+            2.1046502873526665,
+            -0.000206439790572185
+          ],
+          [
+            0.0066579444126505846,
+            0.08550701692534067,
+            -0.00015850582014084939,
+            -0.000206439790572185,
+            0.003410918445497461
+          ]
+        ],
+        "dtype": "float64",
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "hinge_structure_prior": "fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        "parameter_fingerprint": "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc",
+        "update_count": 300,
+        "trainable": false,
+        "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+        "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only",
+        "integration": {
+          "mode": "trapezoid",
+          "dt_seconds": 0.02,
+          "rule": "q + dt * (current_v + predicted_next_v) / 2",
+          "endpoint_velocity_rule_unchanged": true,
+          "dynamics_parameter_fingerprint": "48ea5ba8246430a1c0a1cec8e4b3a68cd2a480f4797eb7fe2832529d25d9f7cc"
+        },
+        "integration_fingerprint": "9b4ee13a7ebee1d8184466820c3412d829af8dc25ce86ebf23fd2d96cca9e306",
+        "frozen_view": true
+      }
+    },
+    "invalid_numeric_fields": []
+  }
+]

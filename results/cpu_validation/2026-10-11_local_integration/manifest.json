@@ -1,0 +1,38 @@
+{
+  "purpose": "Exact C2-A raw/audit/review bytes; original paths and incomplete first-review provenance retained",
+  "sha256": {
+    "audit.json": "f45e6f1937dc87fc9da6b858a4131b38215a76212919675347e107cce1ba9925",
+    "audit_source.py": "8bf536434e9f79c122c3809b81d1457f35da7d3cce694ad40455d23dc91c4c84",
+    "c2a_review_extract_statistics.py": "717686d4b7b077020c18827083f81faf38098b2c7d346bab54f92bc88ab18865",
+    "c2a_review_recompute_detailed.json": "28f874e2b228d180172d2bee8c423ebb85ed04eea4afb440a528a01e963d1158",
+    "c2a_review_recompute_detailed.py": "f12043c542411098dea4c0fdff1dbb8a99ec2675e5b19ea1f6e91110134f551f",
+    "c2a_review_recompute_initial.py": "73484bc4b3ab27aacd6b40f7d353b03bf6b798db78e6dc8ef67303fb28100468",
+    "c2a_review_recompute_initial_summary.json": "c18f4d645d03cb2be44b28fa8ccf9678fe5c0ed6fa09fbc610b682b8aba1d3b7",
+    "development/episodes.json": "d65204a4aba828456e4b02c0f69940a7ddbb099db90577ab2dd778e4b99d9e93",
+    "development/manifest.json": "c724621a482094db4b3c45bd7bc241ac915faf4d41f8985c652eb2a268b77712",
+    "development/metadata.json": "3a48345ebe5965a86fc279dd5f96d3c4eb8fead67810d3e71e3cf44e4272f3da",
+    "development/seed_results.json": "e713f3a3ecc42848c3e268e26015303efabdb5c998526e76f8e7d1e93d33905a",
+    "development/source_snapshot.zip": "2a21e1c3e88418b0bef32a54843bc5d3e9cef721aaa9b7b921eeb825f33c69e9",
+    "development/trace.jsonl.gz": "c2cd8530a48ff15b327af09a967fb7131b964ca3c00e39c182ccf673e32cbec9",
+    "README.md": "a753c8ed9ed91e0a4dd1b6289b30ad4ddf400842e54b21bba6541d03d7ce46bd",
+    "result_review.md": "32a6fd8162a2b8e670307addecaeac435813065a3ca36352a85af551efc6ddc0"
+  },
+  "nested_manifests": {
+    "development/manifest.json": "c724621a482094db4b3c45bd7bc241ac915faf4d41f8985c652eb2a268b77712"
+  },
+  "formal_physical_cumulative": {
+    "control_calls": 188450,
+    "physics_substeps": 1884500,
+    "rls_update_calls": 3600
+  },
+  "review_runs": 2,
+  "review_wall_seconds": [
+    2.1527191000059247,
+    2.2457508998923004
+  ],
+  "review_cpu_seconds": [
+    2.15625,
+    2.21875
+  ],
+  "statistics_extraction_time": "unknown"
+}

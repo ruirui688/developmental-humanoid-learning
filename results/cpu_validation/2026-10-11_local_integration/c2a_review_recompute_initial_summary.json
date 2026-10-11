@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Preserved facts from the first inline independent C2-A review; not regenerated original per-comparison records",
+  "source_script": "external/c2a_review_recompute_initial.py",
+  "source_capture": "Python program text preserved from the executed tool command after that run; the original pipe transport bytes were not separately archived",
+  "full_stdout_preserved": false,
+  "original_per_comparison_records_preserved": false,
+  "numeric_comparisons": 1440,
+  "failed_comparisons": 0,
+  "maximum_difference": 9.992007221626409e-16,
+  "wall_seconds": 2.1527191000059247,
+  "cpu_seconds": 2.15625,
+  "timing_scope": "Initial inline script after imports through source computation and final print assembly; excludes Python startup/imports",
+  "physical_simulation_calls": 0,
+  "real_parameter_fitting_calls": 0,
+  "input_hashes": {
+    "metadata.json": "3a48345ebe5965a86fc279dd5f96d3c4eb8fead67810d3e71e3cf44e4272f3da",
+    "seed_results.json": "e713f3a3ecc42848c3e268e26015303efabdb5c998526e76f8e7d1e93d33905a",
+    "episodes.json": "d65204a4aba828456e4b02c0f69940a7ddbb099db90577ab2dd778e4b99d9e93",
+    "trace.jsonl.gz": "c2cd8530a48ff15b327af09a967fb7131b964ca3c00e39c182ccf673e32cbec9",
+    "manifest.json": "c724621a482094db4b3c45bd7bc241ac915faf4d41f8985c652eb2a268b77712"
+  },
+  "audit_sha256": "f45e6f1937dc87fc9da6b858a4131b38215a76212919675347e107cce1ba9925",
+  "following_read_only_statistics_extraction_wall_seconds": null,
+  "following_read_only_statistics_extraction_cpu_seconds": null
+}
