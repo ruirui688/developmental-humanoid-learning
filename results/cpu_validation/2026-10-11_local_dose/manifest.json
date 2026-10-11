@@ -1,0 +1,46 @@
+{
+  "purpose": "Exact C2-B collection/audit/review bytes; original paths and timing scopes retained",
+  "sha256": {
+    "audit.json": "d6cd7583ce0ddcc6dc73c457eb2980a537d581f0b88ec594f088f88d0743200d",
+    "audit_source.py": "51266db803579231ce084d2ad2b159c1a1e84c9feb04a4818976be02eacb5588",
+    "development/episodes.json": "6e3f33b916df6a8d9850c4ed3d80ebb6dffc3d94f40b276c9969bc670ca801e2",
+    "development/manifest.json": "8b9021fa6250e211f37fa15e966b8cce3bb550a6000a473ec3c06a988ca38772",
+    "development/metadata.json": "7c8e08e617e796a5a84b031576e1cef13e31de629a29c154a8fd3cc4f04131bc",
+    "development/seed_results.json": "a2c0c4f5630f3125ac36f211452d2f08c6dc92293c4f0cc3c73216ae02e06ad0",
+    "development/source_snapshot.zip": "379ae07186d8d69d39aae2f518116ab70cd0e2bc2f5565e1cf03c783f49d37e9",
+    "development/trace.jsonl.gz": "ba2fe72b2b49e514ab7d5b5f47e3027bc43a88c619c4102577d831ef08932a0a",
+    "README.md": "a1412d1929c88e690ea743b3b56a7a55e8219fd0967be7d9a3718422131d13f1",
+    "result_review.md": "d95d0eac100cd0cef522e79f3f401ecd710afda163505c3d1d649ebce39226ac",
+    "summary.json": "645ececa56826606763cefb8e61bf1c93de24e4fff06ddd096c074ca3927e167",
+    "summary_execution.json": "282b32929418c0febe4137f914d259c5706ffe9e0b5b2f47eafc4047b644dff7",
+    "summary_source.py": "a6cc0adfd94b9adb5830ee8a024a25742cdd0417508c622ab7d8fe39a990a074",
+    "summary_stdout.txt": "fc9e70db8d13a115a516c8b506e443100c59f2c541d94313160d534d465a8a73",
+    "table_extraction_source.py": "26adf279299b6ad4c9a2b386af075325eaa40b244b36183b6e251942ba6c8df2",
+    "table_extraction_stdout.txt": "aa698e80b4ea7128ee6e3d323487555db38dfb735b270499ba384001d48c98e6",
+    "tables.json": "4e1d783c8f5ef9a28e322bb82ab2b02f77a8584a66ed701834057c3470670e88"
+  },
+  "nested_manifests": {
+    "development/manifest.json": "8b9021fa6250e211f37fa15e966b8cce3bb550a6000a473ec3c06a988ca38772"
+  },
+  "formal_physical_cumulative": {
+    "control_calls": 196550,
+    "physics_substeps": 1965500,
+    "rls_update_calls": 7200
+  },
+  "summary_runs": 1,
+  "summary_failed_runs": 0,
+  "summary_internal_execution": {
+    "timing_scope": "summarize entry through metrics, source-byte capture, unchanged-input validation and report assembly; excludes imports and final serialization/writing",
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "third_party_dependencies": [],
+    "physical_simulation_calls": 0,
+    "real_parameter_fitting_calls": 0,
+    "real_parameter_updates": 0,
+    "new_environment_interactions": 0,
+    "wall_seconds": 0.12982930010184646,
+    "cpu_seconds": 0.046875
+  },
+  "table_extraction_wall_seconds": 0.02331989980302751,
+  "table_extraction_cpu_seconds": 0.015625
+}

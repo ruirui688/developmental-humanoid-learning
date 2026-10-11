@@ -1,0 +1,12 @@
+{
+  "source_script": "external/c2b_review_summary_executed_01.py",
+  "source_sha256": "a6cc0adfd94b9adb5830ee8a024a25742cdd0417508c622ab7d8fe39a990a074",
+  "output": "external/local_dose_20261011_development_summary.json",
+  "stdout_stderr": "external/local_dose_20261011_summary_01_stdout.txt",
+  "exit_code": 0,
+  "external_wrapper_wall_seconds": 0.3140223,
+  "timing_scope": "PowerShell invocation through saved stdout/stderr, including Python startup/imports/JSON writing; internal CPU and wall are retained in successful summary",
+  "new_environment_interactions": 0,
+  "physical_simulation_calls": 0,
+  "real_parameter_updates": 0
+}
