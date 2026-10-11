@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "kind": "first_fixed_pd_tail_control_development_evidence",
+  "source_commit": "91dcf6c111a87427c8f3fdd8b959d4792b1bb5a2",
+  "files": {
+    "raw/episodes.json": {
+      "bytes": 19221,
+      "sha256": "a87c2fc48389f590782197538a33cbd3e48fb278bbdfb82d8056eaff0b4fca91",
+      "original_path": "external/guard_pd_tail_control_20261011_first/episodes.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 785,
+      "sha256": "7eff4abb7cbe9c42a66d59615939a63a491c56fe87b5271d4ff4836d7b220a4c",
+      "original_path": "external/guard_pd_tail_control_20261011_first/manifest.json"
+    },
+    "raw/metadata.json": {
+      "bytes": 18178,
+      "sha256": "8699b496287d80bdfb418e24625636c6b588e580869f40b17bcc345baab79f0a",
+      "original_path": "external/guard_pd_tail_control_20261011_first/metadata.json"
+    },
+    "raw/seed_results.json": {
+      "bytes": 633469,
+      "sha256": "9c1fc32a8248761836fbc43a32f63fdb753ee835a8d5012922052d39e968074a",
+      "original_path": "external/guard_pd_tail_control_20261011_first/seed_results.json"
+    },
+    "raw/source_snapshot.zip": {
+      "bytes": 1006028,
+      "sha256": "d473ee5a04d464eaeecf838567ed37940ac13a59349d3e3ba8de1371f31e7bc9",
+      "original_path": "external/guard_pd_tail_control_20261011_first/source_snapshot.zip"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 3702557,
+      "sha256": "d7318127751270401198a5e2764a5b70faea2e4d881223fe38f20200828b526d",
+      "original_path": "external/guard_pd_tail_control_20261011_first/trace.jsonl.gz"
+    },
+    "collection_stdout.txt": {
+      "bytes": 18145,
+      "sha256": "c73508f863b73ad68b0d195fb3787678db3279d67218be761228f030756811c0",
+      "original_path": "external/guard_pd_tail_control_20261011_first_stdout.txt"
+    },
+    "collection_execution.json": {
+      "bytes": 797,
+      "sha256": "99416a192cb657d5acc9d8b6b3183da2bc8a8b19ef28de80dee8f694262d2bbe",
+      "original_path": "external/guard_pd_tail_control_20261011_first_execution.json"
+    },
+    "runtime_source_freeze.json": {
+      "bytes": 8001,
+      "sha256": "64822bc9f303d1cdd1833b17f041a7055200680f7b139a99c2f72efd787a5341",
+      "original_path": "external/guard_pd_tail_control_20261011_first_runtime_source_freeze.json"
+    },
+    "first_audit.json": {
+      "bytes": 220424,
+      "sha256": "ad98a41ea342808521945fac998a864eff9709d1593fbb3c3c459ce2d48d60bc",
+      "original_path": "external/guard_pd_tail_control_20261011_first_audit.json"
+    },
+    "first_audit_stdout.txt": {
+      "bytes": 133,
+      "sha256": "0485a4c0ac819d050a2f6effe0f94ad8e41f144f58216d485f8a42335d844bd9",
+      "original_path": "external/guard_pd_tail_control_20261011_first_audit_stdout.txt"
+    },
+    "first_audit_execution.json": {
+      "bytes": 1946,
+      "sha256": "ba38c320e346d6a5df9759d9a9183a92aba8b6e1568614fe1183c3187c78bf78",
+      "original_path": "external/guard_pd_tail_control_20261011_first_audit_execution.json"
+    },
+    "summary_once/summary.json": {
+      "bytes": 200484,
+      "sha256": "72346f34f9b782351a68caeb255a559a6320b9d67f2527a7a969719933d50822",
+      "original_path": "external/guard_pd_tail_control_20261011_summary_01/summary.json"
+    },
+    "first_audit_reservation/source_snapshot/external/c4_g_summary_tools_staging/run_guard_pd_tail_control_first_audit_once.py": {
+      "bytes": 4981,
+      "sha256": "d94e927108e53dc037209cda35ae4264f4572b9d32d90dcc5d2be6cd49019866",
+      "original_path": "external/guard_pd_tail_control_20261011_first_audit_reservation/source_snapshot/external/c4_g_summary_tools_staging/run_guard_pd_tail_control_first_audit_once.py"
+    },
+    "first_audit_reservation/source_snapshot/scripts/audit_guard_pd_tail_control.py": {
+      "bytes": 76375,
+      "sha256": "9982de8939f2da8fb6d814127b6074215569e278f95ddbfe10edf1717a5efdb9",
+      "original_path": "external/guard_pd_tail_control_20261011_first_audit_reservation/source_snapshot/scripts/audit_guard_pd_tail_control.py"
+    },
+    "tools/run_pd_tail_control_once.py": {
+      "bytes": 3907,
+      "sha256": "1bbcb4bd8d1dbb15c86c729a6d0c0e576e00c2673ac0a3604396b646de92775e",
+      "original_path": "external/c4_g_first_wrapper_staging/run_pd_tail_control_once.py"
+    },
+    "tools/run_first_audit_once.py": {
+      "bytes": 4981,
+      "sha256": "d94e927108e53dc037209cda35ae4264f4572b9d32d90dcc5d2be6cd49019866",
+      "original_path": "external/c4_g_summary_tools_staging/run_guard_pd_tail_control_first_audit_once.py"
+    },
+    "tools/summarize_saved_once.py": {
+      "bytes": 7193,
+      "sha256": "90311e2ea5b431bbf319c3c7579a62c7d07b6581d41a52ed4530804cd3d7aa14",
+      "original_path": "external/c4_g_summary_tools_staging/summarize_guard_pd_tail_control_saved_once.py"
+    },
+    "tools/project_saved_summary_once.py": {
+      "bytes": 1810,
+      "sha256": "afa2287e0812848742f01ffdc9c5e3cc05215614945d24af62a90528271c9eb8",
+      "original_path": "external/project_g_saved_summary_once.py"
+    },
+    "root_records/saved_summary_projection.json": {
+      "bytes": 10279,
+      "sha256": "00e9bb9805c7daa00d5535edf07d58666a5111ef26dc362dddd7a0b94d21eeb3",
+      "original_path": "external/c4_g_report_projection_01.json"
+    },
+    "figure/g_active_steps_by_method_seed.png": {
+      "bytes": 107178,
+      "sha256": "6fb5ece3d31d96c3a10c79c1372eafc6baab8b79fddaac63620c86e8c9b38990",
+      "original_path": "external/c4_g_result_figure_staging/g_active_steps_by_method_seed.png"
+    },
+    "figure/plot_g_active_completion_once.py": {
+      "bytes": 6042,
+      "sha256": "72bbae225446c80d202412010c2b0d66c59d1d6ebd2f7e3cb19bdf2df0956713",
+      "original_path": "external/c4_g_result_figure_staging/plot_g_active_completion_once.py"
+    },
+    "figure/run.json": {
+      "bytes": 2102,
+      "sha256": "550897611fe7b3d9b182e0b2ef090819e45974f5dcf77bbd30d3d75e86692202",
+      "original_path": "external/c4_g_result_figure_staging/run.json"
+    },
+    "tools/archive_once.py": {
+      "bytes": 4061,
+      "sha256": "0ed5ae42415ca9fa7d710141997af8f0c23cdca3929b92b6bbf18c279c3c30ce",
+      "original_path": "external/archive_guard_pd_tail_control_once.py"
+    }
+  },
+  "payload_count": 24,
+  "payload_bytes": 6059077,
+  "checks": 24,
+  "failed": 0,
+  "outcomes": {
+    "completed_trials": 8,
+    "terminated_trials": 4,
+    "exception_trials": 0,
+    "blocked_trials": 0
+  },
+  "scientific_gates": {
+    "control_hypothesis": {
+      "evaluated": false,
+      "passed": false,
+      "baseline": "cold11",
+      "candidate": "learned_sparse11",
+      "prerequisite_passed": true,
+      "rows": [
+        {
+          "seed": 0,
+          "eligible": false,
+          "baseline_tracking": 0.024761419456024253,
+          "candidate_tracking": 0.010286181154903106,
+          "baseline_axis_tracking": [
+            0.028167345440097795,
+            0.020805202181487077
+          ],
+          "candidate_axis_tracking": [
+            0.011274075387647593,
+            0.009192729173461287
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 0.1065,
+              "candidate_joint": 1.26
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 0.0523125,
+              "candidate_joint": 0.49062499999999987
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 1,
+          "eligible": false,
+          "baseline_tracking": 0.024820192681792797,
+          "candidate_tracking": 0.01042026243628431,
+          "baseline_axis_tracking": [
+            0.028221531845658062,
+            0.02087172896065751
+          ],
+          "candidate_axis_tracking": [
+            0.012054995102775514,
+            0.00847589709435727
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 0.1065,
+              "candidate_joint": 2.407499999999996
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 0.0523125,
+              "candidate_joint": 0.9103124999999983
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 2,
+          "eligible": false,
+          "baseline_tracking": 0.04849428481427178,
+          "candidate_tracking": 0.011303159921944363,
+          "baseline_axis_tracking": [
+            0.04487700115641781,
+            0.05185986971158235
+          ],
+          "candidate_axis_tracking": [
+            0.012860483917905695,
+            0.00949372433976191
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 1.5005000000000006,
+              "candidate_joint": 1.2672499999999993
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 0.7374375000000004,
+              "candidate_joint": 0.48965624999999985
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        }
+      ],
+      "baseline_raw_mean_joint_rmse": null,
+      "candidate_raw_mean_joint_rmse": null,
+      "joint_mean_improvement": null,
+      "joint_improvement_min": 0.2,
+      "axes": [
+        {
+          "axis": 0,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": true,
+          "threshold_passed": false
+        },
+        {
+          "axis": 1,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": true,
+          "threshold_passed": false
+        }
+      ],
+      "efforts": {
+        "actual_absolute_nm_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        },
+        "actual_squared_nm2_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        }
+      },
+      "worst_seed_joint_improvement": null,
+      "complete_control_only": true,
+      "aggregation": "arithmetic means of per-seed raw joint/axis metrics; never pooled endpoints",
+      "scientific_validation": false,
+      "validated_pass": false
+    },
+    "pd_reference": {
+      "evaluated": false,
+      "passed": false,
+      "baseline": "PDselected",
+      "candidate": "learned_sparse11",
+      "prerequisite_passed": false,
+      "rows": [
+        {
+          "seed": 0,
+          "eligible": false,
+          "baseline_tracking": 0.010401445519984794,
+          "candidate_tracking": 0.010286181154903106,
+          "baseline_axis_tracking": [
+            0.008128902572046175,
+            0.012259734123732224
+          ],
+          "candidate_axis_tracking": [
+            0.011274075387647593,
+            0.009192729173461287
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 2.7533073985498238,
+              "candidate_joint": 1.26
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 1.2432903057769191,
+              "candidate_joint": 0.49062499999999987
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 1,
+          "eligible": true,
+          "baseline_tracking": 0.010644472251318818,
+          "candidate_tracking": 0.01042026243628431,
+          "baseline_axis_tracking": [
+            0.008684126053912361,
+            0.0122961593067898
+          ],
+          "candidate_axis_tracking": [
+            0.012054995102775514,
+            0.00847589709435727
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 2.7340117353316575,
+              "candidate_joint": 2.407499999999996
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 1.2200891572487693,
+              "candidate_joint": 0.9103124999999983
+            }
+          },
+          "joint_order_passed": true,
+          "axis_order_passed": [
+            false,
+            true
+          ]
+        },
+        {
+          "seed": 2,
+          "eligible": false,
+          "baseline_tracking": 0.010935465170751784,
+          "candidate_tracking": 0.011303159921944363,
+          "baseline_axis_tracking": [
+            0.008222506547158078,
+            0.013098060279422796
+          ],
+          "candidate_axis_tracking": [
+            0.012860483917905695,
+            0.00949372433976191
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 2.681743894893044,
+              "candidate_joint": 1.2672499999999993
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 1.1938812044610247,
+              "candidate_joint": 0.48965624999999985
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        }
+      ],
+      "baseline_raw_mean_joint_rmse": null,
+      "candidate_raw_mean_joint_rmse": null,
+      "joint_mean_improvement": null,
+      "joint_improvement_min": 0.05,
+      "axes": [
+        {
+          "axis": 0,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": false,
+          "threshold_passed": null
+        },
+        {
+          "axis": 1,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": false,
+          "threshold_passed": null
+        }
+      ],
+      "efforts": {
+        "actual_absolute_nm_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        },
+        "actual_squared_nm2_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        }
+      },
+      "worst_seed_joint_improvement": null,
+      "complete_control_only": true,
+      "aggregation": "arithmetic means of per-seed raw joint/axis metrics; never pooled endpoints",
+      "scientific_validation": false,
+      "validated_pass": false
+    },
+    "matrix_complete": false,
+    "c4_scientific_validation": {
+      "evaluated": false,
+      "passed": false,
+      "reason": "D selected sparse11 failed the unchanged independent 20-percent prediction condition; G is a development control subhypothesis"
+    }
+  },
+  "c4_scientifically_validated": false,
+  "preparation_archive": "results/cpu_validation/2026-10-11_guard_pd_tail_preparation/manifest.json",
+  "execution": {
+    "explicit_binary_opens": 49,
+    "binary_bytes": 12318638,
+    "wall_seconds": 0.3807689999230206,
+    "cpu_seconds": 0.046875,
+    "scope": "byte copying/equality and one saved summary read through manifest assembly; excludes final write",
+    "new_physics_predictions_updates": 0,
+    "audit_summary_reexecutions": 0
+  }
+}

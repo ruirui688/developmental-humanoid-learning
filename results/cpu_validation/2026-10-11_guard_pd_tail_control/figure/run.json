@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T12:29:42.685856+00:00",
+  "input": {
+    "path": "external/c4_g_report_projection_01.json",
+    "sha256": "00e9bb9805c7daa00d5535edf07d58666a5111ef26dc362dddd7a0b94d21eeb3",
+    "bytes": 10279
+  },
+  "plot_source": {
+    "path": "external/c4_g_result_figure_staging/plot_g_active_completion_once.py",
+    "sha256": "72bbae225446c80d202412010c2b0d66c59d1d6ebd2f7e3cb19bdf2df0956713",
+    "bytes": 6042
+  },
+  "figure": {
+    "path": "external/c4_g_result_figure_staging/g_active_steps_by_method_seed.png",
+    "sha256": "6fb5ece3d31d96c3a10c79c1372eafc6baab8b79fddaac63620c86e8c9b38990",
+    "bytes": 107178,
+    "dpi": 190,
+    "figsize_inches": [
+      13.3,
+      4.1
+    ]
+  },
+  "source_commit": "91dcf6c111a87427c8f3fdd8b959d4792b1bb5a2",
+  "summary_sha256": "72346f34f9b782351a68caeb255a559a6320b9d67f2527a7a969719933d50822",
+  "numeric_fields_used": [
+    "rows.kind",
+    "rows.seed",
+    "rows.status",
+    "rows.active_steps"
+  ],
+  "displayed_methods": [
+    "cold11",
+    "learned_sparse11",
+    "PDselected",
+    "zero"
+  ],
+  "displayed_seeds": [
+    0,
+    1,
+    2
+  ],
+  "planned_active_steps_per_trial": 200,
+  "preparation_input_read_bytes": 10279,
+  "render_input_read_bytes": 10279,
+  "render_source_read_bytes": 6042,
+  "output_hash_read_bytes": 107178,
+  "wall_seconds": 0.23172579985111952,
+  "cpu_seconds": 0.171875,
+  "timing_scope": "input/source reads through single render/save and output hashing; excludes imports and final record write",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "matplotlib": "3.10.6",
+  "raw_audit_E_F_reads": 0,
+  "model_calls": 0,
+  "physics_steps": 0,
+  "updates": 0,
+  "new_improvement_statistics": 0,
+  "partial_RMSE_rankings": 0,
+  "tests": 0,
+  "scope": "Only saved active step counts and status are plotted; plot geometry computation is nonzero. Research stops are failures, not interaction efficiency; development only."
+}

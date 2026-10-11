@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "suite": "pd_tail_control_development",
+  "created_at_utc": "2026-10-11T12:24:55.224122+00:00",
+  "source_commit": "91dcf6c111a87427c8f3fdd8b959d4792b1bb5a2",
+  "expected_source_commit": "91dcf6c111a87427c8f3fdd8b959d4792b1bb5a2",
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "scripts/audit_guard_pd_tail_control.py",
+    "--input",
+    "external/guard_pd_tail_control_20261011_first",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\guard_pd_tail_control_20261011_first_audit.json"
+  ],
+  "exit_code": 0,
+  "wrapper_exception": null,
+  "audit_started": true,
+  "wrapper_wall_seconds": 59.11301279999316,
+  "wrapper_cpu_seconds_excluding_child": 0.015625,
+  "source_snapshot_identity": [
+    {
+      "path": "external/c4_g_summary_tools_staging/run_guard_pd_tail_control_first_audit_once.py",
+      "sha256": "d94e927108e53dc037209cda35ae4264f4572b9d32d90dcc5d2be6cd49019866",
+      "bytes": 4981
+    },
+    {
+      "path": "scripts/audit_guard_pd_tail_control.py",
+      "sha256": "9982de8939f2da8fb6d814127b6074215569e278f95ddbfe10edf1717a5efdb9",
+      "bytes": 76375
+    }
+  ],
+  "first_audit_output_identity": {
+    "path": "external/guard_pd_tail_control_20261011_first_audit.json",
+    "sha256": "ad98a41ea342808521945fac998a864eff9709d1593fbb3c3c459ce2d48d60bc",
+    "bytes": 220424
+  },
+  "explicit_wrapper_source_read_bytes": 81356,
+  "explicit_wrapper_audit_output_read_bytes": 220424,
+  "read_scope": "source hash/copy and one saved first audit output hash; subprocess audit has its own separate read/math accounting",
+  "wall_scope": "exclusive reservation/preflight/source copy through first audit completion and output hashing; excludes execution JSON write",
+  "repeated": false,
+  "new_physics": 0,
+  "new_model_updates": 0,
+  "old_audit_reexecutions": 0,
+  "reservation": "external/guard_pd_tail_control_20261011_first_audit_reservation"
+}

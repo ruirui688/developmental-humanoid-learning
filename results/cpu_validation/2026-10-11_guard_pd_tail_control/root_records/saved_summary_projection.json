@@ -1,0 +1,359 @@
+{
+  "source_commit": "91dcf6c111a87427c8f3fdd8b959d4792b1bb5a2",
+  "summary_sha256": "72346f34f9b782351a68caeb255a559a6320b9d67f2527a7a969719933d50822",
+  "rows": [
+    {
+      "seed": 0,
+      "kind": "cold11",
+      "status": "terminated",
+      "eligible": false,
+      "active_steps": 11,
+      "ranking_joint_rmse_rad": null,
+      "complete_score_endpoints": 11,
+      "planning_fallbacks": 3,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.08932438531394973,
+          0.00840991668923818
+        ],
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "velocity_rad_s": [
+          0.4622060196065265,
+          -1.004179961944461
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 110
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "status": "terminated",
+      "eligible": false,
+      "active_steps": 102,
+      "ranking_joint_rmse_rad": null,
+      "complete_score_endpoints": 102,
+      "planning_fallbacks": 0,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.039128268373145376,
+          0.07652048771409022
+        ],
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "velocity_rad_s": [
+          -0.5312737525065448,
+          1.0709472021858948
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 201
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "PDselected",
+      "status": "completed",
+      "eligible": true,
+      "active_steps": 200,
+      "ranking_joint_rmse_rad": 0.010401445519984794,
+      "complete_score_endpoints": 200,
+      "planning_fallbacks": 0,
+      "study_abort": null
+    },
+    {
+      "seed": 0,
+      "kind": "zero",
+      "status": "completed",
+      "eligible": true,
+      "active_steps": 200,
+      "ranking_joint_rmse_rad": 0.06326975771413691,
+      "complete_score_endpoints": 200,
+      "planning_fallbacks": 0,
+      "study_abort": null
+    },
+    {
+      "seed": 1,
+      "kind": "cold11",
+      "status": "terminated",
+      "eligible": false,
+      "active_steps": 11,
+      "ranking_joint_rmse_rad": null,
+      "complete_score_endpoints": 11,
+      "planning_fallbacks": 3,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.08588173345597243,
+          0.00821076255997568
+        ],
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "velocity_rad_s": [
+          0.4625010270847489,
+          -1.0053665611254226
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 110
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "status": "completed",
+      "eligible": true,
+      "active_steps": 200,
+      "ranking_joint_rmse_rad": 0.01042026243628431,
+      "complete_score_endpoints": 200,
+      "planning_fallbacks": 0,
+      "study_abort": null
+    },
+    {
+      "seed": 1,
+      "kind": "PDselected",
+      "status": "completed",
+      "eligible": true,
+      "active_steps": 200,
+      "ranking_joint_rmse_rad": 0.010644472251318818,
+      "complete_score_endpoints": 200,
+      "planning_fallbacks": 0,
+      "study_abort": null
+    },
+    {
+      "seed": 1,
+      "kind": "zero",
+      "status": "completed",
+      "eligible": true,
+      "active_steps": 200,
+      "ranking_joint_rmse_rad": 0.0631996451938821,
+      "complete_score_endpoints": 200,
+      "planning_fallbacks": 0,
+      "study_abort": null
+    },
+    {
+      "seed": 2,
+      "kind": "cold11",
+      "status": "completed",
+      "eligible": true,
+      "active_steps": 200,
+      "ranking_joint_rmse_rad": 0.04849428481427178,
+      "complete_score_endpoints": 200,
+      "planning_fallbacks": 106,
+      "study_abort": null
+    },
+    {
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "status": "terminated",
+      "eligible": false,
+      "active_steps": 104,
+      "ranking_joint_rmse_rad": null,
+      "complete_score_endpoints": 104,
+      "planning_fallbacks": 0,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.04039995412886453,
+          0.07969534711152101
+        ],
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "velocity_rad_s": [
+          -0.5185315218311365,
+          1.0654337200294224
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 203
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "PDselected",
+      "status": "completed",
+      "eligible": true,
+      "active_steps": 200,
+      "ranking_joint_rmse_rad": 0.010935465170751784,
+      "complete_score_endpoints": 200,
+      "planning_fallbacks": 0,
+      "study_abort": null
+    },
+    {
+      "seed": 2,
+      "kind": "zero",
+      "status": "completed",
+      "eligible": true,
+      "active_steps": 200,
+      "ranking_joint_rmse_rad": 0.06333763749375929,
+      "complete_score_endpoints": 200,
+      "planning_fallbacks": 0,
+      "study_abort": null
+    }
+  ],
+  "outcomes": {
+    "completed_trials": 8,
+    "terminated_trials": 4,
+    "exception_trials": 0,
+    "blocked_trials": 0
+  },
+  "budget": {
+    "control_calls_attempted": 3028,
+    "control_steps": 3028,
+    "physics_steps": 30280,
+    "model_updates": 0,
+    "policy_parameter_updates": 0,
+    "gain_updates": 0,
+    "gate_updates": 0
+  },
+  "gates": {
+    "control_hypothesis": {
+      "evaluated": false,
+      "passed": false
+    },
+    "pd_reference": {
+      "evaluated": false,
+      "passed": false
+    },
+    "matrix_complete": false,
+    "c4_scientific_validation": {
+      "evaluated": false,
+      "passed": false
+    }
+  },
+  "prediction_fees": {
+    "diagnostic_pair_attempts": 3656,
+    "diagnostic_scalar_attempts": 7312,
+    "planning_pair_attempts": 695835,
+    "planning_scalar_attempts": 1391670,
+    "diagnostic_input_projection_pair_calls": 3656
+  },
+  "tail_fees": {
+    "known_first_candidate_evaluations": 50868,
+    "known_tail_vector_evaluations": 644967,
+    "counts_complete": true,
+    "counts_is_lower_bound": false,
+    "unknown_failed_planner_calls": 0
+  },
+  "collector_seconds": {
+    "wall_seconds": 129.37492000008933,
+    "cpu_seconds": 124.765625
+  },
+  "audit_execution": {
+    "wall_seconds": 58.67106240009889,
+    "cpu_seconds": 55.390625,
+    "timing_scope": "entry through report assembly; excludes imports and final JSON writing",
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "source_git_verification_enabled": true,
+    "independent_math_cost": {
+      "lag_pair_prediction_attempts": 699491,
+      "lag_feature_attempts": 699491,
+      "lag_feature_successes": 699491,
+      "lag_scalar_prediction_attempts": 1398982,
+      "lag_scalar_prediction_successes": 1398982,
+      "lag_pair_prediction_successes": 699491
+    },
+    "independent_G_replay_counts": {
+      "immutable_snapshot_structure_verifications": 3,
+      "fresh_prefix_bindings_verified": 12,
+      "native_history_origins_verified": 1828,
+      "planner_replays": 628,
+      "candidate_replays": 50868,
+      "planning_pair_attempts": 695835,
+      "planning_pair_successes": 695835,
+      "planning_scalar_attempts": 1391670,
+      "planning_scalar_successes": 1391670,
+      "tail_request_reconstructions": 644967,
+      "diagnostic_pair_attempts": 3656,
+      "diagnostic_pair_successes": 3656,
+      "diagnostic_scalar_attempts": 7312,
+      "diagnostic_scalar_successes": 7312,
+      "paid_tail_saved_decision_verifications": 628,
+      "PD_native_arithmetic_recomputations": 1200
+    },
+    "read_accounting": {
+      "executing_auditor_source_reads": 1,
+      "executing_auditor_source_bytes": 76375,
+      "executing_support_source_reads": 6,
+      "executing_support_source_bytes": 495698,
+      "physical_archive_file_reads": 6,
+      "physical_archive_raw_bytes": 5380238,
+      "frozen_git_blob_queries": 56,
+      "frozen_git_blob_return_bytes": 7366400,
+      "frozen_git_tree_queries": 1,
+      "D_selected_zip_payloads_parsed": 6,
+      "D_selected_zip_payload_bytes": 5690368,
+      "G_trace_gzip_decompressions": 1,
+      "G_trace_uncompressed_binary_bytes": 32832111,
+      "G_trace_json_lines_parsed": 3028
+    },
+    "new_physics_control_calls": 0,
+    "new_physics_substeps": 0,
+    "online_helper_imports": 0,
+    "old_C_D_audit_reexecutions": 0,
+    "old_C_D_prediction_reexecutions": 0,
+    "D_refits": 0,
+    "model_policy_gain_gate_updates": 0,
+    "real_robot_calls": 0
+  },
+  "projection_fee": {
+    "opens": 1,
+    "binary_bytes": 200484,
+    "wall_seconds": 0.0015250998549163342,
+    "cpu_seconds": 0.0,
+    "new_statistics_predictions_updates_physics": 0
+  }
+}
