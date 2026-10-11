@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-[单肩新最终评价](docs/LOCAL_FROZEN_VALIDATION_RESULTS.md)已完成：20/21/22共21完整trial、6,000调用/60,000子步/900RLS，独立审计843,775项零失败。同MPC模型贡献门通过，tracking降低29.505%；相对调优PD64/0仅改善2.674%，未过5%门。三个[C2修订](docs/LOCAL_COVERAGE_ABLATION_RESULTS.md)均未采用，仍用short/old/hinge5/Euler；自身一步预测退化、位置q域外97%均保留。[左肘经典开发](docs/ELBOW_PD_DEVELOPMENT_RESULTS.md)已选64/1，24完成、3研究停止；肩64/0不能直接迁移。当前冻结[左肘身体模型迁移](docs/ELBOW_BODY_DEVELOPMENT_PROTOCOL.md)后一次执行，再推进肩—肘协调；局部正负结果都不结束持续目标。
+[单肩新最终评价](docs/LOCAL_FROZEN_VALIDATION_RESULTS.md)已完成：20/21/22共21完整trial、6,000调用/60,000子步/900RLS，独立审计843,775项零失败。同MPC模型贡献门通过，tracking降低29.505%；相对调优PD64/0仅改善2.674%，未过5%门。三个[C2修订](docs/LOCAL_COVERAGE_ABLATION_RESULTS.md)均未采用，仍用short/old/hinge5/Euler；自身一步预测退化、位置q域外97%均保留。[左肘经典开发](docs/ELBOW_PD_DEVELOPMENT_RESULTS.md)已选64/1，24完成、3研究停止；肩64/0不能直接迁移。[左肘身体模型迁移](docs/ELBOW_BODY_DEVELOPMENT_RESULTS.md)首次运行15完整/6研究停止，模型贡献与PD门均失败；实际5,292调用/52,920子步/900RLS全部保留，不能将校准完成视为控制成功。当前冻结[肩—肘协调对照](docs/PAIR_BODY_DEVELOPMENT_PROTOCOL.md)，完成检查与提交后一次执行，再推进未知动力学和成熟门控；局部正负结果都不结束持续目标。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 

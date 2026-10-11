@@ -1,0 +1,21 @@
+test_five_six_seven_gates_independent (__main__.Boundaries) ... ok
+test_missing_actual_is_lower_bound_request_recovers (__main__.Boundaries) ... ok
+test_native_domain_and_cold_freeze_faults (__main__.Boundaries) ... FAIL
+test_partial_cost_kept_but_not_scored (__main__.Boundaries) ... ok
+test_real_native_j1_metrics_not_j0 (__main__.Boundaries) ... ok
+test_standard_library_and_no_physical_imports (__main__.Boundaries) ... ok
+test_study_stop_is_separate_from_environment (__main__.Boundaries) ... ok
+test_zero_denominators_and_no_threshold_epsilon (__main__.Boundaries) ... ok
+
+======================================================================
+FAIL: test_native_domain_and_cold_freeze_faults (__main__.Boundaries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex_ws\robot_rl\external\test_elbow_body_summary_prepare.py", line 192, in test_native_domain_and_cold_freeze_faults
+    self.assertTrue(any('frozen_parameters' in f for f in checks.failures))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.076s
+
+FAILED (failures=1)

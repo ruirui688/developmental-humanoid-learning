@@ -1,0 +1,42 @@
+{
+  "started_at_utc": "2026-10-11T06:38:49.076924+00:00",
+  "argv": [
+    "external/elbow_body_summary_wrapper_01.py"
+  ],
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "source": {
+    "summary_executed_source": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_summary_executed.py",
+      "sha256": "d815bd5979ad1270bc90508c4847c05bf4d8498de32783ffeea6937d9fd0f88e"
+    },
+    "wrapper_executed_source": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_wrapper_executed.py",
+      "sha256": "fe8866222f745da620b72f808e294be3d653e8acad9fbe31ec17500d7101e7ee"
+    }
+  },
+  "git_head_at_summary": "46077b1d30089d68f1c935e3fc547dfdfa4c4e66",
+  "git_status_at_summary": "?? docs/ELBOW_BODY_DEVELOPMENT_RESULTS.md\n",
+  "archive": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_development",
+  "first_audit": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_first_audit.json",
+  "expected_first_audit_sha256": "1bd3632fd805064951addf72120992b63dca2df255fddc54840b22d014c4f78a",
+  "expected_formal_source_commit": "46077b1d30089d68f1c935e3fc547dfdfa4c4e66",
+  "physical_control_calls": 0,
+  "physics_substeps": 0,
+  "parameter_updates": 0,
+  "audit_reexecutions": 0,
+  "new_model_predictions": 0,
+  "attempt_is_consumed_even_on_failure": true,
+  "finished_at_utc": "2026-10-11T06:38:50.700149+00:00",
+  "exit_code": 0,
+  "wrapper_wall_seconds": 1.6233240999281406,
+  "wrapper_cpu_seconds": 1.46875,
+  "stdout": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_stdout.txt",
+    "sha256": "e3d7728c170f92492578ca29d96ac6cb3446a44b7c0fad566702dfc326b75e2c"
+  },
+  "summary": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_summary.json",
+    "sha256": "0d745e678bd5644c1167252cd794b156c570984793ecdbed588a6c3ac7ffb39a"
+  }
+}

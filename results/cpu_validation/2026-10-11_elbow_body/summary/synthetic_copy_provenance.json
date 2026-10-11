@@ -1,0 +1,55 @@
+{
+  "created_at_utc": "2026-10-11T06:42:08.225352+00:00",
+  "copies": [
+    {
+      "source": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_summary_synthetic_01_stdout.txt",
+      "destination": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_synthetic_01_stdout.txt",
+      "sha256": "d2cfde2ccdeab4019eecc9535c5778131f8ac2aef9dd40ba66b3c19bf449e333",
+      "type": "exact_byte_copy"
+    },
+    {
+      "source": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_summary_synthetic_01_execution.json",
+      "destination": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_synthetic_01_execution.json",
+      "sha256": "42888429931176f5fb0b3236f9b7a08b2627579d48b499dc5bd360993da6a43d",
+      "type": "exact_byte_copy"
+    },
+    {
+      "source": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_summary_synthetic_02_stdout.txt",
+      "destination": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_synthetic_02_stdout.txt",
+      "sha256": "c96f3110c99b5eff8e4fc23a7a2fd3c7cc18ef2a7be6e25f3d55c78ddde870a3",
+      "type": "exact_byte_copy"
+    },
+    {
+      "source": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_summary_synthetic_02_execution.json",
+      "destination": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_synthetic_02_execution.json",
+      "sha256": "1d7022018e6e3fc7883dee4bcf526efeca83f96dda52d1c46ef6318fc49bec04",
+      "type": "exact_byte_copy"
+    },
+    {
+      "source": "D:\\Codex_ws\\robot_rl\\external\\test_elbow_body_summary_prepare.py",
+      "destination": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_synthetic_tests.py",
+      "sha256": "eab6c2c6b747c0d6bf715f5707241c4cd077b1050dbb851e1595075b74cfdf36",
+      "type": "exact_byte_copy",
+      "note": "No edits after successful synthetic round 02 before formal summary; test source was unchanged between rounds."
+    },
+    {
+      "source": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_summary_executed.py",
+      "destination": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_synthetic_02_source_copy.py",
+      "sha256": "d815bd5979ad1270bc90508c4847c05bf4d8498de32783ffeea6937d9fd0f88e",
+      "type": "exact_byte_copy",
+      "note": "No edits after successful synthetic round 02 before formal summary; test source was unchanged between rounds."
+    },
+    {
+      "source": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_summary_executed.py",
+      "destination": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_synthetic_01_source_reconstructed.py",
+      "sha256": "dab3f0757c08db44c7beb860642738da223c7b24baf8830dc51157664a69533f",
+      "type": "generated_reconstruction",
+      "note": "Round 01 source was not snapshotted when tests ran. Reconstructed by reversing the three recorded repair edits; not represented as an execution-captured original."
+    }
+  ],
+  "formal_summary_reexecutions": 0,
+  "audit_reexecutions": 0,
+  "physical_calls": 0,
+  "parameter_updates": 0,
+  "synthetic_timing_semantics": "Original wrapper wall and parent CPU retained; child unittest CPU was not separately measured and remains unknown. Unittest elapsed .076/.074 seconds is elapsed test time, not CPU."
+}

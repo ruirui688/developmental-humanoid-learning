@@ -1,0 +1,199 @@
+{
+  "source_summary_path": "D:\\Codex_ws\\robot_rl\\external\\elbow_body_20261011_summary_01_summary.json",
+  "source_summary_sha256": "0d745e678bd5644c1167252cd794b156c570984793ecdbed588a6c3ac7ffb39a",
+  "rows": [
+    {
+      "seed": 0,
+      "qref_rad": -0.0005762480149995581,
+      "theta": [
+        0.8094348818621809,
+        -3.5374388305207134,
+        0.036211051225220156,
+        0.6173000504642797,
+        0.020474243020468658
+      ],
+      "calibration_qoffset_range_rad": [
+        -0.006262588150339114,
+        0.07671057735543971
+      ],
+      "calibration_qabsolute_range_rad": [
+        -0.0068388361653386725,
+        0.07613432934044015
+      ],
+      "calibration_v_range_rad_s": [
+        -0.8500950479628152,
+        0.9471421912808318
+      ],
+      "learned_control_input_coverage": {
+        "available": true,
+        "calibration_native_samples": 300,
+        "control_native_samples": 13,
+        "q_offset_envelope_rad": [
+          -0.006262588150339114,
+          0.07671057735543971
+        ],
+        "velocity_envelope_rad_s": [
+          -0.8500950479628152,
+          0.9471421912808318
+        ],
+        "q_outside_count": 3,
+        "v_outside_count": 0,
+        "either_outside_count": 3,
+        "q_outside_fraction": 0.23076923076923078,
+        "v_outside_fraction": 0.0,
+        "either_outside_fraction": 0.23076923076923078,
+        "nearest_q_distance_mean_rad": 0.006093062471524481,
+        "nearest_q_distance_max_rad": 0.032036011735494224
+      },
+      "first_current_q_rad": -0.0005762480149995581,
+      "first_current_v_rad_s": 6.991162221081844e-10,
+      "first_target_q_rad": 0.03942375198500044,
+      "first_chosen_u_nm": 0.375,
+      "first_chosen_cost": 0.005506464911843573,
+      "first_15_step_forecast_endpoint_q_rad": 0.036661198396847554,
+      "first_15_step_forecast_endpoint_v_rad_s": -0.06810169927006933,
+      "stop_step_index": 112,
+      "stop_current_q_rad": 0.10817034107593437,
+      "stop_current_v_rad_s": 0.5758801543915825,
+      "stop_predicted_next_q_rad": 0.1120237205026891,
+      "stop_predicted_next_v_rad_s": 0.19266897133773633,
+      "stop_actual_next_q_rad": 0.11981849354668098,
+      "stop_actual_next_v_rad_s": 0.5703850927469705,
+      "stop_target_q_rad": 0.03942375198500044,
+      "stop_chosen_u_nm": 0.375,
+      "stop_chosen_cost": 0.029466945630416273,
+      "forecast_origin": "Original collector chosen forecasts, replayed by first audit and retained in saved summary; no new forecasts."
+    },
+    {
+      "seed": 1,
+      "qref_rad": -0.0005763175538596344,
+      "theta": [
+        0.8113250715252903,
+        -3.5182639598028693,
+        0.035928490518730004,
+        0.6152947330610046,
+        0.020391724952977724
+      ],
+      "calibration_qoffset_range_rad": [
+        -0.005121835337465196,
+        0.07663843764715277
+      ],
+      "calibration_qabsolute_range_rad": [
+        -0.0056981528913248305,
+        0.07606212009329313
+      ],
+      "calibration_v_range_rad_s": [
+        -0.8515104576029364,
+        0.9463918409187314
+      ],
+      "learned_control_input_coverage": {
+        "available": true,
+        "calibration_native_samples": 300,
+        "control_native_samples": 13,
+        "q_offset_envelope_rad": [
+          -0.005121835337465196,
+          0.07663843764715277
+        ],
+        "velocity_envelope_rad_s": [
+          -0.8515104576029364,
+          0.9463918409187314
+        ],
+        "q_outside_count": 3,
+        "v_outside_count": 0,
+        "either_outside_count": 3,
+        "q_outside_fraction": 0.23076923076923078,
+        "v_outside_fraction": 0.0,
+        "either_outside_fraction": 0.23076923076923078,
+        "nearest_q_distance_mean_rad": 0.006079837890745675,
+        "nearest_q_distance_max_rad": 0.03196051980405189
+      },
+      "first_current_q_rad": -0.0005763175538596344,
+      "first_current_v_rad_s": -8.853450662682447e-10,
+      "first_target_q_rad": 0.03942368244614037,
+      "first_chosen_u_nm": 0.375,
+      "first_chosen_cost": 0.005512929876622321,
+      "first_15_step_forecast_endpoint_q_rad": 0.03683112310282364,
+      "first_15_step_forecast_endpoint_v_rad_s": -0.06851423681143903,
+      "stop_step_index": 112,
+      "stop_current_q_rad": 0.10802263989734502,
+      "stop_current_v_rad_s": 0.5749687707025264,
+      "stop_predicted_next_q_rad": 0.1119263105267935,
+      "stop_predicted_next_v_rad_s": 0.19518353147242393,
+      "stop_actual_next_q_rad": 0.1196525201076937,
+      "stop_actual_next_v_rad_s": 0.5694558190093383,
+      "stop_target_q_rad": 0.03942368244614037,
+      "stop_chosen_u_nm": 0.375,
+      "stop_chosen_cost": 0.029552046386716414,
+      "forecast_origin": "Original collector chosen forecasts, replayed by first audit and retained in saved summary; no new forecasts."
+    },
+    {
+      "seed": 2,
+      "qref_rad": -0.000576154793236481,
+      "theta": [
+        0.8059779668178506,
+        -3.6045084255543793,
+        0.036702855893531755,
+        0.6229000420702167,
+        0.020689095018977813
+      ],
+      "calibration_qoffset_range_rad": [
+        -0.006102855011427714,
+        0.076792287339791
+      ],
+      "calibration_qabsolute_range_rad": [
+        -0.006679009804664194,
+        0.07621613254655452
+      ],
+      "calibration_v_range_rad_s": [
+        -0.8487190930333343,
+        0.9479868191270746
+      ],
+      "learned_control_input_coverage": {
+        "available": true,
+        "calibration_native_samples": 300,
+        "control_native_samples": 13,
+        "q_offset_envelope_rad": [
+          -0.006102855011427714,
+          0.076792287339791
+        ],
+        "velocity_envelope_rad_s": [
+          -0.8487190930333343,
+          0.9479868191270746
+        ],
+        "q_outside_count": 3,
+        "v_outside_count": 0,
+        "either_outside_count": 3,
+        "q_outside_fraction": 0.23076923076923078,
+        "v_outside_fraction": 0.0,
+        "either_outside_fraction": 0.23076923076923078,
+        "nearest_q_distance_mean_rad": 0.006108901138784738,
+        "nearest_q_distance_max_rad": 0.032118427788212014
+      },
+      "first_current_q_rad": -0.000576154793236481,
+      "first_current_v_rad_s": 2.143382454786086e-09,
+      "first_target_q_rad": 0.03942384520676352,
+      "first_chosen_u_nm": 0.375,
+      "first_chosen_cost": 0.005492558586247898,
+      "first_15_step_forecast_endpoint_q_rad": 0.03604806190977031,
+      "first_15_step_forecast_endpoint_v_rad_s": -0.06853295262938311,
+      "stop_step_index": 112,
+      "stop_current_q_rad": 0.10833456033476653,
+      "stop_current_v_rad_s": 0.5768727152266196,
+      "stop_predicted_next_q_rad": 0.1120284059159032,
+      "stop_predicted_next_v_rad_s": 0.18469227905683344,
+      "stop_actual_next_q_rad": 0.12000258713540408,
+      "stop_actual_next_v_rad_s": 0.5713941989121695,
+      "stop_target_q_rad": 0.03942384520676352,
+      "stop_chosen_u_nm": 0.375,
+      "stop_chosen_cost": 0.02925406810669377,
+      "forecast_origin": "Original collector chosen forecasts, replayed by first audit and retained in saved summary; no new forecasts."
+    }
+  ],
+  "formal_raw_audit_rereads": 0,
+  "summary_reexecutions": 0,
+  "new_model_predictions": 0,
+  "physical_calls": 0,
+  "updates": 0,
+  "wall_seconds": 0.023791000014171004,
+  "cpu_seconds": 0.015625
+}
