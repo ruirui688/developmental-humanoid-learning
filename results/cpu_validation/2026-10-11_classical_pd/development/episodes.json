@@ -1,0 +1,1325 @@
+[
+  {
+    "trial_id": "seed0_candidate0",
+    "seed": 0,
+    "candidate": 0,
+    "kp": 4.0,
+    "kd": 0.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 3757552657,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09739774391333796,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.04997142797274179,
+    "requested_squared_effort_nm2s": 0.16069659365052022,
+    "saturated_control_steps": 0,
+    "max_native_control_speed_rad_s": 0.010675406330858712,
+    "peak_full_ground_force_n": 553.1224964176315,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed0_candidate1",
+    "seed": 0,
+    "candidate": 1,
+    "kp": 4.0,
+    "kd": 0.2,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 3757552657,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09739774391333796,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.05004965027248381,
+    "requested_squared_effort_nm2s": 0.15901763995214654,
+    "saturated_control_steps": 0,
+    "max_native_control_speed_rad_s": 0.010596866608809449,
+    "peak_full_ground_force_n": 553.1224964176315,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed0_candidate2",
+    "seed": 0,
+    "candidate": 2,
+    "kp": 4.0,
+    "kd": 1.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 3757552657,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09739774391333796,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.0503502278275297,
+    "requested_squared_effort_nm2s": 0.15253451151633335,
+    "saturated_control_steps": 0,
+    "max_native_control_speed_rad_s": 0.010292823452011728,
+    "peak_full_ground_force_n": 553.1224964176315,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed0_candidate3",
+    "seed": 0,
+    "candidate": 3,
+    "kp": 16.0,
+    "kd": 0.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 3757552657,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09739774391333796,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.026674211514289337,
+    "requested_squared_effort_nm2s": 0.632893589461546,
+    "saturated_control_steps": 31,
+    "max_native_control_speed_rad_s": 0.08449425952062474,
+    "peak_full_ground_force_n": 553.1224964176315,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed0_candidate4",
+    "seed": 0,
+    "candidate": 4,
+    "kp": 16.0,
+    "kd": 0.2,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 3757552657,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09739774391333796,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.026748431277633742,
+    "requested_squared_effort_nm2s": 0.6317336930510704,
+    "saturated_control_steps": 30,
+    "max_native_control_speed_rad_s": 0.07629919104045187,
+    "peak_full_ground_force_n": 553.1224964176315,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed0_candidate5",
+    "seed": 0,
+    "candidate": 5,
+    "kp": 16.0,
+    "kd": 1.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 3757552657,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09739774391333796,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.0270766267154605,
+    "requested_squared_effort_nm2s": 0.627197812321845,
+    "saturated_control_steps": 25,
+    "max_native_control_speed_rad_s": 0.07753317612914197,
+    "peak_full_ground_force_n": 553.1224964176315,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed0_candidate6",
+    "seed": 0,
+    "candidate": 6,
+    "kp": 64.0,
+    "kd": 0.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 3757552657,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09739774391333796,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.01629201469571594,
+    "requested_squared_effort_nm2s": 0.796247401473939,
+    "saturated_control_steps": 70,
+    "max_native_control_speed_rad_s": 0.13762848306248202,
+    "peak_full_ground_force_n": 553.1224964176315,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed0_candidate7",
+    "seed": 0,
+    "candidate": 7,
+    "kp": 64.0,
+    "kd": 0.2,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 3757552657,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09739774391333796,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.016300554340310323,
+    "requested_squared_effort_nm2s": 0.7961422537860167,
+    "saturated_control_steps": 67,
+    "max_native_control_speed_rad_s": 0.12448116840610479,
+    "peak_full_ground_force_n": 553.1224964176315,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed0_candidate8",
+    "seed": 0,
+    "candidate": 8,
+    "kp": 64.0,
+    "kd": 1.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 3757552657,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09739774391333796,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.016333996048894905,
+    "requested_squared_effort_nm2s": 0.7955863823063061,
+    "saturated_control_steps": 66,
+    "max_native_control_speed_rad_s": 0.08493563549348435,
+    "peak_full_ground_force_n": 553.1224964176315,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_candidate0",
+    "seed": 1,
+    "candidate": 0,
+    "kp": 4.0,
+    "kd": 0.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 1641411168,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09382541724034689,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.05005448561169215,
+    "requested_squared_effort_nm2s": 0.16121826197050806,
+    "saturated_control_steps": 0,
+    "max_native_control_speed_rad_s": 0.01055127041246707,
+    "peak_full_ground_force_n": 553.4985341539513,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_candidate1",
+    "seed": 1,
+    "candidate": 1,
+    "kp": 4.0,
+    "kd": 0.2,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 1641411168,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09382541724034689,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.05013011685582221,
+    "requested_squared_effort_nm2s": 0.15954804151028154,
+    "saturated_control_steps": 0,
+    "max_native_control_speed_rad_s": 0.010473887319676908,
+    "peak_full_ground_force_n": 553.4985341539513,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_candidate2",
+    "seed": 1,
+    "candidate": 2,
+    "kp": 4.0,
+    "kd": 1.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 1641411168,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09382541724034689,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.050421291072768985,
+    "requested_squared_effort_nm2s": 0.15309432183757793,
+    "saturated_control_steps": 0,
+    "max_native_control_speed_rad_s": 0.010176742814431903,
+    "peak_full_ground_force_n": 553.4985341539513,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_candidate3",
+    "seed": 1,
+    "candidate": 3,
+    "kp": 16.0,
+    "kd": 0.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 1641411168,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09382541724034689,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.027070323448752886,
+    "requested_squared_effort_nm2s": 0.6484453937522192,
+    "saturated_control_steps": 32,
+    "max_native_control_speed_rad_s": 0.08265282310035262,
+    "peak_full_ground_force_n": 553.4985341539513,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_candidate4",
+    "seed": 1,
+    "candidate": 4,
+    "kp": 16.0,
+    "kd": 0.2,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 1641411168,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09382541724034689,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.02714283430926343,
+    "requested_squared_effort_nm2s": 0.6473076309916286,
+    "saturated_control_steps": 31,
+    "max_native_control_speed_rad_s": 0.07421393644502414,
+    "peak_full_ground_force_n": 553.4985341539513,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_candidate5",
+    "seed": 1,
+    "candidate": 5,
+    "kp": 16.0,
+    "kd": 1.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 1641411168,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09382541724034689,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.027470092942530028,
+    "requested_squared_effort_nm2s": 0.6425121157366326,
+    "saturated_control_steps": 27,
+    "max_native_control_speed_rad_s": 0.07682165212737053,
+    "peak_full_ground_force_n": 553.4985341539513,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_candidate6",
+    "seed": 1,
+    "candidate": 6,
+    "kp": 64.0,
+    "kd": 0.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 1641411168,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09382541724034689,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.016589426897946746,
+    "requested_squared_effort_nm2s": 0.8073593395321544,
+    "saturated_control_steps": 72,
+    "max_native_control_speed_rad_s": 0.13146564582007947,
+    "peak_full_ground_force_n": 553.4985341539513,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_candidate7",
+    "seed": 1,
+    "candidate": 7,
+    "kp": 64.0,
+    "kd": 0.2,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 1641411168,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09382541724034689,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.016598322959687523,
+    "requested_squared_effort_nm2s": 0.807239004368883,
+    "saturated_control_steps": 70,
+    "max_native_control_speed_rad_s": 0.11563313490336315,
+    "peak_full_ground_force_n": 553.4985341539513,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_candidate8",
+    "seed": 1,
+    "candidate": 8,
+    "kp": 64.0,
+    "kd": 1.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 1641411168,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.09382541724034689,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.016628723272681827,
+    "requested_squared_effort_nm2s": 0.80642346490613,
+    "saturated_control_steps": 68,
+    "max_native_control_speed_rad_s": 0.08433079081658494,
+    "peak_full_ground_force_n": 553.4985341539513,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_candidate0",
+    "seed": 2,
+    "candidate": 0,
+    "kp": 4.0,
+    "kd": 0.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 2001025171,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.10085905132196148,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.04993269084921875,
+    "requested_squared_effort_nm2s": 0.16045713395924316,
+    "saturated_control_steps": 0,
+    "max_native_control_speed_rad_s": 0.010767918290231217,
+    "peak_full_ground_force_n": 552.7446014293839,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_candidate1",
+    "seed": 2,
+    "candidate": 1,
+    "kp": 4.0,
+    "kd": 0.2,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 2001025171,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.10085905132196148,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.050012834938049616,
+    "requested_squared_effort_nm2s": 0.1587700582254135,
+    "saturated_control_steps": 0,
+    "max_native_control_speed_rad_s": 0.010688727394717159,
+    "peak_full_ground_force_n": 552.7446014293839,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_candidate2",
+    "seed": 2,
+    "candidate": 2,
+    "kp": 4.0,
+    "kd": 1.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 2001025171,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.10085905132196148,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.05032007882869498,
+    "requested_squared_effort_nm2s": 0.15225792483987885,
+    "saturated_control_steps": 0,
+    "max_native_control_speed_rad_s": 0.010377098065921785,
+    "peak_full_ground_force_n": 552.7446014293839,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_candidate3",
+    "seed": 2,
+    "candidate": 3,
+    "kp": 16.0,
+    "kd": 0.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 2001025171,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.10085905132196148,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.026329351506457363,
+    "requested_squared_effort_nm2s": 0.6191508117633435,
+    "saturated_control_steps": 30,
+    "max_native_control_speed_rad_s": 0.08616215675778864,
+    "peak_full_ground_force_n": 552.7446014293839,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_candidate4",
+    "seed": 2,
+    "candidate": 4,
+    "kp": 16.0,
+    "kd": 0.2,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 2001025171,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.10085905132196148,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.026411045504437607,
+    "requested_squared_effort_nm2s": 0.6180152340659639,
+    "saturated_control_steps": 29,
+    "max_native_control_speed_rad_s": 0.07745849799179129,
+    "peak_full_ground_force_n": 552.7446014293839,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_candidate5",
+    "seed": 2,
+    "candidate": 5,
+    "kp": 16.0,
+    "kd": 1.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 2001025171,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.10085905132196148,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.026757977792327286,
+    "requested_squared_effort_nm2s": 0.6133021168379096,
+    "saturated_control_steps": 24,
+    "max_native_control_speed_rad_s": 0.07079978040857969,
+    "peak_full_ground_force_n": 552.7446014293839,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_candidate6",
+    "seed": 2,
+    "candidate": 6,
+    "kp": 64.0,
+    "kd": 0.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 2001025171,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.10085905132196148,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.016041424767190886,
+    "requested_squared_effort_nm2s": 0.7867380338753478,
+    "saturated_control_steps": 67,
+    "max_native_control_speed_rad_s": 0.1435008965202671,
+    "peak_full_ground_force_n": 552.7446014293839,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_candidate7",
+    "seed": 2,
+    "candidate": 7,
+    "kp": 64.0,
+    "kd": 0.2,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 2001025171,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.10085905132196148,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.016051144806614303,
+    "requested_squared_effort_nm2s": 0.786755319586283,
+    "saturated_control_steps": 66,
+    "max_native_control_speed_rad_s": 0.1285674121773309,
+    "peak_full_ground_force_n": 552.7446014293839,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_candidate8",
+    "seed": 2,
+    "candidate": 8,
+    "kp": 64.0,
+    "kd": 1.0,
+    "maximum_control_steps": 300,
+    "status": "completed",
+    "reason": null,
+    "control_calls_attempted": 300,
+    "control_steps": 300,
+    "physics_steps": 3000,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 200,
+        "control_steps": 200,
+        "physics_steps": 2000
+      }
+    },
+    "reset_seed": 2001025171,
+    "collector_exception": null,
+    "complete": true,
+    "prefix_end_q_rad": 0.10085905132196148,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "metric_control_step_count": 200,
+    "tracking_rmse_rad": 0.016081070758921925,
+    "requested_squared_effort_nm2s": 0.7859377385153736,
+    "saturated_control_steps": 63,
+    "max_native_control_speed_rad_s": 0.08275108357633194,
+    "peak_full_ground_force_n": 552.7446014293839,
+    "observed_diagnostic_substeps": 3000,
+    "telemetry_complete_for_paid_substeps": true,
+    "force_peak_scope": "all paid substeps",
+    "invalid_numeric_fields": []
+  }
+]

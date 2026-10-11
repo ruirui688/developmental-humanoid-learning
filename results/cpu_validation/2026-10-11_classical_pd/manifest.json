@@ -1,0 +1,26 @@
+{
+  "purpose": "Exact raw PD development/audit/summary artifact bytes; collection, source dirty flags and embedded original paths unchanged",
+  "sha256": {
+    "audit.json": "d2200b2eb1b3e9862d178ae9c990f6eadd952b4b108cf84998dedc97dd94f59b",
+    "audit_source.py": "3c58bce57f407a2b7399d8546daf6d69171f836ec3225c7517f369d9845d1809",
+    "development/episodes.json": "2dc5a173583980f25c17093bebbe075b980af19455f90446082e6fb10b2392aa",
+    "development/metadata.json": "5e8981b42a6e6536755aca3b4d674cb4566c005097543f28959788280502c91b",
+    "development/source_snapshot.zip": "6415e0e024720bae916905aa90049c1b54b3257f21282c52b4c5ee3e7eec5d9b",
+    "development/trace.jsonl.gz": "81cfc7c1ce2483d04958e719631d5f2f0ab0c6fda9966b38c696ca4fea5fa2e6",
+    "README.md": "c214709c66c22260a0189952798c8a37babf5ecfe7cb5d7dfac0f54e7f8d985f",
+    "summary.json": "b5fee9f6e18e1cb7703c7fca9625482ba7ffdd0df8cec6b8736dfdf5891c6603",
+    "summary_source.py": "705e09e02ac4766f4ce02477ed5dcfa5f61b2b6dbd5bcdb210f65253725f38a0",
+    "development/manifest.json": "fcdddbd8a560293f8d20b78d5f8e6ba8c1cd00fbcd38dd266485581bfd5c98b0"
+  },
+  "nested_manifests": {
+    "development/manifest.json": "fcdddbd8a560293f8d20b78d5f8e6ba8c1cd00fbcd38dd266485581bfd5c98b0"
+  },
+  "formal_physical_cumulative": {
+    "control_calls": 183050,
+    "physics_substeps": 1830500,
+    "rls_update_calls": 2700
+  },
+  "audit_internal_time": "unmeasured; exec tool command wall approximately 3.99 seconds is not CPU time",
+  "summary_runs": 1,
+  "summary_wall_seconds": 3.2628704998642206
+}
