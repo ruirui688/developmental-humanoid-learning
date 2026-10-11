@@ -1,0 +1,27 @@
+{
+  "status": "self_check_passed",
+  "self_check": true,
+  "self_check_cases": [
+    {
+      "case": "signed_cross_identity",
+      "status": "passed"
+    },
+    {
+      "case": "aligned_paths_coordinates_phases",
+      "status": "passed"
+    },
+    {
+      "case": "terminal_only_and_coordinate_request_history_rejection",
+      "status": "passed"
+    }
+  ],
+  "error_convention": "predicted_minus_actual; original_N_terminal_errors_have_opposite_sign",
+  "group_components": [],
+  "N_minus_K": [],
+  "D11_scope": "descriptive_absolute_coordinates_only",
+  "guard_projection": "unavailable_not_saved",
+  "qref_value_verification": "not_saved; shared_N_K_coordinate_system_bound_by_N_source_and_exact_initial_actual_matching",
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

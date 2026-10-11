@@ -1,0 +1,68 @@
+{
+  "status": "self_check_passed",
+  "self_check": true,
+  "requested_source_commit": null,
+  "source": {
+    "files": {
+      "scripts/diagnose_guard_saved_recursion.py": {
+        "bytes": 25678,
+        "sha256": "708887ffcbc6aecc5325a49ece12a6065ba713025f8b1e9257e8c1bd75a351da"
+      },
+      "docs/GUARD_SAVED_RECURSION_DIAGNOSTIC_PROTOCOL.md": {
+        "bytes": 8647,
+        "sha256": "223d2646833e50dd1334fa95b9cb0b0994b980f537bcc43bfde5323bce8a9e4f"
+      }
+    },
+    "clean_committed_bytes_verified": false
+  },
+  "inputs": {},
+  "runtime": {
+    "python": "3.10.11",
+    "platform": "win32"
+  },
+  "cost": {
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "model_calls": 0,
+    "fits": 0,
+    "old_metric_or_gate_recalculations": 0,
+    "source_file_read_attempts": 2,
+    "source_file_read_returns": 2,
+    "source_raw_bytes": 34325,
+    "decomposition_scalar_difference_requests": 1887,
+    "decomposition_scalar_difference_returns": 1887,
+    "identity_residual_scalar_requests": 1258,
+    "identity_residual_scalar_returns": 1258,
+    "summary_scalar_square_requests": 1887,
+    "summary_scalar_square_returns": 1887,
+    "summary_abs_requests": 1887,
+    "summary_sum_input_uses": 5661,
+    "summary_division_requests": 2745,
+    "summary_sqrt_requests": 915,
+    "cross_scalar_product_requests": 629,
+    "cross_scalar_product_returns": 629,
+    "cross_scale_requests": 305,
+    "synthetic_source_records_generated": 54,
+    "saved_record_validation_attempts": 105,
+    "saved_record_validation_returns": 101,
+    "D11_saved_absolute_label_additions_requested": 136,
+    "D11_saved_absolute_label_additions_returned": 136,
+    "coordinate_abs_difference_checks": 786,
+    "D11_coordinate_difference_requests": 608,
+    "recursive_matched_H1_endpoint_uses": 104,
+    "recursive_matched_H1_scalar_label_uses": 416,
+    "N_minus_K_energy_difference_requests": 336,
+    "saved_record_unavailable": 1,
+    "record_rows_written": 0,
+    "diagnostic_groups_written": 0,
+    "wall_seconds": 0.018624499905854464,
+    "cpu_seconds": 0.03125
+  },
+  "failure": null,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "timing_excludes": "final run/manifest serialization and writes"
+}

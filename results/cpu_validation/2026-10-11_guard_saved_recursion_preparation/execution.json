@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "scripts/diagnose_guard_saved_recursion.py",
+    "--self-check",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_o_selfcheck_01\\raw"
+  ],
+  "returncode": 0,
+  "wall_seconds": 0.10946970013901591,
+  "checked_sources": {
+    "scripts/diagnose_guard_saved_recursion.py": {
+      "bytes": 25678,
+      "sha256": "708887ffcbc6aecc5325a49ece12a6065ba713025f8b1e9257e8c1bd75a351da"
+    },
+    "docs/GUARD_SAVED_RECURSION_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 8647,
+      "sha256": "223d2646833e50dd1334fa95b9cb0b0994b980f537bcc43bfde5323bce8a9e4f"
+    }
+  },
+  "source_snapshot_reads": 2,
+  "source_snapshot_read_bytes": 34325,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

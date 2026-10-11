@@ -1,0 +1,87 @@
+{
+  "payload_count": 15,
+  "files": {
+    "checked_source/docs/GUARD_SAVED_RECURSION_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 8647,
+      "sha256": "223d2646833e50dd1334fa95b9cb0b0994b980f537bcc43bfde5323bce8a9e4f",
+      "original_path": "external/c4_o_selfcheck_01/checked_source/docs/GUARD_SAVED_RECURSION_DIAGNOSTIC_PROTOCOL.md"
+    },
+    "checked_source/scripts/diagnose_guard_saved_recursion.py": {
+      "bytes": 25678,
+      "sha256": "708887ffcbc6aecc5325a49ece12a6065ba713025f8b1e9257e8c1bd75a351da",
+      "original_path": "external/c4_o_selfcheck_01/checked_source/scripts/diagnose_guard_saved_recursion.py"
+    },
+    "execution.json": {
+      "bytes": 817,
+      "sha256": "dd62fcaec3b7cbc96ec6e0f1c969bc7c26f067605d2d47059066c3354986a663",
+      "original_path": "external/c4_o_selfcheck_01/execution.json"
+    },
+    "raw/diagnostics.json": {
+      "bytes": 843,
+      "sha256": "e44c12f015d901947ef6ad85f41f5456656f6f0a96f7b91487cadc87976aa674",
+      "original_path": "external/c4_o_selfcheck_01/raw/diagnostics.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 504,
+      "sha256": "d268fe73ea4e57cb5a455c95987a5219c6806c7e14f38b275a6d59bda792a6bb",
+      "original_path": "external/c4_o_selfcheck_01/raw/manifest.json"
+    },
+    "raw/records.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_o_selfcheck_01/raw/records.jsonl"
+    },
+    "raw/run.json": {
+      "bytes": 2309,
+      "sha256": "39c0a698160e72c47e43fdc0e21cddf592c2714a064b7c535f34464f80459f1f",
+      "original_path": "external/c4_o_selfcheck_01/raw/run.json"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_o_selfcheck_01/stderr"
+    },
+    "stdout": {
+      "bytes": 1458,
+      "sha256": "4a604cc8b42a48a23e8434aa449bd2f4a77824d7148fc870a40196006052ce3f",
+      "original_path": "external/c4_o_selfcheck_01/stdout"
+    },
+    "preparation/c4_o_preparation_reads.json": {
+      "bytes": 3339,
+      "sha256": "d5f93e8d17a0a0059716a78fd5a26170b85051b8e12678aa14cd78b2245b04c6",
+      "original_path": "external/c4_o_preparation_reads.json"
+    },
+    "preparation/c4_o_implementation_review.md": {
+      "bytes": 3564,
+      "sha256": "f40fe72e2da10019e83c6fda717ac2432435a901e295e0f95cb9367808186655",
+      "original_path": "external/c4_o_implementation_review.md"
+    },
+    "preparation/c4_n_interpretation_direction.md": {
+      "bytes": 5676,
+      "sha256": "af245ce708aa0e079e6d4c67e8bbe051d2d912d483e25b60324ec3ffcaed5e8b",
+      "original_path": "external/c4_n_interpretation_direction.md"
+    },
+    "preparation/c4_after_n_direction.md": {
+      "bytes": 8955,
+      "sha256": "29007e2790b61ad2198a06aa2507a2827954784d95b632693747f2880ef76a46",
+      "original_path": "external/c4_after_n_direction.md"
+    },
+    "preparation/run_o_selfcheck_once.py": {
+      "bytes": 1690,
+      "sha256": "5714afc66ef20d831a19b53e801986058618f1230675c4311fa44dcb199b6f86",
+      "original_path": "external/run_o_selfcheck_once.py"
+    },
+    "preparation/seal_o_preparation_once.py": {
+      "bytes": 1943,
+      "sha256": "0e8e8b3a2f245dd4afb446ecb1b4dd87bcefdbad57fd032247e85893c6667ccc",
+      "original_path": "external/seal_o_preparation_once.py"
+    }
+  },
+  "file_reads": 30,
+  "read_bytes": 130846,
+  "copy_failures": [],
+  "wall_seconds": 0.16430209996178746,
+  "cpu_seconds": 0.015625,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

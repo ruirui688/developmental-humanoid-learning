@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "scope": "O preparation schema inspection only; previous direction reading separate",
+  "formal_O_execution_started": false,
+  "actual_parameters_read": false,
+  "actual_trace_read": false,
+  "whole_prediction_payload_read": false,
+  "batches": [
+    {
+      "id": "first_schema_and_prefix_read",
+      "tool_output_chunk": "bdc545",
+      "outer_exec_wall_seconds": 0.4005804,
+      "cpu_seconds": null,
+      "cost": {
+        "binary_file_read_attempts": 5,
+        "binary_file_read_returns": 5,
+        "raw_bytes": 80558,
+        "json_parse_attempts": 3,
+        "json_parse_returns": 3,
+        "source_decode_attempts": 2,
+        "source_decode_returns": 2
+      },
+      "reads": [
+        {"path": "scripts/develop_guard_scaled_native_transition.py", "mode": "full raw source; schema snippets displayed", "bytes_read": 27537, "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"},
+        {"path": "scripts/develop_guard_native_transition.py", "mode": "full raw source; schema snippets displayed", "bytes_read": 36390, "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"},
+        {"path": "results/cpu_validation/2026-10-11_guard_scaled_native_transition/raw/manifest.json", "mode": "full raw JSON", "bytes_read": 646, "sha256": "f393ee50b6f8de6d33264eee4ea9a20ca3328ea5a1d545d93a54240d37c36570"},
+        {"path": "results/cpu_validation/2026-10-11_guard_scaled_native_transition/raw/run.json", "mode": "full raw JSON", "bytes_read": 12866, "sha256": "f4a40fe58caae01f91df0678dbd6eff1def4aa8bc20a9fac076bb6fcf13bb9ff"},
+        {"path": "results/cpu_validation/2026-10-11_guard_scaled_native_transition/raw/predictions.jsonl", "mode": "readline first record only", "bytes_read": 3119, "first_line_sha256": "4a0aa0095ef3c57385e578f0ef0d76c3ce9af263d0f7ca3169c4ac8d0334aab4", "whole_payload_sha256_not_computed": true}
+      ]
+    },
+    {
+      "id": "schema_definition_followup",
+      "tool_output_chunk": "aacc90",
+      "outer_exec_wall_seconds": 0.4208969,
+      "cpu_seconds": null,
+      "cost": {
+        "binary_file_read_attempts": 2,
+        "binary_file_read_returns": 2,
+        "raw_bytes": 63927,
+        "json_parse_attempts": 0,
+        "json_parse_returns": 0,
+        "source_decode_attempts": 2,
+        "source_decode_returns": 2
+      },
+      "reads": [
+        {"path": "scripts/develop_guard_scaled_native_transition.py", "bytes_read": 27537, "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518", "displayed_line_ranges": [[367, 425]]},
+        {"path": "scripts/develop_guard_native_transition.py", "bytes_read": 36390, "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb", "displayed_line_ranges": [[40, 92], [235, 260], [569, 588]]}
+      ]
+    }
+  ],
+  "combined": {
+    "binary_file_read_attempts": 7,
+    "binary_file_read_returns": 7,
+    "raw_bytes": 144485,
+    "json_parse_attempts": 3,
+    "json_parse_returns": 3,
+    "source_decode_attempts": 4,
+    "source_decode_returns": 4
+  },
+  "timing_scope": "outer shell exec duration includes interpreter launch/output; CPU not measured; not a scientific benchmark",
+  "scientific_computation": {"fits": 0, "model_calls": 0, "old_metric_or_gate_recalculations": 0, "physics_calls": 0, "RLS_updates": 0, "MPC_calls": 0}
+}
