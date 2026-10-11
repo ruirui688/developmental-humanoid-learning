@@ -33,7 +33,9 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-[H保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认学习预测合规但实际超速；[I因果残差结果](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)从clean1f239f3首次完成102端点/96pair，learned seed0/1两轴退化、seed2改善，肩/肘三seed均值仅3.18%/4.68%，主门失败；cold全退化。不采用上一残差进控制。[J六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)从clean9e8a212首次完成，C共同prediction肩/肘均值退化3.39%/2.77%，全部seed两轴退化；不采用。新增离线ridge2400scalar标签/3solve/36系数，0新物理/RLS。[K完整原生状态闭合转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从cleanb46c6d3首次完成，所有H1/2/5/15窗口有限；H1速度只改善0.485%/0.194%，H15位置退化0.208%/0.469%，开发门失败，不进控制。K新增离线ridge26400标签/3solve/1914系数，0新物理/RLS。接着保持结构检验校准数据覆盖；如果复用已有PD原生轨迹，必须披露其任务能力/采样偏置与付费数据，只拟合身体转移，不拟合PD动作/任务标签，不称无任务先验冷启动。配方/门先冻，已见数据只开发，新留出/控制仍另需验证。
+[H保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认学习预测合规但实际超速；[I因果残差结果](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)从clean1f239f3首次完成102端点/96pair，learned seed0/1两轴退化、seed2改善，肩/肘三seed均值仅3.18%/4.68%，主门失败；cold全退化。不采用上一残差进控制。[J六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)从clean9e8a212首次完成，C共同prediction肩/肘均值退化3.39%/2.77%，全部seed两轴退化；不采用。新增离线ridge2400scalar标签/3solve/36系数，0新物理/RLS。[K完整原生状态闭合转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从cleanb46c6d3首次完成，所有H1/2/5/15窗口有限；H1速度只改善0.485%/0.194%，H15位置退化0.208%/0.469%，开发门失败，不进控制。K新增离线ridge26400标签/3solve/1914系数，0新物理/RLS。L固定数据增量已执行，结论见下段；这些修订均不解除C4/C5依赖，已见数据只开发，新留出/控制仍另需验证。
+
+[L固定数据增量结果](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)已完成：clean2dce248来源校验误拒绝，0fit/predict，原失败已公开；仅修D记录bytes/SHA比较后从clean3bbc34d完成3429记录/576组、16契约零失败。L相对K/D两门均失败：H1速度约3%–7%，H15位置退化约77%–81%；不进入控制，不追加PD数据/维度，下一项做有限结构诊断。新增ridge39,600标签/3solve/1,914系数、0新物理/RLS；PD能力/采样先验及旧费用披露。原4工程分支未重跑，来源修复新增一次合成检查；首输出契约误对来源失败要求完整计数的断言及仅该项补充也保留。
 
 新物理必须先冻结任务、信息、权限、完整优先门、seed和预算，从干净提交首次执行一次；保留停止前付费交互和负结果，不补跑到成功、不放宽旧门。不能拿部分RMSE排名、不用较少步骤当作停止轨迹的效率优势，也不能用“零停止”证明安全。所有方法共享相同目标、最终权限、停止与实际努力分母。
 

@@ -1,0 +1,81 @@
+{
+  "scope": "byte identity and reported count/budget/dependency declarations only; no model, metrics or gate recomputation",
+  "first_attempt": true,
+  "checks": [
+    {
+      "name": "bytes_and_sha_parameters.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_restorations.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_predictions.jsonl",
+      "passed": true
+    },
+    {
+      "name": "all_fixed_prediction_records",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_unavailable.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_metrics.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_run.json",
+      "passed": true
+    },
+    {
+      "name": "complete_source_inputs",
+      "passed": true
+    },
+    {
+      "name": "frozen_baselines_immutable",
+      "passed": true
+    },
+    {
+      "name": "fixed_fit_budget",
+      "passed": true
+    },
+    {
+      "name": "fixed_rollout_budgets",
+      "passed": true
+    },
+    {
+      "name": "all_channel_groups_retained",
+      "passed": true
+    },
+    {
+      "name": "all_source_trial_counts",
+      "passed": true
+    },
+    {
+      "name": "zero_new_physics_RLS_baseline_fits",
+      "passed": true
+    },
+    {
+      "name": "separate_named_gates",
+      "passed": true
+    },
+    {
+      "name": "scientific_dependencies_closed",
+      "passed": true
+    }
+  ],
+  "failures": 0,
+  "cost": {
+    "binary_reads": 7,
+    "input_bytes": 21038016,
+    "wall_seconds": 0.13676679995842278,
+    "cpu_seconds": 0.078125
+  },
+  "actual_C_G_K_source_payload_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "physics": 0
+}

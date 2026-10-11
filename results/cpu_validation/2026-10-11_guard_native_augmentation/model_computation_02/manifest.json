@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "files": {
+    "raw/manifest.json": {
+      "bytes": 918,
+      "sha256": "146ed37a3e70b61d57addd646f91a85d4dea14785580146e006b38f1754457de",
+      "copy_verified": true
+    },
+    "raw/metrics.json": {
+      "bytes": 327292,
+      "sha256": "433534daa6f7689086dc058ec45a4d74c9a581bad1246fb63ce3cbbaf5a4f602",
+      "copy_verified": true
+    },
+    "raw/parameters.json": {
+      "bytes": 4418111,
+      "sha256": "d0602e0de156b478cd61e8c5886d02380143a790778c43627c219881acbefc55",
+      "copy_verified": true
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 16277008,
+      "sha256": "e79eaaf095cf7501302a2e363c3ef541f4e7d87e0fb0487f66d88e0c7d36fa1e",
+      "copy_verified": true
+    },
+    "raw/restorations.json": {
+      "bytes": 3735,
+      "sha256": "bfd43dfb5179d5d046e49dadc73ac5d1a33b8e619d112d5e9d7d9eb1d04b8909",
+      "copy_verified": true
+    },
+    "raw/run.json": {
+      "bytes": 10949,
+      "sha256": "d4a9b3687592a63c0bcb4ada65bd1c1e693be1c1690957a9e267a72ff2366e1b",
+      "copy_verified": true
+    },
+    "raw/unavailable.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "copy_verified": true
+    },
+    "execution/c4_l_native_augmentation_02.stdout": {
+      "bytes": 11229,
+      "sha256": "227e5e34e05327bb0100e9f5c8e8851486ea556149502a8712e8a256be5d571d",
+      "copy_verified": true
+    },
+    "execution/c4_l_native_augmentation_02.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "execution/c4_l_native_augmentation_02.execution.json": {
+      "bytes": 640,
+      "sha256": "cc80cda8297727880d64c2455190e2f2d825f183cc3c904a6de6d656a243ed1b",
+      "copy_verified": true
+    },
+    "execution/run_l_native_augmentation_02_once.py": {
+      "bytes": 1449,
+      "sha256": "47dae1a7da7fcc57c120f5dc7d2b555b79384d5a0c894b3a06f6ddf05170f76c",
+      "copy_verified": true
+    },
+    "output_contract/check_l_output_02_once.py": {
+      "bytes": 4693,
+      "sha256": "b2b83031966cb5e647c16f867a58ae715b63f519e1241fa34c0810673a02d082",
+      "copy_verified": true
+    },
+    "output_contract/c4_l_output_check_02.json": {
+      "bytes": 1745,
+      "sha256": "6c6b138b3b8e3297253bea1ead965fdfe520f972ab55cc7f95efb358f3b5c828",
+      "copy_verified": true
+    },
+    "execution/archive_l_results_02_once.py": {
+      "bytes": 1918,
+      "sha256": "afc69cb3e0295faed872ddb2cc8be414e7e36e7c42cdd07d8b42bdcf1556fab3",
+      "copy_verified": true
+    }
+  },
+  "raw_manifest_sha256": "146ed37a3e70b61d57addd646f91a85d4dea14785580146e006b38f1754457de",
+  "cost": {
+    "binary_reads": 28,
+    "input_bytes": 42119380,
+    "copy_checks": 14,
+    "copy_failures": 0,
+    "wall_seconds": 0.14148109988309443,
+    "cpu_seconds": 0.046875
+  },
+  "fits": 0,
+  "model_calls": 0,
+  "physics": 0
+}
