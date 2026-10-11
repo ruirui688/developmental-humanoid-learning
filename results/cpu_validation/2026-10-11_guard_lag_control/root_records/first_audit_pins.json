@@ -1,0 +1,364 @@
+{
+  "audit_sha256": "ba27cbc47f1291ffbb003102f2d19a0da35821092cd6b1ac790416b7fe80a8e7",
+  "raw_manifest_sha256": "d584de2194f8387bf5fdbd85d727924f748a8b87ce7e950d1c324f1f1bf2b519",
+  "source_commit": "dda82b1854d80483d0b16e0532bc414906e6a402",
+  "checks": 1888017,
+  "failed": 0,
+  "maximum_difference": 4.3876013933186186e-13,
+  "physics_budget": {
+    "control_calls_attempted": 3312,
+    "control_steps": 3312,
+    "physics_steps": 33120,
+    "model_updates": 0,
+    "policy_parameter_updates": 0,
+    "gain_updates": 0,
+    "gate_updates": 0
+  },
+  "paid_predictions": {
+    "diagnostic_pair_attempts": 4224,
+    "diagnostic_scalar_attempts": 8448,
+    "planning_pair_attempts": 918873,
+    "planning_scalar_attempts": 1837746,
+    "diagnostic_input_projection_pair_calls": 4224
+  },
+  "audit_execution": {
+    "wall_seconds": 36.369358600117266,
+    "cpu_seconds": 33.640625,
+    "timing_scope": "entry through report assembly; excludes imports and final JSON writing",
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "source_git_verification_enabled": true,
+    "independent_math_cost": {
+      "lag_pair_prediction_attempts": 923097,
+      "lag_feature_attempts": 923097,
+      "lag_feature_successes": 923097,
+      "lag_scalar_prediction_attempts": 1846194,
+      "lag_scalar_prediction_successes": 1846194,
+      "lag_pair_prediction_successes": 923097
+    },
+    "independent_E_replay_counts": {
+      "immutable_snapshot_structure_verifications": 3,
+      "fresh_prefix_bindings_verified": 12,
+      "native_history_origins_verified": 2112,
+      "planner_replays": 912,
+      "candidate_replays": 73872,
+      "planning_pair_attempts": 918873,
+      "planning_pair_successes": 918873,
+      "planning_scalar_attempts": 1837746,
+      "planning_scalar_successes": 1837746,
+      "diagnostic_pair_attempts": 4224,
+      "diagnostic_pair_successes": 4224,
+      "diagnostic_scalar_attempts": 8448,
+      "diagnostic_scalar_successes": 8448,
+      "PD_native_arithmetic_recomputations": 1200
+    },
+    "read_accounting": {
+      "executing_auditor_source_reads": 1,
+      "executing_auditor_source_bytes": 70035,
+      "executing_support_source_reads": 5,
+      "executing_support_source_bytes": 425663,
+      "physical_archive_file_reads": 6,
+      "physical_archive_raw_bytes": 5706593,
+      "frozen_git_blob_queries": 53,
+      "frozen_git_blob_return_bytes": 7240906,
+      "frozen_git_tree_queries": 1,
+      "D_selected_zip_payloads_parsed": 6,
+      "D_selected_zip_payload_bytes": 5690368,
+      "E_trace_gzip_decompressions": 1,
+      "E_trace_uncompressed_binary_bytes": 40240158,
+      "E_trace_json_lines_parsed": 3312
+    },
+    "new_physics_control_calls": 0,
+    "new_physics_substeps": 0,
+    "online_helper_imports": 0,
+    "old_C_D_audit_reexecutions": 0,
+    "old_C_D_prediction_reexecutions": 0,
+    "D_refits": 0,
+    "model_policy_gain_gate_updates": 0,
+    "real_robot_calls": 0
+  },
+  "gates": {
+    "control_hypothesis": {
+      "evaluated": false,
+      "passed": false,
+      "baseline": "cold11",
+      "candidate": "learned_sparse11",
+      "prerequisite_passed": true,
+      "rows": [
+        {
+          "seed": 0,
+          "eligible": false,
+          "baseline_tracking": 0.044536694516386324,
+          "candidate_tracking": 0.010359315704753382,
+          "baseline_axis_tracking": [
+            0.040087209778286996,
+            0.04858034509020541
+          ],
+          "candidate_axis_tracking": [
+            0.010912994792552118,
+            0.009774322912572025
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 1.4422500000000005,
+              "candidate_joint": 0.8090000000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 0.6795312500000003,
+              "candidate_joint": 0.24237499999999979
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 1,
+          "eligible": false,
+          "baseline_tracking": 0.04435897843345624,
+          "candidate_tracking": 0.01116328346615898,
+          "baseline_axis_tracking": [
+            0.03963684277962164,
+            0.04862467099922863
+          ],
+          "candidate_axis_tracking": [
+            0.011220335157372908,
+            0.011105938701787369
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 1.3767500000000006,
+              "candidate_joint": 0.8207500000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 0.6535312500000002,
+              "candidate_joint": 0.25009374999999984
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 2,
+          "eligible": false,
+          "baseline_tracking": 0.044357569893000603,
+          "candidate_tracking": 0.01045431385285255,
+          "baseline_axis_tracking": [
+            0.03938363577979863,
+            0.04882742309797878
+          ],
+          "candidate_axis_tracking": [
+            0.010997272571997127,
+            0.009881566285012177
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 1.3832500000000008,
+              "candidate_joint": 0.8007500000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 0.6580937500000001,
+              "candidate_joint": 0.23446874999999986
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        }
+      ],
+      "baseline_raw_mean_joint_rmse": null,
+      "candidate_raw_mean_joint_rmse": null,
+      "joint_mean_improvement": null,
+      "joint_improvement_min": 0.2,
+      "axes": [
+        {
+          "axis": 0,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": true,
+          "threshold_passed": false
+        },
+        {
+          "axis": 1,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": true,
+          "threshold_passed": false
+        }
+      ],
+      "efforts": {
+        "actual_absolute_nm_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        },
+        "actual_squared_nm2_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        }
+      },
+      "worst_seed_joint_improvement": null,
+      "complete_control_only": true,
+      "aggregation": "arithmetic means of per-seed raw joint/axis metrics; never pooled endpoints",
+      "scientific_validation": false,
+      "validated_pass": false
+    },
+    "pd_reference": {
+      "evaluated": false,
+      "passed": false,
+      "baseline": "PDselected",
+      "candidate": "learned_sparse11",
+      "prerequisite_passed": false,
+      "rows": [
+        {
+          "seed": 0,
+          "eligible": false,
+          "baseline_tracking": 0.010401445519984794,
+          "candidate_tracking": 0.010359315704753382,
+          "baseline_axis_tracking": [
+            0.008128902572046175,
+            0.012259734123732224
+          ],
+          "candidate_axis_tracking": [
+            0.010912994792552118,
+            0.009774322912572025
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 2.7533073985498238,
+              "candidate_joint": 0.8090000000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 1.2432903057769191,
+              "candidate_joint": 0.24237499999999979
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 1,
+          "eligible": false,
+          "baseline_tracking": 0.010644472251318818,
+          "candidate_tracking": 0.01116328346615898,
+          "baseline_axis_tracking": [
+            0.008684126053912361,
+            0.0122961593067898
+          ],
+          "candidate_axis_tracking": [
+            0.011220335157372908,
+            0.011105938701787369
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 2.7340117353316575,
+              "candidate_joint": 0.8207500000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 1.2200891572487693,
+              "candidate_joint": 0.25009374999999984
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 2,
+          "eligible": false,
+          "baseline_tracking": 0.010935465170751784,
+          "candidate_tracking": 0.01045431385285255,
+          "baseline_axis_tracking": [
+            0.008222506547158078,
+            0.013098060279422796
+          ],
+          "candidate_axis_tracking": [
+            0.010997272571997127,
+            0.009881566285012177
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 2.681743894893044,
+              "candidate_joint": 0.8007500000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 1.1938812044610247,
+              "candidate_joint": 0.23446874999999986
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        }
+      ],
+      "baseline_raw_mean_joint_rmse": null,
+      "candidate_raw_mean_joint_rmse": null,
+      "joint_mean_improvement": null,
+      "joint_improvement_min": 0.05,
+      "axes": [
+        {
+          "axis": 0,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": false,
+          "threshold_passed": null
+        },
+        {
+          "axis": 1,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": false,
+          "threshold_passed": null
+        }
+      ],
+      "efforts": {
+        "actual_absolute_nm_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        },
+        "actual_squared_nm2_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        }
+      },
+      "worst_seed_joint_improvement": null,
+      "complete_control_only": true,
+      "aggregation": "arithmetic means of per-seed raw joint/axis metrics; never pooled endpoints",
+      "scientific_validation": false,
+      "validated_pass": false
+    },
+    "matrix_complete": false,
+    "c4_scientific_validation": {
+      "evaluated": false,
+      "passed": false,
+      "reason": "D selected sparse11 failed the unchanged independent 20-percent prediction condition; E is a development control subhypothesis"
+    }
+  },
+  "input_reads": 2,
+  "input_bytes": 214037
+}

@@ -72,7 +72,7 @@ D随后从clean `f7710c7`首次完成：0新物理、4800离线scalar、168150�
 
 详细顺序和验收条件见 `docs/DEVELOPMENT_ROADMAP.md`；机器与 G1 接管流程见 `docs/NEW_MACHINE_BOOTSTRAP.md`，数据来源规范见 `docs/DATA_SOURCES.md`。GPU 缺失不阻塞 CPU 算法原型；真机实验仍需明确授权与现场安全条件。
 
-当前E最小控制假设已按`docs/GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md`提升冻结：9 MPC、6 collector、8原数学/8独立接口及3定向metadata检查通过，66payload工程原件已封口。所有源码提升仅AST/API/编译/收集，不重复数学或D预检；提交推送后clean首次12trial物理、一次首审/保存汇总，0更新。旧D预测门和完整C4/C5仍未通过。若E仍不能完整，先诊断原保存native全身上下文与一步误差，不立即增加探索或放宽停止。持续目标保持active。
+E最小控制假设随后从clean `dda82b1854d80483d0b16e0532bc414906e6a402`首次执行：9完整/3研究速度停止/0异常/blocked；冻结sparse11三个seed均104active左肘速度停止，cold11、PDselected、zero各三seed全部完整。控制假设与PD参考门未评价、未通过，矩阵不完整；D旧预测门不追认，完整C4及C5科学依赖仍未通过。见[结果](docs/GUARD_LAG_CONTROL_DEVELOPMENT_RESULTS.md)。新增3312/33120/0更新，首审1888017项零失败、一次薄汇总33绑定检查零失败只证明证据一致。22payload/6167928bytes原字节归档已封口。当前正式累计249662控制/2496620子步，在线22452+离线7200=29652scalar计算。检查、提交推送后继续F保存其余六关节原生q/v及IMU gyro/acc与一步误差的固定分层零更新诊断，关联不证明因果；禁止补入特权root orientation。依据明确证据单个最小修订，不先追加探索、放宽停止或重复旧矩阵。C4科学验收后继续C5/C6/C7，持续目标保持active，不在报告或commit后停止。
 
 ## 3. 近期非目标
 

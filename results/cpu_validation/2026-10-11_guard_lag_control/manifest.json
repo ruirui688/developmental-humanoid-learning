@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "kind": "first_explicit_history_pair_control_development_evidence",
+  "source_commit": "dda82b1854d80483d0b16e0532bc414906e6a402",
+  "files": {
+    "raw/episodes.json": {
+      "sha256": "b97527cfec732949c7858d96afae03ec4eee3027a12b019ff4259d38f1ea253a",
+      "bytes": 17945,
+      "original_path": "external/guard_lag_control_20261011_first/episodes.json"
+    },
+    "raw/manifest.json": {
+      "sha256": "d584de2194f8387bf5fdbd85d727924f748a8b87ce7e950d1c324f1f1bf2b519",
+      "bytes": 784,
+      "original_path": "external/guard_lag_control_20261011_first/manifest.json"
+    },
+    "raw/metadata.json": {
+      "sha256": "227e06e2be674790c3740e387e0ae07493c3ca857861c9282b2ff8ad940f6437",
+      "bytes": 16183,
+      "original_path": "external/guard_lag_control_20261011_first/metadata.json"
+    },
+    "raw/seed_results.json": {
+      "sha256": "ac291c2f386e41e1c046ae71f252d311f364436b8869381b2b0bbdaf28a271e1",
+      "bytes": 626787,
+      "original_path": "external/guard_lag_control_20261011_first/seed_results.json"
+    },
+    "raw/source_snapshot.zip": {
+      "sha256": "d67c882e91da0749a9b1806287b1aabe68f47c6b4e2238d7786f6c4044a5f4ac",
+      "bytes": 970483,
+      "original_path": "external/guard_lag_control_20261011_first/source_snapshot.zip"
+    },
+    "raw/trace.jsonl.gz": {
+      "sha256": "0831029cb0169178ee27410edcb75bd7e1419c8f8914753d2dbf0a96d2063940",
+      "bytes": 4074411,
+      "original_path": "external/guard_lag_control_20261011_first/trace.jsonl.gz"
+    },
+    "first_audit.json": {
+      "sha256": "ba27cbc47f1291ffbb003102f2d19a0da35821092cd6b1ac790416b7fe80a8e7",
+      "bytes": 213253,
+      "original_path": "external/guard_lag_control_20261011_first_audit.json"
+    },
+    "first_audit_stdout.txt": {
+      "sha256": "63bdc84ec20014afd6356a2877c0ab7f09bb7fc8d16829ea0e39893d0a93797e",
+      "bytes": 133,
+      "original_path": "external/guard_lag_control_20261011_first_audit_stdout.txt"
+    },
+    "first_audit_execution.json": {
+      "sha256": "d2714e072b2481a233dc22f98259540568f044847102467f150637defc39a475",
+      "bytes": 533,
+      "original_path": "external/guard_lag_control_20261011_first_audit_execution.json"
+    },
+    "collection_stdout.txt": {
+      "sha256": "b5a2308565061021be04a1f8d5fcc70499b813a409d7ca40213387d035db47b1",
+      "bytes": 16150,
+      "original_path": "external/guard_lag_control_20261011_first_stdout.txt"
+    },
+    "collection_execution.json": {
+      "sha256": "927920b7170a2498c761f259d00f619609b1eedb761045c053c81d2b0d75c794",
+      "bytes": 559,
+      "original_path": "external/guard_lag_control_20261011_first_execution.json"
+    },
+    "runtime_source_freeze.json": {
+      "sha256": "5dcf345639de5e6032d4f9ee079e9577fcd5f3bf2bd534582bc2842822ca335a",
+      "bytes": 7252,
+      "original_path": "external/guard_lag_control_20261011_first_runtime_source_freeze.json"
+    },
+    "summary_once/summary.json": {
+      "sha256": "74c0b148950dc8c33d130492b3f0b636a6da9eba2bd3239e3d7952036437b32e",
+      "bytes": 194176,
+      "original_path": "external/guard_lag_control_20261011_summary_01/summary.json"
+    },
+    "root_records/first_audit_pins.json": {
+      "sha256": "f6d9f508abbf7ed54c32431f6a7e7367c898e6379f1b4fcc9663ccaadd49a938",
+      "bytes": 12010,
+      "original_path": "external/c4_e_first_audit_pins_01.json"
+    },
+    "root_records/freeze_links.json": {
+      "sha256": "d3a5d113117045d56e57ee50cf425774b2e9156a0c4e067f81528ddb795ec42c",
+      "bytes": 118,
+      "original_path": "external/c4_e_freeze_links_01.json"
+    },
+    "root_records/staged_bytes.json": {
+      "sha256": "228cd0dadcf5cfa1886559b12374f6e8c34d10522c4f106b3695057ea9b7605d",
+      "bytes": 143,
+      "original_path": "external/c4_e_staged_bytes_01.json"
+    },
+    "tools/check_e_preparation_links_once.py": {
+      "sha256": "761262ab8078d35c9c1d199fa08e1073aaf8cd08bef66e283011981ef5944782",
+      "bytes": 1153,
+      "original_path": "external/check_e_preparation_links_once.py"
+    },
+    "tools/verify_e_staged_bytes_once.py": {
+      "sha256": "927254b8aa8ca4ddb9b1df7e209d9ddf961bbd7cffe756619cc44b1866a07124",
+      "bytes": 1369,
+      "original_path": "external/verify_e_staged_bytes_once.py"
+    },
+    "tools/run_guard_lag_control_once.py": {
+      "sha256": "c33d7ca80380e31bbe6507725760dbaf0dcd2a158fa6d02d998bf8392ce5fd89",
+      "bytes": 3154,
+      "original_path": "external/run_guard_lag_control_once.py"
+    },
+    "tools/run_guard_lag_control_first_audit_once.py": {
+      "sha256": "2b115eb87eac614a7bedcc408d38e5198629d5ace28cf44c50573a3cd5406ddd",
+      "bytes": 1561,
+      "original_path": "external/run_guard_lag_control_first_audit_once.py"
+    },
+    "tools/summarize_guard_lag_control_saved_once.py": {
+      "sha256": "f79d730d1fbe478c392e64997761e21624a3d35b56c1d9663bd5768d32b43120",
+      "bytes": 5810,
+      "original_path": "external/summarize_guard_lag_control_saved_once.py"
+    },
+    "tools/archive_guard_lag_control_once.py": {
+      "sha256": "cc7e17e0ffaf1e9d50e95018f9aa7dca2a6b5935f87a8e60f76525162e44a3b2",
+      "bytes": 3961,
+      "original_path": "external/archive_guard_lag_control_once.py"
+    }
+  },
+  "payload_count": 22,
+  "payload_bytes": 6167928,
+  "checks": 22,
+  "failed": 0,
+  "boundary": "9 complete / 3 learned elbow velocity stops at 104 active; no scientific adoption.",
+  "preparation_archive": "results/cpu_validation/2026-10-11_guard_lag_control_preparation/manifest.json",
+  "execution": {
+    "source_and_copy_binary_reads": 44,
+    "source_and_copy_binary_bytes": 12335856,
+    "wall_seconds": 0.2781851999461651,
+    "cpu_seconds": 0.0,
+    "scope": "byte copying and equality checks through manifest assembly; excludes final manifest writing",
+    "new_physics": 0,
+    "new_predictions": 0,
+    "new_fits_or_updates": 0,
+    "first_audit_reexecutions": 0,
+    "summary_reexecutions": 0
+  }
+}

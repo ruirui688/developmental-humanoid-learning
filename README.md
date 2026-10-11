@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-当前[D历史速度差诊断](docs/GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)已从clean `f7710c7`首次完成：0新物理、4800新离线scalar。普适预测没有通过；原长请求停止轨迹的15步位置误差降低31%–38%，短步/速度负效全部保留。首审唯一读取单位失败与50项纯字节补充公开，未重跑数学；86payload已封口。接着按[E正式位置控制协议](docs/GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md)准备一次12组cold11/冻结sparse11/PD/zero对照。必要小工程检查和一次D只读恢复通过；原目标、权限和停止保持，clean提交推送后首次物理，0新模型更新。持续目标不在报告或提交后结束。
+当前[E冻结位置控制](docs/GUARD_LAG_CONTROL_DEVELOPMENT_RESULTS.md)已从clean `dda82b1`首次完成：9完整/3研究速度停止，学习sparse11三个seed均104/200active左肘速度停止；cold11、已选PD与zero全部完整。新增3,312控制/33,120子步/0更新，首次独立审计1,888,017项零失败仅证明记录一致，控制与PD门未评价、未通过，C4仍未验收。[D历史速度差诊断](docs/GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)的H15位置局部改善与其余负效全部保留，不追认旧预测门。正式累计 **249,662控制 /2,496,620子步；22,452在线+7,200离线scalar=29,652scalar计算**。E原件已封口，检查、提交推送后继续F保存native全身上下文与一步误差的零更新诊断，再据明确证据选择单个最小修订；C4通过后推进C5/C6/C7。持续目标不在报告或提交后结束。
 
 [C5动力学事件工程](docs/C5_ENGINEERING_RESULTS.md)从clean `652f9d5`一次完成四组480控制/4,800子步/0更新；首次独立审计481,538项零失败，identity与两个动力学变化实现通过。该批结束时正式累计225,062/2,250,620/12,852 scalar RLS；工程接口通过不等于算法适应通过。
 

@@ -1,0 +1,174 @@
+{
+  "source_commit": "dda82b1854d80483d0b16e0532bc414906e6a402",
+  "source_files": {
+    "src/developmental_physics/__init__.py": {
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+      "bytes": 162
+    },
+    "src/developmental_physics/c5_engineering.py": {
+      "sha256": "acbf403a99efe5ec5842404de462c2d6db5a28a0e21e0c7568a936eba8aaff9d",
+      "bytes": 35502
+    },
+    "src/developmental_physics/collect.py": {
+      "sha256": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+      "bytes": 21890
+    },
+    "src/developmental_physics/elbow_feedback_validate.py": {
+      "sha256": "580efad122c461e2f322053d3c2d499ccb9944a13f78345177d256843689fe73",
+      "bytes": 23381
+    },
+    "src/developmental_physics/environment.py": {
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+      "bytes": 15822
+    },
+    "src/developmental_physics/exploration.py": {
+      "sha256": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+      "bytes": 1297
+    },
+    "src/developmental_physics/feedback_validate.py": {
+      "sha256": "0523cb015da4c214be413feb689be9d1e0ed2728c5c411ea64d6ef13d5201e85",
+      "bytes": 15688
+    },
+    "src/developmental_physics/guard_coupled_development.py": {
+      "sha256": "1af6e8bda93148e2e46d34da1c21ed56c4b4a378066fd138ff7679f904ded47d",
+      "bytes": 40915
+    },
+    "src/developmental_physics/guard_coupled_pair_model.py": {
+      "sha256": "7f234760e8f3d5b9cc799c871e84e7adfebecdf92e11f315735fad8b38ad78ed",
+      "bytes": 3762
+    },
+    "src/developmental_physics/guard_exploration_development.py": {
+      "sha256": "9ad08faaa663f3d86d7d0a0947b0b24c16ebabe07dd98402a3c213e7314f64af",
+      "bytes": 43261
+    },
+    "src/developmental_physics/guard_lag_control_development.py": {
+      "sha256": "3ea1b07dcfdf6c6fdadc7d82269871f629e098f3f74c0d5c2c9520162f55e7da",
+      "bytes": 40309
+    },
+    "src/developmental_physics/guard_lag_offline_development.py": {
+      "sha256": "4aa5c9bd0f724d818b205f5de8cb72a18a6064eef736ee001d73b0ed0e217e0c",
+      "bytes": 46711
+    },
+    "src/developmental_physics/guard_lag_pair_model.py": {
+      "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+      "bytes": 11351
+    },
+    "src/developmental_physics/guard_lag_pair_mpc.py": {
+      "sha256": "2f6c9f4f7f7f128157897f67d40a6cfef09fef582aaeac55945d28399a59d97d",
+      "bytes": 8560
+    },
+    "src/developmental_physics/guard_pair_development.py": {
+      "sha256": "0ff33faa8b6822df0be36ca622f23fbf6ad7b65a4727e556a4333f1a38a77d0d",
+      "bytes": 46112
+    },
+    "src/developmental_physics/guard_pair_model.py": {
+      "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3",
+      "bytes": 6860
+    },
+    "src/developmental_physics/guard_pair_source_binding.py": {
+      "sha256": "798afa909c10a25be811f5f2a5cf3072cd3706c3b7c42a801ebff91f1766b5cc",
+      "bytes": 27087
+    },
+    "src/developmental_physics/local_ablation.py": {
+      "sha256": "27da381b0c987dbe41bc8e527e96f6c1d7bbb15837d914cd53e106989b91e29b",
+      "bytes": 29427
+    },
+    "src/developmental_physics/local_coverage_ablation.py": {
+      "sha256": "21e2b43242cb2248af340515066243cffc16739c837e9310d3c78f400152fdc3",
+      "bytes": 41930
+    },
+    "src/developmental_physics/local_dose_ablation.py": {
+      "sha256": "a5774f4fc525d5ed6ad3b0e375bd34c5f5bda49e409db8bb2b740261077533d8",
+      "bytes": 35961
+    },
+    "src/developmental_physics/local_frozen_validation.py": {
+      "sha256": "369e44371dd7b4e5a91010fd2f8dae515cf390fd2fbe171257414a5c94aabf1a",
+      "bytes": 46989
+    },
+    "src/developmental_physics/local_integration.py": {
+      "sha256": "3dad9e02f16e3813b82150f868d77a6b948b6200a827f2f08f4ea386585da49c",
+      "bytes": 3396
+    },
+    "src/developmental_physics/local_learning.py": {
+      "sha256": "037b56393d0c0f1e20118bbd313e05668964110081ecab4b115abc4b15bb55ca",
+      "bytes": 22252
+    },
+    "src/developmental_physics/local_model.py": {
+      "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1",
+      "bytes": 16564
+    },
+    "src/developmental_physics/local_pair_model.py": {
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+      "bytes": 25148
+    },
+    "src/developmental_physics/pair_calibration_development.py": {
+      "sha256": "a33ead6f407f685662f3afd2401eeaa33c66d89701f658307c6b3c61c67883f7",
+      "bytes": 19607
+    },
+    "src/developmental_physics/pair_frozen_validation.py": {
+      "sha256": "e1fbde1fb68bfa44341fa33605972518359e7d1162c1ecc5837c26ed34f1fbea",
+      "bytes": 37119
+    },
+    "src/developmental_physics/pair_pd_development.py": {
+      "sha256": "1a644a5ad5ebb7aa211cfe0ff132cb76a6cc2ef52b69d6ca7a2d13f8bcfa4459",
+      "bytes": 32712
+    },
+    "src/developmental_physics/pd_selection_binding.py": {
+      "sha256": "956c85a08f3c6a6142acb659c0c9f8f49124983ff592b5f8ab9094ee68058b5c",
+      "bytes": 21959
+    },
+    "src/developmental_physics/perturbed_environment.py": {
+      "sha256": "c3e988d4998dbf0276471ba7bb409bccd76a1108dd9c63c4e154888b223d67a5",
+      "bytes": 9662
+    },
+    "src/developmental_physics/probe_collect.py": {
+      "sha256": "b68643037b64b764de5f6513bcd697e2e62465345671bc1aaa272435fe4e0ea3",
+      "bytes": 12604
+    },
+    "src/developmental_physics/probes.py": {
+      "sha256": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+      "bytes": 7514
+    },
+    "src/developmental_physics/assets/ground_body.xml": {
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+      "bytes": 3430
+    },
+    "scripts/audit_guard_lag_control.py": {
+      "sha256": "99e2fcddbe9bc00386093e6b8e16fd781f387b4696b9d3acf068a2c4b6cfe63c",
+      "bytes": 70035
+    },
+    "scripts/audit_guard_lag_offline.py": {
+      "sha256": "bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b",
+      "bytes": 65206
+    },
+    "scripts/audit_guard_coupled_development.py": {
+      "sha256": "c77a1c2a5cfeed08774dab20a6ef5d4e4833264621e37832b3888001182cc10a",
+      "bytes": 76369
+    },
+    "scripts/audit_guard_pair_development.py": {
+      "sha256": "393a2f3673bab952c34ea09a4d79d7d88e78c448e141a4ab83d865ab164dda93",
+      "bytes": 102248
+    },
+    "scripts/audit_pair_frozen.py": {
+      "sha256": "07c1b990238d41bb75d34c44061b9a59f8f5aa2c9a4e2863a3c75578b28a9821",
+      "bytes": 80830
+    },
+    "scripts/audit_local_frozen.py": {
+      "sha256": "b5fea70d3733a1bab77e49bf559432475899436693cf6c1b0b4767369c913461",
+      "bytes": 101010
+    },
+    "docs/GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md": {
+      "sha256": "30563b03c0f9bbd4cc6899eafb5e983b02a299c9a530244dab0223af7b5a6a26",
+      "bytes": 9024
+    },
+    "pyproject.toml": {
+      "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+      "bytes": 698
+    }
+  },
+  "clean_worktree": true,
+  "source_verification": "Original working bytes equal explicit HEAD blobs",
+  "model_predictions": 0,
+  "updates": 0,
+  "physics": 0
+}

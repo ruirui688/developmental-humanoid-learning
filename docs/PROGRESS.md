@@ -310,3 +310,15 @@ v2 开发/留出各 5,400 控制调用、54,000 子步、900 次更新，墙钟 
 显式历史MPC首次9小检查、collector首次6小检查及独立audit的8数学/8接口检查通过；两个D metadata字段投影另经3项定向静态检查通过。提升只核来源、AST/API、编译和pytest收集，未重跑已有数学。三个完整D sparse11恢复一次预检通过。默认解释器缺MuJoCo、错路径、检查脚本作用域失败及原件缺失/后补来源局限均保留，不能把工程通过解释成科研成功。
 
 [工程准备归档](../results/cpu_validation/2026-10-11_guard_lag_control_preparation/manifest.json)66payload/588492bytes，66次原字节复制检查零失败。提交推送后立即从clean源码首次E物理、一次首审、一次保存汇总，随后继续最早未验收阶段；当前正式物理仍246350/2463500，辨识scalar计算29652。没有使用本次提交结束持续目标。
+
+## 2026-10-11：E 首次控制失败保留，持续目标接着进入 F 诊断
+
+E按[正式协议](GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md)从clean `dda82b1854d80483d0b16e0532bc414906e6a402`首次执行一次12trial：9完整/3研究速度停止/0异常/blocked。冻结learned_sparse11三个seed均104/200active左肘速度停止，最后step203含完整10子步；cold11、PDselected、zero各三seed全部200active完整。停止前误差不排名，不把速度停止写成旧B/C位置停止，不据部分时域或较少交互声称收益。
+
+[完整结果](GUARD_LAG_CONTROL_DEVELOPMENT_RESULTS.md)保留原四判门：control_hypothesis和pd_reference均未评价、未通过，matrix_complete=false，c4_scientific_validation仍未评价/未通过。D旧独立20%预测门不追认；E仅开发控制子假设，C4未验收，C5科学适应依赖未解除。
+
+新增3,312控制/33,120物理子步、0在线/离线更新；诊断4,224pair/8,448scalar，规划918,873pair/1,837,746scalar。恢复3学习模型、初建3cold、24/24clone均有计算费用，没有新增fit/update。正式累计 **249,662控制 /2,496,620子步；22,452在线scalar+7,200离线scalar=29,652scalar更新计算**。
+
+首次独立审计1,888,017项零失败、最大差`4.3876013933186186e-13`；一次薄汇总只复制首审保存值，33绑定检查零失败，未重新调用模型或重算统计。它们证明证据一致，不能替代科学门。正式[原字节归档](../results/cpu_validation/2026-10-11_guard_lag_control/manifest.json)22payload/6,167,928bytes，22复制检查零失败，44binary读取/12,335,856bytes，wall .2781852s不含末manifest写盘；归档0新模型/物理/audit/summary。
+
+相关文档与原件检查、提交、推送后继续F：保存其余六关节原生q/v及IMU gyro/acceleration与一步误差的固定分层描述诊断，0物理/0模型更新，不读特权root orientation、不把关联当因果。然后根据明确证据只选单个最小修订另冻协议，不先增加探索或放宽任务。C4通过后继续C5适应、C6门控与C7新留出；本次报告与commit不结束持续目标。
