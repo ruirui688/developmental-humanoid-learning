@@ -1,5 +1,13 @@
 # 开发进度与仓库检查点
 
+## C4 D固定离线诊断已准备首次执行（2026-10-11）
+
+[正式协议](GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md)、evaluator和独立标准库auditor已提升。固定六cold11模型各重放自身400完整校准一次，旧9D只恢复；五predictor在共同prediction及五控制的同源窗口上评估H1/2/5/15，历史由过去原生端点初始化并沿自身预测移位。无新物理或科学采用门，最多新增4800离线scalar，完整失败和缺失窗口保留。
+
+evaluator最终7项人工检查通过（此前两轮各6项保留）；auditor15项人工契约检查通过，最终失败RLS费用修订只做6项定向复核、内嵌18项零失败。最终auditor SHA `bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b`；提升仅改runner正式开关/说明及tests生产导入/运行入口，纯生产AST/source/history签名检查通过，wall.2366028s/CPU.15625s，没有重复数学矩阵。helper保持`f3bcedf0`原字节。
+
+本检查点提交推送后，从明确clean提交首次D计算，再独立首审、一次保存指标汇总与原件封口。当前真实成本仍246350控制/2463500子步、在线22452及既有离线2400scalar；D真实拟合/预测尚未执行。下一轮历史MPC物理接口仅前瞻准备，必须依完整D结果另冻结，不能提前宣布C4或C5通过。持续目标保持active。
+
 ## C4 D历史速度差候选：数学底座已提升（2026-10-11）
 
 C负结果已从`0738a50`提交推送后继续推进。[D开发离线草稿](GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md)固定在原九列后增加`v_t−v_(t−1)`两列，两个lag先验0；显式history、不存mutable历史，原冷prior/P100/lambda1/公开guard/Euler与双头原子发布不改。helper原字节SHA `f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57`已提升，普通tests只改生产import并移除向tests写run文件的main；原计账运行器和首次字节留在staging。

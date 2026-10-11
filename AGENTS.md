@@ -40,7 +40,7 @@ C探索正式协议已提升并冻结于 `docs/GUARD_EXPLORATION_DEVELOPMENT_PRO
 
 C随后从clean `5ea8df4`首次执行，18完整/6停止/0异常/blocked，两独立cal和共同prediction完整。continuation预测改善约41%/39%却4active肘速度停止，sparse仍106active位置停止；所有自身贡献/探索/PD门未过。见 `docs/GUARD_EXPLORATION_DEVELOPMENT_RESULTS.md`。新增7230/72300/4800在线scalar，累计246350/2463500、在线22452+离线2400。首审4370690项、一次summary7942项零失败只证明证据一致；继续原保存预测/有效域及辨识诊断和有依据最小修订，不能只增加探索量或放宽任务。C5科学物理仍依赖完整C4贡献，C6/C7尚未验收。
 
-D固定single-lag候选已按 `docs/GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md`草稿推进：coupled9追加两列`v_t−v_(t−1)`，cold lag0，其余prior/RLS不改。纯数学helper8人工检查通过、生产1项导入检查通过，未重复原矩阵；原字节已提升。evaluator/独立stdlib auditor仍在实现，正式离线未放行；最多新增4800离线scalar与固定五predictor/H1/2/5/15开发预测，只条件于已存request序列，不能称actor预知未来或新留出/闭环收益。当前正式物理/真实学习累计不变。
+D固定single-lag候选已按 `docs/GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md`正式协议提升：coupled9追加两列`v_t−v_(t−1)`，cold lag0，其余prior/RLS不改。helper8人工检查/evaluator最终7人工检查/独立auditor15人工契约及最终6定向检查通过，所有中间版本保留；生产提升仅改正式开关、说明和test路径/入口，纯AST/source/history签名检查通过，未重复原矩阵。auditor SHA `bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b`。提交推送后clean首次离线，最多新增4800离线scalar与固定五predictor/H1/2/5/15开发预测，只条件于已存request序列；不能称actor预知未来、新留出、闭环收益或C5通过。首次执行、独立首审、一次薄汇总封口后继续依完整D结果准备新物理；当前正式物理/真实学习累计不变。
 
 按火柴人也应模拟小孩的澄清，已新增独立 MuJoCo CPU 地面探索底座，见 `docs/GROUND_BODY_PHYSICS.md`。最初阶段只有固定小幅/零力矩采集、物理与日志验收，无身体模型更新或能力晋级；后续 E1 的局部校准更新单独记录。环境无任务教师或步态代理，不能把被动倒下、滑动或采集成功称为技能学习。
 
