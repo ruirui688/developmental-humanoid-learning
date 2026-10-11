@@ -56,6 +56,10 @@
 
 ## 当前证据地图
 
+下一执行入口为[FR1/FR2自由身体学习协议](docs/FREE_ROOT_LEARNING_PROTOCOL.md)：
+三个新开发seed、最多21,000控制/子步和24,000scalar辨识更新，独立预测全门过后才进入完整控制。
+发布准备原件并提交推送后立即首次FR1；持续目标保持active，不因工程门或一份报告结束。
+
 ![Project evidence and G1 developmental stages](results/validation/project_evidence_map.png)
 
 | 证据层级 | 当前状态 | 已证明 | 尚未证明 |

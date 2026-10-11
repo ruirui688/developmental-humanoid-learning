@@ -1,0 +1,128 @@
+{
+  "schema": "free_root_learning_protocol_design_receipt_v1",
+  "created_utc": "2026-10-11T21:52:29.840144+00:00",
+  "candidate": {
+    "path": "external/FREE_ROOT_LEARNING_PROTOCOL_CANDIDATE.md",
+    "bytes": 18736,
+    "sha256": "5ba67d94d0e695a4bf3fa46aa6e7a40133a44bc1c9da4db9a464fd9f967910da"
+  },
+  "status": "external_design_only_not_production_frozen",
+  "arithmetic": {
+    "derived_counts": {
+      "fr1_fresh_trials": 6,
+      "fr1_control_calls": 21000,
+      "fr1_substeps": 21000,
+      "fr1_simulated_ms": 42000,
+      "fr1_rls_vectors": 12000,
+      "fr1_rls_scalars": 24000,
+      "fr1_actor_pd_vectors": 15000,
+      "fr1_main_conditional_pair": 124080,
+      "fr1_main_conditional_scalar": 248160,
+      "fr1_h1_conditional_pair": 600,
+      "fr1_h1_conditional_scalar": 1200,
+      "fr1_all_conditional_pair": 124680,
+      "fr1_all_conditional_scalar": 249360,
+      "fr2_fresh_trials": 12,
+      "fr2_control_calls": 36000,
+      "fr2_substeps": 36000,
+      "fr2_simulated_ms": 72000,
+      "fr2_actor_pd_vectors": 18000,
+      "fr2_mpc_decisions": 1200,
+      "fr2_planning_pair": 14580000,
+      "fr2_planning_scalar": 29160000,
+      "fr2_main_conditional_pair": 524160,
+      "fr2_main_conditional_scalar": 1048320,
+      "fr2_h1_conditional_pair": 2400,
+      "fr2_h1_conditional_scalar": 4800,
+      "fr2_all_conditional_pair": 526560,
+      "fr2_all_conditional_scalar": 1053120
+    },
+    "count_comparisons": 27,
+    "independent_origins": [
+      100,
+      100,
+      99,
+      96,
+      86
+    ],
+    "self_origins": [
+      200,
+      200,
+      199,
+      196,
+      186
+    ],
+    "population_checks": 2,
+    "total_control_calls": 57000,
+    "total_substeps": 57000,
+    "total_simulated_ms": 114000
+  },
+  "markdown": {
+    "delimiter_even": true,
+    "explicit_link_count": 0,
+    "missing_relative_links": []
+  },
+  "seed_search": {
+    "seeds": [
+      7901,
+      7902,
+      7903
+    ],
+    "evidence_from": "parent transcript; not independently rerun",
+    "scope": [
+      "README",
+      "AGENTS",
+      "docs",
+      "src",
+      "scripts",
+      "tests"
+    ],
+    "excluded": [
+      "raw",
+      "results",
+      "external"
+    ],
+    "digit_matches": 1,
+    "public_seed_matches": 0,
+    "match": "tests/test_feedback_development_audit.py:257 synthetic control_calls_attempted=7901",
+    "absolute_unused_claim": false
+  },
+  "sources": {
+    "static_read_only": [
+      "docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md",
+      "src/developmental_physics/fast_feedback_pair_model.py",
+      "src/developmental_physics/fast_feedback_pair_mpc.py",
+      "src/developmental_physics/guard_coupled_pair_model.py narrow constructor/features/record pieces",
+      "src/developmental_physics/local_pair_model.py narrow features/predict/integration pieces"
+    ],
+    "current_rules_read": [
+      "AGENTS.md head/current entrance",
+      "README.md head/current entrance"
+    ],
+    "fr0_facts": "parent transcript only; no raw read"
+  },
+  "execution_boundary": {
+    "raw_reads": 0,
+    "saved_parameter_or_model_weight_reads": 0,
+    "production_imports": 0,
+    "model_calls": 0,
+    "new_physics": 0,
+    "fit": 0,
+    "rls": 0,
+    "tests": 0,
+    "fixtures": 0,
+    "production_files_modified": 0,
+    "planned_integer_arithmetic_only": true,
+    "filesystem_io_not_measured": true
+  },
+  "limitations": [
+    "Model phi omits free root, other six axes and contact dynamics; local conditional partial-observability hypothesis, not demonstrated closure.",
+    "Requires independent supine/free-root collector; suspended collector interface is not substituted.",
+    "Scalar controller reference only; batch not adopted by this design.",
+    "Planning ceiling 14,580,000 pair forwards is substantial CPU work; no benchmark or real-time claim.",
+    "Development scientific-adoption and C4/C5 release flags remain false."
+  ],
+  "contact_qualification_wording": "FR1 complete calibration/prediction prefix+active each >=1 positive left-arm floor endpoint; FR2 cold/learned/PD complete prefix/A/B each >=1; zero description only, no adoption gate.",
+  "last_wording_update_utc": "2026-10-11T21:59:17.616273+00:00",
+  "production_protocol_path": "docs/FREE_ROOT_LEARNING_PROTOCOL.md"
+}

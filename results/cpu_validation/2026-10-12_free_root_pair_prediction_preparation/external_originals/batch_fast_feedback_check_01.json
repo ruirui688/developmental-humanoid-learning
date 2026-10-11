@@ -1,0 +1,390 @@
+{
+  "status": "bounded_synthetic_equivalence_passed",
+  "fixtures_planned": 11,
+  "fixtures_attempted": 11,
+  "failures": [],
+  "results": [
+    {
+      "fixture": "generic_prior",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 150,
+        "feature_batch_rows": 12150,
+        "original_scalar_dot_calls": 24300,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 1.1860623001120985,
+          "cpu_seconds": 1.1875
+        },
+        {
+          "wall_seconds": 0.43345659994520247,
+          "cpu_seconds": 0.421875
+        }
+      ],
+      "selected_residual_nm": [
+        0.0,
+        0.0
+      ],
+      "pair_attempts_per_implementation": 12150
+    },
+    {
+      "fixture": "finite_coupled",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 150,
+        "feature_batch_rows": 12150,
+        "original_scalar_dot_calls": 24300,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 1.173717200057581,
+          "cpu_seconds": 1.15625
+        },
+        {
+          "wall_seconds": 0.4276803999673575,
+          "cpu_seconds": 0.421875
+        }
+      ],
+      "selected_residual_nm": [
+        0.0,
+        -0.125
+      ],
+      "pair_attempts_per_implementation": 12150
+    },
+    {
+      "fixture": "mixed_early_pruning",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 2,
+        "feature_batch_rows": 82,
+        "original_scalar_dot_calls": 164,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 0.006374600110575557,
+          "cpu_seconds": 0.015625
+        },
+        {
+          "wall_seconds": 0.0025851998943835497,
+          "cpu_seconds": 0.0
+        }
+      ],
+      "selected_residual_nm": null,
+      "pair_attempts_per_implementation": 82
+    },
+    {
+      "fixture": "head0_overflow",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 1,
+        "feature_batch_rows": 81,
+        "original_scalar_dot_calls": 81,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 0.005404999945312738,
+          "cpu_seconds": 0.0
+        },
+        {
+          "wall_seconds": 0.0012536998838186264,
+          "cpu_seconds": 0.015625
+        }
+      ],
+      "selected_residual_nm": null,
+      "pair_attempts_per_implementation": 81
+    },
+    {
+      "fixture": "head1_overflow",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 1,
+        "feature_batch_rows": 81,
+        "original_scalar_dot_calls": 162,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 0.0057032001204788685,
+          "cpu_seconds": 0.0
+        },
+        {
+          "wall_seconds": 0.00163569999858737,
+          "cpu_seconds": 0.0
+        }
+      ],
+      "selected_residual_nm": null,
+      "pair_attempts_per_implementation": 81
+    },
+    {
+      "fixture": "forecast_equality",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 150,
+        "feature_batch_rows": 12150,
+        "original_scalar_dot_calls": 24300,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 1.1691723000258207,
+          "cpu_seconds": 1.171875
+        },
+        {
+          "wall_seconds": 0.5389320999383926,
+          "cpu_seconds": 0.53125
+        }
+      ],
+      "selected_residual_nm": [
+        0.125,
+        0.125
+      ],
+      "pair_attempts_per_implementation": 12150
+    },
+    {
+      "fixture": "one_ulp_outside_forecast",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 1,
+        "feature_batch_rows": 81,
+        "original_scalar_dot_calls": 162,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 0.011262800078839064,
+          "cpu_seconds": 0.015625
+        },
+        {
+          "wall_seconds": 0.003877700073644519,
+          "cpu_seconds": 0.0
+        }
+      ],
+      "selected_residual_nm": null,
+      "pair_attempts_per_implementation": 81
+    },
+    {
+      "fixture": "public_guard_equality",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 150,
+        "feature_batch_rows": 12150,
+        "original_scalar_dot_calls": 24300,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 1.2386568000074476,
+          "cpu_seconds": 1.234375
+        },
+        {
+          "wall_seconds": 0.41870380006730556,
+          "cpu_seconds": 0.375
+        }
+      ],
+      "selected_residual_nm": [
+        0.0,
+        0.0
+      ],
+      "pair_attempts_per_implementation": 12150
+    },
+    {
+      "fixture": "exact_residual_tie",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 150,
+        "feature_batch_rows": 3806,
+        "original_scalar_dot_calls": 7612,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 0.3447122999932617,
+          "cpu_seconds": 0.34375
+        },
+        {
+          "wall_seconds": 0.1354859999846667,
+          "cpu_seconds": 0.125
+        }
+      ],
+      "selected_residual_nm": [
+        0.0,
+        0.0
+      ],
+      "pair_attempts_per_implementation": 3806
+    },
+    {
+      "fixture": "unknown_predictor_serial_fallback",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 0,
+        "feature_batch_rows": 0,
+        "original_scalar_dot_calls": 0,
+        "serial_fallback_selections": 1
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 0.24137490009889007,
+          "cpu_seconds": 0.234375
+        },
+        {
+          "wall_seconds": 0.2503714000340551,
+          "cpu_seconds": 0.25
+        }
+      ],
+      "selected_residual_nm": [
+        -0.125,
+        -0.125
+      ],
+      "pair_attempts_per_implementation": 12150
+    },
+    {
+      "fixture": "new_domain_counted_adapter",
+      "attempted_once": true,
+      "batch_execution": {
+        "stage_batches": 150,
+        "feature_batch_rows": 12150,
+        "original_scalar_dot_calls": 24300,
+        "serial_fallback_selections": 0
+      },
+      "passed": true,
+      "complete_decision_bitwise_float_repr_equal": true,
+      "counted_model_costs_equal": true,
+      "timing": [
+        {
+          "wall_seconds": 1.1214574000332505,
+          "cpu_seconds": 1.125
+        },
+        {
+          "wall_seconds": 0.4324469000566751,
+          "cpu_seconds": 0.4375
+        }
+      ],
+      "selected_residual_nm": [
+        0.0,
+        -0.125
+      ],
+      "pair_attempts_per_implementation": 12150
+    }
+  ],
+  "upper_bounds": {
+    "controller_selections": 22,
+    "pair_attempts": 267300,
+    "scalar_attempts": 534600,
+    "formal_physics_controls": 0,
+    "RLS_updates": 0,
+    "snapshot_restores": 0
+  },
+  "logical_work_total": {
+    "pair_attempts": 154062,
+    "scalar_attempts": 307962,
+    "PD_attempts": 152302,
+    "candidate_attempts": 1782
+  },
+  "source_pins": {
+    "external/batch_fast_feedback_candidate/batched_fast_feedback_pair_mpc.py": {
+      "bytes": 15128,
+      "sha256": "6135c9143ba6e7e1677a78ec8509b28c38de7f900a7ee0c5f6c4b98ca3522b7e"
+    },
+    "external/batch_fast_feedback_candidate/check_batched_fast_feedback_equivalence.py": {
+      "bytes": 13508,
+      "sha256": "aa4dd8a720a1a5acd189d6e68da646f53a927fe0b5c2795c6e978cf37e58725a"
+    },
+    "external/batch_fast_feedback_candidate/EQUIVALENCE_CHECK_DESIGN.md": {
+      "bytes": 4861,
+      "sha256": "3e4a1492ae30dfc367c20d5adbf52e1250ebf175a8d1f39cdd11754c032b908e"
+    },
+    "src/developmental_physics/fast_feedback_pair_mpc.py": {
+      "bytes": 9551,
+      "sha256": "5a7d9d978de755c83023974628eb1891aa76f0e44a71a1454c6e676aacaa71f4"
+    },
+    "src/developmental_physics/fast_feedback_pair_model.py": {
+      "bytes": 2735,
+      "sha256": "289c5f5275ba7dcf6a162b42aa15af71ba067af4246d9bb0f5a3fded48fdc2e7"
+    },
+    "src/developmental_physics/fast_feedback_pair_development.py": {
+      "bytes": 45301,
+      "sha256": "f29196f9a2e54743b6da29f3fe587871559065959a746d25fe8347dc8dcd96c7"
+    },
+    "src/developmental_physics/guard_coupled_pair_model.py": {
+      "bytes": 3762,
+      "sha256": "7f234760e8f3d5b9cc799c871e84e7adfebecdf92e11f315735fad8b38ad78ed"
+    },
+    "src/developmental_physics/guard_pair_model.py": {
+      "bytes": 6860,
+      "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+    },
+    "src/developmental_physics/local_pair_model.py": {
+      "bytes": 25148,
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+    },
+    "src/developmental_physics/local_model.py": {
+      "bytes": 16564,
+      "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+    },
+    "pyproject.toml": {
+      "bytes": 698,
+      "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2"
+    },
+    "external\\c4_free_learning_candidate\\free_root_pair_development.py": {
+      "bytes": 54992,
+      "sha256": "4b22186146139672b0cf19e724c2cd4951a46882647dbeb2a8acad6fd812868b"
+    }
+  },
+  "explicit_source_reads": 12,
+  "explicit_source_bytes_read": 199108,
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "2.2.6"
+  },
+  "raw_saved_model_or_trajectory_reads": 0,
+  "physical_model_or_teacher_calls": 0,
+  "synthetic_coefficient_assignments": "declared constants only; no fit or data snapshot",
+  "new_counted_adapter": {
+    "source": "external\\c4_free_learning_candidate\\free_root_pair_development.py",
+    "full_class_AST_matches": true,
+    "class_defined_without_importing_physical_collector": true
+  },
+  "Z2_rejudged": false,
+  "scientific_adoption": false,
+  "realtime_20ms_demonstrated": false,
+  "automatic_retry": false,
+  "timing_scope": "one reference then one candidate per fixture; includes decision construction",
+  "wall_seconds_before_receipt": 9.406228200066835,
+  "cpu_seconds_before_receipt": 9.234375
+}

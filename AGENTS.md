@@ -33,6 +33,11 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
+FR1/FR2本域[新学习协议](docs/FREE_ROOT_LEARNING_PROTOCOL.md)与collector/CPU batch实现已准备。
+固定7901/7902/7903、18系数新初始化，FR1上限21000控制/子步及24000scalar更新；原独立门全过才允许已冻FR2。
+首次6项新采集检查和11项batch等价检查通过，不重复旧数学或物理。
+准备源码、协议与首次检查封存并正常提交推送后，立即首次FR1；C4及C5–C7仍未验收。
+
 最早未验收仍为C4。[Z2完整控制](docs/FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)贡献7.55%，未达到原20%门，自身长时肩预测退化；不补跑或追认。[FR0自由root接触工程](docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_RESULTS.md)从cleane5466d3首次完成3,000控制/子步、0停止异常；四MAE≤.01rad，三阶段左臂正接触949/990/988 of1000，工程资格通过。本轮零学习，公共PD、理想感觉与原仰卧身体是披露先验，不代表学习或安全收益。立即另冻本域少量身体辨识、独立预测与匹配控制，不恢复悬挂learned snapshots。C4及C5–C7仍未验收；持续目标active，阶段检查提交推送后立即继续。
 
 旧Y0阶段记录：[Y0首次结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe3df016b01b47b0bea0ccc27821c0d7091一次完成100prefix+103active、203控制/2,030子步后，肘速度1.1258089506362488rad/s触发原1rad/s StudyAbort；环境terminatedfalse、failure空，0异常/fit/RLS。第一窗虽observed20但full trial失败而availablefalse/MAEnull，第二窗0，不partial排名。完整工程资格失败，Y1/Y2关闭、不scan增益；X0/W0/V关闭保持。随后做控制时间尺度与底层保护有限审阅，另冻结独立Z0，不因失败放宽门。零接触观察、机械固定支撑及经典反馈先验披露，不追认C4或解除C5科学依赖。本段为历史，不触发重跑。

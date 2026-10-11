@@ -1,0 +1,33 @@
+{
+  "candidate": {
+    "bytes": 54992,
+    "sha256": "4b22186146139672b0cf19e724c2cd4951a46882647dbeb2a8acad6fd812868b"
+  },
+  "previous_candidate": {
+    "bytes": 47105,
+    "sha256": "7460c628b008f1bf6ba02e23b805005fe457a36938e82afd83300361c53bfa6b"
+  },
+  "unchanged_math_ASTs": [
+    "safe",
+    "identity",
+    "failure",
+    "native",
+    "study_abort",
+    "direction_targets",
+    "pulse",
+    "counted_pd",
+    "CountedGuardModel",
+    "restore_model",
+    "effort",
+    "score_population",
+    "tracking_score",
+    "prediction_gate",
+    "control_gate",
+    "new_result"
+  ],
+  "added_before_any_FR1_data": true,
+  "numerical_metric_rules_unchanged": true,
+  "physical_completeness_not_falsified_for_domain_failure": true,
+  "formal_import_test_model_fit_physics_calls": 0,
+  "automatic_retry": false
+}

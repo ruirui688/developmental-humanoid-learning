@@ -1,0 +1,7 @@
+{"name": "valid_FR1_with_stage_false_defaults", "expected": "accept", "passed": true, "actual": "accept"}
+{"name": "prediction_domain_qualification_missing", "expected": "reject", "passed": true, "actual": "reject", "error_type": "ValueError", "error": "complete_new_FR1_native_contact_domain_trial_required:prediction"}
+{"name": "calibration_partial_paid_population", "expected": "reject", "passed": true, "actual": "reject", "error_type": "ValueError", "error": "complete_new_FR1_native_contact_domain_trial_required:calibration"}
+{"name": "learned_snapshot_count_drift", "expected": "reject", "passed": true, "actual": "reject", "error_type": "ValueError", "error": "new_FR1_zero_and_4000_atomic_frozen_counts_required"}
+{"name": "source_pin_drift", "expected": "reject", "passed": true, "actual": "reject", "error_type": "ValueError", "error": "all_new_FR1_frozen_dependencies_required_for_FR2"}
+{"name": "premature_control_success_flag", "expected": "reject", "passed": true, "actual": "reject", "error_type": "ValueError", "error": "FR1_prediction_cannot_predeclare_control_mechanism_success"}
+{"status": "passed", "case_count": 6, "failed_count": 0, "output": "external\\c4_free_learning_candidate\\runner_gate_check_first.json"}

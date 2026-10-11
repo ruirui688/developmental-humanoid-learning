@@ -1,0 +1,158 @@
+{
+  "stage": "before_FR1_data",
+  "reads": [
+    {
+      "path": "external/c4_free_learning_candidate/free_root_pair_development.py",
+      "bytes": 54992,
+      "sha256": "4b22186146139672b0cf19e724c2cd4951a46882647dbeb2a8acad6fd812868b"
+    },
+    {
+      "path": "external/batch_fast_feedback_candidate/batched_fast_feedback_pair_mpc.py",
+      "bytes": 15128,
+      "sha256": "6135c9143ba6e7e1677a78ec8509b28c38de7f900a7ee0c5f6c4b98ca3522b7e"
+    },
+    {
+      "path": "external/c4_free_learning_candidate/test_free_root_pair_collection.py",
+      "bytes": 14210,
+      "sha256": "91a6f839ff819dad89c83f4f2ef7cc6fbba318a0b6ff6027af4501a914a00197"
+    },
+    {
+      "path": "external/FREE_ROOT_LEARNING_PROTOCOL_CANDIDATE.md",
+      "bytes": 18736,
+      "sha256": "5ba67d94d0e695a4bf3fa46aa6e7a40133a44bc1c9da4db9a464fd9f967910da"
+    },
+    {
+      "path": "external/batch_fast_feedback_check_01.json",
+      "bytes": 11859,
+      "sha256": "610e26fc4068f12131dfd47535fab092710ad034d6e7b7b3bb60b88ce74c68c3"
+    },
+    {
+      "path": "external/batch_fast_feedback_candidate/check_batched_fast_feedback_equivalence.py",
+      "bytes": 13508,
+      "sha256": "aa4dd8a720a1a5acd189d6e68da646f53a927fe0b5c2795c6e978cf37e58725a"
+    },
+    {
+      "path": "external/batch_fast_feedback_candidate/EQUIVALENCE_CHECK_DESIGN.md",
+      "bytes": 4861,
+      "sha256": "3e4a1492ae30dfc367c20d5adbf52e1250ebf175a8d1f39cdd11754c032b908e"
+    },
+    {
+      "path": "external/batch_fast_feedback_candidate/preparation_receipt.json",
+      "bytes": 4777,
+      "sha256": "619975f313dee4b67f4f79b58068dbccfd9da19ed93b43b16ce34a3317e61b0d"
+    },
+    {
+      "path": "external/free_root_learning_protocol_design_receipt.json",
+      "bytes": 4354,
+      "sha256": "e879e85749fb0b4c387647d7f02dcd03453cbea500d99c183a99e9e97e6ab151"
+    },
+    {
+      "path": "external/c4_free_learning_candidate/collection_review_and_checks_preparation.json",
+      "bytes": 5096,
+      "sha256": "3519476dccaa9ba20dc34524f21bd35910daf1941b6ba8630560238ac66e9f1a"
+    },
+    {
+      "path": "external/c4_free_learning_candidate/collector_preparation.json",
+      "bytes": 865,
+      "sha256": "7df6bfec73ad542da8369019b76631d22c10636a5c956df02a273e25466bcffd"
+    },
+    {
+      "path": "external/c4_free_learning_candidate/contact_revision_preparation.json",
+      "bytes": 845,
+      "sha256": "5333eb72ef10e0850af9b7f4ec1516d7fc713489dcb2917e58f9fe126c8ff0fa"
+    }
+  ],
+  "writes_before_receipt": [
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/reviewed_originals/free_root_pair_development.py",
+      "bytes": 54992,
+      "sha256": "4b22186146139672b0cf19e724c2cd4951a46882647dbeb2a8acad6fd812868b"
+    },
+    {
+      "path": "src/developmental_physics/free_root_pair_development.py",
+      "bytes": 55672,
+      "sha256": "baccf91a05e7b5bf55024ac96c717872d8624d3e17d49a74c35d12a6f93a0a8b"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/reviewed_originals/batched_fast_feedback_pair_mpc.py",
+      "bytes": 15128,
+      "sha256": "6135c9143ba6e7e1677a78ec8509b28c38de7f900a7ee0c5f6c4b98ca3522b7e"
+    },
+    {
+      "path": "src/developmental_physics/batched_fast_feedback_pair_mpc.py",
+      "bytes": 15128,
+      "sha256": "6135c9143ba6e7e1677a78ec8509b28c38de7f900a7ee0c5f6c4b98ca3522b7e"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/reviewed_originals/test_free_root_pair_collection.py",
+      "bytes": 14210,
+      "sha256": "91a6f839ff819dad89c83f4f2ef7cc6fbba318a0b6ff6027af4501a914a00197"
+    },
+    {
+      "path": "tests/test_free_root_pair_collection.py",
+      "bytes": 14210,
+      "sha256": "91a6f839ff819dad89c83f4f2ef7cc6fbba318a0b6ff6027af4501a914a00197"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/reviewed_originals/FREE_ROOT_LEARNING_PROTOCOL_CANDIDATE.md",
+      "bytes": 18736,
+      "sha256": "5ba67d94d0e695a4bf3fa46aa6e7a40133a44bc1c9da4db9a464fd9f967910da"
+    },
+    {
+      "path": "docs/FREE_ROOT_LEARNING_PROTOCOL.md",
+      "bytes": 19264,
+      "sha256": "fe03ecea8ddfdab709a0f636d85d4260989cf0839f6738f2ee8697351e776066"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/external_originals/batch_fast_feedback_check_01.json",
+      "bytes": 11859,
+      "sha256": "610e26fc4068f12131dfd47535fab092710ad034d6e7b7b3bb60b88ce74c68c3"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/external_originals/check_batched_fast_feedback_equivalence.py",
+      "bytes": 13508,
+      "sha256": "aa4dd8a720a1a5acd189d6e68da646f53a927fe0b5c2795c6e978cf37e58725a"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/external_originals/EQUIVALENCE_CHECK_DESIGN.md",
+      "bytes": 4861,
+      "sha256": "3e4a1492ae30dfc367c20d5adbf52e1250ebf175a8d1f39cdd11754c032b908e"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/external_originals/preparation_receipt.json",
+      "bytes": 4777,
+      "sha256": "619975f313dee4b67f4f79b58068dbccfd9da19ed93b43b16ce34a3317e61b0d"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/external_originals/free_root_learning_protocol_design_receipt.json",
+      "bytes": 4354,
+      "sha256": "e879e85749fb0b4c387647d7f02dcd03453cbea500d99c183a99e9e97e6ab151"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/external_originals/collection_review_and_checks_preparation.json",
+      "bytes": 5096,
+      "sha256": "3519476dccaa9ba20dc34524f21bd35910daf1941b6ba8630560238ac66e9f1a"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/external_originals/collector_preparation.json",
+      "bytes": 865,
+      "sha256": "7df6bfec73ad542da8369019b76631d22c10636a5c956df02a273e25466bcffd"
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_free_root_pair_prediction_preparation/external_originals/contact_revision_preparation.json",
+      "bytes": 845,
+      "sha256": "5333eb72ef10e0850af9b7f4ec1516d7fc713489dcb2917e58f9fe126c8ff0fa"
+    }
+  ],
+  "Counted_class_AST_unchanged": true,
+  "batch_AST_unchanged": true,
+  "collector_revisions": [
+    "missing-contact maximum None",
+    "pre-data batch adoption with actual counters"
+  ],
+  "formal_physics": 0,
+  "model_fit_or_RLS": 0,
+  "no_seed_search_repeated": true,
+  "batch_check": "first_11_fixtures_all_passed",
+  "runner_published_separately_after_review": true
+}

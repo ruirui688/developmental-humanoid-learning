@@ -1,0 +1,97 @@
+{
+  "status": "batch_fast_feedback_candidate_prepared_not_executed",
+  "new_files": {
+    "external/batch_fast_feedback_candidate/batched_fast_feedback_pair_mpc.py": {
+      "bytes": 15128,
+      "sha256": "6135c9143ba6e7e1677a78ec8509b28c38de7f900a7ee0c5f6c4b98ca3522b7e",
+      "AST_only_syntax_passed": true
+    },
+    "external/batch_fast_feedback_candidate/check_batched_fast_feedback_equivalence.py": {
+      "bytes": 13508,
+      "sha256": "aa4dd8a720a1a5acd189d6e68da646f53a927fe0b5c2795c6e978cf37e58725a",
+      "AST_only_syntax_passed": true
+    },
+    "external/batch_fast_feedback_candidate/EQUIVALENCE_CHECK_DESIGN.md": {
+      "bytes": 4861,
+      "sha256": "3e4a1492ae30dfc367c20d5adbf52e1250ebf175a8d1f39cdd11754c032b908e"
+    }
+  },
+  "legal_dependency_source_pins": {
+    "src/developmental_physics/fast_feedback_pair_mpc.py": {
+      "bytes": 9551,
+      "sha256": "5a7d9d978de755c83023974628eb1891aa76f0e44a71a1454c6e676aacaa71f4"
+    },
+    "src/developmental_physics/fast_feedback_pair_model.py": {
+      "bytes": 2735,
+      "sha256": "289c5f5275ba7dcf6a162b42aa15af71ba067af4246d9bb0f5a3fded48fdc2e7"
+    },
+    "src/developmental_physics/fast_feedback_pair_development.py": {
+      "bytes": 45301,
+      "sha256": "f29196f9a2e54743b6da29f3fe587871559065959a746d25fe8347dc8dcd96c7"
+    },
+    "src/developmental_physics/guard_coupled_pair_model.py": {
+      "bytes": 3762,
+      "sha256": "7f234760e8f3d5b9cc799c871e84e7adfebecdf92e11f315735fad8b38ad78ed"
+    },
+    "src/developmental_physics/guard_pair_model.py": {
+      "bytes": 6860,
+      "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+    },
+    "src/developmental_physics/local_pair_model.py": {
+      "bytes": 25148,
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+    },
+    "src/developmental_physics/local_model.py": {
+      "bytes": 16564,
+      "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+    },
+    "pyproject.toml": {
+      "bytes": 698,
+      "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2"
+    },
+    "external/c4_free_learning_candidate/free_root_pair_development.py": {
+      "bytes": 47105,
+      "sha256": "7460c628b008f1bf6ba02e23b805005fe457a36938e82afd83300361c53bfa6b"
+    }
+  },
+  "new_python_AST_only_checks": 2,
+  "new_counted_adapter_full_class_AST_equal": true,
+  "Counted_class_AST_sha256": "a9340612c574db66235a5a00741e92b829b6bca5317044db39398f0e37da6e30",
+  "source_pin_pass_reads": 12,
+  "source_pin_pass_bytes_read": 191221,
+  "earlier_source_and_metadata_review_IO": "heterogeneous Get-Content/rg review reads not fully byte-measured; not zero",
+  "search_scope_notes": [
+    "One rg call used unsupported Windows path wildcards; corrected to explicit paths.",
+    "Filename-only source-path enumeration included archived source filenames but no archive/raw/model bytes were read.",
+    "Initial symbol-location search also scanned scripts and flat external helper code; returned only source matches, no raw files or saved model snapshots."
+  ],
+  "formal_physics_controls": 0,
+  "model_or_fit_calls": 0,
+  "RLS_updates": 0,
+  "saved_model_snapshot_or_raw_trajectory_reads": 0,
+  "old_tests_or_old_experiments_executed": false,
+  "new_equivalence_check_executed": false,
+  "production_writes": 0,
+  "commits_or_pushes": 0,
+  "new_synthetic_check_fixed_upper_bounds": {
+    "fixtures": 11,
+    "controller_selections": 22,
+    "pair_attempts": 267300,
+    "scalar_attempts": 534600,
+    "physics_controls": 0,
+    "RLS_updates": 0,
+    "snapshot_restores": 0
+  },
+  "formal_new_collector_adapter_required": "BatchedFastFeedbackResidualPDPairMPC(model, ranges, counted_model_type=NewCollectorCountedGuardModel)",
+  "semantic_scope": "deterministic known model/Counted adapter: original 81/H150/PD/guard/cost/ties/fallback/logical work; native math ValueError rejects retain known scalar attempts/returns",
+  "finite_limitations": [
+    "No numerical check or speed measurement has been executed.",
+    "Preserves original 1D dots, two-head layout, Euler expression and Python scalar cost; no matrix reduction or allclose gate.",
+    "Stage-major scheduling changes the actually paid prefix of asynchronous interruption/resource failure; attached actual accounting must be retained, no retry.",
+    "Any unknown or overwritten model uses scalar fallback and must expose last_batch_execution; adapter class/MRO/code assumptions must be frozen.",
+    "No Z2 rejudgement, scientific success or 20ms realtime claim."
+  ],
+  "automatic_retry": false,
+  "wall_seconds_before_receipt": 0.023865099996328354,
+  "cpu_seconds_before_receipt": 0.015625
+}

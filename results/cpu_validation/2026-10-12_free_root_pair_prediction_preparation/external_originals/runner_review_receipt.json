@@ -1,0 +1,107 @@
+{
+  "schema": "free_root_pair_runner_static_review_v1",
+  "created_at_utc": "2026-10-11T22:06:35.539243+00:00",
+  "status": "review_passed_with_bounded_synthetic_gate_check",
+  "final_runner": {
+    "bytes": 28302,
+    "sha256": "24ba8ff3853af16081077da7ccb5acc3b527908d7cb5ed6d661631bde79f8c15"
+  },
+  "runner_candidate": {
+    "path": "external\\c4_free_learning_candidate\\develop_free_root_pair.py",
+    "bytes": 28302,
+    "sha256": "24ba8ff3853af16081077da7ccb5acc3b527908d7cb5ed6d661631bde79f8c15"
+  },
+  "protocol_pin": "None; root must insert exact frozen protocol identity before canonical publication",
+  "production_protocol": {
+    "path": "docs\\FREE_ROOT_LEARNING_PROTOCOL.md",
+    "bytes": 19264,
+    "sha256": "fe03ecea8ddfdab709a0f636d85d4260989cf0839f6738f2ee8697351e776066"
+  },
+  "reviewed_collector": {
+    "path": "src\\developmental_physics\\free_root_pair_development.py",
+    "bytes": 55672,
+    "sha256": "baccf91a05e7b5bf55024ac96c717872d8624d3e17d49a74c35d12a6f93a0a8b"
+  },
+  "reviewed_batch_adapter": {
+    "path": "src\\developmental_physics\\batched_fast_feedback_pair_mpc.py",
+    "bytes": 15128,
+    "sha256": "6135c9143ba6e7e1677a78ec8509b28c38de7f900a7ee0c5f6c4b98ca3522b7e"
+  },
+  "pre_review_runner_preserved": {
+    "path": "external\\c4_free_learning_candidate\\develop_free_root_pair_before_gate_review.py",
+    "bytes": 23866,
+    "sha256": "413b73af67ae51eae3cf9ccdae8a2f28413c278ce9cbe8535c178c934fb661c3"
+  },
+  "bounded_first_gate_check": {
+    "source": {
+      "path": "external\\c4_free_learning_candidate\\check_runner_fr1_gate.py",
+      "bytes": 9659,
+      "sha256": "fbf76ce36518795679c9ef581fe50cb826e468d6790c00f39690fca143da70f9"
+    },
+    "results": {
+      "path": "external\\c4_free_learning_candidate\\runner_gate_check_first.json",
+      "bytes": 2211,
+      "sha256": "197ce9a46f4b4134acf241f0ac4ea4ec720dabd19bf83377757678805512b9cc"
+    },
+    "stdout": {
+      "path": "external\\c4_free_learning_candidate\\runner_gate_check_stdout.log",
+      "bytes": 1244,
+      "sha256": "ef94aab584c48babd2e6937115ad52378fe8f27fbb5496fac43dfa07377ca5df"
+    },
+    "stderr": {
+      "path": "external\\c4_free_learning_candidate\\runner_gate_check_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fixed_cases": 6,
+    "failed_cases": 0,
+    "first_process_exit_code": 0,
+    "repeat_runs": 0,
+    "cases": [
+      "valid_FR1_with_stage_false_defaults",
+      "prediction_domain_qualification_missing",
+      "calibration_partial_paid_population",
+      "learned_snapshot_count_drift",
+      "source_pin_drift",
+      "premature_control_success_flag"
+    ],
+    "execution": "AST extracts only normalize_metrics_boundary, _require_fr1_trial and _require_fr1 plus FLAGS/GATE_FLAGS/SEEDS; no production imports"
+  },
+  "static_review": {
+    "AST_parse": "runner and new collector and batch adapter passed; not imported",
+    "stage_boundaries": "Both new source and FR0 source subset/runtime must pass before production import. FR2 additionally requires first new FR1 gate/models; no suspended snapshot path.",
+    "flags_fix": "Missing unattempted stage flags setdefault(False), retained prediction success unchanged; production/journal exceptions veto all four gate flags; five broad scientific/C4/C5 flags stay false.",
+    "FR1_domain_metadata": "All six calibration/prediction installations explicitly require native-complete/no-stop/no-failure, unchanged original asset freejoint/no mount, both complete left-arm positive-contact phases, and complete known sampled actual-effort metadata; duplicated matrix and seed entries must agree.",
+    "FR2_domain": "Collector compares cold/learned only after full native/contact/actual-effort qualified tracking, then strong PD; zero population reported separately and may stop without becoming a new adoption veto per protocol.",
+    "batch_API": "select signature, decision dataclass counters/spec/fingerprint, explicit counted_model_type=local CountedGuardModel and counted wrapper methods statically match collector call sites. Earlier 11-case batch first result belongs to root; not rerun here.",
+    "dependency_change": [
+      "src/developmental_physics/batched_fast_feedback_pair_mpc.py",
+      "src/developmental_physics/fast_feedback_pair_development.py"
+    ],
+    "old_Counted_import_closure": "Old Counted module imports only common model/local/scalar MPC modules already pinned; it receives env_factory and does not import any suspended environment. New free-root/base environment and package init/asset/pyproject are separately frozen.",
+    "failure_preservation": "Collector journals paid native before audit/study/RLS, retains paid deltas and unknown actual effort for failed core/audit; runner closes journal and stores source/collector failure, partial models/trials/trace and four false stage gates. Parent launcher retains first stdout/stderr/exit.",
+    "honest_cost_boundary": "Constructor/reset internal model builds/forwards and OS I/O remain unmeasured_unknown_not_zero; confirmed physics, native endpoints, learning commits and model work use explicit counted scopes."
+  },
+  "limitations": [
+    "Final serialization/compression/output-manifest errors remain outside collector catch: first paid journal and parent stdio persist, but complete JSON/source/archive emission is not guaranteed on filesystem failure. No failed run is retried.",
+    "The six fixtures validate new gate wiring/metadata rejection only, not scientific predictions, controller equivalence, dynamics, safety or FR1/FR2 success.",
+    "Protocol/source pin canonical path/clean HEAD and actual FR0/FR1 archive validation occur only at authorized first production launch; no old archive was read during review."
+  ],
+  "execution_boundary": {
+    "raw_reads": 0,
+    "saved_parameter_or_snapshot_file_reads": 0,
+    "production_imports": 0,
+    "new_physics": 0,
+    "model_calls": 0,
+    "prediction_calls": 0,
+    "fit": 0,
+    "RLS": 0,
+    "old_checks_repeated": 0,
+    "batch_checks_repeated": 0,
+    "production_files_modified_by_child": 0,
+    "new_stdlib_synthetic_gate_cases": 6,
+    "filesystem_IO": "unmeasured_not_zero"
+  },
+  "actual_blockers": [],
+  "preparation_note": "A first external edit attempt detected LF/CRLF anchor mismatch before mutation; original runner backup retained, corrected edit script only. No fixture or production run occurred in that preparation failure."
+}

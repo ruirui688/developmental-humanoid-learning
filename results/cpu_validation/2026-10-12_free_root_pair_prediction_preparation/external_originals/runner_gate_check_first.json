@@ -1,0 +1,75 @@
+{
+  "schema": "FR1_gate_first_stdlib_synthetic_v1",
+  "created_at_utc": "2026-10-11T22:05:34.109475+00:00",
+  "status": "passed",
+  "fixed_cases": 6,
+  "cases": [
+    {
+      "name": "valid_FR1_with_stage_false_defaults",
+      "expected": "accept",
+      "passed": true,
+      "actual": "accept"
+    },
+    {
+      "name": "prediction_domain_qualification_missing",
+      "expected": "reject",
+      "passed": true,
+      "actual": "reject",
+      "error_type": "ValueError",
+      "error": "complete_new_FR1_native_contact_domain_trial_required:prediction"
+    },
+    {
+      "name": "calibration_partial_paid_population",
+      "expected": "reject",
+      "passed": true,
+      "actual": "reject",
+      "error_type": "ValueError",
+      "error": "complete_new_FR1_native_contact_domain_trial_required:calibration"
+    },
+    {
+      "name": "learned_snapshot_count_drift",
+      "expected": "reject",
+      "passed": true,
+      "actual": "reject",
+      "error_type": "ValueError",
+      "error": "new_FR1_zero_and_4000_atomic_frozen_counts_required"
+    },
+    {
+      "name": "source_pin_drift",
+      "expected": "reject",
+      "passed": true,
+      "actual": "reject",
+      "error_type": "ValueError",
+      "error": "all_new_FR1_frozen_dependencies_required_for_FR2"
+    },
+    {
+      "name": "premature_control_success_flag",
+      "expected": "reject",
+      "passed": true,
+      "actual": "reject",
+      "error_type": "ValueError",
+      "error": "FR1_prediction_cannot_predeclare_control_mechanism_success"
+    }
+  ],
+  "production_imports": 0,
+  "raw_reads": 0,
+  "saved_weight_or_snapshot_file_reads": 0,
+  "new_physics": 0,
+  "model_or_prediction_calls": 0,
+  "fit": 0,
+  "RLS": 0,
+  "old_check_or_batch_fixture_runs": 0,
+  "filesystem_IO": "unmeasured_not_zero",
+  "runner": {
+    "path": "external\\c4_free_learning_candidate\\develop_free_root_pair.py",
+    "bytes": 28302,
+    "sha256": "24ba8ff3853af16081077da7ccb5acc3b527908d7cb5ed6d661631bde79f8c15"
+  },
+  "executed_functions": [
+    "_require_fr1",
+    "_require_fr1_trial",
+    "normalize_metrics_boundary"
+  ],
+  "case_count": 6,
+  "failed_count": 0
+}

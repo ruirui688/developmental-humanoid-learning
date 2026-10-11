@@ -1,0 +1,97 @@
+{
+  "schema": "free_root_collection_review_and_check_preparation_v1",
+  "created_utc": "2026-10-11T21:57:19.756051+00:00",
+  "status": "static_review_and_prepared_only_not_tested_not_production",
+  "collector": {
+    "path": "external/c4_free_learning_candidate/free_root_pair_development.py",
+    "bytes": 54992,
+    "sha256": "4b22186146139672b0cf19e724c2cd4951a46882647dbeb2a8acad6fd812868b",
+    "collect_trial_ast_sha256": "48245e163306c94fa7af8f581e1481b871f8e5dd12026e6e91535d06940bb71f",
+    "additional_static_review_AST_sha256": {
+      "native_input_ranges": "15066bd83efd3aaf4c2d3a5503612dab3a6e739523d15570d9613c8cb912184b",
+      "free_root_contact_population": "6d8d28e4c2c54b0937ee64f2d927ce14bb7fdbf8165e53bc016d0a953c2d0e43",
+      "score_qualified_population": "f11823315aac0b7133a4aba5520ca993dffe6296a0a788f9ba8bf6c5d60ffcbb",
+      "tracking_score_qualified": "51947f52611f07ea940ece99618879a494dc4d58f11185eaed62c2f1ff54c792",
+      "control_origin_domain": "d33ab1c85ca3b425acc5c31270dbc768122475410bb101f26374e05a8b28227e"
+    }
+  },
+  "candidate_tests": {
+    "path": "external/c4_free_learning_candidate/test_free_root_pair_collection.py",
+    "bytes": 14210,
+    "sha256": "91a6f839ff819dad89c83f4f2ef7cc6fbba318a0b6ff6027af4501a914a00197",
+    "test_count": 6,
+    "test_names": [
+      "test_new_supine_collector_completes_one_reset_and_paid_before_audit",
+      "test_new_audit_failure_retains_paid_actual_effort_and_never_updates",
+      "test_new_active_equality_stops_after_paid_audit_and_before_update",
+      "test_new_metadata_drift_rejects_complete_qualification_without_erasing_paid_calls",
+      "test_new_zero_substep_base_stop_cannot_become_complete_or_trigger_audit",
+      "test_new_core_exception_keeps_paid_delta_and_marks_missing_actual_as_lower_bound"
+    ],
+    "static_AST_parse": "passed",
+    "fixture_prefix": 2,
+    "maximum_active_steps_per_fixture": 2,
+    "real_environment_factory_replaced": true,
+    "asset_path_replaced_with_synthetic_tmp_xml": true,
+    "update_callback": "observer only; no model or RLS",
+    "algorithm_or_physics_calls_in_test_AST": [],
+    "executed": false
+  },
+  "static_review": {
+    "scope": [
+      "new collect_trial supine reset and metadata references",
+      "paid native -> contact audit -> StudyAbort -> update callback ordering",
+      "complete_telemetry/effort new-domain adaptation",
+      "free_root_fast_feedback_environment audit metadata contract",
+      "run_prediction/run_control new-domain reference handoff read only",
+      "New complete contact phase qualification and explicit unknown paid effort metadata; no new math evaluation"
+    ],
+    "blocking_collector_defects_observed": [],
+    "contact_gate_addition": "Read new complete-phase positive endpoint qualification, report-only 0.4s blocks, FR1 calibration blocker, FR2 required cold/learned/PD and zero descriptive tracking; original mathematical gates unchanged.",
+    "missing_native_after_core_exception": "New explicit confirmed_paid_substeps, unknown_actual_effort_substeps and actual_effort_population_complete distinguish missing paid native from observed zero effort; tests prepared to assert.",
+    "metadata_drift": "rejects scientific complete qualification while retaining earlier paid updates and samples",
+    "base_stop": "zero substep return cannot become complete and receives no floor audit",
+    "paid_writer_failure": "not one of six requested fixtures; raw observation/diagnostics already in row; no claim of full recovery tests",
+    "minor_schema_review_note": "No observed contact snapshots: maximum_endpoint_normal_force_n default 0 is not a measured zero. Recommended max(sums) if sums else None; any partial max describes observed samples only. Root acknowledged and will make this sole source revision; reviewer did not modify collector."
+  },
+  "execution_boundary": {
+    "raw_or_saved_model_parameter_reads": 0,
+    "production_imports": 0,
+    "test_or_fixture_execution": 0,
+    "model_calls": 0,
+    "fit": 0,
+    "rls": 0,
+    "physics": 0,
+    "production_writes": 0,
+    "git_commit_or_push": 0,
+    "stdlib_static_ast_hash_and_file_io_only": true,
+    "filesystem_IO_not_measured": true
+  },
+  "source_read_failure_retained": {
+    "command_scope": "narrow rg test globs on Windows",
+    "exit_code": 1,
+    "reason": "literal wildcard path glob rejected by rg/Windows; corrected to rg -g over tests, no experiment or fixture attempt"
+  },
+  "updated_utc": "2026-10-11T21:58:43.944536+00:00",
+  "seed_search": {
+    "evidence_from": "parent transcript, not repeated",
+    "exact_integer_boundary_search_count": 1,
+    "scope": [
+      "README",
+      "AGENTS",
+      "docs",
+      "src",
+      "scripts",
+      "tests"
+    ],
+    "excluded": [
+      "raw",
+      "results",
+      "external"
+    ],
+    "digit_matches": 1,
+    "public_seed_matches": 0,
+    "match": "tests/test_feedback_development_audit.py:257 synthetic control_calls_attempted=7901",
+    "absolute_unused_claim": false
+  }
+}

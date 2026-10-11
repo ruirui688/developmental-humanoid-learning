@@ -1,0 +1,19 @@
+{
+  "command": "external/cpu_physics_env/Scripts/python.exe -m pytest -q tests/test_free_root_pair_collection.py",
+  "PYTHONPATH": "src",
+  "first_attempt": true,
+  "exit_code": 0,
+  "tool_output": "...... [100%]\n6 passed in 0.35s\n",
+  "tool_wall_seconds": 1.1261831,
+  "formal_physics_or_models_or_fit_updates": 0,
+  "test_source": {
+    "bytes": 14210,
+    "sha256": "91a6f839ff819dad89c83f4f2ef7cc6fbba318a0b6ff6027af4501a914a00197"
+  },
+  "collector_source": {
+    "bytes": 55672,
+    "sha256": "baccf91a05e7b5bf55024ac96c717872d8624d3e17d49a74c35d12a6f93a0a8b"
+  },
+  "fresh_checks_only": true,
+  "old_math_or_physics_repeated": false
+}

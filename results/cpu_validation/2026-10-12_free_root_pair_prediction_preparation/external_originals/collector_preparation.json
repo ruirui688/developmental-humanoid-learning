@@ -1,0 +1,31 @@
+{
+  "source": {
+    "path": "src/developmental_physics/fast_feedback_pair_development.py",
+    "bytes": 45301,
+    "sha256": "f29196f9a2e54743b6da29f3fe587871559065959a746d25fe8347dc8dcd96c7"
+  },
+  "candidate": {
+    "bytes": 47105,
+    "sha256": "7460c628b008f1bf6ba02e23b805005fe457a36938e82afd83300361c53bfa6b"
+  },
+  "unchanged_math_ASTs": [
+    "safe",
+    "identity",
+    "failure",
+    "native",
+    "study_abort",
+    "direction_targets",
+    "pulse",
+    "counted_pd",
+    "CountedGuardModel",
+    "restore_model",
+    "effort",
+    "score_population",
+    "tracking_score"
+  ],
+  "static_AST_parse_passed": true,
+  "tests_model_fit_or_physics_calls": 0,
+  "public_seed_search": "one 7901 synthetic control-count match; zero discovered seed uses; nonpublic use unknown",
+  "production_writes": 0,
+  "automatic_retry": false
+}

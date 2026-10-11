@@ -16,6 +16,8 @@
 
 当前执行入口：
 
+- **FR1/FR2新自由身体学习协议准备完成，等待冻结提交后首次FR1。** [协议](FREE_ROOT_LEARNING_PROTOCOL.md)固定新开发seed7901/7902/7903、原仰卧freejoint资产、2ms原生q/v反馈和18系数新初始化模型；不恢复悬挂learned。FR1上限21,000控制/子步、12,000vector/24,000scalar在线更新，独立预测原门全过才执行已冻FR2。新6项collector pure checks全过；pre-data batch首次11项固定合成等价全过，154,062 pair/307,962 scalar attempts、0物理/fit/RLS/restore。batch只实现优化，原81/H150与科学门不变，实际费用分列、不宣称实时。检查提交推送后立即继续；C4–C7不因此解除。
+
 - **Z0首次完整工程门通过。** [首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次seed7600完成1000zero+2000PD、3000控制/3000子步，0异常/停止/fit；两个末200点/.4s窗口的肩/肘四项MAE均≤.01rad。root首新thin contract零failed，独立4个Z0 MAE；记录一致与工程通过仍不证明学习或科学验收。
 - [2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)保持物理/PD64/Kd(4,4)/权限/6s任务，反馈/感觉与active研究停止检查频率增多，公开额外经典控制能力。全子步left_arm/feet/other接触零观察；固定支撑反力unknown，不从不同seed的X/Y失败识别频率因果，不追认自由root真实接触C4或解除C5科学依赖。
 - **Z1预测通过，Z2完整控制贡献门失败。** [Z1](FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md)指定独立预测门通过；[Z2](FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)首次12组全部完整36000控制/子步、0停止异常。joint/肩/肘贡献7.5535%/8.8449%/5.6905%，均不足原20%；实际努力门通过，正式PD门按前置条件不可评。自身长时肩预测退化，不能将独立预测结论延伸到闭环有效域。120新条件RMSE向量及新跟踪/努力核验通过；只证明保存一致。随后[FR0首次接触工程](FREE_ROOT_FAST_FEEDBACK_ENGINEERING_RESULTS.md)完整通过；零学习，下一项另冻本域辨识/预测/匹配控制。不改Z2门补跑，C4及C5–C7仍未验收。
