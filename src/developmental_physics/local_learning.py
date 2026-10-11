@@ -43,7 +43,7 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
         sources.append(protocol_path)
     source_bytes = {p.relative_to(root).as_posix(): p.read_bytes() for p in sources}
     metadata = {
-        "schema_version": 1, "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "schema_version": 2, "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "purpose": "CPU local body learning and frozen causal prediction/control evaluation",
         "source_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip(),
         "source_status": subprocess.check_output(["git", "status", "--porcelain", "--untracked-files=all"], cwd=root, text=True),
@@ -60,6 +60,8 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
         "fixed_pd": {"kp": 4., "kd": .2, "torque_limit_nm": .5},
         "protocol": None if protocol_path is None else {"path": protocol_path.relative_to(root).as_posix(), "sha256": _hash(protocol_path)},
         "claim_boundary": "Local single-joint learning only; no rolling, standing, walking or real robot result.",
+        "completion_definition": "Every planned episode has a recorded outcome; no scientific benefit gate is implied.",
+        "trial_success_definition": "Episode completed without exception or stop; not a model/control benefit criterion.",
         "complete": False,
     }
     metadata["source_dirty"] = bool(metadata["source_status"])
@@ -67,7 +69,21 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
     with zipfile.ZipFile(output/"source_snapshot.zip", "w", zipfile.ZIP_DEFLATED) as archive:
         for name, data in source_bytes.items():
             archive.writestr(name, data)
-    episodes, seed_results = [], []
+    kinds = ("calibration", "prediction", "frozen_mpc", "learned_mpc", "fixed_pd", "zero_torque")
+    planned = [{"trial_id": f"seed{seed}_{kind}", "seed": seed, "kind": kind,
+                "maximum_control_steps": 100 + (300 if kind == "calibration" else
+                                                (100 if kind == "prediction" else 200))}
+               for seed in seeds for kind in kinds]
+    metadata.update(planned_episodes=planned, planned_episode_count=len(planned),
+                    maximum_control_steps=sum(p["maximum_control_steps"] for p in planned),
+                    archive_status="running")
+    episodes = [{**plan, "status": "planned", "reason": None, "collector_exception": None,
+                 "control_calls_attempted": 0, "control_steps": 0, "physics_steps": 0,
+                 "phase_budgets": {p: dict(control_calls_attempted=0, control_steps=0, physics_steps=0)
+                                   for p in ("prefix", "calibration", "prediction", "control")}}
+                for plan in planned]
+    by_id = {episode["trial_id"]: episode for episode in episodes}
+    seed_results = []
     started = time.perf_counter()
 
     def checkpoint():
@@ -77,12 +93,35 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
                         model_updates=sum(s["calibration_updates"] for s in seed_results),
                         exception_trials=sum(e["status"] == "exception" for e in episodes),
                         terminated_trials=sum(e["status"] == "terminated" for e in episodes),
+                        completed_trials=sum(e["status"] == "completed" for e in episodes),
+                        blocked_trials=sum(e["status"] == "blocked" for e in episodes),
+                        unprocessed_trials=sum(e["status"] == "planned" for e in episodes),
                         wall_seconds=time.perf_counter()-started)
-        _write_json(output/"metadata.json", metadata)
-        _write_json(output/"episodes.json", episodes)
-        _write_json(output/"seed_results.json", seed_results)
+        metadata["failed_trials"] = metadata["exception_trials"] + metadata["terminated_trials"]
+        metadata["skipped_trials"] = metadata["blocked_trials"]
+        # Save parameters and costs first. Attempt every checkpoint file even
+        # when one write fails; a secondary failure must not hide the model.
+        errors = []
+        for filename, record in (("seed_results.json", seed_results),
+                                 ("episodes.json", episodes), ("metadata.json", metadata)):
+            try:
+                archived = (_archive_record(record) if isinstance(record, dict)
+                            else [_archive_record(item) for item in record])
+                _write_json(output / filename, archived)
+            except Exception as exc:
+                errors.append(exc)
+        if errors:
+            raise errors[0]
+
+    def fingerprints(nominal, learned):
+        return [None if model is None else model.parameter_fingerprint()
+                for model in (nominal, learned)]
+
+    def block(episode, reason):
+        episode.update(status="blocked", reason=reason)
 
     checkpoint()
+    fatal = None
     try:
         with gzip.open(output/"trace.jsonl.gz", "wt", encoding="utf-8") as trace:
             for seed in seeds:
@@ -90,27 +129,37 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
                 learned = nominal = None
                 direction = None
                 reference = None
-                calibr_updates = 0
-                result_seed = {"seed": seed, "reset_seed": reset_seed, "evaluations": {}, "calibration_updates": 0}
+                calibration_complete = False
+                result_seed = {"seed": seed, "reset_seed": reset_seed, "evaluations": {},
+                               "calibration_updates": 0, "calibration_completed": False,
+                               "initial_model": None, "learned_model": None}
                 seed_results.append(result_seed)
-                for kind in ("calibration", "prediction", "frozen_mpc", "learned_mpc", "fixed_pd", "zero_torque"):
+                for kind in kinds:
+                    episode = by_id[f"seed{seed}_{kind}"]
+                    if kind != "calibration" and not calibration_complete:
+                        reason = {"type": "DependencyBlocked", "message": "calibration did not complete",
+                                  "dependency": f"seed{seed}_calibration"}
+                        block(episode, reason)
+                        result_seed["evaluations"][kind] = {"completed": False, "status": "blocked", "reason": reason}
+                        checkpoint()
+                        continue
                     env = None
                     observation = previous = None
                     calls = 0
                     phase = "prefix"
                     error = None
                     env_before = None
-                    before_models = None
+                    before_models = None if kind == "calibration" else fingerprints(nominal, learned)
                     q_errors, predictions = [], {"frozen": [], "learned": []}
                     action_times = []
-                    phase_budget = {p: dict(control_calls_attempted=0, control_steps=0, physics_steps=0)
-                                    for p in ("prefix", "calibration", "prediction", "control")}
+                    phase_budget = episode["phase_budgets"]
+                    planner = None
+                    trace_failure = None
+                    duration = 300 if kind == "calibration" else (100 if kind == "prediction" else 200)
                     try:
                         env = GroundBodyEnv()
                         observation = env.reset(seed=reset_seed, pose=pose)
                         env_before = env.parameter_fingerprint()
-                        duration = 300 if kind == "calibration" else (100 if kind == "prediction" else 200)
-                        planner = None
                         previous_torque = 0.
                         for index in range(100+duration):
                             phase = "prefix" if index < 100 else (kind if kind in ("calibration", "prediction") else "control")
@@ -131,7 +180,6 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
                                                        initial_model=nominal.snapshot())
                                 else:
                                     assert q0 == reference and record["direction"] == direction
-                                    before_models = (nominal.parameter_fingerprint(), learned.parameter_fingerprint())
                                     if kind.endswith("mpc"):
                                         model = nominal if kind == "frozen_mpc" else learned
                                         planner = FixedLocalMPC(model, env.model.joint(env.joint_names[joint]).range)
@@ -174,13 +222,12 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
                                     update = learned.update(q, v, float(requested[joint]), next_v)
                                     update["coefficients_after"] = learned.coefficients.tolist()
                                     update["covariance_after"] = learned.covariance.tolist()
-                                    calibr_updates += 1
-                                    result_seed["calibration_updates"] = calibr_updates
+                                    result_seed["calibration_updates"] = learned.update_count
                                 for name, prediction in predicted.items():
                                     predictions[name].append(next_v-float(prediction[1]))
                                 if target is not None:
                                     q_errors.append(float(observation["joint_position"][joint])-target)
-                            trace.write(json.dumps(_archive_record({
+                            row = json.dumps(_archive_record({
                                 "trial_id": f"seed{seed}_{kind}", "seed": seed, "kind": kind,
                                 "step_index": index, "phase": phase, "target_q": target,
                                 "requested_torque": requested, "observation_before": previous,
@@ -188,46 +235,90 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
                                 "model_update": update, "diagnostics": stepped.diagnostics,
                                 "planner_decision": None if decision is None else decision.to_dict(),
                                 "qpos": env.data.qpos, "qvel": env.data.qvel,
-                            }), allow_nan=False)+"\n")
+                            }), allow_nan=False)+"\n"
+                            try:
+                                trace.write(row)
+                            except BaseException as exc:
+                                trace_failure = exc
+                                raise
                             previous_torque = float(requested[joint])
                             if stepped.terminated:
                                 break
                         if env_before != env.parameter_fingerprint():
                             raise RuntimeError("physical parameters changed")
-                        if kind == "calibration":
-                            learned = learned.clone_frozen()
-                            result_seed["learned_model"] = learned.snapshot()
-                        elif before_models != (nominal.parameter_fingerprint(), learned.parameter_fingerprint()):
+                        if kind != "calibration" and before_models != fingerprints(nominal, learned):
                             raise RuntimeError("evaluation changed a model")
+                    except BaseException as exc:
+                        error = {"type": type(exc).__name__, "message": str(exc)}
+                        try:
+                            trace.write(json.dumps(_archive_record({"trial_id": f"seed{seed}_{kind}", "phase": phase,
+                                "collector_exception": error, "observation_before": previous,
+                                **_exception_snapshot(env)}), allow_nan=False)+"\n")
+                        except BaseException as write_exc:
+                            trace_failure = trace_failure or write_exc
+                            episode["exception_trace_write_error"] = {
+                                "type": type(write_exc).__name__, "message": str(write_exc)}
+                        if isinstance(exc, (KeyboardInterrupt, SystemExit)) or trace_failure is not None:
+                            fatal = exc
+                    finally:
+                        # Save partial parameters after any successful update,
+                        # including a later trace write failure or interruption.
+                        if kind == "calibration":
+                            if learned is not None:
+                                learned = learned.clone_frozen()
+                                result_seed["learned_model"] = learned.snapshot()
+                                result_seed["calibration_updates"] = learned.update_count
+                            calibration_complete = (error is None and env is not None
+                                                    and env.step_id == 100+duration and not env.terminated)
+                            result_seed["calibration_completed"] = calibration_complete
+                        terminated = env is not None and env.terminated
+                        completed = error is None and env is not None and env.step_id == 100+duration and not terminated
+                        status = "exception" if error else ("terminated" if terminated else "completed")
+                        # A stop latch keeps its original reason even if an
+                        # additional archive error follows the stopped step.
+                        reason = env.reason if terminated else error
+                        episode.update(_archive_record({
+                            "control_calls_attempted": calls, "control_steps": 0 if env is None else env.step_id,
+                            "physics_steps": 0 if env is None else env.physics_steps, "phase_budgets": phase_budget,
+                            "status": status, "reason": reason, "collector_exception": error,
+                            "environment_fingerprint_before": env_before,
+                            "environment_fingerprint_after": None if env is None else env.parameter_fingerprint()}))
                         result_seed["evaluations"][kind] = {
                             "tracking_rmse_rad": None if not q_errors else float(np.sqrt(np.mean(np.square(q_errors)))),
                             "velocity_prediction_rmse": {n: None if not errors else float(np.sqrt(np.mean(np.square(errors)))) for n,errors in predictions.items()},
                             "controller_seconds_p95": None if not action_times else float(np.quantile(action_times,.95)),
-                            "completed": env.step_id == 100+duration and not env.terminated,
-                            "models_before": before_models, "models_after": [nominal.parameter_fingerprint(), learned.parameter_fingerprint()],
+                            "completed": completed, "status": status, "reason": reason,
+                            "models_before": before_models, "models_after": fingerprints(nominal, learned),
                             "planner_spec": None if planner is None else planner.spec(),
                         }
-                    except BaseException as exc:
-                        error = {"type": type(exc).__name__, "message": str(exc)}
-                        trace.write(json.dumps(_archive_record({"trial_id": f"seed{seed}_{kind}", "phase": phase,
-                            "collector_exception": error, "observation_before": previous, **_exception_snapshot(env)}), allow_nan=False)+"\n")
-                        raise
-                    finally:
-                        episodes.append(_archive_record({"seed": seed, "kind": kind,
-                            "control_calls_attempted": calls, "control_steps": 0 if env is None else env.step_id,
-                            "physics_steps": 0 if env is None else env.physics_steps, "phase_budgets": phase_budget,
-                            "status": "exception" if error else ("terminated" if env.terminated else "completed"),
-                            "reason": error or (None if env is None else env.reason),
-                            "environment_fingerprint_before": env_before,
-                            "environment_fingerprint_after": None if env is None else env.parameter_fingerprint()}))
-                        checkpoint()
-                    if env.terminated:
-                        raise RuntimeError("predeclared trial stopped; preserve and do not replace")
+                        try:
+                            checkpoint()
+                        except BaseException as save_exc:
+                            if fatal is None:
+                                fatal = save_exc
+                            metadata["checkpoint_exception"] = {
+                                "type": type(save_exc).__name__, "message": str(save_exc)}
+                    if fatal is not None:
+                        raise fatal
         metadata["complete"] = True
+        metadata["archive_status"] = "complete"
+    except BaseException as exc:
+        fatal = fatal or exc
+        metadata.update(complete=False, archive_status="interrupted" if isinstance(exc, (KeyboardInterrupt, SystemExit)) else "failed",
+                        collector_exception={"type": type(exc).__name__, "message": str(exc)})
+        raise
     finally:
-        checkpoint()
-        _write_json(output/"manifest.json", {p.name: _hash(p) for p in sorted(output.iterdir())
-                    if p.is_file() and p.name != "manifest.json"})
+        for episode in episodes:
+            if episode["status"] == "planned":
+                block(episode, {"type": "ArchiveAborted", "message": "run interrupted before planned episode"})
+        metadata["all_trials_successful"] = all(e["status"] == "completed" for e in episodes)
+        try:
+            checkpoint()
+            _write_json(output/"manifest.json", {p.name: _hash(p) for p in sorted(output.iterdir())
+                        if p.is_file() and p.name != "manifest.json"})
+        except BaseException:
+            if fatal is None:
+                raise
     return metadata
 
 
