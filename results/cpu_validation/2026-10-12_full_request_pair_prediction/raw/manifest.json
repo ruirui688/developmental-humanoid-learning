@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FR3A",
+  "stage": "prediction",
+  "status": "completed",
+  "files": {
+    "paid_intervals.jsonl.gz": {
+      "bytes": 23975649,
+      "sha256": "9ce8f377fdc2815930ff6141e94b35978095141c876f2474766377f8506f8184"
+    },
+    "run.json": {
+      "bytes": 1056891,
+      "sha256": "3a34910c38fdeae4e7d0aa0a3f6e5bceacd0ebf59978720e1a276aa6f9c114a8"
+    },
+    "metrics.json": {
+      "bytes": 11914,
+      "sha256": "2df401375570483fd7130308100ec0158ecd6191552363ae0ac1e0b6dd8029ef"
+    },
+    "models.json": {
+      "bytes": 60939,
+      "sha256": "7c3dc74a8ade16bbf2d9cf1da35b272c86cabd1efd87c5c5a78676789d568f93"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 33996554,
+      "sha256": "f4299722cbf72b2136dabed67fed5025cec7b1fd6dadf530509805fd70bc49a5"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 5289412,
+      "sha256": "2559f2499e351b7b3355d9abe93fad698c2b1ae4f4a1f03a4b352dae48d84601"
+    },
+    "source.zip": {
+      "bytes": 90197,
+      "sha256": "a1bd541bb717e709e0149c360a6e42d78a091c734dbe5bb751c2e51b43c49aa9"
+    },
+    "installed/FR3_8001_calibration.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR3_8001_prediction.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR3_8002_calibration.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR3_8002_prediction.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR3_8003_calibration.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR3_8003_prediction.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

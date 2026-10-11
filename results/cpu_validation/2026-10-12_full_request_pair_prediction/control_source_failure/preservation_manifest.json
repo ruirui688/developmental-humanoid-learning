@@ -1,0 +1,53 @@
+{
+  "first_B_invocation_failed": true,
+  "phase": "source_validation",
+  "failure": "clean_exact_FR_learning_HEAD_required",
+  "cause": "new A archive untracked before its checkpoint commit",
+  "physical_control_has_not_started": true,
+  "first_physical_control_attempt_pending": true,
+  "automatic_retry": false,
+  "code_protocol_threshold_or_seed_changed": false,
+  "payloads": {
+    "first_execution_receipt.json": {
+      "bytes": 909,
+      "sha256": "d1564774ac97f9334e93f00c42faa3f201d21335a163bac1f6c551489973b703"
+    },
+    "raw/failure.json": {
+      "bytes": 557,
+      "sha256": "66ca2e3151a92b245bec813d8e2513e3b8ad4028be0f7cd35cb615578b8a7c80"
+    },
+    "raw/manifest.json": {
+      "bytes": 1108,
+      "sha256": "42c54a8b794e64582b6f5aa64e20bc2ac6be17a4df9726dde623a5b47a75e5d3"
+    },
+    "raw/metrics.json": {
+      "bytes": 509,
+      "sha256": "7b3d96c98ed2df252b33acf1ed1274dc23b00fea102d818e41532152cfac8b1a"
+    },
+    "raw/models.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "raw/run.json": {
+      "bytes": 2939,
+      "sha256": "140864972adebcb8e65005fbc312139030bcbaf0a70a85992ff7a590b7ad1cd3"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "bytes": 1805,
+      "sha256": "c8263524cb3c2a5bc258e3c21356753ed3940f9ef2c78266116776e25c7f9014"
+    }
+  },
+  "continuous_goal_stays_active": true
+}

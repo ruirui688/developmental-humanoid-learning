@@ -1,6 +1,10 @@
 # 开发进度与仓库检查点
 
-## 当前入口：FR3完整首请求网格准备与首次执行
+## 当前入口：FR3A首次新bank独立预测
+
+[FR3A首次新bank独立预测](FULL_REQUEST_PAIR_PREDICTION_RESULTS.md)从clean2584ed5保存状态completed，保存原预测门通过；实际新增21,000/21,000/24,000在线scalar。首新保存核验passed、680,623项/0失败、60个新RMSE向量；完整人口、努力/接触与停止原样保留。累计394,297/2,673,970，online94,452+offline7,200=101,652scalar。完成A首审、报告检查及检查点提交推送后，继续在A数据前已冻结的FR3B；controller、模型配方、seed、原门不改。 C4最终新留出及C5–C7未验收，阶段提交推送后继续active目标。
+
+## 历史：上一阶段入口
 
 [FR3完整首请求网格协议](FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md)已与新scalar/batch、collector/runner一并准备；首次新参数化契约672项通过，48,762pair/97,524scalar前向、0物理/fit/RLS。固定开发seed8001/8002/8003，先原配方FR3A辨识/独立预测，全门通过才执行已冻FR3B；旧FR2失败保留，原20%/5%/努力门不改。最终±.5Nm、首10微步反馈/140PD尾保留；新delta可达±1、网格变粗且一般无purePD候选为新增先验。C4及C5–C7仍未验收，持续目标active，提交推送后立即首次执行。
 

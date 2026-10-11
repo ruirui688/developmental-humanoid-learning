@@ -1,0 +1,21 @@
+{
+  "stage": "prediction",
+  "first_A_identity_failure_preserved": true,
+  "first_repaired_A_report": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\write_fr3a_report_candidate.py",
+    "--write",
+    "--audit-status",
+    "passed",
+    "--audit-checks",
+    "680623",
+    "--audit-failed",
+    "0",
+    "--audit-rmse-vectors",
+    "60"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.14471719996072352
+}

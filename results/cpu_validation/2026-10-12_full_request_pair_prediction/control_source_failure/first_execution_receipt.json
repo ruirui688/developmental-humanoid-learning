@@ -1,0 +1,31 @@
+{
+  "first_attempt": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "-u",
+    "scripts/develop_full_request_pair.py",
+    "--stage",
+    "control",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr3_control_first\\raw",
+    "--source-commit",
+    "2584ed5dfcbea6ae3fc472f47101c55fb0561e7d"
+  ],
+  "source_commit": "2584ed5dfcbea6ae3fc472f47101c55fb0561e7d",
+  "exit_code": 1,
+  "wall_seconds": 0.4030762000475079,
+  "launcher_cpu_seconds_excludes_child": 0.015625,
+  "files": {
+    "stdout.log": {
+      "bytes": 1805,
+      "sha256": "c8263524cb3c2a5bc258e3c21356753ed3940f9ef2c78266116776e25c7f9014"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

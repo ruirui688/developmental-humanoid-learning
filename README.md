@@ -13,7 +13,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** [FR3完整首请求网格协议](docs/FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md)已与新scalar/batch、collector/runner一并准备；首次新参数化契约672项通过，48,762pair/97,524scalar前向、0物理/fit/RLS。固定开发seed8001/8002/8003，先原配方FR3A辨识/独立预测，全门通过才执行已冻FR3B；旧FR2失败保留，原20%/5%/努力门不改。最终±.5Nm、首10微步反馈/140PD尾保留；新delta可达±1、网格变粗且一般无purePD候选为新增先验。C4及C5–C7仍未验收，持续目标active，提交推送后立即首次执行。
+**当前执行入口：** [FR3A首次新bank独立预测](docs/FULL_REQUEST_PAIR_PREDICTION_RESULTS.md)从clean2584ed5保存状态completed，保存原预测门通过；实际新增21,000/21,000/24,000在线scalar。首新保存核验passed、680,623项/0失败、60个新RMSE向量；完整人口、努力/接触与停止原样保留。累计394,297/2,673,970，online94,452+offline7,200=101,652scalar。完成A首审、报告检查及检查点提交推送后，继续在A数据前已冻结的FR3B；controller、模型配方、seed、原门不改。 C4最终新留出及C5–C7未验收，阶段提交推送后继续active目标。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 
@@ -31,7 +31,7 @@
 
 后续顺序固定为 C4 多关节 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。当前仅 CPU，允许少量在线辨识；不运行大规模 PPO、任务教师、预训练策略或真机。每个阶段检查、提交、推送后直接继续，完整阶段状态、旧失败和判门见[持续执行账本](docs/CONTINUOUS_EXECUTION_PLAN.md)。
 
-正式物理累计 **373,297 控制调用 /2,652,970 子步**；FR2新增36,000/36,000/0更新；FR1新增21,000/21,000/24,000在线scalar更新，FR0新增3,000/3,000/0更新，Z1新增21,000/21,000/24,000在线scalar更新，Z2新增36,000/36,000/0更新。在线70,452与离线7,200scalar更新计算保持分列，总77,652；小型ridge、规划、测试及历史GPU费用另计，记录一致不能代替科学验收。
+正式物理累计 **394,297控制调用 /2,673,970子步**；FR3A新增21,000/21,000/24,000在线scalar；FR2新增36,000/36,000/0更新；FR1新增21,000/21,000/24,000在线scalar更新，FR0新增3,000/3,000/0更新，Z1新增21,000/21,000/24,000在线scalar更新，Z2新增36,000/36,000/0更新。在线94,452与离线7,200scalar更新计算保持分列，总101,652；小型ridge、规划、测试及历史GPU费用另计，记录一致不能代替科学验收。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 

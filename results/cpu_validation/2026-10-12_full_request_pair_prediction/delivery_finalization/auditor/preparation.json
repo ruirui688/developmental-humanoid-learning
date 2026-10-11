@@ -1,0 +1,172 @@
+{
+  "schema": "FR3A_saved_audit_candidate_preparation_v1",
+  "prepared_utc": "2026-10-11T22:54:43.061292+00:00",
+  "status": "static_preparation_complete_candidate_not_executed",
+  "candidate": {
+    "path": "external/fr3a_audit_candidate/audit_full_request_pair_prediction.py",
+    "bytes": 50827,
+    "sha256": "2688d5e8ae24d8e15caa02a4b725b6f3f831c3f3ebd28483f4a0514fe4a8f47a"
+  },
+  "reviewed_helper_source": {
+    "path": "external/fr1_audit_candidate/audit_free_root_pair_prediction.py",
+    "bytes": 50717,
+    "sha256": "00bf02915cdca24e5a6b57d7bc3dd6da48ab8bbe206ab748335b699929a40a17"
+  },
+  "production_schema_sources": [
+    {
+      "path": "scripts/develop_full_request_pair.py",
+      "bytes": 28486,
+      "sha256": "b274fdd03194c12bd4035b73313076bd6d8db6ae9cf3ec9290fd040a41e58a91"
+    },
+    {
+      "path": "src/developmental_physics/full_request_pair_development.py",
+      "bytes": 56026,
+      "sha256": "eb76b2100dc04bcec6230a076312a689bb132b1c462a3c2098a981e790c32cd9"
+    }
+  ],
+  "AST_parse": "passed",
+  "copied_math_population_helpers_exact_AST_identity": {
+    "AuditBoundError": true,
+    "json_safe": true,
+    "Checks": true,
+    "require": true,
+    "finite_number": true,
+    "vector": true,
+    "close_tree": true,
+    "identity": true,
+    "duplicate_free": true,
+    "parse_json": true,
+    "read_small": true,
+    "hash_stream": true,
+    "iter_records": true,
+    "complete_native_observation": true,
+    "input_ranges": true,
+    "contact_summary": true,
+    "effort_summary": true,
+    "audit_trial": true,
+    "snapshot_check": true
+  },
+  "all_definitions_AST_identity_after_only_schema_boundary_normalization": {
+    "AuditBoundError": true,
+    "json_safe": true,
+    "Checks": true,
+    "require": true,
+    "finite_number": true,
+    "vector": true,
+    "close_tree": true,
+    "identity": true,
+    "duplicate_free": true,
+    "parse_json": true,
+    "read_small": true,
+    "hash_stream": true,
+    "iter_records": true,
+    "check_sources": true,
+    "complete_native_observation": true,
+    "capture_row": true,
+    "input_ranges": true,
+    "contact_summary": true,
+    "effort_summary": true,
+    "audit_trial": true,
+    "snapshot_check": true,
+    "audit_predictions": true,
+    "original_gate_from_saved_scores": true,
+    "run_audit": true,
+    "main": true
+  },
+  "definition_count": 25,
+  "allowed_boundary_changes": [
+    "FR3A name/schema and fixed new raw directory",
+    "8001/8002/8003 and FR3_trial identity",
+    "four independent FR3A/FR3B stage gate keys, unchanged five broad false flags",
+    "new runner/collector/protocol paths plus full-request controller:19 dependencies",
+    "source member bound label/report19, all original budgets/thresholds unchanged"
+  ],
+  "fixed_raw": "results/cpu_validation/2026-10-12_full_request_pair_prediction/raw",
+  "source_paths": [
+    "scripts/develop_full_request_pair.py",
+    "src/developmental_physics/full_request_pair_development.py",
+    "docs/FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md",
+    "scripts/validate_free_root_fast_feedback_engineering.py",
+    "src/developmental_physics/free_root_fast_feedback_environment.py",
+    "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+    "src/developmental_physics/environment.py",
+    "src/developmental_physics/assets/ground_body.xml",
+    "src/developmental_physics/__init__.py",
+    "pyproject.toml",
+    "src/developmental_physics/fast_feedback_pair_model.py",
+    "src/developmental_physics/guard_coupled_pair_model.py",
+    "src/developmental_physics/guard_pair_model.py",
+    "src/developmental_physics/local_pair_model.py",
+    "src/developmental_physics/local_model.py",
+    "src/developmental_physics/fast_feedback_pair_mpc.py",
+    "src/developmental_physics/batched_fast_feedback_pair_mpc.py",
+    "src/developmental_physics/full_request_pair_mpc.py",
+    "src/developmental_physics/fast_feedback_pair_development.py"
+  ],
+  "source_list_matches_current_frozen_runner_DEPENDENCY_PATHS_exactly": true,
+  "stage_gate_keys": [
+    "fr3a_prediction_gate_passed",
+    "fr3b_model_contribution_gate_passed",
+    "fr3b_pd_reference_gate_passed",
+    "fr3_free_root_mechanism_validation"
+  ],
+  "broad_flags": [
+    "scientific_adoption",
+    "old_free_root_C4_validation",
+    "c4_scientific_validation",
+    "c4_contact_scientific_validation",
+    "c5_scientific_dependency_released"
+  ],
+  "scope": [
+    "one new manifest/run/metrics/models/trace/predictions/source archive population",
+    "same complete-first native/contact and actual endpoint-effort checks",
+    "same saved prediction label arithmetic and original independent gates; no body model, RLS or MPC math executed",
+    "same paid controls/substeps/vector and scalar RLS attempts/returns/commits plus failure/unknown preservation",
+    "no FR3B control/adoption/C4/C5 claims or new self veto"
+  ],
+  "fixed_bounds": {
+    "seeds": 3,
+    "trials": 6,
+    "trace_records": 21000,
+    "horizons": [
+      1,
+      10,
+      20,
+      50,
+      150
+    ],
+    "origin_counts": [
+      100,
+      100,
+      99,
+      96,
+      86
+    ],
+    "prediction_records": 2886,
+    "saved_pair_path_steps": 124680,
+    "model_horizon_groups": 30,
+    "q_v_RMSE_vectors": 60,
+    "RLS_vector_commits": 12000,
+    "RLS_scalar_commits": 24000,
+    "source_members_and_git_shows": 19
+  },
+  "preparation_execution": {
+    "candidate_execution": 0,
+    "candidate_import": 0,
+    "production_import": 0,
+    "current_or_old_raw_reads": 0,
+    "saved_parameter_reads": 0,
+    "model_restoration": 0,
+    "model_calls": 0,
+    "fit": 0,
+    "RLS": 0,
+    "physics": 0,
+    "fixtures_or_algorithm_tests": 0,
+    "old_audit_execution": 0,
+    "automatic_retry": 0,
+    "science_thresholds_changed": false
+  },
+  "first_audit_interpreter": "D:/Python3.10/python.exe",
+  "first_audit_CLI": "D:/Python3.10/python.exe external/fr3a_audit_candidate/audit_full_request_pair_prediction.py --repo . --raw results/cpu_validation/2026-10-12_full_request_pair_prediction/raw --source-commit 2584ed5dfcbea6ae3fc472f47101c55fb0561e7d --output external/fr3a_first_saved_audit_01",
+  "handoff": "Root owns once-only first invocation after immutable FR3A archival; output directory must not exist."
+}

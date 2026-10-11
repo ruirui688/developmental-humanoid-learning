@@ -1,0 +1,1168 @@
+{
+  "schema": "first_FR3A_saved_evidence_audit_v1",
+  "raw": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_full_request_pair_prediction\\raw",
+  "source_commit": "2584ed5dfcbea6ae3fc472f47101c55fb0561e7d",
+  "auditor": {
+    "bytes": 50827,
+    "sha256": "2688d5e8ae24d8e15caa02a4b725b6f3f831c3f3ebd28483f4a0514fe4a8f47a"
+  },
+  "status": "passed",
+  "checks": {
+    "payload": 5,
+    "boundary": 26,
+    "source": 62,
+    "trace": 648308,
+    "trials": 116,
+    "effort": 12,
+    "contact": 18,
+    "models": 115,
+    "ledger": 27,
+    "predictions": 31746,
+    "RMSE": 183,
+    "gate": 5
+  },
+  "failed_checks": {},
+  "first_128_failures": [],
+  "first_failure": null,
+  "cost": {
+    "file_read_attempts": 5,
+    "file_read_returns": 5,
+    "read_bytes": 1222150,
+    "json_parse_attempts": 23890,
+    "json_parse_returns": 23890,
+    "file_hash_attempts": 2,
+    "file_hash_returns": 2,
+    "hashed_bytes": 39285966,
+    "source_zip_member_reads": 19,
+    "source_zip_member_bytes": 306468,
+    "git_show_attempts": 19,
+    "git_show_return_bytes": 306468,
+    "gzip_stream_open_attempts": 2,
+    "gzip_stream_open_returns": 2,
+    "trace.jsonl.gz_decoded_bytes": 339287252,
+    "trace.jsonl.gz_records": 21000,
+    "predictions.jsonl.gz_decoded_bytes": 19882403,
+    "predictions.jsonl.gz_records": 2886,
+    "saved_pair_path_steps_inspected_no_model_calls": 124680,
+    "wall_seconds": 10.293161800131202,
+    "cpu_seconds": 9.4375
+  },
+  "bounds": {
+    "seeds": 3,
+    "trials": 6,
+    "trace_records": 21000,
+    "prediction_records": 2886,
+    "model_horizon_groups": 30,
+    "saved_pair_path_steps": 124680,
+    "source_members_and_git_shows": 19
+  },
+  "execution": {
+    "model_calls": 0,
+    "model_restorations": 0,
+    "fit": 0,
+    "RLS": 0,
+    "physics": 0,
+    "old_scientific_recomputations": 0,
+    "old_raw_reads": 0,
+    "automatic_retries": 0,
+    "sample_effort_is_endpoint_estimate": true,
+    "science_thresholds_changed": false
+  },
+  "recheck": {
+    "payload_pins": {
+      "run.json": {
+        "bytes": 1056891,
+        "sha256": "3a34910c38fdeae4e7d0aa0a3f6e5bceacd0ebf59978720e1a276aa6f9c114a8"
+      },
+      "metrics.json": {
+        "bytes": 11914,
+        "sha256": "2df401375570483fd7130308100ec0158ecd6191552363ae0ac1e0b6dd8029ef"
+      },
+      "models.json": {
+        "bytes": 60939,
+        "sha256": "7c3dc74a8ade16bbf2d9cf1da35b272c86cabd1efd87c5c5a78676789d568f93"
+      },
+      "trace.jsonl.gz": {
+        "bytes": 33996554,
+        "sha256": "f4299722cbf72b2136dabed67fed5025cec7b1fd6dadf530509805fd70bc49a5"
+      },
+      "predictions.jsonl.gz": {
+        "bytes": 5289412,
+        "sha256": "2559f2499e351b7b3355d9abe93fad698c2b1ae4f4a1f03a4b352dae48d84601"
+      }
+    },
+    "source_verified": true,
+    "trace_ledger": {
+      "control_call_attempts": 21000,
+      "control_call_returns": 21000,
+      "control_call_exceptions": 0,
+      "confirmed_physics_substeps": 21000,
+      "captured_native_endpoints": 21000,
+      "captured_substep_endpoint_forward_returns": 21000,
+      "known_complete_contact_endpoints": 21000,
+      "RLS_vector_update_attempts": 12000,
+      "RLS_vector_update_returns": 12000,
+      "RLS_vector_update_exceptions": 0,
+      "RLS_vector_update_commits": 12000,
+      "RLS_scalar_update_commits": 24000,
+      "known_audit_floor_pairs": 165154
+    },
+    "trial_eligibility": {
+      "FR3_8001_calibration": {
+        "complete": true,
+        "domain": true,
+        "committed": 4000
+      },
+      "FR3_8001_prediction": {
+        "complete": true,
+        "domain": true,
+        "committed": 0
+      },
+      "FR3_8002_calibration": {
+        "complete": true,
+        "domain": true,
+        "committed": 4000
+      },
+      "FR3_8002_prediction": {
+        "complete": true,
+        "domain": true,
+        "committed": 0
+      },
+      "FR3_8003_calibration": {
+        "complete": true,
+        "domain": true,
+        "committed": 4000
+      },
+      "FR3_8003_prediction": {
+        "complete": true,
+        "domain": true,
+        "committed": 0
+      }
+    },
+    "saved_prediction_RMSE_recheck": [
+      {
+        "seed": 8001,
+        "prediction_scores": {
+          "horizons": {
+            "1": {
+              "planned_origin_count": 100,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    8.629422044055369e-06,
+                    1.6536981696552034e-05
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.004314711022027521,
+                    0.008268490848276017
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    5.813427582490371e-06,
+                    1.1639504742869118e-05
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.0029067137912448353,
+                    0.005819752371434559
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "10": {
+              "planned_origin_count": 100,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.00015917544630259954,
+                    0.0002993787081352021
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.00869151909729007,
+                    0.016113061355111227
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.00010849404892705268,
+                    0.0002178479686538511
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.00568779938688875,
+                    0.011370817678657951
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "20": {
+              "planned_origin_count": 99,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.00028559066067146356,
+                    0.0005274561915958588
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.008189508924130983,
+                    0.014701863173829755
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.00017861635410560656,
+                    0.00035530233872626307
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.005563269867976686,
+                    0.011109621873999517
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "50": {
+              "planned_origin_count": 96,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0006482503678440986,
+                    0.0011371206699424207
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.008670776529430217,
+                    0.014590105664079988
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.00029097924042037026,
+                    0.0005797374394540979
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.005606850414921915,
+                    0.011290860781628366
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "150": {
+              "planned_origin_count": 86,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0020357747409833053,
+                    0.0034493470178409615
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.009160752875771441,
+                    0.016386672781310986
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0004805404339646338,
+                    0.000988257401704093
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.005926396993881937,
+                    0.011951439471356266
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "seed": 8002,
+        "prediction_scores": {
+          "horizons": {
+            "1": {
+              "planned_origin_count": 100,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    8.629414153535063e-06,
+                    1.6537015085289718e-05
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.004314707076767802,
+                    0.008268507542644861
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    5.813461635734435e-06,
+                    1.1639585919948725e-05
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.002906730817867385,
+                    0.005819792959974363
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "10": {
+              "planned_origin_count": 100,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0001591743269320529,
+                    0.00029937821713746685
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.00869144128312033,
+                    0.016113026479883167
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.00010849370687292102,
+                    0.00021784799839148666
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.005687743054098309,
+                    0.011370754440119243
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "20": {
+              "planned_origin_count": 99,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0002855880821407204,
+                    0.0005274547990692011
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.008189409043479742,
+                    0.014701787600869416
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0001786145287560795,
+                    0.0003553001220525898
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.005563187794697974,
+                    0.011109504778925725
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "50": {
+              "planned_origin_count": 96,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0006482429579396772,
+                    0.001137115630593045
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.008670672788070415,
+                    0.014590039956868707
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.00029097264493612254,
+                    0.0005797273020303644
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.00560676517813474,
+                    0.011290738960819722
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "150": {
+              "planned_origin_count": 86,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0020357573730872833,
+                    0.0034493365799050566
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.009160602195841786,
+                    0.0163866329027014
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.00048052565600797584,
+                    0.0009882358622480642
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.00592630830829574,
+                    0.011951311422658338
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "seed": 8003,
+        "prediction_scores": {
+          "horizons": {
+            "1": {
+              "planned_origin_count": 100,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    8.623688463594394e-06,
+                    1.655323414710951e-05
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.00431184423179713,
+                    0.008276617073554756
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    5.83468052160616e-06,
+                    1.1683710647532861e-05
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.0029173402608025675,
+                    0.00584185532376643
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "10": {
+              "planned_origin_count": 100,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0001585333860215792,
+                    0.0002991123651202917
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.008646089952921108,
+                    0.016095175511520385
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.00010837673498864748,
+                    0.00021789428917096866
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.005662170793121389,
+                    0.01134165900504634
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "20": {
+              "planned_origin_count": 99,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.000284154531410633,
+                    0.0005267527462384452
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.008136227201082544,
+                    0.01466515343161405
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.000177841885254307,
+                    0.0003543595069617847
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.005526343375172995,
+                    0.011054943577118389
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "50": {
+              "planned_origin_count": 96,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0006444997609436223,
+                    0.0011346789304763755
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.008623453986606295,
+                    0.014558536883579455
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0002881155726402471,
+                    0.0005752624530140089
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.005568282969664793,
+                    0.01123364750184348
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            },
+            "150": {
+              "planned_origin_count": 86,
+              "models": {
+                "cold": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.002033346389302041,
+                    0.0034444167197694893
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.009151767364638257,
+                    0.016369001542532343
+                  ],
+                  "partial_subset_ranking": false
+                },
+                "learned": {
+                  "available": true,
+                  "q_rmse_axis_rad": [
+                    0.0004737375137623301,
+                    0.0009792446019698197
+                  ],
+                  "v_rmse_axis_rad_s": [
+                    0.0058863766125085756,
+                    0.01189185342800308
+                  ],
+                  "partial_subset_ranking": false
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "original_saved_RMSE_gate_recheck": {
+      "complete_population": true,
+      "checks": [
+        {
+          "seed": 8001,
+          "horizon": 1,
+          "signal": "q",
+          "available": true,
+          "gated": false,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            8.629422044055369e-06,
+            1.6536981696552034e-05
+          ],
+          "learned_axis": [
+            5.813427582490371e-06,
+            1.1639504742869118e-05
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 1,
+          "signal": "q",
+          "available": true,
+          "gated": false,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            8.629414153535063e-06,
+            1.6537015085289718e-05
+          ],
+          "learned_axis": [
+            5.813461635734435e-06,
+            1.1639585919948725e-05
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 1,
+          "signal": "q",
+          "available": true,
+          "gated": false,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            8.623688463594394e-06,
+            1.655323414710951e-05
+          ],
+          "learned_axis": [
+            5.83468052160616e-06,
+            1.1683710647532861e-05
+          ]
+        },
+        {
+          "seed": 8001,
+          "horizon": 1,
+          "signal": "v",
+          "available": true,
+          "gated": false,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.004314711022027521,
+            0.008268490848276017
+          ],
+          "learned_axis": [
+            0.0029067137912448353,
+            0.005819752371434559
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 1,
+          "signal": "v",
+          "available": true,
+          "gated": false,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.004314707076767802,
+            0.008268507542644861
+          ],
+          "learned_axis": [
+            0.002906730817867385,
+            0.005819792959974363
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 1,
+          "signal": "v",
+          "available": true,
+          "gated": false,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.00431184423179713,
+            0.008276617073554756
+          ],
+          "learned_axis": [
+            0.0029173402608025675,
+            0.00584185532376643
+          ]
+        },
+        {
+          "seed": 8001,
+          "horizon": 10,
+          "signal": "q",
+          "available": true,
+          "gated": false,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.00015917544630259954,
+            0.0002993787081352021
+          ],
+          "learned_axis": [
+            0.00010849404892705268,
+            0.0002178479686538511
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 10,
+          "signal": "q",
+          "available": true,
+          "gated": false,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.0001591743269320529,
+            0.00029937821713746685
+          ],
+          "learned_axis": [
+            0.00010849370687292102,
+            0.00021784799839148666
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 10,
+          "signal": "q",
+          "available": true,
+          "gated": false,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.0001585333860215792,
+            0.0002991123651202917
+          ],
+          "learned_axis": [
+            0.00010837673498864748,
+            0.00021789428917096866
+          ]
+        },
+        {
+          "seed": 8001,
+          "horizon": 10,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": true,
+          "passed": true,
+          "cold_axis": [
+            0.00869151909729007,
+            0.016113061355111227
+          ],
+          "learned_axis": [
+            0.00568779938688875,
+            0.011370817678657951
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 10,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": true,
+          "passed": true,
+          "cold_axis": [
+            0.00869144128312033,
+            0.016113026479883167
+          ],
+          "learned_axis": [
+            0.005687743054098309,
+            0.011370754440119243
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 10,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": true,
+          "passed": true,
+          "cold_axis": [
+            0.008646089952921108,
+            0.016095175511520385
+          ],
+          "learned_axis": [
+            0.005662170793121389,
+            0.01134165900504634
+          ]
+        },
+        {
+          "scope": "three_seed_raw_RMSE_mean",
+          "horizon": 10,
+          "signal": "v",
+          "available": true,
+          "cold_axis_mean": [
+            0.008676350111110502,
+            0.016107087782171594
+          ],
+          "learned_axis_mean": [
+            0.005679237744702816,
+            0.01136107704127451
+          ],
+          "improvement_fractions": [
+            0.34543469639033275,
+            0.29465355904686175
+          ],
+          "required_improvement": 0.2,
+          "passed": true
+        },
+        {
+          "seed": 8001,
+          "horizon": 20,
+          "signal": "q",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.00028559066067146356,
+            0.0005274561915958588
+          ],
+          "learned_axis": [
+            0.00017861635410560656,
+            0.00035530233872626307
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 20,
+          "signal": "q",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.0002855880821407204,
+            0.0005274547990692011
+          ],
+          "learned_axis": [
+            0.0001786145287560795,
+            0.0003553001220525898
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 20,
+          "signal": "q",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.000284154531410633,
+            0.0005267527462384452
+          ],
+          "learned_axis": [
+            0.000177841885254307,
+            0.0003543595069617847
+          ]
+        },
+        {
+          "seed": 8001,
+          "horizon": 20,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.008189508924130983,
+            0.014701863173829755
+          ],
+          "learned_axis": [
+            0.005563269867976686,
+            0.011109621873999517
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 20,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.008189409043479742,
+            0.014701787600869416
+          ],
+          "learned_axis": [
+            0.005563187794697974,
+            0.011109504778925725
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 20,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.008136227201082544,
+            0.01466515343161405
+          ],
+          "learned_axis": [
+            0.005526343375172995,
+            0.011054943577118389
+          ]
+        },
+        {
+          "seed": 8001,
+          "horizon": 50,
+          "signal": "q",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.0006482503678440986,
+            0.0011371206699424207
+          ],
+          "learned_axis": [
+            0.00029097924042037026,
+            0.0005797374394540979
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 50,
+          "signal": "q",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.0006482429579396772,
+            0.001137115630593045
+          ],
+          "learned_axis": [
+            0.00029097264493612254,
+            0.0005797273020303644
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 50,
+          "signal": "q",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.0006444997609436223,
+            0.0011346789304763755
+          ],
+          "learned_axis": [
+            0.0002881155726402471,
+            0.0005752624530140089
+          ]
+        },
+        {
+          "seed": 8001,
+          "horizon": 50,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.008670776529430217,
+            0.014590105664079988
+          ],
+          "learned_axis": [
+            0.005606850414921915,
+            0.011290860781628366
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 50,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.008670672788070415,
+            0.014590039956868707
+          ],
+          "learned_axis": [
+            0.00560676517813474,
+            0.011290738960819722
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 50,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.008623453986606295,
+            0.014558536883579455
+          ],
+          "learned_axis": [
+            0.005568282969664793,
+            0.01123364750184348
+          ]
+        },
+        {
+          "seed": 8001,
+          "horizon": 150,
+          "signal": "q",
+          "available": true,
+          "gated": true,
+          "strict": true,
+          "passed": true,
+          "cold_axis": [
+            0.0020357747409833053,
+            0.0034493470178409615
+          ],
+          "learned_axis": [
+            0.0004805404339646338,
+            0.000988257401704093
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 150,
+          "signal": "q",
+          "available": true,
+          "gated": true,
+          "strict": true,
+          "passed": true,
+          "cold_axis": [
+            0.0020357573730872833,
+            0.0034493365799050566
+          ],
+          "learned_axis": [
+            0.00048052565600797584,
+            0.0009882358622480642
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 150,
+          "signal": "q",
+          "available": true,
+          "gated": true,
+          "strict": true,
+          "passed": true,
+          "cold_axis": [
+            0.002033346389302041,
+            0.0034444167197694893
+          ],
+          "learned_axis": [
+            0.0004737375137623301,
+            0.0009792446019698197
+          ]
+        },
+        {
+          "scope": "three_seed_raw_RMSE_mean",
+          "horizon": 150,
+          "signal": "q",
+          "available": true,
+          "cold_axis_mean": [
+            0.0020349595011242096,
+            0.0034477001058385026
+          ],
+          "learned_axis_mean": [
+            0.00047826786791164657,
+            0.0009852459553073257
+          ],
+          "improvement_fractions": [
+            0.7649742574004896,
+            0.7142309583020686
+          ],
+          "required_improvement": 0.2,
+          "passed": true
+        },
+        {
+          "seed": 8001,
+          "horizon": 150,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.009160752875771441,
+            0.016386672781310986
+          ],
+          "learned_axis": [
+            0.005926396993881937,
+            0.011951439471356266
+          ]
+        },
+        {
+          "seed": 8002,
+          "horizon": 150,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.009160602195841786,
+            0.0163866329027014
+          ],
+          "learned_axis": [
+            0.00592630830829574,
+            0.011951311422658338
+          ]
+        },
+        {
+          "seed": 8003,
+          "horizon": 150,
+          "signal": "v",
+          "available": true,
+          "gated": true,
+          "strict": false,
+          "passed": true,
+          "cold_axis": [
+            0.009151767364638257,
+            0.016369001542532343
+          ],
+          "learned_axis": [
+            0.0058863766125085756,
+            0.01189185342800308
+          ]
+        }
+      ],
+      "fr3a_prediction_gate_passed": true,
+      "mean_type": "arithmetic mean of original per_seed axis RMSE",
+      "partial_subset_ranking": false
+    },
+    "execution_vetoed_FR3A_gate": true,
+    "partial_subset_ranking": false,
+    "science_flags": {
+      "scientific_adoption": false,
+      "old_free_root_C4_validation": false,
+      "c4_scientific_validation": false,
+      "c4_contact_scientific_validation": false,
+      "c5_scientific_dependency_released": false
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "first_attempt": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "-u",
+    "scripts/develop_full_request_pair.py",
+    "--stage",
+    "prediction",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr3_prediction_first\\raw",
+    "--source-commit",
+    "2584ed5dfcbea6ae3fc472f47101c55fb0561e7d"
+  ],
+  "source_commit": "2584ed5dfcbea6ae3fc472f47101c55fb0561e7d",
+  "exit_code": 0,
+  "wall_seconds": 89.80979759991169,
+  "launcher_cpu_seconds_excludes_child": 0.0,
+  "files": {
+    "stdout.log": {
+      "bytes": 30443,
+      "sha256": "aa02a002d380772acaf21815ae7a193f3ce66ce9b18e4f5399342457dcf47108"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

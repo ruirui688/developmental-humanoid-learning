@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FR3B",
+  "stage": "control",
+  "status": "failed",
+  "files": {
+    "run.json": {
+      "bytes": 2939,
+      "sha256": "140864972adebcb8e65005fbc312139030bcbaf0a70a85992ff7a590b7ad1cd3"
+    },
+    "metrics.json": {
+      "bytes": 509,
+      "sha256": "7b3d96c98ed2df252b33acf1ed1274dc23b00fea102d818e41532152cfac8b1a"
+    },
+    "models.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "failure.json": {
+      "bytes": 557,
+      "sha256": "66ca2e3151a92b245bec813d8e2513e3b8ad4028be0f7cd35cb615578b8a7c80"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

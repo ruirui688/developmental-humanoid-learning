@@ -1,0 +1,223 @@
+{
+  "stage": "FR3A",
+  "status": "sealed",
+  "files": {
+    "audit_first/audit.json": {
+      "source": "external/fr3a_first_audit/result/audit.json",
+      "bytes": 34294,
+      "sha256": "181b46ff27722d21633eb27d4bcc3063c39619e3860120e8c7707554d7c6e91a"
+    },
+    "audit_first/metric_recheck.json": {
+      "source": "external/fr3a_first_audit/result/metric_recheck.json",
+      "bytes": 30039,
+      "sha256": "47141678735b7445abe6abcfd4c4b667dd17829f5449e5a3e4542ecc7e74a675"
+    },
+    "audit_first/stdout.log": {
+      "source": "external/fr3a_first_audit/stdout.log",
+      "bytes": 171,
+      "sha256": "40297bc138c37d9e552df81e5f96996b47a02ee1f03d11c08909c068bf76eb14"
+    },
+    "audit_first/stderr.log": {
+      "source": "external/fr3a_first_audit/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit_first/first_execution_receipt.json": {
+      "source": "external/fr3a_first_audit/first_execution_receipt.json",
+      "bytes": 685,
+      "sha256": "732cc5cf21c32aa919419d323a2fbbef57407d91abb292433b123b98f8222168"
+    },
+    "delivery_finalization/auditor/audit_full_request_pair_prediction.py": {
+      "source": "external/fr3a_audit_candidate/audit_full_request_pair_prediction.py",
+      "bytes": 50827,
+      "sha256": "2688d5e8ae24d8e15caa02a4b725b6f3f831c3f3ebd28483f4a0514fe4a8f47a"
+    },
+    "delivery_finalization/auditor/preparation.json": {
+      "source": "external/fr3a_audit_candidate/preparation.json",
+      "bytes": 6200,
+      "sha256": "63e30efc666ea2e888eb7e9a002f9311459af221d8df6612f1fbeb44b613e223"
+    },
+    "delivery_finalization/report_writer/first_shared_source.py": {
+      "source": "external/fr3_report_writer_first_failure/first_shared_source.py",
+      "bytes": 27704,
+      "sha256": "ee5acd09e2fe804e5b996c7e29ebb76db15019a56965a3b07bedad42b3009c2f"
+    },
+    "delivery_finalization/report_writer/first_failure_metadata.json": {
+      "source": "external/fr3_report_writer_first_failure/first_failure_metadata.json",
+      "bytes": 1532,
+      "sha256": "2168e2227e2bfc6454b8abd28d9fea2dad14a4f30405a2b5ebfb40f6dac9a9c3"
+    },
+    "delivery_finalization/report_writer/root_first_stderr_tool_text.txt": {
+      "source": "external/fr3_report_writer_first_failure/root_first_stderr.txt",
+      "bytes": 364,
+      "sha256": "2ea8d8f76355132d18113477453639aeb6893c6f6b9ad0063773dc52cf139e3a"
+    },
+    "delivery_finalization/report_writer/repaired_shared_source.py": {
+      "source": "external/fr3_report_common_candidate.py",
+      "bytes": 27923,
+      "sha256": "3d7fe5081fc71ee71ad66b0b5e43b4c0fad971f008e808b01d89efa4238d79cf"
+    },
+    "delivery_finalization/report_writer/write_fr3a_report_candidate.py": {
+      "source": "external/write_fr3a_report_candidate.py",
+      "bytes": 161,
+      "sha256": "e9cfa69d19c06c6080d66ff718088e17a74ae078829d24276aaf0821e02738df"
+    },
+    "delivery_finalization/report_writer/preparation.json": {
+      "source": "external/fr3_report_writer_preparation.json",
+      "bytes": 2742,
+      "sha256": "1ca7cf90494e66daf40a554f5f319a559b1a844b3e7a22d06617b354908e911a"
+    },
+    "delivery_finalization/report_writer/writing_receipt.json": {
+      "source": "external/fr3a_report_writing_receipt.json",
+      "bytes": 3311,
+      "sha256": "6e738c0ec31422503843d072ac76ed24493b873658ee5573da985f41c9a9b8a2"
+    },
+    "delivery_finalization/report_writer/capture/stdout.log": {
+      "source": "external/fr3a_report_captured_once/stdout.log",
+      "bytes": 323,
+      "sha256": "5223f4695d4b36dcf1384a9f21c35b9f5d41d87e9715ea99cdae22aa88eb95f4"
+    },
+    "delivery_finalization/report_writer/capture/stderr.log": {
+      "source": "external/fr3a_report_captured_once/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "delivery_finalization/report_writer/capture/first_execution_receipt.json": {
+      "source": "external/fr3a_report_captured_once/first_execution_receipt.json",
+      "bytes": 496,
+      "sha256": "8e409bb869600bbec18439e29b60026ca09002af7b2182627b7d1767b8e83788"
+    },
+    "delivery_finalization/root_helpers/run_fr3_first_once.py": {
+      "source": "external/run_fr3_first_once.py",
+      "bytes": 1762,
+      "sha256": "b42c61a3e57645d96378bbf839c3f4bb528e01de648f222e28e5e3605a26b795"
+    },
+    "delivery_finalization/root_helpers/archive_fr3_first_once.py": {
+      "source": "external/archive_fr3_first_once.py",
+      "bytes": 3465,
+      "sha256": "9503e9497049fffe28c57a88fc31b3399ab197dfe74df3ef2022f61d122a3688"
+    },
+    "delivery_finalization/root_helpers/run_fr3_saved_audit_first_once.py": {
+      "source": "external/run_fr3_saved_audit_first_once.py",
+      "bytes": 1664,
+      "sha256": "72de628f6eb0ca57c81aa692742c057b1dd6c46565ce64aecdb8f4f39aed25cf"
+    },
+    "delivery_finalization/root_helpers/run_fr3_report_saved_once.py": {
+      "source": "external/run_fr3_report_saved_once.py",
+      "bytes": 2496,
+      "sha256": "d917dbbe56832395f05f9b61ac1e1831594f2f009ab7a3ecc435d64b88d21709"
+    },
+    "delivery_finalization/root_helpers/archive_fr3_control_source_failure_once.py": {
+      "source": "external/archive_fr3_control_source_failure_once.py",
+      "bytes": 1772,
+      "sha256": "e39669e94cccf450617abe4067d383f4f512a0272d8b394349e42cb51a43e354"
+    },
+    "delivery_finalization/finalizer/finalize_fr3_stage_delivery_once.py": {
+      "source": "external/fr3_delivery_finalizer_candidate/finalize_fr3_stage_delivery_once.py",
+      "bytes": 7324,
+      "sha256": "c69dac972e0b29842cbf91d3c95b18f500891ecab8237ed34b1fa77cafb4dbb9"
+    },
+    "delivery_finalization/finalizer/preparation_receipt.json": {
+      "source": "external/fr3_delivery_finalizer_candidate/preparation_receipt.json",
+      "bytes": 1694,
+      "sha256": "df291dbbb8626ae4eba23cbcfb29dc0f86b0f1f7f9bb80d9064ace9e7ed76de6"
+    }
+  },
+  "markdown_links": [
+    {
+      "markdown": "docs/FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "target": "FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "markdown": "docs/FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "target": "../results/cpu_validation/2026-10-12_full_request_pair_prediction/manifest.json",
+      "exists": true
+    },
+    {
+      "markdown": "docs/FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "target": "../results/cpu_validation/2026-10-12_full_request_pair_prediction/report_inputs.json",
+      "exists": true
+    },
+    {
+      "markdown": "docs/FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "target": "../results/cpu_validation/2026-10-12_full_request_pair_prediction/control_source_failure/preservation_manifest.json",
+      "exists": true
+    },
+    {
+      "markdown": "docs/FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "target": "../results/cpu_validation/2026-10-12_full_request_pair_prediction/audit_first/audit.json",
+      "exists": true
+    },
+    {
+      "markdown": "docs/FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "target": "../results/cpu_validation/2026-10-12_full_request_pair_prediction/audit_first/metric_recheck.json",
+      "exists": true
+    },
+    {
+      "markdown": "AGENTS.md",
+      "target": "docs/FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "exists": true
+    },
+    {
+      "markdown": "README.md",
+      "target": "docs/FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "exists": true
+    },
+    {
+      "markdown": "docs/PROGRESS.md",
+      "target": "FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "exists": true
+    },
+    {
+      "markdown": "docs/PROGRESS.md",
+      "target": "FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "markdown": "docs/CPU_VALIDATION_TARGET.md",
+      "target": "FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "exists": true
+    },
+    {
+      "markdown": "docs/CPU_VALIDATION_TARGET.md",
+      "target": "FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "exists": true
+    },
+    {
+      "markdown": "docs/CONTINUOUS_EXECUTION_PLAN.md",
+      "target": "FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "exists": true
+    },
+    {
+      "markdown": "docs/CONTINUOUS_EXECUTION_PLAN.md",
+      "target": "FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "markdown": "docs/CONTINUOUS_EXECUTION_PLAN.md",
+      "target": "FULL_REQUEST_PAIR_PREDICTION_RESULTS.md",
+      "exists": true
+    }
+  ],
+  "first_failure": null,
+  "engineering_cost": {
+    "input_file_reads": 30,
+    "input_bytes": 451533,
+    "output_file_writes": 24,
+    "output_bytes": 206949,
+    "hash_bytes": 206949,
+    "markdown_reads": 6,
+    "local_link_checks": 15,
+    "wall_seconds_before_metadata": 0.054272899869829416,
+    "cpu_seconds_before_metadata": 0.0
+  },
+  "raw_reads": 0,
+  "scientific_recomputations": 0,
+  "raw_existing_manifest_report_inputs_modified": false,
+  "control_source_failure_modified": false,
+  "root_first_stderr_is_tool_text_not_process_capture": true,
+  "engineering_cost_scope": "completed delivery copies and Markdown reads/checks; final metadata write excluded",
+  "timing_excludes_final_metadata_writes": true,
+  "automatic_retry": false
+}

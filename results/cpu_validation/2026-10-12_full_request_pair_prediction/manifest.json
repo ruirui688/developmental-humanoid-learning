@@ -1,0 +1,92 @@
+{
+  "stage": "FR3A_first_archive",
+  "status": "completed",
+  "files_before_top_manifest": {
+    "first_execution_receipt.json": {
+      "bytes": 910,
+      "sha256": "103e1d866eb9933042055bb488838f727a0d554f53200ba4e2ffe4460a8517be"
+    },
+    "raw/installed/FR3_8001_calibration.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8001_prediction.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8002_calibration.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8002_prediction.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8003_calibration.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8003_prediction.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/manifest.json": {
+      "bytes": 2209,
+      "sha256": "b17f80882d53395a30c7d3b1ed2d41995083b7fe3ec71e8c0939df5953bc79ad"
+    },
+    "raw/metrics.json": {
+      "bytes": 11914,
+      "sha256": "2df401375570483fd7130308100ec0158ecd6191552363ae0ac1e0b6dd8029ef"
+    },
+    "raw/models.json": {
+      "bytes": 60939,
+      "sha256": "7c3dc74a8ade16bbf2d9cf1da35b272c86cabd1efd87c5c5a78676789d568f93"
+    },
+    "raw/paid_intervals.jsonl.gz": {
+      "bytes": 23975649,
+      "sha256": "9ce8f377fdc2815930ff6141e94b35978095141c876f2474766377f8506f8184"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 5289412,
+      "sha256": "2559f2499e351b7b3355d9abe93fad698c2b1ae4f4a1f03a4b352dae48d84601"
+    },
+    "raw/run.json": {
+      "bytes": 1056891,
+      "sha256": "3a34910c38fdeae4e7d0aa0a3f6e5bceacd0ebf59978720e1a276aa6f9c114a8"
+    },
+    "raw/source.zip": {
+      "bytes": 90197,
+      "sha256": "a1bd541bb717e709e0149c360a6e42d78a091c734dbe5bb751c2e51b43c49aa9"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 33996554,
+      "sha256": "f4299722cbf72b2136dabed67fed5025cec7b1fd6dadf530509805fd70bc49a5"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "bytes": 30443,
+      "sha256": "aa02a002d380772acaf21815ae7a193f3ce66ce9b18e4f5399342457dcf47108"
+    },
+    "report_inputs.json": {
+      "bytes": 615199,
+      "sha256": "64cf151d6fcc161df66e53d00ce0dea018510d57caebafc912ae6f4af987a186"
+    },
+    "launchers/run_fr3_first_once.py": {
+      "bytes": 1762,
+      "sha256": "b42c61a3e57645d96378bbf839c3f4bb528e01de648f222e28e5e3605a26b795"
+    },
+    "launchers/archive_fr3_first_once.py": {
+      "bytes": 3094,
+      "sha256": "58ccd0868198e095eb6227b4e844186b565bc7da585c961824b5483d93e06793"
+    },
+    "archive_receipt.json": {
+      "bytes": 455,
+      "sha256": "062e79fad7bb24b8bbf62f5589d783d828de5d592d00f51bd28374a05326e0d9"
+    }
+  },
+  "scientific_adoption": false,
+  "continuous_goal_stays_active": true
+}

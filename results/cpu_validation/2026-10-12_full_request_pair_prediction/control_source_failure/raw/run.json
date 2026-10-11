@@ -1,0 +1,81 @@
+{
+  "experiment_id": "FR3B",
+  "stage": "control",
+  "status": "failed",
+  "seeds": [
+    8001,
+    8002,
+    8003
+  ],
+  "source": {
+    "commit": "2584ed5dfcbea6ae3fc472f47101c55fb0561e7d",
+    "files": {},
+    "clean_committed_bytes_verified": false
+  },
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "python_version": "3.10.11",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "source_gate_bindings": {},
+  "planned_upper_bounds": {
+    "control_calls": 36000,
+    "physics_substeps": 36000,
+    "MPC_decisions": 1200,
+    "planning_prediction_pairs": 14580000,
+    "conditional_prediction_pairs": 526560
+  },
+  "cost": {
+    "control_call_attempts": 0,
+    "control_call_returns": 0,
+    "control_call_exceptions": 0,
+    "confirmed_physics_substeps": 0,
+    "captured_substep_endpoint_forward_returns": 0,
+    "environment_constructor_attempts": 0,
+    "environment_constructor_returns": 0,
+    "reset_attempts": 0,
+    "reset_returns": 0,
+    "RLS_vector_update_attempts": 0,
+    "RLS_vector_update_returns": 0,
+    "RLS_vector_update_exceptions": 0,
+    "RLS_vector_update_commits": 0,
+    "RLS_scalar_update_commits": 0,
+    "MPC_decision_attempts": 0,
+    "MPC_decision_returns": 0,
+    "MPC_decision_exceptions": 0,
+    "teacher_calls": 0,
+    "batch_fit_calls": 0,
+    "task_policy_updates": 0,
+    "GPU_training_seconds": 0,
+    "git_query_attempts": 2,
+    "git_return_bytes": 2048,
+    "wall_seconds": 0.20103519991971552,
+    "cpu_seconds": 0.03125
+  },
+  "seed_results": [],
+  "unattempted_seeds": [
+    8001,
+    8002,
+    8003
+  ],
+  "trials": [],
+  "failure": {
+    "type": "ValueError",
+    "message": "clean_exact_FR_learning_HEAD_required",
+    "phase": "source_validation",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_full_request_pair.py\", line 375, in main_run\n    verify_sources(repo, args.source_commit, cost, files, source_bytes)\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_full_request_pair.py\", line 128, in verify_sources\n    raise ValueError(\"clean_exact_FR_learning_HEAD_required\")\nValueError: clean_exact_FR_learning_HEAD_required\n"
+  },
+  "no_reset_retry_or_mount_search": true,
+  "learning_updates_only_calibration": true,
+  "constructor_internal_model_builds": "unmeasured_unknown_not_zero",
+  "constructor_and_reset_internal_forward_attempts": "unmeasured_unknown_not_zero",
+  "unconfirmed_integrator_and_forward_attempts": "unknown_if_collector_exception",
+  "inherited_execution_fingerprint_asset_IO": "unknown_not_zero",
+  "unmeasured_filesystem_IO": "unknown_not_zero",
+  "timing_excludes": "final_serialization_compression_and_output_writes",
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

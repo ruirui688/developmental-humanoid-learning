@@ -1,0 +1,19 @@
+{
+  "first_attempt": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\fr3a_audit_candidate\\audit_full_request_pair_prediction.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--raw",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_full_request_pair_prediction\\raw",
+    "--source-commit",
+    "2584ed5dfcbea6ae3fc472f47101c55fb0561e7d",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr3a_first_audit\\result"
+  ],
+  "candidate_sha256": "2688d5e8ae24d8e15caa02a4b725b6f3f831c3f3ebd28483f4a0514fe4a8f47a",
+  "exit_code": 0,
+  "wall_seconds": 10.47198439994827
+}

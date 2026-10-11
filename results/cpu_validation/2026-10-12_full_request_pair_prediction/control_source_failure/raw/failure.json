@@ -1,0 +1,6 @@
+{
+  "type": "ValueError",
+  "message": "clean_exact_FR_learning_HEAD_required",
+  "phase": "source_validation",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_full_request_pair.py\", line 375, in main_run\n    verify_sources(repo, args.source_commit, cost, files, source_bytes)\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_full_request_pair.py\", line 128, in verify_sources\n    raise ValueError(\"clean_exact_FR_learning_HEAD_required\")\nValueError: clean_exact_FR_learning_HEAD_required\n"
+}

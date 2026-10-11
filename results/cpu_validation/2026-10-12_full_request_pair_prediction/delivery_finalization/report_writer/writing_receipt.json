@@ -1,0 +1,92 @@
+{
+  "schema": "FR3A_first_report_writing_receipt_v1",
+  "status": "written",
+  "created_at_utc": "2026-10-11T23:03:19.636037+00:00",
+  "source_commit": "2584ed5dfcbea6ae3fc472f47101c55fb0561e7d",
+  "only_experimental_input": {
+    "path": "results\\cpu_validation\\2026-10-12_full_request_pair_prediction\\report_inputs.json",
+    "bytes": 615199,
+    "sha256": "64cf151d6fcc161df66e53d00ce0dea018510d57caebafc912ae6f4af987a186",
+    "file_read_count": 1,
+    "JSON_parse_count": 1
+  },
+  "first_audit_from_root_CLI": {
+    "status": "passed",
+    "checks": 680623,
+    "failed": 0,
+    "new_RMSE_vectors": 60
+  },
+  "root_additional_engineering_fact": "FR3B premature strict-clean gate rejection, 0 constructor/physics/model/fit, preserved under A/control_source_failure; linked only, not read",
+  "historical_baseline": {
+    "controls": 373297,
+    "substeps": 2652970,
+    "online_scalar": 70452,
+    "offline_scalar": 7200,
+    "source": "root_fixed_before_FR3A"
+  },
+  "actual_saved_increment": {
+    "control_returns": 21000,
+    "confirmed_substeps": 21000,
+    "online_scalar_commits": 24000
+  },
+  "cumulative_after_stage": {
+    "controls": 394297,
+    "substeps": 2673970,
+    "online_scalar": 94452,
+    "offline_scalar": 7200
+  },
+  "saved_scientific_metrics_transcription_only": true,
+  "raw_model_parameter_old_experimental_result_or_audit_file_reads": 0,
+  "embedded_snapshots": "not selected/restored/copied",
+  "scientific_metrics_model_fit_RLS_physics_calls": 0,
+  "before_navigation_documents": {
+    "docs\\PROGRESS.md": {
+      "bytes": 84453,
+      "sha256": "bc657f493e50f198a99bec8ecf51ff44cd738c5ad3875775e2fc325dc7960332"
+    },
+    "docs\\CPU_VALIDATION_TARGET.md": {
+      "bytes": 5975,
+      "sha256": "a0b230768fbfbb17c3ea253114940ebd2f731accd3df6251cc5bb3891473eb50"
+    },
+    "docs\\CONTINUOUS_EXECUTION_PLAN.md": {
+      "bytes": 80577,
+      "sha256": "265568a4498e049c98c093f84a2c9f9967dc33abcfdbc590d91835275e4790c9"
+    },
+    "README.md": {
+      "bytes": 29268,
+      "sha256": "c273962cc170471bc6ea3254d76247244f46fdca0ef15757f302280f62857a30"
+    },
+    "AGENTS.md": {
+      "bytes": 26097,
+      "sha256": "8fe22b9a87e96d2a04a1ff5cf9d90714366ba074c29174287652f58d3e20e472"
+    }
+  },
+  "written_documents": {
+    "docs\\FULL_REQUEST_PAIR_PREDICTION_RESULTS.md": {
+      "bytes": 16493,
+      "sha256": "6329ec94f20242d78859245bb1682f166f8ce4385045ec117864a9beb0555400"
+    },
+    "docs\\PROGRESS.md": {
+      "bytes": 85073,
+      "sha256": "e09cc6e1f7aeea4eb6b110f3d027a070cdf1f521e1f1fcca9958b0f7206b2545"
+    },
+    "docs\\CPU_VALIDATION_TARGET.md": {
+      "bytes": 6224,
+      "sha256": "d95d5088594d592b2ba436c407cd9ef9d3d074a6ed751b6390b11da4d286ebde"
+    },
+    "docs\\CONTINUOUS_EXECUTION_PLAN.md": {
+      "bytes": 81291,
+      "sha256": "dd9c79a6c4d89933f944494fe7309997be81e508d86c33d9ce5bf9a87aeb2ca6"
+    },
+    "README.md": {
+      "bytes": 29336,
+      "sha256": "6103fa8735f6283ffff2910b6ca0028b202fcf88be2877b8bced2258a7ca334c"
+    },
+    "AGENTS.md": {
+      "bytes": 26167,
+      "sha256": "b97831e76a827fd9a0aab4ba18e0b5d1057089996d7b1966bd45666c8a825ec9"
+    }
+  },
+  "other_filesystem_IO": "unmeasured_not_zero",
+  "commit_or_push_by_child": false
+}
