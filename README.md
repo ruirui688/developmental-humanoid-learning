@@ -7,6 +7,8 @@
 [![Status](https://img.shields.io/badge/status-G1%20ground%20development-f59e0b)](#当前证据地图)
 [![Tests](https://img.shields.io/badge/tests-CPU%20checks-22c55e)](#快速开始)
 
+[当前持续目标与四项验收条件](docs/CPU_VALIDATION_TARGET.md) · [详细阶段账本](docs/CONTINUOUS_EXECUTION_PLAN.md)
+
 本项目研究一个区别于“海量仿真摔倒 → 单任务策略”的人形机器人运动学习方向：机器人从地面开始，在安全约束和可撤除搀扶下，通过身体探索形成 **Body Schema**，再逐步学习翻身、支撑、起身、站立和行走。
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
