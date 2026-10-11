@@ -1,5 +1,16 @@
 # 开发进度与仓库检查点
 
+## 当前入口：2026-10-12 Y0肘速度停止，关闭Y1/Y2
+
+[Y0首次结果](DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe一次完成100prefix+103active、
+203返回/2,030子步，`Y0_seed7500:202`肘速度1.1258089506362488rad/s触发原1rad/s StudyAbort。
+第一末窗observed20但完整trial失败使availablefalse/MAEnull，第二窗observed0；不partial排名，完整工程资格失败。
+Y1/Y2关闭、0fit/模型forward/RLS/MPC，PD103次，0增益扫描。
+实际absolute/squared effort为1.949838328533223/.9441707527036306，全部2,030保存子步努力有限，接触三类均零观察。
+正式累计253,297控制/2,532,970子步；online22,452/offline7,200保持。
+下一项只做控制时间尺度与底层保护有限审阅，未承诺新实验；C4/C5科学依赖不解除，持续目标active。
+阶段检查提交推送后继续，以下旧准备/结果记录只作历史，不触发重跑。
+
 ## 当前准备：2026-10-12 Y唯一共享阻尼候选，冻结后首次执行
 
 X0负结果已正常提交推送a0c08e3，接着完成[独立Y协议](DAMPED_SUSPENDED_PAIR_PROTOCOL.md)。
@@ -476,3 +487,25 @@ prefix1,000与active40子步均努力有限；0fit/RLS/模型forward/MPC/教师�
 下一独立Y候选仅公共肩Kd0→已有肘Kd4，安装/目标/权限/原阈值保持、不scan，须科学静态review与另冻结。
 原X协议/controller保持，新增经典反馈不是身体学习，不承诺Y通过或追认旧C4/C5。
 持续目标active，报告检查、正常提交推送后立即继续，自由root真实接触控制及C5–C7仍待验收。
+
+## 2026-10-12：Y0首次肘速度停止，完整工程失败
+
+[Y0结果](DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean `1ef7bbe3df016b01b47b0bea0ccc27821c0d7091`
+一次执行seed7500、PD64/Kd(4,4)：100prefix完整+103/200active，203返回/2,030保存子步，0控制异常。
+`Y0_seed7500:202`完整10子步先保存计费，肘速度1.1258089506362488rad/s触发原1rad/s StudyAbort，
+环境terminatedfalse/reasonnull、failurenull，wrapper exit0不是资格通过。
+第一末窗observed20但full trial失败使availablefalse/MAEnull，第二窗0；没有计算部分MAE或排名。
+完整工程门失败、Y1/Y2关闭，0增益扫描，不按揭晓结果改原Y学习配方。
+
+全八轴actual absolute/squared effort为1.949838328533223Nm·s/.9441707527036306Nm²·s，
+prefix1,000/active1,030子步均saved/valid、unavailable0；接触left_arm/feet/other均零观察。
+新增203/2,030，累计253,297控制/2,532,970子步，online22,452/offline7,200保持。
+0body-model forward/fit/恢复/RLS/MPC/教师、PD103；2模型编译/1reset/2resetforward另列。
+内部wall/CPU1.0698817/.609375s，外1.6939075s。固定安装反力unknown，不称零支撑或接触学习。
+
+[根归档](../results/cpu_validation/2026-10-12_damped_suspended_pair_engineering/manifest.json)19payload、
+38读/1,220,036bytes、19写/610,018bytes，wall/CPU .2566124/.03125s（末manifest前），无自动重试。
+报告只一次读取派生摘要，不重读raw/检查器或重算；root新thin contract零failed、0MAE重算仅证明证据一致。
+下一项只控制时间尺度与底层保护有限审阅，未承诺新实验/周期/保护修改，不因失败放宽门。
+Y/X使用不同工程seed，不从停止步数差声称肩阻尼因果收益；C4/C5科学依赖保持关闭。
+持续目标active，报告检查提交推送后继续最早未过阶段，最终仍须真实接触C4和C5–C7。

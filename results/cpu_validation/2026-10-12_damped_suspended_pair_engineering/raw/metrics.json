@@ -1,0 +1,80 @@
+{
+  "full_100_prefix_200_active": false,
+  "complete_finite_substep_native_effort_required": true,
+  "last20_post_step_windows": [
+    {
+      "segment": 0,
+      "active_indices": [
+        80,
+        99
+      ],
+      "planned_count": 20,
+      "observed_count": 20,
+      "full_trial_required": true,
+      "available": false,
+      "per_axis_mae_rad": null,
+      "threshold_rad": 0.01,
+      "passed": false
+    },
+    {
+      "segment": 1,
+      "active_indices": [
+        180,
+        199
+      ],
+      "planned_count": 20,
+      "observed_count": 0,
+      "full_trial_required": true,
+      "available": false,
+      "per_axis_mae_rad": null,
+      "threshold_rad": 0.01,
+      "passed": false
+    }
+  ],
+  "engineering_qualification_passed": false,
+  "partial_subset_gate": false,
+  "meaning": "suspended_noncontact_reachability_engineering_only",
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "fixed_upright_mount_observed_all_3000_substeps": false,
+  "contact_observations": {
+    "counts": {
+      "all_retained_substeps": {
+        "left_arm": {
+          "pair_events": 0,
+          "finite_positive_normal_force_events": 0
+        },
+        "feet": {
+          "pair_events": 0,
+          "finite_positive_normal_force_events": 0
+        },
+        "other": {
+          "pair_events": 0,
+          "finite_positive_normal_force_events": 0
+        }
+      },
+      "prefix_last20": {
+        "left_arm": {
+          "pair_events": 0,
+          "finite_positive_normal_force_events": 0
+        },
+        "feet": {
+          "pair_events": 0,
+          "finite_positive_normal_force_events": 0
+        },
+        "other": {
+          "pair_events": 0,
+          "finite_positive_normal_force_events": 0
+        }
+      }
+    },
+    "required_for_engineering_pass": false,
+    "scope": "saved_substep_pairs_only_not_unobserved_contacts",
+    "controlled_arm_contact_learning_proven": false,
+    "feet_contact_implies_arm_contact": false
+  },
+  "contact_required_for_pass": false,
+  "c4_contact_scientific_validation": false
+}

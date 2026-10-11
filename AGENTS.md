@@ -33,7 +33,9 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-[X0首次结果](docs/SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean6319fb6首次完成100prefix+4active、104控制/1,040子步，肩速度1.0957066489965022rad/s触发原1rad/s StudyAbort；0异常/fit/RLS，两个末窗不可评，完整工程资格失败，本安装X1/X2关闭。所存子步left_arm/feet/other接触全部零观察，不宣称接触或站立学习，不partial排名。接着唯一独立Y候选仅把公共肩Kd0改为已有肘Kd4，安装/权限/目标/阈值不改、不scan，须科学静态review、另冻结及有界首次执行；不是X0成功补跑，也不承诺通过。旧X协议/controller保持，旧W0/V分支关闭，C4/C5科学依赖未解除。持续目标active，阶段检查提交推送后继续。
+[Y0首次结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe3df016b01b47b0bea0ccc27821c0d7091一次完成100prefix+103active、203控制/2,030子步后，肘速度1.1258089506362488rad/s触发原1rad/s StudyAbort；环境terminatedfalse、failure空，0异常/fit/RLS。第一窗虽observed20但full trial失败而availablefalse/MAEnull，第二窗0，不partial排名。完整工程资格失败，Y1/Y2关闭、不scan增益；X0/W0/V关闭保持。下一项仅控制时间尺度与底层保护有限审阅，尚未承诺新实验或周期/保护修订，不因失败放宽门。零接触观察、机械固定支撑及经典反馈先验披露，不追认C4或解除C5科学依赖。持续目标active，阶段检查提交推送后继续。
+
+旧X0阶段记录：[X0首次结果](docs/SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean6319fb6首次完成100prefix+4active、104控制/1,040子步，肩速度1.0957066489965022rad/s触发原1rad/s StudyAbort；0异常/fit/RLS，两个末窗不可评，完整工程资格失败，本安装X1/X2关闭。所存子步left_arm/feet/other接触全部零观察，不宣称接触或站立学习，不partial排名。接着唯一独立Y候选仅把公共肩Kd0改为已有肘Kd4，安装/权限/目标/阈值不改、不scan，须科学静态review、另冻结及有界首次执行；不是X0成功补跑，也不承诺通过。旧X协议/controller保持，旧W0/V分支关闭，C4/C5科学依赖未解除。此段为旧决策，不触发重跑。
 
 旧W0阶段记录：[W0首次结果](docs/SUPPORTED_PAIR_ENGINEERING_RESULTS.md)从clean54cf4c2完成全部300控制/3,000子步，固定前缀左臂真实接触满足，但active80..99肩/肘MAE .01455068/.01388462、180..199为.03919046/.00653010rad，四项仅一项≤.01，工程资格失败。本安装W1/W2关闭，不改安装/seed/增益/目标补跑，不推论所有控制不可达、接触因果或旧C4通过。下一唯一X0直立悬挂域设计，明确机械固定支撑先验及可能非接触的域边界；新域仍不能解除C4，最终须完整接触控制。以下旧记录只作历史，不触发重跑。
 
@@ -63,7 +65,7 @@ P后唯一Q候选为K原phi29追加(qrel0/.12,qrel1/.12,v0/1,v1/1,startG0/.5,sta
 
 当前模型只消费原生关节q/v、已知请求及连续过去端点；previous_v不得跨trial或补零，不得读未来实际力矩。D sparse11仅恢复其冻结snapshot，G不重拟合。PD64/(0,4)及其旧增益开发费用明确披露，预测尾只用当前目标，无切换预览。接触力、动能、真实动力学和root quaternion只作离线诊断，不进入部署模型；当前native没有orientation。
 
-正式物理累计 **253,094控制调用 /2,530,940子步**；X0新增104/1,040/0更新，W0此前新增300/3,000，历史在线22,452+离线7,200=29,652scalar更新计算保持。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
+正式物理累计 **253,297控制调用 /2,532,970子步**；Y0新增203/2,030/0更新，X0/W0此前新增104/1,040与300/3,000，历史在线22,452+离线7,200=29,652scalar更新计算保持。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
 
 G1与机器接管仍按 [docs/NEW_MACHINE_BOOTSTRAP.md](docs/NEW_MACHINE_BOOTSTRAP.md)、[docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)和 [docs/DEVELOPMENT_ROADMAP.md](docs/DEVELOPMENT_ROADMAP.md)；采用新依赖/后端时锁定来源、版本与许可。当前CPU工作不要求安装GPU仿真器。
 
@@ -160,4 +162,4 @@ git diff --check
 
 X0首次结果入口：[停止结果](docs/SUSPENDED_PAIR_ENGINEERING_RESULTS.md)、[原悬挂域协议](docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md)、[关闭的事前X1/X2配方](docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md)。首次工程104/1,040后肩速度停止、末窗不可评；独立thin contract零失败只证明证据一致，不代表工程或科学通过。下一独立Y肩阻尼候选须另review/冻结，不修改X协议或controller；非接触悬挂机制不能追认旧C4或解除C5科学依赖，持续目标保持active。
 
-Y当前准备：[独立阻尼协议](docs/DAMPED_SUSPENDED_PAIR_PROTOCOL.md)已固定唯一共享PD64/Kd(4,4)候选及有条件Y1/Y2原科学门。两项新纯反馈检查已通过，最终协议pin另绑定；不重复X装配、旧MPC/RLS检查或X0。首次Y0必须从干净精确提交执行一次seed7500、最多300/3000；失败封存且关闭Y1/Y2，不scan增益。用户要求持续执行，阶段提交推送后继续最早未过门；完整自由root接触C4及C5–C7仍未验收。
+Y当前结果：[首次阻尼工程停止结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)与[原冻结协议](docs/DAMPED_SUSPENDED_PAIR_PROTOCOL.md)。seed7500首次203/2,030后肘速度停止、完整门失败，Y1/Y2关闭，不scan增益。首thin contract零failed、0MAE重算仅证明证据一致。接着只审阅控制时间尺度与底层保护，不预设新实验；用户要求持续执行，阶段提交推送后继续最早未过门，完整自由root接触C4及C5–C7仍未验收。

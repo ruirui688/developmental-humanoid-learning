@@ -1,0 +1,728 @@
+{
+  "status": "stopped",
+  "self_check": false,
+  "source": {
+    "commit": "1ef7bbe3df016b01b47b0bea0ccc27821c0d7091",
+    "files": {
+      "scripts/validate_damped_suspended_pair_engineering.py": {
+        "bytes": 24738,
+        "sha256": "6726fb8c050121fbf1d6f06db2c5bfe4d681169a6b188cb8b2fc4b5dcfde6032"
+      },
+      "src/developmental_physics/suspended_environment.py": {
+        "bytes": 7076,
+        "sha256": "f5154b7e059ed9939ed130d9a5c9eda2af455b9f660a4e843c72b996a44d81f8"
+      },
+      "docs/DAMPED_SUSPENDED_PAIR_PROTOCOL.md": {
+        "bytes": 14175,
+        "sha256": "1df461102e3c93613b0dedddb202b1c6929ff38516459c3aecf5accb6d167d57"
+      },
+      "src/developmental_physics/supported_environment.py": {
+        "bytes": 11642,
+        "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+      },
+      "scripts/validate_supported_pair_engineering.py": {
+        "bytes": 24683,
+        "sha256": "5c75e5db6f8721180bbbb17158f29ed736b0e10554672e585867f433b3766825"
+      },
+      "src/developmental_physics/environment.py": {
+        "bytes": 15822,
+        "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+      },
+      "src/developmental_physics/assets/ground_body.xml": {
+        "bytes": 3430,
+        "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      }
+    },
+    "clean_committed_bytes_verified": true
+  },
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "mujoco": "3.15.0"
+  },
+  "domain": "Y_damped_suspended_fixed_upright_torso",
+  "seed": 7500,
+  "planned_calls": 300,
+  "planned_substeps": 3000,
+  "control_substeps": 10,
+  "physics_dt": 0.002,
+  "prefix_steps": 100,
+  "active_steps": 200,
+  "pd": {
+    "kp": [
+      64.0,
+      64.0
+    ],
+    "kd": [
+      4.0,
+      4.0
+    ],
+    "gain_source": "Y_shared_PD64_Kd4_4_reusing_existing_elbow_damping_no_scan"
+  },
+  "qref2": [
+    -0.004583792782270922,
+    0.017796353833440106
+  ],
+  "direction_selection": [
+    {
+      "joint_index": 0,
+      "joint_position_rad": -0.004583792782270922,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.7499130447766005,
+      "negative_room_rad": 1.7407454592120586,
+      "direction": 1,
+      "rule": "larger_public_limit_distance_tie_positive"
+    },
+    {
+      "joint_index": 1,
+      "joint_position_rad": 0.017796353833440106,
+      "lower_limit_rad": 0.0,
+      "upper_limit_rad": 2.356194490192345,
+      "positive_room_rad": 2.338398136358905,
+      "negative_room_rad": 0.017796353833440106,
+      "direction": 1,
+      "rule": "larger_public_limit_distance_tie_positive"
+    }
+  ],
+  "targets_q2": [
+    [
+      0.035416207217729076,
+      0.0577963538334401
+    ],
+    [
+      0.07541620721772908,
+      0.09779635383344011
+    ]
+  ],
+  "qref_source": "complete_prefix99_after_native_q_only",
+  "support": {
+    "domain": "X_suspended_fixed_upright_torso",
+    "support_prior": "torso rigidly fixed to world",
+    "source_asset_sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "derived_xml_before_height_assignment_sha256": "71a3765984b0243de0ad8d1d11a3534c92964b884abfb951b669b429ba29e2d3",
+    "installed_xml_sha256": "9f1e35ab8422d0997b9b1e6d41a5ab1f1d3aa6b3e670b40ef2d42b970006e4e0",
+    "xml_modifications": [
+      "remove root freejoint",
+      "identity upright torso quaternion",
+      "one original 5mm-clearance height assignment"
+    ],
+    "installation": {
+      "seed": 7500,
+      "pose": "upright",
+      "rule": "identity_upright_original_primitive_clearance_then_fixed_torso_world_pose",
+      "initial_native_q8": [
+        -0.005743353208446661,
+        0.11784838172931704,
+        0.005274715332209079,
+        0.1174567097434085,
+        -0.0044205671430073736,
+        0.1315586110652629,
+        -0.013520169009975368,
+        0.10772546912038639
+      ],
+      "initial_native_v8": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_forward_lowest_primitive_z_m": -0.5899188584148503,
+      "reset_clearance_m": 0.005,
+      "fixed_torso_world_position": [
+        0.0,
+        0.0,
+        0.5949188584148503
+      ],
+      "fixed_torso_world_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "body_pos_model": [
+        0.0,
+        0.0,
+        0.5949188584148503
+      ],
+      "body_quat_model": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mount_adjustments_during_trial": 0,
+      "settling_physics_substeps": 0
+    },
+    "nq": 8,
+    "nv": 8,
+    "nu": 8,
+    "njnt": 8,
+    "removed_root_qpos": 7,
+    "removed_root_dofs": 6,
+    "named_body_weld_ids": [
+      {
+        "body_name": "world",
+        "body_id": 0,
+        "weld_id": 0
+      },
+      {
+        "body_name": "torso",
+        "body_id": 1,
+        "weld_id": 0
+      },
+      {
+        "body_name": "left_upper_arm",
+        "body_id": 2,
+        "weld_id": 2
+      },
+      {
+        "body_name": "left_forearm",
+        "body_id": 3,
+        "weld_id": 3
+      },
+      {
+        "body_name": "right_upper_arm",
+        "body_id": 4,
+        "weld_id": 4
+      },
+      {
+        "body_name": "right_forearm",
+        "body_id": 5,
+        "weld_id": 5
+      },
+      {
+        "body_name": "left_thigh",
+        "body_id": 6,
+        "weld_id": 6
+      },
+      {
+        "body_name": "left_shin",
+        "body_id": 7,
+        "weld_id": 7
+      },
+      {
+        "body_name": "right_thigh",
+        "body_id": 8,
+        "weld_id": 8
+      },
+      {
+        "body_name": "right_shin",
+        "body_id": 9,
+        "weld_id": 9
+      }
+    ],
+    "compiled_original_comparison_reference": "first X0 assembly self-check; original upright constructed without physics",
+    "joint_names": [
+      "left_shoulder",
+      "left_elbow",
+      "right_shoulder",
+      "right_elbow",
+      "left_hip",
+      "left_knee",
+      "right_hip",
+      "right_knee"
+    ],
+    "joint_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "joint_qpos_addresses": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "joint_dof_addresses": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "actuator_joint_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "config": {
+      "physics_dt": 0.002,
+      "control_substeps": 10,
+      "torque_limit": 0.5,
+      "joint_speed_limit": 20.0,
+      "joint_limit_margin": 0.08,
+      "kinetic_energy_limit": 50.0,
+      "reset_clearance": 0.005,
+      "ground_contact_profile": "baseline"
+    },
+    "contact_configuration": {
+      "profile": "baseline",
+      "floor": {
+        "geom_id": 0,
+        "name": "floor",
+        "priority": 0,
+        "condim": 3,
+        "solref": [
+          0.01,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "friction": [
+          0.8,
+          0.02,
+          0.002
+        ],
+        "solmix": 1.0
+      },
+      "body_geoms": [
+        {
+          "geom_id": 1,
+          "name": "trunk",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 2,
+          "name": "head",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 3,
+          "name": "left_upper_arm_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 4,
+          "name": "left_forearm_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 5,
+          "name": "right_upper_arm_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 6,
+          "name": "right_forearm_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 7,
+          "name": "left_thigh_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 8,
+          "name": "left_shin_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 9,
+          "name": "left_foot_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 10,
+          "name": "right_thigh_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 11,
+          "name": "right_shin_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        },
+        {
+          "geom_id": 12,
+          "name": "right_foot_geom",
+          "priority": 0,
+          "condim": 3,
+          "solref": [
+            0.01,
+            1.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "friction": [
+            0.8,
+            0.02,
+            0.002
+          ],
+          "solmix": 1.0
+        }
+      ],
+      "changes_from_asset": [],
+      "change_scope": {
+        "geometry": "floor",
+        "fields": [],
+        "ground_parameter_selection": "asset mixing"
+      }
+    },
+    "changed_frame_and_effective_inertia": "fixed torso removes free-base motion and inertial/contact feedback",
+    "effective_collision_set": "world-welded torso/head may change static collision filtering; new support domain, not matched causal comparison",
+    "old_free_root_C4_validation": false,
+    "task_class": "noncontact_left_arm_reachability_engineering",
+    "controlled_arm_contact_required": false,
+    "floor_contact_required": false,
+    "root_orientation": "identity quaternion compiled from the derived XML",
+    "noncontrolled_joint_semantics": "six original passive joints; zero requests, not locked",
+    "physical_contact_scope": "retained floor; observed left_arm/feet/other pairs reported separately",
+    "fixture_reaction_measurement": "unknown; fixed support is not zero support"
+  },
+  "engineering_operations": {
+    "model_builds": 2,
+    "reset_calls": 1,
+    "reset_forward_attempts": 2,
+    "reset_forward_returns": 2,
+    "shared_supine_constructor_builds": 1,
+    "suspended_identity_constructor_builds": 1
+  },
+  "physical_fingerprint_before": "f043434a99895d96af5b2f5996a1cd777e86dc748ea95fedc168490152b9014d",
+  "physical_fingerprint_after": "f043434a99895d96af5b2f5996a1cd777e86dc748ea95fedc168490152b9014d",
+  "cost": {
+    "control_call_attempts": 203,
+    "control_call_returns": 203,
+    "control_call_exceptions": 0,
+    "confirmed_physics_substeps": 2030,
+    "body_model_forward_calls": 0,
+    "RLS_updates": 0,
+    "body_model_fits": 0,
+    "body_model_restorations": 0,
+    "MPC_calls": 0,
+    "teacher_calls": 0,
+    "PD_vector_evaluations": 103,
+    "environment_constructor_attempts": 1,
+    "environment_constructor_returns": 1,
+    "reset_attempts": 1,
+    "reset_returns": 1,
+    "git_query_attempts": 10,
+    "git_return_bytes": 101769,
+    "source_file_reads": 8,
+    "source_read_and_hash_bytes": 101728,
+    "shared_helper_module_load_attempts": 1,
+    "shared_helper_module_load_returns": 1,
+    "parameter_fingerprint_attempts": 2,
+    "parameter_fingerprint_returns": 2,
+    "wall_seconds": 1.069881700212136,
+    "cpu_seconds": 0.609375
+  },
+  "actual_effort_by_phase": {
+    "prefix": {
+      "actual_absolute_per_axis_nm_s": [
+        0.0,
+        0.0
+      ],
+      "actual_squared_per_axis_nm2_s": [
+        0.0,
+        0.0
+      ],
+      "actual_all8_absolute_nm_s": 0.0,
+      "actual_all8_squared_nm2_s": 0.0,
+      "applied_command_all8_absolute_nm_s": 0.0,
+      "applied_command_all8_squared_nm2_s": 0.0,
+      "saved_substeps": 1000,
+      "valid_effort_substeps": 1000,
+      "unavailable_effort_substeps": 0
+    },
+    "active": {
+      "actual_absolute_per_axis_nm_s": [
+        0.9489925524284429,
+        1.000845776104781
+      ],
+      "actual_squared_per_axis_nm2_s": [
+        0.45190209735670406,
+        0.4922686553469244
+      ],
+      "actual_all8_absolute_nm_s": 1.949838328533223,
+      "actual_all8_squared_nm2_s": 0.9441707527036306,
+      "applied_command_all8_absolute_nm_s": 1.949838328533223,
+      "applied_command_all8_squared_nm2_s": 0.9441707527036306,
+      "saved_substeps": 1030,
+      "valid_effort_substeps": 1030,
+      "unavailable_effort_substeps": 0
+    }
+  },
+  "stop": {
+    "transition_id": "Y0_seed7500:202",
+    "environment_reason": null,
+    "environment_terminated": false,
+    "study_abort": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_velocity_rad_s"
+        }
+      ],
+      "q_rad": [
+        0.052059105774279496,
+        0.06305066380933125
+      ],
+      "qref_rad": [
+        -0.004583792782270922,
+        0.017796353833440106
+      ],
+      "velocity_rad_s": [
+        0.38696151259255285,
+        1.1258089506362488
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "evaluation_time": "after_complete_control_interval",
+      "feedback_action": null
+    },
+    "executed_substeps": 10,
+    "primary_reason": "StudyAbort"
+  },
+  "failure": null,
+  "self_check_cases": [],
+  "engineering_qualification_passed": false,
+  "contact_required_for_pass": false,
+  "no_reset_retry_or_mount_search": true,
+  "incomplete_or_missing_substep_cost_and_effort": "unknown_unobserved_portion_not_zero; saved_samples_are_lower_bound_if_incomplete",
+  "constructor_accounting_if_no_env_returned": "unknown; constructor_attempt_is_counted",
+  "parameter_fingerprint_asset_read_bytes_per_return": 3430,
+  "timing_excludes": "process_startup_and_global_imports; final_serialization_compression_and_output_writes",
+  "unmeasured_filesystem_IO_and_import_backend_bytes": "unknown_not_zero",
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

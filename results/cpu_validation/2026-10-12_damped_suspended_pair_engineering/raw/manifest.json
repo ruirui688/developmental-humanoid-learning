@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "stopped",
+  "files": {
+    "suspended_body_before_height.xml": {
+      "bytes": 3452,
+      "sha256": "71a3765984b0243de0ad8d1d11a3534c92964b884abfb951b669b429ba29e2d3"
+    },
+    "suspended_body_installed.xml": {
+      "bytes": 3473,
+      "sha256": "9f1e35ab8422d0997b9b1e6d41a5ab1f1d3aa6b3e670b40ef2d42b970006e4e0"
+    },
+    "run.json": {
+      "bytes": 17675,
+      "sha256": "7ba8e1e266799b2d66462b50dd437a55a793fdb99ae776bc1d31092a2f7ee99f"
+    },
+    "metrics.json": {
+      "bytes": 2153,
+      "sha256": "856689d1e745f61595a486120e8574920499f89d55eabd20a43cac5f9d474eee"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 469321,
+      "sha256": "0869022d3a35a6dee26df36503ead840e6f6d0640f1c2f8af17bb3da25d8914e"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}
