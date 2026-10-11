@@ -687,3 +687,107 @@ def test_formal_source_binding_uses_only_explicit_mock_git_before_environment(tm
     assert not SyntheticEnv.instances
     assert calls and all(call[0] == "git" for call in calls)
     assert len(pd_calls) == (0 if fault == "dirty" else 1)
+
+
+def test_successful_second_active_plan_keeps_current_entry_when_diagnostic_fails(tmp_path, monkeypatch):
+    small_recipe(monkeypatch)
+    planned = []
+    original_select = SyntheticPlanner.select
+    original_meter_call = runner.PredictionMeter.call
+    matched_calls = 0
+
+    def record_select(self, q, v, target, previous_torque):
+        answer = original_select(self, q, v, target, previous_torque)
+        planned.append({"basis": self.model.input_basis, "updates": self.model.update_count,
+                        "q": list(q), "v": list(v), "target": list(target),
+                        "previous": list(previous_torque), "decision": answer.to_dict()})
+        return answer
+
+    def fail_fourth_cold_raw_diagnostic(self, callback, *args):
+        nonlocal matched_calls
+        body = getattr(callback, "__self__", None)
+        is_cold_raw = (getattr(callback, "__name__", None) == "predict"
+                       and getattr(body, "input_basis", None) == "raw_request"
+                       and getattr(body, "update_count", None) == 0)
+        if is_cold_raw:
+            matched_calls += 1
+            if matched_calls == 4:
+                def known_before_heads_failure(*unused):
+                    raise core.PairPredictionError(
+                        ValueError("synthetic second-active before-step diagnostic failure"),
+                        0, 0, "native_features",
+                    )
+                return original_meter_call(self, known_before_heads_failure, *args)
+        return original_meter_call(self, callback, *args)
+
+    monkeypatch.setattr(SyntheticPlanner, "select", record_select)
+    monkeypatch.setattr(runner.PredictionMeter, "call", fail_fourth_cold_raw_diagnostic)
+    output = tmp_path/"out"
+    metadata = run(output)
+    trial = [row for row in rows(output) if row["kind"] == "nominal_raw"]
+    prior = trial[-2]
+    exception = trial[-1]
+    assert "collector_exception" not in prior and exception["collector_exception"]["type"] == "PairPredictionError"
+    assert prior["step_index"] == 2 and exception["step_index"] == 3
+    assert exception["observation_before"] == prior["observation_after"]
+    assert exception["observation_before"] != prior["observation_before"]
+    assert exception["observation_after"] == exception["observation_before"]
+    nominal_plans = [row for row in planned if row["basis"] == "raw_request" and row["updates"] == 0]
+    assert len(nominal_plans) == 2
+    assert nominal_plans[1]["q"] == exception["observation_before"]["joint_position"][:2]
+    assert nominal_plans[1]["v"] == exception["observation_before"]["joint_velocity"][:2]
+    assert exception["planner_decision"] == nominal_plans[1]["decision"]
+    assert exception["target_q"] == nominal_plans[1]["target"]
+    assert exception["model_input_diagnostics"] == {}
+    assert exception["returned_step_diagnostics"] is None
+    assert exception["diagnostics"]["step_id"] == prior["diagnostics"]["step_id"] == 3
+    assert exception["diagnostics"]["physics_steps"] == prior["diagnostics"]["physics_steps"] == 30
+    episodes = read(output, "episodes.json")
+    episode = next(row for row in episodes if row["kind"] == "nominal_raw")
+    assert episode["control_calls_attempted"] == episode["control_steps"] == episode["returned_steps"] == 3
+    assert episode["physics_steps"] == 30 and episode["unreturned_physics_steps"] == 0
+    assert episode["phase_budgets"]["control"] == {
+        "control_calls_attempted": 1, "control_steps": 1, "physics_steps": 10,
+    }
+    seed = read(output, "seed_results.json")[0]
+    evaluation = seed["evaluations"]["nominal_raw"]
+    assert evaluation["planner_attempt_count"] == evaluation["planner_decision_count"] == 2
+    assert evaluation["failed_planner_attempts"] == 0
+    assert evaluation["planning_accounting"]["pair_prediction_attempts"] == 2
+    assert evaluation["planning_accounting"]["scalar_prediction_attempts"] == 4
+    assert evaluation["diagnostic_prediction_accounting"] == {
+        "pair_prediction_attempts": 2, "pair_prediction_successes": 1,
+        "scalar_prediction_attempts": 2, "scalar_prediction_successes": 2,
+        "failed_pair_prediction_attempts": 1, "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": True, "scalar_counts_is_lower_bound": False,
+    }
+    assert exception["failure_accounting"]["structured_failure"] == {
+        "type": "PairPredictionError", "message": "synthetic second-active before-step diagnostic failure",
+        "scalar_prediction_attempts": 0, "scalar_prediction_successes": 0,
+        "failure_stage": "native_features",
+    }
+    cost_keys = runner.PLANNING_KEYS
+    diagnostic_costs = {key: sum(row["diagnostic_prediction_accounting"][key]
+                               for row in seed["evaluations"].values()) for key in cost_keys}
+    rls_costs = {key: sum(row[key] for row in seed["rls_prediction_accounting"].values()) for key in cost_keys}
+    stub_planner_costs = {key: sum(row["planning_accounting"][key]
+                                 for row in seed["evaluations"].values()) for key in cost_keys}
+    evidence = {
+        "kind": "single synthetic current-entry logging regression, no scientific claim",
+        "synthetic_environment": {"control_calls_attempted": metadata["control_calls_attempted"],
+                                  "control_steps": metadata["control_steps"], "substeps": metadata["physics_steps"]},
+        "actual_physical_calls": 0, "actual_physical_substeps": 0, "git_operations": 0,
+        "model_updates": metadata["model_updates"], "vector_model_updates": metadata["vector_model_updates"],
+        "diagnostic_mathematical_costs": diagnostic_costs,
+        "rls_internal_mathematical_costs": rls_costs,
+        "stub_planner_reported_costs": stub_planner_costs,
+        "stub_planner_cost_boundary": "SyntheticPlanner reports a placeholder ledger; it does not execute mathematical candidate predictions.",
+        "cold_raw_diagnostic_count": matched_calls,
+        "previous_normal_before": prior["observation_before"], "previous_normal_after": prior["observation_after"],
+        "exception_before": exception["observation_before"], "exception_after": exception["observation_after"],
+        "second_successful_planner": nominal_plans[1], "saved_exception_planner": exception["planner_decision"],
+        "failed_trial": episode, "failed_evaluation": evaluation,
+    }
+    (tmp_path/"regression_evidence.json").write_text(
+        json.dumps(evidence, indent=2, allow_nan=False)+"\n", encoding="utf-8",
+    )

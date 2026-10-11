@@ -1,6 +1,6 @@
-"""DRAFT C4 A raw/guard paired-body development collector.
+"""Frozen C4 A raw/guard paired-body development collector.
 
-Real execution is disabled. Synthetic execution replaces the environment and
+Real execution requires clean, tracked, byte-bound sources. Synthetic execution replaces the environment and
 uses an explicit fixture provenance; it never queries Git or a simulator.
 Public guard information is matched within each nominal/learned comparison.
 No scientific gate or physical conclusion is implemented by this collector.
@@ -35,7 +35,7 @@ from developmental_physics.guard_pair_model import InputMappedDiagonalPairBodyMo
 from developmental_physics.pd_selection_binding import load_pd_binding
 
 
-FORMAL_EXECUTION_FROZEN = False
+FORMAL_EXECUTION_FROZEN = True
 _REAL_ENV = GroundBodyEnv
 DEVELOPMENT_SEEDS = (0, 1, 2)
 JOINT_INDICES = (0, 1)
@@ -299,7 +299,7 @@ def run_guard_pair_development(output, *, protocol_path, synthetic=False,
         "maximum_vector_updates": len(DEVELOPMENT_SEEDS)*CALIBRATION_STEPS*2,
         "maximum_independent_prediction_pair_calls": len(DEVELOPMENT_SEEDS)*PREDICTION_STEPS*4,
         "maximum_mpc_prediction_pair_calls": len(DEVELOPMENT_SEEDS)*CONTROL_STEPS*4*81*15,
-        "scientific_gates": "draft; separate independent auditor and root freeze required before real execution",
+        "scientific_gates": "frozen protocol; separate independent auditor evaluates physical results",
         "claim_boundary": "development-only two-joint diagnostic; no final/generalization/safety/task-skill claim",
         "complete": False, "archive_status": "running"}
     metadata["source_dirty"] = bool(metadata["source_status"])
@@ -393,6 +393,8 @@ def run_guard_pair_development(output, *, protocol_path, synthetic=False,
                         env_before = env.parameter_fingerprint()
                         previous_torque = (0., 0.)
                         for index in range(PREFIX_STEPS + duration):
+                            previous = observation
+                            input_diagnostics = {}
                             phase = "prefix" if index < PREFIX_STEPS else ("calibration" if is_cal else ("prediction" if is_pred else "control"))
                             requested = np.zeros(8)
                             target = raw_pd = decision = update = None
@@ -478,7 +480,6 @@ def run_guard_pair_development(output, *, protocol_path, synthetic=False,
                                     predicted["persistence"] = (tuple(q[i]+.02*v[i] for i in range(2)), v)
                                 input_diagnostics = {name: model.describe_input(q, command)
                                     for name, model in (calibrators if is_cal else active_models).items()}
-                            previous = observation
                             calls += 1
                             old_control, old_physics = env.step_id, env.physics_steps
                             budget = episode["phase_budgets"][phase]

@@ -1,6 +1,6 @@
-# C4 A：raw / public-guard 身体模型对照草稿
+# C4 A：raw / public-guard 身体模型冻结开发协议
 
-这是供 root 最终冻结的协议草稿。正式入口 `FORMAL_EXECUTION_FROZEN=False`，在物理构造、Git、PD 来源读取及输出创建之前拒绝真实执行。本文与合成测试没有物理效果证据。下列科学门来自 root 在 A 物理结果未知时的明确冻结指令，collector 不自行计算或变更这些门。
+本协议与独立审计已在 A 物理结果未知时冻结；正式入口 `FORMAL_EXECUTION_FROZEN=True`。实际执行仍须先通过 clean HEAD、tracked 原字节与 PD 来源绑定，再构造环境。合成测试只有实现证据，下列科学门不随正式结果变更，collector 不自行计算或修改这些门。
 
 ## 固定条件与信息边界
 
@@ -46,9 +46,9 @@ PD helper 验证独立 selection 原字节、manifest/audit SHA、audit validate
 
 失败按实际成本；RLS、MPC、诊断预测成本分别记录，不把数学调用混为环境交互。无 policy、gain、gate、教师或演示更新。A 后续耦合 B 单独协议与预算，不在本轮偷加。
 
-## 待冻结与交付
+## 冻结与首次交付
 
-root 必须完成协议、独立 auditor 与 PD 绑定核验，再用 clean commit 首次运行一次。发展 seed 成功不能称未见泛化、技能成熟或真机安全。公开规则收益与同 basis 的 RLS 收益分开比较；raw→guard 的总差不能全算学习。合成测试只证明实现、账本和故障路径，不能证明物理科学门通过。
+协议、独立 auditor 与 PD 绑定核验已完成；提交并推送这一冻结检查点后，从 clean commit 首次运行一次，保留停止、异常及实际费用，不补跑。发展 seed 成功不能称未见泛化、技能成熟或真机安全。公开规则收益与同 basis 的 RLS 收益分开比较；raw→guard 的总差不能全算学习。合成测试只证明实现、账本和故障路径，不能证明物理科学门通过。
 
 ## root 预先冻结的 A 科学门
 

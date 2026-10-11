@@ -1,5 +1,11 @@
 # 开发进度与仓库检查点
 
+## C4 A首次物理前正式冻结（2026-10-11）
+
+[raw/guard匹配协议](GUARD_PAIR_DEVELOPMENT_PROTOCOL.md)与标准库独立auditor现已冻结，正式入口开启但仍要求clean/tracked/HEAD原字节和PD五文件身份绑定。采用最终auditor `393a2f3673bab952c34ea09a4d79d7d88e78c448e141a4ab83d865ab164dda93`；此前59版提升记录保留，当前63项独立审计测试与11项受影响异常检查合计74pass。每迭代先保存当前原生起点并清空输入诊断，修复第二active诊断失败时旧起点/旧映射残留；新增回归使用真实`native_features`失败stage并检查数学成本与没有第二步物理费用。该批fake137attempt/135step/1356子步/36scalar，真物理0；外层误用旧suite筛选的首次空账保留，只读纠正而未重跑。正式flag/源码绑定的5项纯检查通过，费用另列。原93项提升检查没有无理由重复。
+
+本检查点提交推送后一次执行24trial上限7500/75000/4800scalar，随后一次独立audit、一次summary与完整归档。物理数据仍未知；实现通过不代表身体贡献、PD比较或安全通过。PD科学图只读取封口summary，保留18个停止且不排序截短误差；PNG已视觉核验，未改封口清单。A之后继续耦合模型与变化适应，持续目标保持active。
+
 ## C4 A正式路径准备（2026-10-11）
 
 raw/public-guard共享校准collector与PD来源helper已提升，正式物理开关仍关闭，等待独立审计后冻结。[协议](GUARD_PAIR_DEVELOPMENT_PROTOCOL.md)固定24trial、1/9校准、7500/75000/4800 scalar上限，规则收益与匹配RLS贡献分别判门。提升合成93项通过、1项Windows symlink可选skip；封口PD归档实际使用first_audit.json，路径统一后受影响4项检查通过。一次真实来源helper核验确认candidate2、64/(0,4)，只读取身份原件，不重审trace或做物理。提升检查外层计账脚本误用draft suite字符串导致fake汇总漏计，首次记录保留；独立只读纠正为11709attempt/11706step/117048fake子步/8088fake scalar，不重复测试或采集。

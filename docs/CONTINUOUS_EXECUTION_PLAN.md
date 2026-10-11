@@ -31,7 +31,7 @@
 | C1 | 闭环模型有效域 | 开发轨迹覆盖分析、动作切换残差、位置积分误差、2/5/15 步自由递推；名义/学习/持久性对照 | 开发诊断完成；[结果](MODEL_DOMAIN_RESULTS.md) |
 | C2 | 最小模型/探索修订与消融 | 分离校准剂量与折点结构，必要时比较动作历史或直接位移预测；新留出预测与控制及各方法总成本 | 三个修订均未采用；[新最终](LOCAL_FROZEN_VALIDATION_RESULTS.md)同MPC贡献通过29.505%，自身一步与位置有效域仍有缺口 |
 | C3 | 调优经典控制强基线 | 有上限的开发增益/积分候选；所有调优交互计账；新留出统一权限比较 | 九组PD选64/0；新最终只改善2.674%，未过5%门，保留失败结论 |
-| C4 | 新增关节与低维协调 | 至少两个有可重复响应的关节；单关节与双关节任务、耦合/独立模型对照 | 左肘[迁移](ELBOW_BODY_DEVELOPMENT_RESULTS.md)贡献与PD门失败；首次[双关节](PAIR_BODY_DEVELOPMENT_RESULTS.md)校准/组合PD停止，学习耦合尚未评价。[短脉冲](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)1/9三seed完整400active并选取，2/8三seed速度停止；只过可执行性门。[双轴PD](PAIR_PD_DEVELOPMENT_RESULTS.md)9完整/18速度停止，有限选择64/(0,4)；模型贡献对照待执行 |
+| C4 | 新增关节与低维协调 | 至少两个有可重复响应的关节；单关节与双关节任务、耦合/独立模型对照 | 左肘[迁移](ELBOW_BODY_DEVELOPMENT_RESULTS.md)贡献与PD门失败；首次[双关节](PAIR_BODY_DEVELOPMENT_RESULTS.md)校准/组合PD停止，学习耦合尚未评价。[短脉冲](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)1/9三seed完整400active并选取，2/8三seed速度停止；只过可执行性门。[双轴PD](PAIR_PD_DEVELOPMENT_RESULTS.md)9完整/18速度停止，有限选择64/(0,4)；[模型贡献协议](GUARD_PAIR_DEVELOPMENT_PROTOCOL.md)与独立审计已冻结，clean提交后一次执行 |
 | C5 | 未知动力学变化 | 至少两类变化的冻结/适应对照；恢复交互、预测、控制、努力与失败曲线 | [事件工程](C5_ENGINEERING_RESULTS.md)4完整480/4,800/0更新、独立481,538项零失败；科学适应对照仍待 C4 |
 | C6 | 固定成熟与能力门控 | 同最终任务与完成标准；校准成本、权限轨迹、晋退级、失败和风险；不能靠永久小动作取胜 | 待 C5 |
 | C7 | 综合验收与可复现交付 | 未见种子/条件、强基线、组件消融、全部失败与成本；说明成立和不成立的机制 | 待各阶段结果 |
