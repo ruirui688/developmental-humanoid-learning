@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "files": {
+    "run.json": {
+      "sha256": "fc90269c3a72dfd6d7eb144b8907f57b6f38b1e171e55fb7b29c3c1b99e98540",
+      "bytes": 12842
+    },
+    "description.json": {
+      "sha256": "26c90bbb0cf2c8197f3b5ecd5722a87a645c288810cb0ff895e4224c56a63413",
+      "bytes": 3171743
+    },
+    "derived.jsonl": {
+      "sha256": "7abc1d5c19948b683a28d0a71b02bbc85f5900edb259ef5bf8bb950e99db50df",
+      "bytes": 1986323
+    }
+  },
+  "source_cache_records": {
+    "manifest.json": {
+      "sha256": "b27d3cb382e2be2b2946d58aca1286594ee92777d47f05cfa1f5e2da8910058b",
+      "bytes": 6011
+    },
+    "first_audit.json": {
+      "sha256": "ba27cbc47f1291ffbb003102f2d19a0da35821092cd6b1ac790416b7fe80a8e7",
+      "bytes": 213253
+    },
+    "summary_once/summary.json": {
+      "sha256": "74c0b148950dc8c33d130492b3f0b636a6da9eba2bd3239e3d7952036437b32e",
+      "bytes": 194176
+    },
+    "raw/manifest.json": {
+      "sha256": "d584de2194f8387bf5fdbd85d727924f748a8b87ce7e950d1c324f1f1bf2b519",
+      "bytes": 784
+    },
+    "raw/metadata.json": {
+      "sha256": "227e06e2be674790c3740e387e0ae07493c3ca857861c9282b2ff8ad940f6437",
+      "bytes": 16183
+    },
+    "raw/episodes.json": {
+      "sha256": "b97527cfec732949c7858d96afae03ec4eee3027a12b019ff4259d38f1ea253a",
+      "bytes": 17945
+    },
+    "raw/trace.jsonl.gz": {
+      "sha256": "0831029cb0169178ee27410edcb75bd7e1419c8f8914753d2dbf0a96d2063940",
+      "bytes": 4074411
+    }
+  },
+  "output_integrity_reads": {
+    "opens": 3,
+    "bytes": 5170908,
+    "hash_operations": 3
+  },
+  "final_record_timing": {
+    "wall_seconds": 0.026375999907031655,
+    "cpu_seconds": 0.015625,
+    "scope": "run JSON write and output-integrity read/hash; excludes final manifest serialization/write"
+  },
+  "scientific_adoption": {
+    "evaluated": false,
+    "passed": false
+  }
+}

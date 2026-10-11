@@ -1,0 +1,22 @@
+{
+  "content_read_opens": 2,
+  "content_binary_bytes": 16095,
+  "source_records": [
+    {
+      "path": "docs\\GUARD_NATIVE_CONTEXT_DIAGNOSTIC_PROTOCOL.md",
+      "bytes": 10344,
+      "sha256": "eecf6cdf71699d18a076229765d7246c265a9fb0ddc95b60ce875d15795caaf3"
+    },
+    {
+      "path": "external\\c4_native_context_output_review_staging\\FIRST_OUTPUT_CONTRACT_CHECK.json",
+      "bytes": 5751,
+      "sha256": "22ed5a8add8282882ca8e4e5b3a48bc2d71acb9c5a78a0478e99402369104ec1"
+    }
+  ],
+  "read_hash_wall_seconds": 0.009649599902331829,
+  "timing_scope": "two necessary contract/review-record input reads and hashes; excludes decoding/excerpt/parse, snapshots/output and human reasoning",
+  "new_review_checks": 0,
+  "new_statistics": 0,
+  "new_physics": 0,
+  "actual_experiment_data_reads": 0
+}

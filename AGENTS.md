@@ -74,6 +74,8 @@ D随后从clean `f7710c7`首次完成：0新物理、4800离线scalar、168150�
 
 E最小控制假设随后从clean `dda82b1854d80483d0b16e0532bc414906e6a402`首次执行：9完整/3研究速度停止/0异常/blocked；冻结sparse11三个seed均104active左肘速度停止，cold11、PDselected、zero各三seed全部完整。控制假设与PD参考门未评价、未通过，矩阵不完整；D旧预测门不追认，完整C4及C5科学依赖仍未通过。见[结果](docs/GUARD_LAG_CONTROL_DEVELOPMENT_RESULTS.md)。新增3312/33120/0更新，首审1888017项零失败、一次薄汇总33绑定检查零失败只证明证据一致。22payload/6167928bytes原字节归档已封口。当前正式累计249662控制/2496620子步，在线22452+离线7200=29652scalar计算。检查、提交推送后继续F保存其余六关节原生q/v及IMU gyro/acc与一步误差的固定分层零更新诊断，关联不证明因果；禁止补入特权root orientation。依据明确证据单个最小修订，不先追加探索、放宽停止或重复旧矩阵。C4科学验收后继续C5/C6/C7，持续目标保持active，不在报告或commit后停止。
 
+当前持续执行进展：E负结果已推送`cf71bd2`；F从clean`734ab7d`首次完成2112保存active的原生上下文诊断，0新物理/模型预测/更新。结果见`docs/GUARD_NATIVE_CONTEXT_DIAGNOSTIC_RESULTS.md`，首输出核查24个超范围断言及纯契约补充全部保留，不重跑统计。F不支持直接挑选最佳特征，C4/C5未验收；下一G只检验已选PD反馈尾规划，公开其任务先验，不同时改forecast/目标/权限/停止/代价。G collector和独立audit仍在external准备，冻结提交前不运行新物理。持续目标active，F封口提交推送后继续G。
+
 ## 3. 近期非目标
 
 - 不改造 G1 硬件，不把压力鞋垫或电子皮肤设为启动条件；

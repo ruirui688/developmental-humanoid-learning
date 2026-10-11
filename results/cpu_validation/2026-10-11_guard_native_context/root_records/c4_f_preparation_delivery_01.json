@@ -1,0 +1,20 @@
+{
+  "checks": 217,
+  "failed": 1,
+  "failures": [
+    "configs/cpu/guard_native_context_binding.json"
+  ],
+  "execution": {
+    "local_binary_reads": 9,
+    "local_binary_bytes": 187207,
+    "git_blob_reads": 48,
+    "git_binary_bytes": 1011600,
+    "wall_seconds": 2.611768700182438,
+    "cpu_seconds": 0.21875,
+    "timing_scope": "checks through report assembly; excludes report write",
+    "statistics_runs": 0,
+    "model_calls": 0,
+    "physics": 0,
+    "updates": 0
+  }
+}

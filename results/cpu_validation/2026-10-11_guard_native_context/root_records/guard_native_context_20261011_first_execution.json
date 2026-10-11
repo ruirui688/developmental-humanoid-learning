@@ -1,0 +1,28 @@
+{
+  "source_commit": "734ab7dab53563327b7dc072378551d2045b68ac",
+  "source_manifest_sha256": "b27d3cb382e2be2b2946d58aca1286594ee92777d47f05cfa1f5e2da8910058b",
+  "command": [
+    "D:/Python3.10/python.exe",
+    "scripts/diagnose_guard_native_context.py",
+    "--archive",
+    "results/cpu_validation/2026-10-11_guard_lag_control",
+    "--binding",
+    "configs/cpu/guard_native_context_binding.json",
+    "--source-manifest-sha256",
+    "b27d3cb382e2be2b2946d58aca1286594ee92777d47f05cfa1f5e2da8910058b",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\guard_native_context_20261011_first"
+  ],
+  "exit_code": 0,
+  "wrapper_exception": null,
+  "repeated": false,
+  "wrapper_wall_seconds": 1.8247324000112712,
+  "wrapper_cpu_seconds": 0.015625,
+  "timing_scope": "subprocess launch through completion; excludes preflight and final execution record write",
+  "preflight_git_reads": 2,
+  "preflight_git_binary_return_bytes": 41,
+  "new_physics": 0,
+  "new_model_predictions": 0,
+  "new_updates": 0,
+  "old_audit_runs": 0
+}

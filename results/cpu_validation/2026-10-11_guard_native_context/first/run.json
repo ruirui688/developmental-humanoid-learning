@@ -1,0 +1,402 @@
+{
+  "status": "completed",
+  "scientific_adoption": {
+    "evaluated": false,
+    "passed": false
+  },
+  "f_provenance": {
+    "source_commit": "734ab7dab53563327b7dc072378551d2045b68ac",
+    "source_sha256": "15ffc878f918a7927b09c5ede14b6ac5b57b09bab43b4ff4342ac11a20cdff96",
+    "binding_path": "configs/cpu/guard_native_context_binding.json",
+    "binding_sha256": "33fecbca2c02a8b38b29be521c1beeca9d1aede3cf260a233bcf0c7be5906140",
+    "protocol": {
+      "path": "docs/GUARD_NATIVE_CONTEXT_DIAGNOSTIC_PROTOCOL.md",
+      "sha256": "eecf6cdf71699d18a076229765d7246c265a9fb0ddc95b60ce875d15795caaf3"
+    },
+    "source_dirty": false
+  },
+  "source_records": {
+    "manifest.json": {
+      "sha256": "b27d3cb382e2be2b2946d58aca1286594ee92777d47f05cfa1f5e2da8910058b",
+      "bytes": 6011
+    },
+    "first_audit.json": {
+      "sha256": "ba27cbc47f1291ffbb003102f2d19a0da35821092cd6b1ac790416b7fe80a8e7",
+      "bytes": 213253
+    },
+    "summary_once/summary.json": {
+      "sha256": "74c0b148950dc8c33d130492b3f0b636a6da9eba2bd3239e3d7952036437b32e",
+      "bytes": 194176
+    },
+    "raw/manifest.json": {
+      "sha256": "d584de2194f8387bf5fdbd85d727924f748a8b87ce7e950d1c324f1f1bf2b519",
+      "bytes": 784
+    },
+    "raw/metadata.json": {
+      "sha256": "227e06e2be674790c3740e387e0ae07493c3ca857861c9282b2ff8ad940f6437",
+      "bytes": 16183
+    },
+    "raw/episodes.json": {
+      "sha256": "b97527cfec732949c7858d96afae03ec4eee3027a12b019ff4259d38f1ea253a",
+      "bytes": 17945
+    },
+    "raw/trace.jsonl.gz": {
+      "sha256": "0831029cb0169178ee27410edcb75bd7e1419c8f8914753d2dbf0a96d2063940",
+      "bytes": 4074411
+    }
+  },
+  "e_source_commit": "dda82b1854d80483d0b16e0532bc414906e6a402",
+  "original_e_physics_budget": {
+    "control_calls_attempted": 3312,
+    "control_steps": 3312,
+    "physics_steps": 33120,
+    "model_updates": 0,
+    "policy_parameter_updates": 0,
+    "gain_updates": 0,
+    "gate_updates": 0
+  },
+  "original_e_gates": {
+    "control_hypothesis": {
+      "evaluated": false,
+      "passed": false,
+      "baseline": "cold11",
+      "candidate": "learned_sparse11",
+      "prerequisite_passed": true,
+      "rows": [
+        {
+          "seed": 0,
+          "eligible": false,
+          "baseline_tracking": 0.044536694516386324,
+          "candidate_tracking": 0.010359315704753382,
+          "baseline_axis_tracking": [
+            0.040087209778286996,
+            0.04858034509020541
+          ],
+          "candidate_axis_tracking": [
+            0.010912994792552118,
+            0.009774322912572025
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 1.4422500000000005,
+              "candidate_joint": 0.8090000000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 0.6795312500000003,
+              "candidate_joint": 0.24237499999999979
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 1,
+          "eligible": false,
+          "baseline_tracking": 0.04435897843345624,
+          "candidate_tracking": 0.01116328346615898,
+          "baseline_axis_tracking": [
+            0.03963684277962164,
+            0.04862467099922863
+          ],
+          "candidate_axis_tracking": [
+            0.011220335157372908,
+            0.011105938701787369
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 1.3767500000000006,
+              "candidate_joint": 0.8207500000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 0.6535312500000002,
+              "candidate_joint": 0.25009374999999984
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 2,
+          "eligible": false,
+          "baseline_tracking": 0.044357569893000603,
+          "candidate_tracking": 0.01045431385285255,
+          "baseline_axis_tracking": [
+            0.03938363577979863,
+            0.04882742309797878
+          ],
+          "candidate_axis_tracking": [
+            0.010997272571997127,
+            0.009881566285012177
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 1.3832500000000008,
+              "candidate_joint": 0.8007500000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 0.6580937500000001,
+              "candidate_joint": 0.23446874999999986
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        }
+      ],
+      "baseline_raw_mean_joint_rmse": null,
+      "candidate_raw_mean_joint_rmse": null,
+      "joint_mean_improvement": null,
+      "joint_improvement_min": 0.2,
+      "axes": [
+        {
+          "axis": 0,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": true,
+          "threshold_passed": false
+        },
+        {
+          "axis": 1,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": true,
+          "threshold_passed": false
+        }
+      ],
+      "efforts": {
+        "actual_absolute_nm_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        },
+        "actual_squared_nm2_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        }
+      },
+      "worst_seed_joint_improvement": null,
+      "complete_control_only": true,
+      "aggregation": "arithmetic means of per-seed raw joint/axis metrics; never pooled endpoints",
+      "scientific_validation": false,
+      "validated_pass": false
+    },
+    "pd_reference": {
+      "evaluated": false,
+      "passed": false,
+      "baseline": "PDselected",
+      "candidate": "learned_sparse11",
+      "prerequisite_passed": false,
+      "rows": [
+        {
+          "seed": 0,
+          "eligible": false,
+          "baseline_tracking": 0.010401445519984794,
+          "candidate_tracking": 0.010359315704753382,
+          "baseline_axis_tracking": [
+            0.008128902572046175,
+            0.012259734123732224
+          ],
+          "candidate_axis_tracking": [
+            0.010912994792552118,
+            0.009774322912572025
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 2.7533073985498238,
+              "candidate_joint": 0.8090000000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 1.2432903057769191,
+              "candidate_joint": 0.24237499999999979
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 1,
+          "eligible": false,
+          "baseline_tracking": 0.010644472251318818,
+          "candidate_tracking": 0.01116328346615898,
+          "baseline_axis_tracking": [
+            0.008684126053912361,
+            0.0122961593067898
+          ],
+          "candidate_axis_tracking": [
+            0.011220335157372908,
+            0.011105938701787369
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 2.7340117353316575,
+              "candidate_joint": 0.8207500000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 1.2200891572487693,
+              "candidate_joint": 0.25009374999999984
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 2,
+          "eligible": false,
+          "baseline_tracking": 0.010935465170751784,
+          "candidate_tracking": 0.01045431385285255,
+          "baseline_axis_tracking": [
+            0.008222506547158078,
+            0.013098060279422796
+          ],
+          "candidate_axis_tracking": [
+            0.010997272571997127,
+            0.009881566285012177
+          ],
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline_joint": 2.681743894893044,
+              "candidate_joint": 0.8007500000000005
+            },
+            "actual_squared_nm2_s": {
+              "baseline_joint": 1.1938812044610247,
+              "candidate_joint": 0.23446874999999986
+            }
+          },
+          "joint_order_passed": false,
+          "axis_order_passed": [
+            false,
+            false
+          ]
+        }
+      ],
+      "baseline_raw_mean_joint_rmse": null,
+      "candidate_raw_mean_joint_rmse": null,
+      "joint_mean_improvement": null,
+      "joint_improvement_min": 0.05,
+      "axes": [
+        {
+          "axis": 0,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": false,
+          "threshold_passed": null
+        },
+        {
+          "axis": 1,
+          "baseline_raw_mean": null,
+          "candidate_raw_mean": null,
+          "mean_improvement": null,
+          "threshold_applies": false,
+          "threshold_passed": null
+        }
+      ],
+      "efforts": {
+        "actual_absolute_nm_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        },
+        "actual_squared_nm2_s": {
+          "baseline_raw_mean_joint": null,
+          "candidate_raw_mean_joint": null,
+          "ratio_max": 1.05,
+          "passed": false
+        }
+      },
+      "worst_seed_joint_improvement": null,
+      "complete_control_only": true,
+      "aggregation": "arithmetic means of per-seed raw joint/axis metrics; never pooled endpoints",
+      "scientific_validation": false,
+      "validated_pass": false
+    },
+    "matrix_complete": false,
+    "c4_scientific_validation": {
+      "evaluated": false,
+      "passed": false,
+      "reason": "D selected sparse11 failed the unchanged independent 20-percent prediction condition; E is a development control subhypothesis"
+    }
+  },
+  "original_e_paid_prediction_accounting": {
+    "diagnostic_pair_attempts": 4224,
+    "diagnostic_scalar_attempts": 8448,
+    "planning_pair_attempts": 918873,
+    "planning_scalar_attempts": 1837746,
+    "diagnostic_input_projection_pair_calls": 4224
+  },
+  "original_e_restoration_and_cloning": {
+    "restored_models": 3,
+    "cold_initializations": 3,
+    "clone_attempts": 24,
+    "clone_returns": 24,
+    "description": "nonzero saved-state construction/copying; no prediction, fit or RLS update"
+  },
+  "descriptive_fee": {
+    "physical_queries": 0,
+    "model_predict_calls": 0,
+    "rls_updates": 0,
+    "policy_updates": 0,
+    "gain_updates": 0,
+    "gate_updates": 0,
+    "C_D_raw_reads": 0,
+    "f_git_read_commands": 5,
+    "f_git_return_bytes": 55384,
+    "f_local_file_opens": 3,
+    "f_local_source_opens": 1,
+    "f_local_binary_bytes_read": 55343,
+    "f_local_source_binary_bytes_read": 44291,
+    "f_local_binding_opens": 1,
+    "f_local_binding_binary_bytes_read": 708,
+    "f_local_protocol_opens": 1,
+    "f_local_protocol_binary_bytes_read": 10344,
+    "e_source_file_opens": 7,
+    "e_source_binary_bytes_read": 4522763,
+    "task_cache_json_opens": 6,
+    "task_cache_json_bytes_read": 448352,
+    "task_cache_gzip_opens": 1,
+    "task_cache_gzip_compressed_binary_bytes_read": 4074411,
+    "trace_decompressed_binary_bytes": 40240158,
+    "trace_decompressed_binary_lines": 3312,
+    "source_trace_rows_parsed": 3312,
+    "scalar_subtractions": 443136,
+    "scalar_divisions": 35376,
+    "native_norm_calls": 6336,
+    "scalar_squares": 212544,
+    "fsum_calls": 14256,
+    "fsum_terms": 619776,
+    "square_root_calls": 7920,
+    "input_quality_rows_classified": 2112,
+    "active_derived_records": 2112,
+    "denominator_description_blocks": 306,
+    "scalar_absolute_values": 116352,
+    "descriptive_series": 2592,
+    "histogram_value_tests": 174528,
+    "correlation_descriptions": 1728,
+    "scalar_products": 117936
+  },
+  "wall_seconds": 1.592535800067708,
+  "cpu_seconds": 1.25,
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "timing_scope": "entry through descriptive output writing and this snapshot; excludes run/manifest writing and output-integrity reads/hash"
+}

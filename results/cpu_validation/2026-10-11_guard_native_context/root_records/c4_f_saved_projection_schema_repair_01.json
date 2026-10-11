@@ -1,0 +1,2469 @@
+{
+  "schema_repair": "first projection used nonexistent flattened event count keys; its null event fields are invalid, do not use. Original projection retained. Only copy actual nested keys, no new metrics.",
+  "events": [
+    {
+      "seed": 0,
+      "kind": "cold11",
+      "source_stop": false,
+      "all_counts": {
+        "saved_active_records": 200,
+        "returned_endpoint_n": 200,
+        "complete_interval_n": 200,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 200,
+          "gyro": 200,
+          "acc_delta": 200
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          }
+        ]
+      },
+      "tail20_counts": null,
+      "earlier_counts": null,
+      "stop_keys": {
+        "source_stop": false,
+        "declared_source_stop_flags_present": false,
+        "stop_flags_in_exception": false,
+        "stop_reason": null,
+        "terminal_returned_id": null
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "learned_sparse11",
+      "source_stop": true,
+      "all_counts": {
+        "saved_active_records": 104,
+        "returned_endpoint_n": 104,
+        "complete_interval_n": 104,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 104,
+          "gyro": 104,
+          "acc_delta": 104
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          }
+        ]
+      },
+      "tail20_counts": {
+        "saved_active_records": 20,
+        "returned_endpoint_n": 20,
+        "complete_interval_n": 20,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 20,
+          "gyro": 20,
+          "acc_delta": 20
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          }
+        ]
+      },
+      "earlier_counts": {
+        "saved_active_records": 84,
+        "returned_endpoint_n": 84,
+        "complete_interval_n": 84,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 84,
+          "gyro": 84,
+          "acc_delta": 84
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          }
+        ]
+      },
+      "stop_keys": {
+        "source_stop": true,
+        "declared_source_stop_flags_present": true,
+        "stop_flags_in_exception": false,
+        "stop_reason": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.029775650797060946,
+            0.0943268557134524
+          ],
+          "qref_rad": [
+            0.09739774391333796,
+            -0.0005762480149995581
+          ],
+          "velocity_rad_s": [
+            -0.5110265273440553,
+            1.0427719075906787
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 203
+        },
+        "terminal_returned_id": "seed0_learned_sparse11:203"
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "PDselected",
+      "source_stop": false,
+      "all_counts": {
+        "saved_active_records": 200,
+        "returned_endpoint_n": 200,
+        "complete_interval_n": 200,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 200,
+          "gyro": 200,
+          "acc_delta": 200
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          }
+        ]
+      },
+      "tail20_counts": null,
+      "earlier_counts": null,
+      "stop_keys": {
+        "source_stop": false,
+        "declared_source_stop_flags_present": false,
+        "stop_flags_in_exception": false,
+        "stop_reason": null,
+        "terminal_returned_id": null
+      }
+    },
+    {
+      "seed": 0,
+      "kind": "zero",
+      "source_stop": false,
+      "all_counts": {
+        "saved_active_records": 200,
+        "returned_endpoint_n": 200,
+        "complete_interval_n": 200,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 200,
+          "gyro": 200,
+          "acc_delta": 200
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          }
+        ]
+      },
+      "tail20_counts": null,
+      "earlier_counts": null,
+      "stop_keys": {
+        "source_stop": false,
+        "declared_source_stop_flags_present": false,
+        "stop_flags_in_exception": false,
+        "stop_reason": null,
+        "terminal_returned_id": null
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "cold11",
+      "source_stop": false,
+      "all_counts": {
+        "saved_active_records": 200,
+        "returned_endpoint_n": 200,
+        "complete_interval_n": 200,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 200,
+          "gyro": 200,
+          "acc_delta": 200
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          }
+        ]
+      },
+      "tail20_counts": null,
+      "earlier_counts": null,
+      "stop_keys": {
+        "source_stop": false,
+        "declared_source_stop_flags_present": false,
+        "stop_flags_in_exception": false,
+        "stop_reason": null,
+        "terminal_returned_id": null
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "learned_sparse11",
+      "source_stop": true,
+      "all_counts": {
+        "saved_active_records": 104,
+        "returned_endpoint_n": 104,
+        "complete_interval_n": 104,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 104,
+          "gyro": 104,
+          "acc_delta": 104
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          }
+        ]
+      },
+      "tail20_counts": {
+        "saved_active_records": 20,
+        "returned_endpoint_n": 20,
+        "complete_interval_n": 20,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 20,
+          "gyro": 20,
+          "acc_delta": 20
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          }
+        ]
+      },
+      "earlier_counts": {
+        "saved_active_records": 84,
+        "returned_endpoint_n": 84,
+        "complete_interval_n": 84,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 84,
+          "gyro": 84,
+          "acc_delta": 84
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          }
+        ]
+      },
+      "stop_keys": {
+        "source_stop": true,
+        "declared_source_stop_flags_present": true,
+        "stop_flags_in_exception": false,
+        "stop_reason": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.02598751258937855,
+            0.0946878648341024
+          ],
+          "qref_rad": [
+            0.09382541724034689,
+            -0.0005763175538596344
+          ],
+          "velocity_rad_s": [
+            -0.4816480283145373,
+            1.074403418590931
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 203
+        },
+        "terminal_returned_id": "seed1_learned_sparse11:203"
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "PDselected",
+      "source_stop": false,
+      "all_counts": {
+        "saved_active_records": 200,
+        "returned_endpoint_n": 200,
+        "complete_interval_n": 200,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 200,
+          "gyro": 200,
+          "acc_delta": 200
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          }
+        ]
+      },
+      "tail20_counts": null,
+      "earlier_counts": null,
+      "stop_keys": {
+        "source_stop": false,
+        "declared_source_stop_flags_present": false,
+        "stop_flags_in_exception": false,
+        "stop_reason": null,
+        "terminal_returned_id": null
+      }
+    },
+    {
+      "seed": 1,
+      "kind": "zero",
+      "source_stop": false,
+      "all_counts": {
+        "saved_active_records": 200,
+        "returned_endpoint_n": 200,
+        "complete_interval_n": 200,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 200,
+          "gyro": 200,
+          "acc_delta": 200
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          }
+        ]
+      },
+      "tail20_counts": null,
+      "earlier_counts": null,
+      "stop_keys": {
+        "source_stop": false,
+        "declared_source_stop_flags_present": false,
+        "stop_flags_in_exception": false,
+        "stop_reason": null,
+        "terminal_returned_id": null
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "cold11",
+      "source_stop": false,
+      "all_counts": {
+        "saved_active_records": 200,
+        "returned_endpoint_n": 200,
+        "complete_interval_n": 200,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 200,
+          "gyro": 200,
+          "acc_delta": 200
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          }
+        ]
+      },
+      "tail20_counts": null,
+      "earlier_counts": null,
+      "stop_keys": {
+        "source_stop": false,
+        "declared_source_stop_flags_present": false,
+        "stop_flags_in_exception": false,
+        "stop_reason": null,
+        "terminal_returned_id": null
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "learned_sparse11",
+      "source_stop": true,
+      "all_counts": {
+        "saved_active_records": 104,
+        "returned_endpoint_n": 104,
+        "complete_interval_n": 104,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 104,
+          "gyro": 104,
+          "acc_delta": 104
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 104,
+            "score_error_pair_n": {
+              "body6": 104,
+              "gyro": 104,
+              "acc_delta": 104
+            }
+          }
+        ]
+      },
+      "tail20_counts": {
+        "saved_active_records": 20,
+        "returned_endpoint_n": 20,
+        "complete_interval_n": 20,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 20,
+          "gyro": 20,
+          "acc_delta": 20
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 20,
+            "score_error_pair_n": {
+              "body6": 20,
+              "gyro": 20,
+              "acc_delta": 20
+            }
+          }
+        ]
+      },
+      "earlier_counts": {
+        "saved_active_records": 84,
+        "returned_endpoint_n": 84,
+        "complete_interval_n": 84,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 84,
+          "gyro": 84,
+          "acc_delta": 84
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 84,
+            "score_error_pair_n": {
+              "body6": 84,
+              "gyro": 84,
+              "acc_delta": 84
+            }
+          }
+        ]
+      },
+      "stop_keys": {
+        "source_stop": true,
+        "declared_source_stop_flags_present": true,
+        "stop_flags_in_exception": false,
+        "stop_reason": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.03372762360095602,
+            0.09411743793359206
+          ],
+          "qref_rad": [
+            0.10085905132196148,
+            -0.000576154793236481
+          ],
+          "velocity_rad_s": [
+            -0.4912404884263259,
+            1.0828296411971559
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 203
+        },
+        "terminal_returned_id": "seed2_learned_sparse11:203"
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "PDselected",
+      "source_stop": false,
+      "all_counts": {
+        "saved_active_records": 200,
+        "returned_endpoint_n": 200,
+        "complete_interval_n": 200,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 200,
+          "gyro": 200,
+          "acc_delta": 200
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          }
+        ]
+      },
+      "tail20_counts": null,
+      "earlier_counts": null,
+      "stop_keys": {
+        "source_stop": false,
+        "declared_source_stop_flags_present": false,
+        "stop_flags_in_exception": false,
+        "stop_reason": null,
+        "terminal_returned_id": null
+      }
+    },
+    {
+      "seed": 2,
+      "kind": "zero",
+      "source_stop": false,
+      "all_counts": {
+        "saved_active_records": 200,
+        "returned_endpoint_n": 200,
+        "complete_interval_n": 200,
+        "partial_interval_n": 0,
+        "exception_record_n": 0,
+        "unreturned_saved_record_n": 0,
+        "score_valid_n": {
+          "body6": 200,
+          "gyro": 200,
+          "acc_delta": 200
+        },
+        "score_missing_n": {
+          "body6": 0,
+          "gyro": 0,
+          "acc_delta": 0
+        },
+        "score_missing_reasons": {
+          "body6": {},
+          "gyro": {},
+          "acc_delta": {}
+        },
+        "error_missing_reasons": {
+          "cold11": {
+            "q": {},
+            "v": {}
+          },
+          "learned_sparse11": {
+            "q": {},
+            "v": {}
+          }
+        },
+        "diagnostic_denominators": [
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "cold11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 0,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "q",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          },
+          {
+            "predictor": "learned_sparse11",
+            "axis": 1,
+            "error_channel": "v",
+            "valid_error_n": 200,
+            "score_error_pair_n": {
+              "body6": 200,
+              "gyro": 200,
+              "acc_delta": 200
+            }
+          }
+        ]
+      },
+      "tail20_counts": null,
+      "earlier_counts": null,
+      "stop_keys": {
+        "source_stop": false,
+        "declared_source_stop_flags_present": false,
+        "stop_flags_in_exception": false,
+        "stop_reason": null,
+        "terminal_returned_id": null
+      }
+    }
+  ],
+  "input_reads": 1,
+  "input_binary_bytes": 3171743,
+  "input_sha256": "26c90bbb0cf2c8197f3b5ecd5722a87a645c288810cb0ff895e4224c56a63413",
+  "wall_seconds": 0.002027600072324276,
+  "model_calls": 0,
+  "physics": 0,
+  "updates": 0
+}
