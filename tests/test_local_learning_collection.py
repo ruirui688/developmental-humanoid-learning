@@ -11,15 +11,17 @@ def read(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_learning_updates_only_calibration_and_evaluation_is_frozen(tmp_path):
+@pytest.mark.parametrize("variant", ["linear", "hinge"])
+def test_learning_updates_only_calibration_and_evaluation_is_frozen(tmp_path, variant):
     out = tmp_path / "local"
-    meta = runner.run_learning(out, "supine", 0, [0])
+    meta = runner.run_learning(out, "supine", 0, [0], variant=variant)
     assert meta["complete"] and meta["model_updates"] == 300
     assert meta["control_steps"] == meta["control_calls_attempted"] == 1800
     assert meta["physics_steps"] == 18000
     seed = read(out / "seed_results.json")[0]
     assert seed["initial_model"]["update_count"] == 0
     assert seed["learned_model"]["update_count"] == 300
+    assert len(seed["learned_model"]["coefficients"]) == (4 if variant == "linear" else 5)
     for name, trial in seed["evaluations"].items():
         assert trial["completed"]
         if name != "calibration":
@@ -39,6 +41,11 @@ def test_learning_updates_only_calibration_and_evaluation_is_frozen(tmp_path):
             assert update["preupdate_prediction"]["next_v_rad_s"] == row["predicted_next_qv"]["learned"][1]
         assert all(abs(u) <= .5 for u in row["requested_torque"])
         assert row["requested_torque"][1:] == [0.] * 7
+    calibration = [r for r in rows if r["phase"] == "calibration"]
+    expected = ([.5] * 10 if variant == "linear" else
+                [.125,.25,.5,.125,.25,.5,.125,.25,.5,.125])
+    for block, amplitude in enumerate(expected):
+        assert abs(calibration[block*30]["requested_torque"][0]) == amplitude
     with pytest.raises(FileExistsError):
         runner.run_learning(out, "supine", 0, [0])
 

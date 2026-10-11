@@ -26,7 +26,15 @@ from .probes import direction_record
 
 
 def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
-                 split="development", protocol_path: Path | None = None):
+                 split="development", protocol_path: Path | None = None, variant="linear"):
+    if variant not in ("linear", "hinge"):
+        raise ValueError("variant must be linear or hinge")
+    model_type = LocalBodyModel
+    calibration_amplitudes = [.5] * 10
+    if variant == "hinge":
+        from .local_model import HingeBodyModel
+        model_type = HingeBodyModel
+        calibration_amplitudes = [.125, .25, .5, .125, .25, .5, .125, .25, .5, .125]
     if pose not in POSES or type(joint) is not int or not 0 <= joint < 8:
         raise ValueError("known pose and joint required")
     if not seeds or len(set(seeds)) != len(seeds) or any(type(s) is not int or s < 0 for s in seeds):
@@ -53,6 +61,7 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
         "gpu": None, "backend": "MuJoCo CPU", "mujoco_version": mujoco.__version__,
         "environment_config": asdict(ExplorationConfig()),
         "pose": pose, "joint_index": joint, "seeds": seeds, "split": split,
+        "variant": variant, "calibration_block_amplitudes_nm": calibration_amplitudes,
         "prefix_steps": 100, "calibration_steps": 300, "prediction_steps": 100, "control_steps_per_trial": 200,
         "teacher_calls": 0, "external_demonstration_samples": 0, "policy_parameter_updates": 0,
         "model_input": "current encoder position/velocity and requested torque known before integration",
@@ -174,7 +183,7 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
                                 q0 = float(observation["joint_position"][joint])
                                 if kind == "calibration":
                                     reference, direction = q0, record["direction"]
-                                    learned = LocalBodyModel(qref=q0)
+                                    learned = model_type(qref=q0)
                                     nominal = learned.clone_frozen()
                                     result_seed.update(reference_q=q0, direction=direction, selection_record=record,
                                                        initial_model=nominal.snapshot())
@@ -188,7 +197,8 @@ def run_learning(output: Path, pose: str, joint: int, seeds: list[int], *,
                                 active = index-100
                                 if kind == "calibration":
                                     slot = active % 30
-                                    requested[joint] = direction*(.5 if slot < 5 else (-.5 if 15 <= slot < 20 else 0.))
+                                    amplitude = calibration_amplitudes[active//30]
+                                    requested[joint] = direction*(amplitude if slot < 5 else (-amplitude if 15 <= slot < 20 else 0.))
                                 elif kind == "prediction":
                                     slot = active % 20
                                     requested[joint] = direction*(.25 if slot < 7 else (-.25 if 10 <= slot < 17 else 0.))
@@ -330,9 +340,10 @@ def main():
     parser.add_argument("--seeds", type=int, nargs="+", default=[0,1,2])
     parser.add_argument("--split", choices=["development", "holdout"], default="development")
     parser.add_argument("--protocol", type=Path)
+    parser.add_argument("--variant", choices=["linear", "hinge"], default="linear")
     args = parser.parse_args()
     print(json.dumps(run_learning(args.output,args.pose,args.joint,args.seeds,
-                                 split=args.split,protocol_path=args.protocol), indent=2))
+                                 split=args.split,protocol_path=args.protocol,variant=args.variant), indent=2))
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ import json
 import numpy as np
 import pytest
 
-from developmental_physics.local_model import FixedLocalMPC, LocalBodyModel, MPCConfig
+from developmental_physics.local_model import FixedLocalMPC, HingeBodyModel, LocalBodyModel, MPCConfig
 
 
 def test_initial_prior_and_pure_prediction_are_disclosed():
@@ -225,3 +225,92 @@ def test_invalid_mpc_state_target_or_previous_permission_rejected(kwargs):
     call = {"q": 0., "v": 0., "target_q": .05, **kwargs}
     with pytest.raises(ValueError):
         controller.select(**call)
+
+
+@pytest.mark.parametrize("torque, hinge", [(0., 0.), (.125, 0.), (-.125, 0.),
+                                         (.25, 0.), (-.25, 0.), (.5, .25), (-.5, -.25)])
+def test_signed_hinge_uses_only_causal_requested_input_and_fixed_threshold(torque, hinge):
+    model = HingeBodyModel(.3)
+    before = model.snapshot()
+    record = model.update(.32, .1, torque, .2, phase="prefix")
+    assert record["features"] == pytest.approx([.1, .02, torque, hinge, 1.])
+    assert record["preupdate_prediction"]["next_v_rad_s"] == pytest.approx(.1 + .02 * torque)
+    assert model.snapshot() == before  # No future next_v label enters features or prefix learning.
+    assert model.coefficients.dtype == np.float64 and model.covariance.dtype == np.float64
+    assert np.array_equal(model.coefficients, [1., 0., .02, 0., 0.])
+    assert np.array_equal(model.covariance, np.eye(5) * 100.)
+    assert before["hinge_threshold_nm"] == .25 and before["hinge_threshold_updates"] == 0
+    assert "not a learned threshold" in before["hinge_structure_prior"]
+    assert before["features"][2] == "requested_torque"
+    json.dumps(before, allow_nan=False)
+    with pytest.raises(AttributeError):
+        model.hinge_threshold_nm = .1
+
+
+def test_five_dimensional_rls_matches_independent_closed_form_regularized_solution():
+    model = HingeBodyModel(.2)
+    initial = model.coefficients
+    samples = np.asarray([
+        [.1, -.05, .125], [-.1, .06, -.125], [.2, .02, .25], [-.2, -.02, -.25],
+        [.05, .08, .5], [-.05, -.08, -.5], [.15, -.07, .5], [-.15, .07, -.5],
+        [.1, .03, 0.], [-.1, -.03, 0.],
+    ])
+    # Build the feature matrix independently of the model implementation.
+    hinge = np.sign(samples[:, 2]) * np.maximum(np.abs(samples[:, 2]) - .25, 0)
+    features = np.column_stack([samples[:, 0], samples[:, 1], samples[:, 2], hinge, np.ones(len(samples))])
+    truth = np.asarray([.9, -.3, .08, .4, .001])
+    labels = features @ truth
+    for (v, relative_q, torque), label, phi in zip(samples, labels, features):
+        preprediction = model.predict(.2 + relative_q, v, torque)
+        record = model.update(.2 + relative_q, v, torque, float(label))
+        assert record["features"] == pytest.approx(phi.tolist())
+        assert record["preupdate_prediction"]["next_v_rad_s"] == preprediction[1]
+    information = np.eye(5) / 100. + features.T @ features
+    expected_theta = np.linalg.solve(information, initial / 100. + features.T @ labels)
+    expected_covariance = np.linalg.inv(information)
+    assert np.allclose(model.coefficients, expected_theta, rtol=1e-12, atol=1e-12)
+    assert np.allclose(model.covariance, expected_covariance, rtol=1e-11, atol=1e-11)
+    assert model.update_count == len(samples)
+    assert np.allclose(model.covariance, model.covariance.T)
+    assert np.min(np.linalg.eigvalsh(model.covariance)) > 0
+
+
+def test_hinge_frozen_clone_preserves_class_hash_and_five_dimensional_parameters():
+    model = HingeBodyModel(.1)
+    model.update(.12, .2, .5, .1)
+    frozen = model.clone_frozen()
+    assert isinstance(frozen, HingeBodyModel)
+    assert frozen.parameter_fingerprint() == model.parameter_fingerprint()
+    assert np.array_equal(frozen.coefficients, model.coefficients)
+    assert np.array_equal(frozen.covariance, model.covariance)
+    before = frozen.snapshot()
+    with pytest.raises(RuntimeError, match="cannot update"):
+        frozen.update(.12, .2, .5, .3)
+    frozen.predict(.12, .2, -.5)
+    model.update(.11, .1, -.5, -.2)
+    assert frozen.snapshot() == before
+    assert frozen.update_count == 1 and frozen.covariance.shape == (5, 5)
+
+
+def test_hinge_candidate_keeps_initial_predictions_and_mpc_semantics_of_v1():
+    v1, v2 = LocalBodyModel(0., trainable=False), HingeBodyModel(0., trainable=False)
+    for torque in np.linspace(-.5, .5, 9):
+        assert v2.predict(.01, .02, torque) == v1.predict(.01, .02, torque)
+    first = FixedLocalMPC(v1, [-1., 1.])
+    second = FixedLocalMPC(v2, [-1., 1.])
+    before = v2.snapshot()
+    assert first.spec() == second.spec()
+    assert first.select(0., 0., .05).to_dict() == second.select(0., 0., .05).to_dict()
+    assert v2.snapshot() == before
+
+
+def test_hinge_rejects_nonfinite_samples_without_parameter_mutation():
+    model = HingeBodyModel(0.)
+    before = model.snapshot()
+    with pytest.raises(ValueError):
+        model.update(.1, .2, np.nan, .3)
+    with pytest.raises(ValueError):
+        model.update(.1, .2, .5, np.inf)
+    with pytest.raises(ValueError):
+        model.update(1e308, 0., 0., 0.)
+    assert model.snapshot() == before

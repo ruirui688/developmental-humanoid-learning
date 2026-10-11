@@ -1,0 +1,1010 @@
+[
+  {
+    "seed": 0,
+    "reset_seed": 3757552657,
+    "evaluations": {
+      "calibration": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen": 0.03220915303510115,
+          "learned": 0.024974673640693668
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": null,
+        "models_after": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "planner_spec": null
+      },
+      "prediction": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen": 0.00500704219700459,
+          "learned": 0.0061887169948328935
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "models_after": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "planner_spec": null
+      },
+      "frozen_mpc": {
+        "tracking_rmse_rad": 0.022605869716395135,
+        "velocity_prediction_rmse": {
+          "frozen": 0.018431056935759867,
+          "learned": 0.01788911612089954
+        },
+        "controller_seconds_p95": 0.0029920650762505826,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "models_after": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09739774391333796,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "target_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0
+        }
+      },
+      "learned_mpc": {
+        "tracking_rmse_rad": 0.015861656924414668,
+        "velocity_prediction_rmse": {
+          "frozen": 0.018272001568419325,
+          "learned": 0.029463914679746375
+        },
+        "controller_seconds_p95": 0.0029328899690881367,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "models_after": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09739774391333796,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "target_bounds_rad": [
+            -0.05260225608666204,
+            0.24739774391333796
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0
+        }
+      },
+      "fixed_pd": {
+        "tracking_rmse_rad": 0.05004965027248381,
+        "velocity_prediction_rmse": {
+          "frozen": 0.003992382068881132,
+          "learned": 0.006165850219521131
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "models_after": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "planner_spec": null
+      },
+      "zero_torque": {
+        "tracking_rmse_rad": 0.06329395409515903,
+        "velocity_prediction_rmse": {
+          "frozen": 7.605277523692319e-09,
+          "learned": 0.0023305735329200734
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "models_after": [
+          "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+          "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92"
+        ],
+        "planner_spec": null
+      }
+    },
+    "calibration_updates": 300,
+    "calibration_completed": true,
+    "initial_model": {
+      "qref_rad": 0.09739774391333796,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "covariance": [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          100.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          100.0
+        ]
+      ],
+      "dtype": "float64",
+      "parameter_fingerprint": "7d672e6670445d79fb9f6339ce543921f77ad10039dcd4b7e618d2d3143d203f",
+      "update_count": 0,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "learned_model": {
+      "qref_rad": 0.09739774391333796,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        -0.05405179443401,
+        -0.14781384741672257,
+        0.0649777802094437,
+        -0.002300998669697702
+      ],
+      "covariance": [
+        [
+          5.9643942911967995,
+          -0.652886813105952,
+          -0.2790441198064423,
+          0.008251278685276402
+        ],
+        [
+          -0.652886813105952,
+          93.48724750069134,
+          0.09147598621277576,
+          0.2981490713423365
+        ],
+        [
+          -0.2790441198064423,
+          0.09147598621277576,
+          0.05307882459919997,
+          -0.0001909783510115376
+        ],
+        [
+          0.008251278685276402,
+          0.2981490713423365,
+          -0.0001909783510115376,
+          0.004301994460269142
+        ]
+      ],
+      "dtype": "float64",
+      "parameter_fingerprint": "951065edcfc135a957e7a76d88b46adc900da61320154af29ee8eca879ec1a92",
+      "update_count": 300,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "reference_q": 0.09739774391333796,
+    "direction": -1,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09739774391333796,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6479315080809915,
+      "negative_room_rad": 1.8427269959076675,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "invalid_numeric_fields": []
+  },
+  {
+    "seed": 1,
+    "reset_seed": 1641411168,
+    "evaluations": {
+      "calibration": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen": 0.03217800814839357,
+          "learned": 0.025010875263559405
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": null,
+        "models_after": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "planner_spec": null
+      },
+      "prediction": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen": 0.004998617306818676,
+          "learned": 0.0060116148954073405
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "models_after": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "planner_spec": null
+      },
+      "frozen_mpc": {
+        "tracking_rmse_rad": 0.022881256519061886,
+        "velocity_prediction_rmse": {
+          "frozen": 0.018820041348168497,
+          "learned": 0.01810884976941129
+        },
+        "controller_seconds_p95": 0.0019265848794020708,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "models_after": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09382541724034689,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "target_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0
+        }
+      },
+      "learned_mpc": {
+        "tracking_rmse_rad": 0.016116235773023013,
+        "velocity_prediction_rmse": {
+          "frozen": 0.018475445340193863,
+          "learned": 0.028577915799022257
+        },
+        "controller_seconds_p95": 0.001966029906179754,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "models_after": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.09382541724034689,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "target_bounds_rad": [
+            -0.056174582759653105,
+            0.2438254172403469
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0
+        }
+      },
+      "fixed_pd": {
+        "tracking_rmse_rad": 0.05013011685582221,
+        "velocity_prediction_rmse": {
+          "frozen": 0.003999633022374981,
+          "learned": 0.005952765696751729
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "models_after": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "planner_spec": null
+      },
+      "zero_torque": {
+        "tracking_rmse_rad": 0.06315370237777554,
+        "velocity_prediction_rmse": {
+          "frozen": 1.4337436422398173e-08,
+          "learned": 0.0022089630357169567
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "models_after": [
+          "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+          "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17"
+        ],
+        "planner_spec": null
+      }
+    },
+    "calibration_updates": 300,
+    "calibration_completed": true,
+    "initial_model": {
+      "qref_rad": 0.09382541724034689,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "covariance": [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          100.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          100.0
+        ]
+      ],
+      "dtype": "float64",
+      "parameter_fingerprint": "8004d31928c9461879a54290377a3852d3d3f54b706eb74e4cc583dc2673661e",
+      "update_count": 0,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "learned_model": {
+      "qref_rad": 0.09382541724034689,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        -0.0548628111300291,
+        -0.15597323984112618,
+        0.06402543873731693,
+        -0.0022657714694828005
+      ],
+      "covariance": [
+        [
+          6.003096008604295,
+          -0.5492475721980258,
+          -0.27697319261877634,
+          0.007872238058003531
+        ],
+        [
+          -0.5492475721980258,
+          92.26181867035635,
+          0.08814870578907284,
+          0.3214681735902758
+        ],
+        [
+          -0.27697319261877634,
+          0.08814870578907284,
+          0.05280588336106333,
+          -0.00014376283652271855
+        ],
+        [
+          0.007872238058003531,
+          0.3214681735902758,
+          -0.00014376283652271855,
+          0.004469276267571145
+        ]
+      ],
+      "dtype": "float64",
+      "parameter_fingerprint": "5c3ca05743e953cfb341f565ba9b4cbbc4e3e6195e9e4cff65c89a8d8ba5ce17",
+      "update_count": 300,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "reference_q": 0.09382541724034689,
+    "direction": -1,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.09382541724034689,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6515038347539825,
+      "negative_room_rad": 1.8391546692346765,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "invalid_numeric_fields": []
+  },
+  {
+    "seed": 2,
+    "reset_seed": 2001025171,
+    "evaluations": {
+      "calibration": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen": 0.03213948814283443,
+          "learned": 0.024925935606605547
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": null,
+        "models_after": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "planner_spec": null
+      },
+      "prediction": {
+        "tracking_rmse_rad": null,
+        "velocity_prediction_rmse": {
+          "frozen": 0.005013009952737205,
+          "learned": 0.006247779820532925
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "models_after": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "planner_spec": null
+      },
+      "frozen_mpc": {
+        "tracking_rmse_rad": 0.022117125277930503,
+        "velocity_prediction_rmse": {
+          "frozen": 0.017450518894009535,
+          "learned": 0.017289757442559162
+        },
+        "controller_seconds_p95": 0.001865644997451454,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "models_after": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.10085905132196148,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "target_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0
+        }
+      },
+      "learned_mpc": {
+        "tracking_rmse_rad": 0.015624861413441231,
+        "velocity_prediction_rmse": {
+          "frozen": 0.016914423519362225,
+          "learned": 0.02913701724936025
+        },
+        "controller_seconds_p95": 0.00228344490751624,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "models_after": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "planner_spec": {
+          "config": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": 0.10085905132196148,
+          "joint_range_rad": [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          "forecast_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "target_bounds_rad": [
+            -0.04914094867803852,
+            0.25085905132196146
+          ],
+          "candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "action_rollout": "constant torque over the full horizon",
+          "cost": "summed position, velocity and effort; change cost at first step",
+          "tie_break": "cost, absolute torque, signed torque",
+          "fallback_nm": 0.0,
+          "physical_queries": 0
+        }
+      },
+      "fixed_pd": {
+        "tracking_rmse_rad": 0.050012834938049616,
+        "velocity_prediction_rmse": {
+          "frozen": 0.003988594698307358,
+          "learned": 0.006030694516789899
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "models_after": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "planner_spec": null
+      },
+      "zero_torque": {
+        "tracking_rmse_rad": 0.06342959378146762,
+        "velocity_prediction_rmse": {
+          "frozen": 2.858892905045154e-08,
+          "learned": 0.0022700120407701655
+        },
+        "controller_seconds_p95": null,
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "models_before": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "models_after": [
+          "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+          "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3"
+        ],
+        "planner_spec": null
+      }
+    },
+    "calibration_updates": 300,
+    "calibration_completed": true,
+    "initial_model": {
+      "qref_rad": 0.10085905132196148,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "covariance": [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          100.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          100.0
+        ]
+      ],
+      "dtype": "float64",
+      "parameter_fingerprint": "86a6fe16e7cdb87920965fcd0aa544ee13c2098bf29885c3f7e10948c04f0118",
+      "update_count": 0,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "learned_model": {
+      "qref_rad": 0.10085905132196148,
+      "dt_seconds": 0.02,
+      "features": [
+        "v",
+        "q-qref",
+        "requested_torque",
+        "1"
+      ],
+      "initial_coefficients": [
+        1.0,
+        0.0,
+        0.02,
+        0.0
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "coefficients": [
+        -0.05090401651579027,
+        -0.15064533590409881,
+        0.06543177473331983,
+        -0.0021573279746477754
+      ],
+      "covariance": [
+        [
+          5.954358517273209,
+          -0.6726709067601866,
+          -0.28095770326067443,
+          0.0077663661991220845
+        ],
+        [
+          -0.6726709067601866,
+          94.32205839988315,
+          0.09055697870281747,
+          0.27427407008826454
+        ],
+        [
+          -0.28095770326067443,
+          0.09055697870281747,
+          0.053277763087270405,
+          -0.00019474183575293684
+        ],
+        [
+          0.0077663661991220845,
+          0.27427407008826454,
+          -0.00019474183575293684,
+          0.004146656832203003
+        ]
+      ],
+      "dtype": "float64",
+      "parameter_fingerprint": "850b04d078cbcd7299773e6736e149c3d8f5efa441a7d6de103007573e61b4d3",
+      "update_count": 300,
+      "trainable": false,
+      "initial_prior": "generic velocity continuity and torque response, not identified body dynamics",
+      "torque_input": "requested torque at control-step start; realized endpoint torque is diagnostic only"
+    },
+    "reference_q": 0.10085905132196148,
+    "direction": -1,
+    "selection_record": {
+      "joint_index": 0,
+      "joint_position_rad": 0.10085905132196148,
+      "lower_limit_rad": -1.7453292519943295,
+      "upper_limit_rad": 1.7453292519943295,
+      "positive_room_rad": 1.6444702006723682,
+      "negative_room_rad": 1.846188303316291,
+      "direction": -1,
+      "rule": "larger distance to the public joint limit; ties choose positive"
+    },
+    "invalid_numeric_fields": []
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "rule": "First development-only passing 0.5 N m pair in POSES then JOINT_NAMES order",
+  "profile_sha256": "0386f7cc9adb7600e8ea0b74b3b5d8ee94d4d0c9a489b583639c9f55da597709",
+  "selected": {
+    "pose": "supine",
+    "joint_index": 0,
+    "joint_name": "left_shoulder",
+    "amplitude_nm": 0.5,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "available": true,
+    "passes": true,
+    "threshold_rad": 0.001,
+    "threshold_comparator": ">=",
+    "scope": "within split; development and holdout must be combined separately",
+    "hardware_safety_standard": false,
+    "directed_pulse_end_deltas_rad": [
+      0.030990181167267858,
+      0.03036338076996263,
+      0.03142320906350499
+    ],
+    "selected_directions": [
+      -1,
+      -1,
+      -1
+    ],
+    "response_direction_consistent_across_seeds": true,
+    "minimum_directed_pulse_end_delta_rad": 0.03036338076996263,
+    "mean_directed_pulse_end_delta_rad": 0.03092559033357849,
+    "selected_direction_consistent_across_seeds": true,
+    "response_along_request_consistent_across_seeds": true
+  },
+  "source_trials": [
+    "supine_seed0_joint0_amp0.5",
+    "supine_seed1_joint0_amp0.5",
+    "supine_seed2_joint0_amp0.5"
+  ],
+  "holdout_used_for_selection": false
+}

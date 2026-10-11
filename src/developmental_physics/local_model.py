@@ -19,6 +19,8 @@ import numpy as np
 INITIAL_COEFFICIENTS = (1.0, 0.0, 0.02, 0.0)
 INITIAL_COVARIANCE = 100.0
 FORGETTING_FACTOR = 1.0
+HINGE_THRESHOLD_NM = 0.25
+HINGE_INITIAL_COEFFICIENTS = (1.0, 0.0, 0.02, 0.0, 0.0)
 
 
 def _scalar(name: str, value: object) -> float:
@@ -181,6 +183,51 @@ class LocalBodyModel:
             "parameter_fingerprint_before": before,
             "parameter_fingerprint_after": self.parameter_fingerprint(),
         }
+
+
+class HingeBodyModel(LocalBodyModel):
+    """Separate five-feature candidate with a disclosed fixed torque hinge.
+
+    Features are [v, q-qref, u, sign(u)*max(abs(u)-0.25, 0), 1]. Here u is
+    the requested torque available before integration. The 0.25 N m hinge
+    is an explicit structural prior; RLS learns its coefficient, never its
+    threshold. This feature does not identify the cause of nonlinear response
+    or read any contact, actuator realization or hidden physical parameter.
+    """
+
+    def __init__(self, qref: float, *, dt: float = 0.02, trainable: bool = True):
+        super().__init__(qref, dt=dt, trainable=trainable)
+        self._theta = np.asarray(HINGE_INITIAL_COEFFICIENTS, dtype=np.float64)
+        self._covariance = np.eye(5, dtype=np.float64) * INITIAL_COVARIANCE
+        self._hinge_threshold_nm = HINGE_THRESHOLD_NM
+
+    @property
+    def hinge_threshold_nm(self) -> float:
+        return self._hinge_threshold_nm
+
+    def _features(self, q: float, v: float, torque: float) -> tuple[float, np.ndarray]:
+        position, base = super()._features(q, v, torque)
+        requested = float(base[2])
+        hinge = float(np.sign(requested)) * max(abs(requested) - self.hinge_threshold_nm, 0.)
+        return position, np.asarray([base[0], base[1], requested, hinge, 1.], dtype=np.float64)
+
+    def _parameter_record(self) -> dict[str, object]:
+        record = super()._parameter_record()
+        record.update(
+            features=["v", "q-qref", "requested_torque", "sign(u)*max(abs(u)-0.25,0)", "1"],
+            initial_coefficients=list(HINGE_INITIAL_COEFFICIENTS),
+            hinge_threshold_nm=self.hinge_threshold_nm,
+            hinge_threshold_updates=0,
+            hinge_structure_prior="fixed signed torque hinge; structural prior, not a learned threshold or physics label",
+        )
+        return record
+
+    def clone_frozen(self) -> HingeBodyModel:
+        clone = HingeBodyModel(self.qref, dt=self.dt, trainable=False)
+        clone._theta = self._theta.copy()
+        clone._covariance = self._covariance.copy()
+        clone._update_count = self.update_count
+        return clone
 
 
 @dataclass(frozen=True)

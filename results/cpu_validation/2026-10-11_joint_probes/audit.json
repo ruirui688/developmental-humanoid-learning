@@ -1,0 +1,849 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T03:23:17.442093+00:00",
+  "audit_type": "Independent standard-library read-only probe audit; no project/NumPy/MuJoCo imports or fitting",
+  "audit_script_sha256": "b537ec850905d3099fc7468176bfb62d6f112f6834dacbb35633058c6350d43a",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "checks": 47944690,
+  "failed_checks": 0,
+  "failures": [],
+  "maximum_numeric_difference": 3.126388037344441e-13,
+  "archives": [
+    {
+      "split": "development",
+      "archive": "D:\\Codex_ws\\robot_rl\\external\\joint_probes_20261011_development",
+      "profile": "D:\\Codex_ws\\robot_rl\\external\\joint_probes_20261011_development_profile.json",
+      "source_commit": "61df2d056c9460137807ed0de0f6ddfb6f4415eb",
+      "input_sha256": {
+        "geometry.json": "efd6a98eb84eb1ead8394e0e31d6d8cf8388f50d7869a39bc4ba53c4083ee1c8",
+        "metadata.json": "8cbaadbc8c4cdcd891dd5fe6140a8d5eea6aadf126bacae76682004ffb01befe",
+        "source_snapshot.zip": "3f00c649076b0dce818760c36259d25d513a80070313ea31d98e300cc74686aa",
+        "trace.jsonl.gz": "b1dcbfdd493881ccb10e08a52ddee2f44df835b24ecaf6b764689fc3fe84eeb7",
+        "trials.json": "20f369a74cc3ae9402b9200181d64d6157b360ef59ff914d0b04ec56d1890277",
+        "manifest.json": "fcb913e14fe49dd017d62ca68c43a2e5423fa2b299c447f7a905d3fa42c9c68e",
+        "analysis_profile": "0386f7cc9adb7600e8ea0b74b3b5d8ee94d4d0c9a489b583639c9f55da597709"
+      },
+      "checks": 23972338,
+      "trials": 300,
+      "control_calls": 60000,
+      "physics_steps": 600000,
+      "source_sha256": {
+        "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+        "src/developmental_physics/collect.py": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+        "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+        "src/developmental_physics/exploration.py": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+        "src/developmental_physics/local_learning.py": "396b642144c5cfd6af1b725f0f648f48d48d30ba522877c701cba870a7364afe",
+        "src/developmental_physics/local_model.py": "57f3b281233e19a7b19ebc50e4ef5c147ae871b1ffb48ca0eeeeaf60413c8dd4",
+        "src/developmental_physics/probe_collect.py": "b68643037b64b764de5f6513bcd697e2e62465345671bc1aaa272435fe4e0ea3",
+        "src/developmental_physics/probes.py": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+        "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+        "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+        "docs/JOINT_PROBE_PROTOCOL.md": "c295ea807529974eee1b1f7d6485d50ca564851b7b54f8587a6fe21ecaa86e6d"
+      }
+    },
+    {
+      "split": "holdout",
+      "archive": "D:\\Codex_ws\\robot_rl\\external\\joint_probes_20261011_holdout",
+      "profile": "D:\\Codex_ws\\robot_rl\\external\\joint_probes_20261011_holdout_profile.json",
+      "source_commit": "fadef214eae13effb7a2220fe77382cf9843438a",
+      "input_sha256": {
+        "geometry.json": "2df4dec37bf98e1e43e28c76e4f60aa55077d8f931f43a23fa6c60e83e3630dc",
+        "metadata.json": "5bc2406c28b53e24053337c742e0540dc6ed386da08315d8debdd9220c55e414",
+        "source_snapshot.zip": "5a19fe8ecd0c109efce229424e8fa54adf3e53812d8eb64be6deb28c7b14d04f",
+        "trace.jsonl.gz": "aeaeccd901adfe75faf7d94c493bb4259aca74c1b00926a17a8a56f0a401fbe4",
+        "trials.json": "7bbe91a00fccc73c8d22bb0bdabba032c669a21d9ec2f950019531978df5c18a",
+        "manifest.json": "f4ab6cebebe9049f258a1eb65c3054ea0a74461a1033e91f7ba7869a2ecadb34",
+        "analysis_profile": "6df4f20bcbe2ce8ad4676f1c7351f8ba5be4c0d9452065830b2cc40a7e266d29"
+      },
+      "checks": 23972340,
+      "trials": 300,
+      "control_calls": 60000,
+      "physics_steps": 600000,
+      "source_sha256": {
+        "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+        "src/developmental_physics/collect.py": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+        "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+        "src/developmental_physics/exploration.py": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+        "src/developmental_physics/local_learning.py": "39c76a894fdfff9fea6dc7d60e642eb268ee911b6033a8ffe7e7d63a57db68be",
+        "src/developmental_physics/local_model.py": "57f3b281233e19a7b19ebc50e4ef5c147ae871b1ffb48ca0eeeeaf60413c8dd4",
+        "src/developmental_physics/probe_collect.py": "b68643037b64b764de5f6513bcd697e2e62465345671bc1aaa272435fe4e0ea3",
+        "src/developmental_physics/probes.py": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+        "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+        "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+        "docs/JOINT_PROBE_PROTOCOL.md": "c295ea807529974eee1b1f7d6485d50ca564851b7b54f8587a6fe21ecaa86e6d"
+      }
+    }
+  ],
+  "combined_half_nm_gates": [
+    {
+      "pose": "supine",
+      "joint_index": 0,
+      "joint_name": "left_shoulder",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.030990181167267858,
+        0.03036338076996263,
+        0.03142320906350499,
+        0.02993305448814114,
+        0.029761745531886256,
+        0.03021865867360328
+      ],
+      "minimum_directed_delta_rad": 0.029761745531886256,
+      "passes": true
+    },
+    {
+      "pose": "supine",
+      "joint_index": 1,
+      "joint_name": "left_elbow",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.5045048629448597,
+        0.5039837866758705,
+        0.5050658115396434,
+        0.5039199379356568,
+        0.5038140811880515,
+        0.5038489509656784
+      ],
+      "minimum_directed_delta_rad": 0.5038140811880515,
+      "passes": true
+    },
+    {
+      "pose": "supine",
+      "joint_index": 2,
+      "joint_name": "right_shoulder",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.030575251420176267,
+        0.031146581160973588,
+        0.02986684860294865,
+        0.03139471601441676,
+        0.03146760451821436,
+        0.031240938856294323
+      ],
+      "minimum_directed_delta_rad": 0.02986684860294865,
+      "passes": true
+    },
+    {
+      "pose": "supine",
+      "joint_index": 3,
+      "joint_name": "right_elbow",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.5041482137232576,
+        0.5046778666048538,
+        0.5038786238854139,
+        0.505014457860516,
+        0.5051475514936737,
+        0.5047953884304027
+      ],
+      "minimum_directed_delta_rad": 0.5038786238854139,
+      "passes": true
+    },
+    {
+      "pose": "supine",
+      "joint_index": 4,
+      "joint_name": "left_hip",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.0035038104932634123,
+        0.0034908954783527124,
+        0.0034968166273866355,
+        0.0034744809036393112,
+        0.0034665613624131134,
+        0.003485904539927684
+      ],
+      "minimum_directed_delta_rad": 0.0034665613624131134,
+      "passes": true
+    },
+    {
+      "pose": "supine",
+      "joint_index": 5,
+      "joint_name": "left_knee",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.0035352716634098613,
+        0.0035120613285758717,
+        0.0035417588813254075,
+        0.003491419069392758,
+        0.003482227690444345,
+        0.003505439768732653
+      ],
+      "minimum_directed_delta_rad": 0.003482227690444345,
+      "passes": true
+    },
+    {
+      "pose": "supine",
+      "joint_index": 6,
+      "joint_name": "right_hip",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.00349712247460153,
+        0.0035036231123900183,
+        0.0034715184093148943,
+        0.003498177993122631,
+        0.003494376336821821,
+        0.003502483712598682
+      ],
+      "minimum_directed_delta_rad": 0.0034715184093148943,
+      "passes": true
+    },
+    {
+      "pose": "supine",
+      "joint_index": 7,
+      "joint_name": "right_knee",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.0035210717309720335,
+        0.00353907880660969,
+        0.003487932471657469,
+        0.003541817762486091,
+        0.0035414251067452107,
+        0.0035406535496012442
+      ],
+      "minimum_directed_delta_rad": 0.003487932471657469,
+      "passes": true
+    },
+    {
+      "pose": "prone",
+      "joint_index": 0,
+      "joint_name": "left_shoulder",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.12887021510046365,
+        0.1302668381156705,
+        0.1273064175476235,
+        0.12625147013363178,
+        0.12749752372088868,
+        0.12485722389750739
+      ],
+      "minimum_directed_delta_rad": 0.12485722389750739,
+      "passes": true
+    },
+    {
+      "pose": "prone",
+      "joint_index": 1,
+      "joint_name": "left_elbow",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.9363137048135521,
+        0.9363952087386669,
+        0.9362150102871907,
+        0.9361623688015237,
+        0.9362217064109093,
+        0.9361007473637549
+      ],
+      "minimum_directed_delta_rad": 0.9361007473637549,
+      "passes": true
+    },
+    {
+      "pose": "prone",
+      "joint_index": 2,
+      "joint_name": "right_shoulder",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.12284945757590161,
+        0.12144467033246012,
+        0.1247741740734976,
+        0.12574908354914505,
+        0.12470971323042045,
+        0.12712515449600187
+      ],
+      "minimum_directed_delta_rad": 0.12144467033246012,
+      "passes": true
+    },
+    {
+      "pose": "prone",
+      "joint_index": 3,
+      "joint_name": "right_elbow",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.9360201053600044,
+        0.935972749764904,
+        0.9360925482608347,
+        0.9361398331703805,
+        0.9360870205959679,
+        0.9362053266811994
+      ],
+      "minimum_directed_delta_rad": 0.935972749764904,
+      "passes": true
+    },
+    {
+      "pose": "prone",
+      "joint_index": 4,
+      "joint_name": "left_hip",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.0003526832202456198,
+        0.0003523292261384259,
+        0.0003530394200991771,
+        0.0003531874679421343,
+        0.00035301826279052206,
+        0.00035331172372959907
+      ],
+      "minimum_directed_delta_rad": 0.0003523292261384259,
+      "passes": false
+    },
+    {
+      "pose": "prone",
+      "joint_index": 5,
+      "joint_name": "left_knee",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.000461555549411106,
+        0.0004615286784057025,
+        0.00046158314865511177,
+        0.00046159498532928015,
+        0.00046158148230031944,
+        0.00046160543592549614
+      ],
+      "minimum_directed_delta_rad": 0.0004615286784057025,
+      "passes": false
+    },
+    {
+      "pose": "prone",
+      "joint_index": 6,
+      "joint_name": "right_hip",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.00035336355293857924,
+        0.0003533076914775113,
+        0.0003533234246181627,
+        0.0003532397481086913,
+        0.00035333061461678694,
+        0.00035306914171504
+      ],
+      "minimum_directed_delta_rad": 0.00035306914171504,
+      "passes": false
+    },
+    {
+      "pose": "prone",
+      "joint_index": 7,
+      "joint_name": "right_knee",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.0004616113258393307,
+        0.00046160864666783404,
+        0.00046160648807161593,
+        0.00046159928399954744,
+        0.0004616071487985383,
+        0.0004615854979012552
+      ],
+      "minimum_directed_delta_rad": 0.0004615854979012552,
+      "passes": false
+    },
+    {
+      "pose": "left_side",
+      "joint_index": 0,
+      "joint_name": "left_shoulder",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.06764122964394101,
+        0.077374526023604,
+        0.07053191598043485,
+        0.02550440040731028,
+        0.10040527526846618,
+        0.06186897658111151
+      ],
+      "minimum_directed_delta_rad": 0.02550440040731028,
+      "passes": true
+    },
+    {
+      "pose": "left_side",
+      "joint_index": 1,
+      "joint_name": "left_elbow",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.9373419276647426,
+        0.9367603324001357,
+        0.9371512252964469,
+        0.9413232520798118,
+        0.9358966698684277,
+        0.9377328828272247
+      ],
+      "minimum_directed_delta_rad": 0.9358966698684277,
+      "passes": true
+    },
+    {
+      "pose": "left_side",
+      "joint_index": 2,
+      "joint_name": "right_shoulder",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.15956569019646522,
+        0.15673764339352544,
+        0.15897713054760765,
+        0.08009833490816523,
+        0.1449680389896061,
+        0.1572778748486165
+      ],
+      "minimum_directed_delta_rad": 0.08009833490816523,
+      "passes": true
+    },
+    {
+      "pose": "left_side",
+      "joint_index": 3,
+      "joint_name": "right_elbow",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.9409515976951266,
+        0.9397521954298161,
+        0.9405621280887083,
+        0.9520864787238821,
+        0.9378049828636277,
+        0.9417616991979814
+      ],
+      "minimum_directed_delta_rad": 0.9378049828636277,
+      "passes": true
+    },
+    {
+      "pose": "left_side",
+      "joint_index": 4,
+      "joint_name": "left_hip",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.0004943124645794272,
+        0.00043683924036277966,
+        0.000474050938412407,
+        0.001473056386433455,
+        0.00037065307601821806,
+        0.0005742688306188126
+      ],
+      "minimum_directed_delta_rad": 0.00037065307601821806,
+      "passes": false
+    },
+    {
+      "pose": "left_side",
+      "joint_index": 5,
+      "joint_name": "left_knee",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.00045955843434273343,
+        0.0004600473884780051,
+        0.00045970636032375493,
+        0.0004559768773082407,
+        0.0004611484469233334,
+        0.00045921588617281093
+      ],
+      "minimum_directed_delta_rad": 0.0004559768773082407,
+      "passes": false
+    },
+    {
+      "pose": "left_side",
+      "joint_index": 6,
+      "joint_name": "right_hip",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.0003391952922481012,
+        0.0003276637708029828,
+        0.0003340117346911087,
+        0.0006017017075930775,
+        0.0003428787501489339,
+        0.00034829610658193566
+      ],
+      "minimum_directed_delta_rad": 0.0003276637708029828,
+      "passes": false
+    },
+    {
+      "pose": "left_side",
+      "joint_index": 7,
+      "joint_name": "right_knee",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.00045908841739055557,
+        0.00045969715618496125,
+        0.00045928025622444537,
+        0.0004541212095305776,
+        0.000460837599663613,
+        0.00045868027013031703
+      ],
+      "minimum_directed_delta_rad": 0.0004541212095305776,
+      "passes": false
+    },
+    {
+      "pose": "right_side",
+      "joint_index": 0,
+      "joint_name": "left_shoulder",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.15887925035610845,
+        0.11224506233672629,
+        0.15585414718290072,
+        0.09856805378234486,
+        0.1566839621596007,
+        0.14712168708028267
+      ],
+      "minimum_directed_delta_rad": 0.09856805378234486,
+      "passes": true
+    },
+    {
+      "pose": "right_side",
+      "joint_index": 1,
+      "joint_name": "left_elbow",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.9406467502222221,
+        0.9469869169463468,
+        0.9394654205861419,
+        0.9491686732652711,
+        0.9418994757845508,
+        0.942723464935165
+      ],
+      "minimum_directed_delta_rad": 0.9394654205861419,
+      "passes": true
+    },
+    {
+      "pose": "right_side",
+      "joint_index": 2,
+      "joint_name": "right_shoulder",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.06980247362322861,
+        0.03648913377521096,
+        0.0803996338824795,
+        0.03135228525987077,
+        0.061193473247781766,
+        0.05530854207359265
+      ],
+      "minimum_directed_delta_rad": 0.03135228525987077,
+      "passes": true
+    },
+    {
+      "pose": "right_side",
+      "joint_index": 3,
+      "joint_name": "right_elbow",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.9371912443954366,
+        0.9402810332636016,
+        0.9365941230725481,
+        0.9420041314634535,
+        0.9377968216729777,
+        0.9383257712207025
+      ],
+      "minimum_directed_delta_rad": 0.9365941230725481,
+      "passes": true
+    },
+    {
+      "pose": "right_side",
+      "joint_index": 4,
+      "joint_name": "left_hip",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.0003351847097922689,
+        0.0004673394382003204,
+        0.0003298802799173439,
+        0.0005412200181790505,
+        0.0003496185522893769,
+        0.00035631264458360623
+      ],
+      "minimum_directed_delta_rad": 0.0003298802799173439,
+      "passes": false
+    },
+    {
+      "pose": "right_side",
+      "joint_index": 5,
+      "joint_name": "left_knee",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.000459238862195409,
+        0.0004563400482639389,
+        0.00045986811921197026,
+        0.0004554919331235403,
+        0.00045860988019554906,
+        0.00045818467560351274
+      ],
+      "minimum_directed_delta_rad": 0.0004554919331235403,
+      "passes": false
+    },
+    {
+      "pose": "right_side",
+      "joint_index": 6,
+      "joint_name": "right_hip",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.00047781019996764873,
+        0.0009902720342133686,
+        0.00042750073959482715,
+        0.0012117231541648177,
+        0.000588414801894116,
+        0.0006723820437054273
+      ],
+      "minimum_directed_delta_rad": 0.00042750073959482715,
+      "passes": false
+    },
+    {
+      "pose": "right_side",
+      "joint_index": 7,
+      "joint_name": "right_knee",
+      "amplitude_nm": 0.5,
+      "seeds": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "directed_pulse_end_deltas_rad": [
+        0.00045967523826727895,
+        0.00045741724952346027,
+        0.0004602249653052581,
+        0.00045733652382052604,
+        0.0004591534292817085,
+        0.0004587576531979372
+      ],
+      "minimum_directed_delta_rad": 0.00045733652382052604,
+      "passes": false
+    }
+  ],
+  "passed_same_pose_joint_count": 20,
+  "claim_boundary": "Local repeatable native response gate only; not safety, learning or motion skill."
+}
