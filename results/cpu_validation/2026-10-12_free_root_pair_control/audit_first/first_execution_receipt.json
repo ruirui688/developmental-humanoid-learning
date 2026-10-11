@@ -1,0 +1,19 @@
+{
+  "first_attempt": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\fr2_audit_candidate\\audit_free_root_pair_control.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--raw",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_free_root_pair_control\\raw",
+    "--source-commit",
+    "f9a0e0062727fd756751e97f7aff850e2069340c",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr2_first_audit\\result"
+  ],
+  "candidate_sha256": "bc8bb0ea6c233c790d728e7a18c19cd68c125bbbfd828555b83c1758330f5a5c",
+  "exit_code": 0,
+  "wall_seconds": 16.276028099935502
+}

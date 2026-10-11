@@ -1,0 +1,107 @@
+{
+  "model_contribution": {
+    "available": true,
+    "checks": [
+      {
+        "seed": 7901,
+        "available": true,
+        "strict": true,
+        "baseline_joint_axis": [
+          0.008701141910393418,
+          0.010343389238549546,
+          0.006665886298870318
+        ],
+        "learned_joint_axis": [
+          0.007637830243973454,
+          0.009194531906570132,
+          0.005668640462277987
+        ],
+        "passed": true
+      },
+      {
+        "seed": 7902,
+        "available": true,
+        "strict": true,
+        "baseline_joint_axis": [
+          0.008753864739028262,
+          0.0104435634334623,
+          0.006647727322149546
+        ],
+        "learned_joint_axis": [
+          0.007678213271633336,
+          0.009260084789504193,
+          0.005671044681587835
+        ],
+        "passed": true
+      },
+      {
+        "seed": 7903,
+        "available": true,
+        "strict": true,
+        "baseline_joint_axis": [
+          0.008779495101833686,
+          0.010490916121096977,
+          0.006640764069469047
+        ],
+        "learned_joint_axis": [
+          0.007692187700710267,
+          0.009282685774806431,
+          0.005671970385335496
+        ],
+        "passed": true
+      },
+      {
+        "scope": "three_seed_raw_RMSE_mean",
+        "baseline_joint_axis_mean": [
+          0.008744833917085122,
+          0.010425956264369608,
+          0.0066514592301629705
+        ],
+        "learned_joint_axis_mean": [
+          0.00766941040543902,
+          0.009245767490293585,
+          0.005670551843067105
+        ],
+        "improvement_fractions": [
+          0.12297815165420184,
+          0.11319717291633787,
+          0.14747250988890626
+        ],
+        "required_improvement": 0.2,
+        "passed": false
+      },
+      {
+        "scope": "three_seed_actual_effort_mean",
+        "signal": "actual_absolute_two_axis_nm_s",
+        "baseline_mean": 1.5181094664720096,
+        "learned_mean": 1.491915780685721,
+        "maximum_ratio": 1.05,
+        "passed": true
+      },
+      {
+        "scope": "three_seed_actual_effort_mean",
+        "signal": "actual_squared_two_axis_nm2_s",
+        "baseline_mean": 0.46760041315947437,
+        "learned_mean": 0.45969555481169727,
+        "maximum_ratio": 1.05,
+        "passed": true
+      }
+    ],
+    "passed": false
+  },
+  "pd_reference": {
+    "available": false,
+    "passed": false,
+    "reason": "model_contribution_gate_not_passed",
+    "checks": []
+  },
+  "fr2_model_contribution_gate_passed": false,
+  "fr2_pd_reference_gate_passed": false,
+  "free_root_mechanism_validation": false,
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false,
+  "fr1_prediction_gate_passed": false
+}

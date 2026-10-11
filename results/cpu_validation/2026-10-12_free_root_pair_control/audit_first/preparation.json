@@ -1,0 +1,97 @@
+{
+  "schema": "FR2_saved_audit_candidate_preparation_v1",
+  "prepared_utc": "2026-10-11T22:33:08.276876+00:00",
+  "status": "static_preparation_complete_candidate_not_executed",
+  "candidate": {
+    "path": "external/fr2_audit_candidate/audit_free_root_pair_control.py",
+    "bytes": 51931,
+    "sha256": "bc8bb0ea6c233c790d728e7a18c19cd68c125bbbfd828555b83c1758330f5a5c"
+  },
+  "reviewed_helper_source": {
+    "path": "external/fr1_audit_candidate/audit_free_root_pair_prediction.py",
+    "bytes": 50717,
+    "sha256": "00bf02915cdca24e5a6b57d7bc3dd6da48ab8bbe206ab748335b699929a40a17"
+  },
+  "production_collector_schema_source": {
+    "path": "src/developmental_physics/free_root_pair_development.py",
+    "bytes": 55672,
+    "sha256": "baccf91a05e7b5bf55024ac96c717872d8624d3e17d49a74c35d12a6f93a0a8b"
+  },
+  "static_parse": "passed",
+  "copied_helper_AST_identity": {
+    "AuditBoundError": true,
+    "json_safe": true,
+    "Checks": true,
+    "require": true,
+    "finite_number": true,
+    "vector": true,
+    "close_tree": true,
+    "identity": true,
+    "duplicate_free": true,
+    "parse_json": true,
+    "read_small": true,
+    "hash_stream": true,
+    "iter_records": true,
+    "check_sources": true,
+    "complete_native_observation": true,
+    "input_ranges": true,
+    "contact_summary": true,
+    "effort_summary": true,
+    "snapshot_check": true
+  },
+  "scope": [
+    "Only fixed new FR2 raw manifest/run/metrics/models/trace/predictions and supplied frozen source commit.",
+    "18 archived source Git objects and payload bytes/SHA identities.",
+    "12 trial complete-priority native/contact/tracking/actual-effort populations.",
+    "New 60 conditional model-H groups and up to 120 q/v RMSE vectors from saved predictions and native endpoint labels.",
+    "Original model contribution 20 percent, conditional PD reference 5 percent, and actual effort maximum ratio 1.05.",
+    "Batch kernel counters separate from logical model forwards; planning failure unknown fields preserved.",
+    "Zero remains descriptive, no added self forecast adoption veto, no partial subset ranking."
+  ],
+  "fixed_bounds": {
+    "seeds": 3,
+    "trials": 12,
+    "trace_records": 36000,
+    "horizons": [
+      1,
+      10,
+      20,
+      50,
+      150
+    ],
+    "origin_counts": [
+      200,
+      200,
+      199,
+      196,
+      186
+    ],
+    "prediction_records": 11772,
+    "saved_conditional_pair_path_steps": 526560,
+    "conditional_model_H_groups": 60,
+    "q_v_RMSE_vectors": 120,
+    "tracking_populations": 12,
+    "active_two_axis_effort_vectors": 24,
+    "batch_decisions": 1200,
+    "source_git_objects": 18
+  },
+  "preparation_operations": {
+    "AST_parse_and_helper_identity": "stdlib_only",
+    "new_fixed_plan_integer_arithmetic": true,
+    "candidate_execution": 0,
+    "candidate_import": 0,
+    "production_import": 0,
+    "FR2_raw_reads": 0,
+    "FR1_or_old_raw_reads": 0,
+    "models_restored": 0,
+    "model_forward_calls": 0,
+    "fit": 0,
+    "RLS": 0,
+    "physics": 0,
+    "failure_fixtures": 0,
+    "RLS_or_MPC_mathematics_rechecked": false,
+    "science_thresholds_changed": false,
+    "automatic_retry": 0
+  },
+  "execution_handoff": "Parent owns first audit invocation after immutable FR2 archival; this preparation does not run the candidate."
+}

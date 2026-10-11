@@ -13,7 +13,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** [FR1首次本域身体预测](docs/FREE_ROOT_PAIR_PREDICTION_RESULTS.md)从clean41ccb85完成六条完整轨迹、21,000控制/子步与12,000vector/24,000scalar在线更新，0停止异常；H10v肩/肘均值改善34.5534%/29.4351%，H150q改善76.4129%/71.3583%，原预测门全部通过。首新保存核验680,448项零失败、60新RMSE向量及努力/接触、来源/付费账一致；随后执行已在FR1数据前冻结的FR2。原自由root/仰卧、理想感觉、2ms公共PD与固定刺激为披露先验；尚无控制/安全通过，C4及C5–C7未验收。累计337,297控制/2,616,970子步，online70,452+offline7,200=77,652scalar；阶段检查提交推送后继续active目标。
+**当前执行入口：** [FR2首次自由root匹配控制](docs/FREE_ROOT_PAIR_CONTROL_RESULTS.md)从cleanf9a0e00保存状态completed，本域原控制门未全部通过；实际新增36,000控制/36,000子步，0更新。原模型贡献门false、强PD available=false/passed=false；首新保存核验passed、77,669项/0失败。全部12计划组、停止/努力及六种自身来源×两模型×五时距完整保留。累计373,297/2,652,970，online70,452+offline7,200=77,652scalar；C4最终新留出及C5–C7未验收。关闭本冻结候选的成功依赖，不补跑或放宽门；依据本次完整保存证据做一次有界判断，再确定独立下一项。 提交推送后继续active目标。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 
@@ -31,7 +31,7 @@
 
 后续顺序固定为 C4 多关节 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。当前仅 CPU，允许少量在线辨识；不运行大规模 PPO、任务教师、预训练策略或真机。每个阶段检查、提交、推送后直接继续，完整阶段状态、旧失败和判门见[持续执行账本](docs/CONTINUOUS_EXECUTION_PLAN.md)。
 
-正式物理累计 **337,297 控制调用 /2,616,970 子步**；FR1新增21,000/21,000/24,000在线scalar更新，FR0新增3,000/3,000/0更新，Z1新增21,000/21,000/24,000在线scalar更新，Z2新增36,000/36,000/0更新。在线70,452与离线7,200scalar更新计算保持分列，总77,652；小型ridge、规划、测试及历史GPU费用另计，记录一致不能代替科学验收。
+正式物理累计 **373,297 控制调用 /2,652,970 子步**；FR2新增36,000/36,000/0更新；FR1新增21,000/21,000/24,000在线scalar更新，FR0新增3,000/3,000/0更新，Z1新增21,000/21,000/24,000在线scalar更新，Z2新增36,000/36,000/0更新。在线70,452与离线7,200scalar更新计算保持分列，总77,652；小型ridge、规划、测试及历史GPU费用另计，记录一致不能代替科学验收。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 
@@ -56,9 +56,7 @@
 
 ## 当前证据地图
 
-[FR1首次自由身体预测](docs/FREE_ROOT_PAIR_PREDICTION_RESULTS.md)保存的原独立门通过；首次新保存核验680,448项零失败。
-完成首核验及阶段提交推送后，立即进入已冻结的[FR2完整匹配控制](docs/FREE_ROOT_LEARNING_PROTOCOL.md)。
-尚无FR2控制/安全结果，C4及C5–C7未验收，持续目标保持active。
+[FR2首次自由root匹配控制](docs/FREE_ROOT_PAIR_CONTROL_RESULTS.md)从cleanf9a0e00保存状态completed，本域原控制门未全部通过；实际新增36,000控制/36,000子步，0更新。原模型贡献门false、强PD available=false/passed=false；首新保存核验passed、77,669项/0失败。全部12计划组、停止/努力及六种自身来源×两模型×五时距完整保留。累计373,297/2,652,970，online70,452+offline7,200=77,652scalar；C4最终新留出及C5–C7未验收。关闭本冻结候选的成功依赖，不补跑或放宽门；依据本次完整保存证据做一次有界判断，再确定独立下一项。 提交推送后继续active目标。
 
 ![Project evidence and G1 developmental stages](results/validation/project_evidence_map.png)
 

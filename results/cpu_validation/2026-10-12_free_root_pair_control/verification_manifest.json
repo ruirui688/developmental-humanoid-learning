@@ -1,0 +1,64 @@
+{
+  "first_archive_manifest": {
+    "bytes": 4214,
+    "sha256": "6daabca1d9fd4a66a05778acd195dda87e9ff1f2ef55ead21539068b7500322c"
+  },
+  "new_files": {
+    "audit_first/audit.json": {
+      "bytes": 37786,
+      "sha256": "ea28a5ac0a76d100f7c664832e974987e8a575c71095b14679b8ee87d7708fd3"
+    },
+    "audit_first/audit_free_root_pair_control.py": {
+      "bytes": 51931,
+      "sha256": "bc8bb0ea6c233c790d728e7a18c19cd68c125bbbfd828555b83c1758330f5a5c"
+    },
+    "audit_first/first_execution_receipt.json": {
+      "bytes": 672,
+      "sha256": "fae4db081fa8957c53fef94b66acfab39dfde858c23367a59ab92949fcb8f5a8"
+    },
+    "audit_first/metric_recheck.json": {
+      "bytes": 33313,
+      "sha256": "e0781e63c8ef247bb90d93940af7986932c7f46292534ab559ae1746448b5776"
+    },
+    "audit_first/preparation.json": {
+      "bytes": 3285,
+      "sha256": "8e1a250c702b9cd88fd44a9fd2608a27c5ff017504fc6c0fc448d887c103bc31"
+    },
+    "audit_first/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit_first/stdout.log": {
+      "bytes": 146,
+      "sha256": "589a0cc8d116474c89bd21f4a7f72f3a3ea56a6adc5e0b0de4dd2a85f26bae28"
+    },
+    "delivery_sources/finalize_fr2_delivery_once.py": {
+      "bytes": 3616,
+      "sha256": "c8d80ceeb002fea59b07d24c91153f64d745fdf7d7c68f22a386070010dde7a4"
+    },
+    "delivery_sources/fr2_report_writing_receipt.json": {
+      "bytes": 2614,
+      "sha256": "988a3d88c4f14115b771cb10abe576c24c63b65954561e7517fbf1801f2ce5a7"
+    },
+    "delivery_sources/navigation_checks.json": {
+      "bytes": 907,
+      "sha256": "dfc2f9da84b3a5b62a10f7e2242194c24b1d886fd12c1b19a08ab29a6a1c6c47"
+    },
+    "delivery_sources/run_fr2_audit_first_once.py": {
+      "bytes": 1491,
+      "sha256": "114891f11159761eb20950130b841f21e2cdfe1e3639c19cf5c6cc56a34ba034"
+    },
+    "delivery_sources/write_fr2_report_candidate.py": {
+      "bytes": 19221,
+      "sha256": "cb842d7604aea0fccd5a02dbc582f8170db28ca4af3cf86a8fedc90a0b3d94a1"
+    }
+  },
+  "raw_payloads_not_reread_by_this_helper": true,
+  "first_audit_status": "passed",
+  "first_audit_checks": 77669,
+  "first_audit_failed": 0,
+  "source_commit": "f9a0e0062727fd756751e97f7aff850e2069340c",
+  "FR2_model_contribution_gate_passed": false,
+  "C4_C5_C6_C7_validation": false,
+  "continuous_goal_stays_active": true
+}

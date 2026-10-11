@@ -1,0 +1,73 @@
+{
+  "schema": "FR2_report_writing_receipt_v1",
+  "created_at_utc": "2026-10-11T22:36:47.042743+00:00",
+  "status": "written",
+  "only_experimental_input": {
+    "path": "results\\cpu_validation\\2026-10-12_free_root_pair_control\\report_inputs.json",
+    "bytes": 1370560,
+    "sha256": "bb7050a58c9cd6975fdf007ffb09e0255cb01722a402292e0af16f3d283212bb",
+    "file_read_count": 1,
+    "JSON_parse_count": 1
+  },
+  "first_audit_from_root": {
+    "status": "passed",
+    "checks": 77669,
+    "failed": 0,
+    "new_RMSE_vectors": 120
+  },
+  "source_commit": "f9a0e0062727fd756751e97f7aff850e2069340c",
+  "saved_metrics_transcription_only": true,
+  "raw_or_model_parameter_or_old_result_file_reads": 0,
+  "models_or_fit_or_physics_or_scientific_metrics_recomputed": 0,
+  "embedded_snapshot_fields": "not selected or restored",
+  "before_documents": {
+    "docs\\PROGRESS.md": {
+      "bytes": 83128,
+      "sha256": "2b92e688f54ad41cf257605d1aedcfe7e6dc553483c4832f0f72f46b9ae30ae5"
+    },
+    "docs\\CPU_VALIDATION_TARGET.md": {
+      "bytes": 5827,
+      "sha256": "068c0ea55c064e3e33c7932927951063269ea38bd737e43531c5d656dcb1715b"
+    },
+    "docs\\CONTINUOUS_EXECUTION_PLAN.md": {
+      "bytes": 78984,
+      "sha256": "d2d372d2afac2690e64556318e9b66f1a1668e9e4931224846ee3aa8d8ea3014"
+    },
+    "README.md": {
+      "bytes": 29022,
+      "sha256": "40623c60ed7fdf40c4be7a40b69cfe8720e6322ee07108b5d9e7cf311832f698"
+    },
+    "AGENTS.md": {
+      "bytes": 26179,
+      "sha256": "292bc96303bb884fb53604b0bce402d5868a2122033b74de39cf123151d9b5a5"
+    }
+  },
+  "written_documents": {
+    "docs\\FREE_ROOT_PAIR_CONTROL_RESULTS.md": {
+      "bytes": 9000,
+      "sha256": "3961340cea9f7d248cf682f1817703f13ab9ff58fd8f4207a739fab4eb57799c"
+    },
+    "docs\\PROGRESS.md": {
+      "bytes": 83814,
+      "sha256": "ed4c987565ec2fcd3672f1bdfe87cf12709ab7eacf1ee0d16f452e93d3151095"
+    },
+    "docs\\CPU_VALIDATION_TARGET.md": {
+      "bytes": 6095,
+      "sha256": "85b5d92e1198df05d1099002db7f540eee2b85492ee79b73d4ac37fdb3457dd6"
+    },
+    "docs\\CONTINUOUS_EXECUTION_PLAN.md": {
+      "bytes": 79904,
+      "sha256": "d2b6c93e762b602aca064436cea1fa621eab03301b6500e892d350d3f941b79d"
+    },
+    "README.md": {
+      "bytes": 29371,
+      "sha256": "53c44f2ec7d45555d0c8d6fcbb9ebebd4f906a3b7a1ea09eef71a8887bca4d1b"
+    },
+    "AGENTS.md": {
+      "bytes": 26200,
+      "sha256": "a6018a00b48313acef75eefa6109664756746366fb0c9b51f53f50b3711ec34d"
+    }
+  },
+  "other_filesystem_IO": "unmeasured_not_zero",
+  "commit_or_push_by_child": false
+}

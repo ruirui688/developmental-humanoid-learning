@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FR2",
+  "stage": "control",
+  "status": "completed",
+  "files": {
+    "paid_intervals.jsonl.gz": {
+      "bytes": 66654031,
+      "sha256": "e4d0b4fe8f664cb6f9c3835e3c52f04bd3afa39abb144f727a6d2abd9078755b"
+    },
+    "run.json": {
+      "bytes": 2543134,
+      "sha256": "d0b1e577317e25c59d08bac693e78d71b102aa5f4f3df5f0d592284abc46b337"
+    },
+    "metrics.json": {
+      "bytes": 2847,
+      "sha256": "5a4fc581802ef656ae7d3f303dc568b2bc2b180fa0dade2071f4efcd9b6b464a"
+    },
+    "models.json": {
+      "bytes": 60943,
+      "sha256": "d617e4c3133884cf711594f63a260134df7b3001636d8203fd7a61f3f0a45a9a"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 49819123,
+      "sha256": "7787dba5e3d196f9d81675793e697e4274303a4cb20bf2ed1f5f0d61df4df1a0"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 22307387,
+      "sha256": "7b221505a1d923001ab22bcdb62b288baa3f5c76c26971abb6bf0fee750d7799"
+    },
+    "source.zip": {
+      "bytes": 87706,
+      "sha256": "30c0686bd55539eb68964c6e1b5ccb9ac44d2b74a0bb77216cebac2e0afe09a8"
+    },
+    "installed/FR_7901_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7901_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7901_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7901_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7902_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7902_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7902_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7902_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7903_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7903_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7903_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR_7903_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

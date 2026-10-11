@@ -1,0 +1,116 @@
+{
+  "stage": "FR2_first_control_archive",
+  "status": "completed",
+  "files_before_top_manifest": {
+    "first_execution_receipt.json": {
+      "bytes": 907,
+      "sha256": "c55388a1084b7c3c50af28682b05ecf089886d43ac10d000eab04090024b6685"
+    },
+    "raw/installed/FR_7901_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7901_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7901_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7901_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7902_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7902_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7902_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7902_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7903_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7903_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7903_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR_7903_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/manifest.json": {
+      "bytes": 3141,
+      "sha256": "3ba28616bcb1c4bfaf8404b091436a89c652eae221c458e5d1d0fd6b7c6d9ae3"
+    },
+    "raw/metrics.json": {
+      "bytes": 2847,
+      "sha256": "5a4fc581802ef656ae7d3f303dc568b2bc2b180fa0dade2071f4efcd9b6b464a"
+    },
+    "raw/models.json": {
+      "bytes": 60943,
+      "sha256": "d617e4c3133884cf711594f63a260134df7b3001636d8203fd7a61f3f0a45a9a"
+    },
+    "raw/paid_intervals.jsonl.gz": {
+      "bytes": 66654031,
+      "sha256": "e4d0b4fe8f664cb6f9c3835e3c52f04bd3afa39abb144f727a6d2abd9078755b"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 22307387,
+      "sha256": "7b221505a1d923001ab22bcdb62b288baa3f5c76c26971abb6bf0fee750d7799"
+    },
+    "raw/run.json": {
+      "bytes": 2543134,
+      "sha256": "d0b1e577317e25c59d08bac693e78d71b102aa5f4f3df5f0d592284abc46b337"
+    },
+    "raw/source.zip": {
+      "bytes": 87706,
+      "sha256": "30c0686bd55539eb68964c6e1b5ccb9ac44d2b74a0bb77216cebac2e0afe09a8"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 49819123,
+      "sha256": "7787dba5e3d196f9d81675793e697e4274303a4cb20bf2ed1f5f0d61df4df1a0"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "bytes": 48063,
+      "sha256": "513783137ff885c04c8a00fb9e572063edcb3ad8428addbf1745bd1cf3107491"
+    },
+    "launchers/run_fr2_first_once.py": {
+      "bytes": 1875,
+      "sha256": "06b28d126c492e74a6faa1dc6cffc7578a3873cffeed34fcf8d150fb5dba6f08"
+    },
+    "launchers/archive_fr2_first_once.py": {
+      "bytes": 3201,
+      "sha256": "490b47349915d026eb56fc7d9d04a0c21e45989a2cfdacdc8968f7e594737ff9"
+    },
+    "report_inputs.json": {
+      "bytes": 1370560,
+      "sha256": "bb7050a58c9cd6975fdf007ffb09e0255cb01722a402292e0af16f3d283212bb"
+    },
+    "archive_receipt.json": {
+      "bytes": 531,
+      "sha256": "b2328f1661f46739cd109724818fbb004051cb264701b059eca2b721a27ff3fe"
+    }
+  },
+  "scientific_adoption": false,
+  "continuous_goal_stays_active": true
+}
