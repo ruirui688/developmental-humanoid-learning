@@ -15,7 +15,7 @@
 当前执行看板：
 
 - **正在解决**：肩肘协同中身体预测低估实际速度；原完整控制未通过，上一残差和六轴IMU残差两候选已否定。
-- **立即执行**：K完整原生状态闭合转移，先冻结小型CPU辨识及1/2/5/15步开发验证，保留负结果。
+- **立即执行**：[K完整状态转移](GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)开发门失败；保持模型结构，先审查并冻结已有轨迹的数据覆盖消融，保留负结果。
 - **下一次验收**：候选具备开发依据后，在新留出上比较冻结/学习模型和调优PD，要求完整执行共同任务；部分轨迹不排名。
 - **后续连续阶段**：未知动力学适应 → 固定成熟/能力门控 → 新留出综合验证。每次检查、提交、推送后进入下一项。
 
@@ -40,7 +40,7 @@
 | C1 | 闭环模型有效域 | 开发轨迹覆盖分析、动作切换残差、位置积分误差、2/5/15 步自由递推；名义/学习/持久性对照 | 开发诊断完成；[结果](MODEL_DOMAIN_RESULTS.md) |
 | C2 | 最小模型/探索修订与消融 | 分离校准剂量与折点结构，必要时比较动作历史或直接位移预测；新留出预测与控制及各方法总成本 | 三个修订均未采用；[新最终](LOCAL_FROZEN_VALIDATION_RESULTS.md)同MPC贡献通过29.505%，自身一步与位置有效域仍有缺口 |
 | C3 | 调优经典控制强基线 | 有上限的开发增益/积分候选；所有调优交互计账；新留出统一权限比较 | 九组PD选64/0；新最终只改善2.674%，未过5%门，保留失败结论 |
-| C4 | 新增关节与低维协调 | 至少两个有可重复响应的关节；单关节与双关节任务、耦合/独立模型对照 | 左肘[迁移](ELBOW_BODY_DEVELOPMENT_RESULTS.md)贡献与PD门失败；首次[双关节](PAIR_BODY_DEVELOPMENT_RESULTS.md)校准/组合PD停止。[短脉冲](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)1/9可执行；[双轴PD](PAIR_PD_DEVELOPMENT_RESULTS.md)有限选择64/(0,4)；[A](GUARD_PAIR_DEVELOPMENT_RESULTS.md)学习控制2/4active停止；[B](GUARD_COUPLED_DEVELOPMENT_RESULTS.md)三seed106active位置停止；[C](GUARD_EXPLORATION_DEVELOPMENT_RESULTS.md)18完整/6停止、科学门未过。[D](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)长轨迹H15位置局部改善、共同脉冲/短步负效混合；[E](GUARD_LAG_CONTROL_DEVELOPMENT_RESULTS.md)9完整/3学习组104active速度停止、控制门未评价/未过。[F](GUARD_NATIVE_CONTEXT_DIAGNOSTIC_RESULTS.md)不支持追加特征；[G](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)8完整/4肘速度停止，只有一条学习轨迹完整，控制子门失败。C4未验收；[H保存诊断](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认学习预测合规但实际超速，[I因果残差](GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)主门失败；[J六轴IMU残差](GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)主门失败；接着K完整原生状态闭合转移 |
+| C4 | 新增关节与低维协调 | 至少两个有可重复响应的关节；单关节与双关节任务、耦合/独立模型对照 | 左肘[迁移](ELBOW_BODY_DEVELOPMENT_RESULTS.md)贡献与PD门失败；首次[双关节](PAIR_BODY_DEVELOPMENT_RESULTS.md)校准/组合PD停止。[短脉冲](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)1/9可执行；[双轴PD](PAIR_PD_DEVELOPMENT_RESULTS.md)有限选择64/(0,4)；[A](GUARD_PAIR_DEVELOPMENT_RESULTS.md)学习控制2/4active停止；[B](GUARD_COUPLED_DEVELOPMENT_RESULTS.md)三seed106active位置停止；[C](GUARD_EXPLORATION_DEVELOPMENT_RESULTS.md)18完整/6停止、科学门未过。[D](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)长轨迹H15位置局部改善、共同脉冲/短步负效混合；[E](GUARD_LAG_CONTROL_DEVELOPMENT_RESULTS.md)9完整/3学习组104active速度停止、控制门未评价/未过。[F](GUARD_NATIVE_CONTEXT_DIAGNOSTIC_RESULTS.md)不支持追加特征；[G](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)8完整/4肘速度停止，只有一条学习轨迹完整，控制子门失败。C4未验收；[H保存诊断](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认学习预测合规但实际超速，[I因果残差](GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)主门失败；[J六轴IMU残差](GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)主门失败；[K完整状态转移](GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)主门失败；接着保持结构检验校准覆盖 |
 | C5 | 未知动力学变化 | 至少两类变化的冻结/适应对照；恢复交互、预测、控制、努力与失败曲线 | [事件工程](C5_ENGINEERING_RESULTS.md)4完整480/4,800/0更新、独立481,538项零失败；科学适应对照仍待 C4 |
 | C6 | 固定成熟与能力门控 | 同最终任务与完成标准；校准成本、权限轨迹、晋退级、失败和风险；不能靠永久小动作取胜 | 待 C5 |
 | C7 | 综合验收与可复现交付 | 未见种子/条件、强基线、组件消融、全部失败与成本；说明成立和不成立的机制 | 待各阶段结果 |
@@ -69,18 +69,18 @@ C2/C3 的正式矩阵根据 C1 的开发依据另写冻结协议。C4–C6 在�
 
 接触力、动能、真实参数等只作诊断；它们不能暗中进入部署模型。共同上限不代表相同实际努力；零停止不代表安全。原 E1 留出 seed 10/11/12 已使用，后续版本需要新的独立最终评估。
 
-正式物理研发累计基点为174,950控制调用/1,749,500子步；九组肩PD、三个C2开发批次及单肩新最终后为208,850/2,088,500/9,900。左肘PD实际新增7,521/75,210/0，左肘身体模型实际新增5,292/52,920/900，首次双关节实际新增2,919/29,190/2,052，C5事件工程新增480/4,800/0，短脉冲校准新增2,586/25,860/0，双轴PD开发新增4,536/45,360/0，A匹配模型对照新增6,318/63,180/4,800scalar，B复用校准后新增618/6180与离线2400scalar，C探索新增7230/72300/4800在线scalar，D同数据诊断新增0物理/4800离线scalar，E冻结控制新增3312/33120/0更新，G反馈尾控制新增3028/30280/0更新；当前累计 **252,690 控制调用 / 2,526,900 子步 / 22,452 在线scalar及7,200离线重放scalar**，scalar计算合计29652，没有用完整计划替代停止成本。短脉冲的全部失败及付费前缀见[归档清单](../results/cpu_validation/2026-10-11_pair_calibration/manifest.json)。J另用2400scalar标签/3个小型batch ridge solve，不计为RLS或新物理。后续逐批累加。测试、离线重放/模型搜索、规划计算、旧 NumPy/二维/G1 成本分开列报。共同控制评价时域不代表各方法同总成本：学习校准、经典调优与共同预测评价分别披露。
+正式物理研发累计基点为174,950控制调用/1,749,500子步；九组肩PD、三个C2开发批次及单肩新最终后为208,850/2,088,500/9,900。左肘PD实际新增7,521/75,210/0，左肘身体模型实际新增5,292/52,920/900，首次双关节实际新增2,919/29,190/2,052，C5事件工程新增480/4,800/0，短脉冲校准新增2,586/25,860/0，双轴PD开发新增4,536/45,360/0，A匹配模型对照新增6,318/63,180/4,800scalar，B复用校准后新增618/6180与离线2400scalar，C探索新增7230/72300/4800在线scalar，D同数据诊断新增0物理/4800离线scalar，E冻结控制新增3312/33120/0更新，G反馈尾控制新增3028/30280/0更新；当前累计 **252,690 控制调用 / 2,526,900 子步 / 22,452 在线scalar及7,200离线重放scalar**，scalar计算合计29652，没有用完整计划替代停止成本。短脉冲的全部失败及付费前缀见[归档清单](../results/cpu_validation/2026-10-11_pair_calibration/manifest.json)。J/K分别用2400/26400scalar标签和各3个小型batch ridge solve，不计为RLS或新物理。后续逐批累加。测试、离线重放/模型搜索、规划计算、旧 NumPy/二维/G1 成本分开列报。共同控制评价时域不代表各方法同总成本：学习校准、经典调优与共同预测评价分别披露。
 
 ## 6. 当前立即执行项
 
-当前最早未验收的是C4多关节完整控制与预测。[H](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认模型乐观失配，[I](GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)上一原base残差主门失败：learned seed0/1两轴退化，seed2改善，肩/肘平均3.18%/4.68%；cold全退化。不将此候选接入控制。[J六轴IMU残差](GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)首次完成且主门失败：共同prediction肩/肘均值退化3.39%/2.77%，全部seed两轴退化。接着K完整原生状态闭合转移，已有C sparse400拟合、C共同prediction与H1/2/5/15请求条件化开发评分；配方和门先冻，不新增物理，不注入未来实际状态。C5只有事件接口通过，科学适应与C6/C7未验收；旧seed保持已见。
+当前最早未验收的是C4多关节完整控制与预测。[H](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认模型乐观失配，[I](GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)上一原base残差主门失败：learned seed0/1两轴退化，seed2改善，肩/肘平均3.18%/4.68%；cold全退化。不将此候选接入控制。[J六轴IMU残差](GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)首次完成且主门失败：共同prediction肩/肘均值退化3.39%/2.77%，全部seed两轴退化。[K完整状态转移](GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)已从cleanb46c6d3首次完成，所有窗口有限，但H1速度改善不足20%，H15位置未改善，开发门失败。接着保持结构检验校准数据覆盖；使用PD轨迹时披露其能力/任务采样偏置与付费数据，只学习身体响应、不学习动作或任务标签。先冻结，不新增物理，不注入未来实际状态。C5只有事件接口通过，科学适应与C6/C7未验收；旧seed保持已见。
 
 B、C、D、E均已首次执行并保存原失败：[B](GUARD_COUPLED_DEVELOPMENT_RESULTS.md)三seed106active位置停止；[C](GUARD_EXPLORATION_DEVELOPMENT_RESULTS.md)continuation4active速度停止、sparse106active位置停止；[D](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)普适预测未通过，原长轨迹H15位置改善与共同脉冲/短步负效混合，唯一读取单位首审失败及50项纯字节补充保留；E冻结控制仍未完整。它们是已完成的开发历史，不再列为待首次执行的矩阵。
 
 立即按以下顺序持续执行：
 
 1. E结果已提交推送cf71bd2。[F固定原生上下文结果](GUARD_NATIVE_CONTEXT_DIAGNOSTIC_RESULTS.md)已从clean734ab7d首次完成并推送cb2c6a9：2112完整active、288固定分组、12events、24quality，0物理/模型预测/更新；32payload原件及首核查50255/24超范围断言/纯契约补充封口。F交付211项零失败，不重跑F或E。
-2. [G单项反馈尾结果](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)已从clean91dcf6c首次完成，8完整/4速度停止，控制子假设失败；生产/来源/预算与原失败完整保存，不重跑G。[H保存诊断](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)已从clean a46633c首次完成，原selected/末窗口、输入身份和成本封口。学习组失败主要是一步乐观失配；cold2远期规划许可不解释它。[I固定上一原base残差检验](GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)已从clean1f239f3首次完成，主门失败且未采用。[J六轴IMU残差](GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)从clean9e8a212首次完成且失败，新增离线ridge2400标签/3solve/36系数，0新物理/RLS。接着K完整原生状态闭合转移；固定配方与来源先冻，新增离线拟合单列，0新物理；新预测/控制仍另需验证。
+2. [G单项反馈尾结果](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)已从clean91dcf6c首次完成，8完整/4速度停止，控制子假设失败；生产/来源/预算与原失败完整保存，不重跑G。[H保存诊断](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)已从clean a46633c首次完成，原selected/末窗口、输入身份和成本封口。学习组失败主要是一步乐观失配；cold2远期规划许可不解释它。[I固定上一原base残差检验](GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)已从clean1f239f3首次完成，主门失败且未采用。[J六轴IMU残差](GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)从clean9e8a212首次完成且失败，新增离线ridge2400标签/3solve/36系数，0新物理/RLS。[K完整状态转移](GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从cleanb46c6d3首次完成，3429记录/576组完整，开发门失败，新增离线ridge26400标签/3solve/1914系数。接着保持模型结构检验覆盖假设；固定来源/配方/门先冻，新增离线拟合单列，0新物理；新预测/控制仍另需验证。
 3. G即使控制子门通过，也不能替D旧独立预测失败或解除C4/C5依赖。依据新完整控制/预测证据，另冻结必要的新预测验收或单个有依据模型修订，再完成同权限闭环与经典基线比较；没有明确依据时继续必要诊断，不无限重试、不只增加探索、不放宽任务或停止条件。每个可验证阶段完成后继续最早未验收项。
 4. C4科学门通过后，执行C5未知动力学冻结/适应对照，再执行C6固定成熟/能力门控及C7新留出综合验收。每批检查、提交、推送后立即接着推进，不等待重复“继续”；局部门、报告或commit不结束active目标。
 
