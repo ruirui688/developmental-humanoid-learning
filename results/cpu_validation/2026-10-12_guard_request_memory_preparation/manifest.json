@@ -1,0 +1,147 @@
+{
+  "payload_count": 27,
+  "files": {
+    "checked_source/docs/GUARD_REQUEST_MEMORY_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 6203,
+      "sha256": "cbb04927f77fc43cc0539b7acc23c4a9e9366866e867d1963cd2f86cb658375a",
+      "original_path": "external/c4_p_selfcheck_01/checked_source/docs/GUARD_REQUEST_MEMORY_TRANSITION_DEVELOPMENT_PROTOCOL.md"
+    },
+    "checked_source/scripts/develop_guard_request_memory_transition.py": {
+      "bytes": 30497,
+      "sha256": "cae9a9fdd4dd2c1563f2163e40bd8edcb8906ce2743e5c90960d5fa20d50491c",
+      "original_path": "external/c4_p_selfcheck_01/checked_source/scripts/develop_guard_request_memory_transition.py"
+    },
+    "execution.json": {
+      "bytes": 993,
+      "sha256": "d2b615fba2b2693f23fd7255faf32b60b3f72c7eab8f342f9b4989022f418d87",
+      "original_path": "external/c4_p_selfcheck_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 637,
+      "sha256": "7aa1501ac89cc2e7123e7f1988715c48f96c16bea43032e78225121f551d29b9",
+      "original_path": "external/c4_p_selfcheck_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 231,
+      "sha256": "69c66ba19a4890ad698de942f1f0702e71b2f9de798f668a45cafa3baf507e26",
+      "original_path": "external/c4_p_selfcheck_01/raw/metrics.json"
+    },
+    "raw/nonfinite_failure_fixture/failure.json": {
+      "bytes": 245,
+      "sha256": "f317b2951b910b8a0a002037602f72b0b182f6eebffd8f73a9ecb84ed29a560d",
+      "original_path": "external/c4_p_selfcheck_01/raw/nonfinite_failure_fixture/failure.json"
+    },
+    "raw/nonfinite_failure_fixture/manifest.json": {
+      "bytes": 758,
+      "sha256": "c867dc7430b087dba97d2cd636167751a145f2cac2a777abdf81623686310882",
+      "original_path": "external/c4_p_selfcheck_01/raw/nonfinite_failure_fixture/manifest.json"
+    },
+    "raw/nonfinite_failure_fixture/metrics.json": {
+      "bytes": 25,
+      "sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+      "original_path": "external/c4_p_selfcheck_01/raw/nonfinite_failure_fixture/metrics.json"
+    },
+    "raw/nonfinite_failure_fixture/parameters.json": {
+      "bytes": 314,
+      "sha256": "a550afe6f6fec2e17d3da994c397104e86ec955afedda0bed2a3221ebec0eb9a",
+      "original_path": "external/c4_p_selfcheck_01/raw/nonfinite_failure_fixture/parameters.json"
+    },
+    "raw/nonfinite_failure_fixture/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_p_selfcheck_01/raw/nonfinite_failure_fixture/predictions.jsonl"
+    },
+    "raw/nonfinite_failure_fixture/run.json": {
+      "bytes": 245,
+      "sha256": "f317b2951b910b8a0a002037602f72b0b182f6eebffd8f73a9ecb84ed29a560d",
+      "original_path": "external/c4_p_selfcheck_01/raw/nonfinite_failure_fixture/run.json"
+    },
+    "raw/parameters.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "original_path": "external/c4_p_selfcheck_01/raw/parameters.json"
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_p_selfcheck_01/raw/predictions.jsonl"
+    },
+    "raw/run.json": {
+      "bytes": 7935,
+      "sha256": "7172653843444b57c98b81b5761e8ab28c65b9e8cb4204d439de72952a286c22",
+      "original_path": "external/c4_p_selfcheck_01/raw/run.json"
+    },
+    "raw/solve_failure_fixture/failure.json": {
+      "bytes": 759,
+      "sha256": "7de245c42bf271a6c29a4f1af70d8715c9efc8a84ebe2c0749066de0c7ac4581",
+      "original_path": "external/c4_p_selfcheck_01/raw/solve_failure_fixture/failure.json"
+    },
+    "raw/solve_failure_fixture/manifest.json": {
+      "bytes": 761,
+      "sha256": "0fdc1923e8e34c43453b5c960c57539419ef5fbba6c96207e03f033bc59e71ab",
+      "original_path": "external/c4_p_selfcheck_01/raw/solve_failure_fixture/manifest.json"
+    },
+    "raw/solve_failure_fixture/metrics.json": {
+      "bytes": 25,
+      "sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+      "original_path": "external/c4_p_selfcheck_01/raw/solve_failure_fixture/metrics.json"
+    },
+    "raw/solve_failure_fixture/parameters.json": {
+      "bytes": 377717,
+      "sha256": "3092ec5c2cd5ae46b4257bd2da03bd718495559578d05ed754938fafc2dfb35b",
+      "original_path": "external/c4_p_selfcheck_01/raw/solve_failure_fixture/parameters.json"
+    },
+    "raw/solve_failure_fixture/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_p_selfcheck_01/raw/solve_failure_fixture/predictions.jsonl"
+    },
+    "raw/solve_failure_fixture/run.json": {
+      "bytes": 759,
+      "sha256": "7de245c42bf271a6c29a4f1af70d8715c9efc8a84ebe2c0749066de0c7ac4581",
+      "original_path": "external/c4_p_selfcheck_01/raw/solve_failure_fixture/run.json"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_p_selfcheck_01/stderr"
+    },
+    "stdout": {
+      "bytes": 2180,
+      "sha256": "c6015cf63ff61aef5791ab4a9e7de456a8277d5e3dd065c61ae06cdd6e80b8c9",
+      "original_path": "external/c4_p_selfcheck_01/stdout"
+    },
+    "execution/run_p_request_memory_once.py": {
+      "bytes": 2357,
+      "sha256": "c9cea2c9cc0c19362fe096083eaee348152a3d35ad60fe7257403efdffef9eb7",
+      "original_path": "external/run_p_request_memory_once.py"
+    },
+    "execution/archive_p_request_memory_once.py": {
+      "bytes": 2267,
+      "sha256": "2a4814ad4cf1991698dc0a1e4dd9c2411fa137c9018838469edb62c3f70a4a43",
+      "original_path": "external/archive_p_request_memory_once.py"
+    },
+    "preparation/c4_p_preparation_reads.json": {
+      "bytes": 6736,
+      "sha256": "25c2ad6063342be287dab8c6edbe546ecd78f394eda20e8328343cd676a240d4",
+      "original_path": "external/c4_p_preparation_reads.json"
+    },
+    "preparation/c4_p_implementation_review.md": {
+      "bytes": 5130,
+      "sha256": "654a4fe794cb0a1af41e0d498929f8f9220ccf0951e3ce685961526348006a26",
+      "original_path": "external/c4_p_implementation_review.md"
+    },
+    "preparation/c4_after_o_direction.md": {
+      "bytes": 6527,
+      "sha256": "815334edb7ad9d193510701f10555b8798e21a61cbff08bab81c4700da670609",
+      "original_path": "external/c4_after_o_direction.md"
+    }
+  },
+  "file_reads": 54,
+  "read_bytes": 906608,
+  "copy_failures": [],
+  "wall_seconds": 0.2141185998916626,
+  "cpu_seconds": 0.03125,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

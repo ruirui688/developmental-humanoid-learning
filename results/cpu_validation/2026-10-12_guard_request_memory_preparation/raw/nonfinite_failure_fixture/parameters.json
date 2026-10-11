@@ -1,0 +1,20 @@
+[
+  {
+    "predictor": "P22",
+    "fit": {
+      "invalid_numeric_sample": [
+        [
+          {
+            "nonfinite_float": "NaN"
+          },
+          {
+            "nonfinite_float": "+Infinity"
+          },
+          {
+            "nonfinite_float": "-Infinity"
+          }
+        ]
+      ]
+    }
+  }
+]

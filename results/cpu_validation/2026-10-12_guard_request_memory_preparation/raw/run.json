@@ -1,0 +1,212 @@
+{
+  "status": "self_check_passed",
+  "self_check": true,
+  "source": {
+    "commit": null,
+    "files": {
+      "scripts/develop_guard_request_memory_transition.py": {
+        "bytes": 30497,
+        "sha256": "cae9a9fdd4dd2c1563f2163e40bd8edcb8906ce2743e5c90960d5fa20d50491c"
+      },
+      "docs/GUARD_REQUEST_MEMORY_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 6203,
+        "sha256": "cbb04927f77fc43cc0539b7acc23c4a9e9366866e867d1963cd2f86cb658375a"
+      },
+      "scripts/develop_guard_scaled_native_transition.py": {
+        "bytes": 27537,
+        "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+      },
+      "docs/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 4870,
+        "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+      },
+      "scripts/develop_guard_native_transition.py": {
+        "bytes": 36390,
+        "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+      },
+      "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 8134,
+        "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      },
+      "src/developmental_physics/guard_lag_pair_model.py": {
+        "bytes": 11351,
+        "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+      },
+      "src/developmental_physics/guard_pair_model.py": {
+        "bytes": 6860,
+        "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+      },
+      "src/developmental_physics/local_pair_model.py": {
+        "bytes": 25148,
+        "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+      },
+      "src/developmental_physics/local_model.py": {
+        "bytes": 16564,
+        "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+      }
+    },
+    "clean_committed_bytes_verified": false
+  },
+  "inputs": {},
+  "inputs_without_returned_read_record": {
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/metadata.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/diagnostics.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/run.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/parameters.json": "unknown_before_read_return"
+  },
+  "original_source_commits": {
+    "C": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+    "D": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "K": "b46c6d37fddc8e6534384168fb76663bc2c5236c"
+  },
+  "requested_source_commit": null,
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "original_C_dependencies": "unknown_before_C_metadata_return",
+  "source_active_counts": {},
+  "baseline_restorations": {
+    "K22": [],
+    "D11": []
+  },
+  "K22_fingerprints_before": {},
+  "K22_fingerprints_after": "unknown_before_return",
+  "D11_fingerprints_before": {},
+  "D11_fingerprints_after": "unknown_before_return",
+  "self_check_cases": [
+    {
+      "case": "feature31_and_legal_history_advance",
+      "status": "passed"
+    },
+    {
+      "case": "missing_history_rejected",
+      "status": "passed"
+    },
+    {
+      "case": "zero_memory_columns_analytic_equivalence",
+      "status": "passed"
+    },
+    {
+      "case": "solve_failure_paid_partial_saved",
+      "status": "passed",
+      "paid_cost": {
+        "fit_attempts": 1,
+        "fit_gram_matrix_attempts": 1,
+        "fit_logical_multiply_requests": 657200,
+        "fit_logical_add_requests": 655557,
+        "fit_gram_matrix_returns": 1,
+        "fit_cross_matrix_attempts": 1,
+        "fit_scalar_labels_requested": 8800,
+        "fit_cross_matrix_returns": 1,
+        "fit_scalar_labels_returned": 8800,
+        "ridge_identity_matrix_entry_additions_requested": 961,
+        "ridge_identity_matrix_entry_additions_returned": 961,
+        "fit_shared_31x31_22rhs_solve_attempts": 1,
+        "fit_shared_31x31_22rhs_solve_failures": 1,
+        "fit_failures": 1
+      },
+      "saved_fixture_files": [
+        "parameters.json",
+        "metrics.json",
+        "run.json",
+        "predictions.jsonl",
+        "failure.json",
+        "manifest.json"
+      ]
+    },
+    {
+      "case": "failed_nonfinite_payload_serialization_saved",
+      "status": "passed",
+      "saved_fixture_files": [
+        "parameters.json",
+        "metrics.json",
+        "run.json",
+        "predictions.jsonl",
+        "failure.json",
+        "manifest.json"
+      ]
+    }
+  ],
+  "internal_pure_metric_aliases": {
+    "P22": "learned22",
+    "K22": "cold22",
+    "D11": "D11"
+  },
+  "cost": {
+    "fit_attempts": 2,
+    "fit_returns": 1,
+    "fit_failures": 1,
+    "fit_shared_31x31_22rhs_solve_attempts": 2,
+    "fit_shared_31x31_22rhs_solve_returns": 1,
+    "fit_shared_31x31_22rhs_solve_failures": 1,
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "K22_refits": 0,
+    "D11_updates": 0,
+    "source_file_read_attempts": 11,
+    "source_file_read_returns": 11,
+    "source_raw_bytes": 173716,
+    "helper_module_load_attempts": 2,
+    "helper_module_load_returns": 2,
+    "P22_memory_feature_attempts": 4,
+    "P22_feature_prior_attempts": 3,
+    "P22_start_guard_attempts": 3,
+    "P22_start_guard_returns": 3,
+    "P22_feature_prior_returns": 3,
+    "P22_prior_scalar_outputs": 66,
+    "P22_memory_feature_returns": 3,
+    "P22_memory_feature_scalar_uses": 6,
+    "P22_transition_attempts": 2,
+    "P22_residual_vector_attempts": 2,
+    "P22_residual_scalar_head_attempts": 44,
+    "P22_residual_vector_returns": 2,
+    "P22_residual_scalar_head_returns": 44,
+    "P22_history_advance_scalar_copies": 8,
+    "P22_transition_returns": 2,
+    "past_request_history_attempts": 1,
+    "past_request_history_failures": 1,
+    "synthetic_design_scalars_generated": 12400,
+    "synthetic_label_scalars_generated": 8800,
+    "fit_gram_matrix_attempts": 2,
+    "fit_logical_multiply_requests": 1314400,
+    "fit_logical_add_requests": 1311114,
+    "fit_gram_matrix_returns": 2,
+    "fit_cross_matrix_attempts": 2,
+    "fit_scalar_labels_requested": 17600,
+    "fit_cross_matrix_returns": 2,
+    "fit_scalar_labels_returned": 17600,
+    "ridge_identity_matrix_entry_additions_requested": 1922,
+    "ridge_identity_matrix_entry_additions_returned": 1922,
+    "transition_scalar_coefficients_fitted": 682,
+    "transition_heads_published": 22,
+    "synthetic_reference_scalar_divisions": 638,
+    "synthetic_nonfinite_payload_serialization_attempts": 1,
+    "synthetic_nonfinite_payload_serialization_returns": 1,
+    "synthetic_fixture_read_attempts": 2,
+    "synthetic_fixture_read_returns": 2,
+    "synthetic_fixture_raw_bytes": 559,
+    "synthetic_fixture_json_parse_attempts": 2,
+    "synthetic_fixture_json_parse_returns": 2,
+    "wall_seconds": 0.12974229990504682,
+    "cpu_seconds": 0.125
+  },
+  "failure": null,
+  "development_gate_passed": false,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "timing_excludes": "final output serialization and write"
+}

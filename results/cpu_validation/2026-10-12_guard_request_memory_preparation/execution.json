@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "scripts/develop_guard_request_memory_transition.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_p_selfcheck_01\\raw",
+    "--self-check"
+  ],
+  "source_commit": null,
+  "returncode": 0,
+  "started_unix": 1791734859.4857676,
+  "ended_unix": 1791734859.9591982,
+  "wall_seconds": 0.472523600095883,
+  "checked_sources": {
+    "scripts/develop_guard_request_memory_transition.py": {
+      "bytes": 30497,
+      "sha256": "cae9a9fdd4dd2c1563f2163e40bd8edcb8906ce2743e5c90960d5fa20d50491c"
+    },
+    "docs/GUARD_REQUEST_MEMORY_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 6203,
+      "sha256": "cbb04927f77fc43cc0539b7acc23c4a9e9366866e867d1963cd2f86cb658375a"
+    }
+  },
+  "source_snapshot_reads": 2,
+  "source_snapshot_read_bytes": 36700,
+  "stdout_bytes": 2180,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

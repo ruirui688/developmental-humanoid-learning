@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "scope": "P preparation source/schema reading and nonexecuting static parse/hash only",
+  "historical_schema_reads": {
+    "sources": {
+      "scripts/develop_guard_scaled_native_transition.py": {
+        "bytes": 27537,
+        "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+      },
+      "scripts/develop_guard_native_transition.py": {
+        "bytes": 36390,
+        "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+      }
+    },
+    "batches": [
+      {
+        "chunk_id": "643329",
+        "reported_outer_exec_wall_seconds": 0.428805,
+        "binary_read_attempts": 2,
+        "binary_read_returns": 2,
+        "raw_bytes": 63927,
+        "decode_attempts": 2,
+        "decode_returns": 2,
+        "ast_parse_attempts": 2,
+        "ast_parse_returns": 2
+      },
+      {
+        "chunk_id": "8ac3c1",
+        "reported_outer_exec_wall_seconds": 0.4429418,
+        "binary_read_attempts": 2,
+        "binary_read_returns": 2,
+        "raw_bytes": 63927,
+        "decode_attempts": 2,
+        "decode_returns": 2,
+        "ast_parse_attempts": 1,
+        "ast_parse_returns": 1
+      },
+      {
+        "chunk_id": "a1c0d1",
+        "reported_outer_exec_wall_seconds": 0.749253,
+        "binary_read_attempts": 2,
+        "binary_read_returns": 2,
+        "raw_bytes": 63927,
+        "decode_attempts": 2,
+        "decode_returns": 2,
+        "ast_parse_attempts": 2,
+        "ast_parse_returns": 2
+      }
+    ],
+    "totals": {
+      "binary_read_attempts": 6,
+      "binary_read_returns": 6,
+      "raw_bytes": 191781,
+      "decode_attempts": 6,
+      "decode_returns": 6,
+      "ast_parse_attempts": 5,
+      "ast_parse_returns": 5,
+      "json_parse_attempts": 0,
+      "json_parse_returns": 0
+    },
+    "cpu_seconds": null,
+    "timing_note": "Historical outer duration includes shell/interpreter/output; CPU was not measured and duration is not a science benchmark."
+  },
+  "handoff_text_reads": [
+    {
+      "chunk_id": "c3e4d8",
+      "path": "scripts/develop_guard_request_memory_transition.py",
+      "operation": "PowerShell Get-Content -Raw before revisions",
+      "read_returns": 1,
+      "reported_shell_wall_seconds": 0.3657203,
+      "exact_raw_bytes_instrumented": false
+    },
+    {
+      "chunk_id": "6113a9",
+      "path": "docs/GUARD_REQUEST_MEMORY_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+      "operation": "PowerShell Get-Content -Raw before revisions",
+      "read_returns": 1,
+      "reported_shell_wall_seconds": 0.3583247,
+      "exact_raw_bytes_instrumented": false
+    }
+  ],
+  "failed_preparation_static_attempt": {
+    "chunk_id": "55205e",
+    "status": "failed",
+    "reported_shell_wall_seconds": 0.4375443,
+    "files": {
+      "scripts/develop_guard_request_memory_transition.py": {
+        "bytes": 30497,
+        "sha256": "cae9a9fdd4dd2c1563f2163e40bd8edcb8906ce2743e5c90960d5fa20d50491c"
+      }
+    },
+    "cost": {
+      "source_binary_read_attempts": 1,
+      "source_binary_read_returns": 1,
+      "source_raw_bytes": 30497,
+      "source_decode_attempts": 1,
+      "source_decode_returns": 1,
+      "source_ast_parse_attempts": 1,
+      "source_ast_parse_returns": 1,
+      "pin_literal_eval_attempts": 1,
+      "pin_literal_eval_failures": 1
+    },
+    "failure": {
+      "type": "ValueError",
+      "message": "malformed node or string on line 22: ast.Name in HELPER_PINS key",
+      "location": "<stdin>:24 -> D:/Python3.10/lib/ast.py:110/99/109/83/74/71"
+    },
+    "note": "Nonexecuting preparation checker did not resolve SUPPORT_PATH key before literal_eval; no production/helper module imported. Corrected once by resolving only static Constant name assignment. P source/protocol unchanged by this checker repair."
+  },
+  "final_static_check": {
+    "status": "passed",
+    "cost": {
+      "source_decode_attempts": 2,
+      "source_binary_read_attempts": 11,
+      "source_binary_read_returns": 11,
+      "source_raw_bytes": 173716,
+      "source_decode_returns": 2,
+      "source_ast_parse_attempts": 1,
+      "source_ast_parse_returns": 1,
+      "source_static_compile_attempts": 1,
+      "source_static_compile_returns": 1,
+      "source_helper_hash_comparisons": 9,
+      "wall_seconds": 0.013089400017634034,
+      "cpu_seconds": 0.015625
+    },
+    "files": {
+      "scripts/develop_guard_request_memory_transition.py": {
+        "bytes": 30497,
+        "sha256": "cae9a9fdd4dd2c1563f2163e40bd8edcb8906ce2743e5c90960d5fa20d50491c"
+      },
+      "docs/GUARD_REQUEST_MEMORY_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 6203,
+        "sha256": "cbb04927f77fc43cc0539b7acc23c4a9e9366866e867d1963cd2f86cb658375a"
+      },
+      "scripts/develop_guard_scaled_native_transition.py": {
+        "bytes": 27537,
+        "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+      },
+      "docs/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 4870,
+        "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+      },
+      "scripts/develop_guard_native_transition.py": {
+        "bytes": 36390,
+        "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+      },
+      "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 8134,
+        "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      },
+      "src/developmental_physics/guard_lag_pair_model.py": {
+        "bytes": 11351,
+        "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+      },
+      "src/developmental_physics/guard_pair_model.py": {
+        "bytes": 6860,
+        "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+      },
+      "src/developmental_physics/local_pair_model.py": {
+        "bytes": 25148,
+        "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+      },
+      "src/developmental_physics/local_model.py": {
+        "bytes": 16564,
+        "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+      }
+    },
+    "note": "AST parse and compile only: no exec/import of P or helper modules; helpers only binary-hashed. Timing excludes log serialization/write and shell startup/output."
+  },
+  "actual_parameter_reads": 0,
+  "actual_trace_reads": 0,
+  "actual_scientific_payload_reads": 0,
+  "json_parse_attempts": 0,
+  "json_parse_returns": 0,
+  "self_check_executions": 0,
+  "formal_executions": 0,
+  "fits": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "MPC_calls": 0
+}
