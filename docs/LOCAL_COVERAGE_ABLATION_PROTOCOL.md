@@ -48,7 +48,7 @@ short_mpc、reordered_mpc、nominal_mpc各100前缀+200active，H15/9候选/原�
 
 源码commit/clean/原字节ZIP、依赖、全部计划/结果/更新/原生trace与SHA清单完整。独立标准库重算RLS、冻结参数、MPC、1/5/15/50自由递推、跟踪/努力/风险、所有phase/trial/batch上限、异常和StudyAbort。short校准、low预测、short/nominal控制应与B对应原生轨迹精确复现，额外StudyAbort若改变合法轨迹则明确记录；不得把复现算新独立seed。
 
-**覆盖门**：校准样本为完整active转移的输入q/v，控制也取完整active输入；分别严格小于min或大于max为域外，等值域内。在每seed的short_mpc和reordered_mpc两条共同参考控制轨迹上，reordered校准的q域外比例都须≤10%且≤short校准；v域外比例都须≤short。两条校准×三条控制（含nominal）的q/v各自和并集比例、最近q距离`min_i abs(q−q_i)`的均值/最大均报告。共同轨迹支持比较不同校准暴露；包络不是安全集或准确性保证。
+**覆盖门**：三seed两条校准及short_mpc/reordered_mpc两条参考控制均须完整且无study/env stop、异常、非法请求或非有限状态；部分轨迹不能单独获得coverage_pass。校准样本为完整active转移的输入q/v，控制也取完整active输入；分别严格小于min或大于max为域外，等值域内。在每seed的short_mpc和reordered_mpc两条共同参考控制轨迹上，reordered校准的q域外比例都须≤10%且≤short校准；v域外比例都须≤short。两条校准×三条控制（含nominal）的q/v各自和并集比例、最近q距离`min_i abs(q−q_i)`的均值/最大均报告。共同轨迹支持比较不同校准暴露；包络不是安全集或准确性保证。
 
 **性能门**：三seed全部7trial完整且无任何study/env stop、异常、非法请求或非有限状态；两共同预测的reordered速度RMSE逐seed≤short；200步tracking逐seed≤short，原始RMSE均值相对short至少降低5%；控制实际绝对/平方努力均值各≤1.05×short。零分母比例保持未定义；努力short=0只允许candidate=0。覆盖与性能门分别输出，只有两者及独立一致性都通过才采用reordered；否则保留short/old_hinge5，不改门、不追加动作或挑seed。
 
