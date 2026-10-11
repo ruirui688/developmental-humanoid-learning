@@ -1,0 +1,69 @@
+{
+  "original_inputs": {
+    "metadata.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first\\metadata.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 16903,
+      "sha256": "2c0be03255858d7511d1e238b5eb491a6618f197f12810ea9e0b00a64d279b57",
+      "wall_seconds": 0.0001742001622915268
+    },
+    "episodes.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first\\episodes.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 42361,
+      "sha256": "5a471ec2fecec4c22e6f5954b17bc4b8de23b60b3bce753a9bc7e6b6bc96cd0a",
+      "wall_seconds": 0.00016730022616684437
+    },
+    "seed_results.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first\\seed_results.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 744398,
+      "sha256": "4ba5f5182e062408f023d6e0084864ea16a5f13fb82b71818a4060360a4c28e3",
+      "wall_seconds": 0.0009343000128865242
+    },
+    "trace.jsonl.gz": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first\\trace.jsonl.gz",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 9284309,
+      "sha256": "1b299c9bc7a91f8ff9dfef3f77ac1b6fea923dea6057327bb3f9aa1ce6f56ad0",
+      "wall_seconds": 0.010213999776169658
+    },
+    "source_snapshot.zip": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first\\source_snapshot.zip",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 481341,
+      "sha256": "89908bdb3bef72e18d3436305cff031d79981f29337e4b24928c357979516484",
+      "wall_seconds": 0.0005904999561607838
+    },
+    "manifest.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first\\manifest.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 456,
+      "sha256": "fa7fb57c5b996ae77862c1e7d59d22af72376947af38409601444f25139f042e",
+      "wall_seconds": 8.340016938745975e-05
+    },
+    "first_audit": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first_audit.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 398738,
+      "sha256": "985137b28d9ee6eb19c98c80e807c815d0d79273a46c938b5f1e4c59be3f33ac",
+      "wall_seconds": 0.011651100125163794
+    }
+  },
+  "total_original_read_attempts": 7,
+  "physical_calls": 0,
+  "model_updates": 0,
+  "body_predictions": 0,
+  "audit_executions": 0,
+  "git_queries": 0,
+  "A_B_PD_original_filesystem_reads": 0,
+  "tests_included": false,
+  "cache_semantics": "Six C raw files and first audit each read once; embedded PD only from cached C ZIP"
+}

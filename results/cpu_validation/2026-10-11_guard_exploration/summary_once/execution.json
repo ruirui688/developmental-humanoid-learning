@@ -1,0 +1,27 @@
+{
+  "started_at_utc": "2026-10-11T09:45:06.940288+00:00",
+  "tool_sha256": "440645b9433cb1b20b7b54fa5a00934395e0aeb7256607621b2203c21cb1705e",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "expected_auditor_sha256": "962a928b5d643ed2a3d4da20da2940a9a4e17932818c859beb204f11bf59ffa3",
+  "physical_calls": 0,
+  "model_updates": 0,
+  "body_predictions": 0,
+  "audit_executions": 0,
+  "git_queries": 0,
+  "tool_source_unchanged": true,
+  "exit_code": 0,
+  "wall_seconds": 1.4276644000783563,
+  "cpu_seconds": 1.4375,
+  "binding_checks": {
+    "checks": 7942,
+    "failed": 0,
+    "violations": [],
+    "scope": "Byte/source/schema bindings and saved-counter sums only; no numerical replay"
+  },
+  "output_sha256": {
+    "attempt.json": "7fbe2102c18739470111d029865424f76afb3eb8adf9408dbf7cd3908b6577e0",
+    "read_cost.json": "d9af7732f254cc0ee0becc915523ec8e66a7067698a930438f57acf3ce7326e0",
+    "summary.json": "dbc368dc628cb5785415c8b27416215e628a892cf550284a681447f9867aa4af",
+    "tool_source.py": "440645b9433cb1b20b7b54fa5a00934395e0aeb7256607621b2203c21cb1705e"
+  }
+}

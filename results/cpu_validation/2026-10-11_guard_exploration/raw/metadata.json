@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "suite": "guard_exploration_development",
+  "synthetic": false,
+  "created_at_utc": "2026-10-11T09:42:58.601622+00:00",
+  "purpose": "Frozen C4 C: independent same-model calibrations with two fixed exploration rules.\n\nFormal execution requires clean tracked source/protocol/auditor at HEAD.\nArtificial fixtures replace the environment explicitly; no A/B replay or raw reads.\nScientific gates belong to the separate independent auditor, never this runner.\n",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "reset_seeds": {
+    "0": 3757552657,
+    "1": 1641411168,
+    "2": 2001025171
+  },
+  "split": "development",
+  "pose": "supine",
+  "joint_indices": [
+    0,
+    1
+  ],
+  "native_joint_count": 8,
+  "source_commit": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+  "source_status": "",
+  "source_dirty": false,
+  "source_sha256": {
+    "results/cpu_validation/2026-10-11_pair_pd/selection.json": "71117cc7cc9cefebd49a4ce02d567a7a32d35f04f8e58a39461658078b784514",
+    "results/cpu_validation/2026-10-11_pair_pd/manifest.json": "a2e33d70f0bf66761ea1800888b7ed35e98d4ba1d1a74b83295515494ca68a53",
+    "results/cpu_validation/2026-10-11_pair_pd/first_audit.json": "811c8f608b8b8ecb31c77c1a76fc53f2deb68fce0462200d704cd2b88e6c04f0",
+    "results/cpu_validation/2026-10-11_pair_pd/raw/metadata.json": "9d91767cbd7e0ea6da38329e474353c4a94097d4dce9c97dcb0dc9e896929c59",
+    "results/cpu_validation/2026-10-11_pair_pd/raw/source_snapshot.zip": "8cf10599237125934e574bb8327b3af61ca967ae3927e924dd74896e40e4ed46",
+    "docs/PAIR_PD_DEVELOPMENT_PROTOCOL.md": "b04e0db577374e91e7f0036312d1dd0e0669e669aa280df20bcc1c262bea9427",
+    "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+    "src/developmental_physics/c5_engineering.py": "acbf403a99efe5ec5842404de462c2d6db5a28a0e21e0c7568a936eba8aaff9d",
+    "src/developmental_physics/collect.py": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+    "src/developmental_physics/elbow_feedback_validate.py": "580efad122c461e2f322053d3c2d499ccb9944a13f78345177d256843689fe73",
+    "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+    "src/developmental_physics/exploration.py": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+    "src/developmental_physics/feedback_validate.py": "0523cb015da4c214be413feb689be9d1e0ed2728c5c411ea64d6ef13d5201e85",
+    "src/developmental_physics/guard_coupled_development.py": "1af6e8bda93148e2e46d34da1c21ed56c4b4a378066fd138ff7679f904ded47d",
+    "src/developmental_physics/guard_coupled_pair_model.py": "7f234760e8f3d5b9cc799c871e84e7adfebecdf92e11f315735fad8b38ad78ed",
+    "src/developmental_physics/guard_exploration_development.py": "9ad08faaa663f3d86d7d0a0947b0b24c16ebabe07dd98402a3c213e7314f64af",
+    "src/developmental_physics/guard_pair_development.py": "0ff33faa8b6822df0be36ca622f23fbf6ad7b65a4727e556a4333f1a38a77d0d",
+    "src/developmental_physics/guard_pair_model.py": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3",
+    "src/developmental_physics/guard_pair_source_binding.py": "798afa909c10a25be811f5f2a5cf3072cd3706c3b7c42a801ebff91f1766b5cc",
+    "src/developmental_physics/local_ablation.py": "27da381b0c987dbe41bc8e527e96f6c1d7bbb15837d914cd53e106989b91e29b",
+    "src/developmental_physics/local_coverage_ablation.py": "21e2b43242cb2248af340515066243cffc16739c837e9310d3c78f400152fdc3",
+    "src/developmental_physics/local_dose_ablation.py": "a5774f4fc525d5ed6ad3b0e375bd34c5f5bda49e409db8bb2b740261077533d8",
+    "src/developmental_physics/local_frozen_validation.py": "369e44371dd7b4e5a91010fd2f8dae515cf390fd2fbe171257414a5c94aabf1a",
+    "src/developmental_physics/local_integration.py": "3dad9e02f16e3813b82150f868d77a6b948b6200a827f2f08f4ea386585da49c",
+    "src/developmental_physics/local_learning.py": "037b56393d0c0f1e20118bbd313e05668964110081ecab4b115abc4b15bb55ca",
+    "src/developmental_physics/local_model.py": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1",
+    "src/developmental_physics/local_pair_model.py": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+    "src/developmental_physics/pair_calibration_development.py": "a33ead6f407f685662f3afd2401eeaa33c66d89701f658307c6b3c61c67883f7",
+    "src/developmental_physics/pair_frozen_validation.py": "e1fbde1fb68bfa44341fa33605972518359e7d1162c1ecc5837c26ed34f1fbea",
+    "src/developmental_physics/pair_pd_development.py": "1a644a5ad5ebb7aa211cfe0ff132cb76a6cc2ef52b69d6ca7a2d13f8bcfa4459",
+    "src/developmental_physics/pd_selection_binding.py": "956c85a08f3c6a6142acb659c0c9f8f49124983ff592b5f8ab9094ee68058b5c",
+    "src/developmental_physics/perturbed_environment.py": "c3e988d4998dbf0276471ba7bb409bccd76a1108dd9c63c4e154888b223d67a5",
+    "src/developmental_physics/probe_collect.py": "b68643037b64b764de5f6513bcd697e2e62465345671bc1aaa272435fe4e0ea3",
+    "src/developmental_physics/probes.py": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+    "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+    "docs/GUARD_EXPLORATION_DEVELOPMENT_PROTOCOL.md": "b3632387938dbb2ec018599e4168815119836f17843be6c8d6038067da573038",
+    "scripts/audit_guard_exploration_development.py": "962a928b5d643ed2a3d4da20da2940a9a4e17932818c859beb204f11bf59ffa3",
+    "scripts/audit_guard_coupled_development.py": "c77a1c2a5cfeed08774dab20a6ef5d4e4833264621e37832b3888001182cc10a",
+    "scripts/audit_guard_pair_development.py": "393a2f3673bab952c34ea09a4d79d7d88e78c448e141a4ab83d865ab164dda93",
+    "scripts/audit_pair_frozen.py": "07c1b990238d41bb75d34c44061b9a59f8f5aa2c9a4e2863a3c75578b28a9821",
+    "scripts/audit_local_frozen.py": "b5fea70d3733a1bab77e49bf559432475899436693cf6c1b0b4767369c913461"
+  },
+  "protocol": {
+    "path": "docs/GUARD_EXPLORATION_DEVELOPMENT_PROTOCOL.md",
+    "sha256": "b3632387938dbb2ec018599e4168815119836f17843be6c8d6038067da573038"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python_executable": "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+  "python_version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "environment_config": {
+    "physics_dt": 0.002,
+    "control_substeps": 10,
+    "torque_limit": 0.5,
+    "joint_speed_limit": 20.0,
+    "joint_limit_margin": 0.08,
+    "kinetic_energy_limit": 50.0,
+    "reset_clearance": 0.005,
+    "ground_contact_profile": "baseline"
+  },
+  "dependencies": {
+    "PyOpenGL": "3.1.10",
+    "Pygments": "2.21.0",
+    "absl-py": "2.5.1",
+    "colorama": "0.4.6",
+    "developmental-humanoid-learning": "0.1.0",
+    "etils": "1.13.0",
+    "exceptiongroup": "1.3.1",
+    "fsspec": "2026.9.0",
+    "glfw": "2.10.2",
+    "importlib_resources": "7.1.0",
+    "iniconfig": "2.3.1",
+    "mujoco": "3.15.0",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pip": "23.0.1",
+    "pluggy": "1.6.0",
+    "pytest": "8.4.2",
+    "setuptools": "65.5.0",
+    "tomli": "2.5.0",
+    "typing_extensions": "4.16.0",
+    "websockets": "16.1.1",
+    "zipp": "4.1.1"
+  },
+  "mujoco_version": "3.15.0",
+  "gpu": null,
+  "backend": "MuJoCo CPU",
+  "structures": [
+    "coupled_hinge9"
+  ],
+  "model_input_basis": "known_angle_guard",
+  "parameter_count_per_output": 9,
+  "integration": "endpoint_euler",
+  "model_input": "current original q/v, final known request and public ranges only; own-start G recomputed",
+  "model_label": "next original encoder velocity on complete own calibration intervals only",
+  "calibration_data_shared": false,
+  "prior_a_b_raw_replayed": false,
+  "guard_interval_boundary": "start G is not future actual torque or interval guard average",
+  "target_information": "current qref+s*.04 then qref+s*.08 only; no preview/clipping",
+  "study_abort_spec": {
+    "active_only": true,
+    "absolute_q_minus_qref_rad": 0.12,
+    "absolute_velocity_rad_s": 1.0,
+    "comparison": ">=",
+    "any_axis": true,
+    "feedback_action": null,
+    "complete_terminal_scored_not_complete": true
+  },
+  "exploration_rules": {
+    "sparse": "1+/9zero/1-/9zero",
+    "continuation": "2+/8zero/2-/8zero + native q/v veto"
+  },
+  "exploration_veto_spec": {
+    "velocity_rad_s": 0.5,
+    "q_minus_qref_rad": 0.06,
+    "comparison": ">=",
+    "per_axis": true,
+    "applied_kinds": [
+      "calibration_continuation",
+      "prediction"
+    ],
+    "control_applied": false
+  },
+  "minimum_excitation_qualification": {
+    "calibration_each_axis_nonzero_start_G_count_min": 1,
+    "calibration_each_axis_actual_absolute_effort_strictly_positive": true,
+    "prediction_each_axis_nonzero_start_G_count_min": 1,
+    "rank_threshold": null
+  },
+  "prefix_steps": 100,
+  "calibration_steps": 400,
+  "prediction_steps": 100,
+  "control_steps_per_trial": 200,
+  "planned_episodes": [
+    {
+      "trial_id": "seed0_calibration_sparse",
+      "seed": 0,
+      "kind": "calibration_sparse",
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "seed0_calibration_continuation",
+      "seed": 0,
+      "kind": "calibration_continuation",
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "seed0_prediction",
+      "seed": 0,
+      "kind": "prediction",
+      "maximum_control_steps": 200
+    },
+    {
+      "trial_id": "seed0_nominal_guard",
+      "seed": 0,
+      "kind": "nominal_guard",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_learned_sparse",
+      "seed": 0,
+      "kind": "learned_sparse",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_learned_continuation",
+      "seed": 0,
+      "kind": "learned_continuation",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_PDselected",
+      "seed": 0,
+      "kind": "PDselected",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_zero",
+      "seed": 0,
+      "kind": "zero",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_calibration_sparse",
+      "seed": 1,
+      "kind": "calibration_sparse",
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "seed1_calibration_continuation",
+      "seed": 1,
+      "kind": "calibration_continuation",
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "seed1_prediction",
+      "seed": 1,
+      "kind": "prediction",
+      "maximum_control_steps": 200
+    },
+    {
+      "trial_id": "seed1_nominal_guard",
+      "seed": 1,
+      "kind": "nominal_guard",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_learned_sparse",
+      "seed": 1,
+      "kind": "learned_sparse",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_learned_continuation",
+      "seed": 1,
+      "kind": "learned_continuation",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_PDselected",
+      "seed": 1,
+      "kind": "PDselected",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_zero",
+      "seed": 1,
+      "kind": "zero",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_calibration_sparse",
+      "seed": 2,
+      "kind": "calibration_sparse",
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "seed2_calibration_continuation",
+      "seed": 2,
+      "kind": "calibration_continuation",
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "seed2_prediction",
+      "seed": 2,
+      "kind": "prediction",
+      "maximum_control_steps": 200
+    },
+    {
+      "trial_id": "seed2_nominal_guard",
+      "seed": 2,
+      "kind": "nominal_guard",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_learned_sparse",
+      "seed": 2,
+      "kind": "learned_sparse",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_learned_continuation",
+      "seed": 2,
+      "kind": "learned_continuation",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_PDselected",
+      "seed": 2,
+      "kind": "PDselected",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_zero",
+      "seed": 2,
+      "kind": "zero",
+      "maximum_control_steps": 300
+    }
+  ],
+  "planned_episode_count": 24,
+  "maximum_control_steps": 8100,
+  "maximum_physics_steps": 81000,
+  "maximum_vector_updates": 2400,
+  "maximum_scalar_updates": 4800,
+  "maximum_rls_internal_prediction_pair_calls": 2400,
+  "maximum_independent_prediction_pair_calls": 900,
+  "maximum_control_diagnostic_prediction_pair_calls": 1800,
+  "maximum_mpc_prediction_pair_calls": 2187000,
+  "prediction_accounting_scope": "RLS-internal, common prediction, control diagnostic and MPC separately; no reporting repeat",
+  "pd_binding": {
+    "schema": "c4-pd-source-binding-v1",
+    "status": "selected",
+    "selected_id": 2,
+    "joint_indices": [
+      0,
+      1
+    ],
+    "kp": [
+      64.0,
+      64.0
+    ],
+    "kd": [
+      0.0,
+      4.0
+    ],
+    "selection_path": "results/cpu_validation/2026-10-11_pair_pd/selection.json",
+    "selection_sha256": "71117cc7cc9cefebd49a4ce02d567a7a32d35f04f8e58a39461658078b784514",
+    "selection_tracking_evidence": "caller_verified_tracked_paths",
+    "sources": {
+      "manifest": {
+        "path": "results/cpu_validation/2026-10-11_pair_pd/manifest.json",
+        "sha256": "a2e33d70f0bf66761ea1800888b7ed35e98d4ba1d1a74b83295515494ca68a53"
+      },
+      "audit": {
+        "path": "results/cpu_validation/2026-10-11_pair_pd/first_audit.json",
+        "sha256": "811c8f608b8b8ecb31c77c1a76fc53f2deb68fce0462200d704cd2b88e6c04f0"
+      }
+    },
+    "source_records": {
+      "results/cpu_validation/2026-10-11_pair_pd/selection.json": "71117cc7cc9cefebd49a4ce02d567a7a32d35f04f8e58a39461658078b784514",
+      "results/cpu_validation/2026-10-11_pair_pd/manifest.json": "a2e33d70f0bf66761ea1800888b7ed35e98d4ba1d1a74b83295515494ca68a53",
+      "results/cpu_validation/2026-10-11_pair_pd/first_audit.json": "811c8f608b8b8ecb31c77c1a76fc53f2deb68fce0462200d704cd2b88e6c04f0",
+      "results/cpu_validation/2026-10-11_pair_pd/raw/metadata.json": "9d91767cbd7e0ea6da38329e474353c4a94097d4dce9c97dcb0dc9e896929c59",
+      "results/cpu_validation/2026-10-11_pair_pd/raw/source_snapshot.zip": "8cf10599237125934e574bb8327b3af61ca967ae3927e924dd74896e40e4ed46"
+    },
+    "protocol": {
+      "path": "docs/PAIR_PD_DEVELOPMENT_PROTOCOL.md",
+      "sha256": "b04e0db577374e91e7f0036312d1dd0e0669e669aa280df20bcc1c262bea9427"
+    },
+    "archive_member_records": {
+      "docs/PAIR_PD_DEVELOPMENT_PROTOCOL.md": "b04e0db577374e91e7f0036312d1dd0e0669e669aa280df20bcc1c262bea9427",
+      "scripts/audit_pair_pd.py": "47898a6bd8bb4e6bc2baf251d407696a0f1a50a3d8b8666bb5cfdd3d153cf2ad",
+      "scripts/audit_local_frozen.py": "b5fea70d3733a1bab77e49bf559432475899436693cf6c1b0b4767369c913461"
+    },
+    "audit_selection_confirmed": true,
+    "audit_reexecuted": false,
+    "raw_trace_or_episodes_read": false,
+    "remaining_original_bytes": "not reread; manifest hashes matched existing independent audit input_hashes"
+  },
+  "pd_gains": {
+    "kp": [
+      64.0,
+      64.0
+    ],
+    "kd": [
+      0.0,
+      4.0
+    ]
+  },
+  "policy_parameter_updates": 0,
+  "gain_updates": 0,
+  "gate_updates": 0,
+  "teacher_calls": 0,
+  "external_demonstration_samples": 0,
+  "scientific_gates": "strict predeclared C scope; separate independent auditor required",
+  "claim_boundary": "development-only exploration mechanism; no new holdout, skill, adaptation, safety or true-robot claim",
+  "archive_status": "complete",
+  "complete": true,
+  "source_snapshot_sha256": "89908bdb3bef72e18d3436305cff031d79981f29337e4b24928c357979516484",
+  "independent_auditor": {
+    "path": "scripts/audit_guard_exploration_development.py",
+    "sha256": "962a928b5d643ed2a3d4da20da2940a9a4e17932818c859beb204f11bf59ffa3",
+    "pending": false,
+    "required_for_formal": true
+  },
+  "control_calls_attempted": 7230,
+  "control_steps": 7230,
+  "physics_steps": 72300,
+  "model_updates": 4800,
+  "vector_model_updates": 2400,
+  "update_budget_classification": "new independent C physical calibration RLS; no offline A/B replay",
+  "completed_trials": 18,
+  "terminated_trials": 6,
+  "exception_trials": 0,
+  "blocked_trials": 0,
+  "wall_seconds": 91.0797595998738,
+  "cpu_seconds": 89.640625,
+  "all_trials_successful": false,
+  "invalid_numeric_fields": []
+}

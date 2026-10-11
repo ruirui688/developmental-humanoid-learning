@@ -1,5 +1,11 @@
 # 开发进度与仓库检查点
 
+## C4 C首次真实结果：一步改善不等于控制改善（2026-10-11）
+
+[探索对照结果](GUARD_EXPLORATION_DEVELOPMENT_RESULTS.md)从clean `5ea8df4`一次完成18完整/6研究停止/0异常/blocked。六校准及三共同预测全完整；名义、PD、zero各200active完整。continuation预测改善约41%/39%，自身控制三seed均4active肘速度停止；sparse仍106active肘位置停止。两个自身贡献、探索增量和两个PD门全未过，不能排序截短RMSE或把低努力当风险下降。
+
+新增7230控制/72300子步、2400vector/4800新在线scalar，离线重放0；物理累计246350/2463500、在线22452+既有离线2400scalar单列。首次独立audit4370690项零失败、max差6.590283874174929e−13，wall31.8897025s/CPU30s；一次薄summary7942项零失败、wall1.4276644s。[封口](../results/cpu_validation/2026-10-11_guard_exploration/manifest.json)70payload/309项零失败，保留全部原工程失败和字节；没有二次采集/重审/汇总。一次保存域提取330控制记录显示sparse起点97.2%与两组H15约92%–99.8%在cal box外，cont第一步box内也低估。六保存P代数表明v强负相关但9列RMS缩放fullrank，不能宣布秩缺失/动力学不稳定；费用另列，无新fit/predict。下一项固定两列历史速度差候选，仅开发离线检验持续输入预测，不继续只换脉冲时长。C5/C6科学采用依赖仍未满足，持续目标保持active。
+
 ## C4 C探索对照正式冻结（2026-10-11，物理执行前）
 
 [C协议](GUARD_EXPLORATION_DEVELOPMENT_PROTOCOL.md)固定同coupled9/RLS/MPC的两种独立cold探索校准：1/9与2/8原生q/v veto。共同新prediction使用后者；控制不veto，保持原200active目标、权限与停止，已选PD和zero独立执行。单组校准失败只阻塞本组学习控制，至少一个发布才执行共同prediction；缺失模型明确unavailable。24计划上限8100控制/81000子步/4800在线scalar，全部失败、付费前缀和数学调用计账。

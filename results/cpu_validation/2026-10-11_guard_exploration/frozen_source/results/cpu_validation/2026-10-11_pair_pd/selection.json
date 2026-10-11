@@ -1,0 +1,33 @@
+{
+  "schema": "c4-pd-selection-v1",
+  "status": "selected",
+  "selected": {
+    "candidate_id": 2,
+    "joint_indices": [
+      0,
+      1
+    ],
+    "kp": [
+      64.0,
+      64.0
+    ],
+    "kd": [
+      0.0,
+      4.0
+    ]
+  },
+  "protocol": {
+    "path": "docs/PAIR_PD_DEVELOPMENT_PROTOCOL.md",
+    "sha256": "b04e0db577374e91e7f0036312d1dd0e0669e669aa280df20bcc1c262bea9427"
+  },
+  "sources": {
+    "manifest": {
+      "path": "results/cpu_validation/2026-10-11_pair_pd/manifest.json",
+      "sha256": "a2e33d70f0bf66761ea1800888b7ed35e98d4ba1d1a74b83295515494ca68a53"
+    },
+    "audit": {
+      "path": "results/cpu_validation/2026-10-11_pair_pd/first_audit.json",
+      "sha256": "811c8f608b8b8ecb31c77c1a76fc53f2deb68fce0462200d704cd2b88e6c04f0"
+    }
+  }
+}

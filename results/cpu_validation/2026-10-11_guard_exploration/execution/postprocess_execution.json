@@ -1,0 +1,39 @@
+{
+  "executions": [
+    {
+      "command": [
+        "D:/Python3.10/python.exe",
+        "scripts/audit_guard_exploration_development.py",
+        "--input",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first",
+        "--output",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first_audit.json"
+      ],
+      "stdout": "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first_audit_stdout.txt",
+      "exit_code": 0,
+      "wrapper_wall_seconds": 32.166758000152186,
+      "repeated": false
+    },
+    {
+      "command": [
+        "D:/Python3.10/python.exe",
+        "external/c4_guard_exploration_summary_staging/summarize_guard_exploration_once.py",
+        "--input",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first",
+        "--audit",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_first_audit.json",
+        "--output",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_summary_01",
+        "--expected-auditor-sha256",
+        "962a928b5d643ed2a3d4da20da2940a9a4e17932818c859beb204f11bf59ffa3"
+      ],
+      "stdout": "D:\\Codex_ws\\robot_rl\\external\\guard_exploration_20261011_summary_01_stdout.txt",
+      "exit_code": 0,
+      "wrapper_wall_seconds": 1.5697305998764932,
+      "repeated": false
+    }
+  ],
+  "new_physical_calls": 0,
+  "online_model_updates": 0,
+  "A_B_audit_reexecutions": 0
+}
