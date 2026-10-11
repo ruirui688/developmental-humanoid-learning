@@ -1,0 +1,2792 @@
+{
+  "schema_version": 1,
+  "diagnostic": "I_H_saved_causal_native_residual",
+  "scientific_adoption": false,
+  "development_window_only": true,
+  "dt_seconds": 0.02,
+  "bias_definition": "previous actual v minus previous original base v",
+  "prediction_source": "independent_current_request_prediction",
+  "source_trials": [
+    {
+      "trial_id": "seed0_cold11",
+      "status": "terminated",
+      "completed": false,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.08932438531394973,
+          0.00840991668923818
+        ],
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "velocity_rad_s": [
+          0.4622060196065265,
+          -1.004179961944461
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 110
+      },
+      "saved_active_count": 11,
+      "last20_count": 11,
+      "last20_empty_reason": null,
+      "partial_trial_not_ranked": true
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "status": "terminated",
+      "completed": false,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.039128268373145376,
+          0.07652048771409022
+        ],
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "velocity_rad_s": [
+          -0.5312737525065448,
+          1.0709472021858948
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 201
+      },
+      "saved_active_count": 102,
+      "last20_count": 20,
+      "last20_empty_reason": null,
+      "partial_trial_not_ranked": true
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "status": "terminated",
+      "completed": false,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.08588173345597243,
+          0.00821076255997568
+        ],
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "velocity_rad_s": [
+          0.4625010270847489,
+          -1.0053665611254226
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 110
+      },
+      "saved_active_count": 11,
+      "last20_count": 11,
+      "last20_empty_reason": null,
+      "partial_trial_not_ranked": true
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "status": "completed",
+      "completed": true,
+      "study_abort": null,
+      "saved_active_count": 200,
+      "last20_count": 20,
+      "last20_empty_reason": null,
+      "partial_trial_not_ranked": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "status": "completed",
+      "completed": true,
+      "study_abort": null,
+      "saved_active_count": 200,
+      "last20_count": 20,
+      "last20_empty_reason": null,
+      "partial_trial_not_ranked": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "status": "terminated",
+      "completed": false,
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.04039995412886453,
+          0.07969534711152101
+        ],
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "velocity_rad_s": [
+          -0.5185315218311365,
+          1.0654337200294224
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 203
+      },
+      "saved_active_count": 104,
+      "last20_count": 20,
+      "last20_empty_reason": null,
+      "partial_trial_not_ranked": true
+    }
+  ],
+  "groups": [
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.002578216743184352,
+        "mae": 0.0016725988526854294,
+        "bias": 0.0010619284135166649
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.005290132556706401,
+        "mae": 0.0037352428676325974,
+        "bias": 4.9414000268500904e-05
+      },
+      "rmse_relative_improvement": -1.051857187992878,
+      "mae_relative_improvement": -1.2331970762956728,
+      "absolute_bias_reduction": 0.001012514413248164,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.005314174920209742,
+        "mae": 0.003237355721109702,
+        "bias": -0.0018793468560755811
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.0112576965498861,
+        "mae": 0.00799330453846235,
+        "bias": 9.813080604664983e-05
+      },
+      "rmse_relative_improvement": -1.1184279251089793,
+      "mae_relative_improvement": -1.4690844093346662,
+      "absolute_bias_reduction": 0.0017812160500289313,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.2177787156114629,
+        "mae": 0.13862531473840173,
+        "bias": 0.08118716584781324
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.3232798679762672,
+        "mae": 0.24252299545827777,
+        "bias": 0.030561445185405028
+      },
+      "rmse_relative_improvement": -0.4844419807903908,
+      "mae_relative_improvement": -0.7494856254497253,
+      "absolute_bias_reduction": 0.05062572066240821,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.45300541086989854,
+        "mae": 0.27924237746727265,
+        "bias": -0.16199906495202504
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.6720331779154013,
+        "mae": 0.5067574865868825,
+        "bias": -0.06312518184591356
+      },
+      "rmse_relative_improvement": -0.4834992293467477,
+      "mae_relative_improvement": -0.8147585305037546,
+      "absolute_bias_reduction": 0.09887388310611148,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.002578216743184352,
+        "mae": 0.0016725988526854294,
+        "bias": 0.0010619284135166649
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.005290132556706401,
+        "mae": 0.0037352428676325974,
+        "bias": 4.9414000268500904e-05
+      },
+      "rmse_relative_improvement": -1.051857187992878,
+      "mae_relative_improvement": -1.2331970762956728,
+      "absolute_bias_reduction": 0.001012514413248164,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.005314174920209742,
+        "mae": 0.003237355721109702,
+        "bias": -0.0018793468560755811
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.0112576965498861,
+        "mae": 0.00799330453846235,
+        "bias": 9.813080604664983e-05
+      },
+      "rmse_relative_improvement": -1.1184279251089793,
+      "mae_relative_improvement": -1.4690844093346662,
+      "absolute_bias_reduction": 0.0017812160500289313,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.2177787156114629,
+        "mae": 0.13862531473840173,
+        "bias": 0.08118716584781324
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.3232798679762672,
+        "mae": 0.24252299545827777,
+        "bias": 0.030561445185405028
+      },
+      "rmse_relative_improvement": -0.4844419807903908,
+      "mae_relative_improvement": -0.7494856254497253,
+      "absolute_bias_reduction": 0.05062572066240821,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.45300541086989854,
+        "mae": 0.27924237746727265,
+        "bias": -0.16199906495202504
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.6720331779154013,
+        "mae": 0.5067574865868825,
+        "bias": -0.06312518184591356
+      },
+      "rmse_relative_improvement": -0.4834992293467477,
+      "mae_relative_improvement": -0.8147585305037546,
+      "absolute_bias_reduction": 0.09887388310611148,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.002714418254082323,
+        "mae": 0.0021961263125044104,
+        "bias": 1.4807681802286865e-05
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.0017518243609319112,
+        "mae": 0.0013968193139057565,
+        "bias": -7.196911944332324e-05
+      },
+      "rmse_relative_improvement": 0.354622538992555,
+      "mae_relative_improvement": 0.36396221567380754,
+      "absolute_bias_reduction": -5.716143764103637e-05,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.005579715131604429,
+        "mae": 0.004496529060701071,
+        "bias": 5.061696866130125e-05
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.0033453531299400758,
+        "mae": 0.002686692917596693,
+        "bias": 0.0002876426203655452
+      },
+      "rmse_relative_improvement": 0.4004437411165594,
+      "mae_relative_improvement": 0.4024962629335702,
+      "absolute_bias_reduction": -0.00023702565170424393,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.1553005458963996,
+        "mae": 0.1213009997229898,
+        "bias": -0.004691275581924181
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.16959286726446882,
+        "mae": 0.14767614061876208,
+        "bias": -0.009030115644204606
+      },
+      "rmse_relative_improvement": -0.0920300781016157,
+      "mae_relative_improvement": -0.21743547832255403,
+      "absolute_bias_reduction": -0.004338840062280426,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.3180865069637263,
+        "mae": 0.2431781313952076,
+        "bias": 0.009124295053379897
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.3336110798340808,
+        "mae": 0.29003673551632386,
+        "bias": 0.02097557763859207
+      },
+      "rmse_relative_improvement": -0.048806134590691226,
+      "mae_relative_improvement": -0.19269250837758395,
+      "absolute_bias_reduction": -0.011851282585212173,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 17,
+      "base": {
+        "count": 17,
+        "rmse": 0.002232581361628782,
+        "mae": 0.001857617458463232,
+        "bias": 0.0006134264175266063
+      },
+      "corrected": {
+        "count": 17,
+        "rmse": 0.0017985798442319728,
+        "mae": 0.0014186748942350298,
+        "bias": 6.204002898768983e-05
+      },
+      "rmse_relative_improvement": 0.19439449099413023,
+      "mae_relative_improvement": 0.23629330260027284,
+      "absolute_bias_reduction": 0.0005513863885389165,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 17,
+      "base": {
+        "count": 17,
+        "rmse": 0.004477593455785618,
+        "mae": 0.003761513697930722,
+        "bias": -0.0012074468755254911
+      },
+      "corrected": {
+        "count": 17,
+        "rmse": 0.0033630383766109235,
+        "mae": 0.0026674955888281783,
+        "bias": -1.3795919841928591e-05
+      },
+      "rmse_relative_improvement": 0.24891832860228702,
+      "mae_relative_improvement": 0.29084517483064953,
+      "absolute_bias_reduction": 0.0011936509556835625,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 17,
+      "base": {
+        "count": 17,
+        "rmse": 0.12200659617996393,
+        "mae": 0.09885593618521615,
+        "bias": 0.03147257903126893
+      },
+      "corrected": {
+        "count": 17,
+        "rmse": 0.1743716903548682,
+        "mae": 0.15105406242606456,
+        "bias": 0.0039032596043231914
+      },
+      "rmse_relative_improvement": -0.4291988778841428,
+      "mae_relative_improvement": -0.528022173024088,
+      "absolute_bias_reduction": 0.02756931942694574,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 17,
+      "base": {
+        "count": 17,
+        "rmse": 0.24868843855323133,
+        "mae": 0.19646196267078941,
+        "bias": -0.06512761912301801
+      },
+      "corrected": {
+        "count": 17,
+        "rmse": 0.34153718500401475,
+        "mae": 0.29527034040686034,
+        "bias": -0.005445071338839902
+      },
+      "rmse_relative_improvement": -0.37335369103179805,
+      "mae_relative_improvement": -0.502938972984016,
+      "absolute_bias_reduction": 0.05968254778417811,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 2,
+      "base": {
+        "count": 2,
+        "rmse": 0.005256335728758359,
+        "mae": 0.005073451571854428,
+        "bias": -0.005073451571854428
+      },
+      "corrected": {
+        "count": 2,
+        "rmse": 0.0012875873729999534,
+        "mae": 0.0012110468811069343,
+        "bias": -0.0012110468811069343
+      },
+      "rmse_relative_improvement": 0.7550408802932181,
+      "mae_relative_improvement": 0.761297242329983,
+      "absolute_bias_reduction": 0.0038624046907474938,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 2,
+      "base": {
+        "count": 2,
+        "rmse": 0.011196000723634573,
+        "mae": 0.010744159644249036,
+        "bias": 0.010744159644249036
+      },
+      "corrected": {
+        "count": 2,
+        "rmse": 0.0031910736933291107,
+        "mae": 0.002849870212129072,
+        "bias": 0.002849870212129072
+      },
+      "rmse_relative_improvement": 0.7149809318435639,
+      "mae_relative_improvement": 0.7347516877548905,
+      "absolute_bias_reduction": 0.007894289432119964,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 2,
+      "base": {
+        "count": 2,
+        "rmse": 0.32030576787229526,
+        "mae": 0.3120840397940657,
+        "bias": -0.3120840397940657
+      },
+      "corrected": {
+        "count": 2,
+        "rmse": 0.1216137392732674,
+        "mae": 0.1189638052566909,
+        "bias": -0.1189638052566909
+      },
+      "rmse_relative_improvement": 0.6203198584867371,
+      "mae_relative_improvement": 0.6188084295012609,
+      "absolute_bias_reduction": 0.19312023453737479,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 2,
+      "base": {
+        "count": 2,
+        "rmse": 0.659932012159039,
+        "mae": 0.6402655655527623,
+        "bias": 0.6402655655527623
+      },
+      "corrected": {
+        "count": 2,
+        "rmse": 0.2565352515593474,
+        "mae": 0.24555109394676383,
+        "bias": 0.24555109394676383
+      },
+      "rmse_relative_improvement": 0.61127018112053,
+      "mae_relative_improvement": 0.6164855535612453,
+      "absolute_bias_reduction": 0.39471447160599843,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 1,
+      "base": {
+        "count": 1,
+        "rmse": 0.0036989864244354395,
+        "mae": 0.0036989864244354395,
+        "bias": -0.0036989864244354395
+      },
+      "corrected": {
+        "count": 1,
+        "rmse": 0.0007737292678438867,
+        "mae": 0.0007737292678438867,
+        "bias": -0.0007737292678438867
+      },
+      "rmse_relative_improvement": 0.7908266808624533,
+      "mae_relative_improvement": 0.7908266808624533,
+      "absolute_bias_reduction": 0.0029252571565915528,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 1,
+      "base": {
+        "count": 1,
+        "rmse": 0.0075955939799319735,
+        "mae": 0.0075955939799319735,
+        "bias": 0.0075955939799319735
+      },
+      "corrected": {
+        "count": 1,
+        "rmse": 0.0014141853266905965,
+        "mae": 0.0014141853266905965,
+        "bias": 0.0014141853266905965
+      },
+      "rmse_relative_improvement": 0.8138150445604437,
+      "mae_relative_improvement": 0.8138150445604437,
+      "absolute_bias_reduction": 0.006181408653241377,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 1,
+      "base": {
+        "count": 1,
+        "rmse": 0.2399776112451719,
+        "mae": 0.2399776112451719,
+        "bias": -0.2399776112451719
+      },
+      "corrected": {
+        "count": 1,
+        "rmse": 0.09371475341559427,
+        "mae": 0.09371475341559427,
+        "bias": -0.09371475341559427
+      },
+      "rmse_relative_improvement": 0.6094854310394353,
+      "mae_relative_improvement": 0.6094854310394353,
+      "absolute_bias_reduction": 0.14626285782957762,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 1,
+      "base": {
+        "count": 1,
+        "rmse": 0.4803585105499276,
+        "mae": 0.4803585105499276,
+        "bias": 0.4803585105499276
+      },
+      "corrected": {
+        "count": 1,
+        "rmse": 0.1712880778878586,
+        "mae": 0.1712880778878586,
+        "bias": 0.1712880778878586
+      },
+      "rmse_relative_improvement": 0.6434161691196784,
+      "mae_relative_improvement": 0.6434161691196784,
+      "absolute_bias_reduction": 0.309070432662069,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.002576828899350274,
+        "mae": 0.0016725585585673484,
+        "bias": 0.001062060086120796
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.005287280802013714,
+        "mae": 0.0037335414484058137,
+        "bias": 4.861224828937305e-05
+      },
+      "rmse_relative_improvement": -1.0518555979199309,
+      "mae_relative_improvement": -1.2322336215264276,
+      "absolute_bias_reduction": 0.001013447837831423,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.005314268072423647,
+        "mae": 0.0032384571884453454,
+        "bias": -0.001880318876473185
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.011257465747204263,
+        "mae": 0.007994274078185353,
+        "bias": 9.934814225642051e-05
+      },
+      "rmse_relative_improvement": -1.1183473610638042,
+      "mae_relative_improvement": -1.468544005061585,
+      "absolute_bias_reduction": 0.0017809707342167644,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.2176553806364701,
+        "mae": 0.13862463008471912,
+        "bias": 0.08119699850158969
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.3231175978511421,
+        "mae": 0.24239329058135328,
+        "bias": 0.030524606610018594
+      },
+      "rmse_relative_improvement": -0.48453760668024043,
+      "mae_relative_improvement": -0.7485586106395158,
+      "absolute_bias_reduction": 0.0506723918915711,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.45303346537920147,
+        "mae": 0.2793550426313737,
+        "bias": -0.16209411027041193
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.6720249267949735,
+        "mae": 0.5067734210084022,
+        "bias": -0.06311075933393166
+      },
+      "rmse_relative_improvement": -0.483389149259581,
+      "mae_relative_improvement": -0.814083670138438,
+      "absolute_bias_reduction": 0.09898335093648027,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.002576828899350274,
+        "mae": 0.0016725585585673484,
+        "bias": 0.001062060086120796
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.005287280802013714,
+        "mae": 0.0037335414484058137,
+        "bias": 4.861224828937305e-05
+      },
+      "rmse_relative_improvement": -1.0518555979199309,
+      "mae_relative_improvement": -1.2322336215264276,
+      "absolute_bias_reduction": 0.001013447837831423,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.005314268072423647,
+        "mae": 0.0032384571884453454,
+        "bias": -0.001880318876473185
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.011257465747204263,
+        "mae": 0.007994274078185353,
+        "bias": 9.934814225642051e-05
+      },
+      "rmse_relative_improvement": -1.1183473610638042,
+      "mae_relative_improvement": -1.468544005061585,
+      "absolute_bias_reduction": 0.0017809707342167644,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.2176553806364701,
+        "mae": 0.13862463008471912,
+        "bias": 0.08119699850158969
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.3231175978511421,
+        "mae": 0.24239329058135328,
+        "bias": 0.030524606610018594
+      },
+      "rmse_relative_improvement": -0.48453760668024043,
+      "mae_relative_improvement": -0.7485586106395158,
+      "absolute_bias_reduction": 0.0506723918915711,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 10,
+      "base": {
+        "count": 10,
+        "rmse": 0.45303346537920147,
+        "mae": 0.2793550426313737,
+        "bias": -0.16209411027041193
+      },
+      "corrected": {
+        "count": 10,
+        "rmse": 0.6720249267949735,
+        "mae": 0.5067734210084022,
+        "bias": -0.06311075933393166
+      },
+      "rmse_relative_improvement": -0.483389149259581,
+      "mae_relative_improvement": -0.814083670138438,
+      "absolute_bias_reduction": 0.09898335093648027,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.0009125328725433953,
+        "mae": 0.0007420016756852513,
+        "bias": -0.00018922179796874482
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.0005564482492591267,
+        "mae": 0.0004378183055246121,
+        "bias": -1.675796491605962e-05
+      },
+      "rmse_relative_improvement": 0.3902156667428275,
+      "mae_relative_improvement": 0.4099497078355256,
+      "absolute_bias_reduction": 0.0001724638330526852,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.001806548635436635,
+        "mae": 0.0015325660088800273,
+        "bias": 0.0003512389998660146
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.001163495075178858,
+        "mae": 0.0009583127622698926,
+        "bias": 0.00012943171097175958
+      },
+      "rmse_relative_improvement": 0.35595695994221255,
+      "mae_relative_improvement": 0.37470049791185767,
+      "absolute_bias_reduction": 0.00022180728889425503,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.04883300681278876,
+        "mae": 0.03969784635647673,
+        "bias": -0.011171231839973959
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.05071831192726143,
+        "mae": 0.040808261251757856,
+        "bias": -0.0025480401873397038
+      },
+      "rmse_relative_improvement": -0.03860718881596562,
+      "mae_relative_improvement": -0.027971665901214793,
+      "absolute_bias_reduction": 0.008623191652634254,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.10075947695069423,
+        "mae": 0.07974518488279632,
+        "bias": 0.01730568925092937
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.10680467319445754,
+        "mae": 0.08354235604331191,
+        "bias": 0.006215324806216729
+      },
+      "rmse_relative_improvement": -0.0599963043349408,
+      "mae_relative_improvement": -0.047616306440274675,
+      "absolute_bias_reduction": 0.01109036444471264,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.0009125328725433953,
+        "mae": 0.0007420016756852513,
+        "bias": -0.00018922179796874482
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.0005564482492591267,
+        "mae": 0.0004378183055246121,
+        "bias": -1.675796491605962e-05
+      },
+      "rmse_relative_improvement": 0.3902156667428275,
+      "mae_relative_improvement": 0.4099497078355256,
+      "absolute_bias_reduction": 0.0001724638330526852,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.001806548635436635,
+        "mae": 0.0015325660088800273,
+        "bias": 0.0003512389998660146
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.001163495075178858,
+        "mae": 0.0009583127622698926,
+        "bias": 0.00012943171097175958
+      },
+      "rmse_relative_improvement": 0.35595695994221255,
+      "mae_relative_improvement": 0.37470049791185767,
+      "absolute_bias_reduction": 0.00022180728889425503,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.04883300681278876,
+        "mae": 0.03969784635647673,
+        "bias": -0.011171231839973959
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.05071831192726143,
+        "mae": 0.040808261251757856,
+        "bias": -0.0025480401873397038
+      },
+      "rmse_relative_improvement": -0.03860718881596562,
+      "mae_relative_improvement": -0.027971665901214793,
+      "absolute_bias_reduction": 0.008623191652634254,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.10075947695069423,
+        "mae": 0.07974518488279632,
+        "bias": 0.01730568925092937
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.10680467319445754,
+        "mae": 0.08354235604331191,
+        "bias": 0.006215324806216729
+      },
+      "rmse_relative_improvement": -0.0599963043349408,
+      "mae_relative_improvement": -0.047616306440274675,
+      "absolute_bias_reduction": 0.01109036444471264,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.0026978573254351143,
+        "mae": 0.0024138540139125,
+        "bias": 0.00017201031582196822
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.005672459704319988,
+        "mae": 0.004755864919357615,
+        "bias": 0.00012839834574199238
+      },
+      "rmse_relative_improvement": -1.1025795733675894,
+      "mae_relative_improvement": -0.970237177537121,
+      "absolute_bias_reduction": 4.3611970079975834e-05,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.005521185040410849,
+        "mae": 0.00505207160949363,
+        "bias": -0.00033309588798979893
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.011711605333671236,
+        "mae": 0.009664026602183337,
+        "bias": -0.00033431717161807575
+      },
+      "rmse_relative_improvement": -1.1212122484487024,
+      "mae_relative_improvement": -0.9128839314199594,
+      "absolute_bias_reduction": -1.2212836282768239e-06,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.24021576777172776,
+        "mae": 0.22215179081760061,
+        "bias": 0.0018013099408674142
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.3558130382075102,
+        "mae": 0.2987150233757294,
+        "bias": -0.0003792885631314095
+      },
+      "rmse_relative_improvement": -0.4812226587291814,
+      "mae_relative_improvement": -0.34464377836589943,
+      "absolute_bias_reduction": 0.0014220213777360047,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.48583064928787745,
+        "mae": 0.4480068074228629,
+        "bias": -0.0012301547875358735
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.7367819398279138,
+        "mae": 0.616833530632775,
+        "bias": -0.0012912189689497395
+      },
+      "rmse_relative_improvement": -0.5165406729852813,
+      "mae_relative_improvement": -0.37683963817665966,
+      "absolute_bias_reduction": -6.106418141386591e-05,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.0026978573254351143,
+        "mae": 0.0024138540139125,
+        "bias": 0.00017201031582196822
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.005672459704319988,
+        "mae": 0.004755864919357615,
+        "bias": 0.00012839834574199238
+      },
+      "rmse_relative_improvement": -1.1025795733675894,
+      "mae_relative_improvement": -0.970237177537121,
+      "absolute_bias_reduction": 4.3611970079975834e-05,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.005521185040410849,
+        "mae": 0.00505207160949363,
+        "bias": -0.00033309588798979893
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.011711605333671236,
+        "mae": 0.009664026602183337,
+        "bias": -0.00033431717161807575
+      },
+      "rmse_relative_improvement": -1.1212122484487024,
+      "mae_relative_improvement": -0.9128839314199594,
+      "absolute_bias_reduction": -1.2212836282768239e-06,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.24021576777172776,
+        "mae": 0.22215179081760061,
+        "bias": 0.0018013099408674142
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.3558130382075102,
+        "mae": 0.2987150233757294,
+        "bias": -0.0003792885631314095
+      },
+      "rmse_relative_improvement": -0.4812226587291814,
+      "mae_relative_improvement": -0.34464377836589943,
+      "absolute_bias_reduction": 0.0014220213777360047,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.48583064928787745,
+        "mae": 0.4480068074228629,
+        "bias": -0.0012301547875358735
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.7367819398279138,
+        "mae": 0.616833530632775,
+        "bias": -0.0012912189689497395
+      },
+      "rmse_relative_improvement": -0.5165406729852813,
+      "mae_relative_improvement": -0.37683963817665966,
+      "absolute_bias_reduction": -6.106418141386591e-05,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 0,
+      "base": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "corrected": {
+        "count": 0,
+        "rmse": null,
+        "mae": null,
+        "bias": null
+      },
+      "rmse_relative_improvement": null,
+      "mae_relative_improvement": null,
+      "absolute_bias_reduction": null,
+      "empty_reason": "no_eligible_adjacent_pairs",
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.002338947690972126,
+        "mae": 0.0013642826439697637,
+        "bias": -0.00035605948301632934
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.001180671408368604,
+        "mae": 0.0008635568510351816,
+        "bias": -0.00023032366550542792
+      },
+      "rmse_relative_improvement": 0.4952125637842345,
+      "mae_relative_improvement": 0.3670249674052729,
+      "absolute_bias_reduction": 0.00012573581751090142,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "ALL",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.004771570343584007,
+        "mae": 0.0028476884606188067,
+        "bias": 0.0007127323283665664
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.0021874481297751674,
+        "mae": 0.0017696031346781734,
+        "bias": 0.00036153468164094594
+      },
+      "rmse_relative_improvement": 0.5415664084851072,
+      "mae_relative_improvement": 0.37858260861385234,
+      "absolute_bias_reduction": 0.0003511976467256204,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.13359849984939973,
+        "mae": 0.08391906057154147,
+        "bias": -0.026568564453388066
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.10340422773209476,
+        "mae": 0.08403414752762946,
+        "bias": -0.020281773577842947
+      },
+      "rmse_relative_improvement": 0.22600756858304372,
+      "mae_relative_improvement": -0.0013714042471897625,
+      "absolute_bias_reduction": 0.0062867908755451195,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "ALL",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 19,
+      "base": {
+        "count": 19,
+        "rmse": 0.2808062726429645,
+        "mae": 0.1791318555930233,
+        "bias": 0.05836673417250669
+      },
+      "corrected": {
+        "count": 19,
+        "rmse": 0.21082526374655292,
+        "mae": 0.17412970107931738,
+        "bias": 0.04080685183622569
+      },
+      "rmse_relative_improvement": 0.24921455008019003,
+      "mae_relative_improvement": 0.027924427495858196,
+      "absolute_bias_reduction": 0.017559882336281002,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 15,
+      "base": {
+        "count": 15,
+        "rmse": 0.0009478936587078159,
+        "mae": 0.0007534312557047595,
+        "bias": 0.0003447727366650754
+      },
+      "corrected": {
+        "count": 15,
+        "rmse": 0.0008298354384971097,
+        "mae": 0.0006288846680166188,
+        "bias": 4.005346959018996e-05
+      },
+      "rmse_relative_improvement": 0.12454795865144314,
+      "mae_relative_improvement": 0.1653058414355797,
+      "absolute_bias_reduction": 0.00030471926707488544,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "A",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 15,
+      "base": {
+        "count": 15,
+        "rmse": 0.0020139037059378768,
+        "mae": 0.0015824025784649197,
+        "bias": -0.00075126921439622
+      },
+      "corrected": {
+        "count": 15,
+        "rmse": 0.0017026528385359182,
+        "mae": 0.0013582403809297879,
+        "bias": -9.505999735236031e-05
+      },
+      "rmse_relative_improvement": 0.15455101774938576,
+      "mae_relative_improvement": 0.14165939855367932,
+      "absolute_bias_reduction": 0.0006562092170438597,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 15,
+      "base": {
+        "count": 15,
+        "rmse": 0.0643190827563545,
+        "mae": 0.05003737469820598,
+        "bias": 0.020361786548505303
+      },
+      "corrected": {
+        "count": 15,
+        "rmse": 0.09224877453213992,
+        "mae": 0.07562718380830184,
+        "bias": 0.005125823194761075
+      },
+      "rmse_relative_improvement": -0.4342364750689181,
+      "mae_relative_improvement": -0.5114139033959619,
+      "absolute_bias_reduction": 0.015235963353744228,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "A",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 15,
+      "base": {
+        "count": 15,
+        "rmse": 0.132075523396813,
+        "mae": 0.1064992499460621,
+        "bias": -0.04163640034679527
+      },
+      "corrected": {
+        "count": 15,
+        "rmse": 0.1924836200613608,
+        "mae": 0.15723381499485145,
+        "bias": -0.008825939494602286
+      },
+      "rmse_relative_improvement": -0.4573754099997415,
+      "mae_relative_improvement": -0.4763842475368092,
+      "absolute_bias_reduction": 0.03281046085219298,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 4,
+      "base": {
+        "count": 4,
+        "rmse": 0.004755662779721025,
+        "mae": 0.00365497534996353,
+        "bias": -0.002984180306821597
+      },
+      "corrected": {
+        "count": 4,
+        "rmse": 0.0020097457358741674,
+        "mae": 0.0017435775373547922,
+        "bias": -0.001244237922113995
+      },
+      "rmse_relative_improvement": 0.5773994437864531,
+      "mae_relative_improvement": 0.5229577848255009,
+      "absolute_bias_reduction": 0.0017399423847076021,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 4,
+      "base": {
+        "count": 4,
+        "rmse": 0.00964044430096174,
+        "mae": 0.007592510518695883,
+        "bias": 0.006202738113727015
+      },
+      "corrected": {
+        "count": 4,
+        "rmse": 0.003443408803789654,
+        "mae": 0.0033122134612346196,
+        "bias": 0.0020737647278658445
+      },
+      "rmse_relative_improvement": 0.6428163789664615,
+      "mae_relative_improvement": 0.5637525357286516,
+      "absolute_bias_reduction": 0.0041289733858611705,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 4,
+      "base": {
+        "count": 4,
+        "rmse": 0.2631864633576875,
+        "mae": 0.21097538259654955,
+        "bias": -0.2025573807104882
+      },
+      "corrected": {
+        "count": 4,
+        "rmse": 0.13739423741948165,
+        "mae": 0.11556026147510803,
+        "bias": -0.11556026147510803
+      },
+      "rmse_relative_improvement": 0.47795857101984013,
+      "mae_relative_improvement": 0.4522571304155654,
+      "absolute_bias_reduction": 0.08699711923538017,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 4,
+      "base": {
+        "count": 4,
+        "rmse": 0.5559972873470094,
+        "mae": 0.4515041267691279,
+        "bias": 0.43337848861988904
+      },
+      "corrected": {
+        "count": 4,
+        "rmse": 0.2686770296114714,
+        "mae": 0.23748927389606467,
+        "bias": 0.2269298193268306
+      },
+      "rmse_relative_improvement": 0.5167655747144239,
+      "mae_relative_improvement": 0.47400420103468416,
+      "absolute_bias_reduction": 0.20644866929305844,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 1,
+      "base": {
+        "count": 1,
+        "rmse": 0.0013415900862838656,
+        "mae": 0.0013415900862838656,
+        "bias": 0.0013415900862838656
+      },
+      "corrected": {
+        "count": 1,
+        "rmse": 0.0009986792304815945,
+        "mae": 0.0009986792304815945,
+        "bias": 0.0009986792304815945
+      },
+      "rmse_relative_improvement": 0.25560032032743796,
+      "mae_relative_improvement": 0.25560032032743796,
+      "absolute_bias_reduction": 0.00034291085580227115,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "q",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 1,
+      "base": {
+        "count": 1,
+        "rmse": 0.0027795448099377368,
+        "mae": 0.0027795448099377368,
+        "bias": -0.0027795448099377368
+      },
+      "corrected": {
+        "count": 1,
+        "rmse": 0.00247689746673755,
+        "mae": 0.00247689746673755,
+        "bias": -0.00247689746673755
+      },
+      "rmse_relative_improvement": 0.10888377914186824,
+      "mae_relative_improvement": 0.10888377914186824,
+      "absolute_bias_reduction": 0.00030264734320018666,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 0,
+      "axis_name": "shoulder",
+      "pair_count": 1,
+      "base": {
+        "count": 1,
+        "rmse": 0.016836003772122674,
+        "mae": 0.016836003772122674,
+        "bias": 0.016836003772122674
+      },
+      "corrected": {
+        "count": 1,
+        "rmse": 0.000309539017990787,
+        "mae": 0.000309539017990787,
+        "bias": -0.000309539017990787
+      },
+      "rmse_relative_improvement": 0.9816144601664127,
+      "mae_relative_improvement": 0.9816144601664127,
+      "absolute_bias_reduction": 0.016526464754131887,
+      "empty_reason": null,
+      "domain_validation": false
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "segment": "CROSS_A_TO_B",
+      "signal": "v",
+      "axis": 1,
+      "axis_name": "elbow",
+      "pair_count": 1,
+      "base": {
+        "count": 1,
+        "rmse": 0.036251276298477575,
+        "mae": 0.036251276298477575,
+        "bias": -0.036251276298477575
+      },
+      "corrected": {
+        "count": 1,
+        "rmse": 0.021118909138468145,
+        "mae": 0.021118909138468145,
+        "bias": -0.021118909138468145
+      },
+      "rmse_relative_improvement": 0.417429914340559,
+      "mae_relative_improvement": 0.417429914340559,
+      "absolute_bias_reduction": 0.01513236716000943,
+      "empty_reason": null,
+      "domain_validation": false
+    }
+  ],
+  "unscored_records": [
+    {
+      "trial_id": "seed0_cold11",
+      "step_index": 100,
+      "active_index": 0,
+      "reason": "no_valid_window_history",
+      "history_reset": true
+    },
+    {
+      "trial_id": "seed0_learned_sparse11",
+      "step_index": 182,
+      "active_index": 82,
+      "reason": "no_valid_window_history",
+      "history_reset": true
+    },
+    {
+      "trial_id": "seed1_cold11",
+      "step_index": 100,
+      "active_index": 0,
+      "reason": "no_valid_window_history",
+      "history_reset": true
+    },
+    {
+      "trial_id": "seed1_learned_sparse11",
+      "step_index": 280,
+      "active_index": 180,
+      "reason": "no_valid_window_history",
+      "history_reset": true
+    },
+    {
+      "trial_id": "seed2_cold11",
+      "step_index": 280,
+      "active_index": 180,
+      "reason": "no_valid_window_history",
+      "history_reset": true
+    },
+    {
+      "trial_id": "seed2_learned_sparse11",
+      "step_index": 184,
+      "active_index": 84,
+      "reason": "no_valid_window_history",
+      "history_reset": true
+    }
+  ],
+  "development_gates_by_kind": {
+    "cold11": {
+      "segment": "ALL",
+      "signal": "v",
+      "metric": "RMSE",
+      "axes": [
+        {
+          "axis": 0,
+          "seeds": [
+            {
+              "seed": 0,
+              "pair_count": 10,
+              "base_rmse": 0.2177787156114629,
+              "corrected_rmse": 0.3232798679762672,
+              "relative_improvement": -0.4844419807903908,
+              "strictly_improved": false,
+              "undefined_reason": null
+            },
+            {
+              "seed": 1,
+              "pair_count": 10,
+              "base_rmse": 0.2176553806364701,
+              "corrected_rmse": 0.3231175978511421,
+              "relative_improvement": -0.48453760668024043,
+              "strictly_improved": false,
+              "undefined_reason": null
+            },
+            {
+              "seed": 2,
+              "pair_count": 19,
+              "base_rmse": 0.24021576777172776,
+              "corrected_rmse": 0.3558130382075102,
+              "relative_improvement": -0.4812226587291814,
+              "strictly_improved": false,
+              "undefined_reason": null
+            }
+          ],
+          "mean_relative_improvement": -0.4834007487332708,
+          "evaluated": true,
+          "passed": false
+        },
+        {
+          "axis": 1,
+          "seeds": [
+            {
+              "seed": 0,
+              "pair_count": 10,
+              "base_rmse": 0.45300541086989854,
+              "corrected_rmse": 0.6720331779154013,
+              "relative_improvement": -0.4834992293467477,
+              "strictly_improved": false,
+              "undefined_reason": null
+            },
+            {
+              "seed": 1,
+              "pair_count": 10,
+              "base_rmse": 0.45303346537920147,
+              "corrected_rmse": 0.6720249267949735,
+              "relative_improvement": -0.483389149259581,
+              "strictly_improved": false,
+              "undefined_reason": null
+            },
+            {
+              "seed": 2,
+              "pair_count": 19,
+              "base_rmse": 0.48583064928787745,
+              "corrected_rmse": 0.7367819398279138,
+              "relative_improvement": -0.5165406729852813,
+              "strictly_improved": false,
+              "undefined_reason": null
+            }
+          ],
+          "mean_relative_improvement": -0.4944763505305367,
+          "evaluated": true,
+          "passed": false
+        }
+      ],
+      "evaluated": true,
+      "passed": false,
+      "scientific_adoption": false
+    },
+    "learned_sparse11": {
+      "segment": "ALL",
+      "signal": "v",
+      "metric": "RMSE",
+      "axes": [
+        {
+          "axis": 0,
+          "seeds": [
+            {
+              "seed": 0,
+              "pair_count": 19,
+              "base_rmse": 0.1553005458963996,
+              "corrected_rmse": 0.16959286726446882,
+              "relative_improvement": -0.0920300781016157,
+              "strictly_improved": false,
+              "undefined_reason": null
+            },
+            {
+              "seed": 1,
+              "pair_count": 19,
+              "base_rmse": 0.04883300681278876,
+              "corrected_rmse": 0.05071831192726143,
+              "relative_improvement": -0.03860718881596562,
+              "strictly_improved": false,
+              "undefined_reason": null
+            },
+            {
+              "seed": 2,
+              "pair_count": 19,
+              "base_rmse": 0.13359849984939973,
+              "corrected_rmse": 0.10340422773209476,
+              "relative_improvement": 0.22600756858304372,
+              "strictly_improved": true,
+              "undefined_reason": null
+            }
+          ],
+          "mean_relative_improvement": 0.03179010055515413,
+          "evaluated": true,
+          "passed": false
+        },
+        {
+          "axis": 1,
+          "seeds": [
+            {
+              "seed": 0,
+              "pair_count": 19,
+              "base_rmse": 0.3180865069637263,
+              "corrected_rmse": 0.3336110798340808,
+              "relative_improvement": -0.048806134590691226,
+              "strictly_improved": false,
+              "undefined_reason": null
+            },
+            {
+              "seed": 1,
+              "pair_count": 19,
+              "base_rmse": 0.10075947695069423,
+              "corrected_rmse": 0.10680467319445754,
+              "relative_improvement": -0.0599963043349408,
+              "strictly_improved": false,
+              "undefined_reason": null
+            },
+            {
+              "seed": 2,
+              "pair_count": 19,
+              "base_rmse": 0.2808062726429645,
+              "corrected_rmse": 0.21082526374655292,
+              "relative_improvement": 0.24921455008019003,
+              "strictly_improved": true,
+              "undefined_reason": null
+            }
+          ],
+          "mean_relative_improvement": 0.04680403705151934,
+          "evaluated": true,
+          "passed": false
+        }
+      ],
+      "evaluated": true,
+      "passed": false,
+      "scientific_adoption": false
+    }
+  },
+  "primary_development_gate_kind": "learned_sparse11",
+  "primary_development_gate_passed": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "domain_control_cold_start_or_safety_claim": false
+}

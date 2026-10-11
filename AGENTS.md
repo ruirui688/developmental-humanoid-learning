@@ -33,7 +33,7 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-[H保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)已从clean a46633c首次完成，628active/12组/102末窗口、0新物理/模型调用/更新。学习406条selected H15首步与尾均无study界限越界，两个停止端点预测肘速度仅.27077/.17285、实际1.07095/1.06543；主要缺口是乐观身体预测。cold2仅尾位置越界、cold0/1末fallback独立披露。接着I先冻结过去原base残差的因果一步检验，再依结果决定最小观察器/匹配控制；不先采用、不放宽旧门。
+[H保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认学习预测合规但实际超速；[I因果残差结果](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)从clean1f239f3首次完成102端点/96pair，learned seed0/1两轴退化、seed2改善，肩/肘三seed均值仅3.18%/4.68%，主门失败；cold全退化。不采用上一残差进控制。接着J完整六通道原生IMU的一步残差消融：已有C sparse校准一次小型离线拟合、C共同prediction与G已有控制评分；配方/预算先冻、不追加物理、不把当前IMU复制为未来H15。已见数据只开发，新留出/控制仍另需验证。
 
 新物理必须先冻结任务、信息、权限、完整优先门、seed和预算，从干净提交首次执行一次；保留停止前付费交互和负结果，不补跑到成功、不放宽旧门。不能拿部分RMSE排名、不用较少步骤当作停止轨迹的效率优势，也不能用“零停止”证明安全。所有方法共享相同目标、最终权限、停止与实际努力分母。
 

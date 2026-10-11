@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "scientific_adoption": false,
+  "inputs": {
+    "manifest.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-11_guard_forecast_stop\\raw\\manifest.json",
+      "bytes": 663,
+      "sha256": "b3c9969c6d65987c0993c32e0143a7f5f4e704410d5d4e7cbe423a950b5ed538"
+    },
+    "run.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-11_guard_forecast_stop\\raw\\run.json",
+      "bytes": 2381,
+      "sha256": "1d53ddaf808f5e4b88343f8376755434824fb56a1cef9a0f03ce0f9cb9938025"
+    },
+    "description.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-11_guard_forecast_stop\\raw\\description.json",
+      "bytes": 40120,
+      "sha256": "7e890529eb3ebfe4d7103295097ff6c755819d1f898742378ff345ad80787a88"
+    },
+    "last20.jsonl": {
+      "path": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-11_guard_forecast_stop\\raw\\last20.jsonl",
+      "bytes": 137871,
+      "sha256": "9e180e1551193833464a7110599fad985f722ed3e080a169234c9afa175af674"
+    }
+  },
+  "H_source_commit": "a46633c71e95826835ebc43f0aeaf6d5fdfd19e8",
+  "G_physical_source_commit": "91dcf6c111a87427c8f3fdd8b959d4792b1bb5a2",
+  "diagnostic_source": {
+    "commit": "1f239f38262b8f3d964a69732ea6def7570fbc27",
+    "files": {
+      "scripts/diagnose_guard_pd_tail_native_residual.py": {
+        "bytes": 19814,
+        "sha256": "4d5facc24d572dd634205b1aedebad222e9b2b177f444221a5c961f1e54e64e0"
+      },
+      "docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_PROTOCOL.md": {
+        "bytes": 6558,
+        "sha256": "4c038a86bdc3980a4ea9fde0a3e67e2441bfd4ce4f34da6029086743128064c8"
+      }
+    },
+    "clean_committed_bytes_verified": true
+  },
+  "cost": {
+    "H_input_file_reads": 4,
+    "H_input_raw_bytes": 181035,
+    "sha256_input_bytes": 181035,
+    "H_json_documents_parsed": 3,
+    "own_source_file_reads": 2,
+    "own_source_raw_bytes": 26372,
+    "git_queries": 4,
+    "git_return_bytes": 26413,
+    "model_predictions": 0,
+    "model_updates": 0,
+    "RLS_updates": 0,
+    "physics_calls": 0,
+    "last20_records_parsed": 102,
+    "eligible_complete_records": 102,
+    "adjacent_pairs": 96,
+    "bias_state_scalar_calculations": 204,
+    "bias_state_scalar_publications": 204,
+    "corrected_velocity_scalar_additions": 192,
+    "corrected_q_scalar_multiplications": 192,
+    "corrected_q_scalar_additions": 192,
+    "group_scalar_error_insertions": 1552,
+    "wall_seconds": 0.18117620004341006,
+    "cpu_seconds": 0.03125,
+    "timing_excludes": "final run.json and manifest.json serialization/write"
+  },
+  "primary_development_gate_passed": false
+}

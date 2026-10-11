@@ -1,5 +1,9 @@
 # 开发进度与仓库检查点
 
+## 2026-10-11：I因果残差门失败，继续原生IMU一步消融
+
+[I结果](GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)从clean1f239f3首次完成，102端点/96pair/96组、0新物理/模型调用/RLS。上一原base残差使learned seed0/1两轴退化，seed2改善，肩/肘三seed均值仅3.18%/4.68%；cold所有退化。两开发门失败，不采用进控制。有限输出12项零失败仅证明输出契约。接着J完整六通道IMU的一步残差消融，先冻已有C校准的小型离线拟合与C/G已见开发评分，不追加物理、不把当前IMU当未来真值；持续目标与C4/C5依赖保持。
+
 ## 2026-10-11：H排除学习组forecast许可解释，继续因果残差检验
 
 [G控制负结果](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)与原件已公开；[H保存诊断](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)从clean a46633c首次完成，628active/12组/102固定末窗口、0新物理/模型调用/更新。学习406条selected H15没有原研究界限越界，停止肘速度预测仅.27077/.17285，实际1.07095/1.06543；主要缺口是乐观身体预测。cold2仅远期尾位置越界，不解释学习停止；cold0/1末fallback不补selected。有限输出13项零失败，原科学门不变。接着冻结I上一原base残差的因果一步检验，先验证修正依据再接入控制，持续目标active。

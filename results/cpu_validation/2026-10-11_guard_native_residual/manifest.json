@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "files": {
+    "raw/manifest.json": {
+      "bytes": 509,
+      "sha256": "afa5be1c41d3bce19313b195919ff1aee1a0adf09e05cf5322547ed75c995f99",
+      "copy_verified": true
+    },
+    "raw/run.json": {
+      "bytes": 2676,
+      "sha256": "66c4760bd6b9ab799bd49f9b82581099ba29d759a17b5fe0db277826c940e3e7",
+      "copy_verified": true
+    },
+    "raw/description.json": {
+      "bytes": 75894,
+      "sha256": "4c3aa7df4b6b02fc48b7dafb73a75278e1fa3ac366f2c84e22d522d6c14dc2ed",
+      "copy_verified": true
+    },
+    "raw/adjacent_pairs.jsonl": {
+      "bytes": 98040,
+      "sha256": "12c0e0ee4a886397481be44d6142b7e96f3b1af7d8521caeb787dd4ae691cfc0",
+      "copy_verified": true
+    },
+    "output_contract/check_i_saved_output_once.py": {
+      "bytes": 3875,
+      "sha256": "0802f9b1426e0d738910e128f58e1d2720e3a1a8985f80a01abd808ad6223538",
+      "copy_verified": true
+    },
+    "output_contract/c4_i_output_check_01.json": {
+      "bytes": 26708,
+      "sha256": "90f4018eb2517c3bce70851e7cfe9667377a44fe0f9b0df6fee7a3530c16aa4e",
+      "copy_verified": true
+    },
+    "first_process/stdout": {
+      "bytes": 2746,
+      "sha256": "f370a34339cc8ddba1bb621a70950ca616436ce001a04b127fad152b1f407c49",
+      "copy_verified": true
+    },
+    "first_process/stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "first_process/execution.json": {
+      "bytes": 587,
+      "sha256": "c5d5bb3b027384014dd17569b95a8001ffb897e8c077e4104bdc2b8c933365b8",
+      "copy_verified": true
+    },
+    "archive_i_saved_once.py": {
+      "bytes": 1933,
+      "sha256": "c0e7c0929586cab89d50d662ecf6f88e289e6a0d38ca7225dc55e709008d9229",
+      "copy_verified": true
+    }
+  },
+  "cost": {
+    "binary_reads": 20,
+    "input_bytes": 425936,
+    "copy_checks": 10,
+    "copy_failures": 0,
+    "wall_seconds": 0.12081420002505183,
+    "cpu_seconds": 0.015625
+  },
+  "scope": "original bytes only; no I rerun, score/gate statistic, source H/G audit, model or physics"
+}
