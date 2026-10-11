@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "stage": "prediction",
+  "status": "completed",
+  "files": {
+    "paid_intervals.jsonl.gz": {
+      "bytes": 7728074,
+      "sha256": "5621c3acccb7f2407eb501a02a3de462597d2cb4bd42e24b42bb5b0fc6216bce"
+    },
+    "run.json": {
+      "bytes": 366959,
+      "sha256": "9f382c910e77fcd6d10b4aa3a045b50e0b9fb59ffcd916dedc52a778221c1034"
+    },
+    "metrics.json": {
+      "bytes": 11800,
+      "sha256": "9f2437fca490f2795704d79ed67cb62f12090ff088a9b241927397f4601110fc"
+    },
+    "models.json": {
+      "bytes": 60805,
+      "sha256": "5198d657005798bc069119832fd0b63a0a0858971d88f216fae0168f36b228b9"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 19422289,
+      "sha256": "a40c2aec41db411b5f09952f383e24f03bc3e15a0129631f2e06a5a954f97064"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 5127432,
+      "sha256": "81f304c5a208a0a3e0b889e080d723e0b6796cad96803e7b9865023be06433aa"
+    },
+    "source.zip": {
+      "bytes": 93036,
+      "sha256": "c626a48d5c4a7d628279912253c32b905f58396d8e855f0c7615029aaae0ef48"
+    },
+    "installed/Z_7701_calibration.xml": {
+      "bytes": 3473,
+      "sha256": "af0f2ba478b405682a93b4dbd87ab319dcef21b6d4eaea50f63ede18a341c2b3"
+    },
+    "installed/Z_7701_prediction.xml": {
+      "bytes": 3473,
+      "sha256": "af0f2ba478b405682a93b4dbd87ab319dcef21b6d4eaea50f63ede18a341c2b3"
+    },
+    "installed/Z_7702_calibration.xml": {
+      "bytes": 3473,
+      "sha256": "f7f6ca36d0385e7a24773e6c7e1f1a6ecac35e3580b6d3bfafe4394aade797be"
+    },
+    "installed/Z_7702_prediction.xml": {
+      "bytes": 3473,
+      "sha256": "f7f6ca36d0385e7a24773e6c7e1f1a6ecac35e3580b6d3bfafe4394aade797be"
+    },
+    "installed/Z_7703_calibration.xml": {
+      "bytes": 3473,
+      "sha256": "f99775945a8f4bac4ec41912024f3668ac4a507495afde032f2eb86954d0f4de"
+    },
+    "installed/Z_7703_prediction.xml": {
+      "bytes": 3473,
+      "sha256": "f99775945a8f4bac4ec41912024f3668ac4a507495afde032f2eb86954d0f4de"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

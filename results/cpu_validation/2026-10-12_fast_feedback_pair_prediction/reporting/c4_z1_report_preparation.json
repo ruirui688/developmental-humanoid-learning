@@ -1,0 +1,47 @@
+{
+  "status": "new_Z1_report_written_from_parent_derived_summary_only",
+  "report_path": "docs/FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md",
+  "derived_summary": {
+    "path": "external\\c4_z1_report_input.json",
+    "file_reads": 1,
+    "bytes": 535163,
+    "sha256": "c3326aba7b87b9e948f9f62671b3cdcc4b77db1753d660f5dc98d1575aa8461c"
+  },
+  "derived_summary_reads": 2,
+  "derived_summary_read_bytes": 1070326,
+  "first_read": {
+    "python_JSON_parse": "returned",
+    "stdout_scope": "whole input",
+    "wrapper_JSON_parse": "failed",
+    "reason": "output truncation warning preceded JSON",
+    "raw_tool_result_stored_before_parse": false,
+    "scientific_recalculation": false
+  },
+  "necessary_retry": {
+    "stdout_scope": "only selected saved checks and receipt",
+    "raw_tool_result_stored_before_parse": true,
+    "python_JSON_parse": "returned",
+    "wrapper_JSON_parse": "returned",
+    "command_wall_seconds": 0.4237696,
+    "table_metrics": "parent saved cold_axis/learned_axis; display rounding only"
+  },
+  "parent_message_supplement": "full source SHA, q/v check order, trial effort/contact, current checks and budget; no file reads",
+  "raw_source_file_reads": 0,
+  "new_scientific_metric_recalculations": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "physical_calls": 0,
+  "markdown_checks": {
+    "git_diff_check": "passed; untracked file may be excluded from git diff",
+    "cached_trailing_whitespace_lines": 0,
+    "linked_target_existence_checks": 7,
+    "linked_targets_present": 7,
+    "linked_target_contents_read": 0
+  },
+  "unmeasured_first_command_wall_and_source_backend_IO": "unknown_not_zero",
+  "thin_contract_status": "pending_parent_update",
+  "old_X_Y_source_modifications": 0,
+  "navigation_ledger_modifications": 0,
+  "commit_push": 0
+}
+

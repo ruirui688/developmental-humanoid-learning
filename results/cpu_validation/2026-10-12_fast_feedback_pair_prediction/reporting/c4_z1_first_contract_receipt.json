@@ -1,0 +1,3370 @@
+{
+  "schema_version": 1,
+  "purpose": "Z1 saved evidence consistency only",
+  "raw": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_fast_feedback_pair_prediction\\raw",
+  "reads": [
+    {
+      "name": "manifest.json",
+      "bytes": 2168,
+      "sha256": "5f157bf2750aaa462ec08a229d90f2ae093524cdb99e76a8396dfbf2e4b13798"
+    },
+    {
+      "name": "run.json",
+      "bytes": 366959,
+      "sha256": "9f382c910e77fcd6d10b4aa3a045b50e0b9fb59ffcd916dedc52a778221c1034"
+    },
+    {
+      "name": "metrics.json",
+      "bytes": 11800,
+      "sha256": "9f2437fca490f2795704d79ed67cb62f12090ff088a9b241927397f4601110fc"
+    },
+    {
+      "name": "models.json",
+      "bytes": 60805,
+      "sha256": "5198d657005798bc069119832fd0b63a0a0858971d88f216fae0168f36b228b9"
+    }
+  ],
+  "read_call_attempts": 4,
+  "read_call_returns": 4,
+  "known_payload_bytes_read": 441732,
+  "checks": [
+    {
+      "name": "manifest.json:object",
+      "passed": true
+    },
+    {
+      "name": "run.json:object",
+      "passed": true
+    },
+    {
+      "name": "metrics.json:object",
+      "passed": true
+    },
+    {
+      "name": "models.json:object",
+      "passed": true
+    },
+    {
+      "name": "manifest_binding:run.json",
+      "passed": true
+    },
+    {
+      "name": "manifest_binding:metrics.json",
+      "passed": true
+    },
+    {
+      "name": "manifest_binding:models.json",
+      "passed": true
+    },
+    {
+      "name": "manifest_schema",
+      "passed": true
+    },
+    {
+      "name": "stage",
+      "passed": true
+    },
+    {
+      "name": "status_binding",
+      "passed": true
+    },
+    {
+      "name": "run:scientific_adoption",
+      "passed": true
+    },
+    {
+      "name": "run:old_free_root_C4_validation",
+      "passed": true
+    },
+    {
+      "name": "run:c4_scientific_validation",
+      "passed": true
+    },
+    {
+      "name": "run:c5_scientific_dependency_released",
+      "passed": true
+    },
+    {
+      "name": "run:c4_contact_scientific_validation",
+      "passed": true
+    },
+    {
+      "name": "metrics:scientific_adoption",
+      "passed": true
+    },
+    {
+      "name": "metrics:old_free_root_C4_validation",
+      "passed": true
+    },
+    {
+      "name": "metrics:c4_scientific_validation",
+      "passed": true
+    },
+    {
+      "name": "metrics:c5_scientific_dependency_released",
+      "passed": true
+    },
+    {
+      "name": "metrics:c4_contact_scientific_validation",
+      "passed": true
+    },
+    {
+      "name": "manifest:scientific_adoption",
+      "passed": true
+    },
+    {
+      "name": "manifest:old_free_root_C4_validation",
+      "passed": true
+    },
+    {
+      "name": "manifest:c4_scientific_validation",
+      "passed": true
+    },
+    {
+      "name": "manifest:c5_scientific_dependency_released",
+      "passed": true
+    },
+    {
+      "name": "manifest:c4_contact_scientific_validation",
+      "passed": true
+    },
+    {
+      "name": "seeds",
+      "passed": true
+    },
+    {
+      "name": "budget_plan",
+      "passed": true
+    },
+    {
+      "name": "no_retry",
+      "passed": true
+    },
+    {
+      "name": "calibration_only_updates",
+      "passed": true
+    },
+    {
+      "name": "failure_status",
+      "passed": true
+    },
+    {
+      "name": "source_verified_boolean",
+      "passed": true
+    },
+    {
+      "name": "source_pin_population",
+      "passed": true
+    },
+    {
+      "name": "source_pin:scripts/develop_fast_feedback_pair.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/fast_feedback_pair_development.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "protocol_pin:docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "source_pin:docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "protocol_pin:docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/fast_feedback_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/fast_feedback_environment.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:scripts/validate_fast_feedback_engineering.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/suspended_environment.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:scripts/validate_supported_pair_engineering.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/supported_environment.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/environment.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/assets/ground_body.xml",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/guard_coupled_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/guard_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/local_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/local_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:src/developmental_physics/fast_feedback_pair_mpc.py",
+      "passed": true
+    },
+    {
+      "name": "source_pin:pyproject.toml",
+      "passed": true
+    },
+    {
+      "name": "clean_source_population",
+      "passed": true
+    },
+    {
+      "name": "source_commit",
+      "passed": true
+    },
+    {
+      "name": "runtime_object",
+      "passed": true
+    },
+    {
+      "name": "python_metadata",
+      "passed": true
+    },
+    {
+      "name": "platform_metadata",
+      "passed": true
+    },
+    {
+      "name": "new_Z0_binding",
+      "passed": true
+    },
+    {
+      "name": "cost_object",
+      "passed": true
+    },
+    {
+      "name": "cost:control_call_attempts",
+      "passed": true
+    },
+    {
+      "name": "cost:control_call_returns",
+      "passed": true
+    },
+    {
+      "name": "cost:control_call_exceptions",
+      "passed": true
+    },
+    {
+      "name": "cost:confirmed_physics_substeps",
+      "passed": true
+    },
+    {
+      "name": "cost:captured_substep_endpoint_forward_returns",
+      "passed": true
+    },
+    {
+      "name": "cost:environment_constructor_attempts",
+      "passed": true
+    },
+    {
+      "name": "cost:environment_constructor_returns",
+      "passed": true
+    },
+    {
+      "name": "cost:reset_attempts",
+      "passed": true
+    },
+    {
+      "name": "cost:reset_returns",
+      "passed": true
+    },
+    {
+      "name": "cost:RLS_vector_update_attempts",
+      "passed": true
+    },
+    {
+      "name": "cost:RLS_vector_update_returns",
+      "passed": true
+    },
+    {
+      "name": "cost:RLS_vector_update_exceptions",
+      "passed": true
+    },
+    {
+      "name": "cost:RLS_vector_update_commits",
+      "passed": true
+    },
+    {
+      "name": "cost:RLS_scalar_update_commits",
+      "passed": true
+    },
+    {
+      "name": "cost:MPC_decision_attempts",
+      "passed": true
+    },
+    {
+      "name": "cost:MPC_decision_returns",
+      "passed": true
+    },
+    {
+      "name": "cost:MPC_decision_exceptions",
+      "passed": true
+    },
+    {
+      "name": "cost:teacher_calls",
+      "passed": true
+    },
+    {
+      "name": "cost:batch_fit_calls",
+      "passed": true
+    },
+    {
+      "name": "cost:task_policy_updates",
+      "passed": true
+    },
+    {
+      "name": "cost:GPU_training_seconds",
+      "passed": true
+    },
+    {
+      "name": "time:wall_seconds",
+      "passed": true
+    },
+    {
+      "name": "time:cpu_seconds",
+      "passed": true
+    },
+    {
+      "name": "control_call:outcome_partition",
+      "passed": true
+    },
+    {
+      "name": "RLS_vector_update:outcome_partition",
+      "passed": true
+    },
+    {
+      "name": "MPC_decision:outcome_partition",
+      "passed": true
+    },
+    {
+      "name": "bound:control_call_attempts",
+      "passed": true
+    },
+    {
+      "name": "bound:confirmed_physics_substeps",
+      "passed": true
+    },
+    {
+      "name": "bound:RLS_vector_update_commits",
+      "passed": true
+    },
+    {
+      "name": "bound:RLS_scalar_update_commits",
+      "passed": true
+    },
+    {
+      "name": "physics_le_attempts",
+      "passed": true
+    },
+    {
+      "name": "capture_le_physics",
+      "passed": true
+    },
+    {
+      "name": "RLS_atomic_two_outputs",
+      "passed": true
+    },
+    {
+      "name": "RLS_commit_bound",
+      "passed": true
+    },
+    {
+      "name": "forbidden_work_zero:MPC_decision_attempts",
+      "passed": true
+    },
+    {
+      "name": "forbidden_work_zero:MPC_decision_returns",
+      "passed": true
+    },
+    {
+      "name": "forbidden_work_zero:MPC_decision_exceptions",
+      "passed": true
+    },
+    {
+      "name": "forbidden_work_zero:teacher_calls",
+      "passed": true
+    },
+    {
+      "name": "forbidden_work_zero:batch_fit_calls",
+      "passed": true
+    },
+    {
+      "name": "forbidden_work_zero:task_policy_updates",
+      "passed": true
+    },
+    {
+      "name": "forbidden_work_zero:GPU_training_seconds",
+      "passed": true
+    },
+    {
+      "name": "independent_pair_bound",
+      "passed": true
+    },
+    {
+      "name": "independent_prediction_pair_prediction:counts",
+      "passed": true
+    },
+    {
+      "name": "independent_prediction_scalar_prediction:counts",
+      "passed": true
+    },
+    {
+      "name": "seed_rows_list",
+      "passed": true
+    },
+    {
+      "name": "trials_list",
+      "passed": true
+    },
+    {
+      "name": "attempted_seed_population",
+      "passed": true
+    },
+    {
+      "name": "unattempted_seed_partition",
+      "passed": true
+    },
+    {
+      "name": "trial:0:object",
+      "passed": true
+    },
+    {
+      "name": "trial:0:seed_kind",
+      "passed": true
+    },
+    {
+      "name": "trial:0:identity",
+      "passed": true
+    },
+    {
+      "name": "trial:0:plan",
+      "passed": true
+    },
+    {
+      "name": "trial:0:complete_boolean",
+      "passed": true
+    },
+    {
+      "name": "trial:0:complete_without_stop_failure",
+      "passed": true
+    },
+    {
+      "name": "trial:0:stable_physical",
+      "passed": true
+    },
+    {
+      "name": "trial:0:stable_execution",
+      "passed": true
+    },
+    {
+      "name": "trial:0:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:0:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:0:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:0:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "name": "trial:0:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "name": "trial:0:record_bounds",
+      "passed": true
+    },
+    {
+      "name": "trial:0:capture_le_records",
+      "passed": true
+    },
+    {
+      "name": "trial:0:full_population",
+      "passed": true
+    },
+    {
+      "name": "trial:1:object",
+      "passed": true
+    },
+    {
+      "name": "trial:1:seed_kind",
+      "passed": true
+    },
+    {
+      "name": "trial:1:identity",
+      "passed": true
+    },
+    {
+      "name": "trial:1:plan",
+      "passed": true
+    },
+    {
+      "name": "trial:1:complete_boolean",
+      "passed": true
+    },
+    {
+      "name": "trial:1:complete_without_stop_failure",
+      "passed": true
+    },
+    {
+      "name": "trial:1:stable_physical",
+      "passed": true
+    },
+    {
+      "name": "trial:1:stable_execution",
+      "passed": true
+    },
+    {
+      "name": "trial:1:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:1:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:1:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:1:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "name": "trial:1:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "name": "trial:1:record_bounds",
+      "passed": true
+    },
+    {
+      "name": "trial:1:capture_le_records",
+      "passed": true
+    },
+    {
+      "name": "trial:1:full_population",
+      "passed": true
+    },
+    {
+      "name": "trial:2:object",
+      "passed": true
+    },
+    {
+      "name": "trial:2:seed_kind",
+      "passed": true
+    },
+    {
+      "name": "trial:2:identity",
+      "passed": true
+    },
+    {
+      "name": "trial:2:plan",
+      "passed": true
+    },
+    {
+      "name": "trial:2:complete_boolean",
+      "passed": true
+    },
+    {
+      "name": "trial:2:complete_without_stop_failure",
+      "passed": true
+    },
+    {
+      "name": "trial:2:stable_physical",
+      "passed": true
+    },
+    {
+      "name": "trial:2:stable_execution",
+      "passed": true
+    },
+    {
+      "name": "trial:2:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:2:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:2:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:2:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "name": "trial:2:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "name": "trial:2:record_bounds",
+      "passed": true
+    },
+    {
+      "name": "trial:2:capture_le_records",
+      "passed": true
+    },
+    {
+      "name": "trial:2:full_population",
+      "passed": true
+    },
+    {
+      "name": "trial:3:object",
+      "passed": true
+    },
+    {
+      "name": "trial:3:seed_kind",
+      "passed": true
+    },
+    {
+      "name": "trial:3:identity",
+      "passed": true
+    },
+    {
+      "name": "trial:3:plan",
+      "passed": true
+    },
+    {
+      "name": "trial:3:complete_boolean",
+      "passed": true
+    },
+    {
+      "name": "trial:3:complete_without_stop_failure",
+      "passed": true
+    },
+    {
+      "name": "trial:3:stable_physical",
+      "passed": true
+    },
+    {
+      "name": "trial:3:stable_execution",
+      "passed": true
+    },
+    {
+      "name": "trial:3:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:3:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:3:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:3:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "name": "trial:3:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "name": "trial:3:record_bounds",
+      "passed": true
+    },
+    {
+      "name": "trial:3:capture_le_records",
+      "passed": true
+    },
+    {
+      "name": "trial:3:full_population",
+      "passed": true
+    },
+    {
+      "name": "trial:4:object",
+      "passed": true
+    },
+    {
+      "name": "trial:4:seed_kind",
+      "passed": true
+    },
+    {
+      "name": "trial:4:identity",
+      "passed": true
+    },
+    {
+      "name": "trial:4:plan",
+      "passed": true
+    },
+    {
+      "name": "trial:4:complete_boolean",
+      "passed": true
+    },
+    {
+      "name": "trial:4:complete_without_stop_failure",
+      "passed": true
+    },
+    {
+      "name": "trial:4:stable_physical",
+      "passed": true
+    },
+    {
+      "name": "trial:4:stable_execution",
+      "passed": true
+    },
+    {
+      "name": "trial:4:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:4:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:4:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:4:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "name": "trial:4:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "name": "trial:4:record_bounds",
+      "passed": true
+    },
+    {
+      "name": "trial:4:capture_le_records",
+      "passed": true
+    },
+    {
+      "name": "trial:4:full_population",
+      "passed": true
+    },
+    {
+      "name": "trial:5:object",
+      "passed": true
+    },
+    {
+      "name": "trial:5:seed_kind",
+      "passed": true
+    },
+    {
+      "name": "trial:5:identity",
+      "passed": true
+    },
+    {
+      "name": "trial:5:plan",
+      "passed": true
+    },
+    {
+      "name": "trial:5:complete_boolean",
+      "passed": true
+    },
+    {
+      "name": "trial:5:complete_without_stop_failure",
+      "passed": true
+    },
+    {
+      "name": "trial:5:stable_physical",
+      "passed": true
+    },
+    {
+      "name": "trial:5:stable_execution",
+      "passed": true
+    },
+    {
+      "name": "trial:5:time:construction_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:5:time:active_control_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:5:time:model_physics_dt_s",
+      "passed": true
+    },
+    {
+      "name": "trial:5:time:requested_control_substeps",
+      "passed": true
+    },
+    {
+      "name": "trial:5:time:request_hold_duration_s",
+      "passed": true
+    },
+    {
+      "name": "trial:5:record_bounds",
+      "passed": true
+    },
+    {
+      "name": "trial:5:capture_le_records",
+      "passed": true
+    },
+    {
+      "name": "trial:5:full_population",
+      "passed": true
+    },
+    {
+      "name": "unique_trial_ids",
+      "passed": true
+    },
+    {
+      "name": "trial_control_attempt_binding",
+      "passed": true
+    },
+    {
+      "name": "trial_control_return_binding",
+      "passed": true
+    },
+    {
+      "name": "trial_captured_binding",
+      "passed": true
+    },
+    {
+      "name": "models_attempted_seed_subset",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:calibration_trial_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:prediction_trial_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:model_requires_calibration",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:model_names",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:object",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:structure",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:trainable",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:integration",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:hinge_threshold_nm",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:vector_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:scalar_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:output_update_counts",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:qref_rad",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:coefficients",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:covariance",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:public_ranges",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:time:reference_constructor_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:time:active_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:time:velocity_increment_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:time:old_learned_snapshot_restoration",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:time:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:time:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:cold:time:more_correlated_micro_updates_change_prior_relative_weight",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:object",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:structure",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:trainable",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:integration",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:hinge_threshold_nm",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:vector_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:scalar_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:output_update_counts",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:qref_rad",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:coefficients",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:covariance",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:public_ranges",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:time:reference_constructor_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:time:active_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:time:velocity_increment_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:time:old_learned_snapshot_restoration",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:time:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:time:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:learned:time:more_correlated_micro_updates_change_prior_relative_weight",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:score_population_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:score_population_requires_models",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:score_trial_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:model_fingerprints_stable",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H1:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H10:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H20:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H50:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7701:H150:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:calibration_trial_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:prediction_trial_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:model_requires_calibration",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:model_names",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:object",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:structure",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:trainable",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:integration",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:hinge_threshold_nm",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:vector_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:scalar_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:output_update_counts",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:qref_rad",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:coefficients",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:covariance",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:public_ranges",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:time:reference_constructor_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:time:active_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:time:velocity_increment_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:time:old_learned_snapshot_restoration",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:time:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:time:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:cold:time:more_correlated_micro_updates_change_prior_relative_weight",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:object",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:structure",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:trainable",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:integration",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:hinge_threshold_nm",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:vector_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:scalar_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:output_update_counts",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:qref_rad",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:coefficients",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:covariance",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:public_ranges",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:time:reference_constructor_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:time:active_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:time:velocity_increment_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:time:old_learned_snapshot_restoration",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:time:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:time:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:learned:time:more_correlated_micro_updates_change_prior_relative_weight",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:score_population_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:score_population_requires_models",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:score_trial_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:model_fingerprints_stable",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H1:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H10:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H20:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H50:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7702:H150:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:calibration_trial_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:prediction_trial_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:model_requires_calibration",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:model_names",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:object",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:structure",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:trainable",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:integration",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:hinge_threshold_nm",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:vector_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:scalar_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:output_update_counts",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:qref_rad",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:coefficients",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:covariance",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:public_ranges",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:time:reference_constructor_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:time:active_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:time:velocity_increment_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:time:old_learned_snapshot_restoration",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:time:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:time:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:cold:time:more_correlated_micro_updates_change_prior_relative_weight",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:object",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:structure",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:trainable",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:integration",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:hinge_threshold_nm",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:vector_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:scalar_update_count",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:output_update_counts",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:qref_rad",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:coefficients",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:covariance",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:public_ranges",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:time:reference_constructor_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:time:active_dt_seconds",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:time:velocity_increment_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:time:old_learned_snapshot_restoration",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:time:forgetting_factor",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:time:initial_covariance_scale",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:learned:time:more_correlated_micro_updates_change_prior_relative_weight",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:score_population_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:score_population_requires_models",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:score_trial_binding",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:model_fingerprints_stable",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H1:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H10:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H20:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H50:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:planned_origins",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:cold:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:cold:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:cold:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:cold:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:cold:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:cold:v_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:learned:availability_boolean",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:learned:origin_bound",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:learned:no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:learned:available_complete",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:learned:q_shape",
+      "passed": true
+    },
+    {
+      "name": "seed:7703:H150:learned:v_shape",
+      "passed": true
+    },
+    {
+      "name": "metrics_complete_boolean",
+      "passed": true
+    },
+    {
+      "name": "metrics_population_binding",
+      "passed": true
+    },
+    {
+      "name": "gate_boolean",
+      "passed": true
+    },
+    {
+      "name": "metric_mean_type",
+      "passed": true
+    },
+    {
+      "name": "metric_no_partial_ranking",
+      "passed": true
+    },
+    {
+      "name": "saved_check:0:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:0:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:0:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:0:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:0:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:0:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:0:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:0:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:1:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:1:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:1:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:1:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:1:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:1:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:1:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:1:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:2:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:2:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:2:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:2:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:2:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:2:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:2:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:2:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:3:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:3:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:3:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:3:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:3:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:3:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:3:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:3:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:4:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:4:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:4:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:4:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:4:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:4:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:4:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:4:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:5:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:5:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:5:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:5:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:5:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:5:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:5:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:5:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:6:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:6:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:6:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:6:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:6:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:6:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:6:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:6:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:7:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:7:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:7:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:7:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:7:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:7:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:7:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:7:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:8:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:8:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:8:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:8:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:8:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:8:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:8:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:8:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:9:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:9:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:9:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:9:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:9:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:9:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:9:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:9:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:10:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:10:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:10:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:10:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:10:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:10:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:10:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:10:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:11:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:11:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:11:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:11:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:11:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:11:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:11:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:11:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:12:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:12:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:12:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:12:mean_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:12:required_improvement",
+      "passed": true
+    },
+    {
+      "name": "saved_check:12:cold_axis_mean",
+      "passed": true
+    },
+    {
+      "name": "saved_check:12:learned_axis_mean",
+      "passed": true
+    },
+    {
+      "name": "saved_check:12:fraction_shape",
+      "passed": true
+    },
+    {
+      "name": "saved_check:13:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:13:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:13:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:13:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:13:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:13:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:13:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:13:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:14:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:14:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:14:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:14:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:14:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:14:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:14:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:14:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:15:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:15:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:15:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:15:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:15:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:15:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:15:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:15:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:16:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:16:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:16:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:16:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:16:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:16:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:16:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:16:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:17:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:17:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:17:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:17:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:17:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:17:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:17:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:17:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:18:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:18:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:18:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:18:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:18:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:18:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:18:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:18:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:19:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:19:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:19:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:19:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:19:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:19:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:19:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:19:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:20:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:20:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:20:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:20:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:20:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:20:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:20:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:20:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:21:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:21:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:21:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:21:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:21:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:21:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:21:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:21:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:22:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:22:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:22:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:22:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:22:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:22:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:22:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:22:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:23:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:23:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:23:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:23:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:23:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:23:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:23:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:23:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:24:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:24:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:24:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:24:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:24:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:24:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:24:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:24:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:25:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:25:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:25:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:25:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:25:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:25:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:25:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:25:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:26:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:26:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:26:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:26:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:26:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:26:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:26:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:26:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:27:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:27:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:27:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:27:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:27:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:27:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:27:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:27:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:28:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:28:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:28:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:28:mean_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:28:required_improvement",
+      "passed": true
+    },
+    {
+      "name": "saved_check:28:cold_axis_mean",
+      "passed": true
+    },
+    {
+      "name": "saved_check:28:learned_axis_mean",
+      "passed": true
+    },
+    {
+      "name": "saved_check:28:fraction_shape",
+      "passed": true
+    },
+    {
+      "name": "saved_check:29:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:29:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:29:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:29:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:29:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:29:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:29:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:29:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:30:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:30:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:30:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:30:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:30:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:30:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:30:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:30:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:31:object",
+      "passed": true
+    },
+    {
+      "name": "saved_check:31:booleans",
+      "passed": true
+    },
+    {
+      "name": "saved_check:31:unavailable_false",
+      "passed": true
+    },
+    {
+      "name": "saved_check:31:per_seed_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_check:31:gated_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:31:strict_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:31:cold_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_check:31:learned_axis_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_per_seed_check_population",
+      "passed": true
+    },
+    {
+      "name": "saved_mean_check_population",
+      "passed": true
+    },
+    {
+      "name": "stored_gate_boolean_binding",
+      "passed": true
+    },
+    {
+      "name": "completed_full_trials",
+      "passed": true
+    },
+    {
+      "name": "completed_paid_population",
+      "passed": true
+    },
+    {
+      "name": "passed_gate_requires_complete_run",
+      "passed": true
+    }
+  ],
+  "check_count": 829,
+  "failed_check_count": 0,
+  "unknowns": [],
+  "failures": [],
+  "contract_passed": true,
+  "result_status": "completed",
+  "saved_z1_prediction_gate_passed": true,
+  "recomputed_RMSE_vectors": 0,
+  "recomputed_means": 0,
+  "recomputed_improvement_fractions": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "production_source_or_old_result_reads": 0,
+  "unmeasured_OS_filesystem_IO": "unknown_not_zero",
+  "wall_seconds": 0.0058703001122921705,
+  "cpu_seconds": 0.015625,
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

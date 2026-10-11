@@ -1,0 +1,111 @@
+{
+  "argv": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "scripts/develop_fast_feedback_pair.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_z1_prediction_01\\raw",
+    "--stage",
+    "prediction",
+    "--source-commit",
+    "7d323dcc4b8c303c8d76430763a09b36dbb8130a"
+  ],
+  "source_commit": "7d323dcc4b8c303c8d76430763a09b36dbb8130a",
+  "returncode": 0,
+  "source_files": {
+    "src/developmental_physics/fast_feedback_environment.py": {
+      "bytes": 6476,
+      "sha256": "7a731aaa02a431c7bb3f93450352f7a393979af2655b5ba6c2084a8c2d898455"
+    },
+    "src/developmental_physics/fast_feedback_pair_model.py": {
+      "bytes": 2735,
+      "sha256": "289c5f5275ba7dcf6a162b42aa15af71ba067af4246d9bb0f5a3fded48fdc2e7"
+    },
+    "src/developmental_physics/fast_feedback_pair_mpc.py": {
+      "bytes": 9551,
+      "sha256": "5a7d9d978de755c83023974628eb1891aa76f0e44a71a1454c6e676aacaa71f4"
+    },
+    "src/developmental_physics/fast_feedback_pair_development.py": {
+      "bytes": 45301,
+      "sha256": "f29196f9a2e54743b6da29f3fe587871559065959a746d25fe8347dc8dcd96c7"
+    },
+    "scripts/develop_fast_feedback_pair.py": {
+      "bytes": 18634,
+      "sha256": "63b74c5c1d1f611451da55a1e3c559882a288409069c45ee11fb91f1d755416b"
+    },
+    "docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md": {
+      "bytes": 12655,
+      "sha256": "2370f7b76f627936e18bd609d67f785e6a090bde3c7dea0097deda237b42305b"
+    },
+    "docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9430,
+      "sha256": "5b71ac014786ebbc464becc8579c36df906360e256d47232612ddc141b8bcee4"
+    },
+    "docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md": {
+      "bytes": 10498,
+      "sha256": "1fe9129300663a3b51199cf21f2813279a35f3dcbcd3740dafd4e8085c42d695"
+    },
+    "docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md": {
+      "bytes": 16438,
+      "sha256": "e03f158d274c510fc1fca222e5a2a75e4afc3d0264ee6e227904950f6c4423a7"
+    },
+    "scripts/validate_fast_feedback_engineering.py": {
+      "bytes": 23011,
+      "sha256": "34c5cfc835198f5e53bb17feaa43065c118f7fef5caa9b2dbc95681633b12bb5"
+    },
+    "scripts/validate_supported_pair_engineering.py": {
+      "bytes": 24683,
+      "sha256": "5c75e5db6f8721180bbbb17158f29ed736b0e10554672e585867f433b3766825"
+    },
+    "src/developmental_physics/suspended_environment.py": {
+      "bytes": 7076,
+      "sha256": "f5154b7e059ed9939ed130d9a5c9eda2af455b9f660a4e843c72b996a44d81f8"
+    },
+    "src/developmental_physics/supported_environment.py": {
+      "bytes": 11642,
+      "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+    },
+    "src/developmental_physics/environment.py": {
+      "bytes": 15822,
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+    },
+    "src/developmental_physics/assets/ground_body.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+    },
+    "src/developmental_physics/guard_coupled_pair_model.py": {
+      "bytes": 3762,
+      "sha256": "7f234760e8f3d5b9cc799c871e84e7adfebecdf92e11f315735fad8b38ad78ed"
+    },
+    "src/developmental_physics/guard_pair_model.py": {
+      "bytes": 6860,
+      "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+    },
+    "src/developmental_physics/local_pair_model.py": {
+      "bytes": 25148,
+      "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+    },
+    "src/developmental_physics/local_model.py": {
+      "bytes": 16564,
+      "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+    },
+    "pyproject.toml": {
+      "bytes": 698,
+      "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2"
+    }
+  },
+  "source_snapshot_reads": 21,
+  "source_snapshot_read_bytes": 270576,
+  "started_unix": 1791751990.5302284,
+  "ended_unix": 1791752065.6334052,
+  "wall_seconds": 75.1023936001584,
+  "stdout_bytes": 30161,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

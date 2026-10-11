@@ -1,0 +1,56 @@
+{
+  "status": "sealed",
+  "files": {
+    "read_z1_reporting_once.py": {
+      "bytes": 1503,
+      "sha256": "3694211ba3219e8a53bbb3ad95c80745649843e005bb0124501c4e4416b988bc"
+    },
+    "c4_z1_report_input.json": {
+      "bytes": 535163,
+      "sha256": "c3326aba7b87b9e948f9f62671b3cdcc4b77db1753d660f5dc98d1575aa8461c"
+    },
+    "check_z1_saved_metrics_once.py": {
+      "bytes": 2939,
+      "sha256": "968ca09f2b5ac73e31e7ffca31fab8fb531b992c54da40d661bad1c96e746154"
+    },
+    "c4_z1_new_metrics_check.json": {
+      "bytes": 19958,
+      "sha256": "f62d2ec53dfa4e3c5fbd4a3f60c13691c530c5d3262c15eba90952ec690761e0"
+    },
+    "check_z1_first_contract.py": {
+      "bytes": 26324,
+      "sha256": "a52b29534e50f7be227532970ce3bd05b2a94fd4c54d02ff4885ecfbd1decdeb"
+    },
+    "c4_z1_contract_design_receipt.json": {
+      "bytes": 1906,
+      "sha256": "0ac4879c6f631b6d8dddc77c73489357184f4f4b76f1bed25e8acd02dab2230b"
+    },
+    "c4_z1_report_preparation.json": {
+      "bytes": 1774,
+      "sha256": "805040b058f64dbdd5b669a71ef4435f2e39f8aea81414fecd19c2c6974e975c"
+    },
+    "update_z1_result_navigation_once.py": {
+      "bytes": 4386,
+      "sha256": "74a80a2cd7fe9eeec6f1cc866602683dcff6c076306a130a3766a748be95567d"
+    },
+    "seal_z1_reporting_once.py": {
+      "bytes": 1947,
+      "sha256": "0e6e53f4726c98ce1b721db625403297ed7d653a853f1881bdca1d023d3c42e6"
+    },
+    "c4_z1_first_contract_receipt.json": {
+      "bytes": 74059,
+      "sha256": "7bac55bb2f567383aee628268b0e1107b99201c595bebafb9f9252e616c4da80"
+    }
+  },
+  "cost_before_manifest": {
+    "reads": 10,
+    "read_bytes": 669959,
+    "writes": 10,
+    "write_bytes": 669959
+  },
+  "wall_seconds": 0.027172799920663238,
+  "cpu_seconds": 0.0,
+  "scientific_recomputations_in_sealing": 0,
+  "model_fit_physics_calls": 0,
+  "raw_or_root_manifests_modified": false
+}

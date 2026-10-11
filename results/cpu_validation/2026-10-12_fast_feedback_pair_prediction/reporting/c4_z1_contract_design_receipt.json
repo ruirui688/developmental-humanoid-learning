@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "task": "Design only: new Z1 first thin saved-payload contract",
+  "checker": {
+    "path": "external\\check_z1_first_contract.py",
+    "bytes": 26324,
+    "sha256": "a52b29534e50f7be227532970ce3bd05b2a94fd4c54d02ff4885ecfbd1decdeb"
+  },
+  "AST_parse_passed": true,
+  "imports": [
+    "argparse",
+    "hashlib",
+    "json",
+    "math",
+    "re",
+    "time"
+  ],
+  "from_imports": [
+    "pathlib"
+  ],
+  "checker_execution_count": 0,
+  "raw_result_reads": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "RMSE_mean_or_improvement_recomputations": 0,
+  "known_previous_new_source_bytes_read": 109236,
+  "new_checker_source_bytes_AST_read": 26324,
+  "additional_narrow_rg_production_source_IO": "unknown_not_zero; two source-only rg commands on reviewed Z1 code",
+  "README_read": "first 120 lines; filesystem IO unknown",
+  "Git_status_command_count": 1,
+  "expected_checker_read_population": [
+    "manifest.json",
+    "run.json",
+    "metrics.json",
+    "models.json"
+  ],
+  "excluded_reads": [
+    "trace",
+    "predictions",
+    "paid_journal",
+    "old_results",
+    "production_sources"
+  ],
+  "check_scope": [
+    "stage/seed/source pins",
+    "time-interface metadata",
+    "actual budgets and partial population",
+    "snapshot shape/update accounting",
+    "saved flags and boolean gate availability"
+  ],
+  "legitimate_branches": [
+    "source failure",
+    "runtime failure",
+    "stopped partial",
+    "complete scientific failure",
+    "complete passing saved gate"
+  ],
+  "checker_output_file": "c4_z1_first_contract_receipt.json",
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false,
+  "unmeasured_backend_OS_IO": "unknown_not_zero"
+}

@@ -33,7 +33,7 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-[Z0首次结果](docs/FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749bbe8610e553be3d06ca6c9306c853153ed一次完成1000prefix+2000active、3,000控制/3,000子步，0异常/停止/fit/RLS；active800..999肩/肘MAE .0006295311/.0002525253rad、1800..1999为.0012676433/.0004689586rad，四项均≤.01，完整工程资格通过。root首thin contract零failed、独立4个新Z0 MAE只支持本次保存/工程契约，不证明学习。全部接触三类零观察，机械反力unknown；固定机械支撑、理想感觉及2ms经典反馈为披露先验，不识别频率因果、不追认自由root接触C4或解除C5科学依赖。下一项执行已冻结[2ms学习协议](docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md)：7项新纯检查已通过，生产LF与外部原件AST一致，准备原件已封存；首次Z1待执行，上限21000控制/子步及12000vector/24000scalar更新，全部完整/原预测门通过才Z2。不自动继承旧20ms snapshots、H15或更新预算。旧X/Y/W0/V关闭保持；持续目标active，阶段检查提交推送后立即继续。
+最早未验收仍为C4。[Z1首次身体预测结果](docs/FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md)从clean7d323dc完成三个seed全部21,000控制/子步、12,000vector/24,000scalar在线更新，0停止/异常。20ms速度预测平均改善肩99.2325%/肘98.8250%，300ms位置改善97.0043%/97.6122%，全部原预测门通过。首60新RMSE向量核验通过；接着执行事前冻结Z2匹配控制，与cold MPC和强PD比较完整跟踪及实际努力。固定支撑、理想感觉与2ms经典PD是披露先验；悬挂预测通过不能解除自由root接触C4及C5–C7。持续目标active，阶段提交推送后立即继续。
 
 旧Y0阶段记录：[Y0首次结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe3df016b01b47b0bea0ccc27821c0d7091一次完成100prefix+103active、203控制/2,030子步后，肘速度1.1258089506362488rad/s触发原1rad/s StudyAbort；环境terminatedfalse、failure空，0异常/fit/RLS。第一窗虽observed20但full trial失败而availablefalse/MAEnull，第二窗0，不partial排名。完整工程资格失败，Y1/Y2关闭、不scan增益；X0/W0/V关闭保持。随后做控制时间尺度与底层保护有限审阅，另冻结独立Z0，不因失败放宽门。零接触观察、机械固定支撑及经典反馈先验披露，不追认C4或解除C5科学依赖。本段为历史，不触发重跑。
 
@@ -67,7 +67,7 @@ P后唯一Q候选为K原phi29追加(qrel0/.12,qrel1/.12,v0/1,v1/1,startG0/.5,sta
 
 当前模型只消费原生关节q/v、已知请求及连续过去端点；previous_v不得跨trial或补零，不得读未来实际力矩。D sparse11仅恢复其冻结snapshot，G不重拟合。PD64/(0,4)及其旧增益开发费用明确披露，预测尾只用当前目标，无切换预览。接触力、动能、真实动力学和root quaternion只作离线诊断，不进入部署模型；当前native没有orientation。
 
-正式物理累计 **256,297控制调用 /2,535,970子步**；Z0新增3,000/3,000/0更新，Y0新增203/2,030/0更新，X0/W0此前新增104/1,040与300/3,000，历史在线22,452+离线7,200=29,652scalar更新计算保持。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
+正式物理累计 **277,297控制调用 /2,556,970子步**；Z0新增3,000/3,000/0更新，Y0新增203/2,030/0更新，X0/W0此前新增104/1,040与300/3,000，历史在线22,452加Z1在线24,000，当前在线46,452+离线7,200=53,652scalar更新。G新增3,028/30,280/0更新。费用及A–G完整历史见阶段账本与对应结果，不因新候选归零。科学证据否定机制时公开负结论，再做有依据开发；不以无限重复或改任务取得漂亮结果。
 
 G1与机器接管仍按 [docs/NEW_MACHINE_BOOTSTRAP.md](docs/NEW_MACHINE_BOOTSTRAP.md)、[docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)和 [docs/DEVELOPMENT_ROADMAP.md](docs/DEVELOPMENT_ROADMAP.md)；采用新依赖/后端时锁定来源、版本与许可。当前CPU工作不要求安装GPU仿真器。
 

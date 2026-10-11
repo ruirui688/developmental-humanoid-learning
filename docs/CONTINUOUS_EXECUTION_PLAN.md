@@ -16,7 +16,7 @@
 
 - **Z0首次完整工程门通过。** [首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次seed7600完成1000zero+2000PD、3000控制/3000子步，0异常/停止/fit；两个末200点/.4s窗口的肩/肘四项MAE均≤.01rad。root首新thin contract零failed，独立4个Z0 MAE；记录一致与工程通过仍不证明学习或科学验收。
 - [2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)保持物理/PD64/Kd(4,4)/权限/6s任务，反馈/感觉与active研究停止检查频率增多，公开额外经典控制能力。全子步left_arm/feet/other接触零观察；固定支撑反力unknown，不从不同seed的X/Y失败识别频率因果，不追认自由root真实接触C4或解除C5科学依赖。
-- **Z1/Z2配方与控制器已准备，首次Z1待执行。** [学习协议](FAST_FEEDBACK_LEARNING_PROTOCOL.md)冻结seeds7701/7702/7703、2ms身体转移、20ms残差规划与300ms预测时距。7项新初始化/微步规划/付费端点检查全部通过；外部原件保留，生产LF转换前后AST一致。[准备归档](../results/cpu_validation/2026-10-12_fast_feedback_pair_prediction_preparation/manifest.json)公开来源与首次检查。Z1上限21,000控制/子步、12,000vector/24,000scalar在线更新；只有全部完整与原预测门通过才执行Z2。旧X/Y/W0/V关闭，完整接触C4及C5–C7仍待验收。冻结提交推送后立即首次执行。
+- **Z1首次身体预测全门通过，Z2待执行。** [结果](FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md)三seed完整21000/21000、12000vector/24000scalar更新、0停止/异常，H10v平均改善99.2325%/98.8250%，H150q改善97.0043%/97.6122%。60新RMSE向量独立核验通过；只证明悬挂开发域中指定独立轨迹预测贡献。事前冻结Z2完整控制上限36000调用/子步、1200MPC决策及14580000pair规划，另自身条件评分526560pair。最早未过仍完整接触C4，报告提交推送后立即Z2。
 
 Y0执行前的[首次准备封存](../results/cpu_validation/2026-10-12_damped_suspended_pair_engineering_preparation/manifest.json)保留为历史：
 已完成：两项新反馈检查通过，最终protocol pin匹配；runner从反馈检查以来仅pin改变。
@@ -651,3 +651,27 @@ Z2 controller在Z1前冻结：MPC每20ms、PD每2ms；literal-zero fallback与de
 任何Z1失败先封存并关闭Z2，完整科学失败仅做保存预测/标签有限诊断，不scan或补跑到通过。
 当前正式累计256297/2535970、online22452/offline7200未变；最早未过仍完整接触C4。
 持续目标active，正常提交推送后立即首次Z1，不以阶段报告停止。
+
+
+### Z1首次三seed完整身体辨识与独立预测通过
+
+[首次结果](FAST_FEEDBACK_PAIR_PREDICTION_RESULTS.md)从clean7d323dcc4b8c303c8d76430763a09b36dbb8130a首次执行，
+三个seed各1000zero+4000calibration及fresh1000zero+1000prediction全部完成。
+21000attempts/returns/confirmedsubsteps，0异常/stop/failure；12000vector/24000scalar在线原子更新，
+124680pair/249360scalar独立递推另计，RLS preupdate12000pair另计。H10v与H150q严格改善及均值20%门、
+H20/H50qv与H150v不劣门全部通过；原生H1/H10q仅报告，无新增veto。
+内wall/CPU50.2563824002/48.859375s，外75.1023936002s；0MPC/teacher/batchfit/GPU。
+首次必要新saved metrics核验60RMSE向量/2886originrecords全部通过，2读5494391bytes，
+解压19415072bytes，wall/CPU .5657869/.5s，0模型/fit/物理，旧科学未重算。
+首薄契约只读本次4个JSON，829项保存一致性检查零失败，不重算科学指标；报告/准备补充记录已封存。
+
+[根归档](../results/cpu_validation/2026-10-12_fast_feedback_pair_prediction/manifest.json)
+40payload、80读66289600bytes、41写33154999bytes含manifest，wall/CPU .7025529/.140625s。
+累积物理277297控制/2556970子步；在线scalar46452、离线7200不变，总scalar更新53652。
+此前准备归档derive_sources原件含1处行尾空格，首次cached diffcheck报出后命令仍commit；
+随后仅新增该归档文件whitespace属性，原bytes未修改，diffcheck通过并正常补充推送7d323dc，正式源干净。
+
+固定机械支撑、公开身体、理想感觉、高频PD及新增初始化/相关标签预算全部披露。
+悬挂机制开发预测通过不能追认旧自由root接触C4、控制收益/实际努力改善或C5科学依赖。
+接着执行事前冻结Z2 cold/learned MPC/PD/zero完整同预算控制；不改已冻结controller与门。
+阶段报告检查提交推送后立即继续，持续目标active。

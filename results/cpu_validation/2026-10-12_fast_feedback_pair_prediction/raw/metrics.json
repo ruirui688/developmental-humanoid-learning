@@ -1,0 +1,563 @@
+{
+  "complete_population": true,
+  "checks": [
+    {
+      "seed": 7701,
+      "horizon": 1,
+      "signal": "q",
+      "available": true,
+      "gated": false,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        2.0662405180767145e-05,
+        2.7121080036875673e-05
+      ],
+      "learned_axis": [
+        6.717900537207059e-08,
+        1.8444690372090665e-07
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 1,
+      "signal": "q",
+      "available": true,
+      "gated": false,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        2.0422021618000628e-05,
+        2.5239938192328144e-05
+      ],
+      "learned_axis": [
+        6.392204480931573e-08,
+        1.7915928544337826e-07
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 1,
+      "signal": "q",
+      "available": true,
+      "gated": false,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        2.056084551688418e-05,
+        2.63142140977238e-05
+      ],
+      "learned_axis": [
+        6.558012591056328e-08,
+        1.8035568133976033e-07
+      ]
+    },
+    {
+      "seed": 7701,
+      "horizon": 1,
+      "signal": "v",
+      "available": true,
+      "gated": false,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.010331202590383589,
+        0.013560540018437867
+      ],
+      "learned_axis": [
+        3.358950268601738e-05,
+        9.222345186061213e-05
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 1,
+      "signal": "v",
+      "available": true,
+      "gated": false,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.010211010809000328,
+        0.012619969096163999
+      ],
+      "learned_axis": [
+        3.196102240466354e-05,
+        8.957964272179617e-05
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 1,
+      "signal": "v",
+      "available": true,
+      "gated": false,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.010280422758442096,
+        0.013157107048861886
+      ],
+      "learned_axis": [
+        3.279006295529803e-05,
+        9.017784066980718e-05
+      ]
+    },
+    {
+      "seed": 7701,
+      "horizon": 10,
+      "signal": "q",
+      "available": true,
+      "gated": false,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.0005174990298162233,
+        0.0003883590357897395
+      ],
+      "learned_axis": [
+        2.756500732456046e-06,
+        3.5244943726944635e-06
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 10,
+      "signal": "q",
+      "available": true,
+      "gated": false,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.0005170535012369352,
+        0.00036932094545865567
+      ],
+      "learned_axis": [
+        2.7656833873752483e-06,
+        3.581762557142118e-06
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 10,
+      "signal": "q",
+      "available": true,
+      "gated": false,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.0005173122383998562,
+        0.0003802887899465888
+      ],
+      "learned_axis": [
+        2.757240968237847e-06,
+        3.535457540362354e-06
+      ]
+    },
+    {
+      "seed": 7701,
+      "horizon": 10,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": true,
+      "passed": true,
+      "cold_axis": [
+        0.031975611447311654,
+        0.020850541988209514
+      ],
+      "learned_axis": [
+        0.00024455520529458513,
+        0.00023887339303151588
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 10,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": true,
+      "passed": true,
+      "cold_axis": [
+        0.031987008600795744,
+        0.019955037660419252
+      ],
+      "learned_axis": [
+        0.0002466178493481851,
+        0.00024163292020117156
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 10,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": true,
+      "passed": true,
+      "cold_axis": [
+        0.03198026953410967,
+        0.020471545560005546
+      ],
+      "learned_axis": [
+        0.0002452109425768382,
+        0.00023948744643951543
+      ]
+    },
+    {
+      "scope": "three_seed_raw_RMSE_mean",
+      "horizon": 10,
+      "signal": "v",
+      "available": true,
+      "cold_axis_mean": [
+        0.031980963194072363,
+        0.020425708402878107
+      ],
+      "learned_axis_mean": [
+        0.00024546133240653615,
+        0.0002399979198907343
+      ],
+      "improvement_fractions": [
+        0.9923247673649794,
+        0.988250203363477
+      ],
+      "required_improvement": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 7701,
+      "horizon": 20,
+      "signal": "q",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.0010186637201222402,
+        0.0008163226814153181
+      ],
+      "learned_axis": [
+        9.909177000750617e-06,
+        9.636986695767497e-06
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 20,
+      "signal": "q",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.0010187715626374307,
+        0.0007791537703375093
+      ],
+      "learned_axis": [
+        9.981164314836646e-06,
+        9.759813221561718e-06
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 20,
+      "signal": "q",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.0010187080686107199,
+        0.0008003876930491592
+      ],
+      "learned_axis": [
+        9.930220347876845e-06,
+        9.665743066490488e-06
+      ]
+    },
+    {
+      "seed": 7701,
+      "horizon": 20,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.0322472026630168,
+        0.025689336909610404
+      ],
+      "learned_axis": [
+        0.0004516212533030586,
+        0.00038172130278081904
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 20,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.03226886583802219,
+        0.024590192341026124
+      ],
+      "learned_axis": [
+        0.00045604764237339315,
+        0.0003845423085531089
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 20,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.03225635659233251,
+        0.025216681681569385
+      ],
+      "learned_axis": [
+        0.0004531203184009714,
+        0.0003823881802417124
+      ]
+    },
+    {
+      "seed": 7701,
+      "horizon": 50,
+      "signal": "q",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.002392250612287478,
+        0.0023212459345112457
+      ],
+      "learned_axis": [
+        4.9691425548802863e-05,
+        3.950934377989629e-05
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 50,
+      "signal": "q",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.0023924061653422986,
+        0.0022381871903879276
+      ],
+      "learned_axis": [
+        5.021405484860018e-05,
+        3.973484615838874e-05
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 50,
+      "signal": "q",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.0023924486324681023,
+        0.0022874146230865144
+      ],
+      "learned_axis": [
+        4.987132029771958e-05,
+        3.957919420628512e-05
+      ]
+    },
+    {
+      "seed": 7701,
+      "horizon": 50,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.03124371094773251,
+        0.0322408603160077
+      ],
+      "learned_axis": [
+        0.0008630634757190361,
+        0.0006309502155245575
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 50,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.031240382901319766,
+        0.03163451970393773
+      ],
+      "learned_axis": [
+        0.0008742111079818434,
+        0.0006325393564498136
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 50,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.031246468383942638,
+        0.032189188453106046
+      ],
+      "learned_axis": [
+        0.0008670873636062055,
+        0.0006314477123256191
+      ]
+    },
+    {
+      "seed": 7701,
+      "horizon": 150,
+      "signal": "q",
+      "available": true,
+      "gated": true,
+      "strict": true,
+      "passed": true,
+      "cold_axis": [
+        0.006844309955319862,
+        0.006854376398887953
+      ],
+      "learned_axis": [
+        0.00020302459976412855,
+        0.0001666368919429709
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 150,
+      "signal": "q",
+      "available": true,
+      "gated": true,
+      "strict": true,
+      "passed": true,
+      "cold_axis": [
+        0.006846193631218343,
+        0.0072389293190375905
+      ],
+      "learned_axis": [
+        0.0002074709615562011,
+        0.00016994523456232327
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 150,
+      "signal": "q",
+      "available": true,
+      "gated": true,
+      "strict": true,
+      "passed": true,
+      "cold_axis": [
+        0.006845032746815543,
+        0.007033720088225007
+      ],
+      "learned_axis": [
+        0.00020469710723923395,
+        0.0001678808252916724
+      ]
+    },
+    {
+      "scope": "three_seed_raw_RMSE_mean",
+      "horizon": 150,
+      "signal": "q",
+      "available": true,
+      "cold_axis_mean": [
+        0.006845178777784583,
+        0.007042341935383517
+      ],
+      "learned_axis_mean": [
+        0.00020506422285318786,
+        0.0001681543172656555
+      ],
+      "improvement_fractions": [
+        0.9700425321952576,
+        0.97612238672752
+      ],
+      "required_improvement": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 7701,
+      "horizon": 150,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.03165943910638972,
+        0.030079536424498513
+      ],
+      "learned_axis": [
+        0.0010231283058914189,
+        0.0008178895228370698
+      ]
+    },
+    {
+      "seed": 7702,
+      "horizon": 150,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.031662076753200305,
+        0.031162112755583112
+      ],
+      "learned_axis": [
+        0.0010480107077484174,
+        0.0008201039293049203
+      ]
+    },
+    {
+      "seed": 7703,
+      "horizon": 150,
+      "signal": "v",
+      "available": true,
+      "gated": true,
+      "strict": false,
+      "passed": true,
+      "cold_axis": [
+        0.03166080689001777,
+        0.0305703701462968
+      ],
+      "learned_axis": [
+        0.0010325681126821934,
+        0.0008182421133388297
+      ]
+    }
+  ],
+  "z1_prediction_gate_passed": true,
+  "mean_type": "arithmetic mean of original per_seed axis RMSE",
+  "partial_subset_ranking": false,
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}
