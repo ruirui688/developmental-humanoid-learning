@@ -1,0 +1,32 @@
+{
+  "status": "failed",
+  "self_check": true,
+  "cost": {
+    "fit_attempts": 1,
+    "objective_function_entry_requests": 3,
+    "objective_calculation_attempts": 3,
+    "objective_forward_attempts": 3,
+    "objective_forward_returns": 2,
+    "objective_backward_attempts": 2,
+    "objective_backward_returns": 2,
+    "objective_calculation_returns": 2,
+    "checkpoint_registration_entry_requests": 2,
+    "accepted_checkpoint_write_attempts": 2,
+    "accepted_checkpoint_write_returns": 2,
+    "accepted_checkpoint_write_bytes": 4919,
+    "checkpoint_registration_returns": 2,
+    "optimizer_invocation_attempts": 1,
+    "optimizer_accepted_updates": 1,
+    "objective_calculation_failures": 1,
+    "fit_failures": 1,
+    "optimizer_nonbudget_failures": 1
+  },
+  "failure": {
+    "type": "ValueError",
+    "message": "synthetic_internal_error_at_time_boundary",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_guard_trust_position_transition.py\", line 332, in fit_positions\n    event,new_gradient = evaluate(candidate,\"trial\",iteration,trial,alpha,current_event[\"objective_id\"])\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_guard_trust_position_transition.py\", line 264, in evaluate\n    loss = kernel(U,event)\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_guard_trust_position_transition.py\", line 535, in kernel\n    raise ValueError(\"synthetic_internal_error_at_time_boundary\")\nValueError: synthetic_internal_error_at_time_boundary\n"
+  },
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

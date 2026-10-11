@@ -347,3 +347,29 @@ wall/CPU .601227/.609375秒，exec_command外1.091306秒，0模型恢复/指标/
 科学失败与固定不可用人口保存一致，不能据此验收C4；封存报告附属材料后提交推送，再继续T。
 S导航228本地链接零缺失；报告/契约附属封存18读/130,698字节、0复制失败，
 wall/CPU .224235/.015625秒，原raw/root manifest不变，无科学重算。
+
+### T有限信赖步与回退（当前准备）
+
+S失败已正常提交推送c530457。唯一T保留S全部模型/训练窗口/目标，从冻结Q重新初始化，
+新增固定数值优化先验：每轮方向为最后accepted真实gradient的负单位向量，系数L2步距1e-3，
+Armijo c=1e-4、回退乘.5、最多10trial；最多30accepted/100总objective/120秒边界。
+这些数值不是公共身体安全限位，不能从S失败推为最优或保证控制安全；不扫描参数。
+非有限模型/目标/gradient的试探仅拒绝并保留付费partial；shape/来源/IO/内部错误仍fit_failed。
+10trial全拒绝为optimizer_stalled、无候选；非预算失败accepted仅证据。预算退出仅允许已有
+真实T accepted更新，0更新不把Q iteration0伪称新拟合。每次登记含写盘出口deadline。
+复用pinned S kernel/训练映射/恢复与Q rollout，不重跑旧mapping/gradientcase，只检查新优化分支。
+正式依赖/source及S失败费用另绑定；S根manifest元数据单读1次/3,373字节，wall/CPU
+.000163/0秒，原科学payload未重读。新合成检查、冻结提交和首次正式执行后继续原C4。
+
+T新优化器首次12个合成fixture全部通过；没有调用S/Q旧mapping/gradientcase、真实标签/模型或物理。
+合成fit12尝试/5返回/7预置失败、objective42/39/3、backward39、Armijo拒绝16、非有限拒绝1，
+7accepted更新及21checkpoint写、19注册返回；发布500合成系数仅fixture，0真实fit/RLS/物理。
+内wall/CPU1.674847/1.390625秒、外2.173838秒；准确首次源码52d20a、协议cb1c43与stdio保存。
+静态审阅修复了跨界结构异常不得伪装budget和S根manifest无status的资格假设；未读科学payload。
+T准备封存103payload、206读/1,502,086字节、0复制失败，wall/CPU1.106094/.093750秒。
+之后冻结干净提交、推送并一次真实T；本检查和准备交付不解除C4/C5或结束持续目标。
+T导航49本地链接零缺失。首次cached空白检查发现生产与原件尾空行，exit1完整保留；
+只删生产py/协议各1个尾空行，原首检查源码及封存bytes不改，归档目录仅豁免此尾空行样式。
+2读/55,032字节、wall/CPU .043712/.046875秒，py AST一致且compile通过，0模块执行/旧case重跑。
+最终冻结py为46,375bytes/e4cd9e06d078e85ba82614f05b160e69e8b11bd6e66773d795646f5766759464；
+协议8,655bytes/79a18f3bc52ded3b650d00f0942d7dfc0d4584727c7c71a4a254860af8a59824。

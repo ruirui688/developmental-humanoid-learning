@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "scripts/develop_guard_trust_position_transition.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_t_selfcheck_01\\raw",
+    "--self-check"
+  ],
+  "source_commit": null,
+  "returncode": 0,
+  "started_unix": 1791741365.1024504,
+  "ended_unix": 1791741367.2763844,
+  "wall_seconds": 2.1738383998163044,
+  "checked_sources": {
+    "scripts/develop_guard_trust_position_transition.py": {
+      "bytes": 46376,
+      "sha256": "52d20acbb2de7be9909f983f8028d536c15133789082bfe0655c13a8a98a41f2"
+    },
+    "docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 8656,
+      "sha256": "cb1c43dfccc67e3afffa112fa8127c8494423b0fed2ee0130b99c501cc6e4b41"
+    }
+  },
+  "source_snapshot_reads": 2,
+  "source_snapshot_read_bytes": 55032,
+  "stdout_bytes": 1631,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

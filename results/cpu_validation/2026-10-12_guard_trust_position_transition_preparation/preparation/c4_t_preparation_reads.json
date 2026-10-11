@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "scope": "T author preparation only; frozen cached source reuse; no imports/execution/models/scientific payload",
+  "totals": {
+    "file_reads": 7,
+    "read_bytes": 202671,
+    "json_parse_attempts": 1,
+    "json_parse_returns": 1,
+    "ast_parse_attempts": 4,
+    "ast_parse_returns": 4,
+    "compile_attempts": 4,
+    "compile_returns": 4,
+    "wall_seconds": 0.06983100017532706,
+    "cpu_seconds": 0.0625
+  },
+  "metadata_binding_ledger_author_read": {
+    "read": {
+      "path": "external/c4_t_S_metadata_bindings.json",
+      "bytes": 817,
+      "sha256": "a3d641be907d7764d567613c39ac00b742de96edf05e0cd329dddbf2e76b1a0c"
+    },
+    "json_parse_attempts": 1,
+    "json_parse_returns": 1,
+    "wall_seconds": 0.007295000134035945,
+    "cpu_seconds": 0,
+    "metadata": {
+      "S_source_commit": "fcab231a511996de83e28d93ce6749326b38308f",
+      "metadata_read": {
+        "file_reads": 1,
+        "read_bytes": 3373,
+        "json_parses": 1,
+        "wall_seconds": 0.00016339984722435474,
+        "cpu_seconds": 0
+      },
+      "bindings": {
+        "manifest.json": {
+          "bytes": 3373,
+          "sha256": "febf8fb37098659957b67f711bad6b21bdb64b18c030d2f8fc8a787a43a0e112"
+        },
+        "raw/manifest.json": {
+          "bytes": 1255,
+          "sha256": "66e5599416535db5b4c07bca322510d87a7e2333376db178c6f53f6d16333ca5",
+          "original_path": "external/c4_s_multistep_01/raw/manifest.json"
+        },
+        "raw/run.json": {
+          "bytes": 38617,
+          "sha256": "977b6913f586e8978f5c9bc8bd2904273096b14ddd7c024b0ca23785ded9a0ce",
+          "original_path": "external/c4_s_multistep_01/raw/run.json"
+        }
+      }
+    }
+  },
+  "static_validation_passes": [
+    {
+      "scope": "T_new_source_protocol_only_no_import_no_execution",
+      "entries": [
+        {
+          "path": "scripts/develop_guard_trust_position_transition.py",
+          "bytes": 45671,
+          "sha256": "f2cc34aea9419708b78711144c69ab4289376c5718095a645aeabd6570c08f86",
+          "CR_bytes": 0
+        },
+        {
+          "path": "docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "bytes": 8441,
+          "sha256": "eae81b960b1bd7269b2aa3237a699e9bd35b1058c0f82b11264352e0c999fc67",
+          "CR_bytes": 0
+        }
+      ],
+      "file_reads": 2,
+      "read_bytes": 54112,
+      "json_parse_attempts": 0,
+      "ast_parse_attempts": 1,
+      "ast_parse_returns": 1,
+      "compile_attempts": 1,
+      "compile_returns": 1,
+      "wall_seconds": 0.016924900002777576,
+      "cpu_seconds": 0.015625
+    },
+    {
+      "scope": "T_final_source_protocol_static_only",
+      "entries": [
+        {
+          "path": "scripts/develop_guard_trust_position_transition.py",
+          "bytes": 46300,
+          "sha256": "b98587851e3b3d84370aadc8e490bc0b5d4a4040e86d4f3211399e3b32e5a156",
+          "CR_bytes": 0
+        },
+        {
+          "path": "docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "bytes": 8656,
+          "sha256": "cb1c43dfccc67e3afffa112fa8127c8494423b0fed2ee0130b99c501cc6e4b41",
+          "CR_bytes": 0
+        }
+      ],
+      "file_reads": 2,
+      "read_bytes": 54956,
+      "json_parse_attempts": 0,
+      "ast_parse_attempts": 1,
+      "ast_parse_returns": 1,
+      "compile_attempts": 1,
+      "compile_returns": 1,
+      "source_pin_literal_checks": 2,
+      "wall_seconds": 0.012935000006109476,
+      "cpu_seconds": 0.015625
+    },
+    {
+      "scope": "T_final_origin_objective_static_patch_only",
+      "entries": [
+        {
+          "path": "scripts/develop_guard_trust_position_transition.py",
+          "bytes": 46410,
+          "sha256": "f107ba57a992b5ffaf93fe3eeb5fab43d2fc34b48a9e0ad221aad3d10d024060",
+          "CR_bytes": 0
+        }
+      ],
+      "file_reads": 1,
+      "read_bytes": 46410,
+      "json_parse_attempts": 0,
+      "ast_parse_attempts": 1,
+      "ast_parse_returns": 1,
+      "compile_attempts": 1,
+      "compile_returns": 1,
+      "wall_seconds": 0.01595990010537207,
+      "cpu_seconds": 0.015625
+    },
+    {
+      "scope": "T_final_metadata_schema_static_patch_only",
+      "entries": [
+        {
+          "path": "scripts/develop_guard_trust_position_transition.py",
+          "bytes": 46376,
+          "sha256": "52d20acbb2de7be9909f983f8028d536c15133789082bfe0655c13a8a98a41f2",
+          "CR_bytes": 0
+        }
+      ],
+      "file_reads": 1,
+      "read_bytes": 46376,
+      "json_parse_attempts": 0,
+      "ast_parse_attempts": 1,
+      "ast_parse_returns": 1,
+      "compile_attempts": 1,
+      "compile_returns": 1,
+      "wall_seconds": 0.016716199927031994,
+      "cpu_seconds": 0.015625
+    }
+  ],
+  "final_identities": {
+    "source": {
+      "path": "scripts/develop_guard_trust_position_transition.py",
+      "bytes": 46376,
+      "sha256": "52d20acbb2de7be9909f983f8028d536c15133789082bfe0655c13a8a98a41f2",
+      "CR_bytes": 0
+    },
+    "protocol": {
+      "path": "docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+      "bytes": 8656,
+      "sha256": "cb1c43dfccc67e3afffa112fa8127c8494423b0fed2ee0130b99c501cc6e4b41",
+      "CR_bytes": 0
+    }
+  },
+  "cached_source_reuse": {
+    "filesystem_reads": 0,
+    "files": [
+      "S_source_v1",
+      "S_checker_source_reads:final_S_main_run_write_outputs",
+      "S_R_source:read_Q_inputs",
+      "S_known_pin_metadata"
+    ],
+    "note": "Caches populated during earlier separately accounted S work; no new T filesystem reread."
+  },
+  "reviewer_reads": "separately recorded in implementation review, excluded from author totals",
+  "git_status_queries": 1,
+  "git_diff_check_queries": 1,
+  "git_diff_check_failures": 0,
+  "git_diff_check_note": "Only existing .gitattributes LF-to-CRLF warning; untracked T files independently checked trailing whitespace and LF.",
+  "t_imports": 0,
+  "model_calls": 0,
+  "objective_calls": 0,
+  "gradient_calls": 0,
+  "fit_calls": 0,
+  "synthetic_fixture_executions": 0,
+  "scientific_payload_reads": 0,
+  "physics_calls": 0,
+  "physics_substeps": 0,
+  "RLS_updates": 0,
+  "output_writes_excluded_from_read_timing": true
+}
+

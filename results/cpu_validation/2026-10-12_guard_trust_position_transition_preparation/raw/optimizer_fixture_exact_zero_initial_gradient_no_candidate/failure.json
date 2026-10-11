@@ -1,0 +1,30 @@
+{
+  "status": "failed",
+  "self_check": true,
+  "cost": {
+    "fit_attempts": 1,
+    "objective_function_entry_requests": 1,
+    "objective_calculation_attempts": 1,
+    "objective_forward_attempts": 1,
+    "objective_forward_returns": 1,
+    "objective_backward_attempts": 1,
+    "objective_backward_returns": 1,
+    "objective_calculation_returns": 1,
+    "checkpoint_registration_entry_requests": 1,
+    "accepted_checkpoint_write_attempts": 1,
+    "accepted_checkpoint_write_returns": 1,
+    "accepted_checkpoint_write_bytes": 2363,
+    "checkpoint_registration_returns": 1,
+    "optimizer_invocation_attempts": 1,
+    "fit_failures": 1,
+    "optimizer_nonbudget_failures": 1
+  },
+  "failure": {
+    "type": "RuntimeError",
+    "message": "exact_zero_initial_gradient_no_T_update",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_guard_trust_position_transition.py\", line 317, in fit_positions\n    raise RuntimeError(\"exact_zero_initial_gradient_no_T_update\")\nRuntimeError: exact_zero_initial_gradient_no_T_update\n"
+  },
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

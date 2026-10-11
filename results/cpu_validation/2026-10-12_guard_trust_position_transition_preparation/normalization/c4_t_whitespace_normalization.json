@@ -1,0 +1,35 @@
+{
+  "changes": [
+    {
+      "path": "scripts/develop_guard_trust_position_transition.py",
+      "before": {
+        "bytes": 46376,
+        "sha256": "52d20acbb2de7be9909f983f8028d536c15133789082bfe0655c13a8a98a41f2"
+      },
+      "after": {
+        "bytes": 46375,
+        "sha256": "e4cd9e06d078e85ba82614f05b160e69e8b11bd6e66773d795646f5766759464"
+      },
+      "only_removed_trailing_blank_lines": true
+    },
+    {
+      "path": "docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+      "before": {
+        "bytes": 8656,
+        "sha256": "cb1c43dfccc67e3afffa112fa8127c8494423b0fed2ee0130b99c501cc6e4b41"
+      },
+      "after": {
+        "bytes": 8655,
+        "sha256": "79a18f3bc52ded3b650d00f0942d7dfc0d4584727c7c71a4a254860af8a59824"
+      },
+      "only_removed_trailing_blank_lines": true
+    }
+  ],
+  "file_reads": 2,
+  "read_bytes": 55032,
+  "wall_seconds": 0.04371150000952184,
+  "cpu_seconds": 0.046875,
+  "source_AST_equal": true,
+  "module_executions": 0,
+  "selfcheck_repeats": 0
+}

@@ -1,0 +1,527 @@
+{
+  "payload_count": 103,
+  "files": {
+    "checked_source/docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 8656,
+      "sha256": "cb1c43dfccc67e3afffa112fa8127c8494423b0fed2ee0130b99c501cc6e4b41",
+      "original_path": "external/c4_t_selfcheck_01/checked_source/docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md"
+    },
+    "checked_source/scripts/develop_guard_trust_position_transition.py": {
+      "bytes": 46376,
+      "sha256": "52d20acbb2de7be9909f983f8028d536c15133789082bfe0655c13a8a98a41f2",
+      "original_path": "external/c4_t_selfcheck_01/checked_source/scripts/develop_guard_trust_position_transition.py"
+    },
+    "execution.json": {
+      "bytes": 994,
+      "sha256": "87da133a57857c36a1120ffd4ccc95c916cb4c915c3796911d2927e4addbd407",
+      "original_path": "external/c4_t_selfcheck_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 638,
+      "sha256": "9d7e6fa862f7c11c832db6ef19dc5c85a6fb4c4bcc90dbee7fa630d957bf6063",
+      "original_path": "external/c4_t_selfcheck_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 231,
+      "sha256": "69c66ba19a4890ad698de942f1f0702e71b2f9de798f668a45cafa3baf507e26",
+      "original_path": "external/c4_t_selfcheck_01/raw/metrics.json"
+    },
+    "raw/optimizer_fixture_call_budget_real_update_publish/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2368,
+      "sha256": "c33dff8868f3bc53c2634b3e093279c4995a02319e37e9d7e3ac13515fcba009",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_real_update_publish/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_call_budget_real_update_publish/fit_checkpoints/seed0/iteration01.json": {
+      "bytes": 2587,
+      "sha256": "7f0be1cfdf215ee086becd392d9f5e8c1d28c7b9130ef40279e94c0b0366e2dd",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_real_update_publish/fit_checkpoints/seed0/iteration01.json"
+    },
+    "raw/optimizer_fixture_call_budget_real_update_publish/manifest.json": {
+      "bytes": 950,
+      "sha256": "24e7db57d2b941bc6a31db89518b6b8374cf183f2b8c482a5e2d56ccdcd95caf",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_real_update_publish/manifest.json"
+    },
+    "raw/optimizer_fixture_call_budget_real_update_publish/metrics.json": {
+      "bytes": 143,
+      "sha256": "6f50a55e7dffe8c198091f6c3ca74566561428aa7b210b56d071aaf9a6c9b8b8",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_real_update_publish/metrics.json"
+    },
+    "raw/optimizer_fixture_call_budget_real_update_publish/parameters.json": {
+      "bytes": 40098,
+      "sha256": "21a52b11e5edfe4dacdd61f4acfac7f13026cfad5f6cfb39bbdfa2afa8fc9ed0",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_real_update_publish/parameters.json"
+    },
+    "raw/optimizer_fixture_call_budget_real_update_publish/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_real_update_publish/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_call_budget_real_update_publish/run.json": {
+      "bytes": 939,
+      "sha256": "d3fa8acc1ceb8ecf258d973cf47dd5c29044d47630400b8d6d20d42375228822",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_real_update_publish/run.json"
+    },
+    "raw/optimizer_fixture_call_budget_zero_update_no_candidate/failure.json": {
+      "bytes": 903,
+      "sha256": "b45c9a4e07b4251faefbb08730b46409aae11b220d9d9ac4ec1da9c9da5b3813",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_zero_update_no_candidate/failure.json"
+    },
+    "raw/optimizer_fixture_call_budget_zero_update_no_candidate/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2368,
+      "sha256": "e4b4642a8fb68cd1da279e848869f1024e102b9208f0ebcfa61eed5fc626b07c",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_zero_update_no_candidate/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_call_budget_zero_update_no_candidate/manifest.json": {
+      "bytes": 920,
+      "sha256": "7fa2efad42e3d0cb9958991d5d41f068ccbc3d1ca08286da0f9862399866f989",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_zero_update_no_candidate/manifest.json"
+    },
+    "raw/optimizer_fixture_call_budget_zero_update_no_candidate/metrics.json": {
+      "bytes": 140,
+      "sha256": "c32ae196796ad68b1018cfacb0c2d88da9fde6afef12caaad51c2f58a861ad50",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_zero_update_no_candidate/metrics.json"
+    },
+    "raw/optimizer_fixture_call_budget_zero_update_no_candidate/parameters.json": {
+      "bytes": 19972,
+      "sha256": "8a9c6ba09e658c7af32b3c661e649ca14a84ab417cb45a2abc66e48bd1efd901",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_zero_update_no_candidate/parameters.json"
+    },
+    "raw/optimizer_fixture_call_budget_zero_update_no_candidate/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_zero_update_no_candidate/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_call_budget_zero_update_no_candidate/run.json": {
+      "bytes": 903,
+      "sha256": "b45c9a4e07b4251faefbb08730b46409aae11b220d9d9ac4ec1da9c9da5b3813",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_call_budget_zero_update_no_candidate/run.json"
+    },
+    "raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/failure.json": {
+      "bytes": 1203,
+      "sha256": "09513927e4206136d7fb723b10eeed9073f76717f76e6b69f9b4ea370ad69e18",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/failure.json"
+    },
+    "raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2363,
+      "sha256": "2cc5a0469249f174ca3b436c8df0cc85efb01623ef8bdcdcfdc41e60b2bb9a8a",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/manifest.json": {
+      "bytes": 922,
+      "sha256": "a1dbaa71b3b8c9d2b17ce60b17ec7e5df83b95a20c93271fd02618ce4b5a2f43",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/manifest.json"
+    },
+    "raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/metrics.json": {
+      "bytes": 140,
+      "sha256": "c32ae196796ad68b1018cfacb0c2d88da9fde6afef12caaad51c2f58a861ad50",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/metrics.json"
+    },
+    "raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/parameters.json": {
+      "bytes": 20250,
+      "sha256": "61976e4a7b80bc479fa894f37abc2263053511e0c17b738c8024cb9c47f20458",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/parameters.json"
+    },
+    "raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/run.json": {
+      "bytes": 1203,
+      "sha256": "09513927e4206136d7fb723b10eeed9073f76717f76e6b69f9b4ea370ad69e18",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_exact_zero_initial_gradient_no_candidate/run.json"
+    },
+    "raw/optimizer_fixture_finite_Armijo_backtracking/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2369,
+      "sha256": "107dd4c31a5f8602f7c6f337ab44d918e2321a8fb7bab537cccbe46a0aff4d69",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_finite_Armijo_backtracking/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_finite_Armijo_backtracking/fit_checkpoints/seed0/iteration01.json": {
+      "bytes": 2666,
+      "sha256": "0ff1013b71c2b065090159098b578cd622768cb22a9eb104b5a43c457a906d23",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_finite_Armijo_backtracking/fit_checkpoints/seed0/iteration01.json"
+    },
+    "raw/optimizer_fixture_finite_Armijo_backtracking/manifest.json": {
+      "bytes": 950,
+      "sha256": "4da2f5285d7c5256e5f72e8e64d171086a5416ec9a7c5cc5eed3143717edaf41",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_finite_Armijo_backtracking/manifest.json"
+    },
+    "raw/optimizer_fixture_finite_Armijo_backtracking/metrics.json": {
+      "bytes": 143,
+      "sha256": "6f50a55e7dffe8c198091f6c3ca74566561428aa7b210b56d071aaf9a6c9b8b8",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_finite_Armijo_backtracking/metrics.json"
+    },
+    "raw/optimizer_fixture_finite_Armijo_backtracking/parameters.json": {
+      "bytes": 64802,
+      "sha256": "97a2e5cc27e89835c79939bad61526f0e99dc66a2c23704c383a18491bcf01ba",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_finite_Armijo_backtracking/parameters.json"
+    },
+    "raw/optimizer_fixture_finite_Armijo_backtracking/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_finite_Armijo_backtracking/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_finite_Armijo_backtracking/run.json": {
+      "bytes": 983,
+      "sha256": "4dacd40421d70793c79b59ae3235e8fb63fac76617d43ac9e989c18ae5be61b1",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_finite_Armijo_backtracking/run.json"
+    },
+    "raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2368,
+      "sha256": "e95fcd14b3a747ace4de611a7c576b55e79059c7ad4fedc337ed6e6aa5c131b9",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/fit_checkpoints/seed0/iteration01.json": {
+      "bytes": 2678,
+      "sha256": "3ed7acbf6c11cb875ceaa2d0ec50964f5fd102003b27f41ce649992814e2a922",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/fit_checkpoints/seed0/iteration01.json"
+    },
+    "raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/manifest.json": {
+      "bytes": 951,
+      "sha256": "56ebd05949eaad97bd121328c640fc54c89c913a3585e85c3a280f33c044f13b",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/manifest.json"
+    },
+    "raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/metrics.json": {
+      "bytes": 143,
+      "sha256": "6f50a55e7dffe8c198091f6c3ca74566561428aa7b210b56d071aaf9a6c9b8b8",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/metrics.json"
+    },
+    "raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/parameters.json": {
+      "bytes": 45342,
+      "sha256": "9b74eac90b4c2b976a97868a786815bcc9d5acd16d34dcb7a2c889b9a83feec1",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/parameters.json"
+    },
+    "raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/run.json": {
+      "bytes": 1027,
+      "sha256": "8495ca4bc5538941d44c43e5084faa290e4316d6deb741a8c23c3d66c561dcf5",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_nonfinite_rejection_smaller_finite_acceptance/run.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_real_update_publish/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2350,
+      "sha256": "a278c9a4f4fb5c441a8198f1a813fdbb2d36ef284855255e76a5c119b8a70a8a",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_real_update_publish/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_real_update_publish/fit_checkpoints/seed0/iteration01.json": {
+      "bytes": 2569,
+      "sha256": "57e5bf9c9924eed5b8e4655e6daae6ced6310e4ca22c2938c8d0a25e85e3be59",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_real_update_publish/fit_checkpoints/seed0/iteration01.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_real_update_publish/manifest.json": {
+      "bytes": 950,
+      "sha256": "af6716aa4316d4b08dc95bb8d7cc588adc0f3e54653d6e1fd6e31db7c4cd3b88",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_real_update_publish/manifest.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_real_update_publish/metrics.json": {
+      "bytes": 143,
+      "sha256": "6f50a55e7dffe8c198091f6c3ca74566561428aa7b210b56d071aaf9a6c9b8b8",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_real_update_publish/metrics.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_real_update_publish/parameters.json": {
+      "bytes": 47931,
+      "sha256": "5d9f07df63c1c40a29d3cf230f17eb7d2e05090f5a930ba317b4fe1e32cdaf90",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_real_update_publish/parameters.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_real_update_publish/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_real_update_publish/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_objective_exit_time_real_update_publish/run.json": {
+      "bytes": 939,
+      "sha256": "8f74e33ccb4e28fe904eea183b811fba23054faaaa984364c577da4e51752c23",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_real_update_publish/run.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/failure.json": {
+      "bytes": 903,
+      "sha256": "2e301997bccc8912054d6397b85326eff34257639fd8c0b2383e45b4656b4333",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/failure.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2350,
+      "sha256": "a278c9a4f4fb5c441a8198f1a813fdbb2d36ef284855255e76a5c119b8a70a8a",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/manifest.json": {
+      "bytes": 920,
+      "sha256": "bd84d7a8c5084b67d54b5d8822456f79962769c4af624a39c471d1643fa9525b",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/manifest.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/metrics.json": {
+      "bytes": 140,
+      "sha256": "c32ae196796ad68b1018cfacb0c2d88da9fde6afef12caaad51c2f58a861ad50",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/metrics.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/parameters.json": {
+      "bytes": 27862,
+      "sha256": "e1c108abb32eea8947a05ed83af1b6737897b2946463fccec80d94dc6227133e",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/parameters.json"
+    },
+    "raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/run.json": {
+      "bytes": 903,
+      "sha256": "2e301997bccc8912054d6397b85326eff34257639fd8c0b2383e45b4656b4333",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_objective_exit_time_zero_update_no_candidate/run.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2350,
+      "sha256": "a278c9a4f4fb5c441a8198f1a813fdbb2d36ef284855255e76a5c119b8a70a8a",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/fit_checkpoints/seed0/iteration01.json": {
+      "bytes": 2569,
+      "sha256": "57e5bf9c9924eed5b8e4655e6daae6ced6310e4ca22c2938c8d0a25e85e3be59",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/fit_checkpoints/seed0/iteration01.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/fit_checkpoints/seed0/iteration02.json": {
+      "bytes": 2606,
+      "sha256": "4dd40068812a5e351567f3fb10c1b0758df4e50790c1dbcae05e28fb84bc8ae1",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/fit_checkpoints/seed0/iteration02.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/manifest.json": {
+      "bytes": 1109,
+      "sha256": "4e8d53f5da630d0651e7767fdf3d628ff65089d1ff04cfa49f7a610a89302c74",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/manifest.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/metrics.json": {
+      "bytes": 143,
+      "sha256": "6f50a55e7dffe8c198091f6c3ca74566561428aa7b210b56d071aaf9a6c9b8b8",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/metrics.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/parameters.json": {
+      "bytes": 52896,
+      "sha256": "c51cb4ef3de40720e7ef4501c55c75dc60db0edeb87e83c5ee8c4ffd9b88a44a",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/parameters.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/run.json": {
+      "bytes": 939,
+      "sha256": "5c1fddd36b309187da6b96b723674e9b9f3966ee56d1260afaa1b120e72a4ea7",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_preserves_previous_update/run.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/failure.json": {
+      "bytes": 903,
+      "sha256": "e8a5ab341339030ebf360a7bc4fc4c8c520827a5c03969282c20d9485ae56043",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/failure.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2350,
+      "sha256": "a278c9a4f4fb5c441a8198f1a813fdbb2d36ef284855255e76a5c119b8a70a8a",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/fit_checkpoints/seed0/iteration01.json": {
+      "bytes": 2569,
+      "sha256": "57e5bf9c9924eed5b8e4655e6daae6ced6310e4ca22c2938c8d0a25e85e3be59",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/fit_checkpoints/seed0/iteration01.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/manifest.json": {
+      "bytes": 1079,
+      "sha256": "496076c6efa34f841707d317247078f49d286ff340dc66f5c8c1baef46fdff12",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/manifest.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/metrics.json": {
+      "bytes": 140,
+      "sha256": "c32ae196796ad68b1018cfacb0c2d88da9fde6afef12caaad51c2f58a861ad50",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/metrics.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/parameters.json": {
+      "bytes": 32782,
+      "sha256": "4372acd67a033df3661021f0e87d892bda29f989386b43da20d36df3ba2a6fd4",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/parameters.json"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/run.json": {
+      "bytes": 903,
+      "sha256": "e8a5ab341339030ebf360a7bc4fc4c8c520827a5c03969282c20d9485ae56043",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_post_persistence_crossing_zero_update_isolation/run.json"
+    },
+    "raw/optimizer_fixture_structural_error_over_time_stays_fatal/failure.json": {
+      "bytes": 1639,
+      "sha256": "1e9ad5a8674f4703ba5d58777e32465bd3f7f23f1fbf0248d1981f41158b993a",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_error_over_time_stays_fatal/failure.json"
+    },
+    "raw/optimizer_fixture_structural_error_over_time_stays_fatal/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2350,
+      "sha256": "a278c9a4f4fb5c441a8198f1a813fdbb2d36ef284855255e76a5c119b8a70a8a",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_error_over_time_stays_fatal/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_structural_error_over_time_stays_fatal/fit_checkpoints/seed0/iteration01.json": {
+      "bytes": 2569,
+      "sha256": "57e5bf9c9924eed5b8e4655e6daae6ced6310e4ca22c2938c8d0a25e85e3be59",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_error_over_time_stays_fatal/fit_checkpoints/seed0/iteration01.json"
+    },
+    "raw/optimizer_fixture_structural_error_over_time_stays_fatal/manifest.json": {
+      "bytes": 1081,
+      "sha256": "f46d5c851b4d5e4f63bc24383c185a6b218b0ac6528f53806d0a55bee0d24fcd",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_error_over_time_stays_fatal/manifest.json"
+    },
+    "raw/optimizer_fixture_structural_error_over_time_stays_fatal/metrics.json": {
+      "bytes": 140,
+      "sha256": "c32ae196796ad68b1018cfacb0c2d88da9fde6afef12caaad51c2f58a861ad50",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_error_over_time_stays_fatal/metrics.json"
+    },
+    "raw/optimizer_fixture_structural_error_over_time_stays_fatal/parameters.json": {
+      "bytes": 45268,
+      "sha256": "55108790ecc11b4b17a7c9864b49f3e13a044783662e3ad85fd91af4cac30f97",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_error_over_time_stays_fatal/parameters.json"
+    },
+    "raw/optimizer_fixture_structural_error_over_time_stays_fatal/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_error_over_time_stays_fatal/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_structural_error_over_time_stays_fatal/run.json": {
+      "bytes": 1639,
+      "sha256": "1e9ad5a8674f4703ba5d58777e32465bd3f7f23f1fbf0248d1981f41158b993a",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_error_over_time_stays_fatal/run.json"
+    },
+    "raw/optimizer_fixture_structural_ValueError_fatal/failure.json": {
+      "bytes": 1613,
+      "sha256": "db611911046bd113ada2038c77196dffa00099cf659b66dcfe7b883eec2f5061",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_ValueError_fatal/failure.json"
+    },
+    "raw/optimizer_fixture_structural_ValueError_fatal/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2368,
+      "sha256": "c2c5ac26f40d05bdcbd305a8d78d23d64880d4c5a01fd37028557528a32d08b1",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_ValueError_fatal/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_structural_ValueError_fatal/manifest.json": {
+      "bytes": 922,
+      "sha256": "87b685004d82554519f5597c9bf556a59b9fb8e4b7be1096e5a1456c270ea5bb",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_ValueError_fatal/manifest.json"
+    },
+    "raw/optimizer_fixture_structural_ValueError_fatal/metrics.json": {
+      "bytes": 140,
+      "sha256": "c32ae196796ad68b1018cfacb0c2d88da9fde6afef12caaad51c2f58a861ad50",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_ValueError_fatal/metrics.json"
+    },
+    "raw/optimizer_fixture_structural_ValueError_fatal/parameters.json": {
+      "bytes": 25312,
+      "sha256": "71a8e13aef828df1225a0e2e8504fa03ffa8c8c5d2c6094cab828833e3a08f41",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_ValueError_fatal/parameters.json"
+    },
+    "raw/optimizer_fixture_structural_ValueError_fatal/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_ValueError_fatal/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_structural_ValueError_fatal/run.json": {
+      "bytes": 1613,
+      "sha256": "db611911046bd113ada2038c77196dffa00099cf659b66dcfe7b883eec2f5061",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_structural_ValueError_fatal/run.json"
+    },
+    "raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/failure.json": {
+      "bytes": 1301,
+      "sha256": "e45369451ff512e8fef788e7055310f42c887f6d5172f27a4492852e37a2a40e",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/failure.json"
+    },
+    "raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/fit_checkpoints/seed0/iteration00.json": {
+      "bytes": 2369,
+      "sha256": "c0b9f24c5ea1a017c520707356b4d1c17499eace6de1ea37402559cc0af8d317",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/fit_checkpoints/seed0/iteration00.json"
+    },
+    "raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/fit_checkpoints/seed0/iteration01.json": {
+      "bytes": 2667,
+      "sha256": "ab0621920e821f76404dfd52511eb32de9f613dc93cfe94a5f795ff5f3f6dfe6",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/fit_checkpoints/seed0/iteration01.json"
+    },
+    "raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/manifest.json": {
+      "bytes": 1082,
+      "sha256": "05852e2be98499ab38fe2dc90ac6597b8188490a85c9c47c2b3a18d240aea971",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/manifest.json"
+    },
+    "raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/metrics.json": {
+      "bytes": 140,
+      "sha256": "c32ae196796ad68b1018cfacb0c2d88da9fde6afef12caaad51c2f58a861ad50",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/metrics.json"
+    },
+    "raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/parameters.json": {
+      "bytes": 147684,
+      "sha256": "7da4f5e83b088d9554d9a59bb23360b2a5c51719f6ea4a2f74efccb705a9b005",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/parameters.json"
+    },
+    "raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/predictions.jsonl"
+    },
+    "raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/run.json": {
+      "bytes": 1301,
+      "sha256": "e45369451ff512e8fef788e7055310f42c887f6d5172f27a4492852e37a2a40e",
+      "original_path": "external/c4_t_selfcheck_01/raw/optimizer_fixture_ten_rejections_after_accepted_evidence_only/run.json"
+    },
+    "raw/parameters.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "original_path": "external/c4_t_selfcheck_01/raw/parameters.json"
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/raw/predictions.jsonl"
+    },
+    "raw/run.json": {
+      "bytes": 21008,
+      "sha256": "4c1cbf96178813ea6e99c9ab707c78da9969b830211a4e5637282388e5d7c460",
+      "original_path": "external/c4_t_selfcheck_01/raw/run.json"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_t_selfcheck_01/stderr"
+    },
+    "stdout": {
+      "bytes": 1631,
+      "sha256": "b699e5cb6375d5c33b39fc819cf3d984a0b54028454f971c522a23bbe84a53a2",
+      "original_path": "external/c4_t_selfcheck_01/stdout"
+    },
+    "execution/run_t_trust_once.py": {
+      "bytes": 2232,
+      "sha256": "f5eb0e63b94b5a0e004cf10bbe62327d5fb112cd022d5831daebbaf3b52588dc",
+      "original_path": "external/run_t_trust_once.py"
+    },
+    "execution/archive_t_trust_once.py": {
+      "bytes": 2099,
+      "sha256": "05eaddb68476602b6af1f32421ae0c66abcd9c7ad5efceb6d24a6d674b03b743",
+      "original_path": "external/archive_t_trust_once.py"
+    },
+    "preparation/c4_t_preparation_reads.json": {
+      "bytes": 6104,
+      "sha256": "5d3fae5a5dadf319c3c949362876357d4409513dcb07da2ff98dc88c27177798",
+      "original_path": "external/c4_t_preparation_reads.json"
+    },
+    "preparation/c4_t_implementation_review.md": {
+      "bytes": 2964,
+      "sha256": "b44dc0c17a08be65dffee8ebcbae9533bb33a81975952c4af0c0f6fd2ea3c6de",
+      "original_path": "external/c4_t_implementation_review.md"
+    },
+    "preparation/c4_t_S_metadata_bindings.json": {
+      "bytes": 817,
+      "sha256": "a3d641be907d7764d567613c39ac00b742de96edf05e0cd329dddbf2e76b1a0c",
+      "original_path": "external/c4_t_S_metadata_bindings.json"
+    }
+  },
+  "file_reads": 206,
+  "read_bytes": 1502086,
+  "copy_failures": [],
+  "wall_seconds": 1.1060935999266803,
+  "cpu_seconds": 0.09375,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

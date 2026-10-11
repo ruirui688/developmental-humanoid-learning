@@ -1,0 +1,32 @@
+{
+  "status": "failed",
+  "self_check": true,
+  "cost": {
+    "fit_attempts": 1,
+    "objective_function_entry_requests": 15,
+    "objective_calculation_attempts": 15,
+    "objective_forward_attempts": 15,
+    "objective_forward_returns": 15,
+    "objective_backward_attempts": 15,
+    "objective_backward_returns": 15,
+    "objective_calculation_returns": 15,
+    "checkpoint_registration_entry_requests": 2,
+    "accepted_checkpoint_write_attempts": 2,
+    "accepted_checkpoint_write_returns": 2,
+    "accepted_checkpoint_write_bytes": 5036,
+    "checkpoint_registration_returns": 2,
+    "optimizer_invocation_attempts": 1,
+    "optimizer_Armijo_trial_rejections": 13,
+    "optimizer_accepted_updates": 1,
+    "fit_failures": 1,
+    "optimizer_nonbudget_failures": 1
+  },
+  "failure": {
+    "type": "RuntimeError",
+    "message": "line_search_stalled_all_10_trials_rejected",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_guard_trust_position_transition.py\", line 354, in fit_positions\n    raise RuntimeError(\"line_search_stalled_all_10_trials_rejected\")\nRuntimeError: line_search_stalled_all_10_trials_rejected\n"
+  },
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

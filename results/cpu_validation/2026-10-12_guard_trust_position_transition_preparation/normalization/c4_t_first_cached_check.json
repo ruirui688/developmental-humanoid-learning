@@ -1,0 +1,17 @@
+{
+  "command": "git diff --cached --check",
+  "exit_code": 1,
+  "reason": "new blank line at EOF",
+  "paths": [
+    "docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+    "results/cpu_validation/2026-10-12_guard_trust_position_transition_preparation/checked_source/docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+    "results/cpu_validation/2026-10-12_guard_trust_position_transition_preparation/checked_source/scripts/develop_guard_trust_position_transition.py",
+    "results/cpu_validation/2026-10-12_guard_trust_position_transition_preparation/preparation/c4_t_implementation_review.md",
+    "results/cpu_validation/2026-10-12_guard_trust_position_transition_preparation/preparation/c4_t_preparation_reads.json",
+    "scripts/develop_guard_trust_position_transition.py"
+  ],
+  "repair": "Remove one trailing blank line in production script/protocol only; preserve first checked/archive bytes with archive-scoped EOF whitespace exemption.",
+  "scientific_change": false,
+  "module_executions": 0,
+  "selfcheck_repeats": 0
+}
