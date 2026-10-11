@@ -95,3 +95,17 @@ python scripts/develop_guard_native_augmentation.py --repo . --source-commit SOU
 
 准备检查待静态确认，只检查新数据混合/隔离、跨trial历史、600完整资格和双门命名；
 不重跑K旧六分支或人工ridge，不重复已揭晓物理、数学或审计。
+
+## 首次来源失败与最小契约修复
+
+L 首次正式运行从 clean `2dce248` 执行，在 `read_inputs` 的
+`D root/raw binding mismatch` 停止；0模型恢复、0拟合、0预测、0物理。
+首次failure及stdout/stderr完整保留于 `external/c4_l_native_augmentation_01`，不能称首跑成功。
+D归档root manifest的匹配记录除bytes/SHA外包含 `original_path` 等归档注释。
+原脚本错误地要求整个dict等于仅bytes/SHA的读取记录，因这些额外字段而拒绝已匹配身份。
+
+修复仅令D root/raw与raw diagnostic binding分别比较**bytes和sha256两个必要字段**，
+允许额外归档注释；注释不能代替缺失或不匹配的bytes/SHA。所有已有pins、数学、数据、门保持。
+原script/protocol存于准备目录的 `source_binding_revision_01/`，保留精确diff和一次新增纯合成来源契约检查。
+只验证额外字段接受及bytes/hash篡改或身份字段缺失拒绝，不重复原四分支、K数学或实际数据。
+后续从修复后的新clean提交、新output首次进行实际恢复/拟合/预测，来源失败及其读取开销仍保留。

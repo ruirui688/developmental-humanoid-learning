@@ -100,3 +100,7 @@ H1 v 与 H15 q 各 seed 严格改善、每轴均值至少20%；H15 v 及 H2/H5 q
 
 协议、来源、原始字节与新增四分支检查先冻结提交，再从 clean HEAD 首次运行；失败完整保留，不补跑。
 完成 L 后继续最早未验收项，不能把一次开发、结果报告或提交当作持续目标完成。
+
+L首次来源运行从clean2dce248在D归档身份比较停止，0恢复/fit/predict/物理；[原失败](GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)已推送c733482。
+仅修D记录bytes/SHA比较，允许original_path注释；一次新增合成binding检查通过，旧四枝/K数学不重复。
+首次12文件/19,147,304字节读取及wall费用保留；修复后从新clean提交/新目录首次进行模型计算，不能追改原失败。

@@ -1,0 +1,110 @@
+{
+  "status": "source_binding_revision_prepared_synthetic_only",
+  "files": {
+    "CHECK_01.json": {
+      "bytes": 2246,
+      "sha256": "94be0578c1ae0c6ab4707270323509de702dda7e9dfe254af7a6fea8d2eaf4e8"
+    },
+    "CHECK_01.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "CHECK_01.stdout.txt": {
+      "bytes": 2313,
+      "sha256": "14920d4f3096c9f49c47235b2f6adcbf6d1beec43a6152d04725d27fa790354c"
+    },
+    "check_guard_native_augmentation.py": {
+      "bytes": 7750,
+      "sha256": "752ed37c1d7d1b31097b4057a6d5e825a108aaaddc76e924f1c47840048845ce"
+    },
+    "develop_guard_native_augmentation.py": {
+      "bytes": 33149,
+      "sha256": "929edcc02928013de005afe564af5470ac5e6ddad77743b813918394880ed99d"
+    },
+    "GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 7822,
+      "sha256": "f6b7396d5712a3af14888a20782c7f9b6164dd9b78a8ac4c3ecc35fca8f32133"
+    },
+    "source_binding_revision_01/CHECK_SOURCE_BINDING_01.json": {
+      "bytes": 1041,
+      "sha256": "d0ebb5b5339b8059ea7d008d32d3f38e3cb5df37a3c08ddd89b0da09251a1625"
+    },
+    "source_binding_revision_01/CHECK_SOURCE_BINDING_01.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_binding_revision_01/CHECK_SOURCE_BINDING_01.stdout.txt": {
+      "bytes": 1071,
+      "sha256": "1b0a6966e4fcbd219ab46e21eba625bf72306da61b712df5cfce9fc397d32693"
+    },
+    "source_binding_revision_01/check_source_binding_once.py": {
+      "bytes": 2405,
+      "sha256": "9106d000d722517abc2cfb390096dcc42739e8f83bc0de14d40e1a2138fd0504"
+    },
+    "source_binding_revision_01/DESCRIPTION.md": {
+      "bytes": 1314,
+      "sha256": "d6e57c9d2883ece3553c65587e59597854bd4984b6e576719240e3d8a12d59e3"
+    },
+    "source_binding_revision_01/develop_guard_native_augmentation_before.py": {
+      "bytes": 32841,
+      "sha256": "7b0200b3bd1c824da50a827b81eb367c29faf35a0ac36b38bf16bc16a1501dc4"
+    },
+    "source_binding_revision_01/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_PROTOCOL_before.md": {
+      "bytes": 6679,
+      "sha256": "02c10cbdbe48ae44a47d3ff13280dc69517d3d70a0717127414d1bce47f13a9b"
+    },
+    "source_binding_revision_01/INTEGRITY_before.json": {
+      "bytes": 2553,
+      "sha256": "e7d2a5d0056addd014532fb9b6857a316d4852fad377928ead018cd35ab922dc"
+    },
+    "source_binding_revision_01/protocol.diff": {
+      "bytes": 1495,
+      "sha256": "5cc0bc031a3defb8c945a25ee26ef4d656f72aab9985042df797b8e7b2444147"
+    },
+    "source_binding_revision_01/script.diff": {
+      "bytes": 1475,
+      "sha256": "339330c57c973ac21ec7c3be9a0f2898506aba63f0e0a31df507afda0117e956"
+    }
+  },
+  "production_script_sha256": "929edcc02928013de005afe564af5470ac5e6ddad77743b813918394880ed99d",
+  "protocol_sha256": "f6b7396d5712a3af14888a20782c7f9b6164dd9b78a8ac4c3ecc35fca8f32133",
+  "original_preparation_integrity": "source_binding_revision_01/INTEGRITY_before.json",
+  "original_four_checks": {
+    "passed_first_attempt": true,
+    "repeated_after_source_fix": false,
+    "original_source_identity_preserved_in_before_files": true
+  },
+  "first_formal_source_failure": {
+    "source_clean_prefix": "2dce248",
+    "output": "external/c4_l_native_augmentation_01",
+    "reason": "D root/raw binding mismatch",
+    "model_restorations": 0,
+    "fit_calls": 0,
+    "model_predictions": 0,
+    "physics_calls": 0,
+    "already_incurred_input_reads": "retained in original failure; not zeroed",
+    "first_run_success": false
+  },
+  "source_binding_revision_01": {
+    "scope": "only D bytes/SHA field comparison; archive annotations allowed, identity not replaced",
+    "new_synthetic_contract_check_count": 1,
+    "passed_first_attempt": true,
+    "reruns": 0,
+    "old_four_checks_repeated": false,
+    "K_math_checks_repeated": false,
+    "source_changed_after_new_check": false,
+    "new_check_source_sha256": "9106d000d722517abc2cfb390096dcc42739e8f83bc0de14d40e1a2138fd0504",
+    "real_D_root_manifest_identity_reads": 1,
+    "identity_manifest_bytes": 22159,
+    "identity_manifest_sha256": "38df6b99e15c3667a33d6c9995a8efd664f70ce59be8a511fa49def59727a4d7",
+    "actual_C_G_trace_or_K_weights_or_D_snapshot_reads": 0,
+    "model_restorations": 0,
+    "fit_calls": 0,
+    "model_predictions": 0,
+    "physics_calls": 0,
+    "RLS_updates": 0
+  },
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

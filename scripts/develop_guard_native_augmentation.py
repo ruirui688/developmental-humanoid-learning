@@ -60,6 +60,12 @@ def json_bytes(value):
     return (json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False)+"\n").encode("utf-8")
 
 
+def file_identity_matches(binding, actual):
+    """Archive annotations are allowed; both byte count and SHA must match."""
+    return isinstance(binding, dict) and all(
+        key in binding and binding[key] == actual[key] for key in ("bytes", "sha256"))
+
+
 def frozen_sources(repo, commit, cost):
     if len(commit) != 40 or any(c not in "0123456789abcdef" for c in commit) or Path(__file__).resolve() != (repo/SOURCE_PATH).resolve():
         raise ValueError("exact L commit/canonical path required")
@@ -135,9 +141,9 @@ def read_inputs(repo, records, cost, sources):
     if docs[f"{D_ROOT}/raw/manifest.json"].get("status") != "completed":
         raise ValueError("D raw incomplete")
     for name in ("raw/manifest.json", "raw/diagnostics.json"):
-        if docs[f"{D_ROOT}/manifest.json"]["files"][name] != records[f"{D_ROOT}/{name}"]:
+        if not file_identity_matches(docs[f"{D_ROOT}/manifest.json"]["files"][name], records[f"{D_ROOT}/{name}"]):
             raise ValueError("D root/raw binding mismatch")
-    if docs[f"{D_ROOT}/raw/manifest.json"]["files"]["diagnostics.json"] != records[f"{D_ROOT}/raw/diagnostics.json"]:
+    if not file_identity_matches(docs[f"{D_ROOT}/raw/manifest.json"]["files"]["diagnostics.json"], records[f"{D_ROOT}/raw/diagnostics.json"]):
         raise ValueError("D diagnostic raw binding mismatch")
     kmanifest = docs[f"{K_ROOT}/manifest.json"]
     if kmanifest.get("status") != "completed" or krun.get("status") != "completed":

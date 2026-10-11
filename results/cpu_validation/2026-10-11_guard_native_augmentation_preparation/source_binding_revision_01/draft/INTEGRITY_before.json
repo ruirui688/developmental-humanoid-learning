@@ -1,0 +1,72 @@
+{
+  "status": "prepared_synthetic_checks_only",
+  "files": {
+    "CHECK_01.json": {
+      "bytes": 2246,
+      "sha256": "94be0578c1ae0c6ab4707270323509de702dda7e9dfe254af7a6fea8d2eaf4e8"
+    },
+    "CHECK_01.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "CHECK_01.stdout.txt": {
+      "bytes": 2313,
+      "sha256": "14920d4f3096c9f49c47235b2f6adcbf6d1beec43a6152d04725d27fa790354c"
+    },
+    "check_guard_native_augmentation.py": {
+      "bytes": 7750,
+      "sha256": "752ed37c1d7d1b31097b4057a6d5e825a108aaaddc76e924f1c47840048845ce"
+    },
+    "develop_guard_native_augmentation.py": {
+      "bytes": 32841,
+      "sha256": "7b0200b3bd1c824da50a827b81eb367c29faf35a0ac36b38bf16bc16a1501dc4"
+    },
+    "GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 6679,
+      "sha256": "02c10cbdbe48ae44a47d3ff13280dc69517d3d70a0717127414d1bce47f13a9b"
+    }
+  },
+  "production_script_sha256": "7b0200b3bd1c824da50a827b81eb367c29faf35a0ac36b38bf16bc16a1501dc4",
+  "protocol_sha256": "02c10cbdbe48ae44a47d3ff13280dc69517d3d70a0717127414d1bce47f13a9b",
+  "check_source_sha256": "752ed37c1d7d1b31097b4057a6d5e825a108aaaddc76e924f1c47840048845ce",
+  "canonical_K_math_sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb",
+  "first_check": {
+    "branch_count": 4,
+    "passed": true,
+    "all_four_passed_first_attempt": true,
+    "repairs": 0,
+    "reruns": 0,
+    "stdout": "CHECK_01.stdout.txt",
+    "stderr": "CHECK_01.stderr.txt",
+    "cost": {
+      "real_trace_reads": 0,
+      "real_K_weight_reads": 0,
+      "model_predictions": 0,
+      "fit_calls": 0,
+      "ridge_solves": 0,
+      "physics_calls": 0,
+      "RLS_updates": 0
+    },
+    "synthetic_json_parse_cost": {
+      "G_trace_uncompressed_bytes": 270840,
+      "G_trace_lines_parsed": 301
+    }
+  },
+  "preparation_input_access": {
+    "allowed_identity_content_file_invocations": 7,
+    "identity_files": "C/G raw manifest+metadata, K raw manifest+run; G metadata was initially previewed and then read for pins",
+    "actual_C_or_G_trace_reads": 0,
+    "actual_K_parameters_reads": 0,
+    "actual_D_snapshot_reads": 0,
+    "actual_model_restorations": 0,
+    "actual_fit_calls": 0,
+    "actual_rollout_calls": 0,
+    "physics_calls": 0,
+    "RLS_updates": 0
+  },
+  "historical_K_math_checks_repeated": false,
+  "source_changed_after_first_check": false,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

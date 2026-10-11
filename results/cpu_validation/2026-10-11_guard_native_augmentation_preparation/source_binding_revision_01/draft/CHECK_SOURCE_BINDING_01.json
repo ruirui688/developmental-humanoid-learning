@@ -1,0 +1,30 @@
+{
+  "synthetic_only": true,
+  "new_contract_check_count": 1,
+  "checks": {
+    "extra_archive_fields_accepted": true,
+    "bytes_tamper_rejected": true,
+    "hash_tamper_rejected": true,
+    "missing_bytes_rejected": true,
+    "missing_hash_rejected": true,
+    "annotation_only_rejected": true
+  },
+  "passed": true,
+  "actual_trace_or_weights_reads": 0,
+  "model_restorations": 0,
+  "fit_calls": 0,
+  "model_predictions": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "old_four_branches_repeated": false,
+  "K_math_checks_repeated": false,
+  "source_sha256": {
+    "develop_guard_native_augmentation.py": "929edcc02928013de005afe564af5470ac5e6ddad77743b813918394880ed99d",
+    "GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_PROTOCOL.md": "f6b7396d5712a3af14888a20782c7f9b6164dd9b78a8ac4c3ecc35fca8f32133"
+  },
+  "check_source_sha256": "9106d000d722517abc2cfb390096dcc42739e8f83bc0de14d40e1a2138fd0504",
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4"
+  }
+}

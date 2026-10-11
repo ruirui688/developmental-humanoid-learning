@@ -1,0 +1,97 @@
+{
+  "scope": "source binding repair only; all original checks and first failed run retained",
+  "files": {
+    "draft/CHECK_SOURCE_BINDING_01.json": {
+      "bytes": 1041,
+      "sha256": "d0ebb5b5339b8059ea7d008d32d3f38e3cb5df37a3c08ddd89b0da09251a1625",
+      "copy_verified": true
+    },
+    "draft/CHECK_SOURCE_BINDING_01.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "draft/CHECK_SOURCE_BINDING_01.stdout.txt": {
+      "bytes": 1071,
+      "sha256": "1b0a6966e4fcbd219ab46e21eba625bf72306da61b712df5cfce9fc397d32693",
+      "copy_verified": true
+    },
+    "draft/check_source_binding_once.py": {
+      "bytes": 2405,
+      "sha256": "9106d000d722517abc2cfb390096dcc42739e8f83bc0de14d40e1a2138fd0504",
+      "copy_verified": true
+    },
+    "draft/DESCRIPTION.md": {
+      "bytes": 1314,
+      "sha256": "d6e57c9d2883ece3553c65587e59597854bd4984b6e576719240e3d8a12d59e3",
+      "copy_verified": true
+    },
+    "draft/develop_guard_native_augmentation_before.py": {
+      "bytes": 32841,
+      "sha256": "7b0200b3bd1c824da50a827b81eb367c29faf35a0ac36b38bf16bc16a1501dc4",
+      "copy_verified": true
+    },
+    "draft/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_PROTOCOL_before.md": {
+      "bytes": 6679,
+      "sha256": "02c10cbdbe48ae44a47d3ff13280dc69517d3d70a0717127414d1bce47f13a9b",
+      "copy_verified": true
+    },
+    "draft/INTEGRITY_before.json": {
+      "bytes": 2553,
+      "sha256": "e7d2a5d0056addd014532fb9b6857a316d4852fad377928ead018cd35ab922dc",
+      "copy_verified": true
+    },
+    "draft/protocol.diff": {
+      "bytes": 1495,
+      "sha256": "5cc0bc031a3defb8c945a25ee26ef4d656f72aab9985042df797b8e7b2444147",
+      "copy_verified": true
+    },
+    "draft/script.diff": {
+      "bytes": 1475,
+      "sha256": "339330c57c973ac21ec7c3be9a0f2898506aba63f0e0a31df507afda0117e956",
+      "copy_verified": true
+    },
+    "final/develop_guard_native_augmentation.py": {
+      "bytes": 33149,
+      "sha256": "929edcc02928013de005afe564af5470ac5e6ddad77743b813918394880ed99d",
+      "copy_verified": true
+    },
+    "final/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 7822,
+      "sha256": "f6b7396d5712a3af14888a20782c7f9b6164dd9b78a8ac4c3ecc35fca8f32133",
+      "copy_verified": true
+    },
+    "final/INTEGRITY.json": {
+      "bytes": 4509,
+      "sha256": "bd227b4b4a51c2be98485fb6f703625d4af34139bd247c9ebc70873933e7d74b",
+      "copy_verified": true
+    },
+    "static_review.md": {
+      "bytes": 3013,
+      "sha256": "9d92dd5cb20f54fbae511dcb45a360dd4cf07bfe3a7f90ba8c1b4bee4a42148d",
+      "copy_verified": true
+    },
+    "run_l_native_augmentation_02_once.py": {
+      "bytes": 1449,
+      "sha256": "47dae1a7da7fcc57c120f5dc7d2b555b79384d5a0c894b3a06f6ddf05170f76c",
+      "copy_verified": true
+    },
+    "prepare_l_binding_revision_once.py": {
+      "bytes": 2446,
+      "sha256": "7244e64a06e46d195ca77b973ccb55534049119b78557fe6674c8cf04c59b32d",
+      "copy_verified": true
+    }
+  },
+  "cost": {
+    "binary_reads": 34,
+    "input_bytes": 247495,
+    "copy_checks": 16,
+    "copy_failures": 0,
+    "wall_seconds": 0.1366924000903964,
+    "cpu_seconds": 0.03125
+  },
+  "actual_trace_or_weights_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "physics": 0
+}
