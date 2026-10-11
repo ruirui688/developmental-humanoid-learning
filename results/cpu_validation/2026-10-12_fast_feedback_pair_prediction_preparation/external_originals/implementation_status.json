@@ -1,0 +1,239 @@
+{
+  "status": "external_Z1_Z2_candidate_static_ready_unexecuted_unpublished",
+  "files": {
+    "src/developmental_physics/fast_feedback_pair_model.py": {
+      "bytes": 2735,
+      "sha256": "289c5f5275ba7dcf6a162b42aa15af71ba067af4246d9bb0f5a3fded48fdc2e7",
+      "AST_and_compile_only": true,
+      "API": [
+        "FastFeedbackGuardCoupledPairBodyModel"
+      ]
+    },
+    "src/developmental_physics/fast_feedback_pair_mpc.py": {
+      "bytes": 9739,
+      "sha256": "b01bcb15df29e2424c9db183a8aa2f3f0b0fd6d07d8acbc896ab7294a003ebc0",
+      "AST_and_compile_only": true,
+      "API": [
+        "public_pd_request",
+        "ResidualPDMPCDecision",
+        "FastFeedbackResidualPDPairMPC"
+      ]
+    },
+    "src/developmental_physics/fast_feedback_pair_development.py": {
+      "bytes": 46048,
+      "sha256": "639b5c5980e7525b31477fdbf51b98aa0cbc56f04fce6d8da1e2bc6e40191aca",
+      "AST_and_compile_only": true,
+      "API": [
+        "safe",
+        "identity",
+        "failure",
+        "native",
+        "study_abort",
+        "direction_targets",
+        "pulse",
+        "counted_pd",
+        "CountedGuardModel",
+        "restore_model",
+        "complete_telemetry",
+        "effort",
+        "collect_trial",
+        "score_population",
+        "prediction_gate",
+        "tracking_score",
+        "control_gate",
+        "run_prediction",
+        "run_control",
+        "new_result"
+      ]
+    },
+    "scripts/develop_fast_feedback_pair.py": {
+      "bytes": 18953,
+      "sha256": "78c25bce723856f720f4d819f798b8ac3a23226f0699e189005ea7cfb056297b",
+      "AST_and_compile_only": true,
+      "API": [
+        "identity",
+        "encoded",
+        "read_bytes",
+        "verify_sources",
+        "read_gate",
+        "summary_only",
+        "main_run",
+        "main"
+      ]
+    },
+    "tests/test_fast_feedback_pair_model.py": {
+      "bytes": 1679,
+      "sha256": "62d36721d9221ea301a4560fe56328da5f306475d4c4c7147c323aa44e22262d",
+      "AST_and_compile_only": true,
+      "API": [
+        "test_new_micro_prior_preserves_velocity_identity_and_scales_increment",
+        "test_new_adapter_rejects_macro_dt_before_original_constructor"
+      ]
+    },
+    "tests/test_fast_feedback_pair_mpc.py": {
+      "bytes": 5026,
+      "sha256": "238176bb8080bebe22349a52aac6168e378cdab2c81a4a5f47668c1cff3a875c",
+      "AST_and_compile_only": true,
+      "API": [
+        "AdvancingFakePredictor",
+        "OutOfBoundsFakePredictor",
+        "test_new_micro_rollout_holds_nonzero_residual_then_recomputes_pd_with_scaled_cost",
+        "test_new_infeasible_micro_rollouts_return_literal_zero_fallback"
+      ]
+    },
+    "tests/test_fast_feedback_pair_development.py": {
+      "bytes": 4526,
+      "sha256": "5498e6016bddcbf8668d492281a4f1b2320e4d9ce9fdf1f6860cea6fd82aee4f",
+      "AST_and_compile_only": true,
+      "API": [
+        "OneMicroEnv",
+        "test_new_macro_pulses_keep_twenty_ms_slots_under_micro_feedback",
+        "test_new_one_micro_paid_endpoint_precedes_study_stop_and_update",
+        "test_new_physical_time_gates_do_not_add_native_h1_veto"
+      ]
+    }
+  },
+  "first_static_preparation": {
+    "source_file_reads": 7,
+    "source_read_and_hash_bytes": 88706,
+    "AST_attempts": 7,
+    "AST_returns": 7,
+    "compile_only_calls": 7,
+    "wall_seconds": 0.027041699970141053,
+    "cpu_seconds": 0.03125
+  },
+  "source_derivation": {
+    "closed_Y_development_and_frozen_Y_controller_reads": 2,
+    "closed_Y_development_and_frozen_Y_controller_bytes": 51066,
+    "closed_Y_runner_reads": 1,
+    "closed_Y_runner_bytes": 17840
+  },
+  "protocol_first_read": {
+    "path": "docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md",
+    "bytes": 12655,
+    "sha256": "2370f7b76f627936e18bd609d67f785e6a090bde3c7dea0097deda237b42305b"
+  },
+  "necessary_source_queries": [
+    "MPCConfig section only: no gamma; local_model.py logical size 16564 bytes",
+    "Z0 source path/dependencies/run schema excerpts only; OS/backend byte counts unknown"
+  ],
+  "cached_source_reuse": "constructor, feature order, clone, atomic update, guard and decision API; no new old-source reads",
+  "independent_review": {
+    "agent": "/root/next_control_direction/y_static_contract_review",
+    "source_file_reads": 4,
+    "source_read_and_hash_bytes": 61890,
+    "finding": "new model/controller/development time semantics and paid priority statically match; no executable issue",
+    "tests_written": "two new fakepredictor timing/cost/fallback cases, unexecuted",
+    "AST": 0,
+    "production_imports": 0,
+    "fixture_executions": 0,
+    "model_calls": 0,
+    "fit_calls": 0,
+    "physical_calls": 0,
+    "raw_reads": 0,
+    "metrics_reads": 0,
+    "MPC_test_initial_wrong_directory": "temporarily authored in production tests; immediately moved intact to external before import or execution",
+    "MPC_test_content_changes_during_move": 0
+  },
+  "model_independent_review": {
+    "receipt": "external/c4_z_pair_model_static_review.json",
+    "scope": "bounded agent initial constructor/clone/time metadata only; loader restore boundary is separate static review"
+  },
+  "new_fixtures_prepared_not_run": {
+    "model_adapter": 2,
+    "micro_MPC": 2,
+    "micro_development": 3
+  },
+  "later_static_changes_after_child_review": [
+    "bind physical_configuration and execution/interface fingerprints separately",
+    "H1/H10q availability reports cannot create extra scientific veto",
+    "100-paid-active-step progress prints without new physical/model calls",
+    "pin engineering plus learning protocols and independent Z0/Z1 artifact paths"
+  ],
+  "planned_upper_bounds": {
+    "Z1_calls_substeps": [
+      21000,
+      21000
+    ],
+    "online_vector_scalar_commits": [
+      12000,
+      24000
+    ],
+    "independent_pair_scalar_predictions": [
+      124680,
+      249360
+    ],
+    "RLS_preupdate_pair_scalar_separate": [
+      12000,
+      24000
+    ],
+    "Z2_calls_substeps": [
+      36000,
+      36000
+    ],
+    "MPC_decisions": 1200,
+    "planning_pair_scalar_predictions": [
+      14580000,
+      29160000
+    ],
+    "conditional_pair_scalar_predictions": [
+      526560,
+      1053120
+    ]
+  },
+  "production_imports": 0,
+  "fixture_executions": 0,
+  "body_model_constructors": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "physical_calls": 0,
+  "raw_reads": 0,
+  "metrics_reads": 0,
+  "production_publication": false,
+  "old_X_Y_source_files_modified": false,
+  "commit_push": 0,
+  "unmeasured_source_edit_timing_and_backend_IO": "unknown_not_zero",
+  "runner_final_byte_review": {
+    "source_file_reads": 1,
+    "source_read_and_hash_bytes": 18953,
+    "sha256": "78c25bce723856f720f4d819f798b8ac3a23226f0699e189005ea7cfb056297b",
+    "CRCRLF_sequences": 0,
+    "normal_CRLF_sequences": 319,
+    "bare_LF_sequences": 0,
+    "formatting_edit": false,
+    "finding": "actual bytes contain normal CRLF only; no formatting repair or repeat AST needed",
+    "production_imports": 0,
+    "AST_attempts": 0,
+    "compile_only_calls": 0
+  },
+  "final_narrow_independent_review": {
+    "agent": "/root/next_control_direction/y_static_contract_review",
+    "source_file_reads": 2,
+    "source_read_and_hash_bytes": 65001,
+    "sources": {
+      "src/developmental_physics/fast_feedback_pair_development.py": 46048,
+      "scripts/develop_fast_feedback_pair.py": 18953
+    },
+    "finding": "no stale Y names, macro dt, prefix/target indices or declared source/gate path mismatch; both gates precede production imports",
+    "source_gate_artifact_content_validation": false,
+    "first_orchestration_syntax_error_before_nested_tools": 1,
+    "failed_orchestration_source_reads": 0,
+    "later_queries_use_read_source_cache": true,
+    "AST": 0,
+    "production_imports": 0,
+    "fixture_executions": 0,
+    "model_calls": 0,
+    "fit_calls": 0,
+    "physical_calls": 0,
+    "raw_reads": 0,
+    "metrics_reads": 0,
+    "source_writes": 0
+  },
+  "external_files_final_stable": true,
+  "publication_handoff": {
+    "agent": "/root",
+    "source_bytes": "external original identities retained",
+    "authorized_next_step": "parent publication with CRLF-to-LF conversion and AST equivalence, binding final production identities before first new pure checks",
+    "candidate_execution_by_preparation_agent": false
+  }
+}

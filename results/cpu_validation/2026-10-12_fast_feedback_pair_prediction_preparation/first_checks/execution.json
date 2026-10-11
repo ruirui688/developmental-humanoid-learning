@@ -1,0 +1,54 @@
+{
+  "argv": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_fast_feedback_pair_model.py",
+    "tests/test_fast_feedback_pair_mpc.py",
+    "tests/test_fast_feedback_pair_development.py"
+  ],
+  "source_files": {
+    "src/developmental_physics/fast_feedback_pair_model.py": {
+      "bytes": 2735,
+      "sha256": "289c5f5275ba7dcf6a162b42aa15af71ba067af4246d9bb0f5a3fded48fdc2e7"
+    },
+    "src/developmental_physics/fast_feedback_pair_mpc.py": {
+      "bytes": 9551,
+      "sha256": "5a7d9d978de755c83023974628eb1891aa76f0e44a71a1454c6e676aacaa71f4"
+    },
+    "src/developmental_physics/fast_feedback_pair_development.py": {
+      "bytes": 45301,
+      "sha256": "f29196f9a2e54743b6da29f3fe587871559065959a746d25fe8347dc8dcd96c7"
+    },
+    "scripts/develop_fast_feedback_pair.py": {
+      "bytes": 18634,
+      "sha256": "63b74c5c1d1f611451da55a1e3c559882a288409069c45ee11fb91f1d755416b"
+    },
+    "tests/test_fast_feedback_pair_model.py": {
+      "bytes": 1679,
+      "sha256": "62d36721d9221ea301a4560fe56328da5f306475d4c4c7147c323aa44e22262d"
+    },
+    "tests/test_fast_feedback_pair_mpc.py": {
+      "bytes": 5026,
+      "sha256": "238176bb8080bebe22349a52aac6168e378cdab2c81a4a5f47668c1cff3a875c"
+    },
+    "tests/test_fast_feedback_pair_development.py": {
+      "bytes": 4526,
+      "sha256": "5498e6016bddcbf8668d492281a4f1b2320e4d9ce9fdf1f6860cea6fd82aee4f"
+    },
+    "docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md": {
+      "bytes": 12655,
+      "sha256": "2370f7b76f627936e18bd609d67f785e6a090bde3c7dea0097deda237b42305b"
+    }
+  },
+  "returncode": 0,
+  "wall_seconds": 1.1280911001376808,
+  "test_invocations": 1,
+  "scope": "Only new 2ms initialization/clone, micro MPC timing/cost/fallback and paid evidence contracts; no old suite repetitions",
+  "real_physics_builds_forwards_steps": 0,
+  "formal_learning_RLS_updates": 0,
+  "test_model_and_fake_forward_counts": "See individual test source; not claimed zero",
+  "old_tests_repeated": false,
+  "automatic_retry": false
+}

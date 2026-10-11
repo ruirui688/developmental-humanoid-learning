@@ -1,0 +1,84 @@
+{
+  "kind": "pre-data Z1/Z2 scientific protocol, time horizons and explicit computation budget",
+  "protocol": {
+    "path": "docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md",
+    "bytes": 12655,
+    "sha256": "2370f7b76f627936e18bd609d67f785e6a090bde3c7dea0097deda237b42305b",
+    "LF_whitespace_links_and_git_diff_check": "passed"
+  },
+  "scope": {
+    "model_source_body_reads": 0,
+    "old_raw_metrics_reads": 0,
+    "model_physics_fit_RLS_calls": 0,
+    "experimental_imports": 0,
+    "tests_or_assembly_runs": 0,
+    "old_metric_recalculations": 0,
+    "new_budget_arithmetic_only": true,
+    "protocol_final_validation_bytes_read": 12655,
+    "commit_push": 0,
+    "unknown_IO": "Git, public integer seed search, edit/patch, backend and OS IO totals are unmeasured."
+  },
+  "design_evidence": {
+    "Z0_engineering": "Root supplied complete3000/3000, no stop/fit, clean824749bbe8610e553be3d06ca6c9306c853153ed. Author read no Z0 trace or metrics. Engineering success does not establish body learning.",
+    "feasibility": "Source/API agent reused cached prior and planner information: original dt=.02 constructor/clone reject2ms; independent adapter and clone are required. Body predict still receives one known final request held through one2ms transition; target and delta generate that request within the controller.",
+    "new_prior": "Unique E+.1*(Theta_generic20ms-E) initialization, own velocity identity1 and own request.002, zero other/cross coefficients; P100I/lambda1/hinge.25 retained. No learnedX/Y snapshot is restored.",
+    "frequency_and_regularization": "Same8s calibration has ten times correlated RLS updates; this changes computation and prior/data weighting, not independent sample count. Faster feedback is an additional shared classical-control prior.",
+    "no_success_claim": true
+  },
+  "frozen_time_population": {
+    "feedback_and_model_dt_seconds": 0.002,
+    "decision_dt_seconds": 0.02,
+    "horizons_microsteps": [10, 20, 50, 150],
+    "horizons_seconds": [0.02, 0.04, 0.1, 0.3],
+    "origin_stride_microsteps": 10,
+    "independent_origins": [100, 99, 96, 86],
+    "control_origins": [200, 199, 196, 186],
+    "native_H1_report_only_origins": {"independent": 100, "control": 200},
+    "fresh_seeds": [7701, 7702, 7703],
+    "public_seed_collision_search": "One exact-integer-boundary search overdocs/README/AGENTS/src/scripts/tests found no match; no raw search or hidden-use guarantee.",
+    "pulse_timing": "Original20ms macro pulse held through ten2ms updates; PD recomputed eachmicrostep."
+  },
+  "scientific_gates": {
+    "prediction": "Full calibration and independent populations first. H10v/H150q strict per-seed axis improvement and >=20percent raw three-seed per-axis mean improvement; H150v/H20,H50qv nonworse for everyseed/axis. H10q and nativeH1 only reported.",
+    "controller_contribution": "Allcold/learned trajectories complete; strict eachseed joint/axis improvement, >=20percent raw joint/axis means, actual absolute and squared effort mean <=1.05cold.",
+    "strong_PD": "After contribution passes, allrequiredPD complete, no worse eachseed joint/axis, >=5percent raw joint mean improvement, effort means <=1.05PD.",
+    "stops": "Prefixbaseline-only protection and active complete2ms StudyAbort.12rad/1rad/s with equality stop. No partial ranking, zero denominator percentage advantage or fewer stopped steps efficiency claim.",
+    "forecast_boundary": "Original forecast radius.15/velocity1.5 is not actual StudyAbort.12/1; denser predicted sampling is disclosed, no safety proof asserted.",
+    "old_C4_C5": "Not released by this new supported local development protocol."
+  },
+  "new_integer_budget_verification": {
+    "Z1_physics_calls_and_substeps": 21000,
+    "Z1_calibration_calls": 15000,
+    "Z1_independent_calls": 6000,
+    "Z2_physics_calls_and_substeps": 36000,
+    "science_total_calls_and_substeps": 57000,
+    "Z0_plus_science_calls_and_substeps": 60000,
+    "RLS_vector_commits": 12000,
+    "RLS_scalar_commits": 24000,
+    "actor_PD_Z1": 15000,
+    "actor_PD_Z2": 18000,
+    "MPC_decisions": 1200,
+    "MPC_pair_forwards": 14580000,
+    "MPC_scalar_forwards": 29160000,
+    "independent_main_pair_forwards": 124080,
+    "independent_H1_pair_forwards": 600,
+    "independent_total_pair_forwards": 124680,
+    "independent_total_scalar_forwards": 249360,
+    "own_control_main_pair_forwards": 524160,
+    "own_control_H1_pair_forwards": 2400,
+    "own_control_total_pair_forwards": 526560,
+    "own_control_total_scalar_forwards": 1053120,
+    "interpretation": "Allare upperbounds not prepaid actualcost. Earlycandidate rejection, failedphysics and partial updates retain actualcounts and negative/unknown outcomes; no recalculation of oldresults."
+  },
+  "planner_semantics": {
+    "candidate_grid": "81signed residuals within+.125/-.125, firsttenmicrostepshelddelta, remaining140delta0; own predicted q/v producesPD everymicrostep.",
+    "actual_interface": "Firsttenmicrosteps executed with fresh nativePD+helddelta, then replan. Literalzero fallback mode executeszero requests rather than delta0PD.",
+    "cost": "Nodiscount. Micro runningposition.1/velocity.0002/effort.000002; firstchange.00002 once, full request versus lastknownactualmicrosteprequest. No residual-only effort or futureactuator-force input."
+  },
+  "parent_owned_remaining_preconditions": [
+    "Independent production adapter/controller/collector/entry source, exactdependencies and snapshot/clone implementation review.",
+    "First necessary new purechecks without repeatingoldRLS/MPCmath or revealedphysics.",
+    "Exact protocol/source cleancommit and normalpush before anyZ1learning data.",
+    "Controller frozen beforeZ1resultsread; Z2closed unless originalphysical-time predictiongate and fullpopulation pass."
+  ]
+}

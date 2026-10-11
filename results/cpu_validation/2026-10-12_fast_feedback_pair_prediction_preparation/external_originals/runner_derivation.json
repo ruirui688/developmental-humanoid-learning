@@ -1,0 +1,173 @@
+{
+  "source": {
+    "path": "external\\y_learning_candidate\\scripts\\develop_damped_suspended_pair.py",
+    "bytes": 17840,
+    "sha256": "739dea213dd9e658c24e15cdc975d81287013243f1b9b793704aa1faf4e3651c"
+  },
+  "transformations": [
+    {
+      "before": "damped_suspended_pair_development",
+      "after": "fast_feedback_pair_development",
+      "count": 2
+    },
+    {
+      "before": "develop_damped_suspended_pair.py",
+      "after": "develop_fast_feedback_pair.py",
+      "count": 1
+    },
+    {
+      "before": "validate_damped_suspended_pair_engineering.py",
+      "after": "validate_fast_feedback_engineering.py",
+      "count": 2
+    },
+    {
+      "before": "damped_residual_pd_pair_mpc",
+      "after": "fast_feedback_pair_mpc",
+      "count": 1
+    },
+    {
+      "before": "DAMPED_SUSPENDED_PAIR_PROTOCOL.md",
+      "after": "FAST_FEEDBACK_LEARNING_PROTOCOL.md",
+      "count": 1
+    },
+    {
+      "before": "2026-10-12_damped_suspended_pair_engineering",
+      "after": "2026-10-12_fast_feedback_engineering",
+      "count": 1
+    },
+    {
+      "before": "2026-10-12_damped_suspended_pair_prediction",
+      "after": "2026-10-12_fast_feedback_pair_prediction",
+      "count": 1
+    },
+    {
+      "before": "7500",
+      "after": "7600",
+      "count": 1
+    },
+    {
+      "before": "7501",
+      "after": "7701",
+      "count": 1
+    },
+    {
+      "before": "7502",
+      "after": "7702",
+      "count": 1
+    },
+    {
+      "before": "7503",
+      "after": "7703",
+      "count": 1
+    },
+    {
+      "before": "Y0",
+      "after": "Z0",
+      "count": 8
+    },
+    {
+      "before": "Y1",
+      "after": "Z1",
+      "count": 14
+    },
+    {
+      "before": "Y2",
+      "after": "Z2",
+      "count": 3
+    },
+    {
+      "before": "y1",
+      "after": "z1",
+      "count": 8
+    },
+    {
+      "before": "y2",
+      "after": "z2",
+      "count": 8
+    },
+    {
+      "before": "canonical_frozen_Y_learning_runner_required",
+      "after": "canonical_frozen_Z_learning_runner_required",
+      "count": 1
+    },
+    {
+      "before": "clean_exact_Y_learning_HEAD_required",
+      "after": "clean_exact_Z_learning_HEAD_required",
+      "count": 1
+    },
+    {
+      "before": "full_100_prefix_200_active",
+      "after": "full_1000_prefix_2000_active",
+      "count": 1
+    },
+    {
+      "before": "\"control_call_returns\") != 300",
+      "after": "\"control_call_returns\") != 3000",
+      "count": 1
+    },
+    {
+      "before": "\"RLS_vector_update_commits\") != 1200",
+      "after": "\"RLS_vector_update_commits\") != 12000",
+      "count": 1
+    },
+    {
+      "before": "\"RLS_scalar_update_commits\") != 2400",
+      "after": "\"RLS_scalar_update_commits\") != 24000",
+      "count": 1
+    },
+    {
+      "before": "\"vector_update_count\") != 400",
+      "after": "\"vector_update_count\") != 4000",
+      "count": 1
+    },
+    {
+      "before": "zero_and_400_atomic",
+      "after": "zero_and_4000_atomic",
+      "count": 1
+    },
+    {
+      "before": "\"control_calls\": 2100, \"physics_substeps\": 21000, \"RLS_vector_commits\": 1200,",
+      "after": "\"control_calls\": 21000, \"physics_substeps\": 21000, \"RLS_vector_commits\": 12000,",
+      "count": 1
+    },
+    {
+      "before": "\"RLS_scalar_commits\": 2400, \"independent_prediction_pairs\": 12408",
+      "after": "\"RLS_scalar_commits\": 24000, \"independent_prediction_pairs\": 124680",
+      "count": 1
+    },
+    {
+      "before": "\"control_calls\": 3600, \"physics_substeps\": 36000",
+      "after": "\"control_calls\": 36000, \"physics_substeps\": 36000",
+      "count": 1
+    },
+    {
+      "before": "\"planning_prediction_pairs\": 1458000, \"conditional_prediction_pairs\": 52416",
+      "after": "\"planning_prediction_pairs\": 14580000, \"conditional_prediction_pairs\": 526560",
+      "count": 1
+    },
+    {
+      "before": "from developmental_physics.suspended_environment import SuspendedGroundBodyEnv",
+      "after": "from developmental_physics.fast_feedback_environment import FastFeedbackGroundBodyEnv",
+      "count": 1
+    },
+    {
+      "before": "run_prediction(result, SuspendedGroundBodyEnv)",
+      "after": "run_prediction(result, FastFeedbackGroundBodyEnv)",
+      "count": 1
+    },
+    {
+      "before": "run_control(result, SuspendedGroundBodyEnv,",
+      "after": "run_control(result, FastFeedbackGroundBodyEnv,",
+      "count": 1
+    }
+  ],
+  "source_file_reads": 1,
+  "source_read_and_hash_bytes": 17840,
+  "production_imports": 0,
+  "fixture_executions": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "physical_calls": 0,
+  "raw_reads": 0,
+  "production_publication": false
+}

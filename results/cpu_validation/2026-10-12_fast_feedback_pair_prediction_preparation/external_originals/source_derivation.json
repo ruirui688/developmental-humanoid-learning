@@ -1,0 +1,23 @@
+{
+  "input_files": {
+    "src/developmental_physics/damped_residual_pd_pair_mpc.py": {
+      "bytes": 8448,
+      "sha256": "eeb9b9049aef36dc6c8ba29d7b03026e94c03943e1935f81678043d4f1b1a8b6"
+    },
+    "external/y_learning_candidate/src/developmental_physics/damped_suspended_pair_development.py": {
+      "bytes": 42618,
+      "sha256": "352eb5a8cfffbd4510f642ffd243840a9682c5fdfa8be72a4eb9c46ce55f2ac4"
+    }
+  },
+  "read_cost": {
+    "source_file_reads": 2,
+    "source_read_and_hash_bytes": 51066
+  },
+  "production_imports": 0,
+  "fixture_executions": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "physical_calls": 0,
+  "raw_reads": 0,
+  "production_publication": false
+}

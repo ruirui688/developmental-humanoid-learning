@@ -1,0 +1,159 @@
+{
+  "status": "published_before_first_checks",
+  "files": {
+    "src/developmental_physics/fast_feedback_pair_model.py": {
+      "original": {
+        "bytes": 2735,
+        "sha256": "289c5f5275ba7dcf6a162b42aa15af71ba067af4246d9bb0f5a3fded48fdc2e7",
+        "AST_and_compile_only": true,
+        "API": [
+          "FastFeedbackGuardCoupledPairBodyModel"
+        ]
+      },
+      "published": {
+        "bytes": 2735,
+        "sha256": "289c5f5275ba7dcf6a162b42aa15af71ba067af4246d9bb0f5a3fded48fdc2e7"
+      },
+      "CRLF_to_LF_count": 0,
+      "AST_equivalent": true
+    },
+    "src/developmental_physics/fast_feedback_pair_mpc.py": {
+      "original": {
+        "bytes": 9739,
+        "sha256": "b01bcb15df29e2424c9db183a8aa2f3f0b0fd6d07d8acbc896ab7294a003ebc0",
+        "AST_and_compile_only": true,
+        "API": [
+          "public_pd_request",
+          "ResidualPDMPCDecision",
+          "FastFeedbackResidualPDPairMPC"
+        ]
+      },
+      "published": {
+        "bytes": 9551,
+        "sha256": "5a7d9d978de755c83023974628eb1891aa76f0e44a71a1454c6e676aacaa71f4"
+      },
+      "CRLF_to_LF_count": 188,
+      "AST_equivalent": true
+    },
+    "src/developmental_physics/fast_feedback_pair_development.py": {
+      "original": {
+        "bytes": 46048,
+        "sha256": "639b5c5980e7525b31477fdbf51b98aa0cbc56f04fce6d8da1e2bc6e40191aca",
+        "AST_and_compile_only": true,
+        "API": [
+          "safe",
+          "identity",
+          "failure",
+          "native",
+          "study_abort",
+          "direction_targets",
+          "pulse",
+          "counted_pd",
+          "CountedGuardModel",
+          "restore_model",
+          "complete_telemetry",
+          "effort",
+          "collect_trial",
+          "score_population",
+          "prediction_gate",
+          "tracking_score",
+          "control_gate",
+          "run_prediction",
+          "run_control",
+          "new_result"
+        ]
+      },
+      "published": {
+        "bytes": 45301,
+        "sha256": "f29196f9a2e54743b6da29f3fe587871559065959a746d25fe8347dc8dcd96c7"
+      },
+      "CRLF_to_LF_count": 747,
+      "AST_equivalent": true
+    },
+    "scripts/develop_fast_feedback_pair.py": {
+      "original": {
+        "bytes": 18953,
+        "sha256": "78c25bce723856f720f4d819f798b8ac3a23226f0699e189005ea7cfb056297b",
+        "AST_and_compile_only": true,
+        "API": [
+          "identity",
+          "encoded",
+          "read_bytes",
+          "verify_sources",
+          "read_gate",
+          "summary_only",
+          "main_run",
+          "main"
+        ]
+      },
+      "published": {
+        "bytes": 18634,
+        "sha256": "63b74c5c1d1f611451da55a1e3c559882a288409069c45ee11fb91f1d755416b"
+      },
+      "CRLF_to_LF_count": 319,
+      "AST_equivalent": true
+    },
+    "tests/test_fast_feedback_pair_model.py": {
+      "original": {
+        "bytes": 1679,
+        "sha256": "62d36721d9221ea301a4560fe56328da5f306475d4c4c7147c323aa44e22262d",
+        "AST_and_compile_only": true,
+        "API": [
+          "test_new_micro_prior_preserves_velocity_identity_and_scales_increment",
+          "test_new_adapter_rejects_macro_dt_before_original_constructor"
+        ]
+      },
+      "published": {
+        "bytes": 1679,
+        "sha256": "62d36721d9221ea301a4560fe56328da5f306475d4c4c7147c323aa44e22262d"
+      },
+      "CRLF_to_LF_count": 0,
+      "AST_equivalent": true
+    },
+    "tests/test_fast_feedback_pair_mpc.py": {
+      "original": {
+        "bytes": 5026,
+        "sha256": "238176bb8080bebe22349a52aac6168e378cdab2c81a4a5f47668c1cff3a875c",
+        "AST_and_compile_only": true,
+        "API": [
+          "AdvancingFakePredictor",
+          "OutOfBoundsFakePredictor",
+          "test_new_micro_rollout_holds_nonzero_residual_then_recomputes_pd_with_scaled_cost",
+          "test_new_infeasible_micro_rollouts_return_literal_zero_fallback"
+        ]
+      },
+      "published": {
+        "bytes": 5026,
+        "sha256": "238176bb8080bebe22349a52aac6168e378cdab2c81a4a5f47668c1cff3a875c"
+      },
+      "CRLF_to_LF_count": 0,
+      "AST_equivalent": true
+    },
+    "tests/test_fast_feedback_pair_development.py": {
+      "original": {
+        "bytes": 4526,
+        "sha256": "5498e6016bddcbf8668d492281a4f1b2320e4d9ce9fdf1f6860cea6fd82aee4f",
+        "AST_and_compile_only": true,
+        "API": [
+          "OneMicroEnv",
+          "test_new_macro_pulses_keep_twenty_ms_slots_under_micro_feedback",
+          "test_new_one_micro_paid_endpoint_precedes_study_stop_and_update",
+          "test_new_physical_time_gates_do_not_add_native_h1_veto"
+        ]
+      },
+      "published": {
+        "bytes": 4526,
+        "sha256": "5498e6016bddcbf8668d492281a4f1b2320e4d9ce9fdf1f6860cea6fd82aee4f"
+      },
+      "CRLF_to_LF_count": 0,
+      "AST_equivalent": true
+    }
+  },
+  "wall_seconds": 0.09773049992509186,
+  "cpu_seconds": 0.109375,
+  "production_imports": 0,
+  "tests": 0,
+  "model_fit_physics_calls": 0,
+  "external_originals_modified": false,
+  "automatic_retry": false
+}

@@ -16,7 +16,7 @@
 
 - **Z0首次完整工程门通过。** [首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次seed7600完成1000zero+2000PD、3000控制/3000子步，0异常/停止/fit；两个末200点/.4s窗口的肩/肘四项MAE均≤.01rad。root首新thin contract零failed，独立4个Z0 MAE；记录一致与工程通过仍不证明学习或科学验收。
 - [2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)保持物理/PD64/Kd(4,4)/权限/6s任务，反馈/感觉与active研究停止检查频率增多，公开额外经典控制能力。全子步left_arm/feet/other接触零观察；固定支撑反力unknown，不从不同seed的X/Y失败识别频率因果，不追认自由root真实接触C4或解除C5科学依赖。
-- **当前准备独立2ms学习协议。** 保留300ms预测时距设计，重新冻结动作语义、标签/更新、预测/规划及控制预算，不自动继承旧20ms snapshots、H15或更新预算。原[Y协议](DAMPED_SUSPENDED_PAIR_PROTOCOL.md)、[X0协议](SUSPENDED_PAIR_DOMAIN_DESIGN.md)及关闭的学习配方保持；旧X/Y/W0/V不重跑。后续仍须少量辨识/预测、匹配完整控制及真实接触迁移，阶段交付后立即继续active目标。
+- **Z1/Z2配方与控制器已准备，首次Z1待执行。** [学习协议](FAST_FEEDBACK_LEARNING_PROTOCOL.md)冻结seeds7701/7702/7703、2ms身体转移、20ms残差规划与300ms预测时距。7项新初始化/微步规划/付费端点检查全部通过；外部原件保留，生产LF转换前后AST一致。[准备归档](../results/cpu_validation/2026-10-12_fast_feedback_pair_prediction_preparation/manifest.json)公开来源与首次检查。Z1上限21,000控制/子步、12,000vector/24,000scalar在线更新；只有全部完整与原预测门通过才执行Z2。旧X/Y/W0/V关闭，完整接触C4及C5–C7仍待验收。冻结提交推送后立即首次执行。
 
 Y0执行前的[首次准备封存](../results/cpu_validation/2026-10-12_damped_suspended_pair_engineering_preparation/manifest.json)保留为历史：
 已完成：两项新反馈检查通过，最终protocol pin匹配；runner从反馈检查以来仅pin改变。
@@ -633,3 +633,21 @@ cold/learned/强经典组共享频率/感觉/目标/最终权限/保护和完整
 旧X/Y/W0/V分支保持关闭，接着少量辨识/预测与匹配完整控制；未来仍须自由root真实接触C4、
 C5未知动力学适应、C6成熟/能力门控及C7新留出综合验收。
 持续目标active，阶段检查、正常提交推送后立即继续，本工程交付不结束整个目标。
+
+
+### Z1/Z2事前实现与首次新检查已封存
+
+[学习协议](FAST_FEEDBACK_LEARNING_PROTOCOL.md)与微步模型/controller/入口在任何Z1数据前冻结。
+7文件外部原件保持；生产仅CRLF→LF，全部AST等价，模型与协议原bytes不变。
+首7新checks全部通过，pytest .72s、wrapper wall1.1280911s；真实装配/积分及正式RLS更新0，
+新模型构造与fake forwards见测试原件，不称零。仅必要新检查，旧suite/旧实验不重复。
+[准备manifest](../results/cpu_validation/2026-10-12_fast_feedback_pair_prediction_preparation/manifest.json)
+41payload，83读712495bytes、42写365983bytes含manifest，wall/CPU .4937801/.09375s。
+设计、独立adapter/源码review、publication身份、首次stdout/stderr与执行helpers齐全；准备不证明科学通过。
+
+首次Z1三个seed7701/7702/7703，上限21000控制/子步、12000vector/24000scalar更新；
+RLS内部preupdate与124680pair独立评分另计。全部完整且原20/40/100/300ms预测门通过才Z2。
+Z2 controller在Z1前冻结：MPC每20ms、PD每2ms；literal-zero fallback与delta-zero PD明确区分。
+任何Z1失败先封存并关闭Z2，完整科学失败仅做保存预测/标签有限诊断，不scan或补跑到通过。
+当前正式累计256297/2535970、online22452/offline7200未变；最早未过仍完整接触C4。
+持续目标active，正常提交推送后立即首次Z1，不以阶段报告停止。

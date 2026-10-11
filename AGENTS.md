@@ -33,7 +33,7 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-[Z0首次结果](docs/FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749bbe8610e553be3d06ca6c9306c853153ed一次完成1000prefix+2000active、3,000控制/3,000子步，0异常/停止/fit/RLS；active800..999肩/肘MAE .0006295311/.0002525253rad、1800..1999为.0012676433/.0004689586rad，四项均≤.01，完整工程资格通过。root首thin contract零failed、独立4个新Z0 MAE只支持本次保存/工程契约，不证明学习。全部接触三类零观察，机械反力unknown；固定机械支撑、理想感觉及2ms经典反馈为披露先验，不识别频率因果、不追认自由root接触C4或解除C5科学依赖。下一项另冻结2ms学习协议，保留300ms预测时距设计，重新规定动作/标签/更新和预测/控制计算预算，不自动继承旧20ms snapshots、H15或更新预算。旧X/Y/W0/V关闭保持；持续目标active，阶段检查提交推送后立即继续。
+[Z0首次结果](docs/FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749bbe8610e553be3d06ca6c9306c853153ed一次完成1000prefix+2000active、3,000控制/3,000子步，0异常/停止/fit/RLS；active800..999肩/肘MAE .0006295311/.0002525253rad、1800..1999为.0012676433/.0004689586rad，四项均≤.01，完整工程资格通过。root首thin contract零failed、独立4个新Z0 MAE只支持本次保存/工程契约，不证明学习。全部接触三类零观察，机械反力unknown；固定机械支撑、理想感觉及2ms经典反馈为披露先验，不识别频率因果、不追认自由root接触C4或解除C5科学依赖。下一项执行已冻结[2ms学习协议](docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md)：7项新纯检查已通过，生产LF与外部原件AST一致，准备原件已封存；首次Z1待执行，上限21000控制/子步及12000vector/24000scalar更新，全部完整/原预测门通过才Z2。不自动继承旧20ms snapshots、H15或更新预算。旧X/Y/W0/V关闭保持；持续目标active，阶段检查提交推送后立即继续。
 
 旧Y0阶段记录：[Y0首次结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe3df016b01b47b0bea0ccc27821c0d7091一次完成100prefix+103active、203控制/2,030子步后，肘速度1.1258089506362488rad/s触发原1rad/s StudyAbort；环境terminatedfalse、failure空，0异常/fit/RLS。第一窗虽observed20但full trial失败而availablefalse/MAEnull，第二窗0，不partial排名。完整工程资格失败，Y1/Y2关闭、不scan增益；X0/W0/V关闭保持。随后做控制时间尺度与底层保护有限审阅，另冻结独立Z0，不因失败放宽门。零接触观察、机械固定支撑及经典反馈先验披露，不追认C4或解除C5科学依赖。本段为历史，不触发重跑。
 

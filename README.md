@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** 最早未验收仍为C4。[Z0首次工程结果](docs/FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次完成1000zero+2000PD、3,000控制/3,000子步，0异常/停止/fit，四项末窗MAE全部≤.01rad，完整工程门通过。物理2ms、PD64/Kd(4,4)及权限保持，反馈与active研究检查改2ms，额外感觉/经典反馈能力明确披露；固定机械支撑及经典PD先验不算身体学习，不从不同seed的X/Y失败识别频率因果。接着另冻结2ms学习协议，保留300ms预测时距设计，重订标签/更新与预测/控制计算预算，不继承旧20ms snapshot或H15。旧X/Y/W0/V分支保持关闭；最终仍需自由root真实接触控制及C5–C7。阶段检查提交推送后继续同一active目标。
+**当前执行入口：** 最早未验收仍为C4。[Z0首次工程结果](docs/FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次完成1000zero+2000PD、3,000控制/3,000子步，0异常/停止/fit，四项末窗MAE全部≤.01rad，完整工程门通过。物理2ms、PD64/Kd(4,4)及权限保持，反馈与active研究检查改2ms，额外感觉/经典反馈能力明确披露；固定机械支撑及经典PD先验不算身体学习，不从不同seed的X/Y失败识别频率因果。接着执行已冻结的[2ms学习协议](docs/FAST_FEEDBACK_LEARNING_PROTOCOL.md)：三个新开发seed，先辨识/独立预测，全部原门通过才运行匹配控制。7项新纯检查已通过；[准备原件](results/cpu_validation/2026-10-12_fast_feedback_pair_prediction_preparation/manifest.json)已封存，首次Z1待执行，不继承旧20ms snapshot或H15。旧X/Y/W0/V分支保持关闭；最终仍需自由root真实接触控制及C5–C7。阶段检查提交推送后继续同一active目标。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 
