@@ -1,0 +1,87 @@
+{
+  "payload_count": 15,
+  "files": {
+    "checked_source/docs/GUARD_BOUNDED_LBFGS_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 7744,
+      "sha256": "222f9f65e09c9b71f9bfdae12c39f95bce8472e3652e85bb107b9ed8156669ed",
+      "original_path": "external/c4_u_selfcheck_01/checked_source/docs/GUARD_BOUNDED_LBFGS_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md"
+    },
+    "checked_source/scripts/develop_guard_bounded_lbfgs_position_transition.py": {
+      "bytes": 53997,
+      "sha256": "7c2c2ea6cbe421edca73bd0e53adc1ad2f373390c694e8c7950d5b1b32f1ef95",
+      "original_path": "external/c4_u_selfcheck_01/checked_source/scripts/develop_guard_bounded_lbfgs_position_transition.py"
+    },
+    "execution.json": {
+      "bytes": 1017,
+      "sha256": "22ed2090feb3a032d7dd0e4a22a6258f275c8dd595520563764fe05d5f76b765",
+      "original_path": "external/c4_u_selfcheck_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 639,
+      "sha256": "0826ef27b0880343323a53798d735302941795af91121562bc7abe9fc633555a",
+      "original_path": "external/c4_u_selfcheck_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 231,
+      "sha256": "69c66ba19a4890ad698de942f1f0702e71b2f9de798f668a45cafa3baf507e26",
+      "original_path": "external/c4_u_selfcheck_01/raw/metrics.json"
+    },
+    "raw/parameters.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "original_path": "external/c4_u_selfcheck_01/raw/parameters.json"
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_u_selfcheck_01/raw/predictions.jsonl"
+    },
+    "raw/run.json": {
+      "bytes": 176947,
+      "sha256": "7e98733af95444c5ef1ec97bf2638e64db38d9bd807df3eaab2a949389372eb6",
+      "original_path": "external/c4_u_selfcheck_01/raw/run.json"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_u_selfcheck_01/stderr"
+    },
+    "stdout": {
+      "bytes": 1872,
+      "sha256": "2764b64b587b2ddfdd941abb29c79aaf8b71d573a237c88d35536e5da585012b",
+      "original_path": "external/c4_u_selfcheck_01/stdout"
+    },
+    "execution/run_u_bounded_once.py": {
+      "bytes": 2307,
+      "sha256": "d8950d9c575ec880d4de2b820f0f73ff88271bcb4433655ddc55db3c168d8680",
+      "original_path": "external/run_u_bounded_once.py"
+    },
+    "execution/archive_u_bounded_once.py": {
+      "bytes": 2152,
+      "sha256": "fcbceea881fdd282ca596f3ca5a31177d2af34446c7c91680274d0b3104d9e0d",
+      "original_path": "external/archive_u_bounded_once.py"
+    },
+    "preparation/c4_u_preparation_reads.json": {
+      "bytes": 4023,
+      "sha256": "aaaa63cf3a166c10b61d0da105523d5dc4e29f6869db3253d947452073d5870b",
+      "original_path": "external/c4_u_preparation_reads.json"
+    },
+    "preparation/c4_u_implementation_review.md": {
+      "bytes": 1705,
+      "sha256": "c1d7aefe02794b141fcd8e560732935c1ba22dbb62bffc15d467c95a84b0b6d8",
+      "original_path": "external/c4_u_implementation_review.md"
+    },
+    "preparation/c4_u_T_metadata_bindings.json": {
+      "bytes": 689,
+      "sha256": "e3ac75da4d7e62e94eb43fb46fc341829a9580ee616396629436f5eb9b3bd987",
+      "original_path": "external/c4_u_T_metadata_bindings.json"
+    }
+  },
+  "file_reads": 30,
+  "read_bytes": 506652,
+  "copy_failures": [],
+  "wall_seconds": 0.13311290019191802,
+  "cpu_seconds": 0.015625,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

@@ -391,3 +391,23 @@ T导航49本地链接零缺失。首次cached空白检查发现生产与原件�
 U是本候选族最后优化器修订；仍未过则转有限路线判断，不追加同bank搜索。C4/C5科学依赖仍关闭，持续目标active。
 T本轮导航234本地链接零缺失；报告/契约附属封存20读/99,240bytes、0复制失败，wall/CPU .2483099/0秒。
 原raw/root manifest保持不变，附属一致不改变两开发门失败。
+
+### U 有界有限记忆方向（准备通过，接着冻结首次执行）
+
+唯一U保留T科学核心，从Q重启；history最多5个相邻registered accepted正曲率pair，初H=I，
+有history时gamma=sTy/yTy；two-loop得到p=-Hg，L2只cap≤1e-3，不放大小方向。
+trial=U+t*p，t从1开始；Armijo用最终cap后g·p，.5回退及10trial/30accepted/100objective/120秒边界不变。
+方向/gamma/rho非有限或非下降时仅一次清history、负真实gradient同cap fallback；拒绝/未注册trial不加pair。
+不改状态或gradient、不扫参数、不续T。U为本候选族最后优化器修订；失败后转有限路线判断。
+协议与方向/登记/预算差异静态审阅无实质阻断，AST/compile/pins/options/LF/link通过。
+最终py53,997bytes/7c2c2ea6cbe421edca73bd0e53adc1ad2f373390c694e8c7950d5b1b32f1ef95；
+协议7,744bytes/222f9f65e09c9b71f9bfdae12c39f95bce8472e3652e85bb107b9ed8156669ed。
+首9组仅新增几何fixture全过：8direction尝试/7返回/1预置失败，6正曲率加记忆/2拒绝/1逐出，
+3非有限或非下降方向fallback均返回；0真实fit/objective/标签/物理/RLS，不重跑T12工程case或旧模型数学。
+内wall/CPU1.6784172/1.5625秒、外2.1937794秒。准确首次源码、协议及stdio保存。
+静态读取stdout、文件长度和实际IO费用分别标明，未知不补测；T metadata绑定源自既有report reads及一次rawmanifest身份读。
+接着封存准备、正常提交推送，从clean HEAD一次正式U。准备交付不解除C4/C5依赖或结束active目标。
+U准备归档15payload、30读/506,652bytes、0复制失败，wall/CPU .1331129/.015625秒；
+导航51本地链接零缺失，不重跑科学计算。冻结推送后立即正式U，持续目标active。
+首git add因新U目录尚无results白名单而exit1，已暂存源码/文档保留；仅补两精确目录例外，
+原失败另存准备附属文件，不重跑已过夹具、科学计算或原封存。

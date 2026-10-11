@@ -1,0 +1,115 @@
+{
+  "scope": "U author preparation only; no execution/import/scientific payload",
+  "metadata_binding_ledger_read": {
+    "scope": "U author derived T metadata ledger only",
+    "read": {
+      "path": "external/c4_u_T_metadata_bindings.json",
+      "bytes": 689,
+      "sha256": "e3ac75da4d7e62e94eb43fb46fc341829a9580ee616396629436f5eb9b3bd987"
+    },
+    "file_reads": 1,
+    "json_parse_attempts": 1,
+    "json_parse_returns": 1,
+    "wall_seconds": 0.0002454998902976513,
+    "cpu_seconds": 0,
+    "metadata": {
+      "root": "results/cpu_validation/2026-10-12_guard_trust_position_transition",
+      "bindings": {
+        "raw/run.json": {
+          "bytes": 31433,
+          "sha256": "a8118fa893a38d307b63e4cd6c407b3b6439544e3516f08d14ed9ffe6501d38d"
+        },
+        "manifest.json": {
+          "bytes": 12884,
+          "sha256": "b6d5399b3f670a58e228390af3c94f3db860c70ffb6d83ef0429ec4d0cf9fe8a"
+        },
+        "raw/manifest.json": {
+          "bytes": 6848,
+          "sha256": "c3056852a2d5d5a6cd3f12b64cc6e0fb42ed8e60d2627a68df8fb61ddd711582"
+        }
+      },
+      "new_metadata_reads": 1,
+      "new_metadata_read_bytes": 6848,
+      "run_root_binding_from_existing_reporting_summary": true,
+      "scientific_recalculation": false
+    }
+  },
+  "final_static_checks": {
+    "scope": "U final source/protocol AST/compile/pins/static only",
+    "entries": [
+      {
+        "path": "scripts/develop_guard_bounded_lbfgs_position_transition.py",
+        "bytes": 53997,
+        "sha256": "7c2c2ea6cbe421edca73bd0e53adc1ad2f373390c694e8c7950d5b1b32f1ef95",
+        "CR_bytes": 0
+      },
+      {
+        "path": "docs/GUARD_BOUNDED_LBFGS_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+        "bytes": 7744,
+        "sha256": "222f9f65e09c9b71f9bfdae12c39f95bce8472e3652e85bb107b9ed8156669ed",
+        "CR_bytes": 0
+      }
+    ],
+    "file_reads": 2,
+    "read_bytes": 61741,
+    "ast_parse_attempts": 1,
+    "ast_parse_returns": 1,
+    "compile_attempts": 1,
+    "compile_returns": 1,
+    "new_geometry_fixture_groups": 9,
+    "wall_seconds": 0.015897300094366074,
+    "cpu_seconds": 0.015625
+  },
+  "earlier_static_validator": {
+    "file_reads": 3,
+    "read_bytes": "unknown_unreported",
+    "ast_parse_attempts": 1,
+    "ast_parse_returns": 1,
+    "compile_attempts": 1,
+    "compile_returns": 1,
+    "failure": "overbroad LF assertion applied to ignored root external/check_u_output_once.py; production/protocol passed; no scientific or checker execution",
+    "wall_seconds": "unknown",
+    "cpu_seconds": "unknown"
+  },
+  "totals": {
+    "file_reads": 6,
+    "known_read_bytes": 62430,
+    "total_read_bytes": "unknown_due_to_unreported_failed_validator_bytes",
+    "json_parse_attempts": 1,
+    "json_parse_returns": 1,
+    "ast_parse_attempts": 2,
+    "ast_parse_returns": 2,
+    "compile_attempts": 2,
+    "compile_returns": 2,
+    "model_calls": 0,
+    "objective_calls": 0,
+    "gradient_calls": 0,
+    "fit_calls": 0,
+    "self_check_executions": 0,
+    "physics_calls": 0,
+    "scientific_payload_reads": 0
+  },
+  "cached_frozen_T_reuse": {
+    "new_filesystem_reads": 0,
+    "source_reconstructed_from_own_T_cache_and_exact_static_deltas": true
+  },
+  "independent_reviewer": {
+    "selected_new_geometry_source_content_accesses": 1,
+    "source_range_lines": "202–557 and 616–675",
+    "selected_line_count": 416,
+    "source_declared_bytes_at_access": 53290,
+    "numbered_stdout_utf8_bytes": 27141,
+    "rg_function_index_queries": 1,
+    "new_protocol_content_accesses": 1,
+    "protocol_declared_bytes": 7744,
+    "underlying_filesystem_read_bytes": "unknown_not_instrumented",
+    "old_source_reads": 0,
+    "raw_reads": 0,
+    "executions": 0,
+    "final_deltas_accepted_without_reread": true
+  },
+  "new_geometry_fixture_groups": 9,
+  "thin_checker_schema": "T15 saved fields retained, U labels/paths changed; additional geometry/history fields; root accepted reuse",
+  "git_diff_check": "passed; existing root DEVELOPMENT_ROADMAP LF-to-CRLF warning only",
+  "ready": true
+}

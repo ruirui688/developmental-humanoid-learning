@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "scripts/develop_guard_bounded_lbfgs_position_transition.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_u_selfcheck_01\\raw",
+    "--self-check"
+  ],
+  "source_commit": null,
+  "returncode": 0,
+  "started_unix": 1791742923.8141246,
+  "ended_unix": 1791742926.008537,
+  "wall_seconds": 2.1937794000841677,
+  "checked_sources": {
+    "scripts/develop_guard_bounded_lbfgs_position_transition.py": {
+      "bytes": 53997,
+      "sha256": "7c2c2ea6cbe421edca73bd0e53adc1ad2f373390c694e8c7950d5b1b32f1ef95"
+    },
+    "docs/GUARD_BOUNDED_LBFGS_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 7744,
+      "sha256": "222f9f65e09c9b71f9bfdae12c39f95bce8472e3652e85bb107b9ed8156669ed"
+    }
+  },
+  "source_snapshot_reads": 2,
+  "source_snapshot_read_bytes": 61741,
+  "stdout_bytes": 1872,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}
