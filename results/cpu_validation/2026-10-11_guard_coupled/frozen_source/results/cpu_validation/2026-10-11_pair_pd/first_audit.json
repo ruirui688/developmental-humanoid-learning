@@ -1,0 +1,1218 @@
+{
+  "schema_version": 1,
+  "kind": "independent stdlib pair-PD development audit",
+  "created_at_utc": "2026-10-11T08:04:49.499393+00:00",
+  "path": "external\\pair_pd_20261011_first",
+  "immutable_scope": {
+    "synthetic_fixture": false,
+    "scientific_frozen": true,
+    "suite": "pair_pd_development",
+    "protocol": "docs/PAIR_PD_DEVELOPMENT_PROTOCOL.md",
+    "collector": "src/developmental_physics/pair_pd_development.py",
+    "auditor": "scripts/audit_pair_pd.py",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "kp": [
+      64.0,
+      64.0
+    ],
+    "kd_candidates": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        4.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        2.0,
+        4.0
+      ]
+    ],
+    "prefix_steps": 100,
+    "control_steps": 200,
+    "joint_indices": [
+      0,
+      1
+    ],
+    "pose": "supine",
+    "split": "development"
+  },
+  "check_count": 591017,
+  "failed_checks": 0,
+  "maximum_numeric_difference": 4.3876013933186186e-13,
+  "violations": [],
+  "trials": [
+    {
+      "trial_id": "seed0_candidate0",
+      "seed": 0,
+      "candidate": 0,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        1.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029259131487041685,
+        "per_axis": [
+          0.032421468261293745,
+          0.02571073601696206
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed0_candidate1",
+      "seed": 0,
+      "candidate": 1,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        2.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029259131487041685,
+        "per_axis": [
+          0.032421468261293745,
+          0.02571073601696206
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed0_candidate2",
+      "seed": 0,
+      "candidate": 2,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        4.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": true,
+      "complete": true,
+      "status": "completed",
+      "tracking": {
+        "joint": 0.010401445519984794,
+        "per_axis": [
+          0.008128902572046175,
+          0.012259734123732224
+        ],
+        "complete_endpoints": 200
+      },
+      "actual_squared_control_effort": 1.2432903057769191,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed0_candidate3",
+      "seed": 0,
+      "candidate": 3,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        1.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029259131487041685,
+        "per_axis": [
+          0.032421468261293745,
+          0.02571073601696206
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed0_candidate4",
+      "seed": 0,
+      "candidate": 4,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        2.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029259131487041685,
+        "per_axis": [
+          0.032421468261293745,
+          0.02571073601696206
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed0_candidate5",
+      "seed": 0,
+      "candidate": 5,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        4.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": true,
+      "complete": true,
+      "status": "completed",
+      "tracking": {
+        "joint": 0.011212853824691725,
+        "per_axis": [
+          0.008718231976999172,
+          0.01324570167952747
+        ],
+        "complete_endpoints": 200
+      },
+      "actual_squared_control_effort": 1.2871095222334035,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed0_candidate6",
+      "seed": 0,
+      "candidate": 6,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        1.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029259131487041685,
+        "per_axis": [
+          0.032421468261293745,
+          0.02571073601696206
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed0_candidate7",
+      "seed": 0,
+      "candidate": 7,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        2.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029259131487041685,
+        "per_axis": [
+          0.032421468261293745,
+          0.02571073601696206
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed0_candidate8",
+      "seed": 0,
+      "candidate": 8,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        4.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": true,
+      "complete": true,
+      "status": "completed",
+      "tracking": {
+        "joint": 0.011389874185904746,
+        "per_axis": [
+          0.009585058759483856,
+          0.012945467025902171
+        ],
+        "complete_endpoints": 200
+      },
+      "actual_squared_control_effort": 1.4215998781955954,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed1_candidate0",
+      "seed": 1,
+      "candidate": 0,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        1.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029263591888368884,
+        "per_axis": [
+          0.032425921777680326,
+          0.025715272063226848
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed1_candidate1",
+      "seed": 1,
+      "candidate": 1,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        2.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029263591888368884,
+        "per_axis": [
+          0.032425921777680326,
+          0.025715272063226848
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed1_candidate2",
+      "seed": 1,
+      "candidate": 2,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        4.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": true,
+      "complete": true,
+      "status": "completed",
+      "tracking": {
+        "joint": 0.010644472251318818,
+        "per_axis": [
+          0.008684126053912361,
+          0.0122961593067898
+        ],
+        "complete_endpoints": 200
+      },
+      "actual_squared_control_effort": 1.2200891572487693,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed1_candidate3",
+      "seed": 1,
+      "candidate": 3,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        1.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029263591888368884,
+        "per_axis": [
+          0.032425921777680326,
+          0.025715272063226848
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed1_candidate4",
+      "seed": 1,
+      "candidate": 4,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        2.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029263591888368884,
+        "per_axis": [
+          0.032425921777680326,
+          0.025715272063226848
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed1_candidate5",
+      "seed": 1,
+      "candidate": 5,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        4.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": true,
+      "complete": true,
+      "status": "completed",
+      "tracking": {
+        "joint": 0.010802231529183049,
+        "per_axis": [
+          0.00871088149238264,
+          0.012549779107451182
+        ],
+        "complete_endpoints": 200
+      },
+      "actual_squared_control_effort": 1.311161056523901,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed1_candidate6",
+      "seed": 1,
+      "candidate": 6,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        1.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029263591888368884,
+        "per_axis": [
+          0.032425921777680326,
+          0.025715272063226848
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed1_candidate7",
+      "seed": 1,
+      "candidate": 7,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        2.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029263591888368884,
+        "per_axis": [
+          0.032425921777680326,
+          0.025715272063226848
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed1_candidate8",
+      "seed": 1,
+      "candidate": 8,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        4.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": true,
+      "complete": true,
+      "status": "completed",
+      "tracking": {
+        "joint": 0.011807273922234839,
+        "per_axis": [
+          0.009786866329793479,
+          0.013529252839389484
+        ],
+        "complete_endpoints": 200
+      },
+      "actual_squared_control_effort": 1.4720825223024572,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed2_candidate0",
+      "seed": 2,
+      "candidate": 0,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        1.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029254975865819762,
+        "per_axis": [
+          0.03241781541429006,
+          0.02570588394870736
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed2_candidate1",
+      "seed": 2,
+      "candidate": 1,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        2.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029254975865819762,
+        "per_axis": [
+          0.03241781541429006,
+          0.02570588394870736
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed2_candidate2",
+      "seed": 2,
+      "candidate": 2,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        4.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": true,
+      "complete": true,
+      "status": "completed",
+      "tracking": {
+        "joint": 0.010935465170751784,
+        "per_axis": [
+          0.008222506547158078,
+          0.013098060279422796
+        ],
+        "complete_endpoints": 200
+      },
+      "actual_squared_control_effort": 1.1938812044610247,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed2_candidate3",
+      "seed": 2,
+      "candidate": 3,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        1.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029254975865819762,
+        "per_axis": [
+          0.03241781541429006,
+          0.02570588394870736
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed2_candidate4",
+      "seed": 2,
+      "candidate": 4,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        2.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029254975865819762,
+        "per_axis": [
+          0.03241781541429006,
+          0.02570588394870736
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed2_candidate5",
+      "seed": 2,
+      "candidate": 5,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        1.0,
+        4.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": true,
+      "complete": true,
+      "status": "completed",
+      "tracking": {
+        "joint": 0.011489388648132535,
+        "per_axis": [
+          0.009021531210025626,
+          0.013513847625388088
+        ],
+        "complete_endpoints": 200
+      },
+      "actual_squared_control_effort": 1.2943474255002059,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed2_candidate6",
+      "seed": 2,
+      "candidate": 6,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        1.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029254975865819762,
+        "per_axis": [
+          0.03241781541429006,
+          0.02570588394870736
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed2_candidate7",
+      "seed": 2,
+      "candidate": 7,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        2.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": false,
+      "complete": false,
+      "status": "terminated",
+      "tracking": {
+        "joint": 0.029254975865819762,
+        "per_axis": [
+          0.03241781541429006,
+          0.02570588394870736
+        ],
+        "complete_endpoints": 2
+      },
+      "actual_squared_control_effort": 0.02,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    },
+    {
+      "trial_id": "seed2_candidate8",
+      "seed": 2,
+      "candidate": 8,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        2.0,
+        4.0
+      ],
+      "maximum_control_steps": 300,
+      "eligible": true,
+      "complete": true,
+      "status": "completed",
+      "tracking": {
+        "joint": 0.011357054297171203,
+        "per_axis": [
+          0.009362950044897804,
+          0.013049924562024787
+        ],
+        "complete_endpoints": 200
+      },
+      "actual_squared_control_effort": 1.418331296356004,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "actual_missing_substeps": {
+        "prefix": 0,
+        "control": 0
+      }
+    }
+  ],
+  "selection": {
+    "status": "selected",
+    "picked": {
+      "candidate": 2,
+      "kp": [
+        64.0,
+        64.0
+      ],
+      "kd": [
+        0.0,
+        4.0
+      ],
+      "eligible": true,
+      "sort_key": [
+        0.010660460980685132,
+        0.010935465170751784,
+        1.2190868891622377,
+        2
+      ],
+      "paid_control_steps": 900,
+      "paid_physics_steps": 9000
+    },
+    "candidates": [
+      {
+        "candidate": 0,
+        "kp": [
+          64.0,
+          64.0
+        ],
+        "kd": [
+          0.0,
+          1.0
+        ],
+        "eligible": false,
+        "sort_key": null,
+        "paid_control_steps": 306,
+        "paid_physics_steps": 3060
+      },
+      {
+        "candidate": 1,
+        "kp": [
+          64.0,
+          64.0
+        ],
+        "kd": [
+          0.0,
+          2.0
+        ],
+        "eligible": false,
+        "sort_key": null,
+        "paid_control_steps": 306,
+        "paid_physics_steps": 3060
+      },
+      {
+        "candidate": 2,
+        "kp": [
+          64.0,
+          64.0
+        ],
+        "kd": [
+          0.0,
+          4.0
+        ],
+        "eligible": true,
+        "sort_key": [
+          0.010660460980685132,
+          0.010935465170751784,
+          1.2190868891622377,
+          2
+        ],
+        "paid_control_steps": 900,
+        "paid_physics_steps": 9000
+      },
+      {
+        "candidate": 3,
+        "kp": [
+          64.0,
+          64.0
+        ],
+        "kd": [
+          1.0,
+          1.0
+        ],
+        "eligible": false,
+        "sort_key": null,
+        "paid_control_steps": 306,
+        "paid_physics_steps": 3060
+      },
+      {
+        "candidate": 4,
+        "kp": [
+          64.0,
+          64.0
+        ],
+        "kd": [
+          1.0,
+          2.0
+        ],
+        "eligible": false,
+        "sort_key": null,
+        "paid_control_steps": 306,
+        "paid_physics_steps": 3060
+      },
+      {
+        "candidate": 5,
+        "kp": [
+          64.0,
+          64.0
+        ],
+        "kd": [
+          1.0,
+          4.0
+        ],
+        "eligible": true,
+        "sort_key": [
+          0.011168158000669103,
+          0.011489388648132535,
+          1.2975393347525035,
+          5
+        ],
+        "paid_control_steps": 900,
+        "paid_physics_steps": 9000
+      },
+      {
+        "candidate": 6,
+        "kp": [
+          64.0,
+          64.0
+        ],
+        "kd": [
+          2.0,
+          1.0
+        ],
+        "eligible": false,
+        "sort_key": null,
+        "paid_control_steps": 306,
+        "paid_physics_steps": 3060
+      },
+      {
+        "candidate": 7,
+        "kp": [
+          64.0,
+          64.0
+        ],
+        "kd": [
+          2.0,
+          2.0
+        ],
+        "eligible": false,
+        "sort_key": null,
+        "paid_control_steps": 306,
+        "paid_physics_steps": 3060
+      },
+      {
+        "candidate": 8,
+        "kp": [
+          64.0,
+          64.0
+        ],
+        "kd": [
+          2.0,
+          4.0
+        ],
+        "eligible": true,
+        "sort_key": [
+          0.01151806746843693,
+          0.011807273922234839,
+          1.437337898951352,
+          8
+        ],
+        "paid_control_steps": 900,
+        "paid_physics_steps": 9000
+      }
+    ]
+  },
+  "validated_selection": true,
+  "source_git_verification_enabled": true,
+  "input_hashes": {
+    "episodes.json": "34defc44491b2c47b6fbf12632452b04495a0de18964bc16818c987376912c87",
+    "metadata.json": "9d91767cbd7e0ea6da38329e474353c4a94097d4dce9c97dcb0dc9e896929c59",
+    "selection.json": "9ce40f64062e0452bd2623db1313fa110e5ff7c8acd5a8ef5f8974323b854c80",
+    "source_snapshot.zip": "8cf10599237125934e574bb8327b3af61ca967ae3927e924dd74896e40e4ed46",
+    "trace.jsonl.gz": "019582f9752f8bdbf6065bb9dc752f30450e43414daa5dbc9c449073fefad4ce",
+    "manifest.json": "75f0d4eeeb0deaa1ea3aa54d25ff9d224b994e378b6c6742234ee7ccabe1a95c"
+  },
+  "audit_sources_sha256": {
+    "auditor": "47898a6bd8bb4e6bc2baf251d407696a0f1a50a3d8b8666bb5cfdd3d153cf2ad",
+    "common": "b5fea70d3733a1bab77e49bf559432475899436693cf6c1b0b4767369c913461"
+  },
+  "budget": {
+    "control_calls_attempted": 4536,
+    "control_steps": 4536,
+    "physics_steps": 45360
+  },
+  "audit_cpu_seconds": 1.609375,
+  "audit_wall_seconds": 2.7989107000175864,
+  "third_party_dependencies": [],
+  "claim_boundary": "finite fixed-Kp damping selection only; no method advantage, global optimality, skill or safety proof"
+}

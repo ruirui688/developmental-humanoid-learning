@@ -1,0 +1,275 @@
+[
+  {
+    "trial_id": "seed0_coupled_guard",
+    "seed": 0,
+    "kind": "coupled_guard",
+    "maximum_control_steps": 300,
+    "status": "terminated",
+    "completed": false,
+    "reason": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_q_minus_qref_rad"
+        }
+      ],
+      "q_rad": [
+        0.010345607330228266,
+        0.1300271430513798
+      ],
+      "qref_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "velocity_rad_s": [
+        -0.20604595606823425,
+        0.39533484362915017
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "control",
+      "step_index": 205
+    },
+    "control_calls_attempted": 206,
+    "control_steps": 206,
+    "physics_steps": 2060,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 106,
+        "control_steps": 106,
+        "physics_steps": 1060
+      }
+    },
+    "collector_exception": null,
+    "study_abort": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_q_minus_qref_rad"
+        }
+      ],
+      "q_rad": [
+        0.010345607330228266,
+        0.1300271430513798
+      ],
+      "qref_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "velocity_rad_s": [
+        -0.20604595606823425,
+        0.39533484362915017
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "control",
+      "step_index": 205
+    },
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "returned_steps": 206,
+    "written_returned_steps": 206,
+    "returned_unwritten_steps": 0,
+    "unreturned_physics_steps": 0,
+    "trace_write_failure": null,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed1_coupled_guard",
+    "seed": 1,
+    "kind": "coupled_guard",
+    "maximum_control_steps": 300,
+    "status": "terminated",
+    "completed": false,
+    "reason": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_q_minus_qref_rad"
+        }
+      ],
+      "q_rad": [
+        0.008292559602980323,
+        0.12786941599607637
+      ],
+      "qref_rad": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "velocity_rad_s": [
+        -0.21101279131293219,
+        0.37941916920479524
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "control",
+      "step_index": 205
+    },
+    "control_calls_attempted": 206,
+    "control_steps": 206,
+    "physics_steps": 2060,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 106,
+        "control_steps": 106,
+        "physics_steps": 1060
+      }
+    },
+    "collector_exception": null,
+    "study_abort": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_q_minus_qref_rad"
+        }
+      ],
+      "q_rad": [
+        0.008292559602980323,
+        0.12786941599607637
+      ],
+      "qref_rad": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "velocity_rad_s": [
+        -0.21101279131293219,
+        0.37941916920479524
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "control",
+      "step_index": 205
+    },
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "returned_steps": 206,
+    "written_returned_steps": 206,
+    "returned_unwritten_steps": 0,
+    "unreturned_physics_steps": 0,
+    "trace_write_failure": null,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  },
+  {
+    "trial_id": "seed2_coupled_guard",
+    "seed": 2,
+    "kind": "coupled_guard",
+    "maximum_control_steps": 300,
+    "status": "terminated",
+    "completed": false,
+    "reason": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_q_minus_qref_rad"
+        }
+      ],
+      "q_rad": [
+        0.014812082461000896,
+        0.12802521407121933
+      ],
+      "qref_rad": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "velocity_rad_s": [
+        -0.21101811842198664,
+        0.3774474426277501
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "control",
+      "step_index": 205
+    },
+    "control_calls_attempted": 206,
+    "control_steps": 206,
+    "physics_steps": 2060,
+    "phase_budgets": {
+      "prefix": {
+        "control_calls_attempted": 100,
+        "control_steps": 100,
+        "physics_steps": 1000
+      },
+      "control": {
+        "control_calls_attempted": 106,
+        "control_steps": 106,
+        "physics_steps": 1060
+      }
+    },
+    "collector_exception": null,
+    "study_abort": {
+      "type": "StudyAbort",
+      "triggers": [
+        {
+          "joint_index": 1,
+          "signal": "absolute_q_minus_qref_rad"
+        }
+      ],
+      "q_rad": [
+        0.014812082461000896,
+        0.12802521407121933
+      ],
+      "qref_rad": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "velocity_rad_s": [
+        -0.21101811842198664,
+        0.3774474426277501
+      ],
+      "thresholds": {
+        "absolute_q_minus_qref_rad": 0.12,
+        "absolute_velocity_rad_s": 1.0
+      },
+      "feedback_action": null,
+      "phase": "control",
+      "step_index": 205
+    },
+    "environment_terminated": false,
+    "environment_stop_reason": null,
+    "returned_steps": 206,
+    "written_returned_steps": 206,
+    "returned_unwritten_steps": 0,
+    "unreturned_physics_steps": 0,
+    "trace_write_failure": null,
+    "risk_telemetry_complete": true,
+    "environment_fingerprint_before": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "environment_fingerprint_after": "102adc9d013aec72db9355eecfd21031a7868ad5129817c6157ae65542ac225e",
+    "invalid_numeric_fields": []
+  }
+]

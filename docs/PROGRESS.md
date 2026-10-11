@@ -1,5 +1,11 @@
 # 开发进度与仓库检查点
 
+## C4 B首次真实结果：控制延长但未完成（2026-10-11）
+
+[同校准coupled结果](GUARD_COUPLED_DEVELOPMENT_RESULTS.md)从clean `f68c485`一次完成0完整/3肘位置研究停止/0异常/blocked，每seed106active；短脉冲预测误差下降42%–44%，不能替代预定200active贡献门。相对diagonal完整增量因A学习控制停止而未评价；B自身与PD门同样失败/未评价。最后保存预测仍严重低估目标切换后的速度与位移，没有重跑或放宽停止。
+
+实际新增618控制/6180子步，离线RLS1200vector/2400scalar；A旧交互/在线拟合不重付，分列公开。正式物理累计239120/2391200，历史在线scalar17652、复用数据离线2400、合计20052。collector32.2424618s wall/31.890625s CPU；首次独立审计1642786项零失败，max差2.318145675417327e−13，一次描述汇总2436项零失败。[封口归档](../results/cpu_validation/2026-10-11_guard_coupled/manifest.json)82payload/1876项完整性检查零失败，全部原件与工程失败保留；一次提取318条原保存控制预测，无新增模型/物理/audit。接着继续C：固定模型下原1/9与受原生q/v约束2/8探索对照，各自cold训练并统一最终任务；工程实现与独立auditor正并行准备，尚无C物理结果。
+
 ## C4 B同校准耦合候选正式冻结（2026-10-11，物理执行前）
 
 [B协议](GUARD_COUPLED_DEVELOPMENT_PROTOCOL.md)保持A公开guard、cold own先验、原RLS和H15/81候选MPC，只把两组5参数独立head替换为两组9参数耦合head；cross先验全零。复用A已付费完整cal400与prediction100，新增离线最多2400 scalar更新单列，不重拟合A diagonal或重采对照。A三seed数据核验和完整校准满足执行依赖；其学习控制停止使相对diagonal完整控制增量门未评价，B自身贡献与PD门仍各自判定。

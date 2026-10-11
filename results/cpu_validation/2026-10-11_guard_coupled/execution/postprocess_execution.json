@@ -1,0 +1,39 @@
+{
+  "executions": [
+    {
+      "command": [
+        "D:\\Python3.10\\python.exe",
+        "scripts/audit_guard_coupled_development.py",
+        "--input",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first",
+        "--output",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first_audit.json"
+      ],
+      "stdout": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first_audit_stdout.txt",
+      "exit_code": 0,
+      "wrapper_wall_seconds": 15.300615400075912,
+      "repeated": false
+    },
+    {
+      "command": [
+        "D:\\Python3.10\\python.exe",
+        "external/c4_guard_coupled_summary_staging/summarize_guard_coupled_once.py",
+        "--input",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first",
+        "--audit",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first_audit.json",
+        "--output",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_summary_01",
+        "--expected-auditor-sha256",
+        "c77a1c2a5cfeed08774dab20a6ef5d4e4833264621e37832b3888001182cc10a"
+      ],
+      "stdout": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_summary_01_stdout.txt",
+      "exit_code": 0,
+      "wrapper_wall_seconds": 0.6328531000763178,
+      "repeated": false
+    }
+  ],
+  "new_physical_calls": 0,
+  "online_model_updates": 0,
+  "A_audit_reexecutions": 0
+}

@@ -1,0 +1,85 @@
+{
+  "original_inputs": {
+    "metadata.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first\\metadata.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 19014,
+      "sha256": "6cc6ebdff4b87775e608c786aab05f20884de233e213afb0cc179904c704b2bd",
+      "wall_seconds": 0.00011409982107579708
+    },
+    "episodes.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first\\episodes.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 7415,
+      "sha256": "1807beb5622adf9a076c1e5d68e83c0f821d04d0121b241e098cfbcc7faf0ab0",
+      "wall_seconds": 7.179984822869301e-05
+    },
+    "seed_results.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first\\seed_results.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 1009225,
+      "sha256": "3a90225e04aee1884fa60fc70db84acd579de08b528fe2ac98a02b3d2f2cf8f7",
+      "wall_seconds": 0.0012027998454868793
+    },
+    "source_snapshot.zip": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first\\source_snapshot.zip",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 8233687,
+      "sha256": "9f8b444d764260ff50a974a75e15bf2125a1b8e8d42f05d16f84ded04cdcc5d2",
+      "wall_seconds": 0.007805699948221445
+    },
+    "manifest.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first\\manifest.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 659,
+      "sha256": "68890c46e991ee69cbc4ff212cb742bfce445fcbc38270d61e38c25e4432c965",
+      "wall_seconds": 9.8800053820014e-05
+    },
+    "calibration_replay.jsonl.gz": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first\\calibration_replay.jsonl.gz",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 1492432,
+      "sha256": "9e585498fd5dae50b68f037e3ba5d3441107c48a8a39985e9358b5931ba2b086",
+      "wall_seconds": 0.0014035000931471586
+    },
+    "prediction_replay.jsonl.gz": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first\\prediction_replay.jsonl.gz",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 104717,
+      "sha256": "773d68467656138b39ca3243c24e291c66c6ad2a91f1042072c59b39a7f9b785",
+      "wall_seconds": 0.00017010001465678215
+    },
+    "trace.jsonl.gz": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first\\trace.jsonl.gz",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 1018118,
+      "sha256": "23c0a0e1ead72b9def66121c9100098569618956a8a499ab4905e8d41074a35f",
+      "wall_seconds": 0.0010575000196695328
+    },
+    "first_audit": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_coupled_20261011_first_audit.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "bytes": 630414,
+      "sha256": "c14065aa1ff8de3a163e661c07683cc5fffb80339b035ad565cb484824f33d6a",
+      "wall_seconds": 0.012683900073170662
+    }
+  },
+  "total_original_read_attempts": 9,
+  "physical_calls": 0,
+  "model_updates": 0,
+  "body_predictions": 0,
+  "audit_executions": 0,
+  "git_queries": 0,
+  "A_or_PD_original_filesystem_reads": 0,
+  "tests_included": false,
+  "cache_semantics": "Each eight B raw files and first audit read once; embedded A bytes only from cached B ZIP"
+}
