@@ -1,0 +1,16 @@
+Explicit synthetic-only tracked collector; full 100/400/100 and two-step control fixture.
+{
+  "checks": 352150,
+  "failed": 1,
+  "only_failure": "clean_collection_source",
+  "physical_simulation_calls": 0,
+  "real_physical_budget_delta": 0,
+  "status": "completed",
+  "synthetic_budget": {
+    "control_calls_attempted": 1409,
+    "control_steps": 1409,
+    "model_updates": 1600,
+    "physics_steps": 14090,
+    "vector_model_updates": 800
+  }
+}

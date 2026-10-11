@@ -1,0 +1,460 @@
+{
+  "checks": 1540296,
+  "failed": 0,
+  "gates": {
+    "diagonal_contribution": {
+      "evaluated": false,
+      "passed": false,
+      "all_five_required_trials_complete": false,
+      "per_seed": [
+        {
+          "seed": 0,
+          "eligible": false,
+          "nominal_tracking": 0.044325070055209234,
+          "candidate_tracking": null,
+          "nominal_axis_tracking": [
+            0.040561588470167415,
+            0.04779310841089112
+          ],
+          "candidate_axis_tracking": null,
+          "prediction_gates": {
+            "prediction_low": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            },
+            "prediction_full": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            }
+          },
+          "strict_joint_tracking": false,
+          "strict_axis_tracking": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 1,
+          "eligible": false,
+          "nominal_tracking": 0.045063166586776185,
+          "candidate_tracking": null,
+          "nominal_axis_tracking": [
+            0.04091093893889326,
+            0.04886382138958462
+          ],
+          "candidate_axis_tracking": null,
+          "prediction_gates": {
+            "prediction_low": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            },
+            "prediction_full": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            }
+          },
+          "strict_joint_tracking": false,
+          "strict_axis_tracking": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 2,
+          "eligible": false,
+          "nominal_tracking": 0.04412390478365939,
+          "candidate_tracking": null,
+          "nominal_axis_tracking": [
+            0.04006385039661219,
+            0.04784062957479504
+          ],
+          "candidate_axis_tracking": null,
+          "prediction_gates": {
+            "prediction_low": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            },
+            "prediction_full": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            }
+          },
+          "strict_joint_tracking": false,
+          "strict_axis_tracking": [
+            false,
+            false
+          ]
+        }
+      ],
+      "tracking_mean_improvement": null,
+      "tracking_per_axis_required": true,
+      "axis_tracking_gates": [
+        {
+          "axis": 0,
+          "mean_improvement": null,
+          "passed": false
+        },
+        {
+          "axis": 1,
+          "mean_improvement": null,
+          "passed": false
+        }
+      ],
+      "validated_pass": false
+    },
+    "coupled_contribution": {
+      "evaluated": false,
+      "passed": false,
+      "all_five_required_trials_complete": false,
+      "per_seed": [
+        {
+          "seed": 0,
+          "eligible": false,
+          "nominal_tracking": 0.044325070055209234,
+          "candidate_tracking": null,
+          "nominal_axis_tracking": [
+            0.040561588470167415,
+            0.04779310841089112
+          ],
+          "candidate_axis_tracking": null,
+          "prediction_gates": {
+            "prediction_low": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            },
+            "prediction_full": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            }
+          },
+          "strict_joint_tracking": false,
+          "strict_axis_tracking": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 1,
+          "eligible": false,
+          "nominal_tracking": 0.045063166586776185,
+          "candidate_tracking": null,
+          "nominal_axis_tracking": [
+            0.04091093893889326,
+            0.04886382138958462
+          ],
+          "candidate_axis_tracking": null,
+          "prediction_gates": {
+            "prediction_low": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            },
+            "prediction_full": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            }
+          },
+          "strict_joint_tracking": false,
+          "strict_axis_tracking": [
+            false,
+            false
+          ]
+        },
+        {
+          "seed": 2,
+          "eligible": false,
+          "nominal_tracking": 0.04412390478365939,
+          "candidate_tracking": null,
+          "nominal_axis_tracking": [
+            0.04006385039661219,
+            0.04784062957479504
+          ],
+          "candidate_axis_tracking": null,
+          "prediction_gates": {
+            "prediction_low": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            },
+            "prediction_full": {
+              "available": false,
+              "nominal_rmse": null,
+              "candidate_rmse": null,
+              "passed": false
+            }
+          },
+          "strict_joint_tracking": false,
+          "strict_axis_tracking": [
+            false,
+            false
+          ]
+        }
+      ],
+      "tracking_mean_improvement": null,
+      "tracking_per_axis_required": true,
+      "axis_tracking_gates": [
+        {
+          "axis": 0,
+          "mean_improvement": null,
+          "passed": false
+        },
+        {
+          "axis": 1,
+          "mean_improvement": null,
+          "passed": false
+        }
+      ],
+      "validated_pass": false
+    },
+    "coupled_increment": {
+      "evaluated": false,
+      "passed": false,
+      "required_trials_complete": false,
+      "per_seed": [
+        {
+          "seed": 0,
+          "eligible": false,
+          "baseline_tracking": null,
+          "candidate_tracking": null,
+          "tracking_non_worse": false,
+          "axis_tracking_non_worse": false,
+          "predictions_non_worse": false,
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline": null,
+              "candidate": null
+            },
+            "actual_squared_nm2_s": {
+              "baseline": null,
+              "candidate": null
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "eligible": false,
+          "baseline_tracking": null,
+          "candidate_tracking": null,
+          "tracking_non_worse": false,
+          "axis_tracking_non_worse": false,
+          "predictions_non_worse": false,
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline": null,
+              "candidate": null
+            },
+            "actual_squared_nm2_s": {
+              "baseline": null,
+              "candidate": null
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "eligible": false,
+          "baseline_tracking": null,
+          "candidate_tracking": null,
+          "tracking_non_worse": false,
+          "axis_tracking_non_worse": false,
+          "predictions_non_worse": false,
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline": null,
+              "candidate": null
+            },
+            "actual_squared_nm2_s": {
+              "baseline": null,
+              "candidate": null
+            }
+          }
+        }
+      ],
+      "tracking_mean_improvement": null,
+      "effort_gates": {
+        "actual_absolute_nm_s": {
+          "passed": false
+        },
+        "actual_squared_nm2_s": {
+          "passed": false
+        }
+      },
+      "validated_pass": false
+    },
+    "combined_pd_comparison": {
+      "diagonal": {
+        "evaluated": false,
+        "passed": false,
+        "required_trials_complete": false,
+        "per_seed": [
+          {
+            "seed": 0,
+            "eligible": false,
+            "baseline_tracking": 0.029259131487041685,
+            "candidate_tracking": null,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": false,
+            "predictions_non_worse": true,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            }
+          },
+          {
+            "seed": 1,
+            "eligible": false,
+            "baseline_tracking": 0.029263591888368884,
+            "candidate_tracking": null,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": false,
+            "predictions_non_worse": true,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            }
+          },
+          {
+            "seed": 2,
+            "eligible": false,
+            "baseline_tracking": 0.029254975865819762,
+            "candidate_tracking": null,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": false,
+            "predictions_non_worse": true,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            }
+          }
+        ],
+        "tracking_mean_improvement": null,
+        "effort_gates": {
+          "actual_absolute_nm_s": {
+            "passed": false
+          },
+          "actual_squared_nm2_s": {
+            "passed": false
+          }
+        },
+        "model_contribution_passed": false,
+        "validated_pass": false
+      },
+      "coupled": {
+        "evaluated": false,
+        "passed": false,
+        "required_trials_complete": false,
+        "per_seed": [
+          {
+            "seed": 0,
+            "eligible": false,
+            "baseline_tracking": 0.029259131487041685,
+            "candidate_tracking": null,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": false,
+            "predictions_non_worse": true,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            }
+          },
+          {
+            "seed": 1,
+            "eligible": false,
+            "baseline_tracking": 0.029263591888368884,
+            "candidate_tracking": null,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": false,
+            "predictions_non_worse": true,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            }
+          },
+          {
+            "seed": 2,
+            "eligible": false,
+            "baseline_tracking": 0.029254975865819762,
+            "candidate_tracking": null,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": false,
+            "predictions_non_worse": true,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            }
+          }
+        ],
+        "tracking_mean_improvement": null,
+        "effort_gates": {
+          "actual_absolute_nm_s": {
+            "passed": false
+          },
+          "actual_squared_nm2_s": {
+            "passed": false
+          }
+        },
+        "model_contribution_passed": false,
+        "validated_pass": false
+      }
+    },
+    "complete_matrix": false,
+    "thresholds_frozen": true,
+    "claim_boundary": "Development recipe transfer and specified local two-joint model contribution only; combined single-axis PD is not a tuned pair strong baseline; no holdout, unknown dynamics, safety, locomotion or real-robot claim.",
+    "data_consistency_verified": true
+  }
+}

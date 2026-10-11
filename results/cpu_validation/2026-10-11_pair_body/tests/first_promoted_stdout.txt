@@ -1,0 +1,19 @@
+..........................................................F............. [ 72%]
+............................                                             [100%]
+================================== FAILURES ===================================
+__________ test_independent_contribution_increment_and_matrix_gates ___________
+
+    def test_independent_contribution_increment_and_matrix_gates():
+        seeds=[successful_seed(i) for i in (0,1,2)]
+        seeds[0]['evaluations']['zero_torque']['completed']=False
+        seeds[1]['evaluations']['combined_pd']['completed']=False
+        gates=a.scientific_gates(seeds)
+        assert gates['diagonal_contribution']['passed'] and gates['coupled_contribution']['passed'] and gates['coupled_increment']['passed']
+        assert not gates['complete_matrix'] and not gates['combined_pd_comparison']['coupled']['passed']
+>       assert not gates['thresholds_frozen']
+E       assert not True
+
+tests\test_pair_frozen_audit.py:249: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_pair_frozen_audit.py::test_independent_contribution_increment_and_matrix_gates
+1 failed, 99 passed in 16.35s

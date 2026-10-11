@@ -1,0 +1,7625 @@
+[
+  {
+    "seed": 0,
+    "reset_seed": 3757552657,
+    "evaluations": {
+      "calibration": {
+        "completed": false,
+        "status": "terminated",
+        "reason": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.07854740813199719,
+            0.03705126258547997
+          ],
+          "qref_rad": [
+            0.09739774391333796,
+            -0.0005762480149995581
+          ],
+          "velocity_rad_s": [
+            0.6241620590759409,
+            -1.3187497823139016
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 270
+        },
+        "collector_exception": null,
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.07854740813199719,
+            0.03705126258547997
+          ],
+          "qref_rad": [
+            0.09739774391333796,
+            -0.0005762480149995581
+          ],
+          "velocity_rad_s": [
+            0.6241620590759409,
+            -1.3187497823139016
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 270
+        },
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": null,
+        "metric_control_step_count": 0,
+        "position_prediction_rmse": {
+          "diagonal": {
+            "joint": 0.000922768477879917,
+            "per_axis": [
+              0.000657936063669069,
+              0.0011269975437689691
+            ],
+            "complete_endpoints": 171
+          },
+          "coupled": {
+            "joint": 0.0009155665552388983,
+            "per_axis": [
+              0.000566037592917021,
+              0.0011645280922110684
+            ],
+            "complete_endpoints": 171
+          }
+        },
+        "velocity_prediction_rmse": {
+          "diagonal": {
+            "joint": 0.07836010847822077,
+            "per_axis": [
+              0.05634171871055556,
+              0.09542653684472516
+            ],
+            "complete_endpoints": 171
+          },
+          "coupled": {
+            "joint": 0.07479964120448726,
+            "per_axis": [
+              0.04560699426314925,
+              0.09544618757667132
+            ],
+            "complete_endpoints": 171
+          }
+        },
+        "metric_prediction_step_count": {
+          "diagonal": 171,
+          "coupled": 171
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.30000000000000016,
+              0.2100000000000001
+            ],
+            "requested_squared_nm2_s": [
+              0.10625000000000004,
+              0.07375000000000001
+            ],
+            "actual_absolute_nm_s": [
+              0.30000000000000016,
+              0.13499999999999998
+            ],
+            "actual_squared_nm2_s": [
+              0.10625000000000004,
+              0.051874999999999984
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.5100000000000002,
+            "requested_squared_nm2_s": 0.18000000000000005,
+            "actual_absolute_nm_s": 0.43500000000000016,
+            "actual_squared_nm2_s": 0.15812500000000002
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 1710,
+          "prediction": 0,
+          "control": 0
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 0,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 0,
+          "pair_prediction_successes": 0,
+          "scalar_prediction_attempts": 0,
+          "scalar_prediction_successes": 0,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "planner_fallbacks": 0,
+        "saturated_control_steps_per_axis": [
+          0,
+          0
+        ],
+        "controller_seconds_total": 0,
+        "pd_seconds_total": 0,
+        "planner_spec": null,
+        "models_before": {},
+        "models_after": {
+          "nominal": "27532b004276bd021608af61142dd4146c62bdeb3a7e8ed016d3239f923ae039"
+        },
+        "invalid_numeric_fields": []
+      },
+      "prediction_low": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed0_calibration"
+          ]
+        }
+      },
+      "prediction_full": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed0_calibration"
+          ]
+        }
+      },
+      "nominal_mpc": {
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "collector_exception": null,
+        "study_abort": null,
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": {
+          "joint": 0.04432507005520921,
+          "per_axis": [
+            0.04056158847016741,
+            0.04779310841089112
+          ],
+          "complete_endpoints": 200
+        },
+        "metric_control_step_count": 200,
+        "position_prediction_rmse": {
+          "nominal": {
+            "joint": 0.004885173396577882,
+            "per_axis": [
+              0.0030494507016448507,
+              0.006199249038996764
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 0.004977414107054731,
+            "per_axis": [
+              0.0031259817300588275,
+              0.00630694384068491
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "velocity_prediction_rmse": {
+          "nominal": {
+            "joint": 0.41553478920094555,
+            "per_axis": [
+              0.2585743195259717,
+              0.5277098097953353
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 0.42021931445420574,
+            "per_axis": [
+              0.2624943859261756,
+              0.5331653044206507
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "metric_prediction_step_count": {
+          "nominal": 200,
+          "persistence": 200
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.84,
+              0.9675000000000004
+            ],
+            "requested_squared_nm2_s": [
+              0.39,
+              0.46093750000000017
+            ],
+            "actual_absolute_nm_s": [
+              0.84,
+              0.7120000000000003
+            ],
+            "actual_squared_nm2_s": [
+              0.39,
+              0.34581250000000013
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.84,
+            0.9675000000000004
+          ],
+          "requested_squared_nm2_s": [
+            0.39,
+            0.46093750000000017
+          ],
+          "actual_absolute_nm_s": [
+            0.84,
+            0.7120000000000003
+          ],
+          "actual_squared_nm2_s": [
+            0.39,
+            0.34581250000000013
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 1.8075000000000003,
+            "requested_squared_nm2_s": 0.8509375000000001,
+            "actual_absolute_nm_s": 1.5520000000000003,
+            "actual_squared_nm2_s": 0.7358125000000002
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 2000
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 180189,
+          "pair_prediction_successes": 180189,
+          "scalar_prediction_attempts": 360378,
+          "scalar_prediction_successes": 360378,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "planner_fallbacks": 94,
+        "saturated_control_steps_per_axis": [
+          69,
+          84
+        ],
+        "controller_seconds_total": 8.533537699375302,
+        "pd_seconds_total": 0,
+        "planner_spec": {
+          "config_per_axis": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": [
+            0.09739774391333796,
+            -0.0005762480149995581
+          ],
+          "joint_ranges_rad": [
+            [
+              -1.7453292519943295,
+              1.7453292519943295
+            ],
+            [
+              0.0,
+              2.356194490192345
+            ]
+          ],
+          "forecast_bounds_rad": [
+            [
+              -0.05260225608666204,
+              0.24739774391333796
+            ],
+            [
+              -0.03,
+              0.14942375198500044
+            ]
+          ],
+          "target_bounds_rad": [
+            [
+              -0.05260225608666204,
+              0.24739774391333796
+            ],
+            [
+              0.03,
+              0.14942375198500044
+            ]
+          ],
+          "axis_candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "vector_candidate_count": 81,
+          "vector_candidates_nm": [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              -0.5,
+              -0.375
+            ],
+            [
+              -0.5,
+              -0.25
+            ],
+            [
+              -0.5,
+              -0.125
+            ],
+            [
+              -0.5,
+              0.0
+            ],
+            [
+              -0.5,
+              0.125
+            ],
+            [
+              -0.5,
+              0.25
+            ],
+            [
+              -0.5,
+              0.375
+            ],
+            [
+              -0.5,
+              0.5
+            ],
+            [
+              -0.375,
+              -0.5
+            ],
+            [
+              -0.375,
+              -0.375
+            ],
+            [
+              -0.375,
+              -0.25
+            ],
+            [
+              -0.375,
+              -0.125
+            ],
+            [
+              -0.375,
+              0.0
+            ],
+            [
+              -0.375,
+              0.125
+            ],
+            [
+              -0.375,
+              0.25
+            ],
+            [
+              -0.375,
+              0.375
+            ],
+            [
+              -0.375,
+              0.5
+            ],
+            [
+              -0.25,
+              -0.5
+            ],
+            [
+              -0.25,
+              -0.375
+            ],
+            [
+              -0.25,
+              -0.25
+            ],
+            [
+              -0.25,
+              -0.125
+            ],
+            [
+              -0.25,
+              0.0
+            ],
+            [
+              -0.25,
+              0.125
+            ],
+            [
+              -0.25,
+              0.25
+            ],
+            [
+              -0.25,
+              0.375
+            ],
+            [
+              -0.25,
+              0.5
+            ],
+            [
+              -0.125,
+              -0.5
+            ],
+            [
+              -0.125,
+              -0.375
+            ],
+            [
+              -0.125,
+              -0.25
+            ],
+            [
+              -0.125,
+              -0.125
+            ],
+            [
+              -0.125,
+              0.0
+            ],
+            [
+              -0.125,
+              0.125
+            ],
+            [
+              -0.125,
+              0.25
+            ],
+            [
+              -0.125,
+              0.375
+            ],
+            [
+              -0.125,
+              0.5
+            ],
+            [
+              0.0,
+              -0.5
+            ],
+            [
+              0.0,
+              -0.375
+            ],
+            [
+              0.0,
+              -0.25
+            ],
+            [
+              0.0,
+              -0.125
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.125
+            ],
+            [
+              0.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.375
+            ],
+            [
+              0.0,
+              0.5
+            ],
+            [
+              0.125,
+              -0.5
+            ],
+            [
+              0.125,
+              -0.375
+            ],
+            [
+              0.125,
+              -0.25
+            ],
+            [
+              0.125,
+              -0.125
+            ],
+            [
+              0.125,
+              0.0
+            ],
+            [
+              0.125,
+              0.125
+            ],
+            [
+              0.125,
+              0.25
+            ],
+            [
+              0.125,
+              0.375
+            ],
+            [
+              0.125,
+              0.5
+            ],
+            [
+              0.25,
+              -0.5
+            ],
+            [
+              0.25,
+              -0.375
+            ],
+            [
+              0.25,
+              -0.25
+            ],
+            [
+              0.25,
+              -0.125
+            ],
+            [
+              0.25,
+              0.0
+            ],
+            [
+              0.25,
+              0.125
+            ],
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.25,
+              0.375
+            ],
+            [
+              0.25,
+              0.5
+            ],
+            [
+              0.375,
+              -0.5
+            ],
+            [
+              0.375,
+              -0.375
+            ],
+            [
+              0.375,
+              -0.25
+            ],
+            [
+              0.375,
+              -0.125
+            ],
+            [
+              0.375,
+              0.0
+            ],
+            [
+              0.375,
+              0.125
+            ],
+            [
+              0.375,
+              0.25
+            ],
+            [
+              0.375,
+              0.375
+            ],
+            [
+              0.375,
+              0.5
+            ],
+            [
+              0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              -0.375
+            ],
+            [
+              0.5,
+              -0.25
+            ],
+            [
+              0.5,
+              -0.125
+            ],
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.125
+            ],
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.5,
+              0.375
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          "action_rollout": "same constant two-axis vector over the full horizon; apply first command",
+          "target_information": "current two-axis target only; no transition preview or future target input",
+          "cost": "original scalar cost per axis, summed across axes; change at first step only",
+          "tie_break": "exact cost, sum(abs(u)), signed u0, signed u1",
+          "fallback_nm": [
+            0.0,
+            0.0
+          ],
+          "prediction_count_units": "one pair attempt calls up to two scalar velocity heads; failures explicitly counted",
+          "physical_queries": 0
+        },
+        "models_before": {
+          "nominal": "27532b004276bd021608af61142dd4146c62bdeb3a7e8ed016d3239f923ae039"
+        },
+        "models_after": {
+          "nominal": "27532b004276bd021608af61142dd4146c62bdeb3a7e8ed016d3239f923ae039"
+        },
+        "invalid_numeric_fields": []
+      },
+      "diagonal_mpc": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed0_calibration"
+          ]
+        }
+      },
+      "coupled_mpc": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed0_calibration"
+          ]
+        }
+      },
+      "combined_pd": {
+        "completed": false,
+        "status": "terminated",
+        "reason": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.0850914971438586,
+            0.024014963169847827
+          ],
+          "qref_rad": [
+            0.09739774391333796,
+            -0.0005762480149995581
+          ],
+          "velocity_rad_s": [
+            -0.5461046232001017,
+            1.071841127753781
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 101
+        },
+        "collector_exception": null,
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.0850914971438586,
+            0.024014963169847827
+          ],
+          "qref_rad": [
+            0.09739774391333796,
+            -0.0005762480149995581
+          ],
+          "velocity_rad_s": [
+            -0.5461046232001017,
+            1.071841127753781
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 101
+        },
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": {
+          "joint": 0.029259131487041682,
+          "per_axis": [
+            0.032421468261293745,
+            0.025710736016962065
+          ],
+          "complete_endpoints": 2
+        },
+        "metric_control_step_count": 2,
+        "position_prediction_rmse": {
+          "nominal": {
+            "joint": 0.004733762093063887,
+            "per_axis": [
+              0.0029497687831289083,
+              0.006009648178848357
+            ],
+            "complete_endpoints": 2
+          },
+          "persistence": {
+            "joint": 0.004921619567581564,
+            "per_axis": [
+              0.003148619954614756,
+              0.006207323957826371
+            ],
+            "complete_endpoints": 2
+          }
+        },
+        "velocity_prediction_rmse": {
+          "nominal": {
+            "joint": 0.42013401447229937,
+            "per_axis": [
+              0.26467018963899336,
+              0.5319538240765638
+            ],
+            "complete_endpoints": 2
+          },
+          "persistence": {
+            "joint": 0.42953745477049826,
+            "per_axis": [
+              0.2746116674163887,
+              0.5418424883859021
+            ],
+            "complete_endpoints": 2
+          }
+        },
+        "metric_prediction_step_count": {
+          "nominal": 2,
+          "persistence": 2
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "requested_squared_nm2_s": [
+              0.01,
+              0.01
+            ],
+            "actual_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "actual_squared_nm2_s": [
+              0.01,
+              0.01
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.02,
+            0.02
+          ],
+          "requested_squared_nm2_s": [
+            0.01,
+            0.01
+          ],
+          "actual_absolute_nm_s": [
+            0.02,
+            0.02
+          ],
+          "actual_squared_nm2_s": [
+            0.01,
+            0.01
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 0.04,
+            "requested_squared_nm2_s": 0.02,
+            "actual_absolute_nm_s": 0.04,
+            "actual_squared_nm2_s": 0.02
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 20
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 20,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 0,
+          "pair_prediction_successes": 0,
+          "scalar_prediction_attempts": 0,
+          "scalar_prediction_successes": 0,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "planner_fallbacks": 0,
+        "saturated_control_steps_per_axis": [
+          2,
+          2
+        ],
+        "controller_seconds_total": 0,
+        "pd_seconds_total": 0.0001295998226851225,
+        "planner_spec": null,
+        "models_before": {
+          "nominal": "27532b004276bd021608af61142dd4146c62bdeb3a7e8ed016d3239f923ae039"
+        },
+        "models_after": {
+          "nominal": "27532b004276bd021608af61142dd4146c62bdeb3a7e8ed016d3239f923ae039"
+        },
+        "invalid_numeric_fields": []
+      },
+      "zero_torque": {
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "collector_exception": null,
+        "study_abort": null,
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": {
+          "joint": 0.06326975771413691,
+          "per_axis": [
+            0.06329395409515903,
+            0.06324555207610316
+          ],
+          "complete_endpoints": 200
+        },
+        "metric_control_step_count": 200,
+        "position_prediction_rmse": {
+          "nominal": {
+            "joint": 5.973471685111524e-11,
+            "per_axis": [
+              8.399252836082611e-11,
+              9.040352544101622e-12
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 5.973471685111524e-11,
+            "per_axis": [
+              8.399252836082611e-11,
+              9.040352544101622e-12
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "velocity_prediction_rmse": {
+          "nominal": {
+            "joint": 5.397769063968896e-09,
+            "per_axis": [
+              7.60527752369232e-09,
+              6.56944079431217e-10
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 5.397769063968896e-09,
+            "per_axis": [
+              7.60527752369232e-09,
+              6.56944079431217e-10
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "metric_prediction_step_count": {
+          "nominal": 200,
+          "persistence": 200
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 2000
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 0,
+          "pair_prediction_successes": 0,
+          "scalar_prediction_attempts": 0,
+          "scalar_prediction_successes": 0,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "planner_fallbacks": 0,
+        "saturated_control_steps_per_axis": [
+          0,
+          0
+        ],
+        "controller_seconds_total": 0,
+        "pd_seconds_total": 0,
+        "planner_spec": null,
+        "models_before": {
+          "nominal": "27532b004276bd021608af61142dd4146c62bdeb3a7e8ed016d3239f923ae039"
+        },
+        "models_after": {
+          "nominal": "27532b004276bd021608af61142dd4146c62bdeb3a7e8ed016d3239f923ae039"
+        },
+        "invalid_numeric_fields": []
+      }
+    },
+    "initial_models": {
+      "diagonal": {
+        "structure": "diagonal_hinge5",
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "q0-qref0",
+            "u0",
+            "h(u0)",
+            "1"
+          ],
+          [
+            "v1",
+            "q1-qref1",
+            "u1",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "27532b004276bd021608af61142dd4146c62bdeb3a7e8ed016d3239f923ae039",
+        "trainable": true,
+        "vector_update_count": 0,
+        "scalar_update_count": 0,
+        "output_update_counts": [
+          0,
+          0
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      },
+      "coupled": {
+        "structure": "coupled_hinge9",
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ],
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "fb71efefaa8d0a52c6d81b4a38e388e5e429458eda8d7eb142c3f7268c9094b0",
+        "trainable": true,
+        "vector_update_count": 0,
+        "scalar_update_count": 0,
+        "output_update_counts": [
+          0,
+          0
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      }
+    },
+    "learned_models": {},
+    "calibration_models": {
+      "diagonal": {
+        "structure": "diagonal_hinge5",
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "q0-qref0",
+            "u0",
+            "h(u0)",
+            "1"
+          ],
+          [
+            "v1",
+            "q1-qref1",
+            "u1",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            0.9667721472200882,
+            -2.1173096909885,
+            0.005859665509849161,
+            0.019843346428274504,
+            -0.002177234425610583
+          ],
+          [
+            0.7510152411277804,
+            -3.664975821930242,
+            -0.09725766506100356,
+            1.4869020614764166,
+            0.003364936718624578
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              0.8457218533350631,
+              -0.7222851570871331,
+              -0.023243355261370637,
+              -0.02533340463494665,
+              0.005052191989573294
+            ],
+            [
+              -0.7222851570871331,
+              57.38283140741395,
+              0.047072513018538556,
+              0.03875856126354853,
+              0.14459108328962664
+            ],
+            [
+              -0.023243355261370637,
+              0.047072513018538556,
+              0.6299633097855988,
+              -1.366283282672262,
+              -6.74451530856903e-05
+            ],
+            [
+              -0.02533340463494665,
+              0.03875856126354853,
+              -1.366283282672262,
+              4.233952246673098,
+              -0.00010642183873730911
+            ],
+            [
+              0.005052191989573294,
+              0.14459108328962664,
+              -6.74451530856903e-05,
+              -0.00010642183873730911,
+              0.006268395254281754
+            ]
+          ],
+          [
+            [
+              0.3049188236227091,
+              -0.3655394468264125,
+              -0.004211896339664718,
+              -0.5292097062056984,
+              -0.00023258270147998543
+            ],
+            [
+              -0.3655394468264125,
+              23.7608903554149,
+              -0.12956434895509397,
+              0.5631425576904447,
+              -0.09115563660841747
+            ],
+            [
+              -0.004211896339664718,
+              -0.12956434895509397,
+              1.05034371800727,
+              -2.3583761932346596,
+              0.002092736227783423
+            ],
+            [
+              -0.5292097062056984,
+              0.5631425576904447,
+              -2.3583761932346596,
+              8.120778844776096,
+              -0.013759803570099483
+            ],
+            [
+              -0.00023258270147998543,
+              -0.09115563660841747,
+              0.002092736227783423,
+              -0.013759803570099483,
+              0.006272440341740946
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "b1b05bb824bcddee76c2c30364957b3bd28f6f100f84d01c6045b8b95b0aa242",
+        "trainable": true,
+        "vector_update_count": 171,
+        "scalar_update_count": 342,
+        "output_update_counts": [
+          171,
+          171
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      },
+      "coupled": {
+        "structure": "coupled_hinge9",
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ],
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            0.944680354960987,
+            0.0947394725273638,
+            -0.725689049317183,
+            1.4897487750518084,
+            0.008066474730746216,
+            0.04134017690163604,
+            0.026867685063869093,
+            -0.697602657704862,
+            -0.0025840808708288395
+          ],
+          [
+            -0.6012285878552849,
+            0.46500786644543624,
+            1.5048500607641397,
+            -3.1066786708764367,
+            0.01568999151191678,
+            -0.09579847203126825,
+            -0.03615420259912723,
+            1.47029702196515,
+            0.004757944212575214
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              52.340855408560174,
+              25.06786037582272,
+              -0.5025741689240988,
+              -1.0586751712015232,
+              -1.321178007841246,
+              -0.0496038778387929,
+              -0.5533447509537718,
+              1.2064567030843216,
+              0.02841779074793562
+            ],
+            [
+              25.06786037582272,
+              12.311169859023366,
+              -0.10290277917859436,
+              -0.8218367978575906,
+              -0.63163815387997,
+              -0.02789442117842686,
+              -0.25321881131518326,
+              0.04800202350499172,
+              0.013532540535578754
+            ],
+            [
+              -0.5025741689240988,
+              -0.10290277917859436,
+              84.81965082524859,
+              30.983407132228496,
+              0.06587451966192955,
+              0.04979135866449061,
+              0.08129440712336893,
+              -0.21578336020046632,
+              0.09656712033181675
+            ],
+            [
+              -1.0586751712015232,
+              -0.8218367978575906,
+              30.983407132228496,
+              35.09448244052804,
+              0.053935677263378834,
+              -0.11056720187302499,
+              0.058770388013846556,
+              0.46344002042953214,
+              -0.056372604635046654
+            ],
+            [
+              -1.321178007841246,
+              -0.63163815387997,
+              0.06587451966192955,
+              0.053935677263378834,
+              0.6627007249073301,
+              0.0012166315131176976,
+              -1.3529200368646837,
+              -0.032402758651610616,
+              -0.0006927692119403482
+            ],
+            [
+              -0.0496038778387929,
+              -0.02789442117842686,
+              0.04979135866449061,
+              -0.11056720187302499,
+              0.0012166315131176976,
+              1.050419607210847,
+              0.00021210198225403215,
+              -2.3596284714457165,
+              0.0021222024285106563
+            ],
+            [
+              -0.5533447509537718,
+              -0.25321881131518326,
+              0.08129440712336893,
+              0.058770388013846556,
+              -1.3529200368646837,
+              0.00021210198225403215,
+              4.239601917202698,
+              -0.03330173003308779,
+              -0.0003551917146985827
+            ],
+            [
+              1.2064567030843216,
+              0.04800202350499172,
+              -0.21578336020046632,
+              0.46344002042953214,
+              -0.032402758651610616,
+              -2.3596284714457165,
+              -0.03330173003308779,
+              8.14955231462191,
+              -0.013333586275405398
+            ],
+            [
+              0.02841779074793562,
+              0.013532540535578754,
+              0.09656712033181675,
+              -0.056372604635046654,
+              -0.0006927692119403482,
+              0.0021222024285106563,
+              -0.0003551917146985827,
+              -0.013333586275405398,
+              0.006398479896088367
+            ]
+          ],
+          [
+            [
+              52.340855408560174,
+              25.06786037582272,
+              -0.5025741689240988,
+              -1.0586751712015232,
+              -1.321178007841246,
+              -0.0496038778387929,
+              -0.5533447509537718,
+              1.2064567030843216,
+              0.02841779074793562
+            ],
+            [
+              25.06786037582272,
+              12.311169859023366,
+              -0.10290277917859436,
+              -0.8218367978575906,
+              -0.63163815387997,
+              -0.02789442117842686,
+              -0.25321881131518326,
+              0.04800202350499172,
+              0.013532540535578754
+            ],
+            [
+              -0.5025741689240988,
+              -0.10290277917859436,
+              84.81965082524859,
+              30.983407132228496,
+              0.06587451966192955,
+              0.04979135866449061,
+              0.08129440712336893,
+              -0.21578336020046632,
+              0.09656712033181675
+            ],
+            [
+              -1.0586751712015232,
+              -0.8218367978575906,
+              30.983407132228496,
+              35.09448244052804,
+              0.053935677263378834,
+              -0.11056720187302499,
+              0.058770388013846556,
+              0.46344002042953214,
+              -0.056372604635046654
+            ],
+            [
+              -1.321178007841246,
+              -0.63163815387997,
+              0.06587451966192955,
+              0.053935677263378834,
+              0.6627007249073301,
+              0.0012166315131176976,
+              -1.3529200368646837,
+              -0.032402758651610616,
+              -0.0006927692119403482
+            ],
+            [
+              -0.0496038778387929,
+              -0.02789442117842686,
+              0.04979135866449061,
+              -0.11056720187302499,
+              0.0012166315131176976,
+              1.050419607210847,
+              0.00021210198225403215,
+              -2.3596284714457165,
+              0.0021222024285106563
+            ],
+            [
+              -0.5533447509537718,
+              -0.25321881131518326,
+              0.08129440712336893,
+              0.058770388013846556,
+              -1.3529200368646837,
+              0.00021210198225403215,
+              4.239601917202698,
+              -0.03330173003308779,
+              -0.0003551917146985827
+            ],
+            [
+              1.2064567030843216,
+              0.04800202350499172,
+              -0.21578336020046632,
+              0.46344002042953214,
+              -0.032402758651610616,
+              -2.3596284714457165,
+              -0.03330173003308779,
+              8.14955231462191,
+              -0.013333586275405398
+            ],
+            [
+              0.02841779074793562,
+              0.013532540535578754,
+              0.09656712033181675,
+              -0.056372604635046654,
+              -0.0006927692119403482,
+              0.0021222024285106563,
+              -0.0003551917146985827,
+              -0.013333586275405398,
+              0.006398479896088367
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "b5d544385d0b7a5834b2f61f1f67173d4ac4ab59d32ca0615b713616b54c5623",
+        "trainable": true,
+        "vector_update_count": 171,
+        "scalar_update_count": 342,
+        "output_update_counts": [
+          171,
+          171
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      }
+    },
+    "calibration_completed": false,
+    "calibration_scalar_updates": 684,
+    "calibration_vector_updates": 342,
+    "reference_q": [
+      0.09739774391333796,
+      -0.0005762480149995581
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "selection_records": [
+      {
+        "joint_index": 0,
+        "joint_position_rad": 0.09739774391333796,
+        "lower_limit_rad": -1.7453292519943295,
+        "upper_limit_rad": 1.7453292519943295,
+        "positive_room_rad": 1.6479315080809915,
+        "negative_room_rad": 1.8427269959076675,
+        "direction": -1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      },
+      {
+        "joint_index": 1,
+        "joint_position_rad": -0.0005762480149995581,
+        "lower_limit_rad": 0.0,
+        "upper_limit_rad": 2.356194490192345,
+        "positive_room_rad": 2.356770738207344,
+        "negative_room_rad": -0.0005762480149995581,
+        "direction": 1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      }
+    ],
+    "nominal_model": {
+      "structure": "diagonal_hinge5",
+      "qref_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "dt_seconds": 0.02,
+      "features_per_output": [
+        [
+          "v0",
+          "q0-qref0",
+          "u0",
+          "h(u0)",
+          "1"
+        ],
+        [
+          "v1",
+          "q1-qref1",
+          "u1",
+          "h(u1)",
+          "1"
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ]
+      ],
+      "covariance": [
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ]
+      ],
+      "initial_coefficients": [
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "integration": "endpoint_euler",
+      "dtype": "float64",
+      "parameter_fingerprint": "27532b004276bd021608af61142dd4146c62bdeb3a7e8ed016d3239f923ae039",
+      "trainable": false,
+      "vector_update_count": 0,
+      "scalar_update_count": 0,
+      "output_update_counts": [
+        0,
+        0
+      ],
+      "update_commit": "single immutable state reference for both outputs, covariance and counts",
+      "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+      "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+    },
+    "invalid_numeric_fields": []
+  },
+  {
+    "seed": 1,
+    "reset_seed": 1641411168,
+    "evaluations": {
+      "calibration": {
+        "completed": false,
+        "status": "terminated",
+        "reason": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.07479974145968542,
+            0.03691019398275893
+          ],
+          "qref_rad": [
+            0.09382541724034689,
+            -0.0005763175538596344
+          ],
+          "velocity_rad_s": [
+            0.6245805207069824,
+            -1.3197447513933613
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 270
+        },
+        "collector_exception": null,
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.07479974145968542,
+            0.03691019398275893
+          ],
+          "qref_rad": [
+            0.09382541724034689,
+            -0.0005763175538596344
+          ],
+          "velocity_rad_s": [
+            0.6245805207069824,
+            -1.3197447513933613
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 270
+        },
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": null,
+        "metric_control_step_count": 0,
+        "position_prediction_rmse": {
+          "diagonal": {
+            "joint": 0.0009245594807163662,
+            "per_axis": [
+              0.0006595020602853371,
+              0.0011290161642972297
+            ],
+            "complete_endpoints": 171
+          },
+          "coupled": {
+            "joint": 0.0009174309740577771,
+            "per_axis": [
+              0.0005679923030842092,
+              0.0011665092918439607
+            ],
+            "complete_endpoints": 171
+          }
+        },
+        "velocity_prediction_rmse": {
+          "diagonal": {
+            "joint": 0.07849422213990281,
+            "per_axis": [
+              0.056415044333290434,
+              0.09560349675388288
+            ],
+            "complete_endpoints": 171
+          },
+          "coupled": {
+            "joint": 0.07495823186499481,
+            "per_axis": [
+              0.045710594639995425,
+              0.09564525386191763
+            ],
+            "complete_endpoints": 171
+          }
+        },
+        "metric_prediction_step_count": {
+          "diagonal": 171,
+          "coupled": 171
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.30000000000000016,
+              0.2100000000000001
+            ],
+            "requested_squared_nm2_s": [
+              0.10625000000000004,
+              0.07375000000000001
+            ],
+            "actual_absolute_nm_s": [
+              0.30000000000000016,
+              0.13499999999999998
+            ],
+            "actual_squared_nm2_s": [
+              0.10625000000000004,
+              0.051874999999999984
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.5100000000000002,
+            "requested_squared_nm2_s": 0.18000000000000005,
+            "actual_absolute_nm_s": 0.43500000000000016,
+            "actual_squared_nm2_s": 0.15812500000000002
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 1710,
+          "prediction": 0,
+          "control": 0
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 0,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 0,
+          "pair_prediction_successes": 0,
+          "scalar_prediction_attempts": 0,
+          "scalar_prediction_successes": 0,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "planner_fallbacks": 0,
+        "saturated_control_steps_per_axis": [
+          0,
+          0
+        ],
+        "controller_seconds_total": 0,
+        "pd_seconds_total": 0,
+        "planner_spec": null,
+        "models_before": {},
+        "models_after": {
+          "nominal": "f9e87a6549e697dfcaa1593dc77fd3f447173ee79c090280ff1f15036b8d17e7"
+        },
+        "invalid_numeric_fields": []
+      },
+      "prediction_low": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed1_calibration"
+          ]
+        }
+      },
+      "prediction_full": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed1_calibration"
+          ]
+        }
+      },
+      "nominal_mpc": {
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "collector_exception": null,
+        "study_abort": null,
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": {
+          "joint": 0.045063166586776164,
+          "per_axis": [
+            0.040910938938893235,
+            0.04886382138958463
+          ],
+          "complete_endpoints": 200
+        },
+        "metric_control_step_count": 200,
+        "position_prediction_rmse": {
+          "nominal": {
+            "joint": 0.004651730808603651,
+            "per_axis": [
+              0.0028584736645821418,
+              0.0059250592689284644
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 0.004735919461335479,
+            "per_axis": [
+              0.002921771389795891,
+              0.006026700443383798
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "velocity_prediction_rmse": {
+          "nominal": {
+            "joint": 0.39619843722972764,
+            "per_axis": [
+              0.24423541578491284,
+              0.5042771708127662
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 0.4004703846268953,
+            "per_axis": [
+              0.2474777447592183,
+              0.5094191042504377
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "metric_prediction_step_count": {
+          "nominal": 200,
+          "persistence": 200
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.7375000000000003,
+              0.8950000000000005
+            ],
+            "requested_squared_nm2_s": [
+              0.3428125000000001,
+              0.4325000000000002
+            ],
+            "actual_absolute_nm_s": [
+              0.7375000000000003,
+              0.6862500000000004
+            ],
+            "actual_squared_nm2_s": [
+              0.3428125000000001,
+              0.3392187500000002
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.7375000000000003,
+            0.8950000000000005
+          ],
+          "requested_squared_nm2_s": [
+            0.3428125000000001,
+            0.4325000000000002
+          ],
+          "actual_absolute_nm_s": [
+            0.7375000000000003,
+            0.6862500000000004
+          ],
+          "actual_squared_nm2_s": [
+            0.3428125000000001,
+            0.3392187500000002
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 1.6325000000000007,
+            "requested_squared_nm2_s": 0.7753125000000003,
+            "actual_absolute_nm_s": 1.4237500000000005,
+            "actual_squared_nm2_s": 0.6820312500000003
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 2000
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 178281,
+          "pair_prediction_successes": 178281,
+          "scalar_prediction_attempts": 356562,
+          "scalar_prediction_successes": 356562,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "planner_fallbacks": 103,
+        "saturated_control_steps_per_axis": [
+          62,
+          81
+        ],
+        "controller_seconds_total": 8.414579099742696,
+        "pd_seconds_total": 0,
+        "planner_spec": {
+          "config_per_axis": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": [
+            0.09382541724034689,
+            -0.0005763175538596344
+          ],
+          "joint_ranges_rad": [
+            [
+              -1.7453292519943295,
+              1.7453292519943295
+            ],
+            [
+              0.0,
+              2.356194490192345
+            ]
+          ],
+          "forecast_bounds_rad": [
+            [
+              -0.056174582759653105,
+              0.2438254172403469
+            ],
+            [
+              -0.03,
+              0.14942368244614035
+            ]
+          ],
+          "target_bounds_rad": [
+            [
+              -0.056174582759653105,
+              0.2438254172403469
+            ],
+            [
+              0.03,
+              0.14942368244614035
+            ]
+          ],
+          "axis_candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "vector_candidate_count": 81,
+          "vector_candidates_nm": [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              -0.5,
+              -0.375
+            ],
+            [
+              -0.5,
+              -0.25
+            ],
+            [
+              -0.5,
+              -0.125
+            ],
+            [
+              -0.5,
+              0.0
+            ],
+            [
+              -0.5,
+              0.125
+            ],
+            [
+              -0.5,
+              0.25
+            ],
+            [
+              -0.5,
+              0.375
+            ],
+            [
+              -0.5,
+              0.5
+            ],
+            [
+              -0.375,
+              -0.5
+            ],
+            [
+              -0.375,
+              -0.375
+            ],
+            [
+              -0.375,
+              -0.25
+            ],
+            [
+              -0.375,
+              -0.125
+            ],
+            [
+              -0.375,
+              0.0
+            ],
+            [
+              -0.375,
+              0.125
+            ],
+            [
+              -0.375,
+              0.25
+            ],
+            [
+              -0.375,
+              0.375
+            ],
+            [
+              -0.375,
+              0.5
+            ],
+            [
+              -0.25,
+              -0.5
+            ],
+            [
+              -0.25,
+              -0.375
+            ],
+            [
+              -0.25,
+              -0.25
+            ],
+            [
+              -0.25,
+              -0.125
+            ],
+            [
+              -0.25,
+              0.0
+            ],
+            [
+              -0.25,
+              0.125
+            ],
+            [
+              -0.25,
+              0.25
+            ],
+            [
+              -0.25,
+              0.375
+            ],
+            [
+              -0.25,
+              0.5
+            ],
+            [
+              -0.125,
+              -0.5
+            ],
+            [
+              -0.125,
+              -0.375
+            ],
+            [
+              -0.125,
+              -0.25
+            ],
+            [
+              -0.125,
+              -0.125
+            ],
+            [
+              -0.125,
+              0.0
+            ],
+            [
+              -0.125,
+              0.125
+            ],
+            [
+              -0.125,
+              0.25
+            ],
+            [
+              -0.125,
+              0.375
+            ],
+            [
+              -0.125,
+              0.5
+            ],
+            [
+              0.0,
+              -0.5
+            ],
+            [
+              0.0,
+              -0.375
+            ],
+            [
+              0.0,
+              -0.25
+            ],
+            [
+              0.0,
+              -0.125
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.125
+            ],
+            [
+              0.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.375
+            ],
+            [
+              0.0,
+              0.5
+            ],
+            [
+              0.125,
+              -0.5
+            ],
+            [
+              0.125,
+              -0.375
+            ],
+            [
+              0.125,
+              -0.25
+            ],
+            [
+              0.125,
+              -0.125
+            ],
+            [
+              0.125,
+              0.0
+            ],
+            [
+              0.125,
+              0.125
+            ],
+            [
+              0.125,
+              0.25
+            ],
+            [
+              0.125,
+              0.375
+            ],
+            [
+              0.125,
+              0.5
+            ],
+            [
+              0.25,
+              -0.5
+            ],
+            [
+              0.25,
+              -0.375
+            ],
+            [
+              0.25,
+              -0.25
+            ],
+            [
+              0.25,
+              -0.125
+            ],
+            [
+              0.25,
+              0.0
+            ],
+            [
+              0.25,
+              0.125
+            ],
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.25,
+              0.375
+            ],
+            [
+              0.25,
+              0.5
+            ],
+            [
+              0.375,
+              -0.5
+            ],
+            [
+              0.375,
+              -0.375
+            ],
+            [
+              0.375,
+              -0.25
+            ],
+            [
+              0.375,
+              -0.125
+            ],
+            [
+              0.375,
+              0.0
+            ],
+            [
+              0.375,
+              0.125
+            ],
+            [
+              0.375,
+              0.25
+            ],
+            [
+              0.375,
+              0.375
+            ],
+            [
+              0.375,
+              0.5
+            ],
+            [
+              0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              -0.375
+            ],
+            [
+              0.5,
+              -0.25
+            ],
+            [
+              0.5,
+              -0.125
+            ],
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.125
+            ],
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.5,
+              0.375
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          "action_rollout": "same constant two-axis vector over the full horizon; apply first command",
+          "target_information": "current two-axis target only; no transition preview or future target input",
+          "cost": "original scalar cost per axis, summed across axes; change at first step only",
+          "tie_break": "exact cost, sum(abs(u)), signed u0, signed u1",
+          "fallback_nm": [
+            0.0,
+            0.0
+          ],
+          "prediction_count_units": "one pair attempt calls up to two scalar velocity heads; failures explicitly counted",
+          "physical_queries": 0
+        },
+        "models_before": {
+          "nominal": "f9e87a6549e697dfcaa1593dc77fd3f447173ee79c090280ff1f15036b8d17e7"
+        },
+        "models_after": {
+          "nominal": "f9e87a6549e697dfcaa1593dc77fd3f447173ee79c090280ff1f15036b8d17e7"
+        },
+        "invalid_numeric_fields": []
+      },
+      "diagonal_mpc": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed1_calibration"
+          ]
+        }
+      },
+      "coupled_mpc": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed1_calibration"
+          ]
+        }
+      },
+      "combined_pd": {
+        "completed": false,
+        "status": "terminated",
+        "reason": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.0815270620389067,
+            0.024005631742835043
+          ],
+          "qref_rad": [
+            0.09382541724034689,
+            -0.0005763175538596344
+          ],
+          "velocity_rad_s": [
+            -0.5457262574406907,
+            1.0714563918108526
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 101
+        },
+        "collector_exception": null,
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.0815270620389067,
+            0.024005631742835043
+          ],
+          "qref_rad": [
+            0.09382541724034689,
+            -0.0005763175538596344
+          ],
+          "velocity_rad_s": [
+            -0.5457262574406907,
+            1.0714563918108526
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 101
+        },
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": {
+          "joint": 0.029263591888368884,
+          "per_axis": [
+            0.032425921777680326,
+            0.025715272063226848
+          ],
+          "complete_endpoints": 2
+        },
+        "metric_control_step_count": 2,
+        "position_prediction_rmse": {
+          "nominal": {
+            "joint": 0.004731469356254769,
+            "per_axis": [
+              0.0029471285590360616,
+              0.006007332003050095
+            ],
+            "complete_endpoints": 2
+          },
+          "persistence": {
+            "joint": 0.004919315511536709,
+            "per_axis": [
+              0.003145981677101116,
+              0.006205008419932674
+            ],
+            "complete_endpoints": 2
+          }
+        },
+        "velocity_prediction_rmse": {
+          "nominal": {
+            "joint": 0.41993926986304037,
+            "per_axis": [
+              0.26444735832054495,
+              0.5317570642911029
+            ],
+            "complete_endpoints": 2
+          },
+          "persistence": {
+            "joint": 0.4293421736500457,
+            "per_axis": [
+              0.274388893358747,
+              0.54164576925372
+            ],
+            "complete_endpoints": 2
+          }
+        },
+        "metric_prediction_step_count": {
+          "nominal": 2,
+          "persistence": 2
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "requested_squared_nm2_s": [
+              0.01,
+              0.01
+            ],
+            "actual_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "actual_squared_nm2_s": [
+              0.01,
+              0.01
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.02,
+            0.02
+          ],
+          "requested_squared_nm2_s": [
+            0.01,
+            0.01
+          ],
+          "actual_absolute_nm_s": [
+            0.02,
+            0.02
+          ],
+          "actual_squared_nm2_s": [
+            0.01,
+            0.01
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 0.04,
+            "requested_squared_nm2_s": 0.02,
+            "actual_absolute_nm_s": 0.04,
+            "actual_squared_nm2_s": 0.02
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 20
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 20,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 0,
+          "pair_prediction_successes": 0,
+          "scalar_prediction_attempts": 0,
+          "scalar_prediction_successes": 0,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "planner_fallbacks": 0,
+        "saturated_control_steps_per_axis": [
+          2,
+          2
+        ],
+        "controller_seconds_total": 0,
+        "pd_seconds_total": 0.00011819996871054173,
+        "planner_spec": null,
+        "models_before": {
+          "nominal": "f9e87a6549e697dfcaa1593dc77fd3f447173ee79c090280ff1f15036b8d17e7"
+        },
+        "models_after": {
+          "nominal": "f9e87a6549e697dfcaa1593dc77fd3f447173ee79c090280ff1f15036b8d17e7"
+        },
+        "invalid_numeric_fields": []
+      },
+      "zero_torque": {
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "collector_exception": null,
+        "study_abort": null,
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": {
+          "joint": 0.06319964519388212,
+          "per_axis": [
+            0.06315370237777554,
+            0.06324555463623135
+          ],
+          "complete_endpoints": 200
+        },
+        "metric_control_step_count": 200,
+        "position_prediction_rmse": {
+          "nominal": {
+            "joint": 1.114370757054025e-10,
+            "per_axis": [
+              1.5729996063588896e-10,
+              9.652257118982016e-12
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 1.114370757054025e-10,
+            "per_axis": [
+              1.5729996063588896e-10,
+              9.652257118982016e-12
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "velocity_prediction_rmse": {
+          "nominal": {
+            "joint": 1.0150462898772506e-08,
+            "per_axis": [
+              1.4337436422398173e-08,
+              7.083155740237363e-10
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 1.0150462898772506e-08,
+            "per_axis": [
+              1.4337436422398173e-08,
+              7.083155740237363e-10
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "metric_prediction_step_count": {
+          "nominal": 200,
+          "persistence": 200
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 2000
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 0,
+          "pair_prediction_successes": 0,
+          "scalar_prediction_attempts": 0,
+          "scalar_prediction_successes": 0,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "planner_fallbacks": 0,
+        "saturated_control_steps_per_axis": [
+          0,
+          0
+        ],
+        "controller_seconds_total": 0,
+        "pd_seconds_total": 0,
+        "planner_spec": null,
+        "models_before": {
+          "nominal": "f9e87a6549e697dfcaa1593dc77fd3f447173ee79c090280ff1f15036b8d17e7"
+        },
+        "models_after": {
+          "nominal": "f9e87a6549e697dfcaa1593dc77fd3f447173ee79c090280ff1f15036b8d17e7"
+        },
+        "invalid_numeric_fields": []
+      }
+    },
+    "initial_models": {
+      "diagonal": {
+        "structure": "diagonal_hinge5",
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "q0-qref0",
+            "u0",
+            "h(u0)",
+            "1"
+          ],
+          [
+            "v1",
+            "q1-qref1",
+            "u1",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "f9e87a6549e697dfcaa1593dc77fd3f447173ee79c090280ff1f15036b8d17e7",
+        "trainable": true,
+        "vector_update_count": 0,
+        "scalar_update_count": 0,
+        "output_update_counts": [
+          0,
+          0
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      },
+      "coupled": {
+        "structure": "coupled_hinge9",
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ],
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "87f62bec98e0ce461d90bb1abb2e1f2c9f485df6f80762d256ac9727fd104c29",
+        "trainable": true,
+        "vector_update_count": 0,
+        "scalar_update_count": 0,
+        "output_update_counts": [
+          0,
+          0
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      }
+    },
+    "learned_models": {},
+    "calibration_models": {
+      "diagonal": {
+        "structure": "diagonal_hinge5",
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "q0-qref0",
+            "u0",
+            "h(u0)",
+            "1"
+          ],
+          [
+            "v1",
+            "q1-qref1",
+            "u1",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            0.9667615962465179,
+            -2.1121009150937358,
+            0.005779410988761535,
+            0.01960712387664306,
+            -0.0023956510034491606
+          ],
+          [
+            0.7510769753291713,
+            -3.672135536004436,
+            -0.09752973155428366,
+            1.4867333687420234,
+            0.0033430356249259463
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              0.847204124713245,
+              -0.7258382166261683,
+              -0.023195737074094815,
+              -0.024730059523710882,
+              0.005031020745843396
+            ],
+            [
+              -0.7258382166261683,
+              57.220576262174916,
+              0.04814006275980594,
+              0.03727172421122814,
+              0.15039010672098943
+            ],
+            [
+              -0.023195737074094815,
+              0.04814006275980594,
+              0.6299606456258374,
+              -1.3663026217930285,
+              -6.0482753934504564e-05
+            ],
+            [
+              -0.024730059523710882,
+              0.03727172421122814,
+              -1.3663026217930285,
+              4.233914671838058,
+              -0.00010289337614422024
+            ],
+            [
+              0.005031020745843396,
+              0.15039010672098943,
+              -6.0482753934504564e-05,
+              -0.00010289337614422024,
+              0.006300327636593595
+            ]
+          ],
+          [
+            [
+              0.304413856139647,
+              -0.36253943416948803,
+              -0.003978331529192456,
+              -0.5283467469378185,
+              -0.00023277150310382374
+            ],
+            [
+              -0.36253943416948803,
+              23.795641488173526,
+              -0.13045840884933535,
+              0.5560202572617756,
+              -0.09107766108381711
+            ],
+            [
+              -0.003978331529192456,
+              -0.13045840884933535,
+              1.0503428902631378,
+              -2.358769157298101,
+              0.0020934551173373553
+            ],
+            [
+              -0.5283467469378185,
+              0.5560202572617756,
+              -2.358769157298101,
+              8.119316019037552,
+              -0.013752648542426549
+            ],
+            [
+              -0.00023277150310382374,
+              -0.09107766108381711,
+              0.0020934551173373553,
+              -0.013752648542426549,
+              0.006271186218133778
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "989a2462910b8db9c49f47dc2398491ebd85cc8f05b73510f0dff3c5f3b73f48",
+        "trainable": true,
+        "vector_update_count": 171,
+        "scalar_update_count": 342,
+        "output_update_counts": [
+          171,
+          171
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      },
+      "coupled": {
+        "structure": "coupled_hinge9",
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ],
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            0.9342813002992787,
+            0.08954443707513336,
+            -0.7232436075523632,
+            1.4923831442939923,
+            0.00827737565468104,
+            0.04157408031437981,
+            0.026566801985824222,
+            -0.6977677228091848,
+            -0.00265520463237063
+          ],
+          [
+            -0.5808990426706047,
+            0.47515401242852856,
+            1.5020256991961038,
+            -3.114698707983033,
+            0.015079308830003642,
+            -0.09616031729408837,
+            -0.03597150279241307,
+            1.4706901356641637,
+            0.004855536274138499
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              52.39220470503509,
+              25.06056266024917,
+              -0.5563412200483574,
+              -0.9290876124728504,
+              -1.3145454116832656,
+              -0.05307662514215723,
+              -0.5419320539230027,
+              1.2447350499276808,
+              0.03274283213007528
+            ],
+            [
+              25.06056266024917,
+              12.291906177816092,
+              -0.1293973297914044,
+              -0.7564107017635515,
+              -0.6276406644189703,
+              -0.02930180196576681,
+              -0.24775651032499676,
+              0.06650139889972406,
+              0.01559728430493819
+            ],
+            [
+              -0.5563412200483574,
+              -0.1293973297914044,
+              84.7066934488982,
+              31.064187949123436,
+              0.06883033128402985,
+              0.04381638597063718,
+              0.07961667970779283,
+              -0.18750836321753447,
+              0.10541753870863661
+            ],
+            [
+              -0.9290876124728504,
+              -0.7564107017635515,
+              31.064187949123436,
+              35.19891150076921,
+              0.05123258654574681,
+              -0.113674177283905,
+              0.05665974158489662,
+              0.4693272436869557,
+              -0.052887824950839955
+            ],
+            [
+              -1.3145454116832656,
+              -0.6276406644189703,
+              0.06883033128402985,
+              0.05123258654574681,
+              0.6623367111932694,
+              0.0012935797377092392,
+              -1.353290399676785,
+              -0.03319857582857818,
+              -0.0007892326687019682
+            ],
+            [
+              -0.05307662514215723,
+              -0.02930180196576681,
+              0.04381638597063718,
+              -0.113674177283905,
+              0.0012935797377092392,
+              1.0504189409462785,
+              0.0002447370103988327,
+              -2.360109809983847,
+              0.0021143816000818586
+            ],
+            [
+              -0.5419320539230027,
+              -0.24775651032499676,
+              0.07961667970779283,
+              0.05665974158489662,
+              -1.353290399676785,
+              0.0002447370103988327,
+              4.23932872497115,
+              -0.03282196136995477,
+              -0.0003860363781391259
+            ],
+            [
+              1.2447350499276808,
+              0.06650139889972406,
+              -0.18750836321753447,
+              0.4693272436869557,
+              -0.03319857582857818,
+              -2.360109809983847,
+              -0.03282196136995477,
+              8.149701379602545,
+              -0.013188160872733678
+            ],
+            [
+              0.03274283213007528,
+              0.01559728430493819,
+              0.10541753870863661,
+              -0.052887824950839955,
+              -0.0007892326687019682,
+              0.0021143816000818586,
+              -0.0003860363781391259,
+              -0.013188160872733678,
+              0.006423757041597169
+            ]
+          ],
+          [
+            [
+              52.39220470503509,
+              25.06056266024917,
+              -0.5563412200483574,
+              -0.9290876124728504,
+              -1.3145454116832656,
+              -0.05307662514215723,
+              -0.5419320539230027,
+              1.2447350499276808,
+              0.03274283213007528
+            ],
+            [
+              25.06056266024917,
+              12.291906177816092,
+              -0.1293973297914044,
+              -0.7564107017635515,
+              -0.6276406644189703,
+              -0.02930180196576681,
+              -0.24775651032499676,
+              0.06650139889972406,
+              0.01559728430493819
+            ],
+            [
+              -0.5563412200483574,
+              -0.1293973297914044,
+              84.7066934488982,
+              31.064187949123436,
+              0.06883033128402985,
+              0.04381638597063718,
+              0.07961667970779283,
+              -0.18750836321753447,
+              0.10541753870863661
+            ],
+            [
+              -0.9290876124728504,
+              -0.7564107017635515,
+              31.064187949123436,
+              35.19891150076921,
+              0.05123258654574681,
+              -0.113674177283905,
+              0.05665974158489662,
+              0.4693272436869557,
+              -0.052887824950839955
+            ],
+            [
+              -1.3145454116832656,
+              -0.6276406644189703,
+              0.06883033128402985,
+              0.05123258654574681,
+              0.6623367111932694,
+              0.0012935797377092392,
+              -1.353290399676785,
+              -0.03319857582857818,
+              -0.0007892326687019682
+            ],
+            [
+              -0.05307662514215723,
+              -0.02930180196576681,
+              0.04381638597063718,
+              -0.113674177283905,
+              0.0012935797377092392,
+              1.0504189409462785,
+              0.0002447370103988327,
+              -2.360109809983847,
+              0.0021143816000818586
+            ],
+            [
+              -0.5419320539230027,
+              -0.24775651032499676,
+              0.07961667970779283,
+              0.05665974158489662,
+              -1.353290399676785,
+              0.0002447370103988327,
+              4.23932872497115,
+              -0.03282196136995477,
+              -0.0003860363781391259
+            ],
+            [
+              1.2447350499276808,
+              0.06650139889972406,
+              -0.18750836321753447,
+              0.4693272436869557,
+              -0.03319857582857818,
+              -2.360109809983847,
+              -0.03282196136995477,
+              8.149701379602545,
+              -0.013188160872733678
+            ],
+            [
+              0.03274283213007528,
+              0.01559728430493819,
+              0.10541753870863661,
+              -0.052887824950839955,
+              -0.0007892326687019682,
+              0.0021143816000818586,
+              -0.0003860363781391259,
+              -0.013188160872733678,
+              0.006423757041597169
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "b6beec5e7223907f80ee5c4ebe1f9bfa14e581fc842de2ffb65c144895dd0183",
+        "trainable": true,
+        "vector_update_count": 171,
+        "scalar_update_count": 342,
+        "output_update_counts": [
+          171,
+          171
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      }
+    },
+    "calibration_completed": false,
+    "calibration_scalar_updates": 684,
+    "calibration_vector_updates": 342,
+    "reference_q": [
+      0.09382541724034689,
+      -0.0005763175538596344
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "selection_records": [
+      {
+        "joint_index": 0,
+        "joint_position_rad": 0.09382541724034689,
+        "lower_limit_rad": -1.7453292519943295,
+        "upper_limit_rad": 1.7453292519943295,
+        "positive_room_rad": 1.6515038347539825,
+        "negative_room_rad": 1.8391546692346765,
+        "direction": -1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      },
+      {
+        "joint_index": 1,
+        "joint_position_rad": -0.0005763175538596344,
+        "lower_limit_rad": 0.0,
+        "upper_limit_rad": 2.356194490192345,
+        "positive_room_rad": 2.3567708077462046,
+        "negative_room_rad": -0.0005763175538596344,
+        "direction": 1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      }
+    ],
+    "nominal_model": {
+      "structure": "diagonal_hinge5",
+      "qref_rad": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "dt_seconds": 0.02,
+      "features_per_output": [
+        [
+          "v0",
+          "q0-qref0",
+          "u0",
+          "h(u0)",
+          "1"
+        ],
+        [
+          "v1",
+          "q1-qref1",
+          "u1",
+          "h(u1)",
+          "1"
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ]
+      ],
+      "covariance": [
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ]
+      ],
+      "initial_coefficients": [
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "integration": "endpoint_euler",
+      "dtype": "float64",
+      "parameter_fingerprint": "f9e87a6549e697dfcaa1593dc77fd3f447173ee79c090280ff1f15036b8d17e7",
+      "trainable": false,
+      "vector_update_count": 0,
+      "scalar_update_count": 0,
+      "output_update_counts": [
+        0,
+        0
+      ],
+      "update_commit": "single immutable state reference for both outputs, covariance and counts",
+      "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+      "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+    },
+    "invalid_numeric_fields": []
+  },
+  {
+    "seed": 2,
+    "reset_seed": 2001025171,
+    "evaluations": {
+      "calibration": {
+        "completed": false,
+        "status": "terminated",
+        "reason": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.08220309596455035,
+            0.03722026976294272
+          ],
+          "qref_rad": [
+            0.10085905132196148,
+            -0.000576154793236481
+          ],
+          "velocity_rad_s": [
+            0.6070512270714896,
+            -1.331241111198578
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 270
+        },
+        "collector_exception": null,
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.08220309596455035,
+            0.03722026976294272
+          ],
+          "qref_rad": [
+            0.10085905132196148,
+            -0.000576154793236481
+          ],
+          "velocity_rad_s": [
+            0.6070512270714896,
+            -1.331241111198578
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 270
+        },
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": null,
+        "metric_control_step_count": 0,
+        "position_prediction_rmse": {
+          "diagonal": {
+            "joint": 0.0009250098295504343,
+            "per_axis": [
+              0.0006861291761172138,
+              0.0011137832478586487
+            ],
+            "complete_endpoints": 171
+          },
+          "coupled": {
+            "joint": 0.0009066193104820762,
+            "per_axis": [
+              0.0005718915274599754,
+              0.0011475439987632225
+            ],
+            "complete_endpoints": 171
+          }
+        },
+        "velocity_prediction_rmse": {
+          "diagonal": {
+            "joint": 0.07821508733473326,
+            "per_axis": [
+              0.0567777402534293,
+              0.09492885749483146
+            ],
+            "complete_endpoints": 171
+          },
+          "coupled": {
+            "joint": 0.0741810348676808,
+            "per_axis": [
+              0.04559212818452923,
+              0.09448285408308538
+            ],
+            "complete_endpoints": 171
+          }
+        },
+        "metric_prediction_step_count": {
+          "diagonal": 171,
+          "coupled": 171
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.30000000000000016,
+              0.2100000000000001
+            ],
+            "requested_squared_nm2_s": [
+              0.10625000000000004,
+              0.07375000000000001
+            ],
+            "actual_absolute_nm_s": [
+              0.30000000000000016,
+              0.13499999999999998
+            ],
+            "actual_squared_nm2_s": [
+              0.10625000000000004,
+              0.051874999999999984
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.5100000000000002,
+            "requested_squared_nm2_s": 0.18000000000000005,
+            "actual_absolute_nm_s": 0.43500000000000016,
+            "actual_squared_nm2_s": 0.15812500000000002
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 1710,
+          "prediction": 0,
+          "control": 0
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 0,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 0,
+          "pair_prediction_successes": 0,
+          "scalar_prediction_attempts": 0,
+          "scalar_prediction_successes": 0,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "planner_fallbacks": 0,
+        "saturated_control_steps_per_axis": [
+          0,
+          0
+        ],
+        "controller_seconds_total": 0,
+        "pd_seconds_total": 0,
+        "planner_spec": null,
+        "models_before": {},
+        "models_after": {
+          "nominal": "69bef55161410dd8f869a591af3df24021624ba449fd50ea93862489d7540e96"
+        },
+        "invalid_numeric_fields": []
+      },
+      "prediction_low": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed2_calibration"
+          ]
+        }
+      },
+      "prediction_full": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed2_calibration"
+          ]
+        }
+      },
+      "nominal_mpc": {
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "collector_exception": null,
+        "study_abort": null,
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": {
+          "joint": 0.04412390478365938,
+          "per_axis": [
+            0.04006385039661219,
+            0.04784062957479504
+          ],
+          "complete_endpoints": 200
+        },
+        "metric_control_step_count": 200,
+        "position_prediction_rmse": {
+          "nominal": {
+            "joint": 0.004765321445127348,
+            "per_axis": [
+              0.0029254874999326214,
+              0.0060710872039956044
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 0.004857958979794504,
+            "per_axis": [
+              0.003001782162350971,
+              0.006179711542501289
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "velocity_prediction_rmse": {
+          "nominal": {
+            "joint": 0.40923339698644573,
+            "per_axis": [
+              0.2526246741363852,
+              0.5206963802789653
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 0.41391443706416015,
+            "per_axis": [
+              0.25646213690221786,
+              0.526191500079419
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "metric_prediction_step_count": {
+          "nominal": 200,
+          "persistence": 200
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.8425000000000002,
+              0.9750000000000002
+            ],
+            "requested_squared_nm2_s": [
+              0.40156250000000016,
+              0.4675000000000002
+            ],
+            "actual_absolute_nm_s": [
+              0.8425000000000002,
+              0.6980000000000003
+            ],
+            "actual_squared_nm2_s": [
+              0.40156250000000016,
+              0.33900000000000013
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.8425000000000002,
+            0.9750000000000002
+          ],
+          "requested_squared_nm2_s": [
+            0.40156250000000016,
+            0.4675000000000002
+          ],
+          "actual_absolute_nm_s": [
+            0.8425000000000002,
+            0.6980000000000003
+          ],
+          "actual_squared_nm2_s": [
+            0.40156250000000016,
+            0.33900000000000013
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 1.8175000000000003,
+            "requested_squared_nm2_s": 0.8690625000000003,
+            "actual_absolute_nm_s": 1.5405000000000006,
+            "actual_squared_nm2_s": 0.7405625000000002
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 2000
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 181602,
+          "pair_prediction_successes": 181602,
+          "scalar_prediction_attempts": 363204,
+          "scalar_prediction_successes": 363204,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 200,
+        "planner_decision_count": 200,
+        "planner_fallbacks": 93,
+        "saturated_control_steps_per_axis": [
+          76,
+          86
+        ],
+        "controller_seconds_total": 8.540264399722219,
+        "pd_seconds_total": 0,
+        "planner_spec": {
+          "config_per_axis": {
+            "horizon": 15,
+            "candidate_count": 9,
+            "torque_limit_nm": 0.5,
+            "position_weight": 1.0,
+            "velocity_weight": 0.002,
+            "effort_weight": 2e-05,
+            "change_weight": 2e-05,
+            "local_position_radius_rad": 0.15,
+            "prediction_limit_tolerance_rad": 0.03,
+            "target_limit_margin_rad": 0.03,
+            "velocity_limit_rad_s": 1.5
+          },
+          "qref_rad": [
+            0.10085905132196148,
+            -0.000576154793236481
+          ],
+          "joint_ranges_rad": [
+            [
+              -1.7453292519943295,
+              1.7453292519943295
+            ],
+            [
+              0.0,
+              2.356194490192345
+            ]
+          ],
+          "forecast_bounds_rad": [
+            [
+              -0.04914094867803852,
+              0.25085905132196146
+            ],
+            [
+              -0.03,
+              0.14942384520676352
+            ]
+          ],
+          "target_bounds_rad": [
+            [
+              -0.04914094867803852,
+              0.25085905132196146
+            ],
+            [
+              0.03,
+              0.14942384520676352
+            ]
+          ],
+          "axis_candidates_nm": [
+            -0.5,
+            -0.375,
+            -0.25,
+            -0.125,
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5
+          ],
+          "vector_candidate_count": 81,
+          "vector_candidates_nm": [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              -0.5,
+              -0.375
+            ],
+            [
+              -0.5,
+              -0.25
+            ],
+            [
+              -0.5,
+              -0.125
+            ],
+            [
+              -0.5,
+              0.0
+            ],
+            [
+              -0.5,
+              0.125
+            ],
+            [
+              -0.5,
+              0.25
+            ],
+            [
+              -0.5,
+              0.375
+            ],
+            [
+              -0.5,
+              0.5
+            ],
+            [
+              -0.375,
+              -0.5
+            ],
+            [
+              -0.375,
+              -0.375
+            ],
+            [
+              -0.375,
+              -0.25
+            ],
+            [
+              -0.375,
+              -0.125
+            ],
+            [
+              -0.375,
+              0.0
+            ],
+            [
+              -0.375,
+              0.125
+            ],
+            [
+              -0.375,
+              0.25
+            ],
+            [
+              -0.375,
+              0.375
+            ],
+            [
+              -0.375,
+              0.5
+            ],
+            [
+              -0.25,
+              -0.5
+            ],
+            [
+              -0.25,
+              -0.375
+            ],
+            [
+              -0.25,
+              -0.25
+            ],
+            [
+              -0.25,
+              -0.125
+            ],
+            [
+              -0.25,
+              0.0
+            ],
+            [
+              -0.25,
+              0.125
+            ],
+            [
+              -0.25,
+              0.25
+            ],
+            [
+              -0.25,
+              0.375
+            ],
+            [
+              -0.25,
+              0.5
+            ],
+            [
+              -0.125,
+              -0.5
+            ],
+            [
+              -0.125,
+              -0.375
+            ],
+            [
+              -0.125,
+              -0.25
+            ],
+            [
+              -0.125,
+              -0.125
+            ],
+            [
+              -0.125,
+              0.0
+            ],
+            [
+              -0.125,
+              0.125
+            ],
+            [
+              -0.125,
+              0.25
+            ],
+            [
+              -0.125,
+              0.375
+            ],
+            [
+              -0.125,
+              0.5
+            ],
+            [
+              0.0,
+              -0.5
+            ],
+            [
+              0.0,
+              -0.375
+            ],
+            [
+              0.0,
+              -0.25
+            ],
+            [
+              0.0,
+              -0.125
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.125
+            ],
+            [
+              0.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.375
+            ],
+            [
+              0.0,
+              0.5
+            ],
+            [
+              0.125,
+              -0.5
+            ],
+            [
+              0.125,
+              -0.375
+            ],
+            [
+              0.125,
+              -0.25
+            ],
+            [
+              0.125,
+              -0.125
+            ],
+            [
+              0.125,
+              0.0
+            ],
+            [
+              0.125,
+              0.125
+            ],
+            [
+              0.125,
+              0.25
+            ],
+            [
+              0.125,
+              0.375
+            ],
+            [
+              0.125,
+              0.5
+            ],
+            [
+              0.25,
+              -0.5
+            ],
+            [
+              0.25,
+              -0.375
+            ],
+            [
+              0.25,
+              -0.25
+            ],
+            [
+              0.25,
+              -0.125
+            ],
+            [
+              0.25,
+              0.0
+            ],
+            [
+              0.25,
+              0.125
+            ],
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.25,
+              0.375
+            ],
+            [
+              0.25,
+              0.5
+            ],
+            [
+              0.375,
+              -0.5
+            ],
+            [
+              0.375,
+              -0.375
+            ],
+            [
+              0.375,
+              -0.25
+            ],
+            [
+              0.375,
+              -0.125
+            ],
+            [
+              0.375,
+              0.0
+            ],
+            [
+              0.375,
+              0.125
+            ],
+            [
+              0.375,
+              0.25
+            ],
+            [
+              0.375,
+              0.375
+            ],
+            [
+              0.375,
+              0.5
+            ],
+            [
+              0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              -0.375
+            ],
+            [
+              0.5,
+              -0.25
+            ],
+            [
+              0.5,
+              -0.125
+            ],
+            [
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.125
+            ],
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.5,
+              0.375
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          "action_rollout": "same constant two-axis vector over the full horizon; apply first command",
+          "target_information": "current two-axis target only; no transition preview or future target input",
+          "cost": "original scalar cost per axis, summed across axes; change at first step only",
+          "tie_break": "exact cost, sum(abs(u)), signed u0, signed u1",
+          "fallback_nm": [
+            0.0,
+            0.0
+          ],
+          "prediction_count_units": "one pair attempt calls up to two scalar velocity heads; failures explicitly counted",
+          "physical_queries": 0
+        },
+        "models_before": {
+          "nominal": "69bef55161410dd8f869a591af3df24021624ba449fd50ea93862489d7540e96"
+        },
+        "models_after": {
+          "nominal": "69bef55161410dd8f869a591af3df24021624ba449fd50ea93862489d7540e96"
+        },
+        "invalid_numeric_fields": []
+      },
+      "diagonal_mpc": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed2_calibration"
+          ]
+        }
+      },
+      "coupled_mpc": {
+        "completed": false,
+        "status": "blocked",
+        "reason": {
+          "type": "DependencyBlocked",
+          "dependencies": [
+            "seed2_calibration"
+          ]
+        }
+      },
+      "combined_pd": {
+        "completed": false,
+        "status": "terminated",
+        "reason": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.08854642831906091,
+            0.024025024010681278
+          ],
+          "qref_rad": [
+            0.10085905132196148,
+            -0.000576154793236481
+          ],
+          "velocity_rad_s": [
+            -0.546394609908831,
+            1.072263300286508
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 101
+        },
+        "collector_exception": null,
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.08854642831906091,
+            0.024025024010681278
+          ],
+          "qref_rad": [
+            0.10085905132196148,
+            -0.000576154793236481
+          ],
+          "velocity_rad_s": [
+            -0.546394609908831,
+            1.072263300286508
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 101
+        },
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": {
+          "joint": 0.029254975865819762,
+          "per_axis": [
+            0.03241781541429006,
+            0.025705883948707365
+          ],
+          "complete_endpoints": 2
+        },
+        "metric_control_step_count": 2,
+        "position_prediction_rmse": {
+          "nominal": {
+            "joint": 0.004736036235051242,
+            "per_axis": [
+              0.0029519641032945162,
+              0.006012153222623097
+            ],
+            "complete_endpoints": 2
+          },
+          "persistence": {
+            "joint": 0.004923900271904489,
+            "per_axis": [
+              0.003150811915021692,
+              0.006209828665227369
+            ],
+            "complete_endpoints": 2
+          }
+        },
+        "velocity_prediction_rmse": {
+          "nominal": {
+            "joint": 0.42032645694368115,
+            "per_axis": [
+              0.2648494008919181,
+              0.532168634608287
+            ],
+            "complete_endpoints": 2
+          },
+          "persistence": {
+            "joint": 0.42973017551298287,
+            "per_axis": [
+              0.2747907546671801,
+              0.5420572743191255
+            ],
+            "complete_endpoints": 2
+          }
+        },
+        "metric_prediction_step_count": {
+          "nominal": 2,
+          "persistence": 2
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "requested_squared_nm2_s": [
+              0.01,
+              0.01
+            ],
+            "actual_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "actual_squared_nm2_s": [
+              0.01,
+              0.01
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.02,
+            0.02
+          ],
+          "requested_squared_nm2_s": [
+            0.01,
+            0.01
+          ],
+          "actual_absolute_nm_s": [
+            0.02,
+            0.02
+          ],
+          "actual_squared_nm2_s": [
+            0.01,
+            0.01
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 0.04,
+            "requested_squared_nm2_s": 0.02,
+            "actual_absolute_nm_s": 0.04,
+            "actual_squared_nm2_s": 0.02
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 20
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 20,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 0,
+          "pair_prediction_successes": 0,
+          "scalar_prediction_attempts": 0,
+          "scalar_prediction_successes": 0,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "planner_fallbacks": 0,
+        "saturated_control_steps_per_axis": [
+          2,
+          2
+        ],
+        "controller_seconds_total": 0,
+        "pd_seconds_total": 0.00011100014671683311,
+        "planner_spec": null,
+        "models_before": {
+          "nominal": "69bef55161410dd8f869a591af3df24021624ba449fd50ea93862489d7540e96"
+        },
+        "models_after": {
+          "nominal": "69bef55161410dd8f869a591af3df24021624ba449fd50ea93862489d7540e96"
+        },
+        "invalid_numeric_fields": []
+      },
+      "zero_torque": {
+        "completed": true,
+        "status": "completed",
+        "reason": null,
+        "collector_exception": null,
+        "study_abort": null,
+        "environment_terminated": false,
+        "environment_stop_reason": null,
+        "tracking_rmse": {
+          "joint": 0.06333763749375929,
+          "per_axis": [
+            0.06342959378146762,
+            0.06324554750573139
+          ],
+          "complete_endpoints": 200
+        },
+        "metric_control_step_count": 200,
+        "position_prediction_rmse": {
+          "nominal": {
+            "joint": 2.224087529378094e-10,
+            "per_axis": [
+              3.1439654553104544e-10,
+              9.280028278424038e-12
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 2.224087529378094e-10,
+            "per_axis": [
+              3.1439654553104544e-10,
+              9.280028278424038e-12
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "velocity_prediction_rmse": {
+          "nominal": {
+            "joint": 2.022118420798114e-08,
+            "per_axis": [
+              2.8588929050451538e-08,
+              6.824348279945152e-10
+            ],
+            "complete_endpoints": 200
+          },
+          "persistence": {
+            "joint": 2.022118420798114e-08,
+            "per_axis": [
+              2.8588929050451538e-08,
+              6.824348279945152e-10
+            ],
+            "complete_endpoints": 200
+          }
+        },
+        "metric_prediction_step_count": {
+          "nominal": 200,
+          "persistence": 200
+        },
+        "partial_interval_target_errors_rad": [],
+        "phase_effort": {
+          "prefix": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "calibration": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "prediction": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "control": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "control_effort": {
+          "requested_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "requested_squared_nm2_s": [
+            0.0,
+            0.0
+          ],
+          "actual_absolute_nm_s": [
+            0.0,
+            0.0
+          ],
+          "actual_squared_nm2_s": [
+            0.0,
+            0.0
+          ]
+        },
+        "phase_effort_combined": {
+          "prefix": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "calibration": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "prediction": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "control": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          }
+        },
+        "phase_actual_effort_substeps": {
+          "prefix": 1000,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 2000
+        },
+        "phase_actual_effort_complete": {
+          "prefix": true,
+          "calibration": true,
+          "prediction": true,
+          "control": true
+        },
+        "phase_missing_actual_effort_substeps": {
+          "prefix": 0,
+          "calibration": 0,
+          "prediction": 0,
+          "control": 0
+        },
+        "actual_effort_complete": true,
+        "actual_effort_is_lower_bound": false,
+        "actual_control_effort_substeps": 2000,
+        "missing_control_effort_substeps": 0,
+        "planning_accounting": {
+          "pair_prediction_attempts": 0,
+          "pair_prediction_successes": 0,
+          "scalar_prediction_attempts": 0,
+          "scalar_prediction_successes": 0,
+          "failed_pair_prediction_attempts": 0,
+          "unknown_scalar_failure_count": 0,
+          "scalar_counts_complete": true,
+          "scalar_counts_is_lower_bound": false,
+          "unknown_failed_planner_calls": 0
+        },
+        "failed_planner_attempts": 0,
+        "planner_attempt_count": 0,
+        "planner_decision_count": 0,
+        "planner_fallbacks": 0,
+        "saturated_control_steps_per_axis": [
+          0,
+          0
+        ],
+        "controller_seconds_total": 0,
+        "pd_seconds_total": 0,
+        "planner_spec": null,
+        "models_before": {
+          "nominal": "69bef55161410dd8f869a591af3df24021624ba449fd50ea93862489d7540e96"
+        },
+        "models_after": {
+          "nominal": "69bef55161410dd8f869a591af3df24021624ba449fd50ea93862489d7540e96"
+        },
+        "invalid_numeric_fields": []
+      }
+    },
+    "initial_models": {
+      "diagonal": {
+        "structure": "diagonal_hinge5",
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "q0-qref0",
+            "u0",
+            "h(u0)",
+            "1"
+          ],
+          [
+            "v1",
+            "q1-qref1",
+            "u1",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "69bef55161410dd8f869a591af3df24021624ba449fd50ea93862489d7540e96",
+        "trainable": true,
+        "vector_update_count": 0,
+        "scalar_update_count": 0,
+        "output_update_counts": [
+          0,
+          0
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      },
+      "coupled": {
+        "structure": "coupled_hinge9",
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ],
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              100.0
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "556c4c6c29207bee644f39f95f5074fb0226389186f4ccd47e435938b45200c0",
+        "trainable": true,
+        "vector_update_count": 0,
+        "scalar_update_count": 0,
+        "output_update_counts": [
+          0,
+          0
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      }
+    },
+    "learned_models": {},
+    "calibration_models": {
+      "diagonal": {
+        "structure": "diagonal_hinge5",
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "q0-qref0",
+            "u0",
+            "h(u0)",
+            "1"
+          ],
+          [
+            "v1",
+            "q1-qref1",
+            "u1",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            0.954813108522865,
+            -2.0749851179480854,
+            0.006260636720011445,
+            0.020357686754022514,
+            -0.002036888837049752
+          ],
+          [
+            0.7587997585994251,
+            -3.6996898586762677,
+            -0.09623899156849777,
+            1.4677938880104386,
+            0.003410552403356866
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              0.8629664739660615,
+              -0.7852294165680207,
+              -0.023748943873686285,
+              -0.02631582359817581,
+              0.0052762854293469785
+            ],
+            [
+              -0.7852294165680207,
+              57.62736238887284,
+              0.04755645120091186,
+              0.04095054511071315,
+              0.13801058234427233
+            ],
+            [
+              -0.023748943873686285,
+              0.04755645120091186,
+              0.6299768514256628,
+              -1.3662557755900624,
+              -8.009556609481845e-05
+            ],
+            [
+              -0.02631582359817581,
+              0.04095054511071315,
+              -1.3662557755900624,
+              4.233995797309477,
+              -0.00011822686133514828
+            ],
+            [
+              0.0052762854293469785,
+              0.13801058234427233,
+              -8.009556609481845e-05,
+              -0.00011822686133514828,
+              0.006238228494336808
+            ]
+          ],
+          [
+            [
+              0.3042704519509743,
+              -0.35448409344414045,
+              -0.0038854356119738262,
+              -0.5340885835215153,
+              -0.00019620522609852914
+            ],
+            [
+              -0.35448409344414045,
+              23.69377148759872,
+              -0.12939071921407264,
+              0.5521239159163394,
+              -0.09128441381620914
+            ],
+            [
+              -0.0038854356119738262,
+              -0.12939071921407264,
+              1.0503285214170153,
+              -2.358874262109364,
+              0.002090695932744971
+            ],
+            [
+              -0.5340885835215153,
+              0.5521239159163394,
+              -2.358874262109364,
+              8.13977895141438,
+              -0.01382293811654254
+            ],
+            [
+              -0.00019620522609852914,
+              -0.09128441381620914,
+              0.002090695932744971,
+              -0.01382293811654254,
+              0.006273651657710703
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "da02f5ed22b65949507e4ac9e3787fd394198d7c312c0c9a416fd153db6c0523",
+        "trainable": true,
+        "vector_update_count": 171,
+        "scalar_update_count": 342,
+        "output_update_counts": [
+          171,
+          171
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      },
+      "coupled": {
+        "structure": "coupled_hinge9",
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "dt_seconds": 0.02,
+        "features_per_output": [
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ],
+          [
+            "v0",
+            "v1",
+            "q0-qref0",
+            "q1-qref1",
+            "u0",
+            "u1",
+            "h(u0)",
+            "h(u1)",
+            "1"
+          ]
+        ],
+        "coefficients": [
+          [
+            0.5194641172826114,
+            -0.1042484776777754,
+            -0.6995385701556784,
+            1.4403718942380777,
+            0.018849134475837904,
+            0.04178432144795895,
+            0.03176854000001613,
+            -0.7152581025988412,
+            -0.002690972637498192
+          ],
+          [
+            0.528249745943935,
+            1.0122117426105068,
+            1.5013312700548271,
+            -3.12280711240292,
+            -0.012827325395782536,
+            -0.09389126357463262,
+            -0.04834360181703956,
+            1.460822496285346,
+            0.005322533028884826
+          ]
+        ],
+        "covariance": [
+          [
+            [
+              56.14261495179431,
+              26.733666371362734,
+              -2.2405899026547766,
+              2.5508911853853427,
+              -1.420436058973681,
+              0.14057176076073666,
+              -0.5986781401767034,
+              -0.3944877064486391,
+              0.03554090381691048
+            ],
+            [
+              26.733666371362734,
+              13.034520516041752,
+              -0.934371832572075,
+              0.9088624959538487,
+              -0.6752777101810526,
+              0.06313334947797714,
+              -0.27300581019903736,
+              -0.7225777387587619,
+              0.016861591264938698
+            ],
+            [
+              -2.2405899026547766,
+              -0.934371832572075,
+              84.9972853084473,
+              30.807390020320273,
+              0.10784094028949942,
+              0.050588428617295185,
+              0.10002505173810088,
+              -0.2156532034209956,
+              0.08612848857296765
+            ],
+            [
+              2.5508911853853427,
+              0.9088624959538487,
+              30.807390020320273,
+              35.062805994161465,
+              -0.038106359806866386,
+              -0.1025608723417305,
+              0.020763426211791277,
+              0.44920537196381083,
+              -0.057806628089852735
+            ],
+            [
+              -1.420436058973681,
+              -0.6752777101810526,
+              0.10784094028949942,
+              -0.038106359806866386,
+              0.6652868789805144,
+              -0.0035874220994465294,
+              -1.3517418890492023,
+              0.008028236268820953,
+              -0.0008824798566877773
+            ],
+            [
+              0.14057176076073666,
+              0.06313334947797714,
+              0.050588428617295185,
+              -0.1025608723417305,
+              -0.0035874220994465294,
+              1.0507178825155947,
+              -0.0017977751437854178,
+              -2.3600052732865593,
+              0.002237718657881236
+            ],
+            [
+              -0.5986781401767034,
+              -0.27300581019903736,
+              0.10002505173810088,
+              0.020763426211791277,
+              -1.3517418890492023,
+              -0.0017977751437854178,
+              4.240159709115346,
+              -0.01708048637788663,
+              -0.00044252670743580877
+            ],
+            [
+              -0.3944877064486391,
+              -0.7225777387587619,
+              -0.2156532034209956,
+              0.44920537196381083,
+              0.008028236268820953,
+              -2.3600052732865593,
+              -0.01708048637788663,
+              8.143681603286863,
+              -0.014306794658871157
+            ],
+            [
+              0.03554090381691048,
+              0.016861591264938698,
+              0.08612848857296765,
+              -0.057806628089852735,
+              -0.0008824798566877773,
+              0.002237718657881236,
+              -0.00044252670743580877,
+              -0.014306794658871157,
+              0.006386459074682828
+            ]
+          ],
+          [
+            [
+              56.14261495179431,
+              26.733666371362734,
+              -2.2405899026547766,
+              2.5508911853853427,
+              -1.420436058973681,
+              0.14057176076073666,
+              -0.5986781401767034,
+              -0.3944877064486391,
+              0.03554090381691048
+            ],
+            [
+              26.733666371362734,
+              13.034520516041752,
+              -0.934371832572075,
+              0.9088624959538487,
+              -0.6752777101810526,
+              0.06313334947797714,
+              -0.27300581019903736,
+              -0.7225777387587619,
+              0.016861591264938698
+            ],
+            [
+              -2.2405899026547766,
+              -0.934371832572075,
+              84.9972853084473,
+              30.807390020320273,
+              0.10784094028949942,
+              0.050588428617295185,
+              0.10002505173810088,
+              -0.2156532034209956,
+              0.08612848857296765
+            ],
+            [
+              2.5508911853853427,
+              0.9088624959538487,
+              30.807390020320273,
+              35.062805994161465,
+              -0.038106359806866386,
+              -0.1025608723417305,
+              0.020763426211791277,
+              0.44920537196381083,
+              -0.057806628089852735
+            ],
+            [
+              -1.420436058973681,
+              -0.6752777101810526,
+              0.10784094028949942,
+              -0.038106359806866386,
+              0.6652868789805144,
+              -0.0035874220994465294,
+              -1.3517418890492023,
+              0.008028236268820953,
+              -0.0008824798566877773
+            ],
+            [
+              0.14057176076073666,
+              0.06313334947797714,
+              0.050588428617295185,
+              -0.1025608723417305,
+              -0.0035874220994465294,
+              1.0507178825155947,
+              -0.0017977751437854178,
+              -2.3600052732865593,
+              0.002237718657881236
+            ],
+            [
+              -0.5986781401767034,
+              -0.27300581019903736,
+              0.10002505173810088,
+              0.020763426211791277,
+              -1.3517418890492023,
+              -0.0017977751437854178,
+              4.240159709115346,
+              -0.01708048637788663,
+              -0.00044252670743580877
+            ],
+            [
+              -0.3944877064486391,
+              -0.7225777387587619,
+              -0.2156532034209956,
+              0.44920537196381083,
+              0.008028236268820953,
+              -2.3600052732865593,
+              -0.01708048637788663,
+              8.143681603286863,
+              -0.014306794658871157
+            ],
+            [
+              0.03554090381691048,
+              0.016861591264938698,
+              0.08612848857296765,
+              -0.057806628089852735,
+              -0.0008824798566877773,
+              0.002237718657881236,
+              -0.00044252670743580877,
+              -0.014306794658871157,
+              0.006386459074682828
+            ]
+          ]
+        ],
+        "initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "initial_covariance_scale": 100.0,
+        "forgetting_factor": 1.0,
+        "hinge_threshold_nm": 0.25,
+        "hinge_threshold_updates": 0,
+        "integration": "endpoint_euler",
+        "dtype": "float64",
+        "parameter_fingerprint": "36c719c2c3901fdad4a7887787ff2d130536853efe80ecd7d07e66d659f1f81d",
+        "trainable": true,
+        "vector_update_count": 171,
+        "scalar_update_count": 342,
+        "output_update_counts": [
+          171,
+          171
+        ],
+        "update_commit": "single immutable state reference for both outputs, covariance and counts",
+        "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+        "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+      }
+    },
+    "calibration_completed": false,
+    "calibration_scalar_updates": 684,
+    "calibration_vector_updates": 342,
+    "reference_q": [
+      0.10085905132196148,
+      -0.000576154793236481
+    ],
+    "direction": [
+      -1,
+      1
+    ],
+    "selection_records": [
+      {
+        "joint_index": 0,
+        "joint_position_rad": 0.10085905132196148,
+        "lower_limit_rad": -1.7453292519943295,
+        "upper_limit_rad": 1.7453292519943295,
+        "positive_room_rad": 1.6444702006723682,
+        "negative_room_rad": 1.846188303316291,
+        "direction": -1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      },
+      {
+        "joint_index": 1,
+        "joint_position_rad": -0.000576154793236481,
+        "lower_limit_rad": 0.0,
+        "upper_limit_rad": 2.356194490192345,
+        "positive_room_rad": 2.3567706449855814,
+        "negative_room_rad": -0.000576154793236481,
+        "direction": 1,
+        "rule": "larger distance to the public joint limit; ties choose positive"
+      }
+    ],
+    "nominal_model": {
+      "structure": "diagonal_hinge5",
+      "qref_rad": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "dt_seconds": 0.02,
+      "features_per_output": [
+        [
+          "v0",
+          "q0-qref0",
+          "u0",
+          "h(u0)",
+          "1"
+        ],
+        [
+          "v1",
+          "q1-qref1",
+          "u1",
+          "h(u1)",
+          "1"
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ]
+      ],
+      "covariance": [
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ]
+      ],
+      "initial_coefficients": [
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "integration": "endpoint_euler",
+      "dtype": "float64",
+      "parameter_fingerprint": "69bef55161410dd8f869a591af3df24021624ba449fd50ea93862489d7540e96",
+      "trainable": false,
+      "vector_update_count": 0,
+      "scalar_update_count": 0,
+      "output_update_counts": [
+        0,
+        0
+      ],
+      "update_commit": "single immutable state reference for both outputs, covariance and counts",
+      "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+      "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+    },
+    "invalid_numeric_fields": []
+  }
+]

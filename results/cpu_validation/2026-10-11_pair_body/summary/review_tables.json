@@ -1,0 +1,7141 @@
+{
+  "budget": {
+    "control_calls_attempted": 2919,
+    "control_steps": 2919,
+    "physics_steps": 29190,
+    "model_updates": 2052,
+    "vector_model_updates": 1026
+  },
+  "cumulative": {
+    "control_calls": 224582,
+    "physics_substeps": 2245820,
+    "scalar_updates": 12852
+  },
+  "statuses": {
+    "terminated": 6,
+    "blocked": 12,
+    "completed": 6
+  },
+  "committed_by_model": {
+    "diagonal": 1026,
+    "coupled": 1026
+  },
+  "gates": {
+    "claim_boundary": "Development recipe transfer and specified local two-joint model contribution only; combined single-axis PD is not a tuned pair strong baseline; no holdout, unknown dynamics, safety, locomotion or real-robot claim.",
+    "combined_pd_comparison": {
+      "coupled": {
+        "effort_gates": {
+          "actual_absolute_nm_s": {
+            "passed": false
+          },
+          "actual_squared_nm2_s": {
+            "passed": false
+          }
+        },
+        "evaluated": false,
+        "model_contribution_passed": false,
+        "passed": false,
+        "per_seed": [
+          {
+            "axis_tracking_non_worse": false,
+            "baseline_tracking": 0.029259131487041685,
+            "candidate_tracking": null,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            },
+            "eligible": false,
+            "predictions_non_worse": true,
+            "seed": 0,
+            "tracking_non_worse": false
+          },
+          {
+            "axis_tracking_non_worse": false,
+            "baseline_tracking": 0.029263591888368884,
+            "candidate_tracking": null,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            },
+            "eligible": false,
+            "predictions_non_worse": true,
+            "seed": 1,
+            "tracking_non_worse": false
+          },
+          {
+            "axis_tracking_non_worse": false,
+            "baseline_tracking": 0.029254975865819762,
+            "candidate_tracking": null,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            },
+            "eligible": false,
+            "predictions_non_worse": true,
+            "seed": 2,
+            "tracking_non_worse": false
+          }
+        ],
+        "required_trials_complete": false,
+        "tracking_mean_improvement": null,
+        "validated_pass": false
+      },
+      "diagonal": {
+        "effort_gates": {
+          "actual_absolute_nm_s": {
+            "passed": false
+          },
+          "actual_squared_nm2_s": {
+            "passed": false
+          }
+        },
+        "evaluated": false,
+        "model_contribution_passed": false,
+        "passed": false,
+        "per_seed": [
+          {
+            "axis_tracking_non_worse": false,
+            "baseline_tracking": 0.029259131487041685,
+            "candidate_tracking": null,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            },
+            "eligible": false,
+            "predictions_non_worse": true,
+            "seed": 0,
+            "tracking_non_worse": false
+          },
+          {
+            "axis_tracking_non_worse": false,
+            "baseline_tracking": 0.029263591888368884,
+            "candidate_tracking": null,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            },
+            "eligible": false,
+            "predictions_non_worse": true,
+            "seed": 1,
+            "tracking_non_worse": false
+          },
+          {
+            "axis_tracking_non_worse": false,
+            "baseline_tracking": 0.029254975865819762,
+            "candidate_tracking": null,
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "baseline": null,
+                "candidate": null
+              },
+              "actual_squared_nm2_s": {
+                "baseline": null,
+                "candidate": null
+              }
+            },
+            "eligible": false,
+            "predictions_non_worse": true,
+            "seed": 2,
+            "tracking_non_worse": false
+          }
+        ],
+        "required_trials_complete": false,
+        "tracking_mean_improvement": null,
+        "validated_pass": false
+      }
+    },
+    "complete_matrix": false,
+    "coupled_contribution": {
+      "all_five_required_trials_complete": false,
+      "axis_tracking_gates": [
+        {
+          "axis": 0,
+          "mean_improvement": null,
+          "passed": false
+        },
+        {
+          "axis": 1,
+          "mean_improvement": null,
+          "passed": false
+        }
+      ],
+      "evaluated": false,
+      "passed": false,
+      "per_seed": [
+        {
+          "candidate_axis_tracking": null,
+          "candidate_tracking": null,
+          "eligible": false,
+          "nominal_axis_tracking": [
+            0.040561588470167415,
+            0.04779310841089112
+          ],
+          "nominal_tracking": 0.044325070055209234,
+          "prediction_gates": {
+            "prediction_full": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            },
+            "prediction_low": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            }
+          },
+          "seed": 0,
+          "strict_axis_tracking": [
+            false,
+            false
+          ],
+          "strict_joint_tracking": false
+        },
+        {
+          "candidate_axis_tracking": null,
+          "candidate_tracking": null,
+          "eligible": false,
+          "nominal_axis_tracking": [
+            0.04091093893889326,
+            0.04886382138958462
+          ],
+          "nominal_tracking": 0.045063166586776185,
+          "prediction_gates": {
+            "prediction_full": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            },
+            "prediction_low": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            }
+          },
+          "seed": 1,
+          "strict_axis_tracking": [
+            false,
+            false
+          ],
+          "strict_joint_tracking": false
+        },
+        {
+          "candidate_axis_tracking": null,
+          "candidate_tracking": null,
+          "eligible": false,
+          "nominal_axis_tracking": [
+            0.04006385039661219,
+            0.04784062957479504
+          ],
+          "nominal_tracking": 0.04412390478365939,
+          "prediction_gates": {
+            "prediction_full": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            },
+            "prediction_low": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            }
+          },
+          "seed": 2,
+          "strict_axis_tracking": [
+            false,
+            false
+          ],
+          "strict_joint_tracking": false
+        }
+      ],
+      "tracking_mean_improvement": null,
+      "tracking_per_axis_required": true,
+      "validated_pass": false
+    },
+    "coupled_increment": {
+      "effort_gates": {
+        "actual_absolute_nm_s": {
+          "passed": false
+        },
+        "actual_squared_nm2_s": {
+          "passed": false
+        }
+      },
+      "evaluated": false,
+      "passed": false,
+      "per_seed": [
+        {
+          "axis_tracking_non_worse": false,
+          "baseline_tracking": null,
+          "candidate_tracking": null,
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline": null,
+              "candidate": null
+            },
+            "actual_squared_nm2_s": {
+              "baseline": null,
+              "candidate": null
+            }
+          },
+          "eligible": false,
+          "predictions_non_worse": false,
+          "seed": 0,
+          "tracking_non_worse": false
+        },
+        {
+          "axis_tracking_non_worse": false,
+          "baseline_tracking": null,
+          "candidate_tracking": null,
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline": null,
+              "candidate": null
+            },
+            "actual_squared_nm2_s": {
+              "baseline": null,
+              "candidate": null
+            }
+          },
+          "eligible": false,
+          "predictions_non_worse": false,
+          "seed": 1,
+          "tracking_non_worse": false
+        },
+        {
+          "axis_tracking_non_worse": false,
+          "baseline_tracking": null,
+          "candidate_tracking": null,
+          "efforts": {
+            "actual_absolute_nm_s": {
+              "baseline": null,
+              "candidate": null
+            },
+            "actual_squared_nm2_s": {
+              "baseline": null,
+              "candidate": null
+            }
+          },
+          "eligible": false,
+          "predictions_non_worse": false,
+          "seed": 2,
+          "tracking_non_worse": false
+        }
+      ],
+      "required_trials_complete": false,
+      "tracking_mean_improvement": null,
+      "validated_pass": false
+    },
+    "data_consistency_verified": true,
+    "diagonal_contribution": {
+      "all_five_required_trials_complete": false,
+      "axis_tracking_gates": [
+        {
+          "axis": 0,
+          "mean_improvement": null,
+          "passed": false
+        },
+        {
+          "axis": 1,
+          "mean_improvement": null,
+          "passed": false
+        }
+      ],
+      "evaluated": false,
+      "passed": false,
+      "per_seed": [
+        {
+          "candidate_axis_tracking": null,
+          "candidate_tracking": null,
+          "eligible": false,
+          "nominal_axis_tracking": [
+            0.040561588470167415,
+            0.04779310841089112
+          ],
+          "nominal_tracking": 0.044325070055209234,
+          "prediction_gates": {
+            "prediction_full": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            },
+            "prediction_low": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            }
+          },
+          "seed": 0,
+          "strict_axis_tracking": [
+            false,
+            false
+          ],
+          "strict_joint_tracking": false
+        },
+        {
+          "candidate_axis_tracking": null,
+          "candidate_tracking": null,
+          "eligible": false,
+          "nominal_axis_tracking": [
+            0.04091093893889326,
+            0.04886382138958462
+          ],
+          "nominal_tracking": 0.045063166586776185,
+          "prediction_gates": {
+            "prediction_full": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            },
+            "prediction_low": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            }
+          },
+          "seed": 1,
+          "strict_axis_tracking": [
+            false,
+            false
+          ],
+          "strict_joint_tracking": false
+        },
+        {
+          "candidate_axis_tracking": null,
+          "candidate_tracking": null,
+          "eligible": false,
+          "nominal_axis_tracking": [
+            0.04006385039661219,
+            0.04784062957479504
+          ],
+          "nominal_tracking": 0.04412390478365939,
+          "prediction_gates": {
+            "prediction_full": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            },
+            "prediction_low": {
+              "available": false,
+              "candidate_rmse": null,
+              "nominal_rmse": null,
+              "passed": false
+            }
+          },
+          "seed": 2,
+          "strict_axis_tracking": [
+            false,
+            false
+          ],
+          "strict_joint_tracking": false
+        }
+      ],
+      "tracking_mean_improvement": null,
+      "tracking_per_axis_required": true,
+      "validated_pass": false
+    },
+    "thresholds_frozen": true
+  },
+  "episodes": [
+    {
+      "trial_id": "seed0_calibration",
+      "seed": 0,
+      "kind": "calibration",
+      "status": "terminated",
+      "completed": false,
+      "budget": {
+        "control_calls_attempted": 271,
+        "control_steps": 271,
+        "physics_steps": 2710
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.30000000000000016,
+              0.2100000000000001
+            ],
+            "requested_squared_nm2_s": [
+              0.10625000000000004,
+              0.07375000000000001
+            ],
+            "actual_absolute_nm_s": [
+              0.30000000000000016,
+              0.13499999999999998
+            ],
+            "actual_squared_nm2_s": [
+              0.10625000000000004,
+              0.051874999999999984
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.5100000000000002,
+            "requested_squared_nm2_s": 0.18000000000000005,
+            "actual_absolute_nm_s": 0.43500000000000016,
+            "actual_squared_nm2_s": 0.15812500000000002
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            150,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1710
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        }
+      },
+      "reference_q": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": null,
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 100,
+            "missing_tail_endpoints": 20
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 100,
+            "missing_tail_endpoints": 20
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {
+        "diagonal": 342,
+        "coupled": 342
+      },
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.0058256532675034795,
+            0.10066587818866618
+          ],
+          [
+            -0.007066467038112164,
+            0.1186444886779301
+          ],
+          [
+            0.005697394739295442,
+            0.09811938862842401
+          ],
+          [
+            -0.007077751885310772,
+            0.12007405226317314
+          ],
+          [
+            -0.029985146517950756,
+            0.05211634693452527
+          ],
+          [
+            0.03922452974048625,
+            0.14331515343702436
+          ],
+          [
+            -0.026203556051929436,
+            0.050774245991783026
+          ],
+          [
+            0.03677478196171112,
+            0.16068148407456817
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.46955937157784383,
+            2.050672218583421
+          ],
+          [
+            -1.3187497823139016,
+            0.946944047067392
+          ],
+          [
+            -0.06144481973562806,
+            2.048158209737252
+          ],
+          [
+            -1.1478221750641826,
+            0.19243279987830514
+          ],
+          [
+            -1.2152024433248698,
+            2.8269430639622883
+          ],
+          [
+            -3.7961853611150893,
+            1.0029472518070222
+          ],
+          [
+            -1.2138291229710576,
+            2.824508559313706
+          ],
+          [
+            -3.7253565655200283,
+            0.9024284426369938
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 270,
+        "active_index_zero_based": 170,
+        "active_call_one_based": 171,
+        "block_zero_based": 8,
+        "slot_zero_based": 10,
+        "pulse_sign": -1,
+        "known_request_native8": [
+          0.0,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.06920703500791152,
+          0.05700649728521597,
+          0.09594620178480089,
+          -0.0005712328940885108,
+          0.042929753832786355,
+          0.0608847448016399,
+          0.042656022818713606,
+          0.060612337751423946
+        ],
+        "before_v_native8": [
+          0.29695755052170597,
+          -0.5387275600394951,
+          -0.004835503213073251,
+          9.299911272353662e-05,
+          0.002863106948572151,
+          0.002981900450038829,
+          -0.0031205840524984735,
+          -0.0030489860118097433
+        ],
+        "after_q_native8": [
+          0.07854740813199719,
+          0.03705126258547997,
+          0.09587730112776957,
+          -0.0005710737487562488,
+          0.04297022885365941,
+          0.06092713720337842,
+          0.04261085466416503,
+          0.06056775415093975
+        ],
+        "after_v_native8": [
+          0.6241620590759409,
+          -1.3187497823139016,
+          -0.0019782709544531505,
+          -6.836797459421447e-05,
+          0.0010853047090050253,
+          0.0012181111980869722,
+          -0.0013856540984459932,
+          -0.00134010895315861
+        ],
+        "q_minus_qref": [
+          -0.018850335781340766,
+          0.03762751060047953
+        ],
+        "before_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          0.0,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.07854740813199719,
+            0.03705126258547997
+          ],
+          "qref_rad": [
+            0.09739774391333796,
+            -0.0005762480149995581
+          ],
+          "velocity_rad_s": [
+            0.6241620590759409,
+            -1.3187497823139016
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 270
+        },
+        "ground_force_peak_n": 71.64025127466117,
+        "kinetic_energy_peak_j": 0.012084506949139111
+      },
+      "full_tracking_evidence": false,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 0,
+        "pair_prediction_successes": 0,
+        "scalar_prediction_attempts": 0,
+        "scalar_prediction_successes": 0,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 0
+    },
+    {
+      "trial_id": "seed0_prediction_low",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed0_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed0_prediction_full",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed0_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed0_nominal_mpc",
+      "seed": 0,
+      "kind": "nominal_mpc",
+      "status": "completed",
+      "completed": true,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.84,
+              0.9675000000000004
+            ],
+            "requested_squared_nm2_s": [
+              0.39,
+              0.46093750000000017
+            ],
+            "actual_absolute_nm_s": [
+              0.84,
+              0.7120000000000003
+            ],
+            "actual_squared_nm2_s": [
+              0.39,
+              0.34581250000000013
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 1.8075000000000003,
+            "requested_squared_nm2_s": 0.8509375000000001,
+            "actual_absolute_nm_s": 1.5520000000000003,
+            "actual_squared_nm2_s": 0.7358125000000002
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            299,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 2000
+        }
+      },
+      "reference_q": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": {
+          "joint": 0.044325070055209206,
+          "per_axis": [
+            0.04056158847016741,
+            0.04779310841089112
+          ],
+          "complete_endpoints": 200
+        },
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.027619786583475237,
+                "per_axis": [
+                  0.027505528920309188,
+                  0.02773357352826124
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.026689768287109627,
+                -0.025312372892046176
+              ]
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.02638935500993643,
+                "per_axis": [
+                  0.023064492746408885,
+                  0.029339824301310432
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.022541617327638867,
+                -0.027654888774089052
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.05627229389212502,
+                "per_axis": [
+                  0.050338164420849436,
+                  0.061637742678515656
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.04958589644730279,
+                -0.059312315331175626
+              ]
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.05245744350745053,
+                "per_axis": [
+                  0.04401970737600523,
+                  0.05971458884732943
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.043314151245171496,
+                -0.057617933288469404
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {},
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.0058256532675034795,
+            0.10066587818866618
+          ],
+          [
+            -0.0070882140609309675,
+            0.1186444886779301
+          ],
+          [
+            0.005697394739295442,
+            0.12290245339294327
+          ],
+          [
+            -0.007077751885310772,
+            0.12007405226317314
+          ],
+          [
+            -0.029985146517950756,
+            0.05211634693452527
+          ],
+          [
+            0.03922452974048625,
+            0.14331515343702436
+          ],
+          [
+            -0.026203556051929436,
+            0.059558151663456134
+          ],
+          [
+            0.03677478196171112,
+            0.16068148407456817
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.38614620619323486,
+            2.050672218583421
+          ],
+          [
+            -1.0973172997093523,
+            0.7573096365152179
+          ],
+          [
+            -0.06144481973562806,
+            2.048158209737252
+          ],
+          [
+            -1.1478221750641826,
+            0.19243279987830514
+          ],
+          [
+            -1.2152024433248698,
+            2.8269430639622883
+          ],
+          [
+            -3.7961853611150893,
+            1.0029472518070222
+          ],
+          [
+            -1.2138291229710576,
+            2.824508559313706
+          ],
+          [
+            -3.7253565655200283,
+            0.9024284426369938
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 299,
+        "active_index_zero_based": 199,
+        "active_call_one_based": 200,
+        "block_zero_based": 9,
+        "slot_zero_based": 19,
+        "pulse_sign": 0,
+        "known_request_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.05871186961800673,
+          0.023433134668079385,
+          0.12283110438084892,
+          -0.0005751617092735757,
+          0.02628057021762509,
+          0.04427539775549007,
+          0.05951691971194833,
+          0.07751173730670508
+        ],
+        "before_v_native8": [
+          0.44215277449863877,
+          -0.9081480862481421,
+          -0.003045764366832979,
+          0.0003737169573598688,
+          0.0018632973418287117,
+          0.0018376110236958897,
+          -0.0017965925682820992,
+          -0.001777083978661828
+        ],
+        "after_q_native8": [
+          0.06761331677107692,
+          0.004657801795599447,
+          0.12277601486791356,
+          -0.0005712973561361527,
+          0.026314236385865216,
+          0.04430874005359491,
+          0.05948358148798325,
+          0.07747852145811562
+        ],
+        "after_v_native8": [
+          0.48310664513528445,
+          -0.9331674983696582,
+          -0.002130832665837977,
+          7.159221877427619e-05,
+          0.0011588391726614397,
+          0.0012696642148734415,
+          -0.0014149041965330162,
+          -0.0013475966665522495
+        ],
+        "q_minus_qref": [
+          -0.02978442714226104,
+          0.005234049810599006
+        ],
+        "before_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": null,
+        "ground_force_peak_n": 72.14354983039387,
+        "kinetic_energy_peak_j": 0.006426535400850795
+      },
+      "full_tracking_evidence": true,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 180189,
+        "pair_prediction_successes": 180189,
+        "scalar_prediction_attempts": 360378,
+        "scalar_prediction_successes": 360378,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 94
+    },
+    {
+      "trial_id": "seed0_diagonal_mpc",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed0_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed0_coupled_mpc",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed0_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed0_combined_pd",
+      "seed": 0,
+      "kind": "combined_pd",
+      "status": "terminated",
+      "completed": false,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "requested_squared_nm2_s": [
+              0.01,
+              0.01
+            ],
+            "actual_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "actual_squared_nm2_s": [
+              0.01,
+              0.01
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.04,
+            "requested_squared_nm2_s": 0.02,
+            "actual_absolute_nm_s": 0.04,
+            "actual_squared_nm2_s": 0.02
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 20
+        }
+      },
+      "reference_q": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": {
+          "joint": 0.029259131487041682,
+          "per_axis": [
+            0.032421468261293745,
+            0.025710736016962065
+          ],
+          "complete_endpoints": 2
+        },
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 2,
+              "rmse": {
+                "joint": 0.029259131487041682,
+                "per_axis": [
+                  0.032421468261293745,
+                  0.025710736016962065
+                ],
+                "complete_endpoints": 2
+              },
+              "signed_mean_error": [
+                0.0321181603717673,
+                -0.024171430573184924
+              ]
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 98,
+            "missing_tail_endpoints": 20
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 100,
+            "missing_tail_endpoints": 20
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {},
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.0058256532675034795,
+            0.10066587818866618
+          ],
+          [
+            -0.007066467038112164,
+            0.1186444886779301
+          ],
+          [
+            0.005697394739295442,
+            0.09811938862842401
+          ],
+          [
+            -0.007077751885310772,
+            0.12007405226317314
+          ],
+          [
+            -0.029985146517950756,
+            0.05211634693452527
+          ],
+          [
+            0.03922452974048625,
+            0.14331515343702436
+          ],
+          [
+            -0.026203556051929436,
+            0.050774245991783026
+          ],
+          [
+            0.03677478196171112,
+            0.16068148407456817
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.5461046232001017,
+            2.050672218583421
+          ],
+          [
+            -1.0973172997093523,
+            1.071841127753781
+          ],
+          [
+            -0.06144481973562806,
+            2.048158209737252
+          ],
+          [
+            -1.1478221750641826,
+            0.19243279987830514
+          ],
+          [
+            -1.2152024433248698,
+            2.8269430639622883
+          ],
+          [
+            -3.7961853611150893,
+            1.0029472518070222
+          ],
+          [
+            -1.2138291229710576,
+            2.824508559313706
+          ],
+          [
+            -3.7253565655200283,
+            0.9024284426369938
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 101,
+        "active_index_zero_based": 1,
+        "active_call_one_based": 2,
+        "block_zero_based": 0,
+        "slot_zero_based": 1,
+        "pulse_sign": 1,
+        "known_request_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.09394031142635191,
+          0.006489679653783216,
+          0.09514286024553135,
+          -0.0005823813705820025,
+          0.04343371633731464,
+          0.06139147380913003,
+          0.04214535942604857,
+          0.06010039573709406
+        ],
+        "before_v_native8": [
+          -0.302165638871606,
+          0.6158106875757896,
+          0.01671733800936135,
+          -0.00045295479286551135,
+          -0.01091142855751752,
+          -0.010951890756275949,
+          0.010358481235036557,
+          0.010253844502164915
+        ],
+        "after_q_native8": [
+          0.0850914971438586,
+          0.024014963169847827,
+          0.09558208503255367,
+          -0.000590598819700794,
+          0.04314687158242554,
+          0.061100895818128984,
+          0.04241875563926082,
+          0.060369580648115644
+        ],
+        "after_v_native8": [
+          -0.5461046232001017,
+          1.071841127753781,
+          0.025494508722990424,
+          -0.0003367866600091671,
+          -0.01656257187371273,
+          -0.016837129180133838,
+          0.01593928316736403,
+          0.015667719471741524
+        ],
+        "q_minus_qref": [
+          -0.012306246769479362,
+          0.024591211184847386
+        ],
+        "before_torque_feedback_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.0850914971438586,
+            0.024014963169847827
+          ],
+          "qref_rad": [
+            0.09739774391333796,
+            -0.0005762480149995581
+          ],
+          "velocity_rad_s": [
+            -0.5461046232001017,
+            1.071841127753781
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 101
+        },
+        "ground_force_peak_n": 72.51499767385614,
+        "kinetic_energy_peak_j": 0.008256863124114265
+      },
+      "full_tracking_evidence": false,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 0,
+        "pair_prediction_successes": 0,
+        "scalar_prediction_attempts": 0,
+        "scalar_prediction_successes": 0,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 0
+    },
+    {
+      "trial_id": "seed0_zero_torque",
+      "seed": 0,
+      "kind": "zero_torque",
+      "status": "completed",
+      "completed": true,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 2000
+        }
+      },
+      "reference_q": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": {
+          "joint": 0.06326975771413691,
+          "per_axis": [
+            0.06329395409515903,
+            0.06324555207610316
+          ],
+          "complete_endpoints": 200
+        },
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.04001085188665732,
+                "per_axis": [
+                  0.04002170133567899,
+                  0.0399999994948721
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.040021699390936936,
+                -0.039999999494872096
+              ]
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.04001952824118284,
+                "per_axis": [
+                  0.04003904786482734,
+                  0.039999999092146576
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.04003904778509329,
+                -0.03999999909214659
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.08003284459342391,
+                "per_axis": [
+                  0.08006567724186131,
+                  0.0799999984702024
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.0800656762003162,
+                -0.07999999847020241
+              ]
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.08004182675544667,
+                "per_axis": [
+                  0.08008363361199002,
+                  0.07999999805124011
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.08008363356927797,
+                -0.07999999805124013
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {},
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.0058256532675034795,
+            0.10066587818866618
+          ],
+          [
+            -0.007066467038112164,
+            0.1186444886779301
+          ],
+          [
+            0.005697394739295442,
+            0.09811938862842401
+          ],
+          [
+            -0.007077751885310772,
+            0.12007405226317314
+          ],
+          [
+            -0.029985146517950756,
+            0.05211634693452527
+          ],
+          [
+            0.03922452974048625,
+            0.14331515343702436
+          ],
+          [
+            -0.026203556051929436,
+            0.050774245991783026
+          ],
+          [
+            0.03677478196171112,
+            0.16068148407456817
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.06256600796960726,
+            2.050672218583421
+          ],
+          [
+            -1.0973172997093523,
+            0.19365472268870917
+          ],
+          [
+            -0.06144481973562806,
+            2.048158209737252
+          ],
+          [
+            -1.1478221750641826,
+            0.19243279987830514
+          ],
+          [
+            -1.2152024433248698,
+            2.8269430639622883
+          ],
+          [
+            -3.7961853611150893,
+            1.0029472518070222
+          ],
+          [
+            -1.2138291229710576,
+            2.824508559313706
+          ],
+          [
+            -3.7253565655200283,
+            0.9024284426369938
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 299,
+        "active_index_zero_based": 199,
+        "active_call_one_based": 200,
+        "block_zero_based": 9,
+        "slot_zero_based": 19,
+        "pulse_sign": 0,
+        "known_request_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.09748523607425501,
+          -0.0005762459785691056,
+          0.09484961245232022,
+          -0.0005763003066791977,
+          0.04362384118431217,
+          0.06157908701886713,
+          0.041964887304957704,
+          0.059920141123052065
+        ],
+        "before_v_native8": [
+          2.274581106665916e-05,
+          7.038428645222128e-10,
+          -2.2700850847521948e-05,
+          -2.3176213838083433e-10,
+          1.4311995770361347e-05,
+          1.4315335909758921e-05,
+          -1.4293711436371595e-05,
+          -1.4290233756953603e-05
+        ],
+        "after_q_native8": [
+          0.09748569107639635,
+          -0.0005762459678116991,
+          0.09484915834889925,
+          -0.0005763003146669488,
+          0.043624127478906316,
+          0.06157937337964422,
+          0.041964601376945396,
+          0.05991985526397582
+        ],
+        "after_v_native8": [
+          2.27534640238268e-05,
+          3.9025038142924563e-10,
+          -2.2708866408979636e-05,
+          -5.486459587187243e-10,
+          1.4317000543275406e-05,
+          1.4320228213490711e-05,
+          -1.4298567453988908e-05,
+          -1.42952020281724e-05
+        ],
+        "q_minus_qref": [
+          8.794716305839112e-05,
+          2.0471878590120132e-09
+        ],
+        "before_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": null,
+        "ground_force_peak_n": 71.22060006454394,
+        "kinetic_energy_peak_j": 9.213963206894858e-11
+      },
+      "full_tracking_evidence": true,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 0,
+        "pair_prediction_successes": 0,
+        "scalar_prediction_attempts": 0,
+        "scalar_prediction_successes": 0,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 0
+    },
+    {
+      "trial_id": "seed1_calibration",
+      "seed": 1,
+      "kind": "calibration",
+      "status": "terminated",
+      "completed": false,
+      "budget": {
+        "control_calls_attempted": 271,
+        "control_steps": 271,
+        "physics_steps": 2710
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.30000000000000016,
+              0.2100000000000001
+            ],
+            "requested_squared_nm2_s": [
+              0.10625000000000004,
+              0.07375000000000001
+            ],
+            "actual_absolute_nm_s": [
+              0.30000000000000016,
+              0.13499999999999998
+            ],
+            "actual_squared_nm2_s": [
+              0.10625000000000004,
+              0.051874999999999984
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.5100000000000002,
+            "requested_squared_nm2_s": 0.18000000000000005,
+            "actual_absolute_nm_s": 0.43500000000000016,
+            "actual_squared_nm2_s": 0.15812500000000002
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            150,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1710
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        }
+      },
+      "reference_q": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": null,
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 100,
+            "missing_tail_endpoints": 20
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 100,
+            "missing_tail_endpoints": 20
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {
+        "diagonal": 342,
+        "coupled": 342
+      },
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.014463161278846066,
+            0.09759635030114809
+          ],
+          [
+            -0.007466417759295823,
+            0.11638106916705793
+          ],
+          [
+            0.011938418342319575,
+            0.10120963190442976
+          ],
+          [
+            -0.006754408365654967,
+            0.12232164324742989
+          ],
+          [
+            -0.02486300656965959,
+            0.05013542829575734
+          ],
+          [
+            0.03595583461405801,
+            0.1589444578652531
+          ],
+          [
+            -0.041952692708889815,
+            0.050953169540074915
+          ],
+          [
+            0.028796175687872648,
+            0.16616503925005718
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.46921671417306343,
+            2.0533435604148935
+          ],
+          [
+            -1.3197447513933613,
+            0.9462057000131334
+          ],
+          [
+            -0.04949907367203672,
+            2.0476379533619764
+          ],
+          [
+            -1.118756609597822,
+            0.1916111358331322
+          ],
+          [
+            -1.21437321300042,
+            2.824426820290367
+          ],
+          [
+            -3.768350299313303,
+            0.9138513712831208
+          ],
+          [
+            -1.2198713751595915,
+            2.840296227470462
+          ],
+          [
+            -4.185614175420957,
+            1.138495143689466
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 270,
+        "active_index_zero_based": 170,
+        "active_call_one_based": 171,
+        "block_zero_based": 8,
+        "slot_zero_based": 10,
+        "pulse_sign": -1,
+        "known_request_native8": [
+          0.0,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.06545227344425723,
+          0.05688583962713631,
+          0.09976495667021362,
+          -0.000571274455510016,
+          0.04053127330994974,
+          0.05848703699763987,
+          0.045058574978218795,
+          0.06301555013615798
+        ],
+        "before_v_native8": [
+          0.2972124451207683,
+          -0.5397677610529886,
+          -0.004555986400554792,
+          8.986904228930124e-05,
+          0.002675307136057611,
+          0.002792196700067101,
+          -0.002942538089826928,
+          -0.0028728394860461325
+        ],
+        "after_q_native8": [
+          0.07479974145968542,
+          0.03691019398275893,
+          0.09970146617012667,
+          -0.0005711683833913397,
+          0.04056814441274178,
+          0.058525798070565745,
+          0.04501683219242382,
+          0.06297437125001029
+        ],
+        "after_v_native8": [
+          0.6245805207069824,
+          -1.3197447513933613,
+          -0.0017262605184151102,
+          -7.053638861306607e-05,
+          0.0009193888699865325,
+          0.001051246786867427,
+          -0.001227025844940238,
+          -0.0011814745240834737
+        ],
+        "q_minus_qref": [
+          -0.019025675780661472,
+          0.03748651153661856
+        ],
+        "before_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          0.0,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.07479974145968542,
+            0.03691019398275893
+          ],
+          "qref_rad": [
+            0.09382541724034689,
+            -0.0005763175538596344
+          ],
+          "velocity_rad_s": [
+            0.6245805207069824,
+            -1.3197447513933613
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 270
+        },
+        "ground_force_peak_n": 71.640834663041,
+        "kinetic_energy_peak_j": 0.012105023883821498
+      },
+      "full_tracking_evidence": false,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 0,
+        "pair_prediction_successes": 0,
+        "scalar_prediction_attempts": 0,
+        "scalar_prediction_successes": 0,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 0
+    },
+    {
+      "trial_id": "seed1_prediction_low",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed1_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed1_prediction_full",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed1_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed1_nominal_mpc",
+      "seed": 1,
+      "kind": "nominal_mpc",
+      "status": "completed",
+      "completed": true,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.7375000000000003,
+              0.8950000000000005
+            ],
+            "requested_squared_nm2_s": [
+              0.3428125000000001,
+              0.4325000000000002
+            ],
+            "actual_absolute_nm_s": [
+              0.7375000000000003,
+              0.6862500000000004
+            ],
+            "actual_squared_nm2_s": [
+              0.3428125000000001,
+              0.3392187500000002
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 1.6325000000000007,
+            "requested_squared_nm2_s": 0.7753125000000003,
+            "actual_absolute_nm_s": 1.4237500000000005,
+            "actual_squared_nm2_s": 0.6820312500000003
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            250,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 2000
+        }
+      },
+      "reference_q": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": {
+          "joint": 0.045063166586776164,
+          "per_axis": [
+            0.040910938938893235,
+            0.04886382138958463
+          ],
+          "complete_endpoints": 200
+        },
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.02734060604774383,
+                "per_axis": [
+                  0.026605523460830453,
+                  0.02805643597271495
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.025749103865216182,
+                -0.025554862901171805
+              ]
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.026111053441895328,
+                "per_axis": [
+                  0.022294182682668473,
+                  0.02943711334697804
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.021766809459171144,
+                -0.027753809008246005
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.057566216017705674,
+                "per_axis": [
+                  0.05137660918257357,
+                  0.06315205841534702
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.05046662635205558,
+                -0.06100401635790912
+              ]
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.045982621094765405,
+                "per_axis": [
+                  0.039797181377300095,
+                  0.05142943942832555
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.03861616353039996,
+                -0.047633881559717164
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {},
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.014463161278846066,
+            0.09759635030114809
+          ],
+          [
+            -0.007466417759295823,
+            0.11638106916705793
+          ],
+          [
+            0.011938418342319575,
+            0.12744340268140372
+          ],
+          [
+            -0.006754408365654967,
+            0.12232164324742989
+          ],
+          [
+            -0.02486300656965959,
+            0.05013542829575734
+          ],
+          [
+            0.03595583461405801,
+            0.1589444578652531
+          ],
+          [
+            -0.041952692708889815,
+            0.062392482620359374
+          ],
+          [
+            0.028796175687872648,
+            0.16616503925005718
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.3926403384776749,
+            2.0533435604148935
+          ],
+          [
+            -1.1353219571439865,
+            0.7554245216818393
+          ],
+          [
+            -0.04949907367203672,
+            2.0476379533619764
+          ],
+          [
+            -1.118756609597822,
+            0.1916111358331322
+          ],
+          [
+            -1.21437321300042,
+            2.824426820290367
+          ],
+          [
+            -3.768350299313303,
+            0.9138513712831208
+          ],
+          [
+            -1.2198713751595915,
+            2.840296227470462
+          ],
+          [
+            -4.185614175420957,
+            1.138495143689466
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 299,
+        "active_index_zero_based": 199,
+        "active_call_one_based": 200,
+        "block_zero_based": 9,
+        "slot_zero_based": 19,
+        "pulse_sign": 0,
+        "known_request_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.04023934374573431,
+          0.053708270211797984,
+          0.12715559148728506,
+          -0.0005903996291789628,
+          0.023638521280678355,
+          0.041649458631363705,
+          0.0622122551871203,
+          0.08021784081329235
+        ],
+        "before_v_native8": [
+          -0.3324731690980075,
+          0.6265957249866076,
+          0.021608763900536385,
+          -4.8995365699188984e-05,
+          -0.013580646450695745,
+          -0.013725708009377943,
+          0.013633250865974184,
+          0.013488743647052149
+        ],
+        "after_q_native8": [
+          0.036484997184444284,
+          0.06121258711491239,
+          0.12744340268140372,
+          -0.0005899752976617313,
+          0.023471648171143385,
+          0.041483508886191775,
+          0.062392482620359374,
+          0.08040015648822917
+        ],
+        "after_v_native8": [
+          -0.09354445198731245,
+          0.17404574026745456,
+          0.009806865082700744,
+          7.990906901214094e-05,
+          -0.005391431367663257,
+          -0.005355718811397401,
+          0.006105238177010065,
+          0.006229384646004813
+        ],
+        "q_minus_qref": [
+          -0.057340420055902605,
+          0.06178890466877202
+        ],
+        "before_torque_feedback_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": null,
+        "ground_force_peak_n": 71.3852732396575,
+        "kinetic_energy_peak_j": 0.002458228845286634
+      },
+      "full_tracking_evidence": true,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 178281,
+        "pair_prediction_successes": 178281,
+        "scalar_prediction_attempts": 356562,
+        "scalar_prediction_successes": 356562,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 103
+    },
+    {
+      "trial_id": "seed1_diagonal_mpc",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed1_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed1_coupled_mpc",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed1_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed1_combined_pd",
+      "seed": 1,
+      "kind": "combined_pd",
+      "status": "terminated",
+      "completed": false,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "requested_squared_nm2_s": [
+              0.01,
+              0.01
+            ],
+            "actual_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "actual_squared_nm2_s": [
+              0.01,
+              0.01
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.04,
+            "requested_squared_nm2_s": 0.02,
+            "actual_absolute_nm_s": 0.04,
+            "actual_squared_nm2_s": 0.02
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 20
+        }
+      },
+      "reference_q": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": {
+          "joint": 0.029263591888368887,
+          "per_axis": [
+            0.032425921777680326,
+            0.025715272063226848
+          ],
+          "complete_endpoints": 2
+        },
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 2,
+              "rmse": {
+                "joint": 0.029263591888368887,
+                "per_axis": [
+                  0.032425921777680326,
+                  0.025715272063226848
+                ],
+                "complete_endpoints": 2
+              },
+              "signed_mean_error": [
+                0.03212306693654811,
+                -0.024177435620117076
+              ]
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 98,
+            "missing_tail_endpoints": 20
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 100,
+            "missing_tail_endpoints": 20
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {},
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.014463161278846066,
+            0.09759635030114809
+          ],
+          [
+            -0.007466417759295823,
+            0.11638106916705793
+          ],
+          [
+            0.011938418342319575,
+            0.10120963190442976
+          ],
+          [
+            -0.006754408365654967,
+            0.12232164324742989
+          ],
+          [
+            -0.02486300656965959,
+            0.05013542829575734
+          ],
+          [
+            0.03595583461405801,
+            0.1589444578652531
+          ],
+          [
+            -0.041952692708889815,
+            0.050953169540074915
+          ],
+          [
+            0.028796175687872648,
+            0.16616503925005718
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.5457262574406907,
+            2.0533435604148935
+          ],
+          [
+            -1.1353219571439865,
+            1.0714563918108526
+          ],
+          [
+            -0.04949907367203672,
+            2.0476379533619764
+          ],
+          [
+            -1.118756609597822,
+            0.1916111358331322
+          ],
+          [
+            -1.21437321300042,
+            2.824426820290367
+          ],
+          [
+            -3.768350299313303,
+            0.9138513712831208
+          ],
+          [
+            -1.2198713751595915,
+            2.840296227470462
+          ],
+          [
+            -4.185614175420957,
+            1.138495143689466
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 101,
+        "active_index_zero_based": 1,
+        "active_call_one_based": 2,
+        "block_zero_based": 0,
+        "slot_zero_based": 1,
+        "pulse_sign": 1,
+        "known_request_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.0903699063148833,
+          0.006486861909211545,
+          0.09871814999505814,
+          -0.0005823310278782753,
+          0.04118523196963422,
+          0.059143353000433545,
+          0.044395310750876334,
+          0.0623506766758128
+        ],
+        "before_v_native8": [
+          -0.30196895793114803,
+          0.6155745415786968,
+          0.01666557212104254,
+          -0.0004532265969635251,
+          -0.010841270608613271,
+          -0.010868616260593178,
+          0.01031717188023174,
+          0.010220641694431733
+        ],
+        "after_q_native8": [
+          0.0815270620389067,
+          0.024005631742835043,
+          0.09915524178229591,
+          -0.0005905459234157606,
+          0.040900865566706454,
+          0.05885559128216637,
+          0.04466713445613773,
+          0.06261850662567416
+        ],
+        "after_v_native8": [
+          -0.5457262574406907,
+          1.0714563918108526,
+          0.025344631390287656,
+          -0.0003366025379512116,
+          -0.0163988416055135,
+          -0.016654943762318717,
+          0.015831416443648674,
+          0.015572808744796107
+        ],
+        "q_minus_qref": [
+          -0.012298355201440195,
+          0.024581949296694678
+        ],
+        "before_torque_feedback_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.0815270620389067,
+            0.024005631742835043
+          ],
+          "qref_rad": [
+            0.09382541724034689,
+            -0.0005763175538596344
+          ],
+          "velocity_rad_s": [
+            -0.5457262574406907,
+            1.0714563918108526
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 101
+        },
+        "ground_force_peak_n": 72.51563884177109,
+        "kinetic_energy_peak_j": 0.008250236054719784
+      },
+      "full_tracking_evidence": false,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 0,
+        "pair_prediction_successes": 0,
+        "scalar_prediction_attempts": 0,
+        "scalar_prediction_successes": 0,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 0
+    },
+    {
+      "trial_id": "seed1_zero_torque",
+      "seed": 1,
+      "kind": "zero_torque",
+      "status": "completed",
+      "completed": true,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 2000
+        }
+      },
+      "reference_q": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": {
+          "joint": 0.06319964519388212,
+          "per_axis": [
+            0.06315370237777554,
+            0.06324555463623135
+          ],
+          "complete_endpoints": 200
+        },
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.039979416131230475,
+                "per_axis": [
+                  0.03995882101491778,
+                  0.04000000064357435
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.039958813998361514,
+                -0.04000000064357436
+              ]
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.03996296180817227,
+                "per_axis": [
+                  0.0399258880971426,
+                  0.040000001157716465
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.03992588780914237,
+                -0.040000001157716465
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.07993770443958899,
+                "per_axis": [
+                  0.07987535834748455,
+                  0.08000000194376937
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.07987535458790757,
+                -0.0800000019437693
+              ]
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.07992068000888429,
+                "per_axis": [
+                  0.07984127874079741,
+                  0.08000000246999525
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.07984127858654504,
+                -0.08000000246999527
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {},
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.014463161278846066,
+            0.09759635030114809
+          ],
+          [
+            -0.007466417759295823,
+            0.11638106916705793
+          ],
+          [
+            0.011938418342319575,
+            0.10120963190442976
+          ],
+          [
+            -0.006754408365654967,
+            0.12232164324742989
+          ],
+          [
+            -0.02486300656965959,
+            0.05013542829575734
+          ],
+          [
+            0.03595583461405801,
+            0.1589444578652531
+          ],
+          [
+            -0.041952692708889815,
+            0.050953169540074915
+          ],
+          [
+            0.028796175687872648,
+            0.16616503925005718
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.07366369668359887,
+            2.0533435604148935
+          ],
+          [
+            -1.1353219571439865,
+            0.19493109923432184
+          ],
+          [
+            -0.04949907367203672,
+            2.0476379533619764
+          ],
+          [
+            -1.118756609597822,
+            0.1916111358331322
+          ],
+          [
+            -1.21437321300042,
+            2.824426820290367
+          ],
+          [
+            -3.768350299313303,
+            0.9138513712831208
+          ],
+          [
+            -1.2198713751595915,
+            2.840296227470462
+          ],
+          [
+            -4.185614175420957,
+            1.138495143689466
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 299,
+        "active_index_zero_based": 199,
+        "active_call_one_based": 200,
+        "block_zero_based": 9,
+        "slot_zero_based": 19,
+        "pulse_sign": 0,
+        "known_request_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.09365937416793373,
+          -0.0005763201363129688,
+          0.09867890142087585,
+          -0.0005762165666693472,
+          0.041215329517320654,
+          0.05917084492007181,
+          0.04437479378178339,
+          0.0623302939917088
+        ],
+        "before_v_native8": [
+          -4.315959307672071e-05,
+          -8.673615162086741e-10,
+          4.332266141237286e-05,
+          9.257600430052416e-10,
+          -2.7184220085688947e-05,
+          -2.7171841736469308e-05,
+          2.7250605402782645e-05,
+          2.7262722383546564e-05
+        ],
+        "after_q_native8": [
+          0.09365851081358145,
+          -0.0005763201498679833,
+          0.09867976803870852,
+          -0.000576216544425007,
+          0.04121478572980899,
+          0.059170301380936735,
+          0.04437533889666906,
+          0.062330839349746744
+        ],
+        "after_v_native8": [
+          -4.317418773412031e-05,
+          -5.09823748540821e-10,
+          4.3337800347608935e-05,
+          1.277195866497605e-09,
+          -2.7193631380945497e-05,
+          -2.7181117468752115e-05,
+          2.7259911966250104e-05,
+          2.727216494160628e-05
+        ],
+        "q_minus_qref": [
+          -0.00016690642676543688,
+          -2.596008348934066e-09
+        ],
+        "before_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": null,
+        "ground_force_peak_n": 71.22060015314193,
+        "kinetic_energy_peak_j": 3.336359264235761e-10
+      },
+      "full_tracking_evidence": true,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 0,
+        "pair_prediction_successes": 0,
+        "scalar_prediction_attempts": 0,
+        "scalar_prediction_successes": 0,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 0
+    },
+    {
+      "trial_id": "seed2_calibration",
+      "seed": 2,
+      "kind": "calibration",
+      "status": "terminated",
+      "completed": false,
+      "budget": {
+        "control_calls_attempted": 271,
+        "control_steps": 271,
+        "physics_steps": 2710
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.30000000000000016,
+              0.2100000000000001
+            ],
+            "requested_squared_nm2_s": [
+              0.10625000000000004,
+              0.07375000000000001
+            ],
+            "actual_absolute_nm_s": [
+              0.30000000000000016,
+              0.13499999999999998
+            ],
+            "actual_squared_nm2_s": [
+              0.10625000000000004,
+              0.051874999999999984
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.5100000000000002,
+            "requested_squared_nm2_s": 0.18000000000000005,
+            "actual_absolute_nm_s": 0.43500000000000016,
+            "actual_squared_nm2_s": 0.15812500000000002
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            150,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1710
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        }
+      },
+      "reference_q": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": null,
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 100,
+            "missing_tail_endpoints": 20
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 100,
+            "missing_tail_endpoints": 20
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {
+        "diagonal": 342,
+        "coupled": 342
+      },
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.0060816544562302816,
+            0.10352433562307707
+          ],
+          [
+            -0.007221938208905255,
+            0.1290131451951167
+          ],
+          [
+            0.0003314795456563005,
+            0.09566247498218622
+          ],
+          [
+            -0.007437236208489489,
+            0.11993250769933896
+          ],
+          [
+            -0.017948359152288894,
+            0.053106444332925835
+          ],
+          [
+            0.037989973631813306,
+            0.1554125092562289
+          ],
+          [
+            -0.02052834416197335,
+            0.05163991450264107
+          ],
+          [
+            0.039602863997104096,
+            0.15489601171167025
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.4699209427680304,
+            2.049292862274753
+          ],
+          [
+            -1.331241111198578,
+            0.9477603346615734
+          ],
+          [
+            -0.07813262755824325,
+            2.0480770395205505
+          ],
+          [
+            -1.1531945239759254,
+            0.1927191424056035
+          ],
+          [
+            -1.257569887299918,
+            2.8198606929563206
+          ],
+          [
+            -3.7917521525966507,
+            1.017807793008977
+          ],
+          [
+            -1.2164743089607069,
+            2.826955940818723
+          ],
+          [
+            -3.7231879871116385,
+            1.0627163793488092
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 270,
+        "active_index_zero_based": 170,
+        "active_call_one_based": 171,
+        "block_zero_based": 8,
+        "slot_zero_based": 10,
+        "pulse_sign": -1,
+        "known_request_native8": [
+          0.0,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.07277063879295562,
+          0.05707596024132613,
+          0.09225253753119704,
+          -0.0005711744211565224,
+          0.04526079688251259,
+          0.06321633369262938,
+          0.040330080155346386,
+          0.05828718326440916
+        ],
+        "before_v_native8": [
+          0.2562392079452498,
+          -0.5687638825881145,
+          -0.005674308123878316,
+          9.99885314144577e-05,
+          0.003570720988672602,
+          0.003552397571890547,
+          -0.0035332899036295473,
+          -0.003530696714435646
+        ],
+        "after_q_native8": [
+          0.08220309596455035,
+          0.03722026976294272,
+          0.09218016081861612,
+          -0.0005709872244379438,
+          0.04530332332436285,
+          0.06326110978724103,
+          0.040282438739026066,
+          0.05824030235588326
+        ],
+        "after_v_native8": [
+          0.6070512270714896,
+          -1.331241111198578,
+          -0.0024573267323045626,
+          -6.775427555170297e-05,
+          0.0015230065813530286,
+          0.0015494956939522562,
+          -0.0015987859552096433,
+          -0.0016095866931996475
+        ],
+        "q_minus_qref": [
+          -0.01865595535741113,
+          0.0377964245561792
+        ],
+        "before_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          0.0,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.08220309596455035,
+            0.03722026976294272
+          ],
+          "qref_rad": [
+            0.10085905132196148,
+            -0.000576154793236481
+          ],
+          "velocity_rad_s": [
+            0.6070512270714896,
+            -1.331241111198578
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "calibration",
+          "step_index": 270
+        },
+        "ground_force_peak_n": 71.67496393886735,
+        "kinetic_energy_peak_j": 0.012036986307891576
+      },
+      "full_tracking_evidence": false,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 0,
+        "pair_prediction_successes": 0,
+        "scalar_prediction_attempts": 0,
+        "scalar_prediction_successes": 0,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 0
+    },
+    {
+      "trial_id": "seed2_prediction_low",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed2_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed2_prediction_full",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed2_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed2_nominal_mpc",
+      "seed": 2,
+      "kind": "nominal_mpc",
+      "status": "completed",
+      "completed": true,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.8425000000000002,
+              0.9750000000000002
+            ],
+            "requested_squared_nm2_s": [
+              0.40156250000000016,
+              0.4675000000000002
+            ],
+            "actual_absolute_nm_s": [
+              0.8425000000000002,
+              0.6980000000000003
+            ],
+            "actual_squared_nm2_s": [
+              0.40156250000000016,
+              0.33900000000000013
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 1.8175000000000003,
+            "requested_squared_nm2_s": 0.8690625000000003,
+            "actual_absolute_nm_s": 1.5405000000000006,
+            "actual_squared_nm2_s": 0.7405625000000002
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            312,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 2000
+        }
+      },
+      "reference_q": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": {
+          "joint": 0.04412390478365937,
+          "per_axis": [
+            0.04006385039661219,
+            0.04784062957479504
+          ],
+          "complete_endpoints": 200
+        },
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.027600511574053275,
+                "per_axis": [
+                  0.027674744688309653,
+                  0.027526078266541604
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.026879757779475183,
+                -0.025030699110891664
+              ]
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.02728010939249139,
+                "per_axis": [
+                  0.02451140171672736,
+                  0.029792615239582595
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.023927552743664433,
+                -0.02787513950196646
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.05596471841763727,
+                "per_axis": [
+                  0.04944019340214117,
+                  0.061804261111105714
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.04855058330526452,
+                -0.059397189015198595
+              ]
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.05583855158306941,
+                "per_axis": [
+                  0.04506054149822235,
+                  0.06484932756534327
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.04452295898886835,
+                -0.06335330976870321
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {},
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.0060816544562302816,
+            0.10352433562307707
+          ],
+          [
+            -0.007221938208905255,
+            0.1290131451951167
+          ],
+          [
+            0.0003314795456563005,
+            0.1206440857887981
+          ],
+          [
+            -0.007437236208489489,
+            0.11993250769933896
+          ],
+          [
+            -0.017948359152288894,
+            0.053106444332925835
+          ],
+          [
+            0.037989973631813306,
+            0.1554125092562289
+          ],
+          [
+            -0.02052834416197335,
+            0.058141048409689054
+          ],
+          [
+            0.039602863997104096,
+            0.15489601171167025
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.39157365664229415,
+            2.049292862274753
+          ],
+          [
+            -1.134346328832346,
+            0.7633584187482827
+          ],
+          [
+            -0.07813262755824325,
+            2.0480770395205505
+          ],
+          [
+            -1.1531945239759254,
+            0.1927191424056035
+          ],
+          [
+            -1.257569887299918,
+            2.8198606929563206
+          ],
+          [
+            -3.7917521525966507,
+            1.017807793008977
+          ],
+          [
+            -1.2164743089607069,
+            2.826955940818723
+          ],
+          [
+            -3.7231879871116385,
+            1.0627163793488092
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 299,
+        "active_index_zero_based": 199,
+        "active_call_one_based": 200,
+        "block_zero_based": 9,
+        "slot_zero_based": 19,
+        "pulse_sign": 0,
+        "known_request_native8": [
+          -0.25,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.05180417182010037,
+          0.042982599586167035,
+          0.12046641323547741,
+          -0.000589267924858761,
+          0.027720748876015822,
+          0.045712120241875195,
+          0.05803289246784844,
+          0.07602065787191757
+        ],
+        "before_v_native8": [
+          -0.08474479688715203,
+          0.2209120803377455,
+          0.008392141744494168,
+          4.585904148761098e-05,
+          -0.00489299606346849,
+          -0.004867942706293561,
+          0.005235863160078988,
+          0.00530333734490224
+        ],
+        "after_q_native8": [
+          0.05392528228141783,
+          0.03784564617183788,
+          0.1206440857887981,
+          -0.0005883679389749639,
+          0.027609670060554974,
+          0.045603861910007135,
+          0.058141048409689054,
+          0.07613086473767869
+        ],
+        "after_v_native8": [
+          0.281298911666538,
+          -0.5882325894663278,
+          0.009801654035184269,
+          2.3539560334477923e-05,
+          -0.006250091008742956,
+          -0.006046952873046817,
+          0.005951062376955245,
+          0.006076486308329965
+        ],
+        "q_minus_qref": [
+          -0.046933769040543645,
+          0.03842180096507436
+        ],
+        "before_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          -0.25,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.25,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": null,
+        "ground_force_peak_n": 71.07495809926836,
+        "kinetic_energy_peak_j": 0.0024927622566140537
+      },
+      "full_tracking_evidence": true,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 181602,
+        "pair_prediction_successes": 181602,
+        "scalar_prediction_attempts": 363204,
+        "scalar_prediction_successes": 363204,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 93
+    },
+    {
+      "trial_id": "seed2_diagonal_mpc",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed2_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed2_coupled_mpc",
+      "status": "blocked",
+      "reason": {
+        "type": "DependencyBlocked",
+        "dependencies": [
+          "seed2_calibration"
+        ]
+      },
+      "evaluated": false
+    },
+    {
+      "trial_id": "seed2_combined_pd",
+      "seed": 2,
+      "kind": "combined_pd",
+      "status": "terminated",
+      "completed": false,
+      "budget": {
+        "control_calls_attempted": 102,
+        "control_steps": 102,
+        "physics_steps": 1020
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "requested_squared_nm2_s": [
+              0.01,
+              0.01
+            ],
+            "actual_absolute_nm_s": [
+              0.02,
+              0.02
+            ],
+            "actual_squared_nm2_s": [
+              0.01,
+              0.01
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.04,
+            "requested_squared_nm2_s": 0.02,
+            "actual_absolute_nm_s": 0.04,
+            "actual_squared_nm2_s": 0.02
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 20
+        }
+      },
+      "reference_q": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": {
+          "joint": 0.029254975865819762,
+          "per_axis": [
+            0.03241781541429006,
+            0.025705883948707365
+          ],
+          "complete_endpoints": 2
+        },
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 2,
+              "rmse": {
+                "joint": 0.029254975865819762,
+                "per_axis": [
+                  0.03241781541429006,
+                  0.025705883948707365
+                ],
+                "complete_endpoints": 2
+              },
+              "signed_mean_error": [
+                0.032114147356296384,
+                -0.024164990188051842
+              ]
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 98,
+            "missing_tail_endpoints": 20
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 0,
+              "rmse": null,
+              "signed_mean_error": null
+            },
+            "missing_segment_endpoints": 100,
+            "missing_tail_endpoints": 20
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {},
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.0060816544562302816,
+            0.10352433562307707
+          ],
+          [
+            -0.007221938208905255,
+            0.1290131451951167
+          ],
+          [
+            0.0003314795456563005,
+            0.09566247498218622
+          ],
+          [
+            -0.007437236208489489,
+            0.11993250769933896
+          ],
+          [
+            -0.017948359152288894,
+            0.053106444332925835
+          ],
+          [
+            0.037989973631813306,
+            0.1554125092562289
+          ],
+          [
+            -0.02052834416197335,
+            0.05163991450264107
+          ],
+          [
+            0.039602863997104096,
+            0.15489601171167025
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.546394609908831,
+            2.049292862274753
+          ],
+          [
+            -1.134346328832346,
+            1.072263300286508
+          ],
+          [
+            -0.07813262755824325,
+            2.0480770395205505
+          ],
+          [
+            -1.1531945239759254,
+            0.1927191424056035
+          ],
+          [
+            -1.257569887299918,
+            2.8198606929563206
+          ],
+          [
+            -3.7917521525966507,
+            1.017807793008977
+          ],
+          [
+            -1.2164743089607069,
+            2.826955940818723
+          ],
+          [
+            -3.7231879871116385,
+            1.0627163793488092
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 101,
+        "active_index_zero_based": 1,
+        "active_call_one_based": 2,
+        "block_zero_based": 0,
+        "slot_zero_based": 1,
+        "pulse_sign": 1,
+        "known_request_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.0973999690374548,
+          0.006492686026742086,
+          0.09169653553745062,
+          -0.0005823961063174133,
+          0.04561055648910724,
+          0.06356933948409042,
+          0.03997453747307004,
+          0.05793062322711411
+        ],
+        "before_v_native8": [
+          -0.3023309958354185,
+          0.6160625182569485,
+          0.016725737568953448,
+          -0.00045202678931894567,
+          -0.010950318453390147,
+          -0.0110020546746777,
+          0.010372307854004,
+          0.010260757816992616
+        ],
+        "after_q_native8": [
+          0.08854642831906091,
+          0.024025024010681278,
+          0.09213625819286857,
+          -0.0005905983664145155,
+          0.045322367169337074,
+          0.06327713408469725,
+          0.04024848785522683,
+          0.058200197479077447
+        ],
+        "after_v_native8": [
+          -0.546394609908831,
+          1.072263300286508,
+          0.025530663425550708,
+          -0.0003359105122969621,
+          -0.016648651132960067,
+          -0.016938603080483002,
+          0.015976108475305402,
+          0.015694612137760945
+        ],
+        "q_minus_qref": [
+          -0.012312623002900563,
+          0.02460117880391776
+        ],
+        "before_torque_feedback_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          -0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "joint_index": 1,
+              "signal": "absolute_velocity_rad_s"
+            }
+          ],
+          "q_rad": [
+            0.08854642831906091,
+            0.024025024010681278
+          ],
+          "qref_rad": [
+            0.10085905132196148,
+            -0.000576154793236481
+          ],
+          "velocity_rad_s": [
+            -0.546394609908831,
+            1.072263300286508
+          ],
+          "thresholds": {
+            "absolute_q_minus_qref_rad": 0.12,
+            "absolute_velocity_rad_s": 1.0
+          },
+          "feedback_action": null,
+          "phase": "control",
+          "step_index": 101
+        },
+        "ground_force_peak_n": 72.51422486751154,
+        "kinetic_energy_peak_j": 0.008263081571237386
+      },
+      "full_tracking_evidence": false,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 0,
+        "pair_prediction_successes": 0,
+        "scalar_prediction_attempts": 0,
+        "scalar_prediction_successes": 0,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 0
+    },
+    {
+      "trial_id": "seed2_zero_torque",
+      "seed": 2,
+      "kind": "zero_torque",
+      "status": "completed",
+      "completed": true,
+      "budget": {
+        "control_calls_attempted": 300,
+        "control_steps": 300,
+        "physics_steps": 3000
+      },
+      "phase_effort": {
+        "prefix": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 1000
+        },
+        "calibration": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "prediction": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 0
+        },
+        "control": {
+          "per_axis": {
+            "requested_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "requested_squared_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "actual_absolute_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_nm2_s": [
+              0.0,
+              0.0
+            ]
+          },
+          "combined": {
+            "requested_absolute_nm_s": 0.0,
+            "requested_squared_nm2_s": 0.0,
+            "actual_absolute_nm_s": 0.0,
+            "actual_squared_nm2_s": 0.0
+          },
+          "permission_screened_substeps_native8": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physics_substeps": 2000
+        }
+      },
+      "reference_q": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "directions": [
+        -1,
+        1
+      ],
+      "tracking": {
+        "rmse": {
+          "joint": 0.06333763749375927,
+          "per_axis": [
+            0.06342959378146762,
+            0.06324554750573139
+          ],
+          "complete_endpoints": 200
+        },
+        "target_segments": [
+          {
+            "active_window": [
+              0,
+              99
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.04004129005283801,
+                "per_axis": [
+                  0.040082540109417815,
+                  0.039999997457098944
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.040082512035819404,
+                -0.03999999745709892
+              ]
+            },
+            "planned_tail_window": [
+              80,
+              99
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.040074304094658814,
+                "per_axis": [
+                  0.04014847523926681,
+                  0.03999999541630418
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.04014847408992331,
+                -0.03999999541630418
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          },
+          {
+            "active_window": [
+              100,
+              199
+            ],
+            "segment": {
+              "returned_complete_endpoints": 100,
+              "rmse": {
+                "joint": 0.08012495077993008,
+                "per_axis": [
+                  0.08024971472186618,
+                  0.07999999226269668
+                ],
+                "complete_endpoints": 100
+              },
+              "signed_mean_error": [
+                0.08024969970751536,
+                -0.07999999226269666
+              ]
+            },
+            "planned_tail_window": [
+              180,
+              199
+            ],
+            "tail": {
+              "returned_complete_endpoints": 20,
+              "rmse": {
+                "joint": 0.08015913093608985,
+                "per_axis": [
+                  0.08031795642787429,
+                  0.0799999901256774
+                ],
+                "complete_endpoints": 20
+              },
+              "signed_mean_error": [
+                0.08031795581270555,
+                -0.0799999901256774
+              ]
+            },
+            "missing_segment_endpoints": 0,
+            "missing_tail_endpoints": 0
+          }
+        ]
+      },
+      "row_committed_scalar_updates": {},
+      "native8_state_ranges": {
+        "joint_position": [
+          [
+            -0.0060816544562302816,
+            0.10352433562307707
+          ],
+          [
+            -0.007221938208905255,
+            0.1290131451951167
+          ],
+          [
+            0.0003314795456563005,
+            0.09566247498218622
+          ],
+          [
+            -0.007437236208489489,
+            0.11993250769933896
+          ],
+          [
+            -0.017948359152288894,
+            0.053106444332925835
+          ],
+          [
+            0.037989973631813306,
+            0.1554125092562289
+          ],
+          [
+            -0.02052834416197335,
+            0.05163991450264107
+          ],
+          [
+            0.039602863997104096,
+            0.15489601171167025
+          ]
+        ],
+        "joint_velocity": [
+          [
+            -0.052002187953554574,
+            2.049292862274753
+          ],
+          [
+            -1.134346328832346,
+            0.1918447157310194
+          ],
+          [
+            -0.07813262755824325,
+            2.0480770395205505
+          ],
+          [
+            -1.1531945239759254,
+            0.1927191424056035
+          ],
+          [
+            -1.257569887299918,
+            2.8198606929563206
+          ],
+          [
+            -3.7917521525966507,
+            1.017807793008977
+          ],
+          [
+            -1.2164743089607069,
+            2.826955940818723
+          ],
+          [
+            -3.7231879871116385,
+            1.0627163793488092
+          ]
+        ]
+      },
+      "final_active_endpoint": {
+        "step_index": 299,
+        "active_index_zero_based": 199,
+        "active_call_one_based": 200,
+        "block_zero_based": 9,
+        "slot_zero_based": 19,
+        "pulse_sign": 0,
+        "known_request_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "before_q_native8": [
+          0.10119167212337127,
+          -0.0005761444607752215,
+          0.09116076719278597,
+          -0.0005763522658329337,
+          0.04595483463913449,
+          0.06391139352309384,
+          0.03964105316143392,
+          0.05759764230938385
+        ],
+        "before_v_native8": [
+          8.644597359746489e-05,
+          2.3298813350469525e-09,
+          -8.579749049096026e-05,
+          -1.28854912958314e-09,
+          5.433957025883299e-05,
+          5.4388030206600054e-05,
+          -5.407532832589258e-05,
+          -5.4026352520793177e-05
+        ],
+        "after_q_native8": [
+          0.10119340137142559,
+          -0.0005761444060515882,
+          0.09115905092675751,
+          -0.0005763522832465327,
+          0.04595592163296916,
+          0.06391248148903618,
+          0.039639971451367946,
+          0.057596561581733735
+        ],
+        "after_v_native8": [
+          8.647549038703965e-05,
+          2.185921617306293e-09,
+          -8.582660868577804e-05,
+          -1.4380161891610175e-09,
+          5.4358130899978916e-05,
+          5.44065936490764e-05,
+          -5.409367281493055e-05,
+          -5.4044693970581e-05
+        ],
+        "q_minus_qref": [
+          0.0003343500494641105,
+          1.0387184892811721e-08
+        ],
+        "before_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "after_torque_feedback_native8": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "executed_substeps": 10,
+        "actual_history_native8": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "permission_screened_substeps_native8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "study_abort": null,
+        "ground_force_peak_n": 71.2206000988131,
+        "kinetic_energy_peak_j": 1.323141897623875e-09
+      },
+      "full_tracking_evidence": true,
+      "stopped_fragment_is_method_advantage": false,
+      "recorded_planning_accounting": {
+        "pair_prediction_attempts": 0,
+        "pair_prediction_successes": 0,
+        "scalar_prediction_attempts": 0,
+        "scalar_prediction_successes": 0,
+        "failed_pair_prediction_attempts": 0,
+        "unknown_scalar_failure_count": 0,
+        "scalar_counts_complete": true,
+        "scalar_counts_is_lower_bound": false,
+        "unknown_failed_planner_calls": 0
+      },
+      "planner_fallbacks": 0
+    }
+  ]
+}

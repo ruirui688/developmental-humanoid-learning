@@ -1,0 +1,89 @@
+{
+  "checks": 240,
+  "failed": 0,
+  "issues": [],
+  "archive_files": 41,
+  "manifest_sha256": "1072815dc76dbe6aa77d4d3cbd0c2c737a9ad625166e9b87d3da84045603782d",
+  "document_sha256": "f2614c492ff58c50f88eac0ccbebc1e6aae55111326ee5733f0b8e6b3b12a951",
+  "kind_counts": {
+    "exact_filesystem_copy": 33,
+    "exact_git_blob": 6,
+    "generated_archive_index": 1,
+    "generated_archival_provenance": 1
+  },
+  "source_zip_git_files": 19,
+  "actual_budget": {
+    "control_calls_attempted": 5292,
+    "control_steps": 5292,
+    "physics_steps": 52920,
+    "model_updates": 900
+  },
+  "cumulative": {
+    "control_calls": 221663,
+    "physics_substeps": 2216630,
+    "rls_updates": 10800
+  },
+  "stops": [
+    {
+      "seed": 0,
+      "kind": "prediction_full",
+      "step_index": 150,
+      "active_step_index": 50,
+      "q_minus_qref_rad": 0.035137575270811114,
+      "velocity_rad_s": -1.0291313384819958,
+      "trigger": "absolute_velocity_rad_s"
+    },
+    {
+      "seed": 0,
+      "kind": "learned_mpc",
+      "step_index": 112,
+      "active_step_index": 12,
+      "q_minus_qref_rad": 0.12039474156168053,
+      "velocity_rad_s": 0.5703850927469705,
+      "trigger": "absolute_q_minus_qref_rad"
+    },
+    {
+      "seed": 1,
+      "kind": "prediction_full",
+      "step_index": 150,
+      "active_step_index": 50,
+      "q_minus_qref_rad": 0.035016957769176446,
+      "velocity_rad_s": -1.0343372360978609,
+      "trigger": "absolute_velocity_rad_s"
+    },
+    {
+      "seed": 1,
+      "kind": "learned_mpc",
+      "step_index": 112,
+      "active_step_index": 12,
+      "q_minus_qref_rad": 0.12022883766155333,
+      "velocity_rad_s": 0.5694558190093383,
+      "trigger": "absolute_q_minus_qref_rad"
+    },
+    {
+      "seed": 2,
+      "kind": "prediction_full",
+      "step_index": 150,
+      "active_step_index": 50,
+      "q_minus_qref_rad": 0.03527329987091008,
+      "velocity_rad_s": -1.0282196959908183,
+      "trigger": "absolute_velocity_rad_s"
+    },
+    {
+      "seed": 2,
+      "kind": "learned_mpc",
+      "step_index": 112,
+      "active_step_index": 12,
+      "q_minus_qref_rad": 0.12057874192864057,
+      "velocity_rad_s": 0.5713941989121695,
+      "trigger": "absolute_q_minus_qref_rad"
+    }
+  ],
+  "wall_seconds": 1.4162802000064403,
+  "cpu_seconds": 0.15625,
+  "cpu_scope": "This standard-library Python review process; separate read-only git subprocess CPU not measured.",
+  "physical_calls": 0,
+  "model_calls": 0,
+  "audit_reexecutions": 0,
+  "summary_reexecutions": 0
+}

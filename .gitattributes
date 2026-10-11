@@ -56,4 +56,8 @@ docs/ELBOW_BODY_DEVELOPMENT_RESULTS.md text eol=lf
 docs/PAIR_BODY_DEVELOPMENT_PROTOCOL.md text eol=lf
 scripts/audit_pair_frozen.py text eol=lf
 results/cpu_validation/2026-10-11_elbow_body/** -text whitespace=cr-at-eol
+results/cpu_validation/2026-10-11_pair_body/** -text whitespace=cr-at-eol
+docs/PAIR_BODY_DEVELOPMENT_RESULTS.md text eol=lf
+# Preserve this executed synthetic fixture's original final blank line.
+results/cpu_validation/2026-10-11_pair_body/synthetic_schema/tracked_fixture_source.py -text whitespace=cr-at-eol,-blank-at-eof
 results/cpu_validation/2026-10-11_elbow_pd/** -text whitespace=cr-at-eol

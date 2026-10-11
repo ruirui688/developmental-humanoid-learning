@@ -1,0 +1,57 @@
+{
+  "started_at_utc": "2026-10-11T07:09:54.436246+00:00",
+  "authorization": "Root authorized one independent read-only summary after completed clean8841884 collection and zero-failure first audit.",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "argv": [
+    "external/pair_body_summary_wrapper_01.py"
+  ],
+  "archive": "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_development",
+  "first_audit": "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_first_audit.json",
+  "git_head": "884188416b982ad03c0b3ba6f94999e162ddf98f",
+  "git_status": "",
+  "physical_calls": 0,
+  "physics_substeps": 0,
+  "parameter_updates": 0,
+  "audit_reexecutions": 0,
+  "new_predictions": 0,
+  "one_attempt_consumed_even_on_failure": true,
+  "source": {
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_summary_executed.py": {
+      "original": "D:\\Codex_ws\\robot_rl\\external\\pair_body_summary_prepare.py",
+      "sha256": "8caae18a3a409783e162695557ae738420fd1fbdeebb1861af39192afa52536c"
+    },
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_wrapper_executed.py": {
+      "original": "D:\\Codex_ws\\robot_rl\\external\\pair_body_summary_wrapper_01.py",
+      "sha256": "4e73077c47837e331e440ebc0b991b2b7daff810b507b3b76110b2afe52f857e"
+    },
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_synthetic_tests.py": {
+      "original": "D:\\Codex_ws\\robot_rl\\external\\test_pair_body_summary_prepare.py",
+      "sha256": "1288c97b09b767fc335a011aaebf734ec0b264c2e351e78423bb095e627463f7"
+    }
+  },
+  "inputs_sha256": {
+    "manifest.json": "8074b209ef6aa2180b3e4e98fe0878c39942a109eeaab0a018daefb1564cd1ba",
+    "metadata.json": "1f03c612e6be3cce79f5a1d090e85fb554f9fe5f5685913feff96083d2e626a2",
+    "episodes.json": "12dc6927412470fb3dc26b701d9037f4f53d618623ba690b1b10b9ec834ebe7a",
+    "seed_results.json": "88ae668f505e1211ab8c43b8a6cfd17923e8ef5b613134694c5c9dd98b98edb0",
+    "trace.jsonl.gz": "9f004c6cccc48e55e4e2ebe7ad9a64d3cc1b2e2afee6f8de686779430adf8037",
+    "source_snapshot.zip": "472be1abee093f0fa05fcbe3c6f095ba192683a6d8b17f1acb56f1fffebf73b8",
+    "first_audit.json": "bb717cd064af534a84a4b8fac43e80c16bd59220392d9aaeedc27feee1614456"
+  },
+  "artifacts_sha256": {
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_summary_executed.py": "8caae18a3a409783e162695557ae738420fd1fbdeebb1861af39192afa52536c",
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_wrapper_executed.py": "4e73077c47837e331e440ebc0b991b2b7daff810b507b3b76110b2afe52f857e",
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_synthetic_tests.py": "1288c97b09b767fc335a011aaebf734ec0b264c2e351e78423bb095e627463f7",
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_summary.json": "27b46508ed6e0d01bcfdf61b3f0854672465c3990e297378526828b9c1b97feb",
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_review_tables.json": "d81759c7b45313543418c56fc044183ed1479afb797290b9361b4064559cce72",
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_review_detail_tables.json": "2124d2dcf7af0360add8b5a478aa7535fbc99f15f169547123a5ed3dc3910e01",
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_stdout.txt": "4664a041bef5a02a87470894d9d6a4c66599003861124a38b1c2c0f1bfd0161f",
+    "D:\\Codex_ws\\robot_rl\\external\\pair_body_20261011_summary_01_attempt.json": "f94f2f31eec90c2ab0cea76a552e9ff4d99e510e8cb9c78b64e8815676c0e88e"
+  },
+  "finished_at_utc": "2026-10-11T07:09:56.774135+00:00",
+  "exit_code": 0,
+  "wrapper_wall_seconds": 2.3382744998671114,
+  "wrapper_cpu_seconds": 1.3125,
+  "timing_scope": "Complete wrapper including imports, source snapshot, one input read, Git blob verification, report writes and artifact hashes; excludes final execution-record write."
+}

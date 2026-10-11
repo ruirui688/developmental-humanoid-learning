@@ -1,0 +1,50 @@
+{
+  "checks": 13,
+  "failed": 0,
+  "failures": [],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "56ed6e227be16992279ab69f4d5d98931a1f8b4bd4900db1e71c2de46f8c3026",
+      "required_values": [
+        "5292",
+        "52920",
+        "900",
+        "15完整/6"
+      ]
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "a7a80789772861defca880d0906cce4c9984cd9eec07677d889308212eb8678f",
+      "required_values": [
+        "221663",
+        "2216630",
+        "10800"
+      ]
+    },
+    {
+      "path": "docs/CONTINUOUS_EXECUTION_PLAN.md",
+      "sha256": "8f410acb0bd150aad4132d42d9c1db659e34c6888b7dbe2ca1285a0c4a449509",
+      "required_values": [
+        "221663",
+        "2216630",
+        "10800"
+      ]
+    },
+    {
+      "path": "docs/PROGRESS.md",
+      "sha256": "c6c696f7bab82892e635926d98802749d1a42da83564f082c1710a177dfe3730",
+      "required_values": [
+        "221663",
+        "2216630",
+        "10800"
+      ]
+    }
+  ],
+  "wall_seconds": 0.0007450999692082405,
+  "cpu_seconds": 0.0,
+  "physical_calls": 0,
+  "model_calls": 0,
+  "audit_reexecutions": 0,
+  "summary_reexecutions": 0
+}

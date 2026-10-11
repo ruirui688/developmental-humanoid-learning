@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T06:58:33.570886+00:00",
+  "purpose": "Frozen native-only shoulder-elbow development collector.\n\nSynthetic tests explicitly replace GroundBodyEnv and never enter the physical\nbackend. Scientific acceptance is computed by the independent log auditor.\n",
+  "suite": "pair_development",
+  "synthetic": true,
+  "seeds": [
+    0
+  ],
+  "split": "development",
+  "pose": "supine",
+  "joint_indices": [
+    0,
+    1
+  ],
+  "native_joint_count": 8,
+  "source_commit": "46077b1d30089d68f1c935e3fc547dfdfa4c4e66",
+  "source_status": " M .gitattributes\n M .gitignore\n M AGENTS.md\n M README.md\n M docs/CONTINUOUS_EXECUTION_PLAN.md\n M docs/PROGRESS.md\n?? docs/ELBOW_BODY_DEVELOPMENT_RESULTS.md\n?? docs/PAIR_BODY_DEVELOPMENT_PROTOCOL.md\n?? results/cpu_validation/2026-10-11_elbow_body/README.md\n?? results/cpu_validation/2026-10-11_elbow_body/archival_execution.json\n?? results/cpu_validation/2026-10-11_elbow_body/archival_source.py\n?? results/cpu_validation/2026-10-11_elbow_body/audit.json\n?? results/cpu_validation/2026-10-11_elbow_body/audit_source.py\n?? results/cpu_validation/2026-10-11_elbow_body/audit_stdout.txt\n?? results/cpu_validation/2026-10-11_elbow_body/collection_stdout.txt\n?? results/cpu_validation/2026-10-11_elbow_body/collector_source.py\n?? results/cpu_validation/2026-10-11_elbow_body/development/episodes.json\n?? results/cpu_validation/2026-10-11_elbow_body/development/manifest.json\n?? results/cpu_validation/2026-10-11_elbow_body/development/metadata.json\n?? results/cpu_validation/2026-10-11_elbow_body/development/seed_results.json\n?? results/cpu_validation/2026-10-11_elbow_body/development/source_snapshot.zip\n?? results/cpu_validation/2026-10-11_elbow_body/development/trace.jsonl.gz\n?? results/cpu_validation/2026-10-11_elbow_body/manifest.json\n?? results/cpu_validation/2026-10-11_elbow_body/protocol.md\n?? results/cpu_validation/2026-10-11_elbow_body/result_review.md\n?? results/cpu_validation/2026-10-11_elbow_body/reviews/freeze_increment.md\n?? results/cpu_validation/2026-10-11_elbow_body/reviews/joint_generalization.md\n?? results/cpu_validation/2026-10-11_elbow_body/summary/attempt.json\n?? results/cpu_validation/2026-10-11_elbow_body/summary/delivery_builder.py\n?? results/cpu_validation/2026-10-11_elbow_body/summary/detail_append_builder.py\n?? results/cpu_validation/2026-10-11_elbow_body/summary/execution.json\n?? results/cpu_validation/2026-10-11_elbow_body/summary/review_detail_tables.json\n?? results/cpu_validation/2026-10-11_elbow_body/summary/review_tables.json\n?? results/cpu_validation/2026-10-11_elbow_body/summary/stdout.txt\n?? results/cpu_validation/2026-10-11_elbow_body/summary/summary.json\n?? results/cpu_validation/2026-10-11_elbow_body/summary/summary_executed.py\n?? results/cpu_validation/2026-10-11_elbow_body/summary/synthetic_01_execution.json\n?? results/cpu_validation/2026-10-11_elbow_body/summary/synthetic_01_source_reconstructed.py\n?? results/cpu_validation/2026-10-11_elbow_body/summary/synthetic_01_stdout.txt\n?? results/cpu_validation/2026-10-11_elbow_body/summary/synthetic_02_execution.json\n?? results/cpu_validation/2026-10-11_elbow_body/summary/synthetic_02_source_copy.py\n?? results/cpu_validation/2026-10-11_elbow_body/summary/synthetic_02_stdout.txt\n?? results/cpu_validation/2026-10-11_elbow_body/summary/synthetic_copy_provenance.json\n?? results/cpu_validation/2026-10-11_elbow_body/summary/synthetic_tests.py\n?? results/cpu_validation/2026-10-11_elbow_body/summary/wrapper_executed.py\n?? results/cpu_validation/2026-10-11_elbow_body/tests/affected_tests_stdout.txt\n?? results/cpu_validation/2026-10-11_elbow_body/tests/elbow_native_stdout.txt\n?? results/cpu_validation/2026-10-11_elbow_body/tests/test_joint_frozen_audit.py\n?? results/cpu_validation/2026-10-11_elbow_body/tests/test_local_frozen_audit.py\n?? results/cpu_validation/2026-10-11_elbow_body/tests/test_local_frozen_validation.py\n?? scripts/audit_pair_frozen.py\n?? src/developmental_physics/pair_frozen_validation.py\n?? tests/test_pair_frozen_audit.py\n?? tests/test_pair_frozen_validation.py\n",
+  "source_sha256": {
+    "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+    "src/developmental_physics/collect.py": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+    "src/developmental_physics/elbow_feedback_validate.py": "580efad122c461e2f322053d3c2d499ccb9944a13f78345177d256843689fe73",
+    "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+    "src/developmental_physics/exploration.py": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+    "src/developmental_physics/feedback_validate.py": "0523cb015da4c214be413feb689be9d1e0ed2728c5c411ea64d6ef13d5201e85",
+    "src/developmental_physics/local_ablation.py": "27da381b0c987dbe41bc8e527e96f6c1d7bbb15837d914cd53e106989b91e29b",
+    "src/developmental_physics/local_coverage_ablation.py": "21e2b43242cb2248af340515066243cffc16739c837e9310d3c78f400152fdc3",
+    "src/developmental_physics/local_dose_ablation.py": "a5774f4fc525d5ed6ad3b0e375bd34c5f5bda49e409db8bb2b740261077533d8",
+    "src/developmental_physics/local_frozen_validation.py": "369e44371dd7b4e5a91010fd2f8dae515cf390fd2fbe171257414a5c94aabf1a",
+    "src/developmental_physics/local_integration.py": "3dad9e02f16e3813b82150f868d77a6b948b6200a827f2f08f4ea386585da49c",
+    "src/developmental_physics/local_learning.py": "037b56393d0c0f1e20118bbd313e05668964110081ecab4b115abc4b15bb55ca",
+    "src/developmental_physics/local_model.py": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1",
+    "src/developmental_physics/local_pair_model.py": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+    "src/developmental_physics/pair_frozen_validation.py": "e1fbde1fb68bfa44341fa33605972518359e7d1162c1ecc5837c26ed34f1fbea",
+    "src/developmental_physics/probe_collect.py": "b68643037b64b764de5f6513bcd697e2e62465345671bc1aaa272435fe4e0ea3",
+    "src/developmental_physics/probes.py": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+    "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+    "docs/PAIR_BODY_DEVELOPMENT_PROTOCOL.md": "b384d41b9e58c38ac1dabb28587cced0a703305a5690a63cffb9d97935a4768c",
+    "scripts/audit_local_frozen.py": "b5fea70d3733a1bab77e49bf559432475899436693cf6c1b0b4767369c913461",
+    "scripts/audit_pair_frozen.py": "53f220f229f234d573dd7c867a7491b3da3ed5c68c43a084a59da4393f2a2c23"
+  },
+  "protocol": {
+    "path": "docs/PAIR_BODY_DEVELOPMENT_PROTOCOL.md",
+    "sha256": "b384d41b9e58c38ac1dabb28587cced0a703305a5690a63cffb9d97935a4768c"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python_executable": "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+  "python_version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "dependencies": {
+    "PyOpenGL": "3.1.10",
+    "Pygments": "2.21.0",
+    "absl-py": "2.5.1",
+    "colorama": "0.4.6",
+    "developmental-humanoid-learning": "0.1.0",
+    "etils": "1.13.0",
+    "exceptiongroup": "1.3.1",
+    "fsspec": "2026.9.0",
+    "glfw": "2.10.2",
+    "importlib_resources": "7.1.0",
+    "iniconfig": "2.3.1",
+    "mujoco": "3.15.0",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pip": "23.0.1",
+    "pluggy": "1.6.0",
+    "pytest": "8.4.2",
+    "setuptools": "65.5.0",
+    "tomli": "2.5.0",
+    "typing_extensions": "4.16.0",
+    "websockets": "16.1.1",
+    "zipp": "4.1.1"
+  },
+  "gpu": null,
+  "backend": "synthetic, no physics",
+  "mujoco_version": "3.15.0",
+  "environment_config": {
+    "physics_dt": 0.002,
+    "control_substeps": 10,
+    "torque_limit": 0.5,
+    "joint_speed_limit": 20.0,
+    "joint_limit_margin": 0.08,
+    "kinetic_energy_limit": 50.0,
+    "reset_clearance": 0.005,
+    "ground_contact_profile": "baseline"
+  },
+  "prefix_steps": 100,
+  "calibration_steps": 400,
+  "prediction_steps": 100,
+  "control_steps_per_trial": 2,
+  "structures": [
+    "diagonal_hinge5",
+    "coupled_hinge9"
+  ],
+  "integration": "endpoint_euler",
+  "model_input": "current original encoders q/v and request u known before step; no future actual torque or hidden dynamics",
+  "model_label": "next original encoder velocity on complete 20 ms calibration transitions only",
+  "target_information": "current two-axis qref+s*.04 then qref+s*.08 only, no switch preview; infeasible target fails, no clipping",
+  "study_abort_spec": {
+    "active_only": true,
+    "absolute_q_minus_qref_rad": 0.12,
+    "absolute_velocity_rad_s": 1.0,
+    "comparison": ">=",
+    "any_axis": true,
+    "feedback_action": null,
+    "last_complete_terminal_update_and_score": true
+  },
+  "calibration_block_amplitudes_nm": [
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.25
+  ],
+  "calibration_schedule": "20 blocks of 20: five shoulder, five elbow, five same-direction, five opposite; 5+/5zero/5-/5zero",
+  "schedule_selection": "Prior pair 7/3 proposal was never run (zero cost); shortened before formal freeze after archived elbow development full-prediction stops. Not a safety guarantee.",
+  "prediction_block_shapes": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      -1.0
+    ],
+    [
+      1.0,
+      1.0
+    ]
+  ],
+  "prediction_block_amplitudes_nm": {
+    "low": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "full": [
+      0.125,
+      0.25,
+      0.375,
+      0.5,
+      0.375
+    ]
+  },
+  "update_order": [
+    "diagonal",
+    "coupled"
+  ],
+  "update_cost_unit": "committed scalar next-velocity heads",
+  "calibration_planned_request_effort_per_axis": {
+    "absolute_nm_s": [
+      0.9,
+      0.9
+    ],
+    "squared_nm2_s": [
+      0.31875,
+      0.31875
+    ]
+  },
+  "planning_accounting_scope": "MPC select only, including attached failed selection cost; does not claim total prediction calls for RLS, before-step diagnostics or offline audits",
+  "pd_gains": {
+    "kp": [
+      64.0,
+      64.0
+    ],
+    "kd": [
+      0.0,
+      1.0
+    ]
+  },
+  "pd_boundary": "combination of separately tuned single-axis gains; not a tuned two-axis strong baseline",
+  "teacher_calls": 0,
+  "external_demonstration_samples": 0,
+  "policy_parameter_updates": 0,
+  "gain_updates": 0,
+  "planned_episodes": [
+    {
+      "trial_id": "seed0_calibration",
+      "seed": 0,
+      "kind": "calibration",
+      "maximum_control_steps": 500
+    },
+    {
+      "trial_id": "seed0_prediction_low",
+      "seed": 0,
+      "kind": "prediction_low",
+      "maximum_control_steps": 200
+    },
+    {
+      "trial_id": "seed0_prediction_full",
+      "seed": 0,
+      "kind": "prediction_full",
+      "maximum_control_steps": 200
+    },
+    {
+      "trial_id": "seed0_nominal_mpc",
+      "seed": 0,
+      "kind": "nominal_mpc",
+      "maximum_control_steps": 102
+    },
+    {
+      "trial_id": "seed0_diagonal_mpc",
+      "seed": 0,
+      "kind": "diagonal_mpc",
+      "maximum_control_steps": 102
+    },
+    {
+      "trial_id": "seed0_coupled_mpc",
+      "seed": 0,
+      "kind": "coupled_mpc",
+      "maximum_control_steps": 102
+    },
+    {
+      "trial_id": "seed0_combined_pd",
+      "seed": 0,
+      "kind": "combined_pd",
+      "maximum_control_steps": 102
+    },
+    {
+      "trial_id": "seed0_zero_torque",
+      "seed": 0,
+      "kind": "zero_torque",
+      "maximum_control_steps": 102
+    }
+  ],
+  "planned_episode_count": 8,
+  "maximum_control_steps": 1410,
+  "maximum_scalar_updates": 1600,
+  "claim_boundary": "development-only two-joint diagnostic; no final/generalization/safety/task-skill claim",
+  "complete": true,
+  "archive_status": "complete",
+  "source_dirty": true,
+  "control_calls_attempted": 1409,
+  "control_steps": 1409,
+  "physics_steps": 14090,
+  "model_updates": 1600,
+  "vector_model_updates": 800,
+  "completed_trials": 7,
+  "terminated_trials": 1,
+  "exception_trials": 0,
+  "blocked_trials": 0,
+  "wall_seconds": 2.1233542999252677,
+  "cpu_seconds": 2.109375,
+  "all_trials_successful": false,
+  "invalid_numeric_fields": []
+}
