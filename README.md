@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-[位置积分消融](docs/LOCAL_INTEGRATION_ABLATION_RESULTS.md)及[校准剂量×模型结构](docs/LOCAL_DOSE_ABLATION_RESULTS.md)均完成：两个修订采用门未过，保留Euler/old_hinge5。新剂量tracking只改善0.9383%，low预测逐seed退化，q域外仍96.5%–97%。继续[同剂量时序重排](docs/LOCAL_COVERAGE_ABLATION_PROTOCOL.md)，新最终20/21/22保持未见；局部或负结果都不结束持续目标。
+[位置积分](docs/LOCAL_INTEGRATION_ABLATION_RESULTS.md)、[校准剂量×结构](docs/LOCAL_DOSE_ABLATION_RESULTS.md)、[同剂量时序重排](docs/LOCAL_COVERAGE_ABLATION_RESULTS.md)均完成，全部修订采用门未过，保留short/old/hinge5/Euler。重排tracking只改善0.422642%，low预测逐seed退化，q域外仍93.5%。继续[新最终联合评价](docs/LOCAL_FROZEN_VALIDATION_PROTOCOL.md)，调优PD64/0与模型贡献分开判定；20/21/22尚未运行真实轨迹，随后直接推进多关节。局部或负结果都不结束持续目标。
 
 这一初衷同样适用于二维火柴人：通过小孩式的探索、感知反馈和能力发展获得运动技能。已有二维 DHP-PPO 实现使用解析步态教师、先验预训练与参考步态相关的环境规则，属于含任务先验的概念验证；它尚未证明这条纯发育主轨。接下来应按原初目标纠正实现方向，具体偏差见 [火柴人机制对比](docs/STICKMAN_CPU_COMPARISON.md)。
 
@@ -25,7 +25,7 @@
 
 [600 次逐关节探针与局部身体学习结果](docs/CPU_LOCAL_BODY_RESULTS.md)：动作—感觉前置门已通过。第一版预测退化，负结果保留；第二版每 seed 仅 300 次五参数 RLS 更新，在三个留出 seed 上独立预测误差降低 85.6%–86.7%，同权限、同 MPC 跟踪误差均值降低 28.9%，通过初期局部验收。控制自身轨迹的预测仍退化、实际力矩努力增加；尚无低风险、全身技能或真机结论。
 
-后续 [模型有效域诊断](docs/MODEL_DOMAIN_RESULTS.md)发现97%闭环起点越过校准位置范围，一步退化与15步预测改善并存。[九组PD开发](docs/CLASSICAL_PD_DEVELOPMENT_RESULTS.md)已完成：调优PD均值.01631 rad，学习MPC开发均值.01588 rad，差距仅约2.6%；不能用旧弱PD代表经典控制。当前继续同参数积分消融和校准修订，新最终留出仍未执行。
+后续 [模型有效域诊断](docs/MODEL_DOMAIN_RESULTS.md)发现97%闭环起点越过校准位置范围，一步退化与15步预测改善并存。[九组PD开发](docs/CLASSICAL_PD_DEVELOPMENT_RESULTS.md)已完成：调优PD均值.01631 rad，学习MPC开发均值.01588 rad，差距仅约2.6%；不能用旧弱PD代表经典控制。三个模型/校准修订未通过采用门，当前固定原配方作新最终与PD评价，闭环有效域缺口保留为后续多关节研究问题。
 
 仓库包含两条必须分开理解的证据轨：二维火柴人概念验证已经完成同预算对照；Unitree G1 地面发育轨正在学习，目前只通过了翻身/支撑能力门，尚未学会稳定起身。旧的近站立 G1 checkpoint 只保留为控制和评估基础设施审计，不再充当“类婴儿学习”成果。
 

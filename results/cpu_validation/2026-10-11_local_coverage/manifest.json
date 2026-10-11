@@ -1,0 +1,53 @@
+{
+  "purpose": "Exact C2-C collection, first audit, single review and static review bytes",
+  "sha256": {
+    "audit.json": "8a7935c9e8b094d4fb0169abe3b6e60da18774630ff5178e41d158ea4411f555",
+    "audit_source.py": "0ea9f3cb010a1b70009fe0be9a3b20a2c288e554f135aa01b220c1dacf9fffa3",
+    "audit_stdout.txt": "137a9369cafa450ad963ad18bf2c787667afd23365ccc22a743715f08cbc6460",
+    "collection_stdout.txt": "c117cf5c2ec5a543671b767ab06086159475b0b06f15f409a10f7e16d731df91",
+    "development/episodes.json": "1a0cae77cb7401d765c05006d234aae6268595269eb309d38ee016935079c04c",
+    "development/manifest.json": "4126e9399ffed0590a52b805c357db04379d0e94d2e23bec0ccb4ae2c3cf1b65",
+    "development/metadata.json": "3079e8bfbce2fae0f9f5753c33588f990f6d3d85daef1be603c7d850ee2da066",
+    "development/seed_results.json": "c86859f19eae6b9a6eae8b7bde001e4bec1bf4dfa225b35ae35a5e57d2a80f8a",
+    "development/source_snapshot.zip": "72b5416aee65633337bcd318b62b637c8c19bbba7c108d28b256f51935867d9f",
+    "development/trace.jsonl.gz": "7894df66ff332f1e7739577e1349b69dc9288132970947476cb814350209fbf6",
+    "protocol_cross_review.md": "dbfdac702e063681948534a04a4989f9f366acfa31bfb7b55bf1a5f21361e5b8",
+    "README.md": "faae2a0c96583a68f7b71362203919b5631289ae955fc3b716a3a4a6313aa586",
+    "report_source.py": "9993259b91ec71d87abb14efe6729ea90c1825e645d365dc26a24b1cc2632351",
+    "result_review.md": "50fc051638c779710c229c0810f9d011ba9a661719f4cef9f5785c0033e58b94",
+    "summary.json": "f6658949cbcecbc1f425db77c11f41d64aaa861b3a919ef87d3f91242c000163",
+    "summary_execution.json": "eba2d310a03bfdda51203d7573e1b7a0df86672bef8c56dbc3cf9279524f25a4",
+    "summary_source.py": "d9b36fe54013d0214658e7e5ca4db70f37ad5bb090d452ca302d0d0a82c31efe",
+    "summary_stdout.txt": "904a3ab91d71d2812b27874f34a689744fa531c8f307a089a0d0fa3e41cd53ad",
+    "summary_wrapper.py": "fa0f2b039dca00416bf7e20a06b66c05fc9c68d8fc88f1da65cbd2393da4598f",
+    "table_extraction_source.py": "e77e782ff28197b562196b7af22de9e0f3c59cc4c6b3a6673bb1c7ac1d3d62fe",
+    "tables.json": "945384a2c40c411e7b85f3134e87d920bcb57014ef7433647d594bad8a3b7bf6"
+  },
+  "nested_manifest": "development/manifest.json",
+  "formal_physical_cumulative": {
+    "control_calls": 202850,
+    "physics_substeps": 2028500,
+    "rls_update_calls": 9000
+  },
+  "summary_executions": 1,
+  "summary_failed_runs": 0,
+  "summary_internal_execution": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "third_party_dependencies": [],
+    "physical_simulation_calls": 0,
+    "model_prediction_calls": 0,
+    "rls_replay_calls": 0,
+    "real_parameter_fitting_calls": 0,
+    "real_parameter_updates": 0,
+    "new_environment_interactions": 0,
+    "timing_scope": "review entry through source bytes/input unchanged validation and report assembly; excludes imports and JSON serialization/writing",
+    "wall_seconds": 1.0529676999431103,
+    "cpu_seconds": 0.984375
+  },
+  "summary_external_wall_seconds": 1.253389999968931,
+  "summary_wrapper_cpu_seconds": 0.0,
+  "summary_wrapper_cpu_scope": "Wrapper process only; child internal process CPU is retained by its summary.",
+  "table_extraction_wall_seconds": 0.00859279977157712,
+  "table_extraction_cpu_seconds": 0.015625
+}
