@@ -1,0 +1,52 @@
+{
+  "files": {
+    "reporting/c4_u_reporting_reads.json": {
+      "bytes": 977,
+      "sha256": "a64a7b53a3a692826a3fa7f61f1ab27dcba234658a0a7cc30dacd4efafc7d35e",
+      "source": "external/c4_u_reporting_reads.json"
+    },
+    "reporting/read_u_reporting_once.py": {
+      "bytes": 3329,
+      "sha256": "0c18898bcaaf33fbbde9ec299bf33b9a1f290776727ffcf42b0d30c47903a720",
+      "source": "external/read_u_reporting_once.py"
+    },
+    "reporting/check_u_output_once.py": {
+      "bytes": 14185,
+      "sha256": "015afe1f66ff954eb368bc95c6387f2e842ecdd6e0cb414d5222cecedc61abed",
+      "source": "external/check_u_output_once.py"
+    },
+    "reporting/c4_u_contract_execution.json": {
+      "bytes": 190,
+      "sha256": "b2e5091d722b0dd570a2fc94edcff69d5ac86854d4a24458f83db3edc3c5d63a",
+      "source": "external/c4_u_contract_execution.json"
+    },
+    "reporting/archive_u_reporting_once.py": {
+      "bytes": 2495,
+      "sha256": "342dcf5ea4d50ecef88e3d082d4be751da8ce75364b018fa075ddc2eb7269dac",
+      "source": "external/archive_u_reporting_once.py"
+    },
+    "output_contract/checker.py": {
+      "bytes": 14185,
+      "sha256": "015afe1f66ff954eb368bc95c6387f2e842ecdd6e0cb414d5222cecedc61abed",
+      "source": "external/c4_u_output_contract_01/checker.py"
+    },
+    "output_contract/report.json": {
+      "bytes": 18530,
+      "sha256": "92f25a207e74fdc7665f77a03eef4a2ae87c684ac09a04031749bdca584ccf39",
+      "source": "external/c4_u_output_contract_01/report.json"
+    },
+    "reporting/c4_u_results_links_01.json": {
+      "bytes": 95,
+      "sha256": "9da7686f870dfca133fab4d35ac2aa08622e53a7e2ed408da46ce499ab76f6ff",
+      "source": "external/c4_u_results_links_01.json"
+    }
+  },
+  "file_reads": 16,
+  "read_bytes": 107972,
+  "copy_failures": [],
+  "wall_seconds": 0.3156413999386132,
+  "cpu_seconds": 0.015625,
+  "no_scientific_recalculation": true,
+  "root_raw_manifests_unchanged": true,
+  "automatic_retry": false
+}

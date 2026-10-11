@@ -1,5 +1,14 @@
 # 开发进度与仓库检查点
 
+## 2026-10-12：U训练改善但开发门失败，结束本族优化器修订
+
+[U结果](GUARD_BOUNDED_LBFGS_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)从clean7358ff9首次完成。
+三seed各30accepted，只46/39/39objective；124objective/backward有限、31Armijo拒绝、无fit失败或时间跨界。
+训练H15及总损失下降，但开发H15q相对K肩/肘2.589%/4.844%、相对D2.390%/4.398%，未到20%；
+两门各12/14通过。4,572记录/840组完整、Q/K/D指纹不变；0新物理/RLS/MPC，392,088重复q标签用途。
+按冻结规则结束当前Qphi50/C400/双q-head多步候选族优化器修订，不加预算、特征或扫参数，不进入控制。
+提交推送后继续一次有边界校准—评价信息诊断或新采样设计。持续目标active，C4–C7尚未验收。
+
 ## 2026-10-12：T拟合有限，长位置门未过，继续U
 
 [T结果](GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)从clean585540f首次完整执行；三seed各12accepted/100objective，
