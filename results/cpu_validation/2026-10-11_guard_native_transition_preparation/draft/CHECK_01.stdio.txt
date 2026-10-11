@@ -1,0 +1,97 @@
+{
+  "synthetic_only": true,
+  "branch_count": 6,
+  "checks": [
+    {
+      "name": "branch_state_prior",
+      "passed": false,
+      "failure": "ValueError:nonfinite or nonnumeric native vector"
+    },
+    {
+      "name": "branch_full_qref",
+      "passed": false,
+      "failure": "ValueError:nonfinite or nonnumeric native vector"
+    },
+    {
+      "name": "branch_closed22",
+      "passed": true,
+      "result": {
+        "learned22_transition_attempts": 3,
+        "learned22_feature_prior_attempts": 3,
+        "learned22_start_guard_attempts": 3,
+        "learned22_start_guard_returns": 3,
+        "learned22_feature_prior_returns": 3,
+        "learned22_prior_scalar_outputs": 66,
+        "learned22_residual_vector_attempts": 3,
+        "learned22_residual_scalar_head_attempts": 66,
+        "learned22_residual_vector_returns": 3,
+        "learned22_residual_scalar_head_returns": 66,
+        "learned22_transition_returns": 3
+      }
+    },
+    {
+      "name": "branch_D11_own_history",
+      "passed": true,
+      "result": {
+        "D11_pair_prediction_attempts": 3,
+        "D11_pair_prediction_returns": 3,
+        "D11_scalar_prediction_attempts": 6,
+        "D11_scalar_prediction_returns": 6
+      }
+    },
+    {
+      "name": "branch_all_horizon_gate",
+      "passed": true,
+      "result": {
+        "fixed_horizons": [
+          1,
+          2,
+          5,
+          15
+        ],
+        "no_worse_failure": true,
+        "missing_count_failure": true,
+        "zero_D11_undefined": true,
+        "scientific_adoption": false
+      }
+    },
+    {
+      "name": "branch_transition_failure",
+      "passed": true,
+      "result": {
+        "prediction": {
+          "available": false,
+          "reason": "ValueError:expected finite array shape (22,)",
+          "predicted_path_x22": []
+        },
+        "cost": {
+          "learned22_transition_attempts": 1,
+          "learned22_feature_prior_attempts": 1,
+          "learned22_start_guard_attempts": 1,
+          "learned22_start_guard_returns": 1,
+          "learned22_feature_prior_returns": 1,
+          "learned22_prior_scalar_outputs": 22,
+          "learned22_residual_vector_attempts": 1,
+          "learned22_residual_scalar_head_attempts": 22,
+          "learned22_residual_vector_returns": 1,
+          "learned22_residual_scalar_head_returns": 22,
+          "learned22_transition_failures": 1
+        }
+      }
+    }
+  ],
+  "passed": false,
+  "actual_ridge_solves": 0,
+  "physics_calls": 0,
+  "real_trace_or_snapshot_reads": 0,
+  "RLS_updates": 0,
+  "source_sha256": {
+    "develop_guard_native_transition.py": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb",
+    "GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56",
+    "check_guard_native_transition.py": "4d82427bb93b6a055cbedbeed0c50c0fa3f68b8464f4ab7400fb3b133d9ba611"
+  },
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4"
+  }
+}

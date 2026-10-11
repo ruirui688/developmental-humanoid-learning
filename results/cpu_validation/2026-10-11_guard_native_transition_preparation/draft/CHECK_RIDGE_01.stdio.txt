@@ -1,0 +1,30 @@
+{
+  "synthetic_only": true,
+  "passed": true,
+  "manual_design": "400 orthogonal single-column rows; diagonal_j=n_j*((j+1)/10)^2",
+  "manual_coefficient_formula": "diagonal_j/(diagonal_j+.01)*target_jk",
+  "max_absolute_coefficient_error": 2.220446049250313e-16,
+  "cost": {
+    "fit_scalar_labels": 8800,
+    "fit_gram_matrix_products": 1,
+    "fit_cross_matrix_products": 1,
+    "ridge_identity_matrix_additions": 1,
+    "fit_shared_29x29_22rhs_solve_attempts": 1,
+    "fit_shared_29x29_22rhs_solve_returns": 1,
+    "transition_heads_published": 22,
+    "transition_scalar_coefficients_fitted": 638
+  },
+  "actual_ridge_solves": 1,
+  "physics_calls": 0,
+  "real_trace_or_snapshot_reads": 0,
+  "RLS_updates": 0,
+  "source_sha256": {
+    "develop_guard_native_transition.py": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb",
+    "GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56",
+    "check_guard_native_transition.py": "4d82427bb93b6a055cbedbeed0c50c0fa3f68b8464f4ab7400fb3b133d9ba611"
+  },
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4"
+  }
+}

@@ -1,0 +1,58 @@
+--- check_guard_native_transition_before.py
++++ check_guard_native_transition.py
+@@ -32,8 +32,8 @@
+ 
+ 
+ def observation(q, v, gyro=(.1, .2, .3), acceleration=(.981, 1.962, 2.943)):
+-    return {"joint_position": list(q), "joint_velocity": list(v),
+-            "imu_gyro": list(gyro), "imu_acceleration": list(acceleration)}
++    return {"joint_position": [float(x) for x in q], "joint_velocity": [float(x) for x in v],
++            "imu_gyro": [float(x) for x in gyro], "imu_acceleration": [float(x) for x in acceleration]}
+ 
+ 
+ def branch_state_prior():
+@@ -167,16 +167,19 @@
+     return {"prediction": outcome, "cost": dict(cost)}
+ 
+ 
+-def branch_checks():
++def branch_checks(repair_only=False):
+     checks = []
+-    for function in (branch_state_prior, branch_full_qref, branch_closed22,
+-                     branch_D11_own_history, branch_all_horizon_gate, branch_transition_failure):
++    functions = (branch_state_prior, branch_full_qref) if repair_only else (
++        branch_state_prior, branch_full_qref, branch_closed22,
++        branch_D11_own_history, branch_all_horizon_gate, branch_transition_failure)
++    for function in functions:
+         try:
+             checks.append({"name": function.__name__, "passed": True, "result": function()})
+         except Exception as exc:
+             checks.append({"name": function.__name__, "passed": False,
+                            "failure": f"{type(exc).__name__}:{exc}"})
+-    return {"synthetic_only": True, "branch_count": 6, "checks": checks,
++    return {"synthetic_only": True, "branch_count": len(checks), "checks": checks,
++            "repair_only": repair_only,
+             "passed": all(r["passed"] for r in checks), "actual_ridge_solves": 0,
+             "physics_calls": 0, "real_trace_or_snapshot_reads": 0, "RLS_updates": 0}
+ 
+@@ -208,15 +211,17 @@
+ 
+ if __name__ == "__main__":
+     parser = argparse.ArgumentParser(description=__doc__)
+-    parser.add_argument("--mode", choices=("branches", "ridge"), required=True)
++    parser.add_argument("--mode", choices=("branches", "ridge", "repair_native_fixture"), required=True)
+     args = parser.parse_args()
+-    path = STAGING/("CHECK_01.json" if args.mode == "branches" else "CHECK_RIDGE_01.json")
++    names = {"branches": "CHECK_01.json", "ridge": "CHECK_RIDGE_01.json",
++             "repair_native_fixture": "CHECK_NATIVE_FIXTURE_REPAIR_01.json"}
++    path = STAGING/names[args.mode]
+     if path.exists():
+         raise FileExistsError("preserve first check output; no overwrite/rerun")
+     hashes = {name: hashlib.sha256((STAGING/name).read_bytes()).hexdigest() for name in (
+         "develop_guard_native_transition.py", "GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md", "check_guard_native_transition.py")}
+     try:
+-        result = branch_checks() if args.mode == "branches" else ridge_check()
++        result = ridge_check() if args.mode == "ridge" else branch_checks(args.mode == "repair_native_fixture")
+     except BaseException as exc:
+         result = {"passed": False, "synthetic_only": True, "failure": f"{type(exc).__name__}:{exc}"}
+         if args.mode == "ridge":

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "files": {
+    "draft/CHECK_01.json": {
+      "bytes": 3050,
+      "sha256": "cf508ce33388da8b37182f44a6b607ed8f207305c34c1c7eae02664fef297f3a",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.stdio.txt": {
+      "bytes": 3147,
+      "sha256": "5fd300b4d5e753fa367e5c0a9cdd758b0dae80e781a8c90d6ee91916b4331a39",
+      "copy_verified": true
+    },
+    "draft/check_guard_native_transition.py": {
+      "bytes": 11677,
+      "sha256": "ac8f489e2a89f0274038bece3163f20ecb7b085c5534e76da569f11ee0137a9f",
+      "copy_verified": true
+    },
+    "draft/CHECK_NATIVE_FIXTURE_REPAIR_01.json": {
+      "bytes": 1359,
+      "sha256": "8d7926b088fb29655f4a72ee9916b0613c0189fb74451c961096d953f33244e1",
+      "copy_verified": true
+    },
+    "draft/CHECK_NATIVE_FIXTURE_REPAIR_01.stdio.txt": {
+      "bytes": 1402,
+      "sha256": "2cc69d95749c2887afb40482b45e3597ee2e77afacffc5322f5f0c1a8a9b4324",
+      "copy_verified": true
+    },
+    "draft/CHECK_RIDGE_01.json": {
+      "bytes": 410217,
+      "sha256": "db67f1017bf5280f0e616886ed9c0cf6b1cb3c82505938e7dc9ddcb48c631f3c",
+      "copy_verified": true
+    },
+    "draft/CHECK_RIDGE_01.stdio.txt": {
+      "bytes": 1252,
+      "sha256": "f252c0a09af66be62fe562b5316405a4c13c05ea4dae37d4216be43301ce7c1d",
+      "copy_verified": true
+    },
+    "draft/develop_guard_native_transition.py": {
+      "bytes": 36390,
+      "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb",
+      "copy_verified": true
+    },
+    "draft/engineering_revision_01/check_guard_native_transition_before.py": {
+      "bytes": 11319,
+      "sha256": "4d82427bb93b6a055cbedbeed0c50c0fa3f68b8464f4ab7400fb3b133d9ba611",
+      "copy_verified": true
+    },
+    "draft/engineering_revision_01/fixture_only.diff": {
+      "bytes": 3122,
+      "sha256": "5bdfe7f621b3737599db75f750c71924242db72debecccd07e28eb6942a1ebc8",
+      "copy_verified": true
+    },
+    "draft/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 8134,
+      "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56",
+      "copy_verified": true
+    },
+    "draft/INTEGRITY.json": {
+      "bytes": 3573,
+      "sha256": "0890e0d1d1cb2a4fc86da335562a86662c7ab37d45ea688a30eaa6ea1c49a623",
+      "copy_verified": true
+    },
+    "static_review/REVIEW.md": {
+      "bytes": 1464,
+      "sha256": "c0d15a28111d8215fc2bdcc1bd07bc32fcdc24fa955ae775690c1b6117663132",
+      "copy_verified": true
+    },
+    "root_review.md": {
+      "bytes": 1345,
+      "sha256": "8cfd8c9634afcc1f6a0ea67ec2981c63852742aa3ff213d2430c776f24e09db0",
+      "copy_verified": true
+    },
+    "run_k_native_transition_once.py": {
+      "bytes": 1315,
+      "sha256": "cde5d9a8c87e8368f99844a23a880d50f1cc41c39f677325688367d94f858b8e",
+      "copy_verified": true
+    },
+    "prepare_k_native_transition_once.py": {
+      "bytes": 2505,
+      "sha256": "d601972b186e07f5e4b0e54dde5024a7432cac95cd3846d042b67dd652a3016a",
+      "copy_verified": true
+    }
+  },
+  "promotion": "exact reviewed source bytes; AST only; passed checks not repeated; interpreter caches excluded",
+  "cost": {
+    "binary_reads": 34,
+    "input_bytes": 1047066,
+    "copy_checks": 16,
+    "copy_failures": 0,
+    "wall_seconds": 0.2005023998208344,
+    "cpu_seconds": 0.015625
+  },
+  "actual_C_trace_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "physics": 0
+}
