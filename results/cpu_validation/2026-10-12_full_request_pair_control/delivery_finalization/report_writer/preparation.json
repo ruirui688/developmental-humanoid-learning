@@ -1,0 +1,43 @@
+{
+  "schema": "FR3_report_writer_source_preparation_v1",
+  "status": "repaired_source_AST_passed_unexecuted_by_child",
+  "stable_sources": {
+    "external/fr3_report_common_candidate.py": {"bytes": 27923, "sha256": "3d7fe5081fc71ee71ad66b0b5e43b4c0fad971f008e808b01d89efa4238d79cf"},
+    "external/write_fr3a_report_candidate.py": {"bytes": 161, "sha256": "e9cfa69d19c06c6080d66ff718088e17a74ae078829d24276aaf0821e02738df"},
+    "external/write_fr3b_report_candidate.py": {"bytes": 165, "sha256": "c4dac5dd88b203d21ceeb3b45c50dcd93eb9a766b9af812f9d06bc2fc3656d73"}
+  },
+  "first_source_and_failure": {
+    "source": "external/fr3_report_writer_first_failure/first_shared_source.py",
+    "metadata": "external/fr3_report_writer_first_failure/first_failure_metadata.json",
+    "original_tool_trace": "Root-owned; not read by child.",
+    "reported_first_failure": "ValueError: only_own_canonical_stage_report_inputs_required",
+    "reported_production_document_writes": 0,
+    "repair": "experiment_id remains required; stage may be absent but must match fixed CONFIG if present. B prose specifies first physical control execution."
+  },
+  "writer_contract": {
+    "first_write_flag_required": true,
+    "root_first_audit_status_check_failure_and_RMSE_counts_required": true,
+    "canonical_report_input_per_stage_only": true,
+    "own_input_read_and_JSON_parse_per_writer_invocation": 1,
+    "FR3A_base": {"controls": 373297, "substeps": 2652970, "online_scalar": 70452, "offline_scalar": 7200},
+    "FR3B_base": "Four explicit root CLI actual cumulative values after A, checked against navigation baseline; no A experimental input read.",
+    "science_metrics": "Saved values only; full 60 A and 120 B q/v vector populations retained with missing rows, complete tracking/effort/contact and all counters.",
+    "stage_default_false": "Does not override FR1 or completed FR3A facts.",
+    "FR3A_root_engineering_fact": "Earlier B strict-clean gate rejection: 0 constructor/physics/model/fit, linked to A/control_source_failure/preservation_manifest.json without reading it.",
+    "source_transforms_finish_before_first_document_mutation": true,
+    "no_existing_report_or_receipt_overwrite": true
+  },
+  "child_preparation_actions": {
+    "source_AST_parsing": "passed",
+    "source_only_parent_navigation_anchor_inspection": true,
+    "writer_or_report_helper_executions": 0,
+    "experimental_report_input_raw_model_parameter_old_result_or_audit_reads": 0,
+    "scientific_metrics_model_fit_RLS_physics_calls": 0,
+    "production_document_edits": 0,
+    "commit_or_push": false
+  },
+  "execution_receipts_expected_after_root_execution": [
+    "external/fr3a_report_writing_receipt.json",
+    "external/fr3b_report_writing_receipt.json"
+  ]
+}

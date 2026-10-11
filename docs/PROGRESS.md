@@ -1,6 +1,10 @@
 # 开发进度与仓库检查点
 
-## 当前入口：FR3A首次新bank独立预测
+## 当前入口：FR3B首次完整首请求匹配控制
+
+[FR3B首次完整首请求匹配控制](FULL_REQUEST_PAIR_CONTROL_RESULTS.md)从clean20e899a保存状态completed，保存本域控制门未全部通过/不可评；实际新增36,000/36,000/0在线scalar。首新保存核验passed、660,047项/0失败、120个新RMSE向量；完整人口、努力/接触与停止原样保留。累计430,297/2,709,970，online94,452+offline7,200=101,652scalar。关闭本冻结候选的成功依赖；保留负结果，做一次有证据的有界下一判断，不补跑、扩大grid或放宽门。 C4最终新留出及C5–C7未验收，阶段提交推送后继续active目标。
+
+## 历史：上一阶段入口
 
 [FR3A首次新bank独立预测](FULL_REQUEST_PAIR_PREDICTION_RESULTS.md)从clean2584ed5保存状态completed，保存原预测门通过；实际新增21,000/21,000/24,000在线scalar。首新保存核验passed、680,623项/0失败、60个新RMSE向量；完整人口、努力/接触与停止原样保留。累计394,297/2,673,970，online94,452+offline7,200=101,652scalar。完成A首审、报告检查及检查点提交推送后，继续在A数据前已冻结的FR3B；controller、模型配方、seed、原门不改。 C4最终新留出及C5–C7未验收，阶段提交推送后继续active目标。
 

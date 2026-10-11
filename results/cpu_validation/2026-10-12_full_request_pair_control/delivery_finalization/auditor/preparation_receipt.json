@@ -1,0 +1,150 @@
+{
+  "status": "prepared_source_only_unexecuted",
+  "created_utc": "2026-10-11T22:59:11.414305+00:00",
+  "candidate": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr3b_audit_candidate\\audit_full_request_pair_control.py",
+    "bytes": 58695,
+    "sha256": "60e2d1c45f558f643ef8d108e205fa7aa4d1a96c179f6ea6fdd3fefbefc0cf38"
+  },
+  "derivation_reference": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr2_audit_candidate\\audit_free_root_pair_control.py",
+    "bytes": 51931,
+    "sha256": "bc8bb0ea6c233c790d728e7a18c19cd68c125bbbfd828555b83c1758330f5a5c"
+  },
+  "contract": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr3b_audit_candidate\\AUDIT_CONTRACT.md",
+    "bytes": 5269,
+    "sha256": "47b307bc627893dc5e3aa4458103a9d3646eb1b0a86f96720b3cc1a8ddd58b59"
+  },
+  "derivation_diff": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr3b_audit_candidate\\fr2_to_fr3b_derivation.diff",
+    "bytes": 21341,
+    "sha256": "1bd88259475ce04ec00e47f28c417cbe13ff87e60bc93ed659344470c2bd92cf"
+  },
+  "cli": "python external/fr3b_audit_candidate/audit_full_request_pair_control.py --repo . --raw results/cpu_validation/2026-10-12_full_request_pair_control/raw --source-commit <FR3B_clean_commit> --output <fresh_audit_directory>",
+  "dependencies": "Python standard library only; project/controller/model imports zero",
+  "source_dependencies": [
+    "scripts/develop_full_request_pair.py",
+    "src/developmental_physics/full_request_pair_development.py",
+    "docs/FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md",
+    "scripts/validate_free_root_fast_feedback_engineering.py",
+    "src/developmental_physics/free_root_fast_feedback_environment.py",
+    "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+    "src/developmental_physics/environment.py",
+    "src/developmental_physics/assets/ground_body.xml",
+    "src/developmental_physics/__init__.py",
+    "pyproject.toml",
+    "src/developmental_physics/fast_feedback_pair_model.py",
+    "src/developmental_physics/guard_coupled_pair_model.py",
+    "src/developmental_physics/guard_pair_model.py",
+    "src/developmental_physics/local_pair_model.py",
+    "src/developmental_physics/local_model.py",
+    "src/developmental_physics/fast_feedback_pair_mpc.py",
+    "src/developmental_physics/batched_fast_feedback_pair_mpc.py",
+    "src/developmental_physics/full_request_pair_mpc.py",
+    "src/developmental_physics/fast_feedback_pair_development.py"
+  ],
+  "population": {
+    "seeds": [
+      8001,
+      8002,
+      8003
+    ],
+    "methods": [
+      "cold",
+      "learned",
+      "pd",
+      "zero"
+    ],
+    "experiment_id": "FR3B",
+    "stage": "control",
+    "trial_prefix": "FR3_",
+    "raw": "results/cpu_validation/2026-10-12_full_request_pair_control/raw"
+  },
+  "stage_keys": [
+    "fr3a_prediction_gate_passed",
+    "fr3b_model_contribution_gate_passed",
+    "fr3b_pd_reference_gate_passed",
+    "fr3_free_root_mechanism_validation"
+  ],
+  "control_A_flag_contract": "B metric fr3a flag remains false because B does not redeclare A; separate FR3A result is never read or modified",
+  "scientific_flags_unchanged_false": [
+    "scientific_adoption",
+    "old_free_root_C4_validation",
+    "c4_scientific_validation",
+    "c4_contact_scientific_validation",
+    "c5_scientific_dependency_released"
+  ],
+  "original_bounds": {
+    "trials": 12,
+    "trace_records": 36000,
+    "prediction_records": 11772,
+    "conditional_model_H_groups": 60,
+    "q_v_RMSE_vectors": 120,
+    "tracking_populations": 12,
+    "active_two_axis_effort_vectors": 24,
+    "saved_conditional_pair_path_steps": 526560,
+    "batch_decisions": 1200
+  },
+  "additional_saved_arithmetic_bounds": {
+    "macro_mappings": 1200,
+    "candidate_first_request_pairs": 97200,
+    "selected_saved_request_path_steps": 180000,
+    "actual_saved_request_origins": 18000,
+    "clipped_PD_pair_expressions_on_saved_states": 198000
+  },
+  "new_check_scope": "new saved current native clipped-PD checksum; full-first-grid roundtrip; dynamic delta <=1 from nominalgrid-p; actual finalpermission <=.5; saved ten held/140 PD-only selected requests and hold indices; no model rollout/cost/tie/controller replay",
+  "AST": {
+    "candidate_parses": 1,
+    "normalized_reference_parses": 1,
+    "result": "passed",
+    "retained_helpers_equal_after_namespace_only": [
+      "AuditBoundError",
+      "Checks",
+      "json_safe",
+      "require",
+      "finite_number",
+      "vector",
+      "close_tree",
+      "identity",
+      "duplicate_free",
+      "parse_json",
+      "read_small",
+      "hash_stream",
+      "iter_records",
+      "check_sources",
+      "complete_native_observation",
+      "input_ranges",
+      "contact_summary",
+      "effort_summary",
+      "snapshot_check",
+      "decision_accounting",
+      "conditional_recheck",
+      "original_control_gate"
+    ],
+    "candidate_import_or_execution": false
+  },
+  "peer_review": {
+    "agent": "/root/checkpoint_review",
+    "source_bytes": 58695,
+    "source_sha256": "60e2d1c45f558f643ef8d108e205fa7aa4d1a96c179f6ea6fdd3fefbefc0cf38",
+    "finding": "no concrete contract error; source-only narrow static review"
+  },
+  "preparation_accounting": {
+    "candidate_executions": 0,
+    "candidate_imports": 0,
+    "raw_result_or_model_parameter_reads": 0,
+    "physics_calls": 0,
+    "model_restoration_prediction_fit_or_RLS_calls": 0,
+    "controller_or_PD_method_invocations": 0,
+    "old_mathematical_or_scientific_tests": 0,
+    "production_writes": 0,
+    "automatic_retries": 0,
+    "commits": 0
+  },
+  "scope_note": "audit actual canonical B physical archive only; zero-physics source-validation failure is separate, not a 120-RMSE population; source commit supplied by root after clean A checkpoint",
+  "runtime_used_for_AST_only": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

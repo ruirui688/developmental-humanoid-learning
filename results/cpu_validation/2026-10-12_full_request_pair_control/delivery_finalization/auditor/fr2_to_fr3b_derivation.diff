@@ -1,0 +1,286 @@
+--- external\fr2_audit_candidate\audit_free_root_pair_control.py
++++ external\fr3b_audit_candidate\audit_full_request_pair_control.py
+@@ -1,7 +1,8 @@
+-"""First bounded audit of saved FR2 control evidence; no model or physics calls.
++"""First bounded audit of saved FR3B control evidence; no model or physics calls.
+ 
+ Stdlib source/JSON/effort/contact helpers are copied unchanged from the reviewed
+-FR1 auditor. This script reads only new FR2 payloads and their frozen source.
++FR2 auditor. This script reads only new FR3B payloads and their frozen source.
++Full-grid request arithmetic uses saved values; no rollout, cost or tie replay.
+ Tracking, conditional forecasts and original adoption gates are checked once;
+ zero stays descriptive and no self-forecast veto is introduced.
+ """
+@@ -21,7 +22,7 @@
+ 
+ 
+ 
+-SEEDS = (7901, 7902, 7903)
++SEEDS = (8001, 8002, 8003)
+ 
+ 
+ HORIZONS = (1, 10, 20, 50, 150)
+@@ -35,8 +36,8 @@
+ 
+ 
+ SOURCE_PATHS = (
+-    "scripts/develop_free_root_pair.py", "src/developmental_physics/free_root_pair_development.py",
+-    "docs/FREE_ROOT_LEARNING_PROTOCOL.md",
++    "scripts/develop_full_request_pair.py", "src/developmental_physics/full_request_pair_development.py",
++    "docs/FULL_REQUEST_PAIR_LEARNING_PROTOCOL.md",
+     "scripts/validate_free_root_fast_feedback_engineering.py",
+     "src/developmental_physics/free_root_fast_feedback_environment.py",
+     "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+@@ -47,6 +48,7 @@
+     "src/developmental_physics/guard_pair_model.py", "src/developmental_physics/local_pair_model.py",
+     "src/developmental_physics/local_model.py", "src/developmental_physics/fast_feedback_pair_mpc.py",
+     "src/developmental_physics/batched_fast_feedback_pair_mpc.py",
++    "src/developmental_physics/full_request_pair_mpc.py",
+     "src/developmental_physics/fast_feedback_pair_development.py",
+ )
+ 
+@@ -66,8 +68,9 @@
+ REL_TOL = 2e-10
+ 
+ 
+-FR2_RELATIVE = "results/cpu_validation/2026-10-12_free_root_pair_control/raw"
++FR3B_RELATIVE = "results/cpu_validation/2026-10-12_full_request_pair_control/raw"
+ CONTROLS = ("cold", "learned", "pd", "zero")
++FULL_REQUEST_AXIS_GRID_NM = (-.5, -.375, -.25, -.125, 0., .125, .25, .375, .5)
+ MAX_TRACE_RECORDS = 36000
+ MAX_PREDICTION_RECORDS = 11772
+ MAX_SAVED_PAIR_PATH_STEPS = 526560
+@@ -207,7 +210,7 @@
+         checks.check(run.get("failure") is not None, "source", "unverified_source_requires_saved_failure")
+         checks.check(not run.get("seed_results") and not run.get("trials"), "source", "unverified_source_has_no_physics_trials")
+         return False
+-    checks.equal(set(pins), set(SOURCE_PATHS), "source", "all_18_frozen_dependencies")
++    checks.equal(set(pins), set(SOURCE_PATHS), "source", "all_19_frozen_dependencies")
+     archive_bytes = read_small(raw / "source.zip", cost, 64 * 1024 * 1024)
+     checks.equal(identity(archive_bytes), manifest["files"].get("source.zip"), "source", "source_zip_payload_pin")
+     total = 0
+@@ -375,10 +378,67 @@
+     ledger["planning_fallback_returns"] += int(bool(decision.get("fallback")))
+ 
+ 
++def clipped_public_PD_checksum(q, v, target):
++    """Fixed expression on saved states only; no controller/model invocation."""
++    return tuple(min(.5, max(-.5, 64.*(target[i]-q[i])-4.*v[i])) for i in range(2))
++
++
++def full_grid_saved_request_check(decision, q, v, target, ledger, checks):
++    """Only new saved first mapping and selected request path; no rollout/cost/tie."""
++    ledger["full_grid_macro_checks"] += 1
++    require(ledger["full_grid_macro_checks"] <= 1200, "full_grid_macro_check_bound")
++    origin_known = q is not None and v is not None and vector(target, 2) is not None
++    checks.check(origin_known, "full_grid", "known_current_native_origin_and_current_target")
++    if not origin_known:
++        return
++    base = clipped_public_PD_checksum(q, v, target)
++    ledger["clipped_PD_pair_expressions_on_saved_states"] += 1
++    for index, record in enumerate(decision.get("candidate_records", [])):
++        grid = (FULL_REQUEST_AXIS_GRID_NM[index//9], FULL_REQUEST_AXIS_GRID_NM[index%9])
++        delta = tuple(grid[i]-base[i] for i in range(2))
++        expected = tuple(min(.5, max(-.5, base[i]+delta[i])) for i in range(2))
++        checks.numeric(record.get("torque"), expected, "full_grid", "saved_81_first_request_roundtrip_in_fixed_order")
++        ledger["full_grid_first_request_pairs_checked"] += 1
++    if decision.get("fallback"):
++        return
++    delta = vector(decision.get("selected_residual_nm"), 2)
++    delta_known = delta is not None and all(abs(value) <= 1. for value in delta)
++    checks.check(delta_known, "full_grid", "finite_selected_dynamic_delta_within_one_Nm")
++    if not delta_known:
++        return
++    nominal = tuple(base[i]+delta[i] for i in range(2))
++    matches = [index for index in range(81) if close_tree(nominal,
++        (FULL_REQUEST_AXIS_GRID_NM[index//9], FULL_REQUEST_AXIS_GRID_NM[index%9]))]
++    checks.check(len(matches) == 1, "full_grid", "selected_delta_from_exact_one_nominal_grid_minus_current_clipped_PD")
++    if len(matches) == 1:
++        grid = (FULL_REQUEST_AXIS_GRID_NM[matches[0]//9], FULL_REQUEST_AXIS_GRID_NM[matches[0]%9])
++        checks.numeric(delta, tuple(grid[i]-base[i] for i in range(2)), "full_grid", "selected_dynamic_delta_definition")
++        selected = decision.get("candidate_records", [])[matches[0]]
++        checks.check(selected.get("feasible") is True and close_tree(selected.get("torque"), decision.get("torque")),
++                     "full_grid", "selected_first_request_is_saved_feasible_candidate")
++    qp, vp, requests = (decision.get(key, []) for key in ("predicted_q", "predicted_v", "trajectory_requested_torque"))
++    for stage in range(min(150, len(qp), len(vp), len(requests))):
++        state_q, state_v = (q, v) if stage == 0 else (vector(qp[stage-1], 2), vector(vp[stage-1], 2))
++        request = vector(requests[stage], 2)
++        known = state_q is not None and state_v is not None and request is not None
++        checks.check(known, "full_grid", "finite_saved_selected_request_and_prior_predicted_state")
++        if not known:
++            continue
++        stage_PD = base if stage == 0 else clipped_public_PD_checksum(state_q, state_v, target)
++        ledger["clipped_PD_pair_expressions_on_saved_states"] += int(stage != 0)
++        expected = tuple(min(.5, max(-.5, stage_PD[i]+(delta[i] if stage < 10 else 0.))) for i in range(2))
++        checks.numeric(request, expected, "full_grid", "saved_selected_ten_held_then_140_PD_tail_requests")
++        checks.check(all(abs(value) <= .5 for value in request), "full_grid", "saved_selected_final_permission")
++        if stage == 0:
++            checks.numeric(decision.get("torque"), request, "full_grid", "saved_first_request_matches_selected_path")
++        ledger["selected_saved_request_path_steps_checked"] += 1
++        require(ledger["selected_saved_request_path_steps_checked"] <= 180000, "selected_request_path_checksum_bound")
++
++
+ def capture_control(row, ordinal, ledger, checks):
+     seed, trial_id, index = row.get("seed"), row.get("trial_id"), row.get("control_index")
+-    require(seed in SEEDS and trial_id in {f"FR_{seed}_control_{name}" for name in CONTROLS}
+-            and type(index) is int and 0 <= index < 3000, "fixed_new_FR2_trace_identity")
++    require(seed in SEEDS and trial_id in {f"FR3_{seed}_control_{name}" for name in CONTROLS}
++            and type(index) is int and 0 <= index < 3000, "fixed_new_FR3B_trace_identity")
+     name = trial_id.rsplit("_", 1)[-1]
+     phase, active_index = ("prefix", index) if index < 1000 else ("active", index-1000)
+     request = vector(row.get("requested_torque"), 8)
+@@ -432,6 +492,8 @@
+         checks.check(name in MODELS and phase == "active" and active_index % 10 == 0,
+                      "planning", "decisions_only_cold_learned_macro_origins")
+         decision_accounting(row["planning_decision"], ledger, checks)
++        full_grid_saved_request_check(row["planning_decision"], bq[:2] if bq is not None else None,
++            bv[:2] if bv is not None else None, row.get("current_target_q2"), ledger, checks)
+     return {"ordinal": ordinal, "index": index, "phase": phase, "phase_index": active_index,
+         "paid": paid, "returned": row.get("returned") is True, "telemetry": telemetry,
+         "bq": bq[:2] if bq is not None else None, "bv": bv[:2] if bv is not None else None,
+@@ -440,7 +502,9 @@
+         "applied2": tuple(diagnostic["applied_torque"][:2]) if vector(diagnostic.get("applied_torque"), 8) is not None else None,
+         "actual": actual, "applied": applied, "missing_effort": missing_effort, "normal_sums": normal_sums,
+         "pair_classes": pair_classes, "target": row.get("current_target_q2"), "saved_error": row.get("target_error_rad"),
+-        "decision": row.get("planning_decision"), "held_residual": row.get("held_residual2"), "held_fallback": row.get("held_fallback")}
++        "decision": row.get("planning_decision"), "held_residual": row.get("held_residual2"), "held_fallback": row.get("held_fallback"),
++        "public_PD": vector(row.get("public_pd_request2"), 2), "residual_hold_micro_index": row.get("residual_hold_micro_index"),
++        "macro_decision_index": row.get("macro_decision_index")}
+ 
+ 
+ def trial_recheck(trial, records, models, source_files, ledger, checks):
+@@ -496,6 +560,23 @@
+                 ledger["invalid_held_decision_rows"] += 1
+             if held is not None and held.get("fallback") and row["request"] != (0., 0.):
+                 ledger["invalid_literal_zero_fallback_rows"] += 1
++            checks.equal((row["residual_hold_micro_index"], row["macro_decision_index"]),
++                         (row["phase_index"]%10, row["phase_index"]//10), "full_grid", "saved_ten_native_step_hold_indices")
++        if (name == "pd" or name in MODELS and held is not None and held.get("fallback") is False):
++            known = row["bq"] is not None and row["bv"] is not None and row["public_PD"] is not None
++            checks.check(known, "full_grid", "known_saved_public_PD_for_nonfallback_request")
++            if known:
++                base = clipped_public_PD_checksum(row["bq"], row["bv"], target)
++                ledger["clipped_PD_pair_expressions_on_saved_states"] += 1
++                checks.numeric(row["public_PD"], base, "full_grid", "current_native_clipped_PD_checksum")
++                delta = vector(row["held_residual"], 2) if name in MODELS else (0., 0.)
++                checks.check(delta is not None and all(abs(value) <= 1. for value in delta),
++                             "full_grid", "known_held_dynamic_delta_with_shared_bound")
++                if delta is not None:
++                    expected = tuple(min(.5, max(-.5, base[i]+delta[i])) for i in range(2))
++                    checks.numeric(row["request"], expected, "full_grid", "actual_saved_final_request_from_current_PD_plus_held_delta")
++                ledger["actual_saved_request_origins_checked"] += 1
++                require(ledger["actual_saved_request_origins_checked"] <= 18000, "actual_saved_request_checksum_bound")
+     axis = [math.sqrt(sum(error[i]**2 for error in errors)/2000) for i in range(2)] if eligible else None
+     tracking = {"available": eligible, "planned_active_count": 2000, "observed_active_count": len(active),
+         "axis_rmse_rad": axis, "joint_rmse_rad": math.sqrt(sum(sum(error[i]**2 for i in range(2)) for error in errors)/4000) if eligible else None,
+@@ -546,7 +627,7 @@
+     groups, path_steps = defaultdict(dict), 0
+     for row in iter_records(raw/"predictions.jsonl.gz", cost, record_limit=MAX_PREDICTION_RECORDS, decoded_limit=MAX_PREDICTION_DECODED_BYTES):
+         trial_id, seed, model, horizon, origin = (row.get(key) for key in ("trial_id", "seed", "model", "horizon", "origin_active_index"))
+-        require(seed in SEEDS and trial_id in {f"FR_{seed}_control_{name}" for name in MODELS}
++        require(seed in SEEDS and trial_id in {f"FR3_{seed}_control_{name}" for name in MODELS}
+             and model in MODELS and horizon in HORIZONS and type(origin) is int and origin in range(0, 2000-horizon+1, 10), "fixed_conditional_group_origin")
+         group = (trial_id, model, horizon)
+         require(origin not in groups[group], "duplicate_conditional_origin")
+@@ -580,7 +661,7 @@
+     output = {}
+     for seed in SEEDS:
+         for source in MODELS:
+-            trial_id = f"FR_{seed}_control_{source}"
++            trial_id = f"FR3_{seed}_control_{source}"
+             info = trial_info.get(trial_id, {"complete": False, "domain": False})
+             saved_score = seed_rows.get(seed, {}).get("conditional_prediction_scores", {}).get(source, {})
+             horizons = output[trial_id] = {}
+@@ -642,14 +723,14 @@
+     pd = comparison("pd", False, .05) if contribution["passed"] else {"available": False, "passed": False,
+         "reason": "model_contribution_gate_not_passed", "checks": []}
+     return {"model_contribution": contribution, "pd_reference": pd,
+-        "fr2_model_contribution_gate_passed": contribution["passed"], "fr2_pd_reference_gate_passed": pd["passed"],
+-        "free_root_mechanism_validation": contribution["passed"] and pd["passed"]}
++        "fr3b_model_contribution_gate_passed": contribution["passed"], "fr3b_pd_reference_gate_passed": pd["passed"],
++        "fr3_free_root_mechanism_validation": contribution["passed"] and pd["passed"]}
+ 
+ 
+ def run_audit(args, checks, cost):
+     repo, raw = Path(args.repo).resolve(), Path(args.raw).resolve()
+-    require(raw == (repo/FR2_RELATIVE).resolve(), "only_fixed_new_FR2_raw_allowed")
+-    require(len(args.source_commit) == 40 and all(x in "0123456789abcdef" for x in args.source_commit), "exact_FR2_source_commit")
++    require(raw == (repo/FR3B_RELATIVE).resolve(), "only_fixed_new_FR3B_raw_allowed")
++    require(len(args.source_commit) == 40 and all(x in "0123456789abcdef" for x in args.source_commit), "exact_FR3B_source_commit")
+     manifest = parse_json(read_small(raw/"manifest.json", cost), cost)
+     loaded, pins = {}, {}
+     for name in ("run.json", "metrics.json", "models.json"):
+@@ -662,20 +743,20 @@
+         checks.equal(pins[name], manifest.get("files", {}).get(name), "payload", name)
+     run, metrics, models = (loaded[name] for name in ("run.json", "metrics.json", "models.json"))
+     for value in (run, manifest):
+-        checks.equal((value.get("experiment_id"), value.get("stage")), ("FR2", "control"), "boundary", "only_new_control_stage")
++        checks.equal((value.get("experiment_id"), value.get("stage")), ("FR3B", "control"), "boundary", "only_new_control_stage")
+     checks.equal(run.get("status"), manifest.get("status"), "boundary", "run_manifest_status")
+     checks.equal(run.get("seeds"), list(SEEDS), "boundary", "fixed_new_seed_bank")
+     for value in (run, manifest, metrics):
+         for flag in FLAGS:
+             checks.equal(value.get(flag), False, "boundary", flag)
+-    checks.equal(metrics.get("fr1_prediction_gate_passed"), False, "boundary", "FR2_does_not_redeclare_FR1_gate")
++    checks.equal(metrics.get("fr3a_prediction_gate_passed"), False, "boundary", "FR3B_does_not_redeclare_FR3A_gate")
+     checks.equal(run.get("planned_upper_bounds"), {"control_calls": 36000, "physics_substeps": 36000,
+-        "MPC_decisions": 1200, "planning_prediction_pairs": 14580000, "conditional_prediction_pairs": 526560}, "boundary", "frozen_FR2_budget")
++        "MPC_decisions": 1200, "planning_prediction_pairs": 14580000, "conditional_prediction_pairs": 526560}, "boundary", "frozen_FR3B_budget")
+     source_ok = check_sources(repo, raw, run, manifest, args.source_commit, checks, cost)
+     trials, seeds = run.get("trials", []), run.get("seed_results", [])
+-    require(len(trials) <= 12 and len(seeds) <= 3, "fixed_FR2_matrix_bounds")
++    require(len(trials) <= 12 and len(seeds) <= 3, "fixed_FR3B_matrix_bounds")
+     seed_rows, by_id = {row["seed"]: row for row in seeds}, {row["trial_id"]: row for row in trials}
+-    require(len(seed_rows) == len(seeds) and set(seed_rows).issubset(SEEDS) and len(by_id) == len(trials), "unique_FR2_seed_trial_matrix")
++    require(len(seed_rows) == len(seeds) and set(seed_rows).issubset(SEEDS) and len(by_id) == len(trials), "unique_FR3B_seed_trial_matrix")
+     for seed in models:
+         require(seed in {str(value) for value in SEEDS}, "new_bank_models_only")
+         checks.equal(set(models[seed]), set(MODELS), "models", "new_saved_frozen_pair")
+@@ -703,7 +784,7 @@
+         checks.equal(ledger[key], 0, "information", key)
+     for key in ("RLS_vector_update_attempts", "RLS_vector_update_returns", "RLS_vector_update_exceptions", "RLS_vector_update_commits",
+                 "RLS_scalar_update_commits", "teacher_calls", "batch_fit_calls", "task_policy_updates", "GPU_training_seconds"):
+-        checks.equal(paid.get(key), 0, "ledger", "no_FR2_update_training:"+key)
++        checks.equal(paid.get(key), 0, "ledger", "no_FR3B_update_training:"+key)
+     for key, bound in (("control_call_attempts", 36000), ("confirmed_physics_substeps", 36000), ("MPC_decision_attempts", 1200)):
+         checks.check(type(paid.get(key)) is int and 0 <= paid[key] <= bound, "ledger", key+":budget_bound")
+     checks.check(ledger["known_complete_contact_endpoints"] <= paid.get("audit_contact_snapshot_returns", 0) <= paid.get("audit_contact_snapshot_attempts", 0), "ledger", "audit_known_lower_bound")
+@@ -722,9 +803,13 @@
+         checks.numeric(metrics.get("pd_reference"), gate["pd_reference"], "gate", "original_PD_precondition_5pct_and_effort")
+     else:
+         checks.check(run.get("failure") is not None, "gate", "absent_final_control_gate_requires_saved_failure")
+-    for key in ("fr2_model_contribution_gate_passed", "fr2_pd_reference_gate_passed", "free_root_mechanism_validation"):
++    for key in ("fr3b_model_contribution_gate_passed", "fr3b_pd_reference_gate_passed", "fr3_free_root_mechanism_validation"):
+         checks.equal(metrics.get(key), bool(gate[key] and source_ok and run.get("failure") is None), "gate", key+":execution_veto")
+     checks.equal(run.get("unattempted_seeds"), [seed for seed in SEEDS if seed not in seed_rows], "trials", "unattempted_seed_preservation")
++    for key in ("full_grid_macro_checks", "full_grid_first_request_pairs_checked",
++                "selected_saved_request_path_steps_checked", "actual_saved_request_origins_checked",
++                "clipped_PD_pair_expressions_on_saved_states"):
++        cost["new_saved_"+key] = ledger[key]
+     return {"payload_pins": pins, "trace_ledger": dict(ledger), "new_tracking_and_active_effort": {key: value["tracking"] for key, value in info.items()},
+         "new_conditional_RMSE": conditional, "original_saved_tracking_gate": gate,
+         "trial_matrix_complete": len(info) == 12 and all(value["complete"] for value in info.values()),
+@@ -748,16 +833,19 @@
+     except BaseException as exc:
+         failure = {"type": type(exc).__name__, "message": str(exc), "traceback": traceback.format_exc()}
+     cost["wall_seconds"], cost["cpu_seconds"] = time.perf_counter()-wall, time.process_time()-cpu
+-    report = {"schema": "first_FR2_saved_audit_v1", "raw": str(raw), "source_commit": args.source_commit,
++    report = {"schema": "first_FR3B_saved_audit_v1", "raw": str(raw), "source_commit": args.source_commit,
+         "auditor": identity(Path(__file__).read_bytes()), "status": "passed" if failure is None and not sum(checks.failed.values()) else "failed",
+         "checks": dict(checks.counts), "failed_checks": dict(checks.failed), "first_128_failures": checks.failures,
+         "first_failure": failure or (checks.failures[0] if checks.failures else None), "cost": dict(cost),
+         "bounds": {"seeds": 3, "trials": 12, "trace_records": 36000, "prediction_records": 11772,
+                    "conditional_model_H_groups": 60, "q_v_RMSE_vectors": 120, "tracking_populations": 12,
+-                   "active_two_axis_effort_vectors": 24, "saved_conditional_pair_path_steps": 526560, "batch_decisions": 1200},
++                   "active_two_axis_effort_vectors": 24, "saved_conditional_pair_path_steps": 526560, "batch_decisions": 1200,
++                   "full_grid_first_request_pairs_checked": 97200, "selected_saved_request_path_steps_checked": 180000,
++                   "actual_saved_request_origins_checked": 18000, "clipped_PD_pair_expressions_on_saved_states": 198000},
+         "execution": {"model_calls": 0, "model_restoration": 0, "fit": 0, "RLS": 0, "physics": 0,
+-                      "FR1_or_old_raw_reads": 0, "old_scientific_recomputations": 0, "automatic_retry": 0,
+-                      "science_thresholds_changed": False}, "recheck": result}
++                      "FR3A_or_old_raw_reads": 0, "old_scientific_recomputations": 0, "automatic_retry": 0,
++                      "science_thresholds_changed": False, "controller_or_PD_method_invocations": 0,
++                      "new_saved_request_checks": "bounded fixed arithmetic on saved native/predicted states; no rollout/cost/tie replay"}, "recheck": result}
+     for name, value in (("audit.json", report), ("metric_recheck.json", result)):
+         with (output/name).open("x", encoding="utf-8") as stream:
+             json.dump(json_safe(value), stream, ensure_ascii=False, indent=2, allow_nan=False)

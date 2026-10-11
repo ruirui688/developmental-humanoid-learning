@@ -1,0 +1,120 @@
+{
+  "stage": "FR3B_first_archive",
+  "status": "completed",
+  "files_before_top_manifest": {
+    "first_execution_receipt.json": {
+      "bytes": 1001,
+      "sha256": "84aaf2370dd8218a704cf9b396fb9e4fc4bd436a62d419ff6971c2f3900c4fb0"
+    },
+    "raw/installed/FR3_8001_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8001_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8001_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8001_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8002_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8002_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8002_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8002_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8003_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8003_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8003_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR3_8003_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/manifest.json": {
+      "bytes": 3154,
+      "sha256": "ef4c10d9cb18b3e5ffe244c14713e45faaa18a6e897ab26c0f4475ffb3e3a67f"
+    },
+    "raw/metrics.json": {
+      "bytes": 5039,
+      "sha256": "4c636a7bd12d5a9a26492fdcead6ef7e41c2063b6ac33a316ff0d7c394cbeb39"
+    },
+    "raw/models.json": {
+      "bytes": 60939,
+      "sha256": "7c3dc74a8ade16bbf2d9cf1da35b272c86cabd1efd87c5c5a78676789d568f93"
+    },
+    "raw/paid_intervals.jsonl.gz": {
+      "bytes": 58531512,
+      "sha256": "9e1e692fca6fa2a76e37844cf463cbdd7061722763033249350ae89d57333708"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 19891864,
+      "sha256": "21d38d5aca2b07f01b2c3e5606b9a5a7793e457fbcb5ff039d28f4f7860c7e74"
+    },
+    "raw/run.json": {
+      "bytes": 2536321,
+      "sha256": "2aa2f9d9cca4690b5a1f5f1ab86c2bcee19db9e8b6693e5c909146ea70cca438"
+    },
+    "raw/source.zip": {
+      "bytes": 90197,
+      "sha256": "a1bd541bb717e709e0149c360a6e42d78a091c734dbe5bb751c2e51b43c49aa9"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 45619363,
+      "sha256": "b2dfe530bf3fc77f32ce2c1084052656fdf68b231dabc0af6def82509826a8c0"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "bytes": 48084,
+      "sha256": "8ef887e2a73b05d4d2e927b30f18a5c5ac4e1cdfdd16afaca135fcab97a4dac0"
+    },
+    "report_inputs.json": {
+      "bytes": 1369758,
+      "sha256": "bdd08cb3c8d4f54424ade599f886420e44f5dce0f6118a631f6370dcddc71a9c"
+    },
+    "launchers/run_fr3_first_once.py": {
+      "bytes": 1762,
+      "sha256": "b42c61a3e57645d96378bbf839c3f4bb528e01de648f222e28e5e3605a26b795"
+    },
+    "launchers/archive_fr3_first_once.py": {
+      "bytes": 3465,
+      "sha256": "9503e9497049fffe28c57a88fc31b3399ab197dfe74df3ef2022f61d122a3688"
+    },
+    "launchers/run_fr3_control_after_checkpoint_once.py": {
+      "bytes": 2010,
+      "sha256": "512bd3c57e7f635a827b1707d94543012aca7f10a9cf194ff74718c40b15bd26"
+    },
+    "archive_receipt.json": {
+      "bytes": 457,
+      "sha256": "dc652f249554c655a9baf31079d6491d2924e2efab4e945e0cdf1a33fc3d4d99"
+    }
+  },
+  "scientific_adoption": false,
+  "continuous_goal_stays_active": true
+}

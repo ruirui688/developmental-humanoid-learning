@@ -1,0 +1,30 @@
+{
+  "status": "prepared_unexecuted",
+  "source": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\fr3_delivery_finalizer_candidate\\finalize_fr3_stage_delivery_once.py",
+    "bytes": 7324,
+    "sha256": "c69dac972e0b29842cbf91d3c95b18f500891ecab8237ed34b1fa77cafb4dbb9"
+  },
+  "AST_parse_count": 1,
+  "AST": "passed",
+  "executed": false,
+  "CLI": "python external/fr3_delivery_finalizer_candidate/finalize_fr3_stage_delivery_once.py --stage prediction --repo .",
+  "B_CLI": "python external/fr3_delivery_finalizer_candidate/finalize_fr3_stage_delivery_once.py --stage control --repo .",
+  "dependencies": "stdlib only",
+  "scope": "required first audit/report-writer/root-helper bytecopies, checksum manifest, stage report and five navigation local-link existence checks; missing required files fail; no raw or existing manifest/report_inputs/control_source_failure modification",
+  "A_auditor_provenance": "source and preparation.json only",
+  "B_auditor_provenance": "source,AUDIT_CONTRACT.md,fr2_to_fr3b_derivation.diff,preparation_receipt.json",
+  "B_byte_preserved_diff_destination": "results/cpu_validation/2026-10-12_full_request_pair_control/delivery_finalization/auditor/fr2_to_fr3b_derivation.diff",
+  "navigation": [
+    "AGENTS.md",
+    "README.md",
+    "docs/PROGRESS.md",
+    "docs/CPU_VALIDATION_TARGET.md",
+    "docs/CONTINUOUS_EXECUTION_PLAN.md"
+  ],
+  "preparation_raw_result_model_reads": 0,
+  "preparation_model_physics_or_scientific_calls": 0,
+  "production_writes": 0,
+  "new_tests_executed": 0,
+  "source_review_inputs": "existing root launcher/archive helper source and external directory structures only; no payload contents inspected"
+}

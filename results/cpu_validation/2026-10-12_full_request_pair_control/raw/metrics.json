@@ -1,0 +1,191 @@
+{
+  "model_contribution": {
+    "available": true,
+    "checks": [
+      {
+        "seed": 8001,
+        "available": true,
+        "strict": true,
+        "baseline_joint_axis": [
+          0.04515684036895092,
+          0.038537279781276655,
+          0.05092306482600432
+        ],
+        "learned_joint_axis": [
+          0.007579362276887423,
+          0.007828772207513646,
+          0.007321460972474702
+        ],
+        "passed": true
+      },
+      {
+        "seed": 8002,
+        "available": true,
+        "strict": true,
+        "baseline_joint_axis": [
+          0.045157396090162144,
+          0.03853850983139746,
+          0.0509231195358539
+        ],
+        "learned_joint_axis": [
+          0.007456890191979862,
+          0.007884076915855067,
+          0.007003695728354569
+        ],
+        "passed": true
+      },
+      {
+        "seed": 8003,
+        "available": true,
+        "strict": true,
+        "baseline_joint_axis": [
+          0.045735074143549465,
+          0.03967769631117791,
+          0.05107909973041681
+        ],
+        "learned_joint_axis": [
+          0.007675762871989767,
+          0.007967806593291635,
+          0.007372159074920421
+        ],
+        "passed": true
+      },
+      {
+        "scope": "three_seed_raw_RMSE_mean",
+        "baseline_joint_axis_mean": [
+          0.04534977020088751,
+          0.03891782864128401,
+          0.050975094697425005
+        ],
+        "learned_joint_axis_mean": [
+          0.007570671780285684,
+          0.007893551905553449,
+          0.007232438591916564
+        ],
+        "improvement_fractions": [
+          0.8330604158135839,
+          0.7971738871068471,
+          0.8581181921319332
+        ],
+        "required_improvement": 0.2,
+        "passed": true
+      },
+      {
+        "scope": "three_seed_actual_effort_mean",
+        "signal": "actual_absolute_two_axis_nm_s",
+        "baseline_mean": 1.4995031380376538,
+        "learned_mean": 1.559125840346825,
+        "maximum_ratio": 1.05,
+        "passed": true
+      },
+      {
+        "scope": "three_seed_actual_effort_mean",
+        "signal": "actual_squared_two_axis_nm2_s",
+        "baseline_mean": 0.7118999732704876,
+        "learned_mean": 0.5516816425793295,
+        "maximum_ratio": 1.05,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "pd_reference": {
+    "available": true,
+    "checks": [
+      {
+        "seed": 8001,
+        "available": true,
+        "strict": false,
+        "baseline_joint_axis": [
+          0.008002481354411945,
+          0.009511702918753973,
+          0.006132448388758704
+        ],
+        "learned_joint_axis": [
+          0.007579362276887423,
+          0.007828772207513646,
+          0.007321460972474702
+        ],
+        "passed": false
+      },
+      {
+        "seed": 8002,
+        "available": true,
+        "strict": false,
+        "baseline_joint_axis": [
+          0.008002663027680792,
+          0.009512047100374994,
+          0.006132388688713862
+        ],
+        "learned_joint_axis": [
+          0.007456890191979862,
+          0.007884076915855067,
+          0.007003695728354569
+        ],
+        "passed": false
+      },
+      {
+        "seed": 8003,
+        "available": true,
+        "strict": false,
+        "baseline_joint_axis": [
+          0.008126365118064421,
+          0.009744535160559967,
+          0.006092590136288411
+        ],
+        "learned_joint_axis": [
+          0.007675762871989767,
+          0.007967806593291635,
+          0.007372159074920421
+        ],
+        "passed": false
+      },
+      {
+        "scope": "three_seed_raw_RMSE_mean",
+        "baseline_joint_axis_mean": [
+          0.008043836500052387,
+          0.009589428393229646,
+          0.0061191424045869925
+        ],
+        "learned_joint_axis_mean": [
+          0.007570671780285684,
+          0.007893551905553449,
+          0.007232438591916564
+        ],
+        "improvement_fractions": [
+          0.05882326421771764,
+          0.17684854801914204,
+          -0.18193663649583147
+        ],
+        "required_improvement": 0.05,
+        "passed": true
+      },
+      {
+        "scope": "three_seed_actual_effort_mean",
+        "signal": "actual_absolute_two_axis_nm_s",
+        "baseline_mean": 1.4416853704473649,
+        "learned_mean": 1.559125840346825,
+        "maximum_ratio": 1.05,
+        "passed": false
+      },
+      {
+        "scope": "three_seed_actual_effort_mean",
+        "signal": "actual_squared_two_axis_nm2_s",
+        "baseline_mean": 0.4268983342428883,
+        "learned_mean": 0.5516816425793295,
+        "maximum_ratio": 1.05,
+        "passed": false
+      }
+    ],
+    "passed": false
+  },
+  "fr3a_prediction_gate_passed": false,
+  "fr3b_model_contribution_gate_passed": true,
+  "fr3b_pd_reference_gate_passed": false,
+  "fr3_free_root_mechanism_validation": false,
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

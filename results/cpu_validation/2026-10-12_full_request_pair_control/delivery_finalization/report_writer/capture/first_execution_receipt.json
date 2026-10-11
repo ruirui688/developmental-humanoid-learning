@@ -1,0 +1,29 @@
+{
+  "stage": "control",
+  "first_A_identity_failure_preserved": true,
+  "first_B_report": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\write_fr3b_report_candidate.py",
+    "--write",
+    "--audit-status",
+    "passed",
+    "--audit-checks",
+    "660047",
+    "--audit-failed",
+    "0",
+    "--audit-rmse-vectors",
+    "120",
+    "--base-control",
+    "394297",
+    "--base-substeps",
+    "2673970",
+    "--base-online-scalar",
+    "94452",
+    "--base-offline-scalar",
+    "7200"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.1668368000537157
+}

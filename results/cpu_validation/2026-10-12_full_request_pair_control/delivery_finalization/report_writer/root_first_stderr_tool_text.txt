@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\Codex_ws\robot_rl\external\write_fr3a_report_candidate.py", line 5, in <module>
+    main('FR3A')
+  File "D:\Codex_ws\robot_rl\external\fr3_report_common_candidate.py", line 263, in main
+    raise ValueError('only_own_canonical_stage_report_inputs_required')
+ValueError: only_own_canonical_stage_report_inputs_required

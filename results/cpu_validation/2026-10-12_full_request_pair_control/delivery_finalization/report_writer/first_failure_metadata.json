@@ -1,0 +1,31 @@
+{
+  "schema": "FR3_report_writer_first_failure_preservation_v1",
+  "status": "first_shared_source_and_root_reported_failure_preserved_before_repair",
+  "source": {
+    "path": "external/fr3_report_writer_first_failure/first_shared_source.py",
+    "bytes": 27704,
+    "sha256": "ee5acd09e2fe804e5b996c7e29ebb76db15019a56965a3b07bedad42b3009c2f"
+  },
+  "first_attempt": {
+    "stage": "FR3A",
+    "entry": "external/write_fr3a_report_candidate.py",
+    "exception_type": "ValueError",
+    "message": "only_own_canonical_stage_report_inputs_required",
+    "root_reported_document_writes": 0,
+    "root_reported_cause": "The immutable report_inputs envelope contains experiment_id FR3A but no stage field; writer incorrectly required stage.",
+    "scientific_failure": false,
+    "actual_tool_trace": "Root will archive the original first invocation tool trace separately; this metadata records the trusted root message only."
+  },
+  "allowed_repair": {
+    "identity": "Keep fixed canonical path and exact experiment_id; stage is optional but must match CONFIG when present.",
+    "FR3B_wording": "Describe canonical B report as first physical control execution, with previous zero-physics source rejection retained under A.",
+    "scientific_metrics_or_threshold_changes": false,
+    "immutable_report_inputs_changes": false
+  },
+  "child_actions": {
+    "writer_executions": 0,
+    "experimental_result_or_raw_or_model_parameter_reads": 0,
+    "production_document_edits": 0,
+    "source_preservation_only_before_repair": true
+  }
+}
