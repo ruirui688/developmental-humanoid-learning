@@ -36,6 +36,8 @@ B随后按 `docs/GUARD_COUPLED_DEVELOPMENT_PROTOCOL.md`冻结，核心、来源h
 
 B随后从clean `f68c485`首次执行，0完整/3肘位置研究停止/0异常/blocked，每seed106active；独立脉冲预测数值改善约42%–44%，自身贡献/diag增量/PD门全部未过。实际618/6180与离线2400scalar，正式物理累计239120/2391200，在线17652+新增离线2400scalar单列。首审1642786项、一次summary2436项零失败，保留318条原保存控制/预测提取，无模型重调用。见 `docs/GUARD_COUPLED_DEVELOPMENT_RESULTS.md`。继续C固定模型的1/9对照2/8原生q/v veto探索开发，不把veto称学得成熟，不改A/B档或任务权限停止；C5/C6仍待科学验收。
 
+C探索正式协议已提升并冻结于 `docs/GUARD_EXPLORATION_DEVELOPMENT_PROTOCOL.md`。保持coupled9/RLS/MPC，独立cold的1/9与2/8 native q/v veto校准、共同新prediction及五控制；24trial上限8100/81000/4800在线scalar。每组自身贡献、探索20%增量与PD5%分别判门，完整优先；veto不用于控制、不称学得成熟。29 runner及9 auditor人工测试通过，同固定fake原件类型修正复核2704019项零失败，首次失败保留。提交推送后clean HEAD首次物理，随后一次首审/汇总/归档，再继续C5或最小有依据修订；当前正式累计仍239120/2391200、在线17652+离线2400，尚无C物理结果。
+
 按火柴人也应模拟小孩的澄清，已新增独立 MuJoCo CPU 地面探索底座，见 `docs/GROUND_BODY_PHYSICS.md`。最初阶段只有固定小幅/零力矩采集、物理与日志验收，无身体模型更新或能力晋级；后续 E1 的局部校准更新单独记录。环境无任务教师或步态代理，不能把被动倒下、滑动或采集成功称为技能学习。
 
 首轮 24 组无训练地面采集已完成，见 `docs/GROUND_BODY_RESULTS.md`。探索有效激励弱且限位干预频繁，控制终点接触力采样出现较高峰值；优先补齐子步冲击诊断与实际动作激励计量，再准备学习协议。首次 Windows 写盘中断的额外交互与原始文件保留，完整矩阵单独归档，不能把零停止算作安全验证通过。

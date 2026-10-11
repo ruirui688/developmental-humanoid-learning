@@ -1,5 +1,13 @@
 # 开发进度与仓库检查点
 
+## C4 C探索对照正式冻结（2026-10-11，物理执行前）
+
+[C协议](GUARD_EXPLORATION_DEVELOPMENT_PROTOCOL.md)固定同coupled9/RLS/MPC的两种独立cold探索校准：1/9与2/8原生q/v veto。共同新prediction使用后者；控制不veto，保持原200active目标、权限与停止，已选PD和zero独立执行。单组校准失败只阻塞本组学习控制，至少一个发布才执行共同prediction；缺失模型明确unavailable。24计划上限8100控制/81000子步/4800在线scalar，全部失败、付费前缀和数学调用计账。
+
+29 runner及9独立auditor人工测试通过；一次original-MPC假工程原档6309fake/63090/4800scalar，15完整/9研究停止。首审5400项shape浮点类型期望错误保留，仅修auditor后只读同原件2704019项零失败，无二次collect；全部synthetic validated=false。正式auditor SHA `962a928b5d643ed2a3d4da20da2940a9a4e17932818c859beb204f11bf59ffa3`，原受保护core不改。提升只改变正式开关/说明及路径，不重复原数学矩阵。
+
+提升后6项生产路径/source/guard/冻结门纯检查通过，物理、fake环境、模型预测、RLS、MPC和Git调用均0；首次检查器对AST变量引用误作literal导致的失败保留，仅修检查器后复核，没有改变生产源码或重复原数学矩阵。检查、提交推送后从clean HEAD首次执行C，再一次独立首审、一次薄汇总和封口。当前正式费用仍239120/2391200、在线17652scalar+离线2400scalar；尚无C物理或收益结论。C5适应协议及完整模型克隆的4项纯人工测试已准备，但其科学物理仍依赖C4完整贡献门；不以准备材料放行。
+
 ## C4 B首次真实结果：控制延长但未完成（2026-10-11）
 
 [同校准coupled结果](GUARD_COUPLED_DEVELOPMENT_RESULTS.md)从clean `f68c485`一次完成0完整/3肘位置研究停止/0异常/blocked，每seed106active；短脉冲预测误差下降42%–44%，不能替代预定200active贡献门。相对diagonal完整增量因A学习控制停止而未评价；B自身与PD门同样失败/未评价。最后保存预测仍严重低估目标切换后的速度与位移，没有重跑或放宽停止。

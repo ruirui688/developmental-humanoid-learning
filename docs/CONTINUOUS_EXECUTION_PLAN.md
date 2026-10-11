@@ -69,7 +69,7 @@ C2/C3 的正式矩阵根据 C1 的开发依据另写冻结协议。C4–C6 在�
 立即按以下顺序持续执行：
 
 1. B八raw、首次audit、一次summary、冻结源码、全部工程失败与原保存预测已[封口](../results/cpu_validation/2026-10-11_guard_coupled/manifest.json)，82payload/1876项完整性检查零失败；检查后提交推送。
-2. 冻结C最小探索对照：同coupled模型/RLS/MPC，原1/9与native q/v veto的2/8各自cold校准；共同新prediction、统一200active最终控制及同PD/zero。不改变目标、权限或停止，不把人工探索veto称学得成熟。
+2. [C最小探索对照](GUARD_EXPLORATION_DEVELOPMENT_PROTOCOL.md)已提升冻结：同coupled模型/RLS/MPC，原1/9与native q/v veto的2/8各自cold校准；共同新prediction、统一200active最终控制及同PD/zero。不改变目标、权限或停止，不把人工探索veto称学得成熟。工程原失败保留，29 runner/9 auditor人工测试及同原件只读复核通过；提交推送后首次物理。
 3. 从clean源码首次执行C固定矩阵并独立审计、公开全部失败与实际成本；根据科学门进入C5或有明确依据的最小修订，不能重复到成功或后改阈值。
 4. 完成未知动力学适应、固定成熟/能力门控对照和新留出综合验收；每批检查、提交、推送后立即接着做最早未验收阶段，不等待重复“继续”。
 
