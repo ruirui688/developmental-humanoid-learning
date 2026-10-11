@@ -1,0 +1,140 @@
+[
+  {
+    "seed": 0,
+    "source_parameter_record": "results/cpu_validation/2026-10-12_guard_bounded_lbfgs_position_transition/raw/parameters.json:seed0:U22",
+    "available": true,
+    "public_guard": {
+      "rule": "known_angle_guard_control_start_v1",
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "angle_margin_rad": 0.03,
+      "request_clip_per_axis_nm": 0.5,
+      "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+      "zero_is_blocked": false,
+      "q_clipped": false,
+      "evaluation_time": "current control-start q and already known request",
+      "interval_semantics": "start-only projection; not realized 20 ms average input",
+      "future_actual_input": false,
+      "physical_queries": 0
+    },
+    "refit": false,
+    "actual_updates": 0,
+    "source_commit": "7358ff9f583d9a20460e94c914cd8ea172c9780a",
+    "qref8": [
+      0.09739774391333796,
+      -0.0005762480149995581,
+      0.09493693729966764,
+      -0.0005762987372346418,
+      0.04356878918530173,
+      0.0615240226895908,
+      0.04201987120734122,
+      0.05997511216591734
+    ],
+    "Q22_fingerprint_before": "289acd4c5a577620cd8367f52a445046d356fa7ef51fa8fa4b89e6f5f2328967",
+    "Q22_weights_source_field": "frozen_Q_weights50x22",
+    "U22_fingerprint_before": "0d2be1cefe88717019681e7e598b7e8776a15bddba936c7ba763e9881b677886",
+    "U22_weights_source_field": "selected_weights50x22",
+    "Q22_fingerprint_after": "289acd4c5a577620cd8367f52a445046d356fa7ef51fa8fa4b89e6f5f2328967",
+    "U22_fingerprint_after": "0d2be1cefe88717019681e7e598b7e8776a15bddba936c7ba763e9881b677886"
+  },
+  {
+    "seed": 1,
+    "source_parameter_record": "results/cpu_validation/2026-10-12_guard_bounded_lbfgs_position_transition/raw/parameters.json:seed1:U22",
+    "available": true,
+    "public_guard": {
+      "rule": "known_angle_guard_control_start_v1",
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "angle_margin_rad": 0.03,
+      "request_clip_per_axis_nm": 0.5,
+      "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+      "zero_is_blocked": false,
+      "q_clipped": false,
+      "evaluation_time": "current control-start q and already known request",
+      "interval_semantics": "start-only projection; not realized 20 ms average input",
+      "future_actual_input": false,
+      "physical_queries": 0
+    },
+    "refit": false,
+    "actual_updates": 0,
+    "source_commit": "7358ff9f583d9a20460e94c914cd8ea172c9780a",
+    "qref8": [
+      0.09382541724034689,
+      -0.0005763175538596344,
+      0.09851225192022411,
+      -0.0005762208654215973,
+      0.041319910050044116,
+      0.059275379298357536,
+      0.04426996643742488,
+      0.06222542149794695
+    ],
+    "Q22_fingerprint_before": "a3f2632d291169978d52554777b7d4fdf795415c5d09b09cc50f67fc098cd3de",
+    "Q22_weights_source_field": "frozen_Q_weights50x22",
+    "U22_fingerprint_before": "f616d9a38bcf5e7c51e7600ff664da5ceabaf432fadffad4add6f8afcb7f9e79",
+    "U22_weights_source_field": "selected_weights50x22",
+    "Q22_fingerprint_after": "a3f2632d291169978d52554777b7d4fdf795415c5d09b09cc50f67fc098cd3de",
+    "U22_fingerprint_after": "f616d9a38bcf5e7c51e7600ff664da5ceabaf432fadffad4add6f8afcb7f9e79"
+  },
+  {
+    "seed": 2,
+    "source_parameter_record": "results/cpu_validation/2026-10-12_guard_bounded_lbfgs_position_transition/raw/parameters.json:seed2:U22",
+    "available": true,
+    "public_guard": {
+      "rule": "known_angle_guard_control_start_v1",
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "angle_margin_rad": 0.03,
+      "request_clip_per_axis_nm": 0.5,
+      "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+      "zero_is_blocked": false,
+      "q_clipped": false,
+      "evaluation_time": "current control-start q and already known request",
+      "interval_semantics": "start-only projection; not realized 20 ms average input",
+      "future_actual_input": false,
+      "physical_queries": 0
+    },
+    "refit": false,
+    "actual_updates": 0,
+    "source_commit": "7358ff9f583d9a20460e94c914cd8ea172c9780a",
+    "qref8": [
+      0.10085905132196148,
+      -0.000576154793236481,
+      0.09149097340142245,
+      -0.0005763487344100835,
+      0.045745742109943754,
+      0.06370212022647316,
+      0.03984916297792929,
+      0.05780556937403456
+    ],
+    "Q22_fingerprint_before": "a495057ef67d7597796def15761754d2530de4c58670f34ee64eb5ca426e33d1",
+    "Q22_weights_source_field": "frozen_Q_weights50x22",
+    "U22_fingerprint_before": "122d31d220bf8d75d3c4f3dd432e2fec8545612303b8e2c0113f7170c154a036",
+    "U22_weights_source_field": "selected_weights50x22",
+    "Q22_fingerprint_after": "a495057ef67d7597796def15761754d2530de4c58670f34ee64eb5ca426e33d1",
+    "U22_fingerprint_after": "122d31d220bf8d75d3c4f3dd432e2fec8545612303b8e2c0113f7170c154a036"
+  }
+]

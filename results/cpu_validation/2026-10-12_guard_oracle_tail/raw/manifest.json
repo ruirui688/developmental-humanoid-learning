@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "diagnostic_only": true,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "files": {
+    "parameters.json": {
+      "bytes": 5248,
+      "sha256": "aeaa36ba0bf0f5a2bd8d7e7244a1cd0e9a37b18d0263755aa3b0be240d5c3ab4"
+    },
+    "metrics.json": {
+      "bytes": 159545,
+      "sha256": "e63ce39531c2f938a888f7a664c99f3db55355c765de9576b3f1156d85eb7b84"
+    },
+    "run.json": {
+      "bytes": 18993,
+      "sha256": "4d4713b0888a726485531d57a59d97ed0e3315cba3e119ea4c68a08381fa6dbf"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 6427310,
+      "sha256": "88519746fe69c710f4bc85ae9b38803ce8ce9c5c876ad0dbdce1ee8b552ad288"
+    }
+  }
+}

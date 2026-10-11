@@ -1,5 +1,14 @@
 # 开发进度与仓库检查点
 
+## 2026-10-12：V未来尾反馈未改善预测，继续新物理设计
+
+[V结果](GUARD_ORACLE_TAIL_DIAGNOSTIC_RESULTS.md)从clean7e1e5dd首次完成4,572记录/192组，600H1精确。
+Q/U受控H2/H5及H15均略退化；H15肩/肘均值Q −1.120%/−0.400%、U −1.243%/−0.570%。
+两source各12描述检查全部失败，未重算旧K/D门；0fit/新物理/RLS/旧自身闭合重算。
+新增12,408full22前向、10,122非末步覆盖/182,196未来scalar用途，三seed模型前后指纹不变。
+首8薄契约通过只证明保存一致。按冻结分支关闭oracle组合与同bank优化，继续有边界新支撑域设计；
+新域不能追认旧C4，最终仍需完整接触控制。持续目标active，阶段提交推送后继续C4–C7。
+
 ## 2026-10-12：U训练改善但开发门失败，结束本族优化器修订
 
 [U结果](GUARD_BOUNDED_LBFGS_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)从clean7358ff9首次完成。

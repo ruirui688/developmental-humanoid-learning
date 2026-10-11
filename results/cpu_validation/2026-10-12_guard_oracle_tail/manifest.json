@@ -1,0 +1,62 @@
+{
+  "payload_count": 10,
+  "files": {
+    "execution.json": {
+      "bytes": 704,
+      "sha256": "7e527bba94d79f85e084abebd11d85e039ffd3011b6afd3f30d89d334240aa77",
+      "original_path": "external/c4_v_oracle_tail_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 755,
+      "sha256": "5415a9f056833bd3f652f3c495fd66f8c85e3d2dc4e6f3a316bfaf0f7f9572c1",
+      "original_path": "external/c4_v_oracle_tail_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 159545,
+      "sha256": "e63ce39531c2f938a888f7a664c99f3db55355c765de9576b3f1156d85eb7b84",
+      "original_path": "external/c4_v_oracle_tail_01/raw/metrics.json"
+    },
+    "raw/parameters.json": {
+      "bytes": 5248,
+      "sha256": "aeaa36ba0bf0f5a2bd8d7e7244a1cd0e9a37b18d0263755aa3b0be240d5c3ab4",
+      "original_path": "external/c4_v_oracle_tail_01/raw/parameters.json"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 6427310,
+      "sha256": "88519746fe69c710f4bc85ae9b38803ce8ce9c5c876ad0dbdce1ee8b552ad288",
+      "original_path": "external/c4_v_oracle_tail_01/raw/predictions.jsonl.gz"
+    },
+    "raw/run.json": {
+      "bytes": 18993,
+      "sha256": "4d4713b0888a726485531d57a59d97ed0e3315cba3e119ea4c68a08381fa6dbf",
+      "original_path": "external/c4_v_oracle_tail_01/raw/run.json"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_v_oracle_tail_01/stderr"
+    },
+    "stdout": {
+      "bytes": 4757,
+      "sha256": "0a4c5701aff32f418025f5f2daf7286bef7ee99c25e0f9393c771dd966098b87",
+      "original_path": "external/c4_v_oracle_tail_01/stdout"
+    },
+    "execution/run_v_oracle_once.py": {
+      "bytes": 2237,
+      "sha256": "4ec79d5f9d5aaa5fd2df75270ad17e8db94f3d2722b89dfb86436ec9b234712c",
+      "original_path": "external/run_v_oracle_once.py"
+    },
+    "execution/archive_v_oracle_once.py": {
+      "bytes": 2216,
+      "sha256": "3bb540a01c335d02521f5c069cfed21875f0c7d1228ef3fc18176308480cb53d",
+      "original_path": "external/archive_v_oracle_once.py"
+    }
+  },
+  "file_reads": 20,
+  "read_bytes": 13243530,
+  "copy_failures": [],
+  "wall_seconds": 0.12966690002940595,
+  "cpu_seconds": 0.0,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

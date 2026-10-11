@@ -33,7 +33,7 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-[U首次结果](docs/GUARD_BOUNDED_LBFGS_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)从clean7358ff9完成：三seed各30accepted，124有限objective/backward、31Armijo拒绝；校准损失下降，但原两门仍仅H15q幅度失败（约2%–5%，不足20%）。不进控制。按冻结分支结束此候选族优化器修订，不再同bank追加步长/优化器/特征；接着一次有边界校准—评价信息诊断或新物理采样设计，不能从失败直接识别缺特征或接触因果。持续目标仍active、C4/C5科学依赖未解除。以下为旧决策历史，不能据此重跑；当前入口以阶段账本首页及最后记录为准。
+[V首次结果](docs/GUARD_ORACLE_TAIL_DIAGNOSTIC_RESULTS.md)从clean7e1e5dd完成：4,572记录/192组完整，600H1精确，Q/U受控H2/H5/H15均略退化。12,408前向、10,122覆盖/182,196未来scalar用途；0fit/物理/RLS/旧self重算，首8薄契约全过。不进控制，关闭oracle路线与同bank优化，继续一个有边界的新支撑域双关节机制设计；它不能追认原地面接触C4，最终仍需完整接触控制。不能从负结果识别缺传感或支撑因果。持续目标仍active、C4/C5科学依赖未解除。以下为旧决策历史，不能据此重跑；当前入口以阶段账本首页及最后记录为准。
 
 [H保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认学习预测合规但实际超速；[I因果残差结果](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)从clean1f239f3首次完成102端点/96pair，learned seed0/1两轴退化、seed2改善，肩/肘三seed均值仅3.18%/4.68%，主门失败；cold全退化。不采用上一残差进控制。[J六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)从clean9e8a212首次完成，C共同prediction肩/肘均值退化3.39%/2.77%，全部seed两轴退化；不采用。新增离线ridge2400scalar标签/3solve/36系数，0新物理/RLS。[K完整原生状态闭合转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从cleanb46c6d3首次完成，所有H1/2/5/15窗口有限；H1速度只改善0.485%/0.194%，H15位置退化0.208%/0.469%，开发门失败，不进控制。K新增离线ridge26400标签/3solve/1914系数，0新物理/RLS。L固定数据增量已执行，结论见下段；这些修订均不解除C4/C5依赖，已见数据只开发，新留出/控制仍另需验证。
 

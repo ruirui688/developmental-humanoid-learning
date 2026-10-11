@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "group": 1,
+      "description": "frozen source identities or explicitly failed early source",
+      "passed": true
+    },
+    {
+      "group": 2,
+      "description": "no learning/physics/old self recomputation and scientific flags false",
+      "passed": true
+    },
+    {
+      "group": 3,
+      "description": "only frozen Q/U identities restored",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "description": "saved payload bindings and fixed identities with no duplicate or dropped completed-run rows",
+      "passed": true
+    },
+    {
+      "group": 5,
+      "description": "controlled-only scoring, fixed unavailable rows and transcribed self",
+      "passed": true
+    },
+    {
+      "group": 6,
+      "description": "finite full22 before nonterminal tail replacement and predicted history",
+      "passed": true
+    },
+    {
+      "group": 7,
+      "description": "H1 controlled identity and complete identity ledger",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "description": "all controlled groups and descriptive-only fixed source rule",
+      "passed": true
+    }
+  ],
+  "status": "completed",
+  "failure": null,
+  "failed_checks": 0,
+  "reads": {
+    "run.json": {
+      "bytes": 18993,
+      "sha256": "4d4713b0888a726485531d57a59d97ed0e3315cba3e119ea4c68a08381fa6dbf"
+    },
+    "metrics.json": {
+      "bytes": 159545,
+      "sha256": "e63ce39531c2f938a888f7a664c99f3db55355c765de9576b3f1156d85eb7b84"
+    },
+    "parameters.json": {
+      "bytes": 5248,
+      "sha256": "aeaa36ba0bf0f5a2bd8d7e7244a1cd0e9a37b18d0263755aa3b0be240d5c3ab4"
+    },
+    "manifest.json": {
+      "bytes": 755,
+      "sha256": "5415a9f056833bd3f652f3c495fd66f8c85e3d2dc4e6f3a316bfaf0f7f9572c1"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 6427310,
+      "sha256": "88519746fe69c710f4bc85ae9b38803ce8ce9c5c876ad0dbdce1ee8b552ad288"
+    }
+  },
+  "cost": {
+    "file_read_attempts": 5,
+    "file_reads": 6,
+    "read_bytes": 6623818,
+    "json_parses": 4576,
+    "decompressed_bytes": 58765151,
+    "model_restorations": 0,
+    "scientific_metric_recalculations": 0,
+    "scientific_gate_recalculations": 0,
+    "wall_seconds": 1.3901324002072215,
+    "cpu_seconds": 1.375
+  }
+}

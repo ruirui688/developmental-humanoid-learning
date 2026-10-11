@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** 最早未验收仍为C4。[U结果](docs/GUARD_BOUNDED_LBFGS_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)三seed各30accepted、校准损失下降，但长期位置只改善约2%–5%，未过20%原门。按冻结规则结束当前候选族优化器修订，接着一次有边界的信息诊断或新采样设计；有依据后再验证新候选、新留出与完整控制，随后C5–C7。阶段检查提交推送后继续；下列旧结果保留为历史，不触发重跑。
+**当前执行入口：** 最早未验收仍为C4。[V结果](docs/GUARD_ORACLE_TAIL_DIAGNOSTIC_RESULTS.md)首次完成固定4,572记录/192组，600H1精确；提供其他18通道的真实未来状态后，Q/U受控预测均略退化。按冻结分支关闭oracle与同bank优化路线，继续有边界的新支撑域双关节机制设计，再逐步回到完整接触控制；新域不能追认旧C4。随后C5–C7，阶段检查提交推送后继续；下列旧结果保留为历史，不触发重跑。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 

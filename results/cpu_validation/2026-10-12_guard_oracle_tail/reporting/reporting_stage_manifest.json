@@ -1,0 +1,91 @@
+{
+  "phase": "stage",
+  "status": "staged",
+  "root": "results/cpu_validation/2026-10-12_guard_oracle_tail",
+  "base_manifests": {
+    "manifest.json": {
+      "bytes": 2369,
+      "sha256": "dc260d8368a7042e9de55bf8ae1c1a1f2bbc5ab5e368c6cc1673fe071c8783cf"
+    },
+    "raw/manifest.json": {
+      "bytes": 755,
+      "sha256": "5415a9f056833bd3f652f3c495fd66f8c85e3d2dc4e6f3a316bfaf0f7f9572c1"
+    }
+  },
+  "base_manifests_after": {
+    "manifest.json": {
+      "bytes": 2369,
+      "sha256": "dc260d8368a7042e9de55bf8ae1c1a1f2bbc5ab5e368c6cc1673fe071c8783cf"
+    },
+    "raw/manifest.json": {
+      "bytes": 755,
+      "sha256": "5415a9f056833bd3f652f3c495fd66f8c85e3d2dc4e6f3a316bfaf0f7f9572c1"
+    }
+  },
+  "root_raw_manifests_unchanged": true,
+  "files": {
+    "reporting/c4_v_reporting_reads.json": {
+      "bytes": 966,
+      "sha256": "574863d708196f966489f109ec99fb3d642ac24a9530733b2829ea14b2ca9aa1",
+      "source": "external/c4_v_reporting_reads.json"
+    },
+    "reporting/c4_v_reporting_summary.json": {
+      "bytes": 203340,
+      "sha256": "e030bef762d817cd4e3730fe7d1ae381cb95cbee20d98e398aa4799bca0ac6d4",
+      "source": "external/c4_v_reporting_summary.json"
+    },
+    "reporting/c4_v_output_contract_static_review.json": {
+      "bytes": 1922,
+      "sha256": "f31a7d26e175a985cb9bea92799e4707e39d269d5d22b70e082e2836266a9dca",
+      "source": "external/c4_v_output_contract_static_review.json"
+    },
+    "reporting/check_v_output_once.py": {
+      "bytes": 11967,
+      "sha256": "ae0ea2c8caa56ad24df14738c591a53084c412e72cb3944707e5874b84d29fc2",
+      "source": "external/check_v_output_once.py"
+    },
+    "reporting/read_v_reporting_once.py": {
+      "bytes": 1852,
+      "sha256": "61ee4e83c24b405765b589dbc33ec06ac2b36977f52aa09facd054fddfd89b1a",
+      "source": "external/read_v_reporting_once.py"
+    },
+    "reporting/archive_v_reporting_once.py": {
+      "bytes": 8394,
+      "sha256": "c38e53110c29f079477a50d5ab5d8a59442aed0acec126c0041fb5b08f28e58b",
+      "source": "external/archive_v_reporting_once.py"
+    },
+    "reporting/output_contract/checker.py": {
+      "bytes": 11967,
+      "sha256": "ae0ea2c8caa56ad24df14738c591a53084c412e72cb3944707e5874b84d29fc2",
+      "source": "external/c4_v_output_contract_01/checker.py"
+    },
+    "reporting/output_contract/report.json": {
+      "bytes": 2315,
+      "sha256": "2dc7edff4445502a0df21bc3b45beabc084ebe3659d9aa0c0ffc5a5a40bcb066",
+      "source": "external/c4_v_output_contract_01/report.json"
+    }
+  },
+  "reference_review": {
+    "path": "external/archive_u_reporting_once.py",
+    "content_reads": 1,
+    "known_source_content_bytes": 2495,
+    "sha256": "342dcf5ea4d50ecef88e3d082d4be751da8ce75364b018fa075ddc2eb7269dac",
+    "underlying_filesystem_io_bytes": null,
+    "underlying_filesystem_io_measured": false,
+    "no_payload_read_or_helper_execution_during_preparation": true
+  },
+  "paid_cost_snapshot_before_manifest_write": {
+    "file_reads": 20,
+    "content_read_bytes": 491694,
+    "file_write_attempts": 8,
+    "file_write_returns": 8,
+    "file_write_bytes": 242723
+  },
+  "wall_seconds_before_manifest_write": 0.13643849990330637,
+  "cpu_seconds_before_manifest_write": 0.0,
+  "underlying_filesystem_io_bytes": null,
+  "underlying_filesystem_io_measured": false,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false,
+  "no_checker_or_link_checker_invocation": true
+}

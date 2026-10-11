@@ -1,0 +1,56 @@
+{
+  "scope": "V_new_saved_output_contract_static_review_only",
+  "files_modified": [
+    "external/check_v_output_once.py"
+  ],
+  "scientific_payload_reads": 0,
+  "checker_executions": 0,
+  "model_or_metric_recomputations": 0,
+  "old_case_replays": 0,
+  "source_reads": [
+    {
+      "path": "external/check_v_output_once.py",
+      "bytes": 8532,
+      "sha256": "137832f7a6e3c9fa099494df65dbb40d41f029d733d3dea485b139d73b7aad3d",
+      "file_reads": 1,
+      "hash_bytes": 8532,
+      "json_parses": 0,
+      "wall_seconds": 0.4288516,
+      "cpu_seconds": "unknown"
+    },
+    {
+      "path": "external/check_v_output_once.py",
+      "bytes": 11967,
+      "sha256": "ae0ea2c8caa56ad24df14738c591a53084c412e72cb3944707e5874b84d29fc2",
+      "file_reads": 1,
+      "hash_bytes": 11967,
+      "json_parses": 0,
+      "AST_parse": true,
+      "compile_only": true,
+      "wall_seconds": 0.005648300051689148,
+      "cpu_seconds": 0,
+      "command_wall_seconds": 1.1335340999999999
+    }
+  ],
+  "total_known_file_reads": 2,
+  "total_known_read_bytes": 20499,
+  "total_known_hash_bytes": 20499,
+  "unknown_io_costs_are_not_zero": true,
+  "modifications": [
+    "actual_predictions_jsonl_gz_filename",
+    "history_list_of_dicts_and_saved_predicted_old_current_v",
+    "nonterminal18_label_binding_and_terminal_no_overwrite",
+    "channel_index_192_controlled_metric_aliases",
+    "unavailable_self_transcription_and_legal_early_partial_parameter_prefixes",
+    "explicit_K_D_restore_zero",
+    "H1_600_direct_terminal_and_error_identity_ledger",
+    "raw_payload_manifest_size_SHA_bindings"
+  ],
+  "production_final_identity_owned_by_root": {
+    "source_bytes": 42153,
+    "source_sha256": "0915fdd404176ef62206d65c6126e7fb7de3976ea61caeb55415faed187b4335",
+    "protocol_bytes": 7763,
+    "protocol_sha256": "67fd0bbcaab93208a2f994a0b71deca1c5d6bdc77dcf2481e43f6db84d1c995d"
+  },
+  "result": "static_ready_no_execution"
+}
