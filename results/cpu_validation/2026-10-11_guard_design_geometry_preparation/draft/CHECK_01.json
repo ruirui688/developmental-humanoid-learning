@@ -1,0 +1,713 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "actual_archived_input_reads": 0,
+  "physics": 0,
+  "ridge_solves": 0,
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4"
+  },
+  "wall_seconds_before_serialization": 0.17391879996284842,
+  "cpu_process_seconds_before_serialization": 0.078125,
+  "source_sha256": {
+    "diagnose_guard_design_geometry.py": "a1003ca0b51af14d117ee0a459f159df3b8cd45a35ba72443b5e691919d31ec3",
+    "GUARD_DESIGN_GEOMETRY_DIAGNOSTIC_PROTOCOL.md": "b0735cd0544f81fe4f8a80d373ef691b4dc0d4e2ee418105da3ba93bd3f9bfbc",
+    "check_guard_design_geometry.py": "def8ac2373a703d959280210981f003a5548b6e8be5ef6aaa71e0ab8c5385f94"
+  },
+  "cases": [
+    {
+      "case": "eligibility",
+      "status": "passed",
+      "detail": {
+        "accepted_cost": {
+          "validated_archived_design_scalars": 87000,
+          "validated_archived_native_label_scalars": 66000,
+          "validated_archived_weight_scalars": 3828
+        },
+        "rejected_cost": {
+          "validated_archived_design_scalars": 58000,
+          "validated_archived_native_label_scalars": 44000,
+          "validated_archived_weight_scalars": 2552
+        },
+        "actual_svd_calls": 0,
+        "actual_matmul_attempts": 0
+      }
+    },
+    {
+      "case": "zero_rank",
+      "status": "passed",
+      "detail": {
+        "cost": {
+          "svd_attempts": 3,
+          "svd_returns": 3,
+          "native_projection_estimation_attempts": 1,
+          "matmul_attempts": 6,
+          "logical_matmul_multiplications_requested": 255200,
+          "logical_matmul_additions_requested": 246400,
+          "native_projection_label_scalar_uses_requested": 8800,
+          "matmul_returns": 6,
+          "matmul_output_scalars_returned": 28000,
+          "native_projection_label_scalar_uses_returned": 8800,
+          "native_projection_estimation_returns": 1,
+          "archived_ridge_forward_output_scalars_returned": 8800,
+          "command_projection_estimation_attempts": 1,
+          "command_projection_response_scalar_uses_requested": 1600,
+          "command_projection_response_scalar_uses_returned": 1600,
+          "command_projection_estimation_returns": 1,
+          "datasets_completed": 1
+        },
+        "operations": [
+          {
+            "kind": "svd",
+            "name": "seed0_K400:Phi",
+            "input_shape": [
+              400,
+              29
+            ],
+            "input_scalars": 11600,
+            "full_matrices": false,
+            "status": "returned",
+            "output_shapes": [
+              [
+                400,
+                29
+              ],
+              [
+                29
+              ],
+              [
+                29,
+                29
+              ]
+            ],
+            "output_scalars": 12470,
+            "rank": 0,
+            "tolerance": 0.0
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_K400:UrT_Delta",
+            "left_shape": [
+              0,
+              400
+            ],
+            "right_shape": [
+              400,
+              22
+            ],
+            "output_shape": [
+              0,
+              22
+            ],
+            "left_input_scalars": 0,
+            "right_input_scalars": 8800,
+            "output_scalars": 0,
+            "logical_multiplications_requested": 0,
+            "logical_additions_requested": 0,
+            "status": "returned",
+            "response_kind": "native_projection_label",
+            "response_scalars": 8800
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_K400:Ur_coordinates",
+            "left_shape": [
+              400,
+              0
+            ],
+            "right_shape": [
+              0,
+              22
+            ],
+            "output_shape": [
+              400,
+              22
+            ],
+            "left_input_scalars": 0,
+            "right_input_scalars": 0,
+            "output_scalars": 8800,
+            "logical_multiplications_requested": 0,
+            "logical_additions_requested": 0,
+            "status": "returned"
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_K400:Ur_shrink_coordinates",
+            "left_shape": [
+              400,
+              0
+            ],
+            "right_shape": [
+              0,
+              22
+            ],
+            "output_shape": [
+              400,
+              22
+            ],
+            "left_input_scalars": 0,
+            "right_input_scalars": 0,
+            "output_scalars": 8800,
+            "logical_multiplications_requested": 0,
+            "logical_additions_requested": 0,
+            "status": "returned"
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_K400:Phi_archived_W",
+            "left_shape": [
+              400,
+              29
+            ],
+            "right_shape": [
+              29,
+              22
+            ],
+            "output_shape": [
+              400,
+              22
+            ],
+            "left_input_scalars": 11600,
+            "right_input_scalars": 638,
+            "output_scalars": 8800,
+            "logical_multiplications_requested": 255200,
+            "logical_additions_requested": 246400,
+            "status": "returned"
+          },
+          {
+            "kind": "svd",
+            "name": "seed0_K400:Z",
+            "input_shape": [
+              400,
+              25
+            ],
+            "input_scalars": 10000,
+            "full_matrices": false,
+            "status": "returned",
+            "output_shapes": [
+              [
+                400,
+                25
+              ],
+              [
+                25
+              ],
+              [
+                25,
+                25
+              ]
+            ],
+            "output_scalars": 10650,
+            "rank": 0,
+            "tolerance": 0.0
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_K400:UzT_A",
+            "left_shape": [
+              0,
+              400
+            ],
+            "right_shape": [
+              400,
+              4
+            ],
+            "output_shape": [
+              0,
+              4
+            ],
+            "left_input_scalars": 0,
+            "right_input_scalars": 1600,
+            "output_scalars": 0,
+            "logical_multiplications_requested": 0,
+            "logical_additions_requested": 0,
+            "status": "returned",
+            "response_kind": "command_projection_response",
+            "response_scalars": 1600
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_K400:Uz_action_coordinates",
+            "left_shape": [
+              400,
+              0
+            ],
+            "right_shape": [
+              0,
+              4
+            ],
+            "output_shape": [
+              400,
+              4
+            ],
+            "left_input_scalars": 0,
+            "right_input_scalars": 0,
+            "output_scalars": 1600,
+            "logical_multiplications_requested": 0,
+            "logical_additions_requested": 0,
+            "status": "returned"
+          },
+          {
+            "kind": "svd",
+            "name": "seed0_K400:A_perp",
+            "input_shape": [
+              400,
+              4
+            ],
+            "input_scalars": 1600,
+            "full_matrices": false,
+            "status": "returned",
+            "output_shapes": [
+              [
+                400,
+                4
+              ],
+              [
+                4
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "output_scalars": 1620,
+            "rank": 0,
+            "tolerance": 0.0
+          }
+        ],
+        "actual_svd_calls": 3,
+        "actual_matmul_attempts": 6
+      }
+    },
+    {
+      "case": "subgroup_and_action",
+      "status": "passed",
+      "detail": {
+        "cost": {
+          "svd_attempts": 3,
+          "svd_returns": 3,
+          "native_projection_estimation_attempts": 1,
+          "matmul_attempts": 6,
+          "logical_matmul_multiplications_requested": 506400,
+          "logical_matmul_additions_requested": 464330,
+          "native_projection_label_scalar_uses_requested": 13200,
+          "matmul_returns": 6,
+          "matmul_output_scalars_returned": 42070,
+          "native_projection_label_scalar_uses_returned": 13200,
+          "native_projection_estimation_returns": 1,
+          "archived_ridge_forward_output_scalars_returned": 13200,
+          "command_projection_estimation_attempts": 1,
+          "command_projection_response_scalar_uses_requested": 2400,
+          "command_projection_response_scalar_uses_returned": 2400,
+          "command_projection_estimation_returns": 1,
+          "datasets_completed": 1
+        },
+        "operations": [
+          {
+            "kind": "svd",
+            "name": "seed0_L600:Phi",
+            "input_shape": [
+              600,
+              29
+            ],
+            "input_scalars": 17400,
+            "full_matrices": false,
+            "status": "returned",
+            "output_shapes": [
+              [
+                600,
+                29
+              ],
+              [
+                29
+              ],
+              [
+                29,
+                29
+              ]
+            ],
+            "output_scalars": 18270,
+            "rank": 3,
+            "tolerance": 1.0319700683878279e-11
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_L600:UrT_Delta",
+            "left_shape": [
+              3,
+              600
+            ],
+            "right_shape": [
+              600,
+              22
+            ],
+            "output_shape": [
+              3,
+              22
+            ],
+            "left_input_scalars": 1800,
+            "right_input_scalars": 13200,
+            "output_scalars": 66,
+            "logical_multiplications_requested": 39600,
+            "logical_additions_requested": 39534,
+            "status": "returned",
+            "response_kind": "native_projection_label",
+            "response_scalars": 13200
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_L600:Ur_coordinates",
+            "left_shape": [
+              600,
+              3
+            ],
+            "right_shape": [
+              3,
+              22
+            ],
+            "output_shape": [
+              600,
+              22
+            ],
+            "left_input_scalars": 1800,
+            "right_input_scalars": 66,
+            "output_scalars": 13200,
+            "logical_multiplications_requested": 39600,
+            "logical_additions_requested": 26400,
+            "status": "returned"
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_L600:Ur_shrink_coordinates",
+            "left_shape": [
+              600,
+              3
+            ],
+            "right_shape": [
+              3,
+              22
+            ],
+            "output_shape": [
+              600,
+              22
+            ],
+            "left_input_scalars": 1800,
+            "right_input_scalars": 66,
+            "output_scalars": 13200,
+            "logical_multiplications_requested": 39600,
+            "logical_additions_requested": 26400,
+            "status": "returned"
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_L600:Phi_archived_W",
+            "left_shape": [
+              600,
+              29
+            ],
+            "right_shape": [
+              29,
+              22
+            ],
+            "output_shape": [
+              600,
+              22
+            ],
+            "left_input_scalars": 17400,
+            "right_input_scalars": 638,
+            "output_scalars": 13200,
+            "logical_multiplications_requested": 382800,
+            "logical_additions_requested": 369600,
+            "status": "returned"
+          },
+          {
+            "kind": "svd",
+            "name": "seed0_L600:Z",
+            "input_shape": [
+              600,
+              25
+            ],
+            "input_scalars": 15000,
+            "full_matrices": false,
+            "status": "returned",
+            "output_shapes": [
+              [
+                600,
+                25
+              ],
+              [
+                25
+              ],
+              [
+                25,
+                25
+              ]
+            ],
+            "output_scalars": 15650,
+            "rank": 1,
+            "tolerance": 3.2633758932252444e-12
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_L600:UzT_A",
+            "left_shape": [
+              1,
+              600
+            ],
+            "right_shape": [
+              600,
+              4
+            ],
+            "output_shape": [
+              1,
+              4
+            ],
+            "left_input_scalars": 600,
+            "right_input_scalars": 2400,
+            "output_scalars": 4,
+            "logical_multiplications_requested": 2400,
+            "logical_additions_requested": 2396,
+            "status": "returned",
+            "response_kind": "command_projection_response",
+            "response_scalars": 2400
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_L600:Uz_action_coordinates",
+            "left_shape": [
+              600,
+              1
+            ],
+            "right_shape": [
+              1,
+              4
+            ],
+            "output_shape": [
+              600,
+              4
+            ],
+            "left_input_scalars": 600,
+            "right_input_scalars": 4,
+            "output_scalars": 2400,
+            "logical_multiplications_requested": 2400,
+            "logical_additions_requested": 0,
+            "status": "returned"
+          },
+          {
+            "kind": "svd",
+            "name": "seed0_L600:A_perp",
+            "input_shape": [
+              600,
+              4
+            ],
+            "input_scalars": 2400,
+            "full_matrices": false,
+            "status": "returned",
+            "output_shapes": [
+              [
+                600,
+                4
+              ],
+              [
+                4
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "output_scalars": 2420,
+            "rank": 2,
+            "tolerance": 1.0319700683878256e-11
+          }
+        ],
+        "focus_output0_summaries": {
+          "ALL": {
+            "subset": "ALL",
+            "count": 600,
+            "output_index": 0,
+            "output": "q0-qref0",
+            "delta_unit": "rad",
+            "squared_energy_unit": "(rad)^2",
+            "scientific_focus": true,
+            "floor_squared_energy": 133.33333333333337,
+            "shrink_squared_energy": 7.407160499999762e-08,
+            "twice_floor_shrink_cross_term": 5.421010862427522e-17,
+            "reconstructed_squared_energy": 133.333333407405,
+            "saved_ridge_squared_energy": 400.0,
+            "max_abs_residual_identity_discrepancy": 0.6666555557407883
+          },
+          "C400": {
+            "subset": "C400",
+            "count": 400,
+            "output_index": 0,
+            "output": "q0-qref0",
+            "delta_unit": "rad",
+            "squared_energy_unit": "(rad)^2",
+            "scientific_focus": true,
+            "floor_squared_energy": 44.44444444444555,
+            "shrink_squared_energy": 4.9381069999998405e-08,
+            "twice_floor_shrink_cross_term": 0.0029629135810699614,
+            "reconstructed_squared_energy": 44.447407407407695,
+            "saved_ridge_squared_energy": 400.0,
+            "max_abs_residual_identity_discrepancy": 0.6666555557407883
+          },
+          "G200": {
+            "subset": "G200",
+            "count": 200,
+            "output_index": 0,
+            "output": "q0-qref0",
+            "delta_unit": "rad",
+            "squared_energy_unit": "(rad)^2",
+            "scientific_focus": true,
+            "floor_squared_energy": 88.88888888888783,
+            "shrink_squared_energy": 2.4690534999999212e-08,
+            "twice_floor_shrink_cross_term": -0.0029629135810699068,
+            "reconstructed_squared_energy": 88.88592599999728,
+            "saved_ridge_squared_energy": 0.0,
+            "max_abs_residual_identity_discrepancy": 0.6666555557407342
+          }
+        },
+        "actual_svd_calls": 3,
+        "actual_matmul_attempts": 6,
+        "ridge_solves": 0
+      }
+    },
+    {
+      "case": "failure_accounting",
+      "status": "passed",
+      "detail": {
+        "projection_failure_cost": {
+          "svd_attempts": 1,
+          "svd_returns": 1,
+          "native_projection_estimation_attempts": 1,
+          "matmul_attempts": 2,
+          "logical_matmul_multiplications_requested": 0,
+          "logical_matmul_additions_requested": 0,
+          "native_projection_label_scalar_uses_requested": 8800,
+          "matmul_returns": 1,
+          "matmul_output_scalars_returned": 0,
+          "native_projection_label_scalar_uses_returned": 8800,
+          "matmul_failures": 1,
+          "native_projection_estimation_failures": 1
+        },
+        "projection_failure_operations": [
+          {
+            "kind": "svd",
+            "name": "seed0_K400:Phi",
+            "input_shape": [
+              400,
+              29
+            ],
+            "input_scalars": 11600,
+            "full_matrices": false,
+            "status": "returned",
+            "output_shapes": [
+              [
+                400,
+                29
+              ],
+              [
+                29
+              ],
+              [
+                29,
+                29
+              ]
+            ],
+            "output_scalars": 12470,
+            "rank": 0,
+            "tolerance": 0.0
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_K400:UrT_Delta",
+            "left_shape": [
+              0,
+              400
+            ],
+            "right_shape": [
+              400,
+              22
+            ],
+            "output_shape": [
+              0,
+              22
+            ],
+            "left_input_scalars": 0,
+            "right_input_scalars": 8800,
+            "output_scalars": 0,
+            "logical_multiplications_requested": 0,
+            "logical_additions_requested": 0,
+            "status": "returned",
+            "response_kind": "native_projection_label",
+            "response_scalars": 8800
+          },
+          {
+            "kind": "matmul",
+            "name": "seed0_K400:Ur_coordinates",
+            "left_shape": [
+              400,
+              0
+            ],
+            "right_shape": [
+              1,
+              22
+            ],
+            "output_shape": [
+              400,
+              22
+            ],
+            "left_input_scalars": 0,
+            "right_input_scalars": 22,
+            "output_scalars": 8800,
+            "logical_multiplications_requested": 0,
+            "logical_additions_requested": 0,
+            "status": "attempted",
+            "failure": {
+              "type": "ValueError",
+              "message": "matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 1 is different from 0)"
+            }
+          }
+        ],
+        "source_failure_cost": {
+          "svd_attempts": 0,
+          "svd_returns": 0,
+          "svd_failures": 0,
+          "matmul_attempts": 0,
+          "matmul_returns": 0,
+          "matmul_failures": 0,
+          "native_projection_label_scalar_uses_requested": 0,
+          "native_projection_label_scalar_uses_returned": 0,
+          "command_projection_response_scalar_uses_requested": 0,
+          "command_projection_response_scalar_uses_returned": 0,
+          "archived_ridge_forward_output_scalars_returned": 0,
+          "native_projection_estimation_attempts": 0,
+          "native_projection_estimation_returns": 0,
+          "native_projection_estimation_failures": 0,
+          "command_projection_estimation_attempts": 0,
+          "command_projection_estimation_returns": 0,
+          "command_projection_estimation_failures": 0,
+          "validated_archived_native_label_scalars": 0,
+          "validated_archived_weight_scalars": 0,
+          "datasets_completed": 0,
+          "physics_control_calls": 0,
+          "physics_substeps": 0,
+          "RLS_updates": 0,
+          "MPC_calls": 0,
+          "model_restores": 0,
+          "recursive_forecast_calls": 0,
+          "new_parameter_space_coefficients": 0,
+          "source_file_read_attempts": 1,
+          "wall_seconds_before_serialization": 0.00048610009253025055,
+          "cpu_process_seconds_before_serialization": 0.0
+        },
+        "actual_svd_calls": 0,
+        "mock_svd_calls": 1,
+        "actual_matmul_attempts": 2,
+        "actual_archived_input_reads": 0
+      }
+    }
+  ]
+}

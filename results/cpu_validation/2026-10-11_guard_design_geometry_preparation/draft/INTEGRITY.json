@@ -1,0 +1,109 @@
+{
+  "status": "prepared_first_four_new_M_synthetic_checks_passed_actual_not_run",
+  "files": {
+    "CHECK_01.fixtures/source_failure/diagnostics.json": {
+      "bytes": 1124,
+      "sha256": "2433227d949d78634282759de2f9a743e1ed06b162494c4c3f40d7e5693cc297"
+    },
+    "CHECK_01.fixtures/source_failure/manifest.json": {
+      "bytes": 331,
+      "sha256": "595f6bf778c125d002d3684f9df422750af85243aa42d9dcb56c60eebdbe5edc"
+    },
+    "CHECK_01.fixtures/source_failure/run.json": {
+      "bytes": 5697,
+      "sha256": "130c49804c5eaac315ba2afaa8036654136670b488fee003176b06ec2b92c982"
+    },
+    "CHECK_01.json": {
+      "bytes": 20998,
+      "sha256": "3f664401608a2a9b35efd3ebb66a6715d7d148bab03348e6120c86ad19bd5947"
+    },
+    "CHECK_01.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "CHECK_01.stdout.txt": {
+      "bytes": 2118,
+      "sha256": "a20cb8c974fa1357ad4ccafee6eb2cf6e651e76c9ee354d10da4cc89c66472ac"
+    },
+    "check_guard_design_geometry.py": {
+      "bytes": 11530,
+      "sha256": "def8ac2373a703d959280210981f003a5548b6e8be5ef6aaa71e0ab8c5385f94"
+    },
+    "diagnose_guard_design_geometry.py": {
+      "bytes": 23148,
+      "sha256": "a1003ca0b51af14d117ee0a459f159df3b8cd45a35ba72443b5e691919d31ec3"
+    },
+    "GUARD_DESIGN_GEOMETRY_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 5310,
+      "sha256": "b0735cd0544f81fe4f8a80d373ef691b4dc0d4e2ee418105da3ba93bd3f9bfbc"
+    }
+  },
+  "excluded_generated_caches": [
+    "__pycache__/diagnose_guard_design_geometry.cpython-310.pyc"
+  ],
+  "production_script_sha256": "a1003ca0b51af14d117ee0a459f159df3b8cd45a35ba72443b5e691919d31ec3",
+  "protocol_sha256": "b0735cd0544f81fe4f8a80d373ef691b4dc0d4e2ee418105da3ba93bd3f9bfbc",
+  "check_script_sha256": "def8ac2373a703d959280210981f003a5548b6e8be5ef6aaa71e0ab8c5385f94",
+  "first_checks": {
+    "file": "CHECK_01.json",
+    "count": 4,
+    "passed_first_attempt": true,
+    "reruns": 0,
+    "first_stdout": "CHECK_01.stdout.txt",
+    "first_stderr": "CHECK_01.stderr.txt",
+    "expected_failure_fixture_preserved": "CHECK_01.fixtures/source_failure",
+    "production_sources_changed_after_check": false,
+    "old_K_L_checks_repeated": false
+  },
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4"
+  },
+  "engineering_cost_synthetic_only": {
+    "matmul_attempts": 14,
+    "matmul_returns": 13,
+    "matmul_failures": 1,
+    "native_projection_label_scalar_uses_requested": 30800,
+    "native_projection_label_scalar_uses_returned": 30800,
+    "command_projection_response_scalar_uses_requested": 4000,
+    "command_projection_response_scalar_uses_returned": 4000,
+    "native_projection_estimation_attempts": 3,
+    "native_projection_estimation_returns": 2,
+    "native_projection_estimation_failures": 1,
+    "command_projection_estimation_attempts": 2,
+    "command_projection_estimation_returns": 2,
+    "command_projection_estimation_failures": 0,
+    "archived_ridge_forward_output_scalars_returned": 22000,
+    "logical_matmul_multiplications_requested": 761600,
+    "logical_matmul_additions_requested": 710730,
+    "actual_svd_attempts": 6,
+    "actual_svd_returns": 6,
+    "actual_svd_failures": 0,
+    "mock_svd_attempts": 1,
+    "mock_svd_returns": 1,
+    "synthetic_native_label_validation_scalars": 110000,
+    "synthetic_archived_weight_validation_scalars": 6380,
+    "actual_archived_matrix_reads": 0,
+    "actual_archived_trace_reads": 0,
+    "ridge_solves": 0,
+    "new_parameter_space_coefficients": 0,
+    "physics_control_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "model_restores": 0,
+    "recursive_forecast_calls": 0,
+    "wall_seconds_before_serialization": 0.17391879996284842,
+    "cpu_process_seconds_before_serialization": 0.078125
+  },
+  "engineering_cost_interpretation": "Two completed native and two completed command synthetic projections are new offline estimates; one native estimate intentionally failed at its second product. No archived matrices were consumed. Logical multiply/add requests are not measured hardware FLOPs.",
+  "preparation_identity_reads_previously_completed": {
+    "documents": 5,
+    "bytes": 23094,
+    "scope": "K/L raw manifest/run and L first-source-failure root manifest only; parameter pins copied from manifests, parameters not read"
+  },
+  "actual_M_computation": "not_started; requires canonical clean frozen source commit and fresh first-run output",
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

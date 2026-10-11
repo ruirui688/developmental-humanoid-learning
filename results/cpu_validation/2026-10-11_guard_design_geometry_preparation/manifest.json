@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "files": {
+    "draft/CHECK_01.fixtures/source_failure/diagnostics.json": {
+      "bytes": 1124,
+      "sha256": "2433227d949d78634282759de2f9a743e1ed06b162494c4c3f40d7e5693cc297",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.fixtures/source_failure/manifest.json": {
+      "bytes": 331,
+      "sha256": "595f6bf778c125d002d3684f9df422750af85243aa42d9dcb56c60eebdbe5edc",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.fixtures/source_failure/run.json": {
+      "bytes": 5697,
+      "sha256": "130c49804c5eaac315ba2afaa8036654136670b488fee003176b06ec2b92c982",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.json": {
+      "bytes": 20998,
+      "sha256": "3f664401608a2a9b35efd3ebb66a6715d7d148bab03348e6120c86ad19bd5947",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.stdout.txt": {
+      "bytes": 2118,
+      "sha256": "a20cb8c974fa1357ad4ccafee6eb2cf6e651e76c9ee354d10da4cc89c66472ac",
+      "copy_verified": true
+    },
+    "draft/check_guard_design_geometry.py": {
+      "bytes": 11530,
+      "sha256": "def8ac2373a703d959280210981f003a5548b6e8be5ef6aaa71e0ab8c5385f94",
+      "copy_verified": true
+    },
+    "draft/diagnose_guard_design_geometry.py": {
+      "bytes": 23148,
+      "sha256": "a1003ca0b51af14d117ee0a459f159df3b8cd45a35ba72443b5e691919d31ec3",
+      "copy_verified": true
+    },
+    "draft/GUARD_DESIGN_GEOMETRY_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 5310,
+      "sha256": "b0735cd0544f81fe4f8a80d373ef691b4dc0d4e2ee418105da3ba93bd3f9bfbc",
+      "copy_verified": true
+    },
+    "draft/INTEGRITY.json": {
+      "bytes": 4691,
+      "sha256": "8f035bb0f9cca8f21d48c2c3eab1455f290ba6e3d31a49f42e36523a1312ecd6",
+      "copy_verified": true
+    },
+    "decision/independent_direction.md": {
+      "bytes": 4128,
+      "sha256": "74549179c04585fbe11bff36c79cd8b5f5d5d97e7f33fb05423a396dddcf29fb",
+      "copy_verified": true
+    },
+    "decision/unexecuted_kinematic_proposal.md": {
+      "bytes": 3548,
+      "sha256": "37d4f7eb3a2993df6bd6c0b7ecfaf060a667dd3831eee2ddb3cfdd70a8e2b007",
+      "copy_verified": true
+    },
+    "decision/root_scope.md": {
+      "bytes": 1676,
+      "sha256": "265ce60e67794a0236658c0c19b3218cec215a960b5b1a69e389d20f9035e6af",
+      "copy_verified": true
+    },
+    "static_review/implementation_review.md": {
+      "bytes": 3968,
+      "sha256": "4d28e8c857d40718ec064497b536ee19b812fe8c33fdc8fd638064d18e0612e1",
+      "copy_verified": true
+    },
+    "run_m_design_geometry_once.py": {
+      "bytes": 1317,
+      "sha256": "a05031fa90a30b39d608941a4f0a4b691d9d5f48184513b93e94c7807b5d127b",
+      "copy_verified": true
+    },
+    "prepare_m_design_geometry_once.py": {
+      "bytes": 2836,
+      "sha256": "cc5e5fc41b40f743fb1195690f9ad191b8f58bc1bb8c3ed1888b384632071a10",
+      "copy_verified": true
+    }
+  },
+  "promotion": "reviewed bytes; AST only; no repeated passed checks",
+  "cost": {
+    "binary_reads": 34,
+    "input_bytes": 213298,
+    "copy_checks": 16,
+    "copy_failures": 0,
+    "wall_seconds": 0.15869209985248744,
+    "cpu_seconds": 0.0
+  },
+  "actual_parameter_payload_reads": 0,
+  "SVD_calls": 0,
+  "offline_estimates": 0,
+  "physics": 0
+}
