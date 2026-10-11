@@ -11,6 +11,8 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
+**当前执行入口：** 最早未验收仍为C4。[T有限多步拟合](docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)解决数值溢出，三seed完整有限，但长期位置仅改善约6%–8%，未过20%原门。下一唯一U只修订有限L-BFGS方向，原模型/数据/损失/预算/门不变；这是该候选族最后一次优化器修订。完成后直接推进新留出与完整控制，或依据负结果转有边界路线判断，再进入C5–C7。下列旧结果保留为历史，不触发重跑。
+
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 
 [M 固定设计诊断](docs/GUARD_DESIGN_GEOMETRY_DIAGNOSTIC_RESULTS.md)给出训练收缩证据后，[N 输入尺度修订](docs/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从clean74725ea首次完成，全部预测有限，但相对K/D两门均失败：H1肩速度退化、H15位置改善不足20%，H15速度退化。不进入控制；随后用O保存诊断为下一项结构修订提供有限依据。

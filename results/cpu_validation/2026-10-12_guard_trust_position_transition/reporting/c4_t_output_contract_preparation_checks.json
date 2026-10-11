@@ -1,0 +1,102 @@
+{
+  "scope": "thin T checker static preparation only",
+  "first_source_read": {
+    "scope": "T checker first static source read only",
+    "entries": [
+      {
+        "path": "external/check_t_output_once.py",
+        "bytes": 9715,
+        "sha256": "65440aeeda1c726ce9c61d00aa0e13f1718bbe64927a2bc6cf68c4ddf79b8d56"
+      }
+    ],
+    "file_reads": 1,
+    "read_bytes": 9715,
+    "ast_parse_attempts": 1,
+    "ast_parse_returns": 1,
+    "compile_attempts": 1,
+    "compile_returns": 1,
+    "wall_seconds": 0.0038215999957174063,
+    "cpu_seconds": 0
+  },
+  "successful_final_validation": {
+    "scope": "T thin checker final AST/compile only, no execution or payload",
+    "entries": [
+      {
+        "path": "external/check_t_output_once.py",
+        "bytes": 13700,
+        "sha256": "3de56c7dec0a86c2df2778e558c1d49654860446b1f8c6e268dd7053f85d80e4"
+      }
+    ],
+    "file_reads": 1,
+    "read_bytes": 13700,
+    "ast_parse_attempts": 1,
+    "ast_parse_returns": 1,
+    "compile_attempts": 1,
+    "compile_returns": 1,
+    "wall_seconds": 0.007661800133064389,
+    "cpu_seconds": 0
+  },
+  "registered_patch_validation": {
+    "scope": "T thin checker accepted registration static patch only",
+    "entries": [
+      {
+        "path": "external/check_t_output_once.py",
+        "bytes": 13963,
+        "sha256": "e601313c5debb96c5e3d90863080cf2c55090414c1916a1477313762ab040ee0"
+      }
+    ],
+    "file_reads": 1,
+    "read_bytes": 13963,
+    "ast_parse_attempts": 1,
+    "ast_parse_returns": 1,
+    "compile_attempts": 1,
+    "compile_returns": 1,
+    "wall_seconds": 0.01002599997445941,
+    "cpu_seconds": 0
+  },
+  "unsuccessful_static_validator": {
+    "file_reads": 1,
+    "read_bytes": 13700,
+    "identity": {
+      "path": "external/check_t_output_once.py",
+      "bytes": 13700,
+      "sha256": "3de56c7dec0a86c2df2778e558c1d49654860446b1f8c6e268dd7053f85d80e4"
+    },
+    "AST_passed": true,
+    "compile_passed": true,
+    "validation_failure": "author import whitelist used imported symbol name instead of ImportFrom.module; corrected without executing checker",
+    "wall_seconds": null,
+    "cpu_seconds": null
+  },
+  "totals": {
+    "file_reads": 4,
+    "read_bytes": 51078,
+    "ast_parse_attempts": 4,
+    "ast_parse_returns": 4,
+    "compile_attempts": 4,
+    "compile_returns": 4,
+    "synthetic_executions": 0,
+    "checker_executions": 0,
+    "scientific_payload_reads": 0,
+    "model_calls": 0,
+    "scientific_metric_recalculations": 0,
+    "scientific_gate_recalculations": 0
+  },
+  "reviewer_new_reads": 0,
+  "cached_T_schema_reuse": true,
+  "changes": [
+    "allow legal early source/runtime/empty-fit prefix",
+    "failure.json exact saved-run binding",
+    "registered objective/checkpoint/file/last/frozen20 binding",
+    "legal window_unavailable and early unscored rollout prefix",
+    "reverse T candidate-unavailable prediction isolation",
+    "full group unique channel population",
+    "checker source snapshot counted once",
+    "keep exactly15 thin groups"
+  ],
+  "final_identity": {
+    "path": "external/check_t_output_once.py",
+    "bytes": 13963,
+    "sha256": "e601313c5debb96c5e3d90863080cf2c55090414c1916a1477313762ab040ee0"
+  }
+}

@@ -1,5 +1,15 @@
 # 开发进度与仓库检查点
 
+## 2026-10-12：T拟合有限，长位置门未过，继续U
+
+[T结果](GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)从clean585540f首次完整执行；三seed各12accepted/100objective，
+全部300objective/backward有限、261Armijo拒绝、无fit失败，无收敛。4,572记录/840组完整，Q/K/D指纹不变。
+两门各12/14通过，H15q相对K肩/肘7.541%/6.361%、相对D7.350%/5.922%，不足20%，不进控制。
+新增2,400唯一q标签、948,600重复用途、2,690,400训练转移、300位置系数，0新物理/RLS/MPC。
+内wall/CPU26.1016302/24.953125秒、外29.9272868秒；首15组薄契约全过，未重算科学。
+下一唯一U改为5pair有限L-BFGS方向、范数仅上限1e-3，原核心/预算/双门不变，从Q重启。
+这是该候选族最后优化器修订；再失败转有限路线判断，不无限同bank扫描。持续目标active，C4–C7仍未验收。
+
 ## 2026-10-12：S首次数值失败，继续有限步长优化
 
 [S结果](GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)从cleanfcab231首次执行。

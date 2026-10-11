@@ -33,6 +33,8 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
+[T首次结果](docs/GUARD_TRUST_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)从clean585540f完成：三seed各12accepted/100objective，300有限objective与backward、261Armijo拒绝，原两门仍仅H15q幅度失败（约6%–8%，不足20%）。不进控制。下一唯一U保留模型/损失/C400/预算/门，从Q重启，5个正曲率L-BFGS记忆及1e-3方向范数上限。U为此候选族最后优化器修订；失败后不再同bank追加步长/优化器/特征，转一次有边界路线判断或新物理信息设计，持续目标仍active。以下为旧决策历史，不能据此重跑；当前入口以阶段账本首页及最后记录为准。
+
 [H保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认学习预测合规但实际超速；[I因果残差结果](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)从clean1f239f3首次完成102端点/96pair，learned seed0/1两轴退化、seed2改善，肩/肘三seed均值仅3.18%/4.68%，主门失败；cold全退化。不采用上一残差进控制。[J六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)从clean9e8a212首次完成，C共同prediction肩/肘均值退化3.39%/2.77%，全部seed两轴退化；不采用。新增离线ridge2400scalar标签/3solve/36系数，0新物理/RLS。[K完整原生状态闭合转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从cleanb46c6d3首次完成，所有H1/2/5/15窗口有限；H1速度只改善0.485%/0.194%，H15位置退化0.208%/0.469%，开发门失败，不进控制。K新增离线ridge26400标签/3solve/1914系数，0新物理/RLS。L固定数据增量已执行，结论见下段；这些修订均不解除C4/C5依赖，已见数据只开发，新留出/控制仍另需验证。
 
 [L固定数据增量结果](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)已完成：clean2dce248来源校验误拒绝，0fit/predict，原失败已公开；仅修D记录bytes/SHA比较后从clean3bbc34d完成3429记录/576组、16契约零失败。L相对K/D两门均失败：H1速度约3%–7%，H15位置退化约77%–81%；不进入控制，不追加PD数据/维度，下一项做有限结构诊断。新增ridge39,600标签/3solve/1,914系数、0新物理/RLS；PD能力/采样先验及旧费用披露。原4工程分支未重跑，来源修复新增一次合成检查；首输出契约误对来源失败要求完整计数的断言及仅该项补充也保留。

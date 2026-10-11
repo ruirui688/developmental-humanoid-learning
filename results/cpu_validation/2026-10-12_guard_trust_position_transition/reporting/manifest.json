@@ -1,0 +1,62 @@
+{
+  "payloads": {
+    "reporting/c4_t_reporting_reads.json": {
+      "bytes": 979,
+      "sha256": "71d33b023ad173827297fa12133388d1b67d454716c25e1b2201761e2b6d66c5",
+      "source": "external/c4_t_reporting_reads.json"
+    },
+    "reporting/read_t_reporting_once.py": {
+      "bytes": 3218,
+      "sha256": "509a18bb53d340313b5d36bc9ca10b985abb8dde26a717a72fc17ef89f8750a6",
+      "source": "external/read_t_reporting_once.py"
+    },
+    "reporting/check_t_output_once.py": {
+      "bytes": 13963,
+      "sha256": "e601313c5debb96c5e3d90863080cf2c55090414c1916a1477313762ab040ee0",
+      "source": "external/check_t_output_once.py"
+    },
+    "reporting/c4_t_output_contract_preparation_checks.json": {
+      "bytes": 3185,
+      "sha256": "142b173378859dd43b9b1bce5ce93fd733d82631153c08ba05ccb91071a13a38",
+      "source": "external/c4_t_output_contract_preparation_checks.json"
+    },
+    "reporting/c4_t_contract_execution.json": {
+      "bytes": 190,
+      "sha256": "1e560e3a23b9da50934778495fb396da14706df579d178296373e07b4e195297",
+      "source": "external/c4_t_contract_execution.json"
+    },
+    "reporting/prepare_t_delivery_once.py": {
+      "bytes": 3611,
+      "sha256": "6ef7bdf9993321e2bb7fd3187fcce3f16e1fec62affdaffac6d726b05dc0c912",
+      "source": "external/prepare_t_delivery_once.py"
+    },
+    "reporting/c4_u_T_metadata_bindings.json": {
+      "bytes": 689,
+      "sha256": "e3ac75da4d7e62e94eb43fb46fc341829a9580ee616396629436f5eb9b3bd987",
+      "source": "external/c4_u_T_metadata_bindings.json"
+    },
+    "output_contract/checker.py": {
+      "bytes": 13963,
+      "sha256": "e601313c5debb96c5e3d90863080cf2c55090414c1916a1477313762ab040ee0",
+      "source": "external/c4_t_output_contract_01/checker.py"
+    },
+    "output_contract/report.json": {
+      "bytes": 9727,
+      "sha256": "c4ab991aa1b99e2b7c80396d682bf6b2ba51b516ad88bba00de050ea64ab9706",
+      "source": "external/c4_t_output_contract_01/report.json"
+    },
+    "reporting/c4_t_results_links_01.json": {
+      "bytes": 95,
+      "sha256": "c965224111051683d939afaaffffe876c7cdabdef1c898f1d1c4dba903daceda",
+      "source": "external/c4_t_results_links_01.json"
+    }
+  },
+  "file_reads": 20,
+  "read_bytes": 99240,
+  "copy_failures": [],
+  "wall_seconds": 0.24830990005284548,
+  "cpu_seconds": 0.0,
+  "no_scientific_recalculation": true,
+  "root_raw_manifests_unchanged": true,
+  "automatic_retry": false
+}
