@@ -1,0 +1,62 @@
+{
+  "payload_count": 10,
+  "files": {
+    "execution.json": {
+      "bytes": 717,
+      "sha256": "6428e9e78c53cac2f2c6c12d9306a3c129486acefc05aaa6ff3752cb34a47f2e",
+      "original_path": "external/c4_q_quadratic_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 646,
+      "sha256": "5cc976083644a544b3395d028163f53d5e32645cdab7c05c2f10510346ea97f5",
+      "original_path": "external/c4_q_quadratic_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 331493,
+      "sha256": "009472d4f8457322b4c390bfc5bdaf0ee3c52fa3847b7f8bd90fced9dcdc9fd1",
+      "original_path": "external/c4_q_quadratic_01/raw/metrics.json"
+    },
+    "raw/parameters.json": {
+      "bytes": 3403882,
+      "sha256": "6184bc6d89e2c0e2e53c9f09ca7f03a33e7990fe6e2a59f298c13617278ce7f4",
+      "original_path": "external/c4_q_quadratic_01/raw/parameters.json"
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 20153916,
+      "sha256": "494843574d9669b4c0a767ede8318a512b7f53d6e1b0a9fcac5408a2d9157dd1",
+      "original_path": "external/c4_q_quadratic_01/raw/predictions.jsonl"
+    },
+    "raw/run.json": {
+      "bytes": 14222,
+      "sha256": "98b0bff624b7feca68000b526306d7f58e8ab33bb3644966392a35c7225db6b1",
+      "original_path": "external/c4_q_quadratic_01/raw/run.json"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_q_quadratic_01/stderr"
+    },
+    "stdout": {
+      "bytes": 3849,
+      "sha256": "459244f4dee3effa8991c3f120bd4ff1fdc466468fe76135eeff8d2f960b977e",
+      "original_path": "external/c4_q_quadratic_01/stdout"
+    },
+    "execution/run_q_quadratic_once.py": {
+      "bytes": 2358,
+      "sha256": "d1cfab9da47ce00bc85227c89bc34a73265ce1c7a973939e93aee2acb5d6d4b4",
+      "original_path": "external/run_q_quadratic_once.py"
+    },
+    "execution/archive_q_quadratic_once.py": {
+      "bytes": 2265,
+      "sha256": "367d0fea03ab94178a3a07d4382de9c4b7a3e382bfb98c2f5e212ea9e788a130",
+      "original_path": "external/archive_q_quadratic_once.py"
+    }
+  },
+  "file_reads": 20,
+  "read_bytes": 47826696,
+  "copy_failures": [],
+  "wall_seconds": 0.19651939999312162,
+  "cpu_seconds": 0.0625,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

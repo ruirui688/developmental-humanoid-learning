@@ -1,5 +1,13 @@
 # 开发进度与仓库检查点
 
+## 2026-10-12：Q一步速度门通过，继续唯一剩余长位置缺口
+
+[Q结果](GUARD_QUADRATIC_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从clean20fa032首次完成3,429记录/576组。
+H1v相对K肩/肘改善27.681%/26.273%，相对D28.032%/26.416%；H2/H5qv和H15v各seed均不劣。
+两完整开发门仍失败，唯一缺口H15q只改善约6%，不足20%。新增26,400标签/3solve/3,300系数，
+0物理/RLS，全部原件和失败保留。接着R仅受控q使用oldq+.01*(oldv+nextv)，冻结Q权重、0fit，
+其余20输出保持，完整原两门不改；新留出及matched完整控制仍待验收。持续目标active。
+
 ## 2026-10-12：P单段已知请求记忆双门失败，继续C4结构修订
 
 [P结果](GUARD_REQUEST_MEMORY_TRANSITION_DEVELOPMENT_RESULTS.md)从clean8315e61首次完成3,429记录/576组。

@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\check_q_output_once.py",
+    "--raw",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_quadratic_native_transition\\raw",
+    "--expected-source-commit",
+    "20fa0321c84eb766eeafb9f8d906f554bca60622",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_q_output_contract_01"
+  ],
+  "returncode": 0,
+  "started_unix": 1791736694.3199475,
+  "ended_unix": 1791736694.855957,
+  "wall_seconds": 0.5354658998548985,
+  "checker": {
+    "bytes": 16196,
+    "sha256": "5eee8bfef7a2a58c3c85fc8a2baadf1ecbf1a331382b7057fb4a2039a9bef147"
+  },
+  "source_backup_reads": 1,
+  "source_backup_bytes": 16196,
+  "stdout": {
+    "bytes": 652,
+    "sha256": "68131d0c974e52b48e3f64e21c000488a3910760c22cc9b7beb6a21c3b848938"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "scope": "Q report-only saved run/metrics/root manifest/execution extraction; no parameter/trace/prediction or source read; no model/metric/gate recomputation",
+  "source_root": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_quadratic_native_transition",
+  "read_cost": {
+    "binary_read_attempts": 4,
+    "binary_read_returns": 4,
+    "raw_bytes": 348798,
+    "json_parse_attempts": 4,
+    "json_parse_returns": 4,
+    "wall_seconds": 0.003489400027319789,
+    "cpu_seconds": 0.0
+  },
+  "files": {
+    "raw/run.json": {
+      "bytes": 14222,
+      "sha256": "98b0bff624b7feca68000b526306d7f58e8ab33bb3644966392a35c7225db6b1"
+    },
+    "raw/metrics.json": {
+      "bytes": 331493,
+      "sha256": "009472d4f8457322b4c390bfc5bdaf0ee3c52fa3847b7f8bd90fced9dcdc9fd1"
+    },
+    "manifest.json": {
+      "bytes": 2366,
+      "sha256": "327b38412bab68187c4195d12b4d4047dc6bffeffa0c18e0ea73271b870f25b5"
+    },
+    "execution.json": {
+      "bytes": 717,
+      "sha256": "6428e9e78c53cac2f2c6c12d9306a3c129486acefc05aaa6ff3752cb34a47f2e"
+    }
+  },
+  "actual_parameter_reads": 0,
+  "actual_trace_reads": 0,
+  "actual_prediction_reads": 0,
+  "source_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "metric_recomputations": 0,
+  "gate_recomputations": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "MPC_calls": 0,
+  "output_scope": "run metadata/cost excluding inputs/restoration records, metric controlled-axis groups only, all saved gate checks, root manifest and execution",
+  "result_document_check": {
+    "path": "D:\\Codex_ws\\robot_rl\\docs\\GUARD_QUADRATIC_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md",
+    "bytes": 9641,
+    "sha256": "89f4f24558430c639979a1f4af5563cd66ee2af4be69ad22d0859eed1b12feb0",
+    "own_document_read_attempts": 1,
+    "own_document_read_returns": 1,
+    "own_document_decode_attempts": 1,
+    "own_document_decode_returns": 1,
+    "local_links_checked": 6,
+    "missing_local_links": [],
+    "trailing_whitespace_lines": []
+  },
+  "timing_note": "Python read/parse/hash only; excludes shell startup, log/output/doc serialization/write. Saved metrics restricted before stdout to avoid duplicate extraction."
+}
