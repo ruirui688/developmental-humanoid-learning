@@ -1,0 +1,972 @@
+{
+  "scope": "C5 fixed engineering event/instrumentation check; zero learning",
+  "summary_consistency": {
+    "checks": 39,
+    "failed": 0,
+    "violations": []
+  },
+  "planned_budget": {
+    "control_calls": 480,
+    "physics_substeps": 4800,
+    "model_parameter_updates": 0
+  },
+  "actual_budget": {
+    "control_calls_attempted": 480,
+    "control_steps": 480,
+    "known_physics_substeps_lower_bound": 4800,
+    "unknown_original_step_attempts": 0,
+    "returned_endpoints": 480,
+    "model_parameter_updates": 0
+  },
+  "actual_budget_is_lower_bound": false,
+  "actual_force_effort_is_lower_bound": false,
+  "outcome_counts": {
+    "completed": 4
+  },
+  "all_four_complete": true,
+  "trials": [
+    {
+      "kind": "base_identity",
+      "status": "completed",
+      "budget": {
+        "control_calls_attempted": 120,
+        "control_steps": 120,
+        "known_physics_substeps_lower_bound": 1200,
+        "unknown_original_step_attempts": 0,
+        "returned_endpoints": 120
+      },
+      "actual_budget_is_lower_bound": false,
+      "actual_force_effort_is_lower_bound": false,
+      "known_actual_force_substeps": 1200,
+      "known_requested_effort_by_joint": [
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        }
+      ],
+      "known_actual_force_effort_by_joint": [
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.025,
+          "squared_nm2_s": 0.00625
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        }
+      ],
+      "study_abort": null,
+      "environment_terminated": null,
+      "stop_step_index": null,
+      "exception": null,
+      "blocked_by": null,
+      "reference_q_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ]
+    },
+    {
+      "kind": "wrapper_identity",
+      "status": "completed",
+      "budget": {
+        "control_calls_attempted": 120,
+        "control_steps": 120,
+        "known_physics_substeps_lower_bound": 1200,
+        "unknown_original_step_attempts": 0,
+        "returned_endpoints": 120
+      },
+      "actual_budget_is_lower_bound": false,
+      "actual_force_effort_is_lower_bound": false,
+      "known_actual_force_substeps": 1200,
+      "known_requested_effort_by_joint": [
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        }
+      ],
+      "known_actual_force_effort_by_joint": [
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.025,
+          "squared_nm2_s": 0.00625
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        }
+      ],
+      "study_abort": null,
+      "environment_terminated": null,
+      "stop_step_index": null,
+      "exception": null,
+      "blocked_by": null,
+      "reference_q_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ]
+    },
+    {
+      "kind": "gain_half",
+      "status": "completed",
+      "budget": {
+        "control_calls_attempted": 120,
+        "control_steps": 120,
+        "known_physics_substeps_lower_bound": 1200,
+        "unknown_original_step_attempts": 0,
+        "returned_endpoints": 120
+      },
+      "actual_budget_is_lower_bound": false,
+      "actual_force_effort_is_lower_bound": false,
+      "known_actual_force_substeps": 1200,
+      "known_requested_effort_by_joint": [
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        }
+      ],
+      "known_actual_force_effort_by_joint": [
+        {
+          "absolute_nm_s": 0.025,
+          "squared_nm2_s": 0.003125
+        },
+        {
+          "absolute_nm_s": 0.0125,
+          "squared_nm2_s": 0.0015625
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        }
+      ],
+      "study_abort": null,
+      "environment_terminated": null,
+      "stop_step_index": null,
+      "exception": null,
+      "blocked_by": null,
+      "reference_q_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ]
+    },
+    {
+      "kind": "armature_double",
+      "status": "completed",
+      "budget": {
+        "control_calls_attempted": 120,
+        "control_steps": 120,
+        "known_physics_substeps_lower_bound": 1200,
+        "unknown_original_step_attempts": 0,
+        "returned_endpoints": 120
+      },
+      "actual_budget_is_lower_bound": false,
+      "actual_force_effort_is_lower_bound": false,
+      "known_actual_force_substeps": 1200,
+      "known_requested_effort_by_joint": [
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        }
+      ],
+      "known_actual_force_effort_by_joint": [
+        {
+          "absolute_nm_s": 0.05,
+          "squared_nm2_s": 0.0125
+        },
+        {
+          "absolute_nm_s": 0.025,
+          "squared_nm2_s": 0.00625
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        },
+        {
+          "absolute_nm_s": 0.0,
+          "squared_nm2_s": 0.0
+        }
+      ],
+      "study_abort": null,
+      "environment_terminated": null,
+      "stop_step_index": null,
+      "exception": null,
+      "blocked_by": null,
+      "reference_q_rad": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ]
+    }
+  ],
+  "parameter_events": [
+    {
+      "kind": "base_identity",
+      "status": "not_applicable",
+      "step_boundary": 100,
+      "persistent_state_invariants": {
+        "qpos": true,
+        "qvel": true,
+        "ctrl": true,
+        "last_command": true,
+        "time": true,
+        "step_id": true,
+        "physics_steps": true
+      },
+      "before_ctrl_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "after_ctrl_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "before_armature": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "after_armature": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "plant_fingerprint_changed": false,
+      "base_fingerprint_changed": false,
+      "mass_matrix_change": {
+        "diagonal_delta": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "selected_native_dof_indices": [],
+        "expected_selected_diagonal_delta": 0.0,
+        "maximum_absolute_error_from_expected_delta": 0.0,
+        "tolerance": 1e-12,
+        "diagnostic_only": true,
+        "physics_substeps_added": 0
+      },
+      "error": null
+    },
+    {
+      "kind": "wrapper_identity",
+      "status": "applied",
+      "step_boundary": 100,
+      "persistent_state_invariants": {
+        "qpos": true,
+        "qvel": true,
+        "ctrl": true,
+        "last_command": true,
+        "time": true,
+        "step_id": true,
+        "physics_steps": true
+      },
+      "before_ctrl_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "after_ctrl_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "before_armature": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "after_armature": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "plant_fingerprint_changed": false,
+      "base_fingerprint_changed": false,
+      "mass_matrix_change": {
+        "diagonal_delta": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "selected_native_dof_indices": [],
+        "expected_selected_diagonal_delta": 0.0,
+        "maximum_absolute_error_from_expected_delta": 0.0,
+        "tolerance": 1e-12,
+        "diagnostic_only": true,
+        "physics_substeps_added": 0
+      },
+      "error": null
+    },
+    {
+      "kind": "gain_half",
+      "status": "applied",
+      "step_boundary": 100,
+      "persistent_state_invariants": {
+        "qpos": true,
+        "qvel": true,
+        "ctrl": true,
+        "last_command": true,
+        "time": true,
+        "step_id": true,
+        "physics_steps": true
+      },
+      "before_ctrl_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "after_ctrl_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "before_armature": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "after_armature": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "plant_fingerprint_changed": true,
+      "base_fingerprint_changed": false,
+      "mass_matrix_change": {
+        "diagonal_delta": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "selected_native_dof_indices": [],
+        "expected_selected_diagonal_delta": 0.0,
+        "maximum_absolute_error_from_expected_delta": 0.0,
+        "tolerance": 1e-12,
+        "diagnostic_only": true,
+        "physics_substeps_added": 0
+      },
+      "error": null
+    },
+    {
+      "kind": "armature_double",
+      "status": "applied",
+      "step_boundary": 100,
+      "persistent_state_invariants": {
+        "qpos": true,
+        "qvel": true,
+        "ctrl": true,
+        "last_command": true,
+        "time": true,
+        "step_id": true,
+        "physics_steps": true
+      },
+      "before_ctrl_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "after_ctrl_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "before_armature": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "after_armature": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.02,
+        0.02,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "plant_fingerprint_changed": true,
+      "base_fingerprint_changed": true,
+      "mass_matrix_change": {
+        "diagonal_delta": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.010000000000000002,
+          0.009999999999999998,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "selected_native_dof_indices": [
+          6,
+          7
+        ],
+        "expected_selected_diagonal_delta": 0.01,
+        "maximum_absolute_error_from_expected_delta": 1.734723475976807e-18,
+        "tolerance": 1e-12,
+        "diagnostic_only": true,
+        "physics_substeps_added": 0
+      },
+      "error": null
+    }
+  ],
+  "identity": {
+    "complete_120_returned_rows_each": true,
+    "common_rows": 120,
+    "numeric_leaf_comparisons": 79800,
+    "maximum_absolute_difference": 0.0,
+    "serialized_native_state_history_exact": true,
+    "numeric_tolerance": 1e-12,
+    "common_native_state_history_match": true,
+    "validated_identity": true
+  },
+  "effort_totals_by_native_joint": {
+    "known_requested": [
+      {
+        "absolute_nm_s": 0.2,
+        "squared_nm2_s": 0.05
+      },
+      {
+        "absolute_nm_s": 0.2,
+        "squared_nm2_s": 0.05
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      }
+    ],
+    "known_actual_force": [
+      {
+        "absolute_nm_s": 0.175,
+        "squared_nm2_s": 0.040625
+      },
+      {
+        "absolute_nm_s": 0.0875,
+        "squared_nm2_s": 0.0203125
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      },
+      {
+        "absolute_nm_s": 0.0,
+        "squared_nm2_s": 0.0
+      }
+    ]
+  },
+  "audit": {
+    "checks": 481538,
+    "failed": 0,
+    "engineering_pass": true,
+    "audit_script_sha256": "d4568342aa2d63f9675b599eab405d07db9d37b2f2c8785f627063d3fd29a85b",
+    "synthetic_fixture": false
+  },
+  "engineering_pass_from_independent_audit": true,
+  "engineering_report_consistent": true,
+  "model_parameter_updates": 0,
+  "policy_updates": 0,
+  "teacher_calls": 0,
+  "learning_or_adaptation_validated": false,
+  "causal_algorithm_advantage_validated": false,
+  "source_binding": {
+    "source_commit": "652f9d59ce8e13d552327a0b19f331270fd85aa9",
+    "source_status": "",
+    "source_dirty": false,
+    "binding_path": "docs/C5_ENGINEERING_BINDING.json",
+    "binding_sha256": "733c8d9fff5595d0588ac4516338efd0f0a1ae6b70353ffcaab46e328cb69204",
+    "binding": {
+      "schema_version": 1,
+      "draft": false,
+      "protocol_path": "docs/C5_ENGINEERING_PROTOCOL.md",
+      "protocol_sha256": "44b53fd7b7f5ee9d0fbae72d6cef8e9520680871949a19ca7a9c999cef4bc223",
+      "source_sha256": {
+        "src/developmental_physics/c5_engineering.py": "acbf403a99efe5ec5842404de462c2d6db5a28a0e21e0c7568a936eba8aaff9d",
+        "src/developmental_physics/perturbed_environment.py": "c3e988d4998dbf0276471ba7bb409bccd76a1108dd9c63c4e154888b223d67a5",
+        "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+        "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+        "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+        "docs/C5_ENGINEERING_PROTOCOL.md": "44b53fd7b7f5ee9d0fbae72d6cef8e9520680871949a19ca7a9c999cef4bc223",
+        "scripts/audit_c5_engineering.py": "d4568342aa2d63f9675b599eab405d07db9d37b2f2c8785f627063d3fd29a85b",
+        "tests/test_c5_engineering.py": "f242119d8cc6952a44a9cce2594904327ba1a2d696466414f4f30d2072a294b0",
+        "tests/test_perturbed_environment.py": "917ef9c89f42f62ca1cd9572c7358ae41768c2d0fb45ed92c8305512c2cadef0",
+        "tests/test_audit_c5_engineering.py": "076a0e0c882010018eab523462f7412849b3b53765bfc64bcc7371336341f73e",
+        "tests/test_audit_c5_source_archive.py": "fd576ccf61af6e04576a31779f4313592786c1fb5c7aef9fc819c29fd3df4b5d"
+      },
+      "plan": {
+        "pose": "supine",
+        "development_seed": 0,
+        "reset_seed": 3757552657,
+        "trials": [
+          "base_identity",
+          "wrapper_identity",
+          "gain_half",
+          "armature_double"
+        ],
+        "fresh_environment_per_trial": true,
+        "prefix_steps": 100,
+        "active_steps": 20,
+        "physics_substeps_per_call": 10,
+        "physics_dt_seconds": 0.002,
+        "maximum_calls": 480,
+        "maximum_substeps": 4800,
+        "parameter_updates": 0,
+        "selected_native_joints": [
+          0,
+          1
+        ],
+        "active_blocks": "(+.25,+.25)*5 / zero*5 / (-.25,-.25)*5 / zero*5",
+        "event_boundary": 100,
+        "gain_half": [
+          0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "armature_double_native_values": [
+          0.02,
+          0.02
+        ],
+        "study_q_offset_limit_rad": 0.12,
+        "study_velocity_limit_rad_s": 1.0
+      }
+    }
+  },
+  "raw_source_sha256": {
+    "src/developmental_physics/c5_engineering.py": "acbf403a99efe5ec5842404de462c2d6db5a28a0e21e0c7568a936eba8aaff9d",
+    "src/developmental_physics/perturbed_environment.py": "c3e988d4998dbf0276471ba7bb409bccd76a1108dd9c63c4e154888b223d67a5",
+    "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+    "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+    "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "docs/C5_ENGINEERING_PROTOCOL.md": "44b53fd7b7f5ee9d0fbae72d6cef8e9520680871949a19ca7a9c999cef4bc223",
+    "scripts/audit_c5_engineering.py": "d4568342aa2d63f9675b599eab405d07db9d37b2f2c8785f627063d3fd29a85b",
+    "tests/test_c5_engineering.py": "f242119d8cc6952a44a9cce2594904327ba1a2d696466414f4f30d2072a294b0",
+    "tests/test_perturbed_environment.py": "917ef9c89f42f62ca1cd9572c7358ae41768c2d0fb45ed92c8305512c2cadef0",
+    "tests/test_audit_c5_engineering.py": "076a0e0c882010018eab523462f7412849b3b53765bfc64bcc7371336341f73e",
+    "tests/test_audit_c5_source_archive.py": "fd576ccf61af6e04576a31779f4313592786c1fb5c7aef9fc819c29fd3df4b5d",
+    "docs/C5_ENGINEERING_BINDING.json": "733c8d9fff5595d0588ac4516338efd0f0a1ae6b70353ffcaab46e328cb69204"
+  },
+  "collector_execution": {
+    "wall_seconds": 1.9760225999634713,
+    "cpu_seconds": 1.875
+  },
+  "audit_execution": {
+    "wall_seconds": 1.026587599888444,
+    "cpu_seconds": 0.578125,
+    "physical_calls": 0,
+    "model_updates": 0,
+    "source_git_verification_enabled": true
+  },
+  "interpretation": "Mechanical gain/armature changes and accounting alone are not adaptation, skill learning or algorithm advantage.",
+  "input_raw_sha256": {
+    "manifest.json": "b69db03b6e323406763ee665b8cd2c5ae296aa7a24592639d5e84397557c2a76",
+    "armature_double_outcome.json": "f11c3ffb2022a42cd08258e75f0374821442319dd2efd065b259cccd3537dec9",
+    "base_identity_outcome.json": "d8b2510bb56bf81a1426826de3ec644e88fc22857b278549b7f3709c34b54730",
+    "gain_half_outcome.json": "51b334c111657e7d890c6497905ee46bf0f915ec5aa07f0ae5f28961ca57ad97",
+    "metadata_final.json": "32559c965a9bd2b97400e8e608ac10f73f7aaa260c00e332e93fa38b45d49c0c",
+    "metadata_initial.json": "1a7d9d67a30ed48b4c22a12ff4ac9c523e1a8a19866a980460f38fd179cd2764",
+    "parameter_events.json": "3ad3660730412975337fab81eaaabbc0b50515265e2f91456bcb812349b518c0",
+    "source_snapshot.zip": "7936687e806b61237874415e9d1b109a8edc4cf8b98e77fe64311e87476b1300",
+    "trace.jsonl.gz": "b77be7dd72397dc7b1b561530039588e72a8693a62b7f36b3ef34e17138ac5de",
+    "trial_outcomes.json": "abee9ada7e2a38faf1c51a2efdc2f17668f5f96873b59cc4106cd6e83366eb2d",
+    "wrapper_identity_outcome.json": "d25c80916e74686ded3ac064cbbf09677ee6c7ac173cde75c99763a7a247c99f"
+  },
+  "input_audit_sha256": "c74ddf28dec74ac4f6133090605a1fea9ecb672ecb8b007ea53fa03b95535e40",
+  "summary_source_sha256": "13491bf344701637f2c44f9812659dac6d1a8ef54be9d510d8891164a59818bc"
+}
