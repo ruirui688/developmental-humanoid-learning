@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/supported_domain_review",
+  "scope": "W0 new supported domain static review and bounded corrections only",
+  "review_status": "closed_no_remaining_mandatory_static_blockers",
+  "review_does_not_confirm_execution_or_scientific_success": true,
+  "final_reviewed_files": [
+    {
+      "path": "src/developmental_physics/supported_environment.py",
+      "bytes": 11642,
+      "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+    },
+    {
+      "path": "scripts/validate_supported_pair_engineering.py",
+      "bytes": 24683,
+      "sha256": "f1923e88a0e221fa5b3747c1741c0448de3cfc0ecc41c225bcb4a3e90dca5bd3"
+    },
+    {
+      "path": "docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+      "bytes": 16400,
+      "sha256": "cf7e9b39a7dc95b6b592fa64aed39a8dd3324c9a50e0cc80452dc3a89237db9a"
+    }
+  ],
+  "resolved_mandatory_items": [
+    {
+      "item": "Root diagnostic mapping after removing free joint",
+      "resolution": "New environment uses named joint qpos/dof addresses and torso world xpos/xquat rather than treating qpos first seven values as root coordinates."
+    },
+    {
+      "item": "Stopped/infeasible trial incorrectly marked completed",
+      "resolution": "Formal run now records status stopped when stop exists; qualification requires all 300 returned control intervals."
+    },
+    {
+      "item": "Returned paid evidence could be lost in later StudyAbort/error calculation",
+      "resolution": "Record saves returned native endpoint, full diagnostics and environment termination before later helpers."
+    },
+    {
+      "item": "Original nonintegrating installation equivalence and compiled public parameter coverage",
+      "resolution": "One new assembly fixture additionally compares original seed7300 supine reset geometry and named shared parameters without mj_step, saves observed topology/geometry differences and any unexpected public parameter difference."
+    },
+    {
+      "item": "Complete actual effort and native telemetry gate",
+      "resolution": "Qualification explicitly requires ten consecutively indexed finite substep samples with complete encoder/IMU/torque/request vectors and finite saved floor contact values for each complete interval."
+    },
+    {
+      "item": "Ambiguous forward operation accounting",
+      "resolution": "Reset forward attempts/returns separated; confirmed substep endpoint forward returns derive from saved sample count, with unconfirmed exception attempts explicitly unknown."
+    }
+  ],
+  "checked_new_layer_boundaries": [
+    "Original shared environment.py and ground_body.xml are not edited by this reviewer or by the new wrapper.",
+    "Same eight hinge joints, motor order, torque permissions, floor and public guards remain the declared shared initial conditions.",
+    "One seed7300 supine geometric installation, no settling integration or installation search, single reset, no retry.",
+    "100 zero prefix then 200 PD active calls with original public direction and offsets .04/.08; qref from complete own prefix endpoint.",
+    "StudyAbort remains complete active endpoint >=.12 position deviation or >=1 velocity, with environment stop primary.",
+    "Only genuine left upper arm/forearm versus floor finite positive normal force in prefix intervals80..99 can satisfy domain contact qualification.",
+    "Both target segments use their last20 post-step endpoints, active80..99 and180..199, each axis MAE<=.01, with full-trial priority.",
+    "All scientific adoption/C4/C5 dependency flags remain false; W1/W2 are future candidates and do not automatically execute.",
+    "Deleting six free-root DOFs changes frame, effective inertia, mount reaction and welded-body collision filtering; it is a new support domain and not a matched causal test of old failure."
+  ],
+  "remaining_mandatory_static_blockers": [],
+  "nonblocking_disclosures": [
+    "Installation reaction force remains unmeasured, not zero.",
+    "Positive contact confirms domain only, not safety or learned model quality.",
+    "A passing engineering fixture or W0 gate cannot validate old free-root C4 or release C5 scientific dependency.",
+    "Preparation original compilation/reset is nonzero compute and zero integration; formal run references that preparation without rebuilding original model."
+  ],
+  "read_receipt": {
+    "new_layer_raw_byte_reads": [
+      {
+        "revision": "READY1",
+        "files": 3,
+        "bytes": 46141,
+        "review": "full new environment, runner and protocol"
+      },
+      {
+        "revision": "bounded correction",
+        "files": 2,
+        "bytes": 33778,
+        "review": "only changed new environment and runner; line diff computed in memory"
+      },
+      {
+        "revision": "metadata close",
+        "files": 2,
+        "bytes": 36325,
+        "review": "only changed new environment and runner; line diff computed in memory"
+      }
+    ],
+    "new_layer_raw_byte_reads_total": 7,
+    "new_layer_raw_byte_read_and_in_memory_hash_bytes": 116244,
+    "protocol_repeat_reads": 0,
+    "source_reemissions_and_line_diff_comparisons_performed_in_memory": true,
+    "prior_context_content_reads": [
+      {
+        "path": "AGENTS.md",
+        "access": "one Get-Content full request"
+      },
+      {
+        "path": "README.md",
+        "access": "one Get-Content full request and one first45-lines request"
+      },
+      {
+        "path": "src/developmental_physics/environment.py",
+        "access": "one Get-Content full request"
+      },
+      {
+        "path": "src/developmental_physics/assets/ground_body.xml",
+        "access": "one Get-Content full request"
+      },
+      {
+        "path": "src/developmental_physics/pd_tail_control_development.py",
+        "access": "one rg text scan; matching lines only reviewed"
+      },
+      {
+        "path": "src/developmental_physics/local_pair_model.py",
+        "access": "one rg text scan; matching lines only reviewed"
+      },
+      {
+        "path": "src/developmental_physics/guard_pair_model.py",
+        "access": "one rg text scan; matching lines only reviewed"
+      },
+      {
+        "path": "src/developmental_physics/pair_pd_development.py",
+        "access": "one rg text scan; matching lines only reviewed"
+      },
+      {
+        "path": "src/developmental_physics/probes.py",
+        "access": "one rg text scan of direction_record context"
+      }
+    ],
+    "prior_context_exact_stream_bytes": "unmeasured_not_zero",
+    "failed_path_request": {
+      "path": "src/developmental_physics/env.py",
+      "exists": false,
+      "file_payload_bytes": 0
+    },
+    "directory_name_enumerations": 3,
+    "git_status_queries": 1,
+    "scientific_raw_payload_reads": 0,
+    "physical_executions": 0,
+    "mj_step_calls": 0,
+    "model_imports_or_fixture_executions": 0,
+    "tests_executed": 0,
+    "old_mathematical_or_scientific_recomputations": 0,
+    "code_or_protocol_mutations_by_reviewer": 0,
+    "receipt_file_write_only": true,
+    "filesystem_IO_beyond_explicit_new_byte_reads": "unmeasured_not_zero"
+  }
+}

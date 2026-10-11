@@ -1,0 +1,187 @@
+{
+  "kind": "prospective_supported_pair_design_read_receipt",
+  "created_at_utc": "2026-10-11T19:03:59.382407+00:00",
+  "agent": "/root/bounded_physics_design",
+  "boundary": {
+    "scientific_raw_reads": 0,
+    "experiment_imports": 0,
+    "experiment_executions": 0,
+    "physics_calls": 0,
+    "model_calls": 0,
+    "RLS_updates": 0,
+    "production_edits": 0
+  },
+  "logical_reads": [
+    {
+      "path": "docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_PROTOCOL.md",
+      "count": 1,
+      "method": "Python Path.read_bytes",
+      "returned_bytes": 7530,
+      "file_length_metadata_after": 7530,
+      "unknown": "OS physical/cache IO and tool-output delivered byte counts"
+    },
+    {
+      "path": "docs/GUARD_PAIR_DEVELOPMENT_PROTOCOL.md",
+      "count": 1,
+      "method": "Python Path.read_bytes",
+      "returned_bytes": 8728,
+      "file_length_metadata_after": 8728,
+      "unknown": "OS physical/cache IO and tool-output delivered byte counts"
+    },
+    {
+      "path": "src/developmental_physics/environment.py",
+      "count": 1,
+      "method": "Python Path.read_bytes",
+      "returned_bytes": 15822,
+      "file_length_metadata_after": 15822,
+      "unknown": "OS physical/cache IO and tool-output delivered byte counts"
+    },
+    {
+      "path": "src/developmental_physics/assets/ground_body.xml",
+      "count": 1,
+      "method": "Python Path.read_bytes",
+      "returned_bytes": 3430,
+      "file_length_metadata_after": 3430,
+      "unknown": "OS physical/cache IO and tool-output delivered byte counts"
+    },
+    {
+      "path": "src/developmental_physics/guard_coupled_pair_model.py",
+      "count": 1,
+      "method": "Python Path.read_bytes",
+      "returned_bytes": 3762,
+      "file_length_metadata_after": 3762,
+      "unknown": "OS physical/cache IO and tool-output delivered byte counts"
+    },
+    {
+      "path": "src/developmental_physics/pd_tail_pair_mpc.py",
+      "count": 1,
+      "method": "Python Path.read_bytes",
+      "returned_bytes": 8214,
+      "file_length_metadata_after": 8214,
+      "unknown": "OS physical/cache IO and tool-output delivered byte counts"
+    },
+    {
+      "path": "src/developmental_physics/perturbed_environment.py",
+      "count": 1,
+      "method": "Python Path.read_bytes",
+      "returned_bytes": 9662,
+      "file_length_metadata_after": 9662,
+      "unknown": "OS physical/cache IO and tool-output delivered byte counts"
+    },
+    {
+      "path": "docs/DEVELOPMENT_ROADMAP.md",
+      "count": 1,
+      "method": "Python Path.read_bytes",
+      "returned_bytes": null,
+      "file_length_metadata_after": 28305,
+      "unknown": "OS physical/cache IO and tool-output delivered byte counts; roadmap returned byte count was outside visible truncated output"
+    },
+    {
+      "path": "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+      "count": 1,
+      "method": "Python Path.read_bytes",
+      "returned_bytes": 8134,
+      "file_length_metadata_after": 8134,
+      "unknown": "OS physical/cache IO and tool-output delivered byte counts"
+    },
+    {
+      "path": "AGENTS.md",
+      "count": 1,
+      "method": "PowerShell Get-Content",
+      "file_length_metadata_after": 20819,
+      "returned_bytes": null,
+      "unknown": "PowerShell decoded output byte count, OS IO and delivered output truncation; file-length stat is not a measured read receipt"
+    },
+    {
+      "path": "README.md",
+      "count": 1,
+      "method": "PowerShell Get-Content",
+      "file_length_metadata_after": 28557,
+      "returned_bytes": null,
+      "unknown": "PowerShell decoded output byte count, OS IO and delivered output truncation; file-length stat is not a measured read receipt"
+    }
+  ],
+  "metadata_notes": "Byte counts describe Python read_bytes returned payload or file-length metadata, not measured operating-system IO. Tool output truncation does not mean files were partly read by the Python process. No unknown IO cost is backfilled as zero.",
+  "output_design": "docs\\SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+  "rg_calls": [
+    {
+      "kind": "path inventory",
+      "command": "rg --files src/developmental_physics scripts docs | rg path keywords",
+      "content_bytes": 0,
+      "unknown": "directory enumeration metadata IO"
+    },
+    {
+      "kind": "content search",
+      "paths": [
+        "src/developmental_physics/local_pair_model.py",
+        "src/developmental_control/mpc.py",
+        "src/developmental_physics/guard_coupled_development.py",
+        "src/developmental_physics/pair_frozen_validation.py",
+        "docs/CONTINUOUS_EXECUTION_PLAN.md"
+      ],
+      "count": 1,
+      "content_bytes": null,
+      "missing_path": "src/developmental_control/mpc.py",
+      "exit_code": 1,
+      "unknown": "rg backend bytes actually read; no subsequent reread of these files"
+    }
+  ],
+  "known_python_returned_bytes_sum_excluding_roadmap": 65282,
+  "known_python_logical_reads": 9,
+  "unknown_range": "No byte lower/upper bound on OS physical IO is inferred; metadata file lengths shown individually for read context. Scientific/raw/model/physics boundary counts are exactly zero.",
+  "self_authored_document_reads": [
+    {
+      "path": "docs\\SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+      "purpose": "draft UTF-8 encoding check",
+      "count": 1,
+      "returned_bytes": 13671
+    },
+    {
+      "path": "docs\\SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+      "purpose": "authorized W0 protocol/CLI/schema update",
+      "count": 1,
+      "returned_bytes": 13671
+    },
+    {
+      "path": "docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+      "purpose": "final UTF-8/LF/whitespace/Markdown-link check",
+      "count": 1,
+      "returned_bytes": 16400
+    }
+  ],
+  "ledger_self_read": {
+    "path": "external\\c4_w_design_reads.json",
+    "count": 1,
+    "returned_bytes": 5082,
+    "purpose": "append actual new self-document read receipt"
+  },
+  "design_delivery": {
+    "bytes": 16400,
+    "sha256_of_exact_written_bytes": "cf7e9b39a7dc95b6b592fa64aed39a8dd3324c9a50e0cc80452dc3a89237db9a",
+    "production_code_changes": 0,
+    "W0_formal_protocol": true,
+    "W1_W2_learning_is_future_candidate_only": true
+  },
+  "ledger_self_reads_additional": [
+    {
+      "path": "external\\c4_w_design_reads.json",
+      "purpose": "append final documentation verification receipt",
+      "count": 1,
+      "returned_bytes": 5916
+    }
+  ],
+  "final_document_verification": {
+    "git_diff_no_index_check": {
+      "command": "git diff --no-index --check -- /dev/null docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+      "exit_code": 1,
+      "stdout": "",
+      "notes": "no-index reports file differs from /dev/null; no whitespace diagnostics. Backend bytes unknown; manual strict check also returned no trailing whitespace."
+    },
+    "markdown_link_count": 0,
+    "missing_markdown_links": [],
+    "final_lf": true,
+    "crlf_count": 0,
+    "trailing_whitespace_lines": [],
+    "git_backend_read_bytes": null
+  }
+}

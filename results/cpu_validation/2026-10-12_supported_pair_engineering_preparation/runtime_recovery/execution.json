@@ -1,0 +1,36 @@
+{
+  "argv": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "scripts/validate_supported_pair_engineering.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_w0_assembly_runtime_02\\raw",
+    "--self-check"
+  ],
+  "source_commit": null,
+  "returncode": 0,
+  "started_unix": 1791746752.8807127,
+  "ended_unix": 1791746753.4900746,
+  "wall_seconds": 0.6089704998303205,
+  "checked_sources": {
+    "src/developmental_physics/supported_environment.py": {
+      "bytes": 11642,
+      "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+    },
+    "scripts/validate_supported_pair_engineering.py": {
+      "bytes": 24683,
+      "sha256": "5c75e5db6f8721180bbbb17158f29ed736b0e10554672e585867f433b3766825"
+    },
+    "docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md": {
+      "bytes": 16438,
+      "sha256": "e03f158d274c510fc1fca222e5a2a75e4afc3d0264ee6e227904950f6c4423a7"
+    }
+  },
+  "source_snapshot_reads": 3,
+  "source_snapshot_read_bytes": 52763,
+  "stdout_bytes": 865,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

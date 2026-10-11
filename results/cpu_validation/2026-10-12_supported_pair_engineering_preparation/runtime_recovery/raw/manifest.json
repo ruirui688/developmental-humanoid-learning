@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "self_check_passed",
+  "files": {
+    "supported_body_installed.xml": {
+      "bytes": 3515,
+      "sha256": "b0bc118158cdcdf684ebf5bc6a98bd8b4417704db8c575da8ee8449753b1b6e1"
+    },
+    "run.json": {
+      "bytes": 17290,
+      "sha256": "82f7055331db6a36be372707ea3566566286a0a1d485991a7d5b56d8663d7751"
+    },
+    "metrics.json": {
+      "bytes": 230,
+      "sha256": "8dc59a3ebb3b571be6c859120c1566bca8d88a811e5f3dbf28b8e106404d43d3"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

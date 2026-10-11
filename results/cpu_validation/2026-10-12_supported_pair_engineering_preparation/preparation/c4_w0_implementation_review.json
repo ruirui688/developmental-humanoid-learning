@@ -1,0 +1,166 @@
+{
+  "scope": "W0_new_supported_env_and_engineering_runner_preparation",
+  "status": "static_ready_independent_review_passed",
+  "independent_review_receipt": "external/c4_w0_independent_review.json",
+  "independent_review_remaining_required_changes": 0,
+  "source_files": {
+    "src/developmental_physics/supported_environment.py": {
+      "bytes": 11642,
+      "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+    },
+    "scripts/validate_supported_pair_engineering.py": {
+      "bytes": 24683,
+      "sha256": "f1923e88a0e221fa5b3747c1741c0448de3cfc0ecc41c225bcb4a3e90dca5bd3"
+    }
+  },
+  "protocol_pin_from_protocol_author": {
+    "path": "docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+    "bytes": 16400,
+    "sha256": "cf7e9b39a7dc95b6b592fa64aed39a8dd3324c9a50e0cc80452dc3a89237db9a"
+  },
+  "known_content_reads": [
+    {
+      "path": "src/developmental_physics/environment.py",
+      "bytes": 15822
+    },
+    {
+      "path": "src/developmental_physics/assets/ground_body.xml",
+      "bytes": 3430
+    },
+    {
+      "path": "src/developmental_physics/perturbed_environment.py",
+      "bytes": 9662
+    },
+    {
+      "path": "src/developmental_physics/probes.py",
+      "bytes": 7514
+    },
+    {
+      "path": "src/developmental_physics/pair_pd_development.py",
+      "bytes": 32712
+    },
+    {
+      "path": "src/developmental_physics/guard_pair_development.py",
+      "bytes": 46112
+    },
+    {
+      "path": "src/developmental_physics/supported_environment.py",
+      "bytes": 10915,
+      "reason": "new_source_AST_compile_only"
+    },
+    {
+      "path": "scripts/validate_supported_pair_engineering.py",
+      "bytes": 18826,
+      "reason": "new_source_AST_compile_only"
+    },
+    {
+      "path": "src/developmental_physics/supported_environment.py",
+      "bytes": 11066,
+      "reason": "AST_compile_only_after_required_new_layer_fixes"
+    },
+    {
+      "path": "scripts/validate_supported_pair_engineering.py",
+      "bytes": 22712,
+      "reason": "AST_compile_only_after_required_new_layer_fixes"
+    },
+    {
+      "path": "scripts/validate_supported_pair_engineering.py",
+      "bytes": 22712,
+      "reason": "AST_compile_only_after_paid_assembly_cost_placement_fix"
+    },
+    {
+      "path": "src/developmental_physics/supported_environment.py",
+      "bytes": 11642,
+      "reason": "final_topology_metadata_AST_compile_only"
+    },
+    {
+      "path": "scripts/validate_supported_pair_engineering.py",
+      "bytes": 24683,
+      "reason": "final_topology_metadata_AST_compile_only"
+    }
+  ],
+  "known_content_read_bytes": 237808,
+  "new_source_hash_bytes": 122556,
+  "search_IO": "unknown_not_measured_not_stdout_bytes",
+  "static_compile": {
+    "file_reads": 2,
+    "AST_parse": true,
+    "compile_only": true,
+    "imports": 0,
+    "wall_seconds": 0.009223500033840537,
+    "cpu_seconds": 0,
+    "LF_and_whitespace": true,
+    "one_final_LF": true
+  },
+  "preparation_failures": [
+    {
+      "kind": "file_glob_source_search",
+      "error": "rg PowerShell literal src/developmental_physics/ground* path os error123",
+      "recovery": "rg direct_directory_search",
+      "scientific_work": 0
+    },
+    {
+      "kind": "subagent_runner_delegation",
+      "error": "agent thread limit reached",
+      "recovery": "author completed both new files",
+      "scientific_work": 0
+    },
+    {
+      "kind": "apply_patch",
+      "error": "expected standalone collector_exception_unconfirmed_integrator_attempts line not found",
+      "recovery": "atomic rejected patch then separate exact-context patches",
+      "scientific_work": 0
+    }
+  ],
+  "physics_calls": 0,
+  "physics_substeps": 0,
+  "scientific_payload_reads": 0,
+  "old_test_runs": 0,
+  "selfcheck_runs": 0,
+  "model_forwards": 0,
+  "fits": 0,
+  "fixtures_registered": [
+    {
+      "case": "new_fixed_root_assembly_name_mapping_reset_world_diagnostics",
+      "physics_calls": 0,
+      "physics_substeps": 0,
+      "planned_supported_model_builds": 1,
+      "planned_original_model_builds": 1,
+      "planned_supported_reset_mj_forward": 2,
+      "planned_original_reset_mj_forward": 2,
+      "planned_total_mj_forward": 4,
+      "comparison": "named world geom xpos/xmat atol1e-12; named joint ranges/damping/armature, body mass/inertia, actuators, ground contact and gravity/timestep unchanged"
+    }
+  ],
+  "selfcheck_command": "python scripts/validate_supported_pair_engineering.py --repo . --output <new-empty-preparation-output> --self-check",
+  "formal_command": "python scripts/validate_supported_pair_engineering.py --repo . --output <new-empty-output> --source-commit <full-clean-commit>",
+  "review_notes": [
+    "old environment.py is unchanged",
+    "installed XML includes final fixed torso model.body_pos; preheight XML hash is separate",
+    "name-based eight-joint qpos/dof/motor mapping replaces free-root indices",
+    "inherited 10-substep original guard and stop remains unchanged",
+    "controlled study stop only after complete active interval; paid stopping interval retained",
+    "full300 prerequisite and post-step active80..99/180..199 MAE<=.01 each axis",
+    "prefix80..99 actual floor/left-arm finite positive-normal contact is required",
+    "no reset retry, remount, gain search, fit, teacher or MPC",
+    "expected negative qualification is a completed negative result; unexpected exceptions preserve paid prefix",
+    "supported fixed torso/head world weld may change effective static collision filtering; no collision patch and no matched causal claim"
+  ],
+  "unknown_IO_and_CPU": "unknown values are not treated as zero",
+  "required_review_fixes": [
+    "expected stopped/infeasible negative status distinct from completed",
+    "save paid returned interval before any study/error helper",
+    "new nonintegrating original-versus-supported assembly geometry/public parameter fixture",
+    "explicit10substeps finite native/actual effort/command telemetry completeness required",
+    "separate reset forward attempts/returns and confirmed endpoint forwards from unknown exception attempts",
+    "record actual original/supported compiled topology, named weld IDs, geometry max differences and public parameter comparison summary; formal references first preparation comparison without original model reconstruction"
+  ],
+  "additional_static_cost": {
+    "new_source_recheck_command_wall_seconds": 0.4761999,
+    "final_runner_recheck_command_wall_seconds": 0.4754306,
+    "cpu_seconds": "unknown_not_measured",
+    "execution": false,
+    "imports": false
+  },
+  "final_metadata_compile_command_wall_seconds": 0.4701464
+}

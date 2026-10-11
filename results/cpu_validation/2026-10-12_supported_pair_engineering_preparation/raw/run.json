@@ -1,0 +1,107 @@
+{
+  "status": "failed",
+  "self_check": true,
+  "source": {
+    "commit": null,
+    "files": {
+      "scripts/validate_supported_pair_engineering.py": {
+        "bytes": 24683,
+        "sha256": "f1923e88a0e221fa5b3747c1741c0448de3cfc0ecc41c225bcb4a3e90dca5bd3"
+      },
+      "src/developmental_physics/supported_environment.py": {
+        "bytes": 11642,
+        "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+      },
+      "docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md": {
+        "bytes": 16400,
+        "sha256": "cf7e9b39a7dc95b6b592fa64aed39a8dd3324c9a50e0cc80452dc3a89237db9a"
+      },
+      "src/developmental_physics/environment.py": {
+        "bytes": 15822,
+        "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+      },
+      "src/developmental_physics/assets/ground_body.xml": {
+        "bytes": 3430,
+        "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      }
+    },
+    "clean_committed_bytes_verified": false
+  },
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "seed": 7300,
+  "planned_calls": 300,
+  "planned_substeps": 3000,
+  "control_substeps": 10,
+  "physics_dt": 0.002,
+  "prefix_steps": 100,
+  "active_steps": 200,
+  "pd": {
+    "kp": [
+      64.0,
+      64.0
+    ],
+    "kd": [
+      0.0,
+      4.0
+    ],
+    "gain_source": "existing_public_PD64_Kd0_4_development_prior"
+  },
+  "qref2": null,
+  "direction_selection": null,
+  "targets_q2": null,
+  "qref_source": "unavailable",
+  "support": null,
+  "engineering_operations": null,
+  "physical_fingerprint_before": null,
+  "physical_fingerprint_after": null,
+  "cost": {
+    "control_call_attempts": 0,
+    "control_call_returns": 0,
+    "control_call_exceptions": 0,
+    "confirmed_physics_substeps": 0,
+    "RLS_updates": 0,
+    "body_model_fits": 0,
+    "body_model_restorations": 0,
+    "MPC_calls": 0,
+    "teacher_calls": 0,
+    "reset_attempts": 0,
+    "reset_returns": 0,
+    "source_file_reads": 6,
+    "source_read_and_hash_bytes": 72139,
+    "confirmed_substep_endpoint_forward_returns": 0,
+    "wall_seconds": 0.10432000015862286,
+    "cpu_seconds": 0.015625
+  },
+  "actual_effort": {
+    "actual_sum_abs_tau_dt_nm_s": 0.0,
+    "actual_sum_tau_squared_dt_nm2_s": 0.0,
+    "applied_command_sum_abs_dt_nm_s": 0.0,
+    "applied_command_sum_squared_dt_nm2_s": 0.0,
+    "substep_samples": 0
+  },
+  "stop": null,
+  "failure": {
+    "type": "ModuleNotFoundError",
+    "message": "No module named 'mujoco'",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\validate_supported_pair_engineering.py\", line 193, in main_run\n    import mujoco\nModuleNotFoundError: No module named 'mujoco'\n"
+  },
+  "self_check_cases": [],
+  "engineering_qualification_passed": false,
+  "no_reset_retry_or_mount_search": true,
+  "collector_exception_unconfirmed_integrator_attempts": "unknown_if_exception",
+  "unconfirmed_endpoint_forward_attempts": "unknown_if_integration_or_forward_exception",
+  "timing_excludes": "final_serialization_compression_and_output_writes",
+  "unmeasured_filesystem_IO": "unknown_not_zero",
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "files": {
+    "run.json": {
+      "bytes": 3505,
+      "sha256": "77f502d2772ebd198aeb1fee3d052c339547f888bb116c0870e93f39d7c06fe4"
+    },
+    "metrics.json": {
+      "bytes": 258,
+      "sha256": "da937e9273cf99993c7e16a0fea442610acee40cb79d9af4c9d0507ebb3a9920"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "failure.json": {
+      "bytes": 305,
+      "sha256": "db7c0ad199eec33d8c1f04ee073d65e647f9cc7e834f0933f79501f4ef69b5a9"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

@@ -1,0 +1,92 @@
+{
+  "payload_count": 16,
+  "files": {
+    "checked_source/docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md": {
+      "bytes": 16400,
+      "sha256": "cf7e9b39a7dc95b6b592fa64aed39a8dd3324c9a50e0cc80452dc3a89237db9a",
+      "original_path": "external/c4_w0_selfcheck_01/checked_source/docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md"
+    },
+    "checked_source/scripts/validate_supported_pair_engineering.py": {
+      "bytes": 24683,
+      "sha256": "f1923e88a0e221fa5b3747c1741c0448de3cfc0ecc41c225bcb4a3e90dca5bd3",
+      "original_path": "external/c4_w0_selfcheck_01/checked_source/scripts/validate_supported_pair_engineering.py"
+    },
+    "checked_source/src/developmental_physics/supported_environment.py": {
+      "bytes": 11642,
+      "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0",
+      "original_path": "external/c4_w0_selfcheck_01/checked_source/src/developmental_physics/supported_environment.py"
+    },
+    "execution.json": {
+      "bytes": 1136,
+      "sha256": "4f3fc44aac094579aebb1bbc94b8b76fc9fdfe07eb051719a32579e7b75804fd",
+      "original_path": "external/c4_w0_selfcheck_01/execution.json"
+    },
+    "raw/failure.json": {
+      "bytes": 305,
+      "sha256": "db7c0ad199eec33d8c1f04ee073d65e647f9cc7e834f0933f79501f4ef69b5a9",
+      "original_path": "external/c4_w0_selfcheck_01/raw/failure.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 746,
+      "sha256": "12b3829916589d6981285f34f8910572aec70ef626b076bc393a370e572f0c17",
+      "original_path": "external/c4_w0_selfcheck_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 258,
+      "sha256": "da937e9273cf99993c7e16a0fea442610acee40cb79d9af4c9d0507ebb3a9920",
+      "original_path": "external/c4_w0_selfcheck_01/raw/metrics.json"
+    },
+    "raw/run.json": {
+      "bytes": 3505,
+      "sha256": "77f502d2772ebd198aeb1fee3d052c339547f888bb116c0870e93f39d7c06fe4",
+      "original_path": "external/c4_w0_selfcheck_01/raw/run.json"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "original_path": "external/c4_w0_selfcheck_01/raw/trace.jsonl.gz"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_w0_selfcheck_01/stderr"
+    },
+    "stdout": {
+      "bytes": 827,
+      "sha256": "c2138120fc7718ce15291127b75233a8b137f322239234a55b1fa7b4b94e58cb",
+      "original_path": "external/c4_w0_selfcheck_01/stdout"
+    },
+    "execution/run_w0_engineering_once.py": {
+      "bytes": 2308,
+      "sha256": "bb5cf1af22a11b77a8ad8dacd0d718c2f2992379757d1575ec0d0c78cb897a0f",
+      "original_path": "external/run_w0_engineering_once.py"
+    },
+    "execution/archive_w0_engineering_once.py": {
+      "bytes": 2106,
+      "sha256": "3804f609791546368008c75d25260b08187d0909b496da5675c6200d8aaa0f58",
+      "original_path": "external/archive_w0_engineering_once.py"
+    },
+    "preparation/c4_w_design_reads.json": {
+      "bytes": 6885,
+      "sha256": "7c51ff8eae413d39baf95b2d0a4898a6513a93a10b73ec70b225049091ec1a74",
+      "original_path": "external/c4_w_design_reads.json"
+    },
+    "preparation/c4_w0_implementation_review.json": {
+      "bytes": 6580,
+      "sha256": "b6b7a248f40ae209310c741921ec56d6019bc4c3226c1a7326df60dd2467b55c",
+      "original_path": "external/c4_w0_implementation_review.json"
+    },
+    "preparation/c4_w0_independent_review.json": {
+      "bytes": 7058,
+      "sha256": "db2a70aab38c5417e735f94e3c01627df0c72567a738433f695dea6a4e487dc2",
+      "original_path": "external/c4_w0_independent_review.json"
+    }
+  },
+  "file_reads": 32,
+  "read_bytes": 168918,
+  "copy_failures": [],
+  "wall_seconds": 0.21740820002742112,
+  "cpu_seconds": 0.015625,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "path": "docs/SUPPORTED_PAIR_DOMAIN_DESIGN.md",
+      "before_bytes": 16400,
+      "before_sha256": "cf7e9b39a7dc95b6b592fa64aed39a8dd3324c9a50e0cc80452dc3a89237db9a",
+      "after_bytes": 16438,
+      "after_sha256": "e03f158d274c510fc1fca222e5a2a75e4afc3d0264ee6e227904950f6c4423a7"
+    },
+    {
+      "path": "scripts/validate_supported_pair_engineering.py",
+      "before_bytes": 24683,
+      "before_sha256": "f1923e88a0e221fa5b3747c1741c0448de3cfc0ecc41c225bcb4a3e90dca5bd3",
+      "after_bytes": 24683,
+      "after_sha256": "5c75e5db6f8721180bbbb17158f29ed736b0e10554672e585867f433b3766825"
+    }
+  ],
+  "reads": 2,
+  "read_bytes": 41083,
+  "same_math_and_fixture_AST_except_document_pin": true,
+  "compile_only_passed": true,
+  "module_execution": false,
+  "initial_fixture_attempted": false,
+  "physics_calls": 0,
+  "existing_runtime": "external/cpu_physics_env/Scripts/python.exe",
+  "verified_installed_versions": {
+    "numpy": "2.2.6",
+    "mujoco": "3.15.0"
+  },
+  "new_package_installations": 0,
+  "runtime_metadata_read_IO": "unknown_not_zero",
+  "wall_seconds": 0.028269500005990267,
+  "cpu_seconds": 0.03125
+}
