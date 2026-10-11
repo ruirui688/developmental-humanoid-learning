@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "self_check": true,
+  "cost": {
+    "fit_attempts": 1,
+    "position_scalar_coefficients_optimization_requested": 100,
+    "objective_function_entry_requests": 5,
+    "objective_calculation_attempts": 4,
+    "objective_forward_attempts": 4,
+    "objective_forward_returns": 4,
+    "objective_backward_attempts": 4,
+    "objective_backward_returns": 4,
+    "objective_calculation_returns": 4,
+    "accepted_checkpoint_write_attempts": 3,
+    "accepted_checkpoint_write_returns": 3,
+    "accepted_checkpoint_write_bytes": 10179,
+    "optimizer_invocation_attempts": 1,
+    "optimizer_callback_attempts": 2,
+    "optimizer_callback_returns": 2,
+    "fit_budget_exhaustions": 1,
+    "fit_returns": 1,
+    "position_scalar_coefficients_optimized": 100,
+    "position_heads_published": 2
+  },
+  "failure": null,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

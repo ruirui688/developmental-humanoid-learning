@@ -1,0 +1,103 @@
+{
+  "python": "3.10.11",
+  "packages": {
+    "torch": {
+      "upstream": "https://github.com/pytorch/pytorch",
+      "tag": "v2.2.2",
+      "embedded_source_commit": "39901f229520a5256505ec24782f716ee7ddc843",
+      "runtime_version_observed": "2.2.2+cpu",
+      "cuda_build_observed": null,
+      "distribution_version": "2.2.2",
+      "selected_device": "cpu",
+      "purpose": "S body-transition fitting only; not a task teacher",
+      "inspected_date": "2026-10-12",
+      "new_download": false,
+      "installation_date": "unknown_preexisting",
+      "wheel_checksum": "unavailable_preinstalled",
+      "installed_file_identities": [
+        {
+          "installed_path": "D:\\Python3.10\\lib\\site-packages\\torch-2.2.2.dist-info\\LICENSE",
+          "relative": "torch-2.2.2.dist-info/LICENSE",
+          "bytes": 363466,
+          "sha256": "aae77fb5112d9e5423771597ed67368c64fb42049d1c0426c67ff404bd841c39",
+          "checksum_scope": "installed metadata/license file, not full wheel"
+        },
+        {
+          "installed_path": "D:\\Python3.10\\lib\\site-packages\\torch-2.2.2.dist-info\\METADATA",
+          "relative": "torch-2.2.2.dist-info/METADATA",
+          "bytes": 26469,
+          "sha256": "3fe5701db55bdc178e0757471c7eb45d1e004354a974869ad9fc86a2ccd5a00b",
+          "checksum_scope": "installed metadata/license file, not full wheel"
+        }
+      ],
+      "license": "BSD-3-Clause (distribution license also includes bundled notices)"
+    },
+    "scipy": {
+      "upstream": "https://github.com/scipy/scipy",
+      "tag": "v1.15.3",
+      "embedded_source_commit": "e29dcb65a2040f04819b426a04b60d44a8f69c04",
+      "runtime_version_observed": "1.15.3",
+      "distribution_version": "1.15.3",
+      "selected_device": "cpu",
+      "purpose": "S body-transition fitting only; not a task teacher",
+      "inspected_date": "2026-10-12",
+      "new_download": false,
+      "installation_date": "unknown_preexisting",
+      "wheel_checksum": "unavailable_preinstalled",
+      "installed_file_identities": [
+        {
+          "installed_path": "D:\\Python3.10\\lib\\site-packages\\scipy-1.15.3.dist-info\\LICENSE.txt",
+          "relative": "scipy-1.15.3.dist-info/LICENSE.txt",
+          "bytes": 46763,
+          "sha256": "f250e7cef15fbd99e8680093d112d7aa7579535b99995268df6c89ac926eb607",
+          "checksum_scope": "installed metadata/license file, not full wheel"
+        },
+        {
+          "installed_path": "D:\\Python3.10\\lib\\site-packages\\scipy-1.15.3.dist-info\\METADATA",
+          "relative": "scipy-1.15.3.dist-info/METADATA",
+          "bytes": 60764,
+          "sha256": "191610381f06190f11ec2c5cd46f1a7833665d8386d3fe8a710c07ef65acdfd4",
+          "checksum_scope": "installed metadata/license file, not full wheel"
+        }
+      ],
+      "license": "BSD-3-Clause (distribution license also includes bundled notices)"
+    },
+    "numpy": {
+      "upstream": "https://github.com/numpy/numpy",
+      "tag": "v1.26.4",
+      "runtime_version_observed": "1.26.4",
+      "distribution_version": "1.26.4",
+      "selected_device": "cpu",
+      "purpose": "S body-transition fitting only; not a task teacher",
+      "inspected_date": "2026-10-12",
+      "new_download": false,
+      "installation_date": "unknown_preexisting",
+      "wheel_checksum": "unavailable_preinstalled",
+      "installed_file_identities": [
+        {
+          "installed_path": "D:\\Python3.10\\lib\\site-packages\\numpy-1.26.4.dist-info\\LICENSE.txt",
+          "relative": "numpy-1.26.4.dist-info/LICENSE.txt",
+          "bytes": 48688,
+          "sha256": "e261222a74adff28f88160dac1c5cb302d93b67e9ca989eb83bf311e11a9970a",
+          "checksum_scope": "installed metadata/license file, not full wheel"
+        },
+        {
+          "installed_path": "D:\\Python3.10\\lib\\site-packages\\numpy-1.26.4.dist-info\\METADATA",
+          "relative": "numpy-1.26.4.dist-info/METADATA",
+          "bytes": 61040,
+          "sha256": "5a27a0e272b1f6e597acbbf58e8da39ae350b2318db8df4cf49d72518e62eebc",
+          "checksum_scope": "installed metadata/license file, not full wheel"
+        }
+      ],
+      "license": "BSD-3-Clause (distribution license also includes bundled notices)"
+    }
+  },
+  "direct_file_reads": 6,
+  "direct_read_bytes": 607190,
+  "timing_scope": "metadata lookup and selected file identity; excludes previous version import probe",
+  "wall_seconds": 0.22272499999962747,
+  "cpu_seconds": 0.125,
+  "physics_calls": 0,
+  "fitting_calls": 0,
+  "new_downloads": 0
+}

@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "self_check": true,
+  "cost": {
+    "fit_attempts": 1,
+    "position_scalar_coefficients_optimization_requested": 100,
+    "objective_function_entry_requests": 1,
+    "objective_calculation_attempts": 1,
+    "objective_forward_attempts": 1,
+    "objective_calculation_failures": 1,
+    "fit_failures": 1,
+    "initial_nonbudget_failures": 1
+  },
+  "failure": {
+    "type": "ValueError",
+    "message": "nonfinite_tensor:objective_loss",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_guard_multistep_position_transition.py\", line 398, in fit_positions\n    fun(UQ.reshape(-1))\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_guard_multistep_position_transition.py\", line 354, in fun\n    tensor_finite(torch,loss,\"objective_loss\")\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_guard_multistep_position_transition.py\", line 126, in tensor_finite\n    raise ValueError(\"nonfinite_tensor:\"+name)\nValueError: nonfinite_tensor:objective_loss\n"
+  },
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

@@ -1,0 +1,386 @@
+{
+  "status": "self_check_passed",
+  "self_check": true,
+  "source": {
+    "commit": null,
+    "files": {
+      "scripts/develop_guard_multistep_position_transition.py": {
+        "bytes": 50910,
+        "sha256": "22097d00bbb884e29b9d0e6cd060b53e0448beb72321685c11e7942762acfe7e"
+      },
+      "docs/GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 9226,
+        "sha256": "ce5e8f0d3d6b5580406dd73a5b6f8a9928f56c5b13ad4056d1d05145659d944d"
+      },
+      "scripts/develop_guard_scaled_native_transition.py": {
+        "bytes": 27537,
+        "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+      },
+      "docs/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 4870,
+        "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+      },
+      "scripts/develop_guard_native_transition.py": {
+        "bytes": 36390,
+        "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+      },
+      "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 8134,
+        "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      },
+      "src/developmental_physics/guard_lag_pair_model.py": {
+        "bytes": 11351,
+        "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+      },
+      "src/developmental_physics/guard_pair_model.py": {
+        "bytes": 6860,
+        "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+      },
+      "src/developmental_physics/local_pair_model.py": {
+        "bytes": 25148,
+        "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+      },
+      "src/developmental_physics/local_model.py": {
+        "bytes": 16564,
+        "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+      },
+      "scripts/develop_guard_quadratic_native_transition.py": {
+        "bytes": 29407,
+        "sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147"
+      },
+      "docs/GUARD_QUADRATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 5230,
+        "sha256": "77cb47c42efad889f4d15cf64207b528ab2c7e29908d55d3f16441b0b7a6c5d3"
+      },
+      "scripts/develop_guard_kinematic_native_transition.py": {
+        "bytes": 31640,
+        "sha256": "07a0135e6cd30e169f780f30eef09472fe857570fa0556f552dcdcbe258c693d"
+      },
+      "docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 5202,
+        "sha256": "8f3c86ccfc4626dbf6219e904daa73b208d2cac044a855e050875aecd62e5c45"
+      }
+    },
+    "clean_committed_bytes_verified": false
+  },
+  "inputs": {},
+  "inputs_without_returned_read_record": {
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/metadata.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/diagnostics.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/run.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/parameters.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-12_guard_quadratic_native_transition/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-12_guard_quadratic_native_transition/raw/manifest.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-12_guard_quadratic_native_transition/raw/run.json": "unknown_before_read_return",
+    "results/cpu_validation/2026-10-12_guard_quadratic_native_transition/raw/parameters.json": "unknown_before_read_return"
+  },
+  "original_source_commits": {
+    "C": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+    "D": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "K": "b46c6d37fddc8e6534384168fb76663bc2c5236c"
+  },
+  "requested_source_commit": null,
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.2.2+cpu",
+    "torch_distribution": "2.2.2",
+    "torch_git_version": "39901f229520a5256505ec24782f716ee7ddc843",
+    "torch_cuda": null,
+    "scipy": "1.15.3",
+    "scipy_git_revision": "e29dcb65a2040f04819b426a04b60d44a8f69c04",
+    "device": "cpu",
+    "dtype": "float64",
+    "torch_num_threads": 1
+  },
+  "dependency_note": "preinstalled CPU packages, no download or install in S",
+  "original_C_dependencies": "unknown_before_C_metadata_return",
+  "source_active_counts": {},
+  "baseline_restorations": {
+    "K22": [],
+    "Q22": [],
+    "D11": []
+  },
+  "K22_fingerprints_before": {},
+  "K22_fingerprints_after": "unknown_before_return",
+  "D11_fingerprints_before": {},
+  "D11_fingerprints_after": "unknown_before_return",
+  "Q22_fingerprints_before": {},
+  "Q22_fingerprints_after": "unknown_before_return",
+  "frozen_Q_original_cost": "unknown_before_Q_run_return",
+  "self_check_cases": [
+    {
+      "case": "batched_torch_Q_step_guard_equality_clip_zero_hinge_quadratic_old_v_parity",
+      "status": "passed",
+      "batch_count": 6,
+      "absolute_tolerance": 2e-14
+    },
+    {
+      "case": "four_step_q_head_autograd_two_directions_previous_v_feedback_and_terminal_label_only",
+      "status": "passed",
+      "directional_comparisons": [
+        {
+          "epsilon": 1e-06,
+          "analytic": 1.6408076889742207,
+          "central_difference": 1.6408076892054664,
+          "absolute_tolerance": 2e-07
+        },
+        {
+          "epsilon": 1e-06,
+          "analytic": -0.056839662441929374,
+          "central_difference": -0.0568396624426714,
+          "absolute_tolerance": 2e-07
+        }
+      ],
+      "terminal_labels_not_recurrent_inputs": true
+    },
+    {
+      "case": "accepted_snapshot_budget_boundary_and_line_search_failure_fixtures",
+      "status": "passed",
+      "fixtures": [
+        {
+          "name": "normal",
+          "fit_status": "returned",
+          "paid_cost": {
+            "fit_attempts": 1,
+            "position_scalar_coefficients_optimization_requested": 100,
+            "objective_function_entry_requests": 3,
+            "objective_calculation_attempts": 3,
+            "objective_forward_attempts": 3,
+            "objective_forward_returns": 3,
+            "objective_backward_attempts": 3,
+            "objective_backward_returns": 3,
+            "objective_calculation_returns": 3,
+            "accepted_checkpoint_write_attempts": 3,
+            "accepted_checkpoint_write_returns": 3,
+            "accepted_checkpoint_write_bytes": 10180,
+            "optimizer_invocation_attempts": 1,
+            "optimizer_callback_attempts": 2,
+            "optimizer_callback_returns": 2,
+            "optimizer_invocation_returns": 1,
+            "fit_returns": 1,
+            "position_scalar_coefficients_optimized": 100,
+            "position_heads_published": 2
+          },
+          "selected": true
+        },
+        {
+          "name": "hard_call_cap",
+          "fit_status": "budget_exhausted",
+          "paid_cost": {
+            "fit_attempts": 1,
+            "position_scalar_coefficients_optimization_requested": 100,
+            "objective_function_entry_requests": 5,
+            "objective_calculation_attempts": 4,
+            "objective_forward_attempts": 4,
+            "objective_forward_returns": 4,
+            "objective_backward_attempts": 4,
+            "objective_backward_returns": 4,
+            "objective_calculation_returns": 4,
+            "accepted_checkpoint_write_attempts": 3,
+            "accepted_checkpoint_write_returns": 3,
+            "accepted_checkpoint_write_bytes": 10179,
+            "optimizer_invocation_attempts": 1,
+            "optimizer_callback_attempts": 2,
+            "optimizer_callback_returns": 2,
+            "fit_budget_exhaustions": 1,
+            "fit_returns": 1,
+            "position_scalar_coefficients_optimized": 100,
+            "position_heads_published": 2
+          },
+          "selected": true
+        },
+        {
+          "name": "time_boundary",
+          "fit_status": "budget_exhausted",
+          "paid_cost": {
+            "fit_attempts": 1,
+            "position_scalar_coefficients_optimization_requested": 100,
+            "objective_function_entry_requests": 2,
+            "objective_calculation_attempts": 2,
+            "objective_forward_attempts": 2,
+            "objective_forward_returns": 2,
+            "objective_backward_attempts": 2,
+            "objective_backward_returns": 2,
+            "objective_calculation_returns": 2,
+            "accepted_checkpoint_write_attempts": 1,
+            "accepted_checkpoint_write_returns": 1,
+            "accepted_checkpoint_write_bytes": 3284,
+            "optimizer_invocation_attempts": 1,
+            "fit_budget_exhaustions": 1,
+            "fit_returns": 1,
+            "position_scalar_coefficients_optimized": 100,
+            "position_heads_published": 2
+          },
+          "selected": true
+        },
+        {
+          "name": "line_search_failed",
+          "fit_status": "failed",
+          "paid_cost": {
+            "fit_attempts": 1,
+            "position_scalar_coefficients_optimization_requested": 100,
+            "objective_function_entry_requests": 2,
+            "objective_calculation_attempts": 2,
+            "objective_forward_attempts": 2,
+            "objective_forward_returns": 2,
+            "objective_backward_attempts": 2,
+            "objective_backward_returns": 2,
+            "objective_calculation_returns": 2,
+            "accepted_checkpoint_write_attempts": 2,
+            "accepted_checkpoint_write_returns": 2,
+            "accepted_checkpoint_write_bytes": 6816,
+            "optimizer_invocation_attempts": 1,
+            "optimizer_callback_attempts": 1,
+            "optimizer_callback_returns": 1,
+            "optimizer_invocation_returns": 1,
+            "fit_failures": 1,
+            "optimizer_nonbudget_failures": 1
+          },
+          "selected": false
+        },
+        {
+          "name": "initial_nonfinite",
+          "fit_status": "failed",
+          "paid_cost": {
+            "fit_attempts": 1,
+            "position_scalar_coefficients_optimization_requested": 100,
+            "objective_function_entry_requests": 1,
+            "objective_calculation_attempts": 1,
+            "objective_forward_attempts": 1,
+            "objective_calculation_failures": 1,
+            "fit_failures": 1,
+            "initial_nonbudget_failures": 1
+          },
+          "selected": false
+        }
+      ]
+    }
+  ],
+  "fit_failures": [],
+  "cost": {
+    "fit_attempts": 5,
+    "fit_returns": 3,
+    "fit_failures": 2,
+    "fit_shared_50x50_22rhs_solve_attempts": 0,
+    "fit_shared_50x50_22rhs_solve_returns": 0,
+    "fit_scalar_labels_requested": 0,
+    "fit_scalar_labels_returned": 0,
+    "transition_scalar_coefficients_fitted": 0,
+    "Q22_refits": 0,
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "K22_refits": 0,
+    "D11_updates": 0,
+    "objective_calculation_attempts": 12,
+    "objective_calculation_returns": 11,
+    "source_file_read_attempts": 15,
+    "source_file_read_returns": 15,
+    "source_raw_bytes": 268631,
+    "helper_module_load_attempts": 4,
+    "helper_module_load_returns": 4,
+    "new_runtime_import_attempts": 2,
+    "new_runtime_import_returns": 2,
+    "synthetic_S_step_transition_attempts": 6,
+    "synthetic_S_step_feature_prior_attempts": 6,
+    "synthetic_S_step_start_guard_attempts": 6,
+    "synthetic_S_step_start_guard_returns": 6,
+    "synthetic_S_step_feature_prior_returns": 6,
+    "synthetic_S_step_prior_scalar_outputs": 132,
+    "synthetic_S_step_quadratic_mapping_attempts": 6,
+    "synthetic_S_step_scale_scalar_divisions_requested": 36,
+    "synthetic_S_step_scale_scalar_divisions_returned": 36,
+    "synthetic_S_step_quadratic_scalar_products_requested": 126,
+    "synthetic_S_step_quadratic_scalar_products_returned": 126,
+    "synthetic_S_step_feature_scalar_materializations_requested": 300,
+    "synthetic_S_step_feature_scalar_materializations_returned": 300,
+    "synthetic_S_step_quadratic_mapping_returns": 6,
+    "synthetic_S_step_residual_vector_attempts": 6,
+    "synthetic_S_step_residual_scalar_head_attempts": 132,
+    "synthetic_S_step_residual_vector_returns": 6,
+    "synthetic_S_step_residual_scalar_head_returns": 132,
+    "synthetic_S_step_history_advance_scalar_copies": 12,
+    "synthetic_S_step_transition_returns": 6,
+    "Q22_transition_attempts": 6,
+    "Q22_feature_prior_attempts": 6,
+    "Q22_start_guard_attempts": 6,
+    "Q22_start_guard_returns": 6,
+    "Q22_feature_prior_returns": 6,
+    "Q22_prior_scalar_outputs": 132,
+    "Q22_quadratic_mapping_attempts": 6,
+    "Q22_scale_scalar_divisions_requested": 36,
+    "Q22_scale_scalar_divisions_returned": 36,
+    "Q22_quadratic_scalar_products_requested": 126,
+    "Q22_quadratic_scalar_products_returned": 126,
+    "Q22_feature_scalar_materializations_requested": 300,
+    "Q22_feature_scalar_materializations_returned": 300,
+    "Q22_quadratic_mapping_returns": 6,
+    "Q22_residual_vector_attempts": 6,
+    "Q22_residual_scalar_head_attempts": 132,
+    "Q22_residual_vector_returns": 6,
+    "Q22_residual_scalar_head_returns": 132,
+    "Q22_history_advance_scalar_copies": 12,
+    "Q22_transition_returns": 6,
+    "synthetic_S_gradient_transition_attempts": 72,
+    "synthetic_S_gradient_feature_prior_attempts": 72,
+    "synthetic_S_gradient_start_guard_attempts": 72,
+    "synthetic_S_gradient_start_guard_returns": 72,
+    "synthetic_S_gradient_feature_prior_returns": 72,
+    "synthetic_S_gradient_prior_scalar_outputs": 1584,
+    "synthetic_S_gradient_quadratic_mapping_attempts": 72,
+    "synthetic_S_gradient_scale_scalar_divisions_requested": 432,
+    "synthetic_S_gradient_scale_scalar_divisions_returned": 432,
+    "synthetic_S_gradient_quadratic_scalar_products_requested": 1512,
+    "synthetic_S_gradient_quadratic_scalar_products_returned": 1512,
+    "synthetic_S_gradient_feature_scalar_materializations_requested": 3600,
+    "synthetic_S_gradient_feature_scalar_materializations_returned": 3600,
+    "synthetic_S_gradient_quadratic_mapping_returns": 72,
+    "synthetic_S_gradient_residual_vector_attempts": 72,
+    "synthetic_S_gradient_residual_scalar_head_attempts": 1584,
+    "synthetic_S_gradient_residual_vector_returns": 72,
+    "synthetic_S_gradient_residual_scalar_head_returns": 1584,
+    "synthetic_S_gradient_history_advance_scalar_copies": 144,
+    "synthetic_S_gradient_transition_returns": 72,
+    "synthetic_autograd_attempts": 1,
+    "synthetic_autograd_returns": 1,
+    "position_scalar_coefficients_optimization_requested": 500,
+    "objective_function_entry_requests": 13,
+    "objective_forward_attempts": 12,
+    "objective_forward_returns": 11,
+    "objective_backward_attempts": 11,
+    "objective_backward_returns": 11,
+    "accepted_checkpoint_write_attempts": 9,
+    "accepted_checkpoint_write_returns": 9,
+    "accepted_checkpoint_write_bytes": 30459,
+    "optimizer_invocation_attempts": 4,
+    "optimizer_callback_attempts": 5,
+    "optimizer_callback_returns": 5,
+    "optimizer_invocation_returns": 2,
+    "position_scalar_coefficients_optimized": 300,
+    "position_heads_published": 6,
+    "fit_budget_exhaustions": 2,
+    "optimizer_nonbudget_failures": 1,
+    "objective_calculation_failures": 1,
+    "initial_nonbudget_failures": 1,
+    "wall_seconds": 5.417044900124893,
+    "cpu_seconds": 1.578125
+  },
+  "failure": null,
+  "development_gate_passed": false,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "timing_excludes": "final output serialization and write"
+}

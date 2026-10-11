@@ -1,0 +1,526 @@
+{
+  "schema_version": 1,
+  "scope": "S implementation and necessary static review only; no module/self-check/fit/model/physics/science payload execution",
+  "own_reader": "/root/next_control_direction",
+  "own_read_events": [
+    {
+      "batch": "initial_oversized_display",
+      "source_paths": [
+        "AGENTS.md",
+        "README.md",
+        "external/c4_s_concept_review.md",
+        "scripts/develop_guard_quadratic_native_transition.py",
+        "scripts/develop_guard_kinematic_native_transition.py"
+      ],
+      "read_attempts": 5,
+      "read_returns": 5,
+      "raw_bytes": "unknown_first_tool_output_not_preserved",
+      "display": "source read batch completed but nested stdout truncated; JSON.parse failed before raw result was cached",
+      "timing": "unknown_after_display_failure",
+      "no_science_payload_read": true
+    },
+    {
+      "batch": "cached_Q_source",
+      "entries": [
+        {
+          "path": "scripts/develop_guard_quadratic_native_transition.py",
+          "bytes": 29407,
+          "sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147"
+        }
+      ],
+      "raw_bytes": 29407,
+      "wall_seconds": 0.00027820002287626266,
+      "cpu_seconds": 0.015625
+    },
+    {
+      "batch": "cached_R_source",
+      "entries": [
+        {
+          "path": "scripts/develop_guard_kinematic_native_transition.py",
+          "bytes": 31640,
+          "sha256": "07a0135e6cd30e169f780f30eef09472fe857570fa0556f552dcdcbe258c693d"
+        }
+      ],
+      "raw_bytes": 31640,
+      "wall_seconds": 0.00043599982745945454,
+      "cpu_seconds": 0
+    },
+    {
+      "batch": "context_escaped_display",
+      "entries": [
+        {
+          "path": "AGENTS.md",
+          "bytes": 19497,
+          "sha256": "da1f974e963f0750c9caefb72b1d15801ae14134b134f92e0c700d74b86c58a8"
+        },
+        {
+          "path": "README.md",
+          "bytes": 27576,
+          "sha256": "e6a911e25649dbd351f90ee50bc2ebc1288ddad01f234513a3394f71549eebce"
+        },
+        {
+          "path": "external/c4_s_concept_review.md",
+          "bytes": 7680,
+          "sha256": "99f38b61626e1c9ff4cedaedc0adf74ef34faab19c7c9021b76503f682131429"
+        }
+      ],
+      "raw_bytes": 54753,
+      "wall_seconds": 0.0007759998552501202,
+      "cpu_seconds": 0,
+      "display": "truncated"
+    },
+    {
+      "batch": "context_utf8_display",
+      "entries": [
+        {
+          "path": "AGENTS.md",
+          "bytes": 19497,
+          "sha256": "da1f974e963f0750c9caefb72b1d15801ae14134b134f92e0c700d74b86c58a8"
+        },
+        {
+          "path": "README.md",
+          "bytes": 27576,
+          "sha256": "e6a911e25649dbd351f90ee50bc2ebc1288ddad01f234513a3394f71549eebce"
+        },
+        {
+          "path": "external/c4_s_concept_review.md",
+          "bytes": 7680,
+          "sha256": "99f38b61626e1c9ff4cedaedc0adf74ef34faab19c7c9021b76503f682131429"
+        }
+      ],
+      "raw_bytes": 54753,
+      "wall_seconds": 0.00048019993118941784,
+      "cpu_seconds": 0
+    },
+    {
+      "batch": "necessary_math_source_AST_selection",
+      "entries": [
+        {
+          "path": "scripts/develop_guard_native_transition.py",
+          "bytes": 36390,
+          "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+        },
+        {
+          "path": "scripts/develop_guard_scaled_native_transition.py",
+          "bytes": 27537,
+          "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+        },
+        {
+          "path": "src/developmental_physics/guard_pair_model.py",
+          "bytes": 6860,
+          "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+        },
+        {
+          "path": "src/developmental_physics/guard_lag_pair_model.py",
+          "bytes": 11351,
+          "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+        }
+      ],
+      "raw_bytes": 82138,
+      "wall_seconds": 0.07253460003994405,
+      "cpu_seconds": 0.0625,
+      "timing_scope": "source read/decode/hash plus AST selection; no source execution"
+    },
+    {
+      "batch": "first_own_static_validation",
+      "scope": "S source AST/compile without execution; static literal helper hash pins; own protocol links/whitespace",
+      "reads": [
+        {
+          "path": "scripts/develop_guard_multistep_position_transition.py",
+          "bytes": 50712,
+          "sha256": "f89aff17530b598bf6309d50d062776e55b4437cb6d26c359e000e01e6a16979"
+        },
+        {
+          "path": "docs/GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "bytes": 9226,
+          "sha256": "ce5e8f0d3d6b5580406dd73a5b6f8a9928f56c5b13ad4056d1d05145659d944d"
+        },
+        {
+          "path": "docs/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "bytes": 4870,
+          "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+        },
+        {
+          "path": "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "bytes": 8134,
+          "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56"
+        },
+        {
+          "path": "src/developmental_physics/__init__.py",
+          "bytes": 162,
+          "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+        },
+        {
+          "path": "src/developmental_physics/local_pair_model.py",
+          "bytes": 25148,
+          "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+        },
+        {
+          "path": "src/developmental_physics/local_model.py",
+          "bytes": 16564,
+          "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+        },
+        {
+          "path": "docs/GUARD_QUADRATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "bytes": 5230,
+          "sha256": "77cb47c42efad889f4d15cf64207b528ab2c7e29908d55d3f16441b0b7a6c5d3"
+        },
+        {
+          "path": "docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "bytes": 5202,
+          "sha256": "8f3c86ccfc4626dbf6219e904daa73b208d2cac044a855e050875aecd62e5c45"
+        }
+      ],
+      "raw_bytes": 125248,
+      "helper_pins": [
+        {
+          "path": "scripts/develop_guard_scaled_native_transition.py",
+          "expected_sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518",
+          "actual": {
+            "bytes": 27537,
+            "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+          },
+          "matches": true,
+          "evidence": "prior_implementation_read_cache"
+        },
+        {
+          "path": "docs/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "expected_sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7",
+          "actual": {
+            "bytes": 4870,
+            "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+          },
+          "matches": true,
+          "evidence": "new_hash_only_read"
+        },
+        {
+          "path": "scripts/develop_guard_native_transition.py",
+          "expected_sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb",
+          "actual": {
+            "bytes": 36390,
+            "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+          },
+          "matches": true,
+          "evidence": "prior_implementation_read_cache"
+        },
+        {
+          "path": "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "expected_sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56",
+          "actual": {
+            "bytes": 8134,
+            "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56"
+          },
+          "matches": true,
+          "evidence": "new_hash_only_read"
+        },
+        {
+          "path": "src/developmental_physics/__init__.py",
+          "expected_sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+          "actual": {
+            "bytes": 162,
+            "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+          },
+          "matches": true,
+          "evidence": "new_hash_only_read"
+        },
+        {
+          "path": "src/developmental_physics/guard_lag_pair_model.py",
+          "expected_sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+          "actual": {
+            "bytes": 11351,
+            "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+          },
+          "matches": true,
+          "evidence": "prior_implementation_read_cache"
+        },
+        {
+          "path": "src/developmental_physics/guard_pair_model.py",
+          "expected_sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3",
+          "actual": {
+            "bytes": 6860,
+            "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+          },
+          "matches": true,
+          "evidence": "prior_implementation_read_cache"
+        },
+        {
+          "path": "src/developmental_physics/local_pair_model.py",
+          "expected_sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+          "actual": {
+            "bytes": 25148,
+            "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+          },
+          "matches": true,
+          "evidence": "new_hash_only_read"
+        },
+        {
+          "path": "src/developmental_physics/local_model.py",
+          "expected_sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1",
+          "actual": {
+            "bytes": 16564,
+            "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+          },
+          "matches": true,
+          "evidence": "new_hash_only_read"
+        },
+        {
+          "path": "scripts/develop_guard_quadratic_native_transition.py",
+          "expected_sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147",
+          "actual": {
+            "bytes": 29407,
+            "sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147"
+          },
+          "matches": true,
+          "evidence": "prior_implementation_read_cache"
+        },
+        {
+          "path": "docs/GUARD_QUADRATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "expected_sha256": "77cb47c42efad889f4d15cf64207b528ab2c7e29908d55d3f16441b0b7a6c5d3",
+          "actual": {
+            "bytes": 5230,
+            "sha256": "77cb47c42efad889f4d15cf64207b528ab2c7e29908d55d3f16441b0b7a6c5d3"
+          },
+          "matches": true,
+          "evidence": "new_hash_only_read"
+        },
+        {
+          "path": "scripts/develop_guard_kinematic_native_transition.py",
+          "expected_sha256": "07a0135e6cd30e169f780f30eef09472fe857570fa0556f552dcdcbe258c693d",
+          "actual": {
+            "bytes": 31640,
+            "sha256": "07a0135e6cd30e169f780f30eef09472fe857570fa0556f552dcdcbe258c693d"
+          },
+          "matches": true,
+          "evidence": "prior_implementation_read_cache"
+        },
+        {
+          "path": "docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+          "expected_sha256": "8f3c86ccfc4626dbf6219e904daa73b208d2cac044a855e050875aecd62e5c45",
+          "actual": {
+            "bytes": 5202,
+            "sha256": "8f3c86ccfc4626dbf6219e904daa73b208d2cac044a855e050875aecd62e5c45"
+          },
+          "matches": true,
+          "evidence": "new_hash_only_read"
+        }
+      ],
+      "all_pins_match": true,
+      "AST": "passed",
+      "compile_without_execution": "passed",
+      "own_files": {
+        "scripts/develop_guard_multistep_position_transition.py": {
+          "identity": {
+            "path": "scripts/develop_guard_multistep_position_transition.py",
+            "bytes": 50712,
+            "sha256": "f89aff17530b598bf6309d50d062776e55b4437cb6d26c359e000e01e6a16979"
+          },
+          "line_count": 812
+        },
+        "docs/GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+          "identity": {
+            "path": "docs/GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+            "bytes": 9226,
+            "sha256": "ce5e8f0d3d6b5580406dd73a5b6f8a9928f56c5b13ad4056d1d05145659d944d"
+          },
+          "line_count": 87
+        }
+      },
+      "local_links": [
+        {
+          "label": "S script",
+          "target": "../scripts/develop_guard_multistep_position_transition.py",
+          "exists": true
+        },
+        {
+          "label": "R results",
+          "target": "GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md",
+          "exists": true
+        }
+      ],
+      "all_local_links_exist": true,
+      "trailing_whitespace": [],
+      "wall_seconds": 0.019339699996635318,
+      "cpu_seconds": 0.03125,
+      "module_imports": 0,
+      "self_checks": 0,
+      "fits": 0,
+      "model_calls": 0,
+      "science_payload_reads": 0
+    },
+    {
+      "batch": "final_own_source_validation_after_failure_evidence_only_patch",
+      "scope": "final own S source only, non-executing AST/compile/hash after failure-evidence-only patch",
+      "reads": [
+        {
+          "path": "scripts/develop_guard_multistep_position_transition.py",
+          "bytes": 50910,
+          "sha256": "22097d00bbb884e29b9d0e6cd060b53e0448beb72321685c11e7942762acfe7e"
+        }
+      ],
+      "AST": "passed",
+      "compile_without_execution": "passed",
+      "trailing_whitespace_lines": [],
+      "wall_seconds": 0.018364400137215853,
+      "cpu_seconds": 0.015625,
+      "module_imports": 0,
+      "self_checks": 0,
+      "model_calls": 0,
+      "fits": 0,
+      "science_payload_reads": 0
+    }
+  ],
+  "own_read_cost": {
+    "binary_read_attempts": 27,
+    "binary_read_returns": 27,
+    "known_raw_bytes": 428849,
+    "unknown_raw_bytes_batches": [
+      "initial_oversized_display"
+    ],
+    "note": "Initial display failure counted; first-batch bytes/timing were not preserved and are not fabricated. All subsequent reads cached; reused source excerpts produce no further file reads."
+  },
+  "collaborator": {
+    "reader": "/root/next_control_direction/j_causal_contract_review",
+    "records": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 19497,
+        "sha256": "da1f974e963f0750c9caefb72b1d15801ae14134b134f92e0c700d74b86c58a8",
+        "read_count": 1
+      },
+      {
+        "path": "README.md",
+        "bytes": 27576,
+        "sha256": "e6a911e25649dbd351f90ee50bc2ebc1288ddad01f234513a3394f71549eebce",
+        "read_count": 2
+      },
+      {
+        "path": "external/c4_s_concept_review.md",
+        "bytes": 7680,
+        "sha256": "99f38b61626e1c9ff4cedaedc0adf74ef34faab19c7c9021b76503f682131429",
+        "read_count": 1
+      },
+      {
+        "path": "src/developmental_physics/guard_lag_pair_model.py",
+        "bytes": 11351,
+        "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+        "read_count": 1
+      },
+      {
+        "path": "src/developmental_physics/guard_pair_model.py",
+        "bytes": 6860,
+        "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3",
+        "read_count": 1
+      },
+      {
+        "path": "scripts/develop_guard_quadratic_native_transition.py",
+        "bytes": 29407,
+        "sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147",
+        "read_count": 1
+      },
+      {
+        "path": "scripts/develop_guard_kinematic_native_transition.py",
+        "bytes": 31640,
+        "sha256": "07a0135e6cd30e169f780f30eef09472fe857570fa0556f552dcdcbe258c693d",
+        "read_count": 1
+      },
+      {
+        "path": "scripts/develop_guard_native_transition.py",
+        "bytes": 36390,
+        "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb",
+        "read_count": 1
+      },
+      {
+        "path": "scripts/develop_guard_scaled_native_transition.py",
+        "bytes": 27537,
+        "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518",
+        "read_count": 1
+      },
+      {
+        "path": "scripts/develop_guard_multistep_position_transition.py",
+        "bytes": 49335,
+        "sha256": "f2bc18f4e74446d15b4ed7b47b06bb44ed37503479660c62b2d52aa2df49c17a",
+        "read_count": 1
+      },
+      {
+        "path": "scripts/develop_guard_multistep_position_transition.py",
+        "bytes": 50712,
+        "sha256": "f89aff17530b598bf6309d50d062776e55b4437cb6d26c359e000e01e6a16979",
+        "read_count": 1
+      },
+      {
+        "path": "docs/GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+        "bytes": 9226,
+        "sha256": "ce5e8f0d3d6b5580406dd73a5b6f8a9928f56c5b13ad4056d1d05145659d944d",
+        "read_count": 1
+      }
+    ],
+    "binary_read_attempts": 13,
+    "binary_read_returns": 13,
+    "raw_bytes": 334787,
+    "timing": "not_reported",
+    "display_failure": "README first output truncated; necessary second content read retained",
+    "final_evidence_patch_reread": false
+  },
+  "preparation_events": [
+    {
+      "event": "oversized_source_stdout_JSON_parse_failed",
+      "executed_source_reads": true
+    },
+    {
+      "event": "protocol_tool_JavaScript_syntax_error_before_execution",
+      "filesystem_reads": 0,
+      "filesystem_writes": 0
+    },
+    {
+      "event": "final_failure_evidence_only_delta",
+      "changes": [
+        "save already-computed normalized_z6/quadratic21/residual22 on tensor-step failure",
+        "record horizon/total loss scalar before finite validation"
+      ],
+      "math_budget_selection_changed": false
+    }
+  ],
+  "static_checks": {
+    "AST": "passed",
+    "compile_without_execution": "passed",
+    "helper_pin_count": 13,
+    "helper_pins_match": true,
+    "local_links": [
+      {
+        "label": "S script",
+        "target": "../scripts/develop_guard_multistep_position_transition.py",
+        "exists": true
+      },
+      {
+        "label": "R results",
+        "target": "GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md",
+        "exists": true
+      }
+    ],
+    "all_links_exist": true,
+    "trailing_whitespace": [],
+    "git_diff_check_exit": 0
+  },
+  "final_source": {
+    "path": "scripts/develop_guard_multistep_position_transition.py",
+    "bytes": 50910,
+    "sha256": "22097d00bbb884e29b9d0e6cd060b53e0448beb72321685c11e7942762acfe7e"
+  },
+  "final_protocol": {
+    "path": "docs/GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md",
+    "bytes": 9226,
+    "sha256": "ce5e8f0d3d6b5580406dd73a5b6f8a9928f56c5b13ad4056d1d05145659d944d"
+  },
+  "S_module_imports": 0,
+  "torch_scipy_imports": 0,
+  "self_checks": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "scientific_metric_recomputations": 0,
+  "scientific_gate_recomputations": 0,
+  "science_payload_reads": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "MPC_calls": 0,
+  "timing_note": "Only explicitly returned internal timings preserved. No aggregate wall derived from subprocess wrappers or missing timing; excludes final ledger/review serialization/write."
+}

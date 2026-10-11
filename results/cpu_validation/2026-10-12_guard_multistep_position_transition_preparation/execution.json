@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "scripts/develop_guard_multistep_position_transition.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_s_selfcheck_01\\raw",
+    "--self-check"
+  ],
+  "source_commit": null,
+  "returncode": 0,
+  "started_unix": 1791739288.93371,
+  "ended_unix": 1791739294.8329868,
+  "wall_seconds": 5.899109800113365,
+  "checked_sources": {
+    "scripts/develop_guard_multistep_position_transition.py": {
+      "bytes": 50910,
+      "sha256": "22097d00bbb884e29b9d0e6cd060b53e0448beb72321685c11e7942762acfe7e"
+    },
+    "docs/GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 9226,
+      "sha256": "ce5e8f0d3d6b5580406dd73a5b6f8a9928f56c5b13ad4056d1d05145659d944d"
+    }
+  },
+  "source_snapshot_reads": 2,
+  "source_snapshot_read_bytes": 60136,
+  "stdout_bytes": 4625,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}
