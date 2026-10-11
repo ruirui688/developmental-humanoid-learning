@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T03:33:06.636058+00:00",
+  "purpose": "Independent standard-library arithmetic and archive integrity audit; no physics or new learning experiment.",
+  "audit_script_sha256": "ff72d9cc3399d365a564af699d6b719638546ae52fdb0e43f900c63c3d469a0d",
+  "checks": 4325251,
+  "failed": 0,
+  "maximum_recomputation_difference": 6.590283874174929e-13,
+  "violations": [],
+  "archives": [
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\local_learning_v2_20261011_development",
+      "split": "development",
+      "pose": "supine",
+      "joint_index": 0,
+      "source_commit": "94ad34eecb5fd1becc54f52fe0d11a581716386a",
+      "input_hashes": {
+        "manifest.json": "b0dd23e3eb4762fd48b2d7fd0dbd01bdf65ddb4d1e8bc2c423a9c780b00ec49b",
+        "metadata.json": "5803f1d31876b3e03d9c9715792c78f44133f46f097244c95e850ac8686064a2",
+        "episodes.json": "ed0a1ff66bbddeafe0a3fd42b81271752bc4987f1b9db343ddca9d08e0ceceae",
+        "seed_results.json": "e188967efc7b9e6ea2409bbf3e0591e45afafacf5aaff2d4123635adc4b10408",
+        "trace.jsonl.gz": "baf38d5552b8f6bf257de5fec4ee8fafd1f51d21569bbe3455c418a309457005",
+        "source_snapshot.zip": "083bbe7681cdc8a4cd62093ca2ede1bd35028e46fbf14e8e56eff64628b11343"
+      },
+      "seeds": [
+        {
+          "seed": 0,
+          "complete": true,
+          "control_calls_attempted": 1800,
+          "control_steps": 1800,
+          "physics_steps": 18000,
+          "model_updates": 300,
+          "evaluations": {
+            "calibration": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.017778119287305577,
+                "learned": 0.013175595034291604
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.0001937072866702263,
+                "learned": 0.00020575532437658184
+              },
+              "persistence_velocity_rmse": 0.017916334126637228,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "prediction": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.005007042197004591,
+                "learned": 0.0007014409924203092
+              },
+              "position_prediction_rmse": {
+                "frozen": 8.814605795734634e-05,
+                "learned": 2.1261469579865347e-05
+              },
+              "persistence_velocity_rmse": 0.00403603077199552,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "frozen_mpc": {
+              "tracking_rmse_rad": 0.022605869716395145,
+              "velocity_prediction_rmse": {
+                "frozen": 0.018431056935759863,
+                "learned": 0.01680471685439389
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.0002504547126863621,
+                "learned": 0.00032203798744188955
+              },
+              "persistence_velocity_rmse": 0.017271014159934605,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "learned_mpc": {
+              "tracking_rmse_rad": 0.0158674716863814,
+              "velocity_prediction_rmse": {
+                "frozen": 0.01811942592408604,
+                "learned": 0.0256740066302966
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.0002562947956833897,
+                "learned": 0.0004997465870782928
+              },
+              "persistence_velocity_rmse": 0.016562887239706187,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "fixed_pd": {
+              "tracking_rmse_rad": 0.050049650272483794,
+              "velocity_prediction_rmse": {
+                "frozen": 0.003992382068881131,
+                "learned": 0.0006827686875777876
+              },
+              "position_prediction_rmse": {
+                "frozen": 7.961009776738709e-05,
+                "learned": 1.4233800867728369e-05
+              },
+              "persistence_velocity_rmse": 0.0005899284922293016,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "zero_torque": {
+              "tracking_rmse_rad": 0.06329395409515903,
+              "velocity_prediction_rmse": {
+                "frozen": 7.60527752369232e-09,
+                "learned": 0.0005387605321513089
+              },
+              "position_prediction_rmse": {
+                "frozen": 8.399252836082611e-11,
+                "learned": 1.0775142599503712e-05
+              },
+              "persistence_velocity_rmse": 7.60527752369232e-09,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "complete": true,
+          "control_calls_attempted": 1800,
+          "control_steps": 1800,
+          "physics_steps": 18000,
+          "model_updates": 300,
+          "evaluations": {
+            "calibration": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.01782378117173303,
+                "learned": 0.013199289587515197
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.00019372776038133142,
+                "learned": 0.00020586801466941138
+              },
+              "persistence_velocity_rmse": 0.017954089979937225,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "prediction": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.004998617306818675,
+                "learned": 0.0007172640942050461
+              },
+              "position_prediction_rmse": {
+                "frozen": 8.808438459679551e-05,
+                "learned": 2.1361846718035208e-05
+              },
+              "persistence_velocity_rmse": 0.004016452857734318,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "frozen_mpc": {
+              "tracking_rmse_rad": 0.022881256519061883,
+              "velocity_prediction_rmse": {
+                "frozen": 0.018820041348168493,
+                "learned": 0.01743605790750527
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.0002564064395596777,
+                "learned": 0.000324923792204142
+              },
+              "persistence_velocity_rmse": 0.01765715869276684,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "learned_mpc": {
+              "tracking_rmse_rad": 0.016163819609916627,
+              "velocity_prediction_rmse": {
+                "frozen": 0.018136645409159078,
+                "learned": 0.024957324801576305
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.0002600880079108919,
+                "learned": 0.0004813402726832616
+              },
+              "persistence_velocity_rmse": 0.016403426023618755,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "fixed_pd": {
+              "tracking_rmse_rad": 0.05013011685582219,
+              "velocity_prediction_rmse": {
+                "frozen": 0.00399963302237498,
+                "learned": 0.0007916634242219274
+              },
+              "position_prediction_rmse": {
+                "frozen": 7.975123038606824e-05,
+                "learned": 1.630679825072224e-05
+              },
+              "persistence_velocity_rmse": 0.0005860769404371249,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "zero_torque": {
+              "tracking_rmse_rad": 0.06315370237777554,
+              "velocity_prediction_rmse": {
+                "frozen": 1.4337436422398173e-08,
+                "learned": 0.000552149854366565
+              },
+              "position_prediction_rmse": {
+                "frozen": 1.5729996063588896e-10,
+                "learned": 1.1043126462205202e-05
+              },
+              "persistence_velocity_rmse": 1.4337436422398173e-08,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "complete": true,
+          "control_calls_attempted": 1800,
+          "control_steps": 1800,
+          "physics_steps": 18000,
+          "model_updates": 300,
+          "evaluations": {
+            "calibration": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.01774346963177292,
+                "learned": 0.013161989868299213
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.00019375291241473898,
+                "learned": 0.00020578417602880048
+              },
+              "persistence_velocity_rmse": 0.01788586770860496,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "prediction": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.005013009952737204,
+                "learned": 0.0006908980692273093
+              },
+              "position_prediction_rmse": {
+                "frozen": 8.820221522279649e-05,
+                "learned": 2.1014245156003925e-05
+              },
+              "persistence_velocity_rmse": 0.00404681976204298,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "frozen_mpc": {
+              "tracking_rmse_rad": 0.022117125277930503,
+              "velocity_prediction_rmse": {
+                "frozen": 0.017450518894009535,
+                "learned": 0.016135799287731126
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.00024256882012060335,
+                "learned": 0.0003180223201230813
+              },
+              "persistence_velocity_rmse": 0.016204560478578912,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "learned_mpc": {
+              "tracking_rmse_rad": 0.01561253187505682,
+              "velocity_prediction_rmse": {
+                "frozen": 0.017761561303758968,
+                "learned": 0.02581956121905316
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.00025427338529737653,
+                "learned": 0.0005115968491217443
+              },
+              "persistence_velocity_rmse": 0.016197634497778494,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "fixed_pd": {
+              "tracking_rmse_rad": 0.050012834938049616,
+              "velocity_prediction_rmse": {
+                "frozen": 0.003988594698307358,
+                "learned": 0.0005839835220816382
+              },
+              "position_prediction_rmse": {
+                "frozen": 7.953926739975217e-05,
+                "learned": 1.2375286680344009e-05
+              },
+              "persistence_velocity_rmse": 0.0005928809505629331,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "zero_torque": {
+              "tracking_rmse_rad": 0.06342959378146762,
+              "velocity_prediction_rmse": {
+                "frozen": 2.8588929050451538e-08,
+                "learned": 0.0005233394728434668
+              },
+              "position_prediction_rmse": {
+                "frozen": 3.1439654553104544e-10,
+                "learned": 1.0466532100164756e-05
+              },
+              "persistence_velocity_rmse": 2.8588929050451538e-08,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\local_learning_v2_20261011_holdout",
+      "split": "holdout",
+      "pose": "supine",
+      "joint_index": 0,
+      "source_commit": "94ad34eecb5fd1becc54f52fe0d11a581716386a",
+      "input_hashes": {
+        "manifest.json": "79e8543136ef181af02886d987092e85cdf25acc0fb36a0a6868476b6abc63e6",
+        "metadata.json": "5fe7af2913b492671c85f93b8fbffb90d0499552752ff8ce3d25a20089342db3",
+        "episodes.json": "d46d4862fbb651ea97afbc38d6c25132185be1ecf143caf17fa73a4de58a9c60",
+        "seed_results.json": "a88709efb0d39ecd787f2178457c96f34d0bca1e9335618d54b8bdb17e58d1ea",
+        "trace.jsonl.gz": "f4f36c779ac321cb84f97050b7b2274b26f4f69f1d2301e324ce0b00d216cc00",
+        "source_snapshot.zip": "dd51922d0ca9cb6cf04cfe102010511f6c8b0914ccef38a612eddf197509e272"
+      },
+      "seeds": [
+        {
+          "seed": 10,
+          "complete": true,
+          "control_calls_attempted": 1800,
+          "control_steps": 1800,
+          "physics_steps": 18000,
+          "model_updates": 300,
+          "evaluations": {
+            "calibration": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.017779167834923077,
+                "learned": 0.013179558144522147
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.00019609693768590574,
+                "learned": 0.00019425570190671293
+              },
+              "persistence_velocity_rmse": 0.017903649358836177,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "prediction": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.004992840154732524,
+                "learned": 0.0006926367411759773
+              },
+              "position_prediction_rmse": {
+                "frozen": 8.804776127951739e-05,
+                "learned": 2.0673886889839062e-05
+              },
+              "persistence_velocity_rmse": 0.004001556860828664,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "frozen_mpc": {
+              "tracking_rmse_rad": 0.022852308243738337,
+              "velocity_prediction_rmse": {
+                "frozen": 0.01968517363136935,
+                "learned": 0.018192250472445975
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.0002638141025535201,
+                "learned": 0.000321788899091369
+              },
+              "persistence_velocity_rmse": 0.018586554059627818,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "learned_mpc": {
+              "tracking_rmse_rad": 0.0163128408638066,
+              "velocity_prediction_rmse": {
+                "frozen": 0.0170823114194901,
+                "learned": 0.02467678005331661
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.0002535444537364846,
+                "learned": 0.0004919263157431006
+              },
+              "persistence_velocity_rmse": 0.015281353211941138,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "fixed_pd": {
+              "tracking_rmse_rad": 0.05019416716244358,
+              "velocity_prediction_rmse": {
+                "frozen": 0.004005183515271357,
+                "learned": 0.000777442524141948
+              },
+              "position_prediction_rmse": {
+                "frozen": 7.986037449274439e-05,
+                "learned": 1.5994614070786587e-05
+              },
+              "persistence_velocity_rmse": 0.0005834834665263122,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "zero_torque": {
+              "tracking_rmse_rad": 0.06307445948705515,
+              "velocity_prediction_rmse": {
+                "frozen": 2.6436291526741162e-08,
+                "learned": 0.0005001071115137759
+              },
+              "position_prediction_rmse": {
+                "frozen": 2.9077976033068196e-10,
+                "learned": 1.0002380073080401e-05
+              },
+              "persistence_velocity_rmse": 2.6436291526741162e-08,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            }
+          }
+        },
+        {
+          "seed": 11,
+          "complete": true,
+          "control_calls_attempted": 1800,
+          "control_steps": 1800,
+          "physics_steps": 18000,
+          "model_updates": 300,
+          "evaluations": {
+            "calibration": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.01771197227447466,
+                "learned": 0.013145823019922566
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.00019845696656988716,
+                "learned": 0.00018308205936011187
+              },
+              "persistence_velocity_rmse": 0.017834302335105405,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "prediction": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.004990473484655645,
+                "learned": 0.000664474128965211
+              },
+              "position_prediction_rmse": {
+                "frozen": 8.803389389915239e-05,
+                "learned": 2.001559701835663e-05
+              },
+              "persistence_velocity_rmse": 0.003995221060636208,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "frozen_mpc": {
+              "tracking_rmse_rad": 0.0229430004361169,
+              "velocity_prediction_rmse": {
+                "frozen": 0.01961304062877036,
+                "learned": 0.01798754339675575
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.0002646867382904333,
+                "learned": 0.00031888041105887266
+              },
+              "persistence_velocity_rmse": 0.01851080707866433,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "learned_mpc": {
+              "tracking_rmse_rad": 0.016331611989741594,
+              "velocity_prediction_rmse": {
+                "frozen": 0.017157239960530066,
+                "learned": 0.02436936088348508
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.0002471769990967977,
+                "learned": 0.00048146251326126497
+              },
+              "persistence_velocity_rmse": 0.015360784024775361,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "fixed_pd": {
+              "tracking_rmse_rad": 0.050221737247557456,
+              "velocity_prediction_rmse": {
+                "frozen": 0.004007543380199778,
+                "learned": 0.000736250977708878
+              },
+              "position_prediction_rmse": {
+                "frozen": 7.990714586579989e-05,
+                "learned": 1.5169369883158902e-05
+              },
+              "persistence_velocity_rmse": 0.0005824286909687252,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "zero_torque": {
+              "tracking_rmse_rad": 0.06304466078892942,
+              "velocity_prediction_rmse": {
+                "frozen": 3.088938476919193e-08,
+                "learned": 0.0004426516894939005
+              },
+              "position_prediction_rmse": {
+                "frozen": 3.3943769759001457e-10,
+                "learned": 8.853311958404284e-06
+              },
+              "persistence_velocity_rmse": 3.088938476919193e-08,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            }
+          }
+        },
+        {
+          "seed": 12,
+          "complete": true,
+          "control_calls_attempted": 1800,
+          "control_steps": 1800,
+          "physics_steps": 18000,
+          "model_updates": 300,
+          "evaluations": {
+            "calibration": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.017836295493728362,
+                "learned": 0.013206327110224032
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.00019375204158933798,
+                "learned": 0.00020592092063483134
+              },
+              "persistence_velocity_rmse": 0.017964496389888195,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "prediction": {
+              "tracking_rmse_rad": null,
+              "velocity_prediction_rmse": {
+                "frozen": 0.004996674619198945,
+                "learned": 0.0007211846672192663
+              },
+              "position_prediction_rmse": {
+                "frozen": 8.807165675705476e-05,
+                "learned": 2.1370334244150614e-05
+              },
+              "persistence_velocity_rmse": 0.004011545473765323,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "frozen_mpc": {
+              "tracking_rmse_rad": 0.022890908104862245,
+              "velocity_prediction_rmse": {
+                "frozen": 0.018947821962061604,
+                "learned": 0.01788925373228572
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.00025652922777639407,
+                "learned": 0.0003251005218128907
+              },
+              "persistence_velocity_rmse": 0.017797972019326626,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "learned_mpc": {
+              "tracking_rmse_rad": 0.016198540386620146,
+              "velocity_prediction_rmse": {
+                "frozen": 0.017385671557638174,
+                "learned": 0.024780332851768453
+              },
+              "position_prediction_rmse": {
+                "frozen": 0.00024972361264422526,
+                "learned": 0.0004864679078051365
+              },
+              "persistence_velocity_rmse": 0.015653903337105122,
+              "completed": true,
+              "mathematical_prediction_calls": 27000,
+              "planner_fallbacks": 0
+            },
+            "fixed_pd": {
+              "tracking_rmse_rad": 0.050151020940601705,
+              "velocity_prediction_rmse": {
+                "frozen": 0.004001458329172877,
+                "learned": 0.0008137468332979948
+              },
+              "position_prediction_rmse": {
+                "frozen": 7.978514892428954e-05,
+                "learned": 1.6727595262551206e-05
+              },
+              "persistence_velocity_rmse": 0.0005852022102993073,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            },
+            "zero_torque": {
+              "tracking_rmse_rad": 0.06312589505585676,
+              "velocity_prediction_rmse": {
+                "frozen": 1.8617156367180826e-08,
+                "learned": 0.000554959583058329
+              },
+              "position_prediction_rmse": {
+                "frozen": 2.0503224928121818e-10,
+                "learned": 1.1099358892694265e-05
+              },
+              "persistence_velocity_rmse": 1.8617156367180826e-08,
+              "completed": true,
+              "mathematical_prediction_calls": 0,
+              "planner_fallbacks": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "scientific_gate": {
+    "evaluated": true,
+    "passed": true,
+    "per_seed": [
+      {
+        "seed": 10,
+        "prediction_improvement": 0.8612740004265,
+        "prediction_gate": true,
+        "tracking_frozen": 0.022852308243738337,
+        "tracking_learned": 0.0163128408638066,
+        "tracking_pd": 0.05019416716244358,
+        "tracking_seed_improved": true,
+        "complete": true
+      },
+      {
+        "seed": 11,
+        "prediction_improvement": 0.8668514859344931,
+        "prediction_gate": true,
+        "tracking_frozen": 0.0229430004361169,
+        "tracking_learned": 0.016331611989741594,
+        "tracking_pd": 0.050221737247557456,
+        "tracking_seed_improved": true,
+        "complete": true
+      },
+      {
+        "seed": 12,
+        "prediction_improvement": 0.8556670741680424,
+        "prediction_gate": true,
+        "tracking_frozen": 0.022890908104862245,
+        "tracking_learned": 0.016198540386620146,
+        "tracking_pd": 0.050151020940601705,
+        "tracking_seed_improved": true,
+        "complete": true
+      }
+    ],
+    "tracking_frozen_mean": 0.022895405594905827,
+    "tracking_learned_mean": 0.016280997746722783,
+    "tracking_mean_improvement": 0.28889673173794894,
+    "claim_boundary": "Local body-model contribution relative to the same initially frozen MPC; report PD even if it is stronger. No rolling, standing, walking or real-robot claim.",
+    "data_consistency_verified": true,
+    "validated_pass": true
+  }
+}

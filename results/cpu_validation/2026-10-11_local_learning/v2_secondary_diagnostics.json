@@ -1,0 +1,2494 @@
+{
+  "schema_version": 1,
+  "purpose": "Secondary descriptive diagnostics, separate from the predeclared fixed-input prediction and tracking gate.",
+  "source_audit_path": "D:\\Codex_ws\\robot_rl\\external\\local_learning_v2_audit_verified.json",
+  "source_audit_sha256": "76fa0de3fb138486b689b6fe39133bef03fbaea5e693f6a59f442732830e5b3f",
+  "diagnostic_script_sha256": "ff7c02b266202efca555890386e2830df8b1cfae2ac5a13166420f26608b2f10",
+  "input_archives": [
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-11_local_learning\\v2_development",
+      "split": "development",
+      "source_commit": "94ad34eecb5fd1becc54f52fe0d11a581716386a",
+      "input_hashes": {
+        "episodes.json": "ed0a1ff66bbddeafe0a3fd42b81271752bc4987f1b9db343ddca9d08e0ceceae",
+        "manifest.json": "b0dd23e3eb4762fd48b2d7fd0dbd01bdf65ddb4d1e8bc2c423a9c780b00ec49b",
+        "metadata.json": "5803f1d31876b3e03d9c9715792c78f44133f46f097244c95e850ac8686064a2",
+        "seed_results.json": "e188967efc7b9e6ea2409bbf3e0591e45afafacf5aaff2d4123635adc4b10408",
+        "source_snapshot.zip": "083bbe7681cdc8a4cd62093ca2ede1bd35028e46fbf14e8e56eff64628b11343",
+        "trace.jsonl.gz": "baf38d5552b8f6bf257de5fec4ee8fafd1f51d21569bbe3455c418a309457005"
+      }
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-11_local_learning\\v2_holdout",
+      "split": "holdout",
+      "source_commit": "94ad34eecb5fd1becc54f52fe0d11a581716386a",
+      "input_hashes": {
+        "episodes.json": "d46d4862fbb651ea97afbc38d6c25132185be1ecf143caf17fa73a4de58a9c60",
+        "manifest.json": "79e8543136ef181af02886d987092e85cdf25acc0fb36a0a6868476b6abc63e6",
+        "metadata.json": "5fe7af2913b492671c85f93b8fbffb90d0499552752ff8ce3d25a20089342db3",
+        "seed_results.json": "a88709efb0d39ecd787f2178457c96f34d0bca1e9335618d54b8bdb17e58d1ea",
+        "source_snapshot.zip": "dd51922d0ca9cb6cf04cfe102010511f6c8b0914ccef38a612eddf197509e272",
+        "trace.jsonl.gz": "f4f36c779ac321cb84f97050b7b2274b26f4f69f1d2301e324ce0b00d216cc00"
+      }
+    }
+  ],
+  "source_audit_data_consistent": true,
+  "predeclared_gate_passed": true,
+  "notes": [
+    "Predictions on different controller trajectories are not a common-input comparison; within each trajectory both predictors read the same native states and requested input.",
+    "Zero-trajectory nominal error is close to floating-point scale, so large ratios are not physical failure probabilities.",
+    "Full-time ground-force peaks include the paid initial prefix. Contact distance includes self-contact; these developer thresholds do not certify hardware safety.",
+    "Fixed PD is one declared gain choice, not a tuned strong classical baseline.",
+    "The stated gate belongs to the supplied audit; this report covers only the explicitly listed archive inputs."
+  ],
+  "trial_diagnostics": [
+    {
+      "split": "development",
+      "seed": 0,
+      "kind": "calibration",
+      "velocity_prediction_rmse": {
+        "frozen": 0.017778119287305577,
+        "learned": 0.013175595034291604
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.7411129839644852,
+      "position_prediction_rmse": {
+        "frozen": 0.0001937072866702263,
+        "learned": 0.00020575532437658184
+      },
+      "persistence_velocity_rmse": 0.017916334126637228,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 400,
+          "physics_substeps": 4000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 73.04739567360782,
+          "peak_kinetic_energy_j": 0.0005673143665830823,
+          "minimum_contact_distance_m": -9.601149023405822e-05,
+          "maximum_native_joint_speed_rad_s": 0.21399378805939417,
+          "maximum_native_joint_limit_overshoot_rad": 0.0021029306192190877,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 0,
+      "kind": "prediction",
+      "velocity_prediction_rmse": {
+        "frozen": 0.005007042197004591,
+        "learned": 0.0007014409924203092
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.14009088895634605,
+      "position_prediction_rmse": {
+        "frozen": 8.814605795734634e-05,
+        "learned": 2.1261469579865347e-05
+      },
+      "persistence_velocity_rmse": 0.00403603077199552,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 71.22793286036,
+          "peak_kinetic_energy_j": 1.3989397459475247e-05,
+          "minimum_contact_distance_m": -2.9382819768969393e-05,
+          "maximum_native_joint_speed_rad_s": 0.00972540436986752,
+          "maximum_native_joint_limit_overshoot_rad": 0.000737205115096938,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 0,
+      "kind": "frozen_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.018431056935759863,
+        "learned": 0.01680471685439389
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.9117608888608795,
+      "position_prediction_rmse": {
+        "frozen": 0.0002504547126863621,
+        "learned": 0.00032203798744188955
+      },
+      "persistence_velocity_rmse": 0.017271014159934605,
+      "tracking_rmse_rad": 0.022605869716395145,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6549999999999336,
+          "requested_absolute_torque_integral_nm_s": 1.6549999999999336,
+          "tracking_endpoint_error_rad": 0.016837387808967152,
+          "maximum_absolute_tracking_error_rad": 0.0473881051307906
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.21154969056043,
+          "peak_kinetic_energy_j": 0.00021226368076887934,
+          "minimum_contact_distance_m": -7.58359710944928e-05,
+          "maximum_native_joint_speed_rad_s": 0.07629919104045187,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005981016548095643,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6549999999999336,
+          "requested_absolute_torque_integral_nm_s": 1.6549999999999336,
+          "tracking_endpoint_error_rad": 0.016837387808967152,
+          "maximum_absolute_tracking_error_rad": 0.0473881051307906
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 0,
+      "kind": "learned_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.01811942592408604,
+        "learned": 0.0256740066302966
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 1.4169326742393258,
+      "position_prediction_rmse": {
+        "frozen": 0.0002562947956833897,
+        "learned": 0.0004997465870782928
+      },
+      "persistence_velocity_rmse": 0.016562887239706187,
+      "tracking_rmse_rad": 0.0158674716863814,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.7624999999999336,
+          "requested_absolute_torque_integral_nm_s": 1.7624999999999336,
+          "tracking_endpoint_error_rad": 0.00613556223415784,
+          "maximum_absolute_tracking_error_rad": 0.04106980519227469
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.24420845589893,
+          "peak_kinetic_energy_j": 0.0002746362561436078,
+          "minimum_contact_distance_m": -7.66016438825956e-05,
+          "maximum_native_joint_speed_rad_s": 0.14050102617447058,
+          "maximum_native_joint_limit_overshoot_rad": 0.00059975333355396,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.7624999999999336,
+          "requested_absolute_torque_integral_nm_s": 1.7624999999999336,
+          "tracking_endpoint_error_rad": 0.00613556223415784,
+          "maximum_absolute_tracking_error_rad": 0.04106980519227469
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 0,
+      "kind": "fixed_pd",
+      "velocity_prediction_rmse": {
+        "frozen": 0.003992382068881131,
+        "learned": 0.0006827686875777876
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.17101787248762346,
+      "position_prediction_rmse": {
+        "frozen": 7.961009776738709e-05,
+        "learned": 1.4233800867728369e-05
+      },
+      "persistence_velocity_rmse": 0.0005899284922293016,
+      "tracking_rmse_rad": 0.050049650272483794,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.7665378537288856,
+          "requested_absolute_torque_integral_nm_s": 0.7665378537288856,
+          "tracking_endpoint_error_rad": 0.053670697424371916,
+          "maximum_absolute_tracking_error_rad": 0.07005760859893027
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.22606921883995,
+          "peak_kinetic_energy_j": 1.7605614173686835e-05,
+          "minimum_contact_distance_m": -2.9530972677216383e-05,
+          "maximum_native_joint_speed_rad_s": 0.010596866608809449,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005899463201192943,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.7665378537288856,
+          "requested_absolute_torque_integral_nm_s": 0.7665378537288856,
+          "tracking_endpoint_error_rad": 0.053670697424371916,
+          "maximum_absolute_tracking_error_rad": 0.07005760859893027
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 0,
+      "kind": "zero_torque",
+      "velocity_prediction_rmse": {
+        "frozen": 7.60527752369232e-09,
+        "learned": 0.0005387605321513089
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 70840.35138401414,
+      "position_prediction_rmse": {
+        "frozen": 8.399252836082611e-11,
+        "learned": 1.0775142599503712e-05
+      },
+      "persistence_velocity_rmse": 7.60527752369232e-09,
+      "tracking_rmse_rad": 0.06329395409515903,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.08008794716305839,
+          "maximum_absolute_tracking_error_rad": 0.08008794716305839
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.1224964176315,
+          "peak_kinetic_energy_j": 1.32613631528436,
+          "minimum_contact_distance_m": -0.002764165574944237,
+          "maximum_native_joint_speed_rad_s": 3.7961853611150893,
+          "maximum_native_joint_limit_overshoot_rad": 0.007077751885310772,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.22060010144435,
+          "peak_kinetic_energy_j": 9.213963206894858e-11,
+          "minimum_contact_distance_m": -2.8553993508539932e-05,
+          "maximum_native_joint_speed_rad_s": 2.27534640238268e-05,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005763003146669488,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.08008794716305839,
+          "maximum_absolute_tracking_error_rad": 0.08008794716305839
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 1,
+      "kind": "calibration",
+      "velocity_prediction_rmse": {
+        "frozen": 0.01782378117173303,
+        "learned": 0.013199289587515197
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.7405437409907234,
+      "position_prediction_rmse": {
+        "frozen": 0.00019372776038133142,
+        "learned": 0.00020586801466941138
+      },
+      "persistence_velocity_rmse": 0.017954089979937225,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 400,
+          "physics_substeps": 4000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 73.06157064143503,
+          "peak_kinetic_energy_j": 0.0005692559045729252,
+          "minimum_contact_distance_m": -9.634381245132023e-05,
+          "maximum_native_joint_speed_rad_s": 0.21528115604093628,
+          "maximum_native_joint_limit_overshoot_rad": 0.0021828137968407145,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 1,
+      "kind": "prediction",
+      "velocity_prediction_rmse": {
+        "frozen": 0.004998617306818675,
+        "learned": 0.0007172640942050461
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.14349250006129044,
+      "position_prediction_rmse": {
+        "frozen": 8.808438459679551e-05,
+        "learned": 2.1361846718035208e-05
+      },
+      "persistence_velocity_rmse": 0.004016452857734318,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 71.22777442141792,
+          "peak_kinetic_energy_j": 1.3991627792453909e-05,
+          "minimum_contact_distance_m": -2.9403171682776397e-05,
+          "maximum_native_joint_speed_rad_s": 0.009736033805164562,
+          "maximum_native_joint_limit_overshoot_rad": 0.0007370361728252401,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 1,
+      "kind": "frozen_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.018820041348168493,
+        "learned": 0.01743605790750527
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.9264622529217819,
+      "position_prediction_rmse": {
+        "frozen": 0.0002564064395596777,
+        "learned": 0.000324923792204142
+      },
+      "persistence_velocity_rmse": 0.01765715869276684,
+      "tracking_rmse_rad": 0.022881256519061883,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6749999999999297,
+          "requested_absolute_torque_integral_nm_s": 1.6749999999999297,
+          "tracking_endpoint_error_rad": 0.018100792223261324,
+          "maximum_absolute_tracking_error_rad": 0.047634500479487314
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.21917221058268,
+          "peak_kinetic_energy_j": 0.00020844970815047162,
+          "minimum_contact_distance_m": -7.576600198220054e-05,
+          "maximum_native_joint_speed_rad_s": 0.07421393644502414,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005978630613849196,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6749999999999297,
+          "requested_absolute_torque_integral_nm_s": 1.6749999999999297,
+          "tracking_endpoint_error_rad": 0.018100792223261324,
+          "maximum_absolute_tracking_error_rad": 0.047634500479487314
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 1,
+      "kind": "learned_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.018136645409159078,
+        "learned": 0.024957324801576305
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 1.3760717177043533,
+      "position_prediction_rmse": {
+        "frozen": 0.0002600880079108919,
+        "learned": 0.0004813402726832616
+      },
+      "persistence_velocity_rmse": 0.016403426023618755,
+      "tracking_rmse_rad": 0.016163819609916627,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.7849999999999324,
+          "requested_absolute_torque_integral_nm_s": 1.7849999999999324,
+          "tracking_endpoint_error_rad": 0.006113105068320471,
+          "maximum_absolute_tracking_error_rad": 0.04130385461208898
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.24406322997794,
+          "peak_kinetic_energy_j": 0.0002704131202369793,
+          "minimum_contact_distance_m": -7.658404465455543e-05,
+          "maximum_native_joint_speed_rad_s": 0.12461087346657088,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005993322161100589,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.7849999999999324,
+          "requested_absolute_torque_integral_nm_s": 1.7849999999999324,
+          "tracking_endpoint_error_rad": 0.006113105068320471,
+          "maximum_absolute_tracking_error_rad": 0.04130385461208898
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 1,
+      "kind": "fixed_pd",
+      "velocity_prediction_rmse": {
+        "frozen": 0.00399963302237498,
+        "learned": 0.0007916634242219274
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.19793401539420186,
+      "position_prediction_rmse": {
+        "frozen": 7.975123038606824e-05,
+        "learned": 1.630679825072224e-05
+      },
+      "persistence_velocity_rmse": 0.0005860769404371249,
+      "tracking_rmse_rad": 0.05013011685582219,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.7676380431678173,
+          "requested_absolute_torque_integral_nm_s": 0.7676380431678173,
+          "tracking_endpoint_error_rad": 0.05395368261830784,
+          "maximum_absolute_tracking_error_rad": 0.07005363067822226
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.22596515677277,
+          "peak_kinetic_energy_j": 1.7157313632333332e-05,
+          "minimum_contact_distance_m": -2.9551746358699726e-05,
+          "maximum_native_joint_speed_rad_s": 0.010473887319676908,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005897050598275465,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.7676380431678173,
+          "requested_absolute_torque_integral_nm_s": 0.7676380431678173,
+          "tracking_endpoint_error_rad": 0.05395368261830784,
+          "maximum_absolute_tracking_error_rad": 0.07005363067822226
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 1,
+      "kind": "zero_torque",
+      "velocity_prediction_rmse": {
+        "frozen": 1.4337436422398173e-08,
+        "learned": 0.000552149854366565
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 38511.058609054235,
+      "position_prediction_rmse": {
+        "frozen": 1.5729996063588896e-10,
+        "learned": 1.1043126462205202e-05
+      },
+      "persistence_velocity_rmse": 1.4337436422398173e-08,
+      "tracking_rmse_rad": 0.06315370237777554,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.07983309357323456,
+          "maximum_absolute_tracking_error_rad": 0.07991714443986457
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4985341539513,
+          "peak_kinetic_energy_j": 1.325991115526823,
+          "minimum_contact_distance_m": -0.0036063634001606906,
+          "maximum_native_joint_speed_rad_s": 4.185614175420957,
+          "maximum_native_joint_limit_overshoot_rad": 0.007466417759295823,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.22060021409348,
+          "peak_kinetic_energy_j": 3.336359264235761e-10,
+          "minimum_contact_distance_m": -2.855404375683157e-05,
+          "maximum_native_joint_speed_rad_s": 4.3337800347608935e-05,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005763201498679833,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.07983309357323456,
+          "maximum_absolute_tracking_error_rad": 0.07991714443986457
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 2,
+      "kind": "calibration",
+      "velocity_prediction_rmse": {
+        "frozen": 0.01774346963177292,
+        "learned": 0.013161989868299213
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.7417934677629379,
+      "position_prediction_rmse": {
+        "frozen": 0.00019375291241473898,
+        "learned": 0.00020578417602880048
+      },
+      "persistence_velocity_rmse": 0.01788586770860496,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 400,
+          "physics_substeps": 4000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 73.03418953626745,
+          "peak_kinetic_energy_j": 0.0005655952547450649,
+          "minimum_contact_distance_m": -9.582108778672174e-05,
+          "maximum_native_joint_speed_rad_s": 0.2130112830917366,
+          "maximum_native_joint_limit_overshoot_rad": 0.0020372418129689083,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 2,
+      "kind": "prediction",
+      "velocity_prediction_rmse": {
+        "frozen": 0.005013009952737204,
+        "learned": 0.0006908980692273093
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.13782100489349022,
+      "position_prediction_rmse": {
+        "frozen": 8.820221522279649e-05,
+        "learned": 2.1014245156003925e-05
+      },
+      "persistence_velocity_rmse": 0.00404681976204298,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 71.22808547788492,
+          "peak_kinetic_energy_j": 1.3952164164851702e-05,
+          "minimum_contact_distance_m": -2.9363562537035315e-05,
+          "maximum_native_joint_speed_rad_s": 0.009687577866133777,
+          "maximum_native_joint_limit_overshoot_rad": 0.0007373103588609463,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 2,
+      "kind": "frozen_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.017450518894009535,
+        "learned": 0.016135799287731126
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.9246601425284993,
+      "position_prediction_rmse": {
+        "frozen": 0.00024256882012060335,
+        "learned": 0.0003180223201230813
+      },
+      "persistence_velocity_rmse": 0.016204560478578912,
+      "tracking_rmse_rad": 0.022117125277930503,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6349999999999405,
+          "requested_absolute_torque_integral_nm_s": 1.6349999999999405,
+          "tracking_endpoint_error_rad": 0.0156980879686055,
+          "maximum_absolute_tracking_error_rad": 0.04715153036558567
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.21814160165756,
+          "peak_kinetic_energy_j": 0.00021403609094657711,
+          "minimum_contact_distance_m": -7.590540922778125e-05,
+          "maximum_native_joint_speed_rad_s": 0.07745849799179129,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005980386134354149,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6349999999999405,
+          "requested_absolute_torque_integral_nm_s": 1.6349999999999405,
+          "tracking_endpoint_error_rad": 0.0156980879686055,
+          "maximum_absolute_tracking_error_rad": 0.04715153036558567
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 2,
+      "kind": "learned_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.017761561303758968,
+        "learned": 0.02581956121905316
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 1.453676328194686,
+      "position_prediction_rmse": {
+        "frozen": 0.00025427338529737653,
+        "learned": 0.0005115968491217443
+      },
+      "persistence_velocity_rmse": 0.016197634497778494,
+      "tracking_rmse_rad": 0.01561253187505682,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.7499999999999352,
+          "requested_absolute_torque_integral_nm_s": 1.7499999999999352,
+          "tracking_endpoint_error_rad": 0.006771208390851227,
+          "maximum_absolute_tracking_error_rad": 0.04077430692921629
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.24437873315188,
+          "peak_kinetic_energy_j": 0.0002780652657892357,
+          "minimum_contact_distance_m": -7.659704322029309e-05,
+          "maximum_native_joint_speed_rad_s": 0.1392183154433511,
+          "maximum_native_joint_limit_overshoot_rad": 0.0007800786880723929,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.7499999999999352,
+          "requested_absolute_torque_integral_nm_s": 1.7499999999999352,
+          "tracking_endpoint_error_rad": 0.006771208390851227,
+          "maximum_absolute_tracking_error_rad": 0.04077430692921629
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 2,
+      "kind": "fixed_pd",
+      "velocity_prediction_rmse": {
+        "frozen": 0.003988594698307358,
+        "learned": 0.0005839835220816382
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.14641335263506808,
+      "position_prediction_rmse": {
+        "frozen": 7.953926739975217e-05,
+        "learned": 1.2375286680344009e-05
+      },
+      "persistence_velocity_rmse": 0.0005928809505629331,
+      "tracking_rmse_rad": 0.050012834938049616,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.7660910272212643,
+          "requested_absolute_torque_integral_nm_s": 0.7660910272212643,
+          "tracking_endpoint_error_rad": 0.053465229477580895,
+          "maximum_absolute_tracking_error_rad": 0.07009703572560039
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.2261729916534,
+          "peak_kinetic_energy_j": 1.7884658008506847e-05,
+          "minimum_contact_distance_m": -2.9510653707098822e-05,
+          "maximum_native_joint_speed_rad_s": 0.010688727394717159,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005901359890888736,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.7660910272212643,
+          "requested_absolute_torque_integral_nm_s": 0.7660910272212643,
+          "tracking_endpoint_error_rad": 0.053465229477580895,
+          "maximum_absolute_tracking_error_rad": 0.07009703572560039
+        }
+      }
+    },
+    {
+      "split": "development",
+      "seed": 2,
+      "kind": "zero_torque",
+      "velocity_prediction_rmse": {
+        "frozen": 2.8588929050451538e-08,
+        "learned": 0.0005233394728434668
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 18305.669020337125,
+      "position_prediction_rmse": {
+        "frozen": 3.1439654553104544e-10,
+        "learned": 1.0466532100164756e-05
+      },
+      "persistence_velocity_rmse": 2.8588929050451538e-08,
+      "tracking_rmse_rad": 0.06342959378146762,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.08033435004946411,
+          "maximum_absolute_tracking_error_rad": 0.08033435004946411
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 552.7446014293839,
+          "peak_kinetic_energy_j": 1.3262605032338417,
+          "minimum_contact_distance_m": -0.0033921856106598203,
+          "maximum_native_joint_speed_rad_s": 3.7917521525966507,
+          "maximum_native_joint_limit_overshoot_rad": 0.007437236208489489,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.220600100915,
+          "peak_kinetic_energy_j": 1.323141897623875e-09,
+          "minimum_contact_distance_m": -2.855425430135783e-05,
+          "maximum_native_joint_speed_rad_s": 8.647549038703965e-05,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005763522832465327,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.08033435004946411,
+          "maximum_absolute_tracking_error_rad": 0.08033435004946411
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 10,
+      "kind": "calibration",
+      "velocity_prediction_rmse": {
+        "frozen": 0.017779167834923077,
+        "learned": 0.013179558144522147
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.7412921834639494,
+      "position_prediction_rmse": {
+        "frozen": 0.00019609693768590574,
+        "learned": 0.00019425570190671293
+      },
+      "persistence_velocity_rmse": 0.017903649358836177,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 400,
+          "physics_substeps": 4000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 73.06822214264213,
+          "peak_kinetic_energy_j": 0.0005702879453454706,
+          "minimum_contact_distance_m": -9.65135559578556e-05,
+          "maximum_native_joint_speed_rad_s": 0.2162561081845355,
+          "maximum_native_joint_limit_overshoot_rad": 0.0022262451113588626,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 10,
+      "kind": "prediction",
+      "velocity_prediction_rmse": {
+        "frozen": 0.004992840154732524,
+        "learned": 0.0006926367411759773
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.1387259995734999,
+      "position_prediction_rmse": {
+        "frozen": 8.804776127951739e-05,
+        "learned": 2.0673886889839062e-05
+      },
+      "persistence_velocity_rmse": 0.004001556860828664,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 71.22768407433918,
+          "peak_kinetic_energy_j": 1.3928991418684512e-05,
+          "minimum_contact_distance_m": -2.9414656700241237e-05,
+          "maximum_native_joint_speed_rad_s": 0.00972897615210561,
+          "maximum_native_joint_limit_overshoot_rad": 0.0007369130540561848,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 10,
+      "kind": "frozen_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.01968517363136935,
+        "learned": 0.018192250472445975
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.9241600207912658,
+      "position_prediction_rmse": {
+        "frozen": 0.0002638141025535201,
+        "learned": 0.000321788899091369
+      },
+      "persistence_velocity_rmse": 0.018586554059627818,
+      "tracking_rmse_rad": 0.022852308243738337,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6849999999999297,
+          "requested_absolute_torque_integral_nm_s": 1.6849999999999297,
+          "tracking_endpoint_error_rad": 0.018271458203226672,
+          "maximum_absolute_tracking_error_rad": 0.047829233284287544
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.21689540073793,
+          "peak_kinetic_energy_j": 0.0002060867968175923,
+          "minimum_contact_distance_m": -7.573051912247372e-05,
+          "maximum_native_joint_speed_rad_s": 0.07274816947105191,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005975175042945679,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6849999999999297,
+          "requested_absolute_torque_integral_nm_s": 1.6849999999999297,
+          "tracking_endpoint_error_rad": 0.018271458203226672,
+          "maximum_absolute_tracking_error_rad": 0.047829233284287544
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 10,
+      "kind": "learned_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.0170823114194901,
+        "learned": 0.02467678005331661
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 1.4445808560287445,
+      "position_prediction_rmse": {
+        "frozen": 0.0002535444537364846,
+        "learned": 0.0004919263157431006
+      },
+      "persistence_velocity_rmse": 0.015281353211941138,
+      "tracking_rmse_rad": 0.0163128408638066,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.7974999999999304,
+          "requested_absolute_torque_integral_nm_s": 1.7974999999999304,
+          "tracking_endpoint_error_rad": 0.006742904511130365,
+          "maximum_absolute_tracking_error_rad": 0.04139301239458159
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.24393340442633,
+          "peak_kinetic_energy_j": 0.0002670254782768979,
+          "minimum_contact_distance_m": -7.656049362290279e-05,
+          "maximum_native_joint_speed_rad_s": 0.1426495743988116,
+          "maximum_native_joint_limit_overshoot_rad": 0.0007666996639790641,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.7974999999999304,
+          "requested_absolute_torque_integral_nm_s": 1.7974999999999304,
+          "tracking_endpoint_error_rad": 0.006742904511130365,
+          "maximum_absolute_tracking_error_rad": 0.04139301239458159
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 10,
+      "kind": "fixed_pd",
+      "velocity_prediction_rmse": {
+        "frozen": 0.004005183515271357,
+        "learned": 0.000777442524141948
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.19410908917847056,
+      "position_prediction_rmse": {
+        "frozen": 7.986037449274439e-05,
+        "learned": 1.5994614070786587e-05
+      },
+      "persistence_velocity_rmse": 0.0005834834665263122,
+      "tracking_rmse_rad": 0.05019416716244358,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.768539783344893,
+          "requested_absolute_torque_integral_nm_s": 0.768539783344893,
+          "tracking_endpoint_error_rad": 0.05414437359135378,
+          "maximum_absolute_tracking_error_rad": 0.07006777012225852
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.22590741368337,
+          "peak_kinetic_energy_j": 1.684223858037579e-05,
+          "minimum_contact_distance_m": -2.9563440662086493e-05,
+          "maximum_native_joint_speed_rad_s": 0.010391538267234912,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005895409911150173,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.768539783344893,
+          "requested_absolute_torque_integral_nm_s": 0.768539783344893,
+          "tracking_endpoint_error_rad": 0.05414437359135378,
+          "maximum_absolute_tracking_error_rad": 0.07006777012225852
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 10,
+      "kind": "zero_torque",
+      "velocity_prediction_rmse": {
+        "frozen": 2.6436291526741162e-08,
+        "learned": 0.0005001071115137759
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 18917.445777442023,
+      "position_prediction_rmse": {
+        "frozen": 2.9077976033068196e-10,
+        "learned": 1.0002380073080401e-05
+      },
+      "persistence_velocity_rmse": 2.6436291526741162e-08,
+      "tracking_rmse_rad": 0.06307445948705515,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.07968910913156195,
+          "maximum_absolute_tracking_error_rad": 0.07984564253288808
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 554.4465506529208,
+          "peak_kinetic_energy_j": 1.3264189620628697,
+          "minimum_contact_distance_m": -0.0035906121003661216,
+          "maximum_native_joint_speed_rad_s": 4.261831013828104,
+          "maximum_native_joint_limit_overshoot_rad": 0.008076079128947347,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.22060010103918,
+          "peak_kinetic_energy_j": 1.1604009717065992e-09,
+          "minimum_contact_distance_m": -2.8554219626289457e-05,
+          "maximum_native_joint_speed_rad_s": 8.096207626542749e-05,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005763488654860832,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.07968910913156195,
+          "maximum_absolute_tracking_error_rad": 0.07984564253288808
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 11,
+      "kind": "calibration",
+      "velocity_prediction_rmse": {
+        "frozen": 0.01771197227447466,
+        "learned": 0.013145823019922566
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.7421998417910505,
+      "position_prediction_rmse": {
+        "frozen": 0.00019845696656988716,
+        "learned": 0.00018308205936011187
+      },
+      "persistence_velocity_rmse": 0.017834302335105405,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 400,
+          "physics_substeps": 4000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 73.06908029769792,
+          "peak_kinetic_energy_j": 0.0005704240699168905,
+          "minimum_contact_distance_m": -9.65371009829033e-05,
+          "maximum_native_joint_speed_rad_s": 0.21665933562376102,
+          "maximum_native_joint_limit_overshoot_rad": 0.0022321317174281525,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 11,
+      "kind": "prediction",
+      "velocity_prediction_rmse": {
+        "frozen": 0.004990473484655645,
+        "learned": 0.000664474128965211
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.13314851406550682,
+      "position_prediction_rmse": {
+        "frozen": 8.803389389915239e-05,
+        "learned": 2.001559701835663e-05
+      },
+      "persistence_velocity_rmse": 0.003995221060636208,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 71.22764988055589,
+          "peak_kinetic_energy_j": 1.3894029804016788e-05,
+          "minimum_contact_distance_m": -2.9418973633468792e-05,
+          "maximum_native_joint_speed_rad_s": 0.009723807325516224,
+          "maximum_native_joint_limit_overshoot_rad": 0.0007368615079657201,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 11,
+      "kind": "frozen_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.01961304062877036,
+        "learned": 0.01798754339675575
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.9171216099134487,
+      "position_prediction_rmse": {
+        "frozen": 0.0002646867382904333,
+        "learned": 0.00031888041105887266
+      },
+      "persistence_velocity_rmse": 0.01851080707866433,
+      "tracking_rmse_rad": 0.0229430004361169,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6849999999999294,
+          "requested_absolute_torque_integral_nm_s": 1.6849999999999294,
+          "tracking_endpoint_error_rad": 0.018038601783905716,
+          "maximum_absolute_tracking_error_rad": 0.04787709831157726
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.21581894622472,
+          "peak_kinetic_energy_j": 0.0002050179414205357,
+          "minimum_contact_distance_m": -7.569254949883752e-05,
+          "maximum_native_joint_speed_rad_s": 0.08907709888303925,
+          "maximum_native_joint_limit_overshoot_rad": 0.000597381967595557,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6849999999999294,
+          "requested_absolute_torque_integral_nm_s": 1.6849999999999294,
+          "tracking_endpoint_error_rad": 0.018038601783905716,
+          "maximum_absolute_tracking_error_rad": 0.04787709831157726
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 11,
+      "kind": "learned_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.017157239960530066,
+        "learned": 0.02436936088348508
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 1.4203543774841625,
+      "position_prediction_rmse": {
+        "frozen": 0.0002471769990967977,
+        "learned": 0.00048146251326126497
+      },
+      "persistence_velocity_rmse": 0.015360784024775361,
+      "tracking_rmse_rad": 0.016331611989741594,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.8024999999999285,
+          "requested_absolute_torque_integral_nm_s": 1.8024999999999285,
+          "tracking_endpoint_error_rad": 0.0056304959340086926,
+          "maximum_absolute_tracking_error_rad": 0.04137220912975468
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.24395025924034,
+          "peak_kinetic_energy_j": 0.00026557117189012717,
+          "minimum_contact_distance_m": -7.657718283712867e-05,
+          "maximum_native_joint_speed_rad_s": 0.14304742959365155,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005991313016773609,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.8024999999999285,
+          "requested_absolute_torque_integral_nm_s": 1.8024999999999285,
+          "tracking_endpoint_error_rad": 0.0056304959340086926,
+          "maximum_absolute_tracking_error_rad": 0.04137220912975468
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 11,
+      "kind": "fixed_pd",
+      "velocity_prediction_rmse": {
+        "frozen": 0.004007543380199778,
+        "learned": 0.000736250977708878
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.18371628398247697,
+      "position_prediction_rmse": {
+        "frozen": 7.990714586579989e-05,
+        "learned": 1.5169369883158902e-05
+      },
+      "persistence_velocity_rmse": 0.0005824286909687252,
+      "tracking_rmse_rad": 0.050221737247557456,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.768931407135061,
+          "requested_absolute_torque_integral_nm_s": 0.768931407135061,
+          "tracking_endpoint_error_rad": 0.05422186660069628,
+          "maximum_absolute_tracking_error_rad": 0.07007617514276682
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.22588584419732,
+          "peak_kinetic_energy_j": 1.6712880808933865e-05,
+          "minimum_contact_distance_m": -2.9567824346002358e-05,
+          "maximum_native_joint_speed_rad_s": 0.010358176745805024,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005894761619952608,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.768931407135061,
+          "requested_absolute_torque_integral_nm_s": 0.768931407135061,
+          "tracking_endpoint_error_rad": 0.05422186660069628,
+          "maximum_absolute_tracking_error_rad": 0.07007617514276682
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 11,
+      "kind": "zero_torque",
+      "velocity_prediction_rmse": {
+        "frozen": 3.088938476919193e-08,
+        "learned": 0.0004426516894939005
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 14330.2203265436,
+      "position_prediction_rmse": {
+        "frozen": 3.3943769759001457e-10,
+        "learned": 8.853311958404284e-06
+      },
+      "persistence_velocity_rmse": 3.088938476919193e-08,
+      "tracking_rmse_rad": 0.06304466078892942,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.07963497211921311,
+          "maximum_absolute_tracking_error_rad": 0.07981874840810942
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.5939225533172,
+          "peak_kinetic_energy_j": 1.325992920235548,
+          "minimum_contact_distance_m": -0.002669349151409744,
+          "maximum_native_joint_speed_rad_s": 3.742755632182212,
+          "maximum_native_joint_limit_overshoot_rad": 0.007741351494406368,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.22060010079207,
+          "peak_kinetic_energy_j": 1.6010301543606266e-09,
+          "minimum_contact_distance_m": -2.8554313533199482e-05,
+          "maximum_native_joint_speed_rad_s": 9.516312258139062e-05,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005763572575697862,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.07963497211921311,
+          "maximum_absolute_tracking_error_rad": 0.07981874840810942
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 12,
+      "kind": "calibration",
+      "velocity_prediction_rmse": {
+        "frozen": 0.017836295493728362,
+        "learned": 0.013206327110224032
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.7404187217501341,
+      "position_prediction_rmse": {
+        "frozen": 0.00019375204158933798,
+        "learned": 0.00020592092063483134
+      },
+      "persistence_velocity_rmse": 0.017964496389888195,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 400,
+          "physics_substeps": 4000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 73.0647581653927,
+          "peak_kinetic_energy_j": 0.0005697398171480161,
+          "minimum_contact_distance_m": -9.642187217794029e-05,
+          "maximum_native_joint_speed_rad_s": 0.21561217139580977,
+          "maximum_native_joint_limit_overshoot_rad": 0.0022029492867071433,
+          "nonzero_requested_target_substeps": 1000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "requested_absolute_torque_integral_nm_s": 0.5499999999999948,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 12,
+      "kind": "prediction",
+      "velocity_prediction_rmse": {
+        "frozen": 0.004996674619198945,
+        "learned": 0.0007211846672192663
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.1443329258319576,
+      "position_prediction_rmse": {
+        "frozen": 8.807165675705476e-05,
+        "learned": 2.1370334244150614e-05
+      },
+      "persistence_velocity_rmse": 0.004011545473765323,
+      "tracking_rmse_rad": null,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 71.22774281778025,
+          "peak_kinetic_energy_j": 1.397480016063978e-05,
+          "minimum_contact_distance_m": -2.940720292729515e-05,
+          "maximum_native_joint_speed_rad_s": 0.009734650763911164,
+          "maximum_native_joint_limit_overshoot_rad": 0.0007369952612381955,
+          "nonzero_requested_target_substeps": 700,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "requested_absolute_torque_integral_nm_s": 0.35000000000000026,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 12,
+      "kind": "frozen_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.018947821962061604,
+        "learned": 0.01788925373228572
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.9441324585012774,
+      "position_prediction_rmse": {
+        "frozen": 0.00025652922777639407,
+        "learned": 0.0003251005218128907
+      },
+      "persistence_velocity_rmse": 0.017797972019326626,
+      "tracking_rmse_rad": 0.022890908104862245,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6799999999999282,
+          "requested_absolute_torque_integral_nm_s": 1.6799999999999282,
+          "tracking_endpoint_error_rad": 0.018097689241123385,
+          "maximum_absolute_tracking_error_rad": 0.04782239983268306
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.21853951167384,
+          "peak_kinetic_energy_j": 0.00020769051169281902,
+          "minimum_contact_distance_m": -7.57541832467519e-05,
+          "maximum_native_joint_speed_rad_s": 0.07370442595149479,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005977454706674526,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.6799999999999282,
+          "requested_absolute_torque_integral_nm_s": 1.6799999999999282,
+          "tracking_endpoint_error_rad": 0.018097689241123385,
+          "maximum_absolute_tracking_error_rad": 0.04782239983268306
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 12,
+      "kind": "learned_mpc",
+      "velocity_prediction_rmse": {
+        "frozen": 0.017385671557638174,
+        "learned": 0.024780332851768453
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 1.4253307828584585,
+      "position_prediction_rmse": {
+        "frozen": 0.00024972361264422526,
+        "learned": 0.0004864679078051365
+      },
+      "persistence_velocity_rmse": 0.015653903337105122,
+      "tracking_rmse_rad": 0.016198540386620146,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 27000,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.787499999999931,
+          "requested_absolute_torque_integral_nm_s": 1.787499999999931,
+          "tracking_endpoint_error_rad": 0.006237139267595757,
+          "maximum_absolute_tracking_error_rad": 0.04127434264046704
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 72.24410903690232,
+          "peak_kinetic_energy_j": 0.0002693945819309146,
+          "minimum_contact_distance_m": -7.65986788784298e-05,
+          "maximum_native_joint_speed_rad_s": 0.12501935573651562,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005992605288010453,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 1.787499999999931,
+          "requested_absolute_torque_integral_nm_s": 1.787499999999931,
+          "tracking_endpoint_error_rad": 0.006237139267595757,
+          "maximum_absolute_tracking_error_rad": 0.04127434264046704
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 12,
+      "kind": "fixed_pd",
+      "velocity_prediction_rmse": {
+        "frozen": 0.004001458329172877,
+        "learned": 0.0008137468332979948
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 0.2033625659338556,
+      "position_prediction_rmse": {
+        "frozen": 7.978514892428954e-05,
+        "learned": 1.6727595262551206e-05
+      },
+      "persistence_velocity_rmse": 0.0005852022102993073,
+      "tracking_rmse_rad": 0.050151020940601705,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.7679308929765862,
+          "requested_absolute_torque_integral_nm_s": 0.7679308929765862,
+          "tracking_endpoint_error_rad": 0.05401797386628503,
+          "maximum_absolute_tracking_error_rad": 0.07005723998497468
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.22594482292844,
+          "peak_kinetic_energy_j": 1.705184979619835e-05,
+          "minimum_contact_distance_m": -2.9555863124974824e-05,
+          "maximum_native_joint_speed_rad_s": 0.01044592469307488,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005896475428029237,
+          "nonzero_requested_target_substeps": 2000,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": 0.0,
+          "actual_absolute_torque_integral_nm_s": 0.7679308929765862,
+          "requested_absolute_torque_integral_nm_s": 0.7679308929765862,
+          "tracking_endpoint_error_rad": 0.05401797386628503,
+          "maximum_absolute_tracking_error_rad": 0.07005723998497468
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 12,
+      "kind": "zero_torque",
+      "velocity_prediction_rmse": {
+        "frozen": 1.8617156367180826e-08,
+        "learned": 0.000554959583058329
+      },
+      "learned_to_frozen_prediction_rmse_ratio": 29809.041301099944,
+      "position_prediction_rmse": {
+        "frozen": 2.0503224928121818e-10,
+        "learned": 1.1099358892694265e-05
+      },
+      "persistence_velocity_rmse": 1.8617156367180826e-08,
+      "tracking_rmse_rad": 0.06312589505585676,
+      "planner_fallbacks": 0,
+      "mathematical_prediction_calls": 0,
+      "windows": {
+        "all": {
+          "control_rows": 300,
+          "physics_substeps": 3000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.07978256524313393,
+          "maximum_absolute_tracking_error_rad": 0.07989205602607442
+        },
+        "prefix": {
+          "control_rows": 100,
+          "physics_substeps": 1000,
+          "peak_ground_force_n": 553.4122374850467,
+          "peak_kinetic_energy_j": 1.3260517485845182,
+          "minimum_contact_distance_m": -0.003689218269805731,
+          "maximum_native_joint_speed_rad_s": 3.7696692518396877,
+          "maximum_native_joint_limit_overshoot_rad": 0.007117077261707384,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": null,
+          "maximum_absolute_tracking_error_rad": null
+        },
+        "active": {
+          "control_rows": 200,
+          "physics_substeps": 2000,
+          "peak_ground_force_n": 71.2206001013324,
+          "peak_kinetic_energy_j": 5.667331267373722e-10,
+          "minimum_contact_distance_m": -2.8554093807531267e-05,
+          "maximum_native_joint_speed_rad_s": 5.65170722252145e-05,
+          "maximum_native_joint_limit_overshoot_rad": 0.0005763312662969709,
+          "nonzero_requested_target_substeps": 0,
+          "blocked_target_substeps": 0,
+          "target_shield_fraction": null,
+          "actual_absolute_torque_integral_nm_s": 0.0,
+          "requested_absolute_torque_integral_nm_s": 0.0,
+          "tracking_endpoint_error_rad": 0.07978256524313393,
+          "maximum_absolute_tracking_error_rad": 0.07989205602607442
+        }
+      }
+    }
+  ]
+}

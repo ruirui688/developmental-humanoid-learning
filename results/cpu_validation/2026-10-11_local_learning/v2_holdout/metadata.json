@@ -1,0 +1,231 @@
+{
+  "schema_version": 2,
+  "created_at_utc": "2026-10-11T03:32:25.117499+00:00",
+  "purpose": "CPU local body learning and frozen causal prediction/control evaluation",
+  "source_commit": "94ad34eecb5fd1becc54f52fe0d11a581716386a",
+  "source_status": "",
+  "source_sha256": {
+    "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+    "src/developmental_physics/collect.py": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+    "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+    "src/developmental_physics/exploration.py": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+    "src/developmental_physics/local_learning.py": "037b56393d0c0f1e20118bbd313e05668964110081ecab4b115abc4b15bb55ca",
+    "src/developmental_physics/local_model.py": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1",
+    "src/developmental_physics/probe_collect.py": "b68643037b64b764de5f6513bcd697e2e62465345671bc1aaa272435fe4e0ea3",
+    "src/developmental_physics/probes.py": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+    "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+    "docs/LOCAL_BODY_LEARNING_V2_PROTOCOL.md": "7b04a639e3b1503023dfe0e6778787ed90d6d467633d0fd571bc9ae841b91bc2"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python_executable": "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+  "python_version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "dependencies": {
+    "PyOpenGL": "3.1.10",
+    "Pygments": "2.21.0",
+    "absl-py": "2.5.1",
+    "colorama": "0.4.6",
+    "developmental-humanoid-learning": "0.1.0",
+    "etils": "1.13.0",
+    "exceptiongroup": "1.3.1",
+    "fsspec": "2026.9.0",
+    "glfw": "2.10.2",
+    "importlib_resources": "7.1.0",
+    "iniconfig": "2.3.1",
+    "mujoco": "3.15.0",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pip": "23.0.1",
+    "pluggy": "1.6.0",
+    "pytest": "8.4.2",
+    "setuptools": "65.5.0",
+    "tomli": "2.5.0",
+    "typing_extensions": "4.16.0",
+    "websockets": "16.1.1",
+    "zipp": "4.1.1"
+  },
+  "gpu": null,
+  "backend": "MuJoCo CPU",
+  "mujoco_version": "3.15.0",
+  "environment_config": {
+    "physics_dt": 0.002,
+    "control_substeps": 10,
+    "torque_limit": 0.5,
+    "joint_speed_limit": 20.0,
+    "joint_limit_margin": 0.08,
+    "kinetic_energy_limit": 50.0,
+    "reset_clearance": 0.005,
+    "ground_contact_profile": "baseline"
+  },
+  "pose": "supine",
+  "joint_index": 0,
+  "seeds": [
+    10,
+    11,
+    12
+  ],
+  "split": "holdout",
+  "variant": "hinge",
+  "calibration_block_amplitudes_nm": [
+    0.125,
+    0.25,
+    0.5,
+    0.125,
+    0.25,
+    0.5,
+    0.125,
+    0.25,
+    0.5,
+    0.125
+  ],
+  "prefix_steps": 100,
+  "calibration_steps": 300,
+  "prediction_steps": 100,
+  "control_steps_per_trial": 200,
+  "teacher_calls": 0,
+  "external_demonstration_samples": 0,
+  "policy_parameter_updates": 0,
+  "model_input": "current encoder position/velocity and requested torque known before integration",
+  "model_label": "next encoder velocity; no hidden mass, contact or future actual torque features",
+  "fixed_pd": {
+    "kp": 4.0,
+    "kd": 0.2,
+    "torque_limit_nm": 0.5
+  },
+  "protocol": {
+    "path": "docs/LOCAL_BODY_LEARNING_V2_PROTOCOL.md",
+    "sha256": "7b04a639e3b1503023dfe0e6778787ed90d6d467633d0fd571bc9ae841b91bc2"
+  },
+  "claim_boundary": "Local single-joint learning only; no rolling, standing, walking or real robot result.",
+  "completion_definition": "Every planned episode has a recorded outcome; no scientific benefit gate is implied.",
+  "trial_success_definition": "Episode completed without exception or stop; not a model/control benefit criterion.",
+  "complete": true,
+  "source_dirty": false,
+  "planned_episodes": [
+    {
+      "trial_id": "seed10_calibration",
+      "seed": 10,
+      "kind": "calibration",
+      "maximum_control_steps": 400
+    },
+    {
+      "trial_id": "seed10_prediction",
+      "seed": 10,
+      "kind": "prediction",
+      "maximum_control_steps": 200
+    },
+    {
+      "trial_id": "seed10_frozen_mpc",
+      "seed": 10,
+      "kind": "frozen_mpc",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed10_learned_mpc",
+      "seed": 10,
+      "kind": "learned_mpc",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed10_fixed_pd",
+      "seed": 10,
+      "kind": "fixed_pd",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed10_zero_torque",
+      "seed": 10,
+      "kind": "zero_torque",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed11_calibration",
+      "seed": 11,
+      "kind": "calibration",
+      "maximum_control_steps": 400
+    },
+    {
+      "trial_id": "seed11_prediction",
+      "seed": 11,
+      "kind": "prediction",
+      "maximum_control_steps": 200
+    },
+    {
+      "trial_id": "seed11_frozen_mpc",
+      "seed": 11,
+      "kind": "frozen_mpc",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed11_learned_mpc",
+      "seed": 11,
+      "kind": "learned_mpc",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed11_fixed_pd",
+      "seed": 11,
+      "kind": "fixed_pd",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed11_zero_torque",
+      "seed": 11,
+      "kind": "zero_torque",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed12_calibration",
+      "seed": 12,
+      "kind": "calibration",
+      "maximum_control_steps": 400
+    },
+    {
+      "trial_id": "seed12_prediction",
+      "seed": 12,
+      "kind": "prediction",
+      "maximum_control_steps": 200
+    },
+    {
+      "trial_id": "seed12_frozen_mpc",
+      "seed": 12,
+      "kind": "frozen_mpc",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed12_learned_mpc",
+      "seed": 12,
+      "kind": "learned_mpc",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed12_fixed_pd",
+      "seed": 12,
+      "kind": "fixed_pd",
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed12_zero_torque",
+      "seed": 12,
+      "kind": "zero_torque",
+      "maximum_control_steps": 300
+    }
+  ],
+  "planned_episode_count": 18,
+  "maximum_control_steps": 5400,
+  "archive_status": "complete",
+  "control_calls_attempted": 5400,
+  "control_steps": 5400,
+  "physics_steps": 54000,
+  "model_updates": 900,
+  "exception_trials": 0,
+  "terminated_trials": 0,
+  "completed_trials": 18,
+  "blocked_trials": 0,
+  "unprocessed_trials": 0,
+  "wall_seconds": 15.054668300086632,
+  "failed_trials": 0,
+  "skipped_trials": 0,
+  "all_trials_successful": true,
+  "invalid_numeric_fields": []
+}
