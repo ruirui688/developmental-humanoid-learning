@@ -1,0 +1,87 @@
+{
+  "payload_count": 15,
+  "files": {
+    "checked_source/docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 5202,
+      "sha256": "8f3c86ccfc4626dbf6219e904daa73b208d2cac044a855e050875aecd62e5c45",
+      "original_path": "external/c4_r_selfcheck_01/checked_source/docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md"
+    },
+    "checked_source/scripts/develop_guard_kinematic_native_transition.py": {
+      "bytes": 31640,
+      "sha256": "07a0135e6cd30e169f780f30eef09472fe857570fa0556f552dcdcbe258c693d",
+      "original_path": "external/c4_r_selfcheck_01/checked_source/scripts/develop_guard_kinematic_native_transition.py"
+    },
+    "execution.json": {
+      "bytes": 998,
+      "sha256": "75e5445beb9b0e8b78c48bedfbb50a3acdfe18e3e198ab91e976838b197a925f",
+      "original_path": "external/c4_r_selfcheck_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 637,
+      "sha256": "f0b191f7226cdd2b4b42f309bb53a72e632984a7644304d25854c364187891df",
+      "original_path": "external/c4_r_selfcheck_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 231,
+      "sha256": "69c66ba19a4890ad698de942f1f0702e71b2f9de798f668a45cafa3baf507e26",
+      "original_path": "external/c4_r_selfcheck_01/raw/metrics.json"
+    },
+    "raw/parameters.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "original_path": "external/c4_r_selfcheck_01/raw/parameters.json"
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_r_selfcheck_01/raw/predictions.jsonl"
+    },
+    "raw/run.json": {
+      "bytes": 7355,
+      "sha256": "12ba4b703c532fc0bd28dbcd65fe2b5f0ca96e8fd8c33d394ded89512ae476a8",
+      "original_path": "external/c4_r_selfcheck_01/raw/run.json"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_r_selfcheck_01/stderr"
+    },
+    "stdout": {
+      "bytes": 1586,
+      "sha256": "a078e30014bd6d8969bf4cf597166e6cfae6333ec7724db2355467940ff1fd3b",
+      "original_path": "external/c4_r_selfcheck_01/stdout"
+    },
+    "execution/run_r_kinematic_once.py": {
+      "bytes": 2358,
+      "sha256": "836c6bafa90a1c084766f7da12ce783bf64fe96d78de80a5d764a1d65be5e2fd",
+      "original_path": "external/run_r_kinematic_once.py"
+    },
+    "execution/archive_r_kinematic_once.py": {
+      "bytes": 2265,
+      "sha256": "b79bbcac1f12eff948dd0084010676c6101131b1e848ab2809ebcb02d310a950",
+      "original_path": "external/archive_r_kinematic_once.py"
+    },
+    "preparation/c4_r_preparation_reads.json": {
+      "bytes": 6000,
+      "sha256": "3b40f1dff32d5fc9a18da148e8356c2aad0be03c9552f5c84a33ca20d6915827",
+      "original_path": "external/c4_r_preparation_reads.json"
+    },
+    "preparation/c4_r_implementation_review.md": {
+      "bytes": 3352,
+      "sha256": "aa398ba75b3c6c66dedd7e5a0ab1b71e1713eb8c3022f65c7182d74156a3b155",
+      "original_path": "external/c4_r_implementation_review.md"
+    },
+    "preparation/c4_after_q_direction.md": {
+      "bytes": 1196,
+      "sha256": "e9e516ccedc60505f95c5981de21b7537e2b9daa9646ede1d2d24d783541b49a",
+      "original_path": "external/c4_after_q_direction.md"
+    }
+  },
+  "file_reads": 30,
+  "read_bytes": 125646,
+  "copy_failures": [],
+  "wall_seconds": 0.1447169000748545,
+  "cpu_seconds": 0.015625,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

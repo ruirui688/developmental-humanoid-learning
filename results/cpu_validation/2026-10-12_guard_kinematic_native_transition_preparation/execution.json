@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "scripts/develop_guard_kinematic_native_transition.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_r_selfcheck_01\\raw",
+    "--self-check"
+  ],
+  "source_commit": null,
+  "returncode": 0,
+  "started_unix": 1791737234.600734,
+  "ended_unix": 1791737235.1796331,
+  "wall_seconds": 0.577640000032261,
+  "checked_sources": {
+    "scripts/develop_guard_kinematic_native_transition.py": {
+      "bytes": 31640,
+      "sha256": "07a0135e6cd30e169f780f30eef09472fe857570fa0556f552dcdcbe258c693d"
+    },
+    "docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 5202,
+      "sha256": "8f3c86ccfc4626dbf6219e904daa73b208d2cac044a855e050875aecd62e5c45"
+    }
+  },
+  "source_snapshot_reads": 2,
+  "source_snapshot_read_bytes": 36842,
+  "stdout_bytes": 1586,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

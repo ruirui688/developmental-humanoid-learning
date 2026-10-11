@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "scope": "R protocol and frozen Q raw manifest identities only; known N/K/Q source schemas reused from prior preparation, no actual parameters/trace/predictions",
+  "read_batches": [
+    {
+      "files": {
+        "docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+          "bytes": 5202,
+          "sha256": "8f3c86ccfc4626dbf6219e904daa73b208d2cac044a855e050875aecd62e5c45"
+        },
+        "results/cpu_validation/2026-10-12_guard_quadratic_native_transition/raw/manifest.json": {
+          "bytes": 646,
+          "sha256": "5cc976083644a544b3395d028163f53d5e32645cdab7c05c2f10510346ea97f5"
+        }
+      },
+      "cost": {
+        "binary_read_attempts": 2,
+        "binary_read_returns": 2,
+        "raw_bytes": 5848,
+        "source_protocol_reads": 1,
+        "source_decode_attempts": 1,
+        "source_decode_returns": 1,
+        "saved_Q_raw_manifest_reads": 1,
+        "json_parse_attempts": 1,
+        "json_parse_returns": 1,
+        "ast_parse_attempts": 0,
+        "ast_parse_returns": 0,
+        "wall_seconds": 0.00025040004402399063,
+        "cpu_seconds": 0.0
+      }
+    },
+    {
+      "scope": "R nonexecuting source AST/compile and frozen-helper hashes",
+      "status": "passed",
+      "files": {
+        "scripts/develop_guard_kinematic_native_transition.py": {
+          "bytes": 31640,
+          "sha256": "07a0135e6cd30e169f780f30eef09472fe857570fa0556f552dcdcbe258c693d"
+        },
+        "docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+          "bytes": 5202,
+          "sha256": "8f3c86ccfc4626dbf6219e904daa73b208d2cac044a855e050875aecd62e5c45"
+        },
+        "scripts/develop_guard_scaled_native_transition.py": {
+          "bytes": 27537,
+          "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+        },
+        "docs/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+          "bytes": 4870,
+          "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+        },
+        "scripts/develop_guard_native_transition.py": {
+          "bytes": 36390,
+          "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+        },
+        "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+          "bytes": 8134,
+          "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56"
+        },
+        "src/developmental_physics/__init__.py": {
+          "bytes": 162,
+          "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+        },
+        "src/developmental_physics/guard_lag_pair_model.py": {
+          "bytes": 11351,
+          "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+        },
+        "src/developmental_physics/guard_pair_model.py": {
+          "bytes": 6860,
+          "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+        },
+        "src/developmental_physics/local_pair_model.py": {
+          "bytes": 25148,
+          "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+        },
+        "src/developmental_physics/local_model.py": {
+          "bytes": 16564,
+          "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+        },
+        "scripts/develop_guard_quadratic_native_transition.py": {
+          "bytes": 29407,
+          "sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147"
+        },
+        "docs/GUARD_QUADRATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+          "bytes": 5230,
+          "sha256": "77cb47c42efad889f4d15cf64207b528ab2c7e29908d55d3f16441b0b7a6c5d3"
+        }
+      },
+      "cost": {
+        "decode_attempts": 2,
+        "source_binary_read_attempts": 13,
+        "source_binary_read_returns": 13,
+        "source_raw_bytes": 208495,
+        "decode_returns": 2,
+        "ast_parse_attempts": 1,
+        "ast_parse_returns": 1,
+        "static_compile_attempts": 1,
+        "static_compile_returns": 1,
+        "helper_hash_comparisons": 11,
+        "wall_seconds": 0.00974450004287064,
+        "cpu_seconds": 0.0
+      }
+    }
+  ],
+  "actual_parameter_reads": 0,
+  "actual_trace_reads": 0,
+  "actual_scientific_prediction_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "MPC_calls": 0,
+  "self_check_executions": 0,
+  "formal_executions": 0,
+  "source_schema_reuse_read": {
+    "path": "scripts/develop_guard_quadratic_native_transition.py",
+    "bytes": 29407,
+    "sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147",
+    "binary_read_attempts": 1,
+    "binary_read_returns": 1,
+    "decode_attempts": 1,
+    "decode_returns": 1,
+    "ast_parse_attempts": 1,
+    "ast_parse_returns": 1,
+    "scope": "source-only AST extraction of reusable code; no imports or source execution"
+  },
+  "log_management_read": {
+    "bytes": 1400,
+    "binary_read_attempts": 1,
+    "binary_read_returns": 1,
+    "json_parse_attempts": 1,
+    "json_parse_returns": 1
+  },
+  "source_assembly_wall_seconds": 0.07598929991945624,
+  "source_assembly_cpu_seconds": 0.0625,
+  "cached_Q_root_manifest_identity": {
+    "source": "Q reporting four-file cache; no R-stage reread",
+    "bytes": 2366,
+    "sha256": "327b38412bab68187c4195d12b4d4047dc6bffeffa0c18e0ea73271b870f25b5"
+  },
+  "final_check_log_management_read": {
+    "binary_read_attempts": 1,
+    "binary_read_returns": 1,
+    "bytes": 2341,
+    "sha256": "a22852e1b9336d6a9671a3f94ecde8eb708037b299eeb967a374aa2ffd050db8",
+    "json_parse_attempts": 1,
+    "json_parse_returns": 1
+  },
+  "final_static_check": {
+    "status": "passed",
+    "protocol_unchanged": true,
+    "helper_pins_verified": 11,
+    "source_or_helper_imports": 0,
+    "source_executions": 0,
+    "self_check_executions": 0,
+    "fits": 0,
+    "note": "AST/compile only, no production/helper execution or actual scientific payload. R preparation had no failed static attempt."
+  }
+}
