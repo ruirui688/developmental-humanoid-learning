@@ -159,3 +159,5 @@ git diff --check
 如果这是新环境中的首次 Codex 会话：先按 `docs/NEW_MACHINE_BOOTSTRAP.md` 识别实际软硬件条件并运行现有 CPU 测试；随后读取 `docs/DEVELOPMENT_ROADMAP.md` 选择当前可完成的阶段。在关节/刚体映射和站立 smoke test 通过前，不开始 G1 长时间训练或大规模采样。缺少 GPU 时继续 CPU 身体建模与控制原型，不静默安装驱动或操作真实机器人。
 
 X0首次结果入口：[停止结果](docs/SUSPENDED_PAIR_ENGINEERING_RESULTS.md)、[原悬挂域协议](docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md)、[关闭的事前X1/X2配方](docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md)。首次工程104/1,040后肩速度停止、末窗不可评；独立thin contract零失败只证明证据一致，不代表工程或科学通过。下一独立Y肩阻尼候选须另review/冻结，不修改X协议或controller；非接触悬挂机制不能追认旧C4或解除C5科学依赖，持续目标保持active。
+
+Y当前准备：[独立阻尼协议](docs/DAMPED_SUSPENDED_PAIR_PROTOCOL.md)已固定唯一共享PD64/Kd(4,4)候选及有条件Y1/Y2原科学门。两项新纯反馈检查已通过，最终协议pin另绑定；不重复X装配、旧MPC/RLS检查或X0。首次Y0必须从干净精确提交执行一次seed7500、最多300/3000；失败封存且关闭Y1/Y2，不scan增益。用户要求持续执行，阶段提交推送后继续最早未过门；完整自由root接触C4及C5–C7仍未验收。

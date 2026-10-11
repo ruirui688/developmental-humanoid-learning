@@ -1,5 +1,16 @@
 # 开发进度与仓库检查点
 
+## 当前准备：2026-10-12 Y唯一共享阻尼候选，冻结后首次执行
+
+X0负结果已正常提交推送a0c08e3，接着完成[独立Y协议](DAMPED_SUSPENDED_PAIR_PROTOCOL.md)。
+唯一变化为肩Kd0→已有肘Kd4；PD64、安装、权限、任务、研究停止与工程/科学门保持。
+两个新纯反馈检查首次通过，肩误差.04/速度.8的未clip请求-.64Nm、最终-.5Nm，证实新增速度项能请求制动；
+不是身体学习或物理资格。最终协议pin另绑定，review后源码只有pin变化，0重复装配/旧MPC/RLS测试。
+[准备原件](../results/cpu_validation/2026-10-12_damped_suspended_pair_engineering_preparation/manifest.json)独立保存。
+Y0仅seed7500、最多300控制/3000子步、0fit；通过后才另冻结生产学习入口，失败则封存并判断路线，不scan。
+Y1/Y2配方已在工程数据前预先固定，不能按Y0表现调整；悬挂机制不解除旧C4或C5科学依赖。
+正式累计253094/2530940、online22452/offline7200暂不变。持续目标active，阶段检查提交推送后继续。
+
 ## 当前入口：2026-10-12 X0研究速度停止，工程资格失败
 
 [X0首次结果](SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean6319fb6完成100prefix+4active、104控制/1,040子步，

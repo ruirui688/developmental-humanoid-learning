@@ -1,0 +1,42 @@
+{
+  "kind": "Y unique candidate protocol and narrow X-to-Y static source review",
+  "reviewed_snapshot": [
+    {"path": "docs/DAMPED_SUSPENDED_PAIR_PROTOCOL.md", "bytes": 14175, "sha256": "1df461102e3c93613b0dedddb202b1c6929ff38516459c3aecf5accb6d167d57"},
+    {"path": "scripts/validate_damped_suspended_pair_engineering.py", "bytes": 24738, "sha256": "134bfa6d3874831a88d27fe955dc578929a73c32630deb7e5519e4ad21485eed"},
+    {"path": "src/developmental_physics/damped_residual_pd_pair_mpc.py", "bytes": 8448, "sha256": "eeb9b9049aef36dc6c8ba29d7b03026e94c03943e1935f81678043d4f1b1a8b6"}
+  ],
+  "immutable_X_comparison_snapshot": [
+    {"path": "scripts/validate_suspended_pair_engineering.py", "bytes": 24490, "sha256": "14f8d36c19b683dad9e96d5ed3379f55e5ee681670d083603dbfed065ec8db08"},
+    {"path": "src/developmental_physics/residual_pd_pair_mpc.py", "bytes": 8417, "sha256": "1027e07ae3668fef95bfd8bde52eae775dfa5b2cc024db3b4d50d8ce7edc7a85"}
+  ],
+  "scope": {
+    "design_reference_source_bytes_read": 17765,
+    "new_narrow_diff_and_protocol_source_bytes_read": 80268,
+    "experimental_imports": 0,
+    "checker_execution": 0,
+    "raw_or_old_metrics_reads": 0,
+    "physics_steps": 0,
+    "fit_calls": 0,
+    "model_RLS_calls": 0,
+    "assembly_repetitions": 0,
+    "legacy_math_recalculations": 0,
+    "commit_push": 0,
+    "unknown_IO": "Public rg search, Git, apply_patch and OS/backend IO are not claimed to equal file lengths."
+  },
+  "checks": {
+    "two_new_source_AST_parses_without_execution": "passed",
+    "protocol_LF_final_newline_trailing_whitespace_and_relative_links": "passed",
+    "runner_narrow_change_scope": "Independent naming, seed7500, shared KD4/4, gain-source disclosure, and pure pd_request extraction; frozen collection/capture/stop/engineering gates retained.",
+    "controller_narrow_change_scope": "Independent naming/class and shared KD4/4/gain-source disclosure; candidate grid, own predicted PD tails, complete-request costs and fallback retained.",
+    "model_and_science_recipe": "Original coupled_hinge9 prior and atomic RLS, original development budgets/pulses/horizons/gates, fresh Y seeds7501/2/3 and all stopping/effort denominators retained.",
+    "no_automatic_X_adoption": "X0 failure and X1/X2/controller remain frozen. Y introduces a shared classical control prior and never releases old free-root C4/C5.",
+    "no_unbounded_parameter_followup": "Y0 qualification failure closes Y1/Y2 physics and requires route judgment, not same-installation gain/seed/task scans."
+  },
+  "execution_precondition_not_yet_met_in_reviewed_snapshot": {
+    "PROTOCOL_PIN": "Parent intentionally left the old X protocol PIN while authoring Y. Set Y protocol bytes14175/SHA1df461102e3c93613b0dedddb202b1c6929ff38516459c3aecf5accb6d167d57 before source freezing or execution. Author did not modify the runner.",
+    "new_corner_checks": "Parent owns first new KD4 corner checks. This review performs none and does not establish their success.",
+    "freeze": "Exact source identities, clean commit and normal push remain parent-owned."
+  },
+  "unresolved_findings_beyond_known_preconditions": [],
+  "science_boundary": "Damping provides a bounded feedback rationale but is neither optimality evidence nor an identified explanation of X0. Different X/Y seeds and incomplete X0 do not make a damping causal contrast. No engineering/science pass is claimed."
+}

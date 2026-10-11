@@ -1,0 +1,23 @@
+{
+  "source_files": {
+    "scripts/validate_damped_suspended_pair_engineering.py": {
+      "bytes": 24738,
+      "sha256": "134bfa6d3874831a88d27fe955dc578929a73c32630deb7e5519e4ad21485eed"
+    },
+    "src/developmental_physics/damped_residual_pd_pair_mpc.py": {
+      "bytes": 8448,
+      "sha256": "eeb9b9049aef36dc6c8ba29d7b03026e94c03943e1935f81678043d4f1b1a8b6"
+    },
+    "tests/test_damped_suspended_feedback.py": {
+      "bytes": 1274,
+      "sha256": "fa20caa831cacaf6f63c803910b839c36a12413ad91339fad9e29c33dbae02f8"
+    }
+  },
+  "returncode": 0,
+  "wall_seconds": 0.6141894001048058,
+  "test_invocations": 1,
+  "physics_calls": 0,
+  "old_RLS_or_MPC_tests": 0,
+  "protocol_pin_finalized": false,
+  "scope": "Only new shoulder braking sign/shared feedback and final permission; no model/controller rollout"
+}

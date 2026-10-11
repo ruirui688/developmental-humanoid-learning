@@ -1,0 +1,93 @@
+{
+  "files": {
+    "source/docs/DAMPED_SUSPENDED_PAIR_PROTOCOL.md": {
+      "bytes": 14175,
+      "sha256": "1df461102e3c93613b0dedddb202b1c6929ff38516459c3aecf5accb6d167d57",
+      "source": "docs/DAMPED_SUSPENDED_PAIR_PROTOCOL.md"
+    },
+    "source/scripts/validate_damped_suspended_pair_engineering.py": {
+      "bytes": 24738,
+      "sha256": "6726fb8c050121fbf1d6f06db2c5bfe4d681169a6b188cb8b2fc4b5dcfde6032",
+      "source": "scripts/validate_damped_suspended_pair_engineering.py"
+    },
+    "source/src/developmental_physics/damped_residual_pd_pair_mpc.py": {
+      "bytes": 8448,
+      "sha256": "eeb9b9049aef36dc6c8ba29d7b03026e94c03943e1935f81678043d4f1b1a8b6",
+      "source": "src/developmental_physics/damped_residual_pd_pair_mpc.py"
+    },
+    "source/tests/test_damped_suspended_feedback.py": {
+      "bytes": 1274,
+      "sha256": "fa20caa831cacaf6f63c803910b839c36a12413ad91339fad9e29c33dbae02f8",
+      "source": "tests/test_damped_suspended_feedback.py"
+    },
+    "feedback_checks/execution.json": {
+      "bytes": 841,
+      "sha256": "f309939448c791198a16b6d366cb4fc9f01363c83fca7f3226de64a27113b634",
+      "source": "external/c4_y_feedback_checks_01/execution.json"
+    },
+    "feedback_checks/source/scripts/validate_damped_suspended_pair_engineering.py": {
+      "bytes": 24738,
+      "sha256": "134bfa6d3874831a88d27fe955dc578929a73c32630deb7e5519e4ad21485eed",
+      "source": "external/c4_y_feedback_checks_01/source/scripts/validate_damped_suspended_pair_engineering.py"
+    },
+    "feedback_checks/source/src/developmental_physics/damped_residual_pd_pair_mpc.py": {
+      "bytes": 8448,
+      "sha256": "eeb9b9049aef36dc6c8ba29d7b03026e94c03943e1935f81678043d4f1b1a8b6",
+      "source": "external/c4_y_feedback_checks_01/source/src/developmental_physics/damped_residual_pd_pair_mpc.py"
+    },
+    "feedback_checks/source/tests/test_damped_suspended_feedback.py": {
+      "bytes": 1274,
+      "sha256": "fa20caa831cacaf6f63c803910b839c36a12413ad91339fad9e29c33dbae02f8",
+      "source": "external/c4_y_feedback_checks_01/source/tests/test_damped_suspended_feedback.py"
+    },
+    "feedback_checks/stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "external/c4_y_feedback_checks_01/stderr"
+    },
+    "feedback_checks/stdout": {
+      "bytes": 100,
+      "sha256": "f5c5d1fc97bcd49a91185b3fb7c583b67391840178d834289230108fbdb15644",
+      "source": "external/c4_y_feedback_checks_01/stdout"
+    },
+    "reviews_and_execution/c4_y_design_static_review.json": {
+      "bytes": 3393,
+      "sha256": "4747a94b08e9d7f8b365f6997bcf40b19e0a58bec4be005f635e4874b70a6acc",
+      "source": "external/c4_y_design_static_review.json"
+    },
+    "reviews_and_execution/check_y0_once.py": {
+      "bytes": 9896,
+      "sha256": "8fe3e00a734caadccba40fe40fc0ac32e8fc037b298b5f071d64dc33474d4628",
+      "source": "external/check_y0_once.py"
+    },
+    "reviews_and_execution/run_damped_suspended_once.py": {
+      "bytes": 3855,
+      "sha256": "ef6d3188164aec24aa494113431578ab698e22408c76988839a42eb4e305571f",
+      "source": "external/run_damped_suspended_once.py"
+    },
+    "reviews_and_execution/archive_damped_suspended_stage_once.py": {
+      "bytes": 3549,
+      "sha256": "28689dc9ff03067a58dc6ba2410667fafa65b76c05eb6a5f4edf04a2f77add12",
+      "source": "external/archive_damped_suspended_stage_once.py"
+    },
+    "reviews_and_execution/seal_y_preparation_once.py": {
+      "bytes": 3889,
+      "sha256": "ada167db120045ca68933989a85c7336140cccafba3bf7ddced0915075c2bc75",
+      "source": "external/seal_y_preparation_once.py"
+    }
+  },
+  "final_protocol_pin_matches": true,
+  "only_runner_change_since_feedback_and_static_review": "PROTOCOL_PIN",
+  "feedback_tests_repeated": false,
+  "assembly_repeated": false,
+  "physics_fit_model_RLS_or_scientific_recalculation_calls": 0,
+  "cost_before_manifest_write": {
+    "file_reads": 32,
+    "read_bytes": 245367,
+    "file_writes": 15,
+    "write_bytes": 108618
+  },
+  "wall_seconds_before_manifest_write": 0.24109799996949732,
+  "cpu_seconds_before_manifest_write": 0.046875,
+  "automatic_retry": false
+}
