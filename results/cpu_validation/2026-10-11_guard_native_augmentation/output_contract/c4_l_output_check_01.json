@@ -1,0 +1,57 @@
+{
+  "scope": "failed-run byte identity and declared zero compute only; no source reload, models or gate recomputation",
+  "first_attempt": true,
+  "checks": [
+    {
+      "name": "bytes_and_sha_parameters.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_restorations.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_predictions.jsonl",
+      "passed": true
+    },
+    {
+      "name": "all_fixed_prediction_records",
+      "passed": false
+    },
+    {
+      "name": "bytes_and_sha_unavailable.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_failure.json",
+      "passed": true
+    },
+    {
+      "name": "first_source_failure_preserved",
+      "passed": true
+    },
+    {
+      "name": "all_input_bindings_retained",
+      "passed": true
+    },
+    {
+      "name": "failure_before_any_model_compute",
+      "passed": true
+    },
+    {
+      "name": "scientific_dependencies_closed",
+      "passed": true
+    }
+  ],
+  "failures": 1,
+  "cost": {
+    "binary_reads": 6,
+    "input_bytes": 8340,
+    "wall_seconds": 0.013772400096058846,
+    "cpu_seconds": 0.0
+  },
+  "actual_C_G_K_source_payload_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "physics": 0
+}

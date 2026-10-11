@@ -1,0 +1,19 @@
+{
+  "scope": "only the first output-check assertion that required completed-run counts on a source-failed run",
+  "original_check_retained": true,
+  "original_failures": [
+    "all_fixed_prediction_records"
+  ],
+  "full_count_assertion_applicable": false,
+  "empty_prediction_records_expected": true,
+  "passed": true,
+  "passed_original_checks_repeated": false,
+  "fits": 0,
+  "model_calls": 0,
+  "physics": 0,
+  "cost": {
+    "binary_reads": 2,
+    "wall_seconds": 0.008551500039175153,
+    "cpu_seconds": 0.0
+  }
+}

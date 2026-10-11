@@ -1,0 +1,156 @@
+{
+  "status": "failed",
+  "exception_type": "ValueError",
+  "message": "D root/raw binding mismatch",
+  "requested_L_source_commit": "2dce248f23d5f2b622106ecfff94f0c33a6794cb",
+  "expected_original_source_commits": {
+    "C": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+    "D": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "G": "91dcf6c111a87427c8f3fdd8b959d4792b1bb5a2",
+    "K": "b46c6d37fddc8e6534384168fb76663bc2c5236c"
+  },
+  "expected_input_pins": {
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/manifest.json": "fa7fb57c5b996ae77862c1e7d59d22af72376947af38409601444f25139f042e",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/metadata.json": "2c0be03255858d7511d1e238b5eb491a6618f197f12810ea9e0b00a64d279b57",
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz": "1b299c9bc7a91f8ff9dfef3f77ac1b6fea923dea6057327bb3f9aa1ce6f56ad0",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/manifest.json": "38df6b99e15c3667a33d6c9995a8efd664f70ce59be8a511fa49def59727a4d7",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/manifest.json": "f5d6e0fc017d708a8c8b2b03a6876704248afee92266985ebd5d137267acb3c6",
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/diagnostics.json": "9307f3f37d5a3c23ef6f9097d8c352a9fc7f2e34e562b5cf4e7075e20bbbe130",
+    "results/cpu_validation/2026-10-11_guard_pd_tail_control/raw/manifest.json": "7eff4abb7cbe9c42a66d59615939a63a491c56fe87b5271d4ff4836d7b220a4c",
+    "results/cpu_validation/2026-10-11_guard_pd_tail_control/raw/metadata.json": "8699b496287d80bdfb418e24625636c6b588e580869f40b17bcc345baab79f0a",
+    "results/cpu_validation/2026-10-11_guard_pd_tail_control/raw/trace.jsonl.gz": "d7318127751270401198a5e2764a5b70faea2e4d881223fe38f20200828b526d",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/manifest.json": "f8bf006eac1615e2a1bee801926c6157f265836011a847c24d19fe0f7341a588",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/run.json": "1ea85a61e1b6ecbc43770c52ce6a3435c0e4d919d8af5fc91bc317b7abc84b3e",
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/parameters.json": "1a5c426cfece2fe099ba2e13bfe6229ef7189f59870183620fcb1e1aa14de0aa"
+  },
+  "inputs_already_read": {
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/manifest.json": {
+      "bytes": 456,
+      "sha256": "fa7fb57c5b996ae77862c1e7d59d22af72376947af38409601444f25139f042e"
+    },
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/metadata.json": {
+      "bytes": 16903,
+      "sha256": "2c0be03255858d7511d1e238b5eb491a6618f197f12810ea9e0b00a64d279b57"
+    },
+    "results/cpu_validation/2026-10-11_guard_exploration/raw/trace.jsonl.gz": {
+      "bytes": 9284309,
+      "sha256": "1b299c9bc7a91f8ff9dfef3f77ac1b6fea923dea6057327bb3f9aa1ce6f56ad0"
+    },
+    "results/cpu_validation/2026-10-11_guard_lag_offline/manifest.json": {
+      "bytes": 22159,
+      "sha256": "38df6b99e15c3667a33d6c9995a8efd664f70ce59be8a511fa49def59727a4d7"
+    },
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/manifest.json": {
+      "bytes": 1220,
+      "sha256": "f5d6e0fc017d708a8c8b2b03a6876704248afee92266985ebd5d137267acb3c6"
+    },
+    "results/cpu_validation/2026-10-11_guard_lag_offline/raw/diagnostics.json": {
+      "bytes": 1039277,
+      "sha256": "9307f3f37d5a3c23ef6f9097d8c352a9fc7f2e34e562b5cf4e7075e20bbbe130"
+    },
+    "results/cpu_validation/2026-10-11_guard_pd_tail_control/raw/manifest.json": {
+      "bytes": 785,
+      "sha256": "7eff4abb7cbe9c42a66d59615939a63a491c56fe87b5271d4ff4836d7b220a4c"
+    },
+    "results/cpu_validation/2026-10-11_guard_pd_tail_control/raw/metadata.json": {
+      "bytes": 18178,
+      "sha256": "8699b496287d80bdfb418e24625636c6b588e580869f40b17bcc345baab79f0a"
+    },
+    "results/cpu_validation/2026-10-11_guard_pd_tail_control/raw/trace.jsonl.gz": {
+      "bytes": 3702557,
+      "sha256": "d7318127751270401198a5e2764a5b70faea2e4d881223fe38f20200828b526d"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/manifest.json": {
+      "bytes": 921,
+      "sha256": "f8bf006eac1615e2a1bee801926c6157f265836011a847c24d19fe0f7341a588"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/run.json": {
+      "bytes": 7106,
+      "sha256": "1ea85a61e1b6ecbc43770c52ce6a3435c0e4d919d8af5fc91bc317b7abc84b3e"
+    },
+    "results/cpu_validation/2026-10-11_guard_native_transition/raw/parameters.json": {
+      "bytes": 5053433,
+      "sha256": "1a5c426cfece2fe099ba2e13bfe6229ef7189f59870183620fcb1e1aa14de0aa"
+    }
+  },
+  "inputs_without_returned_read_record": {},
+  "source_already_verified": {
+    "commit": "2dce248f23d5f2b622106ecfff94f0c33a6794cb",
+    "files": {
+      "scripts/develop_guard_native_augmentation.py": {
+        "bytes": 32841,
+        "sha256": "7b0200b3bd1c824da50a827b81eb367c29faf35a0ac36b38bf16bc16a1501dc4"
+      },
+      "docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 6679,
+        "sha256": "02c10cbdbe48ae44a47d3ff13280dc69517d3d70a0717127414d1bce47f13a9b"
+      },
+      "scripts/develop_guard_native_transition.py": {
+        "bytes": 36390,
+        "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+      },
+      "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 8134,
+        "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      },
+      "src/developmental_physics/guard_lag_pair_model.py": {
+        "bytes": 11351,
+        "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+      },
+      "src/developmental_physics/guard_pair_model.py": {
+        "bytes": 6860,
+        "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+      },
+      "src/developmental_physics/local_pair_model.py": {
+        "bytes": 25148,
+        "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+      },
+      "src/developmental_physics/local_model.py": {
+        "bytes": 16564,
+        "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+      }
+    },
+    "clean_committed_bytes_verified": true
+  },
+  "source_active_counts": {},
+  "K22_fingerprints_before": {},
+  "D11_fingerprints_before": {},
+  "cost": {
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "MPC_calls": 0,
+    "RLS_updates": 0,
+    "D11_updates": 0,
+    "K22_refits": 0,
+    "fit_scalar_labels": 0,
+    "generated_fit_scalar_labels": 0,
+    "fit_shared_29x29_22rhs_solve_attempts": 0,
+    "fit_shared_29x29_22rhs_solve_returns": 0,
+    "fit_shared_29x29_22rhs_solve_failures": 0,
+    "transition_scalar_coefficients_fitted": 0,
+    "transition_heads_published": 0,
+    "seed_fit_failures": 0,
+    "K22_restoration_attempts": 0,
+    "K22_restoration_returns": 0,
+    "D11_restoration_attempts": 0,
+    "D11_restoration_returns": 0,
+    "git_queries": 11,
+    "git_return_bytes": 144170,
+    "source_file_reads": 9,
+    "source_raw_bytes": 144129,
+    "input_file_reads": 12,
+    "input_raw_bytes": 19147304,
+    "input_hash_bytes": 19147304,
+    "json_documents_parsed": 10,
+    "wall_seconds": 0.5387509998399764,
+    "cpu_seconds": 0.171875
+  },
+  "scientific_adoption": false,
+  "both_development_gates_passed": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

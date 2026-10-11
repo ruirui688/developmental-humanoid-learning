@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Codex_ws\robot_rl\scripts\develop_guard_native_augmentation.py", line 513, in <module>
+    print(json.dumps(main_run(parser.parse_args()), ensure_ascii=False, indent=2, allow_nan=False))
+  File "D:\Codex_ws\robot_rl\scripts\develop_guard_native_augmentation.py", line 360, in main_run
+    blobs, docs, cmeta, gmeta, krun = read_inputs(repo, inputs, cost, sources)
+  File "D:\Codex_ws\robot_rl\scripts\develop_guard_native_augmentation.py", line 139, in read_inputs
+    raise ValueError("D root/raw binding mismatch")
+ValueError: D root/raw binding mismatch
