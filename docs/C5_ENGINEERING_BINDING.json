@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "draft": false,
+  "protocol_path": "docs/C5_ENGINEERING_PROTOCOL.md",
+  "protocol_sha256": "44b53fd7b7f5ee9d0fbae72d6cef8e9520680871949a19ca7a9c999cef4bc223",
+  "source_sha256": {
+    "src/developmental_physics/c5_engineering.py": "acbf403a99efe5ec5842404de462c2d6db5a28a0e21e0c7568a936eba8aaff9d",
+    "src/developmental_physics/perturbed_environment.py": "c3e988d4998dbf0276471ba7bb409bccd76a1108dd9c63c4e154888b223d67a5",
+    "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+    "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+    "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "docs/C5_ENGINEERING_PROTOCOL.md": "44b53fd7b7f5ee9d0fbae72d6cef8e9520680871949a19ca7a9c999cef4bc223",
+    "scripts/audit_c5_engineering.py": "d4568342aa2d63f9675b599eab405d07db9d37b2f2c8785f627063d3fd29a85b",
+    "tests/test_c5_engineering.py": "f242119d8cc6952a44a9cce2594904327ba1a2d696466414f4f30d2072a294b0",
+    "tests/test_perturbed_environment.py": "917ef9c89f42f62ca1cd9572c7358ae41768c2d0fb45ed92c8305512c2cadef0",
+    "tests/test_audit_c5_engineering.py": "10c51b2c96dc2cf01581ecba255a6025421c53f5cbb00b81625d019abe17397b",
+    "tests/test_audit_c5_source_archive.py": "fd576ccf61af6e04576a31779f4313592786c1fb5c7aef9fc819c29fd3df4b5d"
+  },
+  "plan": {
+    "pose": "supine",
+    "development_seed": 0,
+    "reset_seed": 3757552657,
+    "trials": [
+      "base_identity",
+      "wrapper_identity",
+      "gain_half",
+      "armature_double"
+    ],
+    "fresh_environment_per_trial": true,
+    "prefix_steps": 100,
+    "active_steps": 20,
+    "physics_substeps_per_call": 10,
+    "physics_dt_seconds": 0.002,
+    "maximum_calls": 480,
+    "maximum_substeps": 4800,
+    "parameter_updates": 0,
+    "selected_native_joints": [
+      0,
+      1
+    ],
+    "active_blocks": "(+.25,+.25)*5 / zero*5 / (-.25,-.25)*5 / zero*5",
+    "event_boundary": 100,
+    "gain_half": [
+      0.5,
+      0.5,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "armature_double_native_values": [
+      0.02,
+      0.02
+    ],
+    "study_q_offset_limit_rad": 0.12,
+    "study_velocity_limit_rad_s": 1.0
+  }
+}
