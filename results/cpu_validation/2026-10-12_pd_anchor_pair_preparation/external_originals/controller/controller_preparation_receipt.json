@@ -1,0 +1,50 @@
+{
+  "status": "source_prepared_not_executed",
+  "source": {
+    "path": "D:\\Codex_ws\\robot_rl\\src\\developmental_physics\\full_request_pair_mpc.py",
+    "bytes": 24672,
+    "sha256": "7d364c819e464beb1375158df7a6e78ee17a4e71986e6afa59fb492c39257e55"
+  },
+  "controller": {
+    "path": "D:\\Codex_ws\\robot_rl\\src\\developmental_physics\\pd_anchor_pair_mpc.py",
+    "bytes": 26614,
+    "sha256": "d9053b7ae5a8eabca342d29558df7a67fae6cf21f60d6e18110256988f04b3e3"
+  },
+  "static_AST_checks": [
+    {
+      "unit": "_method_is",
+      "AST_identical": true
+    },
+    {
+      "unit": "_same_wrapper_code",
+      "AST_identical": true
+    },
+    {
+      "unit": "FullRequestResidualPDPairMPC.__init__",
+      "AST_identical_after_only_candidate_generation_normalization": true
+    },
+    {
+      "unit": "FullRequestResidualPDPairMPC.select",
+      "AST_identical_after_only_candidate_generation_normalization": true
+    },
+    {
+      "unit": "BatchedFullRequestResidualPDPairMPC.__init__",
+      "AST_identical_after_only_candidate_generation_normalization": true
+    },
+    {
+      "unit": "BatchedFullRequestResidualPDPairMPC._supported",
+      "AST_identical_after_only_candidate_generation_normalization": true
+    },
+    {
+      "unit": "BatchedFullRequestResidualPDPairMPC.select",
+      "AST_identical_after_only_candidate_generation_normalization": true
+    }
+  ],
+  "candidate_imports": 0,
+  "candidate_selects": 0,
+  "physics": 0,
+  "fit": 0,
+  "RLS": 0,
+  "raw_or_saved_model_parameter_reads": 0,
+  "fixture_executions": 0
+}

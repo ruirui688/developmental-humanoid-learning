@@ -1,0 +1,91 @@
+{
+  "files_before_manifest": {
+    "external_originals/runner_before_EOL_normalization.py": {
+      "bytes": 29340,
+      "sha256": "725ca104423c141b8207839b71951fac419735aa3fea2d0087eda0cdd2d890d4"
+    },
+    "external_originals/controller/check_pd_anchor_mapping_once.py": {
+      "bytes": 13621,
+      "sha256": "05145f66f04420892fe725009670779335c812b15af2800eebc27244529dfb10"
+    },
+    "external_originals/controller/CONTRACT.md": {
+      "bytes": 1963,
+      "sha256": "d2dbafa30d4adbf77665d3e53734b91dd29ac9bc2728a0c175974392e0b31bd0"
+    },
+    "external_originals/controller/controller_preparation_receipt.json": {
+      "bytes": 1538,
+      "sha256": "0b00081302985bcef6635581b98cffbe8bf7c7fe83a8e5ff0d348fbba5e5baa9"
+    },
+    "external_originals/controller/fixture_preparation_receipt.json": {
+      "bytes": 948,
+      "sha256": "147a14faddb5813c4777460d7f323f178cee86b116647d2fcad95eb1676800c0"
+    },
+    "external_originals/controller/FR3_to_FR4_controller_derivation.diff": {
+      "bytes": 7452,
+      "sha256": "1d7c32cd564ea62c355e9460bd27057532355c1b911dba62feb0ed14e726580e"
+    },
+    "first_mapping_contract/contract.json": {
+      "bytes": 392868,
+      "sha256": "3aa59624c4f53ecdf708a96c901d39b885c3870e82db6e2d1b3675d125ee1fdc"
+    },
+    "first_mapping_contract/first_execution_receipt.json": {
+      "bytes": 936,
+      "sha256": "62b44c8a1421de2b2c93b0e2e2393597b6461fc6116d90ca78f47c582e206eb0"
+    },
+    "first_mapping_contract/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "first_mapping_contract/stdout.log": {
+      "bytes": 711,
+      "sha256": "01f01a932a471e850828dd6f19a36e30f36782f6a07b11e60bce4ab5baa3b401"
+    },
+    "root_helpers/run_fr4_mapping_first_once.py": {
+      "bytes": 1470,
+      "sha256": "c0788adcdff6767f7a9292e07aad5b3b4af9846c9b05b19415033527b8b3ffd7"
+    },
+    "root_helpers/run_fr4_physics_first_once.py": {
+      "bytes": 1755,
+      "sha256": "b12757b06db713b3827174a9f2107470ab23687ac8293a13ed9bf261a7fd43a5"
+    },
+    "root_helpers/publish_fr4_preparation_once.py": {
+      "bytes": 7022,
+      "sha256": "e2fbe5ff9b17d2c28f5c29267dbf2171eb13c49c952214d3e601fb4c4566143d"
+    },
+    "protocol.md": {
+      "bytes": 14616,
+      "sha256": "ae9b8ea0515d3ff71ac8c636e08542fa7b19725c5746613acd5d619284978b1f"
+    },
+    "publication.json": {
+      "bytes": 1882,
+      "sha256": "4a42e96f72df1573c334d5631af4c83e341b5e8bcd8d1e3e75451b46fda3909b"
+    },
+    "navigation_checks.json": {
+      "bytes": 1461,
+      "sha256": "c10ffa5bc3e521dc6391c189c1e0537612412832667c8e5a451d67dff6d460d3"
+    }
+  },
+  "published_sources": {
+    "docs/PD_ANCHOR_PAIR_LEARNING_PROTOCOL.md": {
+      "bytes": 14616,
+      "sha256": "ae9b8ea0515d3ff71ac8c636e08542fa7b19725c5746613acd5d619284978b1f"
+    },
+    "scripts/develop_pd_anchor_pair.py": {
+      "bytes": 29329,
+      "sha256": "7b7f9fda0bc98111b78dcefa5535e5e7efa563a6a2f0e827178dc80cf71f1a28"
+    },
+    "src/developmental_physics/pd_anchor_pair_mpc.py": {
+      "bytes": 26614,
+      "sha256": "d9053b7ae5a8eabca342d29558df7a67fae6cf21f60d6e18110256988f04b3e3"
+    },
+    "src/developmental_physics/pd_anchor_pair_development.py": {
+      "bytes": 56106,
+      "sha256": "59de8ff3127bcdb683f325b11e5df88262bf8eda3e5a9f093de6bb9a204e1d64"
+    }
+  },
+  "first_mapping_contract_passed": true,
+  "scientific_adoption": false,
+  "continuous_goal_stays_active": true,
+  "wall_before_manifest": 0.13935810001567006,
+  "cpu_before_manifest": 0.078125
+}

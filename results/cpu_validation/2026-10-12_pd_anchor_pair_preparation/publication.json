@@ -1,0 +1,43 @@
+{
+  "source_files": {
+    "docs/PD_ANCHOR_PAIR_LEARNING_PROTOCOL.md": {
+      "bytes": 14616,
+      "sha256": "ae9b8ea0515d3ff71ac8c636e08542fa7b19725c5746613acd5d619284978b1f"
+    },
+    "scripts/develop_pd_anchor_pair.py": {
+      "bytes": 29329,
+      "sha256": "7b7f9fda0bc98111b78dcefa5535e5e7efa563a6a2f0e827178dc80cf71f1a28"
+    },
+    "src/developmental_physics/pd_anchor_pair_mpc.py": {
+      "bytes": 26614,
+      "sha256": "d9053b7ae5a8eabca342d29558df7a67fae6cf21f60d6e18110256988f04b3e3"
+    },
+    "src/developmental_physics/pd_anchor_pair_development.py": {
+      "bytes": 56106,
+      "sha256": "59de8ff3127bcdb683f325b11e5df88262bf8eda3e5a9f093de6bb9a204e1d64"
+    }
+  },
+  "runner_original": {
+    "bytes": 29340,
+    "sha256": "725ca104423c141b8207839b71951fac419735aa3fea2d0087eda0cdd2d890d4"
+  },
+  "runner_EOL_only_AST_equal": true,
+  "protocol_pin_matches": true,
+  "first_new_contract_checks": 58,
+  "first_contract_cost": {
+    "body_model_build_attempts": 4,
+    "body_model_build_returns": 4,
+    "body_model_fingerprint_attempts": 8,
+    "body_model_fingerprint_returns": 8,
+    "new_PD_anchor_mapping_contract_pair_prediction_attempts": 48600,
+    "new_PD_anchor_mapping_contract_feature_guard_projection_attempts": 48600,
+    "new_PD_anchor_mapping_contract_feature_guard_projection_returns": 48600,
+    "new_PD_anchor_mapping_contract_scalar_prediction_attempts": 97200,
+    "new_PD_anchor_mapping_contract_scalar_prediction_returns": 97200,
+    "new_PD_anchor_mapping_contract_pair_prediction_returns": 48600
+  },
+  "new_physics_fit_RLS_or_old_reexecution": 0,
+  "continuous_goal_stays_active": true,
+  "static_review_scope": "PD-only nearest-slot replacement; scalar/batch decision and original core AST contract",
+  "new_development_seed_search_evidence": "previous FR3D manifest; public source/document integer search only, not all raw/history"
+}

@@ -1,0 +1,129 @@
+--- src/developmental_physics/full_request_pair_mpc.py
++++ src/developmental_physics/pd_anchor_pair_mpc.py
+@@ -1,8 +1,8 @@
+-"""FR3 bounded full-final-first-request candidate; no execution on import.
+-
+-Scalar and supported batch cores copy the frozen original controller. Only the
+-static first-request grid is converted once to dynamic held residuals per select.
+-Original controllers are never edited. Spec/grid stay independent of current q/v.
++"""FR4 bounded PD-anchor first-request candidate; no execution on import.
++
++Copy of FR3 scalar and supported batch cores. Only each current clipped PD value
++replaces its nearest nominal-grid slot, once per select. The static nominal grid,
++replacement metadata and controller fingerprint never depend on select state.
+ """
+ from __future__ import annotations
+ 
+@@ -23,6 +23,20 @@
+ FULL_REQUEST_AXIS_GRID_NM = (-.5, -.375, -.25, -.125, 0., .125, .25, .375, .5)
+ 
+ 
++def pd_anchor_first_request_candidates(base_request):
++    """Replace one nominal slot per axis; stable index ties and 81 ordered pairs."""
++    request = _pair("base_request", base_request)
++    if any(abs(value) > .5 for value in request):
++        raise ValueError("PD_anchor_requires_current_clipped_public_PD")
++    axes = []
++    for value in request:
++        axis = list(FULL_REQUEST_AXIS_GRID_NM)
++        nearest = min(range(len(axis)), key=lambda index: (abs(axis[index]-value), index))
++        axis[nearest] = value
++        axes.append(tuple(axis))
++    return tuple(product(*axes))
++
++
+ def _method_is(instance, name, function):
+     return getattr(getattr(instance, name, None), "__func__", None) is function
+ 
+@@ -36,8 +50,8 @@
+             "co_argcount", "co_kwonlyargcount"))
+ 
+ 
+-class FullRequestResidualPDPairMPC(FixedPairMPC):
+-    """81 final-first-request grids mapped to held delta; unchanged H150 PD tail."""
++class PDAnchorResidualPDPairMPC(FixedPairMPC):
++    """81 PD-anchor first-request pairs mapped to delta; unchanged H150 PD tail."""
+ 
+     def __init__(self, model, joint_ranges, config=None):
+         baseline = MPCConfig()
+@@ -56,16 +70,33 @@
+     def spec(self):
+         return {**super().spec(),
+                 "axis_candidates_nm": None, "vector_candidates_nm": None,
+-                "first_final_request_axis_grid_nm": list(FULL_REQUEST_AXIS_GRID_NM),
+-                "first_final_request_grid_nm": [list(row) for row in self._candidates],
+-                "first_final_request_grid_spacing_nm": .125,
++                "first_final_request_axis_grid_nm": None,
++                "first_final_request_grid_nm": None,
++                "first_final_request_grid_spacing_nm": None,
++                "nominal_first_final_request_axis_grid_nm": list(FULL_REQUEST_AXIS_GRID_NM),
++                "nominal_first_final_request_grid_nm": [list(row) for row in self._candidates],
++                "nominal_first_final_request_grid_spacing_nm": .125,
++                "PD_anchor_replacement": {
++                    "current_public_PD_evaluations_for_candidate_generation": 1,
++                    "rule": "each axis: replace original slot argmin(abs(nominal-p), original_index) with current clipped p",
++                    "axis_points": 9, "cartesian_pairs": 81,
++                    "sort_expand_or_mutate_nominal_grid": False,
++                    "scalar_nearest_distances_per_macro": 18,
++                    "pure_PD_delta_zero_expression_guaranteed": True,
++                    "pure_PD_feasibility_or_selection_guaranteed": False,
++                    "coverage_loss": {
++                        "maximum_replaced_nominal_points_per_axis": 1,
++                        "maximum_point_displacement_nm": .0625,
++                        "maximum_adjacent_dynamic_gap_nm": .1875,
++                        "nominal_permission_endpoints_may_be_removed": True,
++                        "minimum_original_nominal_pairs_retained": 64}},
+                 "first_final_request_candidate_count": 81,
+-                "dynamic_residual_definition": "delta=grid-first-clipped-PD-current-native; once per macro",
+-                "first_request_float_semantics": "clip(p+(grid-p),-.5,.5); no bit equality promise to nominal grid",
++                "dynamic_residual_definition": "delta=PD-anchored-point-first-clipped-PD-current-native; once per macro",
++                "first_request_float_semantics": "clip(p+(dynamic-point-p),-.5,.5); no bit equality promise to dynamic point",
+                 "residual_candidates_nm": None, "residual_axis_candidates_nm": None,
+                 "maximum_absolute_dynamic_delta_nm": 1., "final_request_permission_nm": .5,
+-                "pure_PD_candidate_guaranteed": False,
+-                "zero_nominal_first_request_is_not_literal_zero_fallback": True,
++                "pure_PD_candidate_guaranteed": True,
++                "zero_request_candidate_is_not_literal_zero_fallback": True,
+                 "shared_pd": {"kp": KP, "kd": KD, "gain_updates": 0,
+                               "source": "original_public_PD64_Kd4_4_no_gain_change_or_scan"},
+                 "action_rollout": "PD(predicted q/v)+held dynamic delta first ten 2ms steps; remaining 140 PD delta zero",
+@@ -117,8 +148,9 @@
+             return request
+ 
+         base_request = pd_request(position, velocity)
++        first_request_candidates = pd_anchor_first_request_candidates(base_request)
+         residual_candidates = tuple(tuple(float(grid[i]-base_request[i]) for i in range(2))
+-                                    for grid in self._candidates)
++                                    for grid in first_request_candidates)
+         for residual in residual_candidates:
+             candidates += 1
+             first = tuple(float(np.clip(base_request[i]+residual[i], -.5, .5)) for i in range(2))
+@@ -197,7 +229,7 @@
+             tuple(records), tr, chosen, pd_attempts, pd_returns, candidates)
+ 
+ 
+-class BatchedFullRequestResidualPDPairMPC(FullRequestResidualPDPairMPC):
++class BatchedPDAnchorResidualPDPairMPC(PDAnchorResidualPDPairMPC):
+     """150 stage batches; each live row keeps the original two nine-term dots."""
+ 
+     def __init__(self, model, joint_ranges, config=None, *, counted_model_type=CountedGuardModel):
+@@ -242,7 +274,7 @@
+             "known_CountedGuardModel_supported": self._supported() and type(self.model) is self._counted_model_type,
+             "counted_adapter_class": getattr(self._counted_model_type, "__name__", None),
+             "counted_adapter_class_AST_must_be_frozen_equal": True,
+-            "unknown_or_overridden_model": "new full-request scalar reference select",
++            "unknown_or_overridden_model": "new PD-anchor scalar reference select",
+             "logical_work_units": "unchanged pair/scalar/features/PD/candidates, actual batch kernels separate",
+             "realtime_20ms_demonstrated": False}}
+ 
+@@ -285,8 +317,9 @@
+             exc.pair_planning_accounting = accounting()
+             raise
+         pd_returns += 1
++        first_request_candidates = pd_anchor_first_request_candidates(base_request)
+         residual_candidates = tuple(tuple(float(grid[i]-base_request[i]) for i in range(2))
+-                                    for grid in self._candidates)
++                                    for grid in first_request_candidates)
+         residuals = np.asarray(residual_candidates, dtype=np.float64)
+         n = len(residuals)
+         first = np.clip(np.asarray(base_request)[None, :] + residuals, -.5, .5)

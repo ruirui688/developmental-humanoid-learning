@@ -1,0 +1,31 @@
+{
+  "first_invocation": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "-u",
+    "external/fr4_controller_candidate/check_pd_anchor_mapping_once.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4_first_mapping_contract\\contract.json"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 4.127434900030494,
+  "files": {
+    "stdout.log": {
+      "bytes": 711,
+      "sha256": "01f01a932a471e850828dd6f19a36e30f36782f6a07b11e60bce4ab5baa3b401"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "contract.json": {
+      "bytes": 392868,
+      "sha256": "3aa59624c4f53ecdf708a96c901d39b885c3870e82db6e2d1b3675d125ee1fdc"
+    }
+  },
+  "physical_interactions": 0,
+  "fit_or_RLS_updates": 0
+}
