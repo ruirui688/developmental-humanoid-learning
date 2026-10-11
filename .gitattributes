@@ -225,3 +225,12 @@ results/cpu_validation/2026-10-12_damped_suspended_pair_engineering/** -text whi
 results/cpu_validation/2026-10-12_damped_suspended_pair_prediction_preparation/** -text whitespace=cr-at-eol,-blank-at-eof
 results/cpu_validation/2026-10-12_damped_suspended_pair_prediction/** -text whitespace=cr-at-eol,-blank-at-eof
 results/cpu_validation/2026-10-12_damped_suspended_pair_control/** -text whitespace=cr-at-eol,-blank-at-eof
+src/developmental_physics/fast_feedback_environment.py text eol=lf
+scripts/validate_fast_feedback_engineering.py text eol=lf
+tests/test_fast_feedback_environment.py text eol=lf
+tests/test_fast_feedback_engineering.py text eol=lf
+docs/CONTROL_INTERFACE_ROUTE_REVIEW.md text eol=lf
+docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md text eol=lf
+docs/FAST_FEEDBACK_ENGINEERING_RESULTS.md text eol=lf
+results/cpu_validation/2026-10-12_fast_feedback_engineering_preparation/** -text whitespace=cr-at-eol,-blank-at-eof
+results/cpu_validation/2026-10-12_fast_feedback_engineering/** -text whitespace=cr-at-eol,-blank-at-eof

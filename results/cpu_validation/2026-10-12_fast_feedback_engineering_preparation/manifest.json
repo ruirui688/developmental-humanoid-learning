@@ -1,0 +1,153 @@
+{
+  "files": {
+    "source/docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9430,
+      "sha256": "5b71ac014786ebbc464becc8579c36df906360e256d47232612ddc141b8bcee4",
+      "source": "docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md"
+    },
+    "source/scripts/validate_fast_feedback_engineering.py": {
+      "bytes": 23011,
+      "sha256": "34c5cfc835198f5e53bb17feaa43065c118f7fef5caa9b2dbc95681633b12bb5",
+      "source": "scripts/validate_fast_feedback_engineering.py"
+    },
+    "source/src/developmental_physics/fast_feedback_environment.py": {
+      "bytes": 6476,
+      "sha256": "7a731aaa02a431c7bb3f93450352f7a393979af2655b5ba6c2084a8c2d898455",
+      "source": "src/developmental_physics/fast_feedback_environment.py"
+    },
+    "source/tests/test_fast_feedback_environment.py": {
+      "bytes": 6045,
+      "sha256": "bdb27ddfb0c7b7076cf941302ecc2a4eadf7f55feb2cb2469753e0c5c60b587a",
+      "source": "tests/test_fast_feedback_environment.py"
+    },
+    "source/tests/test_fast_feedback_engineering.py": {
+      "bytes": 2718,
+      "sha256": "c5414210a3c8245e42c3d9f346515271f153cd21014b07c47f98b0b33b6637e8",
+      "source": "tests/test_fast_feedback_engineering.py"
+    },
+    "source/docs/CONTROL_INTERFACE_ROUTE_REVIEW.md": {
+      "bytes": 5242,
+      "sha256": "fbde45387ccd25e2c78d937d1cb2b4562966c8323b09097e7dda5f2133a1d313",
+      "source": "docs/CONTROL_INTERFACE_ROUTE_REVIEW.md"
+    },
+    "interface_checks/execution.json": {
+      "bytes": 1426,
+      "sha256": "9d1505b205208bc5be0b1e3a9fa7823f723410e40d69ebbf254997ad63bfe340",
+      "source": "external/c4_z_interface_checks_01/execution.json"
+    },
+    "interface_checks/source/docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9430,
+      "sha256": "5b71ac014786ebbc464becc8579c36df906360e256d47232612ddc141b8bcee4",
+      "source": "external/c4_z_interface_checks_01/source/docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md"
+    },
+    "interface_checks/source/scripts/validate_fast_feedback_engineering.py": {
+      "bytes": 23011,
+      "sha256": "34c5cfc835198f5e53bb17feaa43065c118f7fef5caa9b2dbc95681633b12bb5",
+      "source": "external/c4_z_interface_checks_01/source/scripts/validate_fast_feedback_engineering.py"
+    },
+    "interface_checks/source/src/developmental_physics/fast_feedback_environment.py": {
+      "bytes": 6476,
+      "sha256": "7a731aaa02a431c7bb3f93450352f7a393979af2655b5ba6c2084a8c2d898455",
+      "source": "external/c4_z_interface_checks_01/source/src/developmental_physics/fast_feedback_environment.py"
+    },
+    "interface_checks/source/tests/test_fast_feedback_engineering.py": {
+      "bytes": 2718,
+      "sha256": "c5414210a3c8245e42c3d9f346515271f153cd21014b07c47f98b0b33b6637e8",
+      "source": "external/c4_z_interface_checks_01/source/tests/test_fast_feedback_engineering.py"
+    },
+    "interface_checks/source/tests/test_fast_feedback_environment.py": {
+      "bytes": 6045,
+      "sha256": "bdb27ddfb0c7b7076cf941302ecc2a4eadf7f55feb2cb2469753e0c5c60b587a",
+      "source": "external/c4_z_interface_checks_01/source/tests/test_fast_feedback_environment.py"
+    },
+    "interface_checks/stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "external/c4_z_interface_checks_01/stderr"
+    },
+    "interface_checks/stdout": {
+      "bytes": 101,
+      "sha256": "cd13a680f1e6099450640c07d16b6af657011fcf5b965b3732e1c979f90b26df",
+      "source": "external/c4_z_interface_checks_01/stdout"
+    },
+    "reviews_and_execution/c4_z_design_static_review.json": {
+      "bytes": 6283,
+      "sha256": "006becd741a8481566c9d44b5dc1b397290969958fc5826b181a94eb318645e2",
+      "source": "external/c4_z_design_static_review.json"
+    },
+    "reviews_and_execution/fast_feedback_interface_preparation.json": {
+      "bytes": 4629,
+      "sha256": "a5a11c1d7a963dd493521126a6c5bcf9c158844f7d17d37f2aeb77561ce6ae97",
+      "source": "external/fast_feedback_interface_preparation.json"
+    },
+    "reviews_and_execution/c4_z_runner_derivation.json": {
+      "bytes": 435,
+      "sha256": "c9576bd364f01b5f8f7d8678739829ba2e46e5c299e4d34c50d65a35cf4a188e",
+      "source": "external/c4_z_runner_derivation.json"
+    },
+    "reviews_and_execution/prepare_fast_runner_once.py": {
+      "bytes": 9771,
+      "sha256": "e5dcac79b20f05846bef78d415d57e82f2454817ea88eff02860ef8525dadd1e",
+      "source": "external/prepare_fast_runner_once.py"
+    },
+    "reviews_and_execution/prepare_z_helpers_once.py": {
+      "bytes": 4551,
+      "sha256": "4cf6051029636fd92be08d1272d2972f7590d51323a57e5f810275f4408ef727",
+      "source": "external/prepare_z_helpers_once.py"
+    },
+    "reviews_and_execution/run_z_checks_once.py": {
+      "bytes": 2015,
+      "sha256": "906170f09e776588b37b384cbe31788d2a9889b7bd24b1218389363fa240b83b",
+      "source": "external/run_z_checks_once.py"
+    },
+    "reviews_and_execution/run_fast_feedback_once.py": {
+      "bytes": 2906,
+      "sha256": "c53eab8c870caa7da288bd8bd853b68d71f634f962bcc7b526ac27f98c010dd0",
+      "source": "external/run_fast_feedback_once.py"
+    },
+    "reviews_and_execution/archive_fast_feedback_stage_once.py": {
+      "bytes": 2655,
+      "sha256": "f46bc7c2f79d14aad3e096c89c2f669471a7e2d1d3b6f4828c8bafb6218aaefa",
+      "source": "external/archive_fast_feedback_stage_once.py"
+    },
+    "reviews_and_execution/check_z0_once.py": {
+      "bytes": 9945,
+      "sha256": "a07881ff1f64c18072006e1f792916932b247e6be5c134a46620e56964ba17b6",
+      "source": "external/check_z0_once.py"
+    },
+    "reviews_and_execution/read_fast_feedback_reporting_once.py": {
+      "bytes": 2169,
+      "sha256": "65eeb2330efa9405a179e9e5c725a8d9271621dbe8f58ca7ad4c5aa40159ffb5",
+      "source": "external/read_fast_feedback_reporting_once.py"
+    },
+    "reviews_and_execution/check_fast_feedback_links_once.py": {
+      "bytes": 1721,
+      "sha256": "0fcb6f673fe2efcb5d340810dd0fd18a785983b9c725771d4753102f5c45442c",
+      "source": "external/check_fast_feedback_links_once.py"
+    },
+    "reviews_and_execution/seal_fast_reporting_once.py": {
+      "bytes": 3162,
+      "sha256": "ef01f7e23d556438f0132c4067debd07e53e31c569789fdfcfbba2e26858e73e",
+      "source": "external/seal_fast_reporting_once.py"
+    },
+    "reviews_and_execution/seal_z_preparation_once.py": {
+      "bytes": 3811,
+      "sha256": "d581d9256989fe8ce00de2edc14d2d3d2902517514bf78b0f6adfdc61607f554",
+      "source": "external/seal_z_preparation_once.py"
+    }
+  },
+  "final_protocol_pin_matches": true,
+  "first_new_checks_passed": true,
+  "physics_fit_model_RLS_or_scientific_recalculation_calls": 0,
+  "assembly_repeated": false,
+  "old_tests_repeated": false,
+  "cost_before_manifest_write": {
+    "file_reads": 55,
+    "read_bytes": 313790,
+    "file_writes": 27,
+    "write_bytes": 156182
+  },
+  "automatic_retry": false,
+  "wall_seconds_before_manifest_write": 0.32053719996474683,
+  "cpu_seconds_before_manifest_write": 0.09375
+}

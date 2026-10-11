@@ -15,7 +15,7 @@
 当前执行入口：
 
 - [Y0首次工程结果](DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe完成100prefix+103active、203控制/2,030子步，肘速度1.12580895rad/s触发原1rad/s研究停止，完整工程门失败。第一末窗虽然observed20但完整trial失败而不可评，第二窗0；Y1/Y2关闭，不partial排名或扫描增益。
-- **下一项仅控制时间尺度与底层保护的有限审阅。** 先区分公开实现与证据边界，不预设新实验、采样周期或保护修改，也不因失败放宽门。有依据后才另冻唯一有限方案。
+- **当前冻结一次独立Z0工程候选。** [接口审阅](CONTROL_INTERFACE_ROUTE_REVIEW.md)支持[2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)：物理仍2ms、增益/权限/6s时域保持，反馈/感觉调用增多、active研究停止cadence改2ms，公开额外经典控制能力。14项新纯合成检查通过，冻结推送后首次seed7600、最多3000calls/3000substeps；不重跑旧装配或扫频率/增益。
 - **当前不启动学习与模型控制。** 原[Y协议](DAMPED_SUSPENDED_PAIR_PROTOCOL.md)、[X0协议](SUSPENDED_PAIR_DOMAIN_DESIGN.md)及关闭的学习配方保持。未来独立候选仍须工程资格、少量辨识/预测、匹配完整控制及真实接触迁移；机械支撑/经典反馈先验披露，X0/W0/V关闭分支不据旧记录重跑。
 
 Y0执行前的[首次准备封存](../results/cpu_validation/2026-10-12_damped_suspended_pair_engineering_preparation/manifest.json)保留为历史：

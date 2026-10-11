@@ -1,0 +1,60 @@
+"""Derive bounded Z engineering archive/report tools, no experiments or checker."""
+import ast
+import json
+from pathlib import Path
+
+repo = Path(__file__).resolve().parents[1]
+external = repo / "external"
+def source(name):
+    return (external / name).read_text(encoding="utf-8")
+def save(name, text):
+    ast.parse(text)
+    with (external / name).open("x", encoding="utf-8", newline="\n") as stream:
+        stream.write(text)
+
+text = source("run_damped_suspended_once.py")
+text = text.replace('choices=("prediction", "control", "engineering")', 'choices=("engineering",)')
+text = text.replace('"src/developmental_physics/suspended_environment.py",', '"src/developmental_physics/fast_feedback_environment.py",\n    "src/developmental_physics/suspended_environment.py",')
+text = text.replace("validate_damped_suspended_pair_engineering.py", "validate_fast_feedback_engineering.py")
+text = text.replace("DAMPED_SUSPENDED_PAIR_PROTOCOL.md", "FAST_FEEDBACK_ENGINEERING_PROTOCOL.md")
+text = text.replace("c4_y0_", "c4_z0_")
+save("run_fast_feedback_once.py", text)
+text = source("archive_damped_suspended_stage_once.py")
+text = text.replace('choices=("engineering", "prediction", "control")', 'choices=("engineering",)')
+text = text.replace("c4_y0_", "c4_z0_").replace("damped_suspended_pair_engineering", "fast_feedback_engineering")
+text = text.replace("run_damped_suspended_once.py", "run_fast_feedback_once.py").replace("archive_damped_suspended_stage_once.py", "archive_fast_feedback_stage_once.py")
+save("archive_fast_feedback_stage_once.py", text)
+text = source("read_damped_suspended_reporting_once.py")
+text = text.replace('choices=("engineering", "prediction", "control")', 'choices=("engineering",)')
+text = text.replace('("y0", "damped_suspended_pair_engineering")', '("z0", "fast_feedback_engineering")')
+text = text.replace("last20_post_step_windows", "last200_post_step_windows")
+save("read_fast_feedback_reporting_once.py", text)
+text = source("check_y0_once.py")
+text = text.replace("Y0", "Z0").replace("7500", "7600").replace("c4_y0_", "c4_z0_")
+text = text.replace("damped_suspended_pair_engineering", "fast_feedback_engineering")
+text = text.replace('index < 100 else', 'index < 1000 else').replace('index-100)', 'index-1000)')
+text = text.replace('len(rows) == 300 and', 'len(rows) == 3000 and')
+text = text.replace('get("executed_substeps") == 10', 'get("executed_substeps") == 1')
+text = text.replace("full_100_prefix_200_active", "full_1000_prefix_2000_active")
+text = text.replace("last20_post_step_windows", "last200_post_step_windows")
+text = text.replace('((80, 100), (180, 200))', '((800, 1000), (1800, 2000))')
+text = text.replace('len(selected) == 20 and', 'len(selected) == 200 and')
+text = text.replace('selected)/20 for', 'selected)/200 for')
+text = text.replace('window["planned_count"] == 20', 'window["planned_count"] == 200')
+text = text.replace("physical_fingerprint_before", "execution_fingerprint_before").replace("physical_fingerprint_after", "execution_fingerprint_after")
+save("check_z0_once.py", text)
+text = source("check_damped_suspended_links_once.py")
+text = text.replace('choices=("preparation", "engineering", "prediction", "control")', 'choices=("preparation", "engineering")')
+text = text.replace("DAMPED_SUSPENDED_PAIR_PROTOCOL.md", "FAST_FEEDBACK_ENGINEERING_PROTOCOL.md")
+text = text.replace('"docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md"]', '"docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md", "docs/CONTROL_INTERFACE_ROUTE_REVIEW.md"]')
+text = text.replace('"docs/DAMPED_SUSPENDED_PAIR_"', '"docs/FAST_FEEDBACK_"')
+text = text.replace('("damped_suspended_pair", "damped_residual_pd_pair", "damped_suspended_feedback")', '("fast_feedback", "control_interface_route")')
+text = text.replace('"c4_y_"', '"c4_z_"')
+save("check_fast_feedback_links_once.py", text)
+text = source("seal_suspended_reporting_once.py")
+text = text.replace('choices=("x0", "y0")', 'choices=("z0",)')
+text = text.replace('domain = "suspended_pair" if args.prefix == "x0" else "damped_suspended_pair"', 'domain = "fast_feedback"')
+text = text.replace("c4_y_engineering_links_01.json", "c4_z_engineering_links_01.json").replace("check_damped_suspended_links_once.py", "check_fast_feedback_links_once.py").replace("read_damped_suspended_reporting_once.py", "read_fast_feedback_reporting_once.py")
+text = text.replace('"seal_suspended_reporting_once.py"', '"seal_fast_reporting_once.py"')
+save("seal_fast_reporting_once.py", text)
+print(json.dumps({"derived_helpers": 7, "AST_parses": 7, "execution_checker_model_physics_fit_calls": 0}))

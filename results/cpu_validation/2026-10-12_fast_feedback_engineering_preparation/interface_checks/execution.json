@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_fast_feedback_environment.py",
+    "tests/test_fast_feedback_engineering.py"
+  ],
+  "source_files": {
+    "src/developmental_physics/fast_feedback_environment.py": {
+      "bytes": 6476,
+      "sha256": "7a731aaa02a431c7bb3f93450352f7a393979af2655b5ba6c2084a8c2d898455"
+    },
+    "scripts/validate_fast_feedback_engineering.py": {
+      "bytes": 23011,
+      "sha256": "34c5cfc835198f5e53bb17feaa43065c118f7fef5caa9b2dbc95681633b12bb5"
+    },
+    "tests/test_fast_feedback_environment.py": {
+      "bytes": 6045,
+      "sha256": "bdb27ddfb0c7b7076cf941302ecc2a4eadf7f55feb2cb2469753e0c5c60b587a"
+    },
+    "tests/test_fast_feedback_engineering.py": {
+      "bytes": 2718,
+      "sha256": "c5414210a3c8245e42c3d9f346515271f153cd21014b07c47f98b0b33b6637e8"
+    },
+    "docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9430,
+      "sha256": "5b71ac014786ebbc464becc8579c36df906360e256d47232612ddc141b8bcee4"
+    }
+  },
+  "returncode": 0,
+  "wall_seconds": 1.0481998000759631,
+  "test_invocations": 1,
+  "scope": "New config/hash boundaries with monkeypatched constructors and one-substep evidence; no original physics/math fixtures",
+  "real_physics_builds_forwards_steps": 0,
+  "old_MPC_or_RLS_tests": 0,
+  "automatic_retry": false
+}

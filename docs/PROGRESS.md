@@ -1,5 +1,16 @@
 # 开发进度与仓库检查点
 
+## 当前准备：2026-10-12 Z0独立2ms反馈接口
+
+Y0负结果推送7fe5b27后，完成[控制接口源码审阅](CONTROL_INTERFACE_ROUTE_REVIEW.md)及[唯一Z0协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)。
+控制每调用从10子步改1子步；baseline构造后显式replace control_substeps=1，原物理数组/2ms timestep/保护保持。
+PD64/Kd(4,4)、.5Nm、prefix2s、两目标各2s不变；active停止阈值原样但检查cadence改2ms，公开额外能力。
+Z0固定seed7600、1000zero+2000active、最多3000calls/3000子步，两段末200point/.4s MAE门仍.01rad。
+14项新interface/config/hash及单子步完整证据合成检查首次通过，0真实模型build/forward/积分；旧装配/MPC/RLS不重跑。
+[准备封存](../results/cpu_validation/2026-10-12_fast_feedback_engineering_preparation/manifest.json)27payload，55读313790bytes、28写163138bytes（含末manifest），wall/CPU .3212569/.09375s。
+工程通过后另设计新学习时距/预算，不自动继承旧20ms学习；固定支撑+快速经典反馈不称身体学习或旧C4。
+正式累计253297/2532970、online22452/offline7200暂不变。冻结推送后首次Z0，阶段交付后持续推进。
+
 ## 当前入口：2026-10-12 Y0肘速度停止，关闭Y1/Y2
 
 [Y0首次结果](DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe一次完成100prefix+103active、

@@ -160,6 +160,8 @@ git diff --check
 
 如果这是新环境中的首次 Codex 会话：先按 `docs/NEW_MACHINE_BOOTSTRAP.md` 识别实际软硬件条件并运行现有 CPU 测试；随后读取 `docs/DEVELOPMENT_ROADMAP.md` 选择当前可完成的阶段。在关节/刚体映射和站立 smoke test 通过前，不开始 G1 长时间训练或大规模采样。缺少 GPU 时继续 CPU 身体建模与控制原型，不静默安装驱动或操作真实机器人。
 
+最新准备：Y0失败已推送7fe5b27，X/Y学习分支关闭。一次[接口审阅](docs/CONTROL_INTERFACE_ROUTE_REVIEW.md)后，独立[Z0协议](docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)将反馈改2ms、原物理/PD/权限及6s任务不改；控制调用/感觉计算与active停止检查频率增多明确披露。14项新纯合成检查首次通过、0真实装配/物理；仅工程候选，冻结后clean首次seed7600最多3000/3000。新学习配方不得自动继承旧20ms模型、H15或原更新预算；Z0成功也不追认接触C4。持续目标active，阶段交付后继续。
+
 X0首次结果入口：[停止结果](docs/SUSPENDED_PAIR_ENGINEERING_RESULTS.md)、[原悬挂域协议](docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md)、[关闭的事前X1/X2配方](docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md)。首次工程104/1,040后肩速度停止、末窗不可评；独立thin contract零失败只证明证据一致，不代表工程或科学通过。下一独立Y肩阻尼候选须另review/冻结，不修改X协议或controller；非接触悬挂机制不能追认旧C4或解除C5科学依赖，持续目标保持active。
 
 Y当前结果：[首次阻尼工程停止结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)与[原冻结协议](docs/DAMPED_SUSPENDED_PAIR_PROTOCOL.md)。seed7500首次203/2,030后肘速度停止、完整门失败，Y1/Y2关闭，不scan增益。首thin contract零failed、0MAE重算仅证明证据一致。接着只审阅控制时间尺度与底层保护，不预设新实验；用户要求持续执行，阶段提交推送后继续最早未过门，完整自由root接触C4及C5–C7仍未验收。

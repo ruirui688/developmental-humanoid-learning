@@ -1,0 +1,70 @@
+{
+  "kind": "finite interface route review, Z0 engineering protocol and narrow source/checker review",
+  "science_and_execution_boundary": {
+    "experimental_imports": 0,
+    "model_calls": 0,
+    "physics_steps": 0,
+    "fit_RLS_calls": 0,
+    "assembly_repetitions": 0,
+    "tests_executed_by_author": 0,
+    "checker_executions": 0,
+    "raw_or_old_metrics_reads": 0,
+    "commit_push_by_author": 0,
+    "no_scientific_or_engineering_success_claim": true
+  },
+  "author_owned_files": [
+    {"path": "docs/CONTROL_INTERFACE_ROUTE_REVIEW.md", "bytes": 5242, "sha256": "fbde45387ccd25e2c78d937d1cb2b4562966c8323b09097e7dda5f2133a1d313"},
+    {"path": "docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md", "bytes": 9430, "sha256": "5b71ac014786ebbc464becc8579c36df906360e256d47232612ddc141b8bcee4"}
+  ],
+  "reviewed_source_snapshots": {
+    "final_runner": {"path": "scripts/validate_fast_feedback_engineering.py", "bytes": 23011, "sha256": "34c5cfc835198f5e53bb17feaa43065c118f7fef5caa9b2dbc95681633b12bb5"},
+    "first_checker": {"path": "external/check_z0_once.py", "bytes": 9905, "sha256": "47d782f9a3703c765b38dd950282fc89a053021afb48ca69d9e1c76f9aa36582"},
+    "final_checker": {"path": "external/check_z0_once.py", "bytes": 9945, "sha256": "a07881ff1f64c18072006e1f792916932b247e6be5c134a46620e56964ba17b6"},
+    "core_environment": {"bytes": 15822, "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"},
+    "supported_environment": {"bytes": 11642, "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"},
+    "suspended_environment": {"bytes": 7076, "sha256": "f5154b7e059ed9939ed130d9a5c9eda2af455b9f660a4e843c72b996a44d81f8"},
+    "ground_body_xml": {"bytes": 3430, "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"}
+  },
+  "route_conclusion": {
+    "known_interface": "One clipped accepted request is held through ten 2ms integrations; only angle-direction guards and baseline protection update within the 20ms interval. A 2ms integrator is not a 2ms feedback controller.",
+    "support_for_single_candidate": "Same gains/physics/task with native feedback recomputed each 2ms has a bounded structural rationale; it is not a Kp/Kd scan and does not identify the explanation of X/Y stops.",
+    "extra_prior": "Higher feedback/sensing/control computation frequency and classical task capability are shared control priors. No learned-reflex or successful-body-model claim follows.",
+    "stop_semantics": "Prefix retains baseline-only protection. Active study thresholds remain .12rad/1rad/s but are inspected after each complete 2ms interval rather than after 20ms; lower observation latency is disclosed.",
+    "future_science": "Old 20ms torque schema and H15=300ms are not automatically reusable. New action semantics/time horizons/update budgets and shared cold/learned/PD frequency must be separately frozen; future actual torques cannot become privileged inputs.",
+    "no_parameter_followup": "Z0 failure closes this candidate and requires route judgment, not feedback-frequency/gain/seed/task/authority/mount scans."
+  },
+  "checks": {
+    "two_documents_LF_final_newline_trailing_whitespace_local_links": "passed",
+    "git_diff_check_for_two_documents": "passed; new untracked documents also checked directly",
+    "runner_AST_without_import": "passed",
+    "protocol_PIN_matches_author_owned_protocol": "passed",
+    "clean_exact_source_verifier_and_dependency_binding": "retained and no self-check bypass",
+    "one_substep_complete_population": "3000 ordered control endpoints, each exactly one 2ms native capture, 1000 prefix and 2000 active; old 300-call/10-substep qualification is not reused",
+    "windows": "Exactly active800..999 and1800..1999; full-trial requirement, 200 finite two-axis errors per window, .01 threshold and separate availability retained",
+    "new_telemetry_gap_resolved": "Missing floor_contacts was initially treated as empty; final runner requires list presence, permitting a legitimate empty contact observation",
+    "paid_and_failed_branches": "Per-row confirmed integrations and saved partial evidence survive errors; source/reporting failure forces engineering false; effort uses paid saved substeps and records unknown/lower bounds",
+    "initial_checker_AST_without_import": "passed",
+    "initial_checker_count_window_failure_contracts": "Seed7600, 3000 single-substep full trial, 200-point windows, complete priority, independently counted available MAEs, explicit minimal source/reporting failure, unknown exceptional after fingerprint and captures<=paid confirmed are supported",
+    "final_checker_two_narrow_fixes": "Z0 docstring and saved duration_seconds==.4 binding confirmed; AST passed without import or execution",
+    "original_source_modification": "Author modified no frozen X/Y source; only the two new documents and this receipt"
+  },
+  "checker_finalization_pending": [],
+  "known_reading_ledger": {
+    "core_and_XML_first_static_read": 37970,
+    "first_Y_to_Z_diff_and_two_documents": 61362,
+    "necessary_narrow_read_for_truncated_middle_and_new_fingerprint_fields": 22888,
+    "final_runner_contact_and_PIN_check": 23011,
+    "first_checker_static_read": 9905,
+    "final_checker_narrow_followup_read": 9945,
+    "known_source_read_bytes_before_receipt_validation": 165081,
+    "PD_action_model_agent_new_disk_source_read_bytes": 0,
+    "truncation_disclosure": "First diff display omitted middle lines; only the required runner effort/main/cost/fingerprint sections were subsequently displayed. First core display truncated an unrelated constructor bookkeeping excerpt; no omitted interface/guard evidence is asserted.",
+    "unknown": "Search, Git, AST backend allocations, patch/edit and OS/backend total IO were not measured. File lengths describe explicit Python source reads only."
+  },
+  "remaining_parent_owned_execution_preconditions": [
+    "First necessary pure config/interface/telemetry/window/failure checks; author runs none.",
+    "New environment independent source review, performed by the assigned implementation/review agents.",
+    "Normal source/protocol/preparation sealing, clean exact commit and push before one formal Z0.",
+    "No repetition of old RLS/MPC math, X assembly or revealed X/Y physics."
+  ]
+}

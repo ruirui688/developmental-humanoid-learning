@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** 最早未验收仍为C4。[Y0首次结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)从clean1ef7bbe完成100prefix+103active、203控制/2,030子步后肘速度1.12580895rad/s触发原1rad/s研究停止，完整工程资格失败、两个末窗不可评，Y1/Y2关闭。X0/W0学习分支及V同bank路线保持关闭；不partial排名、不scan增益。下一项只做控制时间尺度与底层保护的有限审阅，尚未承诺新实验或修订。固定机械支撑与公开PD先验须披露，不追认旧C4；最终仍需自由root真实接触控制及C5–C7。阶段检查提交推送后继续，下列旧结果只作历史，不触发重跑。
+**当前执行入口：** 最早未验收仍为C4。[Y0首次结果](docs/DAMPED_SUSPENDED_PAIR_ENGINEERING_RESULTS.md)在203控制/2,030子步后肘速度停止，Y1/Y2关闭。[控制接口审阅](docs/CONTROL_INTERFACE_ROUTE_REVIEW.md)支持一次独立[Z0工程候选](docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)：物理仍2ms、PD64/Kd(4,4)及权限不变，反馈从20ms改为2ms；保持6s任务、最多3000控制/3000子步，新增感觉/控制计算和研究停止检查频率明确披露。14项新合成检查通过并[封存准备](results/cpu_validation/2026-10-12_fast_feedback_engineering_preparation/manifest.json)，冻结提交推送后首次执行。固定机械支撑及经典PD先验不算身体学习，也不追认旧C4；最终仍需自由root真实接触控制及C5–C7。阶段检查提交推送后继续，关闭的旧分支不重跑。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 
