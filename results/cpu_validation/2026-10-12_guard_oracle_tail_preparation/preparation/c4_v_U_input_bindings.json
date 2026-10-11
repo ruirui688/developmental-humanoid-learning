@@ -1,0 +1,22 @@
+{
+  "source_commit": "7358ff9f583d9a20460e94c914cd8ea172c9780a",
+  "root": "results/cpu_validation/2026-10-12_guard_bounded_lbfgs_position_transition",
+  "bindings": {
+    "raw/parameters.json": {
+      "bytes": 21860808,
+      "sha256": "fd7509e141d8bb8facc42090c0ade8d6cb2d347ea47ace852554de353c4eaf82"
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 30672670,
+      "sha256": "060e7d32879b583dbb9b2c98369d0faf900cf4c582661196355ab8fa32d32a8b"
+    }
+  },
+  "file_reads": 2,
+  "read_bytes": 16411,
+  "json_parses": 2,
+  "raw_manifest_additional_read_for_required_payload_bindings": true,
+  "scientific_payload_reads": 0,
+  "no_scientific_recalculation": true,
+  "wall_seconds": 0.0004972000606358051,
+  "cpu_seconds": 0.0
+}

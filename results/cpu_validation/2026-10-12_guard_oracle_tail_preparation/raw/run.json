@@ -1,0 +1,175 @@
+{
+  "status": "self_check_passed",
+  "self_check": true,
+  "source": {
+    "commit": null,
+    "files": {
+      "scripts/diagnose_guard_oracle_tail.py": {
+        "bytes": 42154,
+        "sha256": "15493565c44c1f44eb1df18a0fa4cda95147df602f62e58f2bfe03af399fcceb"
+      },
+      "docs/GUARD_ORACLE_TAIL_DIAGNOSTIC_PROTOCOL.md": {
+        "bytes": 7764,
+        "sha256": "2e002e051677774bceb52c3b5c78a70559370027a9d1e4804b3be170fa5bccaa"
+      },
+      "scripts/develop_guard_scaled_native_transition.py": {
+        "bytes": 27537,
+        "sha256": "df0833d08e722391f98de1bc2cbf81e2d0a866a3ea65def24e9b216d25787518"
+      },
+      "docs/GUARD_SCALED_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 4870,
+        "sha256": "0027650441b59159b407e21b687057e816c61c127ca6f5f4f06b6ac44b8b87b7"
+      },
+      "scripts/develop_guard_native_transition.py": {
+        "bytes": 36390,
+        "sha256": "f910bb6fd9f01ebf5fd52426b40b43414e50bebcfe6460cf6132bccb1a2192bb"
+      },
+      "docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 8134,
+        "sha256": "7be868a3215dc0e29dd6e96f4f19635259fda15e3a54545194513e11a892ce56"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      },
+      "src/developmental_physics/guard_lag_pair_model.py": {
+        "bytes": 11351,
+        "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+      },
+      "src/developmental_physics/guard_pair_model.py": {
+        "bytes": 6860,
+        "sha256": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3"
+      },
+      "src/developmental_physics/local_pair_model.py": {
+        "bytes": 25148,
+        "sha256": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df"
+      },
+      "src/developmental_physics/local_model.py": {
+        "bytes": 16564,
+        "sha256": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1"
+      },
+      "scripts/develop_guard_quadratic_native_transition.py": {
+        "bytes": 29407,
+        "sha256": "6a8109ed9ba68b61674f9744ac0ea4ffce421ff8b4400abfe7cc081b5c16a147"
+      },
+      "docs/GUARD_QUADRATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 5230,
+        "sha256": "77cb47c42efad889f4d15cf64207b528ab2c7e29908d55d3f16441b0b7a6c5d3"
+      },
+      "scripts/develop_guard_kinematic_native_transition.py": {
+        "bytes": 31640,
+        "sha256": "07a0135e6cd30e169f780f30eef09472fe857570fa0556f552dcdcbe258c693d"
+      },
+      "docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 5202,
+        "sha256": "8f3c86ccfc4626dbf6219e904daa73b208d2cac044a855e050875aecd62e5c45"
+      },
+      "scripts/develop_guard_bounded_lbfgs_position_transition.py": {
+        "bytes": 53997,
+        "sha256": "7c2c2ea6cbe421edca73bd0e53adc1ad2f373390c694e8c7950d5b1b32f1ef95"
+      },
+      "docs/GUARD_BOUNDED_LBFGS_POSITION_TRANSITION_DEVELOPMENT_PROTOCOL.md": {
+        "bytes": 7744,
+        "sha256": "222f9f65e09c9b71f9bfdae12c39f95bce8472e3652e85bb107b9ed8156669ed"
+      }
+    },
+    "clean_committed_bytes_verified": false
+  },
+  "inputs": {},
+  "input_binding_source_commit": "7358ff9f583d9a20460e94c914cd8ea172c9780a",
+  "fixed_budget": {
+    "requested_records": 4572,
+    "saved_self_records": 2286,
+    "oracle_records": 2286,
+    "controlled_metric_groups": 192,
+    "oracle_full22_transitions": 12408,
+    "nonterminal18_overwrites": 10122,
+    "future18_scalar_uses": 182196,
+    "H1_pair_records": 600
+  },
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "public_guard_source": "results/cpu_validation/2026-10-12_guard_bounded_lbfgs_position_transition/raw/run.json:baseline_restorations.D11[].public_guard",
+  "source_public_guard_only_no_D_model_restoration": true,
+  "H1_identity": null,
+  "self_check_cases": [
+    {
+      "case": "nonterminal18_only_controlled4_and_terminal18_preserved",
+      "status": "passed"
+    },
+    {
+      "case": "legal_initial_previous_then_predicted_old_current_controlled_velocity",
+      "status": "passed"
+    },
+    {
+      "case": "H1_never_queries_oracle_and_is_exact_original_controlled_output",
+      "status": "passed"
+    },
+    {
+      "case": "all22_nonfinite_tail_rejected_before_oracle_can_mask_it",
+      "status": "passed"
+    },
+    {
+      "case": "missing_native_label_keeps_paid_forward_and_unavailable_denominator",
+      "status": "passed"
+    },
+    {
+      "case": "cross_trial_or_mismatched_native_label_has_no_source_fallback",
+      "status": "passed"
+    }
+  ],
+  "cost": {
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "fit_attempts": 0,
+    "objective_calculation_attempts": 0,
+    "gradient_calculation_attempts": 0,
+    "K22_restorations": 0,
+    "D11_restorations": 0,
+    "saved_self_forward_calls": 0,
+    "saved_self_error_recalculations": 0,
+    "saved_self_metric_recalculations": 0,
+    "oracle_full22_forward_attempts": 0,
+    "oracle_full22_forward_returns": 0,
+    "oracle_full22_forward_failures": 0,
+    "oracle_nonterminal18_overwrites": 0,
+    "oracle_future18_scalar_uses": 0,
+    "source_file_read_attempts": 17,
+    "source_file_read_returns": 17,
+    "source_raw_bytes": 320154,
+    "source_hash_bytes": 320154,
+    "synthetic_full22_forward_attempts": 7,
+    "synthetic_full22_forward_returns": 6,
+    "synthetic_discarded_tail_head_outputs": 108,
+    "synthetic_oracle_label_attempts": 4,
+    "synthetic_oracle_label_returns": 2,
+    "synthetic_nonterminal18_overwrites": 2,
+    "synthetic_future18_scalar_uses": 36,
+    "synthetic_oracle_rollout_step_failures": 3,
+    "oracle_rollout_step_failures": 0,
+    "wall_seconds": 0.002871299860998988,
+    "cpu_seconds": 0.0
+  },
+  "failure": null,
+  "diagnostic_only": true,
+  "privileged_future18": true,
+  "hybrid_state_physical_consistency_guaranteed": false,
+  "initial_history_source": "same_saved_legal_continuous_window_previous_v2",
+  "later_history_source": "predicted_old_current_controlled_v_only",
+  "terminal18_overwritten": false,
+  "terminal18_scored": false,
+  "saved_self_recalculated": false,
+  "C_fallback_reads": 0,
+  "oracle_route_closed_after_V": true,
+  "source_cumulative_cost_reference": "results/cpu_validation/2026-10-12_guard_bounded_lbfgs_position_transition/raw/run.json:cost",
+  "source_cumulative_cost_transcribed": "unknown_before_source_metadata_return",
+  "timing_excludes": "final_output_serialization_compression_and_write",
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

@@ -1,0 +1,36 @@
+{
+  "root": "results/cpu_validation/2026-10-12_guard_bounded_lbfgs_position_transition",
+  "bindings": {
+    "raw/run.json": {
+      "bytes": 40201,
+      "sha256": "0208050b62e08748c62b13faf58fbd973a0bccb79d67fa2f4578ff55b5751839"
+    },
+    "manifest.json": {
+      "bytes": 27622,
+      "sha256": "6cf687b77fdebbb2cc1104c9459997a5bd9ca928e471f87ca355782d0c1c7109"
+    },
+    "raw/manifest.json": {
+      "bytes": 15434,
+      "sha256": "f53834dca057fb6088744916068db350855fe21ecc7eacd34273365f19a57acf"
+    }
+  },
+  "reads": [
+    {
+      "path": "external/c4_u_reporting_summary.json",
+      "bytes": 654250,
+      "derived": true
+    },
+    {
+      "path": "results/cpu_validation/2026-10-12_guard_bounded_lbfgs_position_transition/raw/manifest.json",
+      "bytes": 15434,
+      "derived": false
+    }
+  ],
+  "file_reads": 2,
+  "read_bytes": 669684,
+  "json_parses": 1,
+  "wall_seconds": 0.00644479994662106,
+  "cpu_seconds": 0.0,
+  "no_scientific_recalculation": true,
+  "run_root_identity_from_existing_report_reads": true
+}

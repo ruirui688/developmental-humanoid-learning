@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "scripts/diagnose_guard_oracle_tail.py",
+      "before_bytes": 42154,
+      "before_sha256": "15493565c44c1f44eb1df18a0fa4cda95147df602f62e58f2bfe03af399fcceb",
+      "after_bytes": 42153,
+      "after_sha256": "0915fdd404176ef62206d65c6126e7fb7de3976ea61caeb55415faed187b4335",
+      "ast_equivalent": true,
+      "compile_only_passed": true,
+      "module_execution": false
+    },
+    {
+      "path": "docs/GUARD_ORACLE_TAIL_DIAGNOSTIC_PROTOCOL.md",
+      "before_bytes": 7764,
+      "before_sha256": "2e002e051677774bceb52c3b5c78a70559370027a9d1e4804b3be170fa5bccaa",
+      "after_bytes": 7763,
+      "after_sha256": "67fd0bbcaab93208a2f994a0b71deca1c5d6bdc77dcf2481e43f6db84d1c995d"
+    }
+  ],
+  "reads": 2,
+  "read_bytes": 49918,
+  "wall_seconds": 0.03546090004965663,
+  "cpu_seconds": 0.03125,
+  "first_cached_diff_failure": "six terminal blank line findings; subsequent git diff stat masked shell exit",
+  "original_checked_and_archived_bytes_unchanged": true,
+  "scientific_execution": false,
+  "passed_fixture_rerun": false
+}

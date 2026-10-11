@@ -1,0 +1,111 @@
+{
+  "derived_ledgers": [
+    "external/c4_v_U_metadata_bindings.json",
+    "external/c4_v_U_input_bindings.json",
+    "external/c4_v_public_guard_bindings.json",
+    "external/c4_v_U_metrics_binding.json"
+  ],
+  "scientific_payload_reads": 0,
+  "old_scientific_recalculations": 0,
+  "metadata_file_reads": 4,
+  "metadata_raw_bytes": "unknown_not_measured_from_Get_Content_output",
+  "metadata_hash_bytes": 0,
+  "metadata_json_parses": 0,
+  "wall_seconds": "unknown",
+  "cpu_seconds": "unknown",
+  "static_checks": [
+    {
+      "kind": "AST_parse_and_compile_only",
+      "source_file_reads": 1,
+      "source_raw_bytes": 42107,
+      "source_hash_bytes": 42107,
+      "execution": false,
+      "import": false,
+      "scientific_payload_reads": 0,
+      "wall_seconds": 0.7,
+      "cpu_seconds": "unknown",
+      "identity": {
+        "bytes": 42107,
+        "sha256": "613071f6f6d0c82d58dce2120ccc5e098892f95ef4356189433dcaa151d64bfd"
+      }
+    },
+    {
+      "kind": "protocol_LF_whitespace_local_links",
+      "file_reads": 1,
+      "file_raw_bytes": 7764,
+      "file_hash_bytes": 7764,
+      "identity": {
+        "bytes": 7764,
+        "sha256": "2e002e051677774bceb52c3b5c78a70559370027a9d1e4804b3be170fa5bccaa"
+      },
+      "local_links": 2,
+      "all_exist": true,
+      "execution": false,
+      "wall_seconds": 0.4582137,
+      "cpu_seconds": "unknown"
+    },
+    {
+      "kind": "git_diff_check",
+      "passed": true,
+      "filesystem_bytes": "unknown_not_measured",
+      "wall_seconds": 0.4464689,
+      "cpu_seconds": "unknown"
+    },
+    {
+      "kind": "final_AST_parse_compile_only_after_source_hash_counter_added",
+      "file_reads": 1,
+      "file_raw_bytes": 42154,
+      "file_hash_bytes": 42154,
+      "identity": {
+        "bytes": 42154,
+        "sha256": "15493565c44c1f44eb1df18a0fa4cda95147df602f62e58f2bfe03af399fcceb"
+      },
+      "execution": false,
+      "imports": false,
+      "wall_seconds": 0.50479,
+      "cpu_seconds": "unknown"
+    }
+  ],
+  "known_source_code_reused_from_session_cache": [
+    "R_loader_and_Q_fingerprint",
+    "Q_rollout50_contract",
+    "U_parameter_schema",
+    "pinned_helper_identities"
+  ],
+  "unknowns_are_not_zero": true,
+  "new_layer_review": {
+    "agent": "j_causal_contract_review",
+    "result": "no_required_changes",
+    "source_rg_accesses": 1,
+    "source_content_slice_accesses": 1,
+    "source_lines": "220..573_pre_source_hash_counter_one_line_addition",
+    "protocol_Get_Content_accesses": 2,
+    "actual_filesystem_bytes": "unknown_not_measured",
+    "stdout_slice_bytes": 25416,
+    "stdout_bytes_are_not_filesystem_read_bytes": true,
+    "old_helper_reads": 0,
+    "scientific_payload_reads": 0,
+    "executions": 0,
+    "imports": 0
+  },
+  "preparation_tooling_failures": [
+    {
+      "tool": "apply_patch",
+      "message": "verification failed: invalid patch: multiple operations target external/c4_v_preparation_reads.json",
+      "scope": "ledger_update_only",
+      "recovery": "single_Update_File_patch_succeeded",
+      "scientific_work": 0
+    }
+  ],
+  "source_and_protocol_final_identity": {
+    "source": {
+      "bytes": 42154,
+      "sha256": "15493565c44c1f44eb1df18a0fa4cda95147df602f62e58f2bfe03af399fcceb"
+    },
+    "protocol": {
+      "bytes": 7764,
+      "sha256": "2e002e051677774bceb52c3b5c78a70559370027a9d1e4804b3be170fa5bccaa"
+    }
+  }
+}
+

@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "scripts/diagnose_guard_oracle_tail.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_v_selfcheck_01\\raw",
+    "--self-check"
+  ],
+  "source_commit": null,
+  "returncode": 0,
+  "started_unix": 1791744786.9247215,
+  "ended_unix": 1791744787.2415254,
+  "wall_seconds": 0.31660569994710386,
+  "checked_sources": {
+    "scripts/diagnose_guard_oracle_tail.py": {
+      "bytes": 42154,
+      "sha256": "15493565c44c1f44eb1df18a0fa4cda95147df602f62e58f2bfe03af399fcceb"
+    },
+    "docs/GUARD_ORACLE_TAIL_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 7764,
+      "sha256": "2e002e051677774bceb52c3b5c78a70559370027a9d1e4804b3be170fa5bccaa"
+    }
+  },
+  "source_snapshot_reads": 2,
+  "source_snapshot_read_bytes": 49918,
+  "stdout_bytes": 1283,
+  "stderr_bytes": 0,
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

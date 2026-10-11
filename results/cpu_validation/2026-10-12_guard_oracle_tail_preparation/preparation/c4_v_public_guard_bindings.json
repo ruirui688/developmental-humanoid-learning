@@ -1,0 +1,95 @@
+{
+  "root": "results/cpu_validation/2026-10-12_guard_bounded_lbfgs_position_transition",
+  "source_path": "raw/run.json",
+  "source_identity": {
+    "bytes": 40201,
+    "sha256": "0208050b62e08748c62b13faf58fbd973a0bccb79d67fa2f4578ff55b5751839"
+  },
+  "source_field": "baseline_restorations.D11[].public_guard",
+  "guard_specs": [
+    {
+      "seed": 0,
+      "guard_spec": {
+        "rule": "known_angle_guard_control_start_v1",
+        "public_joint_ranges_rad": [
+          [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          [
+            0.0,
+            2.356194490192345
+          ]
+        ],
+        "angle_margin_rad": 0.03,
+        "request_clip_per_axis_nm": 0.5,
+        "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+        "zero_is_blocked": false,
+        "q_clipped": false,
+        "evaluation_time": "current control-start q and already known request",
+        "interval_semantics": "start-only projection; not realized 20 ms average input",
+        "future_actual_input": false,
+        "physical_queries": 0
+      }
+    },
+    {
+      "seed": 1,
+      "guard_spec": {
+        "rule": "known_angle_guard_control_start_v1",
+        "public_joint_ranges_rad": [
+          [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          [
+            0.0,
+            2.356194490192345
+          ]
+        ],
+        "angle_margin_rad": 0.03,
+        "request_clip_per_axis_nm": 0.5,
+        "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+        "zero_is_blocked": false,
+        "q_clipped": false,
+        "evaluation_time": "current control-start q and already known request",
+        "interval_semantics": "start-only projection; not realized 20 ms average input",
+        "future_actual_input": false,
+        "physical_queries": 0
+      }
+    },
+    {
+      "seed": 2,
+      "guard_spec": {
+        "rule": "known_angle_guard_control_start_v1",
+        "public_joint_ranges_rad": [
+          [
+            -1.7453292519943295,
+            1.7453292519943295
+          ],
+          [
+            0.0,
+            2.356194490192345
+          ]
+        ],
+        "angle_margin_rad": 0.03,
+        "request_clip_per_axis_nm": 0.5,
+        "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+        "zero_is_blocked": false,
+        "q_clipped": false,
+        "evaluation_time": "current control-start q and already known request",
+        "interval_semantics": "start-only projection; not realized 20 ms average input",
+        "future_actual_input": false,
+        "physical_queries": 0
+      }
+    }
+  ],
+  "file_reads": 1,
+  "read_bytes": 654250,
+  "json_parses": 1,
+  "source_is_existing_derived_reporting_summary": true,
+  "D11_model_restorations": 0,
+  "scientific_payload_reads": 0,
+  "no_scientific_recalculation": true,
+  "wall_seconds": 0.0046687000431120396,
+  "cpu_seconds": 0.015625
+}
