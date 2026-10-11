@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "command": "D:/Python3.10/python.exe external\\c4_imu_residual_development_staging\\check_ridge_math_once.py",
+  "first_command_invocations": 1,
+  "reruns": 0,
+  "tool_result": {
+    "chunk_id": "7e24ec",
+    "wall_time_seconds": 0.630544,
+    "exit_code": 0,
+    "original_token_count": 210,
+    "output": "{\r\n  \"status\": \"passed\",\r\n  \"first_invocations\": 1,\r\n  \"reruns\": 0,\r\n  \"scope\": \"two synthetic ridge solves only; actual trace/base model/formal fit/physics zero\",\r\n  \"checks\": [\r\n    \"identity design W=known_rhs/(1+.01)\",\r\n    \"zero feature matrix yields zero head\"\r\n  ],\r\n  \"cost\": {\r\n    \"fit_scalar_labels\": 1600,\r\n    \"fit_gram_matrix_products\": 2,\r\n    \"fit_cross_matrix_products\": 2,\r\n    \"ridge_identity_matrix_additions\": 2,\r\n    \"fit_shared_6x6_two_rhs_solve_attempts\": 2,\r\n    \"fit_shared_6x6_two_rhs_solve_returns\": 2,\r\n    \"residual_heads_published\": 4,\r\n    \"residual_scalar_coefficients_fitted\": 24\r\n  },\r\n  \"wall_seconds\": 0.085147799924016,\r\n  \"cpu_seconds\": 0.03125,\r\n  \"formal_J_executions\": 0,\r\n  \"actual_trace_reads\": 0,\r\n  \"base_model_calls\": 0,\r\n  \"physics_calls\": 0,\r\n  \"runtime\": {\r\n    \"numpy\": \"1.26.4\"\r\n  }\r\n}\r\n"
+  }
+}

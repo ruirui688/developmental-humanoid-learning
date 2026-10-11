@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "files": {
+    "draft/CHECK_01.json": {
+      "bytes": 1223,
+      "sha256": "79afea4852f1c7559919b85b9e3443df458cc1c8623736f13881c93d32f68b61",
+      "copy_verified": true
+    },
+    "draft/CHECK_RIDGE_01.json": {
+      "bytes": 839,
+      "sha256": "d772d2be6996dd7394b4a04ed28c538c954e9413dcbed7f820940593010889c1",
+      "copy_verified": true
+    },
+    "draft/check_ridge_math_once.py": {
+      "bytes": 1808,
+      "sha256": "0b09a6c6627dea9366ad1e2aa11195c93b53556d5e796c53f7b78f62907bfd29",
+      "copy_verified": true
+    },
+    "draft/develop_guard_imu_residual.py": {
+      "bytes": 28289,
+      "sha256": "60458f501cfb11852220f23c82226c47307a81802e83511f3b5cd4c9a27e9cb9",
+      "copy_verified": true
+    },
+    "draft/GUARD_IMU_RESIDUAL_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 7110,
+      "sha256": "4efc8dceadfc2bfc403c7768ff8dab8fed152dc82d776815bd41853998a31eb2",
+      "copy_verified": true
+    },
+    "draft/INTEGRITY.json": {
+      "bytes": 3906,
+      "sha256": "b1d434e4d0d708f6bc80b4d2fb63a60bc54081402573d7dc06b6cd5135c4b0ba",
+      "copy_verified": true
+    },
+    "draft/RIDGE_FIRST_TOOL_OUTPUT.json": {
+      "bytes": 1294,
+      "sha256": "5c30e9634f59c1f405a41903021d32151fcbe4d05429d0e34222c737a0b96568",
+      "copy_verified": true
+    },
+    "draft/test_imu_residual_staging.py": {
+      "bytes": 5711,
+      "sha256": "d7d1ffb049f844ba4d67c0c5321532c2b5df9afc3308560438a473eedd1a4b00",
+      "copy_verified": true
+    },
+    "static_review/REVIEW.md": {
+      "bytes": 2403,
+      "sha256": "a75e36665b79cc38befbf37b2c1bbf3dca7011d872536ce04ae1a9017de82f5f",
+      "copy_verified": true
+    },
+    "root_review.md": {
+      "bytes": 1346,
+      "sha256": "dc9ab01b0a049afcb25b426b227e4563bb73ca3793815fa7072853076aa74ae8",
+      "copy_verified": true
+    },
+    "run_j_imu_residual_once.py": {
+      "bytes": 1422,
+      "sha256": "dfcae08c9bf10e8e00061e31ddb40cc8e6a8a061b5e9d692b99c5a844d409626",
+      "copy_verified": true
+    },
+    "prepare_j_imu_residual_once.py": {
+      "bytes": 2549,
+      "sha256": "d4a7305ff96759c2b20c4032c067186516781bbf371c562a1afee997194d0248",
+      "copy_verified": true
+    },
+    "draft/accounting_revision_01/ACCOUNTING_PATCH.diff": {
+      "bytes": 4057,
+      "sha256": "22ee48b18c3127924de8df9d4a67c4799de96384d96983ab3dd1314e7e6406a0",
+      "copy_verified": true
+    },
+    "draft/accounting_revision_01/integrity_before.json": {
+      "bytes": 2513,
+      "sha256": "ee583cecbee3c35e10448a6d250a22b0ad78aa140ec4d762bf2c33bd06753cdf",
+      "copy_verified": true
+    },
+    "draft/accounting_revision_01/RECORD.json": {
+      "bytes": 1192,
+      "sha256": "5c43a9ae86c5fc8e146ef61d805bd537cb8c2784c04070e25c567e466518e1d0",
+      "copy_verified": true
+    },
+    "draft/accounting_revision_01/source_before.py": {
+      "bytes": 27600,
+      "sha256": "f560893562a2c3cd544d7464b6324a7a243fd61cb07f10a248c53d4268c53605",
+      "copy_verified": true
+    }
+  },
+  "promotion": "exact reviewed draft bytes; AST parse only; passed checks not repeated",
+  "cost": {
+    "binary_reads": 26,
+    "input_bytes": 151199,
+    "copy_checks": 12,
+    "copy_failures": 0,
+    "wall_seconds": 0.17564520006999373,
+    "cpu_seconds": 0.03125
+  },
+  "actual_source_trace_reads": 0,
+  "formal_fits": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "accounting_revision_supplement": {
+    "reason": "first preparer copied immediate draft files only; omitted revision directory copied once without repeating preparation checks",
+    "files": [
+      "draft/accounting_revision_01/ACCOUNTING_PATCH.diff",
+      "draft/accounting_revision_01/integrity_before.json",
+      "draft/accounting_revision_01/RECORD.json",
+      "draft/accounting_revision_01/source_before.py"
+    ],
+    "binary_reads": 9,
+    "input_bytes": 73351,
+    "copy_checks": 4,
+    "copy_failures": 0,
+    "wall_seconds": 0.019421299919486046,
+    "cpu_seconds": 0.015625,
+    "formal_data_reads": 0,
+    "model_calls": 0,
+    "physics": 0
+  }
+}

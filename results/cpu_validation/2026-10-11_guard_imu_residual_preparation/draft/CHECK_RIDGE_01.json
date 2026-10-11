@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "first_invocations": 1,
+  "reruns": 0,
+  "scope": "two synthetic ridge solves only; actual trace/base model/formal fit/physics zero",
+  "checks": [
+    "identity design W=known_rhs/(1+.01)",
+    "zero feature matrix yields zero head"
+  ],
+  "cost": {
+    "fit_scalar_labels": 1600,
+    "fit_gram_matrix_products": 2,
+    "fit_cross_matrix_products": 2,
+    "ridge_identity_matrix_additions": 2,
+    "fit_shared_6x6_two_rhs_solve_attempts": 2,
+    "fit_shared_6x6_two_rhs_solve_returns": 2,
+    "residual_heads_published": 4,
+    "residual_scalar_coefficients_fitted": 24
+  },
+  "wall_seconds": 0.085147799924016,
+  "cpu_seconds": 0.03125,
+  "formal_J_executions": 0,
+  "actual_trace_reads": 0,
+  "base_model_calls": 0,
+  "physics_calls": 0,
+  "runtime": {
+    "numpy": "1.26.4"
+  }
+}

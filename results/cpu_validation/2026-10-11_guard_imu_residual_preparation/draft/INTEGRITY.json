@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "draft_source_files": {
+    "develop_guard_imu_residual.py": {
+      "bytes": 28289,
+      "sha256": "60458f501cfb11852220f23c82226c47307a81802e83511f3b5cd4c9a27e9cb9"
+    },
+    "GUARD_IMU_RESIDUAL_DEVELOPMENT_PROTOCOL.md": {
+      "bytes": 7110,
+      "sha256": "4efc8dceadfc2bfc403c7768ff8dab8fed152dc82d776815bd41853998a31eb2"
+    },
+    "test_imu_residual_staging.py": {
+      "bytes": 5711,
+      "sha256": "d7d1ffb049f844ba4d67c0c5321532c2b5df9afc3308560438a473eedd1a4b00"
+    },
+    "check_ridge_math_once.py": {
+      "bytes": 1808,
+      "sha256": "0b09a6c6627dea9366ad1e2aa11195c93b53556d5e796c53f7b78f62907bfd29"
+    }
+  },
+  "integrity_source_file_reads": 4,
+  "integrity_source_raw_bytes": 42229,
+  "preparation_source_schema_read_scope": [
+    "src/developmental_physics/environment.py",
+    "src/developmental_physics/pd_tail_control_development.py",
+    "src/developmental_physics/guard_exploration_development.py",
+    "src/developmental_physics/guard_lag_offline_development.py",
+    "src/developmental_physics/local_model.py",
+    "src/developmental_physics/__init__.py",
+    "src/developmental_physics/assets/ground_body.xml"
+  ],
+  "preparation_source_schema_read_bytes_and_time": "unknown; scoped Get-Content/rg calls not instrumented as file-read meters",
+  "metadata_pin_preparation": {
+    "instrumented_read_bytes_calls": 6,
+    "instrumented_payload_bytes": 59701,
+    "instrumented_sha256_bytes": 59701,
+    "additional_read_text_calls": 2,
+    "additional_actual_raw_bytes": "unknown; not separately instrumented",
+    "total_file_read_invocations": 8,
+    "scope": "C raw manifest/metadata, D root/raw manifests, G raw manifest/metadata; plus C raw and D root manifest schema reads",
+    "wall_seconds": "unknown; command wall includes parse/hash/print, not a read-only timer",
+    "cpu_seconds": "unknown; not measured"
+  },
+  "synthetic_native_branch_first_invocations": 1,
+  "synthetic_native_test_cases": 6,
+  "synthetic_native_test_reruns": 0,
+  "synthetic_ridge_math_first_invocations": 1,
+  "synthetic_ridge_solves": 2,
+  "synthetic_ridge_scalar_fit_labels": 1600,
+  "synthetic_ridge_math_reruns": 0,
+  "formal_J_executions": 0,
+  "actual_trace_reads": 0,
+  "actual_model_snapshot_reads": 0,
+  "base_model_predict_calls": 0,
+  "actual_data_fit_calls": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "math_review": "one small pure-text subagent review; no tools/files/data/model/physics",
+  "accounting_revision_01": {
+    "scope": "only early-failure identity and per-seed restoration accounting",
+    "source_before": {
+      "bytes": 27600,
+      "sha256": "f560893562a2c3cd544d7464b6324a7a243fd61cb07f10a248c53d4268c53605"
+    },
+    "source_after": {
+      "bytes": 28289,
+      "sha256": "60458f501cfb11852220f23c82226c47307a81802e83511f3b5cd4c9a27e9cb9"
+    },
+    "exact_utf8_unified_diff": {
+      "path": "accounting_revision_01/ACCOUNTING_PATCH.diff",
+      "bytes": 4057,
+      "sha256": "22ee48b18c3127924de8df9d4a67c4799de96384d96983ab3dd1314e7e6406a0"
+    },
+    "changed_function_ast_names": [
+      "main_run",
+      "restore_models"
+    ],
+    "unchanged_function_ast_names": [
+      "apply_residual",
+      "collect_samples",
+      "complete",
+      "continuous",
+      "development_gate",
+      "digest",
+      "extract_sample",
+      "fit_residual",
+      "frozen_sources",
+      "imu_feature",
+      "json_bytes",
+      "metric",
+      "native",
+      "read_inputs",
+      "stopped",
+      "summarize",
+      "vector"
+    ],
+    "ast_parse": "passed; no execution",
+    "six_branch_reruns": 0,
+    "synthetic_solve_reruns": 0,
+    "actual_input_reads": 0,
+    "model_calls": 0,
+    "fit_solve_calls": 0,
+    "physics_calls": 0
+  },
+  "integrity_update_source_reads": 4,
+  "integrity_update_source_bytes": 42918
+}

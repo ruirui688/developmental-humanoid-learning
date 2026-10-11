@@ -1,0 +1,46 @@
+{
+  "scope": "only early-failure identity and per-seed restoration accounting",
+  "source_before": {
+    "bytes": 27600,
+    "sha256": "f560893562a2c3cd544d7464b6324a7a243fd61cb07f10a248c53d4268c53605"
+  },
+  "source_after": {
+    "bytes": 28289,
+    "sha256": "60458f501cfb11852220f23c82226c47307a81802e83511f3b5cd4c9a27e9cb9"
+  },
+  "exact_utf8_unified_diff": {
+    "path": "accounting_revision_01/ACCOUNTING_PATCH.diff",
+    "bytes": 4057,
+    "sha256": "22ee48b18c3127924de8df9d4a67c4799de96384d96983ab3dd1314e7e6406a0"
+  },
+  "changed_function_ast_names": [
+    "main_run",
+    "restore_models"
+  ],
+  "unchanged_function_ast_names": [
+    "apply_residual",
+    "collect_samples",
+    "complete",
+    "continuous",
+    "development_gate",
+    "digest",
+    "extract_sample",
+    "fit_residual",
+    "frozen_sources",
+    "imu_feature",
+    "json_bytes",
+    "metric",
+    "native",
+    "read_inputs",
+    "stopped",
+    "summarize",
+    "vector"
+  ],
+  "ast_parse": "passed; no execution",
+  "six_branch_reruns": 0,
+  "synthetic_solve_reruns": 0,
+  "actual_input_reads": 0,
+  "model_calls": 0,
+  "fit_solve_calls": 0,
+  "physics_calls": 0
+}

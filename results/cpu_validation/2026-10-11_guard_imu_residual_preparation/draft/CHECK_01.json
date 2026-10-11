@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "record_type": "first_synthetic_branch_check",
+  "first_command_invocations": 1,
+  "test_cases": 6,
+  "test_reruns": 0,
+  "formal_J_executions": 0,
+  "actual_trace_reads": 0,
+  "base_model_calls": 0,
+  "fit_calls": 0,
+  "solve_calls": 0,
+  "physics_calls": 0,
+  "command": "D:/Python3.10/python.exe external\\c4_imu_residual_development_staging\\test_imu_residual_staging.py -v",
+  "tool_result": {
+    "chunk_id": "f55d45",
+    "wall_time_seconds": 0.651773,
+    "exit_code": 0,
+    "original_token_count": 160,
+    "output": "test_all_six_columns_current_scaling_no_bias (__main__.IMUBranches) ... ok\r\ntest_current_label_and_after_imu_do_not_change_features (__main__.IMUBranches) ... ok\r\ntest_fixed_parameter_forward_is_one_step_q_diagnostic_only (__main__.IMUBranches) ... ok\r\ntest_main_gate_strict_each_seed_twenty_mean_and_full_count (__main__.IMUBranches) ... ok\r\ntest_native_history_never_crosses_gaps_partial_trial_or_stop (__main__.IMUBranches) ... ok\r\ntest_saved_g_independent_reuse_keeps_terminal_and_rejects_after_stop (__main__.IMUBranches) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 6 tests in 0.059s\r\n\r\nOK\r\n"
+  }
+}

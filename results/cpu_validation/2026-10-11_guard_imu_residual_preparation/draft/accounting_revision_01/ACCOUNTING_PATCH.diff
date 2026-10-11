@@ -1,0 +1,68 @@
+--- a/develop_guard_imu_residual.py
++++ b/develop_guard_imu_residual.py
+@@ -309,12 +309,13 @@
+     return {"commit": commit, "files": sources, "clean_committed_bytes_verified": True}
+ 
+ 
+-def restore_models(diagnostics, repo):
++def restore_models(diagnostics, repo, cost):
+     sys.path.insert(0, str(repo/"src"))
+     from developmental_physics.guard_lag_pair_model import GuardLagPairBodyModel
+     from developmental_physics.local_pair_model import _parameter_state
+     models = {}
+     for seed in SEEDS:
++        cost["frozen_base_restoration_attempts"] += 1
+         matches = [r for r in diagnostics if r.get("seed") == seed and r.get("calibration") == "sparse"]
+         if len(matches) != 1:
+             raise ValueError("exactly one D sparse snapshot per seed required")
+@@ -331,6 +332,8 @@
+         if model.snapshot() != expected:
+             raise ValueError("D snapshot/fingerprint/constants mismatch")
+         models[seed] = model
++        cost["frozen_base_restoration_returns"] += 1
++        cost["frozen_base_restorations"] += 1
+     return models
+ 
+ 
+@@ -344,6 +347,7 @@
+         "physics_calls", "MPC_calls", "base_model_updates", "RLS_updates", "input_file_reads",
+         "input_raw_bytes", "input_hash_bytes", "json_documents_parsed", "source_file_reads",
+         "source_raw_bytes", "git_queries", "git_return_bytes", "frozen_base_restorations",
++        "frozen_base_restoration_attempts", "frozen_base_restoration_returns",
+         "C_trace_uncompressed_bytes", "G_trace_uncompressed_bytes", "C_trace_lines_parsed",
+         "G_trace_lines_parsed", "imu_feature_vectors", "imu_feature_scalar_divisions",
+         "base_model_pair_attempts", "base_model_pair_returns", "base_model_pair_failures",
+@@ -355,7 +359,7 @@
+         "residual_scalar_coefficients_fitted", "seed_fit_failures", "residual_forward_vector_evaluations",
+         "residual_forward_scalar_heads", "corrected_v_scalar_additions",
+         "corrected_q_scalar_multiplications", "corrected_q_scalar_additions", "score_scalar_error_calculations")})
+-    inputs, sources, payloads = {}, {}, {}
++    inputs, sources, payloads = {}, None, {}
+     def write(name, data):
+         (output/name).write_bytes(data)
+         payloads[name] = {"bytes": len(data), "sha256": digest(data)}
+@@ -363,8 +367,7 @@
+         repo = Path(args.repo).resolve()
+         sources = frozen_sources(repo, args.source_commit, cost)
+         blobs, docs, cmeta, gmeta = read_inputs(repo, inputs, cost)
+-        models = restore_models(docs[f"{D_ROOT}/raw/diagnostics.json"], repo)
+-        cost["frozen_base_restorations"] += 3
++        models = restore_models(docs[f"{D_ROOT}/raw/diagnostics.json"], repo, cost)
+         fingerprints = {s: m.parameter_fingerprint() for s, m in models.items()}
+         samples, unavailable, source_counts = [], [], {}
+         for collection, root in (("C", C_ROOT), ("G", G_ROOT)):
+@@ -452,7 +455,13 @@
+         cost["wall_seconds"] = time.perf_counter()-start_wall
+         cost["cpu_seconds"] = time.process_time()-start_cpu
+         write("failure.json", json_bytes({"status": "failed", "exception_type": type(exc).__name__, "message": str(exc),
+-              "inputs_already_read": inputs, "source_already_verified": sources, "cost": dict(cost), "scientific_adoption": False}))
++              "requested_J_source_commit": args.source_commit,
++              "expected_original_source_commits": {"C": C_COMMIT, "D": D_COMMIT, "G": G_COMMIT},
++              "expected_input_pins": PINS, "inputs_already_read": inputs,
++              "inputs_without_returned_read_record": {name: "unknown_before_input_record_returned" for name in PINS if name not in inputs},
++              "source_already_verified": sources if sources is not None else {
++                  "status": "unknown", "reason": "source verifier did not return a verified binding"},
++              "cost": dict(cost), "scientific_adoption": False}))
+         (output/"manifest.json").write_bytes(json_bytes({"schema_version": 1, "status": "failed", "files": payloads}))
+         raise
+ 
