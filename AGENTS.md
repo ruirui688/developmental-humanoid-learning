@@ -51,6 +51,8 @@ P后唯一Q候选为K原phi29追加(qrel0/.12,qrel1/.12,v0/1,v1/1,startG0/.5,sta
 
 [R首次结果](docs/GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从clean7d2cbab完整4,572记录/840组；两门各12/14项通过，仅H15q幅度失败（相对K肩/肘8.854%/2.942%，不足20%）。0新fit/物理/RLS，Q/K/D指纹不变，首薄契约15组全过只证明保存一致。R/Q不进控制，C4/C5科学依赖不解除。下一唯一S保留Q同50列/22闭合及其余20head，只用C400连续窗口做有限多步位置拟合；全部原门不变，不增加物理或扫描参数，旧bank仅开发。代码/协议/新必要检查先冻结，再首次执行；阶段提交后继续active目标。
 
+[S首次结果](docs/GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)从cleanfcab231执行，三seed初始目标与梯度有限、第一次优化试探全部quadratic21溢出，无候选。4,572计划记录/840通道组保留，S不可用、双门不可评；fit3尝试/3失败、objective9/6/3、0新物理/RLS。数值失败不否定多步目标。下一唯一T保持S损失/模型/C400窗口，以固定1e-3系数L2信赖步、Armijo1e-4与最多10回退修订优化；非有限trial拒绝保留费用，不clip状态或伪造gradient、不扫描。先冻结/新最小检查再首次执行，C4/C5依赖保持关闭，阶段提交后继续。
+
 新物理必须先冻结任务、信息、权限、完整优先门、seed和预算，从干净提交首次执行一次；保留停止前付费交互和负结果，不补跑到成功、不放宽旧门。不能拿部分RMSE排名、不用较少步骤当作停止轨迹的效率优势，也不能用“零停止”证明安全。所有方法共享相同目标、最终权限、停止与实际努力分母。
 
 当前模型只消费原生关节q/v、已知请求及连续过去端点；previous_v不得跨trial或补零，不得读未来实际力矩。D sparse11仅恢复其冻结snapshot，G不重拟合。PD64/(0,4)及其旧增益开发费用明确披露，预测尾只用当前目标，无切换预览。接触力、动能、真实动力学和root quaternion只作离线诊断，不进入部署模型；当前native没有orientation。

@@ -1,5 +1,16 @@
 # 开发进度与仓库检查点
 
+## 2026-10-12：S首次数值失败，继续有限步长优化
+
+[S结果](GUARD_MULTISTEP_POSITION_TRANSITION_DEVELOPMENT_RESULTS.md)从cleanfcab231首次执行。
+三seed初始目标/gradient均有限，第3objective首次试探全部quadratic21溢出，0callback。
+fit3尝试/0发布/3失败；iteration0仅留证据，4,572计划记录/840通道组保留，S不可用、双门不可评。
+新增2,400唯一q标签、26,142重复terminal用途、objective9/6/3、backward6，0新物理/RLS/MPC。
+内wall/CPU7.659888/6.703125秒，外11.001600秒；根归档14payload零复制失败。
+不能以数值失败否定多步目标。接着唯一T保留S模型/损失/原C400窗口，从Q初始化，
+固定有限梯度信赖步及Armijo回退；所有试探和失败计费、不伪梯度或clip状态、不扫配方。
+持续目标active，阶段检查提交推送后继续；C4完整预测/控制及C5–C7仍待验收。
+
 ## 2026-10-12：R长期位置门仍失败，继续有限多步拟合
 
 [R结果](GUARD_KINEMATIC_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)从clean7d2cbab首次完成4,572记录/840组。

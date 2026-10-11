@@ -1,0 +1,35 @@
+{
+  "reads": [
+    {
+      "path": "raw/run.json",
+      "bytes": 38617,
+      "sha256": "977b6913f586e8978f5c9bc8bd2904273096b14ddd7c024b0ca23785ded9a0ce"
+    },
+    {
+      "path": "raw/metrics.json",
+      "bytes": 453371,
+      "sha256": "24076cb465a6cb246fac2c1b45ea14ba7f80f10453a0ea80b14c952fa1eab02d"
+    },
+    {
+      "path": "raw/parameters.json",
+      "bytes": 17309174,
+      "sha256": "36f5a026ba4cbd9b83920e2277b9f0282d569d2ad9da29100793656e02cc5db1"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 3373,
+      "sha256": "febf8fb37098659957b67f711bad6b21bdb64b18c030d2f8fc8a787a43a0e112"
+    },
+    {
+      "path": "execution.json",
+      "bytes": 720,
+      "sha256": "bd2e02a27dbdae7c5ba87eea62a2b86548c2cc62780efa45eb85c78d5bc73544"
+    }
+  ],
+  "file_reads": 5,
+  "read_bytes": 17805255,
+  "json_parses": 5,
+  "wall_seconds": 0.14606550009921193,
+  "cpu_seconds": 0.140625,
+  "scientific_recalculation": false
+}

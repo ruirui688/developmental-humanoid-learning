@@ -1,0 +1,131 @@
+{
+  "status": "completed",
+  "evidence_consistency_only": true,
+  "expected_source_commit": "fcab231a511996de83e28d93ce6749326b38308f",
+  "inputs": {
+    "D:\\Codex_ws\\robot_rl\\external\\check_s_output_once.py": {
+      "bytes": 26814,
+      "sha256": "be0eb8dead4651ba7df34c1ffb5b9689dc3c319552249ece750c95d3390a6da9"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_multistep_position_transition\\raw\\manifest.json": {
+      "bytes": 1255,
+      "sha256": "66e5599416535db5b4c07bca322510d87a7e2333376db178c6f53f6d16333ca5"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_multistep_position_transition\\raw\\failure.json": {
+      "bytes": 38617,
+      "sha256": "977b6913f586e8978f5c9bc8bd2904273096b14ddd7c024b0ca23785ded9a0ce"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_multistep_position_transition\\raw\\fit_checkpoints\\seed0\\iteration00.json": {
+      "bytes": 7656,
+      "sha256": "fcc19ce292871cee5cca3e79de1cfd21205e0473afb60415256600805cb63003"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_multistep_position_transition\\raw\\fit_checkpoints\\seed1\\iteration00.json": {
+      "bytes": 7963,
+      "sha256": "ba7da61f9fd11c8ff44f4bb1fa2fb53106d60234b3b24577bfdc7276ccfc176b"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_multistep_position_transition\\raw\\fit_checkpoints\\seed2\\iteration00.json": {
+      "bytes": 7972,
+      "sha256": "fbe7f7e7d125c1e7ebf7334f4074fd37ffd5eee67c615bcd874ef28b3dffd888"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_multistep_position_transition\\raw\\metrics.json": {
+      "bytes": 453371,
+      "sha256": "24076cb465a6cb246fac2c1b45ea14ba7f80f10453a0ea80b14c952fa1eab02d"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_multistep_position_transition\\raw\\parameters.json": {
+      "bytes": 17309174,
+      "sha256": "36f5a026ba4cbd9b83920e2277b9f0282d569d2ad9da29100793656e02cc5db1"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_multistep_position_transition\\raw\\predictions.jsonl": {
+      "bytes": 21676694,
+      "sha256": "8548a12fa4df1d96414a087352a7217012fd79fa1976e00fb839772a36507546"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_multistep_position_transition\\raw\\run.json": {
+      "bytes": 38617,
+      "sha256": "977b6913f586e8978f5c9bc8bd2904273096b14ddd7c024b0ca23785ded9a0ce"
+    }
+  },
+  "checks": [
+    {
+      "group": "01_manifest_status_base_payload_and_checkpoint_paths",
+      "passed": true
+    },
+    {
+      "group": "02_payload_and_checkpoint_byte_hash_bindings",
+      "passed": true
+    },
+    {
+      "group": "03_saved_run_flags_and_failed_partial_status",
+      "passed": true
+    },
+    {
+      "group": "04_recorded_S_and_frozen_Q_source_identity",
+      "passed": true
+    },
+    {
+      "group": "05_recorded_frozen_Q_input_pins_only",
+      "passed": true
+    },
+    {
+      "group": "06_parameter_dimensions_frozen_heads_and_saved_provenance",
+      "passed": true
+    },
+    {
+      "group": "07_fixed_training_population_dimensions_terminal_label_bindings_and_partial",
+      "passed": true
+    },
+    {
+      "group": "08_saved_fixed_recipe_runtime_objective_budget_and_partial_status",
+      "passed": true
+    },
+    {
+      "group": "09_saved_accepted_checkpoint_bindings_last_selection_and_failed_isolation",
+      "passed": true
+    },
+    {
+      "group": "10_zero_interaction_inherited_Q_cost_and_actual_fit_call_metadata",
+      "passed": true
+    },
+    {
+      "group": "11_fixed_prediction_identities_native_dimensions_and_continuous_request_IDs",
+      "passed": true
+    },
+    {
+      "group": "12_saved_outcome_dimensions_history_partial_and_no_candidate_reasons",
+      "passed": true
+    },
+    {
+      "group": "13_fixed_channel_group_identities_allow_partial_failure",
+      "passed": true
+    },
+    {
+      "group": "14_saved_population_counts_match_availability_without_metrics",
+      "passed": true
+    },
+    {
+      "group": "15_saved_gate_Q_descriptive_flags_boolean_consistency_only",
+      "passed": true
+    }
+  ],
+  "cost": {
+    "file_read_attempts": 10,
+    "file_read_returns": 10,
+    "raw_bytes_read": 39568133,
+    "sha256_input_bytes": 39568133,
+    "json_parse_attempts": 4580,
+    "json_parse_returns": 4580,
+    "group_check_attempts": 15,
+    "group_check_returns": 15,
+    "scientific_metric_recalculations": 0,
+    "scientific_gate_recalculations": 0,
+    "model_restorations": 0,
+    "prediction_records_inspected": 4572,
+    "channel_groups_inspected": 840,
+    "parameter_records_inspected": 3,
+    "checkpoint_records_inspected": 3,
+    "wall_seconds": 0.601226800121367,
+    "cpu_seconds": 0.609375
+  },
+  "failure": null,
+  "scientific_adoption": false,
+  "timing_excludes": "final report/stdout serialization and writes"
+}

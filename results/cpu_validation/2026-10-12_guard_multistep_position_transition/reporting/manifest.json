@@ -1,0 +1,56 @@
+{
+  "payloads": {
+    "reporting/c4_s_reporting_reads.json": {
+      "bytes": 978,
+      "sha256": "cc00e932521be1d9e776e46351c97080349a244d5750d5073e15afde35744bc9",
+      "source": "external/c4_s_reporting_reads.json"
+    },
+    "reporting/read_s_reporting_once.py": {
+      "bytes": 2113,
+      "sha256": "6762c73f93f0f5b9cddfed1bb4c0e10cc7f9e8b09729730f3cdb0868514c6162",
+      "source": "external/read_s_reporting_once.py"
+    },
+    "reporting/check_s_output_once.py": {
+      "bytes": 26814,
+      "sha256": "be0eb8dead4651ba7df34c1ffb5b9689dc3c319552249ece750c95d3390a6da9",
+      "source": "external/check_s_output_once.py"
+    },
+    "reporting/c4_s_contract_execution.json": {
+      "bytes": 548,
+      "sha256": "0ad72ab7528dffeb042594b1401f0113b3053cc3b8a10a0b1e0173672986966f",
+      "source": "external/c4_s_contract_execution.json"
+    },
+    "reporting/archive_s_reporting_once.py": {
+      "bytes": 2249,
+      "sha256": "3a925484cd593e05c8077ac9a13f0659330a3e353d985cb1e16498466c4c0b90",
+      "source": "external/archive_s_reporting_once.py"
+    },
+    "output_contract/checker.py": {
+      "bytes": 26814,
+      "sha256": "be0eb8dead4651ba7df34c1ffb5b9689dc3c319552249ece750c95d3390a6da9",
+      "source": "external/c4_s_output_contract_01/checker.py"
+    },
+    "output_contract/report.json": {
+      "bytes": 5091,
+      "sha256": "7c5518afc83da3906104f071d607f0be45d2b83c6cd1d19f1c7e78f7dd9fd146",
+      "source": "external/c4_s_output_contract_01/report.json"
+    },
+    "output_contract/stdout.txt": {
+      "bytes": 647,
+      "sha256": "1f68aa58e6082b5855d840e1e831af96d6f41ee8bcb9f454231acb1ef5652fa0",
+      "source": "external/c4_s_output_contract_01/stdout.txt"
+    },
+    "reporting/c4_s_results_links_01.json": {
+      "bytes": 95,
+      "sha256": "6165f4860c7cfc0e5714f5977b2d65d8e6c0197dcc17b301d1a264dc27a6de73",
+      "source": "external/c4_s_results_links_01.json"
+    }
+  },
+  "file_reads": 18,
+  "read_bytes": 130698,
+  "copy_failures": [],
+  "wall_seconds": 0.22423469997011125,
+  "cpu_seconds": 0.015625,
+  "no_scientific_recalculation": true,
+  "root_raw_manifests_unchanged": true
+}
