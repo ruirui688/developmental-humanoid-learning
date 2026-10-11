@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "experiment": "FR0",
+  "status": "external_source_preparation_only",
+  "files": {
+    "free_root_fast_feedback_environment.py": {
+      "bytes": 6259,
+      "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871"
+    },
+    "validate_free_root_fast_feedback_engineering.py": {
+      "bytes": 24661,
+      "sha256": "ce2f6e542c025968d4f1076952018c92c25f88863151e2f8bacad143f2e9165e"
+    },
+    "test_free_root_fast_feedback_engineering.py": {
+      "bytes": 7383,
+      "sha256": "b10aaddbb7bfddb5a4275e1c2c5b14fc6a99c34bda68895f87479090bc81c117"
+    },
+    "README.md": {
+      "bytes": 2892,
+      "sha256": "059fef98faaa9cfcca160f094ce67ab2e8cbcd8b030bce38d1076128a28beb6d"
+    }
+  },
+  "AST_parse_count": 3,
+  "AST_parse_passed": true,
+  "static_checks": {
+    "original_step_reset_observation_stop_inherited": true,
+    "audit_has_no_extra_step_or_forward": true,
+    "runner_top_level_imports_stdlib_only": true,
+    "final_publication_protocol_pin_still_required": true,
+    "trailing_whitespace_free": true
+  },
+  "prepared_pure_test_names": [
+    "test_fixed_public_pd_and_target_infeasibility_do_not_relax_permission",
+    "test_partial_window_population_cannot_pass_even_with_zero_errors",
+    "test_contact_requires_each_full_phase_and_mae_all_four_axes",
+    "test_audit_failure_keeps_paid_native_row_effort_and_unknown_contact",
+    "test_prefix_has_no_study_check_but_first_active_equality_stops",
+    "test_wrapper_inherits_original_reset_step_observation_and_audit_has_no_forward"
+  ],
+  "test_execution_count": 0,
+  "fixture_execution_count": 0,
+  "production_import_count": 0,
+  "runner_execution_count": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "RLS_updates": 0,
+  "raw_result_reads": 0,
+  "production_paths": [
+    "src/developmental_physics/free_root_fast_feedback_environment.py",
+    "scripts/validate_free_root_fast_feedback_engineering.py",
+    "tests/test_free_root_fast_feedback_engineering.py"
+  ],
+  "production_files_written": 0,
+  "cached_candidate_protocol": {
+    "bytes": 9381,
+    "sha256": "41e9c323c51e4c3bc0e1f6cf4ea7e47c72b2c60777f3d8f2762839a0ff9011d3"
+  },
+  "publication_followup": "root changes header only and binds final production protocol pin before first new checks",
+  "paid_audit_order": "native paid journal row first, then readonly floor-pair query and study check, then annotation; failure preserves row and native effort",
+  "contact_missing": "unknown/lower-bound separately from native effort; no imputed zero labels",
+  "contact_force_units": "N; one additional query per floor pair including nonpositive normal force; query attempts/returns/exceptions actual",
+  "prior_design_source_reads_reused": "no new old-source/raw reads this implementation task",
+  "known_new_source_bytes_AST_read": 38303,
+  "known_new_README_bytes_read": 2892,
+  "preparation_apply_patch_verification_failure_count": 1,
+  "preparation_failure_note": "one malformed patch context failed atomically; only that patch corrected; no Python execution/test failure",
+  "unmeasured_backend_and_OS_IO": "unknown_not_zero",
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c4_contact_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

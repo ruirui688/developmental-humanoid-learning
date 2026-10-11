@@ -1,0 +1,220 @@
+{
+  "status": "FR0_prepared_not_engineering_or_scientifically_validated",
+  "files": {
+    "source/src/developmental_physics/free_root_fast_feedback_environment.py": {
+      "bytes": 6259,
+      "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871",
+      "source": "src/developmental_physics/free_root_fast_feedback_environment.py"
+    },
+    "source/scripts/validate_free_root_fast_feedback_engineering.py": {
+      "bytes": 24750,
+      "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752",
+      "source": "scripts/validate_free_root_fast_feedback_engineering.py"
+    },
+    "source/tests/test_free_root_fast_feedback_engineering.py": {
+      "bytes": 7383,
+      "sha256": "b10aaddbb7bfddb5a4275e1c2c5b14fc6a99c34bda68895f87479090bc81c117",
+      "source": "tests/test_free_root_fast_feedback_engineering.py"
+    },
+    "source/docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9189,
+      "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86",
+      "source": "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md"
+    },
+    "source/src/developmental_physics/environment.py": {
+      "bytes": 15822,
+      "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+      "source": "src/developmental_physics/environment.py"
+    },
+    "source/src/developmental_physics/assets/ground_body.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+      "source": "src/developmental_physics/assets/ground_body.xml"
+    },
+    "source/src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+      "source": "src/developmental_physics/__init__.py"
+    },
+    "source/pyproject.toml": {
+      "bytes": 698,
+      "sha256": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+      "source": "pyproject.toml"
+    },
+    "first_checks/execution.json": {
+      "bytes": 1315,
+      "sha256": "5312e4006186b381549b611cc8f5828c2a2dcbbfe6ff2f8bdbf2e00907e3b4c2",
+      "source": "external/c4_fr0_checks_01/execution.json"
+    },
+    "first_checks/source/docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9189,
+      "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86",
+      "source": "external/c4_fr0_checks_01/source/docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md"
+    },
+    "first_checks/source/scripts/validate_free_root_fast_feedback_engineering.py": {
+      "bytes": 24750,
+      "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752",
+      "source": "external/c4_fr0_checks_01/source/scripts/validate_free_root_fast_feedback_engineering.py"
+    },
+    "first_checks/source/src/developmental_physics/free_root_fast_feedback_environment.py": {
+      "bytes": 6259,
+      "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871",
+      "source": "external/c4_fr0_checks_01/source/src/developmental_physics/free_root_fast_feedback_environment.py"
+    },
+    "first_checks/source/tests/test_free_root_fast_feedback_engineering.py": {
+      "bytes": 7383,
+      "sha256": "b10aaddbb7bfddb5a4275e1c2c5b14fc6a99c34bda68895f87479090bc81c117",
+      "source": "external/c4_fr0_checks_01/source/tests/test_free_root_fast_feedback_engineering.py"
+    },
+    "first_checks/stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "external/c4_fr0_checks_01/stderr"
+    },
+    "first_checks/stdout": {
+      "bytes": 100,
+      "sha256": "39d498abd87b556064f38823a9d12a75c7af3951bd417f4543f9e31dbc249a56",
+      "source": "external/c4_fr0_checks_01/stdout"
+    },
+    "external_originals/preparation_receipt.json": {
+      "bytes": 3396,
+      "sha256": "6b52f8298cc4709b8995ed0396507a1b373189d1f32433b20bbe7cdaf17a5cd1",
+      "source": "external/c4_free_feedback_candidate/preparation_receipt.json"
+    },
+    "external_originals/free_root_fast_feedback_environment.py": {
+      "bytes": 6259,
+      "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871",
+      "source": "external/c4_free_feedback_candidate/free_root_fast_feedback_environment.py"
+    },
+    "external_originals/validate_free_root_fast_feedback_engineering.py": {
+      "bytes": 24661,
+      "sha256": "ce2f6e542c025968d4f1076952018c92c25f88863151e2f8bacad143f2e9165e",
+      "source": "external/c4_free_feedback_candidate/validate_free_root_fast_feedback_engineering.py"
+    },
+    "external_originals/test_free_root_fast_feedback_engineering.py": {
+      "bytes": 7383,
+      "sha256": "b10aaddbb7bfddb5a4275e1c2c5b14fc6a99c34bda68895f87479090bc81c117",
+      "source": "external/c4_free_feedback_candidate/test_free_root_fast_feedback_engineering.py"
+    },
+    "external_originals/README.md": {
+      "bytes": 2892,
+      "sha256": "059fef98faaa9cfcca160f094ce67ab2e8cbcd8b030bce38d1076128a28beb6d",
+      "source": "external/c4_free_feedback_candidate/README.md"
+    },
+    "reviews_and_execution/FR0_ENGINEERING_PROTOCOL_CANDIDATE.md": {
+      "bytes": 9381,
+      "sha256": "41e9c323c51e4c3bc0e1f6cf4ea7e47c72b2c60777f3d8f2762839a0ff9011d3",
+      "source": "external/FR0_ENGINEERING_PROTOCOL_CANDIDATE.md"
+    },
+    "reviews_and_execution/fr0_engineering_protocol_preparation.json": {
+      "bytes": 2893,
+      "sha256": "e02b4859694199d82642b1c0c40fc2dd78751e6d9a4fe88391125236d61ba581",
+      "source": "external/fr0_engineering_protocol_preparation.json"
+    },
+    "reviews_and_execution/fr0_narrow_static_review.json": {
+      "bytes": 3714,
+      "sha256": "52a5f2447a475c06d92470ac1313eef17eb0723c29858cf5bb94ae4e2b051e26",
+      "source": "external/fr0_narrow_static_review.json"
+    },
+    "reviews_and_execution/fr0_publication.json": {
+      "bytes": 2008,
+      "sha256": "3b7872649377240379910697fd47f17c934d2c77359c2fab60ab00b908da506a",
+      "source": "external/fr0_publication.json"
+    },
+    "reviews_and_execution/publish_fr0_once.py": {
+      "bytes": 3870,
+      "sha256": "6f9768ed98df78a816ab36b6d0f328aa5158e092d20a6573e7afb8dfbeab868f",
+      "source": "external/publish_fr0_once.py"
+    },
+    "reviews_and_execution/run_fr0_checks_once.py": {
+      "bytes": 1879,
+      "sha256": "c4e13e7e103bb9639e929d805c96292d2ab8d36a98f20361c93f793ee2e854e5",
+      "source": "external/run_fr0_checks_once.py"
+    },
+    "reviews_and_execution/run_fr0_once.py": {
+      "bytes": 2389,
+      "sha256": "a8ad239f8030699903ebd621e35f1fd65fb86feec3eca28613c7b7b4df545938",
+      "source": "external/run_fr0_once.py"
+    },
+    "reviews_and_execution/archive_fr0_once.py": {
+      "bytes": 1682,
+      "sha256": "22735fe1866fd640ec032a72c138cf2e02b053525982dadfe6045612565bd797",
+      "source": "external/archive_fr0_once.py"
+    },
+    "reviews_and_execution/archive_fr0_guarded_once.py": {
+      "bytes": 1693,
+      "sha256": "61618fbba6b93c6996a027a89270b44b4594c756ca52c92bcf8231a21ecab1f4",
+      "source": "external/archive_fr0_guarded_once.py"
+    },
+    "reviews_and_execution/seal_fr0_preparation_once.py": {
+      "bytes": 6001,
+      "sha256": "9b5363fbc13c9112d44ef526480ae0a5031ac9c6a030290dcee861c9a1ae3216",
+      "source": "external/seal_fr0_preparation_once.py"
+    },
+    "reviews_and_execution/check_fr0_first_contract.py": {
+      "bytes": 13437,
+      "sha256": "3f87653fa6dce850e186cc2ca011caf2429361cc73b006affe571124c5b6872c",
+      "source": "external/check_fr0_first_contract.py"
+    },
+    "reviews_and_execution/check_fr0_new_metrics_once.py": {
+      "bytes": 5523,
+      "sha256": "35f97502fae4668aa001179b8d54072d23e0fc492f2fc76d588d2e07dfc4e950",
+      "source": "external/check_fr0_new_metrics_once.py"
+    },
+    "reviews_and_execution/read_fr0_reporting_once.py": {
+      "bytes": 5773,
+      "sha256": "7582de7823bcf991a3e00c8e35febc576ee0c583665f6e58f9131a18501e4003",
+      "source": "external/read_fr0_reporting_once.py"
+    },
+    "reviews_and_execution/fr0_next_decision_draft.md": {
+      "bytes": 8939,
+      "sha256": "010df346e12aac11a3ff67f10bfbd6608662f393888b0c33187e5d46ca5ec78e",
+      "source": "external/fr0_next_decision_draft.md"
+    },
+    "reviews_and_execution/fr0_next_decision_receipt.json": {
+      "bytes": 1439,
+      "sha256": "95a5fa2b453cfe66fc18fa84e6ea93c7bcf0c24129dea0361b456ac469e6a2d5",
+      "source": "external/fr0_next_decision_receipt.json"
+    },
+    "reviews_and_execution/fr0_gitattributes_fragment.txt": {
+      "bytes": 512,
+      "sha256": "f77f176d24d7f0c5475f9e427d798b22b9bc21e7559cc299670c501db5ab1314",
+      "source": "external/fr0_gitattributes_fragment.txt"
+    },
+    "reviews_and_execution/fr0_gitignore_fragment.txt": {
+      "bytes": 396,
+      "sha256": "201072e867a17ef8627c1b1d9584f5fc361eba678824ef27235ad1911187b5ad",
+      "source": "external/fr0_gitignore_fragment.txt"
+    },
+    "reviews_and_execution/fr0_delivery_helpers_preparation.json": {
+      "bytes": 2819,
+      "sha256": "34cc82c13aeb38121e94f26213ca31f2fb111f9f475402619b7c4d1221080b39",
+      "source": "external/fr0_delivery_helpers_preparation.json"
+    },
+    "reviews_and_execution/c4_free_root_fast_feedback_engineering_design.md": {
+      "bytes": 10613,
+      "sha256": "523023d7d30b8ac5f9bfb2b6f40ee0313c9f04f62d91ee9310b6b71f38426a00",
+      "source": "external/c4_free_root_fast_feedback_engineering_design.md"
+    },
+    "reviews_and_execution/c4_free_root_fast_feedback_engineering_design_receipt.json": {
+      "bytes": 2918,
+      "sha256": "24acb7f79114d51c1ac224ae6fa74ba4067a8347b128f2a6d26217835fcc640f",
+      "source": "external/c4_free_root_fast_feedback_engineering_design_receipt.json"
+    }
+  },
+  "first_six_new_checks_passed": true,
+  "final_protocol_pin_matches": true,
+  "original_source_bytes_preserved": true,
+  "tests_or_old_experiments_repeated": false,
+  "formal_physics_or_model_fit_calls": 0,
+  "production_source_writes": 0,
+  "automatic_retry": false,
+  "cost_before_manifest_write": {
+    "file_reads": 81,
+    "read_bytes": 499633,
+    "file_writes": 40,
+    "write_bytes": 249159
+  },
+  "wall_seconds_before_manifest_write": 0.40578080015257,
+  "cpu_seconds_before_manifest_write": 0.09375
+}

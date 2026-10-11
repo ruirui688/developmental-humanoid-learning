@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "FR0_before_result_decision_draft_only",
+  "draft": {
+    "path": "external\\fr0_next_decision_draft.md",
+    "bytes": 8939,
+    "sha256": "010df346e12aac11a3ff67f10bfbd6608662f393888b0c33187e5d46ca5ec78e"
+  },
+  "link_checks": [
+    {
+      "link": "CPU_CONTROL_COMPUTE_OPTIONS.md",
+      "exists": true
+    }
+  ],
+  "trailing_whitespace_free": true,
+  "source_materials": [
+    "cached FR0 protocol/interface",
+    "root transcription of Z2 results",
+    "external/CPU_CONTROL_COMPUTE_OPTIONS.md"
+  ],
+  "initial_optional_path_lookup_failure": "docs/CPU_CONTROL_COMPUTE_OPTIONS.md absent; rg found external file; no result data read",
+  "result_reads": 0,
+  "old_raw_reads": 0,
+  "FR0_output_reads": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "production_writes": 0,
+  "decision_scope": [
+    "complete engineering gate success opens only separate frozen contact-domain protocol preparation",
+    "failure preserves fees and requires one bounded saved-information explanation before next justified candidate",
+    "computation optimization cannot rescue old scientific gate"
+  ],
+  "unmeasured_source_filesystem_IO": "unknown_not_zero",
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c4_contact_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

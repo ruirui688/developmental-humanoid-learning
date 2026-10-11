@@ -678,6 +678,21 @@ H20/H50qv与H150v不劣门全部通过；原生H1/H10q仅报告，无新增veto�
 接着执行事前冻结Z2 cold/learned MPC/PD/zero完整同预算控制；不改已冻结controller与门。
 阶段报告检查提交推送后立即继续，持续目标active。
 
+### FR0自由root接触工程：首次必要新检查与准备封存
+
+[FR0协议](FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)在首次物理前固定：原自由root/仰卧资产，
+seed7800、1000zero+两目标各1000active、PD64/Kd(4,4)、2ms反馈、.5Nm，原保护和研究停止不放宽。
+三个阶段各至少一个left_arm-floor正法向力端点；完整两末200点窗四MAE≤.01rad才工程资格通过。
+生产代码与外部候选AST等价，runner仅绑定最终协议pin；六项新增纯检查首次通过，pytest .23s，
+wrapper .6356235s，无真实积分/正式学习；未重复旧suite或旧实验。
+[准备封存](../results/cpu_validation/2026-10-12_free_root_fast_feedback_engineering_preparation/manifest.json)
+40payload，81读499633bytes、含manifest41写259400bytes，wall/CPU .4065866/.09375s。
+保留候选原件、独立静态review、生产身份、首次stdio、执行/归档/新指标核验helpers和事前失败分支规则。
+准备不代表工程或科学通过。正常提交推送后从clean源码首次运行一次，不改任务/seed补跑。
+完整工程通过才另冻本域辨识/独立预测/匹配控制；失败按新保存证据有限说明，再选择一个有依据新设计。
+当前累计313297控制/2592970子步不变，online46452/offline7200scalar不变；C4及C5–C7未验收。
+持续目标active，提交推送后立即首次FR0，不停在准备交付。
+
 
 ### Z2首次完整匹配控制：原贡献门失败
 

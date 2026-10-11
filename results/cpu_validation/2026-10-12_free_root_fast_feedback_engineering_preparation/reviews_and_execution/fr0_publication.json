@@ -1,0 +1,57 @@
+{
+  "status": "published_before_first_new_checks",
+  "files": {
+    "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "original": {
+        "bytes": 9381,
+        "sha256": "41e9c323c51e4c3bc0e1f6cf4ea7e47c72b2c60777f3d8f2762839a0ff9011d3"
+      },
+      "published": {
+        "bytes": 9189,
+        "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86"
+      },
+      "change": "status header only; thresholds/budget/conditions unchanged"
+    },
+    "src/developmental_physics/free_root_fast_feedback_environment.py": {
+      "original": {
+        "bytes": 6259,
+        "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871"
+      },
+      "published": {
+        "bytes": 6259,
+        "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871"
+      },
+      "CRLF_to_LF_count": 0,
+      "AST_equivalent_except_publication_pin": true
+    },
+    "scripts/validate_free_root_fast_feedback_engineering.py": {
+      "original": {
+        "bytes": 24661,
+        "sha256": "ce2f6e542c025968d4f1076952018c92c25f88863151e2f8bacad143f2e9165e"
+      },
+      "published": {
+        "bytes": 24750,
+        "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752"
+      },
+      "CRLF_to_LF_count": 0,
+      "AST_equivalent_except_publication_pin": true
+    },
+    "tests/test_free_root_fast_feedback_engineering.py": {
+      "original": {
+        "bytes": 7383,
+        "sha256": "b10aaddbb7bfddb5a4275e1c2c5b14fc6a99c34bda68895f87479090bc81c117"
+      },
+      "published": {
+        "bytes": 7383,
+        "sha256": "b10aaddbb7bfddb5a4275e1c2c5b14fc6a99c34bda68895f87479090bc81c117"
+      },
+      "CRLF_to_LF_count": 0,
+      "AST_equivalent_except_publication_pin": true
+    }
+  },
+  "wall_seconds": 0.02992690005339682,
+  "cpu_seconds": 0.015625,
+  "external_originals_modified": false,
+  "model_fit_physics_or_test_calls": 0,
+  "automatic_retry": false
+}

@@ -1,0 +1,35 @@
+{
+  "argv": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_free_root_fast_feedback_engineering.py"
+  ],
+  "source_files": {
+    "src/developmental_physics/free_root_fast_feedback_environment.py": {
+      "bytes": 6259,
+      "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871"
+    },
+    "scripts/validate_free_root_fast_feedback_engineering.py": {
+      "bytes": 24750,
+      "sha256": "4c6b56a2bd020703955325ac5ff239f0a59f6013a2cd7cf55c2523dd74a3f752"
+    },
+    "tests/test_free_root_fast_feedback_engineering.py": {
+      "bytes": 7383,
+      "sha256": "b10aaddbb7bfddb5a4275e1c2c5b14fc6a99c34bda68895f87479090bc81c117"
+    },
+    "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md": {
+      "bytes": 9189,
+      "sha256": "5bb40312c37418b639f11ea32da007c3e5835a74ace19defe9c235e29bfe2c86"
+    }
+  },
+  "returncode": 0,
+  "wall_seconds": 0.6356234999839216,
+  "test_invocations": 1,
+  "scope": "six new FR0 permission/completeness/contact/audit-failure/study-stop/inheritance cases only",
+  "real_physics_or_formal_learning_calls": 0,
+  "synthetic_fixture_calls": "see saved test source; not claimed zero",
+  "old_tests_repeated": false,
+  "automatic_retry": false
+}

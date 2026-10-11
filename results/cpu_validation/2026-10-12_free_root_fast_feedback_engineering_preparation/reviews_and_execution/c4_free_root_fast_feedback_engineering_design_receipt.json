@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "status": "design_only_not_formal_protocol",
+  "draft": {
+    "path": "external\\c4_free_root_fast_feedback_engineering_design.md",
+    "bytes": 10613,
+    "sha256": "523023d7d30b8ac5f9bfb2b6f40ee0313c9f04f62d91ee9310b6b71f38426a00"
+  },
+  "link_checks": [
+    {
+      "link": "../src/developmental_physics/environment.py",
+      "exists": true
+    },
+    {
+      "link": "../src/developmental_physics/assets/ground_body.xml",
+      "exists": true
+    },
+    {
+      "link": "../docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_PROTOCOL.md",
+      "exists": true
+    }
+  ],
+  "trailing_whitespace_check_passed": true,
+  "production_files_written": 0,
+  "formal_execution_count": 0,
+  "raw_result_reads": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "RLS_updates": 0,
+  "old_metric_or_model_math_recomputations": 0,
+  "sources_read_scope": [
+    "src/developmental_physics/environment.py: configuration/reset/observation/diagnostics/base stops/step",
+    "src/developmental_physics/assets/ground_body.xml: unchanged free root/gravity/contact/asset",
+    "docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_PROTOCOL.md: original task/control/stop boundary",
+    "src/developmental_physics/pd_tail_control_development.py: narrow initial pose/two targets/prefix/StudyAbort references",
+    "src/developmental_physics/guard_pair_development.py: native_pair/native_study_abort definitions only",
+    "src/developmental_physics/probes.py: direction_record definition only",
+    "docs/FAST_FEEDBACK_ENGINEERING_PROTOCOL.md: time/population/terminal-window boundary only"
+  ],
+  "source_IO": "PowerShell Get-Content/rg bytes and OS IO unknown_not_zero",
+  "Git_status_command_count": 1,
+  "candidate_seed": 7800,
+  "seed_unused_status": "not independently checked against old raw; root verifies cached development seed ledger before formal freeze",
+  "candidate": {
+    "domain": "unchanged original supine free-root baseline ground body",
+    "physics_dt_s": 0.002,
+    "control_substeps": 1,
+    "kp": [
+      64,
+      64
+    ],
+    "kd": [
+      4,
+      4
+    ],
+    "torque_limit_nm": 0.5,
+    "prefix_controls": 1000,
+    "active_controls": 2000,
+    "max_controls": 3000,
+    "max_substeps": 3000
+  },
+  "known_interfaces_dependency": "original total-only contact telemetry cannot verify left_arm contact; add audit-only floor geom-pair and normal-force observations before freezing",
+  "counterfactual_limits": [
+    "G had shoulder Kd0; this candidate adds shoulder Kd4",
+    "feedback and study-check frequency both change",
+    "different seeds/domains/stopped runs do not isolate frequency or damping effect"
+  ],
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c4_contact_scientific_validation": false,
+  "c5_scientific_dependency_released": false
+}

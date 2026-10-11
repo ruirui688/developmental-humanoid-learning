@@ -1,0 +1,66 @@
+{
+  "status": "FR0_delivery_helpers_prepared_not_executed",
+  "helper_sources": {
+    "external/seal_fr0_preparation_once.py": {
+      "bytes": 6001,
+      "sha256": "9b5363fbc13c9112d44ef526480ae0a5031ac9c6a030290dcee861c9a1ae3216",
+      "AST_only_syntax_passed": true
+    },
+    "external/archive_fr0_guarded_once.py": {
+      "bytes": 1693,
+      "sha256": "61618fbba6b93c6996a027a89270b44b4594c756ca52c92bcf8231a21ecab1f4",
+      "AST_only_syntax_passed": true
+    },
+    "external/check_fr0_first_contract.py": {
+      "bytes": 13437,
+      "sha256": "3f87653fa6dce850e186cc2ca011caf2429361cc73b006affe571124c5b6872c",
+      "AST_only_syntax_passed": true
+    }
+  },
+  "new_helper_AST_invocations": 3,
+  "new_helper_source_reads": 3,
+  "new_helper_source_read_bytes": 21131,
+  "earlier_existing_helper_review": {
+    "source_reads": 5,
+    "source_bytes": 13008
+  },
+  "earlier_goal_and_ledger_review": {
+    "reads": 2,
+    "bytes": 75701,
+    "goal_sha256": "985d8252e5b6e23ff77756466c6a164faf93c5a5f836c29dc3f685a485c24022",
+    "ledger_sha256": "758580e549668bd5d18aa6d0068e05de30f87cba68289820fbe3fecceb2b4a77"
+  },
+  "additional_display_source_read": {
+    "path": "external/seal_fr0_preparation_once.py",
+    "reads": 1,
+    "bytes": "unmeasured_before_final_source_revision"
+  },
+  "metadata_enumeration": "one initial filename-only rg included CPU venv and was truncated; corrected root-only listing; no raw/content reads from that listing",
+  "execution_order": [
+    "Z2 first result archive/check (root done)",
+    "FR0 publication and root attributes/ignore rules (root done)",
+    "first six checks once (root done)",
+    "seal_fr0_preparation_once.py once",
+    "root required checks and FR0 commit/push",
+    "clean committed source",
+    "run_fr0_once.py once",
+    "archive_fr0_guarded_once.py once",
+    "check_fr0_first_contract.py ARCHIVE/raw --output FRESH_REPORT",
+    "root new-metrics/reporting/next-decision and required checks/commit/push"
+  ],
+  "root_controls_execution": true,
+  "formal_physics_calls": 0,
+  "raw_trajectory_reads": 0,
+  "model_or_fit_calls": 0,
+  "tests_repeated": false,
+  "production_source_writes": 0,
+  "commits_or_pushes": 0,
+  "automatic_retry": false,
+  "bounded_risks": [
+    "Git source normalization must preserve first-check pins; root source gate verifies committed bytes.",
+    "Guard rejects missing/unfinished origin and missing success payloads; failed serialization may lack JSON payloads, with first stdio/execution still archived.",
+    "Thin checker validates saved summary identity/flags/gates only; it does not validate trajectories or establish scientific success."
+  ],
+  "wall_seconds_before_receipt_write": 0.0038224998861551285,
+  "cpu_seconds_before_receipt_write": 0.0
+}

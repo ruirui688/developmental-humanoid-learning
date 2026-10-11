@@ -1,0 +1,81 @@
+{
+  "status": "external_FR0_protocol_candidate_ready_unpublished_unexecuted",
+  "candidate": {
+    "path": "external\\FR0_ENGINEERING_PROTOCOL_CANDIDATE.md",
+    "source_reads": 1,
+    "bytes": 9381,
+    "sha256": "41e9c323c51e4c3bc0e1f6cf4ea7e47c72b2c60777f3d8f2762839a0ff9011d3",
+    "CR_bytes": 0,
+    "LF_bytes": 72,
+    "production_publication": false,
+    "model_fit_physics_calls": 0
+  },
+  "production_path": "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+  "source_design_first_read": {
+    "path": "external\\c4_free_root_fast_feedback_engineering_design.md",
+    "reads": 1,
+    "bytes": 10613,
+    "sha256": "523023d7d30b8ac5f9bfb2b6f40ee0313c9f04f62d91ee9310b6b71f38426a00"
+  },
+  "seed_search": "parent reported one public exact-integer search for 7800 with zero matches; no raw seed audit",
+  "interfaces_confirmed_by": "/root/bounded_physics_design via cached preparation messages",
+  "implementation_paths": [
+    "src/developmental_physics/free_root_fast_feedback_environment.py",
+    "scripts/validate_free_root_fast_feedback_engineering.py",
+    "tests/test_free_root_fast_feedback_engineering.py"
+  ],
+  "frozen_candidate_choices": {
+    "seed": 7800,
+    "pose": "supine",
+    "fresh_trials": 1,
+    "resets": 1,
+    "physics_dt_seconds": 0.002,
+    "control_substeps": 1,
+    "prefix": 1000,
+    "target_A": 1000,
+    "target_B": 1000,
+    "targets_relative_rad": [
+      0.04,
+      0.08
+    ],
+    "PD_Kp": [
+      64,
+      64
+    ],
+    "PD_Kd": [
+      4,
+      4
+    ],
+    "study_stop_abs_q_minus_qref_rad": 0.12,
+    "study_stop_abs_v_rad_s": 1,
+    "equality_stops": true,
+    "complete_window_endpoints_each": 200,
+    "all_four_MAE_max_rad": 0.01,
+    "minimum_positive_left_arm_floor_endpoints_each_complete_phase": 1,
+    "complete_contact_proportion_denominator_each_phase": 1000,
+    "engineering_only": true,
+    "C4_C5_scientific_flags": false
+  },
+  "audit_contract": "all ncon pair inspections; one added contactForce per floor pair including Fn<=0; sum max(0,Fn) by class and positive endpoint count; no extra forward/step; native paid endpoint/effort retained before audit; partial contact unknown",
+  "independent_semantic_review": {
+    "agent": "/root/next_control_direction/y_static_contract_review",
+    "new_source_reads": 0,
+    "execution": 0,
+    "finding": "qref from prefix999; any trial failure makes all four windows unavailable; denominator and intermittency explicit; Kd/frequency/contact not causal comparison"
+  },
+  "checks": {
+    "cached_trailing_whitespace": 0,
+    "git_diff_check": "returned zero; ignored external candidate may not be included",
+    "markdown_links": "none"
+  },
+  "production_publication": false,
+  "experiment_imports": 0,
+  "new_Z2_output_reads": 0,
+  "old_raw_reads": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "physical_calls": 0,
+  "scientific_metric_recalculations": 0,
+  "commit_push": 0
+}
+

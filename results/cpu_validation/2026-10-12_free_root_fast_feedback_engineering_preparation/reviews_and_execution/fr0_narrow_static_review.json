@@ -1,0 +1,80 @@
+{
+  "status": "FR0_narrow_source_only_review_complete_no_blocking_finding",
+  "scope": "three new external candidate files; protocol reused from cache; no candidate or experimental execution",
+  "source_reads": 3,
+  "source_bytes": 38303,
+  "files": [
+    {
+      "path": "external\\c4_free_feedback_candidate\\free_root_fast_feedback_environment.py",
+      "reads": 1,
+      "bytes": 6259,
+      "sha256": "6fddf2d2e3ea64cfd8866929ae9d015983923205634fa1d5bf98dd822c12a871"
+    },
+    {
+      "path": "external\\c4_free_feedback_candidate\\validate_free_root_fast_feedback_engineering.py",
+      "reads": 1,
+      "bytes": 24661,
+      "sha256": "ce2f6e542c025968d4f1076952018c92c25f88863151e2f8bacad143f2e9165e"
+    },
+    {
+      "path": "external/c4_free_feedback_candidate/test_free_root_fast_feedback_engineering.py",
+      "reads": 1,
+      "bytes": 7383,
+      "sha256": "b10aaddbb7bfddb5a4275e1c2c5b14fc6a99c34bda68895f87479090bc81c117",
+      "reader": "/root/next_control_direction/y_static_contract_review"
+    }
+  ],
+  "checks": [
+    {
+      "topic": "physical_only_substeps_and_inheritance",
+      "finding": "constructor passes ExplorationConfig(control_substeps=1); no reset/step/observation/stop overrides; physical audit reads arrays and inherited config"
+    },
+    {
+      "topic": "paid_native_before_audit",
+      "finding": "confirmed delta and returned after observation/diagnostics are journalled before audit/StudyAbort; failure annotation preserves paid row"
+    },
+    {
+      "topic": "audit_failure_effort",
+      "finding": "complete_native_endpoint and captured_native are set before audit; effort uses native endpoints separately; missing contact counts and lower-bound flags remain explicit"
+    },
+    {
+      "topic": "force_query_and_classification",
+      "finding": "all ncon pairs inspected, only floor pairs get one contactForce including Fn<=0; fixed left_arm/feet names, finite force/distance, positive=max(0,Fn); no extra forward/step"
+    },
+    {
+      "topic": "phase_contact_population",
+      "finding": "qualification requires each prefix/A/B confirmed and observed=1000, left_arm positive endpoints>=1; complete fractions therefore denominator1000; partial fractions use actual paid population with unknown/lower-bound flags"
+    },
+    {
+      "topic": "MAE_complete_first",
+      "finding": "engineering_metrics requires whole-trial complete for both 200-endpoint windows; partial/stop/exception yields all four unavailable"
+    },
+    {
+      "topic": "source_gate_deferred_import",
+      "finding": "PROTOCOL_PIN=None rejects source_gate before git/read/import; canonical production runner path and clean committed source checks precede environment import"
+    },
+    {
+      "topic": "six_existing_pure_tests",
+      "finding": "source covers paid-native/audit effort, partial windows, contact gate, equality stop, prefix no StudyAbort and AST-inheritance/no-explicit-forward intent; no new cases added"
+    }
+  ],
+  "implementation_findings": [],
+  "source_only_repair_recommendations": [],
+  "test_coverage_limits": "only-substeps config, real force classification/zero-force and None-pin refusal not separately executed/tested here; source statically inspected only",
+  "publication_boundary": "flat external candidate tests use production ROOT layout and should only execute after root publishes final LF/source pins",
+  "production_publication": false,
+  "protocol_new_reads": 0,
+  "AST": 0,
+  "fixture_executions": 0,
+  "experiment_imports": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "physical_calls": 0,
+  "Z2_output_reads": 0,
+  "old_raw_reads": 0,
+  "old_math_rechecks": 0,
+  "source_modifications": 0,
+  "new_test_cases": 0,
+  "commit_push": 0
+}
+
