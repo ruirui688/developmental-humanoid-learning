@@ -1,8 +1,9 @@
-"""Staged independent frozen single-shoulder final audit; standard library, no physics/fitting imports.
+"""Independent declared frozen local-joint audit; standard library, no physics/fitting imports.
 Native research stops and all paid costs are independently reconstructed.
 """
 from __future__ import annotations
 from collections import Counter
+from dataclasses import dataclass
 from datetime import datetime, timezone
 import argparse
 import gzip
@@ -52,10 +53,102 @@ MPC_CONFIG = {"horizon": 15, "candidate_count": 9, "torque_limit_nm": .5,
               "velocity_limit_rad_s": 1.5}
 PROTOCOL = "docs/LOCAL_FROZEN_VALIDATION_PROTOCOL.md"
 ASSET = "src/developmental_physics/assets/ground_body.xml"
-REQUIRED_SOURCES = {PROTOCOL, ASSET, "pyproject.toml"} | {
+REQUIRED_SOURCES = frozenset({PROTOCOL, ASSET, "pyproject.toml"} | {
     "src/developmental_physics/"+name for name in
     ("__init__.py", "environment.py", "collect.py", "probes.py", "local_model.py",
-     "local_integration.py", "local_frozen_validation.py", "feedback_validate.py")}
+     "local_integration.py", "local_frozen_validation.py", "feedback_validate.py")})
+BASE_REQUIRED_SOURCES = REQUIRED_SOURCES - {PROTOCOL}
+
+@dataclass(frozen=True)
+class AuditSpec:
+    """Trusted source declaration, never inferred from archive metadata.
+
+    Tuple fields are intentional: a frozen dataclass with mutable lists or dicts
+    would still permit changing the accepted experiment after construction.
+    None PD gains permit an explicit unfinished declaration, but block reads.
+    """
+    suite: str
+    pose: str
+    joint_index: int
+    split: str
+    seeds: tuple[int, ...]
+    reset_seed_pairs: tuple[tuple[int, int], ...]
+    protocol: str
+    pd_kp: float | None
+    pd_kd: float | None
+    calibration_schedule: str = "short"
+    claim_boundary: str = "Declared local protocol only; no task acquisition, real robot or unknown-dynamics generalization."
+    pd_selection_source: tuple[tuple[str, str | int], ...] = ()
+
+    def __post_init__(self):
+        if (type(self.joint_index) is not int or not 0 <= self.joint_index < 8
+            or type(self.seeds) is not tuple or len(self.seeds) != 3
+            or any(type(seed) is not int for seed in self.seeds)
+            or len(set(self.seeds)) != 3
+            or type(self.reset_seed_pairs) is not tuple
+            or any(type(pair) is not tuple or len(pair) != 2
+                   or any(type(x) is not int for x in pair) for pair in self.reset_seed_pairs)
+            or len(self.reset_seed_pairs) != 3
+            or {pair[0] for pair in self.reset_seed_pairs} != set(self.seeds)
+            or any(not 0 <= pair[1] < 2**32 for pair in self.reset_seed_pairs)
+            or any(type(x) is not str or not x for x in
+                   (self.suite, self.pose, self.split, self.protocol, self.claim_boundary))):
+            raise ValueError("Immutable complete joint/seed/protocol declaration required.")
+        if Path(self.protocol).is_absolute() or ".." in Path(self.protocol).parts:
+            raise ValueError("Repository-relative protocol path required.")
+        if (type(self.pd_selection_source) is not tuple
+            or any(type(pair) is not tuple or len(pair) != 2
+                   or type(pair[0]) is not str or type(pair[1]) not in (str, int)
+                   for pair in self.pd_selection_source)
+            or len({pair[0] for pair in self.pd_selection_source}) != len(self.pd_selection_source)):
+            raise ValueError("Immutable unique PD selection provenance required.")
+
+    @property
+    def reset_seeds(self):
+        return dict(self.reset_seed_pairs)
+
+    @property
+    def pd_gains(self):
+        return {"kp": self.pd_kp, "kd": self.pd_kd}
+
+    @property
+    def required_sources(self):
+        return BASE_REQUIRED_SOURCES | {self.protocol}
+
+    def require_frozen(self):
+        if (self.calibration_schedule not in ("short", "reordered")
+            or not all(finite(x) and x >= 0 for x in (self.pd_kp, self.pd_kd))):
+            raise ValueError("Schedule and PD gains must be frozen before archive metadata or trace is read.")
+
+    def record(self):
+        return {"suite": self.suite, "pose": self.pose, "joint_index": self.joint_index,
+                "split": self.split, "seeds": list(self.seeds),
+                "reset_seeds": self.reset_seeds, "protocol": self.protocol,
+                "pd_gains": self.pd_gains, "calibration_schedule": self.calibration_schedule,
+                "claim_boundary": self.claim_boundary,
+                "pd_selection_source": dict(self.pd_selection_source)}
+
+
+SHOULDER_FINAL_SPEC = AuditSpec(
+    suite="shoulder_final", pose="supine", joint_index=0, split="final_holdout",
+    seeds=(20, 21, 22),
+    reset_seed_pairs=((20, 1822509288), (21, 2605417566), (22, 1950464737)),
+    protocol="docs/LOCAL_FROZEN_VALIDATION_PROTOCOL.md", pd_kp=64., pd_kd=0.,
+    claim_boundary="Frozen single-shoulder protocol only; no task acquisition, real robot or unknown-dynamics generalization.")
+ELBOW_DEVELOPMENT_SPEC = AuditSpec(
+    suite="elbow_development", pose="supine", joint_index=1, split="development",
+    seeds=(0, 1, 2),
+    reset_seed_pairs=((0, 3757552657), (1, 1641411168), (2, 2001025171)),
+    protocol="docs/ELBOW_BODY_DEVELOPMENT_PROTOCOL.md", pd_kp=64., pd_kd=1.,
+    claim_boundary="Elbow recipe-transfer development only; no new holdout, full-body or real-robot claim.",
+    pd_selection_source=(
+        ("source_commit", "91223b39c86fbeb09f7bc399229789b1e00ce181"),
+        ("audit_sha256", "d84ad31b28f7fcc4ded8003b2503138a3cacc9f9b2fed33bf675758e43100571"),
+        ("summary_sha256", "5aaefe21d6aa8314673a5560522e8865123acda318e833b4951f4c5d00efc3e8"),
+        ("candidate", 8), ("development_control_calls", 7521),
+        ("development_physics_substeps", 75210), ("body_model_updates", 0),
+    ))
+
 
 STUDY_POSITION_LIMIT = .12
 STUDY_VELOCITY_LIMIT = 1.0
@@ -108,8 +201,11 @@ def replay_rls(theta, covariance, features, native_next_v):
 
 def replay_mpc(theta, qref, q, v, target, previous, limits):
     """All nine H15 constant candidates; deterministic public tie break."""
-    if not all(finite(x) for x in [target, previous, *limits]):
+    if len(limits) != 2 or not all(finite(x) for x in [qref, q, v, target, previous, *limits]):
         raise ValueError("Finite planner inputs required.")
+    target_lower, target_upper = max(qref-.15, limits[0]+.03), min(qref+.15, limits[1]-.03)
+    if not target_lower <= target <= target_upper:
+        raise ValueError("target must be local and inside the public limit margin")
     lower, upper = max(qref-.15, limits[0]-.03), min(qref+.15, limits[1]+.03)
     feasible, calls = [], 0
     for index in range(9):
@@ -256,7 +352,7 @@ def new_risk():
             "target_guarded_substeps": 0, "physical_substeps": 0, "returned_endpoint_samples": 0}
 
 
-def record_risk(risk, row, ranges):
+def record_risk(risk, row, ranges, *, joint_index=0):
     d = row["diagnostics"]
     risk["ground_force_peak_n"] = max(risk["ground_force_peak_n"], *d["substep_ground_normal_forces"], 0.)
     risk["ground_normal_impulse_ns"] += sum(d["substep_ground_normal_forces"])*PHYSICS_DT
@@ -269,7 +365,7 @@ def record_risk(risk, row, ranges):
         risk["guard_margin_intrusion_peak_rad"][j] = max(risk["guard_margin_intrusion_peak_rad"][j], limits[0]+.08-q, q-limits[1]+.08)
         risk["permission_screened_substeps_by_joint"][j] += sum(a[j] != row["requested_torque"][j] for a in d["applied_torque_history"])
     risk["guarded_substeps"] += d["guarded_substeps"]
-    risk["target_guarded_substeps"] += sum(a[0] != row["requested_torque"][0] for a in d["applied_torque_history"])
+    risk["target_guarded_substeps"] += sum(a[joint_index] != row["requested_torque"][joint_index] for a in d["applied_torque_history"])
     risk["physical_substeps"] += d["executed_substeps"]
     risk["returned_endpoint_samples"] += 1
 
@@ -290,15 +386,15 @@ def verify_budget_bounds(ep, checks, location):
                  "frozen_trial_budget_cap", location)
 
 
-def reconcile_effort(ev, phase, observed, paid, raw_substeps, exceptions, checks, location):
+def reconcile_effort(ev, phase, observed, paid, raw_substeps, exceptions, checks, location, *, joint_index=0):
     """Recover known paid requests; absent realized history remains a lower bound."""
     missing, known = paid-raw_substeps, dict(observed)
     commands = [r.get("requested_torque") for r in exceptions if r.get("phase") == phase]
     recoverable = missing == 0 or (0 < missing <= 10 and len(commands) == 1
         and isinstance(commands[0], list) and len(commands[0]) == 8
-        and all(finite(u) and abs(u) <= .5 for u in commands[0]) and commands[0][1:] == [0.]*7)
+        and all(finite(u) and abs(u) <= .5 for u in commands[0]) and all(u == 0. for j, u in enumerate(commands[0]) if j != joint_index))
     if missing > 0 and recoverable:
-        u = commands[0][0]
+        u = commands[0][joint_index]
         known["requested_absolute_nm_s"] += abs(u)*missing*PHYSICS_DT
         known["requested_squared_nm2_s"] += u*u*missing*PHYSICS_DT
     recorded, measured = ev["phase_effort"][phase], ev["phase_actual_effort_substeps"][phase]
@@ -322,7 +418,7 @@ def reconcile_effort(ev, phase, observed, paid, raw_substeps, exceptions, checks
             "semantics": "raw-history actual lower bound when telemetry is absent; collector measurement completeness is separate"}
 
 
-def verify_transition(row, previous, counters, ranges, checks, location):
+def verify_transition(row, previous, counters, ranges, checks, location, *, joint_index=0):
     """Validate native fields and every saved physical-substep diagnostic."""
     before, after = row["observation_before"], row["observation_after"]
     for obs in (before, after):
@@ -333,7 +429,7 @@ def verify_transition(row, previous, counters, ranges, checks, location):
     qpos, qvel = vector(row["qpos"], 15), vector(row["qvel"], 14)
     checks.check(after["joint_position"] == qpos[7:] and after["joint_velocity"] == qvel[6:], "native_encoder_mapping", location)
     request = vector(row["requested_torque"], 8)
-    checks.check(abs(request[0]) <= .5 and request[1:] == [0.]*7, "shared_permission_other_joints_zero", location)
+    checks.check(abs(request[joint_index]) <= .5 and all(u == 0. for j, u in enumerate(request) if j != joint_index), "shared_permission_other_joints_zero", location)
     diagnostic, index = row["diagnostics"], row["step_index"]
     n = diagnostic["executed_substeps"]
     checks.check(type(diagnostic.get("terminated")) is bool, "boolean_environment_stop", location)
@@ -369,11 +465,11 @@ def verify_transition(row, previous, counters, ranges, checks, location):
     return n
 
 
-def state_coverage(calibration_rows, control_rows, qref):
+def state_coverage(calibration_rows, control_rows, qref, *, joint_index=0):
     """Public q/v support and nearest distances; envelope is not a safety set."""
-    calibration = [(r["observation_before"]["joint_position"][0]-qref, r["observation_before"]["joint_velocity"][0])
+    calibration = [(r["observation_before"]["joint_position"][joint_index]-qref, r["observation_before"]["joint_velocity"][joint_index])
         for r in calibration_rows if r["step_index"] >= 100 and r["diagnostics"]["executed_substeps"] == 10]
-    control = [(r["observation_before"]["joint_position"][0]-qref, r["observation_before"]["joint_velocity"][0])
+    control = [(r["observation_before"]["joint_position"][joint_index]-qref, r["observation_before"]["joint_velocity"][joint_index])
         for r in control_rows if r["step_index"] >= 100 and r["diagnostics"]["executed_substeps"] == 10]
     if not calibration:
         return {"calibration_native_samples": 0, "control_native_samples": len(control), "available": False}
@@ -468,7 +564,7 @@ def stop_flags(row):
     return {'study': study, 'environment': env, 'any': study or env}
 
 
-def valid_window(indexed, start, horizon):
+def valid_window(indexed, start, horizon, *, joint_index=0):
     segment = []
     for index in range(start, start+horizon):
         row = indexed.get(index)
@@ -479,9 +575,9 @@ def valid_window(indexed, start, horizon):
         if row['step_index'] != index:
             return None, 'nonconsecutive_step_index'
         before, after = row['observation_before'], row['observation_after']
-        if not all(finite(obs[key][0]) for obs in (before, after) for key in ('joint_position', 'joint_velocity')):
+        if not all(finite(obs[key][joint_index]) for obs in (before, after) for key in ('joint_position', 'joint_velocity')):
             return None, 'invalid_native_state'
-        if not finite(row['requested_torque'][0]):
+        if not finite(row['requested_torque'][joint_index]):
             return None, 'invalid_request'
         diagnostic = row['diagnostics']
         if type(diagnostic['executed_substeps']) is not int or diagnostic['executed_substeps'] != 10:
@@ -501,11 +597,11 @@ def valid_window(indexed, start, horizon):
     return segment, None
 
 
-def window_denominators(indexed, active_steps, horizon):
+def window_denominators(indexed, active_steps, horizon, *, joint_index=0):
     expected, valid, terminal, study, env, both = max(active_steps-horizon+1, 0), 0, 0, 0, 0, 0
     excluded = Counter()
     for start in range(100, 100+expected):
-        segment, reason = valid_window(indexed, start, horizon)
+        segment, reason = valid_window(indexed, start, horizon, joint_index=joint_index)
         if reason:
             excluded[reason] += 1
         else:
@@ -580,10 +676,10 @@ def trace_payload(row):
     return {key: row[key] for key in ("phase", "target_q", "requested_torque", "observation_before",
                                      "observation_after", "qpos", "qvel", "diagnostics")}
 
-def replay_update(item, row, structure, state, qref, checks, location, *, exception=False):
+def replay_update(item, row, structure, state, qref, checks, location, *, exception=False, joint_index=0):
     """Only an explicitly recorded successful atomic update consumes one replay."""
-    q, v = (row["observation_before"][k][0] for k in ("joint_position", "joint_velocity"))
-    u, next_v = row["requested_torque"][0], row["observation_after"]["joint_velocity"][0]
+    q, v = (row["observation_before"][k][joint_index] for k in ("joint_position", "joint_velocity"))
+    u, next_v = row["requested_torque"][joint_index], row["observation_after"]["joint_velocity"][joint_index]
     features = feature_vector(qref, q, v, u, structure)
     before_hash = state_hash(qref, state)
     predicted = predict(state["observed_theta"], qref, q, v, u)
@@ -621,21 +717,21 @@ def verify_snapshot(saved, state, qref, checks, location):
     state["unreconstructed_updates"] = count-state["updates"]
     return count == state["updates"]
 
-def diagnose_windows(rows, active_steps, qref, models):
+def diagnose_windows(rows, active_steps, qref, models, *, joint_index=0):
     indexed = {r["step_index"]: r for r in rows if "collector_exception" not in r}
     predictors = {**models, "persistence": None}
     reports = []
     for horizon in HORIZONS:
-        denominator = window_denominators(indexed, active_steps, horizon)
+        denominator = window_denominators(indexed, active_steps, horizon, joint_index=joint_index)
         errors = {name: {"q": [], "v": [], "path_q": [], "path_v": [], "invalid": 0} for name in predictors}
         for start in range(100, 100+max(active_steps-horizon+1, 0)):
-            segment, reason = valid_window(indexed, start, horizon)
+            segment, reason = valid_window(indexed, start, horizon, joint_index=joint_index)
             if reason:
                 continue
             first = segment[0]["observation_before"]
-            q, v = first["joint_position"][0], first["joint_velocity"][0]
-            requests = [r["requested_torque"][0] for r in segment]
-            truth = [(r["observation_after"]["joint_position"][0], r["observation_after"]["joint_velocity"][0]) for r in segment]
+            q, v = first["joint_position"][joint_index], first["joint_velocity"][joint_index]
+            requests = [r["requested_torque"][joint_index] for r in segment]
+            truth = [(r["observation_after"]["joint_position"][joint_index], r["observation_after"]["joint_velocity"][joint_index]) for r in segment]
             for name, theta in predictors.items():
                 values = errors[name]
                 try:
@@ -656,13 +752,13 @@ def diagnose_windows(rows, active_steps, qref, models):
                 "path_velocity_rmse_rad_s": rmse(e["path_v"])} for name, e in errors.items()}})
     return reports
 
-def conditional_metrics(rows):
+def conditional_metrics(rows, *, joint_index=0):
     """Every amplitude/block and control switch/hold is reported, including zero."""
     groups = {}
     for r in rows:
         if r["step_index"] < 100 or "collector_exception" in r:
             continue
-        index, u = r["step_index"]-100, r["requested_torque"][0]
+        index, u = r["step_index"]-100, r["requested_torque"][joint_index]
         labels = ["abs_u="+str(abs(u)), "signed_u="+str(u)]
         if r["phase"] in ("calibration", "prediction"):
             width = 30 if r["phase"] == "calibration" else 20
@@ -674,21 +770,21 @@ def conditional_metrics(rows):
             values["count"] += 1
             complete_interval = r["diagnostics"]["executed_substeps"] == 10
             for name, (pq, pv) in (r["predicted_next_qv"].items() if complete_interval else []):
-                values["q"].setdefault(name, []).append(r["observation_after"]["joint_position"][0]-pq)
-                values["v"].setdefault(name, []).append(r["observation_after"]["joint_velocity"][0]-pv)
+                values["q"].setdefault(name, []).append(r["observation_after"]["joint_position"][joint_index]-pq)
+                values["v"].setdefault(name, []).append(r["observation_after"]["joint_velocity"][joint_index]-pv)
             if r["target_q"] is not None and complete_interval:
-                values["tracking"].append(r["observation_after"]["joint_position"][0]-r["target_q"])
+                values["tracking"].append(r["observation_after"]["joint_position"][joint_index]-r["target_q"])
             n, history = r["diagnostics"]["executed_substeps"], r["diagnostics"]["applied_torque_history"]
             values["effort"][EFFORT_KEYS[0]] += abs(u)*n*PHYSICS_DT
             values["effort"][EFFORT_KEYS[1]] += u*u*n*PHYSICS_DT
-            values["effort"][EFFORT_KEYS[2]] += sum(abs(a[0]) for a in history)*PHYSICS_DT
-            values["effort"][EFFORT_KEYS[3]] += sum(a[0]*a[0] for a in history)*PHYSICS_DT
+            values["effort"][EFFORT_KEYS[2]] += sum(abs(a[joint_index]) for a in history)*PHYSICS_DT
+            values["effort"][EFFORT_KEYS[3]] += sum(a[joint_index]*a[joint_index] for a in history)*PHYSICS_DT
     return {label: {"returned_transition_count": e["count"], "position_prediction_rmse": {n: rmse(v) for n, v in e["q"].items()},
         "velocity_prediction_rmse": {n: rmse(v) for n, v in e["v"].items()}, "tracking_rmse_rad": rmse(e["tracking"]),
         "known_substep_effort": e["effort"]} for label, e in sorted(groups.items())}
 
 
-def control_tail_metrics(rows):
+def control_tail_metrics(rows, *, joint_index=0):
     """Fixed last twenty planned endpoints of each target; descriptive only."""
     result = {}
     for name, first in (("first", 80), ("second", 180)):
@@ -697,7 +793,7 @@ def control_tail_metrics(rows):
                     and 100+first <= r["step_index"] < 120+first]
         complete = [r for r in selected if r["diagnostics"]["executed_substeps"] == 10
                     and r["target_q"] is not None]
-        errors = [r["observation_after"]["joint_position"][0]-r["target_q"] for r in complete]
+        errors = [r["observation_after"]["joint_position"][joint_index]-r["target_q"] for r in complete]
         stopped = any(stop_flags(r)["any"] for r in selected)
         full_indices = {r["step_index"] for r in complete}
         result[name] = {
@@ -734,9 +830,9 @@ def calibration_schedule_spec():
         "causal_claim": "Total temporal-reordering effect; not isolated position exposure"}
 
 
-def normalize_study_row(row, qref, checks, location):
+def normalize_study_row(row, qref, checks, location, *, joint_index=0):
     """Reconstruct endpoint condition; raw flag cannot establish stop truth."""
-    q, v = (row["observation_after"][key][0] for key in ("joint_position", "joint_velocity"))
+    q, v = (row["observation_after"][key][joint_index] for key in ("joint_position", "joint_velocity"))
     condition = study_condition(qref, q, v, row["phase"])
     expected = None
     if condition["triggered"]:
@@ -763,20 +859,23 @@ def normalize_study_row(row, qref, checks, location):
 
 
 
-def audit_archive(path, checks, git_root=ROOT):
+def audit_archive(path, checks, git_root=ROOT, *, spec=SHOULDER_FINAL_SPEC):
+    joint_index = spec.joint_index
     path = Path(path).resolve()
-    metadata = require_final(path)
-    ranges, input_hashes = verify_sources(path, metadata, checks, git_root)
-    checks.compare(metadata["protocol"], {"path": PROTOCOL, "sha256": metadata["source_sha256"][PROTOCOL]}, "frozen_protocol")
+    metadata = require_final(path, spec=spec)
+    ranges, input_hashes = verify_sources(path, metadata, checks, git_root, required=spec.required_sources)
+    checks.compare(metadata["protocol"], {"path": spec.protocol, "sha256": metadata["source_sha256"][spec.protocol]}, "frozen_protocol")
+    if spec.pd_selection_source:
+        checks.compare(metadata.get("pd_selection_source"), dict(spec.pd_selection_source), "frozen_pd_selection_source")
     checks.compare(metadata["environment_config"], ENVIRONMENT, "environment_and_permission")
     checks.compare(metadata["integration"], INTEGRATION, "frozen_integration")
     checks.compare(metadata["evaluation_prediction_integration"], INTEGRATION, "evaluation_integration")
     checks.compare(metadata["structures"], ["hinge5"], "frozen_structures")
-    checks.compare(metadata, {"calibration_dose": "old", "model_structure": "hinge5", "calibration_schedules": [FROZEN_FINAL_SCHEDULE]}, "frozen_recipe")
-    checks.compare(metadata["comparison"], {"methods": list(CONTROL_KINDS), "single_schedule": FROZEN_FINAL_SCHEDULE, "single_fixed_dose": "old", "single_fixed_structure": "hinge5"}, "frozen_comparison")
-    checks.compare(metadata["pd_gains"], PD_GAINS, "fixed_pd_gains")
-    checks.compare(metadata["pd_controller_spec"], {"implementation": "feedback_validate.pd_request", "kp": PD_GAINS["kp"], "kd": PD_GAINS["kd"], "input": "current encoder q/v and currently disclosed target", "permission_nm": .5, "body_model_input": False, "gain_updates": 0}, "fixed_pd_controller_spec")
-    checks.compare(metadata["suite_spec"], {"pose": "supine", "joint": 0, "seeds": SEEDS, "split": "final_holdout", "pd_kp": PD_GAINS["kp"], "pd_kd": PD_GAINS["kd"]}, "fixed_final_suite")
+    checks.compare(metadata, {"calibration_dose": "old", "model_structure": "hinge5", "calibration_schedules": [spec.calibration_schedule]}, "frozen_recipe")
+    checks.compare(metadata["comparison"], {"methods": list(CONTROL_KINDS), "single_schedule": spec.calibration_schedule, "single_fixed_dose": "old", "single_fixed_structure": "hinge5"}, "frozen_comparison")
+    checks.compare(metadata["pd_gains"], spec.pd_gains, "fixed_pd_gains")
+    checks.compare(metadata["pd_controller_spec"], {"implementation": "feedback_validate.pd_request", "kp": spec.pd_gains["kp"], "kd": spec.pd_gains["kd"], "input": "current encoder q/v and currently disclosed target", "permission_nm": .5, "body_model_input": False, "gain_updates": 0}, "fixed_pd_controller_spec")
+    checks.compare(metadata["suite_spec"], {"pose": spec.pose, "joint": joint_index, "seeds": spec.seeds, "split": spec.split, "pd_kp": spec.pd_gains["kp"], "pd_kd": spec.pd_gains["kd"]}, "fixed_final_suite")
     checks.compare(metadata["study_abort_spec"], study_abort_spec(), "frozen_study_abort")
     checks.compare(metadata["calibration_schedule_definition"], calibration_schedule_spec(), "frozen_schedule_definition")
     checks.check(finite(metadata.get("cpu_seconds")) and metadata["cpu_seconds"] >= 0 and finite(metadata.get("wall_seconds")) and metadata["wall_seconds"] >= 0, "finite_process_wall_timing")
@@ -786,7 +885,7 @@ def audit_archive(path, checks, git_root=ROOT):
     checks.compare(metadata, {"gpu": None, "prefix_steps": 100, "calibration_steps": 300,
         "prediction_steps": 100, "control_steps_per_trial": 200, "teacher_calls": 0,
         "external_demonstration_samples": 0, "policy_parameter_updates": 0}, "frozen_metadata")
-    plans = planned_matrix()
+    plans = planned_matrix(spec=spec)
     checks.compare(metadata["planned_episodes"], plans, "frozen_full_plan")
     checks.compare(metadata["planned_episode_count"], 21, "planned_trials")
     checks.compare(metadata["maximum_control_steps"], 6000, "planned_budget")
@@ -796,7 +895,7 @@ def audit_archive(path, checks, git_root=ROOT):
     if len(episode_map) != len(episodes):
         raise ValueError("Duplicate episode IDs.")
     by_seed = {r["seed"]: r for r in results}
-    checks.check(len(by_seed) == len(results) and set(by_seed).issubset(SEEDS), "unique_known_seed_snapshots")
+    checks.check(len(by_seed) == len(results) and set(by_seed).issubset(spec.seeds), "unique_known_seed_snapshots")
     grouped = {}
     trace_order = []
     with gzip.open(path/"trace.jsonl.gz", "rt", encoding="utf-8") as stream:
@@ -809,24 +908,24 @@ def audit_archive(path, checks, git_root=ROOT):
     expected_order = [p["trial_id"] for p in plans if p["trial_id"] in grouped]
     checks.compare(trace_order, expected_order, "trace_trial_order")
     derived_seeds = []
-    for seed in SEEDS:
+    for seed in spec.seeds:
         sr = by_seed.get(seed)
         if sr is None:
             checks.check(all(episode_map[f"seed{seed}_{k}"]["status"] == "blocked" for k in KINDS), "unstarted_seed_all_blocked", seed)
             derived_seeds.append({"seed": seed, "complete": False, "evaluations": {}})
             continue
-        checks.compare(sr["reset_seed"], RESET_SEEDS[seed], f"seed{seed}/fixed_reset_derivation")
+        checks.compare(sr["reset_seed"], spec.reset_seeds[seed], f"seed{seed}/fixed_reset_derivation")
         checks.check(type(sr["calibration_updates"]) is int and 0 <= sr["calibration_updates"] <= 300, "seed_update_cap", seed)
         qref, direction = sr.get("reference_q"), sr.get("direction")
         states, hashes, view_hashes, final_models, derived = {}, {}, {}, {}, {}
-        prefix_reference, calibration_complete = None, {FROZEN_FINAL_SCHEDULE: False}
+        prefix_reference, calibration_complete = None, {spec.calibration_schedule: False}
         if qref is not None:
             if not finite(qref):
                 raise ValueError("Nonfinite reference.")
-            positive, negative = ranges[0][1]-qref, qref-ranges[0][0]
+            positive, negative = ranges[joint_index][1]-qref, qref-ranges[joint_index][0]
             checks.compare(direction, 1 if positive >= negative else -1, f"seed{seed}/public_direction")
-            checks.compare(sr["selection_record"], {"joint_index": 0, "joint_position_rad": qref,
-                "lower_limit_rad": ranges[0][0], "upper_limit_rad": ranges[0][1],
+            checks.compare(sr["selection_record"], {"joint_index": joint_index, "joint_position_rad": qref,
+                "lower_limit_rad": ranges[joint_index][0], "upper_limit_rad": ranges[joint_index][1],
                 "positive_room_rad": positive, "negative_room_rad": negative, "direction": direction,
                 "rule": "larger distance to the public joint limit; ties choose positive"}, f"seed{seed}/direction_record")
         for kind in KINDS:
@@ -841,7 +940,7 @@ def audit_archive(path, checks, git_root=ROOT):
             exceptions = [r for r in rows if "collector_exception" in r]
             checks.check(ep["status"] in ("completed", "terminated", "exception", "blocked"), "recorded_outcome", tid)
             checks.check(len(exceptions) <= 1 and (not exceptions or rows[-1] is exceptions[-1] and ep["status"] == "exception"), "single_final_exception", tid)
-            dependencies = [FROZEN_FINAL_SCHEDULE] if kind.startswith("prediction_") or kind == "learned_mpc" else []
+            dependencies = [spec.calibration_schedule] if kind.startswith("prediction_") or kind == "learned_mpc" else []
             missing_dependencies = [d for d in dependencies if not calibration_complete[d]]
             if ep["status"] != "blocked":
                 checks.check(not missing_dependencies, "failed_calibration_dependents_blocked", tid)
@@ -891,26 +990,26 @@ def audit_archive(path, checks, git_root=ROOT):
                 checks.compare(row, {"seed": seed, "kind": kind, "phase": phase, "model_scope": plan["model_scope"],
                     "calibration_dose": plan["calibration_dose"], "calibration_schedule": plan["calibration_schedule"], "model_structure": plan["model_structure"],
                     "integration": INTEGRATION, "shared_transition_id": tid+":"+str(index)}, loc+"/identity")
-                checks.compare(row.get("pd_gains"), PD_GAINS if kind == "tuned_pd" else None, loc+"/frozen_row_pd_gains")
-                n = verify_transition(row, previous_after, counters, ranges, checks, loc)
-                condition = normalize_study_row(row, qref, checks, loc)
+                checks.compare(row.get("pd_gains"), spec.pd_gains if kind == "tuned_pd" else None, loc+"/frozen_row_pd_gains")
+                n = verify_transition(row, previous_after, counters, ranges, checks, loc, joint_index=joint_index)
+                condition = normalize_study_row(row, qref, checks, loc, joint_index=joint_index)
                 last_study = row.get("study_abort") if condition["triggered"] else last_study
                 last_environment_stop = bool(row["diagnostics"]["terminated"]) or last_environment_stop
                 checks.check(not condition["triggered"] or index == len(regular)-1 and ep["status"] in ("terminated", "exception"), "study_terminal_final_row", loc)
                 previous_after = row["observation_after"]
                 phase_rows[phase] += 1
                 phase_physics[phase] += n
-                record_risk(risk_full, row, ranges)
-                record_risk(phase_risk[phase], row, ranges)
+                record_risk(risk_full, row, ranges, joint_index=joint_index)
+                record_risk(phase_risk[phase], row, ranges, joint_index=joint_index)
                 checks.check(not row["diagnostics"]["terminated"] or index == len(regular)-1 and ep["status"] in ("terminated", "exception"), "terminal_final_row", loc)
-                q, v = (row["observation_before"][key][0] for key in ("joint_position", "joint_velocity"))
-                next_q, next_v = (row["observation_after"][key][0] for key in ("joint_position", "joint_velocity"))
-                u, history = row["requested_torque"][0], row["diagnostics"]["applied_torque_history"]
+                q, v = (row["observation_before"][key][joint_index] for key in ("joint_position", "joint_velocity"))
+                next_q, next_v = (row["observation_after"][key][joint_index] for key in ("joint_position", "joint_velocity"))
+                u, history = row["requested_torque"][joint_index], row["diagnostics"]["applied_torque_history"]
                 effort = observed_effort[phase]
                 effort[EFFORT_KEYS[0]] += abs(u)*n*PHYSICS_DT
                 effort[EFFORT_KEYS[1]] += u*u*n*PHYSICS_DT
-                effort[EFFORT_KEYS[2]] += sum(abs(a[0]) for a in history)*PHYSICS_DT
-                effort[EFFORT_KEYS[3]] += sum(a[0]*a[0] for a in history)*PHYSICS_DT
+                effort[EFFORT_KEYS[2]] += sum(abs(a[joint_index]) for a in history)*PHYSICS_DT
+                effort[EFFORT_KEYS[3]] += sum(a[joint_index]*a[joint_index] for a in history)*PHYSICS_DT
                 if row["target_q"] is not None and n != 10:
                     partial_target_errors.append(next_q-row["target_q"])
                 checks.compare(row.get("partial_interval_target_error_rad"), None if row["target_q"] is None or n == 10 else next_q-row["target_q"], loc+"/partial_target_error")
@@ -930,20 +1029,20 @@ def audit_archive(path, checks, git_root=ROOT):
                     else:
                         slot, amplitude = active % 20, PREDICTION_AMPLITUDES[kind.split("_")[1]][active//20]
                         prescribed = direction*(amplitude if slot < 7 else -amplitude if 10 <= slot < 17 else 0.)
-                    checks.compare(row, {"requested_torque": [prescribed]+[0.]*7, "target_q": None, "planner_decision": None, "raw_pd_torque_nm": None}, loc+"/fixed_schedule")
+                    checks.compare(row, {"requested_torque": [prescribed if j == joint_index else 0. for j in range(8)], "target_q": None, "planner_decision": None, "raw_pd_torque_nm": None}, loc+"/fixed_schedule")
                 else:
                     target = qref+direction*(.04 if active < 100 else .08)
                     checks.compare(row["target_q"], target, loc+"/current_target")
-                    checks.check(ranges[0][0]+.03 <= target <= ranges[0][1]-.03, "public_target_interior", loc)
+                    checks.check(ranges[joint_index][0]+.03 <= target <= ranges[joint_index][1]-.03, "public_target_interior", loc)
                     if kind in MPC_KINDS:
-                        decision = replay_mpc(final_models[kind], qref, q, v, target, previous_request, ranges[0])
+                        decision = replay_mpc(final_models[kind], qref, q, v, target, previous_request, ranges[joint_index])
                         checks.compare(row["planner_decision"], decision, loc+"/all_candidate_planning")
                         checks.compare(u, decision["torque"], loc+"/selected_request")
                         planner_calls += decision["mathematical_prediction_calls"]
                         fallbacks += int(decision["fallback"])
                         checks.compare(row.get("raw_pd_torque_nm"), None, loc+"/not_pd")
                     elif kind == "tuned_pd":
-                        raw = PD_GAINS["kp"]*(target-q)-PD_GAINS["kd"]*v
+                        raw = spec.pd_gains["kp"]*(target-q)-spec.pd_gains["kd"]*v
                         checks.compare(row.get("raw_pd_torque_nm"), raw, loc+"/raw_native_pd")
                         checks.compare(u, max(-.5, min(.5, raw)), loc+"/continuous_pd_permission")
                         checks.compare(row["planner_decision"], None, loc+"/pd_no_mpc")
@@ -972,7 +1071,7 @@ def audit_archive(path, checks, git_root=ROOT):
                     for structure in ("hinge5",):
                         state, item = states[plan["calibration_schedule"]+"_"+structure], row["model_update"][structure]
                         if n == 10:
-                            replay_update(item, row, structure, state, qref, checks, loc+"/"+structure)
+                            replay_update(item, row, structure, state, qref, checks, loc+"/"+structure, joint_index=joint_index)
                         else:
                             checks.compare(item, {"updated": False, "phase": "partial_calibration_interval", "executed_substeps": n,
                                 "update_count": state["updates"], "model_id": plan["calibration_schedule"]+"_"+structure,
@@ -985,7 +1084,7 @@ def audit_archive(path, checks, git_root=ROOT):
             for exception in exceptions:
                 if (exception.get("observation_after") is not None and exception.get("step_index") is not None
                     and (any(r["step_index"] == exception["step_index"] for r in regular) or (ep["control_steps"] > len(regular) and exception.get("unreturned_physics_steps", 0) == 0))):
-                    exc_condition = normalize_study_row(exception, qref, checks, tid+"/exception_monitor")
+                    exc_condition = normalize_study_row(exception, qref, checks, tid+"/exception_monitor", joint_index=joint_index)
                     if exc_condition["triggered"]:
                         last_study = exception.get("study_abort")
                 if (is_cal and exception.get("step_index", -1) is not None and exception["step_index"] >= 100
@@ -1014,7 +1113,7 @@ def audit_archive(path, checks, git_root=ROOT):
                                     for key, width in NATIVE.items():
                                         vector(observation[key], width)
                                 checks.check(previous_after == exception["observation_before"], "exception_native_continuity", tid)
-                                replay_update(item, exception, structure, state, qref, checks, tid+"/exception/"+structure, exception=True)
+                                replay_update(item, exception, structure, state, qref, checks, tid+"/exception/"+structure, exception=True, joint_index=joint_index)
                         snapshot = exception.get("partial_model_snapshots", {}).get(structure)
                         checks.check(snapshot is not None, "exception_active_model_snapshot_required", tid+"/"+structure)
                         if snapshot is not None:
@@ -1022,8 +1121,8 @@ def audit_archive(path, checks, git_root=ROOT):
                             # be recovered from the raw endpoint and saved snapshot.
                             if (not already_recorded and snapshot["update_count"] == state["updates"]+1 and item is None
                                     and native_endpoint is not None and full_exception_interval):
-                                q, v = (exception["observation_before"][k][0] for k in ("joint_position", "joint_velocity"))
-                                u, nv = exception["requested_torque"][0], native_endpoint["joint_velocity"][0]
+                                q, v = (exception["observation_before"][k][joint_index] for k in ("joint_position", "joint_velocity"))
+                                u, nv = exception["requested_torque"][joint_index], native_endpoint["joint_velocity"][joint_index]
                                 state["theta"], state["covariance"] = replay_rls(state["theta"], state["covariance"], feature_vector(qref, q, v, u, structure), nv)
                                 state["updates"] += 1
                                 state["exception_replayed_updates"] += 1
@@ -1092,7 +1191,7 @@ def audit_archive(path, checks, git_root=ROOT):
                     checks.check(ep["environment_fingerprint_before"] == ep["environment_fingerprint_after"], "fixed_physical_parameters", tid)
                 for phase in PHASES:
                     effort_audits[phase] = reconcile_effort(ev, phase, observed_effort[phase], ep["phase_budgets"][phase]["physics_steps"],
-                        phase_physics[phase], exceptions, checks, tid+"/effort/"+phase)
+                        phase_physics[phase], exceptions, checks, tid+"/effort/"+phase, joint_index=joint_index)
                 checks.compare(ev["control_effort"], ev["phase_effort"]["control"], tid+"/control_effort_alias")
                 measured = ev["phase_actual_effort_substeps"]["control"]
                 checks.compare(ev["actual_control_effort_substeps"], measured, tid+"/measured_control")
@@ -1119,18 +1218,18 @@ def audit_archive(path, checks, git_root=ROOT):
                 checks.compare(ev["integration_models_before"], before_views, tid+"/view_hashes_before")
                 checks.compare(ev["integration_models_after"], view_hashes, tid+"/view_hashes_after")
                 if kind in MPC_KINDS and ev["planner_spec"] is not None:
-                    fingerprint = hashes["nominal" if kind == "nominal_mpc" else FROZEN_FINAL_SCHEDULE+"_hinge5"]
-                    checks.compare(ev["planner_spec"], {"config": MPC_CONFIG, "qref_rad": qref, "joint_range_rad": ranges[0],
+                    fingerprint = hashes["nominal" if kind == "nominal_mpc" else spec.calibration_schedule+"_hinge5"]
+                    checks.compare(ev["planner_spec"], {"config": MPC_CONFIG, "qref_rad": qref, "joint_range_rad": ranges[joint_index],
                         "candidates_nm": [-.5+i*.125 for i in range(9)], "physical_queries": 0,
-                        "forecast_bounds_rad": [max(qref-.15, ranges[0][0]-.03), min(qref+.15, ranges[0][1]+.03)],
-                        "target_bounds_rad": [max(qref-.15, ranges[0][0]+.03), min(qref+.15, ranges[0][1]-.03)],
+                        "forecast_bounds_rad": [max(qref-.15, ranges[joint_index][0]-.03), min(qref+.15, ranges[joint_index][1]+.03)],
+                        "target_bounds_rad": [max(qref-.15, ranges[joint_index][0]+.03), min(qref+.15, ranges[joint_index][1]-.03)],
                         "integration": integration_spec(fingerprint), "integration_fingerprint": digest(integration_spec(fingerprint))}, tid+"/fixed_planner_spec")
             if ep["status"] != "blocked":
                 pd_attempts, pd_failed, pd_success = (ev[k] for k in ("pd_calls_attempted", "failed_pd_attempts", "pd_calls_successful"))
                 checks.check(all(type(x) is int and x >= 0 for x in (pd_attempts, pd_failed, pd_success)) and pd_failed <= pd_attempts <= (200 if kind == "tuned_pd" else 0), "pd_attempt_cap", tid)
                 checks.compare(pd_success, pd_attempts-pd_failed, tid+"/pd_success_cost")
                 checks.check(finite(ev["pd_seconds_total"]) and ev["pd_seconds_total"] >= 0, "finite_pd_seconds", tid)
-                checks.compare(ev["controller_spec"], {"method": "tuned_pd", "kp": PD_GAINS["kp"], "kd": PD_GAINS["kd"], "body_model_input": False, "permission_nm": .5} if kind == "tuned_pd" else {"method": "zero_torque"} if kind == "zero_torque" else None, tid+"/fixed_controller_spec")
+                checks.compare(ev["controller_spec"], {"method": "tuned_pd", "kp": spec.pd_gains["kp"], "kd": spec.pd_gains["kd"], "body_model_input": False, "permission_nm": .5} if kind == "tuned_pd" else {"method": "zero_torque"} if kind == "zero_torque" else None, tid+"/fixed_controller_spec")
                 if kind not in MPC_KINDS:
                     checks.compare(ev["planner_spec"], None, tid+"/non_mpc_no_planner")
                 if complete:
@@ -1163,24 +1262,24 @@ def audit_archive(path, checks, git_root=ROOT):
                      "exact_available_view_set", seed)
         for name, fingerprint in view_hashes.items():
             saved = sr["integration_models"][name]
-            base = sr["nominal_model"] if name == "nominal_mpc" else sr["learned_models"][FROZEN_FINAL_SCHEDULE+"_hinge5"]
+            base = sr["nominal_model"] if name == "nominal_mpc" else sr["learned_models"][spec.calibration_schedule+"_hinge5"]
             checks.compare(saved, {**base, "integration": integration_spec(base["parameter_fingerprint"]),
                 "integration_fingerprint": fingerprint, "frozen_view": True}, f"seed{seed}/frozen_view/"+name)
         for kind in KINDS:
             regular = [r for r in grouped.get(f"seed{seed}_{kind}", []) if "collector_exception" not in r]
-            derived[kind]["conditional_metrics"] = conditional_metrics(regular)
+            derived[kind]["conditional_metrics"] = conditional_metrics(regular, joint_index=joint_index)
             if kind in CONTROL_KINDS:
-                derived[kind]["tail_tracking"] = control_tail_metrics(regular)
+                derived[kind]["tail_tracking"] = control_tail_metrics(regular, joint_index=joint_index)
             if qref is not None:
                 diagnostic_models = {"learned_mpc": s["coefficients"] for n, s in sr["learned_models"].items()}
                 diagnostic_models["nominal_mpc"] = INITIAL["linear4"]
-                derived[kind]["free_rollouts"] = diagnose_windows(regular, duration(kind), qref, diagnostic_models)
+                derived[kind]["free_rollouts"] = diagnose_windows(regular, duration(kind), qref, diagnostic_models, joint_index=joint_index)
                 derived[kind]["final_model_calibration_in_sample"] = kind == "calibration"
                 derived[kind]["rollout_model_in_sample_on_this_calibration"] = {
                     n: kind == "calibration" and n == "learned_mpc" for n in diagnostic_models}
                 if kind in CONTROL_KINDS:
                     derived[kind]["state_coverage"] = state_coverage(
-                        [r for r in grouped.get(f"seed{seed}_calibration", []) if "collector_exception" not in r], regular, qref)
+                        [r for r in grouped.get(f"seed{seed}_calibration", []) if "collector_exception" not in r], regular, qref, joint_index=joint_index)
         replayed = sum(s["updates"] for s in states.values())
         saved_total = sum(s["update_count"] for s in sr["learned_models"].values())
         checks.check(set(sr["learned_models"]) == set(states) and set(sr["initial_models"]) == set(states), "exact_created_model_set", seed)
@@ -1206,7 +1305,7 @@ def audit_archive(path, checks, git_root=ROOT):
     checks.compare(metadata["skipped_trials"], metadata["blocked_trials"], "all_blocked_outcomes")
     checks.compare(metadata["complete"], metadata["archive_status"] == "complete", "archive_completion_not_adoption")
     checks.check(all(file_hash(path/name) == expected for name, expected in input_hashes.items()), "input_archive_unchanged")
-    return {"path": str(path), "source_commit": metadata["source_commit"], "split": "final_holdout", "input_hashes": input_hashes,
+    return {"path": str(path), "source_commit": metadata["source_commit"], "split": spec.split, "input_hashes": input_hashes,
         "seeds": derived_seeds, "budget": {k: metadata[k] for k in ("control_calls_attempted", "control_steps", "physics_steps", "model_updates")},
         "phase_budget": {p: {k: sum(e["phase_budgets"][p][k] for e in episodes) for k in ("control_calls_attempted", "control_steps", "physics_steps")} for p in PHASES},
         "physical_calibration_transfers": sum(e["phase_budgets"]["calibration"]["control_steps"] for e in episodes),
@@ -1215,34 +1314,61 @@ def audit_archive(path, checks, git_root=ROOT):
         "collector_timing": {k: metadata[k] for k in ("wall_seconds", "cpu_seconds", "cpu_seconds_scope")}}, grouped, metadata
 
 
-def require_final(path):
+def pd_source_matches(metadata, spec):
+    if not spec.pd_selection_source:
+        return True
+    actual = metadata.get("pd_selection_source")
+    expected = dict(spec.pd_selection_source)
+    return (type(actual) is dict and actual == expected
+            and all(type(actual[key]) is type(value) for key, value in expected.items()))
+
+
+def require_final(path, *, spec=SHOULDER_FINAL_SPEC):
+    """Reject undeclared scope/gains before any ZIP or trace is opened."""
+    if type(spec) is not AuditSpec:
+        raise ValueError("Explicit immutable AuditSpec required.")
+    spec.require_frozen()
     metadata = load_json(Path(path)/"metadata.json")
-    if FROZEN_FINAL_SCHEDULE not in ("short", "reordered") or RESET_SEEDS is None:
-        raise ValueError("Final schedule and reset-seed declaration are not frozen; do not open final trace.")
-    if (metadata.get("suite") != "shoulder_final" or metadata.get("split") != "final_holdout" or metadata.get("seeds") != SEEDS
-        or any(type(seed) is not int for seed in metadata.get("seeds", [])) or metadata.get("pose") != "supine"
-        or type(metadata.get("joint_index")) is not int or metadata["joint_index"] != 0
-        or metadata.get("calibration_schedule") != FROZEN_FINAL_SCHEDULE):
-        raise ValueError("Only the unique frozen single-shoulder final suite is accepted.")
+    expected_suite = {"pose": spec.pose, "joint": spec.joint_index,
+        "seeds": list(spec.seeds), "split": spec.split,
+        "pd_kp": spec.pd_kp, "pd_kd": spec.pd_kd}
+    gain_records = (metadata.get("pd_gains", {}), metadata.get("suite_spec", {}))
+    gain_numbers_valid = (all(isinstance(record, dict) for record in gain_records)
+        and all(finite(gain_records[0].get(key)) for key in ("kp", "kd"))
+        and all(finite(gain_records[1].get(key)) for key in ("pd_kp", "pd_kd")))
+    if (metadata.get("suite") != spec.suite or metadata.get("split") != spec.split
+        or metadata.get("seeds") != list(spec.seeds)
+        or any(type(seed) is not int for seed in metadata.get("seeds", []))
+        or metadata.get("pose") != spec.pose
+        or type(metadata.get("joint_index")) is not int
+        or metadata["joint_index"] != spec.joint_index
+        or not gain_numbers_valid or metadata.get("suite_spec") != expected_suite
+        or type(metadata.get("suite_spec", {}).get("joint")) is not int
+        or metadata.get("calibration_schedule") != spec.calibration_schedule
+        or metadata.get("pd_gains") != spec.pd_gains
+        or not pd_source_matches(metadata, spec)
+        or not isinstance(metadata.get("protocol"), dict)
+        or metadata["protocol"].get("path") != spec.protocol):
+        raise ValueError("Only the explicitly declared frozen suite, protocol and gains are accepted.")
     return metadata
 
 
-def planned_matrix():
+def planned_matrix(*, spec=SHOULDER_FINAL_SPEC):
     return [{"trial_id": f"seed{seed}_{kind}", "seed": seed, "kind": kind,
         "model_scope": "nominal" if kind == "nominal_mpc" else "learned" if kind == "learned_mpc" else "controller_only" if kind in ("tuned_pd", "zero_torque") else "shared",
         "calibration_dose": "old" if kind in ("calibration", "learned_mpc") else None,
-        "calibration_schedule": FROZEN_FINAL_SCHEDULE if kind in ("calibration", "learned_mpc") else None,
+        "calibration_schedule": spec.calibration_schedule if kind in ("calibration", "learned_mpc") else None,
         "model_structure": "hinge5" if kind in ("calibration", "learned_mpc") else "linear4" if kind == "nominal_mpc" else None,
-        "integration": INTEGRATION, "maximum_control_steps": 100+duration(kind)} for seed in SEEDS for kind in KINDS]
+        "integration": INTEGRATION, "maximum_control_steps": 100+duration(kind)} for seed in spec.seeds for kind in KINDS]
 
 
-def complete_trials(seeds, kinds):
-    unique = len(seeds) == 3 and all(type(r.get("seed")) is int for r in seeds) and {r["seed"] for r in seeds} == set(SEEDS)
+def complete_trials(seeds, kinds, *, spec=SHOULDER_FINAL_SPEC):
+    unique = len(seeds) == 3 and all(type(r.get("seed")) is int for r in seeds) and {r["seed"] for r in seeds} == set(spec.seeds)
     return unique and all(all(trial_is_complete(r.get("evaluations", {}).get(k, {})) for k in kinds) for r in seeds)
 
 
-def model_contribution_gate(seeds):
-    complete = complete_trials(seeds, MODEL_REQUIRED)
+def model_contribution_gate(seeds, *, spec=SHOULDER_FINAL_SPEC):
+    complete = complete_trials(seeds, MODEL_REQUIRED, spec=spec)
     pairs = []
     for row in seeds:
         ev = row.get("evaluations", {})
@@ -1270,9 +1396,9 @@ def model_contribution_gate(seeds):
         "claim_boundary": "Specified local v prediction and same-MPC body-model contribution; no energy, safety, all-state prediction or task-skill claim."}
 
 
-def classical_comparison_gate(seeds, contribution=None):
-    contribution = model_contribution_gate(seeds) if contribution is None else contribution
-    complete = complete_trials(seeds, (*MODEL_REQUIRED, "tuned_pd"))
+def classical_comparison_gate(seeds, contribution=None, *, spec=SHOULDER_FINAL_SPEC):
+    contribution = model_contribution_gate(seeds, spec=spec) if contribution is None else contribution
+    complete = complete_trials(seeds, (*MODEL_REQUIRED, "tuned_pd"), spec=spec)
     pairs = []
     for row in seeds:
         ev = row.get("evaluations", {})
@@ -1298,28 +1424,29 @@ def classical_comparison_gate(seeds, contribution=None):
         "tracking_mean_improvement": improvement, "actual_effort_gates": efforts}
 
 
-def final_gates(seeds):
-    model = model_contribution_gate(seeds)
-    classical = classical_comparison_gate(seeds, model)
+def final_gates(seeds, *, spec=SHOULDER_FINAL_SPEC):
+    model = model_contribution_gate(seeds, spec=spec)
+    classical = classical_comparison_gate(seeds, model, spec=spec)
     return {"model_contribution_gate": model, "classical_comparison_gate": classical,
-        "complete_matrix": complete_trials(seeds, KINDS), "claim_boundary": "Frozen single-shoulder protocol only; no task acquisition, real robot or unknown-dynamics generalization."}
+        "complete_matrix": complete_trials(seeds, KINDS, spec=spec), "claim_boundary": spec.claim_boundary}
 
 
-def audit(path, *, git_root=ROOT):
+def audit(path, *, git_root=ROOT, spec=SHOULDER_FINAL_SPEC):
     wall_start, cpu_start = time.perf_counter(), time.process_time()
     checks, result, reported_budget = Checks(), None, None
     try:
-        initial = require_final(path)
+        initial = require_final(path, spec=spec)
         reported_budget = {k: initial.get(k) for k in ("control_calls_attempted", "control_steps", "physics_steps", "model_updates")}
-        result, _, metadata = audit_archive(path, checks, git_root)
+        result, _, metadata = audit_archive(path, checks, git_root, spec=spec)
     except (OSError, ValueError, KeyError, TypeError, IndexError, AttributeError, OverflowError, zipfile.BadZipFile, ET.ParseError) as error:
         checks.check(False, "archive_schema_or_read_error", {"type": type(error).__name__, "message": str(error)})
-    gates = final_gates([] if result is None else result["seeds"])
+    gates = final_gates([] if result is None else result["seeds"], spec=spec)
     gates["data_consistency_verified"] = checks.failed == 0
     for key in ("model_contribution_gate", "classical_comparison_gate"):
         gates[key]["validated_pass"] = gates[key]["passed"] and checks.failed == 0 and git_root is not None
     return {"schema_version": 1, "created_at_utc": datetime.now(timezone.utc).isoformat(), "purpose": __doc__,
-        "audit_script_sha256": file_hash(Path(__file__)), "checks": checks.count, "failed": checks.failed,
+        "audit_script_sha256": file_hash(Path(__file__)), "audit_spec": spec.record(),
+        "checks": checks.count, "failed": checks.failed,
         "maximum_recomputation_difference": checks.maximum_difference, "violations": checks.violations, "archive": result,
         "final_gates": gates, "reported_paid_budget_if_replay_incomplete": reported_budget,
         "execution": {"wall_seconds": time.perf_counter()-wall_start, "cpu_seconds": time.process_time()-cpu_start,
@@ -1332,13 +1459,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("archive", type=Path)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--suite", choices=("shoulder_final", "elbow_development"), default="shoulder_final")
     args = parser.parse_args()
+    spec = {"shoulder_final": SHOULDER_FINAL_SPEC, "elbow_development": ELBOW_DEVELOPMENT_SPEC}[args.suite]
     try:
         output = validate_output_path(args.output, [args.archive])
-        require_final(args.archive)
+        require_final(args.archive, spec=spec)
     except (OSError, ValueError, KeyError, TypeError) as error:
         parser.error(str(error))
-    report = audit(args.archive)
+    report = audit(args.archive, spec=spec)
     output.parent.mkdir(parents=True, exist_ok=True)
     with output.open("x", encoding="utf-8", newline="\n") as stream:
         json.dump(report, stream, ensure_ascii=False, indent=2, allow_nan=False)

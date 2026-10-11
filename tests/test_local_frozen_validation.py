@@ -13,7 +13,7 @@ from developmental_physics import local_frozen_validation as runner
 
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p/"pyproject.toml").is_file())
-PROTOCOL = ROOT / "docs/LOCAL_COVERAGE_ABLATION_PROTOCOL.md"
+PROTOCOL = ROOT / "docs/LOCAL_FROZEN_VALIDATION_PROTOCOL.md"
 
 
 class SyntheticEnv:
@@ -246,12 +246,64 @@ def test_failed_pd_computation_records_time_and_does_not_add_physical_call(tmp_p
 
 @pytest.mark.parametrize("kwargs",({"seeds":[20,21,22]},{"pd_kp":8.},{"pd_kd":1.},
                                     {"integration":"trapezoid"},{"model_structure":"linear4"},
-                                    {"calibration_dose":"new"},{"suite":"elbow_development"}))
+                                    {"calibration_dose":"new"},{"suite":"undeclared"}))
 def test_rejects_outside_declared_suite_without_output_or_reset(tmp_path,kwargs):
     output=tmp_path/"forbidden"
     with pytest.raises(ValueError):
         run(output,**kwargs)
     assert not output.exists() and not SyntheticEnv.instances
+
+
+def test_unfrozen_suite_gains_reject_before_environment_or_output(tmp_path, monkeypatch):
+    declared = dict(runner.SUITES["elbow_development"])
+    declared["pd_kp"] = declared["pd_kd"] = None
+    monkeypatch.setitem(runner.SUITES, "elbow_development", declared)
+    with pytest.raises(ValueError, match="not been frozen"):
+        run(tmp_path/"unfrozen", suite="elbow_development")
+    assert not SyntheticEnv.instances and not (tmp_path/"unfrozen").exists()
+
+
+def test_suite_requires_its_exact_protocol_before_environment_or_output(tmp_path):
+    with pytest.raises(ValueError, match="exact frozen suite protocol"):
+        runner.run_validation(tmp_path/"wrong_protocol", calibration_schedule="short",
+                              protocol_path=ROOT/"docs/LOCAL_COVERAGE_ABLATION_PROTOCOL.md")
+    assert not SyntheticEnv.instances and not (tmp_path/"wrong_protocol").exists()
+
+
+def test_frozen_elbow_source_and_audit_declarations_match():
+    from test_local_frozen_audit import core
+    assert runner.SUITES["elbow_development"]["pd_kp"] == core.ELBOW_DEVELOPMENT_SPEC.pd_kp == 64.
+    assert runner.SUITES["elbow_development"]["pd_kd"] == core.ELBOW_DEVELOPMENT_SPEC.pd_kd == 1.
+    assert runner.SUITE_PROTOCOLS["elbow_development"] == core.ELBOW_DEVELOPMENT_SPEC.protocol
+    assert runner.PD_SELECTION_SOURCES["elbow_development"] == core.ELBOW_DEVELOPMENT_SPEC.pd_selection_source
+
+
+def test_elbow_native_layout_negative_reference_and_frozen_source(tmp_path, monkeypatch):
+    class ElbowEnv(SyntheticEnv):
+        def reset(self, seed, pose):
+            super().reset(seed, pose)
+            self.data.qpos[0], self.data.qpos[1] = .4, -.005
+            self.model.joint = lambda name: SimpleNamespace(range=np.array([0., 2.3] if name == "1" else [-2., 2.]))
+            return self.observation()
+    declared = dict(runner.SUITES["elbow_development"])
+    declared["seeds"] = [0]
+    monkeypatch.setitem(runner.SUITES, "elbow_development", declared)
+    monkeypatch.setattr(runner, "GroundBodyEnv", ElbowEnv)
+    output = tmp_path/"elbow"
+    metadata = runner.run_validation(output, suite="elbow_development", calibration_schedule="short",
+                                    protocol_path=ROOT/runner.SUITE_PROTOCOLS["elbow_development"])
+    assert metadata["all_trials_successful"] and metadata["model_updates"] == 300
+    assert metadata["pd_selection_source"] == dict(runner.PD_SELECTION_SOURCES["elbow_development"])
+    assert metadata["pd_gains"] == {"kp": 64., "kd": 1.}
+    rows = trace(output)
+    for row in rows:
+        assert row["observation_before"]["joint_position"][0] == .4
+        assert row["requested_torque"][0] == 0.
+        assert all(row["requested_torque"][j] == 0. for j in range(2, 8))
+        if row["target_q"] is not None:
+            assert row["target_q"] in (.035, .075)
+    seed = read(output, "seed_results.json")[0]
+    assert seed["calibration_models"]["short"]["hinge5"]["qref_rad"] == -.005
 
 
 def test_schedule_becomes_strict_when_root_freezes_it(tmp_path,monkeypatch):

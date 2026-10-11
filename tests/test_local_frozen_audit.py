@@ -1,5 +1,6 @@
 """Final schema arithmetic fixtures use synthetic development seed numbers only."""
 import copy
+from dataclasses import replace
 import gzip
 import hashlib
 import importlib.util
@@ -14,7 +15,13 @@ if not SCRIPT.is_file():
     SCRIPT = Path(__file__).resolve().parents[1]/"scripts/audit_local_frozen.py"
 spec = importlib.util.spec_from_file_location("frozen_audit_core", SCRIPT)
 core = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = core
 spec.loader.exec_module(core)
+
+TEST_SPEC = core.AuditSpec(
+    suite="shoulder_final", pose="supine", joint_index=0, split="final_holdout",
+    seeds=(0, 1, 2), reset_seed_pairs=((0, 3757552657), (1, 1641411168), (2, 2001025171)),
+    protocol="docs/LOCAL_FROZEN_VALIDATION_PROTOCOL.md", pd_kp=64., pd_kd=0.)
 
 
 def tail_rows(first=80, count=20):
@@ -54,12 +61,6 @@ def test_tail_full_terminal_is_scored_without_window_completion():
     assert window["scored_complete_endpoints"] == 20 and window["contains_stop"]
     assert not window["complete_without_stop"]
 
-@pytest.fixture(autouse=True)
-def synthetic_seeds_only(monkeypatch):
-    # Never reset/simulate/read final seeds; these are algebra-only log fixtures.
-    monkeypatch.setattr(core, "SEEDS", [0, 1, 2])
-    monkeypatch.setattr(core, "RESET_SEEDS", {0: 3757552657, 1: 1641411168, 2: 2001025171})
-    monkeypatch.setattr(core, "FROZEN_FINAL_SCHEDULE", "short")
 
 
 def source_bytes(name):
@@ -128,14 +129,20 @@ def test_free_rollout_never_reads_future_state_and_persistence_ignores_commands(
         core.free_rollout([1e308, 0., .02, 0.], 0., .2, 2., [0.])
 
 
-def native(q=0., v=0., u=0.):
-    return {"joint_position": [q]+[0.]*7, "joint_velocity": [v]+[0.]*7,
+def native(q=0., v=0., u=0., *, joint_index=0, inactive_q=0., inactive_v=0.):
+    positions, velocities, command = [0.]*8, [0.]*8, [0.]*8
+    if joint_index != 0:
+        positions[0], velocities[0] = inactive_q, inactive_v
+    positions[joint_index], velocities[joint_index], command[joint_index] = q, v, u
+    return {"joint_position": positions, "joint_velocity": velocities,
         "imu_gyro": [0.]*3, "imu_acceleration": [0.]*3,
-        "actuator_torque": [u]+[0.]*7, "previous_command": [u]+[0.]*7}
+        "actuator_torque": command, "previous_command": command}
 
 
-def transition(index, *, kind="learned_mpc", phase="control", q=0., v=0., u=0., next_q=0., next_v=0., before=None, n=10, terminated=False):
-    request, observation = [u]+[0.]*7, native(next_q, next_v, u)
+
+def transition(index, *, kind="learned_mpc", phase="control", q=0., v=0., u=0., next_q=0., next_v=0., before=None, n=10, terminated=False, spec=TEST_SPEC, inactive_q=0., inactive_v=0.):
+    request = [u if j == spec.joint_index else 0. for j in range(8)]
+    observation = native(next_q, next_v, u, joint_index=spec.joint_index, inactive_q=inactive_q, inactive_v=inactive_v)
     physics = index*10+n
     d = {"executed_substeps": n, "terminated": terminated, "reason": "synthetic_env_stop" if terminated else None, "step_id": index+1, "physics_steps": physics, "time": physics*.002,
         "requested_torque": request, "accepted_torque": request, "applied_torque": request,
@@ -143,12 +150,12 @@ def transition(index, *, kind="learned_mpc", phase="control", q=0., v=0., u=0., 
         "substep_ground_normal_forces": [0.]*n, "substep_kinetic_energies": [0.]*n,
         "substep_minimum_contact_distances": [0.]*n, "peak_substep_ground_normal_force": 0.,
         "ground_normal_impulse_ns": 0., "peak_substep_kinetic_energy": 0., "minimum_substep_contact_distance": 0.}
-    plan = next(p for p in core.planned_matrix() if p["trial_id"] == "seed0_"+kind)
+    plan = next(p for p in core.planned_matrix(spec=spec) if p["trial_id"] == "seed0_"+kind)
     return {**{k: plan[k] for k in ("trial_id", "seed", "kind", "model_scope", "calibration_dose", "calibration_schedule", "model_structure", "integration")},
         "step_index": index, "phase": phase, "shared_transition_id": "seed0_"+kind+":"+str(index),
-        "observation_before": native(q, v) if before is None else before, "observation_after": observation,
+        "observation_before": native(q, v, joint_index=spec.joint_index, inactive_q=inactive_q, inactive_v=inactive_v) if before is None else before, "observation_after": observation,
         "requested_torque": request, "target_q": None, "predicted_next_qv": {}, "model_update": None, "planner_decision": None,
-        "raw_pd_torque_nm": None, "pd_gains": core.PD_GAINS if kind == "tuned_pd" else None, "study_abort": None, "partial_interval_target_error_rad": None, "diagnostics": d, "qpos": [0., 0., .5, 1., 0., 0., 0.]+observation["joint_position"],
+        "raw_pd_torque_nm": None, "pd_gains": spec.pd_gains if kind == "tuned_pd" else None, "study_abort": None, "partial_interval_target_error_rad": None, "diagnostics": d, "qpos": [0., 0., .5, 1., 0., 0., 0.]+observation["joint_position"],
         "qvel": [0.]*6+observation["joint_velocity"]}
 
 
@@ -208,10 +215,10 @@ def write_manifest(path):
     (path/"manifest.json").write_text(json.dumps({p.name: core.file_hash(p) for p in path.iterdir() if p.name != "manifest.json"}), encoding="utf-8")
 
 
-def partial_archive(path):
+def partial_archive(path, *, spec=TEST_SPEC):
     """A paid 3-substep prefix stop; all other planned outcomes remain visible."""
     path.mkdir()
-    plans = core.planned_matrix()
+    plans = core.planned_matrix(spec=spec)
     episodes = [{**p, "status": "blocked", "reason": {"type": "ArchiveAborted"}, "collector_exception": None,
         "control_calls_attempted": 0, "control_steps": 0, "physics_steps": 0,
         "phase_budgets": {phase: {"control_calls_attempted": 0, "control_steps": 0, "physics_steps": 0} for phase in core.PHASES}} for p in plans]
@@ -219,7 +226,7 @@ def partial_archive(path):
         physics_steps=3, unreturned_physics_steps=0, risk_telemetry_complete=True,
         study_abort=None, environment_terminated=True, environment_stop_reason="synthetic_stop", environment_fingerprint_before="1"*64, environment_fingerprint_after="1"*64)
     episodes[0]["phase_budgets"]["prefix"] = {"control_calls_attempted": 1, "control_steps": 1, "physics_steps": 3}
-    row = transition(0, kind="calibration", phase="prefix", n=3, terminated=True)
+    row = transition(0, kind="calibration", phase="prefix", n=3, terminated=True, spec=spec)
     row["diagnostics"]["reason"] = "synthetic_stop"
     ev = {"completed": False, "status": "terminated", "study_abort": None, "environment_terminated": True, "environment_stop_reason": "synthetic_stop", "partial_interval_target_errors_rad": [], "partial_interval_target_error_count": 0, "tracking_rmse_rad": None,
         "position_prediction_rmse": {}, "velocity_prediction_rmse": {}, "metric_prediction_step_count": {}, "metric_control_step_count": 0,
@@ -234,18 +241,18 @@ def partial_archive(path):
         "pd_calls_attempted": 0, "failed_pd_attempts": 0, "pd_calls_successful": 0, "pd_seconds_total": 0., "controller_spec": None, "planner_spec": None, "models_before": None, "models_after": {}, "integration_models_before": {}, "integration_models_after": {}}
     evaluations = {k: {"completed": False, "status": "blocked"} for k in core.KINDS}
     evaluations["calibration"] = ev
-    results = [{"seed": 0, "reset_seed": 3757552657, "calibration_updates": 0,
+    results = [{"seed": 0, "reset_seed": spec.reset_seeds[0], "calibration_updates": 0,
         "calibration_completed": {"short": False}, "calibration_models": {"short": {}},
         "initial_models": {}, "learned_models": {}, "integration_models": {}, "evaluations": evaluations}]
-    sources = {n: source_bytes(n) for n in core.REQUIRED_SOURCES}
-    metadata = {"schema_version": 1, "suite": "shoulder_final", "suite_spec": {"pose": "supine", "joint": 0, "seeds": core.SEEDS, "split": "final_holdout", "pd_kp": 64., "pd_kd": 0.}, "split": "final_holdout", "calibration_schedule": "short", "seeds": core.SEEDS, "pose": "supine", "joint_index": 0,
+    sources = {n: source_bytes(n) for n in spec.required_sources}
+    metadata = {"schema_version": 1, "suite": spec.suite, "suite_spec": {"pose": spec.pose, "joint": spec.joint_index, "seeds": list(spec.seeds), "split": spec.split, "pd_kp": spec.pd_kp, "pd_kd": spec.pd_kd}, "split": spec.split, "calibration_schedule": "short", "seeds": list(spec.seeds), "pose": spec.pose, "joint_index": spec.joint_index,
         "source_commit": "1"*40, "source_status": "", "source_dirty": False,
         "source_sha256": {n: hashlib.sha256(b).hexdigest() for n, b in sources.items()},
-        "protocol": {"path": core.PROTOCOL, "sha256": hashlib.sha256(sources[core.PROTOCOL]).hexdigest()},
+        "protocol": {"path": spec.protocol, "sha256": hashlib.sha256(sources[spec.protocol]).hexdigest()},
         "environment_config": core.ENVIRONMENT, "integration": core.INTEGRATION, "evaluation_prediction_integration": core.INTEGRATION,
         "structures": ["hinge5"], "calibration_dose": "old", "model_structure": "hinge5", "calibration_schedules": ["short"],
         "comparison": {"methods": list(core.CONTROL_KINDS), "single_schedule": "short", "single_fixed_dose": "old", "single_fixed_structure": "hinge5"},
-        "pd_gains": core.PD_GAINS, "pd_controller_spec": {"implementation": "feedback_validate.pd_request", "kp": 64., "kd": 0., "input": "current encoder q/v and currently disclosed target", "permission_nm": .5, "body_model_input": False, "gain_updates": 0},
+        "pd_gains": spec.pd_gains, "pd_controller_spec": {"implementation": "feedback_validate.pd_request", "kp": spec.pd_kp, "kd": spec.pd_kd, "input": "current encoder q/v and currently disclosed target", "permission_nm": .5, "body_model_input": False, "gain_updates": 0},
         "study_abort_spec": core.study_abort_spec(), "calibration_schedule_definition": core.calibration_schedule_spec(),
         "wall_seconds": 1., "cpu_seconds": 1., "cpu_seconds_scope": "Current process only; same timer-start/checkpoint scope as wall_seconds; excludes imports, initial source snapshot and setup before timers",
         "calibration_block_amplitudes_nm": core.CALIBRATION_AMPLITUDES, "prediction_block_amplitudes_nm": core.PREDICTION_AMPLITUDES,
@@ -267,55 +274,58 @@ def partial_archive(path):
     return path
 
 
-def saved_model(state, trainable=False):
-    return {**core.model_record(0., state["observed_theta"], state["observed_covariance"]),
-        "parameter_fingerprint": core.state_hash(0., state), "update_count": state["updates"], "trainable": trainable}
+def saved_model(state, trainable=False, *, qref=0.):
+    return {**core.model_record(qref, state["observed_theta"], state["observed_covariance"]),
+        "parameter_fingerprint": core.state_hash(qref, state), "update_count": state["updates"], "trainable": trainable}
 
 
-def update_item(row, state, structure):
+def update_item(row, state, structure, *, qref=0., joint_index=0):
     """Build a synthetic logged atomic update without the experiment model."""
-    q, v = (row["observation_before"][k][0] for k in ("joint_position", "joint_velocity"))
-    u, nv = row["requested_torque"][0], row["observation_after"]["joint_velocity"][0]
-    features = core.feature_vector(0., q, v, u, structure)
-    prediction = core.predict(state["observed_theta"], 0., q, v, u)
+    q, v = (row["observation_before"][k][joint_index] for k in ("joint_position", "joint_velocity"))
+    u, nv = row["requested_torque"][joint_index], row["observation_after"]["joint_velocity"][joint_index]
+    features = core.feature_vector(qref, q, v, u, structure)
+    prediction = core.predict(state["observed_theta"], qref, q, v, u)
     item = {"model_id": row["calibration_schedule"]+"_"+structure, "shared_transition_id": row["shared_transition_id"],
         "phase": "identification", "updated": True, "features": features,
         "observed_next_v_rad_s": nv, "preupdate_prediction": {"next_q_rad": prediction[0], "next_v_rad_s": prediction[1]},
-        "preupdate_error_rad_s": nv-prediction[1], "parameter_fingerprint_before": core.state_hash(0., state)}
+        "preupdate_error_rad_s": nv-prediction[1], "parameter_fingerprint_before": core.state_hash(qref, state)}
     state["theta"], state["covariance"] = core.replay_rls(state["theta"], state["covariance"], features, nv)
     state["observed_theta"], state["observed_covariance"] = state["theta"], state["covariance"]
     state["updates"] += 1
     item.update(coefficients_after=state["theta"], covariance_after=state["covariance"], update_count=state["updates"],
-        parameter_fingerprint_after=core.state_hash(0., state))
+        parameter_fingerprint_after=core.state_hash(qref, state))
     return item
 
 
-def complete_arithmetic_archive(path):
+def complete_arithmetic_archive(path, *, spec=TEST_SPEC, qref=0., inactive_q=0., inactive_v=0.):
     """Full protocol shape on declared toy algebra, zero physical queries.
 
     The fixture's next-v algebra is explicit and does not import the experiment.
     Hand-gain tests separately establish RLS arithmetic; this checks orchestration
     and the complete archived schema rather than asserting a physical outcome.
     """
-    partial_archive(path)
+    partial_archive(path, spec=spec)
     metadata, episodes = [core.load_json(path/n) for n in ("metadata.json", "episodes.json")]
     results, all_rows = [], []
-    limit = 100.*3.141592653589793/180.
-    nominal = saved_model(core.initial_state("linear4"))
+    xml = core.ET.fromstring(source_bytes(core.ASSET))
+    xml_joint = next(j for j in xml.findall(".//joint") if j.get("name") == core.JOINTS[spec.joint_index])
+    limits = [float(x)*3.141592653589793/180. for x in xml_joint.get("range").split()]
+    direction = 1 if limits[1]-qref >= qref-limits[0] else -1
+    nominal = saved_model(core.initial_state("linear4"), qref=qref)
     nominal_view = {**nominal, "integration": core.integration_spec(nominal["parameter_fingerprint"]),
         "integration_fingerprint": core.digest(core.integration_spec(nominal["parameter_fingerprint"])), "frozen_view": True}
-    for seed in core.SEEDS:
-        sr = {"seed": seed, "reset_seed": [3757552657, 1641411168, 2001025171][seed], "reference_q": 0., "direction": 1,
-            "selection_record": {"joint_index": 0, "joint_position_rad": 0., "lower_limit_rad": -limit,
-                "upper_limit_rad": limit, "positive_room_rad": limit, "negative_room_rad": limit, "direction": 1,
+    for seed in spec.seeds:
+        sr = {"seed": seed, "reset_seed": spec.reset_seeds[seed], "reference_q": qref, "direction": direction,
+            "selection_record": {"joint_index": spec.joint_index, "joint_position_rad": qref, "lower_limit_rad": limits[0],
+                "upper_limit_rad": limits[1], "positive_room_rad": limits[1]-qref, "negative_room_rad": qref-limits[0], "direction": direction,
                 "rule": "larger distance to the public joint limit; ties choose positive"}, "nominal_model": nominal,
             "initial_models": {}, "learned_models": {}, "calibration_models": {}, "integration_models": {},
             "calibration_completed": {"short": True}, "calibration_updates": 300, "evaluations": {}}
         hashes, views, fitted = {}, {}, {}
         for kind in core.KINDS:
             ep = next(e for e in episodes if e["trial_id"] == f"seed{seed}_{kind}")
-            is_cal, q, v = kind == "calibration", 0., 0.
-            previous, previous_torque = native(), 0.
+            is_cal, q, v = kind == "calibration", qref, 0.
+            previous, previous_torque = native(qref, 0., joint_index=spec.joint_index, inactive_q=inactive_q, inactive_v=inactive_v), 0.
             before_hashes, before_views = (None if is_cal else dict(hashes)), dict(views)
             effort = {p: core.new_effort() for p in core.PHASES}
             q_errors, q_scores, v_scores = [], {}, {}
@@ -332,42 +342,42 @@ def complete_arithmetic_archive(path):
                     if is_cal:
                         calibrators = {s: core.initial_state(s) for s in ("hinge5",)}
                         for s, state in calibrators.items():
-                            name = core.FROZEN_FINAL_SCHEDULE+"_"+s
-                            sr["initial_models"][name] = saved_model(state)
-                            hashes[name] = core.state_hash(0., state)
+                            name = spec.calibration_schedule+"_"+s
+                            sr["initial_models"][name] = saved_model(state, qref=qref)
+                            hashes[name] = core.state_hash(qref, state)
                     else:
                         before_hashes, before_views = dict(hashes), dict(views)
                 u, target, decision = 0., None, None
                 active = index-100
                 if index >= 100 and phase in ("calibration", "prediction"):
                     if is_cal:
-                        u = core.calibration_request(core.FROZEN_FINAL_SCHEDULE, active, 1)
+                        u = core.calibration_request(spec.calibration_schedule, active, direction)
                     else:
                         slot, amplitude = active % 20, core.PREDICTION_AMPLITUDES[kind.split("_")[1]][active//20]
-                        u = amplitude if slot < 7 else -amplitude if 10 <= slot < 17 else 0.
+                        u = direction*(amplitude if slot < 7 else -amplitude if 10 <= slot < 17 else 0.)
                 elif phase == "control":
-                    target = .04 if active < 100 else .08
+                    target = qref+direction*(.04 if active < 100 else .08)
                     if kind in core.MPC_KINDS:
-                        decision = core.replay_mpc(fitted[kind], 0., q, v, target, previous_torque, [-limit, limit])
+                        decision = core.replay_mpc(fitted[kind], qref, q, v, target, previous_torque, limits)
                         u = decision["torque"]
                         fallbacks += int(decision["fallback"])
                         math_calls += decision["mathematical_prediction_calls"]
                     elif kind == "tuned_pd":
-                        u = max(-.5, min(.5, 64.*(target-q)))
+                        u = max(-.5, min(.5, spec.pd_kp*(target-q)-spec.pd_kd*v))
                     saturated += int(abs(u) == .5)
                 hinge = (1. if u > 0 else -1. if u < 0 else 0.)*max(abs(u)-.25, 0.)
                 nv, nq = .5*v+.02*u+.08*hinge, None
                 nq = q+.02*nv
-                row = transition(index, kind=kind, phase=phase, q=q, v=v, u=u, next_q=nq, next_v=nv, before=previous)
-                row.update(raw_pd_torque_nm=64.*(target-q) if kind == "tuned_pd" and target is not None else None, seed=seed, trial_id=ep["trial_id"], shared_transition_id=ep["trial_id"]+":"+str(index), target_q=target, planner_decision=decision)
+                row = transition(index, kind=kind, phase=phase, q=q, v=v, u=u, next_q=nq, next_v=nv, before=previous, spec=spec, inactive_q=inactive_q, inactive_v=inactive_v)
+                row.update(raw_pd_torque_nm=spec.pd_kp*(target-q)-spec.pd_kd*v if kind == "tuned_pd" and target is not None else None, seed=seed, trial_id=ep["trial_id"], shared_transition_id=ep["trial_id"]+":"+str(index), target_q=target, planner_decision=decision)
                 if index >= 100:
-                    predicted = {s: core.predict(st["observed_theta"], 0., q, v, u) for s, st in calibrators.items()} if is_cal else {
-                        n: core.predict(t, 0., q, v, u) for n, t in fitted.items()}
+                    predicted = {s: core.predict(st["observed_theta"], qref, q, v, u) for s, st in calibrators.items()} if is_cal else {
+                        n: core.predict(t, qref, q, v, u) for n, t in fitted.items()}
                     if not is_cal:
                         predicted["persistence"] = (q+.02*v, v)
                     row["predicted_next_qv"] = predicted
                     if is_cal:
-                        row["model_update"] = {s: update_item(row, st, s) for s, st in calibrators.items()}
+                        row["model_update"] = {s: update_item(row, st, s, qref=qref, joint_index=spec.joint_index) for s, st in calibrators.items()}
                     for n, (pq, pv) in predicted.items():
                         q_scores.setdefault(n, []).append(nq-pq)
                         v_scores.setdefault(n, []).append(nv-pv)
@@ -378,10 +388,10 @@ def complete_arithmetic_archive(path):
                 previous, previous_torque, q, v = row["observation_after"], u, nq, nv
                 all_rows.append(row)
             if is_cal:
-                dose = core.FROZEN_FINAL_SCHEDULE
+                dose = spec.calibration_schedule
                 sr["calibration_models"][dose] = {}
                 for structure, state in calibrators.items():
-                    name, saved = dose+"_"+structure, saved_model(state)
+                    name, saved = dose+"_"+structure, saved_model(state, qref=qref)
                     hashes[name] = saved["parameter_fingerprint"]
                     sr["learned_models"][name] = saved
                     sr["calibration_models"][dose][structure] = saved
@@ -399,10 +409,10 @@ def complete_arithmetic_archive(path):
             ep["phase_budgets"][active_phase] = {"control_calls_attempted": core.duration(kind), "control_steps": core.duration(kind), "physics_steps": core.duration(kind)*10}
             planner_spec = None
             if kind in core.MPC_KINDS:
-                fp = hashes["nominal" if kind == "nominal_mpc" else core.FROZEN_FINAL_SCHEDULE+"_hinge5"]
-                planner_spec = {"config": core.MPC_CONFIG, "qref_rad": 0., "joint_range_rad": [-limit, limit],
+                fp = hashes["nominal" if kind == "nominal_mpc" else spec.calibration_schedule+"_hinge5"]
+                planner_spec = {"config": core.MPC_CONFIG, "qref_rad": qref, "joint_range_rad": limits,
                     "candidates_nm": [-.5+i*.125 for i in range(9)], "physical_queries": 0,
-                    "forecast_bounds_rad": [-.15, .15], "target_bounds_rad": [-.15, .15],
+                    "forecast_bounds_rad": [max(qref-.15, limits[0]-.03), min(qref+.15, limits[1]+.03)], "target_bounds_rad": [max(qref-.15, limits[0]+.03), min(qref+.15, limits[1]-.03)],
                     "integration": core.integration_spec(fp), "integration_fingerprint": views[kind]}
             sr["evaluations"][kind] = {"completed": True, "status": "completed", "study_abort": None, "environment_terminated": False, "environment_stop_reason": None, "partial_interval_target_errors_rad": [], "partial_interval_target_error_count": 0, "tracking_rmse_rad": core.rmse(q_errors),
                 "metric_control_step_count": len(q_errors), "metric_prediction_step_count": {n: len(vs) for n, vs in v_scores.items()}, "velocity_prediction_rmse": {n: core.rmse(vs) for n, vs in v_scores.items()},
@@ -418,7 +428,7 @@ def complete_arithmetic_archive(path):
                 "controller_seconds_total": len(q_errors)*.001 if kind in core.MPC_KINDS else 0.,
                 "pd_calls_attempted": len(q_errors) if kind == "tuned_pd" else 0, "failed_pd_attempts": 0, "pd_calls_successful": len(q_errors) if kind == "tuned_pd" else 0,
                 "pd_seconds_total": len(q_errors)*.001 if kind == "tuned_pd" else 0.,
-                "controller_spec": {"method": "tuned_pd", "kp": 64., "kd": 0., "body_model_input": False, "permission_nm": .5} if kind == "tuned_pd" else {"method": "zero_torque"} if kind == "zero_torque" else None, "models_before": before_hashes, "models_after": dict(hashes),
+                "controller_spec": {"method": "tuned_pd", "kp": spec.pd_kp, "kd": spec.pd_kd, "body_model_input": False, "permission_nm": .5} if kind == "tuned_pd" else {"method": "zero_torque"} if kind == "zero_torque" else None, "models_before": before_hashes, "models_after": dict(hashes),
                 "integration_models_before": before_views, "integration_models_after": dict(views), "planner_spec": planner_spec}
         results.append(sr)
     metadata.update(control_calls_attempted=6000, control_steps=6000, physics_steps=60000, model_updates=900,
@@ -513,7 +523,7 @@ def test_auditor_only_imports_standard_library_and_does_not_access_physics():
 
 def test_complete_twenty_one_trial_arithmetic_archive_has_fixed_six_thousand_budget(tmp_path):
     archive = complete_arithmetic_archive(tmp_path/"complete")
-    report = core.audit(archive, git_root=None)
+    report = core.audit(archive, git_root=None, spec=TEST_SPEC)
     assert report["failed"] == 0, report["violations"]
     assert report["archive"]["budget"] == {"control_calls_attempted": 6000, "control_steps": 6000, "physics_steps": 60000, "model_updates": 900}
     assert report["archive"]["physical_calibration_transfers"] == 900
@@ -534,7 +544,7 @@ def test_complete_twenty_one_trial_arithmetic_archive_has_fixed_six_thousand_bud
 
 def test_paid_partial_prefix_remains_visible_and_no_final_gate_can_pass(tmp_path):
     archive = partial_archive(tmp_path/"partial")
-    report = core.audit(archive, git_root=None)
+    report = core.audit(archive, git_root=None, spec=TEST_SPEC)
     assert report["failed"] == 0, report["violations"]
     assert report["archive"]["budget"]["physics_steps"] == 3
     assert not report["final_gates"]["model_contribution_gate"]["passed"]
@@ -544,7 +554,7 @@ def test_paid_partial_prefix_remains_visible_and_no_final_gate_can_pass(tmp_path
 
 def gate_fixture(nominal=(1., 1., 1.), learned=(.7, .7, .7), pd=(.8, .8, .8), effort=1.):
     rows = []
-    for seed, n, l, p in zip(core.SEEDS, nominal, learned, pd):
+    for seed, n, l, p in zip(TEST_SPEC.seeds, nominal, learned, pd):
         ev = {k: {"eligible": True, "completed": True, "status": "completed", "study_aborted": False, "environment_terminated": False} for k in core.KINDS}
         for kind, value in (("nominal_mpc", n), ("learned_mpc", l), ("tuned_pd", p), ("zero_torque", 1.)):
             ev[kind].update(tracking_rmse_rad=value, actual_effort_complete=True,
@@ -556,7 +566,7 @@ def gate_fixture(nominal=(1., 1., 1.), learned=(.7, .7, .7), pd=(.8, .8, .8), ef
 
 
 def test_five_six_seven_completeness_and_frozen_two_gates_pass():
-    result = core.final_gates(gate_fixture())
+    result = core.final_gates(gate_fixture(), spec=TEST_SPEC)
     assert result["model_contribution_gate"]["passed"]
     assert result["classical_comparison_gate"]["passed"]
     assert result["complete_matrix"]
@@ -566,7 +576,7 @@ def test_five_six_seven_completeness_and_frozen_two_gates_pass():
 def test_independent_baseline_failure_does_not_erase_same_mpc_model_contribution(failed):
     rows = gate_fixture()
     rows[0]["evaluations"][failed].update(completed=False, eligible=False, status="terminated", study_aborted=True)
-    result = core.final_gates(rows)
+    result = core.final_gates(rows, spec=TEST_SPEC)
     assert result["model_contribution_gate"]["passed"] and not result["complete_matrix"]
     assert result["classical_comparison_gate"]["passed"] == (failed == "zero_torque")
 
@@ -575,7 +585,7 @@ def test_independent_baseline_failure_does_not_erase_same_mpc_model_contribution
 def test_any_required_trial_failure_denies_model_and_classical_gates(kind):
     rows = gate_fixture()
     rows[0]["evaluations"][kind].update(completed=False, eligible=False, status="exception")
-    result = core.final_gates(rows)
+    result = core.final_gates(rows, spec=TEST_SPEC)
     assert not result["model_contribution_gate"]["passed"] and not result["classical_comparison_gate"]["passed"]
 
 
@@ -583,9 +593,9 @@ def test_any_required_trial_failure_denies_model_and_classical_gates(kind):
 def test_model_velocity_requires_point_eight_on_each_full_common_prediction(kind):
     rows = gate_fixture()
     rows[0]["evaluations"][kind]["velocity_prediction_rmse"]["learned_mpc"] = .8
-    assert core.model_contribution_gate(rows)["passed"]
+    assert core.model_contribution_gate(rows, spec=TEST_SPEC)["passed"]
     rows[0]["evaluations"][kind]["velocity_prediction_rmse"]["learned_mpc"] += 1e-12
-    assert not core.model_contribution_gate(rows)["passed"]
+    assert not core.model_contribution_gate(rows, spec=TEST_SPEC)["passed"]
 
 
 def test_velocity_zero_nominal_allows_only_zero_learned_and_ratio_is_undefined():
@@ -593,22 +603,22 @@ def test_velocity_zero_nominal_allows_only_zero_learned_and_ratio_is_undefined()
     for r in rows:
         for kind in ("prediction_low", "prediction_full"):
             r["evaluations"][kind]["velocity_prediction_rmse"] = {"nominal_mpc": 0., "learned_mpc": 0.}
-    result = core.model_contribution_gate(rows)
+    result = core.model_contribution_gate(rows, spec=TEST_SPEC)
     assert result["passed"]
     assert all(g["relative_improvement"] is None for r in result["per_seed"] for g in r["prediction_gates"].values())
     rows[0]["evaluations"]["prediction_full"]["velocity_prediction_rmse"]["learned_mpc"] = 1e-15
-    assert not core.model_contribution_gate(rows)["passed"]
+    assert not core.model_contribution_gate(rows, spec=TEST_SPEC)["passed"]
 
 
 def test_model_tracking_is_strict_each_seed_and_twenty_percent_raw_means():
     rows = gate_fixture()
     rows[0]["evaluations"]["learned_mpc"]["tracking_rmse_rad"] = 1.
-    assert not core.model_contribution_gate(rows)["passed"]
+    assert not core.model_contribution_gate(rows, spec=TEST_SPEC)["passed"]
     rows = gate_fixture((.1, 1., 10.), (.01, .5, 9.9))
-    result = core.model_contribution_gate(rows)
+    result = core.model_contribution_gate(rows, spec=TEST_SPEC)
     assert result["tracking_mean_improvement"] < .2 and not result["passed"]
     rows = gate_fixture((0., 0., 0.), (0., 0., 0.))
-    result = core.model_contribution_gate(rows)
+    result = core.model_contribution_gate(rows, spec=TEST_SPEC)
     assert result["tracking_mean_improvement"] is None and not result["passed"]
 
 
@@ -623,15 +633,15 @@ def test_invalid_model_gate_values_never_pass(fault):
         rows[-1]["seed"] = 0
     else:
         rows.pop()
-    assert not core.model_contribution_gate(rows)["passed"]
+    assert not core.model_contribution_gate(rows, spec=TEST_SPEC)["passed"]
 
 
 def test_pd_gate_requires_main_gate_and_raw_mean_five_percent_improvement():
     rows = gate_fixture(learned=(.95, .95, .95), pd=(1., 1., 1.))
-    result = core.final_gates(rows)
+    result = core.final_gates(rows, spec=TEST_SPEC)
     assert not result["model_contribution_gate"]["passed"] and not result["classical_comparison_gate"]["passed"]
     rows = gate_fixture(nominal=(100.,100.,100.), learned=(.04,.9,9.95), pd=(.1,1.,10.))
-    result = core.final_gates(rows)
+    result = core.final_gates(rows, spec=TEST_SPEC)
     assert result["model_contribution_gate"]["passed"]
     assert not result["classical_comparison_gate"]["passed"]
     assert result["classical_comparison_gate"]["tracking_mean_improvement"] < .05
@@ -653,7 +663,7 @@ def test_each_classical_gate_requirement_is_separate(fault):
         e["control_effort"]["actual_squared_nm2_s"] = -1.
     else:
         e["control_effort"]["actual_absolute_nm_s"] = float("inf")
-    result = core.final_gates(rows)
+    result = core.final_gates(rows, spec=TEST_SPEC)
     assert not result["classical_comparison_gate"]["passed"]
     if fault != "worse_seed":
         assert result["model_contribution_gate"]["passed"]
@@ -661,16 +671,16 @@ def test_each_classical_gate_requirement_is_separate(fault):
 
 def test_pd_effort_five_percent_exact_and_zero_denominators():
     rows = gate_fixture(effort=1.05)
-    assert core.classical_comparison_gate(rows)["passed"]
+    assert core.classical_comparison_gate(rows, spec=TEST_SPEC)["passed"]
     rows[0]["evaluations"]["learned_mpc"]["control_effort"]["actual_squared_nm2_s"] += 1e-12
-    assert not core.classical_comparison_gate(rows)["passed"]
+    assert not core.classical_comparison_gate(rows, spec=TEST_SPEC)["passed"]
     rows = gate_fixture(effort=0.)
     for r in rows:
         r["evaluations"]["tuned_pd"]["control_effort"] = dict.fromkeys(core.EFFORT_KEYS[2:], 0.)
-    result = core.classical_comparison_gate(rows)
+    result = core.classical_comparison_gate(rows, spec=TEST_SPEC)
     assert result["passed"] and all(v["relative_increase"] is None for v in result["actual_effort_gates"].values())
     rows[0]["evaluations"]["learned_mpc"]["control_effort"]["actual_absolute_nm_s"] = 1e-15
-    assert not core.classical_comparison_gate(rows)["passed"]
+    assert not core.classical_comparison_gate(rows, spec=TEST_SPEC)["passed"]
 
 
 def test_unfrozen_wrong_suite_or_schedule_rejected_before_trace(tmp_path, monkeypatch):
@@ -681,41 +691,42 @@ def test_unfrozen_wrong_suite_or_schedule_rejected_before_trace(tmp_path, monkey
     metadata = core.load_json(archive/"metadata.json")
     metadata["calibration_schedule"] = "reordered"
     (archive/"metadata.json").write_text(json.dumps(metadata), encoding="utf-8")
-    report = core.audit(archive, git_root=None)
+    report = core.audit(archive, git_root=None, spec=TEST_SPEC)
     assert report["failed"] and report["archive"] is None
-    monkeypatch.setattr(core, "FROZEN_FINAL_SCHEDULE", None)
-    report = core.audit(archive, git_root=None)
+    report = core.audit(archive, git_root=None, spec=replace(TEST_SPEC, calibration_schedule=None))
     assert report["failed"] and report["archive"] is None
 
 
-def failure_archive(path, *, missing_item=False):
+def failure_archive(path, *, missing_item=False, spec=TEST_SPEC, qref=0., inactive_q=0., inactive_v=0.):
     """Second returned endpoint then IO failure: successful update survives raw snapshot."""
-    partial_archive(path)
+    partial_archive(path, spec=spec)
     metadata, episodes, results = [core.load_json(path/n) for n in ("metadata.json", "episodes.json", "seed_results.json")]
     sr, ep = results[0], episodes[0]
-    rows = [transition(i, kind="calibration", phase="prefix") for i in range(100)]
+    rows = [transition(i, kind="calibration", phase="prefix", q=qref, next_q=qref, spec=spec, inactive_q=inactive_q, inactive_v=inactive_v) for i in range(100)]
     state = core.initial_state("hinge5")
-    initial = {"short_hinge5": saved_model(state)}
-    nominal = saved_model(core.initial_state("linear4"))
-    first = transition(100, kind="calibration", phase="calibration", u=.125, next_q=.00005, next_v=.0025)
-    first["predicted_next_qv"] = {"hinge5": core.predict(state["theta"], 0., 0., 0., .125)}
-    first["model_update"] = {"hinge5": update_item(first, state, "hinge5")}
+    initial = {"short_hinge5": saved_model(state, qref=qref)}
+    nominal = saved_model(core.initial_state("linear4"), qref=qref)
+    first = transition(100, kind="calibration", phase="calibration", q=qref, u=.125, next_q=qref+.00005, next_v=.0025, spec=spec, inactive_q=inactive_q, inactive_v=inactive_v)
+    first["predicted_next_qv"] = {"hinge5": core.predict(state["theta"], qref, qref, 0., .125)}
+    first["model_update"] = {"hinge5": update_item(first, state, "hinge5", qref=qref, joint_index=spec.joint_index)}
     rows.append(first)
-    second = transition(101, kind="calibration", phase="calibration", before=first["observation_after"], q=.00005, v=.0025, u=.125, next_q=.000125, next_v=.00375)
-    second["predicted_next_qv"] = {"hinge5": core.predict(state["theta"], 0., .00005, .0025, .125)}
-    success = update_item(second, state, "hinge5")
+    second = transition(101, kind="calibration", phase="calibration", before=first["observation_after"], q=qref+.00005, v=.0025, u=.125, next_q=qref+.000125, next_v=.00375, spec=spec, inactive_q=inactive_q, inactive_v=inactive_v)
+    second["predicted_next_qv"] = {"hinge5": core.predict(state["theta"], qref, qref+.00005, .0025, .125)}
+    success = update_item(second, state, "hinge5", qref=qref, joint_index=spec.joint_index)
     second["model_update"] = {} if missing_item else {"hinge5": success}
     second["collector_exception"] = {"type": "OSError", "message": "synthetic returned endpoint then IO failure"}
-    second["partial_model_snapshots"] = {"hinge5": saved_model(state, trainable=True)}
+    second["partial_model_snapshots"] = {"hinge5": saved_model(state, trainable=True, qref=qref)}
     second["diagnostics"] = {k: second["diagnostics"][k] for k in ("step_id", "physics_steps", "time")}
     second["unreturned_physics_steps"] = 0
     rows.append(second)
-    frozen = {"short_hinge5": saved_model(state)}
+    frozen = {"short_hinge5": saved_model(state, qref=qref)}
     view = {**nominal, "integration": core.integration_spec(nominal["parameter_fingerprint"]),
         "integration_fingerprint": core.digest(core.integration_spec(nominal["parameter_fingerprint"])), "frozen_view": True}
-    limit = 100.*3.141592653589793/180.
-    sr.update(reference_q=0., direction=1, selection_record={"joint_index": 0, "joint_position_rad": 0., "lower_limit_rad": -limit,
-        "upper_limit_rad": limit, "positive_room_rad": limit, "negative_room_rad": limit, "direction": 1,
+    xml = core.ET.fromstring(source_bytes(core.ASSET))
+    xml_joint = next(j for j in xml.findall(".//joint") if j.get("name") == core.JOINTS[spec.joint_index])
+    limits = [float(x)*3.141592653589793/180. for x in xml_joint.get("range").split()]
+    sr.update(reference_q=qref, direction=1, selection_record={"joint_index": spec.joint_index, "joint_position_rad": qref, "lower_limit_rad": limits[0],
+        "upper_limit_rad": limits[1], "positive_room_rad": limits[1]-qref, "negative_room_rad": qref-limits[0], "direction": 1,
         "rule": "larger distance to the public joint limit; ties choose positive"}, nominal_model=nominal,
         calibration_updates=2, initial_models=initial, learned_models=frozen,
         calibration_models={"short": {"hinge5": frozen["short_hinge5"]}}, integration_models={"nominal_mpc": view})
@@ -744,7 +755,7 @@ def failure_archive(path, *, missing_item=False):
 @pytest.mark.parametrize("missing_item", [False, True])
 def test_exception_after_return_preserves_successful_atomic_updates_and_measured_paid_cost(tmp_path, missing_item):
     archive = failure_archive(tmp_path/"failed", missing_item=missing_item)
-    report = core.audit(archive, git_root=None)
+    report = core.audit(archive, git_root=None, spec=TEST_SPEC)
     assert report["failed"] == 0, report["violations"]
     seed = report["archive"]["seeds"][0]
     assert seed["model_updates"] == seed["independently_replayed_updates"] == 2
@@ -782,33 +793,33 @@ def test_exception_snapshot_and_cold_start_tampering_rejected(tmp_path, fault):
             for row in rows:
                 stream.write(json.dumps(row)+"\n")
     write_manifest(archive)
-    report = core.audit(archive, git_root=None)
+    report = core.audit(archive, git_root=None, spec=TEST_SPEC)
     assert report["failed"] > 0
     assert report["reported_paid_budget_if_replay_incomplete"]["model_updates"] == 2
 
 
-def stopped_calibration_archive(path, count=300, last_substeps=10, env_stop=False):
+def stopped_calibration_archive(path, count=300, last_substeps=10, env_stop=False, *, spec=TEST_SPEC, qref=0., inactive_q=0., inactive_v=0.):
     """Native terminal endpoint at last paid request; stopped fit is never eligible."""
-    partial_archive(path)
+    partial_archive(path, spec=spec)
     metadata, episodes, results = [core.load_json(path/n) for n in ("metadata.json", "episodes.json", "seed_results.json")]
     sr, ep = results[0], episodes[0]
     state = core.initial_state("hinge5")
-    initial = {"short_hinge5": saved_model(state)}
-    nominal = saved_model(core.initial_state("linear4"))
+    initial = {"short_hinge5": saved_model(state, qref=qref)}
+    nominal = saved_model(core.initial_state("linear4"), qref=qref)
     view = {**nominal, "integration": core.integration_spec(nominal["parameter_fingerprint"]),
         "integration_fingerprint": core.digest(core.integration_spec(nominal["parameter_fingerprint"])), "frozen_view": True}
-    rows = [transition(i, kind="calibration", phase="prefix") for i in range(100)]
+    rows = [transition(i, kind="calibration", phase="prefix", q=qref, next_q=qref, spec=spec, inactive_q=inactive_q, inactive_v=inactive_v) for i in range(100)]
     before, qe, ve, effort = rows[-1]["observation_after"], [], [], core.new_effort()
     for active in range(count):
         index, n = active+100, last_substeps if active == count-1 else 10
         u = core.calibration_request("short", active, 1)
-        nq, nv = (.12, 1.) if active == count-1 else (0., 0.)
-        r = transition(index, kind="calibration", phase="calibration", q=0., v=0., u=u, next_q=nq, next_v=nv, before=before, n=n, terminated=env_stop and active == count-1)
-        prediction = core.predict(state["observed_theta"], 0., 0., 0., u)
+        nq, nv = (qref+.12, 1.) if active == count-1 else (qref, 0.)
+        r = transition(index, kind="calibration", phase="calibration", q=qref, v=0., u=u, next_q=nq, next_v=nv, before=before, n=n, terminated=env_stop and active == count-1, spec=spec, inactive_q=inactive_q, inactive_v=inactive_v)
+        prediction = core.predict(state["observed_theta"], qref, qref, 0., u)
         r["predicted_next_qv"] = {"hinge5": prediction}
-        r["study_abort"] = monitor_payload(nq, nv, index, "calibration")
+        r["study_abort"] = monitor_payload(nq, nv, index, "calibration", qref=qref)
         if n == 10:
-            r["model_update"] = {"hinge5": update_item(r, state, "hinge5")}
+            r["model_update"] = {"hinge5": update_item(r, state, "hinge5", qref=qref, joint_index=spec.joint_index)}
             qe.append(nq-prediction[0])
             ve.append(nv-prediction[1])
         else:
@@ -818,10 +829,12 @@ def stopped_calibration_archive(path, count=300, last_substeps=10, env_stop=Fals
             effort[key] += value
         before = r["observation_after"]
         rows.append(r)
-    final, reason = saved_model(state), rows[-1]["study_abort"]
-    limit = 100.*3.141592653589793/180.
-    sr.update(reference_q=0., direction=1, selection_record={"joint_index": 0, "joint_position_rad": 0., "lower_limit_rad": -limit,
-        "upper_limit_rad": limit, "positive_room_rad": limit, "negative_room_rad": limit, "direction": 1,
+    final, reason = saved_model(state, qref=qref), rows[-1]["study_abort"]
+    xml = core.ET.fromstring(source_bytes(core.ASSET))
+    xml_joint = next(j for j in xml.findall(".//joint") if j.get("name") == core.JOINTS[spec.joint_index])
+    limits = [float(x)*3.141592653589793/180. for x in xml_joint.get("range").split()]
+    sr.update(reference_q=qref, direction=1, selection_record={"joint_index": spec.joint_index, "joint_position_rad": qref, "lower_limit_rad": limits[0],
+        "upper_limit_rad": limits[1], "positive_room_rad": limits[1]-qref, "negative_room_rad": qref-limits[0], "direction": 1,
         "rule": "larger distance to the public joint limit; ties choose positive"}, nominal_model=nominal,
         calibration_updates=state["updates"], initial_models=initial, learned_models={"short_hinge5": final},
         calibration_models={"short": {"hinge5": final}}, integration_models={"nominal_mpc": view})
@@ -850,7 +863,7 @@ def stopped_calibration_archive(path, count=300, last_substeps=10, env_stop=Fals
 
 def test_last_planned_calibration_step_can_update_three_hundred_but_study_still_fails(tmp_path):
     archive = stopped_calibration_archive(tmp_path/"last_step")
-    report = core.audit(archive, git_root=None)
+    report = core.audit(archive, git_root=None, spec=TEST_SPEC)
     assert report["failed"] == 0, report["violations"]
     seed = report["archive"]["seeds"][0]
     assert seed["model_updates"] == seed["independently_replayed_updates"] == 300
@@ -866,7 +879,7 @@ def test_last_planned_calibration_step_can_update_three_hundred_but_study_still_
 @pytest.mark.parametrize("n", [3, 10])
 def test_same_returned_endpoint_can_have_both_stops_and_partial_never_updates_or_scores(tmp_path, n):
     archive = stopped_calibration_archive(tmp_path/"stopped", count=1, last_substeps=n, env_stop=True)
-    report = core.audit(archive, git_root=None)
+    report = core.audit(archive, git_root=None, spec=TEST_SPEC)
     assert report["failed"] == 0, report["violations"]
     seed = report["archive"]["seeds"][0]
     assert seed["model_updates"] == int(n == 10)
@@ -936,7 +949,7 @@ def partial_nominal_control_archive(path):
 
 def test_partial_nominal_control_is_fit_independent_paid_and_never_scored_as_twenty_ms(tmp_path):
     archive = partial_nominal_control_archive(tmp_path/"control_partial")
-    report = core.audit(archive, git_root=None)
+    report = core.audit(archive, git_root=None, spec=TEST_SPEC)
     assert report["failed"] == 0, report["violations"]
     e = report["archive"]["seeds"][0]["evaluations"]["nominal_mpc"]
     assert e["tracking_rmse_rad"] is None and e["velocity_prediction_rmse"] == {"nominal_mpc": None, "persistence": None}

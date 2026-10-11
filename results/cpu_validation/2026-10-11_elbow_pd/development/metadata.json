@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "purpose": "Fixed C4-A left-elbow classical PD development",
+  "created_at_utc": "2026-10-11T06:13:06.218873+00:00",
+  "source_commit": "91223b39c86fbeb09f7bc399229789b1e00ce181",
+  "source_status": "",
+  "source_sha256": {
+    "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+    "src/developmental_physics/collect.py": "dfb79efce0a03c479a7724a2ec8faadbc9f236580c151b77a0be7de30072d13e",
+    "src/developmental_physics/elbow_feedback_validate.py": "580efad122c461e2f322053d3c2d499ccb9944a13f78345177d256843689fe73",
+    "src/developmental_physics/environment.py": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70",
+    "src/developmental_physics/exploration.py": "163686f29824f5985a7c96e922084dd7bfe02014f1595459f859504ea9767e0b",
+    "src/developmental_physics/feedback_validate.py": "0523cb015da4c214be413feb689be9d1e0ed2728c5c411ea64d6ef13d5201e85",
+    "src/developmental_physics/local_ablation.py": "27da381b0c987dbe41bc8e527e96f6c1d7bbb15837d914cd53e106989b91e29b",
+    "src/developmental_physics/local_coverage_ablation.py": "21e2b43242cb2248af340515066243cffc16739c837e9310d3c78f400152fdc3",
+    "src/developmental_physics/local_dose_ablation.py": "a5774f4fc525d5ed6ad3b0e375bd34c5f5bda49e409db8bb2b740261077533d8",
+    "src/developmental_physics/local_frozen_validation.py": "cd5822defbb84cc4c6319c8490be3cb5ce7f259f18b45f5badfacf021e9a2149",
+    "src/developmental_physics/local_integration.py": "3dad9e02f16e3813b82150f868d77a6b948b6200a827f2f08f4ea386585da49c",
+    "src/developmental_physics/local_learning.py": "037b56393d0c0f1e20118bbd313e05668964110081ecab4b115abc4b15bb55ca",
+    "src/developmental_physics/local_model.py": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1",
+    "src/developmental_physics/local_pair_model.py": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+    "src/developmental_physics/probe_collect.py": "b68643037b64b764de5f6513bcd697e2e62465345671bc1aaa272435fe4e0ea3",
+    "src/developmental_physics/probes.py": "7bb6c2e4f1bac3cb67347e3ff35f49315af7137e7f5e3199557dd8ca37eab4ea",
+    "src/developmental_physics/assets/ground_body.xml": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c",
+    "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2",
+    "docs/ELBOW_PD_DEVELOPMENT_PROTOCOL.md": "81b48a5117041fd98294b68d1d6af4f17df15c0228de3825016e313b2a7b12fd"
+  },
+  "protocol": {
+    "path": "docs/ELBOW_PD_DEVELOPMENT_PROTOCOL.md",
+    "sha256": "81b48a5117041fd98294b68d1d6af4f17df15c0228de3825016e313b2a7b12fd"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python_version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "python_executable": "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+  "dependencies": {
+    "PyOpenGL": "3.1.10",
+    "Pygments": "2.21.0",
+    "absl-py": "2.5.1",
+    "colorama": "0.4.6",
+    "developmental-humanoid-learning": "0.1.0",
+    "etils": "1.13.0",
+    "exceptiongroup": "1.3.1",
+    "fsspec": "2026.9.0",
+    "glfw": "2.10.2",
+    "importlib_resources": "7.1.0",
+    "iniconfig": "2.3.1",
+    "mujoco": "3.15.0",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pip": "23.0.1",
+    "pluggy": "1.6.0",
+    "pytest": "8.4.2",
+    "setuptools": "65.5.0",
+    "tomli": "2.5.0",
+    "typing_extensions": "4.16.0",
+    "websockets": "16.1.1",
+    "zipp": "4.1.1"
+  },
+  "backend": "MuJoCo CPU",
+  "mujoco_version": "3.15.0",
+  "gpu": null,
+  "pose": "supine",
+  "joint_index": 1,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "split": "development",
+  "gains": [
+    [
+      4.0,
+      0.0
+    ],
+    [
+      4.0,
+      0.2
+    ],
+    [
+      4.0,
+      1.0
+    ],
+    [
+      16.0,
+      0.0
+    ],
+    [
+      16.0,
+      0.2
+    ],
+    [
+      16.0,
+      1.0
+    ],
+    [
+      64.0,
+      0.0
+    ],
+    [
+      64.0,
+      0.2
+    ],
+    [
+      64.0,
+      1.0
+    ]
+  ],
+  "environment_config": {
+    "physics_dt": 0.002,
+    "control_substeps": 10,
+    "torque_limit": 0.5,
+    "joint_speed_limit": 20.0,
+    "joint_limit_margin": 0.08,
+    "kinetic_energy_limit": 50.0,
+    "reset_clearance": 0.005,
+    "ground_contact_profile": "baseline"
+  },
+  "prefix_steps": 100,
+  "control_steps_per_trial": 200,
+  "target_offsets_rad": [
+    0.04,
+    0.08
+  ],
+  "study_abort_spec": {
+    "phase": "every trial active only; never prefix",
+    "absolute_q_minus_qref_rad": 0.12,
+    "absolute_velocity_rad_s": 1.0,
+    "comparison": ">=",
+    "checks": [
+      "every returned active endpoint"
+    ],
+    "action": "end episode; no corrective command, continuation or replacement",
+    "environment_protection": "unchanged; independent environment stop reason takes precedence",
+    "last_complete_transition": "RLS update and endpoint metrics retained before stop",
+    "claim_boundary": "Native research stop is not a proof of safety or real-world braking"
+  },
+  "parameter_updates": {
+    "body_model": 0,
+    "policy": 0,
+    "gains": 0
+  },
+  "teacher_calls": 0,
+  "external_demonstration_samples": 0,
+  "model_updates": 0,
+  "initial_controller_capability": "Classical target-position PD from public encoders and current task target",
+  "pd_controller_spec": {
+    "implementation": "feedback_validate.pd_request",
+    "permission_nm": 0.5,
+    "body_model_input": false,
+    "gain_updates": 0
+  },
+  "gain_selection": "Offline development; all nine candidates and all paid prefixes count; independent audit selects",
+  "target_information": "Current target only; no future switch preview; paid qref is not clipped",
+  "planned_episodes": [
+    {
+      "trial_id": "seed0_candidate0",
+      "seed": 0,
+      "candidate": 0,
+      "kp": 4.0,
+      "kd": 0.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate1",
+      "seed": 0,
+      "candidate": 1,
+      "kp": 4.0,
+      "kd": 0.2,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate2",
+      "seed": 0,
+      "candidate": 2,
+      "kp": 4.0,
+      "kd": 1.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate3",
+      "seed": 0,
+      "candidate": 3,
+      "kp": 16.0,
+      "kd": 0.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate4",
+      "seed": 0,
+      "candidate": 4,
+      "kp": 16.0,
+      "kd": 0.2,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate5",
+      "seed": 0,
+      "candidate": 5,
+      "kp": 16.0,
+      "kd": 1.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate6",
+      "seed": 0,
+      "candidate": 6,
+      "kp": 64.0,
+      "kd": 0.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate7",
+      "seed": 0,
+      "candidate": 7,
+      "kp": 64.0,
+      "kd": 0.2,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed0_candidate8",
+      "seed": 0,
+      "candidate": 8,
+      "kp": 64.0,
+      "kd": 1.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate0",
+      "seed": 1,
+      "candidate": 0,
+      "kp": 4.0,
+      "kd": 0.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate1",
+      "seed": 1,
+      "candidate": 1,
+      "kp": 4.0,
+      "kd": 0.2,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate2",
+      "seed": 1,
+      "candidate": 2,
+      "kp": 4.0,
+      "kd": 1.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate3",
+      "seed": 1,
+      "candidate": 3,
+      "kp": 16.0,
+      "kd": 0.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate4",
+      "seed": 1,
+      "candidate": 4,
+      "kp": 16.0,
+      "kd": 0.2,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate5",
+      "seed": 1,
+      "candidate": 5,
+      "kp": 16.0,
+      "kd": 1.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate6",
+      "seed": 1,
+      "candidate": 6,
+      "kp": 64.0,
+      "kd": 0.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate7",
+      "seed": 1,
+      "candidate": 7,
+      "kp": 64.0,
+      "kd": 0.2,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed1_candidate8",
+      "seed": 1,
+      "candidate": 8,
+      "kp": 64.0,
+      "kd": 1.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate0",
+      "seed": 2,
+      "candidate": 0,
+      "kp": 4.0,
+      "kd": 0.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate1",
+      "seed": 2,
+      "candidate": 1,
+      "kp": 4.0,
+      "kd": 0.2,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate2",
+      "seed": 2,
+      "candidate": 2,
+      "kp": 4.0,
+      "kd": 1.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate3",
+      "seed": 2,
+      "candidate": 3,
+      "kp": 16.0,
+      "kd": 0.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate4",
+      "seed": 2,
+      "candidate": 4,
+      "kp": 16.0,
+      "kd": 0.2,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate5",
+      "seed": 2,
+      "candidate": 5,
+      "kp": 16.0,
+      "kd": 1.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate6",
+      "seed": 2,
+      "candidate": 6,
+      "kp": 64.0,
+      "kd": 0.0,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate7",
+      "seed": 2,
+      "candidate": 7,
+      "kp": 64.0,
+      "kd": 0.2,
+      "maximum_control_steps": 300
+    },
+    {
+      "trial_id": "seed2_candidate8",
+      "seed": 2,
+      "candidate": 8,
+      "kp": 64.0,
+      "kd": 1.0,
+      "maximum_control_steps": 300
+    }
+  ],
+  "planned_episode_count": 27,
+  "maximum_control_steps": 8100,
+  "maximum_physics_steps": 81000,
+  "cpu_seconds_scope": "Current process; same start/checkpoint scope as wall_seconds; excludes imports, initial source snapshot and pre-timer setup",
+  "completion_definition": "Every planned trial has an outcome; no scientific or safety acceptance implied",
+  "claim_boundary": "Classical local PD only; no full-body skill, online learning or hardware safety proof",
+  "complete": true,
+  "archive_status": "complete",
+  "source_dirty": false,
+  "control_calls_attempted": 7521,
+  "control_steps": 7521,
+  "physics_steps": 75210,
+  "wall_seconds": 18.052950200159103,
+  "cpu_seconds": 17.953125,
+  "completed_trials": 24,
+  "terminated_trials": 3,
+  "exception_trials": 0,
+  "blocked_trials": 0,
+  "all_trials_successful": false,
+  "invalid_numeric_fields": []
+}

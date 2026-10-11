@@ -1,0 +1,17 @@
+{
+  "purpose": "Exact-byte C4-A evidence archival, without experiment/audit/summary replay.",
+  "source_sha256": "11bc0b78e7b14d2717e1b7c2f29fb9e707895e18be6a35f8d1118e40e19c51cc",
+  "verified_git_source_files": 19,
+  "verified_exact_copy_files": 35,
+  "archive_source_commit": "91223b39c86fbeb09f7bc399229789b1e00ce181",
+  "read_only_costs": {
+    "wall_seconds": 1.3023612999822944,
+    "cpu_seconds": 0.15625,
+    "scope": "archive entry through exact-byte copies, raw/first-audit/summary hashes and ZIP/Git verification; excludes final manifest construction/write",
+    "new_physical_control_calls": 0,
+    "new_physics_substeps": 0,
+    "audit_reexecutions": 0,
+    "summary_reexecutions": 0,
+    "model_prediction_or_update_calls": 0
+  }
+}

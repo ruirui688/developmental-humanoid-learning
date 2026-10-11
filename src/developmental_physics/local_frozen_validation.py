@@ -39,7 +39,21 @@ SUITES = {
     "shoulder_final": {"pose": "supine", "joint": 0, "seeds": [20, 21, 22],
                        "split": "final_holdout", "pd_kp": 64., "pd_kd": 0.},
     "elbow_development": {"pose": "supine", "joint": 1, "seeds": [0, 1, 2],
-                          "split": "development", "pd_kp": None, "pd_kd": None},
+                          "split": "development", "pd_kp": 64., "pd_kd": 1.},
+}
+
+SUITE_PROTOCOLS = {
+    "shoulder_final": "docs/LOCAL_FROZEN_VALIDATION_PROTOCOL.md",
+    "elbow_development": "docs/ELBOW_BODY_DEVELOPMENT_PROTOCOL.md",
+}
+PD_SELECTION_SOURCES = {
+    "elbow_development": (
+        ("source_commit", "91223b39c86fbeb09f7bc399229789b1e00ce181"),
+        ("audit_sha256", "d84ad31b28f7fcc4ded8003b2503138a3cacc9f9b2fed33bf675758e43100571"),
+        ("summary_sha256", "5aaefe21d6aa8314673a5560522e8865123acda318e833b4951f4c5d00efc3e8"),
+        ("candidate", 8), ("development_control_calls", 7521),
+        ("development_physics_substeps", 75210), ("body_model_updates", 0),
+    ),
 }
 
 FROZEN_CALIBRATION_DOSE = "old"
@@ -142,14 +156,15 @@ def run_validation(output: Path, seeds: list[int] | None = None, *, suite="shoul
     sources = [*sorted((root / "src/developmental_physics").glob("*.py")),
                Path(__file__), root / "src/developmental_physics/local_integration.py", MODEL_PATH, root / "pyproject.toml"]
     protocol_path = Path(protocol_path).resolve()
-    if not protocol_path.is_file() or not protocol_path.is_relative_to(root):
-        raise ValueError("repository protocol required")
+    if not protocol_path.is_file() or protocol_path != (root/SUITE_PROTOCOLS[suite]).resolve():
+        raise ValueError("exact frozen suite protocol required")
     sources.append(protocol_path)
     source_bytes = {p.relative_to(root).as_posix(): p.read_bytes() for p in sources}
     metadata = {
         "schema_version": 1, "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "purpose": "Frozen local-body validation against nominal MPC, tuned PD and zero torque",
         "suite": suite, "suite_spec": spec, "calibration_schedule": calibration_schedule,
+        "pd_selection_source": dict(PD_SELECTION_SOURCES.get(suite, ())),
         "pd_gains": {"kp":pd_kp,"kd":pd_kd},
         "pd_gains_source": "Exact predeclared suite constants; no gain development in this archive",
         "source_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip(),

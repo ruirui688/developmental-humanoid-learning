@@ -1,0 +1,40 @@
+{
+  "started_at_utc": "2026-10-11T06:17:49.284752+00:00",
+  "argv": [
+    "external/elbow_pd_summary_wrapper.py"
+  ],
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "source": {
+    "summary_executed_source": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\elbow_pd_20261011_summary_01_summary_executed.py",
+      "sha256": "563e28ac3f99c5776a06e21152c6aebaefbea1b737437def8df48fc2c17c98c2"
+    },
+    "wrapper_executed_source": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\elbow_pd_20261011_summary_01_wrapper_executed.py",
+      "sha256": "41f15be6bc56d31864a413821495aa236c181d88f93279c5322f37ffb0cc0e21"
+    }
+  },
+  "git_head_at_summary": "91223b39c86fbeb09f7bc399229789b1e00ce181",
+  "git_status_at_summary": "",
+  "archive": "D:\\Codex_ws\\robot_rl\\external\\elbow_pd_20261011_development",
+  "first_audit": "D:\\Codex_ws\\robot_rl\\external\\elbow_pd_20261011_audit.json",
+  "expected_first_audit_sha256": "d84ad31b28f7fcc4ded8003b2503138a3cacc9f9b2fed33bf675758e43100571",
+  "physical_control_calls": 0,
+  "physics_substeps": 0,
+  "parameter_updates": 0,
+  "audit_reexecutions": 0,
+  "attempt_is_consumed_even_on_failure": true,
+  "finished_at_utc": "2026-10-11T06:17:50.862585+00:00",
+  "exit_code": 0,
+  "wrapper_wall_seconds": 1.5780213000252843,
+  "wrapper_cpu_seconds": 1.34375,
+  "stdout": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\elbow_pd_20261011_summary_01_stdout.txt",
+    "sha256": "ff934eb1ce51fcc4c0e61e7c8cba08dee9a0b85d3fc138356344532657d28804"
+  },
+  "summary": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\elbow_pd_20261011_summary_01_summary.json",
+    "sha256": "5aaefe21d6aa8314673a5560522e8865123acda318e833b4951f4c5d00efc3e8"
+  }
+}
