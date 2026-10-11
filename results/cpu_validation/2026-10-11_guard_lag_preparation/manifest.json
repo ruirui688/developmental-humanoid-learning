@@ -1,0 +1,83 @@
+{
+  "scope": "Completed handwritten 11D helper checks only; no true data fit/control validation.",
+  "files": {
+    "DELIVERY.md": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/DELIVERY.md",
+      "sha256": "62ea43d3d8c3cd951c4a0113c35b705968b7baa6e98343d7cad12dce21c754bd",
+      "bytes": 5926
+    },
+    "guard_lag_pair_model.py": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/guard_lag_pair_model.py",
+      "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+      "bytes": 11351
+    },
+    "INTEGRITY.md": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/INTEGRITY.md",
+      "sha256": "103ffb683efebc102029b6791aedcd3b7a8577642dddb1d012db92db329a3d0c",
+      "bytes": 1980
+    },
+    "run_001_math.json": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/run_001_math.json",
+      "sha256": "4b469016716855e226c42fb307d57c7959c5248f11850b5fd6ea63b19276dd74",
+      "bytes": 30732
+    },
+    "run_001_math.log": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/run_001_math.log",
+      "sha256": "a93f2450330b8d73b11b986f1170edfeeab1805cecf3e1ee18512de209099c8c",
+      "bytes": 886
+    },
+    "run_001_source_guard_lag_pair_model.py": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/run_001_source_guard_lag_pair_model.py",
+      "sha256": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+      "bytes": 11351
+    },
+    "run_001_source_test_guard_lag_pair_model.py": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/run_001_source_test_guard_lag_pair_model.py",
+      "sha256": "c1d655ae57ee04e2879be5ef3ba528757b38cd385fd3b2f55203bb3e0ae7fd86",
+      "bytes": 16659
+    },
+    "source_after.json": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/source_after.json",
+      "sha256": "c2f19b4b7f7752ba6df6050443df1bf1f93fa2748de4ed52697e1988f94078fb",
+      "bytes": 1314
+    },
+    "source_before.json": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/source_before.json",
+      "sha256": "c27ee25a22d862b2e897999c43c9d5af929d3b892035eaec030f68cbd5b24feb",
+      "bytes": 891
+    },
+    "test_guard_lag_pair_model.py": {
+      "kind": "exact_filesystem_copy",
+      "source": "external/c4_lag_model_staging/test_guard_lag_pair_model.py",
+      "sha256": "c1d655ae57ee04e2879be5ef3ba528757b38cd385fd3b2f55203bb3e0ae7fd86",
+      "bytes": 16659
+    }
+  },
+  "source_sha256_as_tested": {
+    "guard_lag_pair_model.py": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+    "test_guard_lag_pair_model.py": "c1d655ae57ee04e2879be5ef3ba528757b38cd385fd3b2f55203bb3e0ae7fd86"
+  },
+  "verification": {
+    "checks": 10,
+    "failed": 0
+  },
+  "execution": {
+    "wall_seconds": 0.12263539992272854,
+    "cpu_seconds": 0.0,
+    "physical_calls": 0,
+    "new_predictions": 0,
+    "new_updates": 0,
+    "test_reexecutions": 0,
+    "git_queries": 0
+  },
+  "claim_boundary": "Artificial math is separate from formal physical/online/offline research costs."
+}

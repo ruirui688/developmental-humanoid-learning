@@ -1,0 +1,1105 @@
+{
+  "schema": "c4_lag_model_artificial_math_v1",
+  "run": "run_001",
+  "source_sha256": {
+    "guard_lag_pair_model.py": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+    "test_guard_lag_pair_model.py": "c1d655ae57ee04e2879be5ef3ba528757b38cd385fd3b2f55203bb3e0ae7fd86"
+  },
+  "environment": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\Python3.10\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.26.4"
+  },
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "success": true,
+  "elapsed": {
+    "wall_seconds": 0.0878873998299241,
+    "process_cpu_seconds": 0.046875,
+    "user_cpu_seconds": 0.03125,
+    "system_cpu_seconds": 0.015625
+  },
+  "math_totals": {
+    "committed_scalar_updates": 10,
+    "committed_vector_updates": 5,
+    "features_attempts": 45,
+    "features_failed": 10,
+    "features_success": 35,
+    "pair_prediction_attempts": 31,
+    "pair_prediction_failed": 5,
+    "pair_prediction_success": 26,
+    "rls_proposal_attempts": 16,
+    "rls_proposal_failed": 2,
+    "rls_proposal_success": 14,
+    "scalar_prediction_attempts": 52,
+    "scalar_prediction_success": 52,
+    "update_call_attempts": 15,
+    "update_call_failed": 11,
+    "update_call_success": 4
+  },
+  "per_test": [
+    {
+      "test": "__main__.ArtificialChecks.test_cold_prior_and_explicit_history_feature_order",
+      "events": [
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        }
+      ],
+      "math_totals": {
+        "features_attempts": 1,
+        "features_success": 1
+      }
+    },
+    {
+      "test": "__main__.ArtificialChecks.test_frozen_clone_copies_complete_parameter_state_without_sharing",
+      "events": [
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "success",
+          "committed_vector_updates": 1,
+          "committed_scalar_updates": 2
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:2",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "RuntimeError",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "success",
+          "committed_vector_updates": 1,
+          "committed_scalar_updates": 2
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 1
+        }
+      ],
+      "math_totals": {
+        "committed_scalar_updates": 4,
+        "committed_vector_updates": 2,
+        "features_attempts": 4,
+        "features_success": 4,
+        "pair_prediction_attempts": 2,
+        "pair_prediction_success": 2,
+        "rls_proposal_attempts": 4,
+        "rls_proposal_success": 4,
+        "scalar_prediction_attempts": 4,
+        "scalar_prediction_success": 4,
+        "update_call_attempts": 3,
+        "update_call_failed": 1,
+        "update_call_success": 2
+      }
+    },
+    {
+      "test": "__main__.ArtificialChecks.test_history_is_required_validated_and_not_internal_state",
+      "events": [
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "TypeError",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "failed",
+          "exception_type": "PairPredictionError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "ValueError",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "failed",
+          "exception_type": "PairPredictionError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "ValueError",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "failed",
+          "exception_type": "PairPredictionError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "ValueError",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "failed",
+          "exception_type": "PairPredictionError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "ValueError",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "failed",
+          "exception_type": "PairPredictionError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "ValueError",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "failed",
+          "exception_type": "ValueError"
+        }
+      ],
+      "math_totals": {
+        "committed_scalar_updates": 0,
+        "committed_vector_updates": 0,
+        "features_attempts": 10,
+        "features_failed": 10,
+        "pair_prediction_attempts": 5,
+        "pair_prediction_failed": 5,
+        "update_call_attempts": 6,
+        "update_call_failed": 6
+      }
+    },
+    {
+      "test": "__main__.ArtificialChecks.test_one_rls_transition_matches_independent_scalar_hand_calculation",
+      "events": [
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "success",
+          "committed_vector_updates": 1,
+          "committed_scalar_updates": 2
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 1
+        }
+      ],
+      "math_totals": {
+        "committed_scalar_updates": 2,
+        "committed_vector_updates": 1,
+        "features_attempts": 2,
+        "features_success": 2,
+        "pair_prediction_attempts": 1,
+        "pair_prediction_success": 1,
+        "rls_proposal_attempts": 2,
+        "rls_proposal_success": 2,
+        "scalar_prediction_attempts": 2,
+        "scalar_prediction_success": 2,
+        "update_call_attempts": 1,
+        "update_call_success": 1
+      }
+    },
+    {
+      "test": "__main__.ArtificialChecks.test_predictions_are_pure_and_rollout_history_advances_old_current_v",
+      "events": [
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        }
+      ],
+      "math_totals": {
+        "features_attempts": 6,
+        "features_success": 6,
+        "pair_prediction_attempts": 6,
+        "pair_prediction_success": 6,
+        "scalar_prediction_attempts": 12,
+        "scalar_prediction_success": 12
+      }
+    },
+    {
+      "test": "__main__.ArtificialChecks.test_second_head_rejection_or_io_failure_publishes_nothing",
+      "events": [
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "PairUpdateError",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "failed",
+          "output_index": 1,
+          "exception_type": "ValueError"
+        },
+        {
+          "model": "candidate11:2",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "OSError",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:2",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:2",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:2",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:2",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:2",
+          "kind": "rls_proposal",
+          "outcome": "failed",
+          "output_index": 1,
+          "exception_type": "OSError"
+        }
+      ],
+      "math_totals": {
+        "committed_scalar_updates": 0,
+        "committed_vector_updates": 0,
+        "features_attempts": 4,
+        "features_success": 4,
+        "pair_prediction_attempts": 2,
+        "pair_prediction_success": 2,
+        "rls_proposal_attempts": 4,
+        "rls_proposal_failed": 2,
+        "rls_proposal_success": 2,
+        "scalar_prediction_attempts": 4,
+        "scalar_prediction_success": 4,
+        "update_call_attempts": 2,
+        "update_call_failed": 2
+      }
+    },
+    {
+      "test": "__main__.ArtificialChecks.test_single_publication_interrupt_is_wholly_old_or_new",
+      "events": [
+        {
+          "model": "candidate11:1",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "KeyboardInterrupt",
+          "committed_vector_updates": 0,
+          "committed_scalar_updates": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:4",
+          "kind": "update_call",
+          "outcome": "success",
+          "committed_vector_updates": 1,
+          "committed_scalar_updates": 2
+        },
+        {
+          "model": "candidate11:4",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:4",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:4",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:4",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:4",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:4",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:4",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:3",
+          "kind": "update_call",
+          "outcome": "failed",
+          "exception_type": "KeyboardInterrupt",
+          "committed_vector_updates": 1,
+          "committed_scalar_updates": 2
+        },
+        {
+          "model": "candidate11:3",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:3",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:3",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:3",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:3",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:3",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:3",
+          "kind": "rls_proposal",
+          "outcome": "success",
+          "output_index": 1
+        }
+      ],
+      "math_totals": {
+        "committed_scalar_updates": 4,
+        "committed_vector_updates": 2,
+        "features_attempts": 6,
+        "features_success": 6,
+        "pair_prediction_attempts": 3,
+        "pair_prediction_success": 3,
+        "rls_proposal_attempts": 6,
+        "rls_proposal_success": 6,
+        "scalar_prediction_attempts": 6,
+        "scalar_prediction_success": 6,
+        "update_call_attempts": 3,
+        "update_call_failed": 2,
+        "update_call_success": 1
+      }
+    },
+    {
+      "test": "__main__.ArtificialChecks.test_zero_lag_matches_same_coefficients_in_old9_to_machine_precision",
+      "events": [
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "old9:2",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "old9:2",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "old9:2",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "old9:2",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "old9:2",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "candidate11:1",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        },
+        {
+          "model": "old9:2",
+          "kind": "pair_prediction",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "features",
+          "outcome": "success"
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 0
+        },
+        {
+          "model": "old9:2",
+          "kind": "scalar_prediction",
+          "outcome": "success",
+          "output_index": 1
+        }
+      ],
+      "zero_lag_maximum_absolute_difference": 0.0,
+      "math_totals": {
+        "features_attempts": 12,
+        "features_success": 12,
+        "pair_prediction_attempts": 12,
+        "pair_prediction_success": 12,
+        "scalar_prediction_attempts": 24,
+        "scalar_prediction_success": 24
+      }
+    }
+  ],
+  "research_cost": {
+    "physics_control_calls": 0,
+    "physics_substeps": 0,
+    "real_raw_data_reads": 0,
+    "real_online_scalar_updates": 0,
+    "real_offline_scalar_updates": 0,
+    "synthetic_updates_excluded_from_formal_research_ledger": true
+  },
+  "scope": "handcrafted mathematical checks only; no dataset fit, collector, MPC search or scientific adoption gate",
+  "mujoco_loaded": false
+}

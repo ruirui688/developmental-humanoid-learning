@@ -1,0 +1,13 @@
+test_cold_prior_and_explicit_history_feature_order (__main__.ArtificialChecks) ... ok
+test_frozen_clone_copies_complete_parameter_state_without_sharing (__main__.ArtificialChecks) ... ok
+test_history_is_required_validated_and_not_internal_state (__main__.ArtificialChecks) ... ok
+test_one_rls_transition_matches_independent_scalar_hand_calculation (__main__.ArtificialChecks) ... ok
+test_predictions_are_pure_and_rollout_history_advances_old_current_v (__main__.ArtificialChecks) ... ok
+test_second_head_rejection_or_io_failure_publishes_nothing (__main__.ArtificialChecks) ... ok
+test_single_publication_interrupt_is_wholly_old_or_new (__main__.ArtificialChecks) ... ok
+test_zero_lag_matches_same_coefficients_in_old9_to_machine_precision (__main__.ArtificialChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.087s
+
+OK

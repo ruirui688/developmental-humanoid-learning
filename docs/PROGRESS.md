@@ -1,5 +1,11 @@
 # 开发进度与仓库检查点
 
+## C4 D历史速度差候选：数学底座已提升（2026-10-11）
+
+C负结果已从`0738a50`提交推送后继续推进。[D开发离线草稿](GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md)固定在原九列后增加`v_t−v_(t−1)`两列，两个lag先验0；显式history、不存mutable历史，原冷prior/P100/lambda1/公开guard/Euler与双头原子发布不改。helper原字节SHA `f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57`已提升，普通tests只改生产import并移除向tests写run文件的main；原计账运行器和首次字节留在staging。
+
+8项纯人工检查首次通过，wall.0878874s/CPU.046875s；31pair预测尝试/26成功、52scalar尝试/成功，16 scalar提案/14成功，5vector/10scalar人工提交（包括提交后中断的一次发布）。[数学原件清单](../results/cpu_validation/2026-10-11_guard_lag_preparation/manifest.json)保存完整源码/首次数学账/失败注入/旧源身份，无真实raw拟合/物理/真实学习增量。提升后1项生产来源/测试导入/history签名检查通过，未构造模型或重复8项数学矩阵。D evaluator与独立stdlib auditor正并行准备，正式执行仍关闭，未见D真实预测结果；旧FixedPairMPC尚不能消费该history接口。
+
 ## C4 C首次真实结果：一步改善不等于控制改善（2026-10-11）
 
 [探索对照结果](GUARD_EXPLORATION_DEVELOPMENT_RESULTS.md)从clean `5ea8df4`一次完成18完整/6研究停止/0异常/blocked。六校准及三共同预测全完整；名义、PD、zero各200active完整。continuation预测改善约41%/39%，自身控制三seed均4active肘速度停止；sparse仍106active肘位置停止。两个自身贡献、探索增量和两个PD门全未过，不能排序截短RMSE或把低努力当风险下降。

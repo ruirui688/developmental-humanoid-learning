@@ -70,7 +70,7 @@ C2/C3 的正式矩阵根据 C1 的开发依据另写冻结协议。C4–C6 在�
 
 1. B八raw、首次audit、一次summary、冻结源码、全部工程失败与原保存预测已[封口](../results/cpu_validation/2026-10-11_guard_coupled/manifest.json)，82payload/1876项完整性检查零失败；检查后提交推送。
 2. [C最小探索对照](GUARD_EXPLORATION_DEVELOPMENT_PROTOCOL.md)已提升冻结：同coupled模型/RLS/MPC，原1/9与native q/v veto的2/8各自cold校准；共同新prediction、统一200active最终控制及同PD/zero。不改变目标、权限或停止，不把人工探索veto称学得成熟。工程原失败保留，29 runner/9 auditor人工测试及同原件只读复核通过；提交推送后首次物理。
-3. C已从clean源码首次执行固定矩阵，首audit4370690项与一次summary7942项零失败，科学门仍未过；新增7230/72300/4800在线scalar，当前累计246350控制/2463500子步、在线22452+离线2400scalar。保存全部失败，下一项是只读原预测/域诊断与辨识条件分析，再冻结一项有明确依据的最小模型修订；不能重复到成功、只加探索或后改阈值。
+3. C已从clean源码首次执行固定矩阵，首audit4370690项与一次summary7942项零失败，科学门仍未过；新增7230/72300/4800在线scalar，当前累计246350控制/2463500子步、在线22452+离线2400scalar。原预测/域与保存P诊断已完成并封口；[D候选](GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md)固定增加两列历史速度差，仅同开发数据离线辨识/多步预测。helper8人工检查与提升1项导入检查通过，evaluator/独立审计未完成、正式拟合关闭。随后再依据全窗口预测准备新物理控制；不能重复到成功、只加探索或后改阈值。
 4. 完成未知动力学适应、固定成熟/能力门控对照和新留出综合验收；每批检查、提交、推送后立即接着做最早未验收阶段，不等待重复“继续”。
 
 相关资料：[项目路线](DEVELOPMENT_ROADMAP.md)、[当前局部结果](CPU_LOCAL_BODY_RESULTS.md)、[研发进度](PROGRESS.md)、[项目交接](../AGENTS.md)。
