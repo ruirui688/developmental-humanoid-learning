@@ -1,0 +1,62 @@
+{
+  "payload_count": 10,
+  "files": {
+    "execution.json": {
+      "bytes": 719,
+      "sha256": "96c02dc8e4beaf64374692cd66187e5461e02bf18e1a844f12f4d06e22320e91",
+      "original_path": "external/c4_p_request_memory_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 646,
+      "sha256": "f3e80c22900f8c3c927edb742d0c38b34d365faf828b5a6d12d0c94c31b99a52",
+      "original_path": "external/c4_p_request_memory_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 331692,
+      "sha256": "142d4b8aa453e9e1e930a9aa7c77632e6dacb9ea6b9ba3ce926a8de1357da8dd",
+      "original_path": "external/c4_p_request_memory_01/raw/metrics.json"
+    },
+    "raw/parameters.json": {
+      "bytes": 2512443,
+      "sha256": "ba9a2b6c78969bac18022fb7cde8061c57ea3cb1a96b8e41d4112954784e7020",
+      "original_path": "external/c4_p_request_memory_01/raw/parameters.json"
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 17660763,
+      "sha256": "c101fe36829733d2192af6b4dc81d81e59040872f8105e9b1e0f74976d43e466",
+      "original_path": "external/c4_p_request_memory_01/raw/predictions.jsonl"
+    },
+    "raw/run.json": {
+      "bytes": 13812,
+      "sha256": "9535fc6077990a147112fd5afff6d436aaec0b500b1abca9980850e75e9a1fa8",
+      "original_path": "external/c4_p_request_memory_01/raw/run.json"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_p_request_memory_01/stderr"
+    },
+    "stdout": {
+      "bytes": 3369,
+      "sha256": "55f0cb291ab2a00052deca1f7d36802d72556c8645893bc20e3baa824b685d59",
+      "original_path": "external/c4_p_request_memory_01/stdout"
+    },
+    "execution/run_p_request_memory_once.py": {
+      "bytes": 2357,
+      "sha256": "c9cea2c9cc0c19362fe096083eaee348152a3d35ad60fe7257403efdffef9eb7",
+      "original_path": "external/run_p_request_memory_once.py"
+    },
+    "execution/archive_p_request_memory_once.py": {
+      "bytes": 2267,
+      "sha256": "2a4814ad4cf1991698dc0a1e4dd9c2411fa137c9018838469edb62c3f70a4a43",
+      "original_path": "external/archive_p_request_memory_once.py"
+    }
+  },
+  "file_reads": 20,
+  "read_bytes": 41056136,
+  "copy_failures": [],
+  "wall_seconds": 0.14224419998936355,
+  "cpu_seconds": 0.046875,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

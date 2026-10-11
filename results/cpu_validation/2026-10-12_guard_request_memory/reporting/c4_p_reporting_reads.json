@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "scope": "P report only: saved run/metrics/root manifest/execution; no parameter/trace/prediction read or metric/model recomputation",
+  "directory_inventory": {
+    "chunk_id": "60923b",
+    "operation": "rg --files results/cpu_validation/2026-10-12_guard_request_memory",
+    "reported_shell_wall_seconds": 0.4037895,
+    "content_reads": 0
+  },
+  "source_root": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_request_memory",
+  "read_cost": {
+    "binary_read_attempts": 4,
+    "binary_read_returns": 4,
+    "raw_bytes": 348651,
+    "json_parse_attempts": 4,
+    "json_parse_returns": 4,
+    "wall_seconds": 0.003365200012922287,
+    "cpu_seconds": 0.0
+  },
+  "files": {
+    "raw/run.json": {
+      "bytes": 13812,
+      "sha256": "9535fc6077990a147112fd5afff6d436aaec0b500b1abca9980850e75e9a1fa8"
+    },
+    "raw/metrics.json": {
+      "bytes": 331692,
+      "sha256": "142d4b8aa453e9e1e930a9aa7c77632e6dacb9ea6b9ba3ce926a8de1357da8dd"
+    },
+    "manifest.json": {
+      "bytes": 2428,
+      "sha256": "17c77f9145193867074fccffec3a07d4d5fa11afb621120c4f90e2d016a13045"
+    },
+    "execution.json": {
+      "bytes": 719,
+      "sha256": "96c02dc8e4beaf64374692cd66187e5461e02bf18e1a844f12f4d06e22320e91"
+    }
+  },
+  "scientific_payload_reads_allowed": [
+    "raw/run.json",
+    "raw/metrics.json",
+    "manifest.json",
+    "execution.json"
+  ],
+  "actual_parameter_reads": 0,
+  "actual_trace_reads": 0,
+  "actual_prediction_reads": 0,
+  "source_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "metric_recomputations": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "MPC_calls": 0,
+  "timing_note": "Measured Python read/parse/hash time only; excludes shell startup, report/log serialization/write and output.",
+  "prior_output_transport_failure": {
+    "type": "SyntaxError",
+    "message": "Unexpected token W, Warning: t... is not valid JSON",
+    "location": "functions.exec outer JSON.parse",
+    "science_recomputed": false,
+    "note": "First saved-document output transport unusable; no production/model function executed. One bounded saved-document extraction follows."
+  },
+  "reporting_log_management": {
+    "binary_read_attempts": 1,
+    "binary_read_returns": 1,
+    "bytes": 1762,
+    "sha256": "97416f2953448967684a39e9d182f2e31d37efd73e82b7d66f043cabff45ce3c",
+    "json_parse_attempts": 1,
+    "json_parse_returns": 1
+  },
+  "second_saved_document_extraction": {
+    "status": "returned",
+    "read_cost": {
+      "binary_read_attempts": 4,
+      "binary_read_returns": 4,
+      "raw_bytes": 348651,
+      "json_parse_attempts": 4,
+      "json_parse_returns": 4,
+      "wall_seconds": 0.0034580000210553408,
+      "cpu_seconds": 0.0
+    },
+    "files": {
+      "raw/run.json": {
+        "bytes": 13812,
+        "sha256": "9535fc6077990a147112fd5afff6d436aaec0b500b1abca9980850e75e9a1fa8"
+      },
+      "raw/metrics.json": {
+        "bytes": 331692,
+        "sha256": "142d4b8aa453e9e1e930a9aa7c77632e6dacb9ea6b9ba3ce926a8de1357da8dd"
+      },
+      "manifest.json": {
+        "bytes": 2428,
+        "sha256": "17c77f9145193867074fccffec3a07d4d5fa11afb621120c4f90e2d016a13045"
+      },
+      "execution.json": {
+        "bytes": 719,
+        "sha256": "96c02dc8e4beaf64374692cd66187e5461e02bf18e1a844f12f4d06e22320e91"
+      }
+    },
+    "metric_recomputations": 0
+  },
+  "result_document_check": {
+    "path": "D:\\Codex_ws\\robot_rl\\docs\\GUARD_REQUEST_MEMORY_TRANSITION_DEVELOPMENT_RESULTS.md",
+    "bytes": 13985,
+    "sha256": "17b08dbee44874d8b81e4871e9cce2cad18aedce16a524165a747a870e93ee96",
+    "own_document_read_attempts": 1,
+    "own_document_read_returns": 1,
+    "own_document_decode_attempts": 1,
+    "own_document_decode_returns": 1,
+    "local_links_checked": 6,
+    "missing_local_links": [],
+    "trailing_whitespace_lines": []
+  },
+  "total_saved_document_read_cost": {
+    "binary_read_attempts": 8,
+    "binary_read_returns": 8,
+    "raw_bytes": 697302,
+    "json_parse_attempts": 8,
+    "json_parse_returns": 8,
+    "wall_seconds": 0.006823200033977628,
+    "cpu_seconds": 0.0
+  }
+}

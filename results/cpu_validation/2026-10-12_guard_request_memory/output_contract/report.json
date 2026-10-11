@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "evidence_consistency_only": true,
+  "expected_source_commit": "8315e610e69194f236fc8e3ba4381be1bddb4144",
+  "inputs": {
+    "D:\\Codex_ws\\robot_rl\\external\\check_p_output_once.py": {
+      "bytes": 12304,
+      "sha256": "d3d5eacbe5f9f0391baec30995df8ad362fe00e0cba30b7412038f795dc1e5ee"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_request_memory\\raw\\manifest.json": {
+      "bytes": 646,
+      "sha256": "f3e80c22900f8c3c927edb742d0c38b34d365faf828b5a6d12d0c94c31b99a52"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_request_memory\\raw\\parameters.json": {
+      "bytes": 2512443,
+      "sha256": "ba9a2b6c78969bac18022fb7cde8061c57ea3cb1a96b8e41d4112954784e7020"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_request_memory\\raw\\predictions.jsonl": {
+      "bytes": 17660763,
+      "sha256": "c101fe36829733d2192af6b4dc81d81e59040872f8105e9b1e0f74976d43e466"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_request_memory\\raw\\metrics.json": {
+      "bytes": 331692,
+      "sha256": "142d4b8aa453e9e1e930a9aa7c77632e6dacb9ea6b9ba3ce926a8de1357da8dd"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_request_memory\\raw\\run.json": {
+      "bytes": 13812,
+      "sha256": "9535fc6077990a147112fd5afff6d436aaec0b500b1abca9980850e75e9a1fa8"
+    }
+  },
+  "cost": {
+    "file_read_attempts": 6,
+    "file_read_returns": 6,
+    "raw_bytes_read": 20531660,
+    "sha256_input_bytes": 20531660,
+    "json_parse_attempts": 3433,
+    "json_parse_returns": 3433,
+    "contract_check_attempts": 116912,
+    "contract_check_returns": 116912,
+    "structural_matrix_rows_checked": 49692,
+    "training_history_entries_checked": 1200,
+    "prediction_record_attempts": 3429,
+    "prediction_record_returns": 3429,
+    "scientific_metric_recalculations": 0,
+    "scientific_gate_recalculations": 0,
+    "model_restorations": 0,
+    "wall_seconds": 0.3860081001184881,
+    "cpu_seconds": 0.390625
+  },
+  "failure": null,
+  "scientific_adoption": false,
+  "timing_excludes": "final report/stdout serialization and writes"
+}

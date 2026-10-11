@@ -1,0 +1,24 @@
+{
+  "executions": 1,
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\check_p_output_once.py",
+    "--raw",
+    "results/cpu_validation/2026-10-12_guard_request_memory/raw",
+    "--expected-source-commit",
+    "8315e610e69194f236fc8e3ba4381be1bddb4144",
+    "--output",
+    "external/c4_p_output_contract_01"
+  ],
+  "returncode": 0,
+  "wall_seconds": 0.48710999987088144,
+  "source_backup_read_attempts": 1,
+  "source_backup_read_returns": 1,
+  "source_backup_bytes": 12304,
+  "first_checker_sha256": "d3d5eacbe5f9f0391baec30995df8ad362fe00e0cba30b7412038f795dc1e5ee",
+  "first_checker_path": "D:\\Codex_ws\\robot_rl\\external\\c4_p_output_contract_01.checker.py",
+  "stdout_bytes": 674,
+  "stdout_sha256": "a25ac611f09f523a720660c8b24c2423c4c93750c389708cff54e3643a3f4c71",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
