@@ -1,5 +1,9 @@
 # 开发进度与仓库检查点
 
+## 2026-10-11：H排除学习组forecast许可解释，继续因果残差检验
+
+[G控制负结果](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)与原件已公开；[H保存诊断](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)从clean a46633c首次完成，628active/12组/102固定末窗口、0新物理/模型调用/更新。学习406条selected H15没有原研究界限越界，停止肘速度预测仅.27077/.17285，实际1.07095/1.06543；主要缺口是乐观身体预测。cold2仅远期尾位置越界，不解释学习停止；cold0/1末fallback不补selected。有限输出13项零失败，原科学门不变。接着冻结I上一原base残差的因果一步检验，先验证修正依据再接入控制，持续目标active。
+
 ## 2026-10-11：F首次诊断完成，继续固定反馈尾规划开发
 
 [F结果](GUARD_NATIVE_CONTEXT_DIAGNOSTIC_RESULTS.md)从clean734ab7d一次完成，2112完整active、288分组/12事件/24输入质量，0新物理、模型预测、更新。学习组B段仅4点，关联不识别因果；不直接追加最佳特征。首输出有限核查50255/24失败来自额外空分段断言，纯契约补充明确其超出冻结规则，原报告/失败不改、不重跑数学。结果32payload/13071887bytes原字节封口，当前物理及辨识累计不变。

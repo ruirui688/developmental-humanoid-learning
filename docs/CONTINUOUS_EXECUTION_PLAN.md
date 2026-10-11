@@ -33,7 +33,7 @@
 | C1 | 闭环模型有效域 | 开发轨迹覆盖分析、动作切换残差、位置积分误差、2/5/15 步自由递推；名义/学习/持久性对照 | 开发诊断完成；[结果](MODEL_DOMAIN_RESULTS.md) |
 | C2 | 最小模型/探索修订与消融 | 分离校准剂量与折点结构，必要时比较动作历史或直接位移预测；新留出预测与控制及各方法总成本 | 三个修订均未采用；[新最终](LOCAL_FROZEN_VALIDATION_RESULTS.md)同MPC贡献通过29.505%，自身一步与位置有效域仍有缺口 |
 | C3 | 调优经典控制强基线 | 有上限的开发增益/积分候选；所有调优交互计账；新留出统一权限比较 | 九组PD选64/0；新最终只改善2.674%，未过5%门，保留失败结论 |
-| C4 | 新增关节与低维协调 | 至少两个有可重复响应的关节；单关节与双关节任务、耦合/独立模型对照 | 左肘[迁移](ELBOW_BODY_DEVELOPMENT_RESULTS.md)贡献与PD门失败；首次[双关节](PAIR_BODY_DEVELOPMENT_RESULTS.md)校准/组合PD停止。[短脉冲](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)1/9可执行；[双轴PD](PAIR_PD_DEVELOPMENT_RESULTS.md)有限选择64/(0,4)；[A](GUARD_PAIR_DEVELOPMENT_RESULTS.md)学习控制2/4active停止；[B](GUARD_COUPLED_DEVELOPMENT_RESULTS.md)三seed106active位置停止；[C](GUARD_EXPLORATION_DEVELOPMENT_RESULTS.md)18完整/6停止、科学门未过。[D](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)长轨迹H15位置局部改善、共同脉冲/短步负效混合；[E](GUARD_LAG_CONTROL_DEVELOPMENT_RESULTS.md)9完整/3学习组104active速度停止、控制门未评价/未过。[F](GUARD_NATIVE_CONTEXT_DIAGNOSTIC_RESULTS.md)不支持追加特征；[G](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)8完整/4肘速度停止，只有一条学习轨迹完整，控制子门失败。C4未验收；接着H保存forecast/停止界限诊断 |
+| C4 | 新增关节与低维协调 | 至少两个有可重复响应的关节；单关节与双关节任务、耦合/独立模型对照 | 左肘[迁移](ELBOW_BODY_DEVELOPMENT_RESULTS.md)贡献与PD门失败；首次[双关节](PAIR_BODY_DEVELOPMENT_RESULTS.md)校准/组合PD停止。[短脉冲](PAIR_CALIBRATION_DEVELOPMENT_RESULTS.md)1/9可执行；[双轴PD](PAIR_PD_DEVELOPMENT_RESULTS.md)有限选择64/(0,4)；[A](GUARD_PAIR_DEVELOPMENT_RESULTS.md)学习控制2/4active停止；[B](GUARD_COUPLED_DEVELOPMENT_RESULTS.md)三seed106active位置停止；[C](GUARD_EXPLORATION_DEVELOPMENT_RESULTS.md)18完整/6停止、科学门未过。[D](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)长轨迹H15位置局部改善、共同脉冲/短步负效混合；[E](GUARD_LAG_CONTROL_DEVELOPMENT_RESULTS.md)9完整/3学习组104active速度停止、控制门未评价/未过。[F](GUARD_NATIVE_CONTEXT_DIAGNOSTIC_RESULTS.md)不支持追加特征；[G](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)8完整/4肘速度停止，只有一条学习轨迹完整，控制子门失败。C4未验收；[H保存诊断](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)确认学习预测合规但实际超速，接着I因果残差检验 |
 | C5 | 未知动力学变化 | 至少两类变化的冻结/适应对照；恢复交互、预测、控制、努力与失败曲线 | [事件工程](C5_ENGINEERING_RESULTS.md)4完整480/4,800/0更新、独立481,538项零失败；科学适应对照仍待 C4 |
 | C6 | 固定成熟与能力门控 | 同最终任务与完成标准；校准成本、权限轨迹、晋退级、失败和风险；不能靠永久小动作取胜 | 待 C5 |
 | C7 | 综合验收与可复现交付 | 未见种子/条件、强基线、组件消融、全部失败与成本；说明成立和不成立的机制 | 待各阶段结果 |
@@ -66,14 +66,14 @@ C2/C3 的正式矩阵根据 C1 的开发依据另写冻结协议。C4–C6 在�
 
 ## 6. 当前立即执行项
 
-当前最早未验收的是C4多关节完整控制。[G首次结果](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)8完整/4肘速度停止，学习seed0/2各102/104active、cold0/1各11active；control/PD门未评价、未通过。只有learned1和cold2完整，不排名部分误差。G新增3028/30280/0更新，首审1422925项零失败、薄summary35绑定零失败。接着H保存forecast/真实停止界限诊断。[E首次结果](GUARD_LAG_CONTROL_DEVELOPMENT_RESULTS.md)为9完整/3研究速度停止，学习sparse11三个seed均104/200active左肘速度停止，控制与PD门未评价、未通过；D旧独立预测门不追认。C5事件接口已通过，但科学适应与C6成熟机制尚未运行。单肩新最终的强PD比较失败也必须保留，不能通过双关节改名消除；旧20/21/22已见，不再作为修订后的未见bank。
+当前最早未验收的是C4多关节完整控制与预测。[H首次诊断](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)628active/12组/102固定末窗口，学习406条selected H15无原研究界限越界，两个停止端点的预测肘速度仅.27077/.17285、实际1.07095/1.06543。优先检验因果native残差的下一步修正能力，再决定接入匹配控制。H没有新物理/模型调用/更新，有限输出13项零失败，旧科学门不变。C5只有事件接口通过，科学适应与C6/C7未验收。旧留出与开发seed保持已见，不重复用作未见bank。
 
 B、C、D、E均已首次执行并保存原失败：[B](GUARD_COUPLED_DEVELOPMENT_RESULTS.md)三seed106active位置停止；[C](GUARD_EXPLORATION_DEVELOPMENT_RESULTS.md)continuation4active速度停止、sparse106active位置停止；[D](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)普适预测未通过，原长轨迹H15位置改善与共同脉冲/短步负效混合，唯一读取单位首审失败及50项纯字节补充保留；E冻结控制仍未完整。它们是已完成的开发历史，不再列为待首次执行的矩阵。
 
 立即按以下顺序持续执行：
 
 1. E结果已提交推送cf71bd2。[F固定原生上下文结果](GUARD_NATIVE_CONTEXT_DIAGNOSTIC_RESULTS.md)已从clean734ab7d首次完成并推送cb2c6a9：2112完整active、288固定分组、12events、24quality，0物理/模型预测/更新；32payload原件及首核查50255/24超范围断言/纯契约补充封口。F交付211项零失败，不重跑F或E。
-2. [G单项反馈尾结果](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)已从clean91dcf6c首次完成，8完整/4速度停止，控制子假设失败；生产/来源/预算与原失败完整保存，不重跑G。接着H仅检查G保存selected H15是否预测超过原study stop .12rad/1rad/s，并固定末20窗口描述一步失配，0模型调用/更新/新物理；协议与脚本先冻结。根据该结果单个有依据修订，不在此提前决定更紧forecast或追加特征。
+2. [G单项反馈尾结果](GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)已从clean91dcf6c首次完成，8完整/4速度停止，控制子假设失败；生产/来源/预算与原失败完整保存，不重跑G。[H保存诊断](GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)已从clean a46633c首次完成，原selected/末窗口、输入身份和成本封口。学习组失败主要是一步乐观失配；cold2远期规划许可不解释它。接着I只用H固定窗口的过去原base残差检验下一步修正，协议/脚本先冻结，0新物理/RLS/模型调用。I只是开发依据，不追认旧门。
 3. G即使控制子门通过，也不能替D旧独立预测失败或解除C4/C5依赖。依据新完整控制/预测证据，另冻结必要的新预测验收或单个有依据模型修订，再完成同权限闭环与经典基线比较；没有明确依据时继续必要诊断，不无限重试、不只增加探索、不放宽任务或停止条件。每个可验证阶段完成后继续最早未验收项。
 4. C4科学门通过后，执行C5未知动力学冻结/适应对照，再执行C6固定成熟/能力门控及C7新留出综合验收。每批检查、提交、推送后立即接着推进，不等待重复“继续”；局部门、报告或commit不结束active目标。
 

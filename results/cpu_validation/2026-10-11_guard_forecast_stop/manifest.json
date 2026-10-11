@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "files": {
+    "raw/manifest.json": {
+      "bytes": 663,
+      "sha256": "b3c9969c6d65987c0993c32e0143a7f5f4e704410d5d4e7cbe423a950b5ed538",
+      "copy_verified": true
+    },
+    "raw/run.json": {
+      "bytes": 2381,
+      "sha256": "1d53ddaf808f5e4b88343f8376755434824fb56a1cef9a0f03ce0f9cb9938025",
+      "copy_verified": true
+    },
+    "raw/description.json": {
+      "bytes": 40120,
+      "sha256": "7e890529eb3ebfe4d7103295097ff6c755819d1f898742378ff345ad80787a88",
+      "copy_verified": true
+    },
+    "raw/intervals.jsonl": {
+      "bytes": 565430,
+      "sha256": "e983ef5f09113ae297565ec46ae2761c314428df19f2c2df08b3abc63787294b",
+      "copy_verified": true
+    },
+    "raw/last20.jsonl": {
+      "bytes": 137871,
+      "sha256": "9e180e1551193833464a7110599fad985f722ed3e080a169234c9afa175af674",
+      "copy_verified": true
+    },
+    "output_contract/check_h_saved_output_once.py": {
+      "bytes": 3957,
+      "sha256": "43e9976593dc58cefc17d850916832449e8cdd0ff41f284c6cf06040a8ee792e",
+      "copy_verified": true
+    },
+    "output_contract/c4_h_output_check_01.json": {
+      "bytes": 57074,
+      "sha256": "fdeb4715f78938455cbba553fa19a04ba8208565fbb4d4c46d6f59df08b15527",
+      "copy_verified": true
+    },
+    "first_process/stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "first_process/stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "first_process/execution.json": {
+      "bytes": 589,
+      "sha256": "ea74e17bc0d862d64eedd74cb79c80a676dca7066f2349c6022a876b74c6c63b",
+      "copy_verified": true
+    },
+    "archive_h_saved_once.py": {
+      "bytes": 1962,
+      "sha256": "9f2b634a758b4ac894bdfa148e030b770c903f313a45bed29f01c7bc1f754607",
+      "copy_verified": true
+    }
+  },
+  "cost": {
+    "binary_reads": 22,
+    "input_bytes": 1620094,
+    "copy_checks": 11,
+    "copy_failures": 0,
+    "wall_seconds": 0.17554480000399053,
+    "cpu_seconds": 0.03125
+  },
+  "scope": "original bytes only; no H rerun, statistics, source G audit, model or physics"
+}

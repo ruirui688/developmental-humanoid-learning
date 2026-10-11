@@ -1,0 +1,62 @@
+{
+  "status": "completed",
+  "scientific_adoption": false,
+  "cost": {
+    "G_input_file_reads": 5,
+    "G_input_raw_bytes": 4575413,
+    "sha256_input_bytes": 4575413,
+    "G_json_documents_parsed": 4,
+    "trace_lines_parsed": 3028,
+    "trace_uncompressed_bytes": 32832111,
+    "selected_active_records_described": 628,
+    "own_source_file_reads": 2,
+    "own_source_raw_bytes": 22213,
+    "git_queries": 4,
+    "git_return_bytes": 22254,
+    "model_predictions": 0,
+    "model_updates": 0,
+    "physics_calls": 0,
+    "wall_seconds": 0.8334508999250829,
+    "cpu_seconds": 0.65625
+  },
+  "G_physics_source_commit": "91dcf6c111a87427c8f3fdd8b959d4792b1bb5a2",
+  "diagnostic_source": {
+    "commit": "a46633c71e95826835ebc43f0aeaf6d5fdfd19e8",
+    "scripts/diagnose_guard_pd_tail_forecast_stop.py": {
+      "bytes": 17778,
+      "sha256": "2a697e67323136954fd6ea822f32cb45dd13422a4e579818a6033bc8da9b6dbd"
+    },
+    "docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 4435,
+      "sha256": "d14663ef9043e8da001e383c6f876201b2c0bdb7b64d54d62431846156f8e34a"
+    },
+    "clean_committed_bytes_verified": true
+  },
+  "inputs": {
+    "manifest.json": {
+      "path": "results\\cpu_validation\\2026-10-11_guard_pd_tail_control\\raw\\manifest.json",
+      "bytes": 785,
+      "sha256": "7eff4abb7cbe9c42a66d59615939a63a491c56fe87b5271d4ff4836d7b220a4c"
+    },
+    "first_audit.json": {
+      "path": "results/cpu_validation/2026-10-11_guard_pd_tail_control/first_audit.json",
+      "bytes": 220424,
+      "sha256": "ad98a41ea342808521945fac998a864eff9709d1593fbb3c3c459ce2d48d60bc"
+    },
+    "metadata.json": {
+      "path": "results\\cpu_validation\\2026-10-11_guard_pd_tail_control\\raw\\metadata.json",
+      "bytes": 18178,
+      "sha256": "8699b496287d80bdfb418e24625636c6b588e580869f40b17bcc345baab79f0a"
+    },
+    "seed_results.json": {
+      "path": "results\\cpu_validation\\2026-10-11_guard_pd_tail_control\\raw\\seed_results.json",
+      "bytes": 633469,
+      "sha256": "9c1fc32a8248761836fbc43a32f63fdb753ee835a8d5012922052d39e968074a"
+    },
+    "trace.jsonl.gz": {
+      "path": "results\\cpu_validation\\2026-10-11_guard_pd_tail_control\\raw\\trace.jsonl.gz",
+      "bytes": 3702557,
+      "sha256": "d7318127751270401198a5e2764a5b70faea2e4d881223fe38f20200828b526d"
+    }
+  }
+}
