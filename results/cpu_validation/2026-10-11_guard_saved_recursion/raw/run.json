@@ -1,0 +1,91 @@
+{
+  "status": "completed",
+  "self_check": false,
+  "requested_source_commit": "77bf80376cf460443b5c40ff126291c422933905",
+  "source": {
+    "files": {
+      "scripts/diagnose_guard_saved_recursion.py": {
+        "bytes": 25678,
+        "sha256": "708887ffcbc6aecc5325a49ece12a6065ba713025f8b1e9257e8c1bd75a351da"
+      },
+      "docs/GUARD_SAVED_RECURSION_DIAGNOSTIC_PROTOCOL.md": {
+        "bytes": 8647,
+        "sha256": "223d2646833e50dd1334fa95b9cb0b0994b980f537bcc43bfde5323bce8a9e4f"
+      }
+    },
+    "clean_committed_bytes_verified": true
+  },
+  "inputs": {
+    "manifest.json": {
+      "bytes": 646,
+      "sha256": "f393ee50b6f8de6d33264eee4ea9a20ca3328ea5a1d545d93a54240d37c36570"
+    },
+    "run.json": {
+      "bytes": 12866,
+      "sha256": "f4a40fe58caae01f91df0678dbd6eff1def4aa8bc20a9fac076bb6fcf13bb9ff"
+    },
+    "predictions.jsonl": {
+      "bytes": 16304217,
+      "sha256": "23c3c78afc4ba301a700cb0e4ad73fa6bc24a5c0072b7136f2933eacf058aff7"
+    }
+  },
+  "runtime": {
+    "python": "3.10.11",
+    "platform": "win32"
+  },
+  "cost": {
+    "physics_calls": 0,
+    "physics_substeps": 0,
+    "RLS_updates": 0,
+    "MPC_calls": 0,
+    "model_calls": 0,
+    "fits": 0,
+    "old_metric_or_gate_recalculations": 0,
+    "git_query_attempts": 4,
+    "git_return_bytes": 34366,
+    "git_query_returns": 4,
+    "source_file_read_attempts": 2,
+    "source_file_read_returns": 2,
+    "source_raw_bytes": 34325,
+    "input_file_read_attempts": 3,
+    "input_file_read_returns": 3,
+    "input_raw_bytes": 16317729,
+    "input_hash_bytes": 16317729,
+    "json_parse_attempts": 3431,
+    "json_parse_returns": 3431,
+    "prediction_line_attempts": 3429,
+    "prediction_line_returns": 3429,
+    "saved_prediction_records_indexed": 3429,
+    "saved_record_validation_attempts": 1674,
+    "saved_record_validation_returns": 1674,
+    "decomposition_scalar_difference_requests": 150120,
+    "decomposition_scalar_difference_returns": 150120,
+    "identity_residual_scalar_requests": 100080,
+    "identity_residual_scalar_returns": 100080,
+    "D11_saved_absolute_label_additions_requested": 2232,
+    "D11_saved_absolute_label_additions_returned": 2232,
+    "coordinate_abs_difference_checks": 71376,
+    "D11_coordinate_difference_requests": 47640,
+    "recursive_matched_H1_endpoint_uses": 11610,
+    "recursive_matched_H1_scalar_label_uses": 46440,
+    "summary_scalar_square_requests": 150120,
+    "summary_scalar_square_returns": 150120,
+    "summary_abs_requests": 150120,
+    "summary_sum_input_uses": 450360,
+    "summary_division_requests": 6480,
+    "summary_sqrt_requests": 2160,
+    "cross_scalar_product_requests": 50040,
+    "cross_scalar_product_returns": 50040,
+    "cross_scale_requests": 720,
+    "N_minus_K_energy_difference_requests": 960,
+    "record_rows_written": 11910,
+    "diagnostic_groups_written": 792,
+    "wall_seconds": 1.2278376000467688,
+    "cpu_seconds": 1.046875
+  },
+  "failure": null,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "timing_excludes": "final run/manifest serialization and writes"
+}

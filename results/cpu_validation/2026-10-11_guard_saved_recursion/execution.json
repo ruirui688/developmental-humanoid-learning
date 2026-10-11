@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "scripts/diagnose_guard_saved_recursion.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--source-commit",
+    "77bf80376cf460443b5c40ff126291c422933905",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_o_saved_recursion_01\\raw"
+  ],
+  "source_commit": "77bf80376cf460443b5c40ff126291c422933905",
+  "started_unix": 1791733465.7226672,
+  "ended_unix": 1791733467.056916,
+  "wall_seconds": 1.3334939000196755,
+  "returncode": 0,
+  "stdout": {
+    "bytes": 1783,
+    "sha256": "f1b11742bc93000c8519e70338c78f7201eb2d0a679f47d915ba42c945dd6bfc"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "name": "payload_binding:records.jsonl",
+      "passed": true
+    },
+    {
+      "name": "payload_binding:diagnostics.json",
+      "passed": true
+    },
+    {
+      "name": "payload_binding:run.json",
+      "passed": true
+    },
+    {
+      "name": "completed_clean_source",
+      "passed": true
+    },
+    {
+      "name": "fixed_saved_rows_and_groups",
+      "passed": true
+    },
+    {
+      "name": "all_fixed_groups_complete",
+      "passed": true
+    },
+    {
+      "name": "no_scientific_gate_release",
+      "passed": true
+    },
+    {
+      "name": "zero_prohibited_computation",
+      "passed": true
+    },
+    {
+      "name": "finite_saved_identity_residuals",
+      "passed": true
+    },
+    {
+      "name": "unavailable_guard_is_explicit",
+      "passed": true
+    }
+  ],
+  "check_count": 10,
+  "failed": 0,
+  "file_reads": 6,
+  "read_bytes": 7073878,
+  "wall_seconds": 0.01997809996828437,
+  "cpu_seconds": 0.03125,
+  "raw_manifest_sha256": "eae9f40f77269b504fa315a35faeb09ea76500a6efba6262612cd26c52b9e670",
+  "no_scientific_recalculation": true
+}
