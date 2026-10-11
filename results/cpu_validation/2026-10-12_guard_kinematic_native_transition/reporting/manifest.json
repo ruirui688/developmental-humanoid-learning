@@ -1,0 +1,38 @@
+{
+  "files": {
+    "c4_r_reporting_reads.json": {
+      "bytes": 1691,
+      "sha256": "3ae001d5d796b44406661f2648b7095fff26539139e91045d30b37000b763ffe",
+      "source": "external/c4_r_reporting_reads.json",
+      "copied_in_first_attempt": true
+    },
+    "c4_r_results_links_01.json": {
+      "bytes": 95,
+      "sha256": "7a491ccdc11a116de6e033c1f1c41951464e9ee20970423cdcec77e1423cbd39",
+      "source": "external/c4_r_results_links_01.json"
+    },
+    "c4_after_r_direction.md": {
+      "bytes": 592,
+      "sha256": "f9480a691c0016f3d3f2dd991b5115511f419dfaab7a21a56c722822f328d037",
+      "source": "external/c4_after_r_direction.md"
+    }
+  },
+  "supplement_file_reads": 5,
+  "supplement_read_bytes": 3065,
+  "first_attempt": {
+    "first_archive_status": "failed_missing_link_check_record",
+    "error": "FileNotFoundError: external/c4_r_results_links_01.json",
+    "first_script": "external/archive_r_reporting_once.py",
+    "completed_copy": "c4_r_reporting_reads.json",
+    "known_completed_reads": 2,
+    "known_completed_read_bytes": 3382,
+    "timing": "not recorded by failed first helper",
+    "scientific_recalculation": false,
+    "automatic_retry": false
+  },
+  "copy_failures": [],
+  "wall_seconds": 0.020711699966341257,
+  "cpu_seconds": 0.0,
+  "scientific_recalculation": false,
+  "original_root_manifest_preserved": true
+}

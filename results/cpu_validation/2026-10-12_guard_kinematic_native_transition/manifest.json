@@ -1,0 +1,62 @@
+{
+  "payload_count": 10,
+  "files": {
+    "execution.json": {
+      "bytes": 717,
+      "sha256": "ad3cc5aaa1d866660a994e8a9b5041f8b09ccb6e5883676db3ff010e2380ba0b",
+      "original_path": "external/c4_r_kinematic_01/execution.json"
+    },
+    "raw/manifest.json": {
+      "bytes": 645,
+      "sha256": "99e91e4416bd9bab008c704d7ed0549965de7963599e349d35fee4e16f7f4ee0",
+      "original_path": "external/c4_r_kinematic_01/raw/manifest.json"
+    },
+    "raw/metrics.json": {
+      "bytes": 468680,
+      "sha256": "f48a2922f5863c3af348bb4c861c44e370989b5cd1858207e2afea54a09c56af",
+      "original_path": "external/c4_r_kinematic_01/raw/metrics.json"
+    },
+    "raw/parameters.json": {
+      "bytes": 161093,
+      "sha256": "861df88ccbda0568f3b8b1aff773de7abcab2b8767495e15d1a9e6ce99736351",
+      "original_path": "external/c4_r_kinematic_01/raw/parameters.json"
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 47582673,
+      "sha256": "cc9ffa16685bbab65a918ca5edb32b6337d51d9370ef5a3cc717a64a6679e303",
+      "original_path": "external/c4_r_kinematic_01/raw/predictions.jsonl"
+    },
+    "raw/run.json": {
+      "bytes": 21769,
+      "sha256": "a1ddc8f992ff1ab8d9e307eaa922f2c57f724a9af173adc238e823aeaab939e8",
+      "original_path": "external/c4_r_kinematic_01/raw/run.json"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "external/c4_r_kinematic_01/stderr"
+    },
+    "stdout": {
+      "bytes": 4412,
+      "sha256": "f0e70a6d79f30b6171650fd16eafa799f3dc0bc58f24e8eaae8aaab0027cf692",
+      "original_path": "external/c4_r_kinematic_01/stdout"
+    },
+    "execution/run_r_kinematic_once.py": {
+      "bytes": 2358,
+      "sha256": "836c6bafa90a1c084766f7da12ce783bf64fe96d78de80a5d764a1d65be5e2fd",
+      "original_path": "external/run_r_kinematic_once.py"
+    },
+    "execution/archive_r_kinematic_once.py": {
+      "bytes": 2265,
+      "sha256": "b79bbcac1f12eff948dd0084010676c6101131b1e848ab2809ebcb02d310a950",
+      "original_path": "external/archive_r_kinematic_once.py"
+    }
+  },
+  "file_reads": 20,
+  "read_bytes": 96489224,
+  "copy_failures": [],
+  "wall_seconds": 0.23974730004556477,
+  "cpu_seconds": 0.109375,
+  "no_scientific_recalculation": true,
+  "automatic_retry": false
+}

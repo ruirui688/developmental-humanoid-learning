@@ -1,0 +1,115 @@
+{
+  "status": "completed",
+  "evidence_consistency_only": true,
+  "expected_source_commit": "7d2cbabe5208b3c18eb252a8fd4683e2c4d2951c",
+  "inputs": {
+    "D:\\Codex_ws\\robot_rl\\external\\check_r_output_once.py": {
+      "bytes": 18351,
+      "sha256": "4aa63a04e81489534bfb536c22d419ae4ea9da8c7bead00a1de1dfbc1ac810eb"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_kinematic_native_transition\\raw\\manifest.json": {
+      "bytes": 645,
+      "sha256": "99e91e4416bd9bab008c704d7ed0549965de7963599e349d35fee4e16f7f4ee0"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_kinematic_native_transition\\raw\\metrics.json": {
+      "bytes": 468680,
+      "sha256": "f48a2922f5863c3af348bb4c861c44e370989b5cd1858207e2afea54a09c56af"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_kinematic_native_transition\\raw\\run.json": {
+      "bytes": 21769,
+      "sha256": "a1ddc8f992ff1ab8d9e307eaa922f2c57f724a9af173adc238e823aeaab939e8"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_kinematic_native_transition\\raw\\parameters.json": {
+      "bytes": 161093,
+      "sha256": "861df88ccbda0568f3b8b1aff773de7abcab2b8767495e15d1a9e6ce99736351"
+    },
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_kinematic_native_transition\\raw\\predictions.jsonl": {
+      "bytes": 47582673,
+      "sha256": "cc9ffa16685bbab65a918ca5edb32b6337d51d9370ef5a3cc717a64a6679e303"
+    }
+  },
+  "checks": [
+    {
+      "group": "01_manifest_status_and_payload_population",
+      "passed": true
+    },
+    {
+      "group": "02_payload_byte_hash_bindings",
+      "passed": true
+    },
+    {
+      "group": "03_saved_run_status_flags_and_failed_partial",
+      "passed": true
+    },
+    {
+      "group": "04_exact_R_source_and_frozen_Q_source_identity",
+      "passed": true
+    },
+    {
+      "group": "05_recorded_frozen_Q_input_pins_only",
+      "passed": true
+    },
+    {
+      "group": "06_R_parameter_dimensions_mapping_provenance_and_no_new_fit",
+      "passed": true
+    },
+    {
+      "group": "07_saved_zero_new_learning_interaction_and_inherited_Q_fit_cost",
+      "passed": true
+    },
+    {
+      "group": "08_saved_source_population_and_unchanged_Q_K_D_fingerprints",
+      "passed": true
+    },
+    {
+      "group": "09_fixed_prediction_record_identities",
+      "passed": true
+    },
+    {
+      "group": "10_native_context_dimensions_and_same_trial_request_history",
+      "passed": true
+    },
+    {
+      "group": "11_saved_outcome_dimensions_unavailable_reason_and_scored_channels",
+      "passed": true
+    },
+    {
+      "group": "12_R_Q_history_nested_step_dimensions_and_paid_partial_retention",
+      "passed": true
+    },
+    {
+      "group": "13_fixed_channel_group_identities",
+      "passed": true
+    },
+    {
+      "group": "14_saved_group_counts_match_availability_without_metrics",
+      "passed": true
+    },
+    {
+      "group": "15_saved_gate_adoption_and_Q_descriptive_boolean_consistency_only",
+      "passed": true
+    }
+  ],
+  "cost": {
+    "file_read_attempts": 6,
+    "file_read_returns": 6,
+    "raw_bytes_read": 48253211,
+    "sha256_input_bytes": 48253211,
+    "json_parse_attempts": 4576,
+    "json_parse_returns": 4576,
+    "group_check_attempts": 15,
+    "group_check_returns": 15,
+    "scientific_metric_recalculations": 0,
+    "scientific_gate_recalculations": 0,
+    "model_restorations": 0,
+    "prediction_records_inspected": 4572,
+    "channel_groups_inspected": 840,
+    "prediction_population_count_entries": 48,
+    "parameter_records_inspected": 3,
+    "wall_seconds": 0.9638171999249607,
+    "cpu_seconds": 0.953125
+  },
+  "failure": null,
+  "scientific_adoption": false,
+  "timing_excludes": "final report/stdout serialization and writes"
+}

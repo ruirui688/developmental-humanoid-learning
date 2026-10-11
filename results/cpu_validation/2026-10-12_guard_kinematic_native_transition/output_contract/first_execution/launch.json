@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:/Python3.10/python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\check_r_output_once.py",
+    "--raw",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_kinematic_native_transition\\raw",
+    "--expected-source-commit",
+    "7d2cbabe5208b3c18eb252a8fd4683e2c4d2951c",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\c4_r_output_contract_01"
+  ],
+  "returncode": 0,
+  "started_unix": 1791737754.8821309,
+  "ended_unix": 1791737756.0811102,
+  "wall_seconds": 1.1980733000673354,
+  "checker": {
+    "bytes": 18351,
+    "sha256": "4aa63a04e81489534bfb536c22d419ae4ea9da8c7bead00a1de1dfbc1ac810eb"
+  },
+  "source_backup_reads": 1,
+  "source_backup_bytes": 18351,
+  "stdout": {
+    "bytes": 654,
+    "sha256": "3a54d482f96240223ac1facc7fe6f72e966bc88c96ecb92840ef7d8ef3db9825"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "subprocess_invocations": 1,
+  "automatic_retry": false
+}

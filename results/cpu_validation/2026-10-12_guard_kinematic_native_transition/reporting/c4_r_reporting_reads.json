@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "scope": "R report only: exactly one saved run/metrics/root manifest/execution read each; no parameter/trace/prediction/source read or model/metric/gate recomputation",
+  "source_root": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_guard_kinematic_native_transition",
+  "read_cost": {
+    "binary_read_attempts": 4,
+    "binary_read_returns": 4,
+    "raw_bytes": 493533,
+    "json_parse_attempts": 4,
+    "json_parse_returns": 4,
+    "wall_seconds": 0.004682599799707532,
+    "cpu_seconds": 0.0
+  },
+  "files": {
+    "raw/run.json": {
+      "bytes": 21769,
+      "sha256": "a1ddc8f992ff1ab8d9e307eaa922f2c57f724a9af173adc238e823aeaab939e8"
+    },
+    "raw/metrics.json": {
+      "bytes": 468680,
+      "sha256": "f48a2922f5863c3af348bb4c861c44e370989b5cd1858207e2afea54a09c56af"
+    },
+    "manifest.json": {
+      "bytes": 2367,
+      "sha256": "8b570df18ea514dddb00dba5ba887710272d50dde581db54eb813069d582a3d5"
+    },
+    "execution.json": {
+      "bytes": 717,
+      "sha256": "ad3cc5aaa1d866660a994e8a9b5041f8b09ccb6e5883676db3ff010e2380ba0b"
+    }
+  },
+  "actual_parameter_reads": 0,
+  "actual_trace_reads": 0,
+  "actual_prediction_reads": 0,
+  "source_reads": 0,
+  "fits": 0,
+  "model_calls": 0,
+  "metric_recomputations": 0,
+  "gate_recomputations": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "MPC_calls": 0,
+  "output_scope": "run metadata/cost except input/restoration records; all saved gate checks; only controlled channel RMSE tuples; root manifest/execution",
+  "timing_note": "Python read/parse/hash only; excludes shell startup and log/doc/output serialization/write. Restricted output before stdout; no full metrics emission."
+}
