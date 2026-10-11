@@ -11,7 +11,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** 最早未验收仍为C4。[W0固定躯干支撑域结果](docs/SUPPORTED_PAIR_ENGINEERING_RESULTS.md)首次完成300控制/3,000子步，前缀左臂真实接触满足，但四项末窗MAE只有一项≤.01rad，工程资格失败；本安装W1/W2关闭。接着唯一X0直立悬挂域设计，明确机械支撑先验与可能非接触的域边界，之后仍须完整接触控制；新域不能追认旧C4。oracle与同bank优化路线保持关闭。随后C5–C7，阶段检查提交推送后继续；下列旧结果保留为历史，不触发重跑。
+**当前执行入口：** 最早未验收仍为C4。[W0结果](docs/SUPPORTED_PAIR_ENGINEERING_RESULTS.md)首次完整但工程资格失败，本安装W1/W2关闭。[X0直立悬挂工程域](docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md)的首次零积分装配已通过；先冻结代码，再执行300调用工程资格。[后续少量辨识与匹配控制](docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md)已事前定配方，须X0通过才执行。机械支撑及可能无接触的边界明确披露，不能追认旧C4；最终仍需完整接触控制及C5–C7。阶段检查提交推送后继续，下列旧结果只作历史，不触发重跑。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 

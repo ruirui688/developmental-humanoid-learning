@@ -1,0 +1,173 @@
+{
+  "status": "self_check_passed",
+  "cost": {
+    "control_call_attempts": 0,
+    "control_call_returns": 0,
+    "control_call_exceptions": 0,
+    "confirmed_physics_substeps": 0,
+    "body_model_forward_calls": 0,
+    "RLS_updates": 0,
+    "body_model_fits": 0,
+    "body_model_restorations": 0,
+    "MPC_calls": 0,
+    "teacher_calls": 0,
+    "PD_vector_evaluations": 0,
+    "environment_constructor_attempts": 1,
+    "environment_constructor_returns": 1,
+    "reset_attempts": 1,
+    "reset_returns": 1,
+    "source_file_reads": 8,
+    "source_read_and_hash_bytes": 97803,
+    "shared_helper_module_load_attempts": 1,
+    "shared_helper_module_load_returns": 1,
+    "parameter_fingerprint_attempts": 2,
+    "parameter_fingerprint_returns": 2,
+    "preparation_original_model_build_attempts": 1,
+    "preparation_original_model_build_returns": 1,
+    "preparation_comparison_forward_attempts": 3,
+    "preparation_comparison_forward_returns": 3,
+    "preparation_installed_XML_build_attempts": 1,
+    "preparation_installed_XML_build_returns": 1,
+    "wall_seconds": 0.20993299991823733,
+    "cpu_seconds": 0.109375
+  },
+  "engineering_operations": {
+    "model_builds": 2,
+    "reset_calls": 1,
+    "reset_forward_attempts": 2,
+    "reset_forward_returns": 2,
+    "shared_supine_constructor_builds": 1,
+    "suspended_identity_constructor_builds": 1
+  },
+  "cases": [
+    {
+      "case": "new_upright_XML_installation_native_world_mapping",
+      "status": "passed",
+      "original_upright_and_installed_XML_geometry_equivalent": true,
+      "max_position_difference_m": 0.0,
+      "max_rotation_matrix_difference": 0.0,
+      "tolerance": 1e-12,
+      "shared_constructor_builds": 1,
+      "suspended_constructor_builds": 1,
+      "original_reference_builds": 1,
+      "installed_XML_reference_builds": 1,
+      "root_dofs_removed": 6,
+      "contact_gate_required": false,
+      "physics_calls": 0
+    }
+  ],
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "mujoco": "3.15.0"
+  },
+  "source": {
+    "commit": null,
+    "files": {
+      "scripts/validate_suspended_pair_engineering.py": {
+        "bytes": 24490,
+        "sha256": "14f8d36c19b683dad9e96d5ed3379f55e5ee681670d083603dbfed065ec8db08"
+      },
+      "src/developmental_physics/suspended_environment.py": {
+        "bytes": 7076,
+        "sha256": "f5154b7e059ed9939ed130d9a5c9eda2af455b9f660a4e843c72b996a44d81f8"
+      },
+      "docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md": {
+        "bytes": 10498,
+        "sha256": "1fe9129300663a3b51199cf21f2813279a35f3dcbcd3740dafd4e8085c42d695"
+      },
+      "src/developmental_physics/supported_environment.py": {
+        "bytes": 11642,
+        "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+      },
+      "scripts/validate_supported_pair_engineering.py": {
+        "bytes": 24683,
+        "sha256": "5c75e5db6f8721180bbbb17158f29ed736b0e10554672e585867f433b3766825"
+      },
+      "src/developmental_physics/environment.py": {
+        "bytes": 15822,
+        "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+      },
+      "src/developmental_physics/assets/ground_body.xml": {
+        "bytes": 3430,
+        "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      }
+    },
+    "clean_committed_bytes_verified": false
+  },
+  "execution": {
+    "argv": [
+      "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+      "scripts/validate_suspended_pair_engineering.py",
+      "--repo",
+      "D:\\Codex_ws\\robot_rl",
+      "--output",
+      "D:\\Codex_ws\\robot_rl\\external\\c4_x0_assembly_01\\raw",
+      "--self-check"
+    ],
+    "source_commit": null,
+    "returncode": 0,
+    "source_files": {
+      "src/developmental_physics/suspended_environment.py": {
+        "bytes": 7076,
+        "sha256": "f5154b7e059ed9939ed130d9a5c9eda2af455b9f660a4e843c72b996a44d81f8"
+      },
+      "scripts/validate_suspended_pair_engineering.py": {
+        "bytes": 24490,
+        "sha256": "14f8d36c19b683dad9e96d5ed3379f55e5ee681670d083603dbfed065ec8db08"
+      },
+      "docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md": {
+        "bytes": 10498,
+        "sha256": "1fe9129300663a3b51199cf21f2813279a35f3dcbcd3740dafd4e8085c42d695"
+      },
+      "src/developmental_physics/supported_environment.py": {
+        "bytes": 11642,
+        "sha256": "c10c72659fe5234febcaed78f04312f1913e494ce2533274b52baccf7c970cb0"
+      },
+      "scripts/validate_supported_pair_engineering.py": {
+        "bytes": 24683,
+        "sha256": "5c75e5db6f8721180bbbb17158f29ed736b0e10554672e585867f433b3766825"
+      },
+      "src/developmental_physics/environment.py": {
+        "bytes": 15822,
+        "sha256": "0543b14e176e3ae11d9cf56862f11a05f7522d9909e6ec20176abef4e4556e70"
+      },
+      "src/developmental_physics/assets/ground_body.xml": {
+        "bytes": 3430,
+        "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+      },
+      "src/developmental_physics/__init__.py": {
+        "bytes": 162,
+        "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+      }
+    },
+    "source_snapshot_reads": 8,
+    "source_snapshot_read_bytes": 97803,
+    "started_unix": 1791748398.151697,
+    "ended_unix": 1791748398.5864139,
+    "wall_seconds": 0.4342167000286281,
+    "stdout_bytes": 1334,
+    "stderr_bytes": 0,
+    "subprocess_invocations": 1,
+    "automatic_retry": false
+  },
+  "reads": [
+    {
+      "path": "raw/run.json",
+      "bytes": 16543,
+      "sha256": "d94dabe46729fd62ef4e6abd1ac5e4ae4690b45e68c170298571365010f1eb68"
+    },
+    {
+      "path": "execution.json",
+      "bytes": 2028,
+      "sha256": "7f10106445f95522c43aea6aaa3a9d14323f41e2b796fa25ed063949cf2cbedb"
+    }
+  ],
+  "wall_seconds": 0.028907099971547723,
+  "model_or_physics_calls": 0
+}

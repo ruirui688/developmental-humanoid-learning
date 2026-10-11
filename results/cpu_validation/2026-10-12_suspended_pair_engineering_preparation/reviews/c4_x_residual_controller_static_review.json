@@ -1,0 +1,66 @@
+{
+  "tests_reexecuted": 0,
+  "model_predictions": 0,
+  "findings": [
+    {
+      "description": "Three seeds and two model-controller groups yield six trajectories, not eight. Conditional own-control prediction cap is 6*2*4368 = 52416 pair and 104832 scalar.",
+      "severity": "required_protocol_population_fix"
+    },
+    {
+      "description": "Successful decision PD call count is derivable as 1 + sum(candidate_pair_prediction_attempts - 1). Fatal planning receipt currently omits candidate-start/PD count and cannot recover exact PD costs; add attempts/returns or explicitly report lower bound.",
+      "severity": "accounting_clarification_or_fix"
+    }
+  ],
+  "scientific_acceptance": "not assessed; no execution; X0 engineering and X1/X2 frozen science gates remain pending",
+  "fits": 0,
+  "mathematical_findings": "first clipped PD plus bounded residual then clipped; candidate-own closed-loop PD tail; complete requested torque cost and initial change; deterministic tie order; zero fallback; known/unknown scalar failure accounting correspond to design",
+  "old_raw_reads": 0,
+  "review_kind": "single_static_controller_and_learning_protocol_review",
+  "model_constructions": 0,
+  "rls_updates": 0,
+  "reviewer": "/root/suspended_domain_review",
+  "physical_substeps": 0,
+  "sources": [
+    {
+      "sha256": "aad4331acf49130df96dc8265920fe1383914019e2e04cd2be6ebf79d5489f56",
+      "bytes": 7704,
+      "path": "src/developmental_physics/residual_pd_pair_mpc.py"
+    },
+    {
+      "sha256": "c94dab6243a7def2847ee701cf10e015374611e1b8e024bff66b6f3120da06e7",
+      "bytes": 7267,
+      "path": "docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md"
+    }
+  ],
+  "execution": "static_only",
+  "inspected_dependencies": [
+    "local_pair_model.py interfaces and predict error semantics",
+    "guard_coupled_pair_model.py native API",
+    "local_model.py MPCConfig"
+  ],
+  "narrow_correction_receipt": {
+    "own_control_population": "Six trajectories; 52416 pair and 104832 scalar cap",
+    "model_predictions": 0,
+    "controller_pd_meter": "Attempt increments before each public_pd_request; return increments after successful call; both successful decision and model/PD fatal exceptions preserve counts and started candidates",
+    "tests_reexecuted": 0,
+    "old_raw_reads": 0,
+    "physical_substeps": 0,
+    "new_failures": 0,
+    "sources": [
+      {
+        "path": "src/developmental_physics/residual_pd_pair_mpc.py",
+        "bytes": 8417,
+        "sha256": "1027e07ae3668fef95bfd8bde52eae775dfa5b2cc024db3b4d50d8ce7edc7a85"
+      },
+      {
+        "path": "docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md",
+        "bytes": 7267,
+        "sha256": "c94dab6243a7def2847ee701cf10e015374611e1b8e024bff66b6f3120da06e7"
+      }
+    ],
+    "scope": "Only new PD/candidate counters, fatal attachment, and own-control population correction; no mathematical re-review or execution",
+    "findings_resolved": 2,
+    "rls_updates": 0
+  },
+  "protocol_fingerprint_timing_note": "Initial protocol text was read before the root population correction, but initial receipt fingerprint was sampled after that correction; c94dab is the corrected protocol, confirmed again in narrow correction receipt. No digest is claimed for the preceding eight-trajectory text."
+}

@@ -426,3 +426,10 @@ E按[正式协议](GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md)从clean `dda82b185
 首次独立审计1,888,017项零失败、最大差`4.3876013933186186e-13`；一次薄汇总只复制首审保存值，33绑定检查零失败，未重新调用模型或重算统计。它们证明证据一致，不能替代科学门。正式[原字节归档](../results/cpu_validation/2026-10-11_guard_lag_control/manifest.json)22payload/6,167,928bytes，22复制检查零失败，44binary读取/12,335,856bytes，wall .2781852s不含末manifest写盘；归档0新模型/物理/audit/summary。
 
 相关文档与原件检查、提交、推送后继续F：保存其余六关节原生q/v及IMU gyro/acceleration与一步误差的固定分层描述诊断，0物理/0模型更新，不读特权root orientation、不把关联当因果。然后根据明确证据只选单个最小修订另冻协议，不先增加探索或放宽任务。C4通过后继续C5适应、C6门控与C7新留出；本次报告与commit不结束持续目标。
+
+## 2026-10-12：X0悬挂安装准备通过，后续学习配方提前固定
+
+[X0协议](SUSPENDED_PAIR_DOMAIN_DESIGN.md)固定seed7400、100zero+200PD、.04→.08rad与.5Nm最终权限；完整/有限/固定root及两段末20各轴MAE≤.01rad才工程通过。接触如实分类描述，非接触门不能验收旧C4。
+首次新装配检查通过，4模型编译/5静态forward、0积分，identity原资产与安装XML几何差0；内wall/CPU .209933/.109375s，外 .434217s。
+[X1/X2协议](SUSPENDED_PAIR_LEARNING_PROTOCOL.md)在X0数据产生前确定三seed、400次在线辨识及cold/learned/PD/zero匹配控制；新增controller先clip公共PD，再首段小残差并独立闭合，每段计完整请求成本。5项新成功/异常计账检查通过，原首浮点严格等号失败与仅该项修正保留说明，0旧RLS/物理。
+[准备归档](../results/cpu_validation/2026-10-12_suspended_pair_engineering_preparation/manifest.json)29payload、58读取/358108bytes、0重复实验。工程未执行，现冻结推送后首次执行；持续目标active。

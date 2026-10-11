@@ -1,0 +1,19 @@
+{
+  "source_files": {
+    "src/developmental_physics/residual_pd_pair_mpc.py": {
+      "bytes": 8417,
+      "sha256": "1027e07ae3668fef95bfd8bde52eae775dfa5b2cc024db3b4d50d8ce7edc7a85"
+    },
+    "tests/test_residual_pd_pair_mpc.py": {
+      "bytes": 4386,
+      "sha256": "0d3f7b2f4ecd5b056453980e40492a2e17aca398ab3796bec8a0c7b1a41451cd"
+    }
+  },
+  "returncode": 0,
+  "wall_seconds": 1.305398000171408,
+  "test_invocations": 1,
+  "physical_integrations": 0,
+  "old_RLS_tests": 0,
+  "reason": "new successful/fatal PD accounting modifies the new controller",
+  "previous_first_run": "3 pass + exact-float equality failure; tolerance-only failed case passed separately; no physics"
+}

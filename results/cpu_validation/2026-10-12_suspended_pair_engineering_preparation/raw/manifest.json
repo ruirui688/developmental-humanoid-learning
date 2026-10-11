@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "self_check_passed",
+  "files": {
+    "suspended_body_before_height.xml": {
+      "bytes": 3452,
+      "sha256": "71a3765984b0243de0ad8d1d11a3534c92964b884abfb951b669b429ba29e2d3"
+    },
+    "suspended_body_installed.xml": {
+      "bytes": 3473,
+      "sha256": "116a66d3ce2f1914e0297d9a5f406c71c56aa96da6a1d8a20b3e8b44171db572"
+    },
+    "run.json": {
+      "bytes": 16543,
+      "sha256": "d94dabe46729fd62ef4e6abd1ac5e4ae4690b45e68c170298571365010f1eb68"
+    },
+    "metrics.json": {
+      "bytes": 275,
+      "sha256": "8d01d8f4c18519f3ce9e5d1ef81ef07baf1beebbac62998ef2ca3517fcf92e02"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

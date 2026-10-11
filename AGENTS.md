@@ -155,3 +155,5 @@ git diff --check
 ## 10. 新会话的第一项行动
 
 如果这是新环境中的首次 Codex 会话：先按 `docs/NEW_MACHINE_BOOTSTRAP.md` 识别实际软硬件条件并运行现有 CPU 测试；随后读取 `docs/DEVELOPMENT_ROADMAP.md` 选择当前可完成的阶段。在关节/刚体映射和站立 smoke test 通过前，不开始 G1 长时间训练或大规模采样。缺少 GPU 时继续 CPU 身体建模与控制原型，不静默安装驱动或操作真实机器人。
+
+X0执行入口：[悬挂域协议](docs/SUSPENDED_PAIR_DOMAIN_DESIGN.md)、[事前X1/X2协议](docs/SUSPENDED_PAIR_LEARNING_PROTOCOL.md)。首次装配已过且0积分；新controller的PD成功/异常计账检查已过。先冻结推送，再一次300调用工程资格；非接触悬挂机制不能追认旧C4或解除C5科学依赖。

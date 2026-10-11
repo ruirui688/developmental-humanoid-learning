@@ -1,0 +1,114 @@
+{
+  "review_kind": "first static review of X0 thin output checker",
+  "reviewed_snapshot": {
+    "path": "external/check_x0_once.py",
+    "bytes": 7912,
+    "sha256": "e0679e75317cb51830b6cac0c9f1a4b446a5e6943ce0cf8250c72496c1f122ee"
+  },
+  "scope": {
+    "checker_execution": 0,
+    "formal_output_reads": 0,
+    "physics_steps": 0,
+    "model_calls": 0,
+    "fit_calls": 0,
+    "legacy_math_recalculations": 0,
+    "static_source_read_bytes": 7912,
+    "review_does_not_bind_subsequent_checker_revisions": true
+  },
+  "status": "eight findings resolved by narrow differential static review; checker not executed",
+  "findings": [
+    {
+      "id": "XCHECK-1",
+      "severity": "required",
+      "anchor": "direct metrics indexing for full_100_prefix_200_active, fixed_upright... and windows",
+      "issue": "A legal source-verification or helper-import failure emits minimal metrics and explicit failure. Direct indexing raises KeyError. A later reporting failure can also leave windows unavailable.",
+      "revision": "Accept an explicit failed source/runtime branch with false engineering/scientific gates and independently unavailable windows. Require the complete schema only for a claimed complete engineering result. Preserve the failure and any paid budget. Do not require 300 controls or two available windows on a failed branch."
+    },
+    {
+      "id": "XCHECK-2",
+      "severity": "required",
+      "anchor": "confirmed_physics_substeps == all_samples",
+      "issue": "Integration can return and be counted before endpoint forward/diagnostics/capture fails. Confirmed paid substeps can therefore exceed saved samples on a legal partial run.",
+      "revision": "Require saved captures <= confirmed integrations. Bind confirmed counts to returned row executed counts or exception confirmed_completed_substeps where available. Demand equality only for a fully captured complete branch. Preserve missing-capture and effort unknown/lower-bound status."
+    },
+    {
+      "id": "XCHECK-3",
+      "severity": "required",
+      "anchor": "not all_samples or before == after",
+      "issue": "A partial paid run can have a known before fingerprint and unavailable after fingerprint. This is a legitimate failed qualification, not proof that the mount changed.",
+      "revision": "Check equality when both fingerprints are available and require known equality for the complete engineering gate. Preserve unavailable after as unknown with qualification false."
+    },
+    {
+      "id": "XCHECK-4",
+      "severity": "required",
+      "anchor": "window zip iteration and MAE vector comparisons",
+      "issue": "zip can silently accept missing windows or short per-axis MAE vectors.",
+      "revision": "For an available window require exactly two axis MAEs, finite values, the frozen 20 endpoint indices, target binding and .01 threshold. For a full result require exactly the two frozen windows. Reporting failures may expose each window independently as unavailable, forcing the gate false."
+    },
+    {
+      "id": "XCHECK-5",
+      "severity": "required",
+      "anchor": "new_engineering_MAE_recalculations = 4 if full else 0",
+      "issue": "The number of available and actually recalculated windows is independent of overall completion. A structurally complete trajectory can have a reporting failure in one window, and a partial trajectory may contain one usable window.",
+      "revision": "Count two new MAE recalculations per independently available window actually computed by the checker. Preserve unavailable-window reasons; do not recompute old scientific gates."
+    },
+    {
+      "id": "XCHECK-6",
+      "severity": "required",
+      "anchor": "scientific flags loop",
+      "issue": "The new c4_contact_scientific_validation flag is omitted from the always-false contract.",
+      "revision": "Include c4_contact_scientific_validation among the frozen false flags. An X0 engineering result cannot release old C4 contact science or C5."
+    },
+    {
+      "id": "XCHECK-7",
+      "severity": "consistency",
+      "anchor": "contact classification enum checks",
+      "issue": "Checking only the category enum does not bind left_arm/feet/other classification to recorded public geometry names.",
+      "revision": "Check the frozen public name-based classification without using contact data as a pass condition or interpreting it causally."
+    },
+    {
+      "id": "XCHECK-8",
+      "severity": "consistency",
+      "anchor": "native_complete and separate contact finite check",
+      "issue": "Producer complete telemetry includes finite contact diagnostics. Checker native_complete currently excludes that component.",
+      "revision": "Align complete finite telemetry with the producer definition. A missing/nonfinite contact diagnostic invalidates a complete-telemetry claim while preserving paid partial records and explicit unknowns."
+    }
+  ],
+  "approved_elements": [
+    "Only the new engineering MAEs and new engineering gate are recomputed.",
+    "Target errors are bound to saved native after-state and target.",
+    "Complete control has priority over an error ranking or stop-free count."
+  ],
+  "science_boundary": "This static review verifies output-contract handling only. It performs no new physics, reads no formal X0 outputs, changes no scientific gate and does not establish engineering or scientific success.",
+  "differential_followup": {
+    "reviewed_snapshot": {
+      "path": "external/check_x0_once.py",
+      "bytes": 9889,
+      "sha256": "47cc5b04c41c4fa13e0e331f567db183afd254960bcbf6cafbbfc4d487874988"
+    },
+    "AST_parse": "passed without import or execution",
+    "static_source_read_bytes": 9889,
+    "additional_dependency_checks": "Two narrow rg reads of frozen producer and public geometry source; returned snippets only. Backend total IO is unknown.",
+    "checker_execution": 0,
+    "formal_output_reads": 0,
+    "assembly_repetitions": 0,
+    "physics_steps": 0,
+    "model_calls": 0,
+    "fit_calls": 0,
+    "old_math_recalculations": 0,
+    "resolved_findings": [
+      {"id": "XCHECK-1", "lines": [98, 99, 102, 103, 106, 110, 130, 131], "result": "Minimal failed source/helper/reporting branches retain explicit failure, false gate and missing-window handling."},
+      {"id": "XCHECK-2", "lines": [61, 68, 100, 101], "result": "Confirmed returned and exceptional row substeps are accumulated; captures are a lower bound on paid integrations."},
+      {"id": "XCHECK-3", "lines": [133, 135], "result": "Unknown before/after fingerprint is legal only with an explicit failed run; known fingerprints must agree."},
+      {"id": "XCHECK-4", "lines": [105, 128], "result": "A complete claim requires two frozen windows, each with two finite MAEs, 20 saved endpoints, native target-error binding and the original threshold."},
+      {"id": "XCHECK-5", "lines": [113, 114, 127], "result": "New MAE accounting is two per actually available window; availability is separately calculated within the frozen full-trial requirement."},
+      {"id": "XCHECK-6", "lines": [136, 138], "result": "c4_contact_scientific_validation is checked false alongside the other frozen scientific flags."},
+      {"id": "XCHECK-7", "lines": [86, 94], "result": "Classification matches the frozen public left-arm and foot geometry names, with floor binding and finite contact telemetry."},
+      {"id": "XCHECK-8", "lines": [91, 92], "result": "Finite contact diagnostics contribute to complete native telemetry."}
+    ],
+    "availability_clarification": "The first review's suggestion that a partial trial could expose a qualifying usable window is superseded: frozen producer full_trial_required=true means no partial-trial window is available. Independence means each window also needs its own 20 finite errors, and each missing reporting window retains its own unavailable status. No full-trial gate is relaxed.",
+    "engineering_gate_preserved": "qualified requires full finite 300/3000 telemetry, fixed mount, exactly two passing original windows and no explicit failure.",
+    "unresolved_findings_within_requested_difference": [],
+    "does_not_establish_result_success": true
+  }
+}
