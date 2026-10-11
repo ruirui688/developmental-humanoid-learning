@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "files": {
+    "raw/manifest.json": {
+      "bytes": 646,
+      "sha256": "f393ee50b6f8de6d33264eee4ea9a20ca3328ea5a1d545d93a54240d37c36570",
+      "copy_verified": true
+    },
+    "raw/metrics.json": {
+      "bytes": 331518,
+      "sha256": "06248800f20743173a17697bf4f609684e7ac3b2bb680ec61c8086d3b8e14897",
+      "copy_verified": true
+    },
+    "raw/parameters.json": {
+      "bytes": 1426161,
+      "sha256": "7e913c74f740019f1d97f6f4ec0709ec0fc9bfc84cece9afc9cb7535d450efa8",
+      "copy_verified": true
+    },
+    "raw/predictions.jsonl": {
+      "bytes": 16304217,
+      "sha256": "23c3c78afc4ba301a700cb0e4ad73fa6bc24a5c0072b7136f2933eacf058aff7",
+      "copy_verified": true
+    },
+    "raw/run.json": {
+      "bytes": 12866,
+      "sha256": "f4a40fe58caae01f91df0678dbd6eff1def4aa8bc20a9fac076bb6fcf13bb9ff",
+      "copy_verified": true
+    },
+    "execution/c4_n_scaled_native_01.stdout": {
+      "bytes": 3137,
+      "sha256": "7f313040d1cd3c29e26600e24a63c80d336bb68d197f9320ffc9ff648d0c4cbc",
+      "copy_verified": true
+    },
+    "execution/c4_n_scaled_native_01.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    "execution/c4_n_scaled_native_01.execution.json": {
+      "bytes": 625,
+      "sha256": "568a52c63ffa4da4c740a66250b323106cbfa1cb5d372df10355848967b417f3",
+      "copy_verified": true
+    },
+    "execution/run_n_scaled_native_once.py": {
+      "bytes": 1404,
+      "sha256": "79ab66e8d47bd07bb89c456ffef2e22a7eac27360a95d276074802850b0a1854",
+      "copy_verified": true
+    },
+    "output_contract/check_n_scaled_output_once.py": {
+      "bytes": 4996,
+      "sha256": "a9c6c6616cf9d4a519a49a7118aadc4643b2170dfd969c4927af60242a78e1bc",
+      "copy_verified": true
+    },
+    "output_contract/c4_n_output_check_01.json": {
+      "bytes": 1690,
+      "sha256": "f1fd8a6599a0589e9f41bcc2dbcc1968692f808add2fbc2a879d4bcfc429ffc6",
+      "copy_verified": true
+    },
+    "execution/archive_n_scaled_native_once.py": {
+      "bytes": 2017,
+      "sha256": "70f000ac6cde1a49a7650b6b3ac411fa1222834d14be17461a507a3afa12d990",
+      "copy_verified": true
+    }
+  },
+  "raw_manifest_sha256": "f393ee50b6f8de6d33264eee4ea9a20ca3328ea5a1d545d93a54240d37c36570",
+  "cost": {
+    "binary_reads": 24,
+    "input_bytes": 36178554,
+    "copy_checks": 12,
+    "copy_failures": 0,
+    "wall_seconds": 0.11512909992597997,
+    "cpu_seconds": 0.03125
+  },
+  "model_fits": 0,
+  "model_predictions": 0,
+  "physics": 0
+}

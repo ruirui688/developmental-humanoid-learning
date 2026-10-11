@@ -1,0 +1,77 @@
+{
+  "scope": "output bytes and reported count/budget/dependency declarations only; no fitting, rollout, metric or gate recomputation",
+  "first_attempt": true,
+  "checks": [
+    {
+      "name": "bytes_and_sha_parameters.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_metrics.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_run.json",
+      "passed": true
+    },
+    {
+      "name": "bytes_and_sha_predictions.jsonl",
+      "passed": true
+    },
+    {
+      "name": "status_retained",
+      "passed": true
+    },
+    {
+      "name": "new_fit_bounded",
+      "passed": true
+    },
+    {
+      "name": "zero_physics_and_old_refits",
+      "passed": true
+    },
+    {
+      "name": "scientific_dependencies_closed",
+      "passed": true
+    },
+    {
+      "name": "clean_source_and_full_inputs",
+      "passed": true
+    },
+    {
+      "name": "all_fixed_new_fits",
+      "passed": true
+    },
+    {
+      "name": "all_seed_scale_definitions_retained",
+      "passed": true
+    },
+    {
+      "name": "all_baselines_frozen",
+      "passed": true
+    },
+    {
+      "name": "all_prediction_records_and_channels_retained",
+      "passed": true
+    },
+    {
+      "name": "all_fixed_channel_counts_reported",
+      "passed": true
+    },
+    {
+      "name": "both_original_gates_and_status_retained",
+      "passed": true
+    }
+  ],
+  "failures": 0,
+  "cost": {
+    "binary_reads": 5,
+    "input_bytes": 18075408,
+    "wall_seconds": 0.09172109980136156,
+    "cpu_seconds": 0.03125
+  },
+  "actual_input_reads": 0,
+  "model_fits": 0,
+  "model_predictions": 0,
+  "physics": 0
+}
