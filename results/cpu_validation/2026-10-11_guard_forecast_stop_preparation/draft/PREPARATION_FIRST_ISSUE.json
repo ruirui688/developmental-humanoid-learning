@@ -1,0 +1,10 @@
+{
+  "stage": "canonical_schema_location_query",
+  "command": "rg -n metric_control_step_count|reference_q|def native_pair|joint_position|joint_velocity|control_dt|physics_dt src/developmental_physics/pd_tail_control_development.py src/developmental_physics/ground_body.py",
+  "exit_code": 2,
+  "reason": "guessed ground_body.py does not exist; no actual G data was read",
+  "resolution": "read existing environment.py and guard_pair_development.py canonical schema instead",
+  "actual_G_file_reads": 0,
+  "model_calls": 0,
+  "physics_calls": 0
+}

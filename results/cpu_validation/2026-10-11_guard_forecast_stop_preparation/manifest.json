@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "files": {
+    "draft/diagnose_guard_pd_tail_forecast_stop.py": {
+      "bytes": 17779,
+      "sha256": "0715bf3bfdd123902e47a0c1761f53b81a0c0eae642c051c561d3a5090f5812b",
+      "source": "external\\c4_g_forecast_stop_diagnostic_staging\\diagnose_guard_pd_tail_forecast_stop.py",
+      "copy_verified": true
+    },
+    "draft/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 4435,
+      "sha256": "d14663ef9043e8da001e383c6f876201b2c0bdb7b64d54d62431846156f8e34a",
+      "source": "external\\c4_g_forecast_stop_diagnostic_staging\\GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_PROTOCOL.md",
+      "copy_verified": true
+    },
+    "draft/check_h_minimal.py": {
+      "bytes": 5613,
+      "sha256": "838bc8dbb95e5f585e3ce453d58335d7a5c305d011c25b2c37f52cf10c3992cb",
+      "source": "external\\c4_g_forecast_stop_diagnostic_staging\\check_h_minimal.py",
+      "copy_verified": true
+    },
+    "draft/CHECK_01.json": {
+      "bytes": 1370,
+      "sha256": "fbf56db53cc347549a444051e7cabd32e0bdec9062cea340f5c15f948579db8d",
+      "source": "external\\c4_g_forecast_stop_diagnostic_staging\\CHECK_01.json",
+      "copy_verified": true
+    },
+    "draft/PREPARATION_FIRST_ISSUE.json": {
+      "bytes": 546,
+      "sha256": "fbd4d14f3f541df83da1446aa6b0e9c92eabafbcf24237ee131fd16313f13917",
+      "source": "external\\c4_g_forecast_stop_diagnostic_staging\\PREPARATION_FIRST_ISSUE.json",
+      "copy_verified": true
+    },
+    "draft/INTEGRITY.json": {
+      "bytes": 969,
+      "sha256": "3f3498dd7fdf0116a6537e510023da2b6be872d23c74aee9d962621b014cc13b",
+      "source": "external\\c4_g_forecast_stop_diagnostic_staging\\INTEGRITY.json",
+      "copy_verified": true
+    },
+    "g_delivery/check_g_git_payload_paths_once.py": {
+      "bytes": 1429,
+      "sha256": "c04cd77fd51dc0f60e8150cf51b8719e66557b26950fa11aa0191bc5dc3b3aac",
+      "source": "external\\check_g_git_payload_paths_once.py",
+      "copy_verified": true
+    },
+    "g_delivery/c4_g_delivery_paths_01.json": {
+      "bytes": 414,
+      "sha256": "3fe60ace93e78536ae978ea49aef246e0f892a9ef2aec426f29efca8358a7016",
+      "source": "external\\c4_g_delivery_paths_01.json",
+      "copy_verified": true
+    },
+    "method_review/REVIEW.md": {
+      "bytes": 9183,
+      "sha256": "5ea543550cd77f8f81c49954279f553096f97ae272d13199b6fe23c582460e1c",
+      "source": "external\\c4_next_control_direction_review\\REVIEW.md",
+      "copy_verified": true
+    },
+    "schema_review/REVIEW.md": {
+      "bytes": 2414,
+      "sha256": "6a723342df7ba69319fa9a8bc26bf685ae40e0957105f1fcb285884ddd1aee50",
+      "source": "external\\c4_h_schema_review_staging\\REVIEW.md",
+      "copy_verified": true
+    },
+    "schema_review/schema_01.json": {
+      "bytes": 17651,
+      "sha256": "b22eae8384e89c8c65112202325eb0957b3ca83243242e4bec25d27b080cad27",
+      "source": "external\\c4_h_schema_review_staging\\schema_01.json",
+      "copy_verified": true
+    },
+    "schema_review/INTEGRITY.json": {
+      "bytes": 525,
+      "sha256": "68b3ddbb80fc4ba1f07bc79fbd49edf7544bc5a9b103a8dde683f16e6ac64798",
+      "source": "external\\c4_h_schema_review_staging\\INTEGRITY.json",
+      "copy_verified": true
+    },
+    "run_h_forecast_stop_once.py": {
+      "bytes": 1273,
+      "sha256": "8ddc3278a379b4a09829026c20d156ed24ced2e37df6ec4129d7f986654de5d4",
+      "source": "external\\run_h_forecast_stop_once.py",
+      "copy_verified": true
+    },
+    "prepare_h_forecast_stop_once.py": {
+      "bytes": 4048,
+      "sha256": "f65f8b29a69bbb8c24dc5eda85de30f6265c9d95d794b72aebe1ecc8e0ecdc3b",
+      "source": "external\\prepare_h_forecast_stop_once.py",
+      "copy_verified": true
+    },
+    "promotion.json": {
+      "bytes": 424,
+      "sha256": "450b08a3db119fd168d5e1d9b767339ff23b5e52bfdf0f367e7d4b7f3acc8eca"
+    }
+  },
+  "cost": {
+    "binary_reads": 32,
+    "binary_read_bytes": 179725,
+    "copy_checks": 14,
+    "copy_failures": 0,
+    "wall_seconds": 0.2129566001240164,
+    "cpu_seconds": 0.0
+  },
+  "scope": "promotion and original byte copies; no old checks, G data, model or physics"
+}

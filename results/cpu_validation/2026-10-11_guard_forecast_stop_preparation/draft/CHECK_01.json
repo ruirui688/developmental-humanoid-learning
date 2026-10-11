@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "name": "boundary_inclusive_and_stage_split",
+      "passed": true
+    },
+    {
+      "name": "fixed_stage_and_decision_denominators",
+      "passed": true
+    },
+    {
+      "name": "fallback_never_becomes_selected_or_safe",
+      "passed": true
+    },
+    {
+      "name": "missing_and_invalid_selected_are_separate",
+      "passed": true
+    },
+    {
+      "name": "all_twelve_empty_segments_are_explicit",
+      "passed": true
+    },
+    {
+      "name": "partial_preserves_forecast_but_nulls_main_error",
+      "passed": true
+    },
+    {
+      "name": "signed_and_absolute_complete_errors",
+      "passed": true
+    },
+    {
+      "name": "partial_effort_paid_and_missing_not_zero",
+      "passed": true
+    },
+    {
+      "name": "standard_library_and_saved_information_only",
+      "passed": true
+    },
+    {
+      "name": "draft_disabled_and_separate_source_pins",
+      "passed": true
+    }
+  ],
+  "passed": 10,
+  "failed": 0,
+  "source": {
+    "sha256": "0715bf3bfdd123902e47a0c1761f53b81a0c0eae642c051c561d3a5090f5812b",
+    "bytes": 17779
+  },
+  "scope": "new H small branches and static isolation; no run(), actual G, model or physics",
+  "actual_G_file_reads": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "wall_seconds": 0.024438200052827597,
+  "cpu_seconds": 0.015625
+}
