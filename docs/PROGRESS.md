@@ -1,5 +1,13 @@
 # 开发进度与仓库检查点
 
+## C4 D首次离线完成：混合结果与下一项位置假设（2026-10-11）
+
+[D结果](GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md)从clean `f7710c7`一次完成六cal/18源评价轨迹，0新物理、2400vector/4800离线scalar，168150新评估pair与1830保存一步复用，wall39.5916466s/CPU39.21875s。普适预测没有通过；sparse11共同脉冲H1/H15速度退化，cont11小脉冲收益伴随名义/PD/零输入退化。保留正项：原106-step停止轨迹sparse11 H15位置误差降低约31%–38%、速度近似持平，H1仍更差；不把原停止轨迹排序或当控制成功。
+
+首审4000346项/1失败，唯一读取计量单位：gzip原CRLF字节对文本LF计数差7230；最大数值差4.97e−14，其余模型/历史/窗口/费用均过。原failed1保留，独立50项纯字节补充零失败，只解释这一单位，没有重跑数学。一次薄summary51项零失败复制6480指标；[封口](../results/cpu_validation/2026-10-11_guard_lag_offline/manifest.json)86payload/86原件字节检查零失败。正式物理仍246350/2463500；在线22452、B离线2400、D离线4800scalar，计算合计29652。
+
+拒绝默认模型替换与cont11付费控制；接着实施[E最小位置假设](GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md)：cold11/冻结sparse11/PD/zero四组匹配控制，显式history MPC，原H15/81、目标、权限与停止不改。代码与独立审计正在并行准备，formal flag关闭，不重复D拟合。E即便控制改善也不追认旧预测门或完整C4/C5通过；每个里程碑提交推送后继续，持续目标active。
+
 ## C4 D固定离线诊断已准备首次执行（2026-10-11）
 
 [正式协议](GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md)、evaluator和独立标准库auditor已提升。固定六cold11模型各重放自身400完整校准一次，旧9D只恢复；五predictor在共同prediction及五控制的同源窗口上评估H1/2/5/15，历史由过去原生端点初始化并沿自身预测移位。无新物理或科学采用门，最多新增4800离线scalar，完整失败和缺失窗口保留。

@@ -1,0 +1,139 @@
+{
+  "tests": 15,
+  "failures": 0,
+  "errors": 0,
+  "source_sha256": "33a612e4dc3bd1610e24aa1b73d95834bab347610a9a76ac704aa977265d04b6",
+  "test_sha256": "9751b721b559c1cb13e79d44fc5ca22d87081d0b20a510427d25fa90844fbf58",
+  "per_test": [
+    {
+      "test": "__main__.SmallLagChecks.test_archive_rollout_own_history_and_exact_cost_tamper",
+      "independent_math_delta": {
+        "lag_pair_prediction_attempts": 10,
+        "lag_feature_attempts": 10,
+        "lag_feature_successes": 10,
+        "lag_scalar_prediction_attempts": 20,
+        "lag_scalar_prediction_successes": 20,
+        "lag_pair_prediction_successes": 10
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_closed_form_one_transition_rls",
+      "independent_math_delta": {
+        "lag_scalar_rls_proposal_attempts": 2,
+        "lag_scalar_rls_proposal_successes": 1
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_cold_features_and_no_history_default",
+      "independent_math_delta": {
+        "lag_feature_attempts": 2,
+        "lag_feature_successes": 1
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_design_reporting_bias_scale_and_undefined_correlations",
+      "independent_math_delta": {
+        "design_feature_rows": 3,
+        "design_svd_calls": 1,
+        "design_gram_products": 2
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_four_interval_trial_has_no_h5_h15",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_invalid_saved_prediction_failure_has_no_new_model_call",
+      "independent_math_delta": {
+        "lag_pair_prediction_attempts": 2,
+        "lag_feature_attempts": 2,
+        "lag_feature_successes": 2,
+        "lag_scalar_prediction_attempts": 4,
+        "lag_scalar_prediction_successes": 4,
+        "lag_pair_prediction_successes": 2
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_metrics_retain_failure_and_short_window_unavailability",
+      "independent_math_delta": {
+        "lag_pair_prediction_attempts": 2,
+        "lag_feature_attempts": 2,
+        "lag_feature_successes": 2,
+        "lag_scalar_prediction_attempts": 4,
+        "lag_scalar_prediction_successes": 4,
+        "lag_pair_prediction_successes": 2
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_modal_matrix_cold_repeated_unit_modes",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_modal_multiset_roots_and_operator_norm",
+      "independent_math_delta": {
+        "modal_characteristic_calculations": 2,
+        "modal_svd_calls": 2,
+        "modal_commutator_products": 4
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_no_window_after_source_stop_and_request_ages",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_prefix_history_points_to_98_99",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_rollout_uses_own_predicted_history",
+      "independent_math_delta": {
+        "lag_pair_prediction_attempts": 3,
+        "lag_feature_attempts": 3,
+        "lag_feature_successes": 3,
+        "lag_scalar_prediction_attempts": 6,
+        "lag_scalar_prediction_successes": 6,
+        "lag_pair_prediction_successes": 3
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_saved_prediction_reuse_requires_exact_identity_and_G",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_snapshot_hash_detects_changed_history_prior",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_standardization_constant_zero_and_known_singulars",
+      "independent_math_delta": {}
+    }
+  ],
+  "total_independent_math": {
+    "lag_pair_prediction_attempts": 17,
+    "lag_feature_attempts": 19,
+    "lag_feature_successes": 18,
+    "lag_scalar_prediction_attempts": 34,
+    "lag_scalar_prediction_successes": 34,
+    "lag_pair_prediction_successes": 17,
+    "lag_scalar_rls_proposal_attempts": 2,
+    "lag_scalar_rls_proposal_successes": 1,
+    "design_feature_rows": 3,
+    "design_svd_calls": 1,
+    "design_gram_products": 2,
+    "modal_characteristic_calculations": 2,
+    "modal_svd_calls": 2,
+    "modal_commutator_products": 4
+  },
+  "timing": {
+    "wall_seconds": 0.010428700130432844,
+    "cpu_seconds": 0.0
+  },
+  "formal_additions": {
+    "real_raw_reads": 0,
+    "physical_calls": 0,
+    "online_helper_imports": 0,
+    "old_model_refits": 0,
+    "real_calibration_updates": 0
+  },
+  "artificial_only": true
+}

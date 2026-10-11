@@ -1,0 +1,24 @@
+{
+  "executions": [
+    {
+      "command": [
+        "D:/Python3.10/python.exe",
+        "scripts/audit_guard_lag_offline.py",
+        "--input",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_lag_offline_20261011_first",
+        "--source-root",
+        "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-11_guard_exploration",
+        "--output",
+        "D:\\Codex_ws\\robot_rl\\external\\guard_lag_offline_20261011_first_audit.json"
+      ],
+      "stdout": "D:\\Codex_ws\\robot_rl\\external\\guard_lag_offline_20261011_first_audit_stdout.txt",
+      "exit_code": 1,
+      "wrapper_wall_seconds": 21.094954499974847,
+      "repeated": false
+    }
+  ],
+  "new_physics_calls": 0,
+  "online_helper_calls": 0,
+  "model_updates": 0,
+  "prior_C_audit_reexecutions": 0
+}

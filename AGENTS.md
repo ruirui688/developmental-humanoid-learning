@@ -42,6 +42,8 @@ C随后从clean `5ea8df4`首次执行，18完整/6停止/0异常/blocked，两�
 
 D固定single-lag候选已按 `docs/GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md`正式协议提升：coupled9追加两列`v_t−v_(t−1)`，cold lag0，其余prior/RLS不改。helper8人工检查/evaluator最终7人工检查/独立auditor15人工契约及最终6定向检查通过，所有中间版本保留；生产提升仅改正式开关、说明和test路径/入口，纯AST/source/history签名检查通过，未重复原矩阵。auditor SHA `bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b`。提交推送后clean首次离线，最多新增4800离线scalar与固定五predictor/H1/2/5/15开发预测，只条件于已存request序列；不能称actor预知未来、新留出、闭环收益或C5通过。首次执行、独立首审、一次薄汇总封口后继续依完整D结果准备新物理；当前正式物理/真实学习累计不变。
 
+D随后从clean `f7710c7`首次完成：0新物理、4800离线scalar、168150新评估pair；普适预测不支持采用，原106-step停止轨迹sparse11 H15位置误差降低31%–38%、速度近似持平而H1更差。见 `docs/GUARD_LAG_OFFLINE_DEVELOPMENT_RESULTS.md`。首审4000346项/1失败唯一read-cost字节单位，独立50项纯字节补充零失败，原failed1保留；未重复数学。一次summary51项零失败、86payload封口。物理仍246350/2463500，在线22452+B离线2400+D离线4800=29652 scalar计算。继续 `docs/GUARD_LAG_CONTROL_DEVELOPMENT_PROTOCOL.md` 草稿，四组cold11/sparse11/PD/zero仅检验新H15位置控制假设；formal关闭、旧预测门和完整C4/C5不通过，cont11不入本小试验。下一开发若需补遗漏上下文，只可用其余原生关节与IMU gyro/acceleration；当前native没有orientation，特权root quaternion禁止进入模型。
+
 按火柴人也应模拟小孩的澄清，已新增独立 MuJoCo CPU 地面探索底座，见 `docs/GROUND_BODY_PHYSICS.md`。最初阶段只有固定小幅/零力矩采集、物理与日志验收，无身体模型更新或能力晋级；后续 E1 的局部校准更新单独记录。环境无任务教师或步态代理，不能把被动倒下、滑动或采集成功称为技能学习。
 
 首轮 24 组无训练地面采集已完成，见 `docs/GROUND_BODY_RESULTS.md`。探索有效激励弱且限位干预频繁，控制终点接触力采样出现较高峰值；优先补齐子步冲击诊断与实际动作激励计量，再准备学习协议。首次 Windows 写盘中断的额外交互与原始文件保留，完整矩阵单独归档，不能把零停止算作安全验证通过。

@@ -1,0 +1,76 @@
+{
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "source_sha256": "dcd6be881e582320abe72c1c30d779d92d79f5f2be1af265f471d8da76a4eced",
+  "test_sha256": "fff99a6f83ce656a2b67abab06bc7b9f78c0f47fbea73354c168bf47f97ccccc",
+  "per_test": [
+    {
+      "test": "__main__.SmallLagChecks.test_closed_form_one_transition_rls",
+      "independent_math_delta": {
+        "lag_scalar_rls_proposal_attempts": 2,
+        "lag_scalar_rls_proposal_successes": 1
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_cold_features_and_no_history_default",
+      "independent_math_delta": {
+        "lag_feature_attempts": 2,
+        "lag_feature_successes": 1
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_four_interval_trial_has_no_h5_h15",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_modal_matrix_cold_repeated_unit_modes",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_prefix_history_points_to_98_99",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_rollout_uses_own_predicted_history",
+      "independent_math_delta": {
+        "lag_feature_attempts": 3,
+        "lag_feature_successes": 3,
+        "lag_pair_prediction_attempts": 3,
+        "lag_scalar_prediction_attempts": 6,
+        "lag_scalar_prediction_successes": 6,
+        "lag_pair_prediction_successes": 3
+      }
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_snapshot_hash_detects_changed_history_prior",
+      "independent_math_delta": {}
+    },
+    {
+      "test": "__main__.SmallLagChecks.test_standardization_constant_zero_and_known_singulars",
+      "independent_math_delta": {}
+    }
+  ],
+  "total_independent_math": {
+    "lag_scalar_rls_proposal_attempts": 2,
+    "lag_scalar_rls_proposal_successes": 1,
+    "lag_feature_attempts": 5,
+    "lag_feature_successes": 4,
+    "lag_pair_prediction_attempts": 3,
+    "lag_scalar_prediction_attempts": 6,
+    "lag_scalar_prediction_successes": 6,
+    "lag_pair_prediction_successes": 3
+  },
+  "timing": {
+    "wall_seconds": 0.004430700093507767,
+    "cpu_seconds": 0.0
+  },
+  "formal_additions": {
+    "real_raw_reads": 0,
+    "physical_calls": 0,
+    "online_helper_imports": 0,
+    "old_model_refits": 0,
+    "real_calibration_updates": 0
+  },
+  "artificial_only": true
+}

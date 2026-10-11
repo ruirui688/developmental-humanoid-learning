@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "started",
+  "created_at_utc": "2026-10-11T10:26:45.293818+00:00",
+  "execution_context": {
+    "verified_source_commit": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "verified_clean_worktree": true,
+    "verified_source_git_blob_count": 14,
+    "source_verification": "wrapper compares original working bytes to explicit clean HEAD"
+  },
+  "calibrations": [],
+  "failure": null,
+  "scope": "fixed same-development-data single-lag offline diagnosis; no selection/science pass",
+  "new_physics_control_calls": 0,
+  "new_physics_substeps": 0,
+  "original9_refits": 0,
+  "mpc_select_calls": 0,
+  "policy_gain_gate_updates": 0,
+  "pd_teacher_calls": 0,
+  "real_robot_calls": 0,
+  "gpu_used": false,
+  "planned_offline_vector_updates_maximum": 2400,
+  "planned_offline_scalar_updates_maximum": 4800,
+  "planned_rls_internal_pair_predictions_maximum": 2400,
+  "planned_rls_internal_scalar_predictions_maximum": 4800,
+  "planned_evaluation_pair_predictions_maximum": 247500,
+  "planned_evaluation_scalar_predictions_maximum": 495000
+}

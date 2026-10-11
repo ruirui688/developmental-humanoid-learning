@@ -1,0 +1,71 @@
+{
+  "collection_commit": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+  "original_inputs": {
+    "metadata.json": {
+      "sha256": "2c0be03255858d7511d1e238b5eb491a6618f197f12810ea9e0b00a64d279b57",
+      "bytes": 16903
+    },
+    "episodes.json": {
+      "sha256": "5a471ec2fecec4c22e6f5954b17bc4b8de23b60b3bce753a9bc7e6b6bc96cd0a",
+      "bytes": 42361
+    },
+    "seed_results.json": {
+      "sha256": "4ba5f5182e062408f023d6e0084864ea16a5f13fb82b71818a4060360a4c28e3",
+      "bytes": 744398
+    },
+    "trace.jsonl.gz": {
+      "sha256": "1b299c9bc7a91f8ff9dfef3f77ac1b6fea923dea6057327bb3f9aa1ce6f56ad0",
+      "bytes": 9284309
+    },
+    "source_snapshot.zip": {
+      "sha256": "89908bdb3bef72e18d3436305cff031d79981f29337e4b24928c357979516484",
+      "bytes": 481341
+    },
+    "manifest.json": {
+      "sha256": "fa7fb57c5b996ae77862c1e7d59d22af72376947af38409601444f25139f042e",
+      "bytes": 456
+    }
+  },
+  "summary": {
+    "sha256": "dbc368dc628cb5785415c8b27416215e628a892cf550284a681447f9867aa4af",
+    "bytes": 504731
+  },
+  "first_audit": {
+    "sha256": "985137b28d9ee6eb19c98c80e807c815d0d79273a46c938b5f1e4c59be3f33ac",
+    "bytes": 398738
+  },
+  "source_freeze": {
+    "source_commit": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "source_sha256": {
+      "src/developmental_physics/guard_lag_offline_development.py": "4aa5c9bd0f724d818b205f5de8cb72a18a6064eef736ee001d73b0ed0e217e0c",
+      "src/developmental_physics/guard_lag_pair_model.py": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+      "src/developmental_physics/guard_coupled_pair_model.py": "7f234760e8f3d5b9cc799c871e84e7adfebecdf92e11f315735fad8b38ad78ed",
+      "src/developmental_physics/guard_pair_model.py": "2b8ae6f17aa12f1230daf38d8858f24bde3a3c21342e46a5b8fa6e91dc3da3b3",
+      "src/developmental_physics/local_pair_model.py": "81e0c9147bbfd7f825f14ad7439e6752c021bc08922abd04589a89b59fc509df",
+      "src/developmental_physics/local_model.py": "f51a43c36675980cddd0cbf1fcba576469dd015e0850833ae58ffc32479de2b1",
+      "src/developmental_physics/__init__.py": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2",
+      "scripts/audit_guard_lag_offline.py": "bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b",
+      "scripts/audit_guard_coupled_development.py": "c77a1c2a5cfeed08774dab20a6ef5d4e4833264621e37832b3888001182cc10a",
+      "scripts/audit_guard_pair_development.py": "393a2f3673bab952c34ea09a4d79d7d88e78c448e141a4ab83d865ab164dda93",
+      "scripts/audit_pair_frozen.py": "07c1b990238d41bb75d34c44061b9a59f8f5aa2c9a4e2863a3c75578b28a9821",
+      "scripts/audit_local_frozen.py": "b5fea70d3733a1bab77e49bf559432475899436693cf6c1b0b4767369c913461",
+      "docs/GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md": "520f6aa7ee8624e004ea4e9d409f38568ea2be8e83e7d9e4aacc1ab809adbf82",
+      "pyproject.toml": "c7de779445a27e7eac9f0a47b8cc942ff23e9f78360c9bbe72b71ff89d5f39c2"
+    }
+  },
+  "source_freeze_sha256": "d55ad22cc80516c8ab78ec03b73d37453136cd9339f7d3d9a7f10d7fb2f96243",
+  "execution_context": {
+    "verified_source_commit": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "verified_clean_worktree": true,
+    "verified_source_git_blob_count": 14,
+    "source_verification": "wrapper compares original working bytes to explicit clean HEAD"
+  },
+  "protocol_path": "docs/GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md",
+  "source_snapshot_sha256": "18572dd153c7cf63b843a1cef60c64638d33ef471c57236585b819a7e4fcf561",
+  "read_cost": {
+    "identity_sha_reads": 23,
+    "trace_rows_parsed": 7230,
+    "trace_decompressed_bytes": 86621644,
+    "raw_seed_results_bytes": 744398
+  }
+}

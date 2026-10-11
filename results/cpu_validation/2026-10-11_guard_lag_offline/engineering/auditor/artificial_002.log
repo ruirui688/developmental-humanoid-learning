@@ -1,0 +1,20 @@
+test_archive_rollout_own_history_and_exact_cost_tamper (__main__.SmallLagChecks) ... ok
+test_closed_form_one_transition_rls (__main__.SmallLagChecks) ... ok
+test_cold_features_and_no_history_default (__main__.SmallLagChecks) ... ok
+test_design_reporting_bias_scale_and_undefined_correlations (__main__.SmallLagChecks) ... ok
+test_four_interval_trial_has_no_h5_h15 (__main__.SmallLagChecks) ... ok
+test_invalid_saved_prediction_failure_has_no_new_model_call (__main__.SmallLagChecks) ... ok
+test_metrics_retain_failure_and_short_window_unavailability (__main__.SmallLagChecks) ... ok
+test_modal_matrix_cold_repeated_unit_modes (__main__.SmallLagChecks) ... ok
+test_modal_multiset_roots_and_operator_norm (__main__.SmallLagChecks) ... ok
+test_no_window_after_source_stop_and_request_ages (__main__.SmallLagChecks) ... ok
+test_prefix_history_points_to_98_99 (__main__.SmallLagChecks) ... ok
+test_rollout_uses_own_predicted_history (__main__.SmallLagChecks) ... ok
+test_saved_prediction_reuse_requires_exact_identity_and_G (__main__.SmallLagChecks) ... ok
+test_snapshot_hash_detects_changed_history_prior (__main__.SmallLagChecks) ... ok
+test_standardization_constant_zero_and_known_singulars (__main__.SmallLagChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.010s
+
+OK

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "write_state": "sealed D interpretation; subsequent MPC work in separate directory",
+  "source_collection": "first D from root-reported clean f7710c7",
+  "original_D_source_reads": 3,
+  "original_D_source_bytes": 5770814,
+  "derived_review_reads_only_after_first_cache": true,
+  "new_model_fit_predict_rls_physics_audit_git_linear_algebra_calls": 0,
+  "descriptive_scalar_algebra": {
+    "divisions": 1056,
+    "subtractions": 528,
+    "counter_increments": 552
+  },
+  "files": {
+    "extract_cached_original9.py": {
+      "sha256": "7f87516b813ebcc6c737ce234e58035ddab32b45120e186c825c759b74934d7d",
+      "bytes": 1527
+    },
+    "FINAL_INTERPRETATION.md": {
+      "sha256": "3af24cfae7de93003b8fda4a0f6cad16f1310be32487e5d04d09390c8000c656",
+      "bytes": 5243
+    },
+    "interpret_saved_once.py": {
+      "sha256": "99335be34b72e26e49edb63b9b5637f893105ce57e991d190a6c2c93130180ad",
+      "bytes": 10541
+    },
+    "interpretation.json": {
+      "sha256": "a19612c988616bd5798fdd7004aa81dcd32364023450db58d8603514b9ccdf36",
+      "bytes": 1454698
+    },
+    "INTERPRETATION.md": {
+      "sha256": "eaaae2112a7094397777b1096fa5e465570dc3eaf2f0b64f162065d7266d8a02",
+      "bytes": 5036
+    },
+    "ORIGINAL9_ABSOLUTE_RMSE.json": {
+      "sha256": "00491560005a752cb61e9e483d9f9c894f9cfde26a5df91d7c0da376d0a7b4ce",
+      "bytes": 51914
+    },
+    "REVIEW.json": {
+      "sha256": "4a0a9fbb758d79dd09699b4eefb6042c368e3297021ec78a8515ea9bd583ffd3",
+      "bytes": 1664
+    }
+  },
+  "integrity_excludes_itself": true
+}

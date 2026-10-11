@@ -1,0 +1,24 @@
+{
+  "source_commit": "f7710c7b048dccab3e436d1fa16432f881a35992",
+  "command": [
+    "D:/Python3.10/python.exe",
+    "-m",
+    "developmental_physics.guard_lag_offline_development",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\guard_lag_offline_20261011_first",
+    "--source-root",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-11_guard_exploration",
+    "--protocol",
+    "docs/GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md",
+    "--source-freeze",
+    "D:\\Codex_ws\\robot_rl\\external\\guard_lag_offline_20261011_first_runtime_source_freeze.json",
+    "--execution-context",
+    "D:\\Codex_ws\\robot_rl\\external\\guard_lag_offline_20261011_first_context.json"
+  ],
+  "exit_code": 0,
+  "wrapper_exception": null,
+  "wrapper_wall_seconds": 40.065254899905995,
+  "repeated": false,
+  "new_physical_calls": 0,
+  "cost_warning": "Failed exit can still contain paid offline mathematics or updates."
+}

@@ -1,0 +1,42 @@
+{
+  "files": [
+    {
+      "original": "external/c4_lag_offline_staging/guard_lag_offline_development.py",
+      "original_sha256": "09419fb476843809a282e3798ad167288629d1bb9222de87bb65515e35d172e0",
+      "destination": "src/developmental_physics/guard_lag_offline_development.py",
+      "promoted_sha256": "4aa5c9bd0f724d818b205f5de8cb72a18a6064eef736ee001d73b0ed0e217e0c"
+    },
+    {
+      "original": "external/c4_lag_offline_audit_staging/audit_guard_lag_offline.py",
+      "original_sha256": "bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b",
+      "destination": "scripts/audit_guard_lag_offline.py",
+      "promoted_sha256": "bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b"
+    },
+    {
+      "original": "external/c4_lag_offline_staging/test_guard_lag_offline_development.py",
+      "original_sha256": "556338e090179f2a3e4a028695fb74d3e80da3e2252b2f3b8a76ede8b7bd55a7",
+      "destination": "tests/test_guard_lag_offline_development.py",
+      "promoted_sha256": "cc3e309bc1d9ed951771c09a4d68f8f6c1cdbcef4bc67421bdf9073a95887d86"
+    },
+    {
+      "original": "external/c4_lag_offline_audit_staging/test_guard_lag_offline_audit.py",
+      "original_sha256": "9751b721b559c1cb13e79d44fc5ca22d87081d0b20a510427d25fa90844fbf58",
+      "destination": "tests/test_guard_lag_offline_audit.py",
+      "promoted_sha256": "d474a8bee0acf02d3c21c46c4fce6b16f5e5e9697e28ca2d17d17bb78cfcc2dd"
+    }
+  ],
+  "helper_sha256_unchanged": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57",
+  "pure_production_preflight_passed": true,
+  "checks_scope": "AST/source SHA and production import/flag/history signature only; no passed mathematical suites repeated",
+  "new_model_constructions": 0,
+  "new_model_predictions": 0,
+  "new_model_updates": 0,
+  "new_physics_calls": 0,
+  "mpc_select_calls": 0,
+  "audit_reexecutions": 0,
+  "git_calls": 0,
+  "execution": {
+    "wall_seconds": 0.23660279996693134,
+    "cpu_seconds": 0.15625
+  }
+}

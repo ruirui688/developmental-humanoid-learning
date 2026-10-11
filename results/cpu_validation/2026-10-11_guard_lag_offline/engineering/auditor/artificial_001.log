@@ -1,0 +1,13 @@
+test_closed_form_one_transition_rls (__main__.SmallLagChecks) ... ok
+test_cold_features_and_no_history_default (__main__.SmallLagChecks) ... ok
+test_four_interval_trial_has_no_h5_h15 (__main__.SmallLagChecks) ... ok
+test_modal_matrix_cold_repeated_unit_modes (__main__.SmallLagChecks) ... ok
+test_prefix_history_points_to_98_99 (__main__.SmallLagChecks) ... ok
+test_rollout_uses_own_predicted_history (__main__.SmallLagChecks) ... ok
+test_snapshot_hash_detects_changed_history_prior (__main__.SmallLagChecks) ... ok
+test_standardization_constant_zero_and_known_singulars (__main__.SmallLagChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.004s
+
+OK

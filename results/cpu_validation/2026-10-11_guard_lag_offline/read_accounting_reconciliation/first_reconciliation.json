@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T10:31:42.726650+00:00",
+  "checks": 50,
+  "failed": 0,
+  "results": [
+    {
+      "check": "pinned_unchanged_first_audit_bytes",
+      "passed": true
+    },
+    {
+      "check": "pinned_first_auditor_identity",
+      "passed": true
+    },
+    {
+      "check": "original_first_4000346_checks_one_failure_retained",
+      "passed": true
+    },
+    {
+      "check": "sole_original_violation_exact_identity",
+      "passed": true
+    },
+    {
+      "check": "original_failed_data_flag_retained",
+      "passed": true
+    },
+    {
+      "check": "pinned_D_manifest_bytes",
+      "passed": true
+    },
+    {
+      "check": "all_nine_D_bytes_bound_to_first_audit",
+      "passed": true
+    },
+    {
+      "check": "exact_eight_manifest_output_members",
+      "passed": true
+    },
+    {
+      "check": "D_manifest_original_bytes/attempt.json",
+      "passed": true
+    },
+    {
+      "check": "D_manifest_original_bytes/calibration_updates.jsonl.gz",
+      "passed": true
+    },
+    {
+      "check": "D_manifest_original_bytes/diagnostics.json",
+      "passed": true
+    },
+    {
+      "check": "D_manifest_original_bytes/rollouts.jsonl.gz",
+      "passed": true
+    },
+    {
+      "check": "D_manifest_original_bytes/run.json",
+      "passed": true
+    },
+    {
+      "check": "D_manifest_original_bytes/source_binding.json",
+      "passed": true
+    },
+    {
+      "check": "D_manifest_original_bytes/source_snapshot.zip",
+      "passed": true
+    },
+    {
+      "check": "D_manifest_original_bytes/summary.json",
+      "passed": true
+    },
+    {
+      "check": "pinned_D_source_commit",
+      "passed": true
+    },
+    {
+      "check": "original_clean_execution_context",
+      "passed": true
+    },
+    {
+      "check": "original_six_C_files_bound_to_first_audit",
+      "passed": true
+    },
+    {
+      "check": "D_bound_original_input_bytes",
+      "passed": true
+    },
+    {
+      "check": "original_frozen_zip_unique_exact_coverage",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/src/developmental_physics/guard_lag_offline_development.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/src/developmental_physics/guard_lag_pair_model.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/src/developmental_physics/guard_coupled_pair_model.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/src/developmental_physics/guard_pair_model.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/src/developmental_physics/local_pair_model.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/src/developmental_physics/local_model.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/src/developmental_physics/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/scripts/audit_guard_lag_offline.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/scripts/audit_guard_coupled_development.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/scripts/audit_guard_pair_development.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/scripts/audit_pair_frozen.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/scripts/audit_local_frozen.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/docs/GUARD_LAG_OFFLINE_DEVELOPMENT_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_member/pyproject.toml",
+      "passed": true
+    },
+    {
+      "check": "original_runtime_freeze_record_bytes",
+      "passed": true
+    },
+    {
+      "check": "pinned_runner_and_auditor_sources",
+      "passed": true
+    },
+    {
+      "check": "runner_uses_UTF8_text_with_default_universal_newlines",
+      "passed": true
+    },
+    {
+      "check": "runner_counts_reencoded_normalized_text_line_bytes",
+      "passed": true
+    },
+    {
+      "check": "runner_field_stores_normalized_text_counter",
+      "passed": true
+    },
+    {
+      "check": "original_auditor_expected_binary_decompressed_length",
+      "passed": true
+    },
+    {
+      "check": "unchanged_read_counter/identity_sha_reads",
+      "passed": true
+    },
+    {
+      "check": "unchanged_read_counter/trace_rows_parsed",
+      "passed": true
+    },
+    {
+      "check": "unchanged_read_counter/raw_seed_results_bytes",
+      "passed": true
+    },
+    {
+      "check": "exact_original_read_cost_fields",
+      "passed": true
+    },
+    {
+      "check": "original_runner_counter_exactly_matches_UTF8_normalized_text",
+      "passed": true
+    },
+    {
+      "check": "original_binary_and_text_units_differ",
+      "passed": true
+    },
+    {
+      "check": "byte_difference_exactly_equals_CRLF_normalization_count",
+      "passed": true
+    },
+    {
+      "check": "one_CRLF_per_original_trace_line_no_other_line_endings",
+      "passed": true
+    },
+    {
+      "check": "sole_original_expectation_mismatch_reconciled",
+      "passed": true
+    }
+  ],
+  "first_audit_sha256": "668e6ec65c949f4d7a87349e5b6076dcfeae1d53e9f770364ae4fec943b15da5",
+  "first_audit_failed": 1,
+  "first_audit_checks": 4000346,
+  "first_audit_data_consistency_verified": false,
+  "sole_original_violation_location": "runner_original_read_accounting",
+  "input_file_sha256": {
+    "attempt.json": "21e228f9ebbda4b40e9a5f360fcf01e8157d891e531438991a50bbb0747e9f8a",
+    "source_binding.json": "5c76df81c48cf2606ea78ff8d58de91ec624dba44f7f4e6da59c32f753a7e6d5",
+    "source_snapshot.zip": "18572dd153c7cf63b843a1cef60c64638d33ef471c57236585b819a7e4fcf561",
+    "calibration_updates.jsonl.gz": "6c9ccd28bcda9bb819c1db54bf61dc46710d5d1b34f9bf95357e0f3269efa08d",
+    "diagnostics.json": "9307f3f37d5a3c23ef6f9097d8c352a9fc7f2e34e562b5cf4e7075e20bbbe130",
+    "rollouts.jsonl.gz": "813f11de9c9a8e226af465c3148dca28b05a8713ef80e6c9761ff8020f175ae1",
+    "summary.json": "def1a46fcda920c8f60c7b37a796a9cdb9d89071841ca81031e02c24599b774a",
+    "run.json": "71ad9dc76c934f2bad8a1cc5b5307477bed20987730be5e4eccd5698e3e9f7bb",
+    "manifest.json": "f5d6e0fc017d708a8c8b2b03a6876704248afee92266985ebd5d137267acb3c6"
+  },
+  "original_input_sha256": {
+    "metadata.json": "2c0be03255858d7511d1e238b5eb491a6618f197f12810ea9e0b00a64d279b57",
+    "episodes.json": "5a471ec2fecec4c22e6f5954b17bc4b8de23b60b3bce753a9bc7e6b6bc96cd0a",
+    "seed_results.json": "4ba5f5182e062408f023d6e0084864ea16a5f13fb82b71818a4060360a4c28e3",
+    "trace.jsonl.gz": "1b299c9bc7a91f8ff9dfef3f77ac1b6fea923dea6057327bb3f9aa1ce6f56ad0",
+    "source_snapshot.zip": "89908bdb3bef72e18d3436305cff031d79981f29337e4b24928c357979516484",
+    "manifest.json": "fa7fb57c5b996ae77862c1e7d59d22af72376947af38409601444f25139f042e"
+  },
+  "manifest_sha256": "f5d6e0fc017d708a8c8b2b03a6876704248afee92266985ebd5d137267acb3c6",
+  "source_binding_sha256": "5c76df81c48cf2606ea78ff8d58de91ec624dba44f7f4e6da59c32f753a7e6d5",
+  "source_commit": "f7710c7b048dccab3e436d1fa16432f881a35992",
+  "original_read_cost_unmodified": {
+    "identity_sha_reads": 23,
+    "trace_rows_parsed": 7230,
+    "trace_decompressed_bytes": 86621644,
+    "raw_seed_results_bytes": 744398
+  },
+  "reconciled_measurements": {
+    "raw_decompressed_bytes": 86628874,
+    "normalized_text_utf8_bytes": 86621644,
+    "difference_bytes": 7230,
+    "CRLF_count": 7230,
+    "bare_CR_count": 0,
+    "bare_LF_count": 0,
+    "text_line_count": 7230,
+    "raw_seed_results_bytes": 744398,
+    "identity_sha_reads": 23
+  },
+  "classification": "auditor_expected_binary_bytes_for_normalized_text_counter; collector_field_name_ambiguous",
+  "collector_counter_value_correct_for_executed_source_semantics": true,
+  "byte_only_reconciliation_verified": true,
+  "effective_data_consistency_verified": true,
+  "effective_flag_semantics": "original complete math audit with its sole byte-unit expectation mismatch reconciled; original failed=1 and false flag remain unchanged",
+  "no_scientific_gates_or_ranking": true,
+  "tool_sha256": "59fb967f51b50c5ba9f42ded7bea2a68ec958b76e85f0653cdd85740493ac420",
+  "execution": {
+    "wall_seconds": 0.43027320015244186,
+    "cpu_seconds": 0.421875,
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "hash_operations": {
+      "first_audit_file": 1,
+      "D_output_file": 9,
+      "C_original_file": 6,
+      "frozen_source_member": 14,
+      "runtime_freeze_member": 1,
+      "executing_tool": 1
+    },
+    "trace_decompression_calls": 1,
+    "trace_text_buffer_passes": 1,
+    "trace_JSON_records_parsed": 0,
+    "full_math_audit_reexecutions": 0,
+    "model_refits": 0,
+    "model_prediction_calls": 0,
+    "scalar_RLS_updates": 0,
+    "physics_control_calls": 0,
+    "physics_substeps": 0,
+    "online_helper_imports": 0,
+    "git_commands": 0
+  }
+}

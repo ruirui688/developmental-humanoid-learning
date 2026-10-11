@@ -1,0 +1,24 @@
+{
+  "command": [
+    "D:/Python3.10/python.exe",
+    "external/summarize_guard_lag_saved_once.py",
+    "--input",
+    "external/guard_lag_offline_20261011_first",
+    "--audit",
+    "external/guard_lag_offline_20261011_first_audit.json",
+    "--expected-auditor-sha256",
+    "bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b",
+    "--read-accounting-reconciliation",
+    "external/c4_lag_read_accounting_reconciliation/first_reconciliation.json",
+    "--expected-reconciliation-tool-sha256",
+    "59fb967f51b50c5ba9f42ded7bea2a68ec958b76e85f0653cdd85740493ac420",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\guard_lag_offline_20261011_summary_01"
+  ],
+  "exit_code": 0,
+  "wrapper_wall_seconds": 0.46986110019497573,
+  "repeated": false,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "audit_reexecutions": 0
+}

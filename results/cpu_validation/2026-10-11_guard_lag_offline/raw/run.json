@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "created_at_utc": "2026-10-11T10:26:45.293818+00:00",
+  "execution_context": {
+    "verified_source_commit": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "verified_clean_worktree": true,
+    "verified_source_git_blob_count": 14,
+    "source_verification": "wrapper compares original working bytes to explicit clean HEAD"
+  },
+  "calibrations": [
+    {
+      "seed": 0,
+      "kind": "sparse",
+      "completed": true,
+      "failure": null,
+      "attempted_vector_updates": 400,
+      "committed_vector_updates": 400,
+      "unexecuted_planned_updates": 0,
+      "remaining_uncommitted_updates": 0
+    },
+    {
+      "seed": 0,
+      "kind": "continuation",
+      "completed": true,
+      "failure": null,
+      "attempted_vector_updates": 400,
+      "committed_vector_updates": 400,
+      "unexecuted_planned_updates": 0,
+      "remaining_uncommitted_updates": 0
+    },
+    {
+      "seed": 1,
+      "kind": "sparse",
+      "completed": true,
+      "failure": null,
+      "attempted_vector_updates": 400,
+      "committed_vector_updates": 400,
+      "unexecuted_planned_updates": 0,
+      "remaining_uncommitted_updates": 0
+    },
+    {
+      "seed": 1,
+      "kind": "continuation",
+      "completed": true,
+      "failure": null,
+      "attempted_vector_updates": 400,
+      "committed_vector_updates": 400,
+      "unexecuted_planned_updates": 0,
+      "remaining_uncommitted_updates": 0
+    },
+    {
+      "seed": 2,
+      "kind": "sparse",
+      "completed": true,
+      "failure": null,
+      "attempted_vector_updates": 400,
+      "committed_vector_updates": 400,
+      "unexecuted_planned_updates": 0,
+      "remaining_uncommitted_updates": 0
+    },
+    {
+      "seed": 2,
+      "kind": "continuation",
+      "completed": true,
+      "failure": null,
+      "attempted_vector_updates": 400,
+      "committed_vector_updates": 400,
+      "unexecuted_planned_updates": 0,
+      "remaining_uncommitted_updates": 0
+    }
+  ],
+  "failure": null,
+  "scope": "fixed same-development-data single-lag offline diagnosis; no selection/science pass",
+  "new_physics_control_calls": 0,
+  "new_physics_substeps": 0,
+  "original9_refits": 0,
+  "mpc_select_calls": 0,
+  "policy_gain_gate_updates": 0,
+  "pd_teacher_calls": 0,
+  "real_robot_calls": 0,
+  "gpu_used": false,
+  "planned_offline_vector_updates_maximum": 2400,
+  "planned_offline_scalar_updates_maximum": 4800,
+  "planned_rls_internal_pair_predictions_maximum": 2400,
+  "planned_rls_internal_scalar_predictions_maximum": 4800,
+  "planned_evaluation_pair_predictions_maximum": 247500,
+  "planned_evaluation_scalar_predictions_maximum": 495000,
+  "phase_sequence": [
+    "all_six_native_design9_design11_and_original9_saved_drift_complete",
+    "all_six_single_pass_fresh_lag11_fits_complete_or_failure_retained",
+    "all_fixed_common_source_windows_conditionally_evaluated"
+  ],
+  "current_operation": {
+    "phase": "conditional_offline_evaluation",
+    "seed": 2,
+    "kind": "zero"
+  },
+  "cost_ledger": {
+    "offline_vector_update_attempts": 2400,
+    "offline_vector_update_returns": 2400,
+    "offline_vector_update_failures": 0,
+    "offline_vector_updates_committed": 2400,
+    "offline_scalar_updates_committed": 4800,
+    "rls_internal_pair_attempts": 2400,
+    "rls_internal_pair_successes": 2400,
+    "rls_internal_pair_failures": 0,
+    "rls_internal_scalar_attempts": 4800,
+    "rls_internal_scalar_successes": 4800,
+    "rls_internal_unknown_scalar_failure_count": 0,
+    "rls_scalar_proposal_attempts": 4800,
+    "rls_scalar_proposal_successes": 4800,
+    "rls_model_feature_pair_attempts": 4800,
+    "rls_model_feature_pair_successes": 4800,
+    "evaluation_pair_attempts": 168150,
+    "evaluation_pair_successes": 168150,
+    "evaluation_pair_failures": 0,
+    "evaluation_scalar_attempts": 336300,
+    "evaluation_scalar_successes": 336300,
+    "evaluation_unknown_scalar_failure_count": 0,
+    "evaluation_model_feature_pair_attempts": 168150,
+    "evaluation_model_feature_pair_successes": 168150,
+    "reused_saved_pair_predictions": 1830,
+    "unavailable_model_rollout_records": 0,
+    "saved_prediction_validation_failures": 0,
+    "diagnostic_start_guard_failures": 0,
+    "diagnostic_guard_pair_evaluations": 268860,
+    "design_feature_rows_9": 2400,
+    "design_feature_rows_11": 2400,
+    "design_gram_matrix_products": 24,
+    "design_svd_calls": 12,
+    "design_statistic_passes": 12,
+    "modal_eigenvalue_calls": 48,
+    "modal_svd_calls": 48,
+    "modal_matrix_products": 96,
+    "modal_frobenius_norm_calls": 48,
+    "coefficient_change_head_l2_norms": 192
+  },
+  "scalar_prediction_counts_complete": {
+    "rls_internal": true,
+    "evaluation": true
+  },
+  "execution": {
+    "wall_seconds": 39.59164660004899,
+    "cpu_seconds": 39.21875,
+    "timing_scope": "entry through final records; excludes final run/manifest write",
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

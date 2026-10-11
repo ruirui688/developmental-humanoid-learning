@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "source_ast_parse_both": true,
+    "staging_formal_entry_disabled": true,
+    "fixed_predictor_horizons_canonical": true,
+    "all_source_input_binding_precedes_helper_import": true,
+    "no_simulator_controller_or_git_import": true,
+    "protected_models_byte_identity": true,
+    "ordinary_fixture_declared_in_test_source": true
+  },
+  "passed": 7,
+  "failed": 0,
+  "source_sha256": {
+    "external/c4_lag_offline_staging/guard_lag_offline_development.py": "09419fb476843809a282e3798ad167288629d1bb9222de87bb65515e35d172e0",
+    "external/c4_lag_offline_staging/test_guard_lag_offline_development.py": "556338e090179f2a3e4a028695fb74d3e80da3e2252b2f3b8a76ede8b7bd55a7",
+    "src/developmental_physics/guard_coupled_pair_model.py": "7f234760e8f3d5b9cc799c871e84e7adfebecdf92e11f315735fad8b38ad78ed",
+    "src/developmental_physics/guard_lag_pair_model.py": "f3bcedf05b2c956357929e51dcab026ec13311428fa3c6c3383db114da3f7e57"
+  },
+  "read_files": 4,
+  "read_bytes": 74052,
+  "ast_parse_calls": 2,
+  "production_module_imports": 0,
+  "real_C_reads": 0,
+  "model_predictions": 0,
+  "rls_updates": 0,
+  "physics_calls": 0,
+  "git_calls": 0,
+  "wall_seconds": 0.030576599994674325,
+  "cpu_seconds": 0.03125,
+  "timing_scope": "all source reads/AST/checks; excludes JSON write"
+}

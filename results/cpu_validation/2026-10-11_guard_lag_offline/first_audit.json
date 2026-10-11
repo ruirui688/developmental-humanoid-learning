@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-11T10:28:05.711887+00:00",
+  "audit_script_sha256": "bede59d0984edddf6d7384b6d11c0beddae711dfcc616571f4bfd9ee8ce3211b",
+  "audit_dependency_sha256": {
+    "scripts/audit_guard_coupled_development.py": "c77a1c2a5cfeed08774dab20a6ef5d4e4833264621e37832b3888001182cc10a",
+    "scripts/audit_local_frozen.py": "b5fea70d3733a1bab77e49bf559432475899436693cf6c1b0b4767369c913461",
+    "scripts/audit_pair_frozen.py": "07c1b990238d41bb75d34c44061b9a59f8f5aa2c9a4e2863a3c75578b28a9821",
+    "scripts/audit_guard_pair_development.py": "393a2f3673bab952c34ea09a4d79d7d88e78c448e141a4ab83d865ab164dda93"
+  },
+  "immutable_scope": {
+    "suite": "guard_lag_offline_development",
+    "split": "same_development_data",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "calibrations": [
+      "sparse",
+      "continuation"
+    ],
+    "predictors": [
+      "nominal9",
+      "sparse9",
+      "continuation9",
+      "lag_sparse11",
+      "lag_continuation11"
+    ],
+    "trial_kinds": [
+      "prediction",
+      "nominal_guard",
+      "learned_sparse",
+      "learned_continuation",
+      "PDselected",
+      "zero"
+    ],
+    "horizons": [
+      1,
+      2,
+      5,
+      15
+    ],
+    "parameters_per_head": 11,
+    "calibration_intervals_per_model": 400,
+    "original9_refits": 0,
+    "new_physics_calls": 0,
+    "no_scientific_gates_or_ranking": true,
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 5e-10,
+    "modal_polynomial_scaled_tolerance": 1e-08
+  },
+  "checks": 4000346,
+  "failed": 1,
+  "violations": [
+    {
+      "check": "exact_source_or_causal_identity",
+      "location": "runner_original_read_accounting"
+    }
+  ],
+  "maximum_recomputation_difference": 4.973799150320701e-14,
+  "input_file_sha256": {
+    "attempt.json": "21e228f9ebbda4b40e9a5f360fcf01e8157d891e531438991a50bbb0747e9f8a",
+    "source_binding.json": "5c76df81c48cf2606ea78ff8d58de91ec624dba44f7f4e6da59c32f753a7e6d5",
+    "source_snapshot.zip": "18572dd153c7cf63b843a1cef60c64638d33ef471c57236585b819a7e4fcf561",
+    "calibration_updates.jsonl.gz": "6c9ccd28bcda9bb819c1db54bf61dc46710d5d1b34f9bf95357e0f3269efa08d",
+    "diagnostics.json": "9307f3f37d5a3c23ef6f9097d8c352a9fc7f2e34e562b5cf4e7075e20bbbe130",
+    "rollouts.jsonl.gz": "813f11de9c9a8e226af465c3148dca28b05a8713ef80e6c9761ff8020f175ae1",
+    "summary.json": "def1a46fcda920c8f60c7b37a796a9cdb9d89071841ca81031e02c24599b774a",
+    "run.json": "71ad9dc76c934f2bad8a1cc5b5307477bed20987730be5e4eccd5698e3e9f7bb",
+    "manifest.json": "f5d6e0fc017d708a8c8b2b03a6876704248afee92266985ebd5d137267acb3c6"
+  },
+  "archive": {
+    "input_file_sha256": {
+      "attempt.json": "21e228f9ebbda4b40e9a5f360fcf01e8157d891e531438991a50bbb0747e9f8a",
+      "source_binding.json": "5c76df81c48cf2606ea78ff8d58de91ec624dba44f7f4e6da59c32f753a7e6d5",
+      "source_snapshot.zip": "18572dd153c7cf63b843a1cef60c64638d33ef471c57236585b819a7e4fcf561",
+      "calibration_updates.jsonl.gz": "6c9ccd28bcda9bb819c1db54bf61dc46710d5d1b34f9bf95357e0f3269efa08d",
+      "diagnostics.json": "9307f3f37d5a3c23ef6f9097d8c352a9fc7f2e34e562b5cf4e7075e20bbbe130",
+      "rollouts.jsonl.gz": "813f11de9c9a8e226af465c3148dca28b05a8713ef80e6c9761ff8020f175ae1",
+      "summary.json": "def1a46fcda920c8f60c7b37a796a9cdb9d89071841ca81031e02c24599b774a",
+      "run.json": "71ad9dc76c934f2bad8a1cc5b5307477bed20987730be5e4eccd5698e3e9f7bb",
+      "manifest.json": "f5d6e0fc017d708a8c8b2b03a6876704248afee92266985ebd5d137267acb3c6"
+    },
+    "original_input_sha256": {
+      "metadata.json": "2c0be03255858d7511d1e238b5eb491a6618f197f12810ea9e0b00a64d279b57",
+      "episodes.json": "5a471ec2fecec4c22e6f5954b17bc4b8de23b60b3bce753a9bc7e6b6bc96cd0a",
+      "seed_results.json": "4ba5f5182e062408f023d6e0084864ea16a5f13fb82b71818a4060360a4c28e3",
+      "trace.jsonl.gz": "1b299c9bc7a91f8ff9dfef3f77ac1b6fea923dea6057327bb3f9aa1ce6f56ad0",
+      "source_snapshot.zip": "89908bdb3bef72e18d3436305cff031d79981f29337e4b24928c357979516484",
+      "manifest.json": "fa7fb57c5b996ae77862c1e7d59d22af72376947af38409601444f25139f042e"
+    },
+    "source_commit": "f7710c7b048dccab3e436d1fa16432f881a35992",
+    "collection_commit": "5ea8df42b09588845760daf0dc1f270aef2a87f1",
+    "derived_cost_ledger": {
+      "offline_vector_update_attempts": 2400,
+      "offline_vector_update_returns": 2400,
+      "offline_vector_update_failures": 0,
+      "offline_vector_updates_committed": 2400,
+      "offline_scalar_updates_committed": 4800,
+      "rls_internal_pair_attempts": 2400,
+      "rls_internal_pair_successes": 2400,
+      "rls_internal_pair_failures": 0,
+      "rls_internal_scalar_attempts": 4800,
+      "rls_internal_scalar_successes": 4800,
+      "rls_internal_unknown_scalar_failure_count": 0,
+      "rls_scalar_proposal_attempts": 4800,
+      "rls_scalar_proposal_successes": 4800,
+      "rls_model_feature_pair_attempts": 4800,
+      "rls_model_feature_pair_successes": 4800,
+      "evaluation_pair_attempts": 168150,
+      "evaluation_pair_successes": 168150,
+      "evaluation_pair_failures": 0,
+      "evaluation_scalar_attempts": 336300,
+      "evaluation_scalar_successes": 336300,
+      "evaluation_unknown_scalar_failure_count": 0,
+      "evaluation_model_feature_pair_attempts": 168150,
+      "evaluation_model_feature_pair_successes": 168150,
+      "reused_saved_pair_predictions": 1830,
+      "unavailable_model_rollout_records": 0,
+      "saved_prediction_validation_failures": 0,
+      "diagnostic_start_guard_failures": 0,
+      "diagnostic_guard_pair_evaluations": 268860,
+      "design_feature_rows_9": 2400,
+      "design_feature_rows_11": 2400,
+      "design_gram_matrix_products": 24,
+      "design_svd_calls": 12,
+      "design_statistic_passes": 12,
+      "modal_eigenvalue_calls": 48,
+      "modal_svd_calls": 48,
+      "modal_matrix_products": 96,
+      "modal_frobenius_norm_calls": 48,
+      "coefficient_change_head_l2_norms": 192
+    },
+    "calibrations": [
+      {
+        "seed": 0,
+        "kind": "sparse",
+        "completed": true,
+        "failure": null,
+        "attempted_vector_updates": 400,
+        "committed_vector_updates": 400,
+        "unexecuted_planned_updates": 0,
+        "remaining_uncommitted_updates": 0
+      },
+      {
+        "seed": 0,
+        "kind": "continuation",
+        "completed": true,
+        "failure": null,
+        "attempted_vector_updates": 400,
+        "committed_vector_updates": 400,
+        "unexecuted_planned_updates": 0,
+        "remaining_uncommitted_updates": 0
+      },
+      {
+        "seed": 1,
+        "kind": "sparse",
+        "completed": true,
+        "failure": null,
+        "attempted_vector_updates": 400,
+        "committed_vector_updates": 400,
+        "unexecuted_planned_updates": 0,
+        "remaining_uncommitted_updates": 0
+      },
+      {
+        "seed": 1,
+        "kind": "continuation",
+        "completed": true,
+        "failure": null,
+        "attempted_vector_updates": 400,
+        "committed_vector_updates": 400,
+        "unexecuted_planned_updates": 0,
+        "remaining_uncommitted_updates": 0
+      },
+      {
+        "seed": 2,
+        "kind": "sparse",
+        "completed": true,
+        "failure": null,
+        "attempted_vector_updates": 400,
+        "committed_vector_updates": 400,
+        "unexecuted_planned_updates": 0,
+        "remaining_uncommitted_updates": 0
+      },
+      {
+        "seed": 2,
+        "kind": "continuation",
+        "completed": true,
+        "failure": null,
+        "attempted_vector_updates": 400,
+        "committed_vector_updates": 400,
+        "unexecuted_planned_updates": 0,
+        "remaining_uncommitted_updates": 0
+      }
+    ],
+    "source_origin_windows": 2430,
+    "rollout_records": 12150,
+    "summary_metrics_verified": 6480,
+    "no_scientific_gates_or_ranking": true,
+    "same_development_data": true
+  },
+  "data_consistency_verified": false,
+  "no_scientific_gates_or_ranking": true,
+  "execution": {
+    "wall_seconds": 20.860719999996945,
+    "cpu_seconds": 20.171875,
+    "timing_scope": "entry through report assembly; excludes imports/final JSON writing",
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "source_git_verification_enabled": true,
+    "independent_math_cost": {
+      "design_feature_rows": 4800,
+      "design_svd_calls": 12,
+      "design_gram_products": 24,
+      "modal_characteristic_calculations": 48,
+      "modal_svd_calls": 48,
+      "modal_commutator_products": 96,
+      "lag_feature_attempts": 72792,
+      "lag_feature_successes": 72792,
+      "lag_pair_prediction_attempts": 70392,
+      "lag_scalar_prediction_attempts": 140784,
+      "lag_scalar_prediction_successes": 140784,
+      "lag_pair_prediction_successes": 70392,
+      "lag_scalar_rls_proposal_attempts": 4800,
+      "lag_scalar_rls_proposal_successes": 4800,
+      "saved_one_step_identity_reuses": 1830,
+      "old9_pair_prediction_attempts": 100158,
+      "old9_pair_prediction_successes": 100158,
+      "old9_scalar_prediction_attempts": 200316,
+      "old9_scalar_prediction_successes": 200316
+    },
+    "new_physics_control_calls": 0,
+    "new_physics_substeps": 0,
+    "online_helper_imports": 0,
+    "prior_C_full_audit_reexecutions": 0,
+    "original9_refits": 0,
+    "mpc_select_calls": 0,
+    "policy_gain_gate_updates": 0,
+    "pd_teacher_calls": 0,
+    "real_robot_calls": 0
+  }
+}
