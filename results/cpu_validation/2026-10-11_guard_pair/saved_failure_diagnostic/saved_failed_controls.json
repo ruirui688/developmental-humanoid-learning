@@ -1,0 +1,734 @@
+{
+  "scope": "Extracted saved failed control decisions; descriptive diagnosis only.",
+  "trace_sha256": "46a11c8f8a5042aa7101966d9aa41764f00e65d62ca1dda1d4c12d01466584a2",
+  "trace_read_passes": 1,
+  "new_physics": 0,
+  "new_model_updates": 0,
+  "new_predictions": 0,
+  "audit_executions": 0,
+  "rows": [
+    {
+      "seed": 0,
+      "kind": "learned_raw",
+      "source_transition_id": "seed0_learned_raw:100",
+      "requested_nm": [
+        -0.5,
+        0.5
+      ],
+      "begin_q": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "begin_v": [
+        2.1236566756645495e-05,
+        6.991162221081844e-10
+      ],
+      "saved_prediction_next_v": [
+        -0.06387402599694622,
+        0.1546321036935119
+      ],
+      "measured_next_v": [
+        -0.302165638871606,
+        0.6158106875757896
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07394540996231735,
+        0.11427789782328958
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 0,
+      "kind": "learned_raw",
+      "source_transition_id": "seed0_learned_raw:101",
+      "requested_nm": [
+        -0.5,
+        0.5
+      ],
+      "begin_q": [
+        0.09394031142635191,
+        0.006489679653783216
+      ],
+      "begin_v": [
+        -0.302165638871606,
+        0.6158106875757896
+      ],
+      "saved_prediction_next_v": [
+        -0.13994716160820356,
+        0.2745054540330357
+      ],
+      "measured_next_v": [
+        -0.5461046232001017,
+        1.071841127753781
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07126466520652622,
+        0.10227679673222403
+      ],
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.0850914971438586,
+          0.024014963169847827
+        ],
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "velocity_rad_s": [
+          -0.5461046232001017,
+          1.071841127753781
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 101
+      },
+      "executed_substeps": 10
+    },
+    {
+      "seed": 0,
+      "kind": "learned_guard",
+      "source_transition_id": "seed0_learned_guard:100",
+      "requested_nm": [
+        -0.5,
+        0.375
+      ],
+      "begin_q": [
+        0.09739774391333796,
+        -0.0005762480149995581
+      ],
+      "begin_v": [
+        2.1236566756645495e-05,
+        6.991162221081844e-10
+      ],
+      "saved_prediction_next_v": [
+        -0.06387402599694622,
+        0.18493367588708373
+      ],
+      "measured_next_v": [
+        -0.2204477812528,
+        0.47212892485614405
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07394540996231735,
+        0.13808048148014193
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 0,
+      "kind": "learned_guard",
+      "source_transition_id": "seed0_learned_guard:101",
+      "requested_nm": [
+        -0.5,
+        0.375
+      ],
+      "begin_q": [
+        0.09475697798769704,
+        0.004728439358665989
+      ],
+      "begin_v": [
+        -0.2204477812528,
+        0.47212892485614405
+      ],
+      "saved_prediction_next_v": [
+        -0.11932619670785657,
+        0.2769418167027793
+      ],
+      "measured_next_v": [
+        -0.4020164675524173,
+        0.8169309145007395
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07193270621850306,
+        0.1290997783514444
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 0,
+      "kind": "learned_guard",
+      "source_transition_id": "seed0_learned_guard:102",
+      "requested_nm": [
+        -0.5,
+        0.25
+      ],
+      "begin_q": [
+        0.0880364500918873,
+        0.01787676809390827
+      ],
+      "begin_v": [
+        -0.4020164675524173,
+        0.8169309145007395
+      ],
+      "saved_prediction_next_v": [
+        -0.16310570735286226,
+        0.20858966082019578
+      ],
+      "measured_next_v": [
+        -0.4536917918015297,
+        0.9405381753986106
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.06808906818139356,
+        0.02133512847088523
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 0,
+      "kind": "learned_guard",
+      "source_transition_id": "seed0_learned_guard:103",
+      "requested_nm": [
+        -0.5,
+        0.25
+      ],
+      "begin_q": [
+        0.07914719760987071,
+        0.03536542393166056
+      ],
+      "begin_v": [
+        -0.4536917918015297,
+        0.9405381753986106
+      ],
+      "saved_prediction_next_v": [
+        -0.17266720399851462,
+        0.20839154398803408
+      ],
+      "measured_next_v": [
+        -0.5114104312299672,
+        1.0121758859880383
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.06364007470932252,
+        0.0008503413458389366
+      ],
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.06926777163045852,
+          0.05484776520634783
+        ],
+        "qref_rad": [
+          0.09739774391333796,
+          -0.0005762480149995581
+        ],
+        "velocity_rad_s": [
+          -0.5114104312299672,
+          1.0121758859880383
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 103
+      },
+      "executed_substeps": 10
+    },
+    {
+      "seed": 1,
+      "kind": "learned_raw",
+      "source_transition_id": "seed1_learned_raw:100",
+      "requested_nm": [
+        -0.5,
+        0.5
+      ],
+      "begin_q": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "begin_v": [
+        -4.030984837534402e-05,
+        -8.853450662682447e-10
+      ],
+      "saved_prediction_next_v": [
+        -0.06392123476225259,
+        0.15459166863089338
+      ],
+      "measured_next_v": [
+        -0.30196895793114803,
+        0.6155745415786968
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07377833832224293,
+        0.11448384507306457
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 1,
+      "kind": "learned_raw",
+      "source_transition_id": "seed1_learned_raw:101",
+      "requested_nm": [
+        -0.5,
+        0.5
+      ],
+      "begin_q": [
+        0.0903699063148833,
+        0.006486861909211545
+      ],
+      "begin_v": [
+        -0.30196895793114803,
+        0.6155745415786968
+      ],
+      "saved_prediction_next_v": [
+        -0.13852564799548706,
+        0.2736235291629459
+      ],
+      "measured_next_v": [
+        -0.5457262574406907,
+        1.0714563918108526
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07118180093091478,
+        0.10256167285441761
+      ],
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.0815270620389067,
+          0.024005631742835043
+        ],
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "velocity_rad_s": [
+          -0.5457262574406907,
+          1.0714563918108526
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 101
+      },
+      "executed_substeps": 10
+    },
+    {
+      "seed": 1,
+      "kind": "learned_guard",
+      "source_transition_id": "seed1_learned_guard:100",
+      "requested_nm": [
+        -0.5,
+        0.375
+      ],
+      "begin_q": [
+        0.09382541724034689,
+        -0.0005763175538596344
+      ],
+      "begin_v": [
+        -4.030984837534402e-05,
+        -8.853450662682447e-10
+      ],
+      "saved_prediction_next_v": [
+        -0.06392123476225259,
+        0.18483074545802972
+      ],
+      "measured_next_v": [
+        -0.22025320489249545,
+        0.47190499453039225
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07377833832224293,
+        0.13829089398830266
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 1,
+      "kind": "learned_guard",
+      "source_transition_id": "seed1_learned_guard:101",
+      "requested_nm": [
+        -0.5,
+        0.375
+      ],
+      "begin_q": [
+        0.09118648061797056,
+        0.004725648308698347
+      ],
+      "begin_v": [
+        -0.22025320489249545,
+        0.47190499453039225
+      ],
+      "saved_prediction_next_v": [
+        -0.1182859011010777,
+        0.2761894683076984
+      ],
+      "measured_next_v": [
+        -0.40163952157770394,
+        0.8165708529424146
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07182870778822842,
+        0.12937176766301292
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 1,
+      "kind": "learned_guard",
+      "source_transition_id": "seed1_learned_guard:102",
+      "requested_nm": [
+        -0.5,
+        0.25
+      ],
+      "begin_q": [
+        0.08447179754193114,
+        0.017867617334977867
+      ],
+      "begin_v": [
+        -0.40163952157770394,
+        0.8165708529424146
+      ],
+      "saved_prediction_next_v": [
+        -0.1612141033136191,
+        0.20747271215087124
+      ],
+      "measured_next_v": [
+        -0.4531779619527784,
+        0.9401213267009473
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.06808578791071183,
+        0.021518993985542037
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 1,
+      "kind": "learned_guard",
+      "source_transition_id": "seed1_learned_guard:103",
+      "requested_nm": [
+        -0.5,
+        0.25
+      ],
+      "begin_q": [
+        0.0755915946503149,
+        0.035348154098914564
+      ],
+      "begin_v": [
+        -0.4531779619527784,
+        0.9401213267009473
+      ],
+      "saved_prediction_next_v": [
+        -0.17056918905792243,
+        0.20725025424843077
+      ],
+      "measured_next_v": [
+        -0.47484706621841066,
+        1.049717166152862
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.06374107182056983,
+        0.001121280235214869
+      ],
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.0657953692867232,
+          0.05489746613965509
+        ],
+        "qref_rad": [
+          0.09382541724034689,
+          -0.0005763175538596344
+        ],
+        "velocity_rad_s": [
+          -0.47484706621841066,
+          1.049717166152862
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 103
+      },
+      "executed_substeps": 10
+    },
+    {
+      "seed": 2,
+      "kind": "learned_raw",
+      "source_transition_id": "seed2_learned_raw:100",
+      "requested_nm": [
+        -0.5,
+        0.5
+      ],
+      "begin_q": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "begin_v": [
+        8.075986620939214e-05,
+        2.143382454786086e-09
+      ],
+      "saved_prediction_next_v": [
+        -0.06381180014992513,
+        0.15468656412565748
+      ],
+      "measured_next_v": [
+        -0.3023309958354185,
+        0.6160625182569485
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07390201570130665,
+        0.11438040464953395
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 2,
+      "kind": "learned_raw",
+      "source_transition_id": "seed2_learned_raw:101",
+      "requested_nm": [
+        -0.5,
+        0.5
+      ],
+      "begin_q": [
+        0.0973999690374548,
+        0.006492686026742086
+      ],
+      "begin_v": [
+        -0.3023309958354185,
+        0.6160625182569485
+      ],
+      "saved_prediction_next_v": [
+        -0.14003181434261577,
+        0.2747286445575496
+      ],
+      "measured_next_v": [
+        -0.546394609908831,
+        1.072263300286508
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07121388810071896,
+        0.10237274123817294
+      ],
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.08854642831906091,
+          0.024025024010681278
+        ],
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "velocity_rad_s": [
+          -0.546394609908831,
+          1.072263300286508
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 101
+      },
+      "executed_substeps": 10
+    },
+    {
+      "seed": 2,
+      "kind": "learned_guard",
+      "source_transition_id": "seed2_learned_guard:100",
+      "requested_nm": [
+        -0.5,
+        0.375
+      ],
+      "begin_q": [
+        0.10085905132196148,
+        -0.000576154793236481
+      ],
+      "begin_v": [
+        8.075986620939214e-05,
+        2.143382454786086e-09
+      ],
+      "saved_prediction_next_v": [
+        -0.06381180014992513,
+        0.185057505078547
+      ],
+      "measured_next_v": [
+        -0.22061371340241273,
+        0.47236744651275964
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07390201570130665,
+        0.13825924256039487
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 2,
+      "kind": "learned_guard",
+      "source_transition_id": "seed2_learned_guard:101",
+      "requested_nm": [
+        -0.5,
+        0.375
+      ],
+      "begin_q": [
+        0.09821671323063204,
+        0.004731410392939023
+      ],
+      "begin_v": [
+        -0.22061371340241273,
+        0.47236744651275964
+      ],
+      "saved_prediction_next_v": [
+        -0.11938667203960861,
+        0.27721029227224153
+      ],
+      "measured_next_v": [
+        -0.40230793715815694,
+        0.8173270667422099
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.07188345218802965,
+        0.12927288683244037
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 2,
+      "kind": "learned_guard",
+      "source_transition_id": "seed2_learned_guard:102",
+      "requested_nm": [
+        -0.5,
+        0.25
+      ],
+      "begin_q": [
+        0.09149155340145686,
+        0.017886632126200477
+      ],
+      "begin_v": [
+        -0.40230793715815694,
+        0.8173270667422099
+      ],
+      "saved_prediction_next_v": [
+        -0.16324774117677665,
+        0.20893551088435364
+      ],
+      "measured_next_v": [
+        -0.4540683325239918,
+        0.9410155685089744
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.06803018568776412,
+        0.02142250826788957
+      ],
+      "study_abort": null,
+      "executed_substeps": 10
+    },
+    {
+      "seed": 2,
+      "kind": "learned_guard",
+      "source_transition_id": "seed2_learned_guard:103",
+      "requested_nm": [
+        -0.5,
+        0.25
+      ],
+      "begin_q": [
+        0.08259558582959689,
+        0.03538442369523026
+      ],
+      "begin_v": [
+        -0.4540683325239918,
+        0.9410155685089744
+      ],
+      "saved_prediction_next_v": [
+        -0.17283879143403932,
+        0.2087885880242679
+      ],
+      "measured_next_v": [
+        -0.511842373174536,
+        1.0127297531848436
+      ],
+      "saved_selected_horizon_last_v": [
+        -0.06357046988061502,
+        0.000931772774431067
+      ],
+      "study_abort": {
+        "type": "StudyAbort",
+        "triggers": [
+          {
+            "joint_index": 1,
+            "signal": "absolute_velocity_rad_s"
+          }
+        ],
+        "q_rad": [
+          0.07270804943067286,
+          0.05487736644126243
+        ],
+        "qref_rad": [
+          0.10085905132196148,
+          -0.000576154793236481
+        ],
+        "velocity_rad_s": [
+          -0.511842373174536,
+          1.0127297531848436
+        ],
+        "thresholds": {
+          "absolute_q_minus_qref_rad": 0.12,
+          "absolute_velocity_rad_s": 1.0
+        },
+        "feedback_action": null,
+        "phase": "control",
+        "step_index": 103
+      },
+      "executed_substeps": 10
+    }
+  ],
+  "claim_boundary": "No counterfactual actions or new gate; pulse calibration and sustained control differ.",
+  "wall_seconds": 0.8805317999795079,
+  "cpu_seconds": 0.890625
+}

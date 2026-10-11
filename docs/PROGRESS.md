@@ -1,5 +1,11 @@
 # 开发进度与仓库检查点
 
+## C4 A首次开发失败已归档（2026-10-11）
+
+[raw/guard匹配对照](GUARD_PAIR_DEVELOPMENT_RESULTS.md)从clean `e7d495f`一次完成18完整/6左肘研究速度停止/0异常/0blocked；cal400与prediction100三seed均完整，但learned_raw仅2active、learned_guard仅4active即停止。独立速度预测改善约29%–36%，不能以停止前RMSE通过控制贡献；两basis贡献与PD门未过。实际新增6318/63180/4800scalar，累计238502/2385020/17652scalar。首审3207643项零失败、一次描述汇总6489项零失败；规则nominal对照无一致优势。失败诊断只提取18个原有决策/预测，不调用模型；图表已视觉核验。
+
+[封口清单](../results/cpu_validation/2026-10-11_guard_pair/manifest.json)保留62 payload、全部工程/正式失败与源码，归档1838项完整性检查零失败。首次归档假定旧PD schema的source_git_blobs字段导致KeyError，原部分文件和失败清单完整移入staging证据；只修复字节归档，使用Git blob原字节/身份继续核验，没有重跑physics/audit/summary或改科研门。冻结源码、首审与两次归档费用各自保留。接着完成B耦合核心、薄runner与独立审计，按完整A校准重放并只新增三条控制；A diagonal停止使相对diag完整增量门无法评价，自身贡献与PD另判。C5/C6科学依赖尚未满足，持续目标保持active，不在失败报告或提交后结束。
+
 ## C4 A首次物理前正式冻结（2026-10-11）
 
 [raw/guard匹配协议](GUARD_PAIR_DEVELOPMENT_PROTOCOL.md)与标准库独立auditor现已冻结，正式入口开启但仍要求clean/tracked/HEAD原字节和PD五文件身份绑定。采用最终auditor `393a2f3673bab952c34ea09a4d79d7d88e78c448e141a4ab83d865ab164dda93`；此前59版提升记录保留，当前63项独立审计测试与11项受影响异常检查合计74pass。每迭代先保存当前原生起点并清空输入诊断，修复第二active诊断失败时旧起点/旧映射残留；新增回归使用真实`native_features`失败stage并检查数学成本与没有第二步物理费用。该批fake137attempt/135step/1356子步/36scalar，真物理0；外层误用旧suite筛选的首次空账保留，只读纠正而未重跑。正式flag/源码绑定的5项纯检查通过，费用另列。原93项提升检查没有无理由重复。

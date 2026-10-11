@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "original_inputs": {
+    "metadata.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_pair_20261011_first\\metadata.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "byte_count": 16431,
+      "sha256": "1789d62f5dff9b3257638d9a330052131fa3d9c46ed4cf6e11c3320ed8614cfb",
+      "wall_seconds": 0.00014119991101324558
+    },
+    "episodes.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_pair_20261011_first\\episodes.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "byte_count": 42131,
+      "sha256": "21228cd38af84c380b637f33455141a6a27d54a1d12824edff753603f2f04626",
+      "wall_seconds": 0.0001279998105019331
+    },
+    "seed_results.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_pair_20261011_first\\seed_results.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "byte_count": 413815,
+      "sha256": "776da877e1c013926a149d30f9a50f494cc1a07f1c0e33267d62ca1a151a3593",
+      "wall_seconds": 0.00045980000868439674
+    },
+    "trace.jsonl.gz": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_pair_20261011_first\\trace.jsonl.gz",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "byte_count": 7194095,
+      "sha256": "46a11c8f8a5042aa7101966d9aa41764f00e65d62ca1dda1d4c12d01466584a2",
+      "wall_seconds": 0.006974899908527732
+    },
+    "source_snapshot.zip": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_pair_20261011_first\\source_snapshot.zip",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "byte_count": 413438,
+      "sha256": "cb5897e2962b1d0de43ed772c7aa7af304c2a1f40fdae79bc53b375ab308dcd2",
+      "wall_seconds": 0.0005332001019269228
+    },
+    "manifest.json": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_pair_20261011_first\\manifest.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "byte_count": 456,
+      "sha256": "a1725d8edeaee8e0903f81f878e81f1cb548a0d3148206bee2d759854f021029",
+      "wall_seconds": 7.469998672604561e-05
+    },
+    "first_audit": {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\guard_pair_20261011_first_audit.json",
+      "read_attempts": 1,
+      "successful_reads": 1,
+      "byte_count": 1126043,
+      "sha256": "bf9b6c0e9eed25443f3e1ceee3c33cfa1da4b21db37dbaa17df23147acf385b2",
+      "wall_seconds": 0.00111140008084476
+    }
+  },
+  "total_original_read_attempts": 7,
+  "total_successful_original_reads": 7,
+  "cache_semantics": "One filesystem read per original. Hash/JSON/gzip/ZIP use cached bytes.",
+  "test_costs_included": false,
+  "physical_calls": 0,
+  "parameter_updates": 0,
+  "new_body_predictions": 0,
+  "auditor_executions": 0,
+  "git_queries": 0,
+  "pd_raw_filesystem_reads": 0
+}

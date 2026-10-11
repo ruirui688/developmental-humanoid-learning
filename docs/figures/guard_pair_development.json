@@ -1,0 +1,586 @@
+{
+  "inputs": {
+    "first_audit.json": "bf9b6c0e9eed25443f3e1ceee3c33cfa1da4b21db37dbaa17df23147acf385b2",
+    "saved_failure_diagnostic/saved_failed_controls.json": "78f81f68847838d44feca6924dd54214413317fc56caaeb31882498aea7c0fc6"
+  },
+  "read_passes_per_input": 1,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "audit_executions": 0,
+  "matplotlib_version": "3.10.6",
+  "completion": [
+    {
+      "kind": "nominal_raw",
+      "complete_active_endpoints": [
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "kind": "learned_raw",
+      "complete_active_endpoints": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "nominal_guard",
+      "complete_active_endpoints": [
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "kind": "learned_guard",
+      "complete_active_endpoints": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "kind": "PDselected",
+      "complete_active_endpoints": [
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "kind": "zero",
+      "complete_active_endpoints": [
+        200,
+        200,
+        200
+      ]
+    }
+  ],
+  "independent_prediction_numeric_improvement": [
+    {
+      "basis": "raw",
+      "axis": 0,
+      "improvement_percent": [
+        28.907367150632346,
+        29.711044675745647,
+        28.913718419314115
+      ]
+    },
+    {
+      "basis": "raw",
+      "axis": 1,
+      "improvement_percent": [
+        29.085510241314417,
+        29.356051107357672,
+        29.08388019318021
+      ]
+    },
+    {
+      "basis": "guard",
+      "axis": 0,
+      "improvement_percent": [
+        28.907367150632346,
+        29.711044675745647,
+        28.913718419314115
+      ]
+    },
+    {
+      "basis": "guard",
+      "axis": 1,
+      "improvement_percent": [
+        35.74070014046142,
+        36.118299777756526,
+        35.7566106662599
+      ]
+    }
+  ],
+  "scientific_gates": {
+    "model_contribution": {
+      "raw": {
+        "basis": "raw",
+        "evaluated": false,
+        "passed": false,
+        "required_trials": [
+          "calibration",
+          "prediction",
+          "nominal_raw",
+          "learned_raw"
+        ],
+        "required_trials_complete": false,
+        "per_seed": [
+          {
+            "seed": 0,
+            "eligible": false,
+            "nominal_tracking": 0.044325070055209234,
+            "learned_tracking": 0.029259131487041685,
+            "nominal_axis_tracking": [
+              0.040561588470167415,
+              0.04779310841089112
+            ],
+            "learned_axis_tracking": [
+              0.032421468261293745,
+              0.02571073601696206
+            ],
+            "nominal_velocity_prediction": [
+              0.046377585759352545,
+              0.09027117828837952
+            ],
+            "learned_velocity_prediction": [
+              0.032971046768297124,
+              0.0640153454823577
+            ],
+            "prediction_axes_passed": [
+              false,
+              false
+            ],
+            "strict_joint_tracking": false,
+            "strict_axis_tracking": [
+              false,
+              false
+            ]
+          },
+          {
+            "seed": 1,
+            "eligible": false,
+            "nominal_tracking": 0.045063166586776185,
+            "learned_tracking": 0.029263591888368884,
+            "nominal_axis_tracking": [
+              0.04091093893889326,
+              0.04886382138958462
+            ],
+            "learned_axis_tracking": [
+              0.032425921777680326,
+              0.025715272063226848
+            ],
+            "nominal_velocity_prediction": [
+              0.04515816504981173,
+              0.08968942349895372
+            ],
+            "learned_velocity_prediction": [
+              0.03174120245711521,
+              0.0633601504987064
+            ],
+            "prediction_axes_passed": [
+              false,
+              false
+            ],
+            "strict_joint_tracking": false,
+            "strict_axis_tracking": [
+              false,
+              false
+            ]
+          },
+          {
+            "seed": 2,
+            "eligible": false,
+            "nominal_tracking": 0.04412390478365939,
+            "learned_tracking": 0.029254975865819762,
+            "nominal_axis_tracking": [
+              0.04006385039661219,
+              0.04784062957479504
+            ],
+            "learned_axis_tracking": [
+              0.03241781541429006,
+              0.02570588394870736
+            ],
+            "nominal_velocity_prediction": [
+              0.04638776416070662,
+              0.09023898421152533
+            ],
+            "learned_velocity_prediction": [
+              0.0329753366502644,
+              0.0639939861559025
+            ],
+            "prediction_axes_passed": [
+              false,
+              false
+            ],
+            "strict_joint_tracking": false,
+            "strict_axis_tracking": [
+              false,
+              false
+            ]
+          }
+        ],
+        "nominal_raw_tracking_mean": null,
+        "learned_raw_tracking_mean": null,
+        "joint_tracking_mean_improvement": null,
+        "axis_tracking_gates": [
+          {
+            "axis": 0,
+            "nominal_raw_mean": null,
+            "learned_raw_mean": null,
+            "improvement": null,
+            "passed": false
+          },
+          {
+            "axis": 1,
+            "nominal_raw_mean": null,
+            "learned_raw_mean": null,
+            "improvement": null,
+            "passed": false
+          }
+        ],
+        "prediction_boundary": "One new 1/9 development trajectory; not a reproduction of prior low/full gates.",
+        "validated_pass": false
+      },
+      "guard": {
+        "basis": "guard",
+        "evaluated": false,
+        "passed": false,
+        "required_trials": [
+          "calibration",
+          "prediction",
+          "nominal_guard",
+          "learned_guard"
+        ],
+        "required_trials_complete": false,
+        "per_seed": [
+          {
+            "seed": 0,
+            "eligible": false,
+            "nominal_tracking": 0.044536694516386324,
+            "learned_tracking": 0.0246748516320361,
+            "nominal_axis_tracking": [
+              0.040087209778286996,
+              0.04858034509020541
+            ],
+            "learned_axis_tracking": [
+              0.027149488858084717,
+              0.021922633529544832
+            ],
+            "nominal_velocity_prediction": [
+              0.046377585759352545,
+              0.09025141903743336
+            ],
+            "learned_velocity_prediction": [
+              0.032971046768297124,
+              0.057994929986752985
+            ],
+            "prediction_axes_passed": [
+              false,
+              false
+            ],
+            "strict_joint_tracking": false,
+            "strict_axis_tracking": [
+              false,
+              false
+            ]
+          },
+          {
+            "seed": 1,
+            "eligible": false,
+            "nominal_tracking": 0.04435897843345624,
+            "learned_tracking": 0.024689981122191517,
+            "nominal_axis_tracking": [
+              0.03963684277962164,
+              0.04862467099922863
+            ],
+            "learned_axis_tracking": [
+              0.027166596738140085,
+              0.02193550449147735
+            ],
+            "nominal_velocity_prediction": [
+              0.04515816504981173,
+              0.0896693821561228
+            ],
+            "learned_velocity_prediction": [
+              0.03174120245711521,
+              0.05728232590011225
+            ],
+            "prediction_axes_passed": [
+              false,
+              false
+            ],
+            "strict_joint_tracking": false,
+            "strict_axis_tracking": [
+              false,
+              false
+            ]
+          },
+          {
+            "seed": 2,
+            "eligible": false,
+            "nominal_tracking": 0.044357569893000603,
+            "learned_tracking": 0.024671252503664764,
+            "nominal_axis_tracking": [
+              0.03938363577979863,
+              0.04882742309797878
+            ],
+            "learned_axis_tracking": [
+              0.02714231371638523,
+              0.021923416848668824
+            ],
+            "nominal_velocity_prediction": [
+              0.04638776416070662,
+              0.0902189862836777
+            ],
+            "learned_velocity_prediction": [
+              0.0329753366502644,
+              0.057959734611176636
+            ],
+            "prediction_axes_passed": [
+              false,
+              false
+            ],
+            "strict_joint_tracking": false,
+            "strict_axis_tracking": [
+              false,
+              false
+            ]
+          }
+        ],
+        "nominal_raw_tracking_mean": null,
+        "learned_raw_tracking_mean": null,
+        "joint_tracking_mean_improvement": null,
+        "axis_tracking_gates": [
+          {
+            "axis": 0,
+            "nominal_raw_mean": null,
+            "learned_raw_mean": null,
+            "improvement": null,
+            "passed": false
+          },
+          {
+            "axis": 1,
+            "nominal_raw_mean": null,
+            "learned_raw_mean": null,
+            "improvement": null,
+            "passed": false
+          }
+        ],
+        "prediction_boundary": "One new 1/9 development trajectory; not a reproduction of prior low/full gates.",
+        "validated_pass": false
+      }
+    },
+    "selected_pd_comparison": {
+      "raw": {
+        "basis": "raw",
+        "evaluated": false,
+        "passed": false,
+        "model_contribution_passed": false,
+        "required_trials": [
+          "calibration",
+          "prediction",
+          "nominal_raw",
+          "learned_raw",
+          "PDselected"
+        ],
+        "required_trials_complete": false,
+        "per_seed": [
+          {
+            "seed": 0,
+            "eligible": false,
+            "pd_tracking": 0.010401445519984794,
+            "learned_tracking": 0.029259131487041685,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": [
+              false,
+              false
+            ],
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "pd": 2.7533073985498238,
+                "learned": 0.04
+              },
+              "actual_squared_nm2_s": {
+                "pd": 1.2432903057769191,
+                "learned": 0.02
+              }
+            }
+          },
+          {
+            "seed": 1,
+            "eligible": false,
+            "pd_tracking": 0.010644472251318818,
+            "learned_tracking": 0.029263591888368884,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": [
+              false,
+              false
+            ],
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "pd": 2.7340117353316575,
+                "learned": 0.04
+              },
+              "actual_squared_nm2_s": {
+                "pd": 1.2200891572487693,
+                "learned": 0.02
+              }
+            }
+          },
+          {
+            "seed": 2,
+            "eligible": false,
+            "pd_tracking": 0.010935465170751784,
+            "learned_tracking": 0.029254975865819762,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": [
+              false,
+              false
+            ],
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "pd": 2.681743894893044,
+                "learned": 0.04
+              },
+              "actual_squared_nm2_s": {
+                "pd": 1.1938812044610247,
+                "learned": 0.02
+              }
+            }
+          }
+        ],
+        "pd_raw_tracking_mean": null,
+        "learned_raw_tracking_mean": null,
+        "joint_tracking_mean_improvement": null,
+        "actual_effort_gates": {
+          "actual_absolute_nm_s": {
+            "pd_mean": null,
+            "learned_mean": null,
+            "passed": false
+          },
+          "actual_squared_nm2_s": {
+            "pd_mean": null,
+            "learned_mean": null,
+            "passed": false
+          }
+        },
+        "validated_pass": false
+      },
+      "guard": {
+        "basis": "guard",
+        "evaluated": false,
+        "passed": false,
+        "model_contribution_passed": false,
+        "required_trials": [
+          "calibration",
+          "prediction",
+          "nominal_guard",
+          "learned_guard",
+          "PDselected"
+        ],
+        "required_trials_complete": false,
+        "per_seed": [
+          {
+            "seed": 0,
+            "eligible": false,
+            "pd_tracking": 0.010401445519984794,
+            "learned_tracking": 0.0246748516320361,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": [
+              false,
+              false
+            ],
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "pd": 2.7533073985498238,
+                "learned": 0.065
+              },
+              "actual_squared_nm2_s": {
+                "pd": 1.2432903057769191,
+                "learned": 0.028125
+              }
+            }
+          },
+          {
+            "seed": 1,
+            "eligible": false,
+            "pd_tracking": 0.010644472251318818,
+            "learned_tracking": 0.024689981122191517,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": [
+              false,
+              false
+            ],
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "pd": 2.7340117353316575,
+                "learned": 0.065
+              },
+              "actual_squared_nm2_s": {
+                "pd": 1.2200891572487693,
+                "learned": 0.028125
+              }
+            }
+          },
+          {
+            "seed": 2,
+            "eligible": false,
+            "pd_tracking": 0.010935465170751784,
+            "learned_tracking": 0.024671252503664764,
+            "tracking_non_worse": false,
+            "axis_tracking_non_worse": [
+              false,
+              false
+            ],
+            "efforts": {
+              "actual_absolute_nm_s": {
+                "pd": 2.681743894893044,
+                "learned": 0.065
+              },
+              "actual_squared_nm2_s": {
+                "pd": 1.1938812044610247,
+                "learned": 0.028125
+              }
+            }
+          }
+        ],
+        "pd_raw_tracking_mean": null,
+        "learned_raw_tracking_mean": null,
+        "joint_tracking_mean_improvement": null,
+        "actual_effort_gates": {
+          "actual_absolute_nm_s": {
+            "pd_mean": null,
+            "learned_mean": null,
+            "passed": false
+          },
+          "actual_squared_nm2_s": {
+            "pd_mean": null,
+            "learned_mean": null,
+            "passed": false
+          }
+        },
+        "validated_pass": false
+      }
+    },
+    "public_rule_diagnostic": {
+      "available": true,
+      "per_seed": [
+        {
+          "seed": 0,
+          "available": true,
+          "nominal_raw_tracking": 0.044325070055209234,
+          "nominal_guard_tracking": 0.044536694516386324,
+          "guard_relative_improvement": -0.004774373980988678
+        },
+        {
+          "seed": 1,
+          "available": true,
+          "nominal_raw_tracking": 0.045063166586776185,
+          "nominal_guard_tracking": 0.04435897843345624,
+          "guard_relative_improvement": 0.01562669041386422
+        },
+        {
+          "seed": 2,
+          "available": true,
+          "nominal_raw_tracking": 0.04412390478365939,
+          "nominal_guard_tracking": 0.044357569893000603,
+          "guard_relative_improvement": -0.005295657999600856
+        }
+      ],
+      "learning_updates_compared": 0,
+      "claim_boundary": "Public-rule-only nominal comparison; raw-to-guard total difference is not RLS learning contribution."
+    },
+    "complete_matrix": false,
+    "thresholds_frozen": true,
+    "claim_boundary": "Development-only local shoulder/elbow contribution; no independent final generalization, adaptation, maturation, safety or motor-skill success.",
+    "data_consistency_verified": true
+  },
+  "png_sha256": "02baab465e874fd54646c0eb5b3db29cc06d5f24ab74de031d74bf951589ea56",
+  "script_sha256": "5011860fc79df9ce98ba0082ec11685e21cd060ece05895275af3a05a4272c6e",
+  "claim_boundary": "Saved values only. Stopped controls have no full-window tracking ranking."
+}
