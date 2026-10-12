@@ -1,5 +1,12 @@
 # AGENTS.md
 
+## PAR1 冻结准备与当前入口（2026-10-12）
+
+当前继续 [相同仿真状态的有限动作响应诊断](docs/PAIRED_ACTION_RESPONSE_DIAGNOSTIC_PROTOCOL.md)：三开发 seed、12 origin、48计划侧，上限9,060控制/子步、0更新。首次必要合成检查passed，仅代表准备资格；正式物理尚未执行。完整状态复制仅供仿真评估，模型仍只使用原生信息。
+
+此前505,297控制/2,784,970子步、125,652scalar更新；C4–C7未验收，原门不变，持续目标active。冻结检查提交推送后立即继续首次实验。
+
+
 ## EF1D 首次结果与当前入口（2026-10-12）
 
 当前入口为 [EF1D 保存一步误差动作尺度诊断结果](docs/MODEL_ACTION_ERROR_DIAGNOSTIC_RESULTS.md)：首次 completed、完整2,400 H1/1,200配对origin；仅转录首次汇总并完成一次轻量身份/人口/源码绑定核对，不重算J/SVD/delta或旧门。

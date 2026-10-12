@@ -1,0 +1,112 @@
+{
+  "experiment": "PAR1",
+  "status": "preparation_frozen",
+  "created_utc": "2026-10-12T02:31:12.154966+00:00",
+  "files": {
+    "inputs/docs/PAIRED_ACTION_RESPONSE_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 10425,
+      "sha256": "8ce717c5a80b9c70185c8bbc3c0839417e3ee9209423d3fb27de80687c79526d"
+    },
+    "inputs/scripts/diagnose_paired_action_response.py": {
+      "bytes": 33905,
+      "sha256": "78d6239805f160754c784f21fd38abda24770a4edcb87287554d0a5da8fac483"
+    },
+    "inputs/external/new_paired_action_response_checks_once.py": {
+      "bytes": 6539,
+      "sha256": "f0142e5bc036ff2b147b01d90f751d82cf41c391fe380b981a6833e19d5e880f"
+    },
+    "inputs/external/freeze_par1_preparation_once.py": {
+      "bytes": 5685,
+      "sha256": "c7c2299ae263cba154b58dbcfc3f497411d7a5abe7c26ac2598fbce70d976459"
+    },
+    "inputs/external/par1_new_checks_first/checks.json": {
+      "bytes": 6642,
+      "sha256": "4d5e7655fe5a5c965979c4c706bbfe83366099ca654dfcf4b08252d7bf0dc0a7"
+    },
+    "inputs/external/par1_new_checks_first/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "inputs/external/par1_new_checks_first/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "first_preparation_failure/failure.json": {
+      "bytes": 341,
+      "sha256": "249e5d76fdc8097e1a56cc044f0669e6d93e1ec0227fcd30b5f3660c40177e51"
+    },
+    "first_preparation_failure/freeze_original.py": {
+      "bytes": 5684,
+      "sha256": "2eba631a559c83868f4cbe9f17a67c4666675a46c445288c862fd5576d37b455"
+    }
+  },
+  "new_check_cost": {
+    "source_file_reads": 2,
+    "source_bytes_read": 40444,
+    "synthetic_theta_builds": 1,
+    "model_response_pair_attempts": 5,
+    "public_projection_pair_attempts": 10,
+    "public_projection_input_scalar_uses": 80,
+    "public_projection_pair_returns": 8,
+    "projected_command_scalar_outputs": 16,
+    "signed_hinge_scalar_evaluations": 12,
+    "finite_input_difference_scalar_outputs": 12,
+    "finite_input_difference_scalar_uses": 24,
+    "model_coefficient_scalar_uses": 24,
+    "model_algebra_2x4_matvec_attempts": 3,
+    "model_algebra_2x4_matvec_returns": 3,
+    "model_response_pair_returns": 3,
+    "model_response_scalar_outputs": 6,
+    "finite_effect_pair_attempts": 2,
+    "endpoint_velocity_scalar_uses_for_response": 8,
+    "signal_tolerance_evaluations": 2,
+    "endpoint_velocity_scalar_uses_for_tolerance": 8,
+    "response_residual_scalar_outputs": 8,
+    "response_residual_operand_scalar_uses": 16,
+    "finite_effect_pair_returns": 2,
+    "new_response_scalar_labels": 4,
+    "model_comparison_scalar_label_uses": 8,
+    "weak_signal_axis_comparisons": 4,
+    "global_paid_marker": 7,
+    "model_response_pair_exceptions": 2,
+    "wall_seconds": 0.027620699955150485,
+    "cpu_seconds": 0.0
+  },
+  "historical": {
+    "controls": 505297,
+    "substeps": 2784970,
+    "scalar_updates": 125652
+  },
+  "preparation_physics": 0,
+  "preparation_fit": 0,
+  "checks_reexecuted": false,
+  "readonly_runtime_API_query": {
+    "mujoco_version": "3.15.0",
+    "mj_copyData_available": true,
+    "mj_getState_available": true,
+    "integration_state_mask": 16383,
+    "model_or_data_constructions": 0,
+    "physics_calls": 0,
+    "query_import_and_internal_IO": "unmeasured_unknown_not_zero"
+  },
+  "review": "Root and checkpoint performed one source-only review; no raw review or execution.",
+  "IO_before_manifest": {
+    "read_files": 14,
+    "read_bytes": 274691,
+    "write_files": 14,
+    "write_bytes": 278260
+  },
+  "wall_seconds_before_manifest": 0.02650549984537065,
+  "cpu_seconds_before_manifest": 0.03125,
+  "unmeasured_internal_filesystem_IO": "unknown_not_zero",
+  "continuous_goal": "active",
+  "first_preparation_failure": {
+    "type": "SyntaxError",
+    "line": 57,
+    "single_string_repair": true,
+    "compile_after_repair": "passed",
+    "physics": 0,
+    "fit": 0,
+    "six_checks_reexecuted": false
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "finite_hinge_crossing_direct_2ms_coefficients",
+      "passed": true,
+      "detail": [
+        0.000325,
+        -0.000375
+      ]
+    },
+    {
+      "name": "guard_equality_and_zero_effective_input",
+      "passed": true,
+      "detail": {
+        "outward_to_inward": [
+          5e-05,
+          -7.500000000000001e-05
+        ],
+        "blocked": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "fixed_dose_permission_never_clips",
+      "passed": true,
+      "detail": {
+        "illegal": [
+          0.6,
+          0.1
+        ],
+        "legal": [
+          0.35,
+          0.1
+        ]
+      }
+    },
+    {
+      "name": "signal_floor_and_signed_model_response_error",
+      "passed": true,
+      "detail": {
+        "weak": {
+          "actual_response_v2": [
+            0.0,
+            0.0
+          ],
+          "model_response_v2": {
+            "cold": [
+              0.0,
+              0.0
+            ],
+            "learned": [
+              0.01,
+              0.0
+            ]
+          },
+          "model_error_v2": {
+            "cold": [
+              0.0,
+              0.0
+            ],
+            "learned": [
+              0.01,
+              0.0
+            ]
+          },
+          "signal_tolerance_rad_s": 3.4106051316484814e-14,
+          "weak_signal_axis": [
+            true,
+            true
+          ],
+          "weak_signal": true
+        },
+        "signal": {
+          "actual_response_v2": [
+            0.0010000000000000009,
+            0.0
+          ],
+          "model_response_v2": {
+            "cold": [
+              0.002,
+              0.0
+            ],
+            "learned": [
+              0.001,
+              0.0
+            ]
+          },
+          "model_error_v2": {
+            "cold": [
+              0.0009999999999999992,
+              0.0
+            ],
+            "learned": [
+              -8.673617379884035e-19,
+              0.0
+            ]
+          },
+          "signal_tolerance_rad_s": 3.4134473025915215e-14,
+          "weak_signal_axis": [
+            false,
+            true
+          ],
+          "weak_signal": false
+        }
+      }
+    },
+    {
+      "name": "python_state_copy_independent_global_cost_and_original_stop",
+      "passed": true,
+      "detail": {
+        "state": {
+          "last_command": [
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0
+          ],
+          "step_id": 10,
+          "physics_steps": 10,
+          "_reset_done": true,
+          "terminated": false,
+          "reason": null
+        },
+        "abort": {
+          "type": "StudyAbort",
+          "triggers": [
+            {
+              "axis": 0,
+              "signal": "q_minus_qref"
+            },
+            {
+              "axis": 1,
+              "signal": "velocity"
+            }
+          ],
+          "q2": [
+            0.12,
+            0.0
+          ],
+          "v2": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "technical_nonfinite_and_illegal_model_input_raise",
+      "passed": true,
+      "detail": {
+        "source_file_reads": 2,
+        "source_bytes_read": 40444,
+        "synthetic_theta_builds": 1,
+        "model_response_pair_attempts": 5,
+        "public_projection_pair_attempts": 10,
+        "public_projection_input_scalar_uses": 80,
+        "public_projection_pair_returns": 8,
+        "projected_command_scalar_outputs": 16,
+        "signed_hinge_scalar_evaluations": 12,
+        "finite_input_difference_scalar_outputs": 12,
+        "finite_input_difference_scalar_uses": 24,
+        "model_coefficient_scalar_uses": 24,
+        "model_algebra_2x4_matvec_attempts": 3,
+        "model_algebra_2x4_matvec_returns": 3,
+        "model_response_pair_returns": 3,
+        "model_response_scalar_outputs": 6,
+        "finite_effect_pair_attempts": 2,
+        "endpoint_velocity_scalar_uses_for_response": 8,
+        "signal_tolerance_evaluations": 2,
+        "endpoint_velocity_scalar_uses_for_tolerance": 8,
+        "response_residual_scalar_outputs": 8,
+        "response_residual_operand_scalar_uses": 16,
+        "finite_effect_pair_returns": 2,
+        "new_response_scalar_labels": 4,
+        "model_comparison_scalar_label_uses": 8,
+        "weak_signal_axis_comparisons": 4,
+        "global_paid_marker": 7,
+        "model_response_pair_exceptions": 2
+      }
+    }
+  ],
+  "first_failure": null,
+  "source_identities": {
+    "D:\\Codex_ws\\robot_rl\\scripts\\diagnose_paired_action_response.py": {
+      "bytes": 33905,
+      "sha256": "78d6239805f160754c784f21fd38abda24770a4edcb87287554d0a5da8fac483"
+    },
+    "D:\\Codex_ws\\robot_rl\\external\\new_paired_action_response_checks_once.py": {
+      "bytes": 6539,
+      "sha256": "f0142e5bc036ff2b147b01d90f751d82cf41c391fe380b981a6833e19d5e880f"
+    }
+  },
+  "synthetic_only_cost": {
+    "source_file_reads": 2,
+    "source_bytes_read": 40444,
+    "synthetic_theta_builds": 1,
+    "model_response_pair_attempts": 5,
+    "public_projection_pair_attempts": 10,
+    "public_projection_input_scalar_uses": 80,
+    "public_projection_pair_returns": 8,
+    "projected_command_scalar_outputs": 16,
+    "signed_hinge_scalar_evaluations": 12,
+    "finite_input_difference_scalar_outputs": 12,
+    "finite_input_difference_scalar_uses": 24,
+    "model_coefficient_scalar_uses": 24,
+    "model_algebra_2x4_matvec_attempts": 3,
+    "model_algebra_2x4_matvec_returns": 3,
+    "model_response_pair_returns": 3,
+    "model_response_scalar_outputs": 6,
+    "finite_effect_pair_attempts": 2,
+    "endpoint_velocity_scalar_uses_for_response": 8,
+    "signal_tolerance_evaluations": 2,
+    "endpoint_velocity_scalar_uses_for_tolerance": 8,
+    "response_residual_scalar_outputs": 8,
+    "response_residual_operand_scalar_uses": 16,
+    "finite_effect_pair_returns": 2,
+    "new_response_scalar_labels": 4,
+    "model_comparison_scalar_label_uses": 8,
+    "weak_signal_axis_comparisons": 4,
+    "global_paid_marker": 7,
+    "model_response_pair_exceptions": 2,
+    "wall_seconds": 0.027620699955150485,
+    "cpu_seconds": 0.0
+  },
+  "saved_raw_reads": 0,
+  "environment_constructions": 0,
+  "physics_calls": 0,
+  "model_predict_calls": 0,
+  "fit_calls": 0,
+  "RLS_updates": 0,
+  "unmeasured_import_IO": "unknown_not_zero"
+}
