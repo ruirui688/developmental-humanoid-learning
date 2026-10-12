@@ -16,7 +16,7 @@
 
 当前执行入口：
 
-- **当前入口FR4D完成：** [FR4D一次保存选择诊断](PD_ANCHOR_SELECTION_DIAGNOSTIC_RESULTS.md)完成：learned600个起点的PD锚点全部存在/可行，chosen12、其余588保存成本差为负；仅限定保存选择结构，不识别实际反事实或失败因果。0新增物理/model/fit/RLS，累计487,297/2,766,970和125,652scalar不变。关闭PD锚点/首请求网格微调族，接着冻结唯一目标保持前馈的控制用途，保留原权限、停止与科学门。C4及C5–C7未验收，持续目标active。
+- **当前入口EF1B冻结：** [EF1B目标保持前馈协议](EQUILIBRIUM_FEEDFORWARD_CONTROL_PROTOCOL.md)已完成首次新合成检查9类96项及剩余15项静态对照，原结果前规则固定。仅新增六条cold/learned轨迹，最多18,000控制/子步、0fit/RLS；FR4B已审PD/zero参考直接复用。先从精确clean提交首次执行，原20%模型贡献、5%强PD及1.05实际努力门不变。尚无EF1B物理结果；累计487,297控制/2,766,970子步和125,652scalar更新不变。C4及C5–C7未验收，持续目标active，阶段提交推送后立即继续。
 
 - **Z0首次完整工程门通过。** [首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次seed7600完成1000zero+2000PD、3000控制/3000子步，0异常/停止/fit；两个末200点/.4s窗口的肩/肘四项MAE均≤.01rad。root首新thin contract零failed，独立4个Z0 MAE；记录一致与工程通过仍不证明学习或科学验收。
 - [2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)保持物理/PD64/Kd(4,4)/权限/6s任务，反馈/感觉与active研究停止检查频率增多，公开额外经典控制能力。全子步left_arm/feet/other接触零观察；固定支撑反力unknown，不从不同seed的X/Y失败识别频率因果，不追认自由root真实接触C4或解除C5科学依赖。
@@ -790,3 +790,9 @@ FR0只开放新学习协议准备，C4及C5–C7科学依赖仍未解除；持�
 ### FR4D一次投影与结构路线关闭
 
 [FR4D一次保存选择诊断](PD_ANCHOR_SELECTION_DIAGNOSTIC_RESULTS.md)完成：learned600个起点的PD锚点全部存在/可行，chosen12、其余588保存成本差为负；仅限定保存选择结构，不识别实际反事实或失败因果。0新增物理/model/fit/RLS，累计487,297/2,766,970和125,652scalar不变。关闭PD锚点/首请求网格微调族，接着冻结唯一目标保持前馈的控制用途，保留原权限、停止与科学门。C4及C5–C7未验收，持续目标active。
+
+### EF1B唯一控制结构冻结与首次执行
+
+[EF1B目标保持前馈协议](EQUILIBRIUM_FEEDFORWARD_CONTROL_PROTOCOL.md)已完成首次新合成检查9类96项及剩余15项静态对照，原结果前规则固定。仅新增六条cold/learned轨迹，最多18,000控制/子步、0fit/RLS；FR4B已审PD/zero参考直接复用。先从精确clean提交首次执行，原20%模型贡献、5%强PD及1.05实际努力门不变。尚无EF1B物理结果；累计487,297控制/2,766,970子步和125,652scalar更新不变。C4及C5–C7未验收，持续目标active，阶段提交推送后立即继续。
+
+首静态准备把新增错误费用字段误当作不变函数，触发AssertionError: failure，0物理/fit/RLS；保留该首错误后，仅补齐剩余静态对照，failure除新增两项ledger外AST相同。不重跑已通过的9类96项新数学检查、旧物理、旧预测或旧审计。

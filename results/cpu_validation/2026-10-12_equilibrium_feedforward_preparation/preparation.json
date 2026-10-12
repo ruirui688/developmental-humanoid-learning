@@ -1,0 +1,85 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-10-12T01:10:56.236762+00:00",
+  "protocol_pin": {
+    "bytes": 12884,
+    "sha256": "cf51c5a7500a57c0306bf7a06effddb09b85b984433d6baaa81097de7fc893bf"
+  },
+  "files": {
+    "source_originals/src/developmental_physics/equilibrium_feedforward_pair.py": {
+      "bytes": 26599,
+      "sha256": "0d3644058c16d379807a5f469e851e923a4cd9808a1781bff6a9d44d1f4d78ce"
+    },
+    "source_originals/src/developmental_physics/equilibrium_feedforward_development.py": {
+      "bytes": 50382,
+      "sha256": "16310f1d78cfc765b6d464db67429c0e13d1470ae055a6e6deb3f10f3d44947b"
+    },
+    "source_originals/scripts/develop_equilibrium_feedforward.py": {
+      "bytes": 42443,
+      "sha256": "d61e196a2a64b51a2722dd57e3e3b3aa9e0c97c299ebcc393458abe844b2d4fe"
+    },
+    "source_originals/docs/EQUILIBRIUM_FEEDFORWARD_CONTROL_PROTOCOL.md": {
+      "bytes": 12884,
+      "sha256": "cf51c5a7500a57c0306bf7a06effddb09b85b984433d6baaa81097de7fc893bf"
+    },
+    "source_originals/external/new_equilibrium_feedforward_synthetic_first_once.py": {
+      "bytes": 16848,
+      "sha256": "548e66627df5c1113a73d0f78c03275bd61c23ae36b328d2733752df67a675ce"
+    },
+    "source_originals/external/equilibrium_feedforward_protocol_candidate.md": {
+      "bytes": 12540,
+      "sha256": "c60824c95e7446e9bb1811419ff0733386027633ae30143feade5c18dab33533"
+    },
+    "source_originals/external/native_equilibrium_feedforward_direction_candidate.md": {
+      "bytes": 5388,
+      "sha256": "6d6723fc2a9f177196e7c62c867c3d638a086f7817b6b0f4928be3ed80deeb62"
+    },
+    "source_originals/external/launch_ef1b_control_first_once.py": {
+      "bytes": 4207,
+      "sha256": "58825e21f562375f83531c9f586df6cb039079ab0b3f4ef867f64855110d5526"
+    },
+    "first_new_checks/first_execution_receipt.json": {
+      "bytes": 787,
+      "sha256": "96a5abaa2e7c10f58ff1f1dce6ab57d4b8bd61003192459aaeb0857103ec1606"
+    },
+    "first_new_checks/result.json": {
+      "bytes": 11297,
+      "sha256": "5d0ded4cd16480b48abec469808c01f25d9bd89faea1b07871fc5515a8bd0cd8"
+    },
+    "first_new_checks/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "first_new_checks/stdout.log": {
+      "bytes": 357,
+      "sha256": "991b3454f3fdf9d2f4b4523c97774d075fff9670ecfd79cef07d2982c28c0812"
+    },
+    "remaining_static_review.json": {
+      "bytes": 6886,
+      "sha256": "70ab9be822489f7fb846aa0cee194493efcaa224c466d6c22c2088460e616f45"
+    }
+  },
+  "first_interruption": {
+    "origin": "parent_reported_first_static_preparation",
+    "exception": "AssertionError: failure",
+    "cause": "two_new_error_ledger_keys_expected_identical",
+    "physics": 0,
+    "fit": 0,
+    "RLS": 0,
+    "empty_directory_and_initial_protocol_created": true,
+    "initial_protocol_identity_parent_reported": {
+      "bytes": 12906,
+      "sha256": "3ea7afe58ed04194464c017fd17d897c8977a248867d72afdad9ce2cf1028816"
+    },
+    "runner_before_final_pin_identity": {
+      "bytes": 42443,
+      "sha256": "121f1493c092f9019638cf87303990922f1c5459024c4cc52daeee3f7ce1a734"
+    }
+  },
+  "continuation": "remaining_static_checks_and_copy_only_no_experiment_or_synthetic_rerun",
+  "new_physics": 0,
+  "new_fit": 0,
+  "new_RLS": 0,
+  "wall_before_receipt_seconds": 0.0506500001065433,
+  "read_write_bytes": "source_originals_and_copies_explicitly_bound; other_IO_not_instrumented"
+}

@@ -1,0 +1,498 @@
+{
+  "schema": "equilibrium_feedforward_synthetic_first_v1",
+  "status": "passed",
+  "cases": [
+    {
+      "name": "cold_zero_and_current_target_cache",
+      "passed": true,
+      "checks": 24
+    },
+    {
+      "name": "coupled_full_rank",
+      "passed": true,
+      "checks": 6
+    },
+    {
+      "name": "rank_one_box_and_continuous_minimum",
+      "passed": true,
+      "checks": 10
+    },
+    {
+      "name": "rank_zero_root_and_absence",
+      "passed": true,
+      "checks": 10
+    },
+    {
+      "name": "hinge_quarter_boundaries",
+      "passed": true,
+      "checks": 6
+    },
+    {
+      "name": "guard_equalities_and_adjacent_interior",
+      "passed": true,
+      "checks": 10
+    },
+    {
+      "name": "finite_no_root_zero_hold",
+      "passed": true,
+      "checks": 8
+    },
+    {
+      "name": "finite_forecast_literal_zero",
+      "passed": true,
+      "checks": 8
+    },
+    {
+      "name": "nonfinite_and_prediction_technical_errors",
+      "passed": true,
+      "checks": 10
+    }
+  ],
+  "checks": [
+    {
+      "name": "solve_complete_sixteen_branches",
+      "passed": true
+    },
+    {
+      "name": "solve_svd_count_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_model_verification_bounded",
+      "passed": true
+    },
+    {
+      "name": "cold_has_zero_root",
+      "passed": true
+    },
+    {
+      "name": "cold_root_exact_zero",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_pair_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_scalar_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_no_cost_optimization",
+      "passed": true
+    },
+    {
+      "name": "decision_one_forecast_record",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_pair_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_scalar_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_no_cost_optimization",
+      "passed": true
+    },
+    {
+      "name": "decision_one_forecast_record",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_pair_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_scalar_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_no_cost_optimization",
+      "passed": true
+    },
+    {
+      "name": "decision_one_forecast_record",
+      "passed": true
+    },
+    {
+      "name": "cold_forecast_feasible",
+      "passed": true
+    },
+    {
+      "name": "cold_hold_zero",
+      "passed": true
+    },
+    {
+      "name": "cache_latest_target_hit",
+      "passed": true
+    },
+    {
+      "name": "cache_no_repeated_root_charge",
+      "passed": true
+    },
+    {
+      "name": "changed_target_new_inverse",
+      "passed": true
+    },
+    {
+      "name": "single_final_clip_semantics",
+      "passed": true
+    },
+    {
+      "name": "cached_forecast_still_charged",
+      "passed": true
+    },
+    {
+      "name": "solve_complete_sixteen_branches",
+      "passed": true
+    },
+    {
+      "name": "solve_svd_count_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_model_verification_bounded",
+      "passed": true
+    },
+    {
+      "name": "coupled_has_root",
+      "passed": true
+    },
+    {
+      "name": "coupled_joint_inverse",
+      "passed": true
+    },
+    {
+      "name": "coupled_rank2_all",
+      "passed": true
+    },
+    {
+      "name": "solve_complete_sixteen_branches",
+      "passed": true
+    },
+    {
+      "name": "solve_svd_count_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_model_verification_bounded",
+      "passed": true
+    },
+    {
+      "name": "rank1_intersects_box",
+      "passed": true
+    },
+    {
+      "name": "rank1_box_constrained_minimum",
+      "passed": true
+    },
+    {
+      "name": "rank1_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_complete_sixteen_branches",
+      "passed": true
+    },
+    {
+      "name": "solve_svd_count_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_model_verification_bounded",
+      "passed": true
+    },
+    {
+      "name": "rank1_continuous_global_minimum",
+      "passed": true
+    },
+    {
+      "name": "solve_complete_sixteen_branches",
+      "passed": true
+    },
+    {
+      "name": "solve_svd_count_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_model_verification_bounded",
+      "passed": true
+    },
+    {
+      "name": "rank0_complete_continuous_roots",
+      "passed": true
+    },
+    {
+      "name": "rank0_minimum_norm_zero",
+      "passed": true
+    },
+    {
+      "name": "solve_complete_sixteen_branches",
+      "passed": true
+    },
+    {
+      "name": "solve_svd_count_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_model_verification_bounded",
+      "passed": true
+    },
+    {
+      "name": "rank0_no_root",
+      "passed": true
+    },
+    {
+      "name": "rank0_no_zero_residual_fabricated",
+      "passed": true
+    },
+    {
+      "name": "solve_complete_sixteen_branches",
+      "passed": true
+    },
+    {
+      "name": "solve_svd_count_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_model_verification_bounded",
+      "passed": true
+    },
+    {
+      "name": "hinge_quarter_boundary",
+      "passed": true
+    },
+    {
+      "name": "hinge_repeated_boundary_roots_retained",
+      "passed": true
+    },
+    {
+      "name": "hinge_complete_model_return_accounting",
+      "passed": true
+    },
+    {
+      "name": "solve_complete_sixteen_branches",
+      "passed": true
+    },
+    {
+      "name": "solve_svd_count_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_model_verification_bounded",
+      "passed": true
+    },
+    {
+      "name": "guard_equality_outward_root_blocked",
+      "passed": true
+    },
+    {
+      "name": "solve_complete_sixteen_branches",
+      "passed": true
+    },
+    {
+      "name": "solve_svd_count_sixteen",
+      "passed": true
+    },
+    {
+      "name": "solve_model_verification_bounded",
+      "passed": true
+    },
+    {
+      "name": "guard_just_inside_outward_root",
+      "passed": true
+    },
+    {
+      "name": "guard_equal_projection",
+      "passed": true
+    },
+    {
+      "name": "guard_blocked_branch_rank_retained",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_pair_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_scalar_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_no_cost_optimization",
+      "passed": true
+    },
+    {
+      "name": "decision_one_forecast_record",
+      "passed": true
+    },
+    {
+      "name": "no_root_still_finite_PD_forecast",
+      "passed": true
+    },
+    {
+      "name": "no_root_held_request_zero",
+      "passed": true
+    },
+    {
+      "name": "no_root_actor_PD",
+      "passed": true
+    },
+    {
+      "name": "no_root_not_partial_population",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_pair_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_root_forecast_scalar_sum",
+      "passed": true
+    },
+    {
+      "name": "decision_no_cost_optimization",
+      "passed": true
+    },
+    {
+      "name": "decision_one_forecast_record",
+      "passed": true
+    },
+    {
+      "name": "forecast_velocity_fallback",
+      "passed": true
+    },
+    {
+      "name": "forecast_literal_zero",
+      "passed": true
+    },
+    {
+      "name": "forecast_paid_first_prediction",
+      "passed": true
+    },
+    {
+      "name": "forecast_no_partial_trajectory",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_coefficients_raises",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_coefficients_keeps_root_failure",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_target_raises",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_target_keeps_root_failure",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_predictor_return_raises",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_predictor_return_keeps_root_failure",
+      "passed": true
+    },
+    {
+      "name": "forecast_technical_error_not_fallback",
+      "passed": true
+    },
+    {
+      "name": "forecast_technical_failure_pair_charged",
+      "passed": true
+    },
+    {
+      "name": "forecast_technical_failure_scalar_charged",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_native_feedback_raises",
+      "passed": true
+    },
+    {
+      "name": "bounded_root_attempts",
+      "passed": true
+    },
+    {
+      "name": "bounded_branch_attempts",
+      "passed": true
+    },
+    {
+      "name": "bounded_root_model_verifications",
+      "passed": true
+    },
+    {
+      "name": "bounded_forecast_pair_attempts",
+      "passed": true
+    }
+  ],
+  "root_accounting": {
+    "root_cache_hits": 1,
+    "root_cache_misses": 5,
+    "root_solve_attempts": 17,
+    "root_solve_returns": 14,
+    "root_solve_failures": 3,
+    "root_coefficient_validations": 16,
+    "branch_affine_build_attempts": 230,
+    "branch_affine_build_returns": 230,
+    "branch_svd_attempts": 230,
+    "branch_svd_returns": 230,
+    "branch_rank0": 52,
+    "branch_rank1": 40,
+    "branch_rank2": 138,
+    "branch_minimum_norm_attempts": 230,
+    "branch_minimum_norm_returns": 230,
+    "branch_box_candidate_checks": 242,
+    "branch_linear_residual_checks": 88,
+    "branch_guard_residual_checks": 45,
+    "root_guard_projection_attempts": 45,
+    "root_guard_projection_returns": 45,
+    "root_algebraic_pair_evaluations": 45,
+    "root_algebraic_scalar_evaluations": 90,
+    "root_model_pair_prediction_attempts": 22,
+    "root_model_pair_prediction_returns": 22,
+    "root_model_pair_prediction_failures": 0,
+    "root_model_scalar_prediction_attempts": 44,
+    "root_model_scalar_prediction_returns": 44,
+    "root_model_scalar_prediction_failures": 0,
+    "root_model_unknown_scalar_failure_count": 0,
+    "root_feasible_branch_roots": 44,
+    "root_selected_returns": 10,
+    "root_no_root_returns": 4
+  },
+  "forecast_accounting": {
+    "pair_prediction_attempts": 602,
+    "pair_prediction_returns": 601,
+    "pair_prediction_failures": 1,
+    "scalar_prediction_attempts": 1203,
+    "scalar_prediction_returns": 1202,
+    "scalar_prediction_failures": 1,
+    "unknown_scalar_failure_count": 0,
+    "pd_request_attempts": 602,
+    "pd_request_returns": 602,
+    "forecast_steps_accepted": 600
+  },
+  "initialization_accounting": {
+    "coefficient_read_attempts": 4,
+    "coefficient_read_returns": 4,
+    "coefficient_scalars_copied": 72,
+    "parameter_state_identity_captures": 4
+  },
+  "fixture_model_builds": 6,
+  "fixture_parameter_assignments": 6,
+  "numpy_version": "2.2.6",
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "RLS_updates": 0,
+  "raw_or_result_reads": 0,
+  "checkpoint_reads": 0,
+  "old_case_replays": 0
+}

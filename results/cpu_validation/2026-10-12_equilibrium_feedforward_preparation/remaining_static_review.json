@@ -1,0 +1,165 @@
+{
+  "stage": "EF1B_remaining_static_helper_review",
+  "source_identities": {
+    "old": {
+      "path": "src/developmental_physics/pd_anchor_pair_development.py",
+      "bytes": 56106,
+      "sha256": "59de8ff3127bcdb683f325b11e5df88262bf8eda3e5a9f093de6bb9a204e1d64"
+    },
+    "new": {
+      "path": "src/developmental_physics/equilibrium_feedforward_development.py",
+      "bytes": 50382,
+      "sha256": "16310f1d78cfc765b6d464db67429c0e13d1470ae055a6e6deb3f10f3d44947b"
+    }
+  },
+  "checks": [
+    {
+      "helper": "native",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "d19924aa73347bdaf60c84db12d7041941c831936b6b39f5c3cde1cc1b6ef418",
+      "new_AST_sha256": "d19924aa73347bdaf60c84db12d7041941c831936b6b39f5c3cde1cc1b6ef418",
+      "passed": true
+    },
+    {
+      "helper": "study_abort",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "8deed129a2f44c27971a77fd0baf7446e7501d467aeeaf1499e2a7bd48f8cdf8",
+      "new_AST_sha256": "8deed129a2f44c27971a77fd0baf7446e7501d467aeeaf1499e2a7bd48f8cdf8",
+      "passed": true
+    },
+    {
+      "helper": "direction_targets",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "451449969636ad451e6392e2203e66cc09b3aabb0b9850ef00344f8e644cfcb4",
+      "new_AST_sha256": "451449969636ad451e6392e2203e66cc09b3aabb0b9850ef00344f8e644cfcb4",
+      "passed": true
+    },
+    {
+      "helper": "CountedGuardModel",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "a9340612c574db66235a5a00741e92b829b6bca5317044db39398f0e37da6e30",
+      "new_AST_sha256": "a9340612c574db66235a5a00741e92b829b6bca5317044db39398f0e37da6e30",
+      "passed": true
+    },
+    {
+      "helper": "restore_model",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "031c06b2be3d19b1bae7cfeaaab6fd76584da25bd835f16e998765307a91f230",
+      "new_AST_sha256": "031c06b2be3d19b1bae7cfeaaab6fd76584da25bd835f16e998765307a91f230",
+      "passed": true
+    },
+    {
+      "helper": "complete_telemetry",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "6cc0fc71c84c09d80c01defd728230c95ce8b7408639d880ec3282c95efe8f43",
+      "new_AST_sha256": "6cc0fc71c84c09d80c01defd728230c95ce8b7408639d880ec3282c95efe8f43",
+      "passed": true
+    },
+    {
+      "helper": "effort",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "f6f3caa565c7fe5a7e19a2cc7e5cf43958c62668b8ce330cd8332861c30b857f",
+      "new_AST_sha256": "f6f3caa565c7fe5a7e19a2cc7e5cf43958c62668b8ce330cd8332861c30b857f",
+      "passed": true
+    },
+    {
+      "helper": "score_population",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "4d48cb2883ec4a16e62a482ad0b7118251dfd8cfc56c901bbe79c5be1fba8e83",
+      "new_AST_sha256": "4d48cb2883ec4a16e62a482ad0b7118251dfd8cfc56c901bbe79c5be1fba8e83",
+      "passed": true
+    },
+    {
+      "helper": "tracking_score",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "e30a9c78dc4e191cfdcc4762e94e5042a9c4490a2d91e2d1da74a4ace65a7041",
+      "new_AST_sha256": "e30a9c78dc4e191cfdcc4762e94e5042a9c4490a2d91e2d1da74a4ace65a7041",
+      "passed": true
+    },
+    {
+      "helper": "native_input_ranges",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "15066bd83efd3aaf4c2d3a5503612dab3a6e739523d15570d9613c8cb912184b",
+      "new_AST_sha256": "15066bd83efd3aaf4c2d3a5503612dab3a6e739523d15570d9613c8cb912184b",
+      "passed": true
+    },
+    {
+      "helper": "free_root_contact_population",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "09a713ecb8a6e2dab87b49131b318b86ef688b7797496ad0c4b59e6ee3b5bc61",
+      "new_AST_sha256": "09a713ecb8a6e2dab87b49131b318b86ef688b7797496ad0c4b59e6ee3b5bc61",
+      "passed": true
+    },
+    {
+      "helper": "score_qualified_population",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "f11823315aac0b7133a4aba5520ca993dffe6296a0a788f9ba8bf6c5d60ffcbb",
+      "new_AST_sha256": "f11823315aac0b7133a4aba5520ca993dffe6296a0a788f9ba8bf6c5d60ffcbb",
+      "passed": true
+    },
+    {
+      "helper": "tracking_score_qualified",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "51947f52611f07ea940ece99618879a494dc4d58f11185eaed62c2f1ff54c792",
+      "new_AST_sha256": "51947f52611f07ea940ece99618879a494dc4d58f11185eaed62c2f1ff54c792",
+      "passed": true
+    },
+    {
+      "helper": "control_origin_domain",
+      "comparison": "exact_AST_without_source_locations",
+      "old_AST_sha256": "d33ab1c85ca3b425acc5c31270dbc768122475410bb101f26374e05a8b28227e",
+      "new_AST_sha256": "d33ab1c85ca3b425acc5c31270dbc768122475410bb101f26374e05a8b28227e",
+      "passed": true
+    },
+    {
+      "helper": "failure",
+      "comparison": "exact_AST_after_removing_only_two_appended_ledger_keys",
+      "old_ledger_keys": [
+        "pair_update_accounting",
+        "pair_prediction_accounting",
+        "pair_planning_accounting",
+        "batch_execution_cost"
+      ],
+      "new_ledger_keys": [
+        "pair_update_accounting",
+        "pair_prediction_accounting",
+        "pair_planning_accounting",
+        "batch_execution_cost",
+        "equilibrium_accounting",
+        "equilibrium_initialization_accounting"
+      ],
+      "only_appended_keys": [
+        "equilibrium_accounting",
+        "equilibrium_initialization_accounting"
+      ],
+      "expected_extension_passed": true,
+      "old_AST_sha256": "6f95c88fedca3eb1dc9ae90e081116d389bed65b9f29a189060df327b4908998",
+      "new_original_AST_sha256": "a9dfac87389eb34e7ed74163204490d9d6a29eaee06879849644a1aecf8601f6",
+      "new_normalized_AST_sha256": "6f95c88fedca3eb1dc9ae90e081116d389bed65b9f29a189060df327b4908998",
+      "passed": true,
+      "interpretation": "failure metadata retention only; no prediction, learning or control mathematics changed"
+    }
+  ],
+  "check_count": 15,
+  "failed_count": 0,
+  "status": "passed",
+  "previously_completed_safe_identity_not_repeated": true,
+  "first_preparation_failure_retained": {
+    "type": "AssertionError",
+    "message": "failure",
+    "origin": "parent_root_reported_first_preparation_failure_AST_metadata_check",
+    "raw_failure_read_or_reexecuted": false,
+    "reason": "first assertion expected identical failure metadata despite intended added equilibrium ledger keys",
+    "correction": "normalize only the two disclosed appended ledger keys, then compare the whole remaining AST"
+  },
+  "execution_boundary": {
+    "production_module_imports": 0,
+    "model_calls": 0,
+    "raw_evidence_reads": 0,
+    "physics_calls": 0,
+    "fit_or_RLS_calls": 0,
+    "synthetic_checks_rerun": 0,
+    "old_mathematics_executions": 0,
+    "production_files_modified": 0
+  }
+}
