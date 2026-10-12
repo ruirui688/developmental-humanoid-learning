@@ -1,0 +1,125 @@
+{
+  "schema": "fr4d_preparation_freeze_manifest_v1",
+  "status": "frozen_source_copy_complete",
+  "eligibility_from_published_FR4B": {
+    "source_commit": "490fcffa0080125e7c2a8b887c99cc2743dcc01f",
+    "published_checkpoint": "3b0f7e0a3869c0b3ef89e9f93dacf0ecf7081cab",
+    "report": "docs/PD_ANCHOR_PAIR_CONTROL_RESULTS.md",
+    "model_contribution_passed": true,
+    "PD_reference_passed": false,
+    "identity_source": "root transcribed published first result; no gate recalculation",
+    "grid_family_closed_after_single_projection": true
+  },
+  "explicit_execute_freeze": true,
+  "automatic_retry": false,
+  "document": "docs/PD_ANCHOR_SELECTION_DIAGNOSTIC_PROTOCOL.md",
+  "source_pins": {
+    "external/fr4_selection_diagnostic_protocol_candidate.md": {
+      "bytes": 11109,
+      "sha256": "8075b168b5037fff11e03047e224e56c4e5b3f63ea19d1bdc6e7bfbcc67c0b1a"
+    },
+    "external/fr4_selection_diagnostic_protocol_candidate.before_saved_field_budget.md": {
+      "bytes": 10115,
+      "sha256": "70cb23d755a9a8cf300d78d797ca401e9763db8273ce0cf926cc37abd658fda3"
+    },
+    "external/fr4_selection_diagnostic_candidate/project_saved_pd_anchor_selection_once.py": {
+      "bytes": 19311,
+      "sha256": "e0cce0111b05c5b5e9514d38f5095b9dff922dfeddec226848426acf5fd44322"
+    },
+    "external/fr4_selection_diagnostic_candidate/run_saved_selection_projection_first_once.py": {
+      "bytes": 3126,
+      "sha256": "c6475566eef013323589c64de249dc714471d111adb0b4deec4da6b8575ecadf"
+    },
+    "external/fr4_selection_diagnostic_candidate/SCHEMA_AND_BUDGET.md": {
+      "bytes": 4710,
+      "sha256": "11d18ea66a1a5fd84fd1c98411aa88b5ab4d89089904049f0fd7a3418b34f7ae"
+    },
+    "external/fr4_selection_diagnostic_candidate/preparation_receipt.json": {
+      "bytes": 2795,
+      "sha256": "3ee4a91534702ff95b3fc319d90e556d3693bebb7ca477478d8619d655d8c12a"
+    },
+    "external/fr4_selection_diagnostic_candidate/first_static_scope_gap_source.py": {
+      "bytes": 18353,
+      "sha256": "b7951b5ccbc2b59155565316147fccfe255c248c0e1c217d402e7c69c8b074f7"
+    },
+    "external/fr4_selection_diagnostic_candidate/first_schema_and_budget.md": {
+      "bytes": 4196,
+      "sha256": "542e1b3e22d44fddb6c3273d2ef39660b0bd0c2590a1ab46ac0a8c3b776aa019"
+    },
+    "external/fr4_selection_diagnostic_candidate/first_preparation_receipt.json": {
+      "bytes": 2059,
+      "sha256": "1b20061f4ed1296911cd020f2ad0c7f1cb0565943c136db6235fdae4ba46d0a7"
+    },
+    "external/freeze_fr4d_preparation_once.py": {
+      "bytes": 9657,
+      "sha256": "d8b573eb72037c17579f37bcfbb1d5790ddeacc1826245ccc6e4a0e8a96aee02"
+    }
+  },
+  "copied_files": {
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/PD_ANCHOR_SELECTION_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 11109,
+      "sha256": "8075b168b5037fff11e03047e224e56c4e5b3f63ea19d1bdc6e7bfbcc67c0b1a"
+    },
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/fr4_selection_diagnostic_protocol_candidate.before_saved_field_budget.md": {
+      "bytes": 10115,
+      "sha256": "70cb23d755a9a8cf300d78d797ca401e9763db8273ce0cf926cc37abd658fda3"
+    },
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/project_saved_pd_anchor_selection_once.py": {
+      "bytes": 19311,
+      "sha256": "e0cce0111b05c5b5e9514d38f5095b9dff922dfeddec226848426acf5fd44322"
+    },
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/run_saved_selection_projection_first_once.py": {
+      "bytes": 3126,
+      "sha256": "c6475566eef013323589c64de249dc714471d111adb0b4deec4da6b8575ecadf"
+    },
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/SCHEMA_AND_BUDGET.md": {
+      "bytes": 4710,
+      "sha256": "11d18ea66a1a5fd84fd1c98411aa88b5ab4d89089904049f0fd7a3418b34f7ae"
+    },
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/preparation_receipt.json": {
+      "bytes": 2795,
+      "sha256": "3ee4a91534702ff95b3fc319d90e556d3693bebb7ca477478d8619d655d8c12a"
+    },
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/first_static_scope_gap_source.py": {
+      "bytes": 18353,
+      "sha256": "b7951b5ccbc2b59155565316147fccfe255c248c0e1c217d402e7c69c8b074f7"
+    },
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/first_schema_and_budget.md": {
+      "bytes": 4196,
+      "sha256": "542e1b3e22d44fddb6c3273d2ef39660b0bd0c2590a1ab46ac0a8c3b776aa019"
+    },
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/first_preparation_receipt.json": {
+      "bytes": 2059,
+      "sha256": "1b20061f4ed1296911cd020f2ad0c7f1cb0565943c136db6235fdae4ba46d0a7"
+    },
+    "results/cpu_validation/2026-10-12_pd_anchor_selection_preparation/artifacts/freeze_fr4d_preparation_once.py": {
+      "bytes": 9657,
+      "sha256": "d8b573eb72037c17579f37bcfbb1d5790ddeacc1826245ccc6e4a0e8a96aee02"
+    },
+    "docs/PD_ANCHOR_SELECTION_DIAGNOSTIC_PROTOCOL.md": {
+      "bytes": 11109,
+      "sha256": "8075b168b5037fff11e03047e224e56c4e5b3f63ea19d1bdc6e7bfbcc67c0b1a"
+    }
+  },
+  "historical_preparation_protocol_identity": {
+    "bytes": 10115,
+    "sha256": "70cb23d755a9a8cf300d78d797ca401e9763db8273ce0cf926cc37abd658fda3",
+    "meaning": "Both historical preparation receipts retain their original protocol declaration; neither was rewritten."
+  },
+  "final_protocol_identity": {
+    "bytes": 11109,
+    "sha256": "8075b168b5037fff11e03047e224e56c4e5b3f63ea19d1bdc6e7bfbcc67c0b1a"
+  },
+  "runtime_tool_location": "external/fr4_selection_diagnostic_candidate/project_saved_pd_anchor_selection_once.py",
+  "source_read_attempts": 10,
+  "source_read_returns": 10,
+  "source_read_bytes": 85431,
+  "copied_file_count": 11,
+  "experiment_payload_metric_model_reads": 0,
+  "physics_model_fit_RLS_calls": 0,
+  "diagnostic_fixture_test_or_audit_executions": 0,
+  "production_or_navigation_writes": 0,
+  "first_failure": null,
+  "wall_seconds_before_manifest": 0.007041199831292033,
+  "cpu_seconds_before_manifest": 0.015625
+}

@@ -1,0 +1,72 @@
+{
+  "status": "statically_repaired_prepared_not_executed",
+  "artifacts": [
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr4_selection_diagnostic_candidate\\project_saved_pd_anchor_selection_once.py",
+      "bytes": 19311,
+      "sha256": "e0cce0111b05c5b5e9514d38f5095b9dff922dfeddec226848426acf5fd44322",
+      "AST_parse_only": true
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr4_selection_diagnostic_candidate\\run_saved_selection_projection_first_once.py",
+      "bytes": 3126,
+      "sha256": "c6475566eef013323589c64de249dc714471d111adb0b4deec4da6b8575ecadf",
+      "unchanged_from_first_preparation": true
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr4_selection_diagnostic_candidate\\SCHEMA_AND_BUDGET.md",
+      "bytes": 4710,
+      "sha256": "11d18ea66a1a5fd84fd1c98411aa88b5ab4d89089904049f0fd7a3418b34f7ae"
+    }
+  ],
+  "schema": "fr4_saved_selection_projection_v1",
+  "protocol_candidate": {
+    "path": "external/fr4_selection_diagnostic_protocol_candidate.md",
+    "bytes": 10115,
+    "sha256": "70cb23d755a9a8cf300d78d797ca401e9763db8273ce0cf926cc37abd658fda3",
+    "identity_source": "bounded_physics_design final message; not read here"
+  },
+  "first_static_preparation_preserved": {
+    "source": "first_static_scope_gap_source.py",
+    "source_identity": {
+      "bytes": 18353,
+      "sha256": "b7951b5ccbc2b59155565316147fccfe255c248c0e1c217d402e7c69c8b074f7"
+    },
+    "receipt": "first_preparation_receipt.json",
+    "receipt_identity": {
+      "bytes": 2059,
+      "sha256": "1b20061f4ed1296911cd020f2ad0c7f1cb0565943c136db6235fdae4ba46d0a7"
+    },
+    "schema": "first_schema_and_budget.md",
+    "schema_identity": {
+      "bytes": 4196,
+      "sha256": "542e1b3e22d44fddb6c3273d2ef39660b0bd0c2590a1ab46ac0a8c3b776aa019"
+    }
+  },
+  "only_static_scope_repairs": [
+    "preserve present anchor PairCandidateRecord.rejection_reason including saved feasible false",
+    "project saved public_pd_request2 field presence/finite value/exact restored-p relation",
+    "separate at-most-1200 rejection-field inspections / saved-public-PD field inspections / saved-public-PD comparisons"
+  ],
+  "fixed_origin_population": {
+    "learned_primary": 600,
+    "cold_descriptive": 600,
+    "cells": 12,
+    "NA_retained": true
+  },
+  "preparation": {
+    "AST_parse_changed_projector_only": true,
+    "projector_imports": 0,
+    "projector_executions": 0,
+    "launcher_executions": 0,
+    "fixtures": 0,
+    "raw_or_results_reads": 0,
+    "saved_parameter_reads": 0,
+    "model_calls": 0,
+    "fit": 0,
+    "RLS": 0,
+    "physics": 0,
+    "production_or_navigation_writes": 0
+  },
+  "eligibility": "Root transcribes original FR4B failed gate facts and freezes before first execution; all original gates pass means no execution."
+}

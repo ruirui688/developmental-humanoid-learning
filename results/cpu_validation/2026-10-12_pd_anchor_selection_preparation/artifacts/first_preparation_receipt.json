@@ -1,0 +1,57 @@
+{
+  "status": "prepared_not_executed",
+  "artifacts": [
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr4_selection_diagnostic_candidate\\project_saved_pd_anchor_selection_once.py",
+      "bytes": 18353,
+      "sha256": "b7951b5ccbc2b59155565316147fccfe255c248c0e1c217d402e7c69c8b074f7",
+      "AST_parse_only": true
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr4_selection_diagnostic_candidate\\run_saved_selection_projection_first_once.py",
+      "bytes": 3126,
+      "sha256": "c6475566eef013323589c64de249dc714471d111adb0b4deec4da6b8575ecadf",
+      "AST_parse_only": true
+    },
+    {
+      "path": "D:\\Codex_ws\\robot_rl\\external\\fr4_selection_diagnostic_candidate\\SCHEMA_AND_BUDGET.md",
+      "bytes": 4196,
+      "sha256": "542e1b3e22d44fddb6c3273d2ef39660b0bd0c2590a1ab46ac0a8c3b776aa019",
+      "AST_parse_only": false
+    }
+  ],
+  "schema": "fr4_saved_selection_projection_v1",
+  "protocol_candidate": {
+    "path": "external/fr4_selection_diagnostic_protocol_candidate.md",
+    "bytes": 10115,
+    "sha256": "70cb23d755a9a8cf300d78d797ca401e9763db8273ce0cf926cc37abd658fda3",
+    "identity_source": "bounded_physics_design final protocol message; not read by this preparation"
+  },
+  "fixed_raw_inputs": [
+    "manifest.json",
+    "run.json",
+    "trace.jsonl.gz"
+  ],
+  "fixed_origin_population": {
+    "learned_primary": 600,
+    "cold_declared_descriptive": 600,
+    "cells": 12,
+    "NA_origins_preserved": true
+  },
+  "projector_source_identity_reads_at_runtime": 1,
+  "launcher_source_identity_reads_at_runtime": 2,
+  "preparation": {
+    "projector_imports": 0,
+    "projector_executions": 0,
+    "launcher_executions": 0,
+    "raw_or_results_reads": 0,
+    "saved_parameter_reads": 0,
+    "model_calls": 0,
+    "fit": 0,
+    "RLS": 0,
+    "physics": 0,
+    "production_or_navigation_writes": 0,
+    "old_checks_executed": 0
+  },
+  "execution_eligibility": "Root transcribes failed original FR4B gate facts and freezes this protocol before any first execution; all original gates pass means no execution."
+}
