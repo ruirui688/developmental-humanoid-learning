@@ -1,0 +1,1001 @@
+{
+  "8101": {
+    "cold": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "7ec643cb805c983ec40a8db060bfd893b0251fbfd76a9bb07258720cb75f856c",
+      "fingerprint_before_prediction": "7ec643cb805c983ec40a8db060bfd893b0251fbfd76a9bb07258720cb75f856c",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "oldlearned": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8549683805068311,
+          -0.029038986098587637,
+          -0.012545802373521776,
+          0.02640627049878906,
+          0.008775858698056832,
+          -0.004772645714921826,
+          0.003984220645766954,
+          -0.024957379259176384,
+          9.584845765748462e-05
+        ],
+        [
+          0.17914433687386527,
+          1.0029285568446356,
+          0.02261391199911123,
+          -0.050628437240856035,
+          -0.010514200699273142,
+          0.009720665435142549,
+          -0.008067981651422048,
+          0.05003584186786613,
+          -0.0001791587450963176
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "6faee41d5356c9efa58dcf081759d1abbc189fb9688f03ab2ab712804ba16a00",
+      "fingerprint_before_prediction": "6faee41d5356c9efa58dcf081759d1abbc189fb9688f03ab2ab712804ba16a00",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "IV1": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8549683805068311,
+          -0.029038986098587637,
+          -0.012545802373521776,
+          0.02640627049878906,
+          0.03402642713227079,
+          -0.060561981077108605,
+          0.0007728701574589327,
+          0.008661789394366567,
+          9.584845765748462e-05
+        ],
+        [
+          0.17914433687386527,
+          1.0029285568446356,
+          0.02261391199911123,
+          -0.050628437240856035,
+          -0.06198242644551944,
+          0.12998307502152165,
+          0.00995347473641963,
+          -0.02465252173927656,
+          -0.0001791587450963176
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "aa6eb53c4dd31be9322c5392575434d884f9178c46e2c9e234695cf2ab22b536",
+      "fingerprint_before_prediction": "aa6eb53c4dd31be9322c5392575434d884f9178c46e2c9e234695cf2ab22b536",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "IV2": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.6946955281206001,
+          -0.13373551608596101,
+          -0.21137346206838795,
+          -0.20170724777796728,
+          0.03402642713227079,
+          -0.060561981077108605,
+          0.0007728701574589327,
+          0.008661789394366567,
+          0.012068124634503944
+        ],
+        [
+          -0.21438374828402018,
+          0.8592791399428981,
+          -0.152984086754143,
+          -0.15887836190862334,
+          -0.06198242644551944,
+          0.12998307502152165,
+          0.00995347473641963,
+          -0.02465252173927656,
+          -0.029058037031382752
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "30142c3f57049866d49d2e4be4fe2358485d8b76aef07e4461e38b3052383afe",
+      "fingerprint_before_prediction": "30142c3f57049866d49d2e4be4fe2358485d8b76aef07e4461e38b3052383afe",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "IV3": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.9069699115304571,
+          -0.1336319681520895,
+          2.598022935990473,
+          3.242798898418202,
+          0.03402642713227079,
+          -0.060561981077108605,
+          0.0007728701574589327,
+          0.008661789394366567,
+          0.0035235567394246757
+        ],
+        [
+          -0.1522957842469601,
+          1.1288632307128084,
+          -5.553949955341957,
+          -7.714313893019236,
+          -0.06198242644551944,
+          0.12998307502152165,
+          0.00995347473641963,
+          -0.02465252173927656,
+          -0.007468593945526523
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "701646db8b36e90aef7ed256a845640fcb22d91e24fda70fff559bf98617a4fa",
+      "fingerprint_before_prediction": "701646db8b36e90aef7ed256a845640fcb22d91e24fda70fff559bf98617a4fa",
+      "initial_IV1_fingerprint": "aa6eb53c4dd31be9322c5392575434d884f9178c46e2c9e234695cf2ab22b536",
+      "state_columns_replaced": [
+        0,
+        1,
+        2,
+        3,
+        8
+      ],
+      "action_columns_frozen": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "8102": {
+    "cold": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "153614dba747bb6d163778a1174de413452ce9ba73f6bdfc4cf0d03ac32af05c",
+      "fingerprint_before_prediction": "153614dba747bb6d163778a1174de413452ce9ba73f6bdfc4cf0d03ac32af05c",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "oldlearned": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8552626950366113,
+          -0.028815260817506766,
+          -0.012541861261815054,
+          0.0263133698132304,
+          0.008753618317169889,
+          -0.004726988722731229,
+          0.003950321101551757,
+          -0.024968502995469374,
+          8.16163680281476e-05
+        ],
+        [
+          0.17894557350152962,
+          1.0026977264015695,
+          0.022627921231046615,
+          -0.05048378749938208,
+          -0.010493523886573075,
+          0.00963764790525536,
+          -0.008016621715718876,
+          0.0500734003434284,
+          -0.00016173041463487405
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "cb8416c5283d9f591064a84112d214ffe9189e3cc8133ee71cb732fcffd96d88",
+      "fingerprint_before_prediction": "cb8416c5283d9f591064a84112d214ffe9189e3cc8133ee71cb732fcffd96d88",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "IV1": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8552626950366113,
+          -0.028815260817506766,
+          -0.012541861261815054,
+          0.0263133698132304,
+          0.03606030749093939,
+          -0.06027376328366993,
+          -0.0017099766195630816,
+          -0.0033860208080467237,
+          8.16163680281476e-05
+        ],
+        [
+          0.17894557350152962,
+          1.0026977264015695,
+          0.022627921231046615,
+          -0.05048378749938208,
+          -0.06568251275603537,
+          0.1298260212237015,
+          0.009382602923464255,
+          -0.019358462812983788,
+          -0.00016173041463487405
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "8d10a31e5643323b324666c9e31d49e62e54dc4eab21d56b5e7b708460a94155",
+      "fingerprint_before_prediction": "8d10a31e5643323b324666c9e31d49e62e54dc4eab21d56b5e7b708460a94155",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "IV2": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.7152661568143074,
+          -0.12247533330126527,
+          -0.18492223089995102,
+          -0.1695030091600661,
+          0.03606030749093939,
+          -0.06027376328366993,
+          -0.0017099766195630816,
+          -0.0033860208080467237,
+          0.01245636426338322
+        ],
+        [
+          -0.22661691168115916,
+          0.853554821013156,
+          -0.22572781363599176,
+          -0.22866518250832543,
+          -0.06568251275603537,
+          0.1298260212237015,
+          0.009382602923464255,
+          -0.019358462812983788,
+          -0.03004660864977552
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "bc66b2ca49908f9a92c6274da9a5b1a49452464ee35fa379045fc3ef3ad2d7a7",
+      "fingerprint_before_prediction": "bc66b2ca49908f9a92c6274da9a5b1a49452464ee35fa379045fc3ef3ad2d7a7",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "IV3": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          1.126473913628519,
+          -0.014006106468273929,
+          3.8494353868003683,
+          4.302696789781624,
+          0.03606030749093939,
+          -0.06027376328366993,
+          -0.0017099766195630816,
+          -0.0033860208080467237,
+          0.0032699287227417754
+        ],
+        [
+          -0.6208834734119874,
+          0.8726446252656546,
+          -8.102118756622424,
+          -9.769250370869907,
+          -0.06568251275603537,
+          0.1298260212237015,
+          0.009382602923464255,
+          -0.019358462812983788,
+          -0.006991155080044817
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "2ce7b9714613d773e7e8161f80a178bd89b3817bb247e8e7841a7f07b6da9ef8",
+      "fingerprint_before_prediction": "2ce7b9714613d773e7e8161f80a178bd89b3817bb247e8e7841a7f07b6da9ef8",
+      "initial_IV1_fingerprint": "8d10a31e5643323b324666c9e31d49e62e54dc4eab21d56b5e7b708460a94155",
+      "state_columns_replaced": [
+        0,
+        1,
+        2,
+        3,
+        8
+      ],
+      "action_columns_frozen": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "8103": {
+    "cold": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "64be1ad9004945c821fc569d91c69e3123bf14b54d8c4f2dde0fc9f9ff011ef0",
+      "fingerprint_before_prediction": "64be1ad9004945c821fc569d91c69e3123bf14b54d8c4f2dde0fc9f9ff011ef0",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "oldlearned": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8558131764330886,
+          -0.02840800727521246,
+          -0.012568279398463455,
+          0.02619465529487453,
+          0.008700764064119688,
+          -0.004654953847354495,
+          0.003880537835331891,
+          -0.024977768138596854,
+          5.8602671031921136e-05
+        ],
+        [
+          0.17862577087389572,
+          1.0023481196792348,
+          0.022709465211931765,
+          -0.05029207062297304,
+          -0.010457534417734095,
+          0.009505904962356065,
+          -0.007900239660369025,
+          0.05011986555870142,
+          -0.00013350898024343523
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "02bfd50041df8ee175c7673c7e4711d6c643aa71202d0eec84f8d46aa5a9633e",
+      "fingerprint_before_prediction": "02bfd50041df8ee175c7673c7e4711d6c643aa71202d0eec84f8d46aa5a9633e",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "IV1": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8558131764330886,
+          -0.02840800727521246,
+          -0.012568279398463455,
+          0.02619465529487453,
+          0.03257218162333091,
+          -0.0658982723586539,
+          -0.0006022993601749643,
+          0.006771017873251852,
+          5.8602671031921136e-05
+        ],
+        [
+          0.17862577087389572,
+          1.0023481196792348,
+          0.022709465211931765,
+          -0.05029207062297304,
+          -0.05825364980619004,
+          0.141325369690227,
+          0.004180304457459168,
+          -0.022398989544225176,
+          -0.00013350898024343523
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "fba3a1273750b0f9cae329b820849ce36d3c9b486d9adb2bd93fcffdf57ee6f9",
+      "fingerprint_before_prediction": "fba3a1273750b0f9cae329b820849ce36d3c9b486d9adb2bd93fcffdf57ee6f9",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "IV2": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.7171105338090311,
+          -0.12300239339533438,
+          -0.24987016677057186,
+          -0.23501040743616763,
+          0.03257218162333091,
+          -0.0658982723586539,
+          -0.0006022993601749643,
+          0.006771017873251852,
+          0.012572896762551296
+        ],
+        [
+          -0.26898180367327446,
+          0.835711928573013,
+          -0.07437335002178459,
+          -0.06407093730265608,
+          -0.05825364980619004,
+          0.141325369690227,
+          0.004180304457459168,
+          -0.022398989544225176,
+          -0.03159722457769421
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "0b86290b70156767f0075504ab8a5b7a47852c71b993c822d47a1d19f5d9c8c6",
+      "fingerprint_before_prediction": "0b86290b70156767f0075504ab8a5b7a47852c71b993c822d47a1d19f5d9c8c6",
+      "initial_IV1_fingerprint": null,
+      "state_columns_replaced": null,
+      "action_columns_frozen": null
+    },
+    "IV3": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.9591816225556027,
+          -0.17100557014613058,
+          8.641733808562764,
+          8.240441748580075,
+          0.03257218162333091,
+          -0.0658982723586539,
+          -0.0006022993601749643,
+          0.006771017873251852,
+          0.0038336652221856392
+        ],
+        [
+          -0.2639244228051754,
+          1.2093624523806847,
+          -18.30435308908698,
+          -18.280468513806564,
+          -0.05825364980619004,
+          0.141325369690227,
+          0.004180304457459168,
+          -0.022398989544225176,
+          -0.008174497603340923
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "0719c7e5e3eb7bf94fc92077b8ecfe054a050823ac7b7c561c1268b36c7f434e",
+      "fingerprint_before_prediction": "0719c7e5e3eb7bf94fc92077b8ecfe054a050823ac7b7c561c1268b36c7f434e",
+      "initial_IV1_fingerprint": "fba3a1273750b0f9cae329b820849ce36d3c9b486d9adb2bd93fcffdf57ee6f9",
+      "state_columns_replaced": [
+        0,
+        1,
+        2,
+        3,
+        8
+      ],
+      "action_columns_frozen": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  }
+}

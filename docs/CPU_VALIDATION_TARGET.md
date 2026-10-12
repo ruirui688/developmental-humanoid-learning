@@ -19,15 +19,11 @@
 
 [单肩局部学习](CPU_LOCAL_BODY_RESULTS.md)已证明指定轨迹预测改善 85.6%–86.7%、同 MPC 跟踪改善 28.9%；[单肩新最终](LOCAL_FROZEN_VALIDATION_RESULTS.md)模型贡献 29.505%，相对调优 PD 仅 2.674%，未过 5% 门。它们不能替代双关节验收。
 
-**目前仍卡在 C4。** [EF1B 完整控制](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)模型贡献 9.0203%，未达到 20%。[PAR1 响应诊断](PAIRED_ACTION_RESPONSE_DIAGNOSTIC_RESULTS.md)显示原模型动作响应方向一致而幅度偏小；[IV1 原生随机动作辨识](INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md)完整完成但多步预测退化，原门失败，不能进入控制。状态项与动作项的协调失配是待检验假设，尚不能认定唯一原因。
+**目前仍卡在 C4。** [EF1B完整控制](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)模型贡献9.0203%，未达到20%。[IV2保存诊断](CONSISTENT_MODEL_RESIDUAL_RESULTS.md)发现训练一致性未迁移至fresh一步；[IV3首次结果](NEAR_REFERENCE_IDENTIFICATION_RESULTS.md)改变辨识姿态仍失败：9,000新控制/子步、三rank5拟合、1,443已见预测完整，长时模型误差巨大，实际仿真轨迹完整。原门失败，不能进入控制。28项保存检查通过不代表科学成功。
 
-[IV2 首次结果](CONSISTENT_ACTION_STATE_RESULTS.md)已从冻结提交 d8491b2 首次完整执行：三个 rank5 拟合、30 个状态系数，6,000 新预测控制步和 5,772 条预测记录，零停止/异常。**原预测门失败，一步和多步均退化，不能进入控制。** 29 项[保存检查](../results/cpu_validation/2026-10-12_consistent_action_state/delivery_checks.json)通过只证明记录一致。12,000 reused offline scalar 标签用途另计，零新训练物理、零 RLS；开发 seed 不能称最终留出。
+**立即继续局部动作增量响应＋因果反馈控制的唯一方法设计。** 每2ms重新感知，用上一合法端点与已知请求估计短时漂移，保留公共PD、原保护与全部费用；先冻结具体公式、预测资格、失效处理及预算，再首次执行。关闭单纯辨识姿态修复和无约束psi5长时递推，不新增一轮跨历史大诊断。旧门与负结果保持；新方法也必须证明同结构学习贡献、强经典对照及实际努力，而非只让反馈稳定。
 
-**立即继续唯一 IV3 近参考姿态辨识。** 保持模型结构与原门，只改变训练的公共 PD 目标；新训练不消费已见预测标签。先封存诊断，再冻结新候选并首次执行。
-
-[IV2D 首次诊断](CONSISTENT_MODEL_RESIDUAL_RESULTS.md)从 clean 14088b6 完整完成，0 新物理/fit/model.predict/RLS；12 项保存轻核 passed，首交付字段命名空间 KeyError 与修正完整归档。训练内误差下降，但 fresh H1 三 seed 均有肩正、肘负速度偏差；原生坐标出箱多为不足 .00030rad 的微小角度越界，不能断言唯一原因。下一唯一 [IV3近qref辨识](NEAR_REFERENCE_IDENTIFICATION_PROTOCOL.md)：固定 IV1 action8 与 psi5/一次 OLS，仅将训练 PD 目标改为恒定 qref；最多 9,000 新训练控制/子步、12,000 新 scalar 标签用途。新候选只评估既有 IV2 已见人口，旧分数转录，不扫描或改门；协议/代码/必要新检查冻结提交推送后首次执行。C4–C7 未验收，目标 active。 IV3 首合成夹具 TypeError 已保留，未完成的两项检查独立 passed；原四次命令只记 executed，不追称 saved passed。[准备记录](../results/cpu_validation/2026-10-12_near_reference_preparation/manifest.json)已封存，runner 未修改；冻结推送后首次执行。
-
-累计 **535,345 控制 /2,815,018 子步**。历史 **125,652 scalar RLS 更新**不变；IV1 的 **12,000 新 IV scalar 标签用途、3 fit、24 动作系数**另计。C5 仅事件工程通过，科学适应与 C6/C7 尚未验收。
+累计 **544,345 控制 /2,824,018 子步**；历史 **125,652 scalar RLS更新**不变，IV3的12,000新scalar标签/3solve/30系数另计。C5只有事件工程通过，科学适应与C6/C7尚未验收。首准备夹具TypeError、未完成部分2项passed及原4次命令未封存断言完整归档于[准备记录](../results/cpu_validation/2026-10-12_near_reference_preparation/manifest.json)。
 
 ## 执行约束
 

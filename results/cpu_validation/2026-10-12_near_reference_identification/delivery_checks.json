@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "first_frozen_source_and_status",
+      "passed": true
+    },
+    {
+      "name": "saved_metrics_match_run",
+      "passed": true
+    },
+    {
+      "name": "three_declared_trials_and_fits",
+      "passed": true
+    },
+    {
+      "name": "full_planned_1443_unique_prediction_slots",
+      "passed": true
+    },
+    {
+      "name": "actual_physics_budget_or_complete_counts",
+      "passed": true
+    },
+    {
+      "name": "new_labels_and_state_fits_or_partial",
+      "passed": true
+    },
+    {
+      "name": "new_prediction_budget_or_complete",
+      "passed": true
+    },
+    {
+      "name": "complete_trial_fit_and_prediction_if_completed",
+      "passed": true
+    },
+    {
+      "name": "all_three_full_rank5_if_completed",
+      "passed": true
+    },
+    {
+      "name": "old_models_frozen_and_new_action8_identity",
+      "passed": true
+    },
+    {
+      "name": "no_evaluation_fit_reuse_RLS_or_old_math",
+      "passed": true
+    },
+    {
+      "name": "seen_development_only",
+      "passed": true
+    },
+    {
+      "name": "science_and_controller_flags_remain_false",
+      "passed": true
+    },
+    {
+      "name": "source_zip_exact_closure",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:scripts/run_near_reference_identification.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:docs/NEAR_REFERENCE_IDENTIFICATION_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:scripts/refit_instrumental_state.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:src/developmental_physics/consistent_action_state_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:docs/CONSISTENT_ACTION_STATE_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:scripts/develop_instrumental_action_response.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:src/developmental_physics/instrumental_action_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:src/developmental_physics/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:src/developmental_physics/free_root_fast_feedback_environment.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:src/developmental_physics/environment.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:src/developmental_physics/assets/ground_body.xml",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:src/developmental_physics/guard_coupled_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:src/developmental_physics/local_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_zip_identity:src/developmental_physics/full_request_pair_development.py",
+      "passed": true
+    }
+  ],
+  "payload": {
+    "raw/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/metrics.json": {
+      "bytes": 12244,
+      "sha256": "28bb74d8d6488c7659103564ab16a24338e99784f52a84aa31c021df1f20ba49"
+    },
+    "raw/models.json": {
+      "bytes": 25865,
+      "sha256": "5ff8f01698c0ddc6b3cd92fc61002f7a58f4e214565d0b2d5bf682bc1fe03f52"
+    },
+    "raw/moments.json": {
+      "bytes": 1463831,
+      "sha256": "dc6523a36924617c3f3955c2ea7e43da7314df0aa8faa720ea99f64b987467f7"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 2934658,
+      "sha256": "d4ca7ac0cf94a3dafdddd4975497ac3796c4e67a5719e3bbc642f706ece271b4"
+    },
+    "raw/run.json": {
+      "bytes": 342682,
+      "sha256": "599308e788d9c293d2b9ac53b5d17284a0547b1c8d261840fa02a3b9aaadcc6d"
+    },
+    "raw/source.zip": {
+      "bytes": 77408,
+      "sha256": "8f3170abefbdb678a724984bc14b6cbad57c669a56b2c0dd9a10e3d3526e47b9"
+    },
+    "raw/source_trace.jsonl.gz": {
+      "bytes": 9570465,
+      "sha256": "6d4b62b70edd19e9f42f6f040215f531ca14c9fe0ee6e8381ee6804c71047d35"
+    }
+  },
+  "run_status_transcribed": "completed",
+  "iv3_prediction_gate_transcribed": false,
+  "cumulative_controls": 544345,
+  "cumulative_substeps": 2824018,
+  "historical_RLS_scalar_updates": 125652,
+  "continuous_goal": "active",
+  "new_math_calls": 0,
+  "fit_calls": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "trace_decode_calls": 0,
+  "old_scientific_gate_recomputed": false,
+  "wall_seconds_before_write": 0.1974283999297768,
+  "unmeasured_IO": "unknown_not_zero"
+}
