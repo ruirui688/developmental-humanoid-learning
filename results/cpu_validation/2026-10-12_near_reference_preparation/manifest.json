@@ -1,0 +1,59 @@
+{
+  "preparation_status": "ready_after_fixture_error_and_unreached_checks",
+  "first_status": "failed",
+  "first_error": "tuple_zero_velocity_in_synthetic_fixture_not_native_numpy_production_path",
+  "first_four_command_calls": "executed_no_saved_assertion_result_not_relabelled_passed",
+  "remainder_checks": "two_passed_only_unreached_zero_qref_numpy_and_template_paths",
+  "production_runner_modified": false,
+  "production_runner": {
+    "bytes": 35482,
+    "sha256": "203d799e40516506dc7239ce2be2024d3a54ee315ee758870229d9884e640cf0"
+  },
+  "protocol": {
+    "bytes": 7211,
+    "sha256": "d1bc8aa379a2e5b06694c851432d89b5b1a72bba6ebc217c2885cf53ceee0b08"
+  },
+  "static_review": "full_runner_protocol_review_no_blocking_deviation; production_native_qv_numpy; first_four_clipped_command_formula_reviewed_without_repeat",
+  "total_new_synthetic_command_calls": 5,
+  "total_new_synthetic_template_calls": 3,
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "model_predict_calls": 0,
+  "RLS_updates": 0,
+  "old_raw_reads": 0,
+  "unmeasured_IO": "unknown_not_zero",
+  "payload": {
+    "first/checks.json": {
+      "bytes": 1894,
+      "sha256": "19bdd0a3714bdcc6195d56032a8f39e35483397e311456409b209da7eafe6ede"
+    },
+    "first/first_stderr.log": {
+      "bytes": 575,
+      "sha256": "0ea1a680e7298b772546028b44c27b1def5b749606fd9bd64264ba635b25e4a6"
+    },
+    "first/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "iv3_remainder_preparation_once.py": {
+      "bytes": 3870,
+      "sha256": "1a4c718e1158f5a95ab40e00161c69cd974f1a852353dea7aae24753c07d65e3"
+    },
+    "new_near_reference_checks_once.py": {
+      "bytes": 6113,
+      "sha256": "e7468048f05f7b56cac9ba6ddf31b25258972bddce1531a1d8bb7fac6b8fc36e"
+    },
+    "remainder/checks.json": {
+      "bytes": 2087,
+      "sha256": "a4ec7ac8c949abe37ad609c9c158d459d09abbe2edff70c6af4d4c963ea9bfad"
+    },
+    "remainder/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "remainder/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

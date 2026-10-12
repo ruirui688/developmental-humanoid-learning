@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "first_failure": null,
+  "checks": [
+    {
+      "name": "zero_velocity_numpy_fixture_at_fixed_qref",
+      "passed": true,
+      "command": {
+        "current_target_q2": [
+          0.13,
+          -0.07
+        ],
+        "known_base2": [
+          0.0,
+          0.0
+        ],
+        "dither_bits2": [
+          1,
+          0
+        ],
+        "known_dither2": [
+          0.125,
+          -0.125
+        ],
+        "request2": [
+          0.125,
+          -0.125
+        ]
+      }
+    },
+    {
+      "name": "cold_only_complete_saved_template_selection",
+      "passed": true,
+      "template": {
+        "seed": 8101,
+        "horizon": 10,
+        "origin_active_index": 0,
+        "q2": [
+          0.13,
+          -0.07
+        ],
+        "v2": [
+          0.1,
+          -0.2
+        ],
+        "known_requests2": [
+          [
+            0.125,
+            -0.125
+          ],
+          [
+            0.125,
+            -0.125
+          ],
+          [
+            0.125,
+            -0.125
+          ],
+          [
+            0.125,
+            -0.125
+          ],
+          [
+            0.125,
+            -0.125
+          ],
+          [
+            0.125,
+            -0.125
+          ],
+          [
+            0.125,
+            -0.125
+          ],
+          [
+            0.125,
+            -0.125
+          ],
+          [
+            0.125,
+            -0.125
+          ],
+          [
+            0.125,
+            -0.125
+          ]
+        ],
+        "actual_endpoint_q2": [
+          0.14,
+          -0.08
+        ],
+        "actual_endpoint_v2": [
+          0.2,
+          -0.3
+        ],
+        "cold_fingerprint": "synthetic_cold"
+      }
+    }
+  ],
+  "runner": {
+    "bytes": 35482,
+    "sha256": "203d799e40516506dc7239ce2be2024d3a54ee315ee758870229d9884e640cf0"
+  },
+  "new_command_calls": 1,
+  "new_template_calls": 3,
+  "previous_four_command_calls_reexecuted": 0,
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "model_predict_calls": 0,
+  "saved_raw_reads": 0,
+  "RLS_updates": 0,
+  "unmeasured_import_IO": "unknown_not_zero"
+}

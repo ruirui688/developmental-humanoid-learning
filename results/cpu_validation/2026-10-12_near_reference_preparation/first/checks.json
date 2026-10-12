@@ -1,0 +1,38 @@
+{
+  "status": "failed",
+  "first_failure": {
+    "type": "TypeError",
+    "message": "can't multiply sequence by non-int of type 'float'",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex_ws\\robot_rl\\external\\new_near_reference_checks_once.py\", line 59, in main\n    native_command = module.near_reference_request(qref, (0., 0.), qref, (1, 0))\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\run_near_reference_identification.py\", line 59, in near_reference_request\n    base = pd(q, v, qref, .375)\n  File \"D:\\Codex_ws\\robot_rl\\scripts\\develop_instrumental_action_response.py\", line 98, in pd\n    raw = finite(\"raw_public_PD\", 64.*(target-q)-4.*v, (2,))\nTypeError: can't multiply sequence by non-int of type 'float'\n"
+  },
+  "checks": [],
+  "source_identities": {
+    "D:\\Codex_ws\\robot_rl\\scripts\\run_near_reference_identification.py": {
+      "bytes": 35482,
+      "sha256": "203d799e40516506dc7239ce2be2024d3a54ee315ee758870229d9884e640cf0"
+    },
+    "D:\\Codex_ws\\robot_rl\\scripts\\refit_instrumental_state.py": {
+      "bytes": 36224,
+      "sha256": "789c56c469b344de8b00003d47356212fd717440feda1817de15e07abcec1f12"
+    },
+    "D:\\Codex_ws\\robot_rl\\scripts\\develop_instrumental_action_response.py": {
+      "bytes": 37971,
+      "sha256": "a7cd0e7ea7986d29b4fa56ddccef56b894f08f7a7adcbbe719527e7157086e09"
+    },
+    "D:\\Codex_ws\\robot_rl\\external\\new_near_reference_checks_once.py": {
+      "bytes": 6113,
+      "sha256": "e7468048f05f7b56cac9ba6ddf31b25258972bddce1531a1d8bb7fac6b8fc36e"
+    }
+  },
+  "synthetic_only_cost": {
+    "source_file_reads": 4,
+    "source_bytes_read": 115790,
+    "new_synthetic_command_calls": 4
+  },
+  "saved_raw_reads": 0,
+  "fit_attempts": 0,
+  "model_predict_calls": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0,
+  "unmeasured_pure_import_IO": "unknown_not_zero"
+}

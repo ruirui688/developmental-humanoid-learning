@@ -25,7 +25,7 @@
 
 **立即继续唯一 IV3 近参考姿态辨识。** 保持模型结构与原门，只改变训练的公共 PD 目标；新训练不消费已见预测标签。先封存诊断，再冻结新候选并首次执行。
 
-[IV2D 首次诊断](CONSISTENT_MODEL_RESIDUAL_RESULTS.md)从 clean 14088b6 完整完成，0 新物理/fit/model.predict/RLS；12 项保存轻核 passed，首交付字段命名空间 KeyError 与修正完整归档。训练内误差下降，但 fresh H1 三 seed 均有肩正、肘负速度偏差；原生坐标出箱多为不足 .00030rad 的微小角度越界，不能断言唯一原因。下一唯一 IV3：固定 IV1 action8 与 psi5/一次 OLS，仅将训练 PD 目标改为恒定 qref；最多 9,000 新训练控制/子步、12,000 新 scalar 标签用途。新候选只评估既有 IV2 已见人口，旧分数转录，不扫描或改门；协议/代码/必要新检查冻结提交推送后首次执行。C4–C7 未验收，目标 active。
+[IV2D 首次诊断](CONSISTENT_MODEL_RESIDUAL_RESULTS.md)从 clean 14088b6 完整完成，0 新物理/fit/model.predict/RLS；12 项保存轻核 passed，首交付字段命名空间 KeyError 与修正完整归档。训练内误差下降，但 fresh H1 三 seed 均有肩正、肘负速度偏差；原生坐标出箱多为不足 .00030rad 的微小角度越界，不能断言唯一原因。下一唯一 [IV3近qref辨识](NEAR_REFERENCE_IDENTIFICATION_PROTOCOL.md)：固定 IV1 action8 与 psi5/一次 OLS，仅将训练 PD 目标改为恒定 qref；最多 9,000 新训练控制/子步、12,000 新 scalar 标签用途。新候选只评估既有 IV2 已见人口，旧分数转录，不扫描或改门；协议/代码/必要新检查冻结提交推送后首次执行。C4–C7 未验收，目标 active。 IV3 首合成夹具 TypeError 已保留，未完成的两项检查独立 passed；原四次命令只记 executed，不追称 saved passed。[准备记录](../results/cpu_validation/2026-10-12_near_reference_preparation/manifest.json)已封存，runner 未修改；冻结推送后首次执行。
 
 累计 **535,345 控制 /2,815,018 子步**。历史 **125,652 scalar RLS 更新**不变；IV1 的 **12,000 新 IV scalar 标签用途、3 fit、24 动作系数**另计。C5 仅事件工程通过，科学适应与 C6/C7 尚未验收。
 

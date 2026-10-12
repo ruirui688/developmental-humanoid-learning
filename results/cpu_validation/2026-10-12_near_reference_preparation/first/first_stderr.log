@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Codex_ws\robot_rl\external\new_near_reference_checks_once.py", line 59, in main
+    native_command = module.near_reference_request(qref, (0., 0.), qref, (1, 0))
+  File "D:\Codex_ws\robot_rl\scripts\run_near_reference_identification.py", line 59, in near_reference_request
+    base = pd(q, v, qref, .375)
+  File "D:\Codex_ws\robot_rl\scripts\develop_instrumental_action_response.py", line 98, in pd
+    raw = finite("raw_public_PD", 64.*(target-q)-4.*v, (2,))
+TypeError: can't multiply sequence by non-int of type 'float'
