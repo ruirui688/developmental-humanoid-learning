@@ -1,0 +1,198 @@
+{
+  "experiment_id": "IV2D",
+  "status": "completed",
+  "first_failure": null,
+  "source": {
+    "commit": "14088b6a877af05e7ff061ebc0ac011f44a796e8",
+    "clean_committed_bytes_verified": true,
+    "files": {
+      "scripts/diagnose_consistent_model_residual.py": {
+        "bytes": 24060,
+        "sha256": "95ae508d5aa6e8c432e065c718fe8616f1d3b8eee717834419b2445c0b5af736"
+      },
+      "docs/CONSISTENT_MODEL_RESIDUAL_PROTOCOL.md": {
+        "bytes": 7809,
+        "sha256": "cc950a5383ca22f40c19b345cd24e034f66de3f21c6d4011df1ba8a599b31f3e"
+      }
+    }
+  },
+  "input_source": {
+    "base": "results/cpu_validation/2026-10-12_consistent_action_state/raw",
+    "IV2_source_commit": "d8491b2e0f8b3bae649b8bf9a297bebba7f76270",
+    "required_pins": {
+      "run.json": {
+        "bytes": 1145452,
+        "sha256": "a6fd68bb909ac8d8607986aeb55918d76dce18b51f8a0bbcd2d93b8caef2a0ec"
+      },
+      "models.json": {
+        "bytes": 21758,
+        "sha256": "96e94bc63311262878114354e1fb4f084564e5116cf14435ee47936415176dcd"
+      },
+      "moments.json": {
+        "bytes": 1425018,
+        "sha256": "a199bb517cafc059bfcf6af23b9dba258f4d4bcf31787c363ea255ebced7c2ea"
+      },
+      "predictions.jsonl.gz": {
+        "bytes": 10936879,
+        "sha256": "de32524abd8f5b8a7f45d6dbc92158143c67b5fe05893656401c38dddfd58685"
+      }
+    },
+    "actual_identities": {
+      "run.json": {
+        "bytes": 1145452,
+        "sha256": "a6fd68bb909ac8d8607986aeb55918d76dce18b51f8a0bbcd2d93b8caef2a0ec"
+      },
+      "models.json": {
+        "bytes": 21758,
+        "sha256": "96e94bc63311262878114354e1fb4f084564e5116cf14435ee47936415176dcd"
+      },
+      "moments.json": {
+        "bytes": 1425018,
+        "sha256": "a199bb517cafc059bfcf6af23b9dba258f4d4bcf31787c363ea255ebced7c2ea"
+      },
+      "predictions.jsonl.gz": {
+        "bytes": 10936879,
+        "sha256": "de32524abd8f5b8a7f45d6dbc92158143c67b5fe05893656401c38dddfd58685"
+      }
+    }
+  },
+  "planned_upper_bounds": {
+    "training_pairs_per_seed": 2000,
+    "state_matmul_calls": 6,
+    "training_state_velocity_scalar_outputs": 24000,
+    "reused_training_Y_scalar_uses": 24000,
+    "saved_prediction_records": 5772,
+    "saved_endpoint_error_scalar_uses": 23088,
+    "native_H1_unique_origin_points": 300,
+    "native_H1_box_scalar_uses": 1200,
+    "recursive_conditional_input_points": 249360,
+    "recursive_box_scalar_uses": 997440,
+    "new_physics": 0,
+    "fit": 0,
+    "model_predict": 0,
+    "RLS": 0,
+    "old_gate_recomputations": 0
+  },
+  "cost": {
+    "source_git_attempts": 4,
+    "source_git_returns": 4,
+    "source_git_bytes": 31910,
+    "source_file_reads": 2,
+    "source_bytes_read": 31869,
+    "source_archive_bytes_written": 11906,
+    "IV2_input_file_read_attempts": 4,
+    "IV2_input_file_read_returns": 4,
+    "IV2_input_bytes_read": 13529107,
+    "IV2_input_hash_attempts": 4,
+    "IV2_input_hash_returns": 4,
+    "IV2_input_bytes_hashed": 13529107,
+    "IV2_JSON_parse_attempts": 5775,
+    "IV2_JSON_parse_returns": 5775,
+    "saved_model_identity_checks": 12,
+    "fixed_action8_identity_checks": 3,
+    "training_Psi_scalar_reads": 30000,
+    "training_Y_scalar_reads": 12000,
+    "training_box_bound_scalar_outputs": 24,
+    "state_matmul_attempts": 6,
+    "reused_training_Y_scalar_uses": 24000,
+    "state_matmul_returns": 6,
+    "training_state_velocity_scalar_outputs": 24000,
+    "training_state_coefficient_scalar_uses": 120000,
+    "training_residual_scalar_outputs": 24000,
+    "error_summary_attempts": 126,
+    "error_summary_returns": 126,
+    "error_summary_axis_statistic_outputs": 1020,
+    "IV2_gzip_decoded_lines": 5772,
+    "IV2_gzip_decoded_bytes": 39015029,
+    "saved_prediction_fingerprint_checks": 5772,
+    "saved_prediction_record_returns": 5772,
+    "saved_endpoint_error_scalar_uses": 23088,
+    "saved_prediction_path_qv_scalar_reads": 997440,
+    "recursive_qrel_scalar_subtractions": 498720,
+    "native_H1_cross_model_identity_scalar_uses": 4800,
+    "recursive_box_attempts": 60,
+    "recursive_box_returns": 60,
+    "recursive_input_points": 249360,
+    "recursive_box_scalar_uses": 997440,
+    "original_RMSE_scalar_transcriptions": 240,
+    "native_H1_box_attempts": 3,
+    "native_H1_box_returns": 3,
+    "native_H1_input_points": 300,
+    "native_H1_box_scalar_uses": 1200,
+    "wall_seconds": 1.488785000052303,
+    "cpu_seconds": 1.296875
+  },
+  "analysis_file": "analysis.json",
+  "original_IV2_prediction_gate_transcribed": false,
+  "model_fingerprints_transcribed": {
+    "8101": {
+      "cold": "7ec643cb805c983ec40a8db060bfd893b0251fbfd76a9bb07258720cb75f856c",
+      "oldlearned": "6faee41d5356c9efa58dcf081759d1abbc189fb9688f03ab2ab712804ba16a00",
+      "IV1": "aa6eb53c4dd31be9322c5392575434d884f9178c46e2c9e234695cf2ab22b536",
+      "newmatched": "30142c3f57049866d49d2e4be4fe2358485d8b76aef07e4461e38b3052383afe"
+    },
+    "8102": {
+      "cold": "153614dba747bb6d163778a1174de413452ce9ba73f6bdfc4cf0d03ac32af05c",
+      "oldlearned": "cb8416c5283d9f591064a84112d214ffe9189e3cc8133ee71cb732fcffd96d88",
+      "IV1": "8d10a31e5643323b324666c9e31d49e62e54dc4eab21d56b5e7b708460a94155",
+      "newmatched": "bc66b2ca49908f9a92c6274da9a5b1a49452464ee35fa379045fc3ef3ad2d7a7"
+    },
+    "8103": {
+      "cold": "64be1ad9004945c821fc569d91c69e3123bf14b54d8c4f2dde0fc9f9ff011ef0",
+      "oldlearned": "02bfd50041df8ee175c7673c7e4711d6c643aa71202d0eec84f8d46aa5a9633e",
+      "IV1": "fba3a1273750b0f9cae329b820849ce36d3c9b486d9adb2bd93fcffdf57ee6f9",
+      "newmatched": "0b86290b70156767f0075504ab8a5b7a47852c71b993c822d47a1d19f5d9c8c6"
+    }
+  },
+  "config": {
+    "seeds": [
+      8101,
+      8102,
+      8103
+    ],
+    "models": [
+      "cold",
+      "oldlearned",
+      "IV1",
+      "newmatched"
+    ],
+    "H": [
+      1,
+      10,
+      20,
+      50,
+      150
+    ],
+    "stride": 10,
+    "training_pairs_per_seed": 2000,
+    "population_std_ddof": 0,
+    "coordinate_box_boundary": "inside"
+  },
+  "complete_population": true,
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 2, GenuineIntel",
+    "logical_cpu_count": 8,
+    "GPU_used": false
+  },
+  "new_physics_controls": 0,
+  "new_physics_substeps": 0,
+  "fit_attempts": 0,
+  "model_predict_calls": 0,
+  "RLS_updates": 0,
+  "source_trace_reads": 0,
+  "old_gate_recomputations": 0,
+  "fresh_RMSE_recomputations": 0,
+  "internal_numpy_matmul_and_reduction_work": "unmeasured_unknown_not_zero",
+  "unmeasured_import_IO": "unknown_not_zero",
+  "timing_excludes": "final_JSON_encoding_and_payload_writes",
+  "completed_utc": "2026-10-12T03:49:12.881252+00:00",
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c4_contact_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "control_candidate_opened": false
+}

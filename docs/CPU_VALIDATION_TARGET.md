@@ -23,9 +23,9 @@
 
 [IV2 首次结果](CONSISTENT_ACTION_STATE_RESULTS.md)已从冻结提交 d8491b2 首次完整执行：三个 rank5 拟合、30 个状态系数，6,000 新预测控制步和 5,772 条预测记录，零停止/异常。**原预测门失败，一步和多步均退化，不能进入控制。** 29 项[保存检查](../results/cpu_validation/2026-10-12_consistent_action_state/delivery_checks.json)通过只证明记录一致。12,000 reused offline scalar 标签用途另计，零新训练物理、零 RLS；开发 seed 不能称最终留出。
 
-**立即继续 [IV2D 保存残差与覆盖诊断](CONSISTENT_MODEL_RESIDUAL_PROTOCOL.md)**：比较训练内拟合误差、新轨迹的一步误差和递推变化，只做一次冻结的离线代数，零新物理/拟合/model.predict。根据完整结果决定一个有依据的下一修订，不扫描参数、不拟合已见预测标签、不重算旧门。
+**立即继续唯一 IV3 近参考姿态辨识。** 保持模型结构与原门，只改变训练的公共 PD 目标；新训练不消费已见预测标签。先封存诊断，再冻结新候选并首次执行。
 
-IV2D 一项必要新合成检查首次 passed，[准备记录](../results/cpu_validation/2026-10-12_consistent_model_residual_preparation/manifest.json)已封存。正式诊断尚未执行，冻结提交推送后立即首次执行。
+[IV2D 首次诊断](CONSISTENT_MODEL_RESIDUAL_RESULTS.md)从 clean 14088b6 完整完成，0 新物理/fit/model.predict/RLS；12 项保存轻核 passed，首交付字段命名空间 KeyError 与修正完整归档。训练内误差下降，但 fresh H1 三 seed 均有肩正、肘负速度偏差；原生坐标出箱多为不足 .00030rad 的微小角度越界，不能断言唯一原因。下一唯一 IV3：固定 IV1 action8 与 psi5/一次 OLS，仅将训练 PD 目标改为恒定 qref；最多 9,000 新训练控制/子步、12,000 新 scalar 标签用途。新候选只评估既有 IV2 已见人口，旧分数转录，不扫描或改门；协议/代码/必要新检查冻结提交推送后首次执行。C4–C7 未验收，目标 active。
 
 累计 **535,345 控制 /2,815,018 子步**。历史 **125,652 scalar RLS 更新**不变；IV1 的 **12,000 新 IV scalar 标签用途、3 fit、24 动作系数**另计。C5 仅事件工程通过，科学适应与 C6/C7 尚未验收。
 

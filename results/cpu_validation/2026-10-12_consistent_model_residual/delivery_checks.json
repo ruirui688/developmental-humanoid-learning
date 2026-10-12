@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "first_delivery_failure_archive": "checks/first_delivery_failure.json",
+  "finalization_reason": "correct_saved_field_namespace_only_after_original_delivery_KeyError",
+  "checks": [
+    {
+      "name": "first_complete_frozen_source",
+      "passed": true
+    },
+    {
+      "name": "six_complete_training_slots",
+      "passed": true
+    },
+    {
+      "name": "sixty_complete_saved_groups",
+      "passed": true
+    },
+    {
+      "name": "three_complete_unique_native_H1",
+      "passed": true
+    },
+    {
+      "name": "six_new_matmul_and_fixed_label_uses",
+      "passed": true
+    },
+    {
+      "name": "full_saved_record_and_input_counts",
+      "passed": true
+    },
+    {
+      "name": "zero_new_physics_fit_predict_RLS_or_old_gate",
+      "passed": true
+    },
+    {
+      "name": "science_flags_remain_false",
+      "passed": true
+    },
+    {
+      "name": "original_IV2_gate_transcribed_false",
+      "passed": true
+    },
+    {
+      "name": "source_zip_exact_closure",
+      "passed": true
+    },
+    {
+      "name": "source_scripts/diagnose_consistent_model_residual.py",
+      "passed": true
+    },
+    {
+      "name": "source_docs/CONSISTENT_MODEL_RESIDUAL_PROTOCOL.md",
+      "passed": true
+    }
+  ],
+  "payload": {
+    "raw/run.json": {
+      "bytes": 7174,
+      "sha256": "3f68f9644e163695f032bdf1fad28abbb60621b0eeba64370e230c0017599d33"
+    },
+    "raw/analysis.json": {
+      "bytes": 203949,
+      "sha256": "2a7adf8a907b60c6ff67a3bc21aa3f04a90140a01a4c873a74d02feba9905d5a"
+    },
+    "raw/source.zip": {
+      "bytes": 11906,
+      "sha256": "2ac02df73c337a13c297a01db25a37dd7633fc9af1f2285a6abbf4d7528d153b"
+    },
+    "raw/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "new_math_calls": 0,
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "model_calls": 0,
+  "trace_decode_calls": 0,
+  "science_gate_reexecuted": false,
+  "continuous_goal": "active",
+  "cumulative_controls": 535345,
+  "cumulative_substeps": 2815018,
+  "historical_RLS_scalar_updates": 125652,
+  "wall_seconds_before_report": 0.013114099856466055,
+  "cpu_seconds_before_report": 0.0,
+  "unmeasured_filesystem_IO": "unknown_not_zero"
+}

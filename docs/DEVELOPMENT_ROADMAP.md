@@ -6,9 +6,9 @@
 
 当前最早未验收的是 C4。[IV1 首次结果](INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md)完整执行六条轨迹、15,000 新控制/子步，三次 rank4 fit；只替换动作项后原独立预测门失败，不进入控制。27 项保存检查通过，只证明身份与人口一致。刚完成 [IV2 首次结果](CONSISTENT_ACTION_STATE_RESULTS.md)：冻结新动作项，用全部已付费辨识转移拟合十个状态系数，再做新时相的独立预测；不读取 IV1 预测标签作拟合，不补跑旧实验。
 
-IV2 从 clean d8491b2e0f8b3bae649b8bf9a297bebba7f76270 首次完整完成：3 次 rank5 solve、30 个状态系数、12,000 reused offline scalar 标签用途，0 新训练物理/0 RLS；6,000 新预测控制/子步、5,772 记录全部完整，0 停止/异常。原预测门 false，H1及多步均退化，不进入控制。29 项[轻量保存检查](../results/cpu_validation/2026-10-12_consistent_action_state/delivery_checks.json)passed 只代表保存一致。下一唯一为 [IV2D 保存残差与覆盖诊断](CONSISTENT_MODEL_RESIDUAL_PROTOCOL.md)，0 新物理/fit/model.predict；先冻结再首次执行，不扫描或重算旧门。
+IV2 从 clean d8491b2e0f8b3bae649b8bf9a297bebba7f76270 首次完整完成：3 次 rank5 solve、30 个状态系数、12,000 reused offline scalar 标签用途，0 新训练物理/0 RLS；6,000 新预测控制/子步、5,772 记录全部完整，0 停止/异常。原预测门 false，H1及多步均退化，不进入控制。29 项[轻量保存检查](../results/cpu_validation/2026-10-12_consistent_action_state/delivery_checks.json)passed 只代表保存一致。其原失败保持；不重算旧门或进入控制。
 
-IV2D 一项必要新合成检查首次 passed，[准备记录](../results/cpu_validation/2026-10-12_consistent_model_residual_preparation/manifest.json)已封存。正式诊断尚未执行，冻结提交推送后立即首次执行。
+[IV2D 首次诊断](CONSISTENT_MODEL_RESIDUAL_RESULTS.md)从 clean 14088b6 完整完成，0 新物理/fit/model.predict/RLS；12 项保存轻核 passed，首交付字段命名空间 KeyError 与修正完整归档。训练内误差下降，但 fresh H1 三 seed 均有肩正、肘负速度偏差；原生坐标出箱多为不足 .00030rad 的微小角度越界，不能断言唯一原因。下一唯一 IV3：固定 IV1 action8 与 psi5/一次 OLS，仅将训练 PD 目标改为恒定 qref；最多 9,000 新训练控制/子步、12,000 新 scalar 标签用途。新候选只评估既有 IV2 已见人口，旧分数转录，不扫描或改门；协议/代码/必要新检查冻结提交推送后首次执行。C4–C7 未验收，目标 active。
 
 累计 **535,345 控制 /2,815,018 子步**；历史 **125,652 scalar RLS 更新**保持。IV1 的 **12,000 新 IV scalar 标签用途 /3 fit /24 动作系数**另计。C4–C7 均未验收，阶段结果不能当作目标完成。详细历史与成本由阶段账本和各结果报告保留。
 
