@@ -328,3 +328,9 @@ src/developmental_physics/instrumental_action_model.py text eol=lf
 scripts/develop_instrumental_action_response.py text eol=lf
 docs/INSTRUMENTAL_ACTION_RESPONSE_PROTOCOL.md text eol=lf
 docs/INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md text eol=lf
+
+src/developmental_physics/consistent_action_state_model.py text eol=lf
+scripts/refit_instrumental_state.py text eol=lf
+docs/CONSISTENT_ACTION_STATE_PROTOCOL.md text eol=lf
+results/cpu_validation/2026-10-12_consistent_action_state_preparation/** -text whitespace=cr-at-eol,-blank-at-eof
+results/cpu_validation/2026-10-12_consistent_action_state/** -text whitespace=cr-at-eol,-blank-at-eof

@@ -1,0 +1,47 @@
+{
+  "experiment": "IV2_preparation",
+  "status": "passed",
+  "source": {
+    "src/developmental_physics/consistent_action_state_model.py": {
+      "bytes": 7922,
+      "sha256": "021ed7ab8fc4c2db2585940a2102a5becf3bb567a8a589d69c8a0375c2f57f7f"
+    },
+    "scripts/refit_instrumental_state.py": {
+      "bytes": 36224,
+      "sha256": "789c56c469b344de8b00003d47356212fd717440feda1817de15e07abcec1f12"
+    },
+    "docs/CONSISTENT_ACTION_STATE_PROTOCOL.md": {
+      "bytes": 9884,
+      "sha256": "69e95dc62732a2da1e9d6879125e0419bd57d4796d9e2970c654510380554914"
+    }
+  },
+  "synthetic_check_count": 5,
+  "first_failure": null,
+  "physical_calls": 0,
+  "real_fit_calls": 0,
+  "old_science_reexecution": false,
+  "continuous_goal": "active",
+  "wall_seconds_before_manifest": 0.021999299991875887,
+  "cpu_seconds_before_manifest": 0.0,
+  "unmeasured_filesystem_IO": "unknown_not_zero",
+  "first_check_source": {
+    "scripts/refit_instrumental_state.py": {
+      "bytes": 36224,
+      "sha256": "789c56c469b344de8b00003d47356212fd717440feda1817de15e07abcec1f12"
+    },
+    "src/developmental_physics/consistent_action_state_model.py": {
+      "bytes": 7922,
+      "sha256": "021ed7ab8fc4c2db2585940a2102a5becf3bb567a8a589d69c8a0375c2f57f7f"
+    },
+    "docs/CONSISTENT_ACTION_STATE_PROTOCOL.md": {
+      "bytes": 9884,
+      "sha256": "69e95dc62732a2da1e9d6879125e0419bd57d4796d9e2970c654510380554914"
+    }
+  },
+  "review_notes": {
+    "fixed_action_bytes_and_trace_read_identity": "Already present in final checked hashes; no post-check source revision",
+    "source_changed_after_checks": false,
+    "checks_reexecuted": false,
+    "checked_sources": "checks/source_at_first_checks/"
+  }
+}
