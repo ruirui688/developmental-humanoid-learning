@@ -1,0 +1,63 @@
+{
+  "stage": "FR4D",
+  "status": "saved_selection_projection_complete",
+  "files": {
+    "first_execution_receipt.json": {
+      "bytes": 1435,
+      "sha256": "162196a3e2bd6362d286c86f57af3ee2f0f7101bd6200c746d6de0c7fd47e3ae"
+    },
+    "result/projection.json": {
+      "bytes": 1813833,
+      "sha256": "89c46548cfe11d83dbd4da326f3e65f433ce431f96523bc9c281741eb1a29db2"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "bytes": 1060,
+      "sha256": "4108e49b94ce68b8feb7d295dffedea53715fa4b8443f79d115ce7613f86a21c"
+    },
+    "publish_source.py": {
+      "bytes": 6033,
+      "sha256": "4874a99f1e988037fe6dc385e035cbbb8cc72b7a1c6a1b0a07296302bca5e1ac"
+    }
+  },
+  "source_commit": "490fcffa0080125e7c2a8b887c99cc2743dcc01f",
+  "frozen_protocol_sha256": "8075b168b5037fff11e03047e224e56c4e5b3f63ea19d1bdc6e7bfbcc67c0b1a",
+  "saved_projection_cost": {
+    "input_read_attempts": 3,
+    "input_read_returns": 3,
+    "input_bytes": 48286858,
+    "small_json_parses": 2,
+    "gzip_decode_attempts": 1,
+    "decoded_bytes": 357633436,
+    "trace_rows": 36000,
+    "trace_json_parses": 36000,
+    "observed_selection_origins": 1200,
+    "saved_public_PD_field_inspections": 1200,
+    "public_PD_pair_restoration_attempts": 1200,
+    "public_PD_axis_gain_expressions": 2400,
+    "public_PD_pair_restoration_returns": 1200,
+    "nearest_scalar_distances": 21600,
+    "nearest_original_index_selections": 2400,
+    "first_request_pair_enumerations": 97200,
+    "saved_public_PD_comparisons": 929,
+    "anchor_candidate_records_inspected": 1200,
+    "anchor_rejection_field_inspections": 1200,
+    "saved_cost_difference_attempts": 929,
+    "saved_cost_difference_returns": 929,
+    "gzip_decode_returns": 1,
+    "saved_difference_values_sorted": 929,
+    "descriptive_distribution_cells": 12,
+    "tool_source_reads": 1,
+    "tool_source_bytes": 19311
+  },
+  "science_recomputations_by_publisher": 0,
+  "physics_or_model_or_fit_or_RLS_by_publisher": 0,
+  "grid_family_closed": true,
+  "scientific_adoption": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "continuous_goal_stays_active": true
+}

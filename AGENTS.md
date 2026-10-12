@@ -33,7 +33,7 @@ G原件与结果已推送e8c6c04；首审1,422,925项零失败和一次summary35
 
 ### 当前下一步
 
-[FR4D保存选择诊断](docs/PD_ANCHOR_SELECTION_DIAGNOSTIC_PROTOCOL.md)已冻结：FR4B模型贡献通过82.5374%，强PD门未通过，肘退化17.8586%、两种实际努力超门；本次只投影1200个固定保存起点，0新物理/模型/fit/RLS。提交推送后首次执行一次，随后关闭PD锚点/首请求网格微调族，继续有依据的控制结构研究。累计487,297控制/2,766,970子步、118,452在线+7,200离线=125,652scalar不变；C4及C5–C7未验收，持续目标active。
+[FR4D一次保存选择诊断](docs/PD_ANCHOR_SELECTION_DIAGNOSTIC_RESULTS.md)完成：learned600个起点的PD锚点全部存在/可行，chosen12、其余588保存成本差为负；仅限定保存选择结构，不识别实际反事实或失败因果。0新增物理/model/fit/RLS，累计487,297/2,766,970和125,652scalar不变。关闭PD锚点/首请求网格微调族，接着冻结唯一目标保持前馈的控制用途，保留原权限、停止与科学门。C4及C5–C7未验收，持续目标active。
 
 历史入口（不触发重跑）：[Z2完整控制](docs/FAST_FEEDBACK_PAIR_CONTROL_RESULTS.md)贡献7.55%，未达到原20%门，自身长时肩预测退化；不补跑或追认。[FR0自由root接触工程](docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_RESULTS.md)从cleane5466d3首次完成3,000控制/子步、0停止异常；四MAE≤.01rad，三阶段左臂正接触949/990/988 of1000，工程资格通过。本轮零学习，公共PD、理想感觉与原仰卧身体是披露先验，不代表学习或安全收益。后续已冻结并执行本域FR1；本段工程事实不能替代新预测/控制门，不恢复悬挂learned snapshots。C4及C5–C7仍未验收；持续目标active，阶段检查提交推送后立即继续。
 

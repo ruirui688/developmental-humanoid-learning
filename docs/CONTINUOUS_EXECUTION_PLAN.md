@@ -16,7 +16,7 @@
 
 当前执行入口：
 
-- **当前入口FR4D：** [FR4D保存选择诊断](PD_ANCHOR_SELECTION_DIAGNOSTIC_PROTOCOL.md)已冻结：FR4B模型贡献通过82.5374%，强PD门未通过，肘退化17.8586%、两种实际努力超门；本次只投影1200个固定保存起点，0新物理/模型/fit/RLS。提交推送后首次执行一次，随后关闭PD锚点/首请求网格微调族，继续有依据的控制结构研究。累计487,297控制/2,766,970子步、118,452在线+7,200离线=125,652scalar不变；C4及C5–C7未验收，持续目标active。
+- **当前入口FR4D完成：** [FR4D一次保存选择诊断](PD_ANCHOR_SELECTION_DIAGNOSTIC_RESULTS.md)完成：learned600个起点的PD锚点全部存在/可行，chosen12、其余588保存成本差为负；仅限定保存选择结构，不识别实际反事实或失败因果。0新增物理/model/fit/RLS，累计487,297/2,766,970和125,652scalar不变。关闭PD锚点/首请求网格微调族，接着冻结唯一目标保持前馈的控制用途，保留原权限、停止与科学门。C4及C5–C7未验收，持续目标active。
 
 - **Z0首次完整工程门通过。** [首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次seed7600完成1000zero+2000PD、3000控制/3000子步，0异常/停止/fit；两个末200点/.4s窗口的肩/肘四项MAE均≤.01rad。root首新thin contract零failed，独立4个Z0 MAE；记录一致与工程通过仍不证明学习或科学验收。
 - [2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)保持物理/PD64/Kd(4,4)/权限/6s任务，反馈/感觉与active研究停止检查频率增多，公开额外经典控制能力。全子步left_arm/feet/other接触零观察；固定支撑反力unknown，不从不同seed的X/Y失败识别频率因果，不追认自由root真实接触C4或解除C5科学依赖。
@@ -785,3 +785,8 @@ FR0只开放新学习协议准备，C4及C5–C7科学依赖仍未解除；持�
 ### FR4B首次结果与立即继续
 
 [FR4B首次PD锚点完整控制](PD_ANCHOR_PAIR_CONTROL_RESULTS.md)从clean490fcff完成，本域原完整控制门未全部通过/不可评；实际新增36,000控制/36,000子步/0在线scalar。首新保存核验passed、674,441项/0失败，120个新RMSE向量；完整人口、实际努力与停止原样公开。累计487,297/2,766,970，online118,452+offline7,200=125,652scalar。关闭本冻结候选成功依赖，保留负结果后继续有依据的有限开发判断，不扫描增益、权重或网格。 C4最终新留出及C5适应、C6门控、C7综合未验收，持续目标active。
+
+
+### FR4D一次投影与结构路线关闭
+
+[FR4D一次保存选择诊断](PD_ANCHOR_SELECTION_DIAGNOSTIC_RESULTS.md)完成：learned600个起点的PD锚点全部存在/可行，chosen12、其余588保存成本差为负；仅限定保存选择结构，不识别实际反事实或失败因果。0新增物理/model/fit/RLS，累计487,297/2,766,970和125,652scalar不变。关闭PD锚点/首请求网格微调族，接着冻结唯一目标保持前馈的控制用途，保留原权限、停止与科学门。C4及C5–C7未验收，持续目标active。

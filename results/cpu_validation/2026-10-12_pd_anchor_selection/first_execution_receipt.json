@@ -1,0 +1,37 @@
+{
+  "schema": "fr4_saved_selection_first_execution_receipt_v1",
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4_selection_diagnostic_candidate\\project_saved_pd_anchor_selection_once.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--source-commit",
+    "490fcffa0080125e7c2a8b887c99cc2743dcc01f",
+    "--protocol-sha256",
+    "8075b168b5037fff11e03047e224e56c4e5b3f63ea19d1bdc6e7bfbcc67c0b1a",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4d_first_selection_projection\\result"
+  ],
+  "declared_source_commit": "490fcffa0080125e7c2a8b887c99cc2743dcc01f",
+  "declared_frozen_protocol_sha256": "8075b168b5037fff11e03047e224e56c4e5b3f63ea19d1bdc6e7bfbcc67c0b1a",
+  "source_pins": {
+    "run_saved_selection_projection_first_once.py": {
+      "bytes": 3126,
+      "sha256": "c6475566eef013323589c64de249dc714471d111adb0b4deec4da6b8575ecadf"
+    },
+    "project_saved_pd_anchor_selection_once.py": {
+      "bytes": 19311,
+      "sha256": "e0cce0111b05c5b5e9514d38f5095b9dff922dfeddec226848426acf5fd44322"
+    }
+  },
+  "source_read_returns": 2,
+  "source_read_bytes": 22437,
+  "process_started": true,
+  "exit_code": 0,
+  "first_launcher_failure": null,
+  "raw_reads_by_launcher": 0,
+  "protocol_file_reads_by_launcher": 0,
+  "automatic_retry": false,
+  "wall_seconds_before_receipt": 12.60749450000003,
+  "cpu_seconds_before_receipt": 0.0
+}
