@@ -1,0 +1,4530 @@
+{
+  "schema": "EF1B_first_saved_audit_v1",
+  "status": "passed",
+  "checks": 443,
+  "failures": 0,
+  "unavailable_contracts": 0,
+  "first_failure": null,
+  "contracts": [
+    {
+      "name": "path_within_new_raw:manifest.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:manifest.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_EF1B_manifest_identity",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_manifest_files",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_stream_names",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unique_stream_file_population",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:run.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:run.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:run.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:run.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:metrics.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:metrics.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:metrics.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:metrics.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:models.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:models.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:models.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:models.json",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:source.zip",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:source.zip",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:source.zip",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:source.zip",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:installed/EF1B_8101_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:installed/EF1B_8101_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:installed/EF1B_8101_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:installed/EF1B_8101_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:installed/EF1B_8101_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:installed/EF1B_8101_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:installed/EF1B_8101_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:installed/EF1B_8101_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:installed/EF1B_8102_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:installed/EF1B_8102_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:installed/EF1B_8102_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:installed/EF1B_8102_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:installed/EF1B_8102_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:installed/EF1B_8102_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:installed/EF1B_8102_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:installed/EF1B_8102_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:installed/EF1B_8103_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:installed/EF1B_8103_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:installed/EF1B_8103_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:installed/EF1B_8103_control_cold.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_new_payload:installed/EF1B_8103_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:installed/EF1B_8103_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:installed/EF1B_8103_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:installed/EF1B_8103_control_learned.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "required_JSON_payloads",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run_manifest_stage_status_stream_binding",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scientific_boundary_flags",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failure_not_scientific_success",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failure_payload_binding",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_requested_commit",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clean_source_declaration",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_source_population",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_unique_canonical_names",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:docs/EQUILIBRIUM_FEEDFORWARD_CONTROL_PROTOCOL.md",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:docs/EQUILIBRIUM_FEEDFORWARD_CONTROL_PROTOCOL.md",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_protocol_identity",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:docs/EQUILIBRIUM_FEEDFORWARD_CONTROL_PROTOCOL.md",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:docs/PD_ANCHOR_PAIR_LEARNING_PROTOCOL.md",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:docs/PD_ANCHOR_PAIR_LEARNING_PROTOCOL.md",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:docs/PD_ANCHOR_PAIR_LEARNING_PROTOCOL.md",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:pyproject.toml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:pyproject.toml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:pyproject.toml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:scripts/develop_equilibrium_feedforward.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:scripts/develop_equilibrium_feedforward.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:scripts/develop_equilibrium_feedforward.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:scripts/develop_pd_anchor_pair.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:scripts/develop_pd_anchor_pair.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:scripts/develop_pd_anchor_pair.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:scripts/validate_free_root_fast_feedback_engineering.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:scripts/validate_free_root_fast_feedback_engineering.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:scripts/validate_free_root_fast_feedback_engineering.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/__init__.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/__init__.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/__init__.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/assets/ground_body.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/assets/ground_body.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/assets/ground_body.xml",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/batched_fast_feedback_pair_mpc.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/batched_fast_feedback_pair_mpc.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/batched_fast_feedback_pair_mpc.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/environment.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/environment.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/environment.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/equilibrium_feedforward_development.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/equilibrium_feedforward_development.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/equilibrium_feedforward_development.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/equilibrium_feedforward_pair.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/equilibrium_feedforward_pair.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/equilibrium_feedforward_pair.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/fast_feedback_pair_development.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/fast_feedback_pair_development.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/fast_feedback_pair_development.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/fast_feedback_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/fast_feedback_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/fast_feedback_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/fast_feedback_pair_mpc.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/fast_feedback_pair_mpc.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/fast_feedback_pair_mpc.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/free_root_fast_feedback_environment.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/free_root_fast_feedback_environment.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/free_root_fast_feedback_environment.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/guard_coupled_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/guard_coupled_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/guard_coupled_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/guard_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/guard_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/guard_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/local_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/local_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/local_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/local_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/local_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/local_pair_model.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/pd_anchor_pair_development.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/pd_anchor_pair_development.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/pd_anchor_pair_development.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_member_bound:src/developmental_physics/pd_anchor_pair_mpc.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_archive_total_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archived_source_pin:src/developmental_physics/pd_anchor_pair_mpc.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_commit_blob:src/developmental_physics/pd_anchor_pair_mpc.py",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_fixed_population_and_order",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six_reused_source_population",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_new_fit_RLS_and_no_old_rescore",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_planned_upper_bounds",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_new_budget_limits",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "control_call_attempts": 18000,
+        "control_call_returns": 18000,
+        "confirmed_physics_substeps": 18000,
+        "MPC_decision_attempts": 1200,
+        "equilibrium_root_solve_attempts": 12,
+        "equilibrium_branch_svd_attempts": 192,
+        "equilibrium_root_model_pair_prediction_attempts": 192,
+        "equilibrium_root_model_scalar_prediction_attempts": 384,
+        "equilibrium_forecast_pair_prediction_attempts": 180000,
+        "equilibrium_forecast_scalar_prediction_attempts": 360000,
+        "control_conditional_prediction_pair_prediction_attempts": 526560,
+        "control_conditional_prediction_scalar_prediction_attempts": 1053120
+      }
+    },
+    {
+      "name": "history_costs_retained_not_readded",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reused_reference_identity:FR4_8101_control_pd",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reused_reference_identity:FR4_8101_control_zero",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reused_reference_identity:FR4_8102_control_pd",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reused_reference_identity:FR4_8102_control_zero",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reused_reference_identity:FR4_8103_control_pd",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reused_reference_identity:FR4_8103_control_zero",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_model_snapshot:8101:cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_model_snapshot:8101:learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_model_snapshot:8102:cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_model_snapshot:8102:learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_model_snapshot:8103:cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_model_snapshot:8103:learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stream_format:trace",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stream_limits:trace",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_stream_parts:trace",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:trace:0",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:trace.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:trace.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:trace.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:trace.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 41048,
+        "decoded_bytes": 63992677,
+        "stream_records_so_far": 5827,
+        "stream_record_cap": 18000
+      }
+    },
+    {
+      "name": "decoded_part_identity:trace.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:trace:1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:trace.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:trace.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:trace.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:trace.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 41039,
+        "decoded_bytes": 63999893,
+        "stream_records_so_far": 11651,
+        "stream_record_cap": 18000
+      }
+    },
+    {
+      "name": "decoded_part_identity:trace.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:trace:2",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:trace.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:trace.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:trace.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:trace.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 41065,
+        "decoded_bytes": 63998341,
+        "stream_records_so_far": 17481,
+        "stream_record_cap": 18000
+      }
+    },
+    {
+      "name": "decoded_part_identity:trace.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:trace:3",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:trace.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:trace.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:trace.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:trace.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 40897,
+        "decoded_bytes": 6493971,
+        "stream_records_so_far": 18000,
+        "stream_record_cap": 18000
+      }
+    },
+    {
+      "name": "decoded_part_identity:trace.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_stream_identity:trace",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_paid_trace_cost_binding",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_before:EF1B_8101_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after_control:EF1B_8101_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after:EF1B_8101_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_trial_trace_coverage:EF1B_8101_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_reference_initialization:EF1B_8101_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_trial_complete_definition:EF1B_8101_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "saved_records": 3000,
+        "no_failure": true,
+        "no_stop": true,
+        "metadata_stable": true,
+        "all_complete_telemetry": true
+      }
+    },
+    {
+      "name": "fresh_actual_effort:EF1B_8101_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_contact_qualification:EF1B_8101_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_tracking_score:EF1B_8101_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_before:EF1B_8101_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after_control:EF1B_8101_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after:EF1B_8101_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_trial_trace_coverage:EF1B_8101_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_reference_initialization:EF1B_8101_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_trial_complete_definition:EF1B_8101_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "saved_records": 3000,
+        "no_failure": true,
+        "no_stop": true,
+        "metadata_stable": true,
+        "all_complete_telemetry": true
+      }
+    },
+    {
+      "name": "fresh_actual_effort:EF1B_8101_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_contact_qualification:EF1B_8101_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_tracking_score:EF1B_8101_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_before:EF1B_8102_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after_control:EF1B_8102_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after:EF1B_8102_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_trial_trace_coverage:EF1B_8102_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_reference_initialization:EF1B_8102_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_trial_complete_definition:EF1B_8102_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "saved_records": 3000,
+        "no_failure": true,
+        "no_stop": true,
+        "metadata_stable": true,
+        "all_complete_telemetry": true
+      }
+    },
+    {
+      "name": "fresh_actual_effort:EF1B_8102_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_contact_qualification:EF1B_8102_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_tracking_score:EF1B_8102_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_before:EF1B_8102_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after_control:EF1B_8102_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after:EF1B_8102_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_trial_trace_coverage:EF1B_8102_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_reference_initialization:EF1B_8102_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_trial_complete_definition:EF1B_8102_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "saved_records": 3000,
+        "no_failure": true,
+        "no_stop": true,
+        "metadata_stable": true,
+        "all_complete_telemetry": true
+      }
+    },
+    {
+      "name": "fresh_actual_effort:EF1B_8102_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_contact_qualification:EF1B_8102_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_tracking_score:EF1B_8102_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_before:EF1B_8103_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after_control:EF1B_8103_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after:EF1B_8103_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_trial_trace_coverage:EF1B_8103_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_reference_initialization:EF1B_8103_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_trial_complete_definition:EF1B_8103_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "saved_records": 3000,
+        "no_failure": true,
+        "no_stop": true,
+        "metadata_stable": true,
+        "all_complete_telemetry": true
+      }
+    },
+    {
+      "name": "fresh_actual_effort:EF1B_8103_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_contact_qualification:EF1B_8103_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_tracking_score:EF1B_8103_control_cold",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_before:EF1B_8103_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after_control:EF1B_8103_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_fingerprints_after:EF1B_8103_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_trial_trace_coverage:EF1B_8103_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_reference_initialization:EF1B_8103_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_trial_complete_definition:EF1B_8103_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "saved_records": 3000,
+        "no_failure": true,
+        "no_stop": true,
+        "metadata_stable": true,
+        "all_complete_telemetry": true
+      }
+    },
+    {
+      "name": "fresh_actual_effort:EF1B_8103_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_contact_qualification:EF1B_8103_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_tracking_score:EF1B_8103_control_learned",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stream_format:predictions",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stream_limits:predictions",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_stream_parts:predictions",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:predictions:0",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:predictions.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:predictions.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:predictions.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:predictions.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 21409,
+        "decoded_bytes": 63983897,
+        "stream_records_so_far": 9731,
+        "stream_record_cap": 11772
+      }
+    },
+    {
+      "name": "decoded_part_identity:predictions.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:predictions:1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:predictions.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:predictions.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:predictions.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:predictions.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 21379,
+        "decoded_bytes": 14795621,
+        "stream_records_so_far": 11772,
+        "stream_record_cap": 11772
+      }
+    },
+    {
+      "name": "decoded_part_identity:predictions.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_stream_identity:predictions",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_cold:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_cold:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8101_control_learned:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8101_control_learned:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_cold:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_cold:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8102_control_learned:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8102_control_learned:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_cold:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_cold:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:cold:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:learned:H1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:cold:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:learned:H10",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:cold:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:learned:H20",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:cold:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:learned:H50",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:cold:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_score:EF1B_8103_control_learned:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_self_origin_population:EF1B_8103_control_learned:learned:H150",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stream_format:paid_intervals",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stream_limits:paid_intervals",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_stream_parts:paid_intervals",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:paid_intervals:0",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:paid_intervals.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:paid_intervals.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:paid_intervals.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:paid_intervals.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 39865,
+        "decoded_bytes": 63991624,
+        "stream_records_so_far": 8300,
+        "stream_record_cap": 36006
+      }
+    },
+    {
+      "name": "decoded_part_identity:paid_intervals.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:paid_intervals:1",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:paid_intervals.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:paid_intervals.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:paid_intervals.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:paid_intervals.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 41103,
+        "decoded_bytes": 63998102,
+        "stream_records_so_far": 15718,
+        "stream_record_cap": 36006
+      }
+    },
+    {
+      "name": "decoded_part_identity:paid_intervals.00001.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:paid_intervals:2",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:paid_intervals.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:paid_intervals.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:paid_intervals.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:paid_intervals.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 41094,
+        "decoded_bytes": 63964510,
+        "stream_records_so_far": 23161,
+        "stream_record_cap": 36006
+      }
+    },
+    {
+      "name": "decoded_part_identity:paid_intervals.00002.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:paid_intervals:3",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:paid_intervals.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:paid_intervals.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:paid_intervals.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:paid_intervals.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 40910,
+        "decoded_bytes": 63996536,
+        "stream_records_so_far": 31099,
+        "stream_record_cap": 36006
+      }
+    },
+    {
+      "name": "decoded_part_identity:paid_intervals.00003.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordered_stream_path:paid_intervals:4",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "path_within_new_raw:paid_intervals.00004.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_file_bound:paid_intervals.00004.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "total_stored_bound",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stored_identity:paid_intervals.00004.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_part_bounds:paid_intervals.00004.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": {
+        "largest_line_bytes": 41120,
+        "decoded_bytes": 44222440,
+        "stream_records_so_far": 36000,
+        "stream_record_cap": 36006
+      }
+    },
+    {
+      "name": "decoded_part_identity:paid_intervals.00004.jsonl.gz",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoded_stream_identity:paid_intervals",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_paid_endpoint_coverage",
+      "available": true,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "completed_fixed_population",
+      "available": true,
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "input_identities": {
+    "manifest.json": {
+      "bytes": 8947,
+      "sha256": "f5917b3d988bc0365b4d6f21fa0dd6b3f3ee573b09792d0413f68ba9aa6bcd09"
+    },
+    "run.json": {
+      "bytes": 7067299,
+      "sha256": "b7612382fb517d87a581b6dd7585838dd5313233c2f491d840c7bcb3cc09f32b"
+    },
+    "metrics.json": {
+      "bytes": 3015,
+      "sha256": "692a610ab033f8b3f8ec10022301fa85241dc1ba252671610c27119bab5b3537"
+    },
+    "models.json": {
+      "bytes": 60924,
+      "sha256": "3cfbd871c275a8f5d8a07615a239ee9e8192b5e93dcf35104cf61a01f6a6a992"
+    },
+    "source.zip": {
+      "bytes": 129949,
+      "sha256": "440e115c982d204e3f1141a8b612c490956018b854048c01e5049ea5932c557e"
+    },
+    "installed/EF1B_8101_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/EF1B_8101_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/EF1B_8102_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/EF1B_8102_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/EF1B_8103_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/EF1B_8103_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 10363986,
+      "sha256": "a3725c452ca933b0381db65248602c71e57330b5a5bf5605d5faafe5be905189"
+    },
+    "trace.00001.jsonl.gz": {
+      "bytes": 10354503,
+      "sha256": "dd022207f44978efdae5cc58fa000507f7b569156efe8ad1a847cef252f6e303"
+    },
+    "trace.00002.jsonl.gz": {
+      "bytes": 10369073,
+      "sha256": "dfc8e8469c581fb17a9bfc3e16d3a6da4a06cfeae9a986ba2b431aab9ee8f1ce"
+    },
+    "trace.00003.jsonl.gz": {
+      "bytes": 1165889,
+      "sha256": "68e1df1eda2aaa1892d300d6398a4e8b7aa0d174690539d00573ba7d788a9361"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 18485641,
+      "sha256": "6e51dfb6d0823f6c55d1f055ba4eec2cf1d83c4b7c26a9ad0659962e7af55be8"
+    },
+    "predictions.00001.jsonl.gz": {
+      "bytes": 4261371,
+      "sha256": "9e884a3571bd47a5c5af83c6eb00fb0d2430fc35d9ced80fc0e609cf3c4aa5b2"
+    },
+    "paid_intervals.jsonl.gz": {
+      "bytes": 8975050,
+      "sha256": "345e03f3dfa5ee7903540178613c22c26ead0891c8e449eee955e4645cff1bb5"
+    },
+    "paid_intervals.00001.jsonl.gz": {
+      "bytes": 10063161,
+      "sha256": "305c7ed26ca895fa6ecb74f53cbbbec6bcca563de3772ebc5f04cf0dfd5aca8c"
+    },
+    "paid_intervals.00002.jsonl.gz": {
+      "bytes": 10043249,
+      "sha256": "011c9ae9135bf00e8a9dd5bc3500c41b59404b313f9c46bc6d9a98227dc1bd4a"
+    },
+    "paid_intervals.00003.jsonl.gz": {
+      "bytes": 9473322,
+      "sha256": "34bdaefbf5edb805e4d77d96e24cc6d19b3de71a0565c33f4c0d816c0dd022ff"
+    },
+    "paid_intervals.00004.jsonl.gz": {
+      "bytes": 7214322,
+      "sha256": "09e59c713006f57a9e61a853d43b7901660e37d262426480f4867e94a9ac3c80"
+    }
+  },
+  "actual_audit_cost": {
+    "file_read_attempts": 22,
+    "file_read_returns": 22,
+    "stored_bytes_read": 108060281,
+    "JSON_parse_attempts": 65776,
+    "JSON_parse_returns": 65776,
+    "source_archive_member_read_attempts": 23,
+    "source_archive_member_read_returns": 23,
+    "source_archive_decoded_bytes": 444332,
+    "git_source_query_attempts": 23,
+    "git_source_query_returns": 23,
+    "git_source_return_bytes": 444332,
+    "new_snapshot_fingerprint_recomputations": 6,
+    "gzip_decode_attempts": 11,
+    "decoded_bytes_read": 577437612,
+    "JSONL_records_parsed": 65772,
+    "fresh_trace_rows_inspected": 18000,
+    "gzip_decode_returns": 11,
+    "fresh_effort_sample_computations": 18000,
+    "fresh_tracking_axis_RMSE_vector_computations": 6,
+    "fresh_tracking_joint_RMSE_scalar_computations": 6,
+    "fresh_prediction_rows_inspected": 11772,
+    "fresh_saved_endpoint_error_pair_computations": 11772,
+    "fresh_self_RMSE_vector_computations": 120,
+    "new_paid_journal_rows_inspected": 36000
+  },
+  "result": {
+    "run_status": "completed",
+    "run_failure": null,
+    "fixed_population": [
+      {
+        "seed": 8101,
+        "method": "pd",
+        "origin": "reused_FR4B",
+        "trial_id": "FR4_8101_control_pd",
+        "present": true
+      },
+      {
+        "seed": 8101,
+        "method": "zero",
+        "origin": "reused_FR4B",
+        "trial_id": "FR4_8101_control_zero",
+        "present": true
+      },
+      {
+        "seed": 8102,
+        "method": "pd",
+        "origin": "reused_FR4B",
+        "trial_id": "FR4_8102_control_pd",
+        "present": true
+      },
+      {
+        "seed": 8102,
+        "method": "zero",
+        "origin": "reused_FR4B",
+        "trial_id": "FR4_8102_control_zero",
+        "present": true
+      },
+      {
+        "seed": 8103,
+        "method": "pd",
+        "origin": "reused_FR4B",
+        "trial_id": "FR4_8103_control_pd",
+        "present": true
+      },
+      {
+        "seed": 8103,
+        "method": "zero",
+        "origin": "reused_FR4B",
+        "trial_id": "FR4_8103_control_zero",
+        "present": true
+      },
+      {
+        "seed": 8101,
+        "method": "cold",
+        "origin": "fresh_new",
+        "trial_id": "EF1B_8101_control_cold",
+        "present": true,
+        "saved_control_attempts": 3000,
+        "planned_control_attempts": 3000
+      },
+      {
+        "seed": 8101,
+        "method": "learned",
+        "origin": "fresh_new",
+        "trial_id": "EF1B_8101_control_learned",
+        "present": true,
+        "saved_control_attempts": 3000,
+        "planned_control_attempts": 3000
+      },
+      {
+        "seed": 8102,
+        "method": "cold",
+        "origin": "fresh_new",
+        "trial_id": "EF1B_8102_control_cold",
+        "present": true,
+        "saved_control_attempts": 3000,
+        "planned_control_attempts": 3000
+      },
+      {
+        "seed": 8102,
+        "method": "learned",
+        "origin": "fresh_new",
+        "trial_id": "EF1B_8102_control_learned",
+        "present": true,
+        "saved_control_attempts": 3000,
+        "planned_control_attempts": 3000
+      },
+      {
+        "seed": 8103,
+        "method": "cold",
+        "origin": "fresh_new",
+        "trial_id": "EF1B_8103_control_cold",
+        "present": true,
+        "saved_control_attempts": 3000,
+        "planned_control_attempts": 3000
+      },
+      {
+        "seed": 8103,
+        "method": "learned",
+        "origin": "fresh_new",
+        "trial_id": "EF1B_8103_control_learned",
+        "present": true,
+        "saved_control_attempts": 3000,
+        "planned_control_attempts": 3000
+      }
+    ],
+    "fresh_metric_rechecks": [
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "tracking": {
+          "available": true,
+          "planned_active_count": 2000,
+          "observed_active_count": 2000,
+          "partial_subset_ranking": false,
+          "axis_rmse_rad": [
+            0.009722009327167425,
+            0.006370585762683685
+          ],
+          "joint_rmse_rad": 0.00821893631552278,
+          "actual_absolute_two_axis_nm_s": 1.4225341336416413,
+          "actual_squared_two_axis_nm2_s": 0.41689021304047946
+        },
+        "actual_effort": {
+          "prefix": {
+            "actual_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "all8_actual_absolute_nm_s": 0.0,
+            "all8_actual_squared_nm2_s": 0.0,
+            "captured_substeps": 1000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 0.0,
+            "actual_squared_two_axis_nm2_s": 0.0,
+            "confirmed_paid_substeps": 1000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          },
+          "active": {
+            "actual_absolute_axis_nm_s": [
+              0.9316503811952842,
+              0.490883752446357
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.3298599665455271,
+              0.08703024649495238
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.9316503811952842,
+              0.490883752446357
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.3298599665455271,
+              0.08703024649495238
+            ],
+            "all8_actual_absolute_nm_s": 1.4225341336416397,
+            "all8_actual_squared_nm2_s": 0.4168902130404805,
+            "captured_substeps": 2000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 1.4225341336416413,
+            "actual_squared_two_axis_nm2_s": 0.41689021304047946,
+            "confirmed_paid_substeps": 2000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          }
+        }
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "tracking": {
+          "available": true,
+          "planned_active_count": 2000,
+          "observed_active_count": 2000,
+          "partial_subset_ranking": false,
+          "axis_rmse_rad": [
+            0.008860081134682242,
+            0.005736810657930308
+          ],
+          "joint_rmse_rad": 0.007463646368836579,
+          "actual_absolute_two_axis_nm_s": 1.4065680007376145,
+          "actual_squared_two_axis_nm2_s": 0.4038972805222639
+        },
+        "actual_effort": {
+          "prefix": {
+            "actual_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "all8_actual_absolute_nm_s": 0.0,
+            "all8_actual_squared_nm2_s": 0.0,
+            "captured_substeps": 1000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 0.0,
+            "actual_squared_two_axis_nm2_s": 0.0,
+            "confirmed_paid_substeps": 1000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          },
+          "active": {
+            "actual_absolute_axis_nm_s": [
+              0.9028802076979862,
+              0.5036877930396282
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.3148387890715646,
+              0.08905849145069934
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.9028802076979862,
+              0.5036877930396282
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.3148387890715646,
+              0.08905849145069934
+            ],
+            "all8_actual_absolute_nm_s": 1.406568000737611,
+            "all8_actual_squared_nm2_s": 0.4038972805222637,
+            "captured_substeps": 2000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 1.4065680007376145,
+            "actual_squared_two_axis_nm2_s": 0.4038972805222639,
+            "confirmed_paid_substeps": 2000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          }
+        }
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "tracking": {
+          "available": true,
+          "planned_active_count": 2000,
+          "observed_active_count": 2000,
+          "partial_subset_ranking": false,
+          "axis_rmse_rad": [
+            0.009771275992610124,
+            0.00636186091998265
+          ],
+          "joint_rmse_rad": 0.008244728888476608,
+          "actual_absolute_two_axis_nm_s": 1.432316273279489,
+          "actual_squared_two_axis_nm2_s": 0.4226830096936942
+        },
+        "actual_effort": {
+          "prefix": {
+            "actual_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "all8_actual_absolute_nm_s": 0.0,
+            "all8_actual_squared_nm2_s": 0.0,
+            "captured_substeps": 1000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 0.0,
+            "actual_squared_two_axis_nm2_s": 0.0,
+            "confirmed_paid_substeps": 1000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          },
+          "active": {
+            "actual_absolute_axis_nm_s": [
+              0.9493258477291653,
+              0.48299042555032373
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.337659753446193,
+              0.0850232562475012
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.9493258477291653,
+              0.48299042555032373
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.337659753446193,
+              0.0850232562475012
+            ],
+            "all8_actual_absolute_nm_s": 1.4323162732794863,
+            "all8_actual_squared_nm2_s": 0.4226830096936937,
+            "captured_substeps": 2000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 1.432316273279489,
+            "actual_squared_two_axis_nm2_s": 0.4226830096936942,
+            "confirmed_paid_substeps": 2000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          }
+        }
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "tracking": {
+          "available": true,
+          "planned_active_count": 2000,
+          "observed_active_count": 2000,
+          "partial_subset_ranking": false,
+          "axis_rmse_rad": [
+            0.0089135803257124,
+            0.005751349712078116
+          ],
+          "joint_rmse_rad": 0.007500997858070225,
+          "actual_absolute_two_axis_nm_s": 1.4156945885073593,
+          "actual_squared_two_axis_nm2_s": 0.40927035124397154
+        },
+        "actual_effort": {
+          "prefix": {
+            "actual_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "all8_actual_absolute_nm_s": 0.0,
+            "all8_actual_squared_nm2_s": 0.0,
+            "captured_substeps": 1000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 0.0,
+            "actual_squared_two_axis_nm2_s": 0.0,
+            "confirmed_paid_substeps": 1000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          },
+          "active": {
+            "actual_absolute_axis_nm_s": [
+              0.9196417263366384,
+              0.4960528621707208
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.3221368879992334,
+              0.08713346324473815
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.9196417263366384,
+              0.4960528621707208
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.3221368879992334,
+              0.08713346324473815
+            ],
+            "all8_actual_absolute_nm_s": 1.4156945885073595,
+            "all8_actual_squared_nm2_s": 0.4092703512439708,
+            "captured_substeps": 2000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 1.4156945885073593,
+            "actual_squared_two_axis_nm2_s": 0.40927035124397154,
+            "confirmed_paid_substeps": 2000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          }
+        }
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "tracking": {
+          "available": true,
+          "planned_active_count": 2000,
+          "observed_active_count": 2000,
+          "partial_subset_ranking": false,
+          "axis_rmse_rad": [
+            0.009887041990940256,
+            0.006343164964091009
+          ],
+          "joint_rmse_rad": 0.008306303061298917,
+          "actual_absolute_two_axis_nm_s": 1.4518470378083923,
+          "actual_squared_two_axis_nm2_s": 0.4346887919036196
+        },
+        "actual_effort": {
+          "prefix": {
+            "actual_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "all8_actual_absolute_nm_s": 0.0,
+            "all8_actual_squared_nm2_s": 0.0,
+            "captured_substeps": 1000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 0.0,
+            "actual_squared_two_axis_nm2_s": 0.0,
+            "confirmed_paid_substeps": 1000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          },
+          "active": {
+            "actual_absolute_axis_nm_s": [
+              0.9849723770704991,
+              0.4668746607378932
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.3536845168142041,
+              0.08100427508941549
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.9849723770704991,
+              0.4668746607378932
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.3536845168142041,
+              0.08100427508941549
+            ],
+            "all8_actual_absolute_nm_s": 1.4518470378083919,
+            "all8_actual_squared_nm2_s": 0.43468879190361953,
+            "captured_substeps": 2000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 1.4518470378083923,
+            "actual_squared_two_axis_nm2_s": 0.4346887919036196,
+            "confirmed_paid_substeps": 2000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          }
+        }
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "tracking": {
+          "available": true,
+          "planned_active_count": 2000,
+          "observed_active_count": 2000,
+          "partial_subset_ranking": false,
+          "axis_rmse_rad": [
+            0.009013733661977627,
+            0.005778613704463786
+          ],
+          "joint_rmse_rad": 0.007570989726399221,
+          "actual_absolute_two_axis_nm_s": 1.4329783032021763,
+          "actual_squared_two_axis_nm2_s": 0.4195354653432548
+        },
+        "actual_effort": {
+          "prefix": {
+            "actual_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.0,
+              0.0
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.0,
+              0.0
+            ],
+            "all8_actual_absolute_nm_s": 0.0,
+            "all8_actual_squared_nm2_s": 0.0,
+            "captured_substeps": 1000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 0.0,
+            "actual_squared_two_axis_nm2_s": 0.0,
+            "confirmed_paid_substeps": 1000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          },
+          "active": {
+            "actual_absolute_axis_nm_s": [
+              0.9512258857058166,
+              0.4817524174963598
+            ],
+            "actual_squared_axis_nm2_s": [
+              0.3360138090903778,
+              0.083521656252877
+            ],
+            "applied_absolute_axis_nm_s": [
+              0.9512258857058166,
+              0.4817524174963598
+            ],
+            "applied_squared_axis_nm2_s": [
+              0.3360138090903778,
+              0.083521656252877
+            ],
+            "all8_actual_absolute_nm_s": 1.4329783032021761,
+            "all8_actual_squared_nm2_s": 0.419535465343255,
+            "captured_substeps": 2000,
+            "complete": true,
+            "actual_absolute_two_axis_nm_s": 1.4329783032021763,
+            "actual_squared_two_axis_nm2_s": 0.4195354653432548,
+            "confirmed_paid_substeps": 2000,
+            "unknown_actual_effort_substeps": 0,
+            "actual_effort_population_complete": true
+          }
+        }
+      }
+    ],
+    "fresh_self_rechecks": [
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "cold",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          1.0105320476362532e-05,
+          1.8234049139013207e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.00505266023818105,
+          0.009117024569506606
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "learned",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          9.000958632233138e-06,
+          1.5456461229870576e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.004500479316116591,
+          0.00772823061493543
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "cold",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.0004197304443958795,
+          0.0008458582878502639
+        ],
+        "v_rmse_axis_rad_s": [
+          0.033597029777648675,
+          0.06594027775296965
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "learned",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.00032931253992866385,
+          0.0007006567715371242
+        ],
+        "v_rmse_axis_rad_s": [
+          0.026322017740960782,
+          0.054037429225874005
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "cold",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0009872981937738196,
+          0.0018699007289164696
+        ],
+        "v_rmse_axis_rad_s": [
+          0.033472792952921514,
+          0.05970182542202208
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "learned",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0008341224575933218,
+          0.0017291031553947238
+        ],
+        "v_rmse_axis_rad_s": [
+          0.029002920105858313,
+          0.058400458597607195
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "cold",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.003421169303028339,
+          0.005641461581219634
+        ],
+        "v_rmse_axis_rad_s": [
+          0.05545164784201371,
+          0.08183291430857932
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "learned",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.0023732789727388703,
+          0.0049143198782228
+        ],
+        "v_rmse_axis_rad_s": [
+          0.028318855646252212,
+          0.058046188619404436
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "cold",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.019319194732422187,
+          0.02158121073919836
+        ],
+        "v_rmse_axis_rad_s": [
+          0.11192519087659493,
+          0.10072264449390936
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_cold",
+        "model": "learned",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.006131891658643944,
+          0.013064271293989304
+        ],
+        "v_rmse_axis_rad_s": [
+          0.026788037040439458,
+          0.055618685143363635
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "cold",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          1.059849672103877e-05,
+          1.536648031713522e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.005299248360519348,
+          0.007683240158567599
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "learned",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          9.712029730888278e-06,
+          1.731539896641191e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.004856014865444103,
+          0.008657699483205956
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "cold",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.0003608293683698531,
+          0.0007244900152674949
+        ],
+        "v_rmse_axis_rad_s": [
+          0.0303198893194524,
+          0.05942111132533678
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "learned",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.00033161675378846683,
+          0.0006817912651356547
+        ],
+        "v_rmse_axis_rad_s": [
+          0.026893683657570427,
+          0.05581154137613935
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "cold",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0010172537697920128,
+          0.0019523822914486108
+        ],
+        "v_rmse_axis_rad_s": [
+          0.037937578408080826,
+          0.07086708621986257
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "learned",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0009174129550434831,
+          0.0018720407612375723
+        ],
+        "v_rmse_axis_rad_s": [
+          0.031863022384123134,
+          0.06558675850920546
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "cold",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.003629192106569282,
+          0.00622134259058854
+        ],
+        "v_rmse_axis_rad_s": [
+          0.05856526857793461,
+          0.09064598573314099
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "learned",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.002610252042791215,
+          0.0053410537361364245
+        ],
+        "v_rmse_axis_rad_s": [
+          0.031187336344736874,
+          0.06413208323191537
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "cold",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.019798485617572508,
+          0.023685077914041532
+        ],
+        "v_rmse_axis_rad_s": [
+          0.11336292212895831,
+          0.10932090009512517
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8101_control_learned",
+        "model": "learned",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.006691661371295974,
+          0.014024287232551435
+        ],
+        "v_rmse_axis_rad_s": [
+          0.029443791809972215,
+          0.0613391577105071
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "cold",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          1.0610887118930156e-05,
+          1.871216372485026e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.005305443559465202,
+          0.009356081862425118
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "learned",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          8.991228997749232e-06,
+          1.640425267347756e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.004495614498874639,
+          0.008202126336738917
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "cold",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.00042036485743760004,
+          0.0008469499280772713
+        ],
+        "v_rmse_axis_rad_s": [
+          0.03385008088328951,
+          0.06597194592520594
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "learned",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.00032851844815378516,
+          0.0006988446039903839
+        ],
+        "v_rmse_axis_rad_s": [
+          0.026177435130922553,
+          0.05403055722689832
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "cold",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0009866141203051812,
+          0.0018718153444832579
+        ],
+        "v_rmse_axis_rad_s": [
+          0.033548689610983444,
+          0.05970967023656755
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "learned",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0008287060673305739,
+          0.0017204820834360156
+        ],
+        "v_rmse_axis_rad_s": [
+          0.028714978422387648,
+          0.05830176144931414
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "cold",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.0034092508190968346,
+          0.005645288591384525
+        ],
+        "v_rmse_axis_rad_s": [
+          0.05576362180819259,
+          0.08168855498326656
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "learned",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.002348712673837275,
+          0.00489114813813725
+        ],
+        "v_rmse_axis_rad_s": [
+          0.027951987389959028,
+          0.05829136808023359
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "cold",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.019321727950899936,
+          0.021578081080414785
+        ],
+        "v_rmse_axis_rad_s": [
+          0.11286076181098681,
+          0.09993394897042772
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_cold",
+        "model": "learned",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.006039115711409053,
+          0.013052963389302272
+        ],
+        "v_rmse_axis_rad_s": [
+          0.02651637606710596,
+          0.05590266075475408
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "cold",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          1.0660844458180752e-05,
+          1.560612786668106e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.005330422229090696,
+          0.00780306393334048
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "learned",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          9.787105401672509e-06,
+          1.7441860272740185e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.004893552700836403,
+          0.008720930136370068
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "cold",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.00036048739728767936,
+          0.0007250335277259719
+        ],
+        "v_rmse_axis_rad_s": [
+          0.030390455499520862,
+          0.059431006069451356
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "learned",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.0003298687379953748,
+          0.0006804656703825629
+        ],
+        "v_rmse_axis_rad_s": [
+          0.026745055308582073,
+          0.05575774313151975
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "cold",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.001016335175750356,
+          0.0019535412157276875
+        ],
+        "v_rmse_axis_rad_s": [
+          0.03806449924031319,
+          0.07085781667358237
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "learned",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0009114091446899955,
+          0.0018678602036961373
+        ],
+        "v_rmse_axis_rad_s": [
+          0.03159791362363051,
+          0.06552625635471293
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "cold",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.003626439749296271,
+          0.00622385602362904
+        ],
+        "v_rmse_axis_rad_s": [
+          0.058870467658018864,
+          0.09049771186749729
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "learned",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.0025859171574665924,
+          0.0053319919770352265
+        ],
+        "v_rmse_axis_rad_s": [
+          0.030895366104279603,
+          0.06425243928301393
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "cold",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.01985248838102527,
+          0.02367873336264731
+        ],
+        "v_rmse_axis_rad_s": [
+          0.11383180560034513,
+          0.10929021620091672
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8102_control_learned",
+        "model": "learned",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.006598729942376628,
+          0.01403528471870426
+        ],
+        "v_rmse_axis_rad_s": [
+          0.029247184539900755,
+          0.061463923822680275
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "cold",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          1.1932448454093867e-05,
+          1.9116071920960488e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.0059662242270470105,
+          0.009558035960480105
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "learned",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          1.0382975196666963e-05,
+          1.6732207334570104e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.0051914875983333246,
+          0.008366103667285074
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "cold",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.0004195745712790139,
+          0.0008461266700054342
+        ],
+        "v_rmse_axis_rad_s": [
+          0.033745247541968566,
+          0.06594584394654239
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "learned",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.0003248485363738021,
+          0.000696953614854951
+        ],
+        "v_rmse_axis_rad_s": [
+          0.025951865877490463,
+          0.0538450813189614
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "cold",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0009877215644827947,
+          0.0018697692180515602
+        ],
+        "v_rmse_axis_rad_s": [
+          0.033823848593900675,
+          0.059756689660748596
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "learned",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0008176952284179718,
+          0.001715515325901595
+        ],
+        "v_rmse_axis_rad_s": [
+          0.028336194461949085,
+          0.058133799329813114
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "cold",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.0034231876765745124,
+          0.005638727353213437
+        ],
+        "v_rmse_axis_rad_s": [
+          0.0559462895860634,
+          0.0815733435086297
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "learned",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.0023056848781226776,
+          0.0048844192958430325
+        ],
+        "v_rmse_axis_rad_s": [
+          0.027541863257567946,
+          0.05830612438484057
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "cold",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.019569510949990425,
+          0.021516697369160738
+        ],
+        "v_rmse_axis_rad_s": [
+          0.11399513842587733,
+          0.09978584229324575
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_cold",
+        "model": "learned",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.005877115251552419,
+          0.013090673659631387
+        ],
+        "v_rmse_axis_rad_s": [
+          0.026109514008590896,
+          0.05604268117789171
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "cold",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          7.607063974094749e-06,
+          1.5434511612673004e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.0038035319870474153,
+          0.00771725580633645
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "learned",
+        "horizon": 1,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          8.814585249423421e-06,
+          1.4074695299567544e-05
+        ],
+        "v_rmse_axis_rad_s": [
+          0.004407292624711739,
+          0.007037347649783685
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "cold",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.0003542731233693848,
+          0.0007299634771626842
+        ],
+        "v_rmse_axis_rad_s": [
+          0.03037791630202115,
+          0.059389736541259716
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "learned",
+        "horizon": 10,
+        "planned_origin_count": 200,
+        "saved_records": 200,
+        "available": true,
+        "observed_origin_count": 200,
+        "q_rmse_axis_rad": [
+          0.00033034515662272765,
+          0.0006650157463579421
+        ],
+        "v_rmse_axis_rad_s": [
+          0.02588352471653991,
+          0.05531611904687147
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "cold",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.000997634421636179,
+          0.0019701552922887743
+        ],
+        "v_rmse_axis_rad_s": [
+          0.03734983196903446,
+          0.07172491365702612
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "learned",
+        "horizon": 20,
+        "planned_origin_count": 199,
+        "saved_records": 199,
+        "available": true,
+        "observed_origin_count": 199,
+        "q_rmse_axis_rad": [
+          0.0009024196836197152,
+          0.0018371148600686762
+        ],
+        "v_rmse_axis_rad_s": [
+          0.03019784260618978,
+          0.06550371828908458
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "cold",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.0035715467587298538,
+          0.006279209096973546
+        ],
+        "v_rmse_axis_rad_s": [
+          0.0578521409351519,
+          0.09161302013391867
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "learned",
+        "horizon": 50,
+        "planned_origin_count": 196,
+        "saved_records": 196,
+        "available": true,
+        "observed_origin_count": 196,
+        "q_rmse_axis_rad": [
+          0.00254385869433777,
+          0.005276649852814059
+        ],
+        "v_rmse_axis_rad_s": [
+          0.029748095432036513,
+          0.0646040269531095
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "cold",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.019831175626193617,
+          0.023848006286379043
+        ],
+        "v_rmse_axis_rad_s": [
+          0.11418833821682166,
+          0.11000762895841057
+        ],
+        "partial_subset_ranking": false
+      },
+      {
+        "trial_id": "EF1B_8103_control_learned",
+        "model": "learned",
+        "horizon": 150,
+        "planned_origin_count": 186,
+        "saved_records": 186,
+        "available": true,
+        "observed_origin_count": 186,
+        "q_rmse_axis_rad": [
+          0.006441521459382891,
+          0.01402958667864238
+        ],
+        "v_rmse_axis_rad_s": [
+          0.028034153674000167,
+          0.06219542659761217
+        ],
+        "partial_subset_ranking": false
+      }
+    ],
+    "new_paid_entry_counts": {
+      "paid_native_endpoint": 18000,
+      "endpoint_audit_annotation": 18000
+    },
+    "saved_scientific_gate_values": {
+      "ef1b_model_contribution_gate_passed": false,
+      "ef1b_pd_reference_gate_passed": false,
+      "ef1_free_root_mechanism_validation": false
+    },
+    "scientific_gates_recomputed": false,
+    "old_metrics_recomputed": false
+  },
+  "partial_metric_rechecks": null,
+  "partial_population": null,
+  "issues": {},
+  "source_commit": "f9f500706364aab32bd18047266d4b06358e4473",
+  "completed_utc": "2026-10-12T01:26:25.510854+00:00",
+  "production_imports": 0,
+  "physics_calls": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "old_raw_reads": 0,
+  "old_audit_replays": 0,
+  "scientific_gate_recomputations": 0,
+  "scientific_adoption": false
+}

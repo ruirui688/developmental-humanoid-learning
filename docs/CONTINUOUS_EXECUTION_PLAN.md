@@ -16,7 +16,7 @@
 
 当前执行入口：
 
-- **当前入口EF1B冻结：** [EF1B目标保持前馈协议](EQUILIBRIUM_FEEDFORWARD_CONTROL_PROTOCOL.md)已完成首次新合成检查9类96项及剩余15项静态对照，原结果前规则固定。仅新增六条cold/learned轨迹，最多18,000控制/子步、0fit/RLS；FR4B已审PD/zero参考直接复用。先从精确clean提交首次执行，原20%模型贡献、5%强PD及1.05实际努力门不变。尚无EF1B物理结果；累计487,297控制/2,766,970子步和125,652scalar更新不变。C4及C5–C7未验收，持续目标active，阶段提交推送后立即继续。
+- **当前入口EF1B首次结果：** [EF1B首次保持补偿结果](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)从clean f9f5007完整完成六fresh轨迹，18,000新控制/子步、0停止/异常/fit/RLS。同结构模型贡献joint9.0203%、肩8.8254%、肘9.4825%，actual努力两门通过，但未达原20%门；正式PD门因前置失败不可评。本单候选关闭，不scan保持比例/逆解容差/目标状态/gain/权重/seed。累计505,297控制/2,784,970子步、125,652scalar更新。C4及C5–C7未验收，持续目标active；归档核验提交推送后继续有依据的下一方向。
 
 - **Z0首次完整工程门通过。** [首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次seed7600完成1000zero+2000PD、3000控制/3000子步，0异常/停止/fit；两个末200点/.4s窗口的肩/肘四项MAE均≤.01rad。root首新thin contract零failed，独立4个Z0 MAE；记录一致与工程通过仍不证明学习或科学验收。
 - [2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)保持物理/PD64/Kd(4,4)/权限/6s任务，反馈/感觉与active研究停止检查频率增多，公开额外经典控制能力。全子步left_arm/feet/other接触零观察；固定支撑反力unknown，不从不同seed的X/Y失败识别频率因果，不追认自由root真实接触C4或解除C5科学依赖。
@@ -796,3 +796,9 @@ FR0只开放新学习协议准备，C4及C5–C7科学依赖仍未解除；持�
 [EF1B目标保持前馈协议](EQUILIBRIUM_FEEDFORWARD_CONTROL_PROTOCOL.md)已完成首次新合成检查9类96项及剩余15项静态对照，原结果前规则固定。仅新增六条cold/learned轨迹，最多18,000控制/子步、0fit/RLS；FR4B已审PD/zero参考直接复用。先从精确clean提交首次执行，原20%模型贡献、5%强PD及1.05实际努力门不变。尚无EF1B物理结果；累计487,297控制/2,766,970子步和125,652scalar更新不变。C4及C5–C7未验收，持续目标active，阶段提交推送后立即继续。
 
 首静态准备把新增错误费用字段误当作不变函数，触发AssertionError: failure，0物理/fit/RLS；保留该首错误后，仅补齐剩余静态对照，failure除新增两项ledger外AST相同。不重跑已通过的9类96项新数学检查、旧物理、旧预测或旧审计。
+
+### EF1B首次完整结果与立即继续
+
+[EF1B首次保持补偿结果](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)从clean f9f5007完整完成六fresh轨迹，18,000新控制/子步、0停止/异常/fit/RLS。同结构模型贡献joint9.0203%、肩8.8254%、肘9.4825%，actual努力两门通过，但未达原20%门；正式PD门因前置失败不可评。本单候选关闭，不scan保持比例/逆解容差/目标状态/gain/权重/seed。累计505,297控制/2,784,970子步、125,652scalar更新。C4及C5–C7未验收，持续目标active；归档核验提交推送后继续有依据的下一方向。
+
+12目标根全部存在、3有限forecast fallback；零技术异常不证明安全或当前目标根的实际物理因果。首次外进程wall246.827482s，内部wall/CPU245.971729/238.671875s。六新与六复用人口、全部预测与费用原样保存，旧数据不重算。

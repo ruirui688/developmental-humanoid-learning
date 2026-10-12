@@ -13,7 +13,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** [EF1B目标保持前馈协议](docs/EQUILIBRIUM_FEEDFORWARD_CONTROL_PROTOCOL.md)已完成首次新合成检查9类96项及剩余15项静态对照，原结果前规则固定。仅新增六条cold/learned轨迹，最多18,000控制/子步、0fit/RLS；FR4B已审PD/zero参考直接复用。先从精确clean提交首次执行，原20%模型贡献、5%强PD及1.05实际努力门不变。尚无EF1B物理结果；累计487,297控制/2,766,970子步和125,652scalar更新不变。C4及C5–C7未验收，持续目标active，阶段提交推送后立即继续。
+**当前执行入口：** [EF1B首次保持补偿结果](docs/EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)从clean f9f5007完整完成六fresh轨迹，18,000新控制/子步、0停止/异常/fit/RLS。同结构模型贡献joint9.0203%、肩8.8254%、肘9.4825%，actual努力两门通过，但未达原20%门；正式PD门因前置失败不可评。本单候选关闭，不scan保持比例/逆解容差/目标状态/gain/权重/seed。累计505,297控制/2,784,970子步、125,652scalar更新。C4及C5–C7未验收，持续目标active；归档核验提交推送后继续有依据的下一方向。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 

@@ -1,0 +1,117 @@
+{
+  "status": "copied_without_overwrite",
+  "completed_utc": "2026-10-12T01:18:21.447921+00:00",
+  "source": "D:\\Codex_ws\\robot_rl\\external\\ef1b_control_first",
+  "destination": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_equilibrium_feedforward_control",
+  "files": {
+    "raw/installed/EF1B_8101_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/EF1B_8101_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/EF1B_8102_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/EF1B_8102_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/EF1B_8103_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/EF1B_8103_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/manifest.json": {
+      "bytes": 8947,
+      "sha256": "f5917b3d988bc0365b4d6f21fa0dd6b3f3ee573b09792d0413f68ba9aa6bcd09"
+    },
+    "raw/metrics.json": {
+      "bytes": 3015,
+      "sha256": "692a610ab033f8b3f8ec10022301fa85241dc1ba252671610c27119bab5b3537"
+    },
+    "raw/models.json": {
+      "bytes": 60924,
+      "sha256": "3cfbd871c275a8f5d8a07615a239ee9e8192b5e93dcf35104cf61a01f6a6a992"
+    },
+    "raw/paid_intervals.00001.jsonl.gz": {
+      "bytes": 10063161,
+      "sha256": "305c7ed26ca895fa6ecb74f53cbbbec6bcca563de3772ebc5f04cf0dfd5aca8c"
+    },
+    "raw/paid_intervals.00002.jsonl.gz": {
+      "bytes": 10043249,
+      "sha256": "011c9ae9135bf00e8a9dd5bc3500c41b59404b313f9c46bc6d9a98227dc1bd4a"
+    },
+    "raw/paid_intervals.00003.jsonl.gz": {
+      "bytes": 9473322,
+      "sha256": "34bdaefbf5edb805e4d77d96e24cc6d19b3de71a0565c33f4c0d816c0dd022ff"
+    },
+    "raw/paid_intervals.00004.jsonl.gz": {
+      "bytes": 7214322,
+      "sha256": "09e59c713006f57a9e61a853d43b7901660e37d262426480f4867e94a9ac3c80"
+    },
+    "raw/paid_intervals.jsonl.gz": {
+      "bytes": 8975050,
+      "sha256": "345e03f3dfa5ee7903540178613c22c26ead0891c8e449eee955e4645cff1bb5"
+    },
+    "raw/predictions.00001.jsonl.gz": {
+      "bytes": 4261371,
+      "sha256": "9e884a3571bd47a5c5af83c6eb00fb0d2430fc35d9ced80fc0e609cf3c4aa5b2"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 18485641,
+      "sha256": "6e51dfb6d0823f6c55d1f055ba4eec2cf1d83c4b7c26a9ad0659962e7af55be8"
+    },
+    "raw/run.json": {
+      "bytes": 7067299,
+      "sha256": "b7612382fb517d87a581b6dd7585838dd5313233c2f491d840c7bcb3cc09f32b"
+    },
+    "raw/source.zip": {
+      "bytes": 129949,
+      "sha256": "440e115c982d204e3f1141a8b612c490956018b854048c01e5049ea5932c557e"
+    },
+    "raw/trace.00001.jsonl.gz": {
+      "bytes": 10354503,
+      "sha256": "dd022207f44978efdae5cc58fa000507f7b569156efe8ad1a847cef252f6e303"
+    },
+    "raw/trace.00002.jsonl.gz": {
+      "bytes": 10369073,
+      "sha256": "dfc8e8469c581fb17a9bfc3e16d3a6da4a06cfeae9a986ba2b431aab9ee8f1ce"
+    },
+    "raw/trace.00003.jsonl.gz": {
+      "bytes": 1165889,
+      "sha256": "68e1df1eda2aaa1892d300d6398a4e8b7aa0d174690539d00573ba7d788a9361"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 10363986,
+      "sha256": "a3725c452ca933b0381db65248602c71e57330b5a5bf5605d5faafe5be905189"
+    },
+    "first_execution/first_execution_receipt.json": {
+      "bytes": 1521,
+      "sha256": "89196b57e2be6da83d663462d007cb7341573281afde5cf2a675e004089b8269"
+    },
+    "first_execution/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "first_execution/stdout.log": {
+      "bytes": 28387,
+      "sha256": "e0d4e02b36503543db9eb17e82422a154f702b5210f655789e7dc2f9a12803b3"
+    }
+  },
+  "source_read_bytes": 108090189,
+  "destination_written_bytes": 108090189,
+  "destination_verification_read_bytes": 108090189,
+  "raw_decoding": 0,
+  "new_physics": 0,
+  "new_model_calls": 0,
+  "fit": 0,
+  "RLS": 0,
+  "wall_before_receipt_seconds": 0.4326790999621153
+}

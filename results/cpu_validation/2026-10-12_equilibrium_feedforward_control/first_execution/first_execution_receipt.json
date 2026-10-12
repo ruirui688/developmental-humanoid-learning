@@ -1,0 +1,43 @@
+{
+  "schema": "ef1b_control_first_execution_receipt_v1",
+  "experiment_id": "EF1B",
+  "stage": "controlonly",
+  "first_invocation": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "-u",
+    "scripts/develop_equilibrium_feedforward.py",
+    "--stage",
+    "controlonly",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\ef1b_control_first\\raw",
+    "--source-commit",
+    "f9f500706364aab32bd18047266d4b06358e4473"
+  ],
+  "source_commit": "f9f500706364aab32bd18047266d4b06358e4473",
+  "capture": "D:\\Codex_ws\\robot_rl\\external\\ef1b_control_first\\stdio",
+  "raw_output": "D:\\Codex_ws\\robot_rl\\external\\ef1b_control_first\\raw",
+  "source_validation": "The new runner verifies the exact clean source commit before physics.",
+  "process_launch_attempted": true,
+  "process_returned": true,
+  "exit_code": 0,
+  "first_launcher_failure": null,
+  "process_wall_seconds": 246.82748189987615,
+  "wall_seconds_before_receipt": 246.83982559992,
+  "files": {
+    "stdout.log": {
+      "bytes": 28387,
+      "sha256": "e0d4e02b36503543db9eb17e82422a154f702b5210f655789e7dc2f9a12803b3"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "old_raw_or_model_reads_by_launcher": 0,
+  "production_imports_by_launcher": 0,
+  "direct_physics_calls_by_launcher": 0
+}
