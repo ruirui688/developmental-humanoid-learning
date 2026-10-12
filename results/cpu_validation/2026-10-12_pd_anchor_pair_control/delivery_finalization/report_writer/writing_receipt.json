@@ -1,0 +1,51 @@
+{
+  "schema": "FR4B_first_report_writing_receipt_v1",
+  "status": "written",
+  "created_at_utc": "2026-10-12T00:40:24.882764+00:00",
+  "source_commit": "490fcffa0080125e7c2a8b887c99cc2743dcc01f",
+  "only_experimental_input": {
+    "path": "results\\cpu_validation\\2026-10-12_pd_anchor_pair_control\\report_inputs.json",
+    "bytes": 1377292,
+    "sha256": "f98481210a408cb0ef073c728fb3272328ae0e21abe107afb187ccb758c4a6c0",
+    "file_read_count": 1,
+    "JSON_parse_count": 1
+  },
+  "report_inputs_stage_contract": "stage may be absent; if present it must match the fixed experiment_id/config",
+  "first_audit_from_root_CLI": {
+    "status": "passed",
+    "checks": 674441,
+    "failed": 0,
+    "new_RMSE_vectors": 120
+  },
+  "historical_baseline": {
+    "controls": 451297,
+    "substeps": 2730970,
+    "online_scalar": 118452,
+    "offline_scalar": 7200,
+    "source": "explicit_root_CLI_actual_before_own_stage"
+  },
+  "actual_saved_increment": {
+    "control_returns": 36000,
+    "confirmed_substeps": 36000,
+    "online_scalar_commits": 0
+  },
+  "cumulative_after_stage": {
+    "controls": 487297,
+    "substeps": 2766970,
+    "online_scalar": 118452,
+    "offline_scalar": 7200
+  },
+  "saved_scientific_metrics_transcription_only": true,
+  "raw_model_parameter_old_experimental_result_or_audit_file_reads": 0,
+  "embedded_snapshots": "not selected/restored/copied",
+  "scientific_metrics_model_fit_RLS_physics_calls": 0,
+  "navigation_document_reads_or_writes": 0,
+  "written_documents": {
+    "docs\\PD_ANCHOR_PAIR_CONTROL_RESULTS.md": {
+      "bytes": 23949,
+      "sha256": "5ac427a6ac39ccfd904fceb9160c13088b63c4d66c8029f392c3de9d8b96599d"
+    }
+  },
+  "other_filesystem_IO": "unmeasured_not_zero",
+  "commit_or_push_by_child": false
+}

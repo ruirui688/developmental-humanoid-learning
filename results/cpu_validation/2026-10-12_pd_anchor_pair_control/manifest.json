@@ -1,0 +1,116 @@
+{
+  "stage": "FR4B_first_archive",
+  "status": "completed",
+  "files_before_top_manifest": {
+    "first_execution_receipt.json": {
+      "bytes": 881,
+      "sha256": "c89aef5fe3ed6f61ad1c3927bd5f84a219266bba948b2796036db839abf3d5e7"
+    },
+    "raw/installed/FR4_8101_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8101_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8101_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8101_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8102_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8102_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8102_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8102_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8103_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8103_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8103_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/installed/FR4_8103_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "raw/manifest.json": {
+      "bytes": 3154,
+      "sha256": "ee66a39474fe6716af90a7671452a95a53541ec676ee7125e07416eed3153d9d"
+    },
+    "raw/metrics.json": {
+      "bytes": 5040,
+      "sha256": "480aea7d81570a1bf29ebed8bdefabdb7908e0dc6abef39ab762e93122edd6ef"
+    },
+    "raw/models.json": {
+      "bytes": 60924,
+      "sha256": "3cfbd871c275a8f5d8a07615a239ee9e8192b5e93dcf35104cf61a01f6a6a992"
+    },
+    "raw/paid_intervals.jsonl.gz": {
+      "bytes": 58819808,
+      "sha256": "521febdf6a92a1abf98e4bc8751148dfc719aeb5831cc92467568ead49d26b91"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 20020294,
+      "sha256": "3c52f283e0bc0d36f58f737239172d77b195ecfacc0cb1eb5a762514c2953677"
+    },
+    "raw/run.json": {
+      "bytes": 2550376,
+      "sha256": "0e1b89d288cedcedf5cb0714b44f99ab3f090b5e5496ac1b2c4069568ff17d86"
+    },
+    "raw/source.zip": {
+      "bytes": 92230,
+      "sha256": "92dfcef0677af32b836da26be45f8aa586d75e5be88898f86f5d3f9dbad1faef"
+    },
+    "raw/trace.jsonl.gz": {
+      "bytes": 45733328,
+      "sha256": "bf8259dbb7cb6b65a956ce31243b7a761785bc9d0238843de787cb29a9d11b35"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "bytes": 48075,
+      "sha256": "11c3fa69458abde616494c3d3b4acb5144b30aac221d10a08b328c35cd809fb4"
+    },
+    "report_inputs.json": {
+      "bytes": 1377292,
+      "sha256": "f98481210a408cb0ef073c728fb3272328ae0e21abe107afb187ccb758c4a6c0"
+    },
+    "launchers/run_fr4_physics_first_once.py": {
+      "bytes": 1755,
+      "sha256": "b12757b06db713b3827174a9f2107470ab23687ac8293a13ed9bf261a7fd43a5"
+    },
+    "launchers/archive_fr4_first_once.py": {
+      "bytes": 3163,
+      "sha256": "2ba56b1cbfdc544848e835ce633e4d95e561509d97eed1ebe6df7e7d457f4e39"
+    },
+    "archive_receipt.json": {
+      "bytes": 342,
+      "sha256": "e8d5f94dfcd7bd2e5f57909485750ea23eb373c31a8e8d41e9602ed43c63b22f"
+    }
+  },
+  "scientific_adoption": false,
+  "continuous_goal_stays_active": true
+}

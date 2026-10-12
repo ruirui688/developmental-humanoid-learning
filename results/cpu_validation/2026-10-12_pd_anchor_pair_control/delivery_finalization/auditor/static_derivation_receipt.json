@@ -1,0 +1,106 @@
+{
+  "status": "static_derivative_prepared_not_executed",
+  "reference_auditor": {
+    "path": "external\\fr3b_audit_candidate\\audit_full_request_pair_control.py",
+    "identity": {
+      "bytes": 58695,
+      "sha256": "60e2d1c45f558f643ef8d108e205fa7aa4d1a96c179f6ea6fdd3fefbefc0cf38"
+    }
+  },
+  "new_auditor": {
+    "path": "external\\fr4b_audit_candidate\\audit_pd_anchor_pair_control.py",
+    "identity": {
+      "bytes": 63377,
+      "sha256": "1a1e0f53745a97c241e51b6e0203533c6adbec97f2ea5b5f65e269147f069aa0"
+    }
+  },
+  "AST_exact_preserved_top_level_nodes": [
+    "AuditBoundError",
+    "json_safe",
+    "Checks",
+    "require",
+    "finite_number",
+    "vector",
+    "close_tree",
+    "identity",
+    "duplicate_free",
+    "parse_json",
+    "read_small",
+    "hash_stream",
+    "iter_records",
+    "check_sources",
+    "complete_native_observation",
+    "input_ranges",
+    "contact_summary",
+    "effort_summary",
+    "snapshot_check",
+    "decision_accounting",
+    "clipped_public_PD_checksum"
+  ],
+  "AST_namespace_only_top_level_nodes": [
+    "capture_control",
+    "conditional_recheck",
+    "original_control_gate"
+  ],
+  "intentionally_adapted_functions": [
+    "full_grid_saved_request_check -> pd_anchor_saved_request_check",
+    "trial_recheck (saved spec only)",
+    "run_audit (new descriptor cost export only beyond namespace)",
+    "main (new descriptor bounds only beyond namespace)"
+  ],
+  "new_helper": "pd_anchor_saved_spec_check",
+  "new_namespace": {
+    "seeds": [
+      8101,
+      8102,
+      8103
+    ],
+    "experiment_id": "FR4B",
+    "stage": "control",
+    "relative_raw_path": "results/cpu_validation/2026-10-12_pd_anchor_pair_control/raw",
+    "source_paths": [
+      "scripts/develop_pd_anchor_pair.py",
+      "src/developmental_physics/pd_anchor_pair_development.py",
+      "docs/PD_ANCHOR_PAIR_LEARNING_PROTOCOL.md",
+      "scripts/validate_free_root_fast_feedback_engineering.py",
+      "src/developmental_physics/free_root_fast_feedback_environment.py",
+      "docs/FREE_ROOT_FAST_FEEDBACK_ENGINEERING_PROTOCOL.md",
+      "src/developmental_physics/environment.py",
+      "src/developmental_physics/assets/ground_body.xml",
+      "src/developmental_physics/__init__.py",
+      "pyproject.toml",
+      "src/developmental_physics/fast_feedback_pair_model.py",
+      "src/developmental_physics/guard_coupled_pair_model.py",
+      "src/developmental_physics/guard_pair_model.py",
+      "src/developmental_physics/local_pair_model.py",
+      "src/developmental_physics/local_model.py",
+      "src/developmental_physics/fast_feedback_pair_mpc.py",
+      "src/developmental_physics/batched_fast_feedback_pair_mpc.py",
+      "src/developmental_physics/pd_anchor_pair_mpc.py",
+      "src/developmental_physics/fast_feedback_pair_development.py"
+    ]
+  },
+  "mapping": "per current clipped saved-state PD: original nearest slot by (absolute distance, original index) replaced with p; original 9 x 9 order retained",
+  "pure_PD_check": "delta zero expression and saved first request only; no feasibility or selection scientific veto",
+  "original_math_and_science": "tracking, effort, conditional RMSE, guards, original 20%/5%/1.05 gates and all five false flags retained",
+  "new_description_upper_bounds": {
+    "macros": 1200,
+    "nearest_scalar_distances": 21600,
+    "axis_slot_replacements": 2400,
+    "pure_PD_delta_zero_checks": 1200,
+    "saved_spec_checks": 6
+  },
+  "row_path_and_candidate_upper_bounds_unchanged": true,
+  "source_line_endings": "LF",
+  "runner_old_SHA_not_assumed": true,
+  "candidate_auditor_imports_or_executions": 0,
+  "new_or_old_raw_or_result_reads": 0,
+  "parameter_reads": 0,
+  "model_calls": 0,
+  "physics": 0,
+  "fit": 0,
+  "RLS": 0,
+  "static_parse_only": true,
+  "automatic_retry": false,
+  "CLI_template": "python external/fr4b_audit_candidate/audit_pd_anchor_pair_control.py --repo . --raw results/cpu_validation/2026-10-12_pd_anchor_pair_control/raw --source-commit <FR4B_PHYSICAL_SOURCE_COMMIT> --output results/cpu_validation/2026-10-12_pd_anchor_pair_control/saved_audit"
+}

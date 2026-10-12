@@ -1,0 +1,31 @@
+{
+  "first_invocation": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Codex_ws\\robot_rl\\external\\cpu_physics_env\\Scripts\\python.exe",
+    "-u",
+    "scripts/develop_pd_anchor_pair.py",
+    "--stage",
+    "control",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4_control_first\\raw",
+    "--source-commit",
+    "490fcffa0080125e7c2a8b887c99cc2743dcc01f"
+  ],
+  "source_commit": "490fcffa0080125e7c2a8b887c99cc2743dcc01f",
+  "stage": "control",
+  "exit_code": 0,
+  "wall_seconds": 2487.5667101000436,
+  "files": {
+    "stdout.log": {
+      "bytes": 48075,
+      "sha256": "11c3fa69458abde616494c3d3b4acb5144b30aac221d10a08b328c35cd809fb4"
+    },
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

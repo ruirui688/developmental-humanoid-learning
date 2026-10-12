@@ -1,0 +1,19 @@
+{
+  "first_attempt": true,
+  "automatic_retry": false,
+  "command": [
+    "D:\\Python3.10\\python.exe",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4b_audit_candidate\\audit_pd_anchor_pair_control.py",
+    "--repo",
+    "D:\\Codex_ws\\robot_rl",
+    "--raw",
+    "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_pd_anchor_pair_control\\raw",
+    "--source-commit",
+    "490fcffa0080125e7c2a8b887c99cc2743dcc01f",
+    "--output",
+    "D:\\Codex_ws\\robot_rl\\external\\fr4b_first_audit\\result"
+  ],
+  "candidate_sha256": "1a1e0f53745a97c241e51b6e0203533c6adbec97f2ea5b5f65e269147f069aa0",
+  "exit_code": 0,
+  "wall_seconds": 17.542515099979937
+}

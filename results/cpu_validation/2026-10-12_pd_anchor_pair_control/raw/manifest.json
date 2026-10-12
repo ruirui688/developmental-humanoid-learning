@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FR4B",
+  "stage": "control",
+  "status": "completed",
+  "files": {
+    "paid_intervals.jsonl.gz": {
+      "bytes": 58819808,
+      "sha256": "521febdf6a92a1abf98e4bc8751148dfc719aeb5831cc92467568ead49d26b91"
+    },
+    "run.json": {
+      "bytes": 2550376,
+      "sha256": "0e1b89d288cedcedf5cb0714b44f99ab3f090b5e5496ac1b2c4069568ff17d86"
+    },
+    "metrics.json": {
+      "bytes": 5040,
+      "sha256": "480aea7d81570a1bf29ebed8bdefabdb7908e0dc6abef39ab762e93122edd6ef"
+    },
+    "models.json": {
+      "bytes": 60924,
+      "sha256": "3cfbd871c275a8f5d8a07615a239ee9e8192b5e93dcf35104cf61a01f6a6a992"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 45733328,
+      "sha256": "bf8259dbb7cb6b65a956ce31243b7a761785bc9d0238843de787cb29a9d11b35"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 20020294,
+      "sha256": "3c52f283e0bc0d36f58f737239172d77b195ecfacc0cb1eb5a762514c2953677"
+    },
+    "source.zip": {
+      "bytes": 92230,
+      "sha256": "92dfcef0677af32b836da26be45f8aa586d75e5be88898f86f5d3f9dbad1faef"
+    },
+    "installed/FR4_8101_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8101_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8101_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8101_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8102_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8102_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8102_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8102_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8103_control_cold.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8103_control_learned.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8103_control_pd.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    },
+    "installed/FR4_8103_control_zero.xml": {
+      "bytes": 3430,
+      "sha256": "23869692a531a1bf18613aecb604d29e0d5cf888e509f6861c4fb3da13f8412c"
+    }
+  },
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}

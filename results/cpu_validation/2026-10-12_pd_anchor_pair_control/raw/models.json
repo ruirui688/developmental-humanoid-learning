@@ -1,0 +1,2456 @@
+{
+  "8101": {
+    "cold": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "features_per_output": [
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ],
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "covariance": [
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ]
+      ],
+      "initial_coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "integration": "endpoint_euler",
+      "dtype": "float64",
+      "feature_roles_per_output": [
+        {
+          "output_index": 0,
+          "own_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "cross_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "constant_column": 8
+        },
+        {
+          "output_index": 1,
+          "own_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "cross_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "constant_column": 8
+        }
+      ],
+      "input_mapping": {
+        "basis": "known_angle_guard",
+        "feature_command": "G(current q, original requested u) at control start",
+        "public_guard": {
+          "rule": "known_angle_guard_control_start_v1",
+          "public_joint_ranges_rad": [
+            [
+              -1.7453292519943295,
+              1.7453292519943295
+            ],
+            [
+              0.0,
+              2.356194490192345
+            ]
+          ],
+          "angle_margin_rad": 0.03,
+          "request_clip_per_axis_nm": 0.5,
+          "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+          "zero_is_blocked": false,
+          "q_clipped": false,
+          "evaluation_time": "current control-start q and already known request",
+          "interval_semantics": "start-only projection; not realized 20 ms average input",
+          "future_actual_input": false,
+          "physical_queries": 0
+        },
+        "guard_used_by_model": true,
+        "recompute": "same causal mapping on every RLS and mathematical prediction call"
+      },
+      "model_definition": {
+        "feature_order_source": "unchanged PairBodyModel coupled_hinge9 global column order",
+        "rls_source": "unchanged PairBodyModel atomic two-head update",
+        "guard_source": "KnownAngleGuard public control-start rule",
+        "own_prior": "v continuity 1; known guarded torque .002; other own coefficients zero",
+        "cross_prior": "all four cross coefficients zero for each output",
+        "parameter_count_per_output": 9,
+        "matching_diagonal_parameter_count_per_output": 5,
+        "physical_queries": 0
+      },
+      "time_adaptation": {
+        "reference_constructor_dt_seconds": 0.02,
+        "active_dt_seconds": 0.002,
+        "velocity_increment_scale": 0.1,
+        "rule": "E + .1 * (unlearned generic theta_20ms - E); E is own-axis velocity identity",
+        "reference_initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "old_learned_snapshot_restoration": false,
+        "forgetting_factor": 1.0,
+        "forgetting_physical_rate_rule": "lambda_micro = lambda_macro ** .1; 1 remains 1",
+        "initial_covariance_scale": 100.0,
+        "more_correlated_micro_updates_change_prior_relative_weight": true
+      },
+      "parameter_fingerprint": "95154b5b62f4823a2ab13e5037ce08099a365cc6303bba0a670f8cab169c382c",
+      "trainable": false,
+      "vector_update_count": 0,
+      "scalar_update_count": 0,
+      "output_update_counts": [
+        0,
+        0
+      ],
+      "update_commit": "single immutable state reference for both outputs, covariance and counts",
+      "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+      "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+    },
+    "learned": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "features_per_output": [
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ],
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8549683805068311,
+          -0.029038986098587637,
+          -0.012545802373521776,
+          0.02640627049878906,
+          0.008775858698056832,
+          -0.004772645714921826,
+          0.003984220645766954,
+          -0.024957379259176384,
+          9.584845765748462e-05
+        ],
+        [
+          0.17914433687386527,
+          1.0029285568446356,
+          0.02261391199911123,
+          -0.050628437240856035,
+          -0.010514200699273142,
+          0.009720665435142549,
+          -0.008067981651422048,
+          0.05003584186786613,
+          -0.0001791587450963176
+        ]
+      ],
+      "covariance": [
+        [
+          [
+            47.05473976117962,
+            22.64646093789172,
+            -1.0013445073690324,
+            1.1925239278971118,
+            -0.6250916857447204,
+            0.05506886623043537,
+            -0.12633943633867495,
+            -0.26488787248106554,
+            -0.0014302836678092962
+          ],
+          [
+            22.64646093789172,
+            15.43705367627658,
+            -0.5956028161975059,
+            0.6112942546837923,
+            -0.19892580655899303,
+            -0.10621469739729132,
+            -0.10927449148405384,
+            -0.19194662599784654,
+            0.001091417195337962
+          ],
+          [
+            -1.0013445073690324,
+            -0.5956028161975059,
+            99.60137785768723,
+            0.22519556692282092,
+            0.026999390560635095,
+            0.07566817507324963,
+            -0.015553144480107549,
+            -0.16745344392042372,
+            -0.0038937635465210517
+          ],
+          [
+            1.1925239278971118,
+            0.6112942546837923,
+            0.22519556692282092,
+            99.55622023496497,
+            0.02477778359476897,
+            -0.1358139059731128,
+            -0.06341024051006344,
+            0.2656779420463156,
+            -0.0016466975877876026
+          ],
+          [
+            -0.6250916857447204,
+            -0.19892580655899303,
+            0.026999390560635095,
+            0.02477778359476897,
+            0.118623460359461,
+            -0.013123133806582152,
+            -0.25926490244533124,
+            0.02568912025379864,
+            0.000511873542349405
+          ],
+          [
+            0.05506886623043537,
+            -0.10621469739729132,
+            0.07566817507324963,
+            -0.1358139059731128,
+            -0.013123133806582152,
+            0.21410163998394058,
+            0.02445383227947811,
+            -0.5020657739728926,
+            -0.0018394625276914756
+          ],
+          [
+            -0.12633943633867495,
+            -0.10927449148405384,
+            -0.015553144480107549,
+            -0.06341024051006344,
+            -0.25926490244533124,
+            0.02445383227947811,
+            1.0165200008087865,
+            -0.3349569615452218,
+            -0.0010259743000341128
+          ],
+          [
+            -0.26488787248106554,
+            -0.19194662599784654,
+            -0.16745344392042372,
+            0.2656779420463156,
+            0.02568912025379864,
+            -0.5020657739728926,
+            -0.3349569615452218,
+            2.722082568488754,
+            0.0027414262879406045
+          ],
+          [
+            -0.0014302836678092962,
+            0.001091417195337962,
+            -0.0038937635465210517,
+            -0.0016466975877876026,
+            0.000511873542349405,
+            -0.0018394625276914756,
+            -0.0010259743000341128,
+            0.0027414262879406045,
+            0.00026905457313737286
+          ]
+        ],
+        [
+          [
+            47.05473976117962,
+            22.64646093789172,
+            -1.0013445073690324,
+            1.1925239278971118,
+            -0.6250916857447204,
+            0.05506886623043537,
+            -0.12633943633867495,
+            -0.26488787248106554,
+            -0.0014302836678092962
+          ],
+          [
+            22.64646093789172,
+            15.43705367627658,
+            -0.5956028161975059,
+            0.6112942546837923,
+            -0.19892580655899303,
+            -0.10621469739729132,
+            -0.10927449148405384,
+            -0.19194662599784654,
+            0.001091417195337962
+          ],
+          [
+            -1.0013445073690324,
+            -0.5956028161975059,
+            99.60137785768723,
+            0.22519556692282092,
+            0.026999390560635095,
+            0.07566817507324963,
+            -0.015553144480107549,
+            -0.16745344392042372,
+            -0.0038937635465210517
+          ],
+          [
+            1.1925239278971118,
+            0.6112942546837923,
+            0.22519556692282092,
+            99.55622023496497,
+            0.02477778359476897,
+            -0.1358139059731128,
+            -0.06341024051006344,
+            0.2656779420463156,
+            -0.0016466975877876026
+          ],
+          [
+            -0.6250916857447204,
+            -0.19892580655899303,
+            0.026999390560635095,
+            0.02477778359476897,
+            0.118623460359461,
+            -0.013123133806582152,
+            -0.25926490244533124,
+            0.02568912025379864,
+            0.000511873542349405
+          ],
+          [
+            0.05506886623043537,
+            -0.10621469739729132,
+            0.07566817507324963,
+            -0.1358139059731128,
+            -0.013123133806582152,
+            0.21410163998394058,
+            0.02445383227947811,
+            -0.5020657739728926,
+            -0.0018394625276914756
+          ],
+          [
+            -0.12633943633867495,
+            -0.10927449148405384,
+            -0.015553144480107549,
+            -0.06341024051006344,
+            -0.25926490244533124,
+            0.02445383227947811,
+            1.0165200008087865,
+            -0.3349569615452218,
+            -0.0010259743000341128
+          ],
+          [
+            -0.26488787248106554,
+            -0.19194662599784654,
+            -0.16745344392042372,
+            0.2656779420463156,
+            0.02568912025379864,
+            -0.5020657739728926,
+            -0.3349569615452218,
+            2.722082568488754,
+            0.0027414262879406045
+          ],
+          [
+            -0.0014302836678092962,
+            0.001091417195337962,
+            -0.0038937635465210517,
+            -0.0016466975877876026,
+            0.000511873542349405,
+            -0.0018394625276914756,
+            -0.0010259743000341128,
+            0.0027414262879406045,
+            0.00026905457313737286
+          ]
+        ]
+      ],
+      "initial_coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "integration": "endpoint_euler",
+      "dtype": "float64",
+      "feature_roles_per_output": [
+        {
+          "output_index": 0,
+          "own_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "cross_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "constant_column": 8
+        },
+        {
+          "output_index": 1,
+          "own_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "cross_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "constant_column": 8
+        }
+      ],
+      "input_mapping": {
+        "basis": "known_angle_guard",
+        "feature_command": "G(current q, original requested u) at control start",
+        "public_guard": {
+          "rule": "known_angle_guard_control_start_v1",
+          "public_joint_ranges_rad": [
+            [
+              -1.7453292519943295,
+              1.7453292519943295
+            ],
+            [
+              0.0,
+              2.356194490192345
+            ]
+          ],
+          "angle_margin_rad": 0.03,
+          "request_clip_per_axis_nm": 0.5,
+          "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+          "zero_is_blocked": false,
+          "q_clipped": false,
+          "evaluation_time": "current control-start q and already known request",
+          "interval_semantics": "start-only projection; not realized 20 ms average input",
+          "future_actual_input": false,
+          "physical_queries": 0
+        },
+        "guard_used_by_model": true,
+        "recompute": "same causal mapping on every RLS and mathematical prediction call"
+      },
+      "model_definition": {
+        "feature_order_source": "unchanged PairBodyModel coupled_hinge9 global column order",
+        "rls_source": "unchanged PairBodyModel atomic two-head update",
+        "guard_source": "KnownAngleGuard public control-start rule",
+        "own_prior": "v continuity 1; known guarded torque .002; other own coefficients zero",
+        "cross_prior": "all four cross coefficients zero for each output",
+        "parameter_count_per_output": 9,
+        "matching_diagonal_parameter_count_per_output": 5,
+        "physical_queries": 0
+      },
+      "time_adaptation": {
+        "reference_constructor_dt_seconds": 0.02,
+        "active_dt_seconds": 0.002,
+        "velocity_increment_scale": 0.1,
+        "rule": "E + .1 * (unlearned generic theta_20ms - E); E is own-axis velocity identity",
+        "reference_initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "old_learned_snapshot_restoration": false,
+        "forgetting_factor": 1.0,
+        "forgetting_physical_rate_rule": "lambda_micro = lambda_macro ** .1; 1 remains 1",
+        "initial_covariance_scale": 100.0,
+        "more_correlated_micro_updates_change_prior_relative_weight": true
+      },
+      "parameter_fingerprint": "e31bb9751e4b18d26d005bf7c0a6e8717e6e4f1901659fdf50d0f664b29653b4",
+      "trainable": false,
+      "vector_update_count": 4000,
+      "scalar_update_count": 8000,
+      "output_update_counts": [
+        4000,
+        4000
+      ],
+      "update_commit": "single immutable state reference for both outputs, covariance and counts",
+      "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+      "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+    }
+  },
+  "8102": {
+    "cold": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "features_per_output": [
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ],
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "covariance": [
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ]
+      ],
+      "initial_coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "integration": "endpoint_euler",
+      "dtype": "float64",
+      "feature_roles_per_output": [
+        {
+          "output_index": 0,
+          "own_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "cross_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "constant_column": 8
+        },
+        {
+          "output_index": 1,
+          "own_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "cross_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "constant_column": 8
+        }
+      ],
+      "input_mapping": {
+        "basis": "known_angle_guard",
+        "feature_command": "G(current q, original requested u) at control start",
+        "public_guard": {
+          "rule": "known_angle_guard_control_start_v1",
+          "public_joint_ranges_rad": [
+            [
+              -1.7453292519943295,
+              1.7453292519943295
+            ],
+            [
+              0.0,
+              2.356194490192345
+            ]
+          ],
+          "angle_margin_rad": 0.03,
+          "request_clip_per_axis_nm": 0.5,
+          "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+          "zero_is_blocked": false,
+          "q_clipped": false,
+          "evaluation_time": "current control-start q and already known request",
+          "interval_semantics": "start-only projection; not realized 20 ms average input",
+          "future_actual_input": false,
+          "physical_queries": 0
+        },
+        "guard_used_by_model": true,
+        "recompute": "same causal mapping on every RLS and mathematical prediction call"
+      },
+      "model_definition": {
+        "feature_order_source": "unchanged PairBodyModel coupled_hinge9 global column order",
+        "rls_source": "unchanged PairBodyModel atomic two-head update",
+        "guard_source": "KnownAngleGuard public control-start rule",
+        "own_prior": "v continuity 1; known guarded torque .002; other own coefficients zero",
+        "cross_prior": "all four cross coefficients zero for each output",
+        "parameter_count_per_output": 9,
+        "matching_diagonal_parameter_count_per_output": 5,
+        "physical_queries": 0
+      },
+      "time_adaptation": {
+        "reference_constructor_dt_seconds": 0.02,
+        "active_dt_seconds": 0.002,
+        "velocity_increment_scale": 0.1,
+        "rule": "E + .1 * (unlearned generic theta_20ms - E); E is own-axis velocity identity",
+        "reference_initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "old_learned_snapshot_restoration": false,
+        "forgetting_factor": 1.0,
+        "forgetting_physical_rate_rule": "lambda_micro = lambda_macro ** .1; 1 remains 1",
+        "initial_covariance_scale": 100.0,
+        "more_correlated_micro_updates_change_prior_relative_weight": true
+      },
+      "parameter_fingerprint": "2f730b4ab4289ce87f4fd09bd1a731e2234322574f8bbd62a842be7523049c5d",
+      "trainable": false,
+      "vector_update_count": 0,
+      "scalar_update_count": 0,
+      "output_update_counts": [
+        0,
+        0
+      ],
+      "update_commit": "single immutable state reference for both outputs, covariance and counts",
+      "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+      "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+    },
+    "learned": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "features_per_output": [
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ],
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8552626950366113,
+          -0.028815260817506766,
+          -0.012541861261815054,
+          0.0263133698132304,
+          0.008753618317169889,
+          -0.004726988722731229,
+          0.003950321101551757,
+          -0.024968502995469374,
+          8.16163680281476e-05
+        ],
+        [
+          0.17894557350152962,
+          1.0026977264015695,
+          0.022627921231046615,
+          -0.05048378749938208,
+          -0.010493523886573075,
+          0.00963764790525536,
+          -0.008016621715718876,
+          0.0500734003434284,
+          -0.00016173041463487405
+        ]
+      ],
+      "covariance": [
+        [
+          [
+            47.147999162407665,
+            22.66726245085343,
+            -0.9984383591985715,
+            1.1862145646877422,
+            -0.6257381994520016,
+            0.05590016512988315,
+            -0.12379231467013009,
+            -0.26653713676713886,
+            -0.0003687960746067551
+          ],
+          [
+            22.66726245085343,
+            15.446512015019616,
+            -0.5935641982363848,
+            0.6066245488060225,
+            -0.19795639280959124,
+            -0.10396618627286168,
+            -0.11140180598763284,
+            -0.197848189692015,
+            0.0014432516824620886
+          ],
+          [
+            -0.9984383591985715,
+            -0.5935641982363848,
+            99.60115203864564,
+            0.22395836099884162,
+            0.026900972545882196,
+            0.07633827550429037,
+            -0.015789406683700807,
+            -0.1677259583834718,
+            -0.0016310899007263254
+          ],
+          [
+            1.1862145646877422,
+            0.6066245488060225,
+            0.22395836099884162,
+            99.56024096361196,
+            0.02463424904487363,
+            -0.1351340339646952,
+            -0.06283466431494965,
+            0.26435928000069836,
+            -0.0015540329415562677
+          ],
+          [
+            -0.6257381994520016,
+            -0.19795639280959124,
+            0.026900972545882196,
+            0.02463424904487363,
+            0.11853284976795292,
+            -0.012700240874840904,
+            -0.25891460643504355,
+            0.026033328467983653,
+            0.00033949506798110115
+          ],
+          [
+            0.05590016512988315,
+            -0.10396618627286168,
+            0.07633827550429037,
+            -0.1351340339646952,
+            -0.012700240874840904,
+            0.2136518190631249,
+            0.02334492792098363,
+            -0.5015400425961113,
+            -0.0018204101348078773
+          ],
+          [
+            -0.12379231467013009,
+            -0.11140180598763284,
+            -0.015789406683700807,
+            -0.06283466431494965,
+            -0.25891460643504355,
+            0.02334492792098363,
+            1.0145202435903447,
+            -0.3371738135860847,
+            -0.0006672924058206019
+          ],
+          [
+            -0.26653713676713886,
+            -0.197848189692015,
+            -0.1677259583834718,
+            0.26435928000069836,
+            0.026033328467983653,
+            -0.5015400425961113,
+            -0.3371738135860847,
+            2.722715317931749,
+            0.002718449439709679
+          ],
+          [
+            -0.0003687960746067551,
+            0.0014432516824620886,
+            -0.0016310899007263254,
+            -0.0015540329415562677,
+            0.00033949506798110115,
+            -0.0018204101348078773,
+            -0.0006672924058206019,
+            0.002718449439709679,
+            0.0002677675516518457
+          ]
+        ],
+        [
+          [
+            47.147999162407665,
+            22.66726245085343,
+            -0.9984383591985715,
+            1.1862145646877422,
+            -0.6257381994520016,
+            0.05590016512988315,
+            -0.12379231467013009,
+            -0.26653713676713886,
+            -0.0003687960746067551
+          ],
+          [
+            22.66726245085343,
+            15.446512015019616,
+            -0.5935641982363848,
+            0.6066245488060225,
+            -0.19795639280959124,
+            -0.10396618627286168,
+            -0.11140180598763284,
+            -0.197848189692015,
+            0.0014432516824620886
+          ],
+          [
+            -0.9984383591985715,
+            -0.5935641982363848,
+            99.60115203864564,
+            0.22395836099884162,
+            0.026900972545882196,
+            0.07633827550429037,
+            -0.015789406683700807,
+            -0.1677259583834718,
+            -0.0016310899007263254
+          ],
+          [
+            1.1862145646877422,
+            0.6066245488060225,
+            0.22395836099884162,
+            99.56024096361196,
+            0.02463424904487363,
+            -0.1351340339646952,
+            -0.06283466431494965,
+            0.26435928000069836,
+            -0.0015540329415562677
+          ],
+          [
+            -0.6257381994520016,
+            -0.19795639280959124,
+            0.026900972545882196,
+            0.02463424904487363,
+            0.11853284976795292,
+            -0.012700240874840904,
+            -0.25891460643504355,
+            0.026033328467983653,
+            0.00033949506798110115
+          ],
+          [
+            0.05590016512988315,
+            -0.10396618627286168,
+            0.07633827550429037,
+            -0.1351340339646952,
+            -0.012700240874840904,
+            0.2136518190631249,
+            0.02334492792098363,
+            -0.5015400425961113,
+            -0.0018204101348078773
+          ],
+          [
+            -0.12379231467013009,
+            -0.11140180598763284,
+            -0.015789406683700807,
+            -0.06283466431494965,
+            -0.25891460643504355,
+            0.02334492792098363,
+            1.0145202435903447,
+            -0.3371738135860847,
+            -0.0006672924058206019
+          ],
+          [
+            -0.26653713676713886,
+            -0.197848189692015,
+            -0.1677259583834718,
+            0.26435928000069836,
+            0.026033328467983653,
+            -0.5015400425961113,
+            -0.3371738135860847,
+            2.722715317931749,
+            0.002718449439709679
+          ],
+          [
+            -0.0003687960746067551,
+            0.0014432516824620886,
+            -0.0016310899007263254,
+            -0.0015540329415562677,
+            0.00033949506798110115,
+            -0.0018204101348078773,
+            -0.0006672924058206019,
+            0.002718449439709679,
+            0.0002677675516518457
+          ]
+        ]
+      ],
+      "initial_coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "integration": "endpoint_euler",
+      "dtype": "float64",
+      "feature_roles_per_output": [
+        {
+          "output_index": 0,
+          "own_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "cross_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "constant_column": 8
+        },
+        {
+          "output_index": 1,
+          "own_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "cross_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "constant_column": 8
+        }
+      ],
+      "input_mapping": {
+        "basis": "known_angle_guard",
+        "feature_command": "G(current q, original requested u) at control start",
+        "public_guard": {
+          "rule": "known_angle_guard_control_start_v1",
+          "public_joint_ranges_rad": [
+            [
+              -1.7453292519943295,
+              1.7453292519943295
+            ],
+            [
+              0.0,
+              2.356194490192345
+            ]
+          ],
+          "angle_margin_rad": 0.03,
+          "request_clip_per_axis_nm": 0.5,
+          "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+          "zero_is_blocked": false,
+          "q_clipped": false,
+          "evaluation_time": "current control-start q and already known request",
+          "interval_semantics": "start-only projection; not realized 20 ms average input",
+          "future_actual_input": false,
+          "physical_queries": 0
+        },
+        "guard_used_by_model": true,
+        "recompute": "same causal mapping on every RLS and mathematical prediction call"
+      },
+      "model_definition": {
+        "feature_order_source": "unchanged PairBodyModel coupled_hinge9 global column order",
+        "rls_source": "unchanged PairBodyModel atomic two-head update",
+        "guard_source": "KnownAngleGuard public control-start rule",
+        "own_prior": "v continuity 1; known guarded torque .002; other own coefficients zero",
+        "cross_prior": "all four cross coefficients zero for each output",
+        "parameter_count_per_output": 9,
+        "matching_diagonal_parameter_count_per_output": 5,
+        "physical_queries": 0
+      },
+      "time_adaptation": {
+        "reference_constructor_dt_seconds": 0.02,
+        "active_dt_seconds": 0.002,
+        "velocity_increment_scale": 0.1,
+        "rule": "E + .1 * (unlearned generic theta_20ms - E); E is own-axis velocity identity",
+        "reference_initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "old_learned_snapshot_restoration": false,
+        "forgetting_factor": 1.0,
+        "forgetting_physical_rate_rule": "lambda_micro = lambda_macro ** .1; 1 remains 1",
+        "initial_covariance_scale": 100.0,
+        "more_correlated_micro_updates_change_prior_relative_weight": true
+      },
+      "parameter_fingerprint": "2a34f78d3d830834e10ad99b902504723475685b4142cc4b1ee3680a5b552e61",
+      "trainable": false,
+      "vector_update_count": 4000,
+      "scalar_update_count": 8000,
+      "output_update_counts": [
+        4000,
+        4000
+      ],
+      "update_commit": "single immutable state reference for both outputs, covariance and counts",
+      "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+      "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+    }
+  },
+  "8103": {
+    "cold": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "features_per_output": [
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ],
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "covariance": [
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        [
+          [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        ]
+      ],
+      "initial_coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "integration": "endpoint_euler",
+      "dtype": "float64",
+      "feature_roles_per_output": [
+        {
+          "output_index": 0,
+          "own_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "cross_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "constant_column": 8
+        },
+        {
+          "output_index": 1,
+          "own_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "cross_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "constant_column": 8
+        }
+      ],
+      "input_mapping": {
+        "basis": "known_angle_guard",
+        "feature_command": "G(current q, original requested u) at control start",
+        "public_guard": {
+          "rule": "known_angle_guard_control_start_v1",
+          "public_joint_ranges_rad": [
+            [
+              -1.7453292519943295,
+              1.7453292519943295
+            ],
+            [
+              0.0,
+              2.356194490192345
+            ]
+          ],
+          "angle_margin_rad": 0.03,
+          "request_clip_per_axis_nm": 0.5,
+          "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+          "zero_is_blocked": false,
+          "q_clipped": false,
+          "evaluation_time": "current control-start q and already known request",
+          "interval_semantics": "start-only projection; not realized 20 ms average input",
+          "future_actual_input": false,
+          "physical_queries": 0
+        },
+        "guard_used_by_model": true,
+        "recompute": "same causal mapping on every RLS and mathematical prediction call"
+      },
+      "model_definition": {
+        "feature_order_source": "unchanged PairBodyModel coupled_hinge9 global column order",
+        "rls_source": "unchanged PairBodyModel atomic two-head update",
+        "guard_source": "KnownAngleGuard public control-start rule",
+        "own_prior": "v continuity 1; known guarded torque .002; other own coefficients zero",
+        "cross_prior": "all four cross coefficients zero for each output",
+        "parameter_count_per_output": 9,
+        "matching_diagonal_parameter_count_per_output": 5,
+        "physical_queries": 0
+      },
+      "time_adaptation": {
+        "reference_constructor_dt_seconds": 0.02,
+        "active_dt_seconds": 0.002,
+        "velocity_increment_scale": 0.1,
+        "rule": "E + .1 * (unlearned generic theta_20ms - E); E is own-axis velocity identity",
+        "reference_initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "old_learned_snapshot_restoration": false,
+        "forgetting_factor": 1.0,
+        "forgetting_physical_rate_rule": "lambda_micro = lambda_macro ** .1; 1 remains 1",
+        "initial_covariance_scale": 100.0,
+        "more_correlated_micro_updates_change_prior_relative_weight": true
+      },
+      "parameter_fingerprint": "a1ba0b7c9f5463961bd9ad5e7241bb3e4c8472e032f585716e87259a7b147011",
+      "trainable": false,
+      "vector_update_count": 0,
+      "scalar_update_count": 0,
+      "output_update_counts": [
+        0,
+        0
+      ],
+      "update_commit": "single immutable state reference for both outputs, covariance and counts",
+      "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+      "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+    },
+    "learned": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "features_per_output": [
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ],
+        [
+          "v0",
+          "v1",
+          "q0-qref0",
+          "q1-qref1",
+          "start_G0(q0,u0)",
+          "start_G1(q1,u1)",
+          "h(start_G0(q0,u0))",
+          "h(start_G1(q1,u1))",
+          "1"
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8558131764330886,
+          -0.02840800727521246,
+          -0.012568279398463455,
+          0.02619465529487453,
+          0.008700764064119688,
+          -0.004654953847354495,
+          0.003880537835331891,
+          -0.024977768138596854,
+          5.8602671031921136e-05
+        ],
+        [
+          0.17862577087389572,
+          1.0023481196792348,
+          0.022709465211931765,
+          -0.05029207062297304,
+          -0.010457534417734095,
+          0.009505904962356065,
+          -0.007900239660369025,
+          0.05011986555870142,
+          -0.00013350898024343523
+        ]
+      ],
+      "covariance": [
+        [
+          [
+            47.551064449891925,
+            22.827128372852446,
+            -0.9879233739980632,
+            1.1730061970692844,
+            -0.6291618395540529,
+            0.05617517067149756,
+            -0.1169071708996659,
+            -0.26739595294964036,
+            0.0013832438763158256
+          ],
+          [
+            22.827128372852446,
+            15.525213806666802,
+            -0.5869334095538871,
+            0.5978917132226369,
+            -0.1976562508743215,
+            -0.10094019867177373,
+            -0.11340173444696225,
+            -0.2062688448627762,
+            0.002020979062906235
+          ],
+          [
+            -0.9879233739980632,
+            -0.5869334095538871,
+            99.60088651345582,
+            0.22233820287387882,
+            0.02645876066171972,
+            0.07744252391581444,
+            -0.016111320316265804,
+            -0.16813397447812886,
+            0.002068578486627767
+          ],
+          [
+            1.1730061970692844,
+            0.5978917132226369,
+            0.22233820287387882,
+            99.56621474983872,
+            0.02448868364519681,
+            -0.13408338277293289,
+            -0.06178494232450464,
+            0.262259963832247,
+            -0.0014042012035917328
+          ],
+          [
+            -0.6291618395540529,
+            -0.1976562508743215,
+            0.02645876066171972,
+            0.02448868364519681,
+            0.11842885615751521,
+            -0.011923190656075848,
+            -0.25838613612179845,
+            0.026295538803846528,
+            5.797530936307638e-05
+          ],
+          [
+            0.05617517067149756,
+            -0.10094019867177373,
+            0.07744252391581444,
+            -0.13408338277293289,
+            -0.011923190656075848,
+            0.21298102238355757,
+            0.021233351301326944,
+            -0.500689459202894,
+            -0.001794529994744606
+          ],
+          [
+            -0.1169071708996659,
+            -0.11340173444696225,
+            -0.016111320316265804,
+            -0.06178494232450464,
+            -0.25838613612179845,
+            0.021233351301326944,
+            1.0107774752354597,
+            -0.3394650829557433,
+            -8.203232972041123e-05
+          ],
+          [
+            -0.26739595294964036,
+            -0.2062688448627762,
+            -0.16813397447812886,
+            0.262259963832247,
+            0.026295538803846528,
+            -0.500689459202894,
+            -0.3394650829557433,
+            2.7234947338852113,
+            0.0026848976880465758
+          ],
+          [
+            0.0013832438763158256,
+            0.002020979062906235,
+            0.002068578486627767,
+            -0.0014042012035917328,
+            5.797530936307638e-05,
+            -0.001794529994744606,
+            -8.203232972041123e-05,
+            0.0026848976880465758,
+            0.0002670184991399918
+          ]
+        ],
+        [
+          [
+            47.551064449891925,
+            22.827128372852446,
+            -0.9879233739980632,
+            1.1730061970692844,
+            -0.6291618395540529,
+            0.05617517067149756,
+            -0.1169071708996659,
+            -0.26739595294964036,
+            0.0013832438763158256
+          ],
+          [
+            22.827128372852446,
+            15.525213806666802,
+            -0.5869334095538871,
+            0.5978917132226369,
+            -0.1976562508743215,
+            -0.10094019867177373,
+            -0.11340173444696225,
+            -0.2062688448627762,
+            0.002020979062906235
+          ],
+          [
+            -0.9879233739980632,
+            -0.5869334095538871,
+            99.60088651345582,
+            0.22233820287387882,
+            0.02645876066171972,
+            0.07744252391581444,
+            -0.016111320316265804,
+            -0.16813397447812886,
+            0.002068578486627767
+          ],
+          [
+            1.1730061970692844,
+            0.5978917132226369,
+            0.22233820287387882,
+            99.56621474983872,
+            0.02448868364519681,
+            -0.13408338277293289,
+            -0.06178494232450464,
+            0.262259963832247,
+            -0.0014042012035917328
+          ],
+          [
+            -0.6291618395540529,
+            -0.1976562508743215,
+            0.02645876066171972,
+            0.02448868364519681,
+            0.11842885615751521,
+            -0.011923190656075848,
+            -0.25838613612179845,
+            0.026295538803846528,
+            5.797530936307638e-05
+          ],
+          [
+            0.05617517067149756,
+            -0.10094019867177373,
+            0.07744252391581444,
+            -0.13408338277293289,
+            -0.011923190656075848,
+            0.21298102238355757,
+            0.021233351301326944,
+            -0.500689459202894,
+            -0.001794529994744606
+          ],
+          [
+            -0.1169071708996659,
+            -0.11340173444696225,
+            -0.016111320316265804,
+            -0.06178494232450464,
+            -0.25838613612179845,
+            0.021233351301326944,
+            1.0107774752354597,
+            -0.3394650829557433,
+            -8.203232972041123e-05
+          ],
+          [
+            -0.26739595294964036,
+            -0.2062688448627762,
+            -0.16813397447812886,
+            0.262259963832247,
+            0.026295538803846528,
+            -0.500689459202894,
+            -0.3394650829557433,
+            2.7234947338852113,
+            0.0026848976880465758
+          ],
+          [
+            0.0013832438763158256,
+            0.002020979062906235,
+            0.002068578486627767,
+            -0.0014042012035917328,
+            5.797530936307638e-05,
+            -0.001794529994744606,
+            -8.203232972041123e-05,
+            0.0026848976880465758,
+            0.0002670184991399918
+          ]
+        ]
+      ],
+      "initial_coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_covariance_scale": 100.0,
+      "forgetting_factor": 1.0,
+      "hinge_threshold_nm": 0.25,
+      "hinge_threshold_updates": 0,
+      "integration": "endpoint_euler",
+      "dtype": "float64",
+      "feature_roles_per_output": [
+        {
+          "output_index": 0,
+          "own_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "cross_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "constant_column": 8
+        },
+        {
+          "output_index": 1,
+          "own_columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "cross_columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "constant_column": 8
+        }
+      ],
+      "input_mapping": {
+        "basis": "known_angle_guard",
+        "feature_command": "G(current q, original requested u) at control start",
+        "public_guard": {
+          "rule": "known_angle_guard_control_start_v1",
+          "public_joint_ranges_rad": [
+            [
+              -1.7453292519943295,
+              1.7453292519943295
+            ],
+            [
+              0.0,
+              2.356194490192345
+            ]
+          ],
+          "angle_margin_rad": 0.03,
+          "request_clip_per_axis_nm": 0.5,
+          "outward_block_comparison": "q <= lower + margin or q >= upper - margin",
+          "zero_is_blocked": false,
+          "q_clipped": false,
+          "evaluation_time": "current control-start q and already known request",
+          "interval_semantics": "start-only projection; not realized 20 ms average input",
+          "future_actual_input": false,
+          "physical_queries": 0
+        },
+        "guard_used_by_model": true,
+        "recompute": "same causal mapping on every RLS and mathematical prediction call"
+      },
+      "model_definition": {
+        "feature_order_source": "unchanged PairBodyModel coupled_hinge9 global column order",
+        "rls_source": "unchanged PairBodyModel atomic two-head update",
+        "guard_source": "KnownAngleGuard public control-start rule",
+        "own_prior": "v continuity 1; known guarded torque .002; other own coefficients zero",
+        "cross_prior": "all four cross coefficients zero for each output",
+        "parameter_count_per_output": 9,
+        "matching_diagonal_parameter_count_per_output": 5,
+        "physical_queries": 0
+      },
+      "time_adaptation": {
+        "reference_constructor_dt_seconds": 0.02,
+        "active_dt_seconds": 0.002,
+        "velocity_increment_scale": 0.1,
+        "rule": "E + .1 * (unlearned generic theta_20ms - E); E is own-axis velocity identity",
+        "reference_initial_coefficients": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "old_learned_snapshot_restoration": false,
+        "forgetting_factor": 1.0,
+        "forgetting_physical_rate_rule": "lambda_micro = lambda_macro ** .1; 1 remains 1",
+        "initial_covariance_scale": 100.0,
+        "more_correlated_micro_updates_change_prior_relative_weight": true
+      },
+      "parameter_fingerprint": "d5eb400528f5b16735864170e6b72674ad27209fc493af014670ee81052465e0",
+      "trainable": false,
+      "vector_update_count": 4000,
+      "scalar_update_count": 8000,
+      "output_update_counts": [
+        4000,
+        4000
+      ],
+      "update_commit": "single immutable state reference for both outputs, covariance and counts",
+      "initial_prior": "generic velocity continuity and torque response; zero cross coefficients",
+      "input_boundary": "current native q/v and already known requested u; no actual future torque or simulator state"
+    }
+  }
+}

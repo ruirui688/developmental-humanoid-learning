@@ -1,0 +1,1236 @@
+{
+  "payload_pins": {
+    "run.json": {
+      "bytes": 2550376,
+      "sha256": "0e1b89d288cedcedf5cb0714b44f99ab3f090b5e5496ac1b2c4069568ff17d86"
+    },
+    "metrics.json": {
+      "bytes": 5040,
+      "sha256": "480aea7d81570a1bf29ebed8bdefabdb7908e0dc6abef39ab762e93122edd6ef"
+    },
+    "models.json": {
+      "bytes": 60924,
+      "sha256": "3cfbd871c275a8f5d8a07615a239ee9e8192b5e93dcf35104cf61a01f6a6a992"
+    },
+    "trace.jsonl.gz": {
+      "bytes": 45733328,
+      "sha256": "bf8259dbb7cb6b65a956ce31243b7a761785bc9d0238843de787cb29a9d11b35"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 20020294,
+      "sha256": "3c52f283e0bc0d36f58f737239172d77b195ecfacc0cb1eb5a762514c2953677"
+    }
+  },
+  "trace_ledger": {
+    "captured_substep_endpoint_forward_returns": 36000,
+    "known_audit_floor_pairs": 281444,
+    "known_complete_contact_endpoints": 36000,
+    "invalid_trace_information_rows": 0,
+    "control_call_attempts": 36000,
+    "control_call_returns": 36000,
+    "control_call_exceptions": 0,
+    "confirmed_physics_substeps": 36000,
+    "captured_native_endpoints": 36000,
+    "planning_pd_request_attempts": 12812736,
+    "planning_pd_request_returns": 12812736,
+    "planning_residual_candidate_attempts": 97200,
+    "planning_pair_prediction_attempts": 12908736,
+    "planning_pair_prediction_returns": 12908736,
+    "planning_scalar_prediction_attempts": 25817472,
+    "planning_scalar_prediction_returns": 25817472,
+    "MPC_decision_returns": 1200,
+    "planning_returned_candidate_rejections": 22122,
+    "planning_fallback_returns": 271,
+    "pd_anchor_grid_macro_checks": 1200,
+    "clipped_PD_pair_expressions_on_saved_states": 154911,
+    "PD_anchor_nominal_scalar_distances": 21600,
+    "PD_anchor_axis_slot_replacements": 2400,
+    "pd_anchor_grid_first_request_pairs_checked": 97200,
+    "PD_anchor_pure_PD_delta_zero_checks": 1200,
+    "selected_saved_request_path_steps_checked": 139350,
+    "PD_anchor_saved_spec_checks": 6,
+    "actual_saved_request_origins_checked": 15290,
+    "MPC_decision_attempts": 1200,
+    "planning_batch_stage_batches": 159662,
+    "planning_batch_feature_batch_rows": 12908736,
+    "planning_batch_original_scalar_dot_calls": 25817472,
+    "planning_batch_serial_fallback_selections": 0
+  },
+  "new_tracking_and_active_effort": {
+    "FR4_8101_control_cold": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.039289779270071754,
+        0.05119177751888937
+      ],
+      "joint_rmse_rad": 0.045630498795402284,
+      "actual_absolute_two_axis_nm_s": 1.474352994678211,
+      "actual_squared_two_axis_nm2_s": 0.6921167968480069,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": true,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8101_control_learned": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.007895515186873618,
+        0.007146500707894726
+      ],
+      "joint_rmse_rad": 0.007530326434959236,
+      "actual_absolute_two_axis_nm_s": 1.5823641561423378,
+      "actual_squared_two_axis_nm2_s": 0.5479569776555105,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": true,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8101_control_pd": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.00946243505579895,
+        0.006140228325905294
+      ],
+      "joint_rmse_rad": 0.007976217182332192,
+      "actual_absolute_two_axis_nm_s": 1.4204173354610017,
+      "actual_squared_two_axis_nm2_s": 0.4139144821665789,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": true,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8101_control_zero": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.06341594410226438,
+        0.06324554805939557
+      ],
+      "joint_rmse_rad": 0.06333080338869407,
+      "actual_absolute_two_axis_nm_s": 0.0,
+      "actual_squared_two_axis_nm2_s": 0.0,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": false,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8102_control_cold": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.03583879035146771,
+        0.044868009797920876
+      ],
+      "joint_rmse_rad": 0.04060515482720624,
+      "actual_absolute_two_axis_nm_s": 1.7578783611284265,
+      "actual_squared_two_axis_nm2_s": 0.8411888749803936,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": true,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8102_control_learned": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.007864225137976596,
+        0.0073922400597050695
+      ],
+      "joint_rmse_rad": 0.007631882144041904,
+      "actual_absolute_two_axis_nm_s": 1.5744252820006301,
+      "actual_squared_two_axis_nm2_s": 0.5562553105936123,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": true,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8102_control_pd": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.009519023020819427,
+        0.006130340710262002
+      ],
+      "joint_rmse_rad": 0.008006025121581434,
+      "actual_absolute_two_axis_nm_s": 1.430911584893345,
+      "actual_squared_two_axis_nm2_s": 0.4200167693852518,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": true,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8102_control_zero": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.06328975875606282,
+        0.06324555218739374
+      ],
+      "joint_rmse_rad": 0.06326765933274672,
+      "actual_absolute_two_axis_nm_s": 0.0,
+      "actual_squared_two_axis_nm2_s": 0.0,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": false,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8103_control_cold": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.03731021157838163,
+        0.04974136074652829
+      ],
+      "joint_rmse_rad": 0.04396734502411916,
+      "actual_absolute_two_axis_nm_s": 1.5362151249385545,
+      "actual_squared_two_axis_nm2_s": 0.7171984426850129,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": true,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8103_control_learned": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.007998737037789139,
+        0.007125422190216191
+      ],
+      "joint_rmse_rad": 0.007574676085105057,
+      "actual_absolute_two_axis_nm_s": 1.60266077966148,
+      "actual_squared_two_axis_nm2_s": 0.5664864649692243,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": true,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8103_control_pd": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.009636105281874623,
+        0.006110924834490927
+      ],
+      "joint_rmse_rad": 0.008068392880127069,
+      "actual_absolute_two_axis_nm_s": 1.4507003131324043,
+      "actual_squared_two_axis_nm2_s": 0.43205417368886556,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": true,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    },
+    "FR4_8103_control_zero": {
+      "available": true,
+      "planned_active_count": 2000,
+      "observed_active_count": 2000,
+      "axis_rmse_rad": [
+        0.0630854943931911,
+        0.06324555511139741
+      ],
+      "joint_rmse_rad": 0.06316557545127788,
+      "actual_absolute_two_axis_nm_s": 0.0,
+      "actual_squared_two_axis_nm2_s": 0.0,
+      "native_execution_complete": true,
+      "free_root_domain_qualification_required": false,
+      "free_root_domain_qualification_passed": true,
+      "partial_subset_ranking": false
+    }
+  },
+  "new_conditional_RMSE": {
+    "FR4_8101_control_cold": {
+      "1": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            6.934756365007055e-05,
+            0.00011484796616441108
+          ],
+          "v_rmse_axis_rad_s": [
+            0.034673781825035346,
+            0.05742398308220547
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            5.9696367296383736e-05,
+            8.678379835060539e-05
+          ],
+          "v_rmse_axis_rad_s": [
+            0.029848183648191976,
+            0.04339189917530262
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "10": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.00232462171115887,
+            0.004638100201105077
+          ],
+          "v_rmse_axis_rad_s": [
+            0.18744221779262715,
+            0.3823672647650811
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0017627594723877908,
+            0.0035937838127487348
+          ],
+          "v_rmse_axis_rad_s": [
+            0.1355187014711115,
+            0.28419622002747463
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "20": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.006352736135162898,
+            0.012761062501482616
+          ],
+          "v_rmse_axis_rad_s": [
+            0.2571426000681715,
+            0.5216601794027766
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.004352808087532426,
+            0.008960497118626919
+          ],
+          "v_rmse_axis_rad_s": [
+            0.16006410254330258,
+            0.33422740753845176
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "50": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.023214928917783956,
+            0.047026446857166414
+          ],
+          "v_rmse_axis_rad_s": [
+            0.357999121074023,
+            0.726101468912182
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.009532942018344863,
+            0.019916791649348415
+          ],
+          "v_rmse_axis_rad_s": [
+            0.17156123522745234,
+            0.35909586907346946
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "150": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.061537445132889425,
+            0.12284246985825277
+          ],
+          "v_rmse_axis_rad_s": [
+            0.31600274457613,
+            0.6313009449885445
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.009232187884352447,
+            0.019033392811709127
+          ],
+          "v_rmse_axis_rad_s": [
+            0.17573700373223386,
+            0.3668867717283993
+          ],
+          "partial_subset_ranking": false
+        }
+      }
+    },
+    "FR4_8101_control_learned": {
+      "1": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            2.8353151576551547e-05,
+            6.889987058701843e-05
+          ],
+          "v_rmse_axis_rad_s": [
+            0.014176575788275603,
+            0.03444993529350922
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            2.1485601342984717e-05,
+            5.2392389476159754e-05
+          ],
+          "v_rmse_axis_rad_s": [
+            0.01074280067149221,
+            0.026196194738079874
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "10": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0008966978700420885,
+            0.0019245193560478162
+          ],
+          "v_rmse_axis_rad_s": [
+            0.0662816153859942,
+            0.13808781684328067
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0006560138135760668,
+            0.0014287908225406125
+          ],
+          "v_rmse_axis_rad_s": [
+            0.04785321008509954,
+            0.10216423114395762
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "20": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0018398904709067282,
+            0.0038013351954199995
+          ],
+          "v_rmse_axis_rad_s": [
+            0.058897914087368455,
+            0.12321691813234302
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.001376458990727746,
+            0.002878613230124802
+          ],
+          "v_rmse_axis_rad_s": [
+            0.049067026604849094,
+            0.10424365002944373
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "50": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0060476182887017425,
+            0.011904479980669068
+          ],
+          "v_rmse_axis_rad_s": [
+            0.0920802819262917,
+            0.1741840545817253
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0034744144573301784,
+            0.007173004246595365
+          ],
+          "v_rmse_axis_rad_s": [
+            0.04671013983142609,
+            0.09913101534701811
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "150": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.02519651728500934,
+            0.03974015833487473
+          ],
+          "v_rmse_axis_rad_s": [
+            0.13173863924773083,
+            0.17466611445874172
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.007525159681516204,
+            0.015204372442981656
+          ],
+          "v_rmse_axis_rad_s": [
+            0.043371409676036726,
+            0.09239484712573041
+          ],
+          "partial_subset_ranking": false
+        }
+      }
+    },
+    "FR4_8102_control_cold": {
+      "1": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            6.881683220363771e-05,
+            0.0001261237800476461
+          ],
+          "v_rmse_axis_rad_s": [
+            0.034408416101818544,
+            0.06306189002382294
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            5.23968643076393e-05,
+            9.603427998328777e-05
+          ],
+          "v_rmse_axis_rad_s": [
+            0.026198432153819843,
+            0.048017139991643885
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "10": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0025992914321803086,
+            0.0052934016699291535
+          ],
+          "v_rmse_axis_rad_s": [
+            0.21153010516701687,
+            0.4328392766404724
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.001838650346980116,
+            0.0038756406086374534
+          ],
+          "v_rmse_axis_rad_s": [
+            0.1481146990570663,
+            0.3118497143181167
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "20": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.006471455217001356,
+            0.013169794201667794
+          ],
+          "v_rmse_axis_rad_s": [
+            0.2501972064220512,
+            0.5120938011760863
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.004373303110785277,
+            0.009165436023731195
+          ],
+          "v_rmse_axis_rad_s": [
+            0.1674869195662757,
+            0.350807477768909
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "50": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.02198141090669201,
+            0.044718736879150324
+          ],
+          "v_rmse_axis_rad_s": [
+            0.33815785800020154,
+            0.6876020271687971
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.010281708241180102,
+            0.021702721406432743
+          ],
+          "v_rmse_axis_rad_s": [
+            0.1746308711501346,
+            0.36663628903804674
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "150": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.06335967513121157,
+            0.12683707502213326
+          ],
+          "v_rmse_axis_rad_s": [
+            0.30200811885131273,
+            0.6029351772783731
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.009910006469577941,
+            0.020952488311008554
+          ],
+          "v_rmse_axis_rad_s": [
+            0.18133638661922832,
+            0.3796880916181516
+          ],
+          "partial_subset_ranking": false
+        }
+      }
+    },
+    "FR4_8102_control_learned": {
+      "1": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            2.715773409624062e-05,
+            5.842416344811441e-05
+          ],
+          "v_rmse_axis_rad_s": [
+            0.013578867048120466,
+            0.029212081724056937
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            1.973411062264114e-05,
+            4.539709556211489e-05
+          ],
+          "v_rmse_axis_rad_s": [
+            0.009867055311320613,
+            0.022698547781057305
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "10": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0008908087763679262,
+            0.0018364263627477725
+          ],
+          "v_rmse_axis_rad_s": [
+            0.0671224933626426,
+            0.13525714838199152
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0006473508200647735,
+            0.0013956877983506296
+          ],
+          "v_rmse_axis_rad_s": [
+            0.04910620021959261,
+            0.10047894690204688
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "20": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0020529696184512997,
+            0.004073360073857057
+          ],
+          "v_rmse_axis_rad_s": [
+            0.07112089156215469,
+            0.14067886330895366
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0014658959904035038,
+            0.0030579832495187553
+          ],
+          "v_rmse_axis_rad_s": [
+            0.05306693840184754,
+            0.1076552379270585
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "50": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.006484902062227248,
+            0.012424090515081754
+          ],
+          "v_rmse_axis_rad_s": [
+            0.09811860394817426,
+            0.18096893277103246
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.003538652491998426,
+            0.007360470214863068
+          ],
+          "v_rmse_axis_rad_s": [
+            0.050183740831189864,
+            0.10144488029424158
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "150": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.026384360194878623,
+            0.04126381071687138
+          ],
+          "v_rmse_axis_rad_s": [
+            0.13797435753764362,
+            0.18169010663035193
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.007344240916515565,
+            0.0151224596134658
+          ],
+          "v_rmse_axis_rad_s": [
+            0.04735946777694344,
+            0.09544463299042084
+          ],
+          "partial_subset_ranking": false
+        }
+      }
+    },
+    "FR4_8103_control_cold": {
+      "1": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            6.149466626753088e-05,
+            0.00011104110003468775
+          ],
+          "v_rmse_axis_rad_s": [
+            0.030747333133766007,
+            0.055520550017343843
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            5.336323322097964e-05,
+            9.029218314386128e-05
+          ],
+          "v_rmse_axis_rad_s": [
+            0.026681616610490018,
+            0.045146091571930586
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "10": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0022625480865806594,
+            0.004672763527740624
+          ],
+          "v_rmse_axis_rad_s": [
+            0.19258594748095503,
+            0.39721842438804966
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.001716360079334006,
+            0.003661637235663846
+          ],
+          "v_rmse_axis_rad_s": [
+            0.14157764859659833,
+            0.299002010244679
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "20": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.006221458022944177,
+            0.012727083850608261
+          ],
+          "v_rmse_axis_rad_s": [
+            0.2576941779951805,
+            0.5258110548980297
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.004356103960780586,
+            0.009144048900665476
+          ],
+          "v_rmse_axis_rad_s": [
+            0.1657638311287842,
+            0.3463162639805826
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "50": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.022911157342717883,
+            0.046526903825295465
+          ],
+          "v_rmse_axis_rad_s": [
+            0.35711250103768233,
+            0.7255829824466057
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.009747708337778403,
+            0.02041916611640972
+          ],
+          "v_rmse_axis_rad_s": [
+            0.17756091962706558,
+            0.37098889582079286
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "150": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.06242995707714492,
+            0.1247301740452498
+          ],
+          "v_rmse_axis_rad_s": [
+            0.32099508968733687,
+            0.638383885580179
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.009521172913568169,
+            0.019631185290866434
+          ],
+          "v_rmse_axis_rad_s": [
+            0.18213479818736142,
+            0.3795842550732526
+          ],
+          "partial_subset_ranking": false
+        }
+      }
+    },
+    "FR4_8103_control_learned": {
+      "1": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            2.6746780324403666e-05,
+            6.481617994744445e-05
+          ],
+          "v_rmse_axis_rad_s": [
+            0.013373390162201921,
+            0.032408089973722236
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            2.0376230448806304e-05,
+            4.988967485365175e-05
+          ],
+          "v_rmse_axis_rad_s": [
+            0.0101881152244032,
+            0.024944837426825833
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "10": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0008595331078458262,
+            0.001812615967312982
+          ],
+          "v_rmse_axis_rad_s": [
+            0.06422873628716591,
+            0.1319081717716305
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0006298987162125483,
+            0.0013600316903410845
+          ],
+          "v_rmse_axis_rad_s": [
+            0.046587760542634665,
+            0.0979742251674991
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "20": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0018123208781472455,
+            0.003659217235962479
+          ],
+          "v_rmse_axis_rad_s": [
+            0.058678885513416684,
+            0.11862490194187947
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0013539191635240204,
+            0.0028209523047009436
+          ],
+          "v_rmse_axis_rad_s": [
+            0.048458964407002966,
+            0.10152076343775233
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "50": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.006017523859939605,
+            0.011642459804666851
+          ],
+          "v_rmse_axis_rad_s": [
+            0.09225302656190112,
+            0.17233314863083762
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.0034163862091770606,
+            0.007121911575759853
+          ],
+          "v_rmse_axis_rad_s": [
+            0.04576534935571055,
+            0.09660761892688358
+          ],
+          "partial_subset_ranking": false
+        }
+      },
+      "150": {
+        "cold": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.025491675884791266,
+            0.038917905982827995
+          ],
+          "v_rmse_axis_rad_s": [
+            0.13374018347486094,
+            0.16768730303444582
+          ],
+          "partial_subset_ranking": false
+        },
+        "learned": {
+          "available": true,
+          "q_rmse_axis_rad": [
+            0.007237060695341076,
+            0.015083387621816316
+          ],
+          "v_rmse_axis_rad_s": [
+            0.04231598369315516,
+            0.0895549886407838
+          ],
+          "partial_subset_ranking": false
+        }
+      }
+    }
+  },
+  "original_saved_tracking_gate": {
+    "model_contribution": {
+      "available": true,
+      "checks": [
+        {
+          "seed": 8101,
+          "available": true,
+          "strict": true,
+          "baseline_joint_axis": [
+            0.04563049879540234,
+            0.039289779270071754,
+            0.05119177751888937
+          ],
+          "learned_joint_axis": [
+            0.007530326434959234,
+            0.007895515186873618,
+            0.007146500707894726
+          ],
+          "passed": true
+        },
+        {
+          "seed": 8102,
+          "available": true,
+          "strict": true,
+          "baseline_joint_axis": [
+            0.040605154827206245,
+            0.03583879035146771,
+            0.044868009797920876
+          ],
+          "learned_joint_axis": [
+            0.007631882144041909,
+            0.007864225137976596,
+            0.0073922400597050695
+          ],
+          "passed": true
+        },
+        {
+          "seed": 8103,
+          "available": true,
+          "strict": true,
+          "baseline_joint_axis": [
+            0.04396734502411912,
+            0.03731021157838163,
+            0.04974136074652829
+          ],
+          "learned_joint_axis": [
+            0.007574676085105056,
+            0.007998737037789139,
+            0.007125422190216191
+          ],
+          "passed": true
+        },
+        {
+          "scope": "three_seed_raw_RMSE_mean",
+          "baseline_joint_axis_mean": [
+            0.04340099954890924,
+            0.03747959373330703,
+            0.04860038268777952
+          ],
+          "learned_joint_axis_mean": [
+            0.007578961554702067,
+            0.007919492454213117,
+            0.007221387652605329
+          ],
+          "improvement_fractions": [
+            0.8253735712662281,
+            0.7886985512552316,
+            0.8514129467046124
+          ],
+          "required_improvement": 0.2,
+          "passed": true
+        },
+        {
+          "scope": "three_seed_actual_effort_mean",
+          "signal": "actual_absolute_two_axis_nm_s",
+          "baseline_mean": 1.5894821602483973,
+          "learned_mean": 1.5864834059348158,
+          "maximum_ratio": 1.05,
+          "passed": true
+        },
+        {
+          "scope": "three_seed_actual_effort_mean",
+          "signal": "actual_squared_two_axis_nm2_s",
+          "baseline_mean": 0.7501680381711378,
+          "learned_mean": 0.5568995844061156,
+          "maximum_ratio": 1.05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "pd_reference": {
+      "available": true,
+      "checks": [
+        {
+          "seed": 8101,
+          "available": true,
+          "strict": false,
+          "baseline_joint_axis": [
+            0.007976217182332185,
+            0.00946243505579895,
+            0.006140228325905294
+          ],
+          "learned_joint_axis": [
+            0.007530326434959234,
+            0.007895515186873618,
+            0.007146500707894726
+          ],
+          "passed": false
+        },
+        {
+          "seed": 8102,
+          "available": true,
+          "strict": false,
+          "baseline_joint_axis": [
+            0.008006025121581427,
+            0.009519023020819427,
+            0.006130340710262002
+          ],
+          "learned_joint_axis": [
+            0.007631882144041909,
+            0.007864225137976596,
+            0.0073922400597050695
+          ],
+          "passed": false
+        },
+        {
+          "seed": 8103,
+          "available": true,
+          "strict": false,
+          "baseline_joint_axis": [
+            0.00806839288012706,
+            0.009636105281874623,
+            0.006110924834490927
+          ],
+          "learned_joint_axis": [
+            0.007574676085105056,
+            0.007998737037789139,
+            0.007125422190216191
+          ],
+          "passed": false
+        },
+        {
+          "scope": "three_seed_raw_RMSE_mean",
+          "baseline_joint_axis_mean": [
+            0.008016878394680224,
+            0.009539187786164334,
+            0.006127164623552742
+          ],
+          "learned_joint_axis_mean": [
+            0.007578961554702067,
+            0.007919492454213117,
+            0.007221387652605329
+          ],
+          "improvement_fractions": [
+            0.05462435856189944,
+            0.16979384076078555,
+            -0.17858554425751977
+          ],
+          "required_improvement": 0.05,
+          "passed": true
+        },
+        {
+          "scope": "three_seed_actual_effort_mean",
+          "signal": "actual_absolute_two_axis_nm_s",
+          "baseline_mean": 1.4340097444955837,
+          "learned_mean": 1.5864834059348158,
+          "maximum_ratio": 1.05,
+          "passed": false
+        },
+        {
+          "scope": "three_seed_actual_effort_mean",
+          "signal": "actual_squared_two_axis_nm2_s",
+          "baseline_mean": 0.4219951417468987,
+          "learned_mean": 0.5568995844061156,
+          "maximum_ratio": 1.05,
+          "passed": false
+        }
+      ],
+      "passed": false
+    },
+    "fr4b_model_contribution_gate_passed": true,
+    "fr4b_pd_reference_gate_passed": false,
+    "fr4_free_root_mechanism_validation": false
+  },
+  "trial_matrix_complete": true,
+  "zero_is_descriptive_no_extra_veto": true,
+  "self_prediction_is_reported_no_posthoc_veto": true,
+  "partial_subset_ranking": false
+}

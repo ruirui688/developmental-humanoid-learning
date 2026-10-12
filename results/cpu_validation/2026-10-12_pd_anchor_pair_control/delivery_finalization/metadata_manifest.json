@@ -1,0 +1,144 @@
+{
+  "stage": "FR4B",
+  "status": "sealed",
+  "files": {
+    "audit_first/audit.json": {
+      "source": "external/fr4b_first_audit/result/audit.json",
+      "bytes": 41990,
+      "sha256": "639fc31e3ff6792a8313765ec0a4244f513f50db8b3fa76017f9e7b6830e0b53"
+    },
+    "audit_first/metric_recheck.json": {
+      "source": "external/fr4b_first_audit/result/metric_recheck.json",
+      "bytes": 36127,
+      "sha256": "8cb72c3d612fc853b3c3011a9f756f1b7bc52db1c6fea63bc42de470c1aef83a"
+    },
+    "audit_first/stdout.log": {
+      "source": "external/fr4b_first_audit/stdout.log",
+      "bytes": 148,
+      "sha256": "8858900596fd214254f02640d98623c7ef18ba80a2ddaf188981e6b615c799d8"
+    },
+    "audit_first/stderr.log": {
+      "source": "external/fr4b_first_audit/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit_first/first_execution_receipt.json": {
+      "source": "external/fr4b_first_audit/first_execution_receipt.json",
+      "bytes": 674,
+      "sha256": "821b4a4f8b96296f96130f42efd990620745081992c6dcfe45f2a2633fa7d0bd"
+    },
+    "delivery_finalization/auditor/audit_pd_anchor_pair_control.py": {
+      "source": "external/fr4b_audit_candidate/audit_pd_anchor_pair_control.py",
+      "bytes": 63377,
+      "sha256": "1a1e0f53745a97c241e51b6e0203533c6adbec97f2ea5b5f65e269147f069aa0"
+    },
+    "delivery_finalization/auditor/run_fr4_saved_audit_first_once.py": {
+      "source": "external/run_fr4_saved_audit_first_once.py",
+      "bytes": 1811,
+      "sha256": "4d99c49bdd2785229dee3114e85c8c1a42dade906876e48a8a9d9ae957ea6ef0"
+    },
+    "delivery_finalization/auditor/static_derivation_receipt.json": {
+      "source": "external/fr4b_audit_candidate/static_derivation_receipt.json",
+      "bytes": 4061,
+      "sha256": "3630228664bad69a18c3c4a09f609bd02221d92531978c28b1fc8e6e1faf63b4"
+    },
+    "delivery_finalization/report_writer/fr4_report_common_candidate.py": {
+      "source": "external/fr4_report_candidate/fr4_report_common_candidate.py",
+      "bytes": 25229,
+      "sha256": "3a23ebb4588ca39978de4176d6a8bee36c6251ba6a4f6f2dd00e190cd6e7576c"
+    },
+    "delivery_finalization/report_writer/write_fr4b_report_candidate.py": {
+      "source": "external/fr4_report_candidate/write_fr4b_report_candidate.py",
+      "bytes": 176,
+      "sha256": "1991f5e75c3a9bca75a7273c43a02c7918a527692b0431d9f6a324105b2e4ce4"
+    },
+    "delivery_finalization/report_writer/run_fr4_report_saved_once.py": {
+      "source": "external/fr4_report_candidate/run_fr4_report_saved_once.py",
+      "bytes": 3800,
+      "sha256": "9b8a9300e72c1499e1189b767d74a33af616721b54afc13ac0cc7df5cf375e20"
+    },
+    "delivery_finalization/report_writer/preparation.json": {
+      "source": "external/fr4_report_candidate/preparation.json",
+      "bytes": 3402,
+      "sha256": "967c7565a0cc1e14df45ad9448cc95ad6f8e32ef314f365027b14d9c8051a7e2"
+    },
+    "delivery_finalization/report_writer/writing_receipt.json": {
+      "source": "external/fr4_report_candidate/fr4b_report_writing_receipt.json",
+      "bytes": 1747,
+      "sha256": "b74eeef89316e75bd40c9c42c53d47c128ed1069fb81dca604852e1c446701dc"
+    },
+    "delivery_finalization/report_writer/capture/stdout.log": {
+      "source": "external/fr4b_report_captured_once/stdout.log",
+      "bytes": 392,
+      "sha256": "ce6cf89fdae8b7cdb51c1e22427870d8a93ea67cc160a0822ccd765797b71b9b"
+    },
+    "delivery_finalization/report_writer/capture/stderr.log": {
+      "source": "external/fr4b_report_captured_once/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "delivery_finalization/report_writer/capture/first_execution_receipt.json": {
+      "source": "external/fr4b_report_captured_once/first_execution_receipt.json",
+      "bytes": 1175,
+      "sha256": "2419cd6f67a43947f6bfc82843123be6f2703b5aee83d83c3696723d8f4d1c9b"
+    },
+    "delivery_finalization/finalizer/finalize_fr4_stage_delivery_once.py": {
+      "source": "external/fr4_delivery_finalizer_candidate/finalize_fr4_stage_delivery_once.py",
+      "bytes": 10744,
+      "sha256": "5c56966c62ebb46cf9172b9e13b4bfeee3eb0723a07e445ba99c4188aed8862b"
+    },
+    "delivery_finalization/finalizer/preparation_receipt.json": {
+      "source": "external/fr4_delivery_finalizer_candidate/preparation_receipt.json",
+      "bytes": 1635,
+      "sha256": "5e2b21556a050dcc9694d9ffd4ac741eaafa32afd22a5d3eb54db48c8c5b35b7"
+    }
+  },
+  "markdown_links": [
+    {
+      "markdown": "docs/PD_ANCHOR_PAIR_CONTROL_RESULTS.md",
+      "target": "PD_ANCHOR_PAIR_LEARNING_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "markdown": "docs/PD_ANCHOR_PAIR_CONTROL_RESULTS.md",
+      "target": "../results/cpu_validation/2026-10-12_pd_anchor_pair_control/manifest.json",
+      "exists": true
+    },
+    {
+      "markdown": "docs/PD_ANCHOR_PAIR_CONTROL_RESULTS.md",
+      "target": "../results/cpu_validation/2026-10-12_pd_anchor_pair_control/report_inputs.json",
+      "exists": true
+    },
+    {
+      "markdown": "docs/PD_ANCHOR_PAIR_CONTROL_RESULTS.md",
+      "target": "../results/cpu_validation/2026-10-12_pd_anchor_pair_control/audit_first/audit.json",
+      "exists": true
+    },
+    {
+      "markdown": "docs/PD_ANCHOR_PAIR_CONTROL_RESULTS.md",
+      "target": "../results/cpu_validation/2026-10-12_pd_anchor_pair_control/audit_first/metric_recheck.json",
+      "exists": true
+    }
+  ],
+  "first_failure": null,
+  "engineering_cost": {
+    "input_file_reads": 19,
+    "input_bytes": 220437,
+    "output_file_writes": 18,
+    "output_bytes": 196488,
+    "hash_bytes": 196488,
+    "markdown_reads": 1,
+    "local_link_checks": 5,
+    "wall_seconds_before_metadata": 0.057765199802815914,
+    "cpu_seconds_before_metadata": 0.03125
+  },
+  "raw_reads": 0,
+  "scientific_recomputations": 0,
+  "raw_existing_manifest_report_inputs_modified": false,
+  "navigation_reads": 0,
+  "physics_or_archive_helper_files_copied": false,
+  "report_writer_first_stdio_process_capture": true,
+  "engineering_cost_scope": "completed delivery copies and Markdown reads/checks; final metadata write excluded",
+  "timing_excludes_final_metadata_writes": true,
+  "automatic_retry": false
+}
