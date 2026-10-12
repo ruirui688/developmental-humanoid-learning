@@ -1,0 +1,617 @@
+{
+  "8101": {
+    "cold": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "7ec643cb805c983ec40a8db060bfd893b0251fbfd76a9bb07258720cb75f856c",
+      "fingerprint_before_prediction": "7ec643cb805c983ec40a8db060bfd893b0251fbfd76a9bb07258720cb75f856c",
+      "initial_snapshot_fingerprint": "95154b5b62f4823a2ab13e5037ce08099a365cc6303bba0a670f8cab169c382c",
+      "nonaction_columns_frozen": null,
+      "action_columns_replaced": null
+    },
+    "oldlearned": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8549683805068311,
+          -0.029038986098587637,
+          -0.012545802373521776,
+          0.02640627049878906,
+          0.008775858698056832,
+          -0.004772645714921826,
+          0.003984220645766954,
+          -0.024957379259176384,
+          9.584845765748462e-05
+        ],
+        [
+          0.17914433687386527,
+          1.0029285568446356,
+          0.02261391199911123,
+          -0.050628437240856035,
+          -0.010514200699273142,
+          0.009720665435142549,
+          -0.008067981651422048,
+          0.05003584186786613,
+          -0.0001791587450963176
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "6faee41d5356c9efa58dcf081759d1abbc189fb9688f03ab2ab712804ba16a00",
+      "fingerprint_before_prediction": "6faee41d5356c9efa58dcf081759d1abbc189fb9688f03ab2ab712804ba16a00",
+      "initial_snapshot_fingerprint": "e31bb9751e4b18d26d005bf7c0a6e8717e6e4f1901659fdf50d0f664b29653b4",
+      "nonaction_columns_frozen": null,
+      "action_columns_replaced": null
+    },
+    "corrected": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.10052614608401068,
+        -0.0005761649277161981
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8549683805068311,
+          -0.029038986098587637,
+          -0.012545802373521776,
+          0.02640627049878906,
+          0.03402642713227079,
+          -0.060561981077108605,
+          0.0007728701574589327,
+          0.008661789394366567,
+          9.584845765748462e-05
+        ],
+        [
+          0.17914433687386527,
+          1.0029285568446356,
+          0.02261391199911123,
+          -0.050628437240856035,
+          -0.06198242644551944,
+          0.12998307502152165,
+          0.00995347473641963,
+          -0.02465252173927656,
+          -0.0001791587450963176
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "aa6eb53c4dd31be9322c5392575434d884f9178c46e2c9e234695cf2ab22b536",
+      "fingerprint_before_prediction": "aa6eb53c4dd31be9322c5392575434d884f9178c46e2c9e234695cf2ab22b536",
+      "initial_snapshot_fingerprint": "e31bb9751e4b18d26d005bf7c0a6e8717e6e4f1901659fdf50d0f664b29653b4",
+      "nonaction_columns_frozen": [
+        0,
+        1,
+        2,
+        3,
+        8
+      ],
+      "action_columns_replaced": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "8102": {
+    "cold": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "153614dba747bb6d163778a1174de413452ce9ba73f6bdfc4cf0d03ac32af05c",
+      "fingerprint_before_prediction": "153614dba747bb6d163778a1174de413452ce9ba73f6bdfc4cf0d03ac32af05c",
+      "initial_snapshot_fingerprint": "2f730b4ab4289ce87f4fd09bd1a731e2234322574f8bbd62a842be7523049c5d",
+      "nonaction_columns_frozen": null,
+      "action_columns_replaced": null
+    },
+    "oldlearned": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8552626950366113,
+          -0.028815260817506766,
+          -0.012541861261815054,
+          0.0263133698132304,
+          0.008753618317169889,
+          -0.004726988722731229,
+          0.003950321101551757,
+          -0.024968502995469374,
+          8.16163680281476e-05
+        ],
+        [
+          0.17894557350152962,
+          1.0026977264015695,
+          0.022627921231046615,
+          -0.05048378749938208,
+          -0.010493523886573075,
+          0.00963764790525536,
+          -0.008016621715718876,
+          0.0500734003434284,
+          -0.00016173041463487405
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "cb8416c5283d9f591064a84112d214ffe9189e3cc8133ee71cb732fcffd96d88",
+      "fingerprint_before_prediction": "cb8416c5283d9f591064a84112d214ffe9189e3cc8133ee71cb732fcffd96d88",
+      "initial_snapshot_fingerprint": "2a34f78d3d830834e10ad99b902504723475685b4142cc4b1ee3680a5b552e61",
+      "nonaction_columns_frozen": null,
+      "action_columns_replaced": null
+    },
+    "corrected": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09729544392156732,
+        -0.0005762504129495965
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8552626950366113,
+          -0.028815260817506766,
+          -0.012541861261815054,
+          0.0263133698132304,
+          0.03606030749093939,
+          -0.06027376328366993,
+          -0.0017099766195630816,
+          -0.0033860208080467237,
+          8.16163680281476e-05
+        ],
+        [
+          0.17894557350152962,
+          1.0026977264015695,
+          0.022627921231046615,
+          -0.05048378749938208,
+          -0.06568251275603537,
+          0.1298260212237015,
+          0.009382602923464255,
+          -0.019358462812983788,
+          -0.00016173041463487405
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "8d10a31e5643323b324666c9e31d49e62e54dc4eab21d56b5e7b708460a94155",
+      "fingerprint_before_prediction": "8d10a31e5643323b324666c9e31d49e62e54dc4eab21d56b5e7b708460a94155",
+      "initial_snapshot_fingerprint": "2a34f78d3d830834e10ad99b902504723475685b4142cc4b1ee3680a5b552e61",
+      "nonaction_columns_frozen": [
+        0,
+        1,
+        2,
+        3,
+        8
+      ],
+      "action_columns_replaced": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "8103": {
+    "cold": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "64be1ad9004945c821fc569d91c69e3123bf14b54d8c4f2dde0fc9f9ff011ef0",
+      "fingerprint_before_prediction": "64be1ad9004945c821fc569d91c69e3123bf14b54d8c4f2dde0fc9f9ff011ef0",
+      "initial_snapshot_fingerprint": "a1ba0b7c9f5463961bd9ad5e7241bb3e4c8472e032f585716e87259a7b147011",
+      "nonaction_columns_frozen": null,
+      "action_columns_replaced": null
+    },
+    "oldlearned": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8558131764330886,
+          -0.02840800727521246,
+          -0.012568279398463455,
+          0.02619465529487453,
+          0.008700764064119688,
+          -0.004654953847354495,
+          0.003880537835331891,
+          -0.024977768138596854,
+          5.8602671031921136e-05
+        ],
+        [
+          0.17862577087389572,
+          1.0023481196792348,
+          0.022709465211931765,
+          -0.05029207062297304,
+          -0.010457534417734095,
+          0.009505904962356065,
+          -0.007900239660369025,
+          0.05011986555870142,
+          -0.00013350898024343523
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "02bfd50041df8ee175c7673c7e4711d6c643aa71202d0eec84f8d46aa5a9633e",
+      "fingerprint_before_prediction": "02bfd50041df8ee175c7673c7e4711d6c643aa71202d0eec84f8d46aa5a9633e",
+      "initial_snapshot_fingerprint": "d5eb400528f5b16735864170e6b72674ad27209fc493af014670ee81052465e0",
+      "nonaction_columns_frozen": null,
+      "action_columns_replaced": null
+    },
+    "corrected": {
+      "structure": "coupled_hinge9",
+      "qref_rad": [
+        0.09205865083036921,
+        -0.0005763422006536664
+      ],
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "coefficients": [
+        [
+          0.8558131764330886,
+          -0.02840800727521246,
+          -0.012568279398463455,
+          0.02619465529487453,
+          0.03257218162333091,
+          -0.0658982723586539,
+          -0.0006022993601749643,
+          0.006771017873251852,
+          5.8602671031921136e-05
+        ],
+        [
+          0.17862577087389572,
+          1.0023481196792348,
+          0.022709465211931765,
+          -0.05029207062297304,
+          -0.05825364980619004,
+          0.141325369690227,
+          0.004180304457459168,
+          -0.022398989544225176,
+          -0.00013350898024343523
+        ]
+      ],
+      "feature_order": [
+        "v0",
+        "v1",
+        "qrel0",
+        "qrel1",
+        "G0",
+        "G1",
+        "h0",
+        "h1",
+        "1"
+      ],
+      "integration": "endpoint_euler",
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "trainable": false,
+      "physical_queries": 0,
+      "parameter_fingerprint": "fba3a1273750b0f9cae329b820849ce36d3c9b486d9adb2bd93fcffdf57ee6f9",
+      "fingerprint_before_prediction": "fba3a1273750b0f9cae329b820849ce36d3c9b486d9adb2bd93fcffdf57ee6f9",
+      "initial_snapshot_fingerprint": "d5eb400528f5b16735864170e6b72674ad27209fc493af014670ee81052465e0",
+      "nonaction_columns_frozen": [
+        0,
+        1,
+        2,
+        3,
+        8
+      ],
+      "action_columns_replaced": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  }
+}

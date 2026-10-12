@@ -1,24 +1,12 @@
 # CPU 发育式学习：持续执行目标与阶段账本
 
-## IV1 冻结准备与当前入口（2026-10-12）
+## 持续目标与当前入口（2026-10-12）
 
-当前继续 [连续原生随机动作辨识](INSTRUMENTAL_ACTION_RESPONSE_PROTOCOL.md)：首次五项必要合成检查passed；只修正每seed八个动作系数，保留十个非动作系数。三开发seed最多15,000新控制/子步、12,000新IV scalar标签用途、三次fit，不使用PAR1 fork/opaque标签、不做RLS或控制。正式物理尚未执行，原独立预测门保持。
+**目标 active：C4 双关节接触控制 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。** 每次检查、提交、推送后立即推进下一项，不等待再次“继续”。四项完成条件见[持续目标](CPU_VALIDATION_TARGET.md)。当前仅 CPU，允许少量身体辨识；不用任务教师、预训练任务策略、大规模 PPO、GPU 或真机。
 
-此前累计514,345控制/2,794,018子步、125,652scalar更新；IV与RLS另计。C4–C7未验收，持续目标active。冻结提交推送后立即首次执行，检查结果后继续最早未验收项。
+当前最早未验收的是 C4。[IV1 首次结果](INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md)完整执行六条轨迹、15,000 新控制/子步，三次 rank4 fit；只替换动作项后原独立预测门失败，不进入控制。27 项保存检查通过，只证明身份与人口一致。下一唯一 IV2：冻结新动作项，用全部已付费辨识转移拟合十个状态系数，再做新时相的独立预测；不读取 IV1 预测标签作拟合，不补跑旧实验。
 
-
-## PAR1 首次结果与当前入口（2026-10-12）
-
-当前入口为 [相同状态有限动作响应结果](PAIRED_ACTION_RESPONSE_DIAGNOSTIC_RESULTS.md)：首次 completed，三 source 9,000步、12 exact资格、36合法动作侧、12权限外NA；新增9,048控制/子步、0更新。保存核对42项/0失败只代表证据合同成立。合法响应均非弱，learned方向一致而幅度偏小，不能据此识别唯一物理原因或直接采用控制。
-
-累计514,345控制/2,794,018子步、125,652scalar更新。下一唯一 IV1 连续原生随机动作辨识：PAR1的opaque复制或fork差分不作学习标签；先冻结少量CPU辨识及原独立预测门，再决定完整控制。C4–C7未验收，持续目标active，提交推送后立即继续。
-
-
-## EF1D 首次结果与当前入口（2026-10-12）
-
-当前入口为 [EF1D 保存一步误差动作尺度诊断结果](MODEL_ACTION_ERROR_DIAGNOSTIC_RESULTS.md)：首次 completed、完整2,400 H1/1,200配对origin；仅转录首次汇总并完成一次轻量身份/人口/源码绑定核对，不重算J/SVD/delta或旧门。
-
-0新增物理/fit/RLS/model.predict，离线代数与交付I/O另计；累计505,297控制/2,784,970子步，online118,452+offline7,200=125,652scalar更新不变。最小norm同盒映射的不可评不能识别物理原因或否定其它nullspace解；不自动放行control。C4–C7未验收、原门及五science flags false保持，持续目标active，阶段提交推送后继续有界研究。
+累计 **529,345 控制 /2,809,018 子步**；历史 **125,652 scalar RLS 更新**保持。IV1 的 **12,000 新 IV scalar 标签用途 /3 fit /24 动作系数**另计。C4–C7 均未验收，阶段结果不能当作目标完成。详细历史与成本由阶段账本和各结果报告保留。
 
 > 2026-10-12：这是持续执行的目标，不是一次性任务。阶段报告、检查、提交和推送完成后，立即推进下一项。
 
@@ -36,7 +24,7 @@
 
 当前执行入口：
 
-- **当前入口EF1B首次结果：** [EF1B首次保持补偿结果](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)从clean f9f5007完整完成六fresh轨迹，18,000新控制/子步、0停止/异常/fit/RLS。同结构模型贡献joint9.0203%、肩8.8254%、肘9.4825%，actual努力两门通过，但未达原20%门；正式PD门因前置失败不可评。本单候选关闭，不scan保持比例/逆解容差/目标状态/gain/权重/seed。累计505,297控制/2,784,970子步、125,652scalar更新。C4及C5–C7未验收，持续目标active；归档核验提交推送后继续有依据的下一方向。
+- **历史 EF1B 首次结果：** [EF1B首次保持补偿结果](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)从clean f9f5007完整完成六fresh轨迹，18,000新控制/子步、0停止/异常/fit/RLS。同结构模型贡献joint9.0203%、肩8.8254%、肘9.4825%，actual努力两门通过，但未达原20%门；正式PD门因前置失败不可评。本单候选关闭，不scan保持比例/逆解容差/目标状态/gain/权重/seed。累计505,297控制/2,784,970子步、125,652scalar更新。C4及C5–C7未验收，持续目标active；归档核验提交推送后继续有依据的下一方向。
 
 - **Z0首次完整工程门通过。** [首次结果](FAST_FEEDBACK_ENGINEERING_RESULTS.md)从clean824749b一次seed7600完成1000zero+2000PD、3000控制/3000子步，0异常/停止/fit；两个末200点/.4s窗口的肩/肘四项MAE均≤.01rad。root首新thin contract零failed，独立4个Z0 MAE；记录一致与工程通过仍不证明学习或科学验收。
 - [2ms反馈协议](FAST_FEEDBACK_ENGINEERING_PROTOCOL.md)保持物理/PD64/Kd(4,4)/权限/6s任务，反馈/感觉与active研究停止检查频率增多，公开额外经典控制能力。全子步left_arm/feet/other接触零观察；固定支撑反力unknown，不从不同seed的X/Y失败识别频率因果，不追认自由root真实接触C4或解除C5科学依赖。
@@ -822,3 +810,9 @@ FR0只开放新学习协议准备，C4及C5–C7科学依赖仍未解除；持�
 [EF1B首次保持补偿结果](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)从clean f9f5007完整完成六fresh轨迹，18,000新控制/子步、0停止/异常/fit/RLS。同结构模型贡献joint9.0203%、肩8.8254%、肘9.4825%，actual努力两门通过，但未达原20%门；正式PD门因前置失败不可评。本单候选关闭，不scan保持比例/逆解容差/目标状态/gain/权重/seed。累计505,297控制/2,784,970子步、125,652scalar更新。C4及C5–C7未验收，持续目标active；归档核验提交推送后继续有依据的下一方向。
 
 12目标根全部存在、3有限forecast fallback；零技术异常不证明安全或当前目标根的实际物理因果。首次外进程wall246.827482s，内部wall/CPU245.971729/238.671875s。六新与六复用人口、全部预测与费用原样保存，旧数据不重算。
+
+### IV1 首次完成与 IV2 唯一修订（2026-10-12）
+
+[IV1 首次结果](INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md)从 clean d7eb8508f2872e24212d7e3580951c7c44fe8228 一次完成六条 trial、15,000 控制/子步，0 停止/异常。3 次 rank4 fit、12,000 新 IV scalar 标签用途、24 动作系数另计；125,652 历史 scalar RLS 保持。累计变为 529,345 控制 /2,809,018 子步。原预测门 false，动作项单独替换不能产生有效完整递推；不进入控制。27 项轻量身份/人口/冻结/源码 ZIP 检查 passed，未重新执行数学或科学门。
+
+下一唯一 IV2 固定 IV1 八动作系数，仅用每 seed 全部 2000 已付费辨识原生转移重拟合十个非动作系数：psi=(v0,v1,qrel0,qrel1,1)，y=next_v−IV1_action@G/h；每 seed 一次 lstsq、rcond=128eps、rank5/finite 必需。三 solve /30 系数 /12,000 reused offline scalar 标签用途，0 新训练物理与 RLS。随后 fresh 预测上限 6000 控制/子步，新 pulse 时相 slot3 正/slot13 反，原五 H/人口/权限/保护和 cold→新模型门不变，cold/oldlearned/IV1/IV2 全报告。不得拟合 IV1 已见预测或 PAR1 fork；失败关闭单候选，不增特征、正则、扫描或补采。C4–C7 未验收，持续目标 active；阶段交付后立即继续。

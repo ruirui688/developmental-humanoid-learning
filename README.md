@@ -1,24 +1,12 @@
 # Developmental Humanoid Learning
 
-## IV1 冻结准备与当前入口（2026-10-12）
+## 持续目标与当前入口（2026-10-12）
 
-当前继续 [连续原生随机动作辨识](docs/INSTRUMENTAL_ACTION_RESPONSE_PROTOCOL.md)：首次五项必要合成检查passed；只修正每seed八个动作系数，保留十个非动作系数。三开发seed最多15,000新控制/子步、12,000新IV scalar标签用途、三次fit，不使用PAR1 fork/opaque标签、不做RLS或控制。正式物理尚未执行，原独立预测门保持。
+**目标 active：C4 双关节接触控制 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。** 每次检查、提交、推送后立即推进下一项，不等待再次“继续”。四项完成条件见[持续目标](docs/CPU_VALIDATION_TARGET.md)。当前仅 CPU，允许少量身体辨识；不用任务教师、预训练任务策略、大规模 PPO、GPU 或真机。
 
-此前累计514,345控制/2,794,018子步、125,652scalar更新；IV与RLS另计。C4–C7未验收，持续目标active。冻结提交推送后立即首次执行，检查结果后继续最早未验收项。
+当前最早未验收的是 C4。[IV1 首次结果](docs/INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md)完整执行六条轨迹、15,000 新控制/子步，三次 rank4 fit；只替换动作项后原独立预测门失败，不进入控制。27 项保存检查通过，只证明身份与人口一致。下一唯一 IV2：冻结新动作项，用全部已付费辨识转移拟合十个状态系数，再做新时相的独立预测；不读取 IV1 预测标签作拟合，不补跑旧实验。
 
-
-## PAR1 首次结果与当前入口（2026-10-12）
-
-当前入口为 [相同状态有限动作响应结果](docs/PAIRED_ACTION_RESPONSE_DIAGNOSTIC_RESULTS.md)：首次 completed，三 source 9,000步、12 exact资格、36合法动作侧、12权限外NA；新增9,048控制/子步、0更新。保存核对42项/0失败只代表证据合同成立。合法响应均非弱，learned方向一致而幅度偏小，不能据此识别唯一物理原因或直接采用控制。
-
-累计514,345控制/2,794,018子步、125,652scalar更新。下一唯一 IV1 连续原生随机动作辨识：PAR1的opaque复制或fork差分不作学习标签；先冻结少量CPU辨识及原独立预测门，再决定完整控制。C4–C7未验收，持续目标active，提交推送后立即继续。
-
-
-## EF1D 首次结果与当前入口（2026-10-12）
-
-当前入口为 [EF1D 保存一步误差动作尺度诊断结果](docs/MODEL_ACTION_ERROR_DIAGNOSTIC_RESULTS.md)：首次 completed、完整2,400 H1/1,200配对origin；仅转录首次汇总并完成一次轻量身份/人口/源码绑定核对，不重算J/SVD/delta或旧门。
-
-0新增物理/fit/RLS/model.predict，离线代数与交付I/O另计；累计505,297控制/2,784,970子步，online118,452+offline7,200=125,652scalar更新不变。最小norm同盒映射的不可评不能识别物理原因或否定其它nullspace解；不自动放行control。C4–C7未验收、原门及五science flags false保持，持续目标active，阶段提交推送后继续有界研究。
+累计 **529,345 控制 /2,809,018 子步**；历史 **125,652 scalar RLS 更新**保持。IV1 的 **12,000 新 IV scalar 标签用途 /3 fit /24 动作系数**另计。C4–C7 均未验收，阶段结果不能当作目标完成。详细历史与成本由阶段账本和各结果报告保留。
 
 > Human-inspired developmental motor learning for safer and more sample-efficient humanoid locomotion.
 
@@ -33,7 +21,7 @@
 
 当前已按用户要求设为 [持续执行目标](docs/CONTINUOUS_EXECUTION_PLAN.md)。单肩初期验收后继续模型有效域、强基线与消融、多关节、扰动适应和能力门控；每个阶段检查并提交/推送进度，再推进下一阶段。
 
-**当前执行入口：** [EF1B首次保持补偿结果](docs/EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)从clean f9f5007完整完成六fresh轨迹，18,000新控制/子步、0停止/异常/fit/RLS。同结构模型贡献joint9.0203%、肩8.8254%、肘9.4825%，actual努力两门通过，但未达原20%门；正式PD门因前置失败不可评。本单候选关闭，不scan保持比例/逆解容差/目标状态/gain/权重/seed。累计505,297控制/2,784,970子步、125,652scalar更新。C4及C5–C7未验收，持续目标active；归档核验提交推送后继续有依据的下一方向。
+**历史 EF1B 控制结果：** [EF1B首次保持补偿结果](docs/EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)从clean f9f5007完整完成六fresh轨迹，18,000新控制/子步、0停止/异常/fit/RLS。同结构模型贡献joint9.0203%、肩8.8254%、肘9.4825%，actual努力两门通过，但未达原20%门；正式PD门因前置失败不可评。本单候选关闭，不scan保持比例/逆解容差/目标状态/gain/权重/seed。累计505,297控制/2,784,970子步、125,652scalar更新。C4及C5–C7未验收，持续目标active；归档核验提交推送后继续有依据的下一方向。
 
 当前阶段是 **C4 双关节身体预测与完整控制**。[G 控制验证](docs/GUARD_PD_TAIL_CONTROL_DEVELOPMENT_RESULTS.md)中学习组只有一个 seed 完整，其余两条肘速度停止；[H 保存诊断](docs/GUARD_PD_TAIL_FORECAST_STOP_DIAGNOSTIC_RESULTS.md)发现停止端点被模型严重低估。[I 因果残差](docs/GUARD_PD_TAIL_NATIVE_RESIDUAL_DIAGNOSTIC_RESULTS.md)、[J 六轴IMU残差](docs/GUARD_IMU_RESIDUAL_DEVELOPMENT_RESULTS.md)、[K 完整状态转移](docs/GUARD_NATIVE_TRANSITION_DEVELOPMENT_RESULTS.md)均未过开发门。[L 固定数据增量](docs/GUARD_NATIVE_AUGMENTATION_DEVELOPMENT_RESULTS.md)在保留来源故障后，从新clean提交完成全部预测；两开发门仍失败，H1速度只改善约3%–7%，H15位置退化约77%–81%。不进控制，接着做有限结构诊断；新留出与完整控制仍待验收。
 

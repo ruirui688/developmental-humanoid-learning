@@ -1,0 +1,177 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "first_complete_without_exception",
+      "passed": true
+    },
+    {
+      "name": "metrics_bound_to_run",
+      "passed": true
+    },
+    {
+      "name": "actual_physics_and_label_counts",
+      "passed": true
+    },
+    {
+      "name": "six_complete_trial_slots",
+      "passed": true
+    },
+    {
+      "name": "all_4329_fixed_predictions_retained",
+      "passed": true
+    },
+    {
+      "name": "8101_saved_fit_contract",
+      "passed": true
+    },
+    {
+      "name": "8101_ten_nonaction_coefficients_bitwise_retained",
+      "passed": true
+    },
+    {
+      "name": "8101_saved_parameter_fingerprints_unchanged",
+      "passed": true
+    },
+    {
+      "name": "8102_saved_fit_contract",
+      "passed": true
+    },
+    {
+      "name": "8102_ten_nonaction_coefficients_bitwise_retained",
+      "passed": true
+    },
+    {
+      "name": "8102_saved_parameter_fingerprints_unchanged",
+      "passed": true
+    },
+    {
+      "name": "8103_saved_fit_contract",
+      "passed": true
+    },
+    {
+      "name": "8103_ten_nonaction_coefficients_bitwise_retained",
+      "passed": true
+    },
+    {
+      "name": "8103_saved_parameter_fingerprints_unchanged",
+      "passed": true
+    },
+    {
+      "name": "science_flags_false_and_no_control",
+      "passed": true
+    },
+    {
+      "name": "native_label_boundary",
+      "passed": true
+    },
+    {
+      "name": "source_zip_complete_closure",
+      "passed": true
+    },
+    {
+      "name": "source_scripts/develop_instrumental_action_response.py",
+      "passed": true
+    },
+    {
+      "name": "source_src/developmental_physics/instrumental_action_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_docs/INSTRUMENTAL_ACTION_RESPONSE_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "source_src/developmental_physics/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_src/developmental_physics/free_root_fast_feedback_environment.py",
+      "passed": true
+    },
+    {
+      "name": "source_src/developmental_physics/environment.py",
+      "passed": true
+    },
+    {
+      "name": "source_src/developmental_physics/assets/ground_body.xml",
+      "passed": true
+    },
+    {
+      "name": "source_src/developmental_physics/guard_coupled_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_src/developmental_physics/local_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_src/developmental_physics/full_request_pair_development.py",
+      "passed": true
+    }
+  ],
+  "first_failure": null,
+  "payload": {
+    "raw/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/metrics.json": {
+      "bytes": 22285,
+      "sha256": "c64faf7b8f7fd57c52ba090f0a0127e465a822fde16e9239578bd6ed1c88ff3b"
+    },
+    "raw/models.json": {
+      "bytes": 15911,
+      "sha256": "923f73ffea0de6f200204e0961134297a50abe128df840eb1f872505e6fc7756"
+    },
+    "raw/moments.json": {
+      "bytes": 5526,
+      "sha256": "5517a62f3762df0083bdc447c405b1517ace453249768827c93e4d69289dbba4"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 8163064,
+      "sha256": "2d4463837c18a5cf06ad80dfb551c8bfd70cc1821d05368ff4c2bf095acdba14"
+    },
+    "raw/run.json": {
+      "bytes": 875053,
+      "sha256": "d8531ce2a63819451ac0a294b28c1cf60a5ffd376945cd9ea3c383a3ded354f5"
+    },
+    "raw/source.zip": {
+      "bytes": 50238,
+      "sha256": "57d9537aec7965145fd943ab472af5d3070efa9553d5dc7802a35778341a2a8e"
+    },
+    "raw/source_trace.jsonl.gz": {
+      "bytes": 15282107,
+      "sha256": "c2ded7e3a54fc74befb0cea7eba17bf6b65dd2ac6e3562c3d40f4900abc354a6"
+    }
+  },
+  "IO_before_report": {
+    "files_read": 10,
+    "bytes_read": 24420129,
+    "files_written": 10,
+    "bytes_written": 24420129,
+    "zip_decoded_bytes_read": 169026,
+    "git_blob_bytes_read": 169026
+  },
+  "physics_calls": 0,
+  "model_calls": 0,
+  "fit_calls": 0,
+  "trace_decode_calls": 0,
+  "science_gate_reexecuted": false,
+  "continuous_goal": "active",
+  "cumulative_physics": {
+    "controls": 529345,
+    "substeps": 2809018
+  },
+  "historical_RLS_scalar_updates": 125652,
+  "new_IV_scalar_label_uses": 12000,
+  "new_IV_fits": 3,
+  "new_fitted_action_coefficients": 24,
+  "wall_seconds_before_report": 0.6535120001062751,
+  "cpu_seconds_before_report": 0.125,
+  "unmeasured_filesystem_internal_IO": "unknown_not_zero"
+}
