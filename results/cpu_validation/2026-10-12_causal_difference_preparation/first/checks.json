@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "difference_sign_and_causal_one_step_target_alignment",
+      "passed": true,
+      "X": [
+        0.19999999999999998,
+        0.1,
+        0.04999999999999999,
+        0.0
+      ],
+      "Y": [
+        0.020000000000000018,
+        -0.009999999999999981
+      ],
+      "regression_error": [
+        -0.05999999999999997,
+        -0.04999999999999998
+      ],
+      "cost": {
+        "difference_sample_attempts": 1,
+        "public_guard_projection_attempts": 2,
+        "public_guard_projection_returns": 2,
+        "public_guard_input_scalar_uses": 16,
+        "signed_hinge_scalar_evaluations": 4,
+        "action_feature_scalar_outputs": 8,
+        "training_native_velocity_scalar_operand_uses": 6,
+        "difference_design_scalar_outputs": 4,
+        "transformed_Y_scalar_constructions": 2,
+        "difference_sample_returns": 1
+      },
+      "synthetic_fixed_B_matvec_calls": 1,
+      "pair_prediction_calls": 0,
+      "OLS_or_fit_calls": 0
+    },
+    {
+      "case": "whole_trial_design_and_Y_exclude_own_eval_seed",
+      "passed": true,
+      "training_seeds": [
+        2,
+        3
+      ],
+      "X_shape": [
+        2,
+        4
+      ],
+      "Y_shape": [
+        2,
+        2
+      ],
+      "provenance": [
+        {
+          "training_seed": 2,
+          "active_index": 1,
+          "previous_control_index": 1,
+          "current_control_index": 2
+        },
+        {
+          "training_seed": 3,
+          "active_index": 1,
+          "previous_control_index": 1,
+          "current_control_index": 2
+        }
+      ],
+      "own_trial_reads": 0,
+      "cost": {
+        "difference_sample_attempts": 2,
+        "public_guard_projection_attempts": 4,
+        "public_guard_projection_returns": 4,
+        "public_guard_input_scalar_uses": 32,
+        "signed_hinge_scalar_evaluations": 8,
+        "action_feature_scalar_outputs": 16,
+        "training_native_velocity_scalar_operand_uses": 12,
+        "difference_design_scalar_outputs": 8,
+        "transformed_Y_scalar_constructions": 4,
+        "difference_sample_returns": 2
+      },
+      "pair_prediction_calls": 0,
+      "OLS_or_fit_calls": 0
+    }
+  ],
+  "first_failure": null,
+  "script": {
+    "bytes": 6300,
+    "sha256": "87d380e519c5d50c3c742e5b019cafe9c28e8d4a01c60ce11c8a2bea47f18693"
+  },
+  "old_data_reads": 0,
+  "new_physics_calls": 0,
+  "old_model_calls": 0,
+  "pair_prediction_calls": 0,
+  "OLS_or_fit_calls": 0,
+  "scope": "difference_target_and_fold_exclusion_only_no_CF1_history_retest",
+  "source": {
+    "scripts/develop_causal_difference_prediction.py": {
+      "bytes": 40405,
+      "sha256": "fb78c4f7940d5ca5da2c6aa13dcb051546ba0dfbe65ff60b0cd20cdb1a349447"
+    },
+    "docs/CAUSAL_DIFFERENCE_PREDICTION_PROTOCOL.md": {
+      "bytes": 8831,
+      "sha256": "b339c25574ee2350b494921232a3408eb43c187ba61d4c1cf0f5ceae9245fd89"
+    },
+    "src/developmental_physics/causal_incremental_pair_model.py": {
+      "bytes": 10782,
+      "sha256": "e719bf097d5f16624f504d794ad6c1ad1b170306120fdb5baedb4868432d0619"
+    },
+    "src/developmental_physics/instrumental_action_model.py": {
+      "bytes": 9302,
+      "sha256": "cb0d3f6314682553fabe2f37b56764bd8098551221e14cbe8f3aece14b014c51"
+    },
+    "src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+    }
+  },
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4"
+  }
+}

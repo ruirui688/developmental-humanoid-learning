@@ -1,0 +1,92 @@
+{
+  "status": "ready_after_first_necessary_checks_and_static_review",
+  "first_status": "passed",
+  "first_failure": null,
+  "saved_synthetic_cases": 2,
+  "pre_freeze_runtime_lock_correction": {
+    "original_literal": "2.2.6",
+    "actual_runtime_and_CF1_source": "1.26.4",
+    "only_required_version_literal_and_error_string_changed": true,
+    "synthetic_checked_runner_identity": {
+      "bytes": 40405,
+      "sha256": "fb78c4f7940d5ca5da2c6aa13dcb051546ba0dfbe65ff60b0cd20cdb1a349447"
+    },
+    "mathematical_functions_changed": false,
+    "passed_cases_repeated": 0,
+    "first_formal_experiment_executed": false
+  },
+  "case_results_saved_immediately": true,
+  "design": "crossfit delta-velocity target; exact same CF1 causal formula",
+  "unique_training_rows_scalar_labels": [
+    5997,
+    11994
+  ],
+  "fold_repeated_training_rows_scalar_labels": [
+    11994,
+    23988
+  ],
+  "rank4_solves_B_coefficients": [
+    3,
+    24
+  ],
+  "new_learn_records_pair_velocity_heads": [
+    2073,
+    67950,
+    135900
+  ],
+  "matched_cold_reuse": "84 saved RMSE scalars and 2 saved H1 means; no cold forward or score recomputation",
+  "static_review": "one final protocol/implementation review; no old audit or mathematics",
+  "new_physics_RLS": 0,
+  "preparation_OLS_fit_calls": "see first synthetic checks; no real data fit",
+  "old_model_calls_RMSE_gate_recomputations": 0,
+  "old_raw_reads_in_preparation": 0,
+  "source_closure": {
+    "scripts/develop_causal_difference_prediction.py": {
+      "bytes": 40407,
+      "sha256": "d88608b049ae42af93daa15d0e8051df936c925f53a3dfb5952fadeefa521004"
+    },
+    "docs/CAUSAL_DIFFERENCE_PREDICTION_PROTOCOL.md": {
+      "bytes": 8831,
+      "sha256": "b339c25574ee2350b494921232a3408eb43c187ba61d4c1cf0f5ceae9245fd89"
+    },
+    "src/developmental_physics/causal_incremental_pair_model.py": {
+      "bytes": 10782,
+      "sha256": "e719bf097d5f16624f504d794ad6c1ad1b170306120fdb5baedb4868432d0619"
+    },
+    "src/developmental_physics/instrumental_action_model.py": {
+      "bytes": 9302,
+      "sha256": "cb0d3f6314682553fabe2f37b56764bd8098551221e14cbe8f3aece14b014c51"
+    },
+    "src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+    }
+  },
+  "payload": {
+    "first/case_results.jsonl": {
+      "bytes": 1564,
+      "sha256": "49bd73425ec19cc9a0b02ed92f71987dcfdf3389c0fae329e77db24d649b47fe"
+    },
+    "first/check_script.py": {
+      "bytes": 6300,
+      "sha256": "87d380e519c5d50c3c742e5b019cafe9c28e8d4a01c60ce11c8a2bea47f18693"
+    },
+    "first/checks.json": {
+      "bytes": 3678,
+      "sha256": "5d5395233d3ce117b4551fe2c09d71b9bb02277acf25e5ddfa8228c530458280"
+    },
+    "first/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "first/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runtime_lock_original_runner.py": {
+      "bytes": 40405,
+      "sha256": "fb78c4f7940d5ca5da2c6aa13dcb051546ba0dfbe65ff60b0cd20cdb1a349447"
+    }
+  },
+  "unmeasured_IO_import_work": "unknown_not_zero"
+}
