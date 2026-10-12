@@ -1,0 +1,59 @@
+{
+  "status": "failed",
+  "checks": [
+    {
+      "name": "CF1_identity_and_clean_first_source",
+      "passed": false
+    },
+    {
+      "name": "saved_metrics_exact_match",
+      "passed": true
+    },
+    {
+      "name": "complete_or_preserved_first_failure",
+      "passed": true
+    },
+    {
+      "name": "all_4146_planned_slots_retained",
+      "passed": true
+    },
+    {
+      "name": "both_models_full_saved_population_or_failure",
+      "passed": true
+    },
+    {
+      "name": "complete_saved_cost_or_failure",
+      "passed": true
+    },
+    {
+      "name": "no_new_physics_fit_RLS_or_old_mathematics",
+      "passed": true
+    },
+    {
+      "name": "seen_only_and_all_science_flags_closed",
+      "passed": true
+    },
+    {
+      "name": "unchanged_formal_physics_and_RLS_ledger",
+      "passed": true
+    },
+    {
+      "name": "complete_saved_model_fingerprint_binding",
+      "passed": true
+    },
+    {
+      "name": "saved_prediction_stream_population",
+      "passed": true
+    },
+    {
+      "name": "exact_pure_source_closure",
+      "passed": true
+    }
+  ],
+  "model_calls": 0,
+  "fit_calls": 0,
+  "physics_calls": 0,
+  "RMSE_or_gate_recomputations": 0,
+  "raw_prediction_decodes": 0,
+  "scope": "saved fields, byte identity and source archive only"
+}

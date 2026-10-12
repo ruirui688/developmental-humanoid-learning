@@ -21,7 +21,7 @@
 
 **目前仍卡在 C4。** [EF1B完整控制](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)模型贡献9.0203%，未达到20%。[IV2保存诊断](CONSISTENT_MODEL_RESIDUAL_RESULTS.md)发现训练一致性未迁移至fresh一步；[IV3首次结果](NEAR_REFERENCE_IDENTIFICATION_RESULTS.md)改变辨识姿态仍失败：9,000新控制/子步、三rank5拟合、1,443已见预测完整，长时模型误差巨大，实际仿真轨迹完整。原门失败，不能进入控制。28项保存检查通过不代表科学成功。
 
-**立即执行已准备的[CF1因果增量预测](CAUSAL_INCREMENTAL_PREDICTION_PROTOCOL.md)。** 新模型与纯runner首次两个必要合成case通过，静态审阅完成；冻结提交推送后首次评估全部4146记录/135900pair/271800velocity heads。0新物理/fit/RLS。用真实上一完整区间估计漂移，递推只用自身预测；匹配CFcold，H1速度20%及H2/H5不劣为新短时用途资格。原长时失败与C4控制门保持，通过也须另冻完整控制。准备人口手算遗漏已更正保留，不删末origin，不重跑旧数学。
+**CF1已首次完整失败，立即继续有限的局部动作差分辨识设计。** [首次结果](CAUSAL_INCREMENTAL_PREDICTION_RESULTS.md)4146记录/135900pair/271800heads完整，0新物理/fit/RLS。H1v及H2/H5全seed双轴退化，不能采用IV1 action8或执行CF2控制。先核请求、执行器与状态时间对齐，冻结新的速度增量因果目标，不scan比例/滤波/gain/seed；旧长时失败和C4 20%/5%/1.05门保持。首交付提交参数错误保留，已passed11检查不重跑，只补10项未到达/身份检查，无数学重算。
 
 累计 **544,345 控制 /2,824,018 子步**；历史 **125,652 scalar RLS更新**不变，IV3的12,000新scalar标签/3solve/30系数另计。C5只有事件工程通过，科学适应与C6/C7尚未验收。首准备夹具TypeError、未完成部分2项passed及原4次命令未封存断言完整归档于[准备记录](../results/cpu_validation/2026-10-12_near_reference_preparation/manifest.json)。
 

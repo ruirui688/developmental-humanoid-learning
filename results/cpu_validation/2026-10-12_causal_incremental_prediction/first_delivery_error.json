@@ -1,0 +1,19 @@
+{
+  "type": "CalledProcessError",
+  "returncode": 128,
+  "failed_command": [
+    "git",
+    "show",
+    "bb7e4b8e0000000000000000000000000000000000:scripts/develop_causal_incremental_prediction.py"
+  ],
+  "source_argument_error": {
+    "supplied": "bb7e4b8e0000000000000000000000000000000000",
+    "actual_frozen": "bb7e4b8fa744b4ec7c76855cfe6730ebbca26421"
+  },
+  "first_saved_checks": 12,
+  "first_failed_check": "CF1_identity_and_clean_first_source",
+  "first_passed_checks": 11,
+  "experiment_reexecuted": false,
+  "prediction_gate": false,
+  "remediation": "only wrong-argument source identity and previously unreached checks; no passed check or mathematics repeated"
+}

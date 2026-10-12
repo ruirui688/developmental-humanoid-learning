@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "corrected_source_argument_identity",
+      "passed": true
+    },
+    {
+      "name": "previously_unreached_source_archive_identity:scripts/develop_causal_incremental_prediction.py",
+      "passed": true
+    },
+    {
+      "name": "previously_unreached_source_archive_identity:docs/CAUSAL_INCREMENTAL_PREDICTION_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "previously_unreached_source_archive_identity:src/developmental_physics/causal_incremental_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "previously_unreached_source_archive_identity:src/developmental_physics/instrumental_action_model.py",
+      "passed": true
+    },
+    {
+      "name": "previously_unreached_source_archive_identity:src/developmental_physics/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "unreached_old_metrics_transcription",
+      "passed": true
+    },
+    {
+      "name": "unreached_old_score_transcription:8101",
+      "passed": true
+    },
+    {
+      "name": "unreached_old_score_transcription:8102",
+      "passed": true
+    },
+    {
+      "name": "unreached_old_score_transcription:8103",
+      "passed": true
+    }
+  ],
+  "first_error_preserved": true,
+  "prior_passed_checks_repeated": 0,
+  "new_physics_fit_model_RMSE_gate_recomputations": 0,
+  "raw_prediction_decodes": 0
+}

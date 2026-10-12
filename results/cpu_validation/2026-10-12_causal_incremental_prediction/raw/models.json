@@ -1,0 +1,362 @@
+{
+  "8101": {
+    "CFcold": {
+      "structure": "causal_incremental_action8",
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "action8": [
+        [
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.002,
+          0.0,
+          0.0
+        ]
+      ],
+      "action_order": [
+        "G0",
+        "G1",
+        "h0",
+        "h1"
+      ],
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "integration": "endpoint_euler",
+      "history": "previous_complete_same_trial_interval_start_qv_known_request",
+      "drift": "(current_v-previous_v)-f_B(previous_q,previous_known_request)",
+      "recursive_history": "own_current_qv_request_and_predicted_endpoint_only",
+      "trainable": false,
+      "physical_queries": 0,
+      "state_head_used": false,
+      "parameter_fingerprint": "a76f832d8d895cf1188bc99f4a96c5f2b0c489cdb9dcb094e360a5db2b39903d",
+      "archived_action_source": {
+        "source": "shared_generic_2ms_diagonal_prior_zero_hinge"
+      }
+    },
+    "CFlearn": {
+      "structure": "causal_incremental_action8",
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "action8": [
+        [
+          0.03402642713227079,
+          -0.060561981077108605,
+          0.0007728701574589327,
+          0.008661789394366567
+        ],
+        [
+          -0.06198242644551944,
+          0.12998307502152165,
+          0.00995347473641963,
+          -0.02465252173927656
+        ]
+      ],
+      "action_order": [
+        "G0",
+        "G1",
+        "h0",
+        "h1"
+      ],
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "integration": "endpoint_euler",
+      "history": "previous_complete_same_trial_interval_start_qv_known_request",
+      "drift": "(current_v-previous_v)-f_B(previous_q,previous_known_request)",
+      "recursive_history": "own_current_qv_request_and_predicted_endpoint_only",
+      "trainable": false,
+      "physical_queries": 0,
+      "state_head_used": false,
+      "parameter_fingerprint": "2b7afc88b3441364cc5228106ace676ac5d635da013a4b9aa4197e0aee546912",
+      "archived_action_source": {
+        "snapshot_model": "IV1",
+        "original_parameter_fingerprint_transcribed": "aa6eb53c4dd31be9322c5392575434d884f9178c46e2c9e234695cf2ab22b536",
+        "action_columns_only": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "action8": [
+          [
+            0.03402642713227079,
+            -0.060561981077108605,
+            0.0007728701574589327,
+            0.008661789394366567
+          ],
+          [
+            -0.06198242644551944,
+            0.12998307502152165,
+            0.00995347473641963,
+            -0.02465252173927656
+          ]
+        ],
+        "state_head_read_or_restored": false
+      }
+    }
+  },
+  "8102": {
+    "CFcold": {
+      "structure": "causal_incremental_action8",
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "action8": [
+        [
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.002,
+          0.0,
+          0.0
+        ]
+      ],
+      "action_order": [
+        "G0",
+        "G1",
+        "h0",
+        "h1"
+      ],
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "integration": "endpoint_euler",
+      "history": "previous_complete_same_trial_interval_start_qv_known_request",
+      "drift": "(current_v-previous_v)-f_B(previous_q,previous_known_request)",
+      "recursive_history": "own_current_qv_request_and_predicted_endpoint_only",
+      "trainable": false,
+      "physical_queries": 0,
+      "state_head_used": false,
+      "parameter_fingerprint": "a76f832d8d895cf1188bc99f4a96c5f2b0c489cdb9dcb094e360a5db2b39903d",
+      "archived_action_source": {
+        "source": "shared_generic_2ms_diagonal_prior_zero_hinge"
+      }
+    },
+    "CFlearn": {
+      "structure": "causal_incremental_action8",
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "action8": [
+        [
+          0.03606030749093939,
+          -0.06027376328366993,
+          -0.0017099766195630816,
+          -0.0033860208080467237
+        ],
+        [
+          -0.06568251275603537,
+          0.1298260212237015,
+          0.009382602923464255,
+          -0.019358462812983788
+        ]
+      ],
+      "action_order": [
+        "G0",
+        "G1",
+        "h0",
+        "h1"
+      ],
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "integration": "endpoint_euler",
+      "history": "previous_complete_same_trial_interval_start_qv_known_request",
+      "drift": "(current_v-previous_v)-f_B(previous_q,previous_known_request)",
+      "recursive_history": "own_current_qv_request_and_predicted_endpoint_only",
+      "trainable": false,
+      "physical_queries": 0,
+      "state_head_used": false,
+      "parameter_fingerprint": "528eb20536a27b5f3e305f41b62be3162702fd0423189c28d752c504e01eb336",
+      "archived_action_source": {
+        "snapshot_model": "IV1",
+        "original_parameter_fingerprint_transcribed": "8d10a31e5643323b324666c9e31d49e62e54dc4eab21d56b5e7b708460a94155",
+        "action_columns_only": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "action8": [
+          [
+            0.03606030749093939,
+            -0.06027376328366993,
+            -0.0017099766195630816,
+            -0.0033860208080467237
+          ],
+          [
+            -0.06568251275603537,
+            0.1298260212237015,
+            0.009382602923464255,
+            -0.019358462812983788
+          ]
+        ],
+        "state_head_read_or_restored": false
+      }
+    }
+  },
+  "8103": {
+    "CFcold": {
+      "structure": "causal_incremental_action8",
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "action8": [
+        [
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.002,
+          0.0,
+          0.0
+        ]
+      ],
+      "action_order": [
+        "G0",
+        "G1",
+        "h0",
+        "h1"
+      ],
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "integration": "endpoint_euler",
+      "history": "previous_complete_same_trial_interval_start_qv_known_request",
+      "drift": "(current_v-previous_v)-f_B(previous_q,previous_known_request)",
+      "recursive_history": "own_current_qv_request_and_predicted_endpoint_only",
+      "trainable": false,
+      "physical_queries": 0,
+      "state_head_used": false,
+      "parameter_fingerprint": "a76f832d8d895cf1188bc99f4a96c5f2b0c489cdb9dcb094e360a5db2b39903d",
+      "archived_action_source": {
+        "source": "shared_generic_2ms_diagonal_prior_zero_hinge"
+      }
+    },
+    "CFlearn": {
+      "structure": "causal_incremental_action8",
+      "dt_seconds": 0.002,
+      "public_joint_ranges_rad": [
+        [
+          -1.7453292519943295,
+          1.7453292519943295
+        ],
+        [
+          0.0,
+          2.356194490192345
+        ]
+      ],
+      "action8": [
+        [
+          0.03257218162333091,
+          -0.0658982723586539,
+          -0.0006022993601749643,
+          0.006771017873251852
+        ],
+        [
+          -0.05825364980619004,
+          0.141325369690227,
+          0.004180304457459168,
+          -0.022398989544225176
+        ]
+      ],
+      "action_order": [
+        "G0",
+        "G1",
+        "h0",
+        "h1"
+      ],
+      "guard_margin_rad": 0.03,
+      "request_limit_nm": 0.5,
+      "hinge_threshold_nm": 0.25,
+      "integration": "endpoint_euler",
+      "history": "previous_complete_same_trial_interval_start_qv_known_request",
+      "drift": "(current_v-previous_v)-f_B(previous_q,previous_known_request)",
+      "recursive_history": "own_current_qv_request_and_predicted_endpoint_only",
+      "trainable": false,
+      "physical_queries": 0,
+      "state_head_used": false,
+      "parameter_fingerprint": "1112f5b1c48820f95dd1a479a4cb200ffe9d43076ce8680a28541e666c822413",
+      "archived_action_source": {
+        "snapshot_model": "IV1",
+        "original_parameter_fingerprint_transcribed": "fba3a1273750b0f9cae329b820849ce36d3c9b486d9adb2bd93fcffdf57ee6f9",
+        "action_columns_only": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "action8": [
+          [
+            0.03257218162333091,
+            -0.0658982723586539,
+            -0.0006022993601749643,
+            0.006771017873251852
+          ],
+          [
+            -0.05825364980619004,
+            0.141325369690227,
+            0.004180304457459168,
+            -0.022398989544225176
+          ]
+        ],
+        "state_head_read_or_restored": false
+      }
+    }
+  }
+}
