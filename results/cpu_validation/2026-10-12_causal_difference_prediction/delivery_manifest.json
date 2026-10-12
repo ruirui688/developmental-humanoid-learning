@@ -1,0 +1,53 @@
+{
+  "source_commit": "72e2f50dc728bc0d0e2e4c625133334df9a2298a",
+  "payload": {
+    "cold_transcribed.json": {
+      "bytes": 9815,
+      "sha256": "ff92c05551568b84247556794d44cb0285e7d70c8cd3c908de7c4d100ee3774c"
+    },
+    "first_stderr.log": {
+      "bytes": 547,
+      "sha256": "3878116416d6d7563435546156cc08585718343eb61de2162b6fa9af4c8c34a4"
+    },
+    "first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fits.json": {
+      "bytes": 1392202,
+      "sha256": "6acb59213e213edbcd495b577a9c8162a981b4d11709103bd8422ff4fbeefc50"
+    },
+    "metrics.json": {
+      "bytes": 339,
+      "sha256": "1285cb4b81285865d60a896cf9ed21d5624cdddbf4e3368a4fa6b2fdb9e1b09f"
+    },
+    "models.json": {
+      "bytes": 4,
+      "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
+    },
+    "old_scores_transcribed.json": {
+      "bytes": 27656,
+      "sha256": "1adb8fce3daed62d6de805e8a862654d623a37eb8fa16a19fb683295ab39b04a"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 38,
+      "sha256": "0e2ea3bcaad7efc3cb7a903503ebe9dfa5090ee51e8a16107de118f2a84c713f"
+    },
+    "run.json": {
+      "bytes": 425319,
+      "sha256": "0724f2f985ca61e54c0e546f2a48f81817456c57fa090267224a98aa93f17876"
+    },
+    "source.zip": {
+      "bytes": 23278,
+      "sha256": "664142c38fdabd63d4f716f3352fa7f3fd0d8a046b81945f985860d1e60a5116"
+    }
+  },
+  "delivery_script": {
+    "bytes": 6656,
+    "sha256": "849b5f487b073df57cbf500b9e1cc5a38e4dbe9e704cdfbfbe40d762ca9289a2"
+  },
+  "checks": 21,
+  "fit_model_physics_RMSE_gate_recomputations": 0,
+  "raw_prediction_decodes": 0,
+  "unmeasured_IO_internal_work": "unknown_not_zero"
+}

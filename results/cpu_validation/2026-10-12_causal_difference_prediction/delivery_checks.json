@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "CFD1_clean_first_source_identity",
+      "passed": true
+    },
+    {
+      "name": "saved_metrics_exact_match",
+      "passed": true
+    },
+    {
+      "name": "complete_or_preserved_first_failure",
+      "passed": true
+    },
+    {
+      "name": "all_2073_planned_slots_retained",
+      "passed": true
+    },
+    {
+      "name": "complete_population_or_failure",
+      "passed": true
+    },
+    {
+      "name": "full_saved_prediction_cost_or_failure",
+      "passed": true
+    },
+    {
+      "name": "full_saved_fit_cost_or_failure",
+      "passed": true
+    },
+    {
+      "name": "three_rank4_excluded_trial_fits_or_failure",
+      "passed": true
+    },
+    {
+      "name": "no_new_physics_RLS_or_old_mathematics",
+      "passed": true
+    },
+    {
+      "name": "crossfit_seen_only_science_closed",
+      "passed": true
+    },
+    {
+      "name": "unchanged_formal_physics_RLS_ledger",
+      "passed": true
+    },
+    {
+      "name": "saved_model_fingerprint_binding",
+      "passed": true
+    },
+    {
+      "name": "exact_pure_source_closure",
+      "passed": true
+    },
+    {
+      "name": "source_archive_identity:scripts/develop_causal_difference_prediction.py",
+      "passed": true
+    },
+    {
+      "name": "source_archive_identity:docs/CAUSAL_DIFFERENCE_PREDICTION_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "source_archive_identity:src/developmental_physics/causal_incremental_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_archive_identity:src/developmental_physics/instrumental_action_model.py",
+      "passed": true
+    },
+    {
+      "name": "source_archive_identity:src/developmental_physics/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "same_population_cold_transcription:8101",
+      "passed": true
+    },
+    {
+      "name": "same_population_cold_transcription:8102",
+      "passed": true
+    },
+    {
+      "name": "same_population_cold_transcription:8103",
+      "passed": true
+    }
+  ],
+  "fit_model_physics_RMSE_gate_recomputations": 0,
+  "raw_prediction_decodes": 0,
+  "scope": "saved fields, byte identity and source archive only"
+}

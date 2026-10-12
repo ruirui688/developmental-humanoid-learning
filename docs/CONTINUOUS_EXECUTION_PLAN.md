@@ -4,11 +4,11 @@
 
 **目标 active：C4 双关节接触控制 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。** 每次检查、提交、推送后立即推进下一项，不等待再次“继续”。四项完成条件见[持续目标](CPU_VALIDATION_TARGET.md)。当前仅 CPU，允许少量身体辨识；不用任务教师、预训练任务策略、大规模 PPO、GPU 或真机。
 
-当前最早未验收的是 **C4双关节完整接触控制**。[CF1完整负结果](CAUSAL_INCREMENTAL_PREDICTION_RESULTS.md)保持关闭；下一唯一[CFD1差分crossfit协议](CAUSAL_DIFFERENCE_PREDICTION_PROTOCOL.md)已准备，首次必要合成检查通过，最终静态审阅完成。先clean冻结提交推送，再首次执行；不在准备通过后宣称科学成功。
+当前最早未验收的是 **C4双关节完整接触控制**。[CFD1首次结果](CAUSAL_DIFFERENCE_PREDICTION_RESULTS.md)从clean 72e2f50dc728bc0d0e2e4c625133334df9a2298a执行：首3998×4 OLS返回rank2，未达事前rank4，全批失败/停止。其余两fit与全部2073预测not_attempted/不可用；预测门不可评，CFD2未开放。保存21薄核passed只证明原件一致。
 
-唯一回归目标Δv_t−Δv_(t−1)=BΔphi，四动作特征、2×4单OLS/rcondNone，无截距/正则/尺度/lag。每eval seed只在其它两完整trial active1..1999拟合，3rank4solve/24Bcoeff、23988重复scalar标签用途（unique11994）；训练与评分整trial隔离，但全数据已见开发，非最终留出或因果证明。只新预测CFDlearn2073/67950/135900，严格同人口CF1cold84scalar/mean2转录，0新物理/RLS/旧模型重算。新H1v20%及H2/H5非劣、全部7H报告保持。
+新物理/RLS/预测均0，实际7996离线Y scalar用途/1solve/8返回scalar但0 adopted B；wall1.1037194000091404/CPU.78125s。下一唯一线性G2模型设计，公开hinge系数为0，不能降低CFD1原rank4门。先只核已保存首fit列资格，若严格成立再独立冻结显式复用及其余两map的新两列OLS，不scan比例/滤波/gain/seed或重复旧数学。
 
-累计 **544,345 控制 /2,824,018 子步**；历史 **125,652 scalar RLS更新**保持，全部已有费用另列。结果检查、提交、推送后立即继续最早未验收项，C4–C7未验收。通过也须另冻完整控制与20%/5%/1.05实际努力和新最终留出。
+累计 **544,345 控制 /2,824,018 子步**；历史 **125,652 scalar RLS更新**保持，已有费用另列。NumPy冻结前误填已据实际1.26.4更正，两literal原件保存，已passedcase不重跑。C4–C7未验收，目标active，提交推送后立即继续。原完整控制20%/5%/1.05努力与新最终留出。
 
 > 2026-10-12：这是持续执行的目标，不是一次性任务。阶段报告、检查、提交和推送完成后，立即推进下一项。
 
@@ -857,3 +857,8 @@ H10v cold原均值 .008679099679002308/.016107455266461564，IV3 .12157781096361
 ### CFD1准备与首次执行入口（2026-10-12）
 
 [CFD1协议](CAUSAL_DIFFERENCE_PREDICTION_PROTOCOL.md)唯一差分crossfit：每eval seed只拟合另两完整trial1999+1999行，3rank4OLS/rcondNone/24Bcoeff，23988重复训练scalar（unique11994）；完整9000原生先资格，全部fit合格才新评分2073records/67950pair/135900heads，cold84scalar+mean2严格匹配转录。仅四动作特征，无lag/截距/正则/scale/扫描；普通motor时序即时对齐，不归因延迟。首次必要合成与静态review通过后clean冻结推送并首次执行，0新物理/RLS，CF1及旧控制关闭。已见trial crossfit不能称新留出/因果B。C4–C7未验收，active目标阶段交付后继续。
+
+
+### CFD1首fit秩资格失败与线性G2方向（2026-10-12）
+
+[CFD1首次结果](CAUSAL_DIFFERENCE_PREDICTION_RESULTS.md)从clean72e2f50dc728bc0d0e2e4c625133334df9a2298a，首map8101只在另两trial3998行拟合，返回rank2/singular11.301656026171543、5.449317616021822、-0、0，未达rank4而停止；另外2fit和全部2073预测未执行，预测门不可评，CFD2关闭。实际7996Y scalar/1solve/8返回但0 adopted B，0物理/RLS/predict，wall1.1037194000091404/CPU.78125s；cold84+mean2转录。一次21保存薄核passed/0数学重算，不代表科学成功。下一唯一公开zero-hinge线性G2设计，先冻保存列资格，再如严格成立显式复用首2线性行并新fit另外两map，不降旧rank4门或scan。累计544345/2824018和历史125652RLS保持；active目标结果提交推送后继续。

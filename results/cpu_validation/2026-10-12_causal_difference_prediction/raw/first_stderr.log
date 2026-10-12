@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Codex_ws\robot_rl\scripts\develop_causal_difference_prediction.py", line 503, in main
+    collector.run()
+  File "D:\Codex_ws\robot_rl\scripts\develop_causal_difference_prediction.py", line 460, in run
+    self.fit_all()
+  File "D:\Codex_ws\robot_rl\scripts\develop_causal_difference_prediction.py", line 361, in fit_all
+    raise ValueError("finite_full_rank4_difference_OLS_required_no_completion_or_fallback")
+ValueError: finite_full_rank4_difference_OLS_required_no_completion_or_fallback
