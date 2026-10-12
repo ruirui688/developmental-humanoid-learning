@@ -1,5 +1,11 @@
 # CPU 发育式学习：当前持续目标
 
+## EF1D 冻结准备与当前入口（2026-10-12）
+
+当前入口为 [EF1D 保存一步误差动作尺度诊断协议](MODEL_ACTION_ERROR_DIAGNOSTIC_PROTOCOL.md)，[首次准备封存](../results/cpu_validation/2026-10-12_model_action_error_preparation/freeze_manifest.json)保留最终源码与8项新合成检查、stdout/stderr/JSON；首次合成passed、静态READY仅代表准备资格，正式诊断尚未执行。
+
+完整2,400 H1/1,200配对origin，至多11,772行解码、38,400盒成员检查/9,600相邻SVD；复用首审来源，不读trace，0新物理/fit/RLS/model.predict，离线费用另计。此前累计505,297控制/2,784,970子步，online118,452+offline7,200=125,652scalar更新，旧费用保持。EF1B单候选关闭，EF1D不自动放行control；C4–C7未验收、原门及五science flags false保持，持续目标active。准备检查提交推送后直接继续首次有界诊断，不把准备或单个报告当作持续目标完成。
+
 > 更新：2026-10-12。目标持续执行中；一次实验、报告或提交都不代表完成。
 
 我们要验证：**机器人能否用自己的动作和感觉，通过少量 CPU 身体辨识，形成有用的身体模型，再依靠预测控制与能力门控逐步获得运动能力。** 当前不使用任务教师、预训练任务策略、大规模 PPO、GPU 训练或真机。先验证低维多关节机制，再决定如何扩展到站立和行走。
@@ -38,6 +44,6 @@
 
 [EF1B首次保持补偿结果](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)从clean f9f5007完整完成六fresh轨迹，18,000新控制/子步、0停止/异常/fit/RLS。同结构模型贡献joint9.0203%、肩8.8254%、肘9.4825%，actual努力两门通过，但未达原20%门；正式PD门因前置失败不可评。本单候选关闭，不scan保持比例/逆解容差/目标状态/gain/权重/seed。累计505,297控制/2,784,970子步、125,652scalar更新。C4及C5–C7未验收，持续目标active；归档核验提交推送后继续有依据的下一方向。
 
-FR4网格微调族已关闭。EF1B开发全门通过才另冻适配本控制器的新最终C4留出；之后依次进入C5未知动力学适应、C6成熟机制和C7综合验收。
+FR4网格微调族与EF1B单候选均已关闭。EF1D保存诊断不自动放行control；C4–C7仍未验收，后续控制须另行冻结并满足原门。
 
 本目标不承诺半小时学会走路，也不把 CPU 局部结果称为 G1 全身技能或真机成功。详细阶段条件、历史失败与成本保留在[持续执行阶段账本](CONTINUOUS_EXECUTION_PLAN.md)，长期路线见[项目推进路线](DEVELOPMENT_ROADMAP.md)。
