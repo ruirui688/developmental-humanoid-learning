@@ -1,0 +1,325 @@
+{
+  "experiment_id": "PAR1_saved_payload_contract",
+  "status": "passed",
+  "execution_completed": true,
+  "execution_status": "completed",
+  "partial_execution_contract": false,
+  "scientific_gate_evaluated": false,
+  "scientific_validation": false,
+  "checks": [
+    {
+      "name": "raw_entries_are_regular_files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PAR1_status_and_first_failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "completed_payload_has_all_original_files",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "partial_execution": false
+      }
+    },
+    {
+      "name": "all_science_flags_false",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_control_opening_or_partial_ranking",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_learning_and_replay_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_population_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_48_planned_sides_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "side_status_population",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "NA_reasons_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "permission_NA_has_original_request",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stepped_NA_and_responses_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "origin_population",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "completed_12_qualifications",
+      "passed": true,
+      "detail": "Saved labels only; no state-match recomputation"
+    },
+    {
+      "name": "source_trial_population",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_counters_within_fixed_caps",
+      "passed": true,
+      "detail": {
+        "source_control_attempts": 9000,
+        "source_control_returns": 9000,
+        "qualification_control_attempts": 12,
+        "qualification_control_returns": 12,
+        "side_control_attempts": 36,
+        "side_control_returns": 36,
+        "total_control_attempts": 9048,
+        "confirmed_physics_substeps": 9048,
+        "mj_step_attempts": 9048,
+        "mj_step_returns": 9048,
+        "pre_data_copy_attempts": 12,
+        "fork_data_copy_attempts": 48,
+        "theta_scalars_read": 108,
+        "finite_effect_pair_returns": 36,
+        "model_response_pair_returns": 72,
+        "new_response_scalar_labels": 72,
+        "model_response_scalar_outputs": 144
+      }
+    },
+    {
+      "name": "total_controls_are_source_and_forks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physics_cost_not_rewound_by_clone",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "completed_source_and_fork_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_model_fingerprint_population",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_model_fingerprints_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "completed_model_source_pin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_source_commit_and_manifest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_ZIP_population",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_manifest_identity:scripts/diagnose_paired_action_response.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_git_identity:scripts/diagnose_paired_action_response.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_manifest_identity:docs/PAIRED_ACTION_RESPONSE_DIAGNOSTIC_PROTOCOL.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_git_identity:docs/PAIRED_ACTION_RESPONSE_DIAGNOSTIC_PROTOCOL.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_protocol_pin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_manifest_identity:src/developmental_physics/__init__.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_git_identity:src/developmental_physics/__init__.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_manifest_identity:src/developmental_physics/free_root_fast_feedback_environment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_git_identity:src/developmental_physics/free_root_fast_feedback_environment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_manifest_identity:src/developmental_physics/environment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_git_identity:src/developmental_physics/environment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_manifest_identity:src/developmental_physics/assets/ground_body.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_git_identity:src/developmental_physics/assets/ground_body.xml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_manifest_identity:src/developmental_physics/guard_pair_model.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP_git_identity:src/developmental_physics/guard_pair_model.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stream_saved_identity_scope:source_trace",
+      "passed": true,
+      "detail": "Compressed file identity recorded separately; decoded identity not recalculated"
+    },
+    {
+      "name": "stream_saved_identity_scope:fork_trace",
+      "passed": true,
+      "detail": "Compressed file identity recorded separately; decoded identity not recalculated"
+    },
+    {
+      "name": "completed_two_stream_manifests",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "checked": 42,
+  "failed": 0,
+  "unavailable": [],
+  "first_verification_failure": null,
+  "raw_directory": "D:\\Codex_ws\\robot_rl\\results\\cpu_validation\\2026-10-12_paired_action_response\\raw",
+  "checker_source": {
+    "path": "D:\\Codex_ws\\robot_rl\\external\\verify_par1_payload_once.py",
+    "identity": {
+      "bytes": 16604,
+      "sha256": "56e9beda54cf334826c1ce055c56eafaf1e80a9f09b109b31d2bc0d37be942f4"
+    }
+  },
+  "original_file_identities": {
+    "first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fork_trace.jsonl.gz": {
+      "bytes": 33048,
+      "sha256": "2297637dd4b8c75c740e252e76b2f772a7eb6674f3e520f1a8255a2318cdb539"
+    },
+    "opaque_integration_states.npz": {
+      "bytes": 169894,
+      "sha256": "e2e7ac2a751faa14ce6d4966d448fa26284431cd08e0eb3b6ccd39a882f04e41"
+    },
+    "run.json": {
+      "bytes": 255185,
+      "sha256": "222eb67eb39f23948c0d72f1da5f5ba0b5b95a0396ddfece40cae546cd2e78fc"
+    },
+    "source.zip": {
+      "bytes": 26249,
+      "sha256": "c08753e970113c0eb506bc4272b4049604afa65c4b450ddcc4c9fa047acba28c"
+    },
+    "source_trace.jsonl.gz": {
+      "bytes": 4295167,
+      "sha256": "64f774f228fe18e44d11856ba279f43a579174002b4fdbc6ade215f3a86bd607"
+    }
+  },
+  "IO_through_before_checks_JSON_write": {
+    "output_directory_create_attempts": 1,
+    "output_directory_create_returns": 1,
+    "file_open_attempts": 8,
+    "file_open_returns": 8,
+    "file_read_attempts": 18,
+    "file_read_returns": 18,
+    "file_bytes_read": 4796147,
+    "directory_inventory_attempts": 1,
+    "directory_inventory_returns": 1,
+    "run_JSON_decode_attempts": 1,
+    "run_JSON_decode_returns": 1,
+    "source_ZIP_open_attempts": 1,
+    "source_ZIP_open_returns": 1,
+    "source_ZIP_member_read_attempts": 7,
+    "source_ZIP_member_read_returns": 7,
+    "source_ZIP_decoded_bytes_read": 76863,
+    "git_blob_query_attempts": 7,
+    "git_blob_query_returns": 7,
+    "git_stdout_bytes_read": 76863,
+    "git_stderr_bytes_read": 0
+  },
+  "saved_IO_excludes": "Final checks JSON encode/write and final stdout; actual write reported on stdout",
+  "unmeasured_filesystem_metadata_IO": "unknown_not_zero",
+  "gzip_trace_decode_calls": 0,
+  "opaque_state_decode_calls": 0,
+  "response_math_calls": 0,
+  "clone_match_recomputations": 0,
+  "model_calls": 0,
+  "physics_calls": 0,
+  "protocol_pin": {
+    "bytes": 10425,
+    "sha256": "8ce717c5a80b9c70185c8bbc3c0839417e3ee9209423d3fb27de80687c79526d"
+  },
+  "all_science_flags_false_required": [
+    "scientific_adoption",
+    "old_free_root_C4_validation",
+    "c4_scientific_validation",
+    "c5_scientific_dependency_released",
+    "c4_contact_scientific_validation"
+  ]
+}

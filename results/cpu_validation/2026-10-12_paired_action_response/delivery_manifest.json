@@ -1,0 +1,78 @@
+{
+  "experiment": "PAR1",
+  "source_commit": "b13aba1223d430b82252a5266cdad847933691a2",
+  "status": "completed",
+  "payload": {
+    "raw/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/fork_trace.jsonl.gz": {
+      "bytes": 33048,
+      "sha256": "2297637dd4b8c75c740e252e76b2f772a7eb6674f3e520f1a8255a2318cdb539"
+    },
+    "raw/opaque_integration_states.npz": {
+      "bytes": 169894,
+      "sha256": "e2e7ac2a751faa14ce6d4966d448fa26284431cd08e0eb3b6ccd39a882f04e41"
+    },
+    "raw/run.json": {
+      "bytes": 255185,
+      "sha256": "222eb67eb39f23948c0d72f1da5f5ba0b5b95a0396ddfece40cae546cd2e78fc"
+    },
+    "raw/source.zip": {
+      "bytes": 26249,
+      "sha256": "c08753e970113c0eb506bc4272b4049604afa65c4b450ddcc4c9fa047acba28c"
+    },
+    "raw/source_trace.jsonl.gz": {
+      "bytes": 4295167,
+      "sha256": "64f774f228fe18e44d11856ba279f43a579174002b4fdbc6ade215f3a86bd607"
+    },
+    "checks/checks.json": {
+      "bytes": 8953,
+      "sha256": "ce0cd1db89fdb0c69e348b135f40a9a19fb95ba7c719ad9534144396dbac2b2d"
+    },
+    "checks/verify_par1_payload_once.py": {
+      "bytes": 16604,
+      "sha256": "56e9beda54cf334826c1ce055c56eafaf1e80a9f09b109b31d2bc0d37be942f4"
+    }
+  },
+  "copy_io": {
+    "files_read": 7,
+    "files_written": 7,
+    "bytes_read": 4779543,
+    "bytes_written": 4779543
+  },
+  "wall_seconds_before_manifest": 0.051101900171488523,
+  "cpu_seconds_before_manifest": 0.0,
+  "historical_cost_before_PAR1": {
+    "controls": 505297,
+    "substeps": 2784970,
+    "scalar_updates": 125652
+  },
+  "new_physics": {
+    "source": 9000,
+    "qualification": 12,
+    "sides": 36,
+    "total_controls": 9048,
+    "total_substeps": 9048
+  },
+  "cumulative": {
+    "controls": 514345,
+    "substeps": 2794018,
+    "scalar_updates": 125652
+  },
+  "response_math_reexecuted": false,
+  "continuous_goal": "active",
+  "unmeasured_filesystem_internal_IO": "unknown_not_zero",
+  "first_payload_contract": {
+    "status": "passed",
+    "checks": 42,
+    "failed": 0,
+    "science_gate_evaluated": false,
+    "source": "checks/checks.json"
+  }
+}
