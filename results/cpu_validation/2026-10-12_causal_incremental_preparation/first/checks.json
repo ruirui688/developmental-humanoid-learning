@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "past_guard_increment_units_own_recursive_memory_and_required_history",
+      "passed": true,
+      "first_next_q": [
+        -0.95012,
+        0.0
+      ],
+      "first_next_v": [
+        -0.060000000000000005,
+        0.0
+      ],
+      "drift": [
+        0.02,
+        0.0
+      ],
+      "recursive_q": [
+        -0.9501999999999999,
+        0.0
+      ],
+      "recursive_v": [
+        -0.04,
+        0.0
+      ],
+      "expected_rejections": [
+        {
+          "type": "ValueError",
+          "message": "real_preceding_interval_memory_required_no_zero_fill"
+        },
+        {
+          "type": "ValueError",
+          "message": "immediately_preceding_same_trial_history_required"
+        },
+        {
+          "type": "ValueError",
+          "message": "history_endpoint_must_exactly_match_current_native_qv"
+        }
+      ],
+      "new_pair_returns": 2
+    },
+    {
+      "case": "complete_prefix_active0_native_history_and_no_privileged_inputs",
+      "passed": true,
+      "complete_counts": {
+        "1": 3
+      },
+      "prefix_memory_control_index": 0,
+      "expected_rejections": [
+        {
+          "type": "ValueError",
+          "message": "complete_same_trial_native_qv_continuity_required"
+        },
+        {
+          "type": "ValueError",
+          "message": "exact_same_trial_indices_required_no_duplicate_missing_or_reordering"
+        },
+        {
+          "type": "ValueError",
+          "message": "full_declared_source_trials_required_no_subset"
+        },
+        {
+          "type": "ValueError",
+          "message": "complete_unstopped_final_native_interval_required"
+        }
+      ],
+      "privileged_fields_consumed": 0
+    }
+  ],
+  "first_failure": null,
+  "script": {
+    "bytes": 8373,
+    "sha256": "88ee6b2a36fd2dfdf9e436810c207ea81ff75c754c08c8c6bd461654db9b491b"
+  },
+  "new_physics": 0,
+  "old_model_calls": 0,
+  "old_fit_gate_RMSE_recomputations": 0,
+  "old_data_reads": 0,
+  "fixture_inputs": "explicit_numpy_arrays",
+  "source": {
+    "src/developmental_physics/causal_incremental_pair_model.py": {
+      "bytes": 10782,
+      "sha256": "e719bf097d5f16624f504d794ad6c1ad1b170306120fdb5baedb4868432d0619"
+    },
+    "src/developmental_physics/instrumental_action_model.py": {
+      "bytes": 9302,
+      "sha256": "cb0d3f6314682553fabe2f37b56764bd8098551221e14cbe8f3aece14b014c51"
+    },
+    "src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+    }
+  }
+}

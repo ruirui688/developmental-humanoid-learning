@@ -1,0 +1,77 @@
+{
+  "status": "ready_after_first_necessary_checks_and_static_review",
+  "first_status": "passed",
+  "first_failure": null,
+  "saved_synthetic_cases": 2,
+  "case_results_saved_immediately": true,
+  "new_synthetic_pair_prediction_returns": 2,
+  "expected_history_rejections": 3,
+  "new_native_selector_contract_case": 1,
+  "prior_design_count_error": {
+    "original_records_pair_heads": [
+      4140,
+      135780,
+      271560
+    ],
+    "corrected_before_experiment": [
+      4146,
+      135900,
+      271800
+    ],
+    "cause": "H20 origin1980 omitted in hand count",
+    "preserved_full_range": true,
+    "experiment_executed_at_correction": false
+  },
+  "static_review": "one final protocol/implementation review; no old audit or mathematics",
+  "new_physics": 0,
+  "fit": 0,
+  "RLS": 0,
+  "old_model_calls": 0,
+  "old_RMSE_gate_recomputations": 0,
+  "old_raw_reads_in_preparation": 0,
+  "source_closure": {
+    "scripts/develop_causal_incremental_prediction.py": {
+      "bytes": 31512,
+      "sha256": "7ab145c16f83a7d1e4d9bb7abeb7729c9e2e8c8664d4fd8700dc1210ef93a44d"
+    },
+    "docs/CAUSAL_INCREMENTAL_PREDICTION_PROTOCOL.md": {
+      "bytes": 7757,
+      "sha256": "54a85bf9ac4da234cfd7d8e887fe64f7c6ac325f53cd889f49e24c03ec053446"
+    },
+    "src/developmental_physics/causal_incremental_pair_model.py": {
+      "bytes": 10782,
+      "sha256": "e719bf097d5f16624f504d794ad6c1ad1b170306120fdb5baedb4868432d0619"
+    },
+    "src/developmental_physics/instrumental_action_model.py": {
+      "bytes": 9302,
+      "sha256": "cb0d3f6314682553fabe2f37b56764bd8098551221e14cbe8f3aece14b014c51"
+    },
+    "src/developmental_physics/__init__.py": {
+      "bytes": 162,
+      "sha256": "d2ee9d572836752f5f8404bfdf1fca8add0d62b9858f4c6dcd9cf7ddc6c53ea2"
+    }
+  },
+  "payload": {
+    "first/case_results.jsonl": {
+      "bytes": 1172,
+      "sha256": "44ef57912413be5725054957b029d834fc242b512f3ad2d6856f1e546369cb8a"
+    },
+    "first/check_script.py": {
+      "bytes": 8373,
+      "sha256": "88ee6b2a36fd2dfdf9e436810c207ea81ff75c754c08c8c6bd461654db9b491b"
+    },
+    "first/checks.json": {
+      "bytes": 2665,
+      "sha256": "1e9655293b668ec50b3fde58204eb09ab4b0cb924c397d5719d1231133781ec9"
+    },
+    "first/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "first/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "unmeasured_IO_import_work": "unknown_not_zero"
+}
