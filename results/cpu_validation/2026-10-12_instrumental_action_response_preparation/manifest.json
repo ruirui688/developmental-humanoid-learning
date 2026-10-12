@@ -1,0 +1,87 @@
+{
+  "experiment": "IV1",
+  "status": "preparation_frozen",
+  "files": {
+    "inputs/docs/INSTRUMENTAL_ACTION_RESPONSE_PROTOCOL.md": {
+      "bytes": 11144,
+      "sha256": "476e3292b52817ab3c3c8686bb9115b09ae7c17105cf4d0f0f6aed1f0f421e33"
+    },
+    "inputs/src/developmental_physics/instrumental_action_model.py": {
+      "bytes": 9302,
+      "sha256": "cb0d3f6314682553fabe2f37b56764bd8098551221e14cbe8f3aece14b014c51"
+    },
+    "inputs/scripts/develop_instrumental_action_response.py": {
+      "bytes": 37971,
+      "sha256": "a7cd0e7ea7986d29b4fa56ddccef56b894f08f7a7adcbbe719527e7157086e09"
+    },
+    "inputs/external/new_iv_action_checks_once.py": {
+      "bytes": 8384,
+      "sha256": "d51d1404d4a7449edb490e28610032c6fbb7e24c068e7966439c9d73ddcd679a"
+    },
+    "inputs/external/freeze_iv1_preparation_once.py": {
+      "bytes": 2886,
+      "sha256": "d5dfdb5f3223678a09dbc264ddbdde21667e8f8f0f806fbc99b051b12310e562"
+    },
+    "inputs/external/iv1_new_checks_first/checks.json": {
+      "bytes": 16909,
+      "sha256": "2b550c701115622f8417cdb288520e951bc9b3dfd5ef0267f8c69f7dadd16f5a"
+    },
+    "inputs/external/iv1_new_checks_first/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "inputs/external/iv1_new_checks_first/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "new_checks": {
+    "status": "passed",
+    "count": 5
+  },
+  "new_check_cost": {
+    "source_file_reads": 3,
+    "source_bytes_read": 55657,
+    "public_guard_projection_attempts": 136,
+    "public_guard_projection_returns": 136,
+    "public_guard_input_scalar_uses": 1088,
+    "signed_hinge_scalar_evaluations": 272,
+    "action_feature_scalar_outputs": 544,
+    "frozen_nonaction_matvec_attempts": 36,
+    "frozen_nonaction_matvec_returns": 36,
+    "frozen_nonaction_coefficient_scalar_uses": 360,
+    "IV_moment_update_attempts": 20,
+    "new_IV_scalar_label_uses": 40,
+    "instrument_pair_attempts": 24,
+    "conditional_mapping_candidates": 96,
+    "conditional_mapping_mean_scalar_outputs": 96,
+    "instrument_scalar_outputs": 96,
+    "instrument_pair_returns": 24,
+    "IV_outer_products": 40,
+    "IV_moment_scalar_additions": 480,
+    "IV_moment_update_returns": 20,
+    "IV_fit_attempts": 3,
+    "IV_lstsq_attempts": 3,
+    "IV_lstsq_returns": 3,
+    "IV_fitted_coefficient_scalar_outputs": 16,
+    "IV_fit_returns": 2,
+    "IV_fit_exceptions": 1,
+    "wall_seconds": 0.057931500021368265,
+    "cpu_seconds": 0.015625
+  },
+  "historical_RLS_scalar_updates": 125652,
+  "historical_controls": 514345,
+  "historical_substeps": 2794018,
+  "preparation_physics": 0,
+  "preparation_fit": 0,
+  "file_copy_IO": {
+    "files_read": 8,
+    "files_written": 8,
+    "bytes_read": 86596,
+    "bytes_written": 86596
+  },
+  "wall_seconds_before_manifest": 0.019827299984171987,
+  "cpu_seconds_before_manifest": 0.015625,
+  "unmeasured_internal_IO": "unknown_not_zero",
+  "continuous_goal": "active"
+}
