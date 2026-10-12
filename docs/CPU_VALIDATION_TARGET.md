@@ -23,7 +23,9 @@
 
 [IV2 首次结果](CONSISTENT_ACTION_STATE_RESULTS.md)已从冻结提交 d8491b2 首次完整执行：三个 rank5 拟合、30 个状态系数，6,000 新预测控制步和 5,772 条预测记录，零停止/异常。**原预测门失败，一步和多步均退化，不能进入控制。** 29 项[保存检查](../results/cpu_validation/2026-10-12_consistent_action_state/delivery_checks.json)通过只证明记录一致。12,000 reused offline scalar 标签用途另计，零新训练物理、零 RLS；开发 seed 不能称最终留出。
 
-**立即继续 IV2D 保存残差与覆盖诊断**：比较训练内拟合误差、新轨迹的一步误差和递推变化，只做一次冻结的离线代数，零新物理/拟合/model.predict。根据完整结果决定一个有依据的下一修订，不扫描参数、不拟合已见预测标签、不重算旧门。
+**立即继续 [IV2D 保存残差与覆盖诊断](CONSISTENT_MODEL_RESIDUAL_PROTOCOL.md)**：比较训练内拟合误差、新轨迹的一步误差和递推变化，只做一次冻结的离线代数，零新物理/拟合/model.predict。根据完整结果决定一个有依据的下一修订，不扫描参数、不拟合已见预测标签、不重算旧门。
+
+IV2D 一项必要新合成检查首次 passed，[准备记录](../results/cpu_validation/2026-10-12_consistent_model_residual_preparation/manifest.json)已封存。正式诊断尚未执行，冻结提交推送后立即首次执行。
 
 累计 **535,345 控制 /2,815,018 子步**。历史 **125,652 scalar RLS 更新**不变；IV1 的 **12,000 新 IV scalar 标签用途、3 fit、24 动作系数**另计。C5 仅事件工程通过，科学适应与 C6/C7 尚未验收。
 

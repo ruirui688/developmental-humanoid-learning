@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "first_failure": null,
+  "checks": [
+    {
+      "name": "saved_residual_population_std_native_start_recursive_input_box_and_no_fresh_RMSE",
+      "passed": true,
+      "detail": {
+        "training": {
+          "count": 3,
+          "bias_axis": [
+            0.6666666666666666,
+            -0.3333333333333333
+          ],
+          "MAE_axis": [
+            1.3333333333333333,
+            1.0
+          ],
+          "population_std_axis": [
+            1.247219128924647,
+            0.9428090415820634
+          ],
+          "max_absolute_axis": [
+            2.0,
+            1.0
+          ],
+          "training_RMSE_axis": [
+            1.4142135623730951,
+            1.0
+          ]
+        },
+        "saved": {
+          "count": 3,
+          "bias_axis": [
+            0.6666666666666666,
+            -0.3333333333333333
+          ],
+          "MAE_axis": [
+            1.3333333333333333,
+            1.0
+          ],
+          "population_std_axis": [
+            1.247219128924647,
+            0.9428090415820634
+          ],
+          "max_absolute_axis": [
+            2.0,
+            1.0
+          ]
+        },
+        "inputs": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            1.5,
+            -0.1,
+            2.0,
+            0.0
+          ]
+        ],
+        "box": {
+          "points": 3,
+          "outside_count_each_coordinate": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "outside_any_coordinate_count": 1,
+          "maximum_excess_each_coordinate": [
+            0.5,
+            0.1,
+            1.0,
+            0.0
+          ],
+          "boundary_is_inside": true
+        }
+      }
+    }
+  ],
+  "source_identities": {
+    "D:\\Codex_ws\\robot_rl\\scripts\\diagnose_consistent_model_residual.py": {
+      "bytes": 24060,
+      "sha256": "95ae508d5aa6e8c432e065c718fe8616f1d3b8eee717834419b2445c0b5af736"
+    },
+    "D:\\Codex_ws\\robot_rl\\external\\new_consistent_residual_checks_once.py": {
+      "bytes": 5270,
+      "sha256": "1a6aea42b0c5a9ca6252ddb5669aa3a9b44bcfd43f115000039d614c882bdcb7"
+    }
+  },
+  "synthetic_only_cost": {
+    "source_file_reads": 2,
+    "source_bytes_read": 29330,
+    "state_matmul_attempts": 1,
+    "reused_training_Y_scalar_uses": 6,
+    "state_matmul_returns": 1,
+    "training_state_velocity_scalar_outputs": 6,
+    "training_state_coefficient_scalar_uses": 30,
+    "training_residual_scalar_outputs": 6,
+    "error_summary_attempts": 2,
+    "error_summary_returns": 2,
+    "error_summary_axis_statistic_outputs": 18,
+    "synthetic_box_attempts": 1,
+    "synthetic_box_returns": 1,
+    "synthetic_input_points": 3,
+    "synthetic_box_scalar_uses": 12
+  },
+  "saved_raw_reads": 0,
+  "real_data_algebra_calls": 0,
+  "fit_attempts": 0,
+  "model_predict_calls": 0,
+  "physics_calls": 0,
+  "RLS_updates": 0
+}

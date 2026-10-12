@@ -1,0 +1,24 @@
+{
+  "experiment": "IV2D_preparation",
+  "status": "passed",
+  "source": {
+    "scripts/diagnose_consistent_model_residual.py": {
+      "bytes": 24060,
+      "sha256": "95ae508d5aa6e8c432e065c718fe8616f1d3b8eee717834419b2445c0b5af736"
+    },
+    "docs/CONSISTENT_MODEL_RESIDUAL_PROTOCOL.md": {
+      "bytes": 7809,
+      "sha256": "cc950a5383ca22f40c19b345cd24e034f66de3f21c6d4011df1ba8a599b31f3e"
+    }
+  },
+  "synthetic_checks": 1,
+  "first_failure": null,
+  "physical_calls": 0,
+  "real_fit_calls": 0,
+  "real_saved_data_math": 0,
+  "old_gate_reexecution": false,
+  "continuous_goal": "active",
+  "wall_seconds_before_manifest": 0.010329500073567033,
+  "cpu_seconds_before_manifest": 0.0,
+  "unmeasured_filesystem_IO": "unknown_not_zero"
+}
