@@ -1,0 +1,208 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "EF1D_completed_or_preserved_failed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_scientific_flags_false",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_boundary_new_physics_calls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_boundary_new_control_calls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_boundary_new_fit_calls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_boundary_new_RLS_updates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_boundary_model_predict_calls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_boundary_trace_reads",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_boundary_scientific_gate_recomputations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_boundary_constraint_searches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_boundary_clipped_deltas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_clean_source_commit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two_source_file_bindings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_ZIP_exact_two_entries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_ZIP_binding_scripts/diagnose_model_action_error.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_ZIP_binding_docs/MODEL_ACTION_ERROR_DIAGNOSTIC_PROTOCOL.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "required_first_outputs_present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_population_2400_1200",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_twelve_population_groups_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_stream_saved_bytes_SHA_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed_partials_are_preserved_not_ranked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_2400_lines_and_1200_pairs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_result_population_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "twelve_original_summary_groups",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "check_count": 24,
+  "failed_count": 0,
+  "new_stream_rows": 2400,
+  "regular_model_records": 2400,
+  "written_paired_origins": 1200,
+  "technical_partial_rows": 0,
+  "diagnostic_math_recomputed": false,
+  "old_raw_reads": 0,
+  "scientific_ranking_or_gate_recomputation": false,
+  "navigation_changes": [
+    {
+      "path": "README.md",
+      "before": {
+        "bytes": 30330,
+        "sha256": "afd52ea9204bfd8e49c4fe77777bf5fcfcc5092922dc3a4a970a9ac00699e6c8"
+      },
+      "after": {
+        "bytes": 30092,
+        "sha256": "64d4d5ab9c13671410471a79e956cd05b71777b58423429733578b607b305e88"
+      },
+      "change": "only_exact_six_line_front_EF1D_block"
+    },
+    {
+      "path": "AGENTS.md",
+      "before": {
+        "bytes": 27265,
+        "sha256": "cd47cb40cae0a080c6ee30c9b2185e1378f60b126f7f2775acba1cf6ab7ac6f3"
+      },
+      "after": {
+        "bytes": 27027,
+        "sha256": "d0dbd935c637113db5983bc688e5649d258368824c2f098b8f48e7b77bc4428c"
+      },
+      "change": "only_exact_six_line_front_EF1D_block"
+    },
+    {
+      "path": "docs/CONTINUOUS_EXECUTION_PLAN.md",
+      "before": {
+        "bytes": 88115,
+        "sha256": "b26a3b3833648f4ee5e2b9018716a583373aa1a2e2f0e6beb056b1df5765751d"
+      },
+      "after": {
+        "bytes": 87874,
+        "sha256": "371eb766ade80f1e0fa75b474569fef8233651c956ce3a2afe89cb41d1a9565b"
+      },
+      "change": "only_exact_six_line_front_EF1D_block"
+    },
+    {
+      "path": "docs/DEVELOPMENT_ROADMAP.md",
+      "before": {
+        "bytes": 29845,
+        "sha256": "df8ffbbe2231db248c19ba9837ffb8011332645b736bfbfd0768fe395db36630"
+      },
+      "after": {
+        "bytes": 29604,
+        "sha256": "3bfe5a5ed54347cf41b8b4a25d239ea95e2d2dd4d059419968d56b8092b286a7"
+      },
+      "change": "only_exact_six_line_front_EF1D_block"
+    },
+    {
+      "path": "docs/CPU_VALIDATION_TARGET.md",
+      "before": {
+        "bytes": 7375,
+        "sha256": "08954f970d0ee51df70ee95c6ba468fcce27d55c841896695846b3f81d32b686"
+      },
+      "after": {
+        "bytes": 7134,
+        "sha256": "78eb0c0d447543dbf74e96b2acd3590814a839e98b00f720037943bedaf13ee2"
+      },
+      "change": "only_exact_six_line_front_EF1D_block"
+    }
+  ],
+  "result_document_identity": {
+    "bytes": 8617,
+    "sha256": "00c68ace462f0a39ca8f7b759a27b18d6dffb8fc3ef065bf0724fd259524dd08"
+  },
+  "execution_boundary": {
+    "J_SVD_delta_recomputations": 0,
+    "old_metric_or_gate_recomputations": 0,
+    "EF1B_or_other_old_raw_reads": 0,
+    "physics_calls": 0,
+    "fit_RLS_calls": 0,
+    "model_predict_calls": 0
+  }
+}

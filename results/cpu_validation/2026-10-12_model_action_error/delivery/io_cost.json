@@ -1,0 +1,32 @@
+{
+  "scope": "new_EF1D_archive_identity_copy_and_summary_transcription_only",
+  "cost": {
+    "raw_files_enumerated": 5,
+    "file_read_attempts": 11,
+    "file_read_returns": 11,
+    "bytes_read": 5156713,
+    "file_write_attempts": 9,
+    "file_write_returns": 9,
+    "bytes_written": 4996258,
+    "identity_hash_calls": 22,
+    "identity_hash_byte_uses": 10311680,
+    "run_JSON_parse_attempts": 1,
+    "run_JSON_parse_returns": 1,
+    "source_ZIP_decode_attempts": 1,
+    "source_ZIP_entry_returns": 2,
+    "source_ZIP_decoded_bytes": 41678,
+    "source_ZIP_decode_returns": 1,
+    "new_diagnostic_JSON_parse_attempts": 2400,
+    "new_diagnostic_JSON_parse_returns": 2400,
+    "new_diagnostic_identity_uses": 2400,
+    "new_diagnostic_decoded_rows": 2400,
+    "navigation_write_attempts": 5,
+    "navigation_write_returns": 5,
+    "navigation_bytes_written": 181731,
+    "wall_seconds": 0.11586249992251396,
+    "cpu_seconds": 0.09375
+  },
+  "accounting_cutoff": "before_final_IO_ledger_and_manifest_encoding_writes",
+  "unmeasured_filesystem_IO": "unknown_not_zero",
+  "no_scientific_math": true
+}

@@ -1,10 +1,10 @@
 # 发育式机器人学习：项目推进路线
 
-## EF1D 冻结准备与当前入口（2026-10-12）
+## EF1D 首次结果与当前入口（2026-10-12）
 
-当前入口为 [EF1D 保存一步误差动作尺度诊断协议](MODEL_ACTION_ERROR_DIAGNOSTIC_PROTOCOL.md)，[首次准备封存](../results/cpu_validation/2026-10-12_model_action_error_preparation/freeze_manifest.json)保留最终源码与8项新合成检查、stdout/stderr/JSON；首次合成passed、静态READY仅代表准备资格，正式诊断尚未执行。
+当前入口为 [EF1D 保存一步误差动作尺度诊断结果](MODEL_ACTION_ERROR_DIAGNOSTIC_RESULTS.md)：首次 completed、完整2,400 H1/1,200配对origin；仅转录首次汇总并完成一次轻量身份/人口/源码绑定核对，不重算J/SVD/delta或旧门。
 
-完整2,400 H1/1,200配对origin，至多11,772行解码、38,400盒成员检查/9,600相邻SVD；复用首审来源，不读trace，0新物理/fit/RLS/model.predict，离线费用另计。此前累计505,297控制/2,784,970子步，online118,452+offline7,200=125,652scalar更新，旧费用保持。EF1B单候选关闭，EF1D不自动放行control；C4–C7未验收、原门及五science flags false保持，持续目标active。准备检查提交推送后直接继续首次有界诊断，不把准备或单个报告当作持续目标完成。
+0新增物理/fit/RLS/model.predict，离线代数与交付I/O另计；累计505,297控制/2,784,970子步，online118,452+offline7,200=125,652scalar更新不变。最小norm同盒映射的不可评不能识别物理原因或否定其它nullspace解；不自动放行control。C4–C7未验收、原门及五science flags false保持，持续目标active，阶段提交推送后继续有界研究。
 
 > 更新日期：2026-10-12
 >

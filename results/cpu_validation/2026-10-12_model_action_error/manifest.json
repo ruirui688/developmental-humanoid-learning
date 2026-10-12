@@ -1,0 +1,52 @@
+{
+  "experiment_id": "EF1D",
+  "source_commit": "8c0397a98ea7bd4bc7169cd0531b14205b0deee5",
+  "first_execution_status": "completed",
+  "delivery_status": "passed",
+  "files": {
+    "raw/diagnostic_records.jsonl": {
+      "bytes": 4909083,
+      "sha256": "5b35011884a0be26d13be231a44add415beb7daa90b90e8b0a6beb6b70432b49"
+    },
+    "raw/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/run.json": {
+      "bytes": 27815,
+      "sha256": "0dbb13841a7b31182076f931b02ea7d2b456db638bf24389ce00c808429762c6"
+    },
+    "raw/source.zip": {
+      "bytes": 15366,
+      "sha256": "df60ce9840896a8d223295e24f5cb1cd2e470bf9d74117566b959c5473e989d2"
+    },
+    "delivery/deliver_ef1d_results_once.py": {
+      "bytes": 21519,
+      "sha256": "a9dca17669fedb32a39e5983cd91c125ea31c9c7f07e0f3fa7377f201a61d56a"
+    },
+    "delivery/MODEL_ACTION_ERROR_DIAGNOSTIC_RESULTS.md": {
+      "bytes": 8617,
+      "sha256": "00c68ace462f0a39ca8f7b759a27b18d6dffb8fc3ef065bf0724fd259524dd08"
+    },
+    "delivery/verification.json": {
+      "bytes": 5241,
+      "sha256": "00813b6a041f5c4a43b088ba2a4db53705fcba4cb8d55f82c6162317ca05e3a4"
+    },
+    "delivery/io_cost.json": {
+      "bytes": 1103,
+      "sha256": "54989481a42a6ec1fd008d464db14cce4f738fe33715a7d3a504106ea65fa326"
+    }
+  },
+  "raw_path": "external/ef1d_action_error_first/raw",
+  "result_document": "docs/MODEL_ACTION_ERROR_DIAGNOSTIC_RESULTS.md",
+  "failed_results_preserved_without_subset_ranking": true,
+  "scientific_adoption": false,
+  "old_free_root_C4_validation": false,
+  "c4_scientific_validation": false,
+  "c5_scientific_dependency_released": false,
+  "c4_contact_scientific_validation": false
+}
