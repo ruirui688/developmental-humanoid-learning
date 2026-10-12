@@ -21,11 +21,11 @@
 
 **目前仍卡在 C4。** [EF1B 完整控制](EQUILIBRIUM_FEEDFORWARD_CONTROL_RESULTS.md)模型贡献 9.0203%，未达到 20%。[PAR1 响应诊断](PAIRED_ACTION_RESPONSE_DIAGNOSTIC_RESULTS.md)显示原模型动作响应方向一致而幅度偏小；[IV1 原生随机动作辨识](INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md)完整完成但多步预测退化，原门失败，不能进入控制。状态项与动作项的协调失配是待检验假设，尚不能认定唯一原因。
 
-下一唯一 **[IV2 状态项一致化](CONSISTENT_ACTION_STATE_PROTOCOL.md)**：冻结 IV1 的八个动作系数；每 seed 使用全部 2000 条已付费辨识转移，拟合十个非动作系数。只做三次 solve、30 个系数输出、12,000 reused offline scalar 标签用途，零新训练物理、零 RLS；随后最多 6000 新控制/子步，采用固定新 pulse 时相检验独立预测，同时报告 cold/oldlearned/IV1/IV2。开发 seed 不称最终留出；失败关闭该单候选，不扫描参数或拟合已见预测数据。
+[IV2 首次结果](CONSISTENT_ACTION_STATE_RESULTS.md)已从冻结提交 d8491b2 首次完整执行：三个 rank5 拟合、30 个状态系数，6,000 新预测控制步和 5,772 条预测记录，零停止/异常。**原预测门失败，一步和多步均退化，不能进入控制。** 29 项[保存检查](../results/cpu_validation/2026-10-12_consistent_action_state/delivery_checks.json)通过只证明记录一致。12,000 reused offline scalar 标签用途另计，零新训练物理、零 RLS；开发 seed 不能称最终留出。
 
-当前IV2 五项必要新合成检查首次全部通过，[准备原件](../results/cpu_validation/2026-10-12_consistent_action_state_preparation/manifest.json)已封存；正式数据拟合与新预测尚未执行。冻结提交推送后立即首次执行。
+**立即继续 IV2D 保存残差与覆盖诊断**：比较训练内拟合误差、新轨迹的一步误差和递推变化，只做一次冻结的离线代数，零新物理/拟合/model.predict。根据完整结果决定一个有依据的下一修订，不扫描参数、不拟合已见预测标签、不重算旧门。
 
-累计 **529,345 控制 /2,809,018 子步**。历史 **125,652 scalar RLS 更新**不变；IV1 的 **12,000 新 IV scalar 标签用途、3 fit、24 动作系数**另计。C5 仅事件工程通过，科学适应与 C6/C7 尚未验收。
+累计 **535,345 控制 /2,815,018 子步**。历史 **125,652 scalar RLS 更新**不变；IV1 的 **12,000 新 IV scalar 标签用途、3 fit、24 动作系数**另计。C5 仅事件工程通过，科学适应与 C6/C7 尚未验收。
 
 ## 执行约束
 

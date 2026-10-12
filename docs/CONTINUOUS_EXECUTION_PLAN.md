@@ -4,11 +4,11 @@
 
 **目标 active：C4 双关节接触控制 → C5 未知动力学适应 → C6 固定成熟/能力门控 → C7 新留出综合验收。** 每次检查、提交、推送后立即推进下一项，不等待再次“继续”。四项完成条件见[持续目标](CPU_VALIDATION_TARGET.md)。当前仅 CPU，允许少量身体辨识；不用任务教师、预训练任务策略、大规模 PPO、GPU 或真机。
 
-当前最早未验收的是 C4。[IV1 首次结果](INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md)完整执行六条轨迹、15,000 新控制/子步，三次 rank4 fit；只替换动作项后原独立预测门失败，不进入控制。27 项保存检查通过，只证明身份与人口一致。下一唯一 [IV2 状态项一致化](CONSISTENT_ACTION_STATE_PROTOCOL.md)：冻结新动作项，用全部已付费辨识转移拟合十个状态系数，再做新时相的独立预测；不读取 IV1 预测标签作拟合，不补跑旧实验。
+当前最早未验收的是 C4。[IV1 首次结果](INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md)完整执行六条轨迹、15,000 新控制/子步，三次 rank4 fit；只替换动作项后原独立预测门失败，不进入控制。27 项保存检查通过，只证明身份与人口一致。刚完成 [IV2 首次结果](CONSISTENT_ACTION_STATE_RESULTS.md)：冻结新动作项，用全部已付费辨识转移拟合十个状态系数，再做新时相的独立预测；不读取 IV1 预测标签作拟合，不补跑旧实验。
 
-IV2 五项必要新合成检查首次全部通过，[准备原件](../results/cpu_validation/2026-10-12_consistent_action_state_preparation/manifest.json)已封存；正式数据拟合与新预测尚未执行。冻结提交推送后立即首次执行。
+IV2 从 clean d8491b2e0f8b3bae649b8bf9a297bebba7f76270 首次完整完成：3 次 rank5 solve、30 个状态系数、12,000 reused offline scalar 标签用途，0 新训练物理/0 RLS；6,000 新预测控制/子步、5,772 记录全部完整，0 停止/异常。原预测门 false，H1及多步均退化，不进入控制。29 项[轻量保存检查](../results/cpu_validation/2026-10-12_consistent_action_state/delivery_checks.json)passed 只代表保存一致。下一唯一为 IV2D 新保存残差与覆盖诊断，0 新物理/fit/model.predict；先冻结再首次执行，不扫描或重算旧门。
 
-累计 **529,345 控制 /2,809,018 子步**；历史 **125,652 scalar RLS 更新**保持。IV1 的 **12,000 新 IV scalar 标签用途 /3 fit /24 动作系数**另计。C4–C7 均未验收，阶段结果不能当作目标完成。详细历史与成本由阶段账本和各结果报告保留。
+累计 **535,345 控制 /2,815,018 子步**；历史 **125,652 scalar RLS 更新**保持。IV1 的 **12,000 新 IV scalar 标签用途 /3 fit /24 动作系数**另计。C4–C7 均未验收，阶段结果不能当作目标完成。详细历史与成本由阶段账本和各结果报告保留。
 
 > 2026-10-12：这是持续执行的目标，不是一次性任务。阶段报告、检查、提交和推送完成后，立即推进下一项。
 
@@ -818,3 +818,9 @@ FR0只开放新学习协议准备，C4及C5–C7科学依赖仍未解除；持�
 [IV1 首次结果](INSTRUMENTAL_ACTION_RESPONSE_RESULTS.md)从 clean d7eb8508f2872e24212d7e3580951c7c44fe8228 一次完成六条 trial、15,000 控制/子步，0 停止/异常。3 次 rank4 fit、12,000 新 IV scalar 标签用途、24 动作系数另计；125,652 历史 scalar RLS 保持。累计变为 529,345 控制 /2,809,018 子步。原预测门 false，动作项单独替换不能产生有效完整递推；不进入控制。27 项轻量身份/人口/冻结/源码 ZIP 检查 passed，未重新执行数学或科学门。
 
 下一唯一 IV2 固定 IV1 八动作系数，仅用每 seed 全部 2000 已付费辨识原生转移重拟合十个非动作系数：psi=(v0,v1,qrel0,qrel1,1)，y=next_v−IV1_action@G/h；每 seed 一次 lstsq、rcond=128eps、rank5/finite 必需。三 solve /30 系数 /12,000 reused offline scalar 标签用途，0 新训练物理与 RLS。随后 fresh 预测上限 6000 控制/子步，新 pulse 时相 slot3 正/slot13 反，原五 H/人口/权限/保护和 cold→新模型门不变，cold/oldlearned/IV1/IV2 全报告。不得拟合 IV1 已见预测或 PAR1 fork；失败关闭单候选，不增特征、正则、扫描或补采。C4–C7 未验收，持续目标 active；阶段交付后立即继续。
+
+### IV2 首次结果与下一唯一保存诊断（2026-10-12）
+
+从 clean d8491b2e0f8b3bae649b8bf9a297bebba7f76270 一次完成三组2000转移状态拟合及三条fresh预测；全部rank5、action8字节保持、5772预测记录完整，0停止/异常。实际6000新预测控制/子步，0新训练物理/独特训练标签/RLS；12000 reused offline scalar标签用途、3solve/30状态系数另计。wall160.03955910005607s，CPU106.296875s。29项新保存人口/身份/参数冻结/ZIP核验全部passed，未解码trace、重算fit/科学门。
+
+原预测门false。H10速度两轴 cold均值 .008679099679/.016107455266，newmatched .113035701660/.240747457478；H150位置 cold .002043547974/.003459631955，newmatched .100373462503/.192411435429。H1也全部退化，完整误差有限不表示模型可用，不进入control。状态项单独一致化不能修复本候选；仍不识别唯一因果，不加正则/特征/数据扫描或补跑。下一唯一IV2D冻结新保存残差与覆盖诊断，仅新离线代数，0物理/fit/model.predict，不重算旧门。累计535345控制/2815018子步，历史125652 scalar RLS不变，IV1新标签与IV2复用标签分列。C4–C7未验收，持续目标active，提交推送后继续。

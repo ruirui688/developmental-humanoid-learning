@@ -1,0 +1,172 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "source_exact_frozen_commit",
+      "passed": true
+    },
+    {
+      "name": "saved_metrics_identical",
+      "passed": true
+    },
+    {
+      "name": "planned_population_preserved",
+      "passed": true
+    },
+    {
+      "name": "complete_execution_and_fresh_population",
+      "passed": true
+    },
+    {
+      "name": "stored_cost_population",
+      "passed": true
+    },
+    {
+      "name": "native_reuse_and_no_new_training",
+      "passed": true
+    },
+    {
+      "name": "8101_all_four_models_and_rank5",
+      "passed": true
+    },
+    {
+      "name": "8101_fixed_action8_bitwise",
+      "passed": true
+    },
+    {
+      "name": "8101_saved_parameter_fingerprints_frozen",
+      "passed": true
+    },
+    {
+      "name": "8102_all_four_models_and_rank5",
+      "passed": true
+    },
+    {
+      "name": "8102_fixed_action8_bitwise",
+      "passed": true
+    },
+    {
+      "name": "8102_saved_parameter_fingerprints_frozen",
+      "passed": true
+    },
+    {
+      "name": "8103_all_four_models_and_rank5",
+      "passed": true
+    },
+    {
+      "name": "8103_fixed_action8_bitwise",
+      "passed": true
+    },
+    {
+      "name": "8103_saved_parameter_fingerprints_frozen",
+      "passed": true
+    },
+    {
+      "name": "science_flags_false_and_no_control",
+      "passed": true
+    },
+    {
+      "name": "source_zip_complete_closure",
+      "passed": true
+    },
+    {
+      "name": "archived_source_scripts/refit_instrumental_state.py",
+      "passed": true
+    },
+    {
+      "name": "archived_source_src/developmental_physics/consistent_action_state_model.py",
+      "passed": true
+    },
+    {
+      "name": "archived_source_docs/CONSISTENT_ACTION_STATE_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "archived_source_scripts/develop_instrumental_action_response.py",
+      "passed": true
+    },
+    {
+      "name": "archived_source_src/developmental_physics/instrumental_action_model.py",
+      "passed": true
+    },
+    {
+      "name": "archived_source_src/developmental_physics/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "archived_source_src/developmental_physics/free_root_fast_feedback_environment.py",
+      "passed": true
+    },
+    {
+      "name": "archived_source_src/developmental_physics/environment.py",
+      "passed": true
+    },
+    {
+      "name": "archived_source_src/developmental_physics/assets/ground_body.xml",
+      "passed": true
+    },
+    {
+      "name": "archived_source_src/developmental_physics/guard_coupled_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "archived_source_src/developmental_physics/local_pair_model.py",
+      "passed": true
+    },
+    {
+      "name": "archived_source_src/developmental_physics/full_request_pair_development.py",
+      "passed": true
+    }
+  ],
+  "payload": {
+    "raw/run.json": {
+      "bytes": 1145452,
+      "sha256": "a6fd68bb909ac8d8607986aeb55918d76dce18b51f8a0bbcd2d93b8caef2a0ec"
+    },
+    "raw/models.json": {
+      "bytes": 21758,
+      "sha256": "96e94bc63311262878114354e1fb4f084564e5116cf14435ee47936415176dcd"
+    },
+    "raw/moments.json": {
+      "bytes": 1425018,
+      "sha256": "a199bb517cafc059bfcf6af23b9dba258f4d4bcf31787c363ea255ebced7c2ea"
+    },
+    "raw/metrics.json": {
+      "bytes": 35212,
+      "sha256": "caccbb68e61912bd5b692f95c5357fd936eab5f88ad4e5608ea1c03cfbca80fb"
+    },
+    "raw/source.zip": {
+      "bytes": 62714,
+      "sha256": "3973758fcd5140a48fdc843bcbc5afb74408437685fd8ab3857956d0854e29ca"
+    },
+    "raw/source_trace.jsonl.gz": {
+      "bytes": 6592719,
+      "sha256": "0b2156abd8e29cb0702c13fbff5277eb78686bbed39d23cef52139447421fc4f"
+    },
+    "raw/predictions.jsonl.gz": {
+      "bytes": 10936879,
+      "sha256": "de32524abd8f5b8a7f45d6dbc92158143c67b5fe05893656401c38dddfd58685"
+    },
+    "raw/first_stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/first_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "physics_calls": 0,
+  "fit_calls": 0,
+  "model_calls": 0,
+  "trace_decode_calls": 0,
+  "science_gate_reexecuted": false,
+  "continuous_goal": "active",
+  "cumulative_controls": 535345,
+  "cumulative_substeps": 2815018,
+  "historical_RLS_scalar_updates": 125652,
+  "IV2_reused_scalar_label_uses": 12000,
+  "wall_seconds_before_report": 1.4057485999073833,
+  "cpu_seconds_before_report": 0.15625,
+  "unmeasured_filesystem_IO": "unknown_not_zero"
+}
